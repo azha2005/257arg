@@ -57,13 +57,13 @@ def geography_evidence(prov,name):
 
 def main():
     OUT.mkdir(exist_ok=True)
-    sources=['busqueda1914/datos_1914_depto.csv','1916dip/canton_diputados_1916/celdas_1916.csv',
-             '1916dip/canton_diputados_1916/cotejo_lupu_1916.csv','mapa1914/build_1914.py','mapa1916dip/build_1916.py','DTS 47_Cacopardo_1967.pdf']
-    lab=literal('mapa1914/build_1914.py','LAB')
-    accompany=literal('mapa1914/build_1914.py','ACOMP')
-    code16=literal('mapa1916dip/build_1916.py','CODE')
-    demo=literal('mapa1916dip/build_1916.py','DEMOCRATA')
-    bloc16=literal('mapa1916dip/build_1916.py','BLOC')
+    sources=['transcripciones/busqueda1914/datos_1914_depto.csv','transcripciones/1916dip/canton_diputados_1916/celdas_1916.csv',
+             'transcripciones/1916dip/canton_diputados_1916/cotejo_lupu_1916.csv','mapas/mapa1914/build_1914.py','mapas/mapa1916dip/build_1916.py','DTS 47_Cacopardo_1967.pdf']
+    lab=literal('mapas/mapa1914/build_1914.py','LAB')
+    accompany=literal('mapas/mapa1914/build_1914.py','ACOMP')
+    code16=literal('mapas/mapa1916dip/build_1916.py','CODE')
+    demo=literal('mapas/mapa1916dip/build_1916.py','DEMOCRATA')
+    bloc16=literal('mapas/mapa1916dip/build_1916.py','BLOC')
     ledger=[];records=[];excluded=[];kept={};discarded_cells=[]
     def save(year,observations,invalid):
         v=[]

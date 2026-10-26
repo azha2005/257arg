@@ -10,7 +10,7 @@ Blanco y nulo = votantes menos la suma de las fuerzas publicadas (muchas tablas 
 import os, sys
 import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, "..")
-sys.path.insert(0, os.path.join(ROOT, "mapa1930", "canton"))
+sys.path.insert(0, os.path.join(ROOT, "mapas/mapa1930", "canton"))
 from canton_1954_1958 import COD, norm
 from spec import SPEC, BLOC as BLOC30
 
@@ -46,7 +46,7 @@ def guardar(R, anio):
 def de_1930():
     R = {}
     for p, s in SPEC.items():
-        for ln in open(os.path.join(ROOT, "mapa1930", "canton", s["file"]), encoding="utf8"):
+        for ln in open(os.path.join(ROOT, "mapas/mapa1930", "canton", s["file"]), encoding="utf8"):
             if ln.startswith("#") or "|" not in ln: continue
             n, x = ln.rstrip("\n").split("|")
             if x.strip() == "-": continue
@@ -80,11 +80,11 @@ def de_csv(path, anio, bloques):
 
 
 def main():
-    k46 = guardar(de_csv("canton1946/canton_1946.csv", 1946, B46), 1946)
+    k46 = guardar(de_csv("transcripciones/canton1946/canton_1946.csv", 1946, B46), 1946)
     k30 = guardar(de_1930(), 1930)
     for anio, k in ((1930, k30),
-                    (1937, guardar(de_csv("canton1937_1940/canton_1937_1940_1946.csv", 1937, B37), 1937)),
-                    (1940, guardar(de_csv("canton1937_1940/canton_1937_1940_1946.csv", 1940, B40), 1940))):
+                    (1937, guardar(de_csv("transcripciones/canton1937_1940/canton_1937_1940_1946.csv", 1937, B37), 1937)),
+                    (1940, guardar(de_csv("transcripciones/canton1937_1940/canton_1937_1940_1946.csv", 1940, B40), 1940))):
         print(anio, "sin 1946:", sorted(k - k46))
     print("1946 sin 1930:", sorted(k46 - k30))
 

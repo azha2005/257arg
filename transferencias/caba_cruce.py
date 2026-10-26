@@ -17,7 +17,7 @@ CORTE = 2008        # anio de la Res. 1507/2008
 
 def pesos():
     """DataFrame circuito (str sin ceros) x circunscripcion: fraccion de la superficie del circuito en cada una."""
-    c28 = pickle.load(open(os.path.join(ROOT, "mapa1983", "caba28.pkl"), "rb"))
+    c28 = pickle.load(open(os.path.join(ROOT, "mapas/mapa1983", "caba28.pkl"), "rb"))
     feats = json.load(open(GJ, encoding="utf8"))["features"]
     W = {}
     for f in feats:

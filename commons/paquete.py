@@ -25,7 +25,7 @@ from playwright.sync_api import sync_playwright
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.join(ROOT, "commons_1928"))
+sys.path.insert(0, os.path.join(ROOT, "commons/commons_1928"))
 import build_commons_svg as B1928   # funciones del paquete de 1928 (inline_logo, to_hex, content_bbox, Face...)
 from config import ATLAS, GEOM, GEOM_SHORT, HOLD_TEXT
 
@@ -78,8 +78,8 @@ def mode_names(ds):
 
 # ------------------------------------------------------------------ 1) exportar
 def export_flat(cfg, tmp, drop=None, prefix=""):
-    url = "file:///" + os.path.join(ROOT, cfg["folder"], cfg["html"]).replace("\\", "/")
-    ds = json.load(open(os.path.join(ROOT, cfg["folder"], cfg["dataset"]), encoding="utf8"))
+    url = "file:///" + os.path.join(ROOT, "mapas", cfg["folder"], cfg["html"]).replace("\\", "/")
+    ds = json.load(open(os.path.join(ROOT, "mapas", cfg["folder"], cfg["dataset"]), encoding="utf8"))
     os.makedirs(tmp, exist_ok=True)
     with sync_playwright() as p:
         b = p.chromium.launch(channel="chrome")
@@ -286,7 +286,7 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 ## Fuentes y licencia
 - **Votos:** {' '.join(cfg['votos'])}
 - **Geometría:** {GEOM[cfg['geom']]}. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{{{self|cc-by-4.0}}}}` + `{{{{Cc-by-2.5-ar}}}}`.{logo_license_note} Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): {', '.join(cfg['logos']) or 'ninguno'}.{(' Sin página en Commons con ese nombre (se dejaron sin enlace): ' + ', '.join(logos_missing) + '.') if logos_missing else ''} El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): {', '.join(cfg['logos']) or 'ninguno'}.{(' Sin página en Commons con ese nombre (se dejaron sin enlace): ' + ', '.join(logos_missing) + '.') if logos_missing else ''} El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** {cfg['fecha']}{' (cotejada con el artículo)' if cfg.get('fecha_verificada') else ' (confirmar con el artículo)'}.
 {('- **Categorías de Commons que no existen y se omitieron:** ' + ', '.join(cats_missing) + '.') if cats_missing else ''}
 
@@ -310,7 +310,7 @@ def run(year, solo_textos=False):
     tmp = os.path.join(out, "_tmp")
     sub = os.path.join(out, "subir")
     if solo_textos:   # solo reescribe wikitext y LEEME con los archivos ya generados
-        ds = json.load(open(os.path.join(ROOT, cfg["folder"], cfg["dataset"]), encoding="utf8"))
+        ds = json.load(open(os.path.join(ROOT, "mapas", cfg["folder"], cfg["dataset"]), encoding="utf8"))
     else:
         shutil.rmtree(sub, ignore_errors=True); os.makedirs(sub)
         print("== %s: exportando…" % year, flush=True)

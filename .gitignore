@@ -39,32 +39,32 @@ datos_oficiales/
 # --- Sin permiso de redistribución ------------------------------------------
 # Bases de Ernesto Calvo (entregas personales) y lo que se deriva fila a fila de ellas
 Bases Ernesto/
-base8399/ernesto/**/*.csv
-base8399/ernesto/**/*.xls
-base8399/elecciones/
+datos/base8399/ernesto/**/*.csv
+datos/base8399/ernesto/**/*.xls
+datos/base8399/elecciones/
 raw/
 # Lupu–Stokes, Gemini y búsquedas automáticas
 Gemini research/
 gemini_cruce/
 
 # --- Logos sin licencia libre (los atlas que los usan sí van, a pedido del autor) ---
-logos_wikipedia/Logo_FREJUDEPA_boleta*.png
-logos_wikipedia/Logo_MOPOF_Fueguino.png
-logos_wikipedia/Frente_Grande_primer_logo_1990s.png
-logos_wikipedia/Logo_Por_Santa_Cruz*.png
-logos_wikipedia/Logo_MDF_Kicillof.png
-logos_wikipedia/Logo_Villarruel_V.png
-logos_wikipedia/AMBA2025_*_del_png_original.png
+logos/Logo_FREJUDEPA_boleta*.png
+logos/Logo_MOPOF_Fueguino.png
+logos/Frente_Grande_primer_logo_1990s.png
+logos/Logo_Por_Santa_Cruz*.png
+logos/Logo_MDF_Kicillof.png
+logos/Logo_Villarruel_V.png
+logos/AMBA2025_*_del_png_original.png
 
 # --- Privado y conversaciones con agentes ---------------------------------
 PROMPT_*.md
-busqueda1914/historial/
-canton5865/_vm.txt
+transcripciones/busqueda1914/historial/
+transcripciones/canton5865/_vm.txt
 correos_bases_1983_1999.md
-busqueda1914/CONVERSACION_ANTERIOR.md
-busqueda1914/TRANSCRIPT_RECUPERADO.md
-mapa2009/busqueda_fuentes/*.json
-mapa2009/busqueda_fuentes/*.txt
+transcripciones/busqueda1914/CONVERSACION_ANTERIOR.md
+transcripciones/busqueda1914/TRANSCRIPT_RECUPERADO.md
+mapas/mapa2009/busqueda_fuentes/*.json
+mapas/mapa2009/busqueda_fuentes/*.txt
 
 # --- Escaneos, PDFs y fuentes primarias (citadas en cada LEEME) -------------
 *.pdf
@@ -74,45 +74,46 @@ mapa2009/busqueda_fuentes/*.txt
 *.tif
 *.tiff
 *.docx
-!logos_wikipedia/*.jpg
-busqueda1914/fase2/
-busqueda1914/fase3/
-busqueda1914/fuentes/
-busqueda1914/partes/
-busqueda1914/inspeccion/
-busqueda1912/fuentes/
-busqueda1912/tmp/
-1916dip/lavanguardia_abril1916/
-1916dip/expedientes_hcdn/
-1916dip/sanjuan_sde_expedientes/
-1916dip/laprensa_abril1916/
-1916dip/evidencia/
-mdz22/page_images/
-canton1954/revision/
-canton1954/deps/
-canton5865/busqueda_1957_1963/
-fuentes_agn/**/*.png
-scratch/*
-!scratch/transcripcion/
+!logos/*.jpg
+transcripciones/busqueda1914/fase2/
+transcripciones/busqueda1914/fase3/
+transcripciones/busqueda1914/fuentes/
+transcripciones/busqueda1914/partes/
+transcripciones/busqueda1914/inspeccion/
+transcripciones/busqueda1912/fuentes/
+transcripciones/busqueda1912/tmp/
+transcripciones/1916dip/lavanguardia_abril1916/
+transcripciones/1916dip/expedientes_hcdn/
+transcripciones/1916dip/sanjuan_sde_expedientes/
+transcripciones/1916dip/laprensa_abril1916/
+transcripciones/1916dip/evidencia/
+transcripciones/mdz22/page_images/
+transcripciones/canton1954/revision/
+transcripciones/canton1954/deps/
+transcripciones/canton5865/busqueda_1957_1963/
+datos/fuentes_agn/**/*.png
+scratch/
 scratch_logos/
 scratch_*
 
 # --- Salidas regenerables (PNG, paquetes de Commons, videos) ----------------
-mapa*/img/
+mapas/*/img/
 png_transparentes/
 png_blanco/
 png_legislativas_1983_2001_gan_blanco/
 gan_blancos_2003_2025/
 commons/*/**
 !commons/*/*.md
-commons_1928/subir/
-commons_1928/svg*/
-commons_1928/chequeo/
-commons_1928/verificacion_subida/
+!commons/commons_1928/**
+commons/commons_1928/subir/
+commons/commons_1928/svg*/
+commons/commons_1928/chequeo/
+commons/commons_1928/verificacion_subida/
+commons/commons_1928/__pycache__/
 salta_desmembramiento/
 video_atlas/
 video_atlas_out/
 *.mp4
 *.wav
-xlsx_resultados/MASTER_resultados_NUEVO.xlsx
+resultados_xlsx/MASTER_resultados_NUEVO.xlsx
 *.err

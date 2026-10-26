@@ -219,7 +219,7 @@ ATLAS["2009"] = dict(
             "La tabla nacional de Wikipedia tiene subtotales que no suman sus componentes: ACyS 5.705.105 frente a 5.875.774; FPV 5.544.069 frente a 5.698.942. Se conservan los subtotales impresos para el cartel y la agrupación de las filas para el mapa. Véase el control por bloque en mapa2009/.",
             "Tierra del Fuego: Ushuaia, Río Grande y Antártida conservan su resultado departamental. Ocho votos impugnados de Orcadas quedaron sin escrutar según el PDF. Los totales territoriales no incluyen exterior ni privados de libertad.",
             "La participación utiliza los electores de PolAr, excepto Tierra del Fuego (DINE definitivo); en Buenos Aires y Valle Grande los votos provienen de la planilla recuperada y el padrón de PolAr.",
-            "Logos del artículo de 2009; para FRC, MPN y UdN-FG se usan los emblemas del partido más cercanos disponibles, con diseño de época no verificado, según el criterio del proyecto. Metadatos y licencias registrados en logos_wikipedia/LICENCIAS.md y mapa2009/logos_metadata.json. Peronismo Federal usa violeta en lugar del gris de Wikipedia para distinguirlo de territorios sin voto; UdN-FG ámbar para distinguirlo de FRC."])
+            "Logos del artículo de 2009; para FRC, MPN y UdN-FG se usan los emblemas del partido más cercanos disponibles, con diseño de época no verificado, según el criterio del proyecto. Metadatos y licencias registrados en logos/LICENCIAS.md y mapa2009/logos_metadata.json. Peronismo Federal usa violeta en lugar del gris de Wikipedia para distinguirlo de territorios sin voto; UdN-FG ámbar para distinguirlo de FRC."])
 
 HOLD_TEXT = {
     "contradice_wikipedia_1983": "El mapa contradice el vigente en Commons; discutir en el artículo antes de subir.",
@@ -267,7 +267,7 @@ for _year, _d in _DIP.items():
         varones=False,geom=_d['geom'],antartida=True,
         cats_extra=['Election maps of Argentine Chamber of Deputies elections'],
         votos=[f"Base de datos electorales por departamento de Ernesto Calvo, hojas por provincia de `TPDENP{_year}T.xls` (diputados nacionales). Base no publicada: se contrastó con las tablas nacional y provinciales del artículo de la Wikipedia ({_d['cmp']})."],
-        logos=_DIP_LOGOS[_year],hold=[],hold_logos=[],avisos=_d['avisos'] + ['Logos reutilizados del proyecto; en varios emblemas provinciales el diseño de época no está verificado (ver `logos_wikipedia/LICENCIAS.md`).'],
+        logos=_DIP_LOGOS[_year],hold=[],hold_logos=[],avisos=_d['avisos'] + ['Logos reutilizados del proyecto; en varios emblemas provinciales el diseño de época no está verificado (ver `logos/LICENCIAS.md`).'],
         **({'solido': _d['solido']} if 'solido' in _d else {}))
 
 ATLAS['2001bronca'] = dict(ATLAS['2001'],year='2001',folder='mapa2001bronca',html='atlas_2001bronca.html',dataset='dataset_2001bronca.json',

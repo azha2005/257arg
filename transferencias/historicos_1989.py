@@ -80,20 +80,20 @@ def literal(file, variable):
 def mapping(year):
     if year == '1999p': return {}   # Por candidatura y provincia: presidente_1999.candidato.
     if year == '1997d':
-        fam = literal('mapa1997/build_1997.py','FAM')
+        fam = literal('mapas/mapa1997/build_1997.py','FAM')
         return {c:b for b,cs in fam.items() for c in cs.split()}
-    if year == '1983p': return literal('mapa1983/build_1983.py', 'CODE2BLOC')
+    if year == '1983p': return literal('mapas/mapa1983/build_1983.py', 'CODE2BLOC')
     if year in ('1985d','1987d'):
-        return literal(f'mapa{year[:4]}/build_{year[:4]}.py', 'CODE2BLOC')
+        return literal(f'mapas/mapa{year[:4]}/build_{year[:4]}.py', 'CODE2BLOC')
     if year == '1989p':
-        return literal('mapa1989/build_1989.py', 'CODE2BLOC')
+        return literal('mapas/mapa1989/build_1989.py', 'CODE2BLOC')
     if year == '1995p':
         return {c: label for var, label in [('MEN_C','MEN'), ('BOR_C','BOR'), ('MAS_C','MAS')]
-                for c in literal('mapa1995/build_1995.py', var)}
+                for c in literal('mapas/mapa1995/build_1995.py', var)}
     if year == '1989d':
-        fam = literal('atlas_leg8399.py', 'FAMS')[1989]
+        fam = literal('comun/atlas_leg8399.py', 'FAMS')[1989]
         return {c: b for b, codes in fam.items() for c in codes.split()}
-    return literal('mapa1994/build_1994.py', 'CODE2BLOC')
+    return literal('mapas/mapa1994/build_1994.py', 'CODE2BLOC')
 
 def territory(d, n, year):
     # Uniones comunes completas: no se reparte un departamento entre descendientes.
@@ -121,14 +121,14 @@ def main():
     ids['CAPITALFEDERAL'] = '01'
     manifest, controls, records, excluded = [], [], [], []
     for year, source in SOURCES.items():
-        path = ROOT / 'base8399/ernesto' / source / 'dpto_partidos.csv'
+        path = ROOT / 'datos/base8399/ernesto' / source / 'dpto_partidos.csv'
         df = pd.read_csv(path)
         if year == '1999p':
             # acjc00 contiene el total de sublemas acjc01–03: no sumar ambos.
             df.loc[df.codigo_partido=='acjc00','tipo_fila'] = 'subtotal_sublemas'
         if year == '1997d': df.loc[df.codigo_partido.isin(['pos','pos19']),'tipo_fila'] = 'positivos'
         if year == '1985d':
-            reference = pd.read_csv(ROOT/'base8399/ernesto/1983_diputados/dpto_partidos.csv',dtype={'codigo_indra':str})
+            reference = pd.read_csv(ROOT/'datos/base8399/ernesto/1983_diputados/dpto_partidos.csv',dtype={'codigo_indra':str})
             lookup = reference.drop_duplicates('codigo_indra').set_index('codigo_indra').departamento.to_dict()
             df['departamento'] = [lookup[str(code).zfill(5)] if str(name).isdigit() and len(str(name))==5 else name
                                   for code,name in zip(df.codigo_indra,df.departamento)]
@@ -187,7 +187,7 @@ def main():
         raw = frame.drop(columns='circuito').rename(columns={'circuito_original':'circuito'}).groupby(keys,as_index=False).v.sum()
         v = frame.groupby(keys,as_index=False).v.sum()
         if year == '1995p':
-            provincial = json.loads((ROOT/'mapa1995/wiki_prov.json').read_text())['Santa Cruz']
+            provincial = json.loads((ROOT/'mapas/mapa1995/wiki_prov.json').read_text())['Santa Cruz']
             extrapolation = []
             for code, field in [('MEN','men'), ('BOR','bor'), ('MAS','mas')]:
                 others = v[(v.distrito_id=='20') & (v.circuito!='S:DESEADO') & (v.agrupacion_id==code)].v.sum()
@@ -198,7 +198,7 @@ def main():
                 v.loc[mask,'v'] = result
                 raw.loc[(raw.distrito_id=='20') & (raw.circuito=='S:DESEADO') & (raw.agrupacion_id==code),'v'] = result
                 extrapolation.append(dict(bloque=code,total_provincial=provincial[field],otros_departamentos=int(others),deseado_original=original,deseado_extrapolado=result,agregado=result-original))
-            (out/'deseado_1995_extrapolado.json').write_text(json.dumps({'fuente':'mapa1995/wiki_prov.json; Wikipedia presidencial 1995, tabla por distrito','calculo':extrapolation},ensure_ascii=False,indent=2),encoding='utf8')
+            (out/'deseado_1995_extrapolado.json').write_text(json.dumps({'fuente':'mapas/mapa1995/wiki_prov.json; Wikipedia presidencial 1995, tabla por distrito','calculo':extrapolation},ensure_ascii=False,indent=2),encoding='utf8')
         e = v.groupby(['distrito_id','seccion_id','circuito']).v.sum()
         pd.to_pickle((v,e), HERE / f'circ_{year}.pkl')
         pd.to_pickle((raw,raw.groupby(['distrito_id','seccion_id','circuito']).v.sum()),out/f'raw_{year}.pkl')
@@ -208,10 +208,10 @@ def main():
     pd.DataFrame(records).to_csv(out/'correspondencias.csv',index=False,encoding='utf-8-sig')
     (out/'exclusiones.json').write_text(json.dumps(excluded,ensure_ascii=False,indent=2),encoding='utf8')
     (out/'fuentes.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8')
-    auxiliaries = ['mapa1983/build_1983.py','mapa1985/build_1985.py','mapa1987/build_1987.py',
-                   'mapa1989/build_1989.py','mapa1994/build_1994.py','mapa1995/build_1995.py',
-                   'mapa1997/build_1997.py','atlas_leg8399.py','mapa1995/wiki_prov.json',
-                   'mapa1995/w1995.txt','base8399/ernesto/1983_diputados/dpto_partidos.csv']
+    auxiliaries = ['mapas/mapa1983/build_1983.py','mapas/mapa1985/build_1985.py','mapas/mapa1987/build_1987.py',
+                   'mapas/mapa1989/build_1989.py','mapas/mapa1994/build_1994.py','mapas/mapa1995/build_1995.py',
+                   'mapas/mapa1997/build_1997.py','comun/atlas_leg8399.py','mapas/mapa1995/wiki_prov.json',
+                   'mapas/mapa1995/w1995.txt','datos/base8399/ernesto/1983_diputados/dpto_partidos.csv']
     auxiliaries += ['transferencias/presidente_1999.py','transferencias/fuentes/w1999p.txt']
     (out/'fuentes_auxiliares.json').write_text(json.dumps([
         dict(fuente=relative,sha256=hashlib.sha256((ROOT/relative).read_bytes()).hexdigest())

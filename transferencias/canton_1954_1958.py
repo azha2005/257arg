@@ -8,7 +8,7 @@ La unidad es el departamento (circuito = nombre de 1958); seccion_id = 0. Detall
 import os, sys, unicodedata
 import numpy as np, pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, "..")
-sys.path.insert(0, os.path.join(ROOT, "canton5865"))
+sys.path.insert(0, os.path.join(ROOT, "transcripciones/canton5865"))
 
 COD = {"Capital Federal": "01", "Buenos Aires": "02", "Catamarca": "03", "Córdoba": "04", "Corrientes": "05", "Chaco": "06",
        "Chubut": "07", "Entre Ríos": "08", "Formosa": "09", "Jujuy": "10", "La Pampa": "11", "La Rioja": "12", "Mendoza": "13",
@@ -55,7 +55,7 @@ def norm(s):
 
 
 def tabla54(dest):
-    d = pd.read_csv(os.path.join(ROOT, "canton1954", "canton_1954.csv"))
+    d = pd.read_csv(os.path.join(ROOT, "transcripciones/canton1954", "canton_1954.csv"))
     d = d[~d.provincia.isin(SIN_TOTAL + SIN_DEST[dest])]
     P = {c: d[d.categoria == c].pivot_table(index=["provincia", "unidad"], columns="concepto", values="valor", aggfunc="first")
          for c in ("varones solamente", "mujeres solamente", "varones y mujeres")}

@@ -147,7 +147,7 @@ def secnames(anio):
 
 def mapeo(anio):
     """(distrito, lista, codigo) de las listas de un anio. 2013 no tiene mapeo_listas: se lee LIST2BLOC de su build."""
-    f = os.path.join(ROOT, "mapa%d" % anio, "mapeo_listas_%d.csv" % anio)
+    f = os.path.join(ROOT, "mapas/mapa%d" % anio, "mapeo_listas_%d.csv" % anio)
     if os.path.exists(f):
         m = pd.read_csv(f, dtype=str)
         if "grupo_wiki" in m:   # 2009: por nombre de distrito y grupo de la Wikipedia
@@ -155,7 +155,7 @@ def mapeo(anio):
             m = m.assign(distrito=m.distrito_nombre.map(lambda n: ids[unicodedata.normalize("NFD", n).encode("ascii", "ignore").decode()]),
                          lista=m.agrupacion_id.str.zfill(4), codigo=m.grupo_wiki)
         return m
-    src = open(os.path.join(ROOT, "mapa%d" % anio, "build_%d.py" % anio), encoding="utf8").read()
+    src = open(os.path.join(ROOT, "mapas/mapa%d" % anio, "build_%d.py" % anio), encoding="utf8").read()
     i = src.index("LIST2BLOC = {}"); j = src.index("\n})", i) + 3
     ns = {"D2P": ["%02d" % k for k in range(1, 25)]}
     exec(src[i:j], ns)

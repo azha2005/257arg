@@ -30,9 +30,9 @@ def tabla(anio):
 
 def alianza97(cand, nb):
     """Proporción de la Alianza (UCR + FREPASO y aliados) en diputados 1997 por departamento, emparejada por nombre."""
-    src = open(os.path.join(ROOT, "mapa1997", "build_1997.py"), encoding="utf8").read()
+    src = open(os.path.join(ROOT, "mapas/mapa1997", "build_1997.py"), encoding="utf8").read()
     cods = src.split('"ALI": "', 1)[1].split('"', 1)[0].split()
-    x = pd.read_excel(os.path.join(ROOT, "xlsx_resultados", "por_eleccion", "1997_diputados.xlsx"))
+    x = pd.read_excel(os.path.join(ROOT, "resultados_xlsx", "por_eleccion", "1997_diputados.xlsx"))
     ali = x[[c for c in cods if c in x]].fillna(0).sum(1)
     tot = x[[c for c in x.columns if c not in ("provincia", "unidad", "positivos", "total", "electores", "pos19", "pos")]].fillna(0).sum(1)
     pid = {v: k for k, v in estimar.DISTRITOS.items()}; pid["Capital Federal"] = "01"

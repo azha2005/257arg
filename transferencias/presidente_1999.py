@@ -64,7 +64,7 @@ def wiki():
 
 
 def base99():
-    d = pd.read_csv(os.path.join(ROOT, "base8399", "ernesto", "1999_presidente", "dpto_partidos.csv"), dtype=str)
+    d = pd.read_csv(os.path.join(ROOT, "datos/base8399", "ernesto", "1999_presidente", "dpto_partidos.csv"), dtype=str)
     d["votos"] = pd.to_numeric(d.votos, errors="coerce").fillna(0)
     a = d[d.tipo_fila == "agrupacion"].copy()
     a["cand"] = [candidato(p, c) for p, c in zip(a.provincia, a.codigo_partido)]
@@ -79,7 +79,7 @@ def sl_sc():
     """San Luis y Santa Cruz no están en la base de Ernesto: Lupu-Stokes por departamento (ucr = De la Rúa, pj = Duhalde,
     total = positivos; coinciden con la Wikipedia a menos de 0,5 %). El resto (total - ucr - pj) se reparte entre Cavallo y
     Otros, y los blancos y nulos se asignan, con las proporciones provinciales de la Wikipedia (imputado: sin variación propia)."""
-    l = pd.read_csv(os.path.join(ROOT, "base8399", "elecciones", "1999_presidente", "lupu_stokes.csv"), dtype=str)
+    l = pd.read_csv(os.path.join(ROOT, "datos/base8399", "elecciones", "1999_presidente", "lupu_stokes.csv"), dtype=str)
     l = l[l.province.isin(["San Luis", "Santa Cruz"])]
     W = wiki(); out = []
     for _, r in l.iterrows():

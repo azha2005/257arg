@@ -6,7 +6,7 @@ Los dos años salen de canton5865 (Cantón t. II corregido, el mismo de los atla
 import os, sys
 import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, "..")
-sys.path.insert(0, os.path.join(ROOT, "canton5865"))
+sys.path.insert(0, os.path.join(ROOT, "transcripciones/canton5865"))
 from canton_1954_1958 import COD, norm
 
 # 1962 -> partido de 1958 que lo contenía (creados en 1959-61; en Cantón 1958 figuran sin datos)

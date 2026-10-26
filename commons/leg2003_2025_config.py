@@ -5,11 +5,11 @@ ROOT=Path(__file__).resolve().parent.parent
 DATES={2003:'27 de abril al 23 de noviembre de 2003',2005:'23 de octubre de 2005',2007:'28 de octubre de 2007',2011:'23 de octubre de 2011',2015:'25 de octubre de 2015',2017:'22 de octubre de 2017',2019:'27 de octubre de 2019',2021:'14 de noviembre de 2021',2023:'22 de octubre de 2023',2025:'26 de octubre de 2025'}
 
 def register(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT):
-    meta_path=ROOT/'fuentes_leg2003_2025/logos_metadata.json'
+    meta_path=ROOT/'datos/fuentes_leg2003_2025/logos_metadata.json'
     metadata=json.loads(meta_path.read_text(encoding='utf8')) if meta_path.exists() else {}
     metadata={p['title'][5:]:p for p in metadata.values() if p.get('imageinfo')}
     for y,date in DATES.items():
-        p=ROOT/f'mapa{y}/control_cobertura.json'
+        p=ROOT/f'mapas/mapa{y}/control_cobertura.json'
         if not p.exists():continue
         report=json.loads(p.read_text(encoding='utf8'))
         g=f'leg{y}';GEOM[g]=report['geometry'];GEOM_SHORT[g]=report['geometry'].lower()
