@@ -1,0 +1,80 @@
+{
+  "fecha": "2026-10-15",
+  "por_provincia": {
+    "Buenos Aires": {
+      "filas": 360,
+      "cifras": 304,
+      "ausencias": 56,
+      "unidades": 120,
+      "fuentes": [
+        "canton1968_II_BA1914"
+      ]
+    },
+    "Capital Federal": {
+      "filas": 84,
+      "cifras": 80,
+      "ausencias": 4,
+      "unidades": 21,
+      "fuentes": [
+        "canton1968_II_pdf20"
+      ]
+    },
+    "Entre Ríos": {
+      "filas": 42,
+      "cifras": 39,
+      "ausencias": 3,
+      "unidades": 14,
+      "fuentes": [
+        "canton1968_II_pdf26"
+      ]
+    },
+    "Córdoba": {
+      "filas": 200,
+      "cifras": 166,
+      "ausencias": 34,
+      "unidades": 25,
+      "fuentes": [
+        "cordoba1914_detalle_mas_complementaria"
+      ]
+    },
+    "Corrientes": {
+      "filas": 288,
+      "cifras": 287,
+      "ausencias": 1,
+      "unidades": 24,
+      "fuentes": [
+        "hcdn21d1914_corrientes"
+      ]
+    },
+    "La Rioja": {
+      "filas": 69,
+      "cifras": 69,
+      "ausencias": 0,
+      "unidades": 18,
+      "fuentes": [
+        "HCDN_13-P-1914"
+      ]
+    },
+    "Mendoza": {
+      "filas": 149,
+      "cifras": 149,
+      "ausencias": 0,
+      "unidades": 16,
+      "fuentes": [
+        "hcdn_29p1914_wayback"
+      ]
+    }
+  },
+  "filas": 1192,
+  "cifras": 1094,
+  "ausencias": 98,
+  "registros_fuentes": 176,
+  "regla": "Córdoba: derivado principal más complementaria, excluye adiciones sin departamento; principal y variante conservadas aparte. La Rioja: mesas declaradas válidas por Comisión, no certificación de resolución de Cámara. Jujuy sigue investigado; sus deducciones parciales quedan aparte. Tucumán: debate y mesas impugnadas aparte. No sumar candidaturas como electores.",
+  "parciales": {
+    "filas": 196,
+    "cifras": 194,
+    "ausencias": 2,
+    "santa_fe": 182,
+    "regla": "Santa Fe: siete resúmenes de prensa, tres totales impresos del 1/4 (Castellanos, Belgrano, Iriondo) y dos sumas territoriales incompletas (Capital, General López); niveles y grupos conservados. Jujuy/Tucumán: testimonios y estados distintos, no sumables con selección principal."
+  }
+}

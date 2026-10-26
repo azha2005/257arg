@@ -1,0 +1,4968 @@
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 1.01,
+  "2e-05": 0.961,
+  "2e-06": 0.9279,
+  "2e-07": 0.9126,
+  "0": 0.9126
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.2177215031871687,
+ "votos_distintos_vs_calvo": 1272542,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11487917,
+  "La Libertad Avanza": 14459510,
+  "Blanco y nulo": 870149,
+  "No votó": 8292800
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  98.0                 0.1            0.3      1.6
+La Libertad Avanza                    0.4                98.8            0.2      0.6
+Juntos por el Cambio                  6.7                80.6            5.5      7.2
+Hacemos                              21.9                57.1            5.3     15.7
+FIT-U                                59.4                16.5           15.9      8.2
+Blanco y nulo                        11.0                21.0           13.7     54.3
+No votó                               7.8                 2.7            2.0     87.5
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9515000               13000          29000   154000
+La Libertad Avanza                  34000             7837000          18000    46000
+Juntos por el Cambio               424000             5086000         345000   454000
+Hacemos                            392000             1024000          96000   281000
+FIT-U                              425000              118000         114000    58000
+Blanco y nulo                       89000              171000         112000   443000
+No votó                            608000              210000         157000  6857000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6049,
+  "2e-05": 0.543,
+  "2e-06": 0.5078,
+  "2e-07": 0.4955,
+  "0": 0.4959
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0338218881312187,
+ "votos_distintos_vs_calvo": 1432152,
+ "votos_total": 35110375,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11485956,
+  "La Libertad Avanza": 14452612,
+  "Blanco y nulo": 869726,
+  "No votó": 8302081
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  96.9                 0.4            0.4      2.2
+La Libertad Avanza                    0.5                98.4            0.2      0.8
+Juntos por el Cambio                  6.8                81.6            5.5      6.1
+Hacemos                              32.1                54.6            4.0      9.3
+FIT-U                                59.3                 8.9           16.2     15.6
+Blanco y nulo                        14.3                23.7           12.0     50.0
+No votó                               6.3                 2.7            2.3     88.7
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9408000               42000          41000   216000
+La Libertad Avanza                  41000             7810000          18000    66000
+Juntos por el Cambio               429000             5150000         347000   385000
+Hacemos                            575000              980000          72000   167000
+FIT-U                              424000               64000         116000   112000
+Blanco y nulo                      116000              193000          98000   408000
+No votó                            492000              214000         177000  6949000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.616,
+  "2e-05": 0.5424,
+  "2e-06": 0.4998,
+  "2e-07": 0.4898,
+  "0": 0.4868
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0006286613854842,
+ "votos_distintos_vs_calvo": 1367465,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486291,
+  "La Libertad Avanza": 14453938,
+  "Blanco y nulo": 869831,
+  "No votó": 8300316
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.8                 0.2            0.3      1.7
+La Libertad Avanza                    0.7                98.0            0.3      1.0
+Juntos por el Cambio                  6.4                82.0            5.3      6.2
+Hacemos                              24.4                57.8            5.2     12.6
+FIT-U                                56.0                10.3           18.1     15.6
+Blanco y nulo                        13.0                21.8           12.5     52.6
+No votó                               7.5                 2.5            1.9     88.1
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9494000               20000          34000   161000
+La Libertad Avanza                  57000             7776000          23000    80000
+Juntos por el Cambio               407000             5175000         338000   391000
+Hacemos                            438000             1036000          93000   225000
+FIT-U                              401000               74000         130000   112000
+Blanco y nulo                      106000              178000         102000   428000
+No votó                            584000              195000         150000  6902000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6247,
+  "2e-05": 0.5585,
+  "2e-06": 0.5237,
+  "2e-07": 0.5121,
+  "0": 0.5152
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0288967685387171,
+ "votos_distintos_vs_calvo": 1693342,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11485966,
+  "La Libertad Avanza": 14453812,
+  "Blanco y nulo": 869545,
+  "No votó": 8301054
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.7                 0.3            0.4      1.7
+La Libertad Avanza                    0.3                98.6            0.2      0.8
+Juntos por el Cambio                  6.4                82.4            5.1      6.0
+Hacemos                              32.1                55.3            3.5      9.1
+FIT-U                                60.8                 8.9           15.8     14.5
+Blanco y nulo                        13.1                23.1           13.3     50.4
+No votó                               5.8                 2.0            2.6     89.5
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9482000               28000          36000   162000
+La Libertad Avanza                  27000             7823000          19000    66000
+Juntos por el Cambio               403000             5203000         324000   381000
+Hacemos                            575000              992000          63000   163000
+FIT-U                              435000               63000         113000   104000
+Blanco y nulo                      107000              188000         109000   411000
+No votó                            457000              156000         205000  7013000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.621,
+  "2e-05": 0.5398,
+  "2e-06": 0.4948,
+  "2e-07": 0.4806,
+  "0": 0.4816
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.02873207200915,
+ "votos_distintos_vs_calvo": 1342464,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486037,
+  "La Libertad Avanza": 14453164,
+  "Blanco y nulo": 869480,
+  "No votó": 8301694
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.4                 0.3            0.4      1.9
+La Libertad Avanza                    0.3                98.3            0.3      1.0
+Juntos por el Cambio                  6.6                82.6            5.3      5.5
+Hacemos                              30.9                55.0            4.6      9.5
+FIT-U                                60.8                 8.8           16.2     14.2
+Blanco y nulo                        11.0                24.2           11.7     53.1
+No votó                               6.4                 2.1            2.3     89.2
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9460000               28000          39000   182000
+La Libertad Avanza                  27000             7802000          25000    81000
+Juntos por el Cambio               418000             5211000         333000   348000
+Hacemos                            553000              986000          82000   171000
+FIT-U                              435000               63000         116000   101000
+Blanco y nulo                       90000              197000          95000   432000
+No votó                            503000              166000         178000  6986000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6166,
+  "2e-05": 0.5491,
+  "2e-06": 0.5085,
+  "2e-07": 0.4947,
+  "0": 0.4963
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.028995616053031,
+ "votos_distintos_vs_calvo": 1623855,
+ "votos_total": 35110375,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486153,
+  "La Libertad Avanza": 14453636,
+  "Blanco y nulo": 869596,
+  "No votó": 8300992
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.4                 0.3            0.4      1.9
+La Libertad Avanza                    0.4                98.2            0.3      1.1
+Juntos por el Cambio                  5.6                82.8            5.5      6.1
+Hacemos                              31.3                55.2            4.3      9.2
+FIT-U                                61.4                 8.1           17.1     13.4
+Blanco y nulo                        12.8                20.8           12.0     54.4
+No votó                               6.9                 2.5            2.1     88.5
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9460000               26000          38000   187000
+La Libertad Avanza                  28000             7795000          23000    89000
+Juntos por el Cambio               351000             5223000         350000   386000
+Hacemos                            561000              989000          77000   166000
+FIT-U                              439000               58000         123000    96000
+Blanco y nulo                      104000              170000          98000   443000
+No votó                            543000              194000         161000  6934000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6138,
+  "2e-05": 0.5471,
+  "2e-06": 0.5207,
+  "2e-07": 0.512,
+  "0": 0.5176
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 0.9876691274166636,
+ "votos_distintos_vs_calvo": 1303545,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486014,
+  "La Libertad Avanza": 14453667,
+  "Blanco y nulo": 869586,
+  "No votó": 8301109
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.2                 0.4            0.5      2.0
+La Libertad Avanza                    0.3                98.5            0.3      0.9
+Juntos por el Cambio                  7.1                81.8            5.3      5.8
+Hacemos                              26.3                58.1            4.9     10.6
+FIT-U                                60.8                 7.6           17.1     14.5
+Blanco y nulo                        17.5                19.9           11.4     51.1
+No votó                               6.8                 2.3            2.1     88.8
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9435000               38000          44000   192000
+La Libertad Avanza                  25000             7817000          20000    73000
+Juntos por el Cambio               446000             5162000         335000   369000
+Hacemos                            472000             1042000          89000   190000
+FIT-U                              435000               54000         122000   104000
+Blanco y nulo                      143000              162000          93000   417000
+No votó                            529000              178000         167000  6957000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.613,
+  "2e-05": 0.5444,
+  "2e-06": 0.5013,
+  "2e-07": 0.4856,
+  "0": 0.4871
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0195884033460265,
+ "votos_distintos_vs_calvo": 1626289,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486103,
+  "La Libertad Avanza": 14453551,
+  "Blanco y nulo": 869402,
+  "No votó": 8301320
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.5                 0.3            0.4      1.8
+La Libertad Avanza                    0.5                98.0            0.3      1.2
+Juntos por el Cambio                  5.7                83.3            4.9      6.1
+Hacemos                              27.8                56.4            5.0     10.8
+FIT-U                                64.2                 8.9           14.4     12.5
+Blanco y nulo                        14.2                19.4           13.2     53.1
+No votó                               7.1                 2.0            2.4     88.5
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9462000               31000          40000   176000
+La Libertad Avanza                  38000             7777000          28000    93000
+Juntos por el Cambio               360000             5256000         310000   383000
+Hacemos                            498000             1012000          89000   194000
+FIT-U                              459000               64000         103000    89000
+Blanco y nulo                      116000              158000         108000   433000
+No votó                            553000              155000         191000  6933000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6142,
+  "2e-05": 0.5504,
+  "2e-06": 0.5173,
+  "2e-07": 0.5082,
+  "0": 0.5142
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0110706779617409,
+ "votos_distintos_vs_calvo": 1671366,
+ "votos_total": 35110375,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486047,
+  "La Libertad Avanza": 14453442,
+  "Blanco y nulo": 869636,
+  "No votó": 8301250
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  98.0                 0.3            0.3      1.4
+La Libertad Avanza                    0.2                98.7            0.2      0.9
+Juntos por el Cambio                  6.1                82.1            5.5      6.3
+Hacemos                              29.6                55.6            4.4     10.3
+FIT-U                                57.6                 9.0           18.5     14.9
+Blanco y nulo                        14.6                22.5           11.2     51.7
+No votó                               6.5                 2.2            2.2     89.1
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9513000               27000          29000   141000
+La Libertad Avanza                  17000             7830000          18000    70000
+Juntos por el Cambio               382000             5179000         350000   399000
+Hacemos                            531000              997000          79000   186000
+FIT-U                              412000               64000         133000   106000
+Blanco y nulo                      119000              183000          91000   421000
+No votó                            510000              174000         170000  6978000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6246,
+  "2e-05": 0.5508,
+  "2e-06": 0.5106,
+  "2e-07": 0.5043,
+  "0": 0.5052
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0463674677354116,
+ "votos_distintos_vs_calvo": 1561246,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486058,
+  "La Libertad Avanza": 14453071,
+  "Blanco y nulo": 869853,
+  "No votó": 8301393
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.3                 0.4            0.4      1.9
+La Libertad Avanza                    0.5                98.0            0.3      1.2
+Juntos por el Cambio                  6.2                81.9            5.2      6.8
+Hacemos                              32.2                53.3            4.6      9.8
+FIT-U                                58.2                 8.6           18.2     15.1
+Blanco y nulo                        13.6                22.3           13.6     50.5
+No votó                               6.4                 3.5            2.1     88.1
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9447000               39000          36000   188000
+La Libertad Avanza                  39000             7778000          24000    94000
+Juntos por el Cambio               392000             5166000         325000   427000
+Hacemos                            578000              956000          83000   176000
+FIT-U                              416000               61000         130000   108000
+Blanco y nulo                      110000              182000         111000   411000
+No votó                            503000              270000         161000  6898000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6002,
+  "2e-05": 0.5246,
+  "2e-06": 0.4827,
+  "2e-07": 0.4697,
+  "0": 0.4784
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0099648098022649,
+ "votos_distintos_vs_calvo": 1636496,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11485611,
+  "La Libertad Avanza": 14453680,
+  "Blanco y nulo": 869406,
+  "No votó": 8301678
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.7                 0.2            0.3      1.7
+La Libertad Avanza                    0.5                97.4            0.5      1.6
+Juntos por el Cambio                  5.6                83.8            5.2      5.3
+Hacemos                              29.2                58.1            4.4      8.3
+FIT-U                                61.1                10.8           14.5     13.6
+Blanco y nulo                        14.8                19.0           14.4     51.9
+No votó                               6.6                 1.8            2.1     89.4
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9491000               19000          32000   168000
+La Libertad Avanza                  43000             7728000          39000   124000
+Juntos por el Cambio               351000             5291000         331000   337000
+Hacemos                            524000             1041000          78000   149000
+FIT-U                              437000               78000         104000    97000
+Blanco y nulo                      120000              154000         117000   423000
+No votó                            519000              142000         168000  7004000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6201,
+  "2e-05": 0.5449,
+  "2e-06": 0.5098,
+  "2e-07": 0.4999,
+  "0": 0.5019
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0683008746931435,
+ "votos_distintos_vs_calvo": 1634431,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486024,
+  "La Libertad Avanza": 14453439,
+  "Blanco y nulo": 869692,
+  "No votó": 8301222
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  96.8                 0.3            0.5      2.5
+La Libertad Avanza                    0.4                98.4            0.3      1.0
+Juntos por el Cambio                  6.3                82.8            5.0      5.9
+Hacemos                              32.5                52.1            4.8     10.6
+FIT-U                                59.6                11.0           15.7     13.8
+Blanco y nulo                        14.6                24.0           11.8     49.6
+No votó                               6.8                 2.4            2.4     88.4
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9398000               24000          48000   238000
+La Libertad Avanza                  28000             7809000          23000    76000
+Juntos por el Cambio               397000             5225000         317000   372000
+Hacemos                            583000              934000          86000   190000
+FIT-U                              426000               79000         112000    99000
+Blanco y nulo                      119000              196000          96000   404000
+No votó                            535000              186000         187000  6923000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.5952,
+  "2e-05": 0.5237,
+  "2e-06": 0.4862,
+  "2e-07": 0.4751,
+  "0": 0.4766
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0222922810472814,
+ "votos_distintos_vs_calvo": 1645558,
+ "votos_total": 35110375,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486000,
+  "La Libertad Avanza": 14453181,
+  "Blanco y nulo": 869423,
+  "No votó": 8301772
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  98.1                 0.1            0.3      1.5
+La Libertad Avanza                    0.3                98.1            0.3      1.2
+Juntos por el Cambio                  6.0                82.8            4.9      6.3
+Hacemos                              29.9                54.9            4.5     10.7
+FIT-U                                61.8                10.4           14.1     13.7
+Blanco y nulo                        14.4                21.1           14.6     49.8
+No votó                               5.9                 2.5            2.6     89.0
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9521000               14000          27000   145000
+La Libertad Avanza                  27000             7786000          28000    94000
+Juntos por el Cambio               379000             5225000         311000   398000
+Hacemos                            535000              984000          82000   192000
+FIT-U                              442000               74000         101000    98000
+Blanco y nulo                      117000              172000         119000   406000
+No votó                            464000              197000         203000  6968000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6228,
+  "2e-05": 0.5481,
+  "2e-06": 0.5016,
+  "2e-07": 0.4825,
+  "0": 0.4845
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0147298426271951,
+ "votos_distintos_vs_calvo": 1479069,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486176,
+  "La Libertad Avanza": 14454140,
+  "Blanco y nulo": 869517,
+  "No votó": 8300543
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.7                 0.2            0.4      1.7
+La Libertad Avanza                    0.3                98.2            0.3      1.2
+Juntos por el Cambio                  5.8                82.1            5.0      7.0
+Hacemos                              27.4                56.7            5.6     10.3
+FIT-U                                66.5                 9.0           11.8     12.6
+Blanco y nulo                        13.5                22.3           11.7     52.5
+No votó                               6.8                 2.6            2.6     88.1
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9489000               19000          40000   162000
+La Libertad Avanza                  22000             7790000          27000    96000
+Juntos por el Cambio               369000             5181000         318000   443000
+Hacemos                            491000             1017000         100000   185000
+FIT-U                              476000               64000          85000    90000
+Blanco y nulo                      110000              182000          95000   428000
+No votó                            529000              202000         205000  6897000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6094,
+  "2e-05": 0.5319,
+  "2e-06": 0.4927,
+  "2e-07": 0.4823,
+  "0": 0.4876
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0265181966882442,
+ "votos_distintos_vs_calvo": 1776542,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486046,
+  "La Libertad Avanza": 14453563,
+  "Blanco y nulo": 869510,
+  "No votó": 8301257
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  98.0                 0.2            0.3      1.5
+La Libertad Avanza                    0.3                98.4            0.3      1.0
+Juntos por el Cambio                  6.3                82.8            5.4      5.6
+Hacemos                              29.6                54.1            5.4     10.9
+FIT-U                                61.4                 9.4           15.4     13.8
+Blanco y nulo                        13.8                21.8           13.4     51.0
+No votó                               6.0                 2.4            2.0     89.6
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9513000               18000          33000   146000
+La Libertad Avanza                  27000             7809000          22000    78000
+Juntos por el Cambio               396000             5225000         339000   351000
+Hacemos                            531000              970000          97000   196000
+FIT-U                              440000               67000         110000    99000
+Blanco y nulo                      112000              177000         110000   416000
+No votó                            468000              187000         160000  7017000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6167,
+  "2e-05": 0.5432,
+  "2e-06": 0.5111,
+  "2e-07": 0.5035,
+  "0": 0.5094
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 0.999756796412086,
+ "votos_distintos_vs_calvo": 1524213,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486014,
+  "La Libertad Avanza": 14453511,
+  "Blanco y nulo": 869545,
+  "No votó": 8301306
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.6                 0.2            0.4      1.8
+La Libertad Avanza                    0.3                98.2            0.3      1.1
+Juntos por el Cambio                  6.1                82.0            5.4      6.5
+Hacemos                              29.7                58.7            3.6      8.0
+FIT-U                                64.2                 8.3           14.7     12.7
+Blanco y nulo                        14.1                21.7           15.2     49.0
+No votó                               6.3                 2.3            2.2     89.3
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9477000               20000          37000   176000
+La Libertad Avanza                  27000             7794000          26000    88000
+Juntos por el Cambio               386000             5172000         340000   411000
+Hacemos                            532000             1053000          65000   143000
+FIT-U                              460000               60000         105000    91000
+Blanco y nulo                      115000              177000         124000   399000
+No votó                            490000              177000         172000  6992000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6145,
+  "2e-05": 0.5448,
+  "2e-06": 0.5138,
+  "2e-07": 0.5033,
+  "0": 0.5037
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0618962325389685,
+ "votos_distintos_vs_calvo": 1641263,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11485957,
+  "La Libertad Avanza": 14453975,
+  "Blanco y nulo": 869408,
+  "No votó": 8301037
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.0                 0.4            0.4      2.2
+La Libertad Avanza                    0.3                98.3            0.3      1.1
+Juntos por el Cambio                  5.5                83.4            5.1      5.9
+Hacemos                              32.0                52.4            5.5     10.1
+FIT-U                                69.2                 7.5           11.9     11.4
+Blanco y nulo                        12.8                18.9           14.0     54.4
+No votó                               6.7                 2.6            2.3     88.4
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9417000               35000          43000   215000
+La Libertad Avanza                  23000             7801000          25000    86000
+Juntos por el Cambio               349000             5265000         324000   373000
+Hacemos                            573000              940000          98000   182000
+FIT-U                              495000               54000          85000    82000
+Blanco y nulo                      104000              154000         114000   443000
+No votó                            525000              206000         180000  6921000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.5985,
+  "2e-05": 0.5342,
+  "2e-06": 0.498,
+  "2e-07": 0.4856,
+  "0": 0.4838
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.010235459093572,
+ "votos_distintos_vs_calvo": 1367525,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486023,
+  "La Libertad Avanza": 14453076,
+  "Blanco y nulo": 869425,
+  "No votó": 8301851
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.5                 0.3            0.4      1.8
+La Libertad Avanza                    0.5                98.2            0.2      1.0
+Juntos por el Cambio                  7.1                82.0            5.3      5.6
+Hacemos                              31.1                56.5            3.6      8.8
+FIT-U                                65.2                 7.6           13.8     13.4
+Blanco y nulo                        14.7                19.4           14.8     51.0
+No votó                               5.0                 2.9            2.5     89.7
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9465000               33000          38000   172000
+La Libertad Avanza                  43000             7793000          19000    80000
+Juntos por el Cambio               446000             5178000         332000   356000
+Hacemos                            557000             1013000          64000   159000
+FIT-U                              466000               54000          99000    96000
+Blanco y nulo                      120000              158000         121000   415000
+No votó                            389000              224000         196000  7023000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6189,
+  "2e-05": 0.5496,
+  "2e-06": 0.516,
+  "2e-07": 0.5028,
+  "0": 0.5041
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 0.9938130482550043,
+ "votos_distintos_vs_calvo": 1318030,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486070,
+  "La Libertad Avanza": 14453631,
+  "Blanco y nulo": 869614,
+  "No votó": 8301061
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  97.8                 0.3            0.3      1.6
+La Libertad Avanza                    0.3                98.3            0.3      1.1
+Juntos por el Cambio                  6.6                81.2            5.5      6.7
+Hacemos                              27.3                58.0            5.2      9.5
+FIT-U                                58.5                 9.2           16.8     15.5
+Blanco y nulo                        16.0                20.5           10.5     53.0
+No votó                               6.5                 2.9            2.2     88.4
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9495000               29000          31000   153000
+La Libertad Avanza                  26000             7799000          24000    86000
+Juntos por el Cambio               416000             5124000         348000   423000
+Hacemos                            489000             1041000          93000   171000
+FIT-U                              419000               66000         120000   111000
+Blanco y nulo                      130000              167000          85000   432000
+No votó                            511000              227000         169000  6925000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.605,
+  "2e-05": 0.5339,
+  "2e-06": 0.4997,
+  "2e-07": 0.4852,
+  "0": 0.486
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0093880482506843,
+ "votos_distintos_vs_calvo": 1646444,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486142,
+  "La Libertad Avanza": 14453077,
+  "Blanco y nulo": 869502,
+  "No votó": 8301654
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  96.4                 0.3            0.5      2.9
+La Libertad Avanza                    0.4                98.5            0.2      0.8
+Juntos por el Cambio                  6.2                81.9            5.3      6.6
+Hacemos                              28.7                57.3            4.5      9.5
+FIT-U                                65.9                 9.3           13.4     11.4
+Blanco y nulo                        15.4                19.4           12.8     52.4
+No votó                               7.6                 2.4            2.4     87.7
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9356000               27000          47000   278000
+La Libertad Avanza                  34000             7818000          18000    66000
+Juntos por el Cambio               391000             5170000         336000   414000
+Hacemos                            515000             1028000          80000   170000
+FIT-U                              472000               67000          96000    81000
+Blanco y nulo                      126000              158000         104000   426000
+No votó                            594000              185000         188000  6866000
+{
+ "circuitos_origen": 5752,
+ "circuitos_destino": 5752,
+ "por_seccion": [],
+ "comunes": 5752,
+ "usados": 5510,
+ "crecimiento_padron_mediano": 1.0,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.998,
+  "03": 0.983,
+  "04": 0.999,
+  "05": 0.999,
+  "06": 0.985,
+  "07": 0.99,
+  "08": 0.998,
+  "09": 0.986,
+  "10": 0.984,
+  "11": 0.99,
+  "12": 0.999,
+  "13": 0.998,
+  "14": 0.992,
+  "15": 1.0,
+  "16": 1.0,
+  "17": 0.985,
+  "18": 0.995,
+  "19": 0.994,
+  "20": 0.998,
+  "21": 1.0,
+  "22": 0.996,
+  "23": 0.998,
+  "24": 0.984
+ },
+ "electores_origen_usados": 34772535,
+ "electores_origen_total": 34893901,
+ "electores_destino_usados": 35110376,
+ "electores_destino_total": 35190502,
+ "unidades": 520,
+ "validacion_cruzada_pp": {
+  "0.0002": 0.6179,
+  "2e-05": 0.5443,
+  "2e-06": 0.5044,
+  "2e-07": 0.493,
+  "0": 0.4968
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 1.0271251225508689,
+ "votos_distintos_vs_calvo": 1711071,
+ "votos_total": 35110376,
+ "marginal_origen": {
+  "Unión por la Patria": 9604534,
+  "La Libertad Avanza": 7861937,
+  "Juntos por el Cambio": 6252481,
+  "Hacemos": 1781289,
+  "FIT-U": 708069,
+  "Blanco y nulo": 805971,
+  "No votó": 7758254
+ },
+ "marginal_destino": {
+  "Unión por la Patria": 11485432,
+  "La Libertad Avanza": 14449980,
+  "Blanco y nulo": 869220,
+  "No votó": 8305744
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Unión por la Patria": 772440,
+   "La Libertad Avanza": 1034157,
+   "Blanco y nulo": 93221,
+   "No votó": 617889
+  },
+  "02": {
+   "Unión por la Patria": 4910769,
+   "La Libertad Avanza": 4768251,
+   "Blanco y nulo": 320996,
+   "No votó": 3029261
+  },
+  "03": {
+   "Unión por la Patria": 108043,
+   "La Libertad Avanza": 122221,
+   "Blanco y nulo": 6118,
+   "No votó": 93470
+  },
+  "04": {
+   "Unión por la Patria": 573247,
+   "La Libertad Avanza": 1636510,
+   "Blanco y nulo": 84926,
+   "No votó": 761668
+  },
+  "05": {
+   "Unión por la Patria": 321420,
+   "La Libertad Avanza": 365822,
+   "Blanco y nulo": 16442,
+   "No votó": 223436
+  },
+  "06": {
+   "Unión por la Patria": 351115,
+   "La Libertad Avanza": 352873,
+   "Blanco y nulo": 13470,
+   "No votó": 261904
+  },
+  "07": {
+   "Unión por la Patria": 135252,
+   "La Libertad Avanza": 195390,
+   "Blanco y nulo": 15519,
+   "No votó": 121491
+  },
+  "08": {
+   "Unión por la Patria": 327558,
+   "La Libertad Avanza": 523131,
+   "Blanco y nulo": 28894,
+   "No votó": 252520
+  },
+  "09": {
+   "Unión por la Patria": 197391,
+   "La Libertad Avanza": 152096,
+   "Blanco y nulo": 6361,
+   "No votó": 117144
+  },
+  "10": {
+   "Unión por la Patria": 180469,
+   "La Libertad Avanza": 252807,
+   "Blanco y nulo": 12137,
+   "No votó": 128602
+  },
+  "11": {
+   "Unión por la Patria": 92892,
+   "La Libertad Avanza": 125304,
+   "Blanco y nulo": 7633,
+   "No votó": 69965
+  },
+  "12": {
+   "Unión por la Patria": 107880,
+   "La Libertad Avanza": 125247,
+   "Blanco y nulo": 4962,
+   "No votó": 63766
+  },
+  "13": {
+   "Unión por la Patria": 315106,
+   "La Libertad Avanza": 778007,
+   "Blanco y nulo": 41614,
+   "No votó": 348981
+  },
+  "14": {
+   "Unión por la Patria": 306647,
+   "La Libertad Avanza": 403126,
+   "Blanco y nulo": 15290,
+   "No votó": 256047
+  },
+  "15": {
+   "Unión por la Patria": 166022,
+   "La Libertad Avanza": 253472,
+   "Blanco y nulo": 18989,
+   "No votó": 113351
+  },
+  "16": {
+   "Unión por la Patria": 198797,
+   "La Libertad Avanza": 235656,
+   "Blanco y nulo": 17761,
+   "No votó": 140994
+  },
+  "17": {
+   "Unión por la Patria": 326963,
+   "La Libertad Avanza": 452759,
+   "Blanco y nulo": 18570,
+   "No votó": 260683
+  },
+  "18": {
+   "Unión por la Patria": 176580,
+   "La Libertad Avanza": 272399,
+   "Blanco y nulo": 13409,
+   "No votó": 134405
+  },
+  "19": {
+   "Unión por la Patria": 99445,
+   "La Libertad Avanza": 212280,
+   "Blanco y nulo": 10428,
+   "No votó": 93185
+  },
+  "20": {
+   "Unión por la Patria": 75242,
+   "La Libertad Avanza": 104178,
+   "Blanco y nulo": 6370,
+   "No votó": 78936
+  },
+  "21": {
+   "Unión por la Patria": 756255,
+   "La Libertad Avanza": 1278127,
+   "Blanco y nulo": 80150,
+   "No votó": 705109
+  },
+  "22": {
+   "Unión por la Patria": 427654,
+   "La Libertad Avanza": 198029,
+   "Blanco y nulo": 9289,
+   "No votó": 172153
+  },
+  "23": {
+   "Unión por la Patria": 510816,
+   "La Libertad Avanza": 554000,
+   "Blanco y nulo": 22121,
+   "No votó": 223577
+  },
+  "24": {
+   "Unión por la Patria": 47429,
+   "La Libertad Avanza": 54138,
+   "Blanco y nulo": 4550,
+   "No votó": 37207
+  }
+ },
+ "marginal_destino_estimada": {
+  "Unión por la Patria": 11486253,
+  "La Libertad Avanza": 14453193,
+  "Blanco y nulo": 869716,
+  "No votó": 8301213
+ }
+}
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria                  96.7                 0.3            0.5      2.5
+La Libertad Avanza                    0.3                98.3            0.3      1.0
+Juntos por el Cambio                  6.8                81.8            5.5      5.9
+Hacemos                              30.8                55.6            4.1      9.4
+FIT-U                                62.7                 9.4           14.4     13.4
+Blanco y nulo                        13.0                24.8           11.1     51.1
+No votó                               6.9                 2.4            2.3     88.4
+                      Unión por la Patria  La Libertad Avanza  Blanco y nulo  No votó
+Unión por la Patria               9386000               32000          52000   240000
+La Libertad Avanza                  26000             7802000          24000    83000
+Juntos por el Cambio               426000             5162000         347000   375000
+Hacemos                            552000              998000          74000   169000
+FIT-U                              449000               67000         103000    96000
+Blanco y nulo                      106000              202000          91000   416000
+No votó                            541000              190000         178000  6923000
+# Circuitos contra departamentos: 1.ª vuelta 2023 → balotaje 2023
+
+Distancia por fila = ½ Σ |diferencia| en puntos: la parte del voto de esa fuerza que cambia de destino de una versión a otra.
+Azar = promedio de 20 réplicas con grupos al azar del mismo tamaño que los departamentos.
+
+Distancia media ponderada: departamento vs. circuito 2.4; azar vs. circuito 2.0; departamento vs. azar 1.6 (variante Calvo: departamento vs. circuito 4.1).
+
+| | peso_% | dpto_vs_circ | azar_vs_circ | dpto_vs_azar | calvo_dpto_vs_circ | azar_dispersion |
+|---|---|---|---|---|---|---|
+| Unión por la Patria | 27.7 | 0.4 | 1 | 0.6 | 1.1 | 0.4 |
+| La Libertad Avanza | 22.6 | 0.6 | 1.1 | 0.5 | 1.4 | 0.2 |
+| Juntos por el Cambio | 18 | 2.5 | 1.4 | 1.7 | 7.1 | 0.7 |
+| Hacemos | 5.1 | 9.4 | 4.1 | 7.9 | 7.4 | 2.3 |
+| FIT-U | 2 | 6.9 | 7 | 8 | 29.6 | 2.9 |
+| Blanco y nulo | 2.3 | 9.5 | 12.2 | 3.7 | 9.2 | 2.5 |
+| No votó | 22.3 | 3.8 | 2.6 | 1.5 | 4.7 | 0.7 |
+
+## Circuito (principal)
+
+| | Unión por la Patria | La Libertad Avanza | Blanco y nulo | No votó |
+|---|---|---|---|---|
+| Unión por la Patria | 98.4 | 0.1 | 0.3 | 1.2 |
+| La Libertad Avanza | 0.2 | 99.4 | 0.1 | 0.3 |
+| Juntos por el Cambio | 7 | 82.4 | 5.9 | 4.7 |
+| Hacemos | 28.2 | 56.1 | 8.4 | 7.3 |
+| FIT-U | 61.9 | 11 | 20.4 | 6.8 |
+| Blanco y nulo | 10.5 | 14.9 | 10.8 | 63.9 |
+| No votó | 5.6 | 2.1 | 1 | 91.4 |
+
+## Departamento (principal)
+
+| | Unión por la Patria | La Libertad Avanza | Blanco y nulo | No votó |
+|---|---|---|---|---|
+| Unión por la Patria | 98 | 0.1 | 0.3 | 1.6 |
+| La Libertad Avanza | 0.4 | 98.8 | 0.2 | 0.6 |
+| Juntos por el Cambio | 6.7 | 80.6 | 5.5 | 7.2 |
+| Hacemos | 21.9 | 57.1 | 5.3 | 15.7 |
+| FIT-U | 59.4 | 16.5 | 15.9 | 8.2 |
+| Blanco y nulo | 11 | 21 | 13.7 | 54.3 |
+| No votó | 7.8 | 2.7 | 2 | 87.5 |
+
+## Azar (promedio)
+
+| | Unión por la Patria | La Libertad Avanza | Blanco y nulo | No votó |
+|---|---|---|---|---|
+| Unión por la Patria | 97.4 | 0.3 | 0.4 | 1.9 |
+| La Libertad Avanza | 0.4 | 98.3 | 0.3 | 1.1 |
+| Juntos por el Cambio | 6.3 | 82.4 | 5.3 | 6.1 |
+| Hacemos | 29.7 | 55.8 | 4.6 | 9.9 |
+| FIT-U | 61.8 | 9 | 15.4 | 13.8 |
+| Blanco y nulo | 14.1 | 21.5 | 12.8 | 51.6 |
+| No votó | 6.5 | 2.4 | 2.3 | 88.7 |
+
+Celdas del departamento fuera del intervalo 5-95 del bootstrap por circuito: 20 de 28.
+
+- La Libertad Avanza → Unión por la Patria: circuito 0.2, departamento 0.4
+- La Libertad Avanza → La Libertad Avanza: circuito 99.4, departamento 98.8
+- La Libertad Avanza → No votó: circuito 0.3, departamento 0.6
+- Juntos por el Cambio → La Libertad Avanza: circuito 82.4, departamento 80.6
+- Juntos por el Cambio → Blanco y nulo: circuito 5.9, departamento 5.5
+- Juntos por el Cambio → No votó: circuito 4.7, departamento 7.2
+- Hacemos → Unión por la Patria: circuito 28.2, departamento 21.9
+- Hacemos → Blanco y nulo: circuito 8.4, departamento 5.3
+- Hacemos → No votó: circuito 7.3, departamento 15.7
+- FIT-U → Unión por la Patria: circuito 61.9, departamento 59.4
+- FIT-U → La Libertad Avanza: circuito 11.0, departamento 16.5
+- FIT-U → Blanco y nulo: circuito 20.4, departamento 15.9
+- FIT-U → No votó: circuito 6.8, departamento 8.2
+- Blanco y nulo → La Libertad Avanza: circuito 14.9, departamento 21.0
+- Blanco y nulo → Blanco y nulo: circuito 10.8, departamento 13.7
+- Blanco y nulo → No votó: circuito 63.9, departamento 54.3
+- No votó → Unión por la Patria: circuito 5.6, departamento 7.8
+- No votó → La Libertad Avanza: circuito 2.1, departamento 2.7
+- No votó → Blanco y nulo: circuito 1.0, departamento 2.0
+- No votó → No votó: circuito 91.4, departamento 87.5

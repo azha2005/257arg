@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cuyo 1928, dos máquinas</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f5f2; --surface-1:#fcfcfb; --border:#e3e2dd; --grid:#ebeae6;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7974;
+  --c-mz:#2a78d6; --c-sj:#eb6834; --flag:#d03b3b; --ok:#0a7d0a;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121211; --surface-1:#1a1a19; --border:#2f2f2c; --grid:#2a2a28;
+    --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+    --c-mz:#3987e5; --c-sj:#d95926; --ok:#0ca30c;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211; --surface-1:#1a1a19; --border:#2f2f2c; --grid:#2a2a28;
+  --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+  --c-mz:#3987e5; --c-sj:#d95926; --ok:#0ca30c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text-primary);font:16px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:920px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 8px;letter-spacing:-.01em}
+h2{font-size:1.35rem;margin:48px 0 6px;padding-top:16px;border-top:1px solid var(--border)}
+h3{font-size:1.05rem;margin:22px 0 6px}
+.kicker{font:600 .78rem/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px}
+.lede{font-size:1.12rem;color:var(--text-secondary);margin:0 0 20px}
+p{margin:10px 0}
+.card{background:var(--surface-1);border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0}
+.cmp{display:grid;grid-template-columns:1.4fr 1fr 1fr;font:.9rem/1.35 system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.cmp div{padding:8px 10px;border-bottom:1px solid var(--grid)}
+.cmp .h{font-weight:600;color:var(--text-secondary)}
+.cmp .r{text-align:right}
+.cmp .bad{color:var(--flag);font-weight:600}
+table{border-collapse:collapse;width:100%;font:.86rem/1.35 system-ui,sans-serif;font-variant-numeric:tabular-nums}
+th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--text-secondary);font-weight:600}
+.tablewrap{overflow-x:auto}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font:.82rem/1 system-ui,sans-serif;color:var(--text-secondary);margin:4px 0 10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:system-ui,sans-serif;fill:var(--text-secondary)}
+.note{font:.82rem/1.45 system-ui,sans-serif;color:var(--text-muted)}
+#tip{position:fixed;pointer-events:none;background:var(--surface-1);border:1px solid var(--border);border-radius:6px;padding:8px 10px;font:.8rem/1.4 system-ui,sans-serif;color:var(--text-primary);box-shadow:0 4px 14px rgba(0,0,0,.15);opacity:0;max-width:260px;z-index:10}
+ul.sans,ol.sans{font:.95rem/1.5 system-ui,sans-serif;padding-left:20px}
+li{margin:4px 0}
+code{font-size:.85em}
+</style>
+</head>
+<body>
+<div id="tip"></div>
+<main>
+<div class="kicker">Integridad electoral · Cuyo · 1 de abril de 1928</div>
+<h1>Cuyo 1928, dos máquinas</h1>
+<p class="lede">San Juan y Mendoza votaron el mismo día, gobernadas por dos partidos provinciales antiyrigoyenistas con fama de maquinarias clientelares: el bloquismo y el lencinismo. Las dos tuvieron participación altísima. Solo una tiene la huella de la manipulación.</p>
+
+<div class="card cmp" id="cmp"></div>
+
+<h2>1 · La participación alta no alcanza como señal</h2>
+<p>Mendoza votó incluso un poco más que San Juan: <span id="pmz"></span> contra <span id="psj"></span>. Si la participación alta bastara para sospechar, Mendoza estaría tan señalada como San Juan. Lo que las distingue es <b>hacia dónde va</b> esa participación. En San Juan, donde se vota más, gana más el oficialismo (ρ = <span id="rsj"></span>). En Mendoza no hay relación (ρ = <span id="rmz"></span>): los lencinistas sacan entre el 28 % y el 61 % sin importar cuánta gente fue a votar.</p>
+<div class="card">
+  <div class="legend" id="leg1"></div>
+  <div id="ch1"></div>
+  <p class="note">Oficialismo: en San Juan, bloquistas + listas Ferrocarril; en Mendoza, UCR Lencinista. Porcentaje sobre votantes. El tamaño del punto indica los votantes.</p>
+</div>
+
+<h2>2 · Sin unanimidad en Mendoza</h2>
+<p>El partido más votado de cada departamento de Mendoza nunca pasa del <span id="topmz"></span>. En San Juan, 7 de 17 departamentos superan el 95 %. Además, el gobierno lencinista <b>perdió la elección</b>: 37 % contra 50 % de la UCR yrigoyenista. El gobernador Orfila respondió a las denuncias de presión oficial justamente con eso, que la oposición había ganado (Iriart Gabrielli, 2024). Es un argumento interesado, pero los números lo respaldan.</p>
+<div class="card">
+  <div class="legend" id="leg2"></div>
+  <div id="ch2"></div>
+  <p class="note">Cada punto es un departamento: porcentaje de la lista más votada sobre los votantes.</p>
+</div>
+
+<h2>3 · El padrón de Mendoza no se infló donde ganaban los lencinistas</h2>
+<p>Inflar el padrón (inscribir muertos, ausentes o gente de otro lado) deja una marca: el padrón crece más donde manda el oficialismo. En Mendoza pasa lo contrario. Entre 1916 y 1928 el padrón creció un <span id="padtot"></span> en total, sobre todo en Godoy Cruz y Guaymallén (+100 % y más, probablemente por la expansión urbana alrededor de la Capital) y en San Rafael (+77 %, probablemente por la colonización agrícola). Los bastiones lencinistas casi no crecieron: Lavalle +12 %, Santa Rosa −4 %, La Paz −15 %. La correlación entre crecimiento del padrón y voto lencinista es negativa (ρ = <span id="padrho"></span>). Para San Juan esta prueba no se puede hacer, porque no hay datos de 1916 por departamento y los inscriptos de 1922 son reconstruidos.</p>
+<div class="card tablewrap"><table id="tpad"></table></div>
+
+<h2>4 · Votantes que cortan boleta</h2>
+<p>El mismo día, Mendoza eligió electores de presidente y diputados nacionales. Si los números los dictara una máquina, ambas elecciones darían cifras casi idénticas. No es lo que pasó: unos 570 votantes liberales votaron a sus diputados pero no a sus electores (que iban por Melo), y los electores de Yrigoyen sacaron unos 800 votos más que sus diputados. Es el rastro de votantes que deciden por su cuenta.</p>
+<div class="card tablewrap"><table id="tcorte"></table></div>
+<p class="note">Electores: Memoria del Interior, vía Cantón. Diputados: Wikipedia, «Elecciones legislativas de Argentina de 1928»; Iriart Gabrielli (2024) da cifras muy cercanas (UCR 26.511, UCRL 20.283). En San Juan no se eligieron diputados nacionales en 1928, así que no hay contraste posible.</p>
+
+<h2>Dato aparte · La unanimidad de la Puna cambia de dueño</h2>
+<p>Fuera de San Juan, la unanimidad aparece casi solo en la Puna y los valles andinos del noroeste. Y no siempre favorece al mismo partido. En 1922, los departamentos puneños de Jujuy votaron 100 % a la UCR, con la Concentración en 0 o 1 voto. Seis años después, esos mismos departamentos estaban disputados, y en Cochinoca y Rinconada ganaron los antipersonalistas. En Salta 1928, Santa Victoria dio 98 % a los antipersonalistas, mientras el vecino Iruya se repartió 55/38.</p>
+<p>La lectura más probable no es el relleno de urnas: en Jujuy 1922 la participación fue moderada, del 56 % al 76 % según los inscriptos reconstruidos de Cantón, lejos de la de San Juan 1928. Más bien parece control territorial: departamentos donde una sola fuerza tenía fiscales, boletas y patrones de hacienda, y la otra no llegaba. Es exactamente el tipo de voto que los métodos estadísticos no pueden separar del fraude, y donde haría falta la historia local.</p>
+<div class="card tablewrap"><table id="tpuna"></table></div>
+
+<h2>Conclusión</h2>
+<div class="card">
+<p>Las dos provincias tenían maquinarias clientelares comparables y la misma participación. Mendoza muestra lo que produce una máquina en una elección competitiva: moviliza mucho, pero el resultado varía por departamento, el oficialismo puede perder, el padrón no se infla donde gobierna y los votantes cortan boleta. San Juan muestra algo distinto: unanimidad, una lista satélite que se reparte los departamentos con la oficial y suma justo 6.000, y una oposición que solo desaparece donde no hubo competencia.</p>
+<p>La diferencia probablemente no está en los punteros sino en quién controlaba el escrutinio. En Mendoza había una oposición fuerte, capaz de fiscalizar (la UCR ganó). En San Juan, el yrigoyenismo se retiró y no quedó nadie que mirara las actas.</p>
+</div>
+<p class="note">Generado por <code>cuyo1928/analisis.py</code> y <code>cuyo1928/informe.py</code>. Fuentes: Cantón (1968), t. II, pp. 114–118 (Memoria del Interior), cotejado con las imágenes; Iriart Gabrielli, G. (2024), «La construcción de la legitimidad política a través de las urnas: los comicios en Mendoza entre 1918 y 1928», <i>Anuario del Instituto de Historia Argentina</i> 24(1), e203; Wikipedia.</p>
+</main>
+<script>
+const R={
+ "sj": [
+  {
+   "dept": "Albardón",
+   "ins": 1579,
+   "vot": 1436,
+   "part": 0.9094363521215959,
+   "gob": 0.9735376044568245,
+   "top": 0.9735376044568245,
+   "opo": 0.026462395543175487
+  },
+  {
+   "dept": "Angaco",
+   "ins": 1272,
+   "vot": 1098,
+   "part": 0.8632075471698113,
+   "gob": 0.7632058287795993,
+   "top": 0.7632058287795993,
+   "opo": 0.23679417122040072
+  },
+  {
+   "dept": "Calingasta",
+   "ins": 478,
+   "vot": 432,
+   "part": 0.9037656903765691,
+   "gob": 0.9907407407407407,
+   "top": 0.9907407407407407,
+   "opo": 0.009259259259259259
+  },
+  {
+   "dept": "Capital",
+   "ins": 10851,
+   "vot": 9003,
+   "part": 0.8296931158418579,
+   "gob": 0.6315672553593247,
+   "top": 0.6312340331000778,
+   "opo": 0.3677663001221815
+  },
+  {
+   "dept": "Caucete",
+   "ins": 2763,
+   "vot": 2293,
+   "part": 0.829895041621426,
+   "gob": 0.7902311382468382,
+   "top": 0.7902311382468382,
+   "opo": 0.20976886175316178
+  },
+  {
+   "dept": "Iglesia",
+   "ins": 967,
+   "vot": 902,
+   "part": 0.9327817993795243,
+   "gob": 0.9866962305986696,
+   "top": 0.9844789356984479,
+   "opo": 0.013303769401330377
+  },
+  {
+   "dept": "Jáchal",
+   "ins": 2891,
+   "vot": 2813,
+   "part": 0.9730197163611207,
+   "gob": 0.9875577675079986,
+   "top": 0.9875577675079986,
+   "opo": 0.012442232492001421
+  },
+  {
+   "dept": "9 de Julio",
+   "ins": 292,
+   "vot": 269,
+   "part": 0.9212328767123288,
+   "gob": 0.9702602230483272,
+   "top": 0.9702602230483272,
+   "opo": 0.026022304832713755
+  },
+  {
+   "dept": "Pocito",
+   "ins": 2087,
+   "vot": 1853,
+   "part": 0.8878773358888357,
+   "gob": 0.6562331354560172,
+   "top": 0.6540744738262277,
+   "opo": 0.3432271991365353
+  },
+  {
+   "dept": "Rawson",
+   "ins": 2960,
+   "vot": 2527,
+   "part": 0.8537162162162162,
+   "gob": 0.6113969133359715,
+   "top": 0.6106054610209735,
+   "opo": 0.3886030866640285
+  },
+  {
+   "dept": "Rivadavia",
+   "ins": 785,
+   "vot": 683,
+   "part": 0.870063694267516,
+   "gob": 0.9209370424597365,
+   "top": 0.9194729136163983,
+   "opo": 0.07759882869692533
+  },
+  {
+   "dept": "San Martín",
+   "ins": 1149,
+   "vot": 1029,
+   "part": 0.8955613577023499,
+   "gob": 0.8620019436345967,
+   "top": 0.8620019436345967,
+   "opo": 0.1379980563654033
+  },
+  {
+   "dept": "Santa Lucía",
+   "ins": 1814,
+   "vot": 1587,
+   "part": 0.8748621830209482,
+   "gob": 0.7227473219911783,
+   "top": 0.722117202268431,
+   "opo": 0.2772526780088217
+  },
+  {
+   "dept": "Sarmiento",
+   "ins": 1235,
+   "vot": 1055,
+   "part": 0.854251012145749,
+   "gob": 0.9203791469194312,
+   "top": 0.9203791469194312,
+   "opo": 0.07962085308056872
+  },
+  {
+   "dept": "Ullún",
+   "ins": 280,
+   "vot": 277,
+   "part": 0.9892857142857143,
+   "gob": 0.8664259927797834,
+   "top": 0.8628158844765343,
+   "opo": 0.1299638989169675
+  },
+  {
+   "dept": "Valle Fértil",
+   "ins": 568,
+   "vot": 500,
+   "part": 0.8802816901408451,
+   "gob": 0.992,
+   "top": 0.992,
+   "opo": 0.008
+  },
+  {
+   "dept": "25 de Mayo",
+   "ins": 1277,
+   "vot": 1161,
+   "part": 0.9091620986687549,
+   "gob": 0.9965546942291128,
+   "top": 0.9965546942291128,
+   "opo": 0.0034453057708871662
+  }
+ ],
+ "mz": [
+  {
+   "dept": "Capital",
+   "ins": 14903,
+   "vot": 13059,
+   "part": 0.8762665235187546,
+   "gob": 0.2806493605942262,
+   "top": 0.6028792403706256,
+   "ucr": 0.6028792403706256,
+   "res": 0.04012558388850601,
+   "opo": 0.7193506394057738
+  },
+  {
+   "dept": "Godoy Cruz",
+   "ins": 4727,
+   "vot": 4222,
+   "part": 0.8931669134757775,
+   "gob": 0.29535765040265277,
+   "top": 0.5407389862624349,
+   "ucr": 0.5407389862624349,
+   "res": 0.06513500710563713,
+   "opo": 0.7046423495973473
+  },
+  {
+   "dept": "Guaymallén",
+   "ins": 5221,
+   "vot": 4727,
+   "part": 0.9053821107067611,
+   "gob": 0.4019462661307383,
+   "top": 0.4992595726676539,
+   "ucr": 0.4992595726676539,
+   "res": 0.06240744658345674,
+   "opo": 0.5980537338692616
+  },
+  {
+   "dept": "Junín",
+   "ins": 1974,
+   "vot": 1858,
+   "part": 0.9412360688956434,
+   "gob": 0.3756727664155005,
+   "top": 0.48170075349838537,
+   "ucr": 0.48170075349838537,
+   "res": 0.10010764262648009,
+   "opo": 0.6243272335844995
+  },
+  {
+   "dept": "La Paz",
+   "ins": 1055,
+   "vot": 857,
+   "part": 0.8123222748815165,
+   "gob": 0.4492415402567094,
+   "top": 0.4492415402567094,
+   "ucr": 0.39323220536756126,
+   "res": 0.10035005834305717,
+   "opo": 0.5507584597432905
+  },
+  {
+   "dept": "Las Heras",
+   "ins": 2146,
+   "vot": 1905,
+   "part": 0.8876980428704566,
+   "gob": 0.4125984251968504,
+   "top": 0.4624671916010499,
+   "ucr": 0.4624671916010499,
+   "res": 0.06089238845144357,
+   "opo": 0.5874015748031496
+  },
+  {
+   "dept": "Lavalle",
+   "ins": 2128,
+   "vot": 1876,
+   "part": 0.881578947368421,
+   "gob": 0.6060767590618337,
+   "top": 0.6060767590618337,
+   "ucr": 0.32196162046908317,
+   "res": 0.05970149253731343,
+   "opo": 0.39392324093816633
+  },
+  {
+   "dept": "Luján",
+   "ins": 3406,
+   "vot": 3104,
+   "part": 0.911332941867293,
+   "gob": 0.4255798969072165,
+   "top": 0.4426546391752577,
+   "ucr": 0.4426546391752577,
+   "res": 0.08795103092783506,
+   "opo": 0.5744201030927835
+  },
+  {
+   "dept": "Maipú",
+   "ins": 4278,
+   "vot": 3954,
+   "part": 0.9242636746143057,
+   "gob": 0.4016186140617097,
+   "top": 0.4671219018715225,
+   "ucr": 0.4671219018715225,
+   "res": 0.06676783004552352,
+   "opo": 0.5983813859382904
+  },
+  {
+   "dept": "Rivadavia",
+   "ins": 2972,
+   "vot": 2655,
+   "part": 0.8933378196500673,
+   "gob": 0.471939736346516,
+   "top": 0.471939736346516,
+   "ucr": 0.4421845574387947,
+   "res": 0.05649717514124294,
+   "opo": 0.528060263653484
+  },
+  {
+   "dept": "San Carlos",
+   "ins": 1449,
+   "vot": 1293,
+   "part": 0.8923395445134575,
+   "gob": 0.3642691415313225,
+   "top": 0.4779582366589327,
+   "ucr": 0.4779582366589327,
+   "res": 0.10518174787316319,
+   "opo": 0.6357308584686775
+  },
+  {
+   "dept": "San Martín",
+   "ins": 4195,
+   "vot": 3870,
+   "part": 0.9225268176400476,
+   "gob": 0.39405684754521964,
+   "top": 0.4754521963824289,
+   "ucr": 0.4754521963824289,
+   "res": 0.07209302325581396,
+   "opo": 0.6059431524547804
+  },
+  {
+   "dept": "San Rafael",
+   "ins": 9878,
+   "vot": 8024,
+   "part": 0.8123101842478234,
+   "gob": 0.3681455633100698,
+   "top": 0.5064805583250249,
+   "ucr": 0.5064805583250249,
+   "res": 0.08761216350947158,
+   "opo": 0.6318544366899302
+  },
+  {
+   "dept": "Santa Rosa",
+   "ins": 1004,
+   "vot": 892,
+   "part": 0.8884462151394422,
+   "gob": 0.4854260089686099,
+   "top": 0.4854260089686099,
+   "ucr": 0.4248878923766816,
+   "res": 0.06838565022421525,
+   "opo": 0.5145739910313901
+  },
+  {
+   "dept": "Tunuyán",
+   "ins": 1615,
+   "vot": 1374,
+   "part": 0.8507739938080495,
+   "gob": 0.44250363901018924,
+   "top": 0.44250363901018924,
+   "ucr": 0.39737991266375544,
+   "res": 0.1222707423580786,
+   "opo": 0.5574963609898108
+  },
+  {
+   "dept": "Tupungato",
+   "ins": 610,
+   "vot": 541,
+   "part": 0.8868852459016393,
+   "gob": 0.36044362292051757,
+   "top": 0.4584103512014787,
+   "ucr": 0.4584103512014787,
+   "res": 0.1423290203327172,
+   "opo": 0.6395563770794824
+  }
+ ],
+ "res_sj": {
+  "n": 17,
+  "part": 0.8697666025024061,
+  "part_min": 0.8296931158418579,
+  "part_max": 0.9892857142857143,
+  "top_max": 0.9965546942291128,
+  "n95": 7,
+  "gob": 0.7738778615395255,
+  "rho": 0.607843137254902,
+  "rho_p": 0.00964034773549731
+ },
+ "res_mz": {
+  "n": 16,
+  "part": 0.8806062279690063,
+  "part_min": 0.8123101842478234,
+  "part_max": 0.9412360688956434,
+  "top_max": 0.6060767590618337,
+  "n95": 0,
+  "gob": 0.37199092435114645,
+  "rho": -0.06470588235294117,
+  "rho_p": 0.8118214513105935
+ },
+ "padron_mz": [
+  {
+   "dept": "Capital",
+   "ins16": 11096,
+   "ins28": 14903,
+   "crec": 0.3430966113914924,
+   "gob": 0.2806493605942262
+  },
+  {
+   "dept": "Godoy Cruz",
+   "ins16": 2151,
+   "ins28": 4727,
+   "crec": 1.1975825197582521,
+   "gob": 0.29535765040265277
+  },
+  {
+   "dept": "Guaymallén",
+   "ins16": 2609,
+   "ins28": 5221,
+   "crec": 1.0011498658489844,
+   "gob": 0.4019462661307383
+  },
+  {
+   "dept": "Junín",
+   "ins16": 1761,
+   "ins28": 1974,
+   "crec": 0.12095400340715501,
+   "gob": 0.3756727664155005
+  },
+  {
+   "dept": "La Paz",
+   "ins16": 1244,
+   "ins28": 1055,
+   "crec": -0.15192926045016075,
+   "gob": 0.4492415402567094
+  },
+  {
+   "dept": "Las Heras",
+   "ins16": 1578,
+   "ins28": 2146,
+   "crec": 0.3599493029150824,
+   "gob": 0.4125984251968504
+  },
+  {
+   "dept": "Lavalle",
+   "ins16": 1893,
+   "ins28": 2128,
+   "crec": 0.12414157422081362,
+   "gob": 0.6060767590618337
+  },
+  {
+   "dept": "Luján",
+   "ins16": 2936,
+   "ins28": 3406,
+   "crec": 0.1600817438692097,
+   "gob": 0.4255798969072165
+  },
+  {
+   "dept": "Maipú",
+   "ins16": 3370,
+   "ins28": 4278,
+   "crec": 0.2694362017804155,
+   "gob": 0.4016186140617097
+  },
+  {
+   "dept": "Rivadavia",
+   "ins16": 2710,
+   "ins28": 2972,
+   "crec": 0.09667896678966792,
+   "gob": 0.471939736346516
+  },
+  {
+   "dept": "San Carlos",
+   "ins16": 1174,
+   "ins28": 1449,
+   "crec": 0.23424190800681433,
+   "gob": 0.3642691415313225
+  },
+  {
+   "dept": "San Martín",
+   "ins16": 3240,
+   "ins28": 4195,
+   "crec": 0.2947530864197532,
+   "gob": 0.39405684754521964
+  },
+  {
+   "dept": "San Rafael",
+   "ins16": 5598,
+   "ins28": 9878,
+   "crec": 0.7645587709896391,
+   "gob": 0.3681455633100698
+  },
+  {
+   "dept": "Santa Rosa",
+   "ins16": 1043,
+   "ins28": 1004,
+   "crec": -0.03739213806327901,
+   "gob": 0.4854260089686099
+  },
+  {
+   "dept": "Tunuyán",
+   "ins16": 1152,
+   "ins28": 1615,
+   "crec": 0.4019097222222223,
+   "gob": 0.44250363901018924
+  },
+  {
+   "dept": "Tupungato",
+   "ins16": 484,
+   "ins28": 610,
+   "crec": 0.2603305785123966,
+   "gob": 0.36044362292051757
+  }
+ ],
+ "padron_rho": -0.538235294117647,
+ "padron_tot": {
+  "ins16": 44039,
+  "ins28": 61561
+ },
+ "corte": [
+  [
+   "UCR (Yrigoyen)",
+   27323,
+   26506
+  ],
+  [
+   "UCR Lencinista",
+   20166,
+   20287
+  ],
+  [
+   "Partido Liberal",
+   1407,
+   1974
+  ],
+  [
+   "Partido Socialista",
+   1558,
+   1641
+  ],
+  [
+   "Partido Comunista",
+   52,
+   54
+  ]
+ ],
+ "puna": [
+  [
+   "Jujuy",
+   1922,
+   "Cochinoca",
+   "UCR 649 · Concentración 1"
+  ],
+  [
+   "Jujuy",
+   1922,
+   "Humahuaca",
+   "UCR 740 · Concentración 0"
+  ],
+  [
+   "Jujuy",
+   1922,
+   "Rinconada",
+   "UCR 297 · Concentración 0"
+  ],
+  [
+   "Jujuy",
+   1922,
+   "Santa Catalina",
+   "UCR 418 · Concentración 0"
+  ],
+  [
+   "Jujuy",
+   1928,
+   "Cochinoca",
+   "UCR 392 · Antipersonalistas 499"
+  ],
+  [
+   "Jujuy",
+   1928,
+   "Rinconada",
+   "UCR 134 · Antipersonalistas 187"
+  ],
+  [
+   "Salta",
+   1928,
+   "Santa Victoria",
+   "UCR 10 · Antipersonalistas 813"
+  ],
+  [
+   "Salta",
+   1928,
+   "Iruya (vecino)",
+   "UCR 293 · Antipersonalistas 430"
+  ]
+ ]
+};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt=n=>n.toLocaleString('es-AR');
+const pct=(x,d=1)=>(x*100).toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d})+' %';
+const num=(x,d=2)=>x.toFixed(d).replace('.',',');
+const $=id=>document.getElementById(id);
+const tip=$('tip');
+function showTip(e,h){tip.innerHTML=h;tip.style.opacity=1;tip.style.left=Math.min(e.clientX+14,innerWidth-270)+'px';tip.style.top=(e.clientY+14)+'px'}
+function hideTip(){tip.style.opacity=0}
+const NS='http://www.w3.org/2000/svg';
+function el(t,a,p){const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);p&&p.appendChild(n);return n}
+const S=R.res_sj,M=R.res_mz;
+
+$('cmp').innerHTML=[
+ ['','San Juan','Mendoza'],
+ ['Gobierno provincial','bloquismo (Aldo Cantoni)','lencinismo (Orfila)'],
+ ['Yrigoyenismo','no se presentó','ganó (50 %)'],
+ ['Participación',pct(S.part),pct(M.part)],
+ ['Voto del oficialismo provincial',pct(S.gob,0),pct(M.gob,0)],
+ ['Máximo de una lista en un departamento',`<span class="bad">${pct(S.top_max)}</span>`,pct(M.top_max)],
+ ['Departamentos con una lista > 95 %',`<span class="bad">${S.n95} de ${S.n}</span>`,`${M.n95} de ${M.n}`],
+ ['Correlación participación–oficialismo',`<span class="bad">ρ = ${num(S.rho)}</span>`,`ρ = ${num(M.rho)}`],
+].map((r,i)=>r.map((c,j)=>`<div class="${i===0||j===0?'h':''} ${j?'r':''}">${c}</div>`).join('')).join('');
+
+$('pmz').textContent=pct(M.part);$('psj').textContent=pct(S.part);
+$('rsj').textContent=num(S.rho);$('rmz').textContent=num(M.rho);
+$('topmz').textContent=pct(M.top_max,0);
+$('padtot').textContent=pct(R.padron_tot.ins28/R.padron_tot.ins16-1,0);
+$('padrho').textContent=num(R.padron_rho);
+
+$('tpad').innerHTML='<tr><th>Departamento</th><th>Inscriptos 1916</th><th>Inscriptos 1928</th><th>Crecimiento</th><th>Lencinistas 1928</th></tr>'+
+ [...R.padron_mz].sort((a,b)=>b.crec-a.crec).map(p=>`<tr><td>${p.dept}</td><td>${fmt(p.ins16)}</td><td>${fmt(p.ins28)}</td><td>${(p.crec>0?'+':'')+pct(p.crec,0)}</td><td>${pct(p.gob,0)}</td></tr>`).join('');
+$('tcorte').innerHTML='<tr><th>Partido</th><th>Electores de presidente</th><th>Diputados</th><th>Diferencia</th></tr>'+
+ R.corte.map(([n,e,d])=>`<tr><td>${n}</td><td>${fmt(e)}</td><td>${fmt(d)}</td><td>${(e-d>0?'+':'')+fmt(e-d)}</td></tr>`).join('');
+$('tpuna').innerHTML='<tr><th>Provincia</th><th>Año</th><th>Departamento</th><th>Votos</th></tr>'+
+ R.puna.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join('');
+
+const SER=[['sj','San Juan','--c-sj'],['mz','Mendoza','--c-mz']];
+function legend(id){$(id).innerHTML=SER.map(([k,l,c])=>`<span><i class="dot" style="background:${css(c)}"></i>${l}</span>`).join('')}
+function draw(){
+ legend('leg1');legend('leg2');
+ const W=$('ch1').clientWidth||860,H=Math.min(400,W*.62),m={l:46,r:14,t:10,b:36};
+ $('ch1').innerHTML='';const s=el('svg',{viewBox:`0 0 ${W} ${H}`},$('ch1'));
+ const X=v=>m.l+(v-.8)/.2*(W-m.l-m.r),Y=v=>H-m.b-v*(H-m.t-m.b);
+ [.8,.85,.9,.95,1].forEach(t=>{el('line',{x1:X(t),x2:X(t),y1:m.t,y2:H-m.b,stroke:css('--grid')},s);const tx=el('text',{x:X(t),y:H-m.b+16,'text-anchor':'middle','font-size':11},s);tx.textContent=Math.round(t*100)+' %'});
+ [0,.25,.5,.75,1].forEach(t=>{el('line',{x1:m.l,x2:W-m.r,y1:Y(t),y2:Y(t),stroke:css('--grid')},s);const tx=el('text',{x:m.l-6,y:Y(t),'text-anchor':'end','dominant-baseline':'middle','font-size':11},s);tx.textContent=Math.round(t*100)+' %'});
+ const xl=el('text',{x:W-m.r,y:H-2,'text-anchor':'end','font-size':11},s);xl.textContent='participación →';
+ const yl=el('text',{x:m.l+6,y:m.t+12,'font-size':11},s);yl.textContent='↑ voto del oficialismo provincial';
+ SER.forEach(([k,lab,c])=>R[k].forEach(d=>{const r=4+Math.sqrt(d.vot)/9;const ci=el('circle',{cx:X(d.part),cy:Y(d.gob),r,fill:css(c),'fill-opacity':.88,stroke:css('--surface-1'),'stroke-width':2},s);
+  ci.addEventListener('mousemove',e=>showTip(e,`<b>${d.dept}</b> (${lab})<br>Participación: ${pct(d.part)}<br>Oficialismo: ${pct(d.gob)}<br>Votantes: ${fmt(d.vot)}`));ci.addEventListener('mouseleave',hideTip)}));
+
+ const W2=$('ch2').clientWidth||860,H2=130,L=90;
+ $('ch2').innerHTML='';const s2=el('svg',{viewBox:`0 0 ${W2} ${H2}`},$('ch2'));
+ const X2=v=>L+v*(W2-L-12);
+ [0,.25,.5,.75,1].forEach(t=>{el('line',{x1:X2(t),x2:X2(t),y1:4,y2:H2-24,stroke:css('--grid')},s2);const tx=el('text',{x:X2(t),y:H2-6,'text-anchor':'middle','font-size':11},s2);tx.textContent=Math.round(t*100)+' %'});
+ el('line',{x1:X2(.95),x2:X2(.95),y1:4,y2:H2-24,stroke:css('--flag'),'stroke-dasharray':'3 3'},s2);
+ SER.forEach(([k,lab,c],i)=>{const y=30+i*44;const t=el('text',{x:L-10,y,'text-anchor':'end','dominant-baseline':'middle','font-size':12},s2);t.textContent=lab;
+  R[k].forEach((d,j)=>{const ci=el('circle',{cx:X2(d.top),cy:y+((j%3)-1)*6,r:6,fill:css(c),'fill-opacity':.85,stroke:css('--surface-1'),'stroke-width':1.5},s2);
+   ci.addEventListener('mousemove',e=>showTip(e,`<b>${d.dept}</b> (${lab})<br>Lista más votada: ${pct(d.top)}`));ci.addEventListener('mouseleave',hideTip)})});
+}
+draw();addEventListener('resize',()=>{clearTimeout(window._r);window._r=setTimeout(draw,120)});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+</script>
+</body>
+</html>

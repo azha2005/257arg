@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>San Juan bajo la lupa</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f5f2; --surface-1:#fcfcfb; --border:#e3e2dd; --grid:#ebeae6;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7974;
+  --s-blo:#2a78d6; --s-fer:#eb6834; --s-soc:#1baf7a; --s-bla:#b9b8b2;
+  --g-fer:#eb6834; --g-una:#2a78d6; --g-com:#1baf7a;
+  --accent:#2a78d6; --flag:#d03b3b;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121211; --surface-1:#1a1a19; --border:#2f2f2c; --grid:#2a2a28;
+    --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+    --s-blo:#3987e5; --s-fer:#d95926; --s-soc:#199e70; --s-bla:#5a5954;
+    --g-fer:#d95926; --g-una:#3987e5; --g-com:#199e70;
+    --accent:#3987e5;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211; --surface-1:#1a1a19; --border:#2f2f2c; --grid:#2a2a28;
+  --text-primary:#ffffff; --text-secondary:#c3c2b7; --text-muted:#8f8e86;
+  --s-blo:#3987e5; --s-fer:#d95926; --s-soc:#199e70; --s-bla:#5a5954;
+  --g-fer:#d95926; --g-una:#3987e5; --g-com:#199e70;
+  --accent:#3987e5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text-primary);font:16px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:920px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 8px;letter-spacing:-.01em}
+h2{font-size:1.35rem;margin:48px 0 6px;padding-top:16px;border-top:1px solid var(--border)}
+h3{font-size:1.05rem;margin:24px 0 6px}
+.kicker{font:600 .78rem/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px}
+.lede{font-size:1.12rem;color:var(--text-secondary);margin:0 0 20px}
+p{margin:10px 0}
+.sans{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.verdict{display:inline-block;font:600 .75rem/1 system-ui,sans-serif;padding:5px 8px;border-radius:4px;border:1px solid var(--border);margin-left:6px;vertical-align:middle;color:var(--text-secondary)}
+.verdict.fuerte{border-color:var(--flag);color:var(--flag)}
+.card{background:var(--surface-1);border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:16px 0}
+.tile{background:var(--surface-1);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+.tile .v{font:600 2rem/1.1 system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.tile .l{font:.85rem/1.35 system-ui,sans-serif;color:var(--text-secondary);margin-top:4px}
+table{border-collapse:collapse;width:100%;font:.86rem/1.35 system-ui,sans-serif;font-variant-numeric:tabular-nums}
+th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--text-secondary);font-weight:600}
+.tablewrap{overflow-x:auto}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font:.82rem/1 system-ui,sans-serif;color:var(--text-secondary);margin:4px 0 10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:system-ui,sans-serif;fill:var(--text-secondary)}
+.note{font:.82rem/1.45 system-ui,sans-serif;color:var(--text-muted)}
+#tip{position:fixed;pointer-events:none;background:var(--surface-1);border:1px solid var(--border);border-radius:6px;padding:8px 10px;font:.8rem/1.4 system-ui,sans-serif;color:var(--text-primary);box-shadow:0 4px 14px rgba(0,0,0,.15);opacity:0;transition:opacity .08s;max-width:260px;z-index:10}
+.toggle{float:right;font:.8rem system-ui,sans-serif;background:none;border:1px solid var(--border);color:var(--text-secondary);border-radius:6px;padding:4px 8px;cursor:pointer}
+ul.sans,ol.sans{font-size:.95rem;padding-left:20px}
+li{margin:4px 0}
+code{font-size:.85em}
+</style>
+</head>
+<body>
+<div id="tip"></div>
+<main>
+<div class="kicker">Integridad electoral · San Juan · 1916, 1922, 1928</div>
+<h1>San Juan bajo la lupa</h1>
+<p class="lede">Siete pruebas sobre los resultados por departamento. La de 1928 es la elección con más señales de manipulación del período: un segundo puesto armado para quedarse también con los electores de la minoría.</p>
+
+<div class="tiles" id="tiles"></div>
+
+<h2>Contexto y fuentes</h2>
+<ul class="sans">
+<li><b>1916 (diputados).</b> Solo hay totales provinciales (acta de la Junta, expediente 53-D-1916). No hay datos por departamento, así que no se puede probar nada a ese nivel. Lo único documentado es la anulación de la mesa 6 de Alto de la Sierra y su complementaria.</li>
+<li><b>1922 (electores).</b> Cantón, t. II, p. 77, armado con <i>La Nación</i> y <i>La Prensa</i>. Es una elección competitiva a tres bandas: bloquistas 36 %, UCR 29 %, Concentración 28 % (Memoria del Interior). Pocos meses antes había sido asesinado el gobernador Amable Jones, y Federico Cantoni estaba preso.</li>
+<li><b>1928 (electores).</b> Cantón, t. II, p. 116, tomado de la Memoria del Ministerio del Interior. Gobierna el bloquismo. El yrigoyenismo no presentó candidatos «por falta de garantías». San Juan fue el único distrito que no ganó Yrigoyen: 7 electores para Melo (bloquistas) y 3 para Matienzo, que llevaron las listas «UCR Ferrocarril a Jáchal» y «UCR Ferrocarril a Calingasta».</li>
+<li><b>Verificación.</b> Cotejé las dos páginas de Cantón contra la transcripción. Había un error en 1928: Angaco tiene <b>114</b> votos en blanco, no 214. Con eso la suma da exactamente los votantes, y los totales provinciales coinciden con la Memoria (33.248 inscriptos, 28.918 votantes, 16.379 Melo, 6.000 Matienzo, 3.463 PS). Ya está corregido en <code>mapa1928/</code>.</li>
+</ul>
+
+<h2>1 · El segundo puesto fabricado <span class="verdict fuerte">señal fuerte</span></h2>
+<p>La ley Sáenz Peña daba dos tercios de los electores a la lista más votada y un tercio a la segunda. Sin las listas «Ferrocarril», la segunda habría sido la socialista (3.463 votos), que se habría llevado 3 electores. Con ellas, los 10 electores quedaron en manos de listas alineadas con el gobierno provincial.</p>
+<p>El gráfico muestra cómo se logró: <b>cada departamento votó a una sola de las dos listas oficialistas, nunca a las dos</b>. Cinco departamentos del norte y el oeste votaron casi en bloque (99 %) por una lista Ferrocarril, con cero votos bloquistas. El resto votó por los bloquistas, con cero votos Ferrocarril o casi.</p>
+<div class="card">
+  <div class="legend" id="leg1"></div>
+  <div id="ch1"></div>
+  <p class="note">Porcentaje sobre votantes. Fuente: Cantón (1968), t. II, p. 116 (Memoria del Interior).</p>
+</div>
+<h3>Exactamente 6.000</h3>
+<p>Las dos listas Ferrocarril suman <b>6.000 votos justos</b> (3.218 + 2.782). Los cinco departamentos «Ferrocarril» aportan 5.988, y los 12 restantes salen de votos sueltos: 3 en Capital, 4 en Pocito, 2 en Rawson y 1 en Rivadavia, Santa Lucía y Ullum. Un total natural termina en 000 una vez cada mil. De las <span id="nlist"></span> listas provinciales de 1928 con más de mil votos, es la única que da un millar redondo. Si se repasan todas las listas buscando algún redondeo, la probabilidad de encontrarlo por azar en alguna es de <span id="plook"></span>. Por sí solo no prueba nada. Junto con la distribución por departamento, sugiere que alguien fijó una cifra de antemano y que el escrutinio la cumplió.</p>
+<div class="card tablewrap"><table id="t6000"></table></div>
+
+<h2>2 · Unanimidad <span class="verdict fuerte">señal fuerte</span></h2>
+<p>En una elección real, aun la más desigual, la lista ganadora rara vez pasa del 95 % de los votantes. En 1928, entre los departamentos con más de 200 votantes, pasó eso en <b><span id="u_sj"></span></b> de San Juan y en <b><span id="u_resto"></span></b> del resto del país (<span id="u_resto_cual"></span>). En Mendoza, también gobernada por un partido provincial antiyrigoyenista, no hubo ninguno.</p>
+
+<h2>3 · Huella de participación <span class="verdict">señal moderada</span></h2>
+<p>Cuando se rellenan urnas o se inventan actas, sube a la vez la participación y el voto del beneficiado (Klimek et al., 2012). En San Juan, los departamentos «dirigidos» votan más: <span id="pg"></span>. La correlación de rangos entre participación y voto oficialista es ρ = <span id="rho"></span> (17 departamentos). La participación del 99 % en Ullum (277 de 280 inscriptos) y del 97 % en Jáchal es difícil de creer con padrones que no se depuraban de muertos ni de emigrados.</p>
+<div class="card">
+  <div class="legend" id="leg2"></div>
+  <div id="ch2"></div>
+  <p class="note">Eje x: votantes / inscriptos. Eje y: Melo + Matienzo sobre votantes. El tamaño del punto indica los votantes.</p>
+</div>
+
+<h2>4 · La oposición que desaparece <span class="verdict fuerte">señal fuerte</span></h2>
+<p>Comparación entre 1922 y 1928. El yrigoyenismo no tuvo candidato en 1928, así que sus votantes solo podían votar en blanco, al PS o no ir. En los departamentos disputados de 1928, la oposición (PS + blanco) conserva entre el 8 % y el 39 %: baja respecto de la UCR de 1922, pero sigue existiendo. En los siete departamentos de lista única, una UCR que en 1922 tenía entre el 11 % y el 42 % queda reducida a entre el 0,3 % y el 2,7 %. En Calingasta, Iglesia, Jáchal y Valle Fértil, departamentos donde la UCR sacaba un tercio o más, hay entre 0 y 1 voto socialista y apenas un 1 % de blancos.</p>
+<div class="card">
+  <div class="legend" id="leg3"></div>
+  <div id="ch3"></div>
+  <p class="note">Círculo hueco: UCR 1922 sobre votos a partidos (no hay votantes en la fuente de 1922). Círculo lleno: PS + blanco 1928 sobre votantes. La Concentración no entra en la comparación porque en 1928 los conservadores apoyaron a Melo.</p>
+</div>
+
+<h2>5 · Empates exactos en 1922 <span class="verdict">anómalo, causa dudosa</span></h2>
+<p>En la tabla de 1922 hay <b><span id="emp_obs"></span></b> empates exactos entre partidos de un mismo departamento. Si se barajan los valores entre departamentos, se esperarían <span id="emp_exp"></span> (p = <span id="emp_p"></span>, 20.000 permutaciones). No es azar. Pero los empates benefician a partidos distintos, y uno es imposible como resultado real: 136 votos socialistas en Albardón, cuando el PS sacaba 0–51 en cada departamento fuera de la Capital. Lo más probable es que el diario (o el tipógrafo) haya repetido una cifra de la columna vecina. <b>Esto es un problema de calidad del dato, no evidencia de fraude.</b> Para saberlo hay que cotejar con <i>La Prensa</i> del 9, 11 y 12 de abril de 1922.</p>
+<div class="card tablewrap"><table id="temp"></table></div>
+
+<h2>6 · Último dígito <span class="verdict">no concluyente</span></h2>
+<p>Quien inventa cifras tiende a repetir algunos dígitos finales y a evitar otros. Con 59 cifras en 1922 y 38 en 1928, la prueba tiene muy poca potencia. 1922 da p = <span id="d22p"></span>, con exceso de ceros (posible redondeo de los diarios). 1928 da p = <span id="d28p"></span>. No hay que apoyarse en esta prueba.</p>
+<div class="card tablewrap"><table id="tdig"></table></div>
+
+<h2>7 · Padrón <span class="verdict">no se puede medir aún</span></h2>
+<p>La prueba más fuerte sería comparar los inscriptos con los varones argentinos adultos del censo de 1914, departamento por departamento. No tenemos ese cuadro (está en el Tercer Censo Nacional, t. II). Comparar los padrones de 1922 y 1928 entre sí tampoco sirve: Cantón aclara que los inscriptos de 1922 están «reconstruidos», y su suma iguala el total oficial (28.253) aunque faltan cuatro departamentos.</p>
+
+<h2>Conclusión</h2>
+<div class="card">
+<p><b>1928:</b> la evidencia es convergente. Hay unanimidad en 7 de 17 departamentos (1 en todo el resto del país), una lista satélite que reparte los departamentos con la oficial y suma exactamente 6.000, participación más alta justo donde no hubo competencia, y una oposición del 30–40 % que se esfuma solo en esos departamentos. Encaja con un aparato capaz de dirigir el voto departamento por departamento (punteros, comisarios, jueces de paz) y, al menos en el tramo final, con un escrutinio que ajustó cifras. Las pruebas estadísticas no distinguen entre voto dirigido y actas fabricadas. El total exacto de 6.000 es lo que más apunta a lo segundo.</p>
+<p><b>1922:</b> sin señales de fraude a favor de un actor. Las anomalías (empates, ceros) parecen errores de la prensa.</p>
+<p><b>1916:</b> no se puede analizar por departamento.</p>
+</div>
+<h3>Qué sumaría evidencia</h3>
+<ol class="sans">
+<li>Diario de Sesiones de Diputados, 1928: dictamen de poderes de los diputados de San Juan elegidos el mismo día, con posibles impugnaciones mesa por mesa.</li>
+<li>Memoria del Interior 1928-29, cuadros por mesa o por circuito, si existen.</li>
+<li>Elección provincial del 8 de abril de 1928, la primera con voto femenino. Si votaron casi tantas mujeres como varones en los mismos departamentos con participación del 99 %, refuerza la sospecha.</li>
+<li>Censo de 1914, t. II: varones argentinos de 18 años o más por departamento, para la prueba de padrón.</li>
+</ol>
+<p class="note">Generado por <code>sanjuan_fraude/analisis.py</code> y <code>sanjuan_fraude/informe.py</code>. Contexto histórico: Wikipedia, «Elecciones presidenciales de Argentina de 1928» (es/en); Infobae (12-12-2021); Tiempo de San Juan (2023).</p>
+</main>
+<script>
+const R={
+ "d28": [
+  {
+   "dept": "Albardón",
+   "ins": 1579,
+   "vot": 1436,
+   "part": 0.9094363521215959,
+   "blo": 0,
+   "fer": 1398,
+   "fcal": 0,
+   "fjac": 1398,
+   "soc": 7,
+   "bla": 31,
+   "top_sh": 0.9735376044568245,
+   "gob_sh": 0.9735376044568245,
+   "opo_sh": 0.026462395543175487,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "Angaco",
+   "ins": 1272,
+   "vot": 1098,
+   "part": 0.8632075471698113,
+   "blo": 838,
+   "fer": 0,
+   "fcal": 0,
+   "fjac": 0,
+   "soc": 146,
+   "bla": 114,
+   "top_sh": 0.7632058287795993,
+   "gob_sh": 0.7632058287795993,
+   "opo_sh": 0.23679417122040072,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Calingasta",
+   "ins": 478,
+   "vot": 432,
+   "part": 0.9037656903765691,
+   "blo": 0,
+   "fer": 428,
+   "fcal": 0,
+   "fjac": 428,
+   "soc": 1,
+   "bla": 3,
+   "top_sh": 0.9907407407407407,
+   "gob_sh": 0.9907407407407407,
+   "opo_sh": 0.009259259259259259,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "Capital",
+   "ins": 10851,
+   "vot": 9003,
+   "part": 0.8296931158418579,
+   "blo": 5683,
+   "fer": 3,
+   "fcal": 2,
+   "fjac": 1,
+   "soc": 1803,
+   "bla": 1508,
+   "top_sh": 0.6312340331000778,
+   "gob_sh": 0.6315672553593247,
+   "opo_sh": 0.3677663001221815,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Caucete",
+   "ins": 2763,
+   "vot": 2293,
+   "part": 0.829895041621426,
+   "blo": 1812,
+   "fer": 0,
+   "fcal": 0,
+   "fjac": 0,
+   "soc": 288,
+   "bla": 193,
+   "top_sh": 0.7902311382468382,
+   "gob_sh": 0.7902311382468382,
+   "opo_sh": 0.20976886175316178,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Iglesia",
+   "ins": 967,
+   "vot": 902,
+   "part": 0.9327817993795243,
+   "blo": 2,
+   "fer": 888,
+   "fcal": 0,
+   "fjac": 888,
+   "soc": 0,
+   "bla": 12,
+   "top_sh": 0.9844789356984479,
+   "gob_sh": 0.9866962305986696,
+   "opo_sh": 0.013303769401330377,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "Jáchal",
+   "ins": 2891,
+   "vot": 2813,
+   "part": 0.9730197163611207,
+   "blo": 0,
+   "fer": 2778,
+   "fcal": 2778,
+   "fjac": 0,
+   "soc": 0,
+   "bla": 35,
+   "top_sh": 0.9875577675079986,
+   "gob_sh": 0.9875577675079986,
+   "opo_sh": 0.012442232492001421,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "9 de Julio",
+   "ins": 292,
+   "vot": 269,
+   "part": 0.9212328767123288,
+   "blo": 261,
+   "fer": 0,
+   "fcal": 0,
+   "fjac": 0,
+   "soc": 0,
+   "bla": 7,
+   "top_sh": 0.9702602230483272,
+   "gob_sh": 0.9702602230483272,
+   "opo_sh": 0.026022304832713755,
+   "grupo": "unanime"
+  },
+  {
+   "dept": "Pocito",
+   "ins": 2087,
+   "vot": 1853,
+   "part": 0.8878773358888357,
+   "blo": 1212,
+   "fer": 4,
+   "fcal": 2,
+   "fjac": 2,
+   "soc": 341,
+   "bla": 295,
+   "top_sh": 0.6540744738262277,
+   "gob_sh": 0.6562331354560172,
+   "opo_sh": 0.3432271991365353,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Rawson",
+   "ins": 2960,
+   "vot": 2527,
+   "part": 0.8537162162162162,
+   "blo": 1543,
+   "fer": 2,
+   "fcal": 0,
+   "fjac": 2,
+   "soc": 531,
+   "bla": 451,
+   "top_sh": 0.6106054610209735,
+   "gob_sh": 0.6113969133359715,
+   "opo_sh": 0.3886030866640285,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Rivadavia",
+   "ins": 785,
+   "vot": 683,
+   "part": 0.870063694267516,
+   "blo": 628,
+   "fer": 1,
+   "fcal": 0,
+   "fjac": 1,
+   "soc": 9,
+   "bla": 44,
+   "top_sh": 0.9194729136163983,
+   "gob_sh": 0.9209370424597365,
+   "opo_sh": 0.07759882869692533,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "San Martín",
+   "ins": 1149,
+   "vot": 1029,
+   "part": 0.8955613577023499,
+   "blo": 887,
+   "fer": 0,
+   "fcal": 0,
+   "fjac": 0,
+   "soc": 60,
+   "bla": 82,
+   "top_sh": 0.8620019436345967,
+   "gob_sh": 0.8620019436345967,
+   "opo_sh": 0.1379980563654033,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Santa Lucía",
+   "ins": 1814,
+   "vot": 1587,
+   "part": 0.8748621830209482,
+   "blo": 1146,
+   "fer": 1,
+   "fcal": 0,
+   "fjac": 1,
+   "soc": 239,
+   "bla": 201,
+   "top_sh": 0.722117202268431,
+   "gob_sh": 0.7227473219911783,
+   "opo_sh": 0.2772526780088217,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Sarmiento",
+   "ins": 1235,
+   "vot": 1055,
+   "part": 0.854251012145749,
+   "blo": 971,
+   "fer": 0,
+   "fcal": 0,
+   "fjac": 0,
+   "soc": 38,
+   "bla": 46,
+   "top_sh": 0.9203791469194312,
+   "gob_sh": 0.9203791469194312,
+   "opo_sh": 0.07962085308056872,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Ullún",
+   "ins": 280,
+   "vot": 277,
+   "part": 0.9892857142857143,
+   "blo": 239,
+   "fer": 1,
+   "fcal": 0,
+   "fjac": 1,
+   "soc": 0,
+   "bla": 36,
+   "top_sh": 0.8628158844765343,
+   "gob_sh": 0.8664259927797834,
+   "opo_sh": 0.1299638989169675,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Valle Fértil",
+   "ins": 568,
+   "vot": 500,
+   "part": 0.8802816901408451,
+   "blo": 0,
+   "fer": 496,
+   "fcal": 0,
+   "fjac": 496,
+   "soc": 0,
+   "bla": 4,
+   "top_sh": 0.992,
+   "gob_sh": 0.992,
+   "opo_sh": 0.008,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "25 de Mayo",
+   "ins": 1277,
+   "vot": 1161,
+   "part": 0.9091620986687549,
+   "blo": 1157,
+   "fer": 0,
+   "fcal": 0,
+   "fjac": 0,
+   "soc": 0,
+   "bla": 4,
+   "top_sh": 0.9965546942291128,
+   "gob_sh": 0.9965546942291128,
+   "opo_sh": 0.0034453057708871662,
+   "grupo": "unanime"
+  }
+ ],
+ "tot28": {
+  "INS": 33248,
+  "VOT": 28918,
+  "SOC": 3463,
+  "BLA": 3066,
+  "VAR": 4,
+  "BLO": 16379,
+  "FCAL": 2782,
+  "FJAC": 3218
+ },
+ "fer_total": 6000,
+ "fer_grandes": 5988,
+ "fer_sueltos": {
+  "Capital": 3,
+  "Pocito": 4,
+  "Rawson": 2,
+  "Rivadavia": 1,
+  "Santa Lucía": 1,
+  "Ullún": 1
+ },
+ "sin_ferrocarril": "Si las 6.000 boletas Ferrocarril no hubieran existido, la segunda lista habría sido la socialista (3.463).",
+ "part_grupo": {
+  "ferrocarril": 0.9383001696745334,
+  "competitivo": 0.8495396094618194,
+  "unanime": 0.911408540471638
+ },
+ "spearman_part_gob": 0.607843137254902,
+ "spearman_part_top": 0.6029411764705883,
+ "unanimidad": {
+  "resto_n": 335,
+  "resto_u95": 1,
+  "SJ_n": 17,
+  "SJ_u95": 7
+ },
+ "unanimes_resto": [
+  [
+   "Salta",
+   "Santa Victoria",
+   0.976
+  ]
+ ],
+ "listas_1928": 42,
+ "listas_redondas": [
+  [
+   "San Juan",
+   "P_FER",
+   6000
+  ]
+ ],
+ "p_alguna_redonda": 0.0411503689154491,
+ "cmp": [
+  {
+   "dept": "Albardón",
+   "ucr22": 0.11295681063122924,
+   "blo22": 0.4318936877076412,
+   "val22": 1204,
+   "opo28": 0.026462395543175487,
+   "gob28": 0.9735376044568245,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "Angaco",
+   "ucr22": 0.4851351351351351,
+   "blo22": 0.1635135135135135,
+   "val22": 740,
+   "opo28": 0.23679417122040072,
+   "gob28": 0.7632058287795993,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Calingasta",
+   "ucr22": 0.4186046511627907,
+   "blo22": 0.2713178294573643,
+   "val22": 258,
+   "opo28": 0.009259259259259259,
+   "gob28": 0.9907407407407407,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "Capital",
+   "ucr22": 0.1859582542694497,
+   "blo22": 0.5128514749008107,
+   "val22": 5797,
+   "opo28": 0.3677663001221815,
+   "gob28": 0.6315672553593247,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Caucete",
+   "ucr22": 0.36993464052287583,
+   "blo22": 0.24052287581699347,
+   "val22": 1530,
+   "opo28": 0.20976886175316178,
+   "gob28": 0.7902311382468382,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Iglesia",
+   "ucr22": 0.2725752508361204,
+   "blo22": 0.362876254180602,
+   "val22": 598,
+   "opo28": 0.013303769401330377,
+   "gob28": 0.9866962305986696,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "Jáchal",
+   "ucr22": 0.3358572201189832,
+   "blo22": 0.3299080584099513,
+   "val22": 1849,
+   "opo28": 0.012442232492001421,
+   "gob28": 0.9875577675079986,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "9 de Julio",
+   "ucr22": 0.17543859649122806,
+   "blo22": 0.17543859649122806,
+   "val22": 114,
+   "opo28": 0.026022304832713755,
+   "gob28": 0.9702602230483272,
+   "grupo": "unanime"
+  },
+  {
+   "dept": "Pocito",
+   "ucr22": 0.3194444444444444,
+   "blo22": 0.3871527777777778,
+   "val22": 1152,
+   "opo28": 0.3432271991365353,
+   "gob28": 0.6562331354560172,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Rawson",
+   "ucr22": 0.3484195402298851,
+   "blo22": 0.33548850574712646,
+   "val22": 1392,
+   "opo28": 0.3886030866640285,
+   "gob28": 0.6113969133359715,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Rivadavia",
+   "ucr22": 0.46255506607929514,
+   "blo22": 0.21806167400881057,
+   "val22": 454,
+   "opo28": 0.07759882869692533,
+   "gob28": 0.9209370424597365,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "San Martín",
+   "ucr22": 0.3333333333333333,
+   "blo22": 0.2777777777777778,
+   "val22": 684,
+   "opo28": 0.1379980563654033,
+   "gob28": 0.8620019436345967,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Santa Lucía",
+   "ucr22": 0.3057142857142857,
+   "blo22": 0.42,
+   "val22": 700,
+   "opo28": 0.2772526780088217,
+   "gob28": 0.7227473219911783,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Sarmiento",
+   "ucr22": 0.41725352112676056,
+   "blo22": 0.40316901408450706,
+   "val22": 568,
+   "opo28": 0.07962085308056872,
+   "gob28": 0.9203791469194312,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Ullún",
+   "ucr22": 0.7,
+   "blo22": 0.18181818181818182,
+   "val22": 110,
+   "opo28": 0.1299638989169675,
+   "gob28": 0.8664259927797834,
+   "grupo": "competitivo"
+  },
+  {
+   "dept": "Valle Fértil",
+   "ucr22": 0.3575,
+   "blo22": 0.2525,
+   "val22": 400,
+   "opo28": 0.008,
+   "gob28": 0.992,
+   "grupo": "ferrocarril"
+  },
+  {
+   "dept": "25 de Mayo",
+   "ucr22": 0.3448275862068966,
+   "blo22": 0.53315649867374,
+   "val22": 377,
+   "opo28": 0.0034453057708871662,
+   "gob28": 0.9965546942291128,
+   "grupo": "unanime"
+  }
+ ],
+ "empates22": {
+  "obs": 4,
+  "media": 0.35155,
+  "p": 0.0003,
+  "casos": [
+   [
+    "Albardón",
+    "UCR",
+    "SOC",
+    136
+   ],
+   [
+    "Caucete",
+    "UCR",
+    "CNC",
+    566
+   ],
+   [
+    "Iglesia",
+    "BLO",
+    "CNC",
+    217
+   ],
+   [
+    "9 de Julio",
+    "UCR",
+    "BLO",
+    20
+   ]
+  ]
+ },
+ "dig22": {
+  "n": 59,
+  "obs": [
+   13,
+   5,
+   1,
+   5,
+   4,
+   4,
+   10,
+   5,
+   8,
+   4
+  ],
+  "p": 0.03022052229265791
+ },
+ "dig28": {
+  "n": 38,
+  "obs": [
+   1,
+   7,
+   4,
+   4,
+   2,
+   2,
+   5,
+   2,
+   9,
+   2
+  ],
+  "p": 0.07377619373856598
+ }
+};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt=n=>n.toLocaleString('es-AR');
+const pct=(x,d=1)=>(x*100).toLocaleString('es-AR',{minimumFractionDigits:d,maximumFractionDigits:d})+' %';
+const tip=document.getElementById('tip');
+function showTip(e,h){tip.innerHTML=h;tip.style.opacity=1;const x=Math.min(e.clientX+14,innerWidth-270);tip.style.left=x+'px';tip.style.top=(e.clientY+14)+'px'}
+function hideTip(){tip.style.opacity=0}
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);parent&&parent.appendChild(n);return n}
+const $=id=>document.getElementById(id);
+const GRUPO={ferrocarril:['Lista Ferrocarril (Matienzo)','--g-fer'],unanime:['Bloquista unánime','--g-una'],competitivo:['Disputado','--g-com']};
+
+// tiles
+const u=R.unanimidad;
+$('tiles').innerHTML=[
+ ['6.000','votos exactos de las dos listas Ferrocarril: el número que decidía la minoría'],
+ [u.SJ_u95+' de '+u.SJ_n,'departamentos de San Juan con una lista por encima del 95 % (resto del país: '+u.resto_u95+' de '+u.resto_n+')'],
+ [pct(R.part_grupo.ferrocarril,0)+' vs '+pct(R.part_grupo.competitivo,0),'participación en departamentos Ferrocarril vs disputados'],
+].map(([v,l])=>`<div class="tile"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
+
+// texts
+$('nlist').textContent=R.listas_1928;
+$('plook').textContent='~'+Math.round(R.p_alguna_redonda*100)+' %';
+$('u_sj').textContent=u.SJ_u95+' de '+u.SJ_n;
+$('u_resto').textContent=u.resto_u95+' de '+u.resto_n;
+$('u_resto_cual').textContent=R.unanimes_resto.map(x=>x[1]+', '+x[0]+', '+pct(x[2])).join('; ');
+$('pg').textContent=`${pct(R.part_grupo.ferrocarril)} en los de lista Ferrocarril, ${pct(R.part_grupo.unanime)} en los bloquistas unánimes y ${pct(R.part_grupo.competitivo)} en los disputados`;
+$('rho').textContent=R.spearman_part_gob.toFixed(2).replace('.',',');
+$('emp_obs').textContent=R.empates22.obs;
+$('emp_exp').textContent=R.empates22.media.toFixed(2).replace('.',',');
+$('emp_p').textContent=R.empates22.p.toFixed(4).replace('.',',');
+$('d22p').textContent=R.dig22.p.toFixed(2).replace('.',',');
+$('d28p').textContent=R.dig28.p.toFixed(2).replace('.',',');
+
+// table 6000
+const rows6=R.d28.filter(d=>d.fer>0).sort((a,b)=>b.fer-a.fer);
+$('t6000').innerHTML='<tr><th>Departamento</th><th>F. a Jáchal</th><th>F. a Calingasta</th><th>Total Ferrocarril</th><th>Bloquistas</th><th>% Ferrocarril</th></tr>'+
+ rows6.map(d=>`<tr><td>${d.dept}</td><td>${fmt(d.fjac)}</td><td>${fmt(d.fcal)}</td><td>${fmt(d.fer)}</td><td>${fmt(d.blo)}</td><td>${pct(d.fer/d.vot)}</td></tr>`).join('')+
+ `<tr><th>Total</th><th>${fmt(R.tot28.FJAC)}</th><th>${fmt(R.tot28.FCAL)}</th><th>${fmt(R.fer_total)}</th><th>${fmt(R.tot28.BLO)}</th><th></th></tr>`;
+
+// table ties
+$('temp').innerHTML='<tr><th>Departamento</th><th>Partidos</th><th>Votos de cada uno</th></tr>'+R.empates22.casos.map(c=>`<tr><td>${c[0]}</td><td>${c[1]} = ${c[2]}</td><td>${c[3]}</td></tr>`).join('');
+$('tdig').innerHTML='<tr><th>Dígito final</th>'+[...Array(10).keys()].map(i=>`<th>${i}</th>`).join('')+'<th>n</th><th>p (χ²)</th></tr>'+
+ [['1922',R.dig22],['1928',R.dig28]].map(([y,d])=>`<tr><td>${y}</td>${d.obs.map(o=>`<td>${o}</td>`).join('')}<td>${d.n}</td><td>${d.p.toFixed(3)}</td></tr>`).join('');
+
+function legend(id,items,shape){$(id).innerHTML=items.map(([l,v])=>`<span><i class="${shape}" style="background:${css(v)}"></i>${l}</span>`).join('')}
+
+function draw(){
+ // chart 1: stacked bars
+ const S=[['blo','Bloquistas (Melo)','--s-blo'],['fer','Ferrocarril (Matienzo)','--s-fer'],['soc','Socialistas','--s-soc'],['bla','En blanco','--s-bla']];
+ legend('leg1',S.map(s=>[s[1],s[2]]),'sw');
+ const d1=[...R.d28].sort((a,b)=>((b.fer>b.blo)-(a.fer>a.blo))||(b.fer>b.blo?(b.fer/b.vot)-(a.fer/a.vot):(b.blo/b.vot)-(a.blo/a.vot)));
+ const W=$('ch1').clientWidth||860, L=W<520?92:120, rh=22, H=d1.length*rh+28;
+ $('ch1').innerHTML='';const s1=el('svg',{viewBox:`0 0 ${W} ${H}`},$('ch1'));
+ const x=v=>L+v*(W-L-8);
+ [0,.25,.5,.75,1].forEach(t=>{el('line',{x1:x(t),x2:x(t),y1:0,y2:H-22,stroke:css('--grid')},s1);const tx=el('text',{x:x(t),y:H-6,'text-anchor':'middle','font-size':11},s1);tx.textContent=t*100+' %'});
+ d1.forEach((d,i)=>{const y=i*rh+3;const t=el('text',{x:L-8,y:y+rh/2+1,'text-anchor':'end','dominant-baseline':'middle','font-size':12},s1);t.textContent=d.dept;
+  let acc=0;S.forEach(([k,lab,c])=>{const v=d[k]/d.vot;if(v<=0){return}const w=Math.max(0,x(acc+v)-x(acc)-2);
+   const r=el('rect',{x:x(acc),y,width:Math.max(w,0.5),height:rh-6,rx:3,fill:css(c)},s1);
+   r.addEventListener('mousemove',e=>showTip(e,`<b>${d.dept}</b><br>${lab}: ${fmt(d[k])} (${pct(v)})<br>Votantes: ${fmt(d.vot)}`));r.addEventListener('mouseleave',hideTip);acc+=v});
+ });
+
+ // chart 2: scatter
+ legend('leg2',Object.values(GRUPO),'dot');
+ const W2=$('ch2').clientWidth||860,H2=Math.min(380,W2*.6),m={l:46,r:12,t:10,b:34};
+ $('ch2').innerHTML='';const s2=el('svg',{viewBox:`0 0 ${W2} ${H2}`},$('ch2'));
+ const X=v=>m.l+(v-.8)/(1-.8)*(W2-m.l-m.r), Y=v=>H2-m.b-(v-.5)/(.5)*(H2-m.t-m.b);
+ [.8,.85,.9,.95,1].forEach(t=>{el('line',{x1:X(t),x2:X(t),y1:m.t,y2:H2-m.b,stroke:css('--grid')},s2);const tx=el('text',{x:X(t),y:H2-m.b+16,'text-anchor':'middle','font-size':11},s2);tx.textContent=Math.round(t*100)+' %'});
+ [.5,.6,.7,.8,.9,1].forEach(t=>{el('line',{x1:m.l,x2:W2-m.r,y1:Y(t),y2:Y(t),stroke:css('--grid')},s2);const tx=el('text',{x:m.l-6,y:Y(t),'text-anchor':'end','dominant-baseline':'middle','font-size':11},s2);tx.textContent=Math.round(t*100)+' %'});
+ const xl=el('text',{x:W2-m.r,y:H2-2,'text-anchor':'end','font-size':11},s2);xl.textContent='participación →';
+ const lbl=new Set(['Jáchal','Ullún','Capital','Calingasta','Rawson','Valle Fértil']);
+ [...R.d28].sort((a,b)=>b.vot-a.vot).forEach(d=>{const r=4+Math.sqrt(d.vot)/9;const c=el('circle',{cx:X(d.part),cy:Y(d.gob_sh),r,fill:css(GRUPO[d.grupo][1]),stroke:css('--surface-1'),'stroke-width':2,'fill-opacity':.9},s2);
+  c.addEventListener('mousemove',e=>showTip(e,`<b>${d.dept}</b><br>Participación: ${pct(d.part)} (${fmt(d.vot)} de ${fmt(d.ins)})<br>Oficialismo: ${pct(d.gob_sh)}<br>${GRUPO[d.grupo][0]}`));c.addEventListener('mouseleave',hideTip);
+  if(lbl.has(d.dept)){const left=d.dept==='Calingasta';const t=el('text',{x:left?X(d.part)-r-3:X(d.part)+r+3,y:Y(d.gob_sh)+(left?16:d.dept==='Valle Fértil'?-6:3),'text-anchor':left?'end':'start','font-size':11},s2);t.textContent=d.dept}});
+
+ // chart 3: dumbbell
+ legend('leg3',Object.values(GRUPO),'dot');
+ const d3=[...R.cmp].sort((a,b)=>(a.grupo==='competitivo')-(b.grupo==='competitivo')||a.opo28-b.opo28);
+ const W3=$('ch3').clientWidth||860,L3=W<520?92:120,rh3=22,H3=d3.length*rh3+28;
+ $('ch3').innerHTML='';const s3=el('svg',{viewBox:`0 0 ${W3} ${H3}`},$('ch3'));
+ const X3=v=>L3+v/.75*(W3-L3-10);
+ [0,.25,.5,.75].forEach(t=>{el('line',{x1:X3(t),x2:X3(t),y1:0,y2:H3-22,stroke:css('--grid')},s3);const tx=el('text',{x:X3(t),y:H3-6,'text-anchor':'middle','font-size':11},s3);tx.textContent=t*100+' %'});
+ d3.forEach((d,i)=>{const y=i*rh3+rh3/2+2,c=css(GRUPO[d.grupo][1]);const t=el('text',{x:L3-8,y,'text-anchor':'end','dominant-baseline':'middle','font-size':12},s3);t.textContent=d.dept;
+  el('line',{x1:X3(d.ucr22),x2:X3(d.opo28),y1:y,y2:y,stroke:c,'stroke-width':2,'stroke-opacity':.55},s3);
+  const a=el('circle',{cx:X3(d.ucr22),cy:y,r:5,fill:css('--surface-1'),stroke:c,'stroke-width':2},s3);
+  const b=el('circle',{cx:X3(d.opo28),cy:y,r:5,fill:c,stroke:css('--surface-1'),'stroke-width':2},s3);
+  const h=e=>showTip(e,`<b>${d.dept}</b><br>UCR 1922: ${pct(d.ucr22)}<br>PS + blanco 1928: ${pct(d.opo28)}<br>${GRUPO[d.grupo][0]}`);
+  [a,b].forEach(n=>{n.addEventListener('mousemove',h);n.addEventListener('mouseleave',hideTip)})});
+}
+draw();addEventListener('resize',()=>{clearTimeout(window._r);window._r=setTimeout(draw,120)});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+</script>
+</body>
+</html>

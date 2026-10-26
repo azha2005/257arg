@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huella electoral 1916-28</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f8f7f4; --surface:#fcfcfb; --border:#e3e2dd; --grid:#ebeae5;
+  --ink:#1d1c1a; --ink2:#52514e; --ink3:#8a8984;
+  --dot:#1f4fd1; --dim:#b9b8b2; --hi:#d03b3b;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121211; --surface:#1a1a19; --border:#2f2f2c; --grid:#262624;
+    --ink:#f4f3ef; --ink2:#c3c2b7; --ink3:#8f8e86;
+    --dot:#5b8cff; --dim:#4a4945; --hi:#ff6b6b;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211; --surface:#1a1a19; --border:#2f2f2c; --grid:#262624;
+  --ink:#f4f3ef; --ink2:#c3c2b7; --ink3:#8f8e86;
+  --dot:#5b8cff; --dim:#4a4945; --hi:#ff6b6b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:28px 16px 60px}
+h1{font-size:1.9rem;line-height:1.15;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--ink2);margin:0 0 18px;max-width:720px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:0 0 10px}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:7px;overflow:hidden}
+.seg button{background:var(--surface);border:0;border-right:1px solid var(--border);color:var(--ink2);font:inherit;font-size:.85rem;padding:6px 11px;cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+label.sel{font-size:.85rem;color:var(--ink2);display:inline-flex;gap:6px;align-items:center}
+select{font:inherit;font-size:.85rem;background:var(--surface);color:var(--ink);border:1px solid var(--border);border-radius:7px;padding:5px 8px}
+.chart{position:relative}
+svg{display:block;width:100%;height:auto}
+svg text{fill:var(--ink2)}
+.axis{font-size:15px}
+.axt{font-size:16px;font-weight:600;fill:var(--ink)}
+#tip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 10px;font-size:.8rem;line-height:1.4;box-shadow:0 4px 14px rgba(0,0,0,.15);opacity:0;max-width:260px;z-index:9}
+.note{font-size:.82rem;color:var(--ink3);margin-top:10px;max-width:760px}
+.legend{display:flex;gap:16px;font-size:.82rem;color:var(--ink2);margin:6px 0 0}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.reads{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:22px}
+.reads div{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px;font-size:.88rem;color:var(--ink2)}
+.reads b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div id="tip"></div>
+<main>
+<h1>Elecciones nacionales argentinas 1916–28</h1>
+<p class="sub">Cada punto es un departamento: participación (votantes sobre inscriptos) contra el porcentaje de votos válidos de la lista elegida. Es la misma lectura que el gráfico de las elecciones rusas: un comicio limpio forma una nube, y el relleno de urnas estira puntos hacia la esquina de arriba a la derecha.</p>
+
+<div class="controls">
+  <div class="seg" id="anio" role="group" aria-label="Año">
+    <button data-v="all" aria-pressed="true">Todas</button><button data-v="1916">1916</button><button data-v="1922">1922</button><button data-v="1928">1928</button>
+  </div>
+  <div class="seg" id="medida" role="group" aria-label="Medida">
+    <button data-v="gan" aria-pressed="true">Lista ganadora</button><button data-v="ucr">UCR</button>
+  </div>
+  <label class="sel">Destacar <select id="prov"><option value="">ninguna provincia</option></select></label>
+</div>
+<div class="legend" id="leg"></div>
+<div class="chart" id="chart"></div>
+<p class="note" id="nota"></p>
+
+<div class="reads">
+  <div><b>Qué no se puede ver acá.</b> En el gráfico ruso, la cuadrícula de picos en 70, 75, 80… % aparece porque hay unas 95.000 mesas por elección. Con unos 800 departamentos no hay densidad para detectar porcentajes redondos: haría falta el dato por mesa.</div>
+  <div><b>Qué sí se ve.</b> Los puntos que se apartan de la nube de su propia elección. Con «Destacar: San Juan» aparece 1928: casi todos los departamentos pegados al 100 % de votos, con participación del 88–99 %.</div>
+  <div><b>Cómo leer 1928.</b> En 1928 la participación sube en todo el país (de cerca del 60 % al 80 %). La nube entera se corre a la derecha. Lo sospechoso es la esquina, no el corrimiento.</div>
+</div>
+<p class="note">Fuente: D. Cantón (1968), t. II, a través de los atlas de este proyecto. 1916: diputados; 1922 y 1928: electores de presidente; solo varones. Se excluyen departamentos sin dato de votantes (gran parte de 1922 y todo San Juan 1922), con menos de 50 votantes o con más votantes que inscriptos. Se cuentan una sola vez los polígonos que repiten una misma fila de la fuente.</p>
+</main>
+<script>
+const D=/*DATA*/[];
+const $=id=>document.getElementById(id);
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);p&&p.appendChild(n);return n};
+const pct=x=>(x*100).toLocaleString('es-AR',{maximumFractionDigits:1})+' %';
+const st={anio:'all',medida:'gan',prov:''};
+[...new Set(D.map(d=>d.p))].sort((a,b)=>a.localeCompare(b,'es')).forEach(p=>$('prov').insertAdjacentHTML('beforeend',`<option>${p}</option>`));
+function seg(id,key){$(id).addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st[key]=b.dataset.v;[...$(id).children].forEach(x=>x.setAttribute('aria-pressed',x===b));draw()})}
+seg('anio','anio');seg('medida','medida');$('prov').addEventListener('change',e=>{st.prov=e.target.value;draw()});
+const tip=$('tip');
+function draw(){
+  const rows=D.filter(d=>st.anio==='all'||d.a==st.anio).filter(d=>st.medida==='gan'||d.ucr>0);
+  const W=Math.max(320,$('chart').clientWidth), H=Math.round(W*.56), m={l:16,r:W<560?44:62,t:34,b:42};
+  const x0=.2,x1=1,y0=st.medida==='gan'?.2:0,y1=1;
+  const X=v=>m.l+(v-x0)/(x1-x0)*(W-m.l-m.r), Y=v=>H-m.b-(v-y0)/(y1-y0)*(H-m.t-m.b);
+  $('chart').innerHTML='';const s=el('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':'Participación contra porcentaje de votos por departamento'},$('chart'));
+  const grid=css('--grid'),ink2=css('--ink2');
+  for(let t=Math.ceil(x0*10)/10;t<=x1+1e-9;t+=.1){const xx=X(t);el('line',{x1:xx,x2:xx,y1:m.t,y2:H-m.b,stroke:grid},s);el('line',{x1:xx,x2:xx,y1:H-m.b+4,y2:H-m.b+11,stroke:ink2},s);const tx=el('text',{x:xx,y:H-m.b+30,'text-anchor':'middle',class:'axis'},s);tx.textContent=Math.round(t*100)}
+  for(let t=Math.ceil(y0*10)/10;t<=y1+1e-9;t+=.1){const yy=Y(t);el('line',{x1:m.l,x2:W-m.r,y1:yy,y2:yy,stroke:grid},s);el('line',{x1:W-m.r+4,x2:W-m.r+14,y1:yy,y2:yy,stroke:ink2},s);const tx=el('text',{x:W-m.r+18,y:yy,'dominant-baseline':'middle',class:'axis'},s);tx.textContent=Math.round(t*100)}
+  const ty=el('text',{x:W-m.r+14,y:m.t-14,'text-anchor':'end',class:'axt'},s);ty.textContent=st.medida==='gan'?'Lista ganadora, %':'UCR, %';
+  const tx=el('text',{x:m.l+6,y:H-m.b-10,class:'axt'},s);tx.textContent='Participación, %';
+  const dot=css('--dot'),dim=css('--dim'),hi=css('--hi');
+  const k=Math.sqrt(W/900);
+  const ordered=[...rows].sort((a,b)=>(a.p===st.prov)-(b.p===st.prov)||b.vot-a.vot);
+  ordered.forEach(d=>{
+    const v=st.medida==='gan'?d.gan:d.ucr; const on=!st.prov||d.p===st.prov; const isHi=st.prov&&d.p===st.prov;
+    const c=el('circle',{cx:X(Math.min(d.part,1)),cy:Y(v),r:(2.2+Math.sqrt(d.vot)/16)*k,fill:isHi?hi:(on?dot:dim),'fill-opacity':isHi?.85:(on?.32:.25)},s);
+    if(isHi)c.setAttribute('stroke',css('--surface')),c.setAttribute('stroke-width',1.5);
+    c.addEventListener('mousemove',e=>{tip.innerHTML=`<b>${d.d}</b>, ${d.p} · ${d.a}<br>Participación: ${pct(d.part)} (${d.vot.toLocaleString('es-AR')} de ${d.ins.toLocaleString('es-AR')})<br>Lista ganadora: ${pct(d.gan)} (${d.gl})<br>UCR: ${pct(d.ucr)}`;tip.style.opacity=1;tip.style.left=Math.min(e.clientX+14,innerWidth-270)+'px';tip.style.top=(e.clientY+14)+'px'});
+    c.addEventListener('mouseleave',()=>tip.style.opacity=0);
+  });
+  $('leg').innerHTML=st.prov?`<span><i style="background:${hi}"></i>${st.prov}</span><span><i style="background:${dim}"></i>resto del país</span>`:`<span><i style="background:${dot};opacity:.6"></i>departamento (tamaño = votantes)</span>`;
+  const n=rows.length, hi95=rows.filter(d=>d.part>.85&&(st.medida==='gan'?d.gan:d.ucr)>.95);
+  $('nota').textContent=`${n} departamentos en pantalla. Con participación > 85 % y voto > 95 %: ${hi95.length}`+(hi95.length?` (${hi95.map(d=>d.d+', '+d.p+' '+d.a).join('; ')}).`:'.');
+}
+draw();addEventListener('resize',()=>{clearTimeout(window._r);window._r=setTimeout(draw,120)});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+</script>
+</body>
+</html>

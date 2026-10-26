@@ -1,0 +1,16 @@
+# Emblemas de 2013: se ejecuta desde build_2013.py (usa CAND y _logo). Origen y licencias en logos_wikipedia/LICENCIAS.md.
+CAND["FPV"].update(_logo("Logo_Frente_para_la_Victoria.svg"))
+CAND["FPCyS"].update(_logo("Logo_FPCyS_blanco.png"))
+CAND["FR"].update(_logo("Logo_del_Frente_Renovador.png"))
+CAND["PRO"].update(_logo("Propuesta_Republicana.png"))
+CAND["FIT"].update(_logo("Frente_de_Izquierda_y_de_los_Trabajadores_Logo.svg"))
+CAND["UxC"].update(_logo("Logo_Union_por_Cordoba_crop.png"))
+CAND["FRC"].update(_logo("Frente_Renovador_de_la_Concordia_Social.png"))
+CAND["CF"].update(_logo("ACFederal.png"))
+CAND["PACh"].update(_logo("Partido_Accion_Chubutense_banda.png"))
+CAND["FE"].update(_logo("Logo_de_Partido_Fe.svg"))
+CAND["MPN"].update(_logo("Logo_MPN.png"))
+CAND["PJ"].update(_logo("Flag_of_the_Justicialist_Party_(square_version).svg"))
+CAND["PARES"].update(_logo("PRS_logo.png"))
+CAND["MIJD"].update(_logo("Logo_MIJD.png"))
+# SST (Salta Somos Todos) no tiene archivo de emblema en Commons -> usa sigla "SST".

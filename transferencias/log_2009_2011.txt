@@ -1,0 +1,396 @@
+{
+ "circuitos_origen": 5590,
+ "circuitos_destino": 5481,
+ "por_seccion": [
+  {
+   "distrito": "21",
+   "cobertura_circuitos": 0.668
+  }
+ ],
+ "comunes": 4924,
+ "usados": 4623,
+ "crecimiento_padron_mediano": 1.008,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.996,
+  "03": 0.986,
+  "04": 0.984,
+  "05": 1.0,
+  "06": 0.998,
+  "07": 0.999,
+  "08": 0.884,
+  "09": 0.948,
+  "10": 0.99,
+  "11": 0.988,
+  "12": 0.968,
+  "13": 0.997,
+  "14": 0.99,
+  "15": 0.996,
+  "16": 0.999,
+  "17": 0.971,
+  "18": 0.995,
+  "19": 0.945,
+  "20": 1.0,
+  "21": 1.0,
+  "22": 0.99,
+  "23": 0.999,
+  "24": 0.973
+ },
+ "electores_origen_usados": 27322965,
+ "electores_origen_total": 27605572,
+ "electores_destino_usados": 28075422,
+ "electores_destino_total": 28377147,
+ "validacion_cruzada_pp": {
+  "0.0002": 2.7597,
+  "2e-05": 2.5571,
+  "2e-06": 2.4776,
+  "2e-07": 2.4542,
+  "0": 2.4648
+ },
+ "lambda": 2e-06,
+ "rmse_destino_pp": 4.407234155076575,
+ "votos_distintos_vs_calvo": 5024750,
+ "votos_total": 28075421,
+ "marginal_origen": {
+  "Frente para la Victoria": 5501356,
+  "Acuerdo Cívico y Social": 5785964,
+  "PRO / Unión-PRO": 3603563,
+  "Peronismo Federal": 1560037,
+  "Proyecto Sur": 438038,
+  "Otros": 1984930,
+  "Blanco y nulo": 976261,
+  "No votó": 7472816
+ },
+ "marginal_destino": {
+  "Frente para la Victoria": 10423096,
+  "UDESO (UCR)": 2679304,
+  "FAP": 2708082,
+  "Frente Popular / PRO": 1414936,
+  "Compromiso Federal": 1183732,
+  "CC-ARI": 606319,
+  "FIT": 575393,
+  "Otros": 364125,
+  "Blanco y nulo": 1939034,
+  "No votó": 6181401
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Frente para la Victoria": 542593,
+   "UDESO (UCR)": 131609,
+   "FAP": 313669,
+   "Frente Popular / PRO": 475244,
+   "Compromiso Federal": 107994,
+   "CC-ARI": 123356,
+   "FIT": 104375,
+   "Otros": 64072,
+   "Blanco y nulo": 52444,
+   "No votó": 562281
+  },
+  "02": {
+   "Frente para la Victoria": 4443172,
+   "UDESO (UCR)": 899576,
+   "FAP": 1012648,
+   "Frente Popular / PRO": 525852,
+   "Compromiso Federal": 435258,
+   "CC-ARI": 199522,
+   "FIT": 277732,
+   "Otros": 0,
+   "Blanco y nulo": 857453,
+   "No votó": 1871296
+  },
+  "03": {
+   "Frente para la Victoria": 118815,
+   "UDESO (UCR)": 39196,
+   "FAP": 7147,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 0,
+   "CC-ARI": 5054,
+   "FIT": 0,
+   "Otros": 4037,
+   "Blanco y nulo": 9382,
+   "No votó": 66837
+  },
+  "04": {
+   "Frente para la Victoria": 616674,
+   "UDESO (UCR)": 354852,
+   "FAP": 356292,
+   "Frente Popular / PRO": 96933,
+   "Compromiso Federal": 210975,
+   "CC-ARI": 48214,
+   "FIT": 76101,
+   "Otros": 0,
+   "Blanco y nulo": 58671,
+   "No votó": 618168
+  },
+  "05": {
+   "Frente para la Victoria": 291665,
+   "UDESO (UCR)": 85193,
+   "FAP": 24579,
+   "Frente Popular / PRO": 26290,
+   "Compromiso Federal": 0,
+   "CC-ARI": 15361,
+   "FIT": 0,
+   "Otros": 92,
+   "Blanco y nulo": 40114,
+   "No votó": 212023
+  },
+  "06": {
+   "Frente para la Victoria": 321803,
+   "UDESO (UCR)": 113793,
+   "FAP": 35219,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 0,
+   "CC-ARI": 15607,
+   "FIT": 0,
+   "Otros": 31232,
+   "Blanco y nulo": 32943,
+   "No votó": 208835
+  },
+  "07": {
+   "Frente para la Victoria": 149605,
+   "UDESO (UCR)": 31147,
+   "FAP": 0,
+   "Frente Popular / PRO": 44034,
+   "Compromiso Federal": 0,
+   "CC-ARI": 7416,
+   "FIT": 0,
+   "Otros": 14467,
+   "Blanco y nulo": 28448,
+   "No votó": 81385
+  },
+  "08": {
+   "Frente para la Victoria": 295204,
+   "UDESO (UCR)": 88785,
+   "FAP": 72181,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 18234,
+   "CC-ARI": 7771,
+   "FIT": 0,
+   "Otros": 17985,
+   "Blanco y nulo": 113796,
+   "No votó": 190724
+  },
+  "09": {
+   "Frente para la Victoria": 158459,
+   "UDESO (UCR)": 40604,
+   "FAP": 0,
+   "Frente Popular / PRO": 3313,
+   "Compromiso Federal": 0,
+   "CC-ARI": 0,
+   "FIT": 0,
+   "Otros": 0,
+   "Blanco y nulo": 29292,
+   "No votó": 99703
+  },
+  "10": {
+   "Frente para la Victoria": 142266,
+   "UDESO (UCR)": 67817,
+   "FAP": 11134,
+   "Frente Popular / PRO": 27044,
+   "Compromiso Federal": 5492,
+   "CC-ARI": 0,
+   "FIT": 7010,
+   "Otros": 0,
+   "Blanco y nulo": 55099,
+   "No votó": 104296
+  },
+  "11": {
+   "Frente para la Victoria": 84700,
+   "UDESO (UCR)": 51110,
+   "FAP": 0,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 7639,
+   "CC-ARI": 2019,
+   "FIT": 0,
+   "Otros": 3328,
+   "Blanco y nulo": 44567,
+   "No votó": 50208
+  },
+  "12": {
+   "Frente para la Victoria": 89409,
+   "UDESO (UCR)": 32597,
+   "FAP": 0,
+   "Frente Popular / PRO": 10754,
+   "Compromiso Federal": 0,
+   "CC-ARI": 0,
+   "FIT": 0,
+   "Otros": 0,
+   "Blanco y nulo": 26292,
+   "No votó": 54631
+  },
+  "13": {
+   "Frente para la Victoria": 376050,
+   "UDESO (UCR)": 178955,
+   "FAP": 50061,
+   "Frente Popular / PRO": 10062,
+   "Compromiso Federal": 136839,
+   "CC-ARI": 22207,
+   "FIT": 15772,
+   "Otros": 16299,
+   "Blanco y nulo": 127142,
+   "No votó": 277109
+  },
+  "14": {
+   "Frente para la Victoria": 337404,
+   "UDESO (UCR)": 72543,
+   "FAP": 25168,
+   "Frente Popular / PRO": 42835,
+   "Compromiso Federal": 13916,
+   "CC-ARI": 0,
+   "FIT": 0,
+   "Otros": 0,
+   "Blanco y nulo": 48175,
+   "No votó": 164534
+  },
+  "15": {
+   "Frente para la Victoria": 87223,
+   "UDESO (UCR)": 25340,
+   "FAP": 30897,
+   "Frente Popular / PRO": 9031,
+   "Compromiso Federal": 0,
+   "CC-ARI": 9579,
+   "FIT": 13180,
+   "Otros": 88409,
+   "Blanco y nulo": 59037,
+   "No votó": 73200
+  },
+  "16": {
+   "Frente para la Victoria": 199394,
+   "UDESO (UCR)": 34465,
+   "FAP": 32826,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 0,
+   "CC-ARI": 9388,
+   "FIT": 8770,
+   "Otros": 0,
+   "Blanco y nulo": 49897,
+   "No votó": 101208
+  },
+  "17": {
+   "Frente para la Victoria": 306041,
+   "UDESO (UCR)": 96537,
+   "FAP": 25484,
+   "Frente Popular / PRO": 46836,
+   "Compromiso Federal": 0,
+   "CC-ARI": 9319,
+   "FIT": 47040,
+   "Otros": 13545,
+   "Blanco y nulo": 13657,
+   "No votó": 208784
+  },
+  "18": {
+   "Frente para la Victoria": 211258,
+   "UDESO (UCR)": 21920,
+   "FAP": 0,
+   "Frente Popular / PRO": 5585,
+   "Compromiso Federal": 58923,
+   "CC-ARI": 0,
+   "FIT": 0,
+   "Otros": 7355,
+   "Blanco y nulo": 43811,
+   "No votó": 110888
+  },
+  "19": {
+   "Frente para la Victoria": 54471,
+   "UDESO (UCR)": 21055,
+   "FAP": 0,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 111781,
+   "CC-ARI": 0,
+   "FIT": 0,
+   "Otros": 0,
+   "Blanco y nulo": 37999,
+   "No votó": 63500
+  },
+  "20": {
+   "Frente para la Victoria": 72787,
+   "UDESO (UCR)": 22119,
+   "FAP": 3397,
+   "Frente Popular / PRO": 0,
+   "Compromiso Federal": 0,
+   "CC-ARI": 6169,
+   "FIT": 2531,
+   "Otros": 4567,
+   "Blanco y nulo": 36279,
+   "No votó": 48059
+  },
+  "21": {
+   "Frente para la Victoria": 715403,
+   "UDESO (UCR)": 113412,
+   "FAP": 614075,
+   "Frente Popular / PRO": 56228,
+   "Compromiso Federal": 76681,
+   "CC-ARI": 114335,
+   "FIT": 0,
+   "Otros": 36347,
+   "Blanco y nulo": 94411,
+   "No votó": 592204
+  },
+  "22": {
+   "Frente para la Victoria": 327627,
+   "UDESO (UCR)": 29094,
+   "FAP": 13459,
+   "Frente Popular / PRO": 12646,
+   "Compromiso Federal": 0,
+   "CC-ARI": 0,
+   "FIT": 0,
+   "Otros": 0,
+   "Blanco y nulo": 15561,
+   "No votó": 189631
+  },
+  "23": {
+   "Frente para la Victoria": 455959,
+   "UDESO (UCR)": 122959,
+   "FAP": 79846,
+   "Frente Popular / PRO": 20973,
+   "Compromiso Federal": 0,
+   "CC-ARI": 9596,
+   "FIT": 22882,
+   "Otros": 36597,
+   "Blanco y nulo": 53911,
+   "No votó": 205082
+  },
+  "24": {
+   "Frente para la Victoria": 25114,
+   "UDESO (UCR)": 4626,
+   "FAP": 0,
+   "Frente Popular / PRO": 1276,
+   "Compromiso Federal": 0,
+   "CC-ARI": 1406,
+   "FIT": 0,
+   "Otros": 25793,
+   "Blanco y nulo": 10653,
+   "No votó": 26815
+  }
+ },
+ "marginal_destino_estimada": {
+  "Frente para la Victoria": 10430176,
+  "UDESO (UCR)": 2715677,
+  "FAP": 2744026,
+  "Frente Popular / PRO": 1437460,
+  "Compromiso Federal": 1185483,
+  "CC-ARI": 632734,
+  "FIT": 585275,
+  "Otros": 364569,
+  "Blanco y nulo": 1953118,
+  "No votó": 6026904
+ }
+}
+                         Frente para la Victoria  UDESO (UCR)   FAP  Frente Popular / PRO  Compromiso Federal  CC-ARI   FIT  Otros  Blanco y nulo  No votó
+Frente para la Victoria                     94.1          2.0   0.1                   0.8                 0.0     0.1   0.0    0.3            2.4      0.2
+Acuerdo Cívico y Social                      9.1         31.4  21.4                   3.3                 3.3     5.4   1.1    0.6            6.1     18.3
+PRO / Unión-PRO                             25.0          8.9   3.4                  23.2                11.2     3.7   3.7    0.0           18.7      2.3
+Peronismo Federal                           39.7          7.4  16.9                   8.9                14.0     1.0   1.3    1.7            1.8      7.4
+Proyecto Sur                                 0.2         11.7  45.2                   0.6                14.7     0.5  18.2    7.1            0.2      1.5
+Otros                                       46.5          5.6  16.7                   1.9                 0.6     0.8   5.5    8.6            8.3      5.4
+Blanco y nulo                               42.3          0.1   9.6                   0.1                 0.1     0.1   0.1    0.0           47.5      0.2
+No votó                                     20.8          1.6   5.7                   2.0                 3.6     1.8   2.2    1.0            1.1     60.1
+                         Frente para la Victoria  UDESO (UCR)      FAP  Frente Popular / PRO  Compromiso Federal  CC-ARI     FIT   Otros  Blanco y nulo  No votó
+Frente para la Victoria                  5361000       115000     4000                 43000                1000    5000    2000   19000         137000    11000
+Acuerdo Cívico y Social                   540000      1862000  1270000                199000              195000  317000   67000   34000         363000  1085000
+PRO / Unión-PRO                           922000       329000   127000                857000              412000  135000  135000    1000         691000    83000
+Peronismo Federal                         633000       117000   269000                142000              223000   15000   21000   27000          29000   118000
+Proyecto Sur                                1000        51000   196000                  3000               64000    2000   79000   31000           1000     7000
+Otros                                     952000       115000   342000                 38000               12000   17000  112000  177000         170000   110000
+Blanco y nulo                             426000         1000    96000                  1000                1000    1000    1000       0         479000     2000
+No votó                                  1595000       125000   438000                155000              279000  140000  169000   76000          83000  4610000

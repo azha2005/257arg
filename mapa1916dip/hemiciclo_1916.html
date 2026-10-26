@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hemiciclo 1916</title>
+<style>
+:root{--bg:#000;--fg:#d6d9de;--mut:#8d9298;--line:#4d4d4d;--wall:#2a2c30;--floor:#0d0e10;--est:#3a3d42;--ctl:#16181c;--ctlfg:#cfd3d8;--vac:#4a4a40}
+@media (prefers-color-scheme:light){:root{--bg:#fff;--fg:#22252a;--mut:#6b7078;--line:#c9c9c9;--wall:#c9ccd1;--floor:#f4f4f2;--est:#d9dbe0;--ctl:#eee;--ctlfg:#222;--vac:#ddddbb}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Bahnschrift,"DIN Alternate","Segoe UI",Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 40px}
+h1{margin:0;font:700 26px/1.1 Bahnschrift,"DIN Alternate","Roboto Condensed","Arial Narrow",Arial,sans-serif;letter-spacing:.2px}
+.sub{color:var(--mut);margin:6px 0 14px;font-size:14px}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.ctl button{background:var(--ctl);color:var(--ctlfg);border:1px solid var(--line);border-radius:4px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.ctl button[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+svg{display:block;width:100%;height:auto}
+.seat{stroke:var(--bg);stroke-width:1.5;transition:opacity .15s}
+.seat.old{opacity:.28}
+.seat.dim{opacity:.12}
+.seat.vac{fill:none!important;stroke:var(--mut);stroke-width:2;stroke-dasharray:3 3}
+.seat:hover{stroke:var(--fg);stroke-width:2.5}
+.leg{display:grid;gap:8px;margin:10px 0 0}
+.row{display:grid;grid-template-columns:18px minmax(150px,1.1fr) 3fr 78px;gap:10px;align-items:center;padding:4px 6px;border-radius:4px;cursor:default}
+.row:hover{background:rgba(127,127,127,.12)}
+.sw{width:18px;height:18px;border-radius:50%}
+.nm b{display:block;font-size:15px}
+.nm span{display:block;color:var(--mut);font-size:12px;line-height:1.25}
+.bar{height:10px;background:rgba(127,127,127,.18);border-radius:5px;overflow:hidden;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0}
+.bar u{position:absolute;left:0;top:0;bottom:0;background:var(--bg);opacity:.0}
+.n{text-align:right;font:700 20px Bahnschrift,"DIN Alternate",Arial,sans-serif}
+.n small{display:block;font:400 11px Bahnschrift,Arial,sans-serif;color:var(--mut)}
+#tip{position:fixed;pointer-events:none;background:rgba(12,13,16,.97);color:#e6e8eb;border:1px solid #555;border-radius:4px;padding:6px 9px;font-size:13px;display:none;z-index:5;max-width:260px}
+#tip b{display:block}
+#tip span{color:#9aa0a8;font-size:12px}
+.notes{margin-top:22px;color:var(--mut);font-size:13px;line-height:1.5;max-width:860px}
+.notes h2{font-size:14px;color:var(--fg);margin:0 0 6px}
+.notes li{margin:3px 0}
+text{font-family:Bahnschrift,"DIN Alternate","Segoe UI",Arial,sans-serif}
+@media (max-width:620px){.row{grid-template-columns:18px 1fr 70px}.bar{display:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Cámara de Diputados de la Nación · 1916</h1>
+<p class="sub">Composición tras las elecciones del 2 de abril: 120 bancas en un hemiciclo, con la presidencia sobre el diámetro</p>
+<div class="ctl" role="group" aria-label="Vista">
+  <button id="b-tot" aria-pressed="true">Composición total (120)</button>
+  <button id="b-ren" aria-pressed="false">Renovación 1916 (62 electos · 58 con mandato)</button>
+</div>
+<svg id="hc" viewBox="0 0 900 540" role="img" aria-label="Hemiciclo de la Cámara de Diputados de 1916"></svg>
+<div class="leg" id="leg"></div>
+
+<div class="notes">
+<h2>Qué es y qué no es</h2>
+<ul>
+<li><b>Bancas por bloque:</b> las de Wikipedia, «Elecciones legislativas de Argentina de 1916» (47 UCR, 43 conservadores, 9 PDP, 9 PS, 6 Concentración Cívica, 4 UCR disidente, 1 otros, 1 vacante). Es la composición de las 120 bancas, no el resultado de los 62 cargos en disputa.</li>
+<li><b>Los bloques no son los del mapa.</b> El mapa agrupa por columnas de Cantón; acá los bloques son los de la Wikipedia. Concentración Cívica (Pacto Autonomista-Liberal) va aparte y no dentro de los conservadores. Los 18 conservadores electos son 15 del Partido Conservador, 2 de Unión Provincial y 1 de Unión Democrática.</li>
+<li><b>Forma del recinto:</b> según <i>El Congreso Nacional. Reflejos de su historia</i> (HCDN, p. 90), el salón de Diputados es un hemiciclo de 26 m de diámetro. Las bancas miran al estrado presidencial; en el centro están la mesa ministerial y la de taquígrafos; hay tres pisos de galerías. El libro describe el recinto actual, con 257 bancas, y no trae plano ni número de bancas de 1916 (las fotos de esas páginas son de 1959). El edificio se inauguró en 1906. Acá dibujo 120 bancas en seis filas concéntricas y el ancho del estrado como esquema mío; no marqué mesas, pasillos ni galerías.</li>
+<li><b>Ubicación de cada banca:</b> inventada. El orden de izquierda a derecha sigue la leyenda de la Wikipedia (PS, UCR, PDP, UCR disidente, CC, conservadores, otros, vacante) y no cómo se sentaban los diputados en 1916. Dentro de cada bloque, los diputados con mandato anterior se pintan primero (izquierda); es solo una convención para la vista de renovación.</li>
+<li><b>Renovación:</b> la Cámara se renovaba por mitades y en 1916 se votaron 62 de las 120 bancas. Los 58 «con mandato» son la diferencia entre el total de cada bloque y lo que ganó en 1916 (cálculo mío con las cifras de la Wikipedia).</li>
+</ul>
+</div>
+</main>
+<div id="tip"></div>
+<script>
+const P=[
+ {k:"PS", n:"Partido Socialista", d:"Bloque propio; el Socialista Argentino (PSA) no obtuvo bancas", c:"#d98a00", tot:9, new:3},
+ {k:"UCR",n:"Unión Cívica Radical", d:"Radicales (Comité Nacional)", c:"#dc0143", tot:47,new:26},
+ {k:"PDP",n:"Demócratas progresistas", d:"Partido Demócrata Progresista", c:"#2a9d8f", tot:9, new:7},
+ {k:"RAD",n:"UCR disidente", d:"Radicales disidentes (Santa Fe)", c:"#7b3fa0", tot:4, new:4},
+ {k:"CC", n:"Concentración Cívica", d:"Pacto Autonomista-Liberal", c:"#6fa0ea", tot:6, new:3},
+ {k:"CON",n:"Conservadores", d:"Concentración Conservadora. Electos: Conservador 15 · Unión Provincial 2 · Unión Democrática 1", c:"#1c5ece", tot:43,new:18},
+ {k:"OTR",n:"Otros", d:"Sin bloque definido en la fuente", c:"#8c8c8c", tot:1, new:0},
+ {k:"VAC",n:"Vacante", d:"Banca sin ocupar entre las 62 en disputa", c:"#ddddbb", tot:1, new:1}
+];
+const NS="http://www.w3.org/2000/svg";
+const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const svg=document.getElementById("hc"),cx=450,cy=470,R=400,rs=16;
+
+// recinto: muro semicircular de ~26 m (13 m = 440 px), piso, estrado sobre el diámetro
+el("path",{d:`M${cx-440},${cy} A440,440 0 0 1 ${cx+440},${cy} Z`,fill:"var(--floor)",stroke:"var(--wall)","stroke-width":10},svg);
+el("rect",{x:cx-85,y:cy-52,width:170,height:52,rx:4,fill:"var(--est)"},svg);
+el("text",{x:cx,y:cy-20,"text-anchor":"middle",fill:"var(--mut)","font-size":13},svg).textContent="Presidencia";
+// cota del diámetro
+const dy=cy+26;
+el("path",{d:`M${cx-440},${dy} H${cx+440} M${cx-440},${dy-6} V${dy+6} M${cx+440},${dy-6} V${dy+6}`,stroke:"var(--mut)","stroke-width":1.2,fill:"none"},svg);
+el("rect",{x:cx-60,y:dy-10,width:120,height:20,fill:"var(--bg)"},svg);
+el("text",{x:cx,y:dy+5,"text-anchor":"middle",fill:"var(--mut)","font-size":13},svg).textContent="≈ 26 m";
+
+// bancas: 6 filas concéntricas, 120 bancas
+const rows=[13,16,19,21,24,27];
+let seats=[];
+rows.forEach((n,i)=>{
+  const r=R*(0.5+0.1*i);
+  const dl=(rs+4)/r;
+  for(let j=0;j<n;j++){const th=Math.PI-dl-(Math.PI-2*dl)*j/(n-1);seats.push({th,r,row:i,x:cx+r*Math.cos(th),y:cy-r*Math.sin(th)})}
+});
+seats.sort((a,b)=>(b.th-a.th)||(a.r-b.r));
+let idx=0;
+P.forEach(p=>{
+  p.seats=seats.slice(idx,idx+p.tot);idx+=p.tot;
+  p.held=p.tot-p.new;
+  p.seats.forEach((s,i)=>{s.p=p;s.old=i<p.held});
+});
+if(idx!==120)throw new Error("bancas != 120");
+const g=el("g",{},svg);
+seats.forEach(s=>{
+  const e=el("circle",{cx:s.x.toFixed(1),cy:s.y.toFixed(1),r:rs,fill:s.p.c,class:"seat"+(s.p.k==="VAC"?" vac":"")},g);
+  s.e=e;
+  e.addEventListener("mousemove",ev=>tip(ev,s));
+  e.addEventListener("mouseleave",()=>tipEl.style.display="none");
+});
+const mid=el("g",{"text-anchor":"middle"},svg);
+el("text",{x:cx,y:cy-112,"font-size":50,"font-weight":700,fill:"var(--fg)"},mid).textContent="120";
+el("text",{x:cx,y:cy-88,"font-size":14,fill:"var(--mut)"},mid).textContent="diputados · mayoría 61";
+
+// leyenda
+let mode="tot";
+const leg=document.getElementById("leg");
+P.forEach(p=>{
+  const r=document.createElement("div");r.className="row";
+  r.innerHTML=`<div class="sw" style="background:${p.k==="VAC"?"transparent;border:2px dashed var(--mut)":p.c}"></div>
+  <div class="nm"><b>${p.n}</b><span>${p.d}</span></div>
+  <div class="bar"><i style="width:${p.tot/47*100}%;background:${p.c}"></i></div>
+  <div class="n"><span class="v"></span><small></small></div>`;
+  p.row=r;leg.appendChild(r);
+  r.addEventListener("mouseenter",()=>hi(p));
+  r.addEventListener("mouseleave",()=>hi(null));
+});
+function hi(p){seats.forEach(s=>s.e.classList.toggle("dim",!!p&&s.p!==p))}
+function render(){
+  seats.forEach(s=>s.e.classList.toggle("old",mode==="ren"&&s.old&&s.p.k!=="VAC"));
+  P.forEach(p=>{
+    const v=p.row.querySelector(".v"),sm=p.row.querySelector("small");
+    if(mode==="tot"){v.textContent=p.tot;sm.textContent=(p.tot/120*100).toFixed(1).replace(".",",")+" %"}
+    else{v.textContent=p.new;sm.textContent=p.held+" con mandato · total "+p.tot}
+  });
+  document.getElementById("b-tot").setAttribute("aria-pressed",mode==="tot");
+  document.getElementById("b-ren").setAttribute("aria-pressed",mode==="ren");
+}
+document.getElementById("b-tot").onclick=()=>{mode="tot";render()};
+document.getElementById("b-ren").onclick=()=>{mode="ren";render()};
+
+const tipEl=document.getElementById("tip");
+function tip(ev,s){
+  const p=s.p;
+  tipEl.innerHTML=`<b>${p.n}</b><span>${p.k==="VAC"?"banca vacante":(s.old?"mandato vigente (elegido antes de 1916)":"elegido en 1916")}</span><br><span>${p.tot} de 120 bancas${p.k==="VAC"?"":" · "+p.new+" renovadas en 1916"}</span>`;
+  tipEl.style.display="block";
+  tipEl.style.left=Math.min(ev.clientX+14,innerWidth-270)+"px";tipEl.style.top=(ev.clientY+14)+"px";
+}
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+ "circuitos_origen": 451,
+ "circuitos_destino": 393,
+ "por_seccion": [],
+ "comunes": 355,
+ "usados": 355,
+ "crecimiento_padron_mediano": 1.107,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 1.0,
+  "03": 0.0,
+  "04": 1.0,
+  "06": 1.0,
+  "07": 1.0,
+  "08": 1.0,
+  "09": 0.0,
+  "10": 1.0,
+  "11": 1.0,
+  "12": 0.0,
+  "13": 1.0,
+  "14": 0.0,
+  "15": 1.0,
+  "17": 1.0,
+  "18": 1.0,
+  "19": 0.0,
+  "20": 0.0,
+  "21": 1.0,
+  "22": 0.0,
+  "23": 1.0
+ },
+ "electores_origen_usados": 8967491,
+ "electores_origen_total": 9611221,
+ "electores_destino_usados": 9899484,
+ "electores_destino_total": 10296834,
+ "descartados": [],
+ "validacion_cruzada_pp": {
+  "0.0002": 3.9069,
+  "2e-05": 3.8832,
+  "2e-06": 3.8926,
+  "2e-07": 3.9074,
+  "0": 3.9214
+ },
+ "lambda": 0.0002,
+ "rmse_destino_pp": 5.1453945770667175,
+ "votos_distintos_vs_calvo": 1682470,
+ "votos_total": 9899484,
+ "marginal_origen": {
+  "UCRI (Frondizi)": 3726525,
+  "UCRP (Balbín)": 2445498,
+  "Otros": 1285273,
+  "Blanco y nulo": 744461,
+  "No votó": 765734
+ },
+ "marginal_destino": {
+  "UP y neoperonistas": 2939014,
+  "UCRI": 2127108,
+  "UCRP": 1712012,
+  "FNPC (centro)": 480344,
+  "Otros": 992180,
+  "Blanco y nulo": 321453,
+  "No votó": 1327373
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "UP y neoperonistas": 460571,
+   "UCRI": 456968,
+   "UCRP": 353980,
+   "FNPC (centro)": 49638,
+   "Otros": 253075,
+   "Blanco y nulo": 43594,
+   "No votó": 197618
+  },
+  "02": {
+   "UP y neoperonistas": 1200239,
+   "UCRI": 729516,
+   "UCRP": 623438,
+   "FNPC (centro)": 179407,
+   "Otros": 318681,
+   "Blanco y nulo": 127005,
+   "No votó": 440859
+  },
+  "04": {
+   "UP y neoperonistas": 295288,
+   "UCRI": 180485,
+   "UCRP": 309029,
+   "FNPC (centro)": 70021,
+   "Otros": 37004,
+   "Blanco y nulo": 29407,
+   "No votó": 131168
+  },
+  "06": {
+   "UP y neoperonistas": 60915,
+   "UCRI": 58229,
+   "UCRP": 49083,
+   "FNPC (centro)": 7556,
+   "Otros": 12213,
+   "Blanco y nulo": 9060,
+   "No votó": 66399
+  },
+  "07": {
+   "UP y neoperonistas": 18361,
+   "UCRI": 12831,
+   "UCRP": 12885,
+   "FNPC (centro)": 1,
+   "Otros": 1301,
+   "Blanco y nulo": 1639,
+   "No votó": 18178
+  },
+  "08": {
+   "UP y neoperonistas": 72350,
+   "UCRI": 122917,
+   "UCRP": 104823,
+   "FNPC (centro)": 27429,
+   "Otros": 18523,
+   "Blanco y nulo": 42122,
+   "No votó": 80872
+  },
+  "10": {
+   "UP y neoperonistas": 38304,
+   "UCRI": 26539,
+   "UCRP": 4167,
+   "FNPC (centro)": 5965,
+   "Otros": 15,
+   "Blanco y nulo": 1821,
+   "No votó": 22104
+  },
+  "11": {
+   "UP y neoperonistas": 27611,
+   "UCRI": 29378,
+   "UCRP": 13031,
+   "FNPC (centro)": 0,
+   "Otros": 6445,
+   "Blanco y nulo": 1810,
+   "No votó": 11970
+  },
+  "13": {
+   "UP y neoperonistas": 151115,
+   "UCRI": 46912,
+   "UCRP": 59582,
+   "FNPC (centro)": 93186,
+   "Otros": 22033,
+   "Blanco y nulo": 8522,
+   "No votó": 59171
+  },
+  "15": {
+   "UP y neoperonistas": 18879,
+   "UCRI": 10962,
+   "UCRP": 4460,
+   "FNPC (centro)": 863,
+   "Otros": 2630,
+   "Blanco y nulo": 1143,
+   "No votó": 9695
+  },
+  "17": {
+   "UP y neoperonistas": 85363,
+   "UCRI": 25591,
+   "UCRP": 12244,
+   "FNPC (centro)": 18369,
+   "Otros": 7787,
+   "Blanco y nulo": 2402,
+   "No votó": 45139
+  },
+  "18": {
+   "UP y neoperonistas": 54441,
+   "UCRI": 43026,
+   "UCRP": 20789,
+   "FNPC (centro)": 14799,
+   "Otros": 26739,
+   "Blanco y nulo": 866,
+   "No votó": 20506
+  },
+  "21": {
+   "UP y neoperonistas": 293018,
+   "UCRI": 295970,
+   "UCRP": 138291,
+   "FNPC (centro)": 9154,
+   "Otros": 241439,
+   "Blanco y nulo": 46821,
+   "No votó": 124807
+  },
+  "23": {
+   "UP y neoperonistas": 162559,
+   "UCRI": 87784,
+   "UCRP": 6210,
+   "FNPC (centro)": 3956,
+   "Otros": 44295,
+   "Blanco y nulo": 5241,
+   "No votó": 98887
+  }
+ },
+ "marginal_destino_estimada": {
+  "UP y neoperonistas": 2958539,
+  "UCRI": 2137671,
+  "UCRP": 1732853,
+  "FNPC (centro)": 523390,
+  "Otros": 1019550,
+  "Blanco y nulo": 331779,
+  "No votó": 1195702
+ }
+}

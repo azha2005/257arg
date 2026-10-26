@@ -1,0 +1,327 @@
+{
+ "circuitos_origen": 5680,
+ "circuitos_destino": 5804,
+ "por_seccion": [
+  {
+   "distrito": "16",
+   "cobertura_circuitos": 0.844
+  },
+  {
+   "distrito": "20",
+   "cobertura_circuitos": 0.48
+  },
+  {
+   "distrito": "21",
+   "cobertura_circuitos": 0.0
+  },
+  {
+   "distrito": "24",
+   "cobertura_circuitos": 0.0
+  }
+ ],
+ "comunes": 4874,
+ "usados": 4280,
+ "crecimiento_padron_mediano": 1.054,
+ "cobertura_por_provincia": {
+  "01": 0.995,
+  "02": 0.925,
+  "03": 0.977,
+  "04": 0.975,
+  "05": 0.698,
+  "06": 0.995,
+  "07": 0.938,
+  "08": 0.989,
+  "09": 0.911,
+  "10": 0.954,
+  "11": 0.985,
+  "12": 0.983,
+  "13": 0.999,
+  "14": 0.856,
+  "15": 0.612,
+  "16": 0.984,
+  "17": 0.937,
+  "18": 0.997,
+  "19": 0.909,
+  "20": 1.0,
+  "21": 1.0,
+  "22": 0.981,
+  "23": 0.935,
+  "24": 1.0
+ },
+ "electores_origen_usados": 30986993,
+ "electores_origen_total": 32851004,
+ "electores_destino_usados": 33290729,
+ "electores_destino_total": 35720987,
+ "validacion_cruzada_pp": {
+  "0.0002": 2.4489,
+  "2e-05": 2.2245,
+  "2e-06": 2.0895,
+  "2e-07": 2.0324,
+  "0": 2.0297
+ },
+ "lambda": 2e-07,
+ "rmse_destino_pp": 4.586497899224523,
+ "votos_distintos_vs_calvo": 5837654,
+ "votos_total": 33290728,
+ "marginal_origen": {
+  "Frente de Todos": 10781207,
+  "Juntos por el Cambio": 9541471,
+  "Consenso Federal": 1721263,
+  "FIT-U": 682281,
+  "Otros": 653350,
+  "Blanco y nulo": 1565030,
+  "No votó": 6042391
+ },
+ "marginal_destino": {
+  "La Libertad Avanza": 8768715,
+  "Fuerza Patria": 7199034,
+  "Provincias Unidas": 1642987,
+  "FIT-U": 840619,
+  "Otros": 2987877,
+  "Blanco y nulo": 1202201,
+  "No votó": 10649296
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "La Libertad Avanza": 766554,
+   "Fuerza Patria": 436564,
+   "Provincias Unidas": 97306,
+   "FIT-U": 147955,
+   "Otros": 170890,
+   "Blanco y nulo": 103127,
+   "No votó": 761611
+  },
+  "02": {
+   "La Libertad Avanza": 3340571,
+   "Fuerza Patria": 3246074,
+   "Provincias Unidas": 198812,
+   "FIT-U": 403507,
+   "Otros": 808076,
+   "Blanco y nulo": 289699,
+   "No votó": 3836068
+  },
+  "03": {
+   "La Libertad Avanza": 68829,
+   "Fuerza Patria": 93506,
+   "Provincias Unidas": 19511,
+   "FIT-U": 3938,
+   "Otros": 18717,
+   "Blanco y nulo": 13462,
+   "No votó": 104124
+  },
+  "04": {
+   "La Libertad Avanza": 790705,
+   "Fuerza Patria": 94754,
+   "Provincias Unidas": 528897,
+   "FIT-U": 38476,
+   "Otros": 416156,
+   "Blanco y nulo": 80102,
+   "No votó": 1039946
+  },
+  "05": {
+   "La Libertad Avanza": 114330,
+   "Fuerza Patria": 105191,
+   "Provincias Unidas": 120921,
+   "FIT-U": 0,
+   "Otros": 17911,
+   "Blanco y nulo": 14101,
+   "No votó": 244801
+  },
+  "06": {
+   "La Libertad Avanza": 262774,
+   "Fuerza Patria": 252293,
+   "Provincias Unidas": 17612,
+   "FIT-U": 7825,
+   "Otros": 37178,
+   "Blanco y nulo": 70688,
+   "No votó": 354985
+  },
+  "07": {
+   "La Libertad Avanza": 81046,
+   "Fuerza Patria": 79637,
+   "Provincias Unidas": 57568,
+   "FIT-U": 14716,
+   "Otros": 52872,
+   "Blanco y nulo": 20655,
+   "No votó": 130789
+  },
+  "08": {
+   "La Libertad Avanza": 369739,
+   "Fuerza Patria": 265591,
+   "Provincias Unidas": 25561,
+   "FIT-U": 17450,
+   "Otros": 20648,
+   "Blanco y nulo": 100867,
+   "No votó": 333915
+  },
+  "09": {
+   "La Libertad Avanza": 103749,
+   "Fuerza Patria": 173161,
+   "Provincias Unidas": 10545,
+   "FIT-U": 3149,
+   "Otros": 2869,
+   "Blanco y nulo": 6639,
+   "No votó": 139751
+  },
+  "10": {
+   "La Libertad Avanza": 143971,
+   "Fuerza Patria": 59747,
+   "Provincias Unidas": 74546,
+   "FIT-U": 38207,
+   "Otros": 67147,
+   "Blanco y nulo": 16650,
+   "No votó": 166013
+  },
+  "11": {
+   "La Libertad Avanza": 86635,
+   "Fuerza Patria": 88134,
+   "Provincias Unidas": 17076,
+   "FIT-U": 4056,
+   "Otros": 2382,
+   "Blanco y nulo": 6604,
+   "No votó": 92954
+  },
+  "12": {
+   "La Libertad Avanza": 86886,
+   "Fuerza Patria": 88084,
+   "Provincias Unidas": 6630,
+   "FIT-U": 3885,
+   "Otros": 15872,
+   "Blanco y nulo": 8291,
+   "No votó": 90823
+  },
+  "13": {
+   "La Libertad Avanza": 538017,
+   "Fuerza Patria": 252369,
+   "Provincias Unidas": 29616,
+   "FIT-U": 34568,
+   "Otros": 147963,
+   "Blanco y nulo": 57537,
+   "No votó": 457824
+  },
+  "14": {
+   "La Libertad Avanza": 183952,
+   "Fuerza Patria": 45947,
+   "Provincias Unidas": 0,
+   "FIT-U": 6803,
+   "Otros": 263121,
+   "Blanco y nulo": 19439,
+   "No votó": 311589
+  },
+  "15": {
+   "La Libertad Avanza": 76862,
+   "Fuerza Patria": 28277,
+   "Provincias Unidas": 0,
+   "FIT-U": 9329,
+   "Otros": 109772,
+   "Blanco y nulo": 31786,
+   "No votó": 91371
+  },
+  "16": {
+   "La Libertad Avanza": 129096,
+   "Fuerza Patria": 110350,
+   "Provincias Unidas": 0,
+   "FIT-U": 11861,
+   "Otros": 124307,
+   "Blanco y nulo": 42555,
+   "No votó": 181131
+  },
+  "17": {
+   "La Libertad Avanza": 215122,
+   "Fuerza Patria": 106947,
+   "Provincias Unidas": 0,
+   "FIT-U": 18108,
+   "Otros": 226797,
+   "Blanco y nulo": 81040,
+   "No votó": 341375
+  },
+  "18": {
+   "La Libertad Avanza": 110644,
+   "Fuerza Patria": 146104,
+   "Provincias Unidas": 8032,
+   "FIT-U": 6071,
+   "Otros": 153969,
+   "Blanco y nulo": 12548,
+   "No votó": 178311
+  },
+  "19": {
+   "La Libertad Avanza": 118142,
+   "Fuerza Patria": 91441,
+   "Provincias Unidas": 8415,
+   "FIT-U": 7864,
+   "Otros": 2587,
+   "Blanco y nulo": 14982,
+   "No votó": 136487
+  },
+  "20": {
+   "La Libertad Avanza": 52487,
+   "Fuerza Patria": 53215,
+   "Provincias Unidas": 25646,
+   "FIT-U": 8071,
+   "Otros": 26330,
+   "Blanco y nulo": 10027,
+   "No votó": 95842
+  },
+  "21": {
+   "La Libertad Avanza": 681504,
+   "Fuerza Patria": 480946,
+   "Provincias Unidas": 307143,
+   "FIT-U": 30499,
+   "Otros": 175573,
+   "Blanco y nulo": 127557,
+   "No votó": 1041770
+  },
+  "22": {
+   "La Libertad Avanza": 79364,
+   "Fuerza Patria": 390000,
+   "Provincias Unidas": 6175,
+   "FIT-U": 5321,
+   "Otros": 61221,
+   "Blanco y nulo": 36260,
+   "No votó": 218599
+  },
+  "23": {
+   "La Libertad Avanza": 330627,
+   "Fuerza Patria": 480871,
+   "Provincias Unidas": 79935,
+   "FIT-U": 15835,
+   "Otros": 42384,
+   "Blanco y nulo": 25948,
+   "No votó": 253971
+  },
+  "24": {
+   "La Libertad Avanza": 37109,
+   "Fuerza Patria": 29831,
+   "Provincias Unidas": 3040,
+   "FIT-U": 3125,
+   "Otros": 23135,
+   "Blanco y nulo": 11637,
+   "No votó": 45246
+  }
+ },
+ "marginal_destino_estimada": {
+  "La Libertad Avanza": 8775748,
+  "Fuerza Patria": 7203895,
+  "Provincias Unidas": 1653690,
+  "FIT-U": 841121,
+  "Otros": 2990779,
+  "Blanco y nulo": 1202454,
+  "No votó": 10623042
+ }
+}
+                      La Libertad Avanza  Fuerza Patria  Provincias Unidas  FIT-U  Otros  Blanco y nulo  No votó
+Frente de Todos                      5.4           51.4                3.4    2.5    8.6            4.0     24.6
+Juntos por el Cambio                64.4            2.2                5.5    0.9    8.5            2.6     15.9
+Consenso Federal                    33.4            6.2               23.5    8.6   20.0            1.5      6.9
+FIT-U                                9.1           66.3                0.0   18.3    5.7            0.1      0.5
+Otros                               35.5            7.1                0.8    7.8   36.8            4.1      7.9
+Blanco y nulo                       34.2            8.4                6.9    1.1   15.3           15.1     19.1
+No votó                              1.7            2.5                2.2    1.4    2.9            2.5     86.7
+                      La Libertad Avanza  Fuerza Patria  Provincias Unidas   FIT-U    Otros  Blanco y nulo  No votó
+Frente de Todos                   634000        6028000             401000  292000  1010000         468000  2886000
+Juntos por el Cambio             6520000         228000             558000   93000   862000         259000  1609000
+Consenso Federal                  612000         113000             431000  158000   366000          28000   126000
+FIT-U                              66000         481000                  0  132000    42000           1000     3000
+Otros                             251000          50000               5000   55000   260000          29000    56000
+Blanco y nulo                     582000         144000             117000   19000   261000         257000   325000
+No votó                           112000         161000             141000   93000   191000         161000  5618000

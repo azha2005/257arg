@@ -1,0 +1,6 @@
+CAND["UCR"].update(_logo("Escudo_de_la_UCR.svg"))
+CAND["PJ"].update(_logo("Flag_of_the_Justicialist_Party_(square_version).svg"))
+CAND["PAL"].update(_logo_raster("Pacto_Autonomista_Liberal_PL_PA.png"))
+CAND["MPN"].update(_logo_raster("Logo_MPN.png"))
+CAND["PRS"].update(_logo_raster("PRS_logo.png"))
+CAND["FR"].update(_logo_raster("Logo_Fuerza_Republicana.png"))

@@ -1,0 +1,58 @@
+Este repositorio tiene dos licencias, una para el código y otra para los datos y los mapas.
+
+======================================================================
+1. CÓDIGO: licencia MIT
+   (archivos .py, .js, .sh y la plantilla HTML de .claude/skills/)
+======================================================================
+
+MIT License
+
+Copyright (c) 2026 ItsAHardLife
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+======================================================================
+2. DATOS, MAPAS Y TEXTOS: Creative Commons Atribución 4.0 Internacional
+   (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/deed.es)
+======================================================================
+
+Se aplica a las transcripciones, correcciones, mapeos de bloques, xlsx,
+resultados de las transferencias, atlas (atlas_*.html, dataset_*.json),
+LEEME y demás documentación propia del proyecto.
+
+Excepciones y obligaciones adicionales:
+
+- Geometría departamental: los atlas y la carpeta «Base deptos 1869-2022»
+  derivan de la base de departamentos históricos de la Argentina de
+  Rodríguez (CEUR-CONICET), publicada con licencia Creative Commons
+  Atribución 2.5 Argentina (CC BY 2.5 AR):
+  https://datosdeinvestigacion.conicet.gov.ar/handle/11336/149867
+  Toda reutilización de los mapas debe citar también esa fuente.
+  Departamentos_2022_INDEC proviene del INDEC.
+
+- Resultados electorales: los votos son datos públicos de la Dirección
+  Nacional Electoral, del Honorable Congreso de la Nación y de las obras
+  citadas en cada LEEME (Cantón, Calvo y Escolar, Lupu y Stokes, PolAr).
+  Los totales nacionales vienen de la Wikipedia en español (CC BY-SA 4.0).
+
+- Logos partidarios: no los cubre esta licencia. Cada uno conserva la suya,
+  anotada en logos_wikipedia/LICENCIAS.md. Algunos atlas llevan embebidos
+  emblemas sin licencia libre verificada (FREJUDEPA 1985, MOPOF 1989-1999,
+  Frente Grande 1994, Por Santa Cruz 2023, escenarios 2027 y AMBA 2025).
+  Se incluyen solo con fines de identificación.

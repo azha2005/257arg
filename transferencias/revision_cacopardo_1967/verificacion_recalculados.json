@@ -1,0 +1,51 @@
+[
+  {
+    "par": "1954d_1965d",
+    "antes": 378,
+    "ahora": 374,
+    "vistas": 20,
+    "ratio": [
+      0.6,
+      2.7
+    ],
+    "max_cambio_pp_por_fila": {
+      "Partido Peronista": 0.03,
+      "UCR": 0.034,
+      "Otros": 0.347,
+      "Blanco y nulo": 1.074,
+      "No votó": 0.067
+    },
+    "electores_origen_antes": 8420919,
+    "electores_origen_ahora": 8420919,
+    "controles": "OK",
+    "alertas": []
+  },
+  {
+    "par": "1958d_1962d",
+    "antes": 355,
+    "ahora": 349,
+    "vistas": 15,
+    "ratio": [
+      0.75,
+      1.33
+    ],
+    "max_cambio_pp_por_fila": {
+      "UCRI (Frondizi)": 1.697,
+      "UCRP (Balbín)": 4.118,
+      "Otros": 3.752,
+      "Blanco y nulo": 1.389,
+      "No votó": 2.386
+    },
+    "electores_origen_antes": 8967491,
+    "electores_origen_ahora": 8967491,
+    "controles": "OK",
+    "alertas": [
+      {
+        "distrito": "10",
+        "destino": "Otros",
+        "estimado": 2334,
+        "real": 15
+      }
+    ]
+  }
+]

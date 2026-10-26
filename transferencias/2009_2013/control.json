@@ -1,0 +1,2354 @@
+{
+ "circuitos_origen": 5590,
+ "circuitos_destino": 5609,
+ "por_seccion": [
+  {
+   "distrito": "21",
+   "cobertura_circuitos": 0.668
+  }
+ ],
+ "comunes": 5028,
+ "usados": 4257,
+ "crecimiento_padron_mediano": 1.048,
+ "cobertura_por_provincia": {
+  "01": 0.999,
+  "02": 0.983,
+  "03": 0.987,
+  "04": 0.967,
+  "05": 0.989,
+  "06": 0.992,
+  "07": 0.961,
+  "08": 0.883,
+  "09": 0.814,
+  "10": 0.897,
+  "11": 0.996,
+  "12": 0.966,
+  "13": 0.99,
+  "14": 0.943,
+  "15": 0.99,
+  "16": 0.995,
+  "17": 0.919,
+  "18": 0.952,
+  "19": 0.857,
+  "20": 0.981,
+  "21": 1.0,
+  "22": 0.945,
+  "23": 0.978,
+  "24": 0.78
+ },
+ "electores_origen_usados": 26837956,
+ "electores_origen_total": 27605572,
+ "electores_destino_usados": 29443378,
+ "electores_destino_total": 30421290,
+ "descartados": [
+  {
+   "circuito": "01-1-3",
+   "electores_origen": 772,
+   "electores_destino": 1570
+  },
+  {
+   "circuito": "01-1-4",
+   "electores_origen": 552,
+   "electores_destino": 1711
+  },
+  {
+   "circuito": "02-1-2",
+   "electores_origen": 183,
+   "electores_destino": 101
+  },
+  {
+   "circuito": "02-1-4",
+   "electores_origen": 110,
+   "electores_destino": 64
+  },
+  {
+   "circuito": "02-1-6",
+   "electores_origen": 121,
+   "electores_destino": 93
+  },
+  {
+   "circuito": "02-3-21A",
+   "electores_origen": 7277,
+   "electores_destino": 10424
+  },
+  {
+   "circuito": "02-5-49",
+   "electores_origen": 45,
+   "electores_destino": 23
+  },
+  {
+   "circuito": "02-5-50",
+   "electores_origen": 72,
+   "electores_destino": 55
+  },
+  {
+   "circuito": "02-5-51",
+   "electores_origen": 35,
+   "electores_destino": 31
+  },
+  {
+   "circuito": "02-5-53",
+   "electores_origen": 18,
+   "electores_destino": 16
+  },
+  {
+   "circuito": "02-5-57",
+   "electores_origen": 27,
+   "electores_destino": 18
+  },
+  {
+   "circuito": "02-6-64",
+   "electores_origen": 16,
+   "electores_destino": 9
+  },
+  {
+   "circuito": "02-6-65",
+   "electores_origen": 70,
+   "electores_destino": 47
+  },
+  {
+   "circuito": "02-6-68",
+   "electores_origen": 40,
+   "electores_destino": 30
+  },
+  {
+   "circuito": "02-6-69",
+   "electores_origen": 27,
+   "electores_destino": 19
+  },
+  {
+   "circuito": "02-7-90",
+   "electores_origen": 70,
+   "electores_destino": 59
+  },
+  {
+   "circuito": "02-8-102",
+   "electores_origen": 284,
+   "electores_destino": 214
+  },
+  {
+   "circuito": "02-8-103",
+   "electores_origen": 190,
+   "electores_destino": 148
+  },
+  {
+   "circuito": "02-9-107",
+   "electores_origen": 220,
+   "electores_destino": 524
+  },
+  {
+   "circuito": "02-9-114",
+   "electores_origen": 57,
+   "electores_destino": 42
+  },
+  {
+   "circuito": "02-10-117A",
+   "electores_origen": 123,
+   "electores_destino": 93
+  },
+  {
+   "circuito": "02-13-126",
+   "electores_origen": 76,
+   "electores_destino": 59
+  },
+  {
+   "circuito": "02-13-130",
+   "electores_origen": 19,
+   "electores_destino": 13
+  },
+  {
+   "circuito": "02-13-131",
+   "electores_origen": 175,
+   "electores_destino": 129
+  },
+  {
+   "circuito": "02-13-131A",
+   "electores_origen": 59,
+   "electores_destino": 104
+  },
+  {
+   "circuito": "02-14-139",
+   "electores_origen": 42,
+   "electores_destino": 30
+  },
+  {
+   "circuito": "02-14-142",
+   "electores_origen": 105,
+   "electores_destino": 81
+  },
+  {
+   "circuito": "02-15-150",
+   "electores_origen": 1763,
+   "electores_destino": 1938
+  },
+  {
+   "circuito": "02-19-164A",
+   "electores_origen": 72,
+   "electores_destino": 43
+  },
+  {
+   "circuito": "02-24-231A",
+   "electores_origen": 260,
+   "electores_destino": 259
+  },
+  {
+   "circuito": "02-25-235",
+   "electores_origen": 63,
+   "electores_destino": 44
+  },
+  {
+   "circuito": "02-25-236",
+   "electores_origen": 169,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-26-241",
+   "electores_origen": 17,
+   "electores_destino": 11
+  },
+  {
+   "circuito": "02-26-242",
+   "electores_origen": 22,
+   "electores_destino": 12
+  },
+  {
+   "circuito": "02-26-244",
+   "electores_origen": 22,
+   "electores_destino": 13
+  },
+  {
+   "circuito": "02-26-245",
+   "electores_origen": 35,
+   "electores_destino": 21
+  },
+  {
+   "circuito": "02-26-246",
+   "electores_origen": 133,
+   "electores_destino": 102
+  },
+  {
+   "circuito": "02-27-248F",
+   "electores_origen": 2226,
+   "electores_destino": 1563
+  },
+  {
+   "circuito": "02-28-255A",
+   "electores_origen": 60,
+   "electores_destino": 39
+  },
+  {
+   "circuito": "02-28-257",
+   "electores_origen": 21,
+   "electores_destino": 16
+  },
+  {
+   "circuito": "02-28-258",
+   "electores_origen": 273,
+   "electores_destino": 207
+  },
+  {
+   "circuito": "02-29-192",
+   "electores_origen": 56,
+   "electores_destino": 44
+  },
+  {
+   "circuito": "02-29-196A",
+   "electores_origen": 106,
+   "electores_destino": 79
+  },
+  {
+   "circuito": "02-30-205",
+   "electores_origen": 75,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-30-208",
+   "electores_origen": 124,
+   "electores_destino": 81
+  },
+  {
+   "circuito": "02-30-209",
+   "electores_origen": 112,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-30-209A",
+   "electores_origen": 14,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-31-214",
+   "electores_origen": 40,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-31-218",
+   "electores_origen": 351,
+   "electores_destino": 326
+  },
+  {
+   "circuito": "02-31-223",
+   "electores_origen": 40,
+   "electores_destino": 27
+  },
+  {
+   "circuito": "02-31-225",
+   "electores_origen": 52,
+   "electores_destino": 37
+  },
+  {
+   "circuito": "02-33-283",
+   "electores_origen": 98,
+   "electores_destino": 74
+  },
+  {
+   "circuito": "02-33-284",
+   "electores_origen": 9,
+   "electores_destino": 5
+  },
+  {
+   "circuito": "02-35-773",
+   "electores_origen": 11503,
+   "electores_destino": 17611
+  },
+  {
+   "circuito": "02-36-287B",
+   "electores_origen": 1888,
+   "electores_destino": 3332
+  },
+  {
+   "circuito": "02-37-294",
+   "electores_origen": 745,
+   "electores_destino": 1099
+  },
+  {
+   "circuito": "02-39-309",
+   "electores_origen": 160,
+   "electores_destino": 115
+  },
+  {
+   "circuito": "02-41-315",
+   "electores_origen": 279,
+   "electores_destino": 213
+  },
+  {
+   "circuito": "02-41-316A",
+   "electores_origen": 170,
+   "electores_destino": 317
+  },
+  {
+   "circuito": "02-41-318",
+   "electores_origen": 2728,
+   "electores_destino": 2802
+  },
+  {
+   "circuito": "02-42-321",
+   "electores_origen": 56,
+   "electores_destino": 27
+  },
+  {
+   "circuito": "02-43-328",
+   "electores_origen": 37,
+   "electores_destino": 29
+  },
+  {
+   "circuito": "02-44-331",
+   "electores_origen": 14,
+   "electores_destino": 8
+  },
+  {
+   "circuito": "02-44-333",
+   "electores_origen": 18,
+   "electores_destino": 13
+  },
+  {
+   "circuito": "02-45-548A",
+   "electores_origen": 282,
+   "electores_destino": 290
+  },
+  {
+   "circuito": "02-45-548B",
+   "electores_origen": 111,
+   "electores_destino": 102
+  },
+  {
+   "circuito": "02-47-341",
+   "electores_origen": 54,
+   "electores_destino": 37
+  },
+  {
+   "circuito": "02-47-342",
+   "electores_origen": 116,
+   "electores_destino": 82
+  },
+  {
+   "circuito": "02-48-346",
+   "electores_origen": 264,
+   "electores_destino": 173
+  },
+  {
+   "circuito": "02-48-347",
+   "electores_origen": 628,
+   "electores_destino": 469
+  },
+  {
+   "circuito": "02-48-348",
+   "electores_origen": 716,
+   "electores_destino": 765
+  },
+  {
+   "circuito": "02-48-349",
+   "electores_origen": 121,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-49-356",
+   "electores_origen": 54,
+   "electores_destino": 38
+  },
+  {
+   "circuito": "02-50-368",
+   "electores_origen": 10853,
+   "electores_destino": 16281
+  },
+  {
+   "circuito": "02-50-369",
+   "electores_origen": 3370,
+   "electores_destino": 4713
+  },
+  {
+   "circuito": "02-54-405",
+   "electores_origen": 511,
+   "electores_destino": 329
+  },
+  {
+   "circuito": "02-54-407",
+   "electores_origen": 50,
+   "electores_destino": 76
+  },
+  {
+   "circuito": "02-54-408",
+   "electores_origen": 1610,
+   "electores_destino": 1605
+  },
+  {
+   "circuito": "02-54-410",
+   "electores_origen": 33,
+   "electores_destino": 24
+  },
+  {
+   "circuito": "02-55-412",
+   "electores_origen": 95,
+   "electores_destino": 74
+  },
+  {
+   "circuito": "02-55-422",
+   "electores_origen": 3,
+   "electores_destino": 8
+  },
+  {
+   "circuito": "02-58-742A",
+   "electores_origen": 49,
+   "electores_destino": 38
+  },
+  {
+   "circuito": "02-61-635F",
+   "electores_origen": 141,
+   "electores_destino": 634
+  },
+  {
+   "circuito": "02-63-460",
+   "electores_origen": 398,
+   "electores_destino": 2068
+  },
+  {
+   "circuito": "02-63-469",
+   "electores_origen": 1750,
+   "electores_destino": 2506
+  },
+  {
+   "circuito": "02-63-473",
+   "electores_origen": 2943,
+   "electores_destino": 4450
+  },
+  {
+   "circuito": "02-63-488",
+   "electores_origen": 2139,
+   "electores_destino": 3246
+  },
+  {
+   "circuito": "02-63-493",
+   "electores_origen": 0,
+   "electores_destino": 119
+  },
+  {
+   "circuito": "02-63-496C",
+   "electores_origen": 5458,
+   "electores_destino": 11186
+  },
+  {
+   "circuito": "02-63-496D",
+   "electores_origen": 9924,
+   "electores_destino": 15007
+  },
+  {
+   "circuito": "02-63-503A",
+   "electores_origen": 3979,
+   "electores_destino": 6129
+  },
+  {
+   "circuito": "02-63-505A",
+   "electores_origen": 4206,
+   "electores_destino": 5905
+  },
+  {
+   "circuito": "02-63-508G",
+   "electores_origen": 364,
+   "electores_destino": 429
+  },
+  {
+   "circuito": "02-64-525",
+   "electores_origen": 46,
+   "electores_destino": 33
+  },
+  {
+   "circuito": "02-64-526",
+   "electores_origen": 37,
+   "electores_destino": 28
+  },
+  {
+   "circuito": "02-64-527",
+   "electores_origen": 26,
+   "electores_destino": 14
+  },
+  {
+   "circuito": "02-65-543",
+   "electores_origen": 301,
+   "electores_destino": 288
+  },
+  {
+   "circuito": "02-65-545",
+   "electores_origen": 130,
+   "electores_destino": 97
+  },
+  {
+   "circuito": "02-67-556",
+   "electores_origen": 192,
+   "electores_destino": 128
+  },
+  {
+   "circuito": "02-68-569A",
+   "electores_origen": 51,
+   "electores_destino": 30
+  },
+  {
+   "circuito": "02-72-605",
+   "electores_origen": 667,
+   "electores_destino": 759
+  },
+  {
+   "circuito": "02-74-621",
+   "electores_origen": 115,
+   "electores_destino": 84
+  },
+  {
+   "circuito": "02-74-622B",
+   "electores_origen": 961,
+   "electores_destino": 1177
+  },
+  {
+   "circuito": "02-76-645",
+   "electores_origen": 289,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-81-676",
+   "electores_origen": 1330,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-81-680",
+   "electores_origen": 116,
+   "electores_destino": 204
+  },
+  {
+   "circuito": "02-81-682",
+   "electores_origen": 158,
+   "electores_destino": 135
+  },
+  {
+   "circuito": "02-82-689",
+   "electores_origen": 33,
+   "electores_destino": 19
+  },
+  {
+   "circuito": "02-82-691A",
+   "electores_origen": 35,
+   "electores_destino": 25
+  },
+  {
+   "circuito": "02-84-713",
+   "electores_origen": 18,
+   "electores_destino": 17
+  },
+  {
+   "circuito": "02-84-714",
+   "electores_origen": 777,
+   "electores_destino": 475
+  },
+  {
+   "circuito": "02-84-724",
+   "electores_origen": 39,
+   "electores_destino": 25
+  },
+  {
+   "circuito": "02-85-735",
+   "electores_origen": 268,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "02-85-736",
+   "electores_origen": 292,
+   "electores_destino": 255
+  },
+  {
+   "circuito": "02-85-738A",
+   "electores_origen": 50,
+   "electores_destino": 41
+  },
+  {
+   "circuito": "02-87-748",
+   "electores_origen": 211,
+   "electores_destino": 2659
+  },
+  {
+   "circuito": "02-87-753A",
+   "electores_origen": 35,
+   "electores_destino": 26
+  },
+  {
+   "circuito": "02-88-765A",
+   "electores_origen": 58,
+   "electores_destino": 45
+  },
+  {
+   "circuito": "02-89-770A",
+   "electores_origen": 5151,
+   "electores_destino": 7783
+  },
+  {
+   "circuito": "02-89-772",
+   "electores_origen": 15059,
+   "electores_destino": 21234
+  },
+  {
+   "circuito": "02-91-781",
+   "electores_origen": 256,
+   "electores_destino": 198
+  },
+  {
+   "circuito": "02-93-801",
+   "electores_origen": 150,
+   "electores_destino": 116
+  },
+  {
+   "circuito": "02-93-802",
+   "electores_origen": 23,
+   "electores_destino": 24
+  },
+  {
+   "circuito": "02-94-808",
+   "electores_origen": 102,
+   "electores_destino": 76
+  },
+  {
+   "circuito": "02-94-809",
+   "electores_origen": 25,
+   "electores_destino": 16
+  },
+  {
+   "circuito": "02-95-818",
+   "electores_origen": 70,
+   "electores_destino": 55
+  },
+  {
+   "circuito": "02-95-821",
+   "electores_origen": 58,
+   "electores_destino": 39
+  },
+  {
+   "circuito": "02-96-824",
+   "electores_origen": 96,
+   "electores_destino": 73
+  },
+  {
+   "circuito": "02-96-829",
+   "electores_origen": 90,
+   "electores_destino": 66
+  },
+  {
+   "circuito": "02-97-837",
+   "electores_origen": 148,
+   "electores_destino": 131
+  },
+  {
+   "circuito": "02-99-851",
+   "electores_origen": 143,
+   "electores_destino": 106
+  },
+  {
+   "circuito": "02-101-855A",
+   "electores_origen": 114,
+   "electores_destino": 87
+  },
+  {
+   "circuito": "02-102-861",
+   "electores_origen": 477,
+   "electores_destino": 485
+  },
+  {
+   "circuito": "02-102-862A",
+   "electores_origen": 255,
+   "electores_destino": 195
+  },
+  {
+   "circuito": "02-103-868",
+   "electores_origen": 44,
+   "electores_destino": 68
+  },
+  {
+   "circuito": "02-104-871D",
+   "electores_origen": 11,
+   "electores_destino": 5
+  },
+  {
+   "circuito": "02-108-916",
+   "electores_origen": 130,
+   "electores_destino": 101
+  },
+  {
+   "circuito": "02-108-919",
+   "electores_origen": 113,
+   "electores_destino": 81
+  },
+  {
+   "circuito": "02-108-920",
+   "electores_origen": 650,
+   "electores_destino": 354
+  },
+  {
+   "circuito": "02-108-921",
+   "electores_origen": 17,
+   "electores_destino": 41
+  },
+  {
+   "circuito": "02-108-922A",
+   "electores_origen": 13,
+   "electores_destino": 10
+  },
+  {
+   "circuito": "02-109-926",
+   "electores_origen": 1217,
+   "electores_destino": 1659
+  },
+  {
+   "circuito": "02-112-946",
+   "electores_origen": 57,
+   "electores_destino": 38
+  },
+  {
+   "circuito": "02-112-947",
+   "electores_origen": 74,
+   "electores_destino": 109
+  },
+  {
+   "circuito": "02-112-949",
+   "electores_origen": 329,
+   "electores_destino": 314
+  },
+  {
+   "circuito": "02-113-534",
+   "electores_origen": 16602,
+   "electores_destino": 23793
+  },
+  {
+   "circuito": "02-113-536A",
+   "electores_origen": 1510,
+   "electores_destino": 2724
+  },
+  {
+   "circuito": "02-115-958",
+   "electores_origen": 762,
+   "electores_destino": 829
+  },
+  {
+   "circuito": "02-115-959",
+   "electores_origen": 21,
+   "electores_destino": 16
+  },
+  {
+   "circuito": "02-115-959A",
+   "electores_origen": 22,
+   "electores_destino": 15
+  },
+  {
+   "circuito": "02-115-960",
+   "electores_origen": 48,
+   "electores_destino": 35
+  },
+  {
+   "circuito": "02-115-961A",
+   "electores_origen": 86,
+   "electores_destino": 60
+  },
+  {
+   "circuito": "02-115-961B",
+   "electores_origen": 29,
+   "electores_destino": 21
+  },
+  {
+   "circuito": "02-115-961C",
+   "electores_origen": 57,
+   "electores_destino": 40
+  },
+  {
+   "circuito": "02-117-968",
+   "electores_origen": 69,
+   "electores_destino": 54
+  },
+  {
+   "circuito": "02-117-974",
+   "electores_origen": 37,
+   "electores_destino": 27
+  },
+  {
+   "circuito": "02-117-977",
+   "electores_origen": 24,
+   "electores_destino": 15
+  },
+  {
+   "circuito": "02-117-978",
+   "electores_origen": 9,
+   "electores_destino": 7
+  },
+  {
+   "circuito": "02-119-337A",
+   "electores_origen": 18309,
+   "electores_destino": 3441
+  },
+  {
+   "circuito": "02-119-337B",
+   "electores_origen": 20625,
+   "electores_destino": 12686
+  },
+  {
+   "circuito": "02-121-982",
+   "electores_origen": 112,
+   "electores_destino": 88
+  },
+  {
+   "circuito": "02-130-399C",
+   "electores_origen": 872,
+   "electores_destino": 1336
+  },
+  {
+   "circuito": "03-2-10",
+   "electores_origen": 0,
+   "electores_destino": 66
+  },
+  {
+   "circuito": "03-2-16",
+   "electores_origen": 938,
+   "electores_destino": 1432
+  },
+  {
+   "circuito": "03-4-34",
+   "electores_origen": 239,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "03-5-44",
+   "electores_origen": 230,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "03-5-50",
+   "electores_origen": 825,
+   "electores_destino": 595
+  },
+  {
+   "circuito": "03-6-52",
+   "electores_origen": 0,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "03-12-103",
+   "electores_origen": 721,
+   "electores_destino": 1177
+  },
+  {
+   "circuito": "03-13-117",
+   "electores_origen": 268,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "04-1-10K",
+   "electores_origen": 2914,
+   "electores_destino": 4135
+  },
+  {
+   "circuito": "04-1-10M",
+   "electores_origen": 177,
+   "electores_destino": 987
+  },
+  {
+   "circuito": "04-1-11L",
+   "electores_origen": 1267,
+   "electores_destino": 2232
+  },
+  {
+   "circuito": "04-1-11M",
+   "electores_origen": 948,
+   "electores_destino": 2772
+  },
+  {
+   "circuito": "04-1-12I",
+   "electores_origen": 1050,
+   "electores_destino": 1729
+  },
+  {
+   "circuito": "04-1-13L",
+   "electores_origen": 257,
+   "electores_destino": 372
+  },
+  {
+   "circuito": "04-1-13M",
+   "electores_origen": 750,
+   "electores_destino": 618
+  },
+  {
+   "circuito": "04-1-13O",
+   "electores_origen": 528,
+   "electores_destino": 915
+  },
+  {
+   "circuito": "04-1-14A",
+   "electores_origen": 11003,
+   "electores_destino": 15527
+  },
+  {
+   "circuito": "04-1-14N",
+   "electores_origen": 4607,
+   "electores_destino": 6481
+  },
+  {
+   "circuito": "04-1-4D",
+   "electores_origen": 850,
+   "electores_destino": 1455
+  },
+  {
+   "circuito": "04-1-4E",
+   "electores_origen": 611,
+   "electores_destino": 1524
+  },
+  {
+   "circuito": "04-1-4F",
+   "electores_origen": 1081,
+   "electores_destino": 1745
+  },
+  {
+   "circuito": "04-1-5C",
+   "electores_origen": 10668,
+   "electores_destino": 17202
+  },
+  {
+   "circuito": "04-1-5E",
+   "electores_origen": 10354,
+   "electores_destino": 4353
+  },
+  {
+   "circuito": "04-1-5H",
+   "electores_origen": 766,
+   "electores_destino": 1535
+  },
+  {
+   "circuito": "04-1-5I",
+   "electores_origen": 2598,
+   "electores_destino": 4054
+  },
+  {
+   "circuito": "04-1-6A",
+   "electores_origen": 355,
+   "electores_destino": 500
+  },
+  {
+   "circuito": "04-1-6E",
+   "electores_origen": 1007,
+   "electores_destino": 1688
+  },
+  {
+   "circuito": "04-1-7",
+   "electores_origen": 391,
+   "electores_destino": 261
+  },
+  {
+   "circuito": "04-1-7C",
+   "electores_origen": 27,
+   "electores_destino": 11
+  },
+  {
+   "circuito": "04-2-16",
+   "electores_origen": 184,
+   "electores_destino": 131
+  },
+  {
+   "circuito": "04-2-16A",
+   "electores_origen": 128,
+   "electores_destino": 56
+  },
+  {
+   "circuito": "04-2-328A",
+   "electores_origen": 439,
+   "electores_destino": 645
+  },
+  {
+   "circuito": "04-3-35A",
+   "electores_origen": 631,
+   "electores_destino": 771
+  },
+  {
+   "circuito": "04-3-39",
+   "electores_origen": 114,
+   "electores_destino": 77
+  },
+  {
+   "circuito": "04-4-43",
+   "electores_origen": 112,
+   "electores_destino": 75
+  },
+  {
+   "circuito": "04-4-43C",
+   "electores_origen": 0,
+   "electores_destino": 5
+  },
+  {
+   "circuito": "04-4-44A",
+   "electores_origen": 496,
+   "electores_destino": 488
+  },
+  {
+   "circuito": "04-4-45",
+   "electores_origen": 920,
+   "electores_destino": 907
+  },
+  {
+   "circuito": "04-4-46B",
+   "electores_origen": 184,
+   "electores_destino": 271
+  },
+  {
+   "circuito": "04-4-51",
+   "electores_origen": 803,
+   "electores_destino": 840
+  },
+  {
+   "circuito": "04-4-51A",
+   "electores_origen": 186,
+   "electores_destino": 130
+  },
+  {
+   "circuito": "04-4-53",
+   "electores_origen": 85,
+   "electores_destino": 62
+  },
+  {
+   "circuito": "04-4-53A",
+   "electores_origen": 95,
+   "electores_destino": 64
+  },
+  {
+   "circuito": "04-4-53B",
+   "electores_origen": 91,
+   "electores_destino": 52
+  },
+  {
+   "circuito": "04-5-58",
+   "electores_origen": 132,
+   "electores_destino": 236
+  },
+  {
+   "circuito": "04-5-62",
+   "electores_origen": 968,
+   "electores_destino": 1081
+  },
+  {
+   "circuito": "04-6-81",
+   "electores_origen": 105,
+   "electores_destino": 77
+  },
+  {
+   "circuito": "04-6-84",
+   "electores_origen": 77,
+   "electores_destino": 50
+  },
+  {
+   "circuito": "04-6-88A",
+   "electores_origen": 18,
+   "electores_destino": 9
+  },
+  {
+   "circuito": "04-6-88B",
+   "electores_origen": 51,
+   "electores_destino": 21
+  },
+  {
+   "circuito": "04-7-100",
+   "electores_origen": 0,
+   "electores_destino": 889
+  },
+  {
+   "circuito": "04-7-101",
+   "electores_origen": 116,
+   "electores_destino": 91
+  },
+  {
+   "circuito": "04-7-91A",
+   "electores_origen": 31,
+   "electores_destino": 20
+  },
+  {
+   "circuito": "04-7-97",
+   "electores_origen": 123,
+   "electores_destino": 91
+  },
+  {
+   "circuito": "04-7-98",
+   "electores_origen": 91,
+   "electores_destino": 61
+  },
+  {
+   "circuito": "04-8-105",
+   "electores_origen": 891,
+   "electores_destino": 919
+  },
+  {
+   "circuito": "04-8-114",
+   "electores_origen": 528,
+   "electores_destino": 587
+  },
+  {
+   "circuito": "04-9-137",
+   "electores_origen": 773,
+   "electores_destino": 503
+  },
+  {
+   "circuito": "04-10-138",
+   "electores_origen": 491,
+   "electores_destino": 758
+  },
+  {
+   "circuito": "04-10-138B",
+   "electores_origen": 138,
+   "electores_destino": 89
+  },
+  {
+   "circuito": "04-11-144A",
+   "electores_origen": 127,
+   "electores_destino": 80
+  },
+  {
+   "circuito": "04-11-144B",
+   "electores_origen": 136,
+   "electores_destino": 81
+  },
+  {
+   "circuito": "04-12-156D",
+   "electores_origen": 2111,
+   "electores_destino": 3442
+  },
+  {
+   "circuito": "04-12-158A",
+   "electores_origen": 165,
+   "electores_destino": 304
+  },
+  {
+   "circuito": "04-12-158B",
+   "electores_origen": 453,
+   "electores_destino": 661
+  },
+  {
+   "circuito": "04-13-171",
+   "electores_origen": 82,
+   "electores_destino": 149
+  },
+  {
+   "circuito": "04-13-173",
+   "electores_origen": 19,
+   "electores_destino": 27
+  },
+  {
+   "circuito": "04-13-176",
+   "electores_origen": 102,
+   "electores_destino": 75
+  },
+  {
+   "circuito": "04-13-178",
+   "electores_origen": 27,
+   "electores_destino": 43
+  },
+  {
+   "circuito": "04-13-185",
+   "electores_origen": 35,
+   "electores_destino": 13
+  },
+  {
+   "circuito": "04-14-202",
+   "electores_origen": 381,
+   "electores_destino": 327
+  },
+  {
+   "circuito": "04-14-206",
+   "electores_origen": 118,
+   "electores_destino": 84
+  },
+  {
+   "circuito": "04-14-210",
+   "electores_origen": 198,
+   "electores_destino": 140
+  },
+  {
+   "circuito": "04-14-216",
+   "electores_origen": 61,
+   "electores_destino": 44
+  },
+  {
+   "circuito": "04-14-217",
+   "electores_origen": 164,
+   "electores_destino": 124
+  },
+  {
+   "circuito": "04-15-223",
+   "electores_origen": 477,
+   "electores_destino": 776
+  },
+  {
+   "circuito": "04-15-224",
+   "electores_origen": 87,
+   "electores_destino": 50
+  },
+  {
+   "circuito": "04-15-225A",
+   "electores_origen": 172,
+   "electores_destino": 125
+  },
+  {
+   "circuito": "04-15-227A",
+   "electores_origen": 441,
+   "electores_destino": 465
+  },
+  {
+   "circuito": "04-15-227C",
+   "electores_origen": 182,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "04-16-238",
+   "electores_origen": 955,
+   "electores_destino": 971
+  },
+  {
+   "circuito": "04-16-242A",
+   "electores_origen": 41,
+   "electores_destino": 24
+  },
+  {
+   "circuito": "04-17-251",
+   "electores_origen": 130,
+   "electores_destino": 98
+  },
+  {
+   "circuito": "04-18-259",
+   "electores_origen": 20,
+   "electores_destino": 30
+  },
+  {
+   "circuito": "04-18-260A",
+   "electores_origen": 39,
+   "electores_destino": 60
+  },
+  {
+   "circuito": "04-18-261B",
+   "electores_origen": 45,
+   "electores_destino": 63
+  },
+  {
+   "circuito": "04-18-263A",
+   "electores_origen": 211,
+   "electores_destino": 164
+  },
+  {
+   "circuito": "04-18-263C",
+   "electores_origen": 309,
+   "electores_destino": 447
+  },
+  {
+   "circuito": "04-19-269B",
+   "electores_origen": 37,
+   "electores_destino": 29
+  },
+  {
+   "circuito": "04-19-276",
+   "electores_origen": 393,
+   "electores_destino": 791
+  },
+  {
+   "circuito": "04-20-278",
+   "electores_origen": 1052,
+   "electores_destino": 1777
+  },
+  {
+   "circuito": "04-20-279A",
+   "electores_origen": 551,
+   "electores_destino": 396
+  },
+  {
+   "circuito": "04-20-281",
+   "electores_origen": 236,
+   "electores_destino": 159
+  },
+  {
+   "circuito": "04-20-306",
+   "electores_origen": 471,
+   "electores_destino": 524
+  },
+  {
+   "circuito": "04-20-312",
+   "electores_origen": 64,
+   "electores_destino": 36
+  },
+  {
+   "circuito": "04-21-316A",
+   "electores_origen": 1769,
+   "electores_destino": 2966
+  },
+  {
+   "circuito": "04-21-316F",
+   "electores_origen": 343,
+   "electores_destino": 491
+  },
+  {
+   "circuito": "04-21-316H",
+   "electores_origen": 693,
+   "electores_destino": 825
+  },
+  {
+   "circuito": "04-21-320",
+   "electores_origen": 77,
+   "electores_destino": 52
+  },
+  {
+   "circuito": "04-21-322",
+   "electores_origen": 120,
+   "electores_destino": 87
+  },
+  {
+   "circuito": "04-21-326B",
+   "electores_origen": 778,
+   "electores_destino": 1050
+  },
+  {
+   "circuito": "04-21-327",
+   "electores_origen": 497,
+   "electores_destino": 469
+  },
+  {
+   "circuito": "04-21-328",
+   "electores_origen": 675,
+   "electores_destino": 972
+  },
+  {
+   "circuito": "04-22-333",
+   "electores_origen": 462,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "04-24-353",
+   "electores_origen": 156,
+   "electores_destino": 98
+  },
+  {
+   "circuito": "04-25-360B",
+   "electores_origen": 172,
+   "electores_destino": 116
+  },
+  {
+   "circuito": "04-25-362",
+   "electores_origen": 121,
+   "electores_destino": 63
+  },
+  {
+   "circuito": "04-25-363",
+   "electores_origen": 88,
+   "electores_destino": 69
+  },
+  {
+   "circuito": "04-25-365",
+   "electores_origen": 11,
+   "electores_destino": 27
+  },
+  {
+   "circuito": "04-25-366",
+   "electores_origen": 1018,
+   "electores_destino": 1098
+  },
+  {
+   "circuito": "04-25-370",
+   "electores_origen": 194,
+   "electores_destino": 138
+  },
+  {
+   "circuito": "04-25-370A",
+   "electores_origen": 20,
+   "electores_destino": 30
+  },
+  {
+   "circuito": "04-26-379",
+   "electores_origen": 0,
+   "electores_destino": 33
+  },
+  {
+   "circuito": "04-26-387",
+   "electores_origen": 1430,
+   "electores_destino": 1472
+  },
+  {
+   "circuito": "04-26-396A",
+   "electores_origen": 70,
+   "electores_destino": 52
+  },
+  {
+   "circuito": "04-26-397A",
+   "electores_origen": 130,
+   "electores_destino": 61
+  },
+  {
+   "circuito": "05-1-10",
+   "electores_origen": 4909,
+   "electores_destino": 7057
+  },
+  {
+   "circuito": "05-7-46",
+   "electores_origen": 161,
+   "electores_destino": 122
+  },
+  {
+   "circuito": "05-7-47",
+   "electores_origen": 35,
+   "electores_destino": 23
+  },
+  {
+   "circuito": "05-10-62",
+   "electores_origen": 780,
+   "electores_destino": 707
+  },
+  {
+   "circuito": "05-14-89",
+   "electores_origen": 387,
+   "electores_destino": 390
+  },
+  {
+   "circuito": "05-15-95",
+   "electores_origen": 689,
+   "electores_destino": 527
+  },
+  {
+   "circuito": "05-16-99",
+   "electores_origen": 90,
+   "electores_destino": 67
+  },
+  {
+   "circuito": "05-20-124",
+   "electores_origen": 43,
+   "electores_destino": 23
+  },
+  {
+   "circuito": "05-23-137",
+   "electores_origen": 147,
+   "electores_destino": 213
+  },
+  {
+   "circuito": "05-23-139",
+   "electores_origen": 67,
+   "electores_destino": 96
+  },
+  {
+   "circuito": "05-24-142",
+   "electores_origen": 42,
+   "electores_destino": 139
+  },
+  {
+   "circuito": "06-1-20",
+   "electores_origen": 318,
+   "electores_destino": 569
+  },
+  {
+   "circuito": "06-1-21",
+   "electores_origen": 3278,
+   "electores_destino": 5120
+  },
+  {
+   "circuito": "06-2-31",
+   "electores_origen": 0,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "06-9-71",
+   "electores_origen": 128,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "06-9-72",
+   "electores_origen": 90,
+   "electores_destino": 67
+  },
+  {
+   "circuito": "06-15-103",
+   "electores_origen": 2232,
+   "electores_destino": 1388
+  },
+  {
+   "circuito": "07-1-23",
+   "electores_origen": 3780,
+   "electores_destino": 5901
+  },
+  {
+   "circuito": "07-1-25",
+   "electores_origen": 2853,
+   "electores_destino": 4018
+  },
+  {
+   "circuito": "07-4-36B",
+   "electores_origen": 41,
+   "electores_destino": 105
+  },
+  {
+   "circuito": "07-6-54B",
+   "electores_origen": 0,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "07-7-58A",
+   "electores_origen": 57,
+   "electores_destino": 161
+  },
+  {
+   "circuito": "07-8-59",
+   "electores_origen": 61,
+   "electores_destino": 115
+  },
+  {
+   "circuito": "07-9-63A",
+   "electores_origen": 75,
+   "electores_destino": 128
+  },
+  {
+   "circuito": "07-10-65",
+   "electores_origen": 80,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "07-15-108",
+   "electores_origen": 1793,
+   "electores_destino": 2700
+  },
+  {
+   "circuito": "07-15-92",
+   "electores_origen": 1243,
+   "electores_destino": 1913
+  },
+  {
+   "circuito": "07-15-96",
+   "electores_origen": 3054,
+   "electores_destino": 4576
+  },
+  {
+   "circuito": "08-1-1",
+   "electores_origen": 19625,
+   "electores_destino": 12573
+  },
+  {
+   "circuito": "08-5-108",
+   "electores_origen": 49,
+   "electores_destino": 31
+  },
+  {
+   "circuito": "08-5-109",
+   "electores_origen": 59,
+   "electores_destino": 59
+  },
+  {
+   "circuito": "08-6-121",
+   "electores_origen": 849,
+   "electores_destino": 622
+  },
+  {
+   "circuito": "08-8-145",
+   "electores_origen": 21,
+   "electores_destino": 14
+  },
+  {
+   "circuito": "08-8-155",
+   "electores_origen": 210,
+   "electores_destino": 293
+  },
+  {
+   "circuito": "08-9-166A",
+   "electores_origen": 125,
+   "electores_destino": 95
+  },
+  {
+   "circuito": "08-9-167",
+   "electores_origen": 210,
+   "electores_destino": 746
+  },
+  {
+   "circuito": "08-9-177",
+   "electores_origen": 18,
+   "electores_destino": 11
+  },
+  {
+   "circuito": "08-10-185",
+   "electores_origen": 11509,
+   "electores_destino": 13349
+  },
+  {
+   "circuito": "08-10-189",
+   "electores_origen": 1107,
+   "electores_destino": 1553
+  },
+  {
+   "circuito": "08-10-193",
+   "electores_origen": 222,
+   "electores_destino": 389
+  },
+  {
+   "circuito": "08-10-194",
+   "electores_origen": 221,
+   "electores_destino": 166
+  },
+  {
+   "circuito": "08-10-197",
+   "electores_origen": 68,
+   "electores_destino": 36
+  },
+  {
+   "circuito": "08-10-199",
+   "electores_origen": 45,
+   "electores_destino": 31
+  },
+  {
+   "circuito": "08-10-203",
+   "electores_origen": 288,
+   "electores_destino": 222
+  },
+  {
+   "circuito": "08-11-209",
+   "electores_origen": 166,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "08-11-210",
+   "electores_origen": 159,
+   "electores_destino": 105
+  },
+  {
+   "circuito": "08-12-217",
+   "electores_origen": 59,
+   "electores_destino": 61
+  },
+  {
+   "circuito": "08-13-239",
+   "electores_origen": 73,
+   "electores_destino": 110
+  },
+  {
+   "circuito": "08-14-254",
+   "electores_origen": 466,
+   "electores_destino": 135
+  },
+  {
+   "circuito": "08-14-265",
+   "electores_origen": 44,
+   "electores_destino": 33
+  },
+  {
+   "circuito": "08-17-295",
+   "electores_origen": 1165,
+   "electores_destino": 820
+  },
+  {
+   "circuito": "08-17-304A",
+   "electores_origen": 690,
+   "electores_destino": 986
+  },
+  {
+   "circuito": "08-18-312",
+   "electores_origen": 48,
+   "electores_destino": 33
+  },
+  {
+   "circuito": "08-18-315",
+   "electores_origen": 13,
+   "electores_destino": 14
+  },
+  {
+   "circuito": "09-1-14",
+   "electores_origen": 67,
+   "electores_destino": 121
+  },
+  {
+   "circuito": "09-1-21",
+   "electores_origen": 450,
+   "electores_destino": 961
+  },
+  {
+   "circuito": "09-1-6",
+   "electores_origen": 1231,
+   "electores_destino": 2029
+  },
+  {
+   "circuito": "09-1-8",
+   "electores_origen": 205,
+   "electores_destino": 160
+  },
+  {
+   "circuito": "09-2-22C",
+   "electores_origen": 43,
+   "electores_destino": 26
+  },
+  {
+   "circuito": "09-2-23A",
+   "electores_origen": 424,
+   "electores_destino": 325
+  },
+  {
+   "circuito": "09-2-23B",
+   "electores_origen": 0,
+   "electores_destino": 13
+  },
+  {
+   "circuito": "09-2-24A",
+   "electores_origen": 262,
+   "electores_destino": 191
+  },
+  {
+   "circuito": "09-2-24B",
+   "electores_origen": 77,
+   "electores_destino": 233
+  },
+  {
+   "circuito": "09-3-26B",
+   "electores_origen": 87,
+   "electores_destino": 102
+  },
+  {
+   "circuito": "09-3-27",
+   "electores_origen": 0,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-3-28A",
+   "electores_origen": 125,
+   "electores_destino": 270
+  },
+  {
+   "circuito": "09-3-28B",
+   "electores_origen": 438,
+   "electores_destino": 628
+  },
+  {
+   "circuito": "09-3-30A",
+   "electores_origen": 165,
+   "electores_destino": 253
+  },
+  {
+   "circuito": "09-3-31",
+   "electores_origen": 328,
+   "electores_destino": 256
+  },
+  {
+   "circuito": "09-4-34A",
+   "electores_origen": 414,
+   "electores_destino": 313
+  },
+  {
+   "circuito": "09-4-34C",
+   "electores_origen": 25,
+   "electores_destino": 15
+  },
+  {
+   "circuito": "09-4-35B",
+   "electores_origen": 391,
+   "electores_destino": 296
+  },
+  {
+   "circuito": "09-4-37E",
+   "electores_origen": 93,
+   "electores_destino": 73
+  },
+  {
+   "circuito": "09-4-37F",
+   "electores_origen": 277,
+   "electores_destino": 210
+  },
+  {
+   "circuito": "09-4-38",
+   "electores_origen": 49,
+   "electores_destino": 35
+  },
+  {
+   "circuito": "09-4-39A",
+   "electores_origen": 53,
+   "electores_destino": 101
+  },
+  {
+   "circuito": "09-4-42",
+   "electores_origen": 76,
+   "electores_destino": 56
+  },
+  {
+   "circuito": "09-5-43D",
+   "electores_origen": 81,
+   "electores_destino": 130
+  },
+  {
+   "circuito": "09-6-47",
+   "electores_origen": 54,
+   "electores_destino": 40
+  },
+  {
+   "circuito": "09-6-49",
+   "electores_origen": 125,
+   "electores_destino": 178
+  },
+  {
+   "circuito": "09-6-50",
+   "electores_origen": 5126,
+   "electores_destino": 335
+  },
+  {
+   "circuito": "09-6-50A",
+   "electores_origen": 66,
+   "electores_destino": 46
+  },
+  {
+   "circuito": "09-6-51B",
+   "electores_origen": 47,
+   "electores_destino": 83
+  },
+  {
+   "circuito": "09-6-52",
+   "electores_origen": 51,
+   "electores_destino": 137
+  },
+  {
+   "circuito": "09-6-53",
+   "electores_origen": 54,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-54",
+   "electores_origen": 3251,
+   "electores_destino": 2416
+  },
+  {
+   "circuito": "09-6-54A",
+   "electores_origen": 171,
+   "electores_destino": 121
+  },
+  {
+   "circuito": "09-6-55",
+   "electores_origen": 76,
+   "electores_destino": 58
+  },
+  {
+   "circuito": "09-6-56",
+   "electores_origen": 6690,
+   "electores_destino": 1699
+  },
+  {
+   "circuito": "09-6-56A",
+   "electores_origen": 975,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-57",
+   "electores_origen": 238,
+   "electores_destino": 177
+  },
+  {
+   "circuito": "09-6-58A",
+   "electores_origen": 59,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-59",
+   "electores_origen": 65,
+   "electores_destino": 50
+  },
+  {
+   "circuito": "09-6-60A",
+   "electores_origen": 102,
+   "electores_destino": 63
+  },
+  {
+   "circuito": "09-6-63",
+   "electores_origen": 0,
+   "electores_destino": 25
+  },
+  {
+   "circuito": "09-6-64",
+   "electores_origen": 1533,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-64A",
+   "electores_origen": 3132,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-64B",
+   "electores_origen": 13,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-65A",
+   "electores_origen": 38,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-65B",
+   "electores_origen": 66,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-66B",
+   "electores_origen": 59,
+   "electores_destino": 41
+  },
+  {
+   "circuito": "09-6-67",
+   "electores_origen": 8638,
+   "electores_destino": 6131
+  },
+  {
+   "circuito": "09-6-67A",
+   "electores_origen": 76,
+   "electores_destino": 54
+  },
+  {
+   "circuito": "09-6-69",
+   "electores_origen": 88,
+   "electores_destino": 67
+  },
+  {
+   "circuito": "09-6-70",
+   "electores_origen": 1535,
+   "electores_destino": 310
+  },
+  {
+   "circuito": "09-6-70A",
+   "electores_origen": 32,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-6-71",
+   "electores_origen": 3840,
+   "electores_destino": 2601
+  },
+  {
+   "circuito": "09-7-72A",
+   "electores_origen": 110,
+   "electores_destino": 84
+  },
+  {
+   "circuito": "09-7-72B",
+   "electores_origen": 175,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-74",
+   "electores_origen": 216,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-75",
+   "electores_origen": 2892,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-76A",
+   "electores_origen": 235,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-77",
+   "electores_origen": 527,
+   "electores_destino": 249
+  },
+  {
+   "circuito": "09-7-78",
+   "electores_origen": 283,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-79",
+   "electores_origen": 111,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-80",
+   "electores_origen": 939,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-80A",
+   "electores_origen": 395,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-80B",
+   "electores_origen": 246,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-7-81",
+   "electores_origen": 1276,
+   "electores_destino": 344
+  },
+  {
+   "circuito": "09-7-81A",
+   "electores_origen": 29,
+   "electores_destino": 0
+  },
+  {
+   "circuito": "09-8-82",
+   "electores_origen": 8547,
+   "electores_destino": 3383
+  },
+  {
+   "circuito": "09-9-83",
+   "electores_origen": 1469,
+   "electores_destino": 0
+  }
+ ],
+ "validacion_cruzada_pp": {
+  "0.0002": 3.5622,
+  "2e-05": 3.34,
+  "2e-06": 3.0636,
+  "2e-07": 3.034,
+  "0": 3.1399
+ },
+ "lambda": 2e-06,
+ "rmse_destino_pp": 6.972782622661157,
+ "votos_distintos_vs_calvo": 6741724,
+ "votos_total": 29443377,
+ "marginal_origen": {
+  "Frente para la Victoria": 5387203,
+  "Acuerdo Cívico y Social": 5714343,
+  "PRO / Unión-PRO": 3552057,
+  "Peronismo Federal": 1525630,
+  "Proyecto Sur": 437953,
+  "Otros": 1946318,
+  "Blanco y nulo": 957444,
+  "No votó": 7317008
+ },
+ "marginal_destino": {
+  "Frente para la Victoria": 7078986,
+  "FPCyS / UNEN": 5430136,
+  "Frente Renovador": 3966770,
+  "PRO": 1898178,
+  "FIT": 1174195,
+  "Unión por Córdoba": 511250,
+  "Otros": 2276332,
+  "Blanco y nulo": 1335965,
+  "No votó": 5771566
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Frente para la Victoria": 390422,
+   "FPCyS / UNEN": 582416,
+   "Frente Renovador": 0,
+   "PRO": 622206,
+   "FIT": 102197,
+   "Unión por Córdoba": 0,
+   "Otros": 109812,
+   "Blanco y nulo": 132682,
+   "No votó": 581752
+  },
+  "02": {
+   "Frente para la Victoria": 2829727,
+   "FPCyS / UNEN": 1024808,
+   "Frente Renovador": 3826136,
+   "PRO": 0,
+   "FIT": 446964,
+   "Unión por Córdoba": 0,
+   "Otros": 616190,
+   "Blanco y nulo": 571211,
+   "No votó": 1848637
+  },
+  "03": {
+   "Frente para la Victoria": 74623,
+   "FPCyS / UNEN": 77188,
+   "Frente Renovador": 36292,
+   "PRO": 0,
+   "FIT": 4901,
+   "Unión por Córdoba": 0,
+   "Otros": 0,
+   "Blanco y nulo": 12979,
+   "No votó": 64841
+  },
+  "04": {
+   "Frente para la Victoria": 292444,
+   "FPCyS / UNEN": 567432,
+   "Frente Renovador": 0,
+   "PRO": 276470,
+   "FIT": 142545,
+   "Unión por Córdoba": 511250,
+   "Otros": 126772,
+   "Blanco y nulo": 106112,
+   "No votó": 520135
+  },
+  "05": {
+   "Frente para la Victoria": 235017,
+   "FPCyS / UNEN": 259576,
+   "Frente Renovador": 56786,
+   "PRO": 0,
+   "FIT": 0,
+   "Unión por Córdoba": 0,
+   "Otros": 0,
+   "Blanco y nulo": 21451,
+   "No votó": 182833
+  },
+  "06": {
+   "Frente para la Victoria": 347120,
+   "FPCyS / UNEN": 212507,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 26353,
+   "Unión por Córdoba": 0,
+   "Otros": 0,
+   "Blanco y nulo": 47853,
+   "No votó": 173292
+  },
+  "07": {
+   "Frente para la Victoria": 63603,
+   "FPCyS / UNEN": 41785,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 0,
+   "Unión por Córdoba": 0,
+   "Otros": 169675,
+   "Blanco y nulo": 13352,
+   "No votó": 82627
+  },
+  "08": {
+   "Frente para la Victoria": 321198,
+   "FPCyS / UNEN": 179422,
+   "Frente Renovador": 0,
+   "PRO": 161479,
+   "FIT": 0,
+   "Unión por Córdoba": 0,
+   "Otros": 20712,
+   "Blanco y nulo": 26311,
+   "No votó": 158373
+  },
+  "09": {
+   "Frente para la Victoria": 136040,
+   "FPCyS / UNEN": 84772,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 7651,
+   "Unión por Córdoba": 0,
+   "Otros": 0,
+   "Blanco y nulo": 11294,
+   "No votó": 78768
+  },
+  "10": {
+   "Frente para la Victoria": 112219,
+   "FPCyS / UNEN": 112038,
+   "Frente Renovador": 0,
+   "PRO": 13467,
+   "FIT": 18945,
+   "Unión por Córdoba": 0,
+   "Otros": 24883,
+   "Blanco y nulo": 37159,
+   "No votó": 97717
+  },
+  "11": {
+   "Frente para la Victoria": 0,
+   "FPCyS / UNEN": 69378,
+   "Frente Renovador": 0,
+   "PRO": 38827,
+   "FIT": 5029,
+   "Unión por Córdoba": 0,
+   "Otros": 88094,
+   "Blanco y nulo": 6731,
+   "No votó": 53557
+  },
+  "12": {
+   "Frente para la Victoria": 80464,
+   "FPCyS / UNEN": 79815,
+   "Frente Renovador": 0,
+   "PRO": 5058,
+   "FIT": 3790,
+   "Unión por Córdoba": 0,
+   "Otros": 2280,
+   "Blanco y nulo": 11578,
+   "No votó": 49932
+  },
+  "13": {
+   "Frente para la Victoria": 271101,
+   "FPCyS / UNEN": 496660,
+   "Frente Renovador": 0,
+   "PRO": 51146,
+   "FIT": 140261,
+   "Unión por Córdoba": 0,
+   "Otros": 39327,
+   "Blanco y nulo": 37695,
+   "No votó": 245244
+  },
+  "14": {
+   "Frente para la Victoria": 62294,
+   "FPCyS / UNEN": 169990,
+   "Frente Renovador": 0,
+   "PRO": 74793,
+   "FIT": 0,
+   "Unión por Córdoba": 0,
+   "Otros": 239142,
+   "Blanco y nulo": 32682,
+   "No votó": 138978
+  },
+  "15": {
+   "Frente para la Victoria": 68700,
+   "FPCyS / UNEN": 48097,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 32425,
+   "Unión por Córdoba": 0,
+   "Otros": 176589,
+   "Blanco y nulo": 23486,
+   "No votó": 77670
+  },
+  "16": {
+   "Frente para la Victoria": 170537,
+   "FPCyS / UNEN": 136602,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 28757,
+   "Unión por Córdoba": 0,
+   "Otros": 0,
+   "Blanco y nulo": 24983,
+   "No votó": 110501
+  },
+  "17": {
+   "Frente para la Victoria": 146832,
+   "FPCyS / UNEN": 0,
+   "Frente Renovador": 0,
+   "PRO": 113653,
+   "FIT": 105058,
+   "Unión por Córdoba": 0,
+   "Otros": 186939,
+   "Blanco y nulo": 13685,
+   "No votó": 215127
+  },
+  "18": {
+   "Frente para la Victoria": 208109,
+   "FPCyS / UNEN": 17629,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 6196,
+   "Unión por Córdoba": 0,
+   "Otros": 147794,
+   "Blanco y nulo": 10775,
+   "No votó": 85019
+  },
+  "19": {
+   "Frente para la Victoria": 33334,
+   "FPCyS / UNEN": 44280,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 0,
+   "Unión por Córdoba": 0,
+   "Otros": 108201,
+   "Blanco y nulo": 26332,
+   "No votó": 58722
+  },
+  "20": {
+   "Frente para la Victoria": 38683,
+   "FPCyS / UNEN": 65615,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 17359,
+   "Unión por Córdoba": 0,
+   "Otros": 33934,
+   "Blanco y nulo": 5236,
+   "No votó": 56716
+  },
+  "21": {
+   "Frente para la Victoria": 427459,
+   "FPCyS / UNEN": 797282,
+   "Frente Renovador": 35226,
+   "PRO": 511744,
+   "FIT": 48384,
+   "Unión por Córdoba": 0,
+   "Otros": 64685,
+   "Blanco y nulo": 99092,
+   "No votó": 552200
+  },
+  "22": {
+   "Frente para la Victoria": 339770,
+   "FPCyS / UNEN": 58743,
+   "Frente Renovador": 0,
+   "PRO": 0,
+   "FIT": 11293,
+   "Unión por Córdoba": 0,
+   "Otros": 7823,
+   "Blanco y nulo": 34389,
+   "No votó": 153000
+  },
+  "23": {
+   "Frente para la Victoria": 403744,
+   "FPCyS / UNEN": 300193,
+   "Frente Renovador": 12330,
+   "PRO": 23454,
+   "FIT": 26087,
+   "Unión por Córdoba": 0,
+   "Otros": 96995,
+   "Blanco y nulo": 21321,
+   "No votó": 163038
+  },
+  "24": {
+   "Frente para la Victoria": 25546,
+   "FPCyS / UNEN": 3908,
+   "Frente Renovador": 0,
+   "PRO": 5881,
+   "FIT": 0,
+   "Unión por Córdoba": 0,
+   "Otros": 16485,
+   "Blanco y nulo": 7576,
+   "No votó": 22887
+  }
+ },
+ "marginal_destino_estimada": {
+  "Frente para la Victoria": 7098731,
+  "FPCyS / UNEN": 5489701,
+  "Frente Renovador": 3967316,
+  "PRO": 1900960,
+  "FIT": 1193662,
+  "Unión por Córdoba": 509419,
+  "Otros": 2297960,
+  "Blanco y nulo": 1344418,
+  "No votó": 5641211
+ }
+}

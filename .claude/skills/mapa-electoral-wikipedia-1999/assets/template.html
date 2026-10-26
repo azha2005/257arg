@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas electoral</title>
+<style>
+html,body{margin:0;background:#000;color:#cfd3d8;font-family:Bahnschrift,"DIN Alternate","Segoe UI",Arial,sans-serif}
+body[data-bg="white"]{background:#fff}
+body[data-bg="check"]{background:#fff linear-gradient(45deg,#ddd 25%,transparent 25%,transparent 75%,#ddd 75%),linear-gradient(45deg,#ddd 25%,transparent 25%,transparent 75%,#ddd 75%);background-size:24px 24px;background-position:0 0,12px 12px}
+body{--fg:#d6d9de;--mut:#8d9298;--ink:#616262;--line:#4d4d4d;--ctl:#16181c;--ctlfg:#cfd3d8}
+body[data-bg="white"],body[data-bg="check"]{--fg:#22252a;--mut:#6b7078;--ctl:#eee;--ctlfg:#222;--line:#b5b5b5}
+#bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 14px;font-size:14px;position:sticky;top:0;z-index:5;background:inherit}
+#bar .grp{display:flex;gap:6px;align-items:center}
+#bar .sp{flex:1}
+#bar button,#bar select,#bar input{font:inherit;color:var(--ctlfg);background:var(--ctl);border:1px solid var(--line);padding:4px 10px;border-radius:3px}
+#bar button{cursor:pointer}
+#bar button:hover{border-color:#70a6d7}
+#bar input{width:230px}
+#barnote{width:100%;color:var(--mut);font-size:13px;order:9}
+/* tarjeta de resultados: la misma para el hover (mini ventana) y para el clic (fija) */
+[hidden]{display:none !important}
+body{--cbg:rgba(12,13,16,.97);--cfg:#e6e8eb;--cmut:#9aa0a8;--cbd:#5a5e64}
+body[data-bg="white"],body[data-bg="check"]{--cbg:rgba(255,255,255,.98);--cfg:#22252a;--cmut:#6b7078;--cbd:#9a9a9a}
+#card,#tip{position:fixed;background:var(--cbg);color:var(--cfg);border:1px solid var(--cbd);border-radius:4px;padding:11px 14px 12px;font-size:13px;line-height:1.35;box-shadow:0 6px 22px rgba(0,0,0,.35)}
+#card{z-index:20;width:372px;max-height:calc(100vh - 80px);overflow:auto}
+#tip{z-index:30;pointer-events:none;width:320px;display:none}
+#card-x{position:absolute;top:6px;right:8px;font:inherit;font-size:20px;line-height:1;color:var(--cmut);background:none;border:0;cursor:pointer;padding:0 4px}
+#card-x:hover{color:var(--cfg)}
+.c-title{font-size:21px;font-weight:700;line-height:1.1;padding-right:22px}
+.c-sub{color:var(--cmut);font-size:13px;margin:1px 0 7px}
+.c-win{display:flex;align-items:center;gap:7px;font-size:14px;margin-bottom:7px}
+.c-win i{width:11px;height:11px;flex:none}
+.c-met{display:flex;gap:18px;margin:0 0 8px;color:var(--cmut);font-size:12px}
+.c-met b{display:block;color:var(--cfg);font-size:15px}
+.c-row{display:grid;grid-template-columns:1fr 58px 70px;gap:6px;align-items:center;margin:2px 0;font-size:13px}
+.c-row .nm{display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c-row .nm i{width:9px;height:9px;flex:none}
+.c-row .pc{text-align:right;font-weight:700}
+.c-row .vt{text-align:right;color:var(--cmut)}
+.c-row .bar{grid-column:1/-1;height:4px;background:rgba(128,128,128,.28)}
+.c-row .bar i{display:block;height:100%}
+.c-sec{margin-top:10px}
+.c-cap{font-size:12px;font-style:italic;color:var(--cmut);margin-bottom:2px}
+.c-sec .r{display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:2px 0;border-bottom:1px solid rgba(128,128,128,.25)}
+.c-sec .r span:last-child{color:var(--cmut);text-align:right}
+.c-note,.c-hint{margin-top:8px;font-size:11.5px;color:var(--cmut)}
+body.bare #card,body.bare #tip{display:none !important}
+#wrap{max-width:1920px;margin:0 auto;padding:0 14px 24px}
+#atlas{display:block;width:100%;height:auto}
+body.bare #bar{display:none}body.bare #wrap{padding:0;max-width:none}
+</style>
+</head>
+<body data-bg="black">
+<div id="bar">
+  <div class="grp">
+    <select id="c-prov" aria-label="Filtrar provincia"></select>
+    <input id="c-find" placeholder="Buscar departamento…" aria-label="Buscar departamento" list="c-list" autocomplete="off"><datalist id="c-list"></datalist>
+  </div>
+  <div class="grp">
+    <button id="z-out" title="Alejar">−</button><button id="z-in" title="Acercar">+</button><button id="z-reset" title="Restaurar vista">Restaurar</button>
+  </div>
+  <span class="sp"></span>
+  <div class="grp">
+    <button id="b-bg" title="Cambiar el fondo (el original es transparente)">Fondo: negro</button>
+    <button id="b-svg" title="Guarda el mapa vectorial tal como se ve">Descargar SVG</button>
+    <button id="b-png">Descargar PNG</button>
+    <button id="b-csv" title="Tabla del modo actual: todos los candidatos por departamento">Descargar CSV</button>
+  </div>
+  <div id="barnote"></div>
+</div>
+<div id="wrap">
+<svg id="atlas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1649" width="1920" height="1649">
+<style>
+#atlas{font-family:Bahnschrift,"DIN Alternate","DIN 1451 Std","Roboto Condensed","Arial Narrow",Arial,sans-serif;font-weight:700}
+#atlas text{text-rendering:geometricPrecision}
+.d,.dc,.rcb,.rcc{stroke:#fff;stroke-linejoin:round;stroke-linecap:round}
+.dc{display:var(--v-dc,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}
+.d{display:var(--v-d,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}
+.rcb{display:var(--v-rcb,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}
+.cabab{display:var(--v-cabab,none);stroke:#fff;stroke-linejoin:round;stroke-width:calc(var(--sd,2px) / var(--k,1))}
+.rcc{display:var(--v-rcc,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}
+.pb{display:var(--v-pb,none);fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:calc(var(--sp,3px) / var(--k,1))}
+.out,.out2{display:var(--v-out,none);fill:none;stroke:#616261;stroke-linejoin:round;stroke-linecap:round;stroke-width:var(--so,3px)}
+.ant{display:var(--v-ant,none);stroke:none}
+.antg{display:var(--v-ant,none);fill:#9c9c9c;stroke:none}
+.antf{display:var(--v-ant,none);fill:none;stroke:#616261;stroke-width:var(--sf,3px)}
+.mal{display:var(--v-mal,none);fill:#a9a9a9;stroke:#1b1b1b;stroke-width:var(--sm,1px)}
+.pf{stroke:#fff;stroke-width:var(--spf,10px);stroke-linejoin:round}
+.cbb{stroke-width:.25px;stroke-linejoin:round}
+#atlas .frame{fill:none;stroke:#616261;stroke-width:3}
+#atlas .lbl{fill:#616261;font-size:24px;text-anchor:middle}
+#atlas .tile{cursor:pointer}
+#atlas .tile rect{fill:rgba(128,128,128,.14);stroke:#616261;stroke-width:2}
+#atlas .tile text{fill:#8a8d90;font-size:14px;text-anchor:middle}
+#atlas .tile.on rect{fill:#70a6d7;stroke:#70a6d7}
+#atlas .tile.on text{fill:#000}
+#atlas [data-i]{cursor:crosshair}
+/* lo que se dibuja encima del mapa no debe capturar el mouse: si no, el hover y el clic nunca llegan a los departamentos */
+#frontiers,.pb,.out,.out2,.antf,.antg,.mal{pointer-events:none}
+#atlas.pan [data-i]{cursor:grabbing}
+.sel{stroke:#111;stroke-width:calc(var(--sd,2px) * 3 / var(--k,1))}
+.dim{opacity:.2}
+</style>
+
+<!-- zona del mapa que se puede acercar: el rectángulo menos los recuadros que lo tapan (si no, el mapa ampliado se ve a través de ellos) -->
+<defs><clipPath id="mapclip"><path clip-rule="evenodd" d="M570 100h840v1540h-840z M570 300h80v185h-80z M570 545h79v159h-79z M1247 785h163v320h-163z M1247 1166h163v452h-163z M985 1200h200v320h-200z"/></clipPath></defs>
+<g clip-path="url(#mapclip)"><g id="zoomg">
+<!-- ===== mapa base: una sola copia, el resto son <use> ===== -->
+<g id="mainwrap" transform="matrix({{MAIN_S}} 0 0 {{MAIN_S}} {{MAIN_TX}} {{MAIN_TY}})" style="--v-d:inline;--v-dc:inline;--v-pb:inline;--sd:1.5px;--sp:3px;--so:3.2px">
+<g id="B">{{MAP}}</g>
+</g>
+
+<!-- fronteras, ríos limítrofes y bordes de países vecinos (arte fijo tomado de 1999.png, no depende de los datos) -->
+<image id="frontiers" href="{{FRONTIERS}}" x="570" y="100" width="840" height="1540"/>
+</g></g>
+
+<!-- Provincias (mini) -->
+<g id="pv" transform="matrix(0.1448 0 0 0.1448 55.7 599.8)" style="--spf:9.7px">{{PV}}</g>
+
+<!-- título -->
+<g id="title">
+  <text id="t1" x="22" y="78" font-size="57" fill="#616262" textLength="1088" lengthAdjust="spacingAndGlyphs"></text>
+  <g id="yearbox" filter="url(#sh)">
+    <rect x="1123" y="28" width="114" height="62" fill="#fff"/>
+    <rect x="1123" y="28" width="114" height="22" fill="#74acdf"/>
+    <rect x="1123" y="68" width="114" height="22" fill="#74acdf"/>
+  </g>
+  <text id="year" x="1180" y="78" font-size="57" fill="#000" text-anchor="middle" textLength="108" lengthAdjust="spacingAndGlyphs" style="paint-order:stroke;stroke:rgba(255,255,255,.55);stroke-width:2px"></text>
+  <text id="sub" x="1515" y="72" font-size="27" fill="#616262" display="none"></text>
+</g>
+<defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="1" stdDeviation="1.6" flood-color="#000" flood-opacity=".35"/></filter></defs>
+<g id="tiles"></g>
+
+<!-- pie + anillo de participación -->
+<text id="pie1" x="188" y="210" fill="#616262" font-size="17" font-style="italic" text-anchor="middle"></text>
+<text id="pie2" x="178" y="231" fill="#616262" font-size="17" font-style="italic" text-anchor="middle"></text>
+<g id="pie"></g>
+
+<!-- insets -->
+<g id="insets"></g>
+<g id="marks"></g>
+
+<!-- Exterior -->
+<g id="exterior"></g>
+<g id="malv"></g>
+
+<!-- leyenda -->
+<g id="legend"></g>
+</svg>
+</div>
+<div id="card" hidden aria-live="polite"><button id="card-x" title="Cerrar (Esc)">×</button><div id="card-body"></div></div>
+<div id="tip"></div>
+<script>if(location.hash.indexOf("bare")>0){document.body.classList.add("bare");if(location.hash.indexOf("white")>0)document.body.dataset.bg="white";}</script>
+<script>
+const DATA={{DATA}};
+const START_MODE="{{MODE}}";
+</script>
+<script>
+(()=>{
+"use strict";
+const NS="http://www.w3.org/2000/svg";
+const $=(s,r=document)=>r.querySelector(s);
+const svg=$("#atlas");
+const el=(n,a={},p=null,txt=null)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;if(p)p.appendChild(e);return e;};
+const LOC=DATA.locale||"es-AR";
+const fmtN=new Intl.NumberFormat(LOC);
+const f2=v=>new Intl.NumberFormat(LOC,{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
+const LAB=Object.assign({results:"Resultados",won:"GANÓ",pie1:"Proporción de votos por candidato",pie2:"Anillo exterior: Participación",provinces:"Provincias"},DATA.labels||{});
+
+/* ---------- paleta: 7 tonos por candidato, misma fórmula que el mapa de 1999 ----------
+   tono 0 = base mezclada 15 % con blanco; tono 1 = base; tonos 2..6 = base x .85/.70/.55/.40/.25 */
+const CAND=DATA.candidates;
+const hex2=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16));
+const rgb=(r,g,b)=>"#"+[r,g,b].map(v=>Math.max(0,Math.min(255,Math.round(v))).toString(16).padStart(2,"0")).join("");
+const mulc=(h,k)=>{const c=hex2(h);return rgb(c[0]*k,c[1]*k,c[2]*k)};
+const mixw=(h,t)=>{const c=hex2(h);return rgb(c[0]+(255-c[0])*t,c[1]+(255-c[1])*t,c[2]+(255-c[2])*t)};
+const SHADE_K=DATA.shade_k||[null,1,.85,.70,.55,.40,.25];   // un atlas puede pasar un degradado menos oscuro (shade_k en el dataset)
+const shade=(code,i)=>{const b=CAND[code].base;return i===0?mixw(b,.15):mulc(b,SHADE_K[i])};
+const BINS=DATA.bins||[40,50,60,70,80,90];                       // umbrales entre tonos
+const BIN_LABEL=DATA.bin_labels||["30%","40%","50%","60%","70%","80%","+90%"];
+const binOf=p=>{let i=0;while(i<BINS.length&&p>=BINS[i])i++;return i;};
+const colorRec=r=>r.fill?r.fill:shade(r.w,binOf(r.q));
+
+/* ---------- datos por modo ---------- */
+const MODES={};DATA.modes.forEach(m=>MODES[m.id]=m);
+const SETS=DATA.sets||{};
+const T=DATA.territories;
+const recOf=(mode,i)=>MODES[mode].units[i];
+const provRec=(mode,name)=>MODES[mode].prov[name]||{fill:"#888"};
+
+/* ---------- elementos del mapa ---------- */
+const mapEls=[...svg.querySelectorAll("#B [data-i]")];
+const cabaEls=[...svg.querySelectorAll("#B .cabab")];
+const cbbEls=[];   // Capital ampliada junto al mini de provincias
+const antEls=[...svg.querySelectorAll("#B .ant:not([data-i])")];
+const pvEls=[...svg.querySelectorAll("#pv .pf")];
+// Malvinas también aparece en el mini de provincias
+{const m=$("#path6122-7");if(m){const c=m.cloneNode(false);c.removeAttribute("id");c.setAttribute("style","--v-mal:inline");c.setAttribute("class","mal pf");c.setAttribute("data-prov","Tierra del Fuego");$("#pv > g").appendChild(c);pvEls.push(c);}}
+
+let MODE=START_MODE;{const hm=/m-([\w-]+)/.exec(location.hash);if(hm&&MODES[hm[1]])MODE=hm[1];}
+
+function recolor(){
+  const SOL=new Set(DATA.solid||[]);   // provincias sin datos departamentales: se pintan enteras con el color de su resultado provincial, sin mostrar los límites departamentales
+  for(const e of mapEls){const i=+e.dataset.i,pv=DATA.territories[i].p,sol=SOL.has(pv),c=colorRec(sol?provRec(MODE,pv):recOf(MODE,i));e.setAttribute("fill",c);e.style.stroke=sol?c:"";}
+  const tc=colorRec(provRec(MODE,"Tierra del Fuego"));
+  for(const e of antEls)e.setAttribute("fill",tc);
+  const cc=colorRec(provRec(MODE,"Capital Federal"));for(const e of cabaEls)e.setAttribute("fill",cc);
+  for(const e of cbbEls){e.setAttribute("fill",cc);e.setAttribute("stroke",cc);}
+  for(const e of pvEls)e.setAttribute("fill",colorRec(provRec(MODE,e.dataset.prov)));
+}
+
+/* ---------- pie, anillo y leyenda ---------- */
+const national=()=>MODES[MODE].national;
+function arc(cx,cy,r,a0,a1){ // ángulos en grados desde las 12 en sentido horario
+  const rad=a=>a*Math.PI/180,p=a=>[cx+r*Math.sin(rad(a)),cy-r*Math.cos(rad(a))];
+  const [x0,y0]=p(a0),[x1,y1]=p(a1),big=(a1-a0)>180?1:0;
+  return `M${cx} ${cy}L${x0.toFixed(2)} ${y0.toFixed(2)}A${r} ${r} 0 ${big} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}Z`;
+}
+function ringArc(cx,cy,r,a0,a1){
+  const rad=a=>a*Math.PI/180,p=a=>[cx+r*Math.sin(rad(a)),cy-r*Math.cos(rad(a))];
+  const [x0,y0]=p(a0),[x1,y1]=p(a1),big=(a1-a0)>180?1:0;
+  return `M${x0.toFixed(2)} ${y0.toFixed(2)}A${r} ${r} 0 ${big} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`;
+}
+function drawPie(N){
+  const g=$("#pie");g.replaceChildren();
+  const cx=184,cy=374;
+  el("circle",{cx,cy,r:111,fill:"#fff","fill-opacity":.93},g);
+  const slices=(N.slices||N.cands.map(c=>({code:c.code,v:c.votes}))).map(s=>({fill:s.fill||CAND[s.code].base,v:s.v}));
+  const tot=slices.reduce((s,x)=>s+x.v,0);let a=0;
+  slices.forEach(s=>{const da=360*s.v/tot;if(da<=0)return;el("path",{d:arc(cx,cy,107,a,a+da),fill:s.fill},g);a+=da;});
+  if(N.partp!=null){
+    const pa=360*N.partp/100;
+    el("path",{d:ringArc(cx,cy,116,0,359.99),fill:"none",stroke:"#dedede","stroke-width":10},g);
+    el("path",{d:ringArc(cx,cy,116,0,Math.min(pa,359.99)),fill:"none",stroke:"#484848","stroke-width":10},g);
+  }
+}
+function drawLegend(N){
+  const g=$("#legend");g.replaceChildren();
+  // candidatos que ganan algo en este modo: solo ellos muestran su rampa de tonos
+  const wins={},used={};
+  for(const u of MODES[MODE].units){if(!u.w)continue;wins[u.w]=1;(used[u.w]=used[u.w]||{})[binOf(u.q)]=1;}
+  const LG=MODES[MODE].legend;                                   // leyenda propia para mapas de color explícito (coropletas)
+  el("text",{x:93,y:1266,"font-size":20,fill:"#616161"},g,(LG&&LG.title)||LAB.results);
+  let y=1292;
+  if(LG&&LG.stops){
+    const n=LG.stops.length,w=337/n-2.5;
+    LG.stops.forEach(([col,lab],i)=>{const x=93+i*(337/n);
+      el("rect",{x,y,width:w,height:9,fill:col},g);
+      el("text",{x:x+w/2,y:y-6,"font-size":14,"font-style":"italic",fill:"#616161","text-anchor":"middle"},g,lab);});
+    y+=15;
+  }
+  const rows=(LG&&LG.bars===false)?[]:N.cands;
+  rows.forEach((c,idx)=>{
+    const C=CAND[c.code],hasRamp=!LG&&!!wins[c.code];
+    if(hasRamp){
+      for(let i=0;i<7;i++){
+        const x=93+i*46.2,w=43.5;
+        el("rect",{x,y,width:w,height:9,fill:shade(c.code,i),opacity:(used[c.code]&&used[c.code][i])?1:.38},g);
+        if(idx===0)el("text",{x:x+w/2,y:y-6,"font-size":14,"font-style":"italic",fill:"#616161","text-anchor":"middle"},g,BIN_LABEL[i]);
+      }
+      y+=15;
+    }
+    const h=50,win=idx===0&&!LG,bar=C.bar||C.base;
+    el("rect",{x:80,y,width:5,height:h-1,fill:mixw(bar,.42)},g);
+    el("rect",{x:93,y,width:win?431:337,height:h,fill:bar},g);
+    if(win)el("rect",{x:429,y,width:95,height:h,fill:mulc(bar,.85)},g);
+    const lg=C.logo||c.code;                                    // sigla grande a la izquierda (en 1999: logo del frente)
+    el("text",{x:104,y:y+36,"font-size":lg.length>2?34:40,fill:"#fff","letter-spacing":-1},g,lg);
+    el("rect",{x:104,y:y+41,width:lg.length>2?(lg.length*20):(lg.length*23),height:3,fill:"#fff",opacity:.8},g);
+    el("text",{x:424,y:y+21,"font-size":21,fill:"#fff","text-anchor":"end"},g,C.n);
+    if(C.sub)el("text",{x:424,y:y+39,"font-size":15,fill:"#fff","text-anchor":"end",opacity:.95},g,C.sub);
+    if(win){
+      el("text",{x:477,y:y+29,"font-size":26,fill:"#fff","text-anchor":"middle"},g,f2(c.pct)+"%");
+      el("text",{x:497,y:y+44,"font-size":10,fill:"#fff","font-style":"italic","text-anchor":"middle",opacity:.85},g,LAB.won);
+    }else{
+      el("text",{x:476,y:y+33,"font-size":23,fill:C.txt||bar,"text-anchor":"middle"},g,f2(c.pct)+"%");
+    }
+    y+=h+(idx+1<rows.length&&!LG&&wins[rows[idx+1].code]?5:7);
+  });
+}
+
+/* ---------- insets (ventanas de zoom sobre el mismo mapa base; ver references/insets.md) ---------- */
+const INSETS=[
+  {id:"tuc",label:"Tucumán",f:[450,300,200,185],win:[616,226,70,64.8],show:["d","pb"],sd:2.6,sp:3.4},
+  {id:"sj",label:"Gran San Juan",f:[328,545,321,159],win:[390,629,57.3,28.4],show:["d"],sd:2.6},
+  {id:"mza",label:"Gran Mendoza",f:[328,783,224,187],win:[383.5,729,68,56.7],show:["d"],sd:2.6},
+  {id:"res",label:"Resistencia + Corrientes capital",f:[1413,499,464,209],win:[1031,284,145,65.3],show:["d","pb"],sd:2.6,sp:3.2},
+  {id:"amba",label:"Área Metropolitana de Buenos Aires",f:[1247,785,647,320],win:[963.7,1592,563,278.6],show:["rcb","cabab"],sd:1.9},
+  {id:"ant",label:"Antártida Argentina",f:[1247,1166,330,452],win:[1211.7,2121.3,342.7,462.3],show:["ant"],sf:3,fit:"meet",noframe:true},
+  {id:"caba",label:"Ciudad de Buenos Aires",f:[1632,1187,191,232],win:[1113.8,882.8,11.2,13.8],show:["dc"],sd:3,fit:"none",noframe:true,lx:1732}
+];
+function drawInsets(){
+  const g=$("#insets");g.replaceChildren();
+  for(const I of INSETS){
+    const [x,y,w,h]=I.f,[vx,vy,vw,vh]=I.win;
+    const sc=I.fit==="meet"?Math.min(w/vw,h/vh):I.fit==="none"?Math.sqrt((w/vw)*(h/vh)):Math.max(w/vw,h/vh);
+    const s=el("svg",{x,y,width:w,height:h,viewBox:I.win.join(" "),preserveAspectRatio:I.fit==="none"?"none":"xMidYMid "+(I.fit||"slice"),overflow:"hidden"},g);
+    let st=I.show.map(c=>`--v-${c}:inline`).join(";");
+    if(I.sd)st+=`;--sd:${(I.sd/sc).toFixed(4)}px`;   // ancho de línea en px de pantalla / escala del zoom
+    if(I.sp)st+=`;--sp:${(I.sp/sc).toFixed(4)}px`;
+    if(I.sf)st+=`;--sf:${(I.sf/sc).toFixed(4)}px`;
+    el("use",{href:"#B",style:st},s);
+    if(!I.noframe)el("rect",{class:"frame",x:x+1.5,y:y+1.5,width:w-3,height:h-3},g);
+    el("text",{class:"lbl",x:I.lx||(x+w/2),y:y-9},g,I.label);
+  }
+  el("text",{class:"lbl",x:182,y:563},g,LAB.provinces);
+}
+
+/* ---------- Capital Federal ampliada junto al mini de provincias (globo con cuña, como en Wikipedia) ---------- */
+function drawCabaBubble(){
+  const src=[...svg.querySelectorAll("#B .dc")],cp=$('#pv .pf[data-prov="Capital Federal"]'),pvg=$("#pv"),Bg=$("#B");
+  if(!src.length||!cp||!pvg||!Bg)return;
+  const g=$("#insets"),R=26;
+  // posición de Capital en el mini (coordenadas del lienzo)
+  const pm=pvg.transform.baseVal.consolidate().matrix,bb=cp.getBBox();
+  const P={x:pm.a*(bb.x+bb.width/2)+pm.e,y:pm.d*(bb.y+bb.height/2)+pm.f};
+  const C={x:P.x+56,y:P.y-34};
+  // caja de Capital en el marco de #B (con la transformación relativa de cada trazo)
+  src.forEach(e=>e.style.display="inline");   // en el mapa principal .dc puede estar oculto: getBBox necesita que se dibuje
+  const Bi=Bg.getCTM().inverse(),rels=src.map(e=>Bi.multiply(e.getCTM()));
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  src.forEach((e,i)=>{const b=e.getBBox(),m=rels[i];for(const [px,py] of [[b.x,b.y],[b.x+b.width,b.y],[b.x,b.y+b.height],[b.x+b.width,b.y+b.height]]){const X=m.a*px+m.c*py+m.e,Y=m.b*px+m.d*py+m.f;x0=Math.min(x0,X);x1=Math.max(x1,X);y0=Math.min(y0,Y);y1=Math.max(y1,Y);}});
+  src.forEach(e=>e.style.removeProperty("display"));
+  const side=Math.max(x1-x0,y1-y0)*1.4,vx=(x0+x1)/2-side/2,vy=(y0+y1)/2-side/2;
+  // cuña desde Capital hasta las tangentes del globo
+  const dx=P.x-C.x,dy=P.y-C.y,d=Math.hypot(dx,dy),th=Math.atan2(dy,dx),al=Math.acos(R/d);
+  const T=[th+al,th-al].map(a=>[C.x+R*Math.cos(a),C.y+R*Math.sin(a)]);
+  const w=el("g",{id:"cababub"},g);
+  el("path",{d:`M${P.x} ${P.y}L${T[0][0].toFixed(2)} ${T[0][1].toFixed(2)}L${T[1][0].toFixed(2)} ${T[1][1].toFixed(2)}Z`,fill:"#fff",stroke:"#222","stroke-width":1.2,"stroke-linejoin":"round"},w);
+  const cid="cababubclip";
+  const df=el("defs",{},w),cpth=el("clipPath",{id:cid},df);el("circle",{cx:C.x,cy:C.y,r:R-1},cpth);
+  el("circle",{cx:C.x,cy:C.y,r:R,fill:"#fff"},w);
+  const inner=el("g",{"clip-path":`url(#${cid})`},w);
+  const s=el("svg",{x:C.x-R,y:C.y-R,width:2*R,height:2*R,viewBox:`${vx} ${vy} ${side} ${side}`,overflow:"hidden"},inner);
+  src.forEach((e,i)=>{const c=e.cloneNode(false),m=rels[i];c.removeAttribute("id");c.removeAttribute("data-i");c.setAttribute("class","cbb");c.removeAttribute("style");c.setAttribute("transform",`matrix(${m.a} ${m.b} ${m.c} ${m.d} ${m.e} ${m.f})`);s.appendChild(c);cbbEls.push(c);});
+  el("circle",{cx:C.x,cy:C.y,r:R,fill:"none",stroke:"#222","stroke-width":1.6},w);
+}
+
+/* ---------- Exterior + Malvinas ---------- */
+function drawExterior(){
+  const g=$("#exterior");g.replaceChildren();
+  const ex=DATA.exterior||{};
+  const cx=1054,cy=1263,r=41;
+  el("circle",{cx,cy,r:r+2,fill:"#000"},g);
+  el("circle",{cx,cy,r:r-1.5,fill:ex.color||"#7d7f82"},g);
+  const w={fill:"none",stroke:"#fff","stroke-width":3.4};
+  for(const rx of [0.38,0.75])el("ellipse",{cx,cy,rx:r*rx,ry:r-2,...w,transform:`rotate(24 ${cx} ${cy})`},g);
+  el("line",{x1:cx-9,y1:cy-r+4,x2:cx+9,y2:cy+r-4,...w},g);
+  for(const dy of [-17,0,17])el("path",{d:`M${cx-r+5} ${cy+dy}Q${cx} ${cy+dy+8} ${cx+r-5} ${cy+dy}`,...w,transform:`rotate(24 ${cx} ${cy})`},g);
+  el("text",{x:1058,y:1349,"font-size":38,fill:"#616261","text-anchor":"middle"},g,ex.label||"Exterior");
+  if(ex.caption)el("text",{x:1058,y:1371,"font-size":14,fill:"#616261","text-anchor":"middle","font-style":"italic"},g,ex.caption);
+  const m=$("#malv");m.replaceChildren();
+  // Malvinas usa su propio desplazamiento, como en la composición original
+  el("use",{href:"#B",transform:"matrix(0.5425 0 0 0.5425 520.4 230)",style:"--v-mal:inline;--sm:1.4px"},m);
+}
+
+/* ---------- pestañas: los modos del mismo "set" + un botón por cada otro set ---------- */
+function tilesNow(){
+  const cur=MODES[MODE].set||"1";const out=[];
+  DATA.modes.filter(m=>(m.set||"1")===cur).forEach(m=>out.push([m.id,m.tile||m.id]));
+  Object.keys(SETS).filter(k=>k!==cur).forEach(k=>{const first=DATA.modes.find(m=>(m.set||"1")===k);if(first)out.push([first.id,SETS[k].label||k]);});
+  return out.slice(0,4);
+}
+function drawTiles(){
+  const g=$("#tiles");g.replaceChildren();
+  const list=tilesNow(),xs=[1262,1316,1370,1424];
+  list.forEach(([m,t],i)=>{
+    const gg=el("g",{class:"tile"+(m===MODE?" on":""),"data-mode":m},g);
+    const sw=(t.length>6)?68:48,xx=xs[i];
+    el("rect",{x:xx,y:28,width:sw,height:62},gg);
+    const tt=el("text",{x:xx+sw/2,y:64},gg,t);
+    if(t.length>5)tt.setAttribute("font-size",15);
+    gg.addEventListener("click",()=>setMode(m));
+  });
+}
+
+/* ---------- título ---------- */
+function drawTitle(){
+  const title=DATA.title||"",year=String(DATA.year||"");
+  const tl=Math.min(1088,Math.round(1088*title.length/41));     // misma densidad que el título original (41 caracteres = 1088 px)
+  const t1=$("#t1");t1.textContent=title;t1.setAttribute("textLength",tl);
+  const bx=22+tl+13;
+  $("#yearbox").querySelectorAll("rect").forEach(r=>r.setAttribute("x",bx));
+  const yt=$("#year");yt.textContent=year;yt.setAttribute("x",bx+57);
+  const set=SETS[MODES[MODE].set||"1"]||{},sub=$("#sub");
+  if(set.subtitle){sub.textContent=set.subtitle;sub.setAttribute("display","inline");}else sub.setAttribute("display","none");
+  $("#barnote").textContent=MODES[MODE].note||"";
+  document.title=title+" "+year+(set.subtitle?" — "+set.subtitle:"");
+}
+function setMode(m){MODE=m;recolor();const N=national();drawPie(N);drawLegend(N);drawTiles();drawTitle();renderCard();highlight();}
+
+/* ---------- tooltip ---------- */
+const tip=$("#tip");
+svg.addEventListener("mousemove",ev=>{
+  if(DRAG&&DRAG.moved){tip.style.display="none";return;}
+  const t=ev.target.closest&&ev.target.closest("#B [data-i]");
+  if(!t||!t.closest("#mainwrap")){tip.style.display="none";return;}
+  tip.innerHTML=cardHTML(viewFor({type:"unit",i:+t.dataset.i}),true)+`<div class="c-hint">clic: fijar los resultados</div>`;tip.style.display="block";
+  const tw=tip.offsetWidth,th=tip.offsetHeight;
+  let x=Math.min(ev.clientX+16,innerWidth-tw-8);const y=Math.max(4,Math.min(ev.clientY+16,innerHeight-th-8));
+  if(!card.hidden){   // no tapar la tarjeta fijada: si se superponen, la mini ventana pasa al otro lado del cursor
+    const c=card.getBoundingClientRect();
+    if(x<c.right&&x+tw>c.left&&y<c.bottom&&y+th>c.top)x=Math.max(4,ev.clientX-tw-16);
+  }
+  tip.style.left=Math.max(4,x)+"px";tip.style.top=y+"px";
+});
+svg.addEventListener("mouseleave",()=>tip.style.display="none");
+
+/* ---------- barra: fondo y descargas ---------- */
+const BGS=["black","white","check"],BGN={black:"negro",white:"blanco",check:"transparente"};
+$("#b-bg").addEventListener("click",()=>{const b=document.body;const n=BGS[(BGS.indexOf(b.dataset.bg)+1)%3];b.dataset.bg=n;$("#b-bg").textContent="Fondo: "+BGN[n];});
+function serialize(){
+  const c=svg.cloneNode(true);c.setAttribute("xmlns",NS);c.setAttribute("xmlns:xlink","http://www.w3.org/1999/xlink");
+  c.querySelectorAll(".tile").forEach(t=>t.remove());c.querySelectorAll(".sel,.dim").forEach(e=>e.classList.remove("sel","dim"));
+  return '<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(c);
+}
+function save(blob,name){const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);}
+const stem=()=>(DATA.slug||"atlas")+"_"+MODE;
+$("#b-svg").addEventListener("click",()=>save(new Blob([serialize()],{type:"image/svg+xml"}),stem()+".svg"));
+$("#b-png").addEventListener("click",()=>{
+  const img=new Image();
+  img.onload=()=>{const c=document.createElement("canvas");c.width=1920;c.height=1649;c.getContext("2d").drawImage(img,0,0,1920,1649);c.toBlob(b=>save(b,stem()+".png"));};
+  img.src="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(serialize());
+});
+
+
+/* ---------- zoom, arrastre, selección, panel de detalle, búsqueda y CSV ---------- */
+const zoomg=$("#zoomg"),REG={x:570,y:100,w:840,h:1540};
+const Z={k:1,tx:0,ty:0};
+let DRAG=null,SEL=null;
+const mw=$("#mainwrap"),fr=$("#frontiers");
+function applyZoom(){
+  zoomg.setAttribute("transform",`translate(${Z.tx.toFixed(2)} ${Z.ty.toFixed(2)}) scale(${Z.k.toFixed(4)})`);
+  // las líneas conservan su grosor en pantalla (si no, crecerían con el zoom)
+  mw.style.setProperty("--sd",(1.5/Z.k).toFixed(4)+"px");mw.style.setProperty("--sp",(3/Z.k).toFixed(4)+"px");mw.style.setProperty("--so",(3.2/Z.k).toFixed(4)+"px");
+  fr.style.opacity=Z.k>6?0:1;   // el arte fijo de fronteras es un raster: se oculta al acercar
+}
+function toPoster(ev){const m=svg.getScreenCTM().inverse();const p=new DOMPoint(ev.clientX,ev.clientY).matrixTransform(m);return [p.x,p.y];}
+const inReg=(x,y)=>x>=REG.x&&x<=REG.x+REG.w&&y>=REG.y&&y<=REG.y+REG.h;
+function zoomAt(px,py,k2){k2=Math.max(1,Math.min(40,k2));Z.tx=px-(px-Z.tx)*k2/Z.k;Z.ty=py-(py-Z.ty)*k2/Z.k;Z.k=k2;if(Z.k===1){Z.tx=0;Z.ty=0;}applyZoom();}
+function resetZoom(){Z.k=1;Z.tx=0;Z.ty=0;applyZoom();}
+svg.addEventListener("wheel",ev=>{const [x,y]=toPoster(ev);if(!inReg(x,y))return;ev.preventDefault();zoomAt(x,y,Z.k*Math.exp(-ev.deltaY*0.0016));},{passive:false});
+svg.addEventListener("pointerdown",ev=>{const [x,y]=toPoster(ev);if(ev.button!==0||!inReg(x,y))return;DRAG={x,y,tx:Z.tx,ty:Z.ty,moved:false,t:ev.target.closest&&ev.target.closest("#B [data-i]"),cx:ev.clientX,cy:ev.clientY};});
+window.addEventListener("pointermove",ev=>{if(!DRAG)return;if(!DRAG.moved&&Math.hypot(ev.clientX-DRAG.cx,ev.clientY-DRAG.cy)<5)return;DRAG.moved=true;svg.classList.add("pan");
+  const [x,y]=toPoster(ev);Z.tx=DRAG.tx+(x-DRAG.x);Z.ty=DRAG.ty+(y-DRAG.y);applyZoom();});
+window.addEventListener("pointerup",ev=>{if(!DRAG)return;const d=DRAG;DRAG=null;svg.classList.remove("pan");
+  if(!d.moved){if(d.t&&d.t.closest("#mainwrap"))selectUnit(+d.t.dataset.i,false,{x:ev.clientX,y:ev.clientY});else if(!d.t)clearSel();}});
+$("#z-in").addEventListener("click",()=>zoomAt(REG.x+REG.w/2,REG.y+REG.h/2,Z.k*1.6));
+$("#z-out").addEventListener("click",()=>zoomAt(REG.x+REG.w/2,REG.y+REG.h/2,Z.k/1.6));
+$("#z-reset").addEventListener("click",()=>{clearSel();resetZoom();});
+
+// caja de un conjunto de trazos del mapa principal, en coordenadas del poster sin zoom
+function bboxOf(els){
+  const m=svg.getScreenCTM().inverse();let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  for(const e of els){const r=e.getBoundingClientRect();if(!r.width&&!r.height)continue;
+    for(const [cx,cy] of [[r.left,r.top],[r.right,r.bottom]]){const p=new DOMPoint(cx,cy).matrixTransform(m);const ux=(p.x-Z.tx)/Z.k,uy=(p.y-Z.ty)/Z.k;x0=Math.min(x0,ux);x1=Math.max(x1,ux);y0=Math.min(y0,uy);y1=Math.max(y1,uy);}}
+  return x1<x0?null:[x0,y0,x1,y1];
+}
+function zoomToBox(b,fill){
+  if(!b)return;const w=Math.max(b[2]-b[0],2),h=Math.max(b[3]-b[1],2);
+  const k=Math.min(40,Math.max(1,Math.min(REG.w/w,REG.h/h)*fill));
+  Z.k=k;Z.tx=REG.x+REG.w/2-k*(b[0]+b[2])/2;Z.ty=REG.y+REG.h/2-k*(b[1]+b[3])/2;applyZoom();
+}
+const mainEls=i=>mapEls.filter(e=>+e.dataset.i===i&&e.closest("#mainwrap"));
+
+function highlight(){
+  for(const e of mapEls){
+    const i=+e.dataset.i;let sel=false,dim=false;
+    if(SEL&&SEL.type==="unit"){sel=i===SEL.i;}
+    else if(SEL&&SEL.type==="prov"){dim=T[i].p!==SEL.name;}
+    e.classList.toggle("sel",sel);e.classList.toggle("dim",dim);
+  }
+  if(SEL&&SEL.type==="unit")for(const e of mapEls)if(e.classList.contains("sel")&&e.parentNode)e.parentNode.appendChild(e);   // al frente
+}
+function selectUnit(i,zoom,pos){SEL={type:"unit",i};$("#c-prov").value=T[i].p;if(zoom)zoomToBox(bboxOf(mainEls(i)),0.28);highlight();renderCard(pos);}
+function selectProv(name,zoom,pos){if(!name){clearSel();return;}SEL={type:"prov",name};if(zoom)zoomToBox(bboxOf(mapEls.filter(e=>T[+e.dataset.i].p===name&&e.closest("#mainwrap"))),0.9);highlight();renderCard(pos);}
+function clearSel(){SEL=null;$("#c-prov").value="";highlight();renderCard();}
+
+/* tarjeta de resultados (clic = fija, hover = mini ventana con lo mismo) */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function viewFor(S){
+  const M=MODES[MODE];
+  if(S.type==="unit"){const d=T[S.i];return {title:d.n,sub:d.p+(d.k!=="departamento"?" · "+d.k:""),rec:M.units[S.i]};}
+  return {title:S.name,sub:"Provincia",rec:M.prov[S.name]||{}};
+}
+function cardHTML(R,compact){
+  const r=R.rec,M=MODES[MODE];
+  let h=`<div class="c-title">${esc(R.title)}</div><div class="c-sub">${esc(R.sub)}</div>`;
+  if(r.w&&CAND[r.w])h+=`<div class="c-win"><i style="background:${CAND[r.w].base}"></i><span>Gana <b>${esc(CAND[r.w].n)}</b>${r.q!=null?" · "+f2(r.q)+" %":""}</span></div>`;
+  if((r.metrics||[]).length)h+=`<div class="c-met">${r.metrics.map(([a,b])=>`<div>${esc(a)}<b>${esc(b)}</b></div>`).join("")}</div>`;
+  h+=(r.lines||[]).map(([c,v,p])=>{const C=CAND[c]||{n:c,base:"#888"};
+    return `<div class="c-row"><span class="nm"><i style="background:${C.base}"></i>${esc(C.n)}</span><span class="pc">${p!=null?f2(p)+" %":""}</span><span class="vt">${v!=null?fmtN.format(v):""}</span><div class="bar"><i style="width:${p!=null?Math.max(0.6,p):0}%;background:${C.base}"></i></div></div>`;}).join("");
+  if(!compact){
+    h+=(r.sections||[]).map(s=>`<div class="c-sec"><div class="c-cap">${esc(s.title)}</div>${s.rows.map(([a,b])=>`<div class="r"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join("")}</div>`).join("");
+    const note=[r.note,M.note].filter(Boolean).join(" · ");if(note)h+=`<div class="c-note">${esc(note)}</div>`;
+  }else if(r.note)h+=`<div class="c-note">${esc(r.note)}</div>`;
+  return h;
+}
+const card=$("#card");
+function renderCard(pos){
+  if(!SEL){card.hidden=true;return;}
+  $("#card-body").innerHTML=cardHTML(viewFor(SEL),false);
+  const was=card.hidden;card.hidden=false;
+  if(pos||was||!card.style.left){
+    const w=card.offsetWidth,h=card.offsetHeight;
+    const x=pos?Math.min(pos.x+18,innerWidth-w-12):innerWidth-w-16,y=pos?Math.min(pos.y+18,innerHeight-h-12):70;
+    card.style.left=Math.max(8,x)+"px";card.style.top=Math.max(50,y)+"px";
+  }
+}
+$("#card-x").addEventListener("click",()=>clearSel());
+window.addEventListener("keydown",e=>{if(e.key==="Escape")clearSel();});
+
+{
+  const sel=$("#c-prov");sel.innerHTML='<option value="">Todo el país</option>'+[...new Set(T.map(t=>t.p))].sort((a,b)=>a.localeCompare(b,"es")).map(p=>`<option>${esc(p)}</option>`).join("");
+  sel.addEventListener("change",()=>{if(!sel.value){clearSel();resetZoom();}else selectProv(sel.value,true);});
+  const dl=$("#c-list");dl.innerHTML=T.map((t,i)=>`<option value="${esc(t.n+" — "+t.p)}"></option>`).join("");
+  const find=$("#c-find");
+  const go=()=>{const q=find.value.trim().toLocaleLowerCase("es");if(!q)return;
+    let i=T.findIndex(t=>(t.n+" — "+t.p).toLocaleLowerCase("es")===q);if(i<0)i=T.findIndex(t=>t.n.toLocaleLowerCase("es")===q);if(i<0)i=T.findIndex(t=>t.n.toLocaleLowerCase("es").includes(q));
+    if(i>=0){selectUnit(i,true);find.blur();}};
+  find.addEventListener("change",go);find.addEventListener("keydown",e=>{if(e.key==="Enter")go();});
+}
+$("#b-csv").addEventListener("click",()=>{
+  const M=MODES[MODE],codes=[];M.units.forEach(u=>(u.lines||[]).forEach(l=>{if(!codes.includes(l[0]))codes.push(l[0]);}));
+  const q=v=>/[",\n]/.test(String(v))?'"'+String(v).replace(/"/g,'""')+'"':String(v);
+  const head=["provincia","subdivision","tipo","ganador","pct_ganador"];codes.forEach(c=>{const n=(CAND[c]||{n:c}).n;head.push(n+" (votos)",n+" (%)");});
+  const rows=[head.map(q).join(",")];
+  M.units.forEach((u,i)=>{const row=[T[i].p,T[i].n,T[i].k,u.w?(CAND[u.w]||{n:u.w}).n:"",u.q!=null?u.q:""];
+    codes.forEach(c=>{const l=(u.lines||[]).find(x=>x[0]===c);row.push(l&&l[1]!=null?l[1]:"",l&&l[2]!=null?l[2]:"");});rows.push(row.map(q).join(","));});
+  save(new Blob(["﻿"+rows.join("\n")],{type:"text/csv;charset=utf-8"}),stem()+".csv");
+});
+
+/* ---------- init ---------- */
+$("#pie1").textContent=LAB.pie1;$("#pie2").textContent=LAB.pie2;
+drawInsets();drawCabaBubble();drawExterior();
+window.__atlas={setMode,get mode(){return MODE},selectUnit,selectProv,clearSel,zoomAt,resetZoom};
+setMode(MODE);
+})();
+</script>
+</body>
+</html>

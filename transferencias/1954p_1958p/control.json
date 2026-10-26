@@ -1,0 +1,222 @@
+{
+ "circuitos_origen": 410,
+ "circuitos_destino": 430,
+ "por_seccion": [],
+ "comunes": 410,
+ "usados": 406,
+ "crecimiento_padron_mediano": 0.994,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 1.0,
+  "03": 1.0,
+  "04": 1.0,
+  "06": 0.973,
+  "07": 0.996,
+  "08": 1.0,
+  "09": 1.0,
+  "10": 1.0,
+  "11": 0.997,
+  "12": 1.0,
+  "13": 1.0,
+  "14": 1.0,
+  "15": 1.0,
+  "17": 1.0,
+  "18": 1.0,
+  "20": 1.0,
+  "21": 1.0,
+  "22": 1.0
+ },
+ "electores_origen_usados": 8369618,
+ "electores_origen_total": 8375822,
+ "electores_destino_usados": 9124379,
+ "electores_destino_total": 9594665,
+ "descartados": [
+  {
+   "circuito": "06-0-GENERAL BELGRANO",
+   "electores_origen": 2470,
+   "electores_destino": 2828
+  },
+  {
+   "circuito": "06-0-TAPENAGA",
+   "electores_origen": 3377,
+   "electores_destino": 2493
+  },
+  {
+   "circuito": "07-0-FLORENTINO AMEGHINO",
+   "electores_origen": 139,
+   "electores_destino": 470
+  },
+  {
+   "circuito": "11-0-CURA CO",
+   "electores_origen": 218,
+   "electores_destino": 496
+  }
+ ],
+ "validacion_cruzada_pp": {
+  "0.0002": 4.2852,
+  "2e-05": 4.3362,
+  "2e-06": 4.3534,
+  "2e-07": 4.3633,
+  "0": 4.3931
+ },
+ "lambda": 0.0002,
+ "rmse_destino_pp": 4.185870882051484,
+ "votos_distintos_vs_calvo": 1625712,
+ "votos_total": 9124378,
+ "marginal_origen": {
+  "Partido Peronista": 4491305,
+  "UCR": 2339309,
+  "Otros": 225839,
+  "Blanco y nulo": 146159,
+  "No votó": 1167006
+ },
+ "marginal_destino": {
+  "UCRI (Frondizi)": 3803859,
+  "UCRP (Balbín)": 2512540,
+  "Otros": 1268564,
+  "Blanco y nulo": 744477,
+  "No votó": 794939
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "UCRI (Frondizi)": 690097,
+   "UCRP (Balbín)": 600781,
+   "Otros": 187556,
+   "Blanco y nulo": 95516,
+   "No votó": 125864
+  },
+  "02": {
+   "UCRI (Frondizi)": 1415944,
+   "UCRP (Balbín)": 851172,
+   "Otros": 429187,
+   "Blanco y nulo": 339684,
+   "No votó": 244597
+  },
+  "03": {
+   "UCRI (Frondizi)": 27587,
+   "UCRP (Balbín)": 19282,
+   "Otros": 18503,
+   "Blanco y nulo": 2426,
+   "No votó": 6575
+  },
+  "04": {
+   "UCRI (Frondizi)": 376516,
+   "UCRP (Balbín)": 313176,
+   "Otros": 120221,
+   "Blanco y nulo": 47325,
+   "No votó": 76864
+  },
+  "06": {
+   "UCRI (Frondizi)": 84251,
+   "UCRP (Balbín)": 45893,
+   "Otros": 37283,
+   "Blanco y nulo": 15659,
+   "No votó": 30822
+  },
+  "07": {
+   "UCRI (Frondizi)": 10537,
+   "UCRP (Balbín)": 7875,
+   "Otros": 6718,
+   "Blanco y nulo": 1320,
+   "No votó": 6108
+  },
+  "08": {
+   "UCRI (Frondizi)": 174929,
+   "UCRP (Balbín)": 115539,
+   "Otros": 59335,
+   "Blanco y nulo": 32856,
+   "No votó": 52870
+  },
+  "09": {
+   "UCRI (Frondizi)": 18941,
+   "UCRP (Balbín)": 11698,
+   "Otros": 6026,
+   "Blanco y nulo": 3232,
+   "No votó": 9222
+  },
+  "10": {
+   "UCRI (Frondizi)": 32875,
+   "UCRP (Balbín)": 11304,
+   "Otros": 18890,
+   "Blanco y nulo": 12749,
+   "No votó": 8974
+  },
+  "11": {
+   "UCRI (Frondizi)": 39970,
+   "UCRP (Balbín)": 18166,
+   "Otros": 8795,
+   "Blanco y nulo": 7244,
+   "No votó": 5270
+  },
+  "12": {
+   "UCRI (Frondizi)": 32757,
+   "UCRP (Balbín)": 14568,
+   "Otros": 3233,
+   "Blanco y nulo": 2894,
+   "No votó": 8160
+  },
+  "13": {
+   "UCRI (Frondizi)": 195071,
+   "UCRP (Balbín)": 80559,
+   "Otros": 65312,
+   "Blanco y nulo": 13814,
+   "No votó": 39008
+  },
+  "14": {
+   "UCRI (Frondizi)": 34932,
+   "UCRP (Balbín)": 20205,
+   "Otros": 17179,
+   "Blanco y nulo": 12131,
+   "No votó": 16494
+  },
+  "15": {
+   "UCRI (Frondizi)": 15458,
+   "UCRP (Balbín)": 6612,
+   "Otros": 5133,
+   "Blanco y nulo": 9886,
+   "No votó": 5178
+  },
+  "17": {
+   "UCRI (Frondizi)": 65330,
+   "UCRP (Balbín)": 29567,
+   "Otros": 27598,
+   "Blanco y nulo": 17229,
+   "No votó": 27037
+  },
+  "18": {
+   "UCRI (Frondizi)": 57085,
+   "UCRP (Balbín)": 34452,
+   "Otros": 47588,
+   "Blanco y nulo": 5845,
+   "No votó": 14138
+  },
+  "20": {
+   "UCRI (Frondizi)": 1733,
+   "UCRP (Balbín)": 1889,
+   "Otros": 1405,
+   "Blanco y nulo": 1331,
+   "No votó": 1257
+  },
+  "21": {
+   "UCRI (Frondizi)": 430525,
+   "UCRP (Balbín)": 276078,
+   "Otros": 179210,
+   "Blanco y nulo": 96941,
+   "No votó": 72509
+  },
+  "22": {
+   "UCRI (Frondizi)": 99321,
+   "UCRP (Balbín)": 53724,
+   "Otros": 29392,
+   "Blanco y nulo": 26395,
+   "No votó": 43992
+  }
+ },
+ "marginal_destino_estimada": {
+  "UCRI (Frondizi)": 3810031,
+  "UCRP (Balbín)": 2520550,
+  "Otros": 1271737,
+  "Blanco y nulo": 759602,
+  "No votó": 762460
+ }
+}

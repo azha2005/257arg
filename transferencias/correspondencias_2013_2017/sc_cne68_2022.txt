@@ -1,0 +1,289 @@
+BOLETIN OFICIAL REPUBLICA ARGENTINA - CÁMARA NACIONAL ELECTORAL - Resolución 68/2022
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W2KQMS3G6K');
+Toggle navigation
+Boletín Oficial de la República Argentina
+Institucional
+Productos y servicios
+Preguntas Frecuentes
+Contacto
+×
+Edición del
+26 de Octubre de 2026
+Ediciones Anteriores
+var producirRecarga = '1';
+    var cambioDeAnio = false;
+
+    var diaSeleccionado=new Date(2026,10-1,26);
+    var fechaSeleccionada = '26-10-2026';
+    var fechaSeleccionadaYMD = '20261026';
+    var anioAnteriorPortada = parseInt(fechaSeleccionada.split("-")[2]);
+    var fechaUltimaEdicionPortada = '26-10-2026';
+
+    urlGetDiasHabilitadosPorAnio = "/calendario/dias_publicacion/0/0";
+    urlGetDiasHabilitadosPorAnio = urlGetDiasHabilitadosPorAnio.substring(0, urlGetDiasHabilitadosPorAnio.lastIndexOf("/"));
+    urlGetDiasHabilitadosPorAnio = urlGetDiasHabilitadosPorAnio.substring(0, urlGetDiasHabilitadosPorAnio.lastIndexOf("/"));
+
+    urlActualizarFechaEdicion = "/edicion/actualizar/0";
+    urlActualizarFechaEdicion = urlActualizarFechaEdicion.substring(0, urlActualizarFechaEdicion.lastIndexOf("/"));
+
+    urlPortadaSeccion = "/seccion/primera";
+
+    buttonClickedPortada = null;
+
+    nombreSeccionPortada = 'primera';
+
+            var diasHabilitadosPortadaSuplemento = JSON.parse('{"fechas":["20260102","20260105","20260106","20260107","20260108","20260109","20260112","20260113","20260114","20260115","20260116","20260119","20260120","20260121","20260122","20260123","20260126","20260127","20260128","20260129","20260130","20260202","20260203","20260204","20260205","20260206","20260209","20260210","20260211","20260212","20260213","20260218","20260219","20260220","20260223","20260224","20260225","20260226","20260227","20260302","20260303","20260304","20260305","20260306","20260309","20260310","20260311","20260312","20260313","20260316","20260317","20260318","20260319","20260320","20260325","20260326","20260327","20260330","20260331","20260401","20260406","20260407","20260408","20260409","20260410","20260413","20260414","20260415","20260416","20260417","20260420","20260421","20260422","20260423","20260424","20260427","20260428","20260429","20260430","20260504","20260505","20260506","20260507","20260508","20260511","20260512","20260513","20260514","20260515","20260518","20260519","20260520","20260521","20260522","20260526","20260527","20260528","20260529","20260601","20260602","20260603","20260604","20260605","20260608","20260609","20260610","20260611","20260612","20260616","20260617","20260618","20260619","20260622","20260623","20260624","20260625","20260626","20260629","20260630","20260701","20260702","20260703","20260706","20260707","20260708","20260713","20260714","20260715","20260716","20260717","20260720","20260721","20260722","20260723","20260724","20260727","20260728","20260729","20260730","20260731","20260803","20260804","20260805","20260806","20260807","20260810","20260811","20260812","20260813","20260814","20260818","20260819","20260820","20260821","20260824","20260825","20260826","20260827","20260828","20260831","20260901","20260902","20260903","20260904","20260907","20260908","20260909","20260910","20260911","20260914","20260915","20260916","20260917","20260918","20260921","20260922","20260923","20260924","20260925","20260928","20260929","20260930","20261001","20261002","20261005","20261006","20261007","20261008","20261009","20261013","20261014","20261015","20261016","20261019","20261020","20261021","20261022","20261023","20261026"],"fechas_con_suplemento":["20260205","20260206","20260209","20260213","20260226","20260420","20260515","20260814"]}');
+        var diasHabilitadosPortada = diasHabilitadosPortadaSuplemento['fechas'];
+        if (diasHabilitadosPortada != undefined && diasHabilitadosPortada != null && diasHabilitadosPortada.length != 0 && anioAnteriorPortada != diasHabilitadosPortada[0].substring(0,4)){
+            actualizarDiasHabilitadosPortada('#divCalendario',anioAnteriorPortada);
+        }
+    
+    $('#divCalendario').datepicker({
+        startDate: fechaInicioCalendario,
+        endDate: '26-10-2026',
+        weekStart: 0,
+        container: '#divCalendario',
+        language: "es",
+        format: 'dd-mm-yyyy',
+        beforeShowDay: function(datetime) {
+            if (diasHabilitadosPortada == null || diasHabilitadosPortada.length === 0) {
+                return true;
+            }
+
+            fechaHabilitada = fechaEstaHabilitada(diasHabilitadosPortada, datetime);
+            fechaSuplemento = formatFechaCalendario(datetime);
+            classDay = '';
+            tooltipDay = '';
+
+            if (diasHabilitadosPortadaSuplemento['fechas_con_suplemento'].indexOf(fechaSuplemento) > -1) {
+                classDay = 'day-suplemento';
+                tooltipDay = 'Fecha con suplemento';
+            }
+
+            return {enabled: fechaHabilitada, classes: classDay, tooltip: tooltipDay};
+        }
+    }).datepicker('setDate','26-10-2026')
+        .on('changeDate', onChangeDate)
+        .on('changeMonth', function(e){
+            onChangeMonthPortada("#divCalendario", cambioDeAnio);
+            cambioDeAnio = false;
+        }).on('changeYear', function(e){
+            cambioDeAnio = true;
+    });
+
+    changePreviousAndNextButtonCalendar("#divCalendario");
+
+    $("#divCalendario .datepicker .prev").on("click", function () {
+        buttonClickedPortada = "prev";
+    });
+
+    $("#divCalendario .datepicker .next").on("click", function () {
+        buttonClickedPortada = "next";
+    });
+Búsqueda avanzada
+Secciones
+Búsqueda
+Cantidad de resultados
+Búsqueda avanzada
+Legislación y Avisos Oficiales
+Primera Sección
+Sociedades y Avisos Judiciales
+Segunda Sección
+Contrataciones
+Tercera Sección
+var ejecutandoLlamadaAsincronicaBusquedaRapida = false;
+var hayMasResultadosBusquedaRapida = true;
+sessionStorage.removeItem('searchParams');
+// if (sessionStorage.getItem('searchParams') !== null) {
+//     sessionStorage.removeItem('searchParams');
+// }
+$(window).on("scroll", function () {
+if ((window.innerHeight + getScrollPosition() + 200) >= document.body.offsetHeight) {
+if (hayMasResultadosBusquedaRapida) {
+if (ejecutandoLlamadaAsincronicaBusquedaRapida) {
+return false;
+}
+ejecutandoLlamadaAsincronicaSeccion = true;
+ejecutandoLlamadaAsincronicaBusquedaRapida = true;
+if (sessionStorage.getItem('searchParams') !== null) {
+var searchParams = JSON.parse(sessionStorage.getItem('searchParams'));
+
+if (searchParams.ejecutandoLlamadaAsincronicaBusqueda) {
+return false;
+}
+if (searchParams.tipoBusqueda === 'Rapida') {
+$('#cargandoListadoBusqueda').show();
+cargarRespuestasRapida(searchParams, "/busquedaAvanzada/realizarBusqueda", false);
+} else {
+ejecutandoLlamadaAsincronicaSeccion = false;
+ejecutandoLlamadaAsincronicaBusquedaRapida = false;
+}
+} else {
+ejecutandoLlamadaAsincronicaSeccion = false;
+ejecutandoLlamadaAsincronicaBusquedaRapida = false;
+}
+}
+}
+
+});
+Volver
+Legislación y Avisos Oficiales
+Primera sección
+$(function () {
+                                    $('[data-toggle="popover"]').popover()
+                                })
+Primera
+Resoluciones
+Detalle
+|
+|
+Ver páginas publicadas
+Ver texto del aviso
+CÁMARA NACIONAL ELECTORAL
+Resolución 68/2022
+table tr td {border: 1px solid grey; border-spacing: 0px; border-collapse: collapse; padding: 5px; font-size: 12px; text-align: center;}
+Ciudad de Buenos Aires, 20/09/2022
+VISTO el expediente “S” 68/2022 caratulado “Registro Nacional de Divisiones Electorales s/distrito SANTA CRUZ s/subdivisión y creación de circuitos (sección electoral 1 -Deseado-) Caleta Olivia”, elevado en virtud de lo previsto por el artículo 40 del Código Electoral Nacional, y
+CONSIDERANDO:
+1º) Que a fs. 31/vta. el Juzgado Federal con competencia electoral de Santa Cruz eleva para consideración del Tribunal el anteproyecto de subdivisión del circuito electoral correspondiente a la Ciudad de Caleta Olivia, a fin de acortar la distancia entre el domicilio de los electores y sus lugares de votación (cf. art. 39, inc. 4º, Código Electoral Nacional), y de conformidad con lo establecido por la Acordada Nº 49/2020 CNE, punto 2º.
+2º) Que a fs. 33/37 obra el informe técnico elaborado por la Unidad de Geografía Electoral, en el que -sobre la base de la propuesta confeccionada por la Secretaría Electoral del distrito y de acuerdo a lo dispuesto por los criterios Nº 3, 4, 6, 10, 12, 13 y 14 del Anexo I, Ac. cit.- se prevé la subdivisión y supresión del circuito 3 y la consecuente creación de los circuitos 0300, 0310 y 0320, correspondientes a la sección electoral 1 (Deseado).
+3º) Que el anteproyecto aludido ha sido confeccionado de conformidad con los lineamientos técnicos previstos para su análisis en el Sistema de Información Geográfica (S.I.G.).
+Cabe destacar que en las presentes actuaciones obra la información de los locales de votación y la documentación cartográfica correspondiente.
+4º) Que, por otra parte, resulta pertinente señalar que han tomado conocimiento el Ministerio de Gobierno (cf. fs. 25/vta.) y el Tribunal Electoral Permanente de la Provincia de Santa Cruz (cf. fs. 26/vta.), y el señor Intendente de la Ciudad de Caleta Olivia (cf. fs. 4/vta. y fs. 19/vta.), así como las agrupaciones políticas reconocidas en el distrito (cf. fs. 27/28).
+5º) Que, finalmente, no puede pasarse por alto que la modificación de circuitos conlleva numerosas tareas registrales y de administración electoral, las que deben realizarse con la suficiente antelación. Por ello, y sin perjuicio de la prosecución del trámite de las presentes actuaciones, resulta ineludible disponer que tales tareas se realicen a partir de la fecha de la comunicación de la presente, ad referendum de la resolución definitiva sobre la cuestión.
+Por todo lo expuesto, la Cámara Nacional Electoral
+RESUELVE:
+1º) Aprobar el proyecto de subdivisión y supresión del circuito 3 y la consecuente creación de los circuitos 0300, 0310 y 0320, correspondientes a la sección electoral 1 (Deseado), cuya representación y delimitación cartográfica obran como Anexos I y II de la presente.
+2º) Hacer saber al Juzgado Federal con competencia electoral de Santa Cruz lo previsto en el considerando 5º de la presente.
+3º) Remitir las actuaciones al Ministerio del Interior, a sus efectos.
+Regístrese, notifíquese al Juzgado Federal con competencia electoral de Santa Cruz, tómese nota en el Sistema de Gestión Electoral (SGE), publíquese en el Boletín Oficial de la República Argentina y comuníquese al Ministerio del Interior.
+El señor Vicepresidente del Tribunal, doctor Alberto R. Dalla Via, no interviene por encontrarse en uso de licencia (cf. art. 109 del Reglamento para la Justicia Nacional).
+Daniel Bejas - Santiago H. Corcuera - Sebastián Schimmel
+NOTA: El/los Anexo/s que integra/n este(a) Resolución se publican en la edición web del BORA -www.boletinoficial.gob.ar-
+e. 23/09/2022 N° 75436/22 v. 23/09/2022
+Fecha de publicación 23/09/2022
+Anexo - 1
+sessionStorage.removeItem('idRubro');
+                                                                    $("document").ready(function(){
+                                        if ('' == '1'){
+                                            scrollFunc('anexosDiv');
+                                        }
+                                    })
+Compartir por email
+×
+Para:
+Asunto:
+Aviso:
+Cerrar
+Enviar
+×
+Biblioteca de Normativas
+Al hacer clic en este enlace usted está siendo dirigido a la página
+https://www.argentina.gob.ar/normativa
+.
+Cerrar
+Ir a Biblioteca de Normativas
+calcularOffsetsMinYMaxTexto('#detalleAviso', 0.25, 2);
+
+        function setDefaultValuesSharing(){
+            $('#share-mail-form').trigger("reset");
+            $("#inputPara").val("");
+            $("#inputAsunto").val("");
+            removeCssError($("#inputPara"), $("#spanPara"));
+            removeCssError($("#inputAsunto"), $("#spanAsunto"));
+            $("#inputAviso").val(document.URL);
+            $("#inputAviso").attr("disabled","disabled");
+            hideFlashMessage(true);
+                            grecaptcha.reset();
+                    }
+
+
+        function verTextoAviso(classPdfPaginas, classAviso, classPrinter){
+            $(classPdfPaginas).hide();
+            $(classAviso).show();
+            $(classPrinter).show();
+        }
+Institucional
+Misión, Visión e Historia
+Sitios de Interés
+Red de Boletines Oficiales de la R. A.
+BFA Blockchain Federal Argentina
+Productos y Servicios
+Tarifas de Publicación
+Autenticaciones
+BFA Repositorio recibos
+BFA Verificación
+Firma digital
+Faq y Tutoriales
+Preguntas Frecuentes
+Contacto
+Institucional
+Misión, Visión e Historia
+Productos y Servicios
+Tarifas de Publicación
+Sitios de Interés
+Red de Boletines Oficiales de la R. A.
+BFA Blockchain Federal Argentina
+Autenticaciones
+BFA Repositorio recibos
+BFA Verificación
+Firma digital
+Faq y Tutoriales
+Preguntas Frecuentes
+Contacto
+Secretaría
+Legal y Técnica
+Boletín Oficial
+de la República Argentina
+TELÉFONOS:
+5218-8400 - 0810-345-BORA (2672)
+SEDE CENTRAL:
+Suipacha 767, C.A.B.A. (C1008AAO)
+Secretaría Legal y Técnica |
+Dra. María Ibarzabal Murphy - Secretaria
+Dirección Nacional del Registro Oficial |
+Dr. Walter Rubén Gonzalez - Director Nacional
+×
+Red de Boletines Provinciales
+Al hacer clic en este enlace usted acepta ser dirigido fuera de nuestro sitio a la página
+http://www.reddeboletines.gob.ar
+cuya información es proporcionada por la Dirección Nacional del Sistema Argentino de Información Jurídica (SAIJ) dependiente del Ministerio de Justicia y Derechos Humanos de la Nación.
+Cerrar
+Ir a Red de Boletines Provinciales
+$('#datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+            language: "es",
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+$(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('.back-top').fadeIn();
+                } else {
+                    $('.back-top').fadeOut();
+                }
+            });
+
+// scroll body to 0px on click
+            $('.back-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+
+        $('#rapidaInput').keypress(function (e) {
+            var key = e.which;
+            if(key === 13)  // the enter key code
+            {
+                $('#busquedaRapidaButton').click();
+                return false;
+            }
+        });

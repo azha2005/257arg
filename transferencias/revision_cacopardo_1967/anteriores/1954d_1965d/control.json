@@ -1,0 +1,285 @@
+{
+ "circuitos_origen": 402,
+ "circuitos_destino": 403,
+ "por_seccion": [],
+ "comunes": 382,
+ "usados": 378,
+ "crecimiento_padron_mediano": 1.153,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 1.0,
+  "03": 0.276,
+  "04": 1.0,
+  "05": 1.0,
+  "06": 0.973,
+  "07": 0.996,
+  "08": 1.0,
+  "09": 1.0,
+  "11": 0.997,
+  "12": 0.635,
+  "13": 1.0,
+  "14": 1.0,
+  "15": 1.0,
+  "16": 1.0,
+  "18": 1.0,
+  "20": 1.0,
+  "21": 1.0,
+  "22": 1.0
+ },
+ "electores_origen_usados": 8420919,
+ "electores_origen_total": 8508867,
+ "electores_destino_usados": 10878193,
+ "electores_destino_total": 11426384,
+ "descartados": [
+  {
+   "circuito": "06-0-GENERAL BELGRANO",
+   "electores_origen": 2470,
+   "electores_destino": 3965
+  },
+  {
+   "circuito": "06-0-TAPENAGA",
+   "electores_origen": 3377,
+   "electores_destino": 3118
+  },
+  {
+   "circuito": "07-0-FLORENTINO AMEGHINO",
+   "electores_origen": 139,
+   "electores_destino": 504
+  },
+  {
+   "circuito": "11-0-CURA CO",
+   "electores_origen": 218,
+   "electores_destino": 626
+  }
+ ],
+ "validacion_cruzada_pp": {
+  "0.0002": 3.495,
+  "2e-05": 3.3667,
+  "2e-06": 3.3818,
+  "2e-07": 3.3954,
+  "0": 3.405
+ },
+ "lambda": 2e-05,
+ "rmse_destino_pp": 5.955320238664966,
+ "votos_distintos_vs_calvo": 1476604,
+ "votos_total": 10878192,
+ "marginal_origen": {
+  "Partido Peronista": 4472344,
+  "UCR": 2352384,
+  "Otros": 246047,
+  "Blanco y nulo": 143128,
+  "No votó": 1207016
+ },
+ "marginal_destino": {
+  "UP y neoperonistas": 3136185,
+  "UCRP": 2631066,
+  "MID": 545646,
+  "UCRI": 371220,
+  "FNPC (centro)": 562226,
+  "Otros": 1472647,
+  "Blanco y nulo": 386323,
+  "No votó": 1772880
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "UP y neoperonistas": 551617,
+   "UCRP": 551996,
+   "MID": 54788,
+   "UCRI": 44674,
+   "FNPC (centro)": 50419,
+   "Otros": 375029,
+   "Blanco y nulo": 26809,
+   "No votó": 246656
+  },
+  "02": {
+   "UP y neoperonistas": 1365851,
+   "UCRP": 970431,
+   "MID": 114893,
+   "UCRI": 199776,
+   "FNPC (centro)": 127176,
+   "Otros": 524963,
+   "Blanco y nulo": 84649,
+   "No votó": 563946
+  },
+  "03": {
+   "UP y neoperonistas": 7264,
+   "UCRP": 6264,
+   "MID": 1718,
+   "UCRI": 0,
+   "FNPC (centro)": 526,
+   "Otros": 790,
+   "Blanco y nulo": 398,
+   "No votó": 7810
+  },
+  "04": {
+   "UP y neoperonistas": 367552,
+   "UCRP": 339039,
+   "MID": 37687,
+   "UCRI": 27745,
+   "FNPC (centro)": 69454,
+   "Otros": 81896,
+   "Blanco y nulo": 26314,
+   "No votó": 177359
+  },
+  "05": {
+   "UP y neoperonistas": 45212,
+   "UCRP": 14308,
+   "MID": 0,
+   "UCRI": 14719,
+   "FNPC (centro)": 156354,
+   "Otros": 8788,
+   "Blanco y nulo": 5305,
+   "No votó": 83892
+  },
+  "06": {
+   "UP y neoperonistas": 79218,
+   "UCRP": 58775,
+   "MID": 14890,
+   "UCRI": 5008,
+   "FNPC (centro)": 6938,
+   "Otros": 16300,
+   "Blanco y nulo": 12640,
+   "No votó": 89166
+  },
+  "07": {
+   "UP y neoperonistas": 12658,
+   "UCRP": 10317,
+   "MID": 1237,
+   "UCRI": 2519,
+   "FNPC (centro)": 0,
+   "Otros": 1917,
+   "Blanco y nulo": 687,
+   "No votó": 13627
+  },
+  "08": {
+   "UP y neoperonistas": 115646,
+   "UCRP": 123369,
+   "MID": 60117,
+   "UCRI": 25105,
+   "FNPC (centro)": 26557,
+   "Otros": 33047,
+   "Blanco y nulo": 14173,
+   "No votó": 94511
+  },
+  "09": {
+   "UP y neoperonistas": 17571,
+   "UCRP": 21012,
+   "MID": 8627,
+   "UCRI": 2611,
+   "FNPC (centro)": 0,
+   "Otros": 2611,
+   "Blanco y nulo": 628,
+   "No votó": 19557
+  },
+  "11": {
+   "UP y neoperonistas": 32455,
+   "UCRP": 17295,
+   "MID": 21905,
+   "UCRI": 4101,
+   "FNPC (centro)": 0,
+   "Otros": 4538,
+   "Blanco y nulo": 1402,
+   "No votó": 15561
+  },
+  "12": {
+   "UP y neoperonistas": 15982,
+   "UCRP": 12139,
+   "MID": 1280,
+   "UCRI": 2162,
+   "FNPC (centro)": 2741,
+   "Otros": 1797,
+   "Blanco y nulo": 757,
+   "No votó": 13576
+  },
+  "13": {
+   "UP y neoperonistas": 113904,
+   "UCRP": 87666,
+   "MID": 9275,
+   "UCRI": 5769,
+   "FNPC (centro)": 104120,
+   "Otros": 21057,
+   "Blanco y nulo": 67498,
+   "No votó": 67189
+  },
+  "14": {
+   "UP y neoperonistas": 14852,
+   "UCRP": 23369,
+   "MID": 10159,
+   "UCRI": 4848,
+   "FNPC (centro)": 0,
+   "Otros": 47932,
+   "Blanco y nulo": 2782,
+   "No votó": 38525
+  },
+  "15": {
+   "UP y neoperonistas": 21022,
+   "UCRP": 9406,
+   "MID": 2963,
+   "UCRI": 2817,
+   "FNPC (centro)": 0,
+   "Otros": 3808,
+   "Blanco y nulo": 1516,
+   "No votó": 12904
+  },
+  "16": {
+   "UP y neoperonistas": 28158,
+   "UCRP": 20600,
+   "MID": 4777,
+   "UCRI": 7192,
+   "FNPC (centro)": 1966,
+   "Otros": 6339,
+   "Blanco y nulo": 2578,
+   "No votó": 27092
+  },
+  "18": {
+   "UP y neoperonistas": 30312,
+   "UCRP": 28212,
+   "MID": 2348,
+   "UCRI": 1162,
+   "FNPC (centro)": 3185,
+   "Otros": 102440,
+   "Blanco y nulo": 2086,
+   "No votó": 25408
+  },
+  "20": {
+   "UP y neoperonistas": 2086,
+   "UCRP": 1779,
+   "MID": 352,
+   "UCRI": 761,
+   "FNPC (centro)": 0,
+   "Otros": 3180,
+   "Blanco y nulo": 464,
+   "No votó": 3725
+  },
+  "21": {
+   "UP y neoperonistas": 227553,
+   "UCRP": 274597,
+   "MID": 189473,
+   "UCRI": 16470,
+   "FNPC (centro)": 12790,
+   "Otros": 214023,
+   "Blanco y nulo": 132127,
+   "No votó": 154875
+  },
+  "22": {
+   "UP y neoperonistas": 87272,
+   "UCRP": 60492,
+   "MID": 9157,
+   "UCRI": 3781,
+   "FNPC (centro)": 0,
+   "Otros": 22192,
+   "Blanco y nulo": 3510,
+   "No votó": 117501
+  }
+ },
+ "marginal_destino_estimada": {
+  "UP y neoperonistas": 3162786,
+  "UCRP": 2638826,
+  "MID": 556422,
+  "UCRI": 384152,
+  "FNPC (centro)": 588364,
+  "Otros": 1484433,
+  "Blanco y nulo": 405054,
+  "No votó": 1658155
+ }
+}

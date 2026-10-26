@@ -1,0 +1,123 @@
+[
+  {
+    "par": "1914d_1916d",
+    "rmse_validacion_pp": {
+      "modelo": 4.757975695697945,
+      "promedio_provincial": 5.396220760080224
+    },
+    "mejora_modelo_pct": 11.82763072081563,
+    "separacion": 42.2,
+    "poco_informativa": false,
+    "filas": [
+      {
+        "origen": "UCR",
+        "peso": 36.6,
+        "dif_calvo": 17.2,
+        "celda": "Conservadores",
+        "principal": 14.2,
+        "calvo": 31.5,
+        "ancho_ic": 9.0,
+        "sep": 33.8,
+        "sep_calvo": 26.9,
+        "cerca_promedio": false,
+        "no_identificada": false
+      },
+      {
+        "origen": "Conservadores",
+        "peso": 36.2,
+        "dif_calvo": 7.7,
+        "celda": "UCR",
+        "principal": 36.4,
+        "calvo": 28.8,
+        "ancho_ic": 10.3,
+        "sep": 32.4,
+        "sep_calvo": 40.9,
+        "cerca_promedio": false,
+        "no_identificada": false
+      },
+      {
+        "origen": "Socialistas",
+        "peso": 18.4,
+        "dif_calvo": 5.3,
+        "celda": "Socialista Argentino",
+        "principal": 20.4,
+        "calvo": 25.7,
+        "ancho_ic": 6.9,
+        "sep": 65.6,
+        "sep_calvo": 68.4,
+        "cerca_promedio": false,
+        "no_identificada": false
+      },
+      {
+        "origen": "Unión Cívica",
+        "peso": 7.9,
+        "dif_calvo": 14.0,
+        "celda": "Socialista Argentino",
+        "principal": 44.4,
+        "calvo": 58.4,
+        "ancho_ic": 22.3,
+        "sep": 71.1,
+        "sep_calvo": 73.4,
+        "cerca_promedio": false,
+        "no_identificada": false
+      },
+      {
+        "origen": "Independientes (Peña)",
+        "peso": 0.8,
+        "dif_calvo": 38.0,
+        "celda": "UCR",
+        "principal": 71.5,
+        "calvo": 33.4,
+        "ancho_ic": 15.6,
+        "sep": 30.9,
+        "sep_calvo": 16.8,
+        "cerca_promedio": false,
+        "no_identificada": true
+      },
+      {
+        "origen": "Otros",
+        "peso": 0.2,
+        "dif_calvo": 12.4,
+        "celda": "UCR",
+        "principal": 20.7,
+        "calvo": 8.3,
+        "ancho_ic": 66.4,
+        "sep": 43.7,
+        "sep_calvo": 47.2,
+        "cerca_promedio": false,
+        "no_identificada": false
+      }
+    ],
+    "sensibilidad_calvo_pct": 12.969184103706032,
+    "rmse_validacion_por_provincia_pp": {
+      "01": {
+        "modelo": 1.872487174065066,
+        "promedio_provincial": 3.3242761254841233
+      },
+      "02": {
+        "modelo": 5.439763987712768,
+        "promedio_provincial": 6.50426475218024
+      },
+      "04": {
+        "modelo": 9.654842555103993,
+        "promedio_provincial": 0.23226119868043493
+      },
+      "05": {
+        "modelo": 6.119537201393803,
+        "promedio_provincial": 7.771242339874611
+      },
+      "08": {
+        "modelo": 4.868545496756708,
+        "promedio_provincial": 5.703263107597179
+      },
+      "12": {
+        "modelo": 14.52529713587603,
+        "promedio_provincial": 12.179213961921375
+      },
+      "13": {
+        "modelo": 5.651328474686298,
+        "promedio_provincial": 5.6574644044746245
+      }
+    }
+  }
+]

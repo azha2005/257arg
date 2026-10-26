@@ -1,0 +1,168 @@
+{
+  "par": "1995p_1999p",
+  "rmse_validacion_pp": {
+    "modelo": 3.086708834949899,
+    "promedio_provincial": 4.709953922510976
+  },
+  "mejora_modelo_pct": 34.46413944312412,
+  "separacion": 35.8,
+  "poco_informativa": false,
+  "filas": [
+    {
+      "origen": "PJ (Menem)",
+      "peso": 48.0,
+      "dif_calvo": 9.7,
+      "celda": "PJ (Duhalde)",
+      "principal": 63.4,
+      "calvo": 73.2,
+      "ancho_ic": 4.6,
+      "sep": 31.8,
+      "sep_calvo": 36.5,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "FREPASO (Bordón)",
+      "peso": 27.8,
+      "dif_calvo": 9.3,
+      "celda": "AR (Cavallo)",
+      "principal": 13.0,
+      "calvo": 22.3,
+      "ancho_ic": 3.8,
+      "sep": 42.3,
+      "sep_calvo": 42.8,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "UCR (Massaccesi)",
+      "peso": 16.4,
+      "dif_calvo": 1.6,
+      "celda": "Alianza (De la Rúa)",
+      "principal": 82.7,
+      "calvo": 81.1,
+      "ancho_ic": 9.6,
+      "sep": 36.7,
+      "sep_calvo": 35.1,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otros",
+      "peso": 3.5,
+      "dif_calvo": 43.6,
+      "celda": "PJ (Duhalde)",
+      "principal": 93.4,
+      "calvo": 49.8,
+      "ancho_ic": 5.2,
+      "sep": 56.7,
+      "sep_calvo": 37.7,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 4.3,
+      "dif_calvo": 25.0,
+      "celda": "AR (Cavallo)",
+      "principal": 41.9,
+      "calvo": 16.9,
+      "ancho_ic": 15.3,
+      "sep": 41.3,
+      "sep_calvo": 34.3,
+      "cerca_promedio": false,
+      "no_identificada": true
+    }
+  ],
+  "sensibilidad_calvo_pct": 12.05412426050336,
+  "rmse_validacion_por_provincia_pp": {
+    "01": {
+      "modelo": 3.0376239516661703,
+      "promedio_provincial": 4.0898683532468105
+    },
+    "02": {
+      "modelo": 3.1382091271561467,
+      "promedio_provincial": 5.195016370473427
+    },
+    "03": {
+      "modelo": 2.342006971832938,
+      "promedio_provincial": 3.542289427477462
+    },
+    "04": {
+      "modelo": 1.8163428544415456,
+      "promedio_provincial": 2.429625332588213
+    },
+    "05": {
+      "modelo": 4.520185720770072,
+      "promedio_provincial": 5.042759523738768
+    },
+    "06": {
+      "modelo": 3.0926667945745954,
+      "promedio_provincial": 4.576625666740927
+    },
+    "07": {
+      "modelo": 3.625737424122049,
+      "promedio_provincial": 3.4835337746569466
+    },
+    "08": {
+      "modelo": 1.731547783633993,
+      "promedio_provincial": 1.8739623486470207
+    },
+    "09": {
+      "modelo": 1.5975283866108587,
+      "promedio_provincial": 5.334574673762424
+    },
+    "10": {
+      "modelo": 3.3297598997682294,
+      "promedio_provincial": 6.725875242680915
+    },
+    "11": {
+      "modelo": 1.9916717063781275,
+      "promedio_provincial": 3.020858791923567
+    },
+    "12": {
+      "modelo": 2.2197176374749734,
+      "promedio_provincial": 2.9551856887207832
+    },
+    "13": {
+      "modelo": 3.1756321497650606,
+      "promedio_provincial": 3.8608761241615226
+    },
+    "14": {
+      "modelo": 3.4776926503018104,
+      "promedio_provincial": 2.9515294341382314
+    },
+    "15": {
+      "modelo": 6.556132160563704,
+      "promedio_provincial": 12.055389388091495
+    },
+    "16": {
+      "modelo": 4.536330122976254,
+      "promedio_provincial": 5.805067532415052
+    },
+    "17": {
+      "modelo": 3.70743473027808,
+      "promedio_provincial": 6.969226529390142
+    },
+    "18": {
+      "modelo": 4.234057031782963,
+      "promedio_provincial": 4.973731167476546
+    },
+    "21": {
+      "modelo": 2.4919672896329677,
+      "promedio_provincial": 2.750329790935617
+    },
+    "22": {
+      "modelo": 2.1076237097772803,
+      "promedio_provincial": 6.928169014490136
+    },
+    "23": {
+      "modelo": 3.7127747328822873,
+      "promedio_provincial": 4.718738165643848
+    },
+    "24": {
+      "modelo": 5.573502260027647,
+      "promedio_provincial": 2.636150567084914
+    }
+  }
+}

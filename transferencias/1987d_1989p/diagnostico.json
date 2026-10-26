@@ -1,0 +1,143 @@
+{
+  "par": "1987d_1989p",
+  "rmse_validacion_pp": {
+    "modelo": 2.171973574432373,
+    "promedio_provincial": 4.0506611250696585
+  },
+  "mejora_modelo_pct": 46.379775859551266,
+  "separacion": 47.7,
+  "poco_informativa": false,
+  "filas": [
+    {
+      "origen": "PJ",
+      "peso": 40.6,
+      "dif_calvo": 4.5,
+      "celda": "UCR (Angeloz)",
+      "principal": 0.5,
+      "calvo": 5.0,
+      "ancho_ic": 2.4,
+      "sep": 46.7,
+      "sep_calvo": 45.1,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "UCR",
+      "peso": 36.2,
+      "dif_calvo": 8.4,
+      "celda": "PJ (Menem)",
+      "principal": 6.5,
+      "calvo": 15.0,
+      "ancho_ic": 2.1,
+      "sep": 48.6,
+      "sep_calvo": 41.1,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "UCeDé",
+      "peso": 5.7,
+      "dif_calvo": 16.3,
+      "celda": "UCR (Angeloz)",
+      "principal": 38.1,
+      "calvo": 21.8,
+      "ancho_ic": 10.2,
+      "sep": 49.2,
+      "sep_calvo": 49.9,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "FAP (Catamarca)",
+      "peso": 0.6,
+      "dif_calvo": 56.8,
+      "celda": "PJ (Menem)",
+      "principal": 91.2,
+      "calvo": 34.4,
+      "ancho_ic": 14.0,
+      "sep": 45.8,
+      "sep_calvo": 56.9,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "PAL",
+      "peso": 1.0,
+      "dif_calvo": 15.9,
+      "celda": "UCR (Angeloz)",
+      "principal": 16.4,
+      "calvo": 0.5,
+      "ancho_ic": 34.0,
+      "sep": 56.5,
+      "sep_calvo": 65.1,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "MPN",
+      "peso": 0.1,
+      "dif_calvo": 5.5,
+      "celda": "PJ (Menem)",
+      "principal": 26.8,
+      "calvo": 32.2,
+      "ancho_ic": 19.0,
+      "sep": 67.2,
+      "sep_calvo": 65.2,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Bloquista",
+      "peso": 0.4,
+      "dif_calvo": 20.9,
+      "celda": "PJ (Menem)",
+      "principal": 40.9,
+      "calvo": 20.0,
+      "ancho_ic": 48.5,
+      "sep": 37.5,
+      "sep_calvo": 57.6,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "PPR",
+      "peso": 0.2,
+      "dif_calvo": 18.3,
+      "celda": "UCR (Angeloz)",
+      "principal": 42.0,
+      "calvo": 23.7,
+      "ancho_ic": 33.6,
+      "sep": 11.7,
+      "sep_calvo": 20.1,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otros",
+      "peso": 12.7,
+      "dif_calvo": 19.0,
+      "celda": "PJ (Menem)",
+      "principal": 34.2,
+      "calvo": 15.2,
+      "ancho_ic": 7.7,
+      "sep": 26.7,
+      "sep_calvo": 31.5,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.5,
+      "dif_calvo": 16.5,
+      "celda": "UCR (Angeloz)",
+      "principal": 4.3,
+      "calvo": 20.8,
+      "ancho_ic": 23.1,
+      "sep": 43.9,
+      "sep_calvo": 42.4,
+      "cerca_promedio": false,
+      "no_identificada": false
+    }
+  ],
+  "sensibilidad_calvo_pct": 11.092927267582061
+}

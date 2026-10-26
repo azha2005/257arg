@@ -1,0 +1,132 @@
+{
+  "unidades": 16,
+  "mesas": 188,
+  "sumas_expresas": {
+    "Pedro Benegas": 15833,
+    "Estanislao D. Gaviola": 8247
+  },
+  "total_acta_pdf105": {
+    "Pedro Benegas": 15833,
+    "Estanislao D. Gaviola": 8247
+  },
+  "diferencias": {
+    "Pedro Benegas": 0,
+    "Estanislao D. Gaviola": 0
+  },
+  "faltantes": [
+    {
+      "unidad_fuente": "Lavalle",
+      "candidato": "Pedro Benegas",
+      "suma_cifras_expresas": 509,
+      "mesas_registradas": 9,
+      "mesas_con_cifra": 8,
+      "mesas_sin_cifra": "9",
+      "completo_candidato": false,
+      "nota": "Suma sin imputación. No certifica ausencia de errores internos del original ni cierre provincial."
+    },
+    {
+      "unidad_fuente": "San Martín",
+      "candidato": "Pedro Benegas",
+      "suma_cifras_expresas": 1051,
+      "mesas_registradas": 14,
+      "mesas_con_cifra": 13,
+      "mesas_sin_cifra": "7",
+      "completo_candidato": false,
+      "nota": "Suma sin imputación. No certifica ausencia de errores internos del original ni cierre provincial."
+    },
+    {
+      "unidad_fuente": "San Martín",
+      "candidato": "Estanislao D. Gaviola",
+      "suma_cifras_expresas": 413,
+      "mesas_registradas": 14,
+      "mesas_con_cifra": 13,
+      "mesas_sin_cifra": "7",
+      "completo_candidato": false,
+      "nota": "Suma sin imputación. No certifica ausencia de errores internos del original ni cierre provincial."
+    },
+    {
+      "unidad_fuente": "Maipú",
+      "candidato": "Estanislao D. Gaviola",
+      "suma_cifras_expresas": 399,
+      "mesas_registradas": 15,
+      "mesas_con_cifra": 14,
+      "mesas_sin_cifra": "14",
+      "completo_candidato": false,
+      "nota": "Suma sin imputación. No certifica ausencia de errores internos del original ni cierre provincial."
+    }
+  ],
+  "mesas_con_diferencia_aritmetica": [
+    {
+      "unidad_fuente": "Ciudad de Mendoza",
+      "mesa": 6,
+      "paginas_pdf": "11",
+      "diferencia_menos_sobres": 1
+    },
+    {
+      "unidad_fuente": "Ciudad de Mendoza",
+      "mesa": 16,
+      "paginas_pdf": "17",
+      "diferencia_menos_sobres": -7
+    },
+    {
+      "unidad_fuente": "Ciudad de Mendoza",
+      "mesa": 30,
+      "paginas_pdf": "27",
+      "diferencia_menos_sobres": -1
+    },
+    {
+      "unidad_fuente": "Tupungato",
+      "mesa": 2,
+      "paginas_pdf": "57,59",
+      "diferencia_menos_sobres": -8
+    },
+    {
+      "unidad_fuente": "Tunuyán",
+      "mesa": 4,
+      "paginas_pdf": "61",
+      "diferencia_menos_sobres": -4
+    },
+    {
+      "unidad_fuente": "Santa Rosa",
+      "mesa": 5,
+      "paginas_pdf": "73",
+      "diferencia_menos_sobres": -1
+    },
+    {
+      "unidad_fuente": "San Martín",
+      "mesa": 12,
+      "paginas_pdf": "81",
+      "diferencia_menos_sobres": 1
+    },
+    {
+      "unidad_fuente": "Guaymallén",
+      "mesa": 3,
+      "paginas_pdf": "85",
+      "diferencia_menos_sobres": 2
+    },
+    {
+      "unidad_fuente": "Guaymallén",
+      "mesa": 6,
+      "paginas_pdf": "85,87",
+      "diferencia_menos_sobres": -1
+    },
+    {
+      "unidad_fuente": "Godoy Cruz",
+      "mesa": 3,
+      "paginas_pdf": "89",
+      "diferencia_menos_sobres": -1
+    },
+    {
+      "unidad_fuente": "Maipú",
+      "mesa": 12,
+      "paginas_pdf": "97",
+      "diferencia_menos_sobres": -26
+    }
+  ],
+  "candidatos_menores": {
+    "suma_recuperada": 70,
+    "total_acta_pdf105": 74,
+    "nota": "Diferencia -4 no imputada. Las grafías de nombres se conservan; no se certifica número de personas distintas."
+  },
+  "interpretacion_diferencias": "La lista aritmética no implica que todos sean errores: Tupungato 2 excluye 8 sobres, Tunuyán 4 excluye 4 y Maipú 12 anula votos de personas añadidas indebidamente (rango 126-151). Esas exclusiones explican los déficits -8, -4 y -26; no se agregan a votos de candidatos ni blancos."
+}

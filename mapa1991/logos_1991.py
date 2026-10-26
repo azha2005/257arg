@@ -1,0 +1,11 @@
+CAND["UCR"].update(_logo("Escudo_de_la_UCR.svg"))
+CAND["PJ"].update(_logo("Flag_of_the_Justicialist_Party_(square_version).svg"))
+CAND["UCD"].update(_logo_raster("UCEDE_logo_chico.png"))
+CAND["PAL"].update(_logo_raster("Pacto_Autonomista_Liberal_PL_PA.png"))
+CAND["BLO"].update(_logo_raster("Estrella_bloquista.png"))
+CAND["CFI"].update(_logo_raster("CFI_Confederacion_Federalista_Independiente.png"))
+CAND["MPN"].update(_logo_raster("Logo_MPN.png"))
+CAND["FR"].update(_logo_raster("Logo_Fuerza_Republicana.png"))
+CAND["CR"].update(_logo_raster("Cruzada_Renovadora_San_Juan.png"))
+
+CAND["MPF"].update(_logo_raster("Logo_MOPOF_Fueguino.png"))

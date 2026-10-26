@@ -1,0 +1,215 @@
+{
+ "circuitos_origen": 346,
+ "circuitos_destino": 354,
+ "por_seccion": [],
+ "comunes": 346,
+ "usados": 339,
+ "crecimiento_padron_mediano": 1.476,
+ "cobertura_por_provincia": {
+  "01": 1.0,
+  "02": 0.933,
+  "03": 1.0,
+  "04": 1.0,
+  "05": 1.0,
+  "08": 1.0,
+  "10": 1.0,
+  "12": 1.0,
+  "13": 1.0,
+  "17": 1.0,
+  "18": 1.0,
+  "21": 0.987,
+  "22": 0.991,
+  "23": 1.0
+ },
+ "electores_origen_usados": 1940830,
+ "electores_origen_total": 1981289,
+ "electores_destino_usados": 3228633,
+ "electores_destino_total": 3402336,
+ "descartados": [
+  {
+   "circuito": "02-0-GENERAL PUEYRREDON",
+   "electores_origen": 6659,
+   "electores_destino": 24194
+  },
+  {
+   "circuito": "02-0-GENERAL SAN MARTIN",
+   "electores_origen": 14530,
+   "electores_destino": 45079
+  },
+  {
+   "circuito": "02-0-MATANZA",
+   "electores_origen": 5063,
+   "electores_destino": 15610
+  },
+  {
+   "circuito": "02-0-SAN ISIDRO",
+   "electores_origen": 5553,
+   "electores_destino": 16994
+  },
+  {
+   "circuito": "02-0-VICENTE LOPEZ",
+   "electores_origen": 4835,
+   "electores_destino": 22548
+  },
+  {
+   "circuito": "21-0-SAN JAVIER",
+   "electores_origen": 3080,
+   "electores_destino": 4713
+  },
+  {
+   "circuito": "22-0-COPO",
+   "electores_origen": 739,
+   "electores_destino": 4777
+  }
+ ],
+ "validacion_cruzada_pp": {
+  "0.0002": 5.3247,
+  "2e-05": 5.304,
+  "2e-06": 5.3089,
+  "2e-07": 5.324,
+  "0": 5.3297
+ },
+ "lambda": 0.0002,
+ "rmse_destino_pp": 5.157628546797645,
+ "votos_distintos_vs_calvo": 225603,
+ "votos_total": 3228633,
+ "marginal_origen": {
+  "UCR (yrigoyenismo)": 615686,
+  "Conservadores": 285164,
+  "Antipersonalistas": 164893,
+  "Socialistas": 230182,
+  "Otros": 118719,
+  "Blanco y nulo": 40928,
+  "No votó": 485258
+ },
+ "marginal_destino": {
+  "Perón": 1404086,
+  "Unión Democrática": 1147684,
+  "Demócrata Nacional": 41364,
+  "Otros": 30001,
+  "Blanco y nulo": 67865,
+  "No votó": 537633
+ },
+ "marginal_destino_provincia": {
+  "01": {
+   "Perón": 304854,
+   "Unión Democrática": 261455,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 8461,
+   "No votó": 75004
+  },
+  "02": {
+   "Perón": 386697,
+   "Unión Democrática": 285014,
+   "Demócrata Nacional": 25135,
+   "Otros": 0,
+   "Blanco y nulo": 17138,
+   "No votó": 151087
+  },
+  "03": {
+   "Perón": 14917,
+   "Unión Democrática": 10964,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 1160,
+   "No votó": 7284
+  },
+  "04": {
+   "Perón": 133788,
+   "Unión Democrática": 167723,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 13581,
+   "No votó": 58844
+  },
+  "05": {
+   "Perón": 34247,
+   "Unión Democrática": 57941,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 1915,
+   "No votó": 32159
+  },
+  "08": {
+   "Perón": 77585,
+   "Unión Democrática": 62469,
+   "Demócrata Nacional": 16229,
+   "Otros": 0,
+   "Blanco y nulo": 6412,
+   "No votó": 35230
+  },
+  "10": {
+   "Perón": 15245,
+   "Unión Democrática": 7029,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 408,
+   "No votó": 6247
+  },
+  "12": {
+   "Perón": 10213,
+   "Unión Democrática": 8976,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 384,
+   "No votó": 6143
+  },
+  "13": {
+   "Perón": 58012,
+   "Unión Democrática": 47065,
+   "Demócrata Nacional": 0,
+   "Otros": 3869,
+   "Blanco y nulo": 2587,
+   "No votó": 19445
+  },
+  "17": {
+   "Perón": 28447,
+   "Unión Democrática": 16130,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 1511,
+   "No votó": 17648
+  },
+  "18": {
+   "Perón": 16381,
+   "Unión Democrática": 17604,
+   "Demócrata Nacional": 0,
+   "Otros": 13469,
+   "Blanco y nulo": 1381,
+   "No votó": 9903
+  },
+  "21": {
+   "Perón": 194516,
+   "Unión Democrática": 144954,
+   "Demócrata Nacional": 0,
+   "Otros": 0,
+   "Blanco y nulo": 7809,
+   "No votó": 55821
+  },
+  "22": {
+   "Perón": 44740,
+   "Unión Democrática": 28915,
+   "Demócrata Nacional": 0,
+   "Otros": 11944,
+   "Blanco y nulo": 1067,
+   "No votó": 31052
+  },
+  "23": {
+   "Perón": 84444,
+   "Unión Democrática": 31445,
+   "Demócrata Nacional": 0,
+   "Otros": 719,
+   "Blanco y nulo": 4051,
+   "No votó": 31766
+  }
+ },
+ "marginal_destino_estimada": {
+  "Perón": 1406959,
+  "Unión Democrática": 1154388,
+  "Demócrata Nacional": 33296,
+  "Otros": 27548,
+  "Blanco y nulo": 73956,
+  "No votó": 532486
+ }
+}

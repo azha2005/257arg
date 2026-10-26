@@ -1,0 +1,133 @@
+{
+  "datos": {
+    "1914d": {
+      "unidades": 191,
+      "votos": 371799,
+      "por_provincia": {
+        "01": {
+          "size": 20,
+          "sum": 117199
+        },
+        "02": {
+          "size": 101,
+          "sum": 121560
+        },
+        "04": {
+          "size": 6,
+          "sum": 21194
+        },
+        "05": {
+          "size": 24,
+          "sum": 37556
+        },
+        "08": {
+          "size": 13,
+          "sum": 46455
+        },
+        "12": {
+          "size": 11,
+          "sum": 5097
+        },
+        "13": {
+          "size": 16,
+          "sum": 22738
+        }
+      }
+    },
+    "1916d": {
+      "unidades": 178,
+      "votos": 432181,
+      "por_provincia": {
+        "01": {
+          "size": 20,
+          "sum": 148127
+        },
+        "02": {
+          "size": 90,
+          "sum": 153579
+        },
+        "04": {
+          "size": 14,
+          "sum": 39219
+        },
+        "05": {
+          "size": 18,
+          "sum": 30037
+        },
+        "08": {
+          "size": 10,
+          "sum": 35972
+        },
+        "12": {
+          "size": 12,
+          "sum": 7041
+        },
+        "13": {
+          "size": 14,
+          "sum": 18206
+        }
+      }
+    },
+    "1916de": {
+      "unidades": 209,
+      "votos": 503099,
+      "por_provincia": {
+        "01": {
+          "size": 20,
+          "sum": 148127
+        },
+        "02": {
+          "size": 103,
+          "sum": 174136
+        },
+        "04": {
+          "size": 22,
+          "sum": 63096
+        },
+        "05": {
+          "size": 21,
+          "sum": 35337
+        },
+        "08": {
+          "size": 14,
+          "sum": 48397
+        },
+        "12": {
+          "size": 13,
+          "sum": 7620
+        },
+        "13": {
+          "size": 16,
+          "sum": 26386
+        }
+      }
+    }
+  },
+  "fuentes": [
+    {
+      "ruta": "busqueda1914/datos_1914_depto.csv",
+      "sha256": "2d412c01eeb5f100ed600d447920a52105e778aec9116297ccf8958d94e20c29"
+    },
+    {
+      "ruta": "1916dip/canton_diputados_1916/celdas_1916.csv",
+      "sha256": "d94bde38eff6a77f00179e6c03a8d97f053f3534a0d341d6774adff72d75b532"
+    },
+    {
+      "ruta": "1916dip/canton_diputados_1916/cotejo_lupu_1916.csv",
+      "sha256": "4241563ff1e76a83e238de61d4763576bee5a17c21132740fb540ba1a11de018"
+    },
+    {
+      "ruta": "mapa1914/build_1914.py",
+      "sha256": "b6b9b38a38b6fa9caa57f190091afb1e8b0590da3657ba1fdcfb6b7699a9cffb"
+    },
+    {
+      "ruta": "mapa1916dip/build_1916.py",
+      "sha256": "879bfe36ed65fa4ef06b510177c03e0e3572e6ad734052c8746dbcd681d4622c"
+    },
+    {
+      "ruta": "DTS 47_Cacopardo_1967.pdf",
+      "sha256": "97c4eb83a3cb0d45d2e85b46ef81a7afb3f4f1d1b94f9484239d2784b50f9596"
+    }
+  ],
+  "reserva": "Cobertura parcial de siete jurisdicciones. Votos atribuidos a fuerzas/primer candidato publicado; no son necesariamente sufragantes únicos. Sin abstención, blancos ni totales provinciales repetidos."
+}

@@ -1,0 +1,172 @@
+{
+  "par": "1995p_1997d",
+  "rmse_validacion_pp": {
+    "modelo": 2.532866625764613,
+    "promedio_provincial": 3.6992137649516477
+  },
+  "mejora_modelo_pct": 31.529595565350633,
+  "separacion": 33.5,
+  "poco_informativa": false,
+  "filas": [
+    {
+      "origen": "PJ (Menem)",
+      "peso": 47.9,
+      "dif_calvo": 18.7,
+      "celda": "PJ",
+      "principal": 58.1,
+      "calvo": 76.9,
+      "ancho_ic": 6.1,
+      "sep": 29.9,
+      "sep_calvo": 43.7,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "FREPASO (Bordón)",
+      "peso": 28.0,
+      "dif_calvo": 23.5,
+      "celda": "Alianza",
+      "principal": 84.4,
+      "calvo": 60.9,
+      "ancho_ic": 4.9,
+      "sep": 41.1,
+      "sep_calvo": 40.7,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "UCR (Massaccesi)",
+      "peso": 16.3,
+      "dif_calvo": 13.8,
+      "celda": "PJ",
+      "principal": 24.1,
+      "calvo": 10.3,
+      "ancho_ic": 7.7,
+      "sep": 30.9,
+      "sep_calvo": 44.4,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otros",
+      "peso": 3.5,
+      "dif_calvo": 79.5,
+      "celda": "Fuerza Republicana",
+      "principal": 2.8,
+      "calvo": 82.3,
+      "ancho_ic": 37.5,
+      "sep": 52.2,
+      "sep_calvo": 86.6,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 4.3,
+      "dif_calvo": 31.4,
+      "celda": "MPN",
+      "principal": 1.6,
+      "calvo": 33.0,
+      "ancho_ic": 19.7,
+      "sep": 65.5,
+      "sep_calvo": 66.9,
+      "cerca_promedio": false,
+      "no_identificada": true
+    }
+  ],
+  "sensibilidad_calvo_pct": 23.860723916411683,
+  "rmse_validacion_por_provincia_pp": {
+    "01": {
+      "modelo": 1.8714170642414354,
+      "promedio_provincial": 2.766670321802335
+    },
+    "02": {
+      "modelo": 2.009289845455902,
+      "promedio_provincial": 3.3015027781018764
+    },
+    "03": {
+      "modelo": 1.4020026309721036,
+      "promedio_provincial": 1.8740175528762397
+    },
+    "04": {
+      "modelo": 3.233490883991228,
+      "promedio_provincial": 3.8822006183318916
+    },
+    "05": {
+      "modelo": 5.3209591378413865,
+      "promedio_provincial": 6.203007847363375
+    },
+    "06": {
+      "modelo": 3.32161273149034,
+      "promedio_provincial": 4.478298072844109
+    },
+    "07": {
+      "modelo": 2.6047710933313333,
+      "promedio_provincial": 4.043230481723137
+    },
+    "08": {
+      "modelo": 1.043417885275625,
+      "promedio_provincial": 1.3851046797640343
+    },
+    "09": {
+      "modelo": 3.0141012075319518,
+      "promedio_provincial": 4.678087791061826
+    },
+    "10": {
+      "modelo": 2.7830948625523972,
+      "promedio_provincial": 6.449659636637758
+    },
+    "11": {
+      "modelo": 1.6648305340785423,
+      "promedio_provincial": 2.563692268492185
+    },
+    "12": {
+      "modelo": 3.8982249533724174,
+      "promedio_provincial": 3.9999800780100485
+    },
+    "13": {
+      "modelo": 3.1765341323916405,
+      "promedio_provincial": 3.993386344727859
+    },
+    "14": {
+      "modelo": 1.8349618445393105,
+      "promedio_provincial": 2.9725753962080876
+    },
+    "15": {
+      "modelo": 3.5397646711537183,
+      "promedio_provincial": 8.616033997600434
+    },
+    "16": {
+      "modelo": 1.8307829317418631,
+      "promedio_provincial": 1.9587266626072335
+    },
+    "17": {
+      "modelo": 3.4079134712753443,
+      "promedio_provincial": 6.60476345888015
+    },
+    "18": {
+      "modelo": 3.616852245640451,
+      "promedio_provincial": 4.30620068132108
+    },
+    "20": {
+      "modelo": 1.6785884210847628,
+      "promedio_provincial": 2.39504495738891
+    },
+    "21": {
+      "modelo": 2.4893515455798667,
+      "promedio_provincial": 2.8830847687788026
+    },
+    "22": {
+      "modelo": 1.762414438141289,
+      "promedio_provincial": 5.237078525846727
+    },
+    "23": {
+      "modelo": 2.742456933944113,
+      "promedio_provincial": 3.221149286036775
+    },
+    "24": {
+      "modelo": 8.891346599459006,
+      "promedio_provincial": 4.079168255651385
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "par": "1983p_1985d",
+  "rmse_validacion_pp": {
+    "modelo": 2.2636026275915757,
+    "promedio_provincial": 2.9938825854797155
+  },
+  "mejora_modelo_pct": 24.392404746598494,
+  "separacion": 33.7,
+  "poco_informativa": false,
+  "filas": [
+    {
+      "origen": "UCR (Alfonsín)",
+      "peso": 50.2,
+      "dif_calvo": 9.4,
+      "celda": "Peronismo renovador",
+      "principal": 3.9,
+      "calvo": 13.3,
+      "ancho_ic": 6.7,
+      "sep": 29.2,
+      "sep_calvo": 26.4,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "PJ (Luder)",
+      "peso": 39.1,
+      "dif_calvo": 19.2,
+      "celda": "Peronismo renovador",
+      "principal": 19.4,
+      "calvo": 0.1,
+      "ancho_ic": 6.9,
+      "sep": 39.4,
+      "sep_calvo": 40.1,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "PI",
+      "peso": 2.3,
+      "dif_calvo": 94.2,
+      "celda": "Peronismo renovador",
+      "principal": 2.6,
+      "calvo": 96.8,
+      "ancho_ic": 24.5,
+      "sep": 54.3,
+      "sep_calvo": 86.5,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "MID",
+      "peso": 1.2,
+      "dif_calvo": 34.4,
+      "celda": "UCR",
+      "principal": 53.7,
+      "calvo": 19.3,
+      "ancho_ic": 27.5,
+      "sep": 18.8,
+      "sep_calvo": 47.2,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "Alianza Federal",
+      "peso": 0.7,
+      "dif_calvo": 30.3,
+      "celda": "UCeDé",
+      "principal": 47.1,
+      "calvo": 16.8,
+      "ancho_ic": 37.9,
+      "sep": 54.7,
+      "sep_calvo": 49.5,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "PAL",
+      "peso": 0.7,
+      "dif_calvo": 10.9,
+      "celda": "PAL",
+      "principal": 88.5,
+      "calvo": 99.4,
+      "ancho_ic": 18.5,
+      "sep": 87.4,
+      "sep_calvo": 98.3,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Bloquista",
+      "peso": 0.4,
+      "dif_calvo": 20.5,
+      "celda": "Bloquista",
+      "principal": 60.8,
+      "calvo": 81.3,
+      "ancho_ic": 39.8,
+      "sep": 60.5,
+      "sep_calvo": 81.1,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "MPN",
+      "peso": 0.2,
+      "dif_calvo": 9.5,
+      "celda": "UCR",
+      "principal": 15.1,
+      "calvo": 5.6,
+      "ancho_ic": 18.0,
+      "sep": 79.3,
+      "sep_calvo": 87.7,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "MOFEPA",
+      "peso": 0.1,
+      "dif_calvo": 30.5,
+      "celda": "PJ",
+      "principal": 14.6,
+      "calvo": 45.1,
+      "ancho_ic": 23.6,
+      "sep": 63.3,
+      "sep_calvo": 62.0,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otros",
+      "peso": 2.4,
+      "dif_calvo": 33.2,
+      "celda": "PJ",
+      "principal": 25.1,
+      "calvo": 58.3,
+      "ancho_ic": 17.2,
+      "sep": 51.5,
+      "sep_calvo": 63.5,
+      "cerca_promedio": false,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.7,
+      "dif_calvo": 32.2,
+      "celda": "PJ",
+      "principal": 3.8,
+      "calvo": 36.0,
+      "ancho_ic": 40.7,
+      "sep": 29.9,
+      "sep_calvo": 22.7,
+      "cerca_promedio": false,
+      "no_identificada": true
+    }
+  ],
+  "sensibilidad_calvo_pct": 23.626945508373367,
+  "rmse_validacion_por_provincia_pp": {
+    "01": {
+      "modelo": 1.7574662441186975,
+      "promedio_provincial": 2.9743880160296174
+    },
+    "02": {
+      "modelo": 2.2278438697120753,
+      "promedio_provincial": 3.05251946541638
+    },
+    "03": {
+      "modelo": 2.2189497399523415,
+      "promedio_provincial": 2.8104713413964415
+    },
+    "04": {
+      "modelo": 0.9181343441390842,
+      "promedio_provincial": 1.253067030206569
+    },
+    "05": {
+      "modelo": 4.063629478015508,
+      "promedio_provincial": 3.6386158367977117
+    },
+    "06": {
+      "modelo": 1.860785892324743,
+      "promedio_provincial": 2.4730757356786226
+    },
+    "07": {
+      "modelo": 2.5708885154262164,
+      "promedio_provincial": 2.3990266195509955
+    },
+    "08": {
+      "modelo": 1.9548450307782221,
+      "promedio_provincial": 2.793294099033291
+    },
+    "09": {
+      "modelo": 2.0060559231513677,
+      "promedio_provincial": 2.4561193693350627
+    },
+    "10": {
+      "modelo": 5.084417859053244,
+      "promedio_provincial": 4.877157648467432
+    },
+    "11": {
+      "modelo": 1.730737243697171,
+      "promedio_provincial": 2.377125226774595
+    },
+    "12": {
+      "modelo": 2.32732193529919,
+      "promedio_provincial": 2.183684438394882
+    },
+    "13": {
+      "modelo": 1.2695914058704822,
+      "promedio_provincial": 1.9446009944021576
+    },
+    "14": {
+      "modelo": 1.8538809511377166,
+      "promedio_provincial": 2.453588689008522
+    },
+    "15": {
+      "modelo": 2.859999429322095,
+      "promedio_provincial": 5.452570907506651
+    },
+    "16": {
+      "modelo": 4.218359968520689,
+      "promedio_provincial": 4.636807483788031
+    },
+    "17": {
+      "modelo": 4.0324577414061675,
+      "promedio_provincial": 5.017362221718959
+    },
+    "18": {
+      "modelo": 2.4500262554270367,
+      "promedio_provincial": 2.3931708640807425
+    },
+    "19": {
+      "modelo": 0.9449038896732247,
+      "promedio_provincial": 1.5493846487651461
+    },
+    "20": {
+      "modelo": 2.9932949756694702,
+      "promedio_provincial": 1.7930766041519628
+    },
+    "21": {
+      "modelo": 2.58652148324865,
+      "promedio_provincial": 2.8701699214946363
+    },
+    "22": {
+      "modelo": 1.4938436387773384,
+      "promedio_provincial": 2.252800111703029
+    },
+    "23": {
+      "modelo": 1.3991474408454367,
+      "promedio_provincial": 4.499432930933971
+    },
+    "24": {
+      "modelo": 9.595277386570803,
+      "promedio_provincial": 4.666257308863924
+    }
+  }
+}

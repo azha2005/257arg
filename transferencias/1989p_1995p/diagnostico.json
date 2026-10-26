@@ -1,0 +1,114 @@
+{
+  "par": "1989p_1995p",
+  "rmse_validacion_pp": {
+    "modelo": 3.8326659792289477,
+    "promedio_provincial": 4.830825870920884
+  },
+  "mejora_modelo_pct": 20.66230326579046,
+  "separacion": 27.4,
+  "poco_informativa": false,
+  "filas": [
+    {
+      "origen": "PJ (Menem)",
+      "peso": 46.9,
+      "dif_calvo": 15.5,
+      "celda": "PJ (Menem)",
+      "principal": 72.6,
+      "calvo": 88.1,
+      "ancho_ic": 6.7,
+      "sep": 26.7,
+      "sep_calvo": 40.3,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "UCR (Angeloz)",
+      "peso": 36.4,
+      "dif_calvo": 12.1,
+      "celda": "UCR (Massaccesi)",
+      "principal": 38.1,
+      "calvo": 50.1,
+      "ancho_ic": 7.5,
+      "sep": 30.2,
+      "sep_calvo": 37.3,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Alianza de Centro",
+      "peso": 7.0,
+      "dif_calvo": 55.1,
+      "celda": "FREPASO (Bordón)",
+      "principal": 27.5,
+      "calvo": 82.6,
+      "ancho_ic": 15.5,
+      "sep": 17.7,
+      "sep_calvo": 54.4,
+      "cerca_promedio": true,
+      "no_identificada": true
+    },
+    {
+      "origen": "Unidad Socialista",
+      "peso": 1.4,
+      "dif_calvo": 3.7,
+      "celda": "FREPASO (Bordón)",
+      "principal": 99.0,
+      "calvo": 95.3,
+      "ancho_ic": 2.9,
+      "sep": 70.9,
+      "sep_calvo": 67.2,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "MPN",
+      "peso": 0.2,
+      "dif_calvo": 16.6,
+      "celda": "PJ (Menem)",
+      "principal": 67.4,
+      "calvo": 50.7,
+      "ancho_ic": 37.7,
+      "sep": 42.6,
+      "sep_calvo": 30.6,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otros",
+      "peso": 6.0,
+      "dif_calvo": 13.9,
+      "celda": "Otros",
+      "principal": 4.1,
+      "calvo": 18.0,
+      "ancho_ic": 27.7,
+      "sep": 53.9,
+      "sep_calvo": 54.8,
+      "cerca_promedio": false,
+      "no_identificada": false
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.0,
+      "dif_calvo": 34.1,
+      "celda": "FREPASO (Bordón)",
+      "principal": 36.8,
+      "calvo": 2.7,
+      "ancho_ic": 20.4,
+      "sep": 18.7,
+      "sep_calvo": 41.4,
+      "cerca_promedio": false,
+      "no_identificada": true
+    }
+  ],
+  "sensibilidad_calvo_pct": 19.70420845428673,
+  "sin_deseado_max_cambio_pp_por_fila": {
+    "PJ (Menem)": 0.03,
+    "UCR (Angeloz)": 0.066,
+    "Alianza de Centro": 0.042,
+    "Unidad Socialista": 0.001,
+    "MPN": 0.032,
+    "Otros": 0.03,
+    "Blanco y nulo": 1.722
+  },
+  "deseado_incluido": true
+}
