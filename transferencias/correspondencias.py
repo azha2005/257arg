@@ -52,10 +52,15 @@ def apply_hacia_2019(A, B, y0, y1):
 
 def apply_2015_2023(A, B, y0, y1):
     """Santa Fe según tabla CNE; subdivisiones verificadas de Cipolletti y Santa Cruz."""
+    start_year = int(str(y0).rstrip('pb'))
     table = pd.read_csv(HERE / "correspondencias_2013_2017" / "santa_fe_2022.csv",
                         dtype={"circuito_anterior": str, "circuito_nuevo": str})
     old = {(r.seccion_anterior, r.circuito_anterior): (r.seccion_anterior, "SF:" + r.circuito_anterior) for r in table.itertuples()}
     new = {(r.seccion_nueva, r.circuito_nuevo): (r.seccion_anterior, "SF:" + r.circuito_anterior) for r in table.itertuples()}
+    end_year = int(str(y1).rstrip('pb'))
+    if end_year == 2025:
+        from estimar import secnames
+        section_names = {year: secnames(year) for year in (start_year, 2025)}
     records = []
 
     def transform(T, year):
@@ -63,7 +68,7 @@ def apply_2015_2023(A, B, y0, y1):
         for d, s, c in T.index:
             target, source, reason = (d, s, c), None, None
             if d == "21":
-                match = (old if year == 2015 else new).get((s, c))
+                match = (old if year == start_year else new).get((s, c))
                 if match:
                     target = (d, *match)
                     source, reason = "sf_res66_2022", "Recodificacion oficial CNE, anexo de equivalencias"
@@ -75,17 +80,25 @@ def apply_2015_2023(A, B, y0, y1):
                 ("20", 7, "18", [str(n) for n in range(1800, 1851, 10)], "sc_res28_2024"),
             ]
             for dd, ss, parent, children, src in groups:
-                if (d, s) == (dd, ss) and c in ([parent] if year == 2015 else children):
+                if (d, s) == (dd, ss) and c in ([parent] if year == start_year else children):
                     target = (d, s, "G:" + parent)
-                    source, reason = src, "Subdivision: suma al circuito de 2015"
+                    source, reason = src, f"Subdivision: suma al circuito de {start_year}"
             # Tolhuin se separó entre las dos elecciones. Sin un cruce interno completo,
             # la isla es la unión territorial común; la Antártida queda separada.
-            if d == "24" and s in ((1, 2) if year == 2015 else (1, 2, 5)):
+            if d == "24" and s in ((1, 2) if year == start_year else (1, 2, 5)):
                 target = (d, 0, "G:ISLA_GRANDE")
                 source, reason = "tdf_ley1186_2017", "Union insular comun: cambios de secciones y circuitos sin equivalencia interna"
             if d == "24" and s == 3:
                 target = (d, s, "G:ANTARTIDA")
-                source, reason = "DINE_2015_2023_ambitos", "Antartida separada: suma de bases por cambio de codificacion"
+                source, reason = f"DINE_{start_year}_{end_year}_ambitos", "Antartida separada: suma de bases por cambio de codificacion"
+            if end_year == 2025 and ((d == '16' and s in (4, 7, 8, 9, 11)) or (d == '19' and s in (1, 3, 8)) or (d == '20' and s == 4)):
+                target = (d, s, 'G:SECCION_' + str(s))
+                source, reason = f'DINE_{start_year}_2025_ambitos', 'Seccion completa: nuevas subdivisiones sin equivalencia interna verificada; no se emparejan padres que perdieron territorio'
+            if end_year == 2025 and d == '21':
+                name = section_names[year][(d, s)]
+                if name in {'LAS COLONIAS','GARAY','VERA','SAN JAVIER','ROSARIO','CASEROS','CONSTITUCION'}:
+                    target = (d, 0, 'S:' + name)
+                    source, reason = f'sf_res66_2022+DINE_{start_year}_2025_ambitos', 'Solo departamento con nuevas claves posteriores a la tabla calculada: union completa, sin equivalencia interna inventada'
             if source:
                 records.append(dict(anio=year, distrito=d, seccion=s, circuito=c,
                                     seccion_comun=target[1], circuito_comun=target[2], motivo=reason, fuente_id=source))
@@ -96,9 +109,9 @@ def apply_2015_2023(A, B, y0, y1):
         assert np.allclose(result.sum().values, T.sum().values, rtol=0, atol=1e-7)
         return result
 
-    A, B = transform(A, 2015), transform(B, 2023)
-    return A, B, {"version": "2015_2023_v1", "registros": records,
-                  "reserva": "Neuquen por departamento; Tierra del Fuego como isla principal agregada y Antartida separada, sin equivalencia interna inventada."}
+    A, B = transform(A, start_year), transform(B, end_year)
+    return A, B, {"version": f"{start_year}_{end_year}_v1", "registros": records,
+                  "reserva": "Neuquen por departamento; Tierra del Fuego como isla principal agregada y Antartida separada, sin equivalencia interna inventada." + (" Santa Fe conserva las equivalencias calculadas de CNE 66/2022; solo Las Colonias, Garay, Vera, San Javier, Rosario, Caseros y Constitucion van por departamento por claves posteriores pendientes. Secciones 4/7/8/9/11 de Rio Negro, 1/3/8 de San Luis y 4 de Santa Cruz completas por cambios internos pendientes de correspondencia." if end_year == 2025 else "")}
 
 
 def common_early_key(key, origin):
@@ -118,6 +131,8 @@ def new_historical_key(key,y0,y1):
     return d,s,c
 
 def apply_pair(A, B, y0, y1):
+    if (y0,y1) == (2017,2025):
+        return apply_2015_2023(A,B,y0,y1)
     if (y0,y1) in [('1954d','1965d'),('1958d','1962d')]:
         records=[]
         groups=[({'PILAR','TIGRE','LAS CONCHAS','ESCOBAR'},'G:PILAR+TIGRE+ESCOBAR','Cacopardo, anexo Cuadro 1, PDF67/p64'),
@@ -185,7 +200,7 @@ def apply_pair(A, B, y0, y1):
                       'reserva':'Departamentos y circunscripciones de Capital; votos desglosados, sin abstención. ' + ('Deseado 1995 extrapolado por pedido del usuario. ' if (y0,y1)==('1989p','1995p') else 'Sin imputaciones de votos. ') + 'Uniones completas para cambios territoriales. Ver historicos_1989/LEEME.md.'}
     if (y0 == 2017 and y1 in (2019, "2019p")) or (str(y0) in ("2015p", "2015b") and y1 == "2019p"):
         return apply_hacia_2019(A, B, y0, y1)
-    if str(y0) in ("2015p", "2015b") and str(y1) in ("2023p", "2023b"):
+    if str(y0) in ("2015pp", "2015p", "2015b") and str(y1) in ("2023p", "2023b", "2025"):
         return apply_2015_2023(A, B, y0, y1)
     early_2015 = y0 in (2009, 2013) and str(y1) in ("2015p", "2015b")
     if (y0, y1) != (2013, 2017) and not early_2015:

@@ -933,6 +933,75 @@ Separación de las filas: 41.4 puntos
 | Blanco y nulo | 2.5 | 52.8 | La Libertad Avanza | 53.5 | 0.7 | 8.9 | 45.7 / 80.3 | **no identificada** |
 | No votó | 23.7 | 4.3 | No votó | 91.0 | 86.7 | 4.6 | 59.3 / 56.0 |  |
 
+## 2015pp → 2025
+
+Penalización elegida: 2e-07; error de validación cruzada (pp): {'0.0002': 2.5901, '2e-05': 2.3783, '2e-06': 2.2102, '2e-07': 2.1509, '0': 2.165}
+
+Separación de las filas: 34.9 puntos
+
+| Origen | Peso | Dif. Calvo | Celda | Principal | Calvo | IC | Sep. | |
+|---|---|---|---|---|---|---|---|---|
+| Scioli (FPV) | 27.1 | 16.3 | Fuerza Patria | 52.2 | 68.5 | 3.1 | 31.8 / 47.0 |  |
+| Macri (Cambiemos) | 16.9 | 5.3 | No votó | 9.8 | 15.2 | 3.9 | 52.4 / 53.5 |  |
+| Sanz (Cambiemos) | 2.5 | 24.4 | Fuerza Patria | 24.7 | 0.3 | 10.3 | 23.8 / 30.2 | **no identificada** |
+| Carrió (Cambiemos) | 1.6 | 34.5 | La Libertad Avanza | 53.5 | 88.0 | 22.9 | 48.0 / 63.3 | **no identificada** |
+| Massa (UNA) | 10.0 | 20.8 | Fuerza Patria | 21.5 | 0.7 | 5.4 | 13.7 / 34.6 | **cerca del promedio** |
+| De la Sota (UNA) | 4.6 | 42.7 | Provincias Unidas | 22.9 | 65.7 | 7.8 | 39.4 / 78.6 | **no identificada** |
+| Stolbizer | 2.4 | 20.7 | La Libertad Avanza | 25.0 | 4.3 | 11.5 | 39.7 / 57.4 | **no identificada** |
+| Rodríguez Saá | 1.6 | 21.1 | Fuerza Patria | 15.4 | 36.5 | 18.1 | 23.6 / 19.0 | **no identificada** |
+| Del Caño (FIT) | 1.2 | 60.7 | La Libertad Avanza | 25.3 | 86.1 | 14.2 | 40.4 / 60.9 | **no identificada** |
+| Altamira (FIT) | 1.1 | 43.6 | Otros | 16.7 | 60.3 | 11.8 | 58.0 / 81.2 | **no identificada** |
+| Otros | 1.4 | 47.3 | Fuerza Patria | 48.9 | 1.6 | 27.8 | 42.2 / 24.1 | **no identificada** |
+| Blanco y nulo | 4.1 | 20.3 | No votó | 25.7 | 45.9 | 11.6 | 26.4 / 32.8 | **no identificada** |
+| No votó | 25.5 | 4.7 | La Libertad Avanza | 7.8 | 3.1 | 4.3 | 42.5 / 46.7 |  |
+
+## 2015p → 2025
+
+Penalización elegida: 2e-07; error de validación cruzada (pp): {'0.0002': 2.5265, '2e-05': 2.2709, '2e-06': 2.1703, '2e-07': 2.1449, '0': 2.1506}
+
+Separación de las filas: 30.0 puntos
+
+| Origen | Peso | Dif. Calvo | Celda | Principal | Calvo | IC | Sep. | |
+|---|---|---|---|---|---|---|---|---|
+| Frente para la Victoria | 28.9 | 14.1 | Fuerza Patria | 50.9 | 65.0 | 2.6 | 30.1 / 43.9 |  |
+| Cambiemos | 26.7 | 8.4 | No votó | 15.4 | 23.8 | 2.1 | 40.2 / 39.9 |  |
+| UNA (Massa) | 16.8 | 17.7 | Otros | 13.0 | 30.7 | 4.9 | 13.4 / 34.4 | **cerca del promedio** |
+| FIT | 2.6 | 59.4 | La Libertad Avanza | 13.1 | 72.5 | 12.7 | 53.0 / 59.9 | **no identificada** |
+| Progresistas | 2.0 | 6.1 | FIT-U | 10.3 | 16.4 | 20.4 | 56.2 / 60.5 |  |
+| Compromiso Federal | 1.4 | 21.4 | Fuerza Patria | 18.7 | 40.0 | 21.1 | 20.5 / 19.5 | **no identificada** |
+| Blanco y nulo | 2.6 | 36.2 | No votó | 9.6 | 45.9 | 11.3 | 53.7 / 35.2 | **no identificada** |
+| No votó | 19.2 | 6.2 | La Libertad Avanza | 6.6 | 0.4 | 5.5 | 48.7 / 51.2 |  |
+
+## 2015b → 2025
+
+Penalización elegida: 2e-07; error de validación cruzada (pp): {'0.0002': 2.5333, '2e-05': 2.3631, '2e-06': 2.28, '2e-07': 2.2588, '0': 2.2527}
+
+Separación de las filas: 32.3 puntos
+
+| Origen | Peso | Dif. Calvo | Celda | Principal | Calvo | IC | Sep. | |
+|---|---|---|---|---|---|---|---|---|
+| Frente para la Victoria | 38.6 | 10.7 | Fuerza Patria | 47.9 | 58.6 | 1.9 | 29.6 / 38.9 |  |
+| Cambiemos | 40.4 | 6.6 | Provincias Unidas | 5.9 | 12.5 | 1.6 | 35.0 / 35.6 |  |
+| Blanco y nulo | 2.0 | 37.1 | Fuerza Patria | 37.3 | 0.2 | 12.9 | 44.0 / 58.1 | **no identificada** |
+| No votó | 19.0 | 7.0 | Provincias Unidas | 3.5 | 10.4 | 4.2 | 53.2 / 51.4 |  |
+
+## 2017 → 2025
+
+Penalización elegida: 2e-07; error de validación cruzada (pp): {'0.0002': 2.4829, '2e-05': 2.2673, '2e-06': 2.1677, '2e-07': 2.1383, '0': 2.1373}
+
+Separación de las filas: 37.4 puntos
+
+| Origen | Peso | Dif. Calvo | Celda | Principal | Calvo | IC | Sep. | |
+|---|---|---|---|---|---|---|---|---|
+| Cambiemos | 30.6 | 9.6 | No votó | 13.1 | 22.7 | 2.2 | 39.1 / 39.5 |  |
+| Unidad Ciudadana | 16.7 | 11.3 | Fuerza Patria | 57.5 | 68.8 | 3.4 | 38.9 / 48.0 |  |
+| Peronismo no kirchnerista | 12.7 | 11.1 | Fuerza Patria | 45.2 | 56.4 | 3.6 | 31.4 / 42.2 |  |
+| 1País | 4.3 | 23.9 | La Libertad Avanza | 29.3 | 5.4 | 11.1 | 15.7 / 38.4 | **no identificada** |
+| FIT | 3.4 | 40.1 | La Libertad Avanza | 16.6 | 56.7 | 9.1 | 42.5 / 60.7 | **no identificada** |
+| Otros | 6.2 | 14.4 | Provincias Unidas | 16.2 | 30.6 | 5.0 | 22.5 / 34.5 |  |
+| Blanco y nulo | 3.3 | 26.6 | Otros | 13.3 | 39.9 | 9.0 | 30.8 / 39.6 | **no identificada** |
+| No votó | 22.8 | 5.7 | La Libertad Avanza | 6.0 | 0.2 | 5.4 | 47.5 / 51.6 |  |
+
 ## Brasil 2026p → 2026b
 
 Penalización elegida: 2e-06; error de validación cruzada (pp): {'0.002': 1.8926944179785983, '0.0002': 1.8370777975916428, '2e-05': 1.8011658207316552, '2e-06': 1.7837083609084747, '2e-07': 1.7683974446014563, '0': 1.7667730323045454}

@@ -28,15 +28,21 @@ Cada HTML incluye una vista conjunta y selector provincial. 1914d→1916d tiene 
 | 1995p_1999p | [HTML](1995p_1999p/sankey_1995p_1999p.html) | [Resumen](1995p_1999p/RESUMEN.md) | 506 | 96.59 % |
 | 1983p_1985d | [HTML](1983p_1985d/sankey_1983p_1985d.html) | [Resumen](1983p_1985d/RESUMEN.md) | 519 | 99.33 % |
 | 1914d_1916d | [HTML](1914d_1916d/sankey_1914d_1916d.html) | [Resumen](1914d_1916d/RESUMEN.md) | 130 | 70.40 % |
+| 2015pp_2025 | [HTML](2015pp_2025/sankey_2015pp_2025.html) / [sin No votó](2015pp_2025/sankey_2015pp_2025_votantes.html) | [Resumen](2015pp_2025/RESUMEN.md) | 3902 | 89.14 % |
+| 2015p_2025 | [HTML](2015p_2025/sankey_2015p_2025.html) / [sin No votó](2015p_2025/sankey_2015p_2025_votantes.html) | [Resumen](2015p_2025/RESUMEN.md) | 3863 | 89.32 % |
+| 2015b_2025 | [HTML](2015b_2025/sankey_2015b_2025.html) / [sin No votó](2015b_2025/sankey_2015b_2025_votantes.html) | [Resumen](2015b_2025/RESUMEN.md) | 3988 | 90.15 % |
+| 2017_2025 | [HTML](2017_2025/sankey_2017_2025.html) / [sin No votó](2017_2025/sankey_2017_2025_votantes.html) | [Resumen](2017_2025/RESUMEN.md) | 4306 | 92.40 % |
 
-Verificación: matrices no negativas, conservación de totales al redondeo, intervalos ordenados, destinos ausentes en cero, correspondencias conservando categorías, 575 vistas con porcentajes cotejados contra CSV, enlaces directos por provincia y ausencia de errores JavaScript.
+Verificación: matrices no negativas, conservación de totales al redondeo, intervalos ordenados, destinos ausentes en cero, correspondencias conservando categorías, 675 vistas con porcentajes cotejados contra CSV, enlaces directos por provincia y ausencia de errores JavaScript.
 
-[Fuentes y pendientes de correspondencias](correspondencias_2013_2017/LEEME.md). `p`: general presidencial; `b`: balotaje; `d`: diputados; `1994c`: constituyentes. 2009, 2013 y 2017 sin sufijo: diputados nacionales.
+[Fuentes y pendientes de correspondencias](correspondencias_2013_2017/LEEME.md). `pp`: PASO presidencial por lista; `p`: general presidencial; `b`: balotaje; `d`: diputados; `1994c`: constituyentes. 2009, 2013, 2017 y 2025 sin sufijo: diputados nacionales.
 
 Los cruces históricos usan votos desglosados y no incluyen abstención: [fuentes, extrapolación y utilidad](historicos_1989/LEEME.md). Su cobertura no es cobertura del padrón.
 
 [PBA 1983p→1985d: comparación provincial de modelos](1983p_1985d/PBA.md).
 
 [1914–1916: fuentes y cobertura](fuentes_1914_1916/LEEME.md) | [Cacopardo: revisión de los cruces existentes](revision_cacopardo_1967/LEEME.md).
+
+Cruces hacia 2025: además se cotejaron 100 vistas sin abstención contra la matriz filtrada. [Fuentes y territorios](FUENTES_2015_2025.md).
 
 **Brasil 2026, 1.ª vuelta → balotaje**: [HTML](brasil_2026p_2026b/sankey_brasil_2026p_2026b.html) / [sin No votó](brasil_2026p_2026b/sankey_brasil_2026p_2026b_votantes.html) | [Resumen](brasil_2026p_2026b/RESUMEN.md) | 497.147 secciones | 99.62 % del padrón del balotaje. Verificado con `brasil2026_verificar.py` y `brasil2026_revisar_html.py` (29 vistas por gráfico).

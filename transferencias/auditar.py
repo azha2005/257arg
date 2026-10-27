@@ -29,6 +29,8 @@ PARES.append('1989p_1997d')
 PARES.extend(['1995p_1997d','1995p_1999p','1983p_1985d'])
 PARES.append('1914d_1916d')
 PARES.extend(['2023pp_2025', '2023p_2025', '2023b_2025'])   # presidente 2023 (PASO, general, balotaje) -> diputados 2025
+PARES.extend(['2015pp_2025', '2015p_2025', '2015b_2025'])
+PARES.append('2017_2025')
 PARES.append('brasil_2026p_2026b')
 
 

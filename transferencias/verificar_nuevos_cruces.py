@@ -18,6 +18,8 @@ PAIRS += [('1983p','1989p'), ('1987d','1989p'), ('1985d','1989p')]
 PAIRS += [('1989p','1997d')]
 PAIRS += [('1995p','1997d'),('1995p','1999p'),('1983p','1985d')]
 PAIRS += [('1914d','1916d')]
+PAIRS += [('2015pp',2025),('2015p',2025),('2015b',2025)]
+PAIRS += [(2017,2025)]
 
 
 def verify(page, origin, destination):
@@ -106,6 +108,11 @@ def verify(page, origin, destination):
               "[transformaciones](correspondencias.csv), [control completo](control.json).", "",
               "Alertas provinciales de la auditoría: " + (json.dumps(audit["imposibles"], ensure_ascii=False) if audit["imposibles"] else "ninguna") + ".", ""]
     (folder / "RESUMEN.md").write_text("\n".join(report), encoding="utf8")
+    if origin in ('2015pp','2015p','2015b',2017) and destination == 2025:
+        with (folder / 'RESUMEN.md').open('a', encoding='utf8') as handle:
+            handle.write(f'\n{2025-int(str(origin)[:4])} años de distancia: entradas al padrón, fallecimientos y mudanzas quedan dentro de la hipótesis ecológica; no es seguimiento de las mismas personas.\n')
+            handle.write('\n[Fuentes y decisiones específicas de 2015–2025](../FUENTES_2015_2025.md). Santa Fe conserva las equivalencias calculadas: solo siete departamentos con nuevas claves no incluidas en la tabla se agregan completos; Neuquén usa departamentos. No se reparten votos.\n')
+            handle.write(f'\n[Versión sin No votó](sankey_{origin}_{destination}_votantes.html): misma estimación; se ocultan la fila y columna de abstención y se recalculan los porcentajes. No implica haber identificado quién votó en ambas elecciones.\n')
     if historical:
         report_text = '\n'.join(report).replace('Cobertura del padrón de origen','Cobertura de los votos desglosados de origen')
         report_text = report_text.replace('../correspondencias_2013_2017/LEEME.md','../historicos_1989/LEEME.md')
@@ -125,6 +132,24 @@ def verify(page, origin, destination):
             report_text=report_text.replace('Cobertura de los votos desglosados de origen','Cobertura del voto en la selección legible de 1914 (no del país)')
             report_text+='\nCobertura parcial de siete jurisdicciones. Solo votos partidarios/primer candidato publicado, sin blancos, nulos ni abstención. No se usaron estimaciones del atlas ni totales provinciales repetidos.\n\n[Buenos Aires](PBA.md) | [Capital Federal](Capital.md) | [Sensibilidad a fuentes y filtro](sensibilidad.json) | [Revisión Cacopardo de los demás cruces](../revision_cacopardo_1967/LEEME.md).\n'
             (folder/'RESUMEN.md').write_text(report_text,encoding='utf8')
+    if origin in ('2015pp','2015p','2015b',2017) and destination == 2025:
+        sankey.main(origin,destination,votantes=True)
+        page.goto((folder / f'sankey_{origin}_{destination}_votantes.html').as_uri())
+        voptions = page.locator('#v option').evaluate_all('xs=>xs.map(x=>x.value)')
+        assert len(voptions) == len(options)
+        page.screenshot(path=str(folder / f'sankey_{origin}_{destination}_votantes.png'),full_page=True)
+        for key in voptions:
+            page.select_option('#v',key)
+            assert page.locator('.vista:visible').get_attribute('id') == 'v-' + key
+            texts = page.locator('.vista:visible svg > text').all_text_contents()
+            assert not any(t.startswith('No votó:') for t in texts)
+            model = M if key == 'nacional' else P[P.distrito==key].pivot(index='origen',columns='destino',values='votos')
+            model = model.drop(index='No votó',columns='No votó',errors='ignore')
+            for category,votes in model.sum(0).items():
+                if votes>0:
+                    label = category + ': ' + ('%.1f'%(100*votes/model.values.sum())).replace('.',',') + ' %'
+                    assert label in texts,(origin,key,label)
+        summary['vistas_sin_abstencion'] = len(voptions)
     print(summary["par"], "OK", flush=True)
     return summary
 
@@ -135,11 +160,11 @@ if __name__ == "__main__":
         page = browser.new_page(viewport={"width": 900, "height": 900})
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
-        selected = PAIRS[-1:] if '--1914' in sys.argv else PAIRS[20:23] if '--tanda95' in sys.argv else PAIRS[13:] if '--solo-historicos' in sys.argv else PAIRS[9:13] if "--solo-2019" in sys.argv else PAIRS
+        selected = PAIRS[-1:] if '--2017-2025' in sys.argv else PAIRS[24:27] if '--2015-2025' in sys.argv else PAIRS[23:24] if '--1914' in sys.argv else PAIRS[20:23] if '--tanda95' in sys.argv else PAIRS[13:24] if '--solo-historicos' in sys.argv else PAIRS[9:13] if "--solo-2019" in sys.argv else PAIRS
         result = [verify(page, *pair) for pair in selected]
         assert not errors, errors
         browser.close()
-    if "--solo-2019" in sys.argv or '--solo-historicos' in sys.argv or '--tanda95' in sys.argv or '--1914' in sys.argv:
+    if any(flag in sys.argv for flag in ('--solo-2019','--solo-historicos','--tanda95','--1914','--2015-2025','--2017-2025')):
         previous = json.loads((HERE / "VERIFICACION_NUEVOS_CRUCES.json").read_text(encoding="utf8"))
         fresh = {item["par"] for item in result}
         result = [item for item in previous if item["par"] not in fresh] + result
@@ -150,15 +175,20 @@ if __name__ == "__main__":
              "|---|---|---|---:|---:|"]
     for item in result:
         par = item["par"]
-        lines.append(f"| {par} | [HTML]({par}/sankey_{par}.html) | [Resumen]({par}/RESUMEN.md) | {item['usados']} | {item['cobertura_origen']:.2f} % |")
+        grafico = f'[HTML]({par}/sankey_{par}.html)'
+        if item.get('vistas_sin_abstencion'):
+            grafico += f' / [sin No votó]({par}/sankey_{par}_votantes.html)'
+        lines.append(f"| {par} | {grafico} | [Resumen]({par}/RESUMEN.md) | {item['usados']} | {item['cobertura_origen']:.2f} % |")
     lines += ["", "Verificación: matrices no negativas, conservación de totales al redondeo, intervalos ordenados, "
               f"destinos ausentes en cero, correspondencias conservando categorías, {sum(item['vistas'] for item in result)} vistas con porcentajes cotejados contra CSV, "
               "enlaces directos por provincia y ausencia de errores JavaScript.", "",
               "[Fuentes y pendientes de correspondencias](correspondencias_2013_2017/LEEME.md). "
-              "`p`: general presidencial; `b`: balotaje; `d`: diputados; `1994c`: constituyentes. 2009, 2013 y 2017 sin sufijo: diputados nacionales.", "",
+              "`pp`: PASO presidencial por lista; `p`: general presidencial; `b`: balotaje; `d`: diputados; `1994c`: constituyentes. 2009, 2013, 2017 y 2025 sin sufijo: diputados nacionales.", "",
               "Los cruces históricos usan votos desglosados y no incluyen abstención: [fuentes, extrapolación y utilidad](historicos_1989/LEEME.md). Su cobertura no es cobertura del padrón.", ""]
     lines += ['[PBA 1983p→1985d: comparación provincial de modelos](1983p_1985d/PBA.md).','']
     lines += ['[1914–1916: fuentes y cobertura](fuentes_1914_1916/LEEME.md) | [Cacopardo: revisión de los cruces existentes](revision_cacopardo_1967/LEEME.md).','']
+    if any(item.get('vistas_sin_abstencion') for item in result):
+        lines += [f"Cruces hacia 2025: además se cotejaron {sum(item.get('vistas_sin_abstencion',0) for item in result)} vistas sin abstención contra la matriz filtrada. [Fuentes y territorios](FUENTES_2015_2025.md).",'']
     brasil = HERE / "brasil_2026p_2026b" / "VERIFICACION.json"
     if brasil.exists():     # verificación propia: brasil2026_verificar.py y brasil2026_revisar_html.py
         v = json.loads(brasil.read_text(encoding="utf8"))

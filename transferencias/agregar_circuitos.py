@@ -14,9 +14,11 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 
 def src(arg):
     """2023b = segunda vuelta 2023 (datos_oficiales/2023_balotaje/); 2023pp = PASO 2023, leida del zip sin extraer (3,7 GB)."""
-    if arg == "2023pp":
+    if arg in ("2015pp", "2023pp"):
         import zipfile
-        return zipfile.ZipFile(os.path.join(ROOT, "datos_oficiales", "2023_paso", "2023-PROVISORIOS_PASO.zip")).open("2023_PASO/ResultadosElectorales.csv")
+        year = arg[:4]
+        z = zipfile.ZipFile(os.path.join(ROOT, "datos_oficiales", year + "_paso", year + "-PROVISORIOS_PASO.zip"))
+        return z.open(next(n for n in z.namelist() if n.lower().endswith('resultadoselectorales.csv')))
     anio = arg.rstrip("pb")
     d = os.path.join(ROOT, "datos_oficiales", anio + "_balotaje" if arg.endswith("b") else anio, "x")
     return (glob.glob(os.path.join(d, "*", "Resultado*.csv")) + glob.glob(os.path.join(d, "resultados*.csv")))[0]
@@ -39,7 +41,7 @@ for arg in sys.argv[1:] or ["2021", "2023", "2025"]:
         ch["distrito_id"] = ch.distrito_id.astype(int).map("{:02d}".format)
         ch["seccion_id"] = ch.seccion_id.astype(int)
         ch["circuito"] = circ(ch.circuito_id)
-        if arg == "2023pp":    # PASO: agrupacion | lista (Massa y Grabois, Bullrich y Larreta por separado)
+        if arg in ("2015pp", "2023pp"):    # PASO por lista: cada precandidatura se conserva
             ch["agrupacion_id"] = ch.agrupacion_nombre.fillna("").str.strip().str.upper() + " | " + ch.lista_nombre.fillna("").str.strip().str.upper()
         elif pres:
             ch["agrupacion_id"] = ch.agrupacion_nombre.fillna("").str.strip().str.upper()

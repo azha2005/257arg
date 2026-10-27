@@ -32,6 +32,10 @@ Resultado usado: **4.587 circuitos + 6 grupos**, sin agrupar provincias enteras 
 
 Se reutilizan las fusiones de secciones de Santa Fe, la unión de Venado Tuerto, Viedma, Bariloche, General Roca y los cuatro circuitos afectados de San Luis. No se aplica la subdivisión de Villa Mercedes aprobada en 2017 ni la recircuitación de Ushuaia de 2017 a estos pares anteriores: los circuitos de 2015 conservan en esos casos su clave original. Los votos de 2009 vienen de PolAr por mesa, con sus límites de cobertura ya documentados en el LEEME general; no se sustituyen por los complementos departamentales del atlas.
 
+## PASO / general / balotaje 2015 → diputados 2025
+
+Se conserva la tabla de **521 equivalencias calculadas de Santa Fe**, con los mismos códigos originales y páginas de la CNE. En los siete departamentos con códigos posteriores ausentes de esa tabla se usa la sección completa; los otros doce siguen por circuito. No se vuelve toda la provincia a departamento. [Decisiones específicas y archivos de fuente](../FUENTES_2015_2025.md). Neuquén mantiene su respaldo departamental, y se suman completas las secciones de Río Negro, San Luis y Santa Cruz con cambios internos pendientes de correspondencia. Los controles por par guardan todos los registros aplicados.
+
 ## Fuentes primarias
 
 ## Extensión a 2019

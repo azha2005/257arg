@@ -1,5 +1,19 @@
 # Transferencias de voto entre legislativas (diputados nacionales)
 
+## Diputados 2017 → diputados 2025
+
+`2017_2025/`: matrices nacional/provinciales, variante Calvo, intervalos de 200 remuestreos y HTML con selector de los 24 distritos, completo y sin No votó. Fuentes: agregados DINE por circuito `circ_2017.pkl` / `circ_2025.pkl`, con los bloques de los atlas de cada año. Se reutilizan las equivalencias de Santa Fe y las uniones documentadas de los cruces hacia 2025. [Decisiones territoriales](FUENTES_2015_2025.md#extension-a-diputados-2017--2025), [resumen y reservas](2017_2025/RESUMEN.md).
+
+Reproducir: `python -X utf8 transferencias/estimar.py 2017 2025` y `python -X utf8 transferencias/verificar_nuevos_cruces.py --2017-2025`.
+
+## Presidenciales 2015 → diputados 2025 (PASO, general y balotaje)
+
+Completados en `2015pp_2025/`, `2015p_2025/` y `2015b_2025/`, con selector de los 24 distritos, matrices, validación cruzada, variante Calvo y 200 remuestreos. Cada carpeta tiene versión completa y `_votantes` sin la fila/columna No votó. [Fuentes y decisiones territoriales](FUENTES_2015_2025.md), [índice y reservas](INDICE_NUEVOS_CRUCES.md).
+
+La PASO conserva separadas las internas de Cambiemos (Macri/Sanz/Carrió), UNA (Massa/De la Sota) y FIT (Del Caño/Altamira). Santa Fe **reutiliza las 521 equivalencias ya calculadas**; solo se agregan siete departamentos con códigos de 2025 posteriores a esa tabla. Los demás conservan circuitos verificados. No se distribuyen votos ni se rellenan datos. Diez años de cambio de padrón impiden leer las cintas como seguimiento individual.
+
+Reproducir: `python -X utf8 transferencias/generar_2015_2025.py` y `python -X utf8 transferencias/verificar_nuevos_cruces.py --2015-2025`.
+
 **Actualización territorial, 26-oct-2026:** [revisión con Cacopardo de los cruces existentes y de los mapas 1912/1914/1916](revision_cacopardo_1967/LEEME.md). Se corrigieron Escobar, Hipólito Yrigoyen y San Cayetano en 1954d→1965d y 1958d→1962d. Las nuevas versiones usan 374 y 349 unidades; los conteos y resultados anteriores que aparecen más abajo corresponden al cálculo previo, conservado como respaldo. El nuevo [1914d→1916d](fuentes_1914_1916/LEEME.md) tiene cobertura parcial y solo cifras observadas en su principal.
 
 Pares hechos: **presidente 2023 (PASO, general y balotaje) → diputados 2025**, **2009 → 2011**, **2011 → 2023**, **2013 → 2025**, **2019 → 2023** (diputados y **presidente**), **presidente 2011 → 2023**, **balotaje 2023** (desde la primera vuelta 2023, desde 2019 y desde 2011), **2019 → 2025**, **2021 → 2025**, **2023 → 2025**, **presidente 2003 → diputados 2005**, **presidente 2003 → 2007**, **presidente 2003 → diputados 2009**, **2009 → 2013**, **presidente 2011 → 2015** y **balotaje 2015** (desde la 1.ª vuelta 2015 y desde 2011), **diputados 1954 → presidente 1958**, **presidente 1958 → diputados 1962**, **diputados 1954 → 1965** y **diputados 1930, presidente 1937 y diputados 1940 → presidente 1946** (por departamento, con Cantón); **Córdoba presidente 1999 → 2003 y diputados 1991 → 1995** por circuito (base de E. Calvo); **presidente 1999 → 2003 nacional** como Calvo y Escolar (por departamento, Córdoba por circuito, votos emitidos). Para otro par: `agregar_circuitos.py <año>` y la entrada del año en `CAT` de `estimar.py` (con su color en `sankey.py`).

@@ -24,6 +24,9 @@ COL.update({'UCR (Angeloz)':'#e10019', 'Alianza de Centro':'#8e6bd8', 'Unidad So
 COL.update({'Peronismo renovador':'#f59e0b','Frente del Pueblo':'#b51d27','Bloquista':'#44944a','FAP (Catamarca)':'#f59e0b','PPR':'#b5651d'})
 COL.update({'Alianza Federal':'#f59e0b','MOFEPA':'#0097a7','Partido Nuevo':'#ff8800','Desarrollo y Justicia':'#00bfc4'})
 COL.update({'Unión Cívica':'#222222','Independientes (Peña)':'#777777','PDP':'#005c9e','Socialista Argentino':'#b73c96','Radicales disidentes':'#a52a2a','Concentración Cívica':'#35aae0'})
+COL.update({'Scioli (FPV)':'#318ce7','Macri (Cambiemos)':'#f4ce00','Sanz (Cambiemos)':'#e10019',
+            'Carrió (Cambiemos)':'#74b744','Massa (UNA)':'#231f20','De la Sota (UNA)':'#1aff98',
+            'Stolbizer':'#ff6600','Rodríguez Saá':'#55a868','Del Caño (FIT)':'#d10047','Altamira (FIT)':'#fa7f9e'})
 W, H, TOP, GAP, NODE = 900, 760, 90, 10, 18
 X0, X1 = 250, 650
 
@@ -73,6 +76,8 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         t1 = "2019, general"
     if str(y0) in ("2023pp", "2023p", "2023b") and y1 == 2025:   # presidente 2023 (PASO, general o balotaje) -> diputados 2025
         cargo, t0, t1 = "Presidente", {"2023pp": "2023, PASO", "2023p": "2023, general", "2023b": "2023, balotaje"}[str(y0)], "diputados 2025"
+    if str(y0) in ("2015pp", "2015p", "2015b") and y1 == 2025:
+        cargo, t0, t1 = "Presidente", {"2015pp": "2015, PASO", "2015p": "2015, general", "2015b": "2015, balotaje"}[str(y0)], "diputados 2025"
     if cba: cargo = "Córdoba: " + cargo.lower()
     historical = (y0, y1) in [('1989p','1995p'), ('1989d','1994c'), ('1985d','1987d'),('1983p','1989p'),('1987d','1989p'),('1985d','1989p'),('1989p','1997d')]
     historical |= (y0,y1) in [('1995p','1997d'),('1995p','1999p'),('1983p','1985d')]
@@ -201,7 +206,7 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         def label_positions(nodes):
             result, last = {}, TOP - 14
             for name, (y,h) in nodes.items():
-                result[name] = max(y+h/2,last+14) if historical or br else y+h/2
+                result[name] = max(y+h/2,last+14) if historical or y0=='2015pp' or br else y+h/2
                 last = result[name]
             return result
         ly, ry = label_positions(L), label_positions(R)
@@ -225,7 +230,7 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         if historical:
             s[-1] = s[-1].replace('Porcentajes sobre el padrón', 'Porcentajes sobre votos desglosados')
         if votantes:
-            s[-1] = re.sub(r">Porcentajes sobre .*</text>", ">Sin «No votó»: % sobre quienes votaron en las dos elecciones (misma estimación). Método: RxC penalizado (E. Calvo), por provincia.</text>", s[-1])
+            s[-1] = re.sub(r">Porcentajes sobre .*</text>", ">Sin fila y columna «No votó»: porcentajes sobre los flujos estimados restantes. Método: RxC penalizado (E. Calvo), por provincia.</text>", s[-1])
         if br:
             s[-1] = s[-1].replace("de los circuitos usados", "de las secciones usadas").replace("una matriz por provincia", "una matriz por " + nivel_br + " encogida hacia su UF")
         if y0=='1914d':s[-1]=s[-1].replace('votos desglosados','votos partidarios publicados')

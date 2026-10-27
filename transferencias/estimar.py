@@ -86,6 +86,18 @@ CAT["2023pp"] = {"UNION POR LA PATRIA | A- CELESTE Y BLANCA": "Massa (UxP)", "UN
                  "HACEMOS POR NUESTRO PAIS | A- HACEMOS": "Schiaretti (Hacemos)",
                  "FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD | A- UNIR Y FORTALECER LA IZQUIERDA": "FIT-U",
                  "FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD | B- UNIDAD DE LUCHADORES Y LA IZQUIERDA": "FIT-U"}   # PASO presidencial 2023 por lista
+CAT['2015pp'] = {
+    'ALIANZA FRENTE PARA LA VICTORIA | A LISTA CELESTE Y BLANCA K NESTOR KIRCHNER': 'Scioli (FPV)',
+    'ALIANZA CAMBIEMOS | LISTA G EL CAMINO DEL CAMBIO': 'Macri (Cambiemos)',
+    'ALIANZA CAMBIEMOS | LISTA E EL PODER DE LA UNION': 'Sanz (Cambiemos)',
+    'ALIANZA CAMBIEMOS | LISTA F REPUBLICA DE LIBRES E IGUALES': 'Carrió (Cambiemos)',
+    'ALIANZA UNIDOS POR UNA NUEVA ALTERNATIVA (UNA) | A FRENTE RENOVADOR +A15': 'Massa (UNA)',
+    'ALIANZA UNIDOS POR UNA NUEVA ALTERNATIVA (UNA) | D MOVIMIENTO DE UNIDAD': 'De la Sota (UNA)',
+    'ALIANZA PROGRESISTAS | LISTA IGUALDAD Y DECENCIA MS': 'Stolbizer',
+    'ALIANZA COMPROMISO FEDERAL | LISTA A 1': 'Rodríguez Saá',
+    'ALIANZA FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES | LISTA 1 A RENOVAR Y FORTALECER EL FRENTE': 'Del Caño (FIT)',
+    'ALIANZA FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES | LISTA UNIDAD - 2 U': 'Altamira (FIT)',
+}
 CAT["2003pc"] = CAT["2003p"]     # Córdoba 2003 sin «No votó», para empalmar con cordoba_circuitos.py
 CAT["1999pe"] = {"DLR": "Alianza (De la Rúa)", "DUH": "PJ (Duhalde)", "CAV": "AR (Cavallo)"}   # presidente_1999.py: por candidato
 CAT["2003pe"] = CAT["2003p"]     # nacional sobre votos emitidos (1999 -> 2003 como Calvo y Escolar)
