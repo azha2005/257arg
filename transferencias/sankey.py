@@ -2,6 +2,7 @@
     python transferencias/sankey.py 2021 2025
     python transferencias/sankey.py 2023p 2025 --votantes   # sin «No votó» en origen ni destino -> sankey_<o>_<d>_votantes.*
     python transferencias/sankey.py 2023p 2025 --reducido   # «No votó» dibujado a escala 1:4, cifras reales -> sankey_<o>_<d>_reducido.*
+    python transferencias/sankey.py 2023p 2025 --reducido --breve   # sin notas al pie (dos líneas) -> sankey_<o>_<d>_reducido_breve.*
 Escribe transferencias/<o>_<d>/sankey_<o>_<d>.svg y .html. Colores de los atlas (dataset_<anio>.json)."""
 import os, re, sys, html, unicodedata, json
 import pandas as pd
@@ -34,8 +35,17 @@ def fmt(p):
 REDUCIDO = 0.25     # escala de «No votó» en la versión --reducido
 
 
-def main(y0, y1, votantes=False, reducido=False):
-    d = os.path.join(HERE, "%s_%s" % (y0, y1))
+COL.update({"Lula (PT)": "#d52b38", "Flávio Bolsonaro (PL)": "#2166ac", "Augusto Cury": "#8b63b5", "Renan Santos": "#e6a015",
+            "Ronaldo Caiado": "#1d987d", "Romeu Zema": "#d66a24", "Samara Martins": "#cc427f", "Hertz Dias": "#aa4034",
+            "Clariana Barão": "#667d24", "Edmilson Costa": "#bd6f84", "Wilson Grassi": "#587d9c", "Rui Costa Pimenta": "#8e4c39",
+            "Leonardo Araújo": "#717c7b"})   # Brasil 2026 (brasil2026_*.py)
+
+
+def main(y0, y1, votantes=False, reducido=False, breve=False):
+    br = str(y0).startswith("brasil")     # Brasil 2026: python sankey.py brasil2026p 2026b -> brasil_2026p_2026b/
+    if br: y0 = y0[len("brasil"):]
+    par = ("brasil_%s_%s" if br else "%s_%s") % (y0, y1)
+    d = os.path.join(HERE, par)
     cba = str(y0).endswith("c")     # Córdoba por circuito (cordoba_circuitos.py)
     emi = str(y0).endswith("e")     # nacional sobre votos emitidos, por departamento y Córdoba por circuito (presidente_1999.py)
     n0, n1 = (str(y)[:-1] if str(y).endswith(("c", "e")) else str(y) for y in (y0, y1))
@@ -71,13 +81,23 @@ def main(y0, y1, votantes=False, reducido=False):
     if y1 == '1994c': t1 = 'constituyentes 1994'
     M = pd.read_csv(os.path.join(d, "matriz_votos.csv"), index_col=0, encoding="utf-8-sig")
     from auditar import auditar
-    aud = auditar("%s_%s" % (y0, y1))
+    aud = auditar(par)
     ctl = json.load(open(os.path.join(d, "control.json"), encoding="utf8"))
     from estimar import DISTRITOS
+    if br:
+        from brasil2026_datos import UF_NOMBRES as DISTRITOS
+        cob_uf = pd.read_csv(os.path.join(d, "cobertura_por_uf.csv"), encoding="utf-8-sig").set_index("uf")
+        nivel_br = {"uf": "UF", "intermedia": "región intermedia", "inmediata": "región inmediata"}[ctl["nivel"]]
+        # Solo en el dibujo: los candidatos de menos de 0,5 % del padrón van juntos a «Otros» (la estimación los separa).
+        chicos = [r for r in M.index if r not in ("Blanco y nulo", "No votó") and M.loc[r].sum() / M.values.sum() < .005]
+        if any(f["no_identificada"] for f in aud["filas"] if f["origen"] in chicos):
+            aud["filas"].append(dict(origen="Otros", no_identificada=True, cerca_promedio=False))
     if y0=='1914d':
         DISTRITOS=dict(DISTRITOS);DISTRITOS['01']='Capital Federal'
 
     def dibujar(M, prov=None):
+        if br and chicos:
+            M = pd.concat([M.drop(index=chicos), M.loc[chicos].sum().to_frame("Otros").T]).reindex([r for r in M.index if r not in chicos][:-2] + ["Otros", "Blanco y nulo", "No votó"])
         if votantes:    # solo quienes votaron en las dos: misma estimación, sin la fila ni la columna «No votó»
             M = M.drop(index="No votó", columns="No votó", errors="ignore")
         M = M.loc[M.sum(1) > 0, M.sum(0) > 0]      # sin categorias vacias (p. ej. Proyecto Sur sin Capital en 2003 -> 2009)
@@ -102,11 +122,24 @@ def main(y0, y1, votantes=False, reducido=False):
         L, R = nodes(G.sum(1), k0), nodes(G.sum(0), k1)
         noid = set() if prov else {f["origen"] for f in aud["filas"] if f["no_identificada"]}
         cerca = set() if prov else {f["origen"] for f in aud["filas"] if f["cerca_promedio"]}
+        sens = set() if prov else {f["origen"] for f in aud["filas"] if f.get("sensible")}       # solo Brasil por ahora
+        borde = set() if prov else {(f["origen"], c) for f in aud["filas"] for c in f.get("borde", [])}
         notas = ["Matriz provincial, penalizada hacia la nacional: con pocas unidades se parece a ella. La auditoría por fila (* y †) es solo nacional."] if prov else []
+        if br:
+            notas = ["Matriz de la UF: suma de las de sus regiones, encogidas hacia ella. Las marcas de auditoría (*, °, ‡) son solo nacionales."] if prov else []
+            cov = cob_uf.loc[[k for k, n in DISTRITOS.items() if n == prov]] if prov else cob_uf
+            notas.append("Cobertura: %s del padrón del balotaje (secciones con el mismo padrón en las dos vueltas, ±5 electores y 1 %%). Sin extrapolar el resto." % fmt(100 * cov.electores_usados.sum() / cov.electores_2.sum()))
+            if not prov:
+                notas.append("Bootstrap por local (%d réplicas, recalculando centro y penalizaciones) en intervalos.csv, con el rango entre especificaciones." % ctl["bootstrap"])
         if reducido: notas.append("«No votó» y sus cintas están dibujados a escala 1:%d para ahorrar espacio; las cifras son las reales." % round(1 / REDUCIDO))
-        if noid: notas.append("* Fila no identificada: los datos no alcanzan para saber adónde fue; las dos variantes del modelo no coinciden (ver AUDITORIA.md).")
+        if noid: notas.append("* Fila no identificada: los datos no alcanzan para saber adónde fue; las dos variantes del modelo no coinciden (ver AUDITORIA.md)." if not br else
+                              "* Fila no identificada: los datos no alcanzan para saber adónde fue; cambia más de 20 puntos entre variantes o escalas (ver AUDITORIA.md).")
+        if br and chicos and not prov: notas.append("Otros: %s (por separado en matriz_pct.csv)." % ", ".join(chicos))
         if cerca: notas.append("† Fila cerca del promedio: se reparte casi como el total; puede ser un reparto real o falta de señal para esa fila (ver AUDITORIA.md).")
+        if sens: notas.append("° Fila sensible: alguna celda cambia más de 10 puntos con otra escala territorial o especificación del modelo (ver AUDITORIA.md).")
+        if borde: notas.append("‡ Alguna celda quedó por debajo de 0,5 %, en el límite del modelo (no puede dar menos de 0): el valor real puede ser mayor.")
         unidad = "departamento; Córdoba por circuito" if emi else "departamento" if int(n0.rstrip("pbd")) < 1960 else "circuito"
+        if br: unidad = "sección electoral"
         if ctl.get("unidades_por_provincia") and ctl.get("correspondencias"):
             ids = [k for k in ctl["unidades_por_provincia"] if not prov or DISTRITOS.get(k) == prov]
             counts = {k: sum(ctl["unidades_por_provincia"][dd][k] for dd in ids)
@@ -135,7 +168,11 @@ def main(y0, y1, votantes=False, reducido=False):
                     notas.append('Conservadores y Unión Cívica: reparto provincial inestable entre variantes; ver Capital.md.')
             if prov and counts["circuitos"] and not (counts["grupos_circuitos"] or counts["departamentos"]):
                 unidad = "circuito"
-        titulo = "Transferencias de votos" + (": " + prov if prov else " (cobertura parcial)" if y0=='1914d' else "")
+        if breve:    # --breve: sin notas al pie; las marcas y la fuente en dos líneas (detalle en RESUMEN.md)
+            marcas = [t for t, c in (("* no identificada", noid), ("† cerca del promedio", cerca), ("° sensible", sens), ("‡ celda en el borde", borde)) if c]
+            linea_breve = ("«No votó» a escala 1:%d (cifras reales). " % round(1 / REDUCIDO) if reducido else "") + (" · ".join(marcas) + ": ver RESUMEN.md." if marcas else "")
+            notas = []
+        titulo = "Transferencias de votos" + (": " + prov if prov else " (cobertura parcial)" if y0=='1914d' else ": Brasil" if br else "")
         ajuste_titulo = ' textLength="850" lengthAdjust="spacingAndGlyphs"' if len(titulo) > 49 else ""
         subtitulo = f"{cargo} {t0} → {t1} (inferencia ecológica por {unidad})"
         ajuste_subtitulo = ' textLength="850" lengthAdjust="spacingAndGlyphs"' if len(subtitulo) > 90 else ""
@@ -159,18 +196,18 @@ def main(y0, y1, votantes=False, reducido=False):
                 flows.append('<path d="%s" fill="%s" fill-opacity="0.45"><title>%s → %s: %s votos\n%s del origen (%s)\n%s del destino (%s)%s</title></path>' % (
                     p, col(a, y0), html.escape(a), html.escape(b), f"{round(v):,}".replace(",", "."),
                     fmt(100 * v / M.loc[a].sum()), html.escape(a), fmt(100 * v / M[b].sum()), html.escape(b),
-                    "\n(fila no identificada)" if a in noid else ""))
+                    ("\n(fila no identificada)" if a in noid else "") + ("\n(en el límite del modelo: el valor real puede ser mayor)" if (a, b) in borde else "")))
         s += flows
         def label_positions(nodes):
             result, last = {}, TOP - 14
             for name, (y,h) in nodes.items():
-                result[name] = max(y+h/2,last+14) if historical else y+h/2
+                result[name] = max(y+h/2,last+14) if historical or br else y+h/2
                 last = result[name]
             return result
         ly, ry = label_positions(L), label_positions(R)
         for n, (y, h) in L.items():
             s.append('<rect x="%d" y="%.1f" width="%d" height="%.1f" fill="%s"/>' % (X0, y, NODE, max(h, 1), col(n, y0)))
-            s.append('<text x="%d" y="%.1f" font-size="14" font-weight="bold" text-anchor="end" dominant-baseline="middle" fill="#222">%s: %s</text>' % (X0 - 8, ly[n], html.escape(n) + (" *" if n in noid else "") + (" †" if n in cerca else ""), fmt(100 * M.loc[n].sum() / tot)))
+            s.append('<text x="%d" y="%.1f" font-size="14" font-weight="bold" text-anchor="end" dominant-baseline="middle" fill="#222">%s: %s</text>' % (X0 - 8, ly[n], html.escape(n) + (" *" if n in noid else "") + (" †" if n in cerca else "") + (" °" if n in sens else "") + (" ‡" if any(o == n for o, _ in borde) else ""), fmt(100 * M.loc[n].sum() / tot)))
         for n, (y, h) in R.items():
             s.append('<rect x="%d" y="%.1f" width="%d" height="%.1f" fill="%s"/>' % (X1, y, NODE, max(h, 1), col(n, y1)))
             label = html.escape(n) + ": " + fmt(100 * M[n].sum() / tot)
@@ -189,17 +226,25 @@ def main(y0, y1, votantes=False, reducido=False):
             s[-1] = s[-1].replace('Porcentajes sobre el padrón', 'Porcentajes sobre votos desglosados')
         if votantes:
             s[-1] = re.sub(r">Porcentajes sobre .*</text>", ">Sin «No votó»: % sobre quienes votaron en las dos elecciones (misma estimación). Método: RxC penalizado (E. Calvo), por provincia.</text>", s[-1])
+        if br:
+            s[-1] = s[-1].replace("de los circuitos usados", "de las secciones usadas").replace("una matriz por provincia", "una matriz por " + nivel_br + " encogida hacia su UF")
         if y0=='1914d':s[-1]=s[-1].replace('votos desglosados','votos partidarios publicados')
         if y0=='1914d':s[-1]=f'<text x="20" y="{HH-30}" font-size="11.5" fill="#555">Porcentajes sobre votos partidarios publicados de 1916. Ajuste RxC penalizado por provincia; ver RESUMEN.md.</text>'
+        if br and votantes:s[-1]=s[-1].replace("por provincia.", "por %s del IBGE." % nivel_br)
+        if br and not votantes:s[-1]=f'<text x="20" y="{HH-30}" font-size="11.5" fill="#555">Porcentajes sobre el padrón del balotaje de las secciones usadas. RxC penalizado (E. Calvo), una matriz por {nivel_br} del IBGE.</text>'
         fuente = ("E. Calvo (Córdoba por circuito), Lupu y Stokes (San Luis, Santa Cruz) y PolAr" if emi else
                   "E. Calvo, Córdoba por circuito" + (", y PolAr (A. Tow), por mesa" if int(n1.rstrip("pbd")) >= 2003 else "") if cba else
                   "Cantón, Materiales... (1968), t. II, por departamento" if int(n0.rstrip("pbd")) < 1960 else
                   "PolAr (Atlas Electoral de A. Tow), por mesa" if int(n1.rstrip("pbd")) <= 2009 else
                   "PolAr (Atlas Electoral de A. Tow) y DINE, por mesa" if int(n0.rstrip("pbd")) <= 2009 else "DINE, escrutinio provisorio por mesa")
         if historical: fuente = 'Base departamental de E. Calvo; agrupaciones de los atlas locales'
+        if br: fuente = "TSE, votos y padrón por sección (26/10/2026)"
         if y0=='1914d':fuente='Cantón y actas HCDN, transcripciones locales; sin cifras estimadas ni duplicación de datos compartidos'
         s.append('<text x="20" y="%d" font-size="11.5" fill="#555">Fuente: %s. Las celdas de categorías chicas (&lt;5 %%) tienen márgenes de error grandes: ver intervalos.csv.</text>' % (HH - 12, fuente))
         if y0=='1914d':s[-1]=f'<text x="20" y="{HH-12}" font-size="11.5" fill="#555">Fuentes: Cantón y actas HCDN, transcripciones locales. Sin cifras estimadas ni duplicación de datos compartidos.</text>'
+        if breve:
+            s[-2] = '<text x="20" y="%d" font-size="11.5" fill="#555">%s</text>' % (HH - 30, html.escape(linea_breve))
+            s[-1] = '<text x="20" y="%d" font-size="11.5" fill="#555">Fuente: %s. Inferencia ecológica RxC (E. Calvo).</text>' % (HH - 12, fuente)
         for i, t in enumerate(notas):
             s.append('<text x="20" y="%d" font-size="11.5" fill="#555">%s</text>' % (HH - 48 - 18 * i, html.escape(t)))
         if aud["poco_informativa"] and not prov:
@@ -208,10 +253,10 @@ def main(y0, y1, votantes=False, reducido=False):
         return "\n".join(s)
 
     svg = dibujar(M)
-    suf = "_votantes" if votantes else "_reducido" if reducido else ""
-    open(os.path.join(d, "sankey_%s_%s%s.svg" % (y0, y1, suf)), "w", encoding="utf8").write(svg)
+    suf = ("_votantes" if votantes else "_reducido" if reducido else "") + ("_breve" if breve else "")
+    open(os.path.join(d, "sankey_%s%s.svg" % (par, suf)), "w", encoding="utf8").write(svg)
     # HTML: nacional y una vista por provincia (por_provincia.csv), con un selector
-    vistas = [("nacional", "Total parcial" if y0=='1914d' else "Nacional", svg)]
+    vistas = [("nacional", "Total parcial" if y0=='1914d' else "Brasil (con el exterior)" if br else "Nacional", svg)]
     f = os.path.join(d, "por_provincia.csv")
     if os.path.exists(f):
         P = pd.read_csv(f, dtype={"distrito": str}, encoding="utf-8-sig")
@@ -221,18 +266,18 @@ def main(y0, y1, votantes=False, reducido=False):
             if Mp.values.sum() > 0 and P.distrito.nunique() > 1:
                 vistas.append((dd, DISTRITOS.get(dd, dd), dibujar(Mp, DISTRITOS.get(dd, dd))))
     sel = "" if len(vistas) == 1 else (
-        '<div style="padding:10px 16px;font:15px Helvetica,Arial,sans-serif"><label for="v">Provincia:</label> <select id="v" style="font-size:15px">%s</select></div>'
-        % "".join('<option value="%s">%s</option>' % (k, html.escape(n)) for k, n, _ in vistas))
+        '<div style="padding:10px 16px;font:15px Helvetica,Arial,sans-serif"><label for="v">%s:</label> <select id="v" style="font-size:15px">%s</select></div>'
+        % ("UF" if br else "Provincia", "".join('<option value="%s">%s</option>' % (k, html.escape(n)) for k, n, _ in vistas)))
     divs = "".join('<div class="vista" id="v-%s"%s>%s</div>' % (k, "" if i == 0 else " hidden", sv) for i, (k, _, sv) in enumerate(vistas))
     js = "" if len(vistas) == 1 else (
         "<script>const s=document.getElementById('v');function ver(k){document.querySelectorAll('.vista').forEach(e=>e.hidden=e.id!=='v-'+k);s.value=k;}"
         "s.onchange=()=>{ver(s.value);history.replaceState(null,'','#'+s.value);};"
         "function desdeHash(){const k=location.hash.slice(1);ver(document.getElementById('v-'+k)?k:'nacional');}"
         "window.addEventListener('hashchange',desdeHash);desdeHash();</script>")
-    open(os.path.join(d, "sankey_%s_%s%s.html" % (y0, y1, suf)), "w", encoding="utf8").write(
+    open(os.path.join(d, "sankey_%s%s.html" % (par, suf)), "w", encoding="utf8").write(
         '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Transferencias %s-%s</title>'
         '<style>body{margin:0;background:#fff}.vista svg{display:block;width:100%%;max-width:900px;height:auto}.vista path:hover{fill-opacity:.8;cursor:help}</style><body>%s%s%s</body>' % (y0, y1, sel, divs, js))
 
 
 if __name__ == "__main__":
-    main(*[a if a.endswith(("p", "b", "d", "c", "e")) else int(a) for a in sys.argv[1:3]], votantes="--votantes" in sys.argv, reducido="--reducido" in sys.argv)
+    main(*[a if a.endswith(("p", "b", "d", "c", "e")) or a.startswith("brasil") else int(a) for a in sys.argv[1:3]], votantes="--votantes" in sys.argv, reducido="--reducido" in sys.argv, breve="--breve" in sys.argv)

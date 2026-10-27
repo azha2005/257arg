@@ -29,6 +29,7 @@ PARES.append('1989p_1997d')
 PARES.extend(['1995p_1997d','1995p_1999p','1983p_1985d'])
 PARES.append('1914d_1916d')
 PARES.extend(['2023pp_2025', '2023p_2025', '2023b_2025'])   # presidente 2023 (PASO, general, balotaje) -> diputados 2025
+PARES.append('brasil_2026p_2026b')
 
 
 def pct(M):
@@ -56,6 +57,13 @@ def auditar(par):
                           sep=round(sep_f[r], 1), sep_calvo=round(sep_c[r], 1),
                           cerca_promedio=bool(peso >= 5 and r not in NO_PARTIDO and sep_f[r] < SEPARACION_MIN),
                           no_identificada=bool(dif.max() > 30 or (peso < 5 and dif.max() > 20))))
+    # Criterios adicionales que trae el par en control.json (Brasil 2026: escala territorial y celdas en el borde).
+    extra = ctl.get("auditoria_extra", {})
+    for f in filas:
+        e = extra.get(f["origen"], {})
+        f["no_identificada"] = f["no_identificada"] or bool(e.get("no_identificada"))
+        f["sensible"] = bool(e.get("sensible")) and not f["no_identificada"]
+        f["borde"] = e.get("borde", [])
     pw = M.sum(1) / M.values.sum()
     big = [r for r in M.index if pw[r] >= .05 and r not in NO_PARTIDO]
     sep = float((sep_f[big] * pw[big]).sum() / pw[big].sum()) if big else float("nan")
@@ -87,11 +95,13 @@ def main():
     for par in PARES:
         if not os.path.exists(os.path.join(HERE, par, "control.json")): continue
         a = auditar(par)
-        out += ["## " + par.replace("_", " → "), "", "Penalización elegida: %s; error de validación cruzada (pp): %s" % (a["lam"], a["cv"]), "",
+        out += ["## " + par.replace("brasil_", "Brasil ").replace("_", " → "), "", "Penalización elegida: %s; error de validación cruzada (pp): %s" % (a["lam"], a["cv"]), "",
                 "Separación de las filas: %s puntos%s" % (a["separacion"], " — **matriz poco informativa**: las filas repiten el promedio" if a["poco_informativa"] else ""), "",
                 "| Origen | Peso | Dif. Calvo | Celda | Principal | Calvo | IC | Sep. | |", "|---|---|---|---|---|---|---|---|---|"]
         for f in a["filas"]:
-            marca = [m for m, c in (("**no identificada**", f["no_identificada"]), ("**cerca del promedio**", f["cerca_promedio"])) if c]
+            marca = [m for m, c in (("**no identificada**", f["no_identificada"]), ("**cerca del promedio**", f["cerca_promedio"]),
+                                    ("sensible a la escala o especificación", f.get("sensible"))) if c]
+            if f.get("borde"): marca.append("en el borde (<0,5 %): " + ", ".join(f["borde"]))
             out.append("| %s | %s | %s | %s | %s | %s | %s | %s / %s | %s |" % (f["origen"], f["peso"], f["dif_calvo"], f["celda"], f["principal"],
                        f["calvo"], f["ancho_ic"], f["sep"], f["sep_calvo"], ", ".join(marca)))
         if a["imposibles"]:

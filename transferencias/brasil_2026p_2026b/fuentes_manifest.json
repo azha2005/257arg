@@ -1,0 +1,89 @@
+{
+  "votos": {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2026_BR.zip?verificacion=20261026",
+    "fecha_utc": "2026-10-27T01:55:05.984058+00:00",
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*, *",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Mon, 26 Oct 2026 17:42:32 GMT",
+      "ETag": "\"e6af70f-65ec1dac721b7\"",
+      "Content-Length": "241891087",
+      "Cache-Control": "max-age=43200",
+      "Date": "Tue, 27 Oct 2026 01:54:05 GMT",
+      "Connection": "keep-alive",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "sha256": "c928321f63f2d095706fca73d4607c048d2ada23bda6876455d6911aaf1bc9c1",
+    "bytes": 241891087,
+    "miembros": [
+      "votacao_secao_2026_BR.csv",
+      "leiame.pdf"
+    ]
+  },
+  "detalle": {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2026.zip?verificacion=20261026",
+    "fecha_utc": "2026-10-27T01:55:04.815400+00:00",
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*, *",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Mon, 26 Oct 2026 15:35:35 GMT",
+      "ETag": "\"df80409-65ec014ca87c2\"",
+      "Content-Length": "234357769",
+      "Cache-Control": "max-age=43200",
+      "Date": "Tue, 27 Oct 2026 01:54:05 GMT",
+      "Connection": "keep-alive",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "sha256": "8ef9ce3a85cde260471faf7a83a9b4f5ccf3993fdda942aacaa658574344789c",
+    "bytes": 234357769,
+    "miembros": [
+      "detalhe_votacao_secao_2026_AP.csv",
+      "detalhe_votacao_secao_2026_BR.csv",
+      "detalhe_votacao_secao_2026_BA.csv",
+      "detalhe_votacao_secao_2026_AL.csv",
+      "detalhe_votacao_secao_2026_BRASIL.csv",
+      "detalhe_votacao_secao_2026_AC.csv",
+      "detalhe_votacao_secao_2026_AM.csv",
+      "detalhe_votacao_secao_2026_CE.csv",
+      "detalhe_votacao_secao_2026_DF.csv",
+      "detalhe_votacao_secao_2026_ES.csv",
+      "detalhe_votacao_secao_2026_GO.csv",
+      "detalhe_votacao_secao_2026_MA.csv",
+      "detalhe_votacao_secao_2026_MG.csv",
+      "detalhe_votacao_secao_2026_MS.csv",
+      "detalhe_votacao_secao_2026_MT.csv",
+      "detalhe_votacao_secao_2026_PA.csv",
+      "detalhe_votacao_secao_2026_PB.csv",
+      "detalhe_votacao_secao_2026_PE.csv",
+      "detalhe_votacao_secao_2026_PI.csv",
+      "detalhe_votacao_secao_2026_PR.csv",
+      "detalhe_votacao_secao_2026_RJ.csv",
+      "detalhe_votacao_secao_2026_RN.csv",
+      "detalhe_votacao_secao_2026_RO.csv",
+      "detalhe_votacao_secao_2026_RR.csv",
+      "detalhe_votacao_secao_2026_SE.csv",
+      "detalhe_votacao_secao_2026_RS.csv",
+      "detalhe_votacao_secao_2026_SC.csv",
+      "detalhe_votacao_secao_2026_SP.csv",
+      "detalhe_votacao_secao_2026_TO.csv",
+      "detalhe_votacao_secao_2026_ZZ.csv",
+      "leiame.pdf"
+    ]
+  },
+  "ibge": {
+    "regioes_geograficas_composicao_por_municipios_2017_20180911.xlsx": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/divisao_regional/divisao_regional_do_brasil/divisao_regional_do_brasil_em_regioes_geograficas_2017/tabelas/regioes_geograficas_composicao_por_municipios_2017_20180911.xlsx",
+      "sha256": "fb1546ee6036ce30b5f96b8fcaf432b3b0ab7b55494b18f3eacd40a6da47aea9"
+    },
+    "municipios_brasileiros_tse.csv": {
+      "url": "https://raw.githubusercontent.com/betafcc/Municipios-Brasileiros-TSE/master/municipios_brasileiros_tse.csv",
+      "sha256": "723eae7e5ac570370137777e4de8e5679af2fe29a05dd0b4ff04235cca5b901a"
+    }
+  }
+}

@@ -390,6 +390,8 @@ Distancia por fila (½ Σ |diferencia|, en puntos del voto de la fila), media po
 
 ## Nuevos cruces solicitados en octubre de 2026
 
+**Brasil 2026, primera vuelta presidencial → balotaje:** [Sankey nacional y por UF](brasil_2026p_2026b/sankey_brasil_2026p_2026b.html), [informe y controles](brasil_2026p_2026b/RESUMEN.md). TSE por sección; 497.147 secciones, 27 UFs y exterior, 99,62 % del padrón de destino. RxC jerárquico (centro nacional → UF → región geográfica del IBGE, `brasil2026_regiones.py`): penalizaciones y nivel por validación cruzada con municipios enteros, prueba fuera de muestra contra la matriz por UF, la nacional y Calvo, 200 bootstrap por local que recalculan centro y penalizaciones, rango entre especificaciones en `intervalos.csv` y alerta de celdas en el borde (‡). Sankey con el mismo `sankey.py` que los cruces argentinos (`python sankey.py brasil2026p 2026b`), filas en [AUDITORIA.md](AUDITORIA.md). Adaptador y scripts `brasil2026_*.py`; las bases originales quedan en `datos_oficiales/brasil2026/` (regiones del IBGE en `ibge/`).
+
 [Índice con HTML, resúmenes, cobertura y controles](INDICE_NUEVOS_CRUCES.md). Incluye los cruces 2013–2017, presidenciales 2015–2023, 2009/2013 diputados hacia 2015, los cuatro pares hacia 2019 y los históricos 1983–1997. Todos tienen selector provincial; las ausencias de Tierra del Fuego en 1987 y San Luis en 1997 están documentadas. [Fuentes y utilidad de los históricos; Deseado 1995 extrapolado](historicos_1989/LEEME.md).
 
 ### Antecedente metodológico

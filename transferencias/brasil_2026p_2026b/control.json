@@ -1,0 +1,780 @@
+{
+  "secciones": 497147,
+  "locales": 94021,
+  "municipios": 5712,
+  "ufs": [
+    "AC",
+    "AL",
+    "AM",
+    "AP",
+    "BA",
+    "CE",
+    "DF",
+    "ES",
+    "GO",
+    "MA",
+    "MG",
+    "MS",
+    "MT",
+    "PA",
+    "PB",
+    "PE",
+    "PI",
+    "PR",
+    "RJ",
+    "RN",
+    "RO",
+    "RR",
+    "RS",
+    "SC",
+    "SE",
+    "SP",
+    "TO",
+    "ZZ"
+  ],
+  "electores": 158148122,
+  "tolerancia_padron": "hasta 5 electores y 1%; origen reescalado al padron de destino; sensibilidad con padron identico",
+  "nivel": "intermedia",
+  "regiones": {
+    "intermedia": 134,
+    "inmediata": 511
+  },
+  "lambda": 2e-06,
+  "lambda_region": {
+    "intermedia": 2e-05,
+    "inmediata": 0.002
+  },
+  "error_cv_por_nivel": {
+    "uf": 1.7837083609084747,
+    "intermedia": 1.7556844938071414,
+    "inmediata": 1.7674863599996753
+  },
+  "validacion_cruzada_pp": {
+    "0.002": 1.8926944179785983,
+    "0.0002": 1.8370777975916428,
+    "2e-05": 1.8011658207316552,
+    "2e-06": 1.7837083609084747,
+    "2e-07": 1.7683974446014563,
+    "0": 1.7667730323045454
+  },
+  "validacion_cruzada_region_pp": {
+    "intermedia": {
+      "0.2": 1.7834816500081274,
+      "0.02": 1.7816212326238392,
+      "0.002": 1.771844938093426,
+      "0.0002": 1.7591585079921386,
+      "2e-05": 1.7556844938071414,
+      "2e-06": 1.7550946620343195,
+      "0": 1.7390318363467623
+    },
+    "inmediata": {
+      "0.2": 1.7833849232386436,
+      "0.02": 1.780764166605002,
+      "0.002": 1.7674863599996753,
+      "0.0002": 1.7523634548815152,
+      "2e-05": 1.7515181333387424,
+      "2e-06": 1.7543653244958446,
+      "0": 1.7511225951347063
+    }
+  },
+  "folds": "municipios enteros; centro nacional y matrices de UF recalculados sin el fold",
+  "fuera_de_muestra": {
+    "media nacional": {
+      "rmse": 10.19027570694784,
+      "rmse_votantes": 13.413398521811839
+    },
+    "sin origen": {
+      "rmse": 7.416404521938911,
+      "rmse_votantes": 9.713392441392983
+    },
+    "Calvo (nacional)": {
+      "rmse": 2.1431272241024084,
+      "rmse_votantes": 1.9671191860888206
+    },
+    "centro nacional": {
+      "rmse": 2.142042631796684,
+      "rmse_votantes": 1.9697374459190102
+    },
+    "UF": {
+      "rmse": 1.9563636203487873,
+      "rmse_votantes": 1.8441278960069167
+    },
+    "intermedia": {
+      "rmse": 1.9254170687841337,
+      "rmse_votantes": 1.8240920167541512
+    },
+    "inmediata": {
+      "rmse": 1.9394874818669148,
+      "rmse_votantes": 1.832034921994227
+    }
+  },
+  "bootstrap": 200,
+  "bloque_bootstrap": "local de votacion dentro de UF; centro nacional, lambda1 y lambda2 recalculados en cada replica (grillas completas); nivel y marginales de origen fijos",
+  "seleccion_por_escala": {
+    "local": {
+      "lam1": 2e-07,
+      "lam2": {
+        "intermedia": 0.0002,
+        "inmediata": 0.0002
+      },
+      "nivel": "intermedia",
+      "error_nivel": {
+        "uf": 1.1512052487771829,
+        "intermedia": 1.1133746715767607,
+        "inmediata": 1.1038329661434894
+      }
+    },
+    "munzona": {
+      "lam1": 2e-07,
+      "lam2": {
+        "intermedia": 2e-05,
+        "inmediata": 2e-05
+      },
+      "nivel": "inmediata",
+      "error_nivel": {
+        "uf": 0.7880528373385,
+        "intermedia": 0.7325992147536347,
+        "inmediata": 0.7173930500837854
+      }
+    },
+    "estricta": {
+      "lam1": 2e-07,
+      "lam2": {
+        "intermedia": 0.0002,
+        "inmediata": 0.0002
+      },
+      "nivel": "intermedia",
+      "error_nivel": {
+        "uf": 1.7762696168015266,
+        "intermedia": 1.7484899091027146,
+        "inmediata": 1.7403434821033286
+      }
+    }
+  },
+  "lambda_bootstrap": {
+    "lam1": {
+      "2e-06": 185,
+      "2e-07": 15
+    },
+    "lam2": {
+      "0.0002": 155,
+      "2e-05": 31,
+      "0.002": 14
+    }
+  },
+  "rmse_territorial_pp": 1.8713271487518068,
+  "votos_distintos_vs_calvo": 1757126.0513618996,
+  "sensibilidad": [
+    {
+      "escala": "UF",
+      "unidades": 497147,
+      "electores": 158148122,
+      "votos_distintos_a_masa_comun": 169140.02963932624,
+      "max_diferencia_pp": 0.6634598212799658
+    },
+    {
+      "escala": "inmediata",
+      "unidades": 497147,
+      "electores": 158148122,
+      "votos_distintos_a_masa_comun": 164324.8396308492,
+      "max_diferencia_pp": 0.6955378964326187
+    },
+    {
+      "escala": "local",
+      "unidades": 94021,
+      "electores": 158148122,
+      "votos_distintos_a_masa_comun": 1708890.6096342683,
+      "max_diferencia_pp": 35.103258637186904
+    },
+    {
+      "escala": "munzona",
+      "unidades": 6247,
+      "electores": 158148122,
+      "votos_distintos_a_masa_comun": 3734887.6990994057,
+      "max_diferencia_pp": 43.99170479090982
+    },
+    {
+      "escala": "estricta",
+      "unidades": 443483,
+      "electores": 140121114,
+      "votos_distintos_a_masa_comun": 1319452.1195236933,
+      "max_diferencia_pp": 7.930794183216494
+    }
+  ],
+  "marginal_origen_observada": {
+    "Flávio Bolsonaro (PL)": 55881663,
+    "Lula (PT)": 53666988,
+    "Augusto Cury": 3434865,
+    "Renan Santos": 2661502,
+    "Ronaldo Caiado": 2594608,
+    "Romeu Zema": 324497,
+    "Samara Martins": 122167,
+    "Hertz Dias": 42792,
+    "Clariana Barão": 39871,
+    "Edmilson Costa": 22582,
+    "Wilson Grassi": 16808,
+    "Rui Costa Pimenta": 14915,
+    "Leonardo Araújo": 5224,
+    "Blanco y nulo": 5953799,
+    "No votó": 33359468
+  },
+  "marginal_origen_modelada": {
+    "Flávio Bolsonaro (PL)": 55884050,
+    "Lula (PT)": 53668995,
+    "Augusto Cury": 3435008,
+    "Renan Santos": 2661608,
+    "Ronaldo Caiado": 2594702,
+    "Romeu Zema": 324511,
+    "Samara Martins": 122171,
+    "Hertz Dias": 42794,
+    "Clariana Barão": 39873,
+    "Edmilson Costa": 22583,
+    "Wilson Grassi": 16809,
+    "Rui Costa Pimenta": 14916,
+    "Leonardo Araújo": 5224,
+    "Blanco y nulo": 5954019,
+    "No votó": 33360861
+  },
+  "marginal_destino": {
+    "Lula (PT)": 64011000,
+    "Flávio Bolsonaro (PL)": 59589054,
+    "Blanco y nulo": 4139976,
+    "No votó": 30408092
+  },
+  "marginal_destino_estimada": {
+    "Lula (PT)": 64134019,
+    "Flávio Bolsonaro (PL)": 59781983,
+    "Blanco y nulo": 4215735,
+    "No votó": 30016385
+  },
+  "marginal_destino_provincia": {
+    "AC": {
+      "Lula (PT)": 143103,
+      "Flávio Bolsonaro (PL)": 285230,
+      "Blanco y nulo": 21266,
+      "No votó": 158375
+    },
+    "AL": {
+      "Lula (PT)": 1148209,
+      "Flávio Bolsonaro (PL)": 739645,
+      "Blanco y nulo": 54682,
+      "No votó": 488853
+    },
+    "AM": {
+      "Lula (PT)": 1143545,
+      "Flávio Bolsonaro (PL)": 972653,
+      "Blanco y nulo": 70875,
+      "No votó": 605418
+    },
+    "AP": {
+      "Lula (PT)": 222279,
+      "Flávio Bolsonaro (PL)": 198154,
+      "Blanco y nulo": 8320,
+      "No votó": 146557
+    },
+    "BA": {
+      "Lula (PT)": 6461409,
+      "Flávio Bolsonaro (PL)": 2595942,
+      "Blanco y nulo": 326865,
+      "No votó": 1884043
+    },
+    "CE": {
+      "Lula (PT)": 4021564,
+      "Flávio Bolsonaro (PL)": 1811180,
+      "Blanco y nulo": 168652,
+      "No votó": 968537
+    },
+    "DF": {
+      "Lula (PT)": 808344,
+      "Flávio Bolsonaro (PL)": 965051,
+      "Blanco y nulo": 62670,
+      "No votó": 385016
+    },
+    "ES": {
+      "Lula (PT)": 998714,
+      "Flávio Bolsonaro (PL)": 1290859,
+      "Blanco y nulo": 112502,
+      "No votó": 581018
+    },
+    "GO": {
+      "Lula (PT)": 1580921,
+      "Flávio Bolsonaro (PL)": 2338028,
+      "Blanco y nulo": 116085,
+      "No votó": 1030470
+    },
+    "MA": {
+      "Lula (PT)": 2805187,
+      "Flávio Bolsonaro (PL)": 1228082,
+      "Blanco y nulo": 89485,
+      "No votó": 1054367
+    },
+    "MG": {
+      "Lula (PT)": 6331123,
+      "Flávio Bolsonaro (PL)": 6219727,
+      "Blanco y nulo": 450173,
+      "No votó": 3318419
+    },
+    "MS": {
+      "Lula (PT)": 627353,
+      "Flávio Bolsonaro (PL)": 925489,
+      "Blanco y nulo": 37524,
+      "No votó": 429417
+    },
+    "MT": {
+      "Lula (PT)": 692245,
+      "Flávio Bolsonaro (PL)": 1347492,
+      "Blanco y nulo": 39982,
+      "No votó": 551318
+    },
+    "PA": {
+      "Lula (PT)": 2679781,
+      "Flávio Bolsonaro (PL)": 2189429,
+      "Blanco y nulo": 98694,
+      "No votó": 1268609
+    },
+    "PB": {
+      "Lula (PT)": 1789815,
+      "Flávio Bolsonaro (PL)": 862388,
+      "Blanco y nulo": 84159,
+      "No votó": 503953
+    },
+    "PE": {
+      "Lula (PT)": 4111931,
+      "Flávio Bolsonaro (PL)": 1829479,
+      "Blanco y nulo": 176243,
+      "No votó": 1095730
+    },
+    "PI": {
+      "Lula (PT)": 1649795,
+      "Flávio Bolsonaro (PL)": 523884,
+      "Blanco y nulo": 59837,
+      "No votó": 463747
+    },
+    "PR": {
+      "Lula (PT)": 2555407,
+      "Flávio Bolsonaro (PL)": 4272161,
+      "Blanco y nulo": 200579,
+      "No votó": 1547950
+    },
+    "RJ": {
+      "Lula (PT)": 4548090,
+      "Flávio Bolsonaro (PL)": 5152550,
+      "Blanco y nulo": 342010,
+      "No votó": 2770722
+    },
+    "RN": {
+      "Lula (PT)": 1400627,
+      "Flávio Bolsonaro (PL)": 729653,
+      "Blanco y nulo": 81106,
+      "No votó": 423744
+    },
+    "RO": {
+      "Lula (PT)": 293841,
+      "Flávio Bolsonaro (PL)": 673452,
+      "Blanco y nulo": 19640,
+      "No votó": 277046
+    },
+    "RR": {
+      "Lula (PT)": 83074,
+      "Flávio Bolsonaro (PL)": 218894,
+      "Blanco y nulo": 5392,
+      "No votó": 92528
+    },
+    "RS": {
+      "Lula (PT)": 2813599,
+      "Flávio Bolsonaro (PL)": 3863341,
+      "Blanco y nulo": 190144,
+      "No votó": 1628341
+    },
+    "SC": {
+      "Lula (PT)": 1411541,
+      "Flávio Bolsonaro (PL)": 3209806,
+      "Blanco y nulo": 123510,
+      "No votó": 969320
+    },
+    "SE": {
+      "Lula (PT)": 982173,
+      "Flávio Bolsonaro (PL)": 429978,
+      "Blanco y nulo": 44012,
+      "No votó": 271647
+    },
+    "SP": {
+      "Lula (PT)": 12065430,
+      "Flávio Bolsonaro (PL)": 14078598,
+      "Blanco y nulo": 1101967,
+      "No votó": 6731519
+    },
+    "TO": {
+      "Lula (PT)": 441831,
+      "Flávio Bolsonaro (PL)": 466454,
+      "Blanco y nulo": 43817,
+      "No votó": 226908
+    },
+    "ZZ": {
+      "Lula (PT)": 200069,
+      "Flávio Bolsonaro (PL)": 171455,
+      "Blanco y nulo": 9785,
+      "No votó": 534520
+    }
+  },
+  "filas": [
+    {
+      "origen": "Flávio Bolsonaro (PL)",
+      "peso_pct": 35.3365244806105,
+      "diferencia_calvo_pp": 0.18035141133875277,
+      "diferencia_escala_pp": 0.7340390719427825,
+      "separacion_promedio_pp": 62.00380264187733,
+      "ancho_max_ic_pp": 0.6866433871018819,
+      "ancho_max_modelos_pp": 0.9143904832815448,
+      "no_identificada": false,
+      "sensible": false,
+      "celdas_borde": "Lula (PT);Blanco y nulo;No votó",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Lula (PT)",
+      "peso_pct": 33.93590395678451,
+      "diferencia_calvo_pp": 0.0006022503098335186,
+      "diferencia_escala_pp": 1.1649449943100576,
+      "separacion_promedio_pp": 59.443387707027505,
+      "ancho_max_ic_pp": 0.1576293109444198,
+      "ancho_max_modelos_pp": 1.1649463151980934,
+      "no_identificada": false,
+      "sensible": false,
+      "celdas_borde": "Flávio Bolsonaro (PL);Blanco y nulo;No votó",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Augusto Cury",
+      "peso_pct": 2.172019441207685,
+      "diferencia_calvo_pp": 4.226779767576325,
+      "diferencia_escala_pp": 14.273317108989255,
+      "separacion_promedio_pp": 28.03577054387003,
+      "ancho_max_ic_pp": 2.9121056135357097,
+      "ancho_max_modelos_pp": 16.6139678108407,
+      "no_identificada": false,
+      "sensible": true,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Renan Santos",
+      "peso_pct": 1.6829840427545366,
+      "diferencia_calvo_pp": 8.124615995553347,
+      "diferencia_escala_pp": 13.76365737694743,
+      "separacion_promedio_pp": 18.306318848555698,
+      "ancho_max_ic_pp": 1.4223142058126408,
+      "ancho_max_modelos_pp": 14.109083998040415,
+      "no_identificada": false,
+      "sensible": true,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Ronaldo Caiado",
+      "peso_pct": 1.6406780601508648,
+      "diferencia_calvo_pp": 3.37043654287299,
+      "diferencia_escala_pp": 9.508008352858639,
+      "separacion_promedio_pp": 22.20086176741742,
+      "ancho_max_ic_pp": 1.9438198600421768,
+      "ancho_max_modelos_pp": 9.601678959721088,
+      "no_identificada": false,
+      "sensible": false,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Romeu Zema",
+      "peso_pct": 0.2051946138288054,
+      "diferencia_calvo_pp": 0.05103261032877171,
+      "diferencia_escala_pp": 8.0810674616827,
+      "separacion_promedio_pp": 61.790629727307724,
+      "ancho_max_ic_pp": 0.9272670222740573,
+      "ancho_max_modelos_pp": 8.081541479934538,
+      "no_identificada": false,
+      "sensible": false,
+      "celdas_borde": "Lula (PT);Blanco y nulo;No votó",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Samara Martins",
+      "peso_pct": 0.07725090636432069,
+      "diferencia_calvo_pp": 0.40272085008509206,
+      "diferencia_escala_pp": 17.687519393355032,
+      "separacion_promedio_pp": 51.9178958046571,
+      "ancho_max_ic_pp": 5.1481642038689595,
+      "ancho_max_modelos_pp": 22.041584746085846,
+      "no_identificada": false,
+      "sensible": true,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Hertz Dias",
+      "peso_pct": 0.027059203528409233,
+      "diferencia_calvo_pp": 0.6185663563238797,
+      "diferencia_escala_pp": 43.99170479090982,
+      "separacion_promedio_pp": 54.080330610098635,
+      "ancho_max_ic_pp": 2.6597483930303345,
+      "ancho_max_modelos_pp": 44.61027114723371,
+      "no_identificada": true,
+      "sensible": false,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Clariana Barão",
+      "peso_pct": 0.025212390101943174,
+      "diferencia_calvo_pp": 7.624291044326331,
+      "diferencia_escala_pp": 18.905751163468253,
+      "separacion_promedio_pp": 34.92109949251198,
+      "ancho_max_ic_pp": 19.740374995374157,
+      "ancho_max_modelos_pp": 23.334902974728582,
+      "no_identificada": false,
+      "sensible": true,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Edmilson Costa",
+      "peso_pct": 0.014279708846301281,
+      "diferencia_calvo_pp": 4.54813920292636,
+      "diferencia_escala_pp": 35.103258637186904,
+      "separacion_promedio_pp": 31.948341853024864,
+      "ancho_max_ic_pp": 17.822513658454874,
+      "ancho_max_modelos_pp": 39.65139784011326,
+      "no_identificada": true,
+      "sensible": false,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Wilson Grassi",
+      "peso_pct": 0.010628455564315275,
+      "diferencia_calvo_pp": 2.3106903633827116,
+      "diferencia_escala_pp": 21.01111005823464,
+      "separacion_promedio_pp": 17.944092683138983,
+      "ancho_max_ic_pp": 17.706766382530308,
+      "ancho_max_modelos_pp": 24.41340449016927,
+      "no_identificada": true,
+      "sensible": false,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Rui Costa Pimenta",
+      "peso_pct": 0.009431372148476886,
+      "diferencia_calvo_pp": 1.947535026603897,
+      "diferencia_escala_pp": 20.217207199452748,
+      "separacion_promedio_pp": 11.811677932151351,
+      "ancho_max_ic_pp": 16.756950313581378,
+      "ancho_max_modelos_pp": 35.19093123391194,
+      "no_identificada": true,
+      "sensible": false,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Leonardo Araújo",
+      "peso_pct": 0.0033032702924375708,
+      "diferencia_calvo_pp": 5.852816778497216,
+      "diferencia_escala_pp": 10.751594282832535,
+      "separacion_promedio_pp": 28.99257694773645,
+      "ancho_max_ic_pp": 25.01761853555508,
+      "ancho_max_modelos_pp": 16.604411061329753,
+      "no_identificada": false,
+      "sensible": true,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso_pct": 3.764837294468009,
+      "diferencia_calvo_pp": 6.568175501683394,
+      "diferencia_escala_pp": 9.160221111931023,
+      "separacion_promedio_pp": 56.710533952058974,
+      "ancho_max_ic_pp": 0.7274586998517605,
+      "ancho_max_modelos_pp": 9.539195007354497,
+      "no_identificada": false,
+      "sensible": false,
+      "celdas_borde": "Flávio Bolsonaro (PL);No votó",
+      "cerca_promedio": false
+    },
+    {
+      "origen": "No votó",
+      "peso_pct": 21.094692803348877,
+      "diferencia_calvo_pp": 1.568150656174272,
+      "diferencia_escala_pp": 2.5741400675750037,
+      "separacion_promedio_pp": 70.06766937103598,
+      "ancho_max_ic_pp": 0.9668849067082156,
+      "ancho_max_modelos_pp": 4.142290723749279,
+      "no_identificada": false,
+      "sensible": false,
+      "celdas_borde": "",
+      "cerca_promedio": false
+    }
+  ],
+  "auditoria_extra": {
+    "Flávio Bolsonaro (PL)": {
+      "no_identificada": false,
+      "sensible": false,
+      "borde": [
+        "Lula (PT)",
+        "Blanco y nulo",
+        "No votó"
+      ]
+    },
+    "Lula (PT)": {
+      "no_identificada": false,
+      "sensible": false,
+      "borde": [
+        "Flávio Bolsonaro (PL)",
+        "Blanco y nulo",
+        "No votó"
+      ]
+    },
+    "Augusto Cury": {
+      "no_identificada": false,
+      "sensible": true,
+      "borde": []
+    },
+    "Renan Santos": {
+      "no_identificada": false,
+      "sensible": true,
+      "borde": []
+    },
+    "Ronaldo Caiado": {
+      "no_identificada": false,
+      "sensible": false,
+      "borde": []
+    },
+    "Romeu Zema": {
+      "no_identificada": false,
+      "sensible": false,
+      "borde": [
+        "Lula (PT)",
+        "Blanco y nulo",
+        "No votó"
+      ]
+    },
+    "Samara Martins": {
+      "no_identificada": false,
+      "sensible": true,
+      "borde": []
+    },
+    "Hertz Dias": {
+      "no_identificada": true,
+      "sensible": false,
+      "borde": []
+    },
+    "Clariana Barão": {
+      "no_identificada": false,
+      "sensible": true,
+      "borde": []
+    },
+    "Edmilson Costa": {
+      "no_identificada": true,
+      "sensible": false,
+      "borde": []
+    },
+    "Wilson Grassi": {
+      "no_identificada": true,
+      "sensible": false,
+      "borde": []
+    },
+    "Rui Costa Pimenta": {
+      "no_identificada": true,
+      "sensible": false,
+      "borde": []
+    },
+    "Leonardo Araújo": {
+      "no_identificada": false,
+      "sensible": true,
+      "borde": []
+    },
+    "Blanco y nulo": {
+      "no_identificada": false,
+      "sensible": false,
+      "borde": [
+        "Flávio Bolsonaro (PL)",
+        "No votó"
+      ]
+    },
+    "No votó": {
+      "no_identificada": false,
+      "sensible": false,
+      "borde": []
+    }
+  },
+  "celdas_borde": [
+    {
+      "origen": "Flávio Bolsonaro (PL)",
+      "destino": "Lula (PT)",
+      "pct": 0.0,
+      "p95_pct": 0.1
+    },
+    {
+      "origen": "Flávio Bolsonaro (PL)",
+      "destino": "Blanco y nulo",
+      "pct": 0.01,
+      "p95_pct": 0.14
+    },
+    {
+      "origen": "Flávio Bolsonaro (PL)",
+      "destino": "No votó",
+      "pct": 0.18,
+      "p95_pct": 0.64
+    },
+    {
+      "origen": "Lula (PT)",
+      "destino": "Flávio Bolsonaro (PL)",
+      "pct": 0.0,
+      "p95_pct": 0.0
+    },
+    {
+      "origen": "Lula (PT)",
+      "destino": "Blanco y nulo",
+      "pct": 0.0,
+      "p95_pct": 0.04
+    },
+    {
+      "origen": "Lula (PT)",
+      "destino": "No votó",
+      "pct": 0.0,
+      "p95_pct": 0.12
+    },
+    {
+      "origen": "Romeu Zema",
+      "destino": "Lula (PT)",
+      "pct": 0.07,
+      "p95_pct": 0.93
+    },
+    {
+      "origen": "Romeu Zema",
+      "destino": "Blanco y nulo",
+      "pct": 0.1,
+      "p95_pct": 0.13
+    },
+    {
+      "origen": "Romeu Zema",
+      "destino": "No votó",
+      "pct": 0.24,
+      "p95_pct": 0.29
+    },
+    {
+      "origen": "Blanco y nulo",
+      "destino": "Flávio Bolsonaro (PL)",
+      "pct": 0.01,
+      "p95_pct": 0.01
+    },
+    {
+      "origen": "Blanco y nulo",
+      "destino": "No votó",
+      "pct": 0.06,
+      "p95_pct": 0.07
+    }
+  ],
+  "umbral_borde_pp": 0.5,
+  "alertas_marginales": [],
+  "segundos": 3334.5779999999977
+}

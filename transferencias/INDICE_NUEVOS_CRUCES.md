@@ -38,3 +38,5 @@ Los cruces históricos usan votos desglosados y no incluyen abstención: [fuente
 [PBA 1983p→1985d: comparación provincial de modelos](1983p_1985d/PBA.md).
 
 [1914–1916: fuentes y cobertura](fuentes_1914_1916/LEEME.md) | [Cacopardo: revisión de los cruces existentes](revision_cacopardo_1967/LEEME.md).
+
+**Brasil 2026, 1.ª vuelta → balotaje**: [HTML](brasil_2026p_2026b/sankey_brasil_2026p_2026b.html) / [sin No votó](brasil_2026p_2026b/sankey_brasil_2026p_2026b_votantes.html) | [Resumen](brasil_2026p_2026b/RESUMEN.md) | 497.147 secciones | 99.62 % del padrón del balotaje. Verificado con `brasil2026_verificar.py` y `brasil2026_revisar_html.py` (29 vistas por gráfico).

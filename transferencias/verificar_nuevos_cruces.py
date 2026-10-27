@@ -159,4 +159,10 @@ if __name__ == "__main__":
               "Los cruces históricos usan votos desglosados y no incluyen abstención: [fuentes, extrapolación y utilidad](historicos_1989/LEEME.md). Su cobertura no es cobertura del padrón.", ""]
     lines += ['[PBA 1983p→1985d: comparación provincial de modelos](1983p_1985d/PBA.md).','']
     lines += ['[1914–1916: fuentes y cobertura](fuentes_1914_1916/LEEME.md) | [Cacopardo: revisión de los cruces existentes](revision_cacopardo_1967/LEEME.md).','']
+    brasil = HERE / "brasil_2026p_2026b" / "VERIFICACION.json"
+    if brasil.exists():     # verificación propia: brasil2026_verificar.py y brasil2026_revisar_html.py
+        v = json.loads(brasil.read_text(encoding="utf8"))
+        lines += ["**Brasil 2026, 1.ª vuelta → balotaje**: [HTML](brasil_2026p_2026b/sankey_brasil_2026p_2026b.html) / [sin No votó](brasil_2026p_2026b/sankey_brasil_2026p_2026b_votantes.html) | "
+                  + f"[Resumen](brasil_2026p_2026b/RESUMEN.md) | {v['secciones']:,} secciones | {v['cobertura_destino_pct']:.2f} % del padrón del balotaje. ".replace(",", ".")
+                  + "Verificado con `brasil2026_verificar.py` y `brasil2026_revisar_html.py` (29 vistas por gráfico).", ""]
     (HERE / "INDICE_NUEVOS_CRUCES.md").write_text("\n".join(lines), encoding="utf8")

@@ -1,0 +1,595 @@
+{
+  "presidente_seccion": {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2026_BR.zip",
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*, *",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Tue, 06 Oct 2026 19:22:49 GMT",
+      "ETag": "\"9a21287-65d30ec9f3a44\"",
+      "Cache-Control": "max-age=11157",
+      "Date": "Tue, 27 Oct 2026 01:36:35 GMT",
+      "Content-Range": "bytes 161550983-161616518/161616519",
+      "Content-Length": "65536",
+      "Connection": "keep-alive",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "miembros": [
+      {
+        "nombre": "votacao_secao_2026_BR.csv",
+        "bytes": 1052510851,
+        "fecha_zip": [
+          2026,
+          10,
+          6,
+          19,
+          18,
+          16
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"NR_VOTAVEL\";\"NM_VOTAVEL\";\"QT_VOTOS\";\"NR_LOCAL_VOTACAO\";\"SQ_CANDIDATO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\"",
+          "\"06/10/2026\";\"14:03:43\";2026;2;\"Eleição Ordinária\";1;6257;\"Eleição Geral Federal 2026\";\"04/10/2026\";\"F\";\"RS\";\"BR\";\"BRASIL\";86363;\"BARRA DO GUARITA\";101;105;1;\"Presidente\";30;\"ROMEU ZEMA NETO\";1;1074;280002539826;\"ESC. EST. JOAO LEOPOLDO VOGT\";\"AV. TEN. PORTELA, 286\"",
+          "\"06/10/2026\";\"14:03:43\";2026;2;\"Eleição Ordinária\";1;6257;\"Eleição Geral Federal 2026\";\"04/10/2026\";\"F\";\"RS\";\"BR\";\"BRASIL\";86363;\"BARRA DO GUARITA\";101;105;1;\"Presidente\";13;\"LUIZ INÁCIO LULA DA SILVA\";129;1074;280002542548;\"ESC. EST. JOAO LEOPOLDO VOGT\";\"AV. TEN. PORTELA, 286\""
+        ]
+      },
+      {
+        "nombre": "leiame.pdf",
+        "bytes": 192420,
+        "fecha_zip": [
+          2026,
+          10,
+          6,
+          17,
+          2,
+          56
+        ]
+      }
+    ],
+    "bytes_descargados_sondeo": 73952
+  },
+  "detalle_seccion": {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2026.zip",
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*, *",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Mon, 26 Oct 2026 15:35:35 GMT",
+      "ETag": "\"df80409-65ec014ca87c2\"",
+      "Cache-Control": "max-age=22146",
+      "Date": "Tue, 27 Oct 2026 01:36:36 GMT",
+      "Content-Range": "bytes 234292233-234357768/234357769",
+      "Content-Length": "65536",
+      "Connection": "keep-alive",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "miembros": [
+      {
+        "nombre": "detalhe_votacao_secao_2026_AP.csv",
+        "bytes": 2754850,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          15,
+          30
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"AP\";\"AP\";\"AMAPÁ\";6050;\"MACAPÁ\";10;206;7;\"Deputado Estadual\";388;312;76;282;9;7;14;0;1546;\"ESCOLA ESTADUAL PROFESSORA MARIA CAVALCANTE DE AZEVEDO PICANÇO\";\"RUA CAJUEIRO, 543, BRASIL NOVO\";\"04/10/2026 19:21:01\";\"04/10/2026 19:24:04\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"AP\";\"AP\";\"AMAPÁ\";6050;\"MACAPÁ\";10;206;5;\"Senador\";388;312;76;544;28;52;0;0;1546;\"ESCOLA ESTADUAL PROFESSORA MARIA CAVALCANTE DE AZEVEDO PICANÇO\";\"RUA CAJUEIRO, 543, BRASIL NOVO\";\"04/10/2026 19:21:01\";\"04/10/2026 19:24:04\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_BR.csv",
+        "bytes": 351831261,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          23,
+          2
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6257;\"Eleição Geral Federal 2026\";\"04/10/2026\";\"F\";\"SP\";\"BR\";\"BRASIL\";71072;\"SÃO PAULO\";250;26;1;\"Presidente\";388;292;96;278;3;11;0;0;1031;\"COLÉGIO E FACULDADES INTEGRADAS CAMPOS SALLES\";\"RUA NOSSA SENHORA DA LAPA, 270\";\"04/10/2026 18:37:56\";\"04/10/2026 18:40:44\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";2;6258;\"Eleição Geral Federal 2026\";\"25/10/2026\";\"F\";\"SP\";\"BR\";\"BRASIL\";71072;\"SÃO PAULO\";256;119;1;\"Presidente\";341;253;88;239;6;8;0;0;1104;\"EE. DR. ALBERTO CARDOSO DE MELLO NETO\";\"AV. PROFA. VIRGÍLIA RODRIGUES ALVES DE CARVALHO PINTO, 633\";\"25/10/2026 20:46:38\";\"25/10/2026 20:46:50\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_BA.csv",
+        "bytes": 52881167,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          48
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"BA\";\"BA\";\"BAHIA\";37419;\"MUCURI\";35;234;5;\"Senador\";270;209;61;319;34;65;0;0;1163;\"ESCOLA MUNICIPAL VIRGÍLIO TEÓFILO\";\"AVENIDA DONATO SOARES DE OLIVEIRA, 689, ZONA RURAL - BELO CRUZEIRO\";\"04/10/2026 18:40:00\";\"04/10/2026 18:42:15\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"BA\";\"BA\";\"BAHIA\";37419;\"MUCURI\";35;234;6;\"Deputado Federal\";270;209;61;190;9;3;7;0;1163;\"ESCOLA MUNICIPAL VIRGÍLIO TEÓFILO\";\"AVENIDA DONATO SOARES DE OLIVEIRA, 689, ZONA RURAL - BELO CRUZEIRO\";\"04/10/2026 18:40:00\";\"04/10/2026 18:42:15\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_AL.csv",
+        "bytes": 10385170,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          15,
+          38
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"AL\";\"AL\";\"ALAGOAS\";28592;\"SANTANA DO IPANEMA\";19;90;6;\"Deputado Federal\";264;206;58;188;6;4;8;0;1350;\"COLÉGIO DIVINO MESTRE\";\"RUA CORONEL LUCENA MARANHÃO, 197\";\"04/10/2026 19:13:23\";\"04/10/2026 19:15:47\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"AL\";\"AL\";\"ALAGOAS\";28592;\"SANTANA DO IPANEMA\";19;90;3;\"Governador\";264;206;58;192;4;10;0;0;1350;\"COLÉGIO DIVINO MESTRE\";\"RUA CORONEL LUCENA MARANHÃO, 197\";\"04/10/2026 19:13:23\";\"04/10/2026 19:15:47\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_BRASIL.csv",
+        "bytes": 1090620422,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          33,
+          48
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SP\";\"SP\";\"SÃO PAULO\";71072;\"SÃO PAULO\";250;26;6;\"Deputado Federal\";388;292;96;262;8;9;13;0;1031;\"COLÉGIO E FACULDADES INTEGRADAS CAMPOS SALLES\";\"RUA NOSSA SENHORA DA LAPA, 270\";\"04/10/2026 18:37:56\";\"04/10/2026 18:40:44\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6257;\"Eleição Geral Federal 2026\";\"04/10/2026\";\"F\";\"SP\";\"BR\";\"BRASIL\";71072;\"SÃO PAULO\";250;26;1;\"Presidente\";388;292;96;278;3;11;0;0;1031;\"COLÉGIO E FACULDADES INTEGRADAS CAMPOS SALLES\";\"RUA NOSSA SENHORA DA LAPA, 270\";\"04/10/2026 18:37:56\";\"04/10/2026 18:40:44\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_AC.csv",
+        "bytes": 4006541,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          15,
+          32
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";2;6260;\"Eleições Gerais Estaduais 2026\";\"25/10/2026\";\"E\";\"AC\";\"AC\";\"ACRE\";1392;\"RIO BRANCO\";9;342;3;\"Governador\";337;278;59;257;4;17;0;0;2135;\"ESCOLA PROFESSORA IONE PORTELA DA COSTA CASAS\";\"RUA BELEM S/N\";\"25/10/2026 19:42:13\";\"25/10/2026 19:42:26\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";2;6260;\"Eleições Gerais Estaduais 2026\";\"25/10/2026\";\"E\";\"AC\";\"AC\";\"ACRE\";1392;\"RIO BRANCO\";9;263;3;\"Governador\";341;258;83;228;7;23;0;0;1953;\"ESCOLA ESTADUAL PROFESSORA ILKA MARIA DE LIMA\";\"RUA DA MELANCIA, 271 MOCINHA MAGALHÃES\";\"25/10/2026 19:28:06\";\"25/10/2026 19:28:20\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_AM.csv",
+        "bytes": 14439302,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          15,
+          46
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"AM\";\"AM\";\"AMAZONAS\";2550;\"MANAUS\";63;683;3;\"Governador\";398;319;79;285;18;16;0;0;2089;\"E. M. JORGE AMADO\";\"RUA ONIX, 683\";\"04/10/2026 19:08:13\";\"04/10/2026 19:12:38\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"AM\";\"AM\";\"AMAZONAS\";2550;\"MANAUS\";63;683;6;\"Deputado Federal\";398;319;79;287;19;7;6;0;2089;\"E. M. JORGE AMADO\";\"RUA ONIX, 683\";\"04/10/2026 19:08:13\";\"04/10/2026 19:12:38\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_CE.csv",
+        "bytes": 33410571,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          24
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"CE\";\"CE\";\"CEARÁ\";15598;\"SOBRAL\";24;92;5;\"Senador\";321;286;35;474;55;43;0;0;1287;\"EEM PROF. LUIS FELIPE\";\"RUA CEL JOSE SILVESTRE, 760\";\"04/10/2026 19:22:01\";\"04/10/2026 19:25:20\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"CE\";\"CE\";\"CEARÁ\";15598;\"SOBRAL\";24;92;6;\"Deputado Federal\";321;286;35;248;18;11;9;0;1287;\"EEM PROF. LUIS FELIPE\";\"RUA CEL JOSE SILVESTRE, 760\";\"04/10/2026 19:22:01\";\"04/10/2026 19:25:20\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_DF.csv",
+        "bytes": 12645533,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          15,
+          54
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"DF\";\"DF\";\"DISTRITO FEDERAL\";97012;\"BRASÍLIA\";17;261;3;\"Governador\";330;270;60;242;15;13;0;0;1333;\"EC 01 - ESCOLA CLASSE 01 DO GAMA\";\"EQ 18/21 PR. 2 A.E. S.LESTE\";\"04/10/2026 18:34:03\";\"04/10/2026 18:36:26\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"DF\";\"DF\";\"DISTRITO FEDERAL\";97012;\"BRASÍLIA\";17;261;5;\"Senador\";330;270;60;486;28;26;0;0;1333;\"EC 01 - ESCOLA CLASSE 01 DO GAMA\";\"EQ 18/21 PR. 2 A.E. S.LESTE\";\"04/10/2026 18:34:03\";\"04/10/2026 18:36:26\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_ES.csv",
+        "bytes": 17623155,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          10
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";2;6260;\"Eleições Gerais Estaduais 2026\";\"25/10/2026\";\"E\";\"ES\";\"ES\";\"ESPÍRITO SANTO\";56995;\"SERRA\";53;1005;3;\"Governador\";118;99;19;89;4;6;0;0;1368;\"EMEF NOVO HORIZONTE\";\"R. SANHAÇO, S/ N\";\"25/10/2026 20:02:42\";\"25/10/2026 20:03:10\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";2;6260;\"Eleições Gerais Estaduais 2026\";\"25/10/2026\";\"E\";\"ES\";\"ES\";\"ESPÍRITO SANTO\";56995;\"SERRA\";53;376;3;\"Governador\";324;258;66;236;4;18;0;0;1287;\"EEEFM SÍLVIO EGITO SOBRINHO\";\"AV. PRINCIPAL, S/ N\";\"25/10/2026 19:59:23\";\"25/10/2026 19:59:40\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_GO.csv",
+        "bytes": 23384412,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          30
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"GO\";\"GO\";\"GOIÁS\";92975;\"CAMPOS BELOS\";105;64;6;\"Deputado Federal\";294;215;79;191;8;9;7;0;1058;\"ESCOLA ESTADUAL PROFESSORA FELISMINA CARDOSO BATISTA - UE-EST\";\"RUA NOSSA SENHORA DA CONCEICAO, QUADRA 06, LOTE 10\";\"04/10/2026 20:46:02\";\"04/10/2026 20:48:42\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"GO\";\"GO\";\"GOIÁS\";92975;\"CAMPOS BELOS\";105;64;7;\"Deputado Estadual\";294;215;79;184;9;8;14;0;1058;\"ESCOLA ESTADUAL PROFESSORA FELISMINA CARDOSO BATISTA - UE-EST\";\"RUA NOSSA SENHORA DA CONCEICAO, QUADRA 06, LOTE 10\";\"04/10/2026 20:46:02\";\"04/10/2026 20:48:42\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_MA.csv",
+        "bytes": 25886693,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          40
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MA\";\"MA\";\"MARANHÃO\";9210;\"SÃO LUÍS\";10;673;7;\"Deputado Estadual\";199;168;31;142;10;2;14;0;2003;\"U.I. FELIPE CONDURU\";\"AVENIDA GUAJAJARAS S/N\";\"04/10/2026 18:19:58\";\"04/10/2026 18:21:39\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MA\";\"MA\";\"MARANHÃO\";9210;\"SÃO LUÍS\";10;673;3;\"Governador\";199;168;31;161;2;5;0;0;2003;\"U.I. FELIPE CONDURU\";\"AVENIDA GUAJAJARAS S/N\";\"04/10/2026 18:19:58\";\"04/10/2026 18:21:39\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_MG.csv",
+        "bytes": 76572304,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          12
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MG\";\"MG\";\"MINAS GERAIS\";50091;\"PIMENTA\";114;120;7;\"Deputado Estadual\";288;215;73;164;21;8;22;0;1031;\"ESCOLA MUNICIPAL PADRE ARISTIDES QUEIROZ\";\"AV. ARISTIDES GARCIA LEÃO, 421\";\"04/10/2026 20:02:11\";\"04/10/2026 20:12:34\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MG\";\"MG\";\"MINAS GERAIS\";50091;\"PIMENTA\";114;120;6;\"Deputado Federal\";288;215;73;182;16;7;10;0;1031;\"ESCOLA MUNICIPAL PADRE ARISTIDES QUEIROZ\";\"AV. ARISTIDES GARCIA LEÃO, 421\";\"04/10/2026 20:02:11\";\"04/10/2026 20:12:34\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_MS.csv",
+        "bytes": 10404618,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          42
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MS\";\"MS\";\"MATO GROSSO DO SUL\";90514;\"CAMPO GRANDE\";53;354;3;\"Governador\";325;230;95;201;16;13;0;0;1457;\"ESCOLA MUNICIPAL PE. THOMAZ GHIRARDELLI\";\"RUA LÚCIA DOS SANTOS, N. 506\";\"04/10/2026 17:35:37\";\"04/10/2026 17:35:45\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MS\";\"MS\";\"MATO GROSSO DO SUL\";90514;\"CAMPO GRANDE\";53;354;7;\"Deputado Estadual\";325;230;95;184;22;8;16;0;1457;\"ESCOLA MUNICIPAL PE. THOMAZ GHIRARDELLI\";\"RUA LÚCIA DOS SANTOS, N. 506\";\"04/10/2026 17:35:37\";\"04/10/2026 17:35:45\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_MT.csv",
+        "bytes": 12267191,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          16,
+          50
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MT\";\"MT\";\"MATO GROSSO\";89850;\"SINOP\";22;539;6;\"Deputado Federal\";387;300;87;276;10;5;9;0;1635;\"E. E. DE ENSINO FUNDAMENTAL E MÉDIO OLÍMPIO JOÃO PISSINATTI GUERRA\";\"RUA DAS BILBÉRGIAS, 422\";\"04/10/2026 17:35:44\";\"04/10/2026 17:36:14\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"MT\";\"MT\";\"MATO GROSSO\";89850;\"SINOP\";22;539;7;\"Deputado Estadual\";387;300;87;267;13;10;10;0;1635;\"E. E. DE ENSINO FUNDAMENTAL E MÉDIO OLÍMPIO JOÃO PISSINATTI GUERRA\";\"RUA DAS BILBÉRGIAS, 422\";\"04/10/2026 17:35:44\";\"04/10/2026 17:36:14\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_PA.csv",
+        "bytes": 29059600,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          26
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PA\";\"PA\";\"PARÁ\";4243;\"SANTA BÁRBARA DO PARÁ\";36;263;5;\"Senador\";353;279;74;484;24;50;0;0;1279;\"EEEF SÉRGIO JOSÉ MACHADO\";\"ROD. AUGUSTO M. FILHO KM.15\";\"04/10/2026 20:41:01\";\"04/10/2026 20:42:34\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PA\";\"PA\";\"PARÁ\";4243;\"SANTA BÁRBARA DO PARÁ\";36;263;7;\"Deputado Estadual\";353;279;74;240;12;5;22;0;1279;\"EEEF SÉRGIO JOSÉ MACHADO\";\"ROD. AUGUSTO M. FILHO KM.15\";\"04/10/2026 20:41:01\";\"04/10/2026 20:42:34\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_PB.csv",
+        "bytes": 15765923,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          8
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PB\";\"PB\";\"PARAÍBA\";20516;\"JOÃO PESSOA\";77;105;5;\"Senador\";275;242;33;377;59;48;0;0;1180;\"ESCOLA TÉCNICA MANOEL LISBOA DE MOURA\";\"RUA ANTÔNIO CLAUDINO LEAL, S/N\";\"04/10/2026 17:43:45\";\"04/10/2026 17:44:47\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PB\";\"PB\";\"PARAÍBA\";20516;\"JOÃO PESSOA\";77;105;6;\"Deputado Federal\";275;242;33;208;17;13;4;0;1180;\"ESCOLA TÉCNICA MANOEL LISBOA DE MOURA\";\"RUA ANTÔNIO CLAUDINO LEAL, S/N\";\"04/10/2026 17:43:45\";\"04/10/2026 17:44:47\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_PE.csv",
+        "bytes": 31258483,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          42
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PE\";\"PE\";\"PERNAMBUCO\";23817;\"CARUARU\";106;224;6;\"Deputado Federal\";395;335;60;273;29;24;9;0;1147;\"ESCOLA ESTADUAL PROFESSORA ROSILDA MACIEL VIEIRA\";\"RUA DA REDENCAO                            SN\";\"04/10/2026 20:00:32\";\"04/10/2026 20:07:47\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PE\";\"PE\";\"PERNAMBUCO\";23817;\"CARUARU\";106;224;5;\"Senador\";395;335;60;526;73;71;0;0;1147;\"ESCOLA ESTADUAL PROFESSORA ROSILDA MACIEL VIEIRA\";\"RUA DA REDENCAO                            SN\";\"04/10/2026 20:00:32\";\"04/10/2026 20:07:47\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_PI.csv",
+        "bytes": 14659964,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          12
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PI\";\"PI\";\"PIAUÍ\";11070;\"JOAQUIM PIRES\";41;208;6;\"Deputado Federal\";280;226;54;209;5;3;9;0;1082;\"UNIDADE ESCOLAR LUIS RODRIGUES\";\"POVOADO SANTO ANTONIO\";\"04/10/2026 20:01:17\";\"04/10/2026 20:11:50\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PI\";\"PI\";\"PIAUÍ\";11070;\"JOAQUIM PIRES\";41;208;7;\"Deputado Estadual\";280;226;54;203;3;7;13;0;1082;\"UNIDADE ESCOLAR LUIS RODRIGUES\";\"POVOADO SANTO ANTONIO\";\"04/10/2026 20:01:17\";\"04/10/2026 20:11:50\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_PR.csv",
+        "bytes": 39790087,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          2
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PR\";\"PR\";\"PARANÁ\";74993;\"CENTENÁRIO DO SUL\";159;12;3;\"Governador\";295;216;79;193;6;17;0;0;1015;\"COLÉGIO ESTADUAL PADRE JOSÉ PIRES\";\"RUA NOSSA SENHORA DO ROCIO, 277\";\"04/10/2026 17:55:42\";\"04/10/2026 17:59:22\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"PR\";\"PR\";\"PARANÁ\";74993;\"CENTENÁRIO DO SUL\";159;12;5;\"Senador\";295;216;79;366;18;48;0;0;1015;\"COLÉGIO ESTADUAL PADRE JOSÉ PIRES\";\"RUA NOSSA SENHORA DO ROCIO, 277\";\"04/10/2026 17:55:42\";\"04/10/2026 17:59:22\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2013\";\"UE 2013\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_RJ.csv",
+        "bytes": 55799205,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          42
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RJ\";\"RJ\";\"RIO DE JANEIRO\";60011;\"RIO DE JANEIRO\";9;387;3;\"Governador\";439;339;100;329;5;5;0;0;1295;\"COLÉGIO SANTO AGOSTINHO\";\"RUA RINO LEVI, 485\";\"04/10/2026 20:35:57\";\"04/10/2026 20:39:10\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RJ\";\"RJ\";\"RIO DE JANEIRO\";60011;\"RIO DE JANEIRO\";167;124;5;\"Senador\";418;329;89;473;85;100;0;0;1031;\"ESCOLA MUNICIPAL MARIO PIRAGIBE\";\"RUA ALCOBAÇA 1127\";\"04/10/2026 19:24:26\";\"04/10/2026 19:26:40\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_RN.csv",
+        "bytes": 15232294,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          54
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";2;6260;\"Eleições Gerais Estaduais 2026\";\"25/10/2026\";\"E\";\"RN\";\"RN\";\"RIO GRANDE DO NORTE\";16179;\"ANTÔNIO MARTINS\";38;5;3;\"Governador\";257;221;36;210;3;8;0;0;1031;\"ESCOLA ESTADUAL GOVERNADOR WALFREDO GURGEL\";\"AVENIDA SENADOR JOAQUIM INÁCIO, 104, CENTRO\";\"25/10/2026 19:55:13\";\"25/10/2026 19:55:40\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RN\";\"RN\";\"RIO GRANDE DO NORTE\";18031;\"PORTALEGRE\";63;32;6;\"Deputado Federal\";327;256;71;220;9;15;12;0;1015;\"ESCOLA MUNICIPAL FILOMENA SAMPAIO DE SOUZA\";\"RUA RAIMUNDO RODRIGUES TORRES, 55\";\"04/10/2026 19:00:50\";\"04/10/2026 19:03:29\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_RO.csv",
+        "bytes": 6868211,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          56
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RO\";\"RO\";\"RONDÔNIA\";35;\"PORTO VELHO\";6;355;7;\"Deputado Estadual\";309;245;64;229;6;5;5;0;1422;\"CLASSE A - UNIDADE II - COLÉGIO PARTICULAR\";\"RUA TUTOIA, 3.340\";\"04/10/2026 17:30:34\";\"04/10/2026 17:31:00\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RO\";\"RO\";\"RONDÔNIA\";35;\"PORTO VELHO\";6;355;6;\"Deputado Federal\";309;245;64;226;5;9;5;0;1422;\"CLASSE A - UNIDADE II - COLÉGIO PARTICULAR\";\"RUA TUTOIA, 3.340\";\"04/10/2026 17:30:34\";\"04/10/2026 17:31:00\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_RR.csv",
+        "bytes": 2237063,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          17,
+          58
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RR\";\"RR\";\"RORAIMA\";3050;\"ALTO ALEGRE\";3;208;3;\"Governador\";263;226;37;215;2;9;0;0;1244;\"ANEXO ESCOLA MI VÓ\";\"RUA BEM QUERER S/N\";\"04/10/2026 18:29:46\";\"04/10/2026 18:32:27\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RR\";\"RR\";\"RORAIMA\";3050;\"ALTO ALEGRE\";3;208;6;\"Deputado Federal\";263;226;37;214;1;5;6;0;1244;\"ANEXO ESCOLA MI VÓ\";\"RUA BEM QUERER S/N\";\"04/10/2026 18:29:46\";\"04/10/2026 18:32:27\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_SE.csv",
+        "bytes": 8642037,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          10
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SE\";\"SE\";\"SERGIPE\";31054;\"ARACAJU\";1;323;6;\"Deputado Federal\";355;299;56;240;18;26;15;0;1430;\"SERGIO FRANCISCO DA SILVA, E.M.E.F\";\"AV. LAMARAO, S/N\";\"04/10/2026 19:21:09\";\"04/10/2026 19:24:22\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SE\";\"SE\";\"SERGIPE\";31054;\"ARACAJU\";1;323;5;\"Senador\";355;299;56;472;41;85;0;0;1430;\"SERGIO FRANCISCO DA SILVA, E.M.E.F\";\"AV. LAMARAO, S/N\";\"04/10/2026 19:21:09\";\"04/10/2026 19:24:22\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_RS.csv",
+        "bytes": 40619554,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          58
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RS\";\"RS\";\"RIO GRANDE DO SUL\";87637;\"NOVA BRÉSCIA\";104;101;6;\"Deputado Federal\";240;207;33;191;9;4;3;0;1082;\"SALÃO COMUNITÁRIO LINHA TIGRINHO ALTO\";\"LINHA TIGRINHO ALTO\";\"04/10/2026 18:38:01\";\"04/10/2026 18:39:48\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"RS\";\"RS\";\"RIO GRANDE DO SUL\";87637;\"NOVA BRÉSCIA\";104;101;7;\"Deputado Estadual\";240;207;33;183;9;3;12;0;1082;\"SALÃO COMUNITÁRIO LINHA TIGRINHO ALTO\";\"LINHA TIGRINHO ALTO\";\"04/10/2026 18:38:01\";\"04/10/2026 18:39:48\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_SC.csv",
+        "bytes": 25920597,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          44
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SC\";\"SC\";\"SANTA CATARINA\";81817;\"LACERDÓPOLIS\";85;190;3;\"Governador\";258;227;31;221;4;2;0;0;1015;\"ESCOLA DE EDUCAÇÃO BÁSICA JOAQUIM DAGOSTINI / CIEL\";\"RUA 7 DE SETEMBRO, N. 92, CENTRO\";\"04/10/2026 18:26:00\";\"04/10/2026 18:28:23\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SC\";\"SC\";\"SANTA CATARINA\";81817;\"LACERDÓPOLIS\";85;190;6;\"Deputado Federal\";258;227;31;209;10;3;5;0;1015;\"ESCOLA DE EDUCAÇÃO BÁSICA JOAQUIM DAGOSTINI / CIEL\";\"RUA 7 DE SETEMBRO, N. 92, CENTRO\";\"04/10/2026 18:26:00\";\"04/10/2026 18:28:23\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2020\";\"UE 2020\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_SP.csv",
+        "bytes": 148259861,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          21,
+          6
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SP\";\"SP\";\"SÃO PAULO\";71072;\"SÃO PAULO\";260;243;5;\"Senador\";345;247;98;415;22;57;0;0;1252;\"EE. PROF. ASTROGILDO SILVA\";\"RUA RENATO DE RANIERI, S/N\";\"04/10/2026 19:03:45\";\"04/10/2026 19:04:24\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"SP\";\"SP\";\"SÃO PAULO\";71072;\"SÃO PAULO\";260;243;3;\"Governador\";345;247;98;225;5;17;0;0;1252;\"EE. PROF. ASTROGILDO SILVA\";\"RUA RENATO DE RANIERI, S/N\";\"04/10/2026 19:03:45\";\"04/10/2026 19:04:24\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2015\";\"UE 2015\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_TO.csv",
+        "bytes": 8031137,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          28
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"TO\";\"TO\";\"TOCANTINS\";92525;\"PRAIA NORTE\";21;110;5;\"Senador\";266;219;47;389;11;38;0;0;1090;\"ESCOLA ESTADUAL PRIMEIRO DE JUNHO\";\"RUA GENÉSIO GOMES N 420\";\"04/10/2026 17:49:42\";\"04/10/2026 17:51:15\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\"",
+          "\"26/10/2026\";\"09:49:06\";2026;2;\"Eleição Ordinária\";1;6259;\"Eleições Gerais Estaduais 2026\";\"04/10/2026\";\"E\";\"TO\";\"TO\";\"TOCANTINS\";92525;\"PRAIA NORTE\";21;110;3;\"Governador\";266;219;47;193;3;23;0;0;1090;\"ESCOLA ESTADUAL PRIMEIRO DE JUNHO\";\"RUA GENÉSIO GOMES N 420\";\"04/10/2026 17:49:42\";\"04/10/2026 17:51:15\";\"Urna Eletrônica\";\"Sim\";\"Não\";\"2022\";\"UE 2022\""
+        ]
+      },
+      {
+        "nombre": "detalhe_votacao_secao_2026_ZZ.csv",
+        "bytes": 606,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          18,
+          32
+        ],
+        "muestra": [
+          "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"CD_TIPO_ELEICAO\";\"NM_TIPO_ELEICAO\";\"NR_TURNO\";\"CD_ELEICAO\";\"DS_ELEICAO\";\"DT_ELEICAO\";\"TP_ABRANGENCIA\";\"SG_UF\";\"SG_UE\";\"NM_UE\";\"CD_MUNICIPIO\";\"NM_MUNICIPIO\";\"NR_ZONA\";\"NR_SECAO\";\"CD_CARGO\";\"DS_CARGO\";\"QT_APTOS\";\"QT_COMPARECIMENTO\";\"QT_ABSTENCOES\";\"QT_VOTOS_NOMINAIS\";\"QT_VOTOS_BRANCOS\";\"QT_VOTOS_NULOS\";\"QT_VOTOS_LEGENDA\";\"QT_VOTOS_ANULADOS_APU_SEP\";\"NR_LOCAL_VOTACAO\";\"NM_LOCAL_VOTACAO\";\"DS_LOCAL_VOTACAO_ENDERECO\";\"DT_RECEBIMENTO_BU_HOR_TSE\";\"DT_PRIM_TOT_PARCIAL_HOR_TSE\";\"DS_ORIGEM_VOTO\";\"ST_SECAO_INSTALADA\";\"ST_SECAO_ANULADA\";\"CD_MODELO_URNA\";\"DS_MODELO_URNA\"",
+          "",
+          ""
+        ]
+      },
+      {
+        "nombre": "leiame.pdf",
+        "bytes": 123650,
+        "fecha_zip": [
+          2026,
+          10,
+          26,
+          15,
+          5,
+          24
+        ]
+      }
+    ],
+    "bytes_descargados_sondeo": 307714
+  }
+}

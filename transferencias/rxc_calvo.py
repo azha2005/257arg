@@ -23,13 +23,18 @@ def fit(X, Y, const=0.001, w=None, g0=None):
     w: pesos por unidad (None = todas iguales, como el R).
     g0: centro de la penalizacion (None = cero, como el R); con g0 se encoge hacia otra matriz (p. ej. la nacional)."""
     X = np.asarray(X, float); Y = np.asarray(Y, float)
-    R, C = X.shape[1], Y.shape[1]
     w = np.ones(len(X)) if w is None else np.asarray(w, float)
-    g0 = np.zeros(R * (C - 1)) if g0 is None else np.asarray(g0, float)
-
     Xw = X * w[:, None]
     S, T = X.T @ Xw, Xw.T @ Y[:, :-1]                 # estadisticos suficientes (la ultima columna no entra)
     q = (w[:, None] * Y[:, :-1] ** 2).sum()
+    return fit_ss(S, T, q, const, g0)
+
+
+def fit_ss(S, T, q=0.0, const=0.001, g0=None):
+    """Igual que fit, a partir de los estadisticos suficientes S = X'WX (R x R), T = X'WY sin la ultima columna
+    (R x C-1) y q = sum w y^2 sin la ultima columna (q no cambia el optimo, pero si el criterio de parada)."""
+    R, C = T.shape[0], T.shape[1] + 1
+    g0 = np.zeros(R * (C - 1)) if g0 is None else np.asarray(g0, float)
 
     def f(g):
         B = fractions(g, R, C)
