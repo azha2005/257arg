@@ -155,3 +155,13 @@ Logos del infobox de los artículos de la Wikipedia en español de cada elecció
 | Escudo_del_PDP.svg, Estrella_bloquista.png | PDP 1962/1965, UCR Bloquista 1965 | entradas anteriores | — | — |
 
 Con sigla (sin logo): conservadores 1958 (PD), UCRI Rojo y Blanco (RyB), Partido Populista (PP), Línea Las Flores-Luján (MFL), Partido Unidad Nacional (PUN).
+
+## Atlas peronistas 1946–1973 (29-oct-2026, `transcripciones/peronismo/atlas4673.py`)
+
+Se reutilizan logos ya registrados arriba, con sus fuentes y reservas:
+- Flag_PJ_escudo_clasico_cuadrada.svg (diseño de 1946): Partido Laborista/Peronista 1946, Partido Peronista 1948 y 1954, FREJULI 1973.
+- Escudo_de_la_UCR.svg: UCR en los seis atlas (incluidas UCR del Pueblo/UCR en 1973).
+- Escudo_del_PDP.svg: PDP 1948. Estrella_bloquista.png: UCR Bloquista 1946.
+- Emblema_del_Partido_Socialista_Argentino.svg y Partido_Socialista_Democratico_Argentina.png (redibujo de 2018, reserva vigente): solo aparecen si ganan alguna unidad; en estos atlas no ganan ninguna.
+
+Con sigla (sin logo): Unión Democrática (UD), Alianza Popular Federalista (APF), Alianza Republicana Federal (ARF), resto de las alianzas de 1973.

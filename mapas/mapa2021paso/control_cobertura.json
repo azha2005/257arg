@@ -1,0 +1,78 @@
+{
+  "key": "2021paso",
+  "year": 2021,
+  "cargo": "diputados nacionales",
+  "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
+  "units": 529,
+  "with_data": 526,
+  "missing": [
+    "Catamarca: Antofagasta de la Sierra",
+    "Chubut: Gastre"
+  ],
+  "antartida_sin_dato": false,
+  "winners": {
+    "Juntos por el Cambio": 298,
+    "Frente de Todos": 189,
+    "Tercera Vía y Peronismo Federal": 3,
+    "Frente Renovador de la Concordia": 9,
+    "Movimiento Popular Neuquino": 14,
+    "Juntos Somos Río Negro": 12,
+    "Somos Energía para Renovar Santa Cruz": 1
+  },
+  "logos": [
+    {
+      "code": "B01",
+      "origen": "atlas de diputados 2021"
+    },
+    {
+      "code": "B02",
+      "origen": "atlas de diputados 2021"
+    },
+    {
+      "code": "B03",
+      "origen": "atlas de diputados 2021"
+    },
+    {
+      "code": "B07",
+      "origen": "atlas de diputados 2021"
+    },
+    {
+      "code": "B09",
+      "origen": "atlas de diputados 2021"
+    },
+    {
+      "code": "B08",
+      "origen": "atlas de diputados 2021"
+    },
+    {
+      "code": "B19",
+      "origen": "atlas de diputados 2021"
+    }
+  ],
+  "corrections": [
+    "Emparejamiento con la general (votos): nombre 94.3 %; sin bloque 4.8 %; bloque 0.8 %; número 0.2 %."
+  ],
+  "national": {
+    "art": "Elecciones primarias de Argentina de 2021",
+    "blocs": {
+      "B01": 8898630,
+      "B02": 6960393,
+      "B03": 1125472,
+      "B07": 197494,
+      "B09": 130351,
+      "B08": 122612,
+      "B19": 35511
+    },
+    "otros": 3815586,
+    "positivos": 21286049,
+    "blancos": 833399,
+    "dif": 639156,
+    "total": 22758604,
+    "inscriptos": 33730857,
+    "lab_pos": "Votos positivos",
+    "lab_bla": "Votos en blanco",
+    "lab_nul": "Votos nulos / anulados"
+  },
+  "metrics_src": "suma del escrutinio provisorio de la DINE (la Wikipedia no trae tabla nacional de esta PASO)",
+  "internas": []
+}

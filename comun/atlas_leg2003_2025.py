@@ -5,8 +5,10 @@ from shapely import affinity
 from shapely.ops import unary_union
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-YEAR = int(sys.argv[1])
-HERE = os.path.join(ROOT, f"../mapas/mapa{YEAR}")
+KEY = sys.argv[1]                      # 2003…2025, o <año>paso para las PASO 2011–2023 (comun/paso_data.py)
+YEAR = int(KEY[:4])
+PASO = "paso" in KEY                   # <año>pasodip: diputados de las PASO de un año presidencial
+HERE = os.path.join(ROOT, f"../mapas/mapa{KEY}")
 os.makedirs(HERE, exist_ok=True)
 sys.path.insert(0, HERE)
 sys.path.insert(0, ROOT)
@@ -110,8 +112,12 @@ prov_mini = {p: g.simplify(1.2) for p, g in prov_geom.items()}
 
 
 # Datos y controles compartidos: el cartel nacional se conserva separado del mapa.
-from leg2003_2025_data import prepare
-D = prepare(YEAR, U)
+if PASO:
+    from paso_data import prepare, PRES
+    D = prepare(KEY, U)
+else:
+    from leg2003_2025_data import prepare
+    D = prepare(YEAR, U)
 CAND, MODES, disp, ANT_I = D.CAND, D.MODES, D.disp, D.ANT_I
 MALV = {i for i, u in enumerate(U) if u["name"] == "Islas Malvinas"}
 
@@ -177,17 +183,17 @@ for _i, _u in enumerate(U):   # Malvinas en gris tambien en el mini de provincia
 pv.append('</g>')
 
 ds = dict(
-    year=YEAR, slug=f"diputados_{YEAR}", locale="es-AR", country="Argentina",
-    title="Elecciones legislativas de Argentina de",
+    year=YEAR, slug=f"paso_{YEAR}" if PASO else f"diputados_{YEAR}", locale="es-AR", country="Argentina",
+    title="Elecciones primarias de Argentina de" if PASO else "Elecciones legislativas de Argentina de",
     exterior=False,
-    sets={"1": dict(label="Resultados", subtitle="Diputados nacionales")},
+    sets={"1": dict(label="Resultados", subtitle=("PASO · " + D.report["cargo"]) if PASO else "Diputados nacionales")},
     labels=dict(results="Resultados", won="GANÓ", pie1="Proporción sobre votos positivos",
                 pie2="Anillo exterior: Participación", provinces="Provincias"),
     candidates=CAND, insets=INSETS, solid=D.report.get("solid", []),
     territories=[dict(p=u["prov"], n=disp[i], k=u["kind"]) for i, u in enumerate(U)]+[dict(p="Tierra del Fuego",n="Antártida Argentina",k="departamento")],
     modes=MODES,
 )
-open(os.path.join(HERE, f"dataset_{YEAR}.json"), "w", encoding="utf8").write(json.dumps(ds, ensure_ascii=False))
+open(os.path.join(HERE, f"dataset_{KEY}.json"), "w", encoding="utf8").write(json.dumps(ds, ensure_ascii=False))
 
 # ---------------------------------------------------------------- HTML
 tpl = open(TPL, encoding="utf8").read()
@@ -199,7 +205,7 @@ def sub(old, new):
     tpl = tpl.replace(old, new, 1)
 
 
-sub("<title>Atlas electoral</title>", f"<title>Elecciones legislativas {YEAR}</title>")
+sub("<title>Atlas electoral</title>", (f"<title>PASO {YEAR} ({D.report['cargo']})</title>" if PASO else f"<title>Elecciones legislativas {YEAR}</title>"))
 sub('<image id="frontiers" href="{{FRONTIERS}}" x="570" y="100" width="840" height="1540"/>', '<g id="frontiers"></g>')
 sub('<g id="pv" transform="matrix(0.1448 0 0 0.1448 55.7 599.8)" style="--spf:9.7px">',
     '<g id="pv" transform="matrix(%s 0 0 %s %.2f %.2f)" style="--spf:9.7px">' % (KPV, KPV, pv_tx, pv_ty))
@@ -289,6 +295,6 @@ sub("    if(t.length>5)tt.setAttribute(\"font-size\",15);",
 tpl = tpl.replace("{{MAIN_S}}", "1").replace("{{MAIN_TX}}", "0").replace("{{MAIN_TY}}", "0")
 html = (tpl.replace("{{MAP}}", "".join(body)).replace("{{PV}}", "".join(pv))
            .replace("{{DATA}}", json.dumps(ds, ensure_ascii=False, separators=(",", ":"))).replace("{{MODE}}", "gan"))
-out = os.path.join(HERE, f"atlas_{YEAR}.html")
+out = os.path.join(HERE, f"atlas_{KEY}.html")
 open(out, "w", encoding="utf8", newline="\n").write(html)
 print("escrito", out, round(len(html) / 1e6, 2), "MB", file=sys.stderr)
