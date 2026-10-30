@@ -18,6 +18,8 @@ Una carpeta por atlas, cada una con `subir/` (archivos + wikitext) y su `LEEME_S
 | [1991](1991/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1991 | 12 SVG + 8 PNG | Se puede subir; «con leyenda» y PNG llevan un logo sin licencia libre (riesgo asumido) y hay versiones «con siglas» sin ese logo |
 | [1993](1993/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1993 | 6 SVG + 3 PNG | Se puede subir |
 | [1994](1994/LEEME_SUBIDA.md) | Elecciones de convencionales constituyentes de Argentina de 1994 | 15 SVG + 10 PNG | Se puede subir; «con leyenda» y PNG llevan un logo sin licencia libre (riesgo asumido) y hay versiones «con siglas» sin ese logo |
+| [1995](1995/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1995 | 8 SVG + 4 PNG | Se puede subir; Deseado imputado; coincide en 96 % con el mapa vigente (diferencias de agrupación); sin la versión hipotética FREPASO + UCR |
+| [1999](1999/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1999 | 8 SVG + 4 PNG | Se puede subir; San Luis y Santa Cruz de Lupu–Stokes (Cavallo sin desglose, beige); difiere del mapa vigente (284/243 contra 340/198), no cotejado unidad por unidad |
 | [1997](1997/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1997 | 8 SVG + 4 PNG | Se puede subir; San Luis en color sólido (sin datos departamentales); la Alianza suma UCR y FREPASO |
 | [2001](2001/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 2001 | 8 SVG + 4 PNG | Se puede subir; la base trae un 2,3 % menos de votos que la tabla del artículo (leer los avisos) |
 

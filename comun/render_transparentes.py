@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ATLAS = [("mapa1912", "atlas_1912_diputados.html"), ("mapa1914", "atlas_1914_diputados.html"), ("mapa1916dip", "atlas_1916_diputados.html"), ("mapa1916fic", "atlas_1916_alt.html"), ("mapa1922", "atlas_1922.html"),
-         ("mapa1928", "atlas_1928.html"), ("mapa1930", "atlas_1930.html"), ("mapa1983", "atlas_1983.html"), ("mapa1985", "atlas_1985.html"), ("mapa1987", "atlas_1987.html"), ("mapa1989", "atlas_1989.html"), ("mapa1991", "atlas_1991.html"), ("mapa1993", "atlas_1993.html"), ("mapa1994", "atlas_1994.html"), ("mapa1995", "atlas_1995.html"), ("mapa1995", "atlas_1995_ucr_frepaso.html"), ("mapa1997", "atlas_1997.html"), ("mapa2001", "atlas_2001.html"), ("mapa2013", "atlas_2013.html"), ("mapaAMBA2025", "atlas_amba2025.html")]
+         ("mapa1928", "atlas_1928.html"), ("mapa1930", "atlas_1930.html"), ("mapa1983", "atlas_1983.html"), ("mapa1985", "atlas_1985.html"), ("mapa1987", "atlas_1987.html"), ("mapa1989", "atlas_1989.html"), ("mapa1991", "atlas_1991.html"), ("mapa1993", "atlas_1993.html"), ("mapa1994", "atlas_1994.html"), ("mapa1995", "atlas_1995.html"), ("mapa1995", "atlas_1995_ucr_frepaso.html"), ("mapa1999", "atlas_1999.html"), ("mapa1997", "atlas_1997.html"), ("mapa2001", "atlas_2001.html"), ("mapa2013", "atlas_2013.html"), ("mapaAMBA2025", "atlas_amba2025.html")]
 ATLAS.append(("mapa2009", "atlas_2009.html"))
 ATLAS.append(("mapa2027", "atlas_2027.html"))
 ATLAS.append(("mapa2027kic", "atlas_2027kic.html"))

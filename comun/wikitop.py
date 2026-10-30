@@ -104,6 +104,14 @@ WIKI = {
         positivos=17395284, blancos=653443, dif=125112, total=18203924, inscriptos=22178201,
         extra=[["Diferencia de actas", 30085]],
         lab_pos="Votos positivos", lab_bla="En blanco", lab_nul="Anulados"),
+    1999: dict(
+        art="Elecciones presidenciales de Argentina de 1999",
+        # totales por formula de la tabla de Wikipedia. Cavallo no gana ninguna unidad, pero va en la leyenda como tercera fuerza (10,22 %; pedido del usuario, 29-oct-2026)
+        # Walsh, Mendez, Altamira y los demas van en «otros»
+        blocs={"DLR": 9167220, "DUH": 7253902, "CAV": 1937544},
+        otros=18953704 - (9167220 + 7253902 + 1937544),
+        positivos=18953704, blancos=708876, dif=186761, total=19849341, inscriptos=24111270,
+        lab_pos="Votos positivos", lab_bla="En blanco", lab_nul="Anulados"),
     "1995u": dict(
         art="Elecciones presidenciales de Argentina de 1995",
         # version hipotetica: Bordon (FREPASO) y Massaccesi (UCR) sumados
