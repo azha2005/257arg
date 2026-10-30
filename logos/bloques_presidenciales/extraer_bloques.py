@@ -12,7 +12,8 @@ sheet=[]
 for y,rows in ROWS.items():
     a=np.array(Image.open(os.path.join(SRC,f'Elecciones_presidenciales_de_Argentina_de_{y}_-_Resultados.png')).convert('RGBA')).astype(int)
     for r,nm in zip(rows,NAMES[y]):
-        blk=a[r:r+64,120:290].copy()             # bloque del logo: 131 unidades de plantilla de ancho
+        x1={'up':302}.get(nm,290)                # UP: el emblema llega a x=297 y con 290 se cortaba (30-oct-2026)
+        blk=a[r:r+64,120:x1].copy()              # bloque del logo: 131 unidades de plantilla de ancho
         key=np.median(a[r+1:r+4,470:540,:3].reshape(-1,3),axis=0)   # color de la barra (franja superior, sobre el texto)
         blk[...,3]=np.where(np.abs(blk[:,:,:3]-key).sum(axis=2)<=36,0,blk[...,3])
         W={'una15':140,'cf11':120,'cf15':120,'hacemos':120,'udeso':155,'recrear':132}.get(nm)   # donde empieza el nombre del candidato

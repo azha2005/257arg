@@ -12,6 +12,7 @@ ATLAS = [("mapa1912", "atlas_1912_diputados.html"), ("mapa1914", "atlas_1914_dip
 ATLAS.append(("mapa2009", "atlas_2009.html"))
 ATLAS.append(("mapa2027", "atlas_2027.html"))
 ATLAS.append(("mapa2027kic", "atlas_2027kic.html"))
+ATLAS.append(("mapa2023massa", "atlas_2023massa.html"))
 ATLAS.append(("mapa1985hip", "atlas_1985hip.html"))
 ATLAS.extend((f"mapa{y}dip", f"atlas_{y}_diputados.html") for y in (1983, 1989, 1995, 1999))
 ATLAS.append(("mapa2001bronca", "atlas_2001bronca.html"))

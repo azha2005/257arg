@@ -119,49 +119,15 @@ Emblemas añadidos/reutilizados para los diez atlas nuevos. Fecha original de ex
 | [Logo_Frente_para_la_Victoria.svg](https://commons.wikimedia.org/wiki/File:Logo_Frente_para_la_Victoria.svg) | 2011, 2015 | Public domain | 2013-07-15 15:08:21 | Sí; diseño de época no verificado |
 | [Logo_Fuerza_Republicana.png](https://commons.wikimedia.org/wiki/File:Logo_Fuerza_Republicana.png) | 2003 | Public domain | Unknown date | Sin reserva detectada en los metadatos |
 | Logo_MPN.png (registro previo del proyecto) | 2003, 2005, 2007, 2011, 2015, 2017, 2019, 2021 | Ver LICENCIAS.md del proyecto | Sin fecha verificada | Sí; diseño de época no verificado |
+| Logo_Por_Santa_Cruz.png (registro previo del proyecto) | 2023 | Aportado por el usuario; sin licencia libre verificada | 2023 | Sin reserva detectada en los metadatos |
 | [Old_PRO_Logo.png](https://commons.wikimedia.org/wiki/File:Old_PRO_Logo.png) | 2005 | CC BY-SA 4.0 | Sin fecha verificada | Sin reserva detectada en los metadatos |
 | PRS_logo.png (registro previo del proyecto) | 2003, 2005 | Ver LICENCIAS.md del proyecto | Sin fecha verificada | Sí; diseño de época no verificado |
 | [Propuesta Republicana.png](https://commons.wikimedia.org/wiki/File:Propuesta_Republicana.png) | 2007 | Public domain | 2015-05-21 | Sí; diseño de época no verificado |
 | [Propuesta_Republicana.png](https://commons.wikimedia.org/wiki/File:Propuesta_Republicana.png) | 2011 | Public domain | 2015-05-21 | Sí; diseño de época no verificado |
 | [Recrear logo.jpg](https://commons.wikimedia.org/wiki/File:Recrear_logo.jpg) | 2003 | Public domain | 2002 | Sin reserva detectada en los metadatos |
-| [SER_Santa_Cruz_logo.png](https://commons.wikimedia.org/wiki/File:SER_Santa_Cruz_logo.png) | 2021, 2023 | Public domain | 2019-08-11 | Sin reserva detectada en los metadatos |
+| [SER_Santa_Cruz_logo.png](https://commons.wikimedia.org/wiki/File:SER_Santa_Cruz_logo.png) | 2021 | Public domain | 2019-08-11 | Sin reserva detectada en los metadatos |
 | [UDESO.gif](https://commons.wikimedia.org/wiki/File:UDESO.gif) | 2011 | Public domain | 2011-06-02 | Sin reserva detectada en los metadatos |
 | [Una_logo.png](https://commons.wikimedia.org/wiki/File:Una_logo.png) | 2015 | Public domain | 2015-04 | Sin reserva detectada en los metadatos |
 | [Unidad Ciudadana.svg](https://commons.wikimedia.org/wiki/File:Unidad_Ciudadana.svg) | 2017 | Public domain | 2017 | Sin reserva detectada en los metadatos |
 
 Las fuerzas sin logo disponible conservan la sigla; no se generaron emblemas inventados.
-
-## Bloques de logo de los mapas presidenciales de la Wikipedia (20-oct-2026)
-
-`bloques_presidenciales/*.png`: recortes del bloque del logo de las leyendas de «Elecciones presidenciales de Argentina de <año> - Resultados.png» (2003, 2007, 2011, 2015, 2019 y 2023; Commons, **CC0**, usuario N2051), con la barra de color vuelta transparente (`extraer_bloques.py`, originales en `fuentes_leg2003_2025/presidenciales/originales/`). Los usan las leyendas de las legislativas 2003–2025 según `bloques_wiki.py`. Los emblemas que contienen son los mismos archivos de Commons ya listados arriba (o sus versiones de campaña); la reserva de época de cada partido sigue valiendo.
-
-## Por Santa Cruz 2023 (21-oct-2026)
-
-`Logo_Por_Santa_Cruz.png`: emblema (la X con la silueta de Santa Cruz y los cuatro puntos) recortado de la imagen que aportó el usuario (`Logo_Por_Santa_Cruz_completo.png`, con el texto «POR SANTA CRUZ»); fondo blanco quitado desde los bordes. **Sin licencia libre verificada**: no usar en Commons sin la versión con siglas. Lo usa la leyenda del atlas de diputados 2023 (antes llevaba el logo de SER, que es otra alianza).
-
-## Atlas 1958, 1962 y 1965 (Cantón; 21-oct-2026)
-Logos del infobox de los artículos de la Wikipedia en español de cada elección, bajados de Commons con su fecha (`extmetadata.DateTimeOriginal`).
-
-| Archivo | Partido / uso | Origen y licencia | Fecha | Reserva |
-|---|---|---|---|---|
-| Escudo_UCRI_1963_plano.svg | UCRI 1958, 1962, 1965 | [Commons](https://commons.wikimedia.org/wiki/File:Escudo_UCRI_1963_plano.svg), dominio público | 1963 | En 1958 y 1962 es el más cercano disponible: diseño de esas elecciones no verificado |
-| UCRP_escudo.svg | UCRP 1958, 1962, 1965 | [Commons](https://commons.wikimedia.org/wiki/File:UCRP_escudo.svg), CC BY-SA 4.0, «own work» | 2024 | Redibujo; diseño de época no verificado |
-| Flag_PJ_escudo_clasico_cuadrada.svg | Frente Justicialista 1962, movimientos populares provinciales 1965 | [Commons](https://commons.wikimedia.org/wiki/File:Flag_of_the_Justicialist_Party_with_classic_shield_(square_version).svg), dominio público | 1946 | Sin reserva (la Wikipedia lo usa en las dos infobox) |
-| Logo_de_la_FdC.png | FNPC 1962 y 1965 | [Commons](https://commons.wikimedia.org/wiki/File:Logo_de_la_FdC.png), CC BY-SA 4.0 («logo digitalizado por mí») | 2025 | Digitalización de 2025; diseño de época no verificado |
-| Union_popular_logo.png | Unión Popular 1965 | [Commons](https://commons.wikimedia.org/wiki/File:Union_popular_logo.png), CC BY-SA 4.0, «own work» | 2019 | Redibujo; diseño de época no verificado |
-| Union_popular_logo_blanco.png | Unión Popular 1965 (atlas) | derivado del anterior (misma licencia) | 2026 | Tinta negra pasada a blanco para leerse sobre la barra turquesa (pedido del usuario) |
-| MID_logo_1963.png | MID 1965 | [Commons](https://commons.wikimedia.org/wiki/File:MID_logo.png), dominio público | 1963 | Sin reserva |
-| Partido_Socialista_Democratico_Argentina.png | PSD 1962 | [Commons](https://commons.wikimedia.org/wiki/File:Partido_Socialista_Democratico_Argentina.png), dominio público | 2018 | Redibujo; diseño de época no verificado |
-| Escudo_del_PDP.svg, Estrella_bloquista.png | PDP 1962/1965, UCR Bloquista 1965 | entradas anteriores | — | — |
-
-Con sigla (sin logo): conservadores 1958 (PD), UCRI Rojo y Blanco (RyB), Partido Populista (PP), Línea Las Flores-Luján (MFL), Partido Unidad Nacional (PUN).
-
-## Atlas peronistas 1946–1973 (29-oct-2026, `transcripciones/peronismo/atlas4673.py`)
-
-Se reutilizan logos ya registrados arriba, con sus fuentes y reservas:
-- Flag_PJ_escudo_clasico_cuadrada.svg (diseño de 1946): Partido Laborista/Peronista 1946, Partido Peronista 1948 y 1954, FREJULI 1973.
-- Escudo_de_la_UCR.svg: UCR en los seis atlas (incluidas UCR del Pueblo/UCR en 1973).
-- Escudo_del_PDP.svg: PDP 1948. Estrella_bloquista.png: UCR Bloquista 1946.
-- Emblema_del_Partido_Socialista_Argentino.svg y Partido_Socialista_Democratico_Argentina.png (redibujo de 2018, reserva vigente): solo aparecen si ganan alguna unidad; en estos atlas no ganan ninguna.
-
-Con sigla (sin logo): Unión Democrática (UD), Alianza Popular Federalista (APF), Alianza Republicana Federal (ARF), resto de las alianzas de 1973.
