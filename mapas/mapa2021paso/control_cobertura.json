@@ -4,14 +4,11 @@
   "cargo": "diputados nacionales",
   "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
   "units": 529,
-  "with_data": 526,
-  "missing": [
-    "Catamarca: Antofagasta de la Sierra",
-    "Chubut: Gastre"
-  ],
+  "with_data": 528,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
-    "Juntos por el Cambio": 298,
+    "Juntos por el Cambio": 300,
     "Frente de Todos": 189,
     "Tercera Vía y Peronismo Federal": 3,
     "Frente Renovador de la Concordia": 9,
@@ -50,25 +47,27 @@
     }
   ],
   "corrections": [
-    "Emparejamiento con la general (votos): nombre 94.3 %; sin bloque 4.8 %; bloque 0.8 %; número 0.2 %."
+    "Emparejamiento con la general (votos): nombre 94.3 %; sin bloque 4.8 %; bloque 0.8 %; número 0.2 %.",
+    "Catamarca: Antofagasta de la Sierra: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. Inscriptos: 1.057 votantes = 67,58 % de los inscriptos.",
+    "Chubut: Gastre: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación."
   ],
   "national": {
     "art": "Elecciones primarias de Argentina de 2021",
     "blocs": {
-      "B01": 8898630,
-      "B02": 6960393,
-      "B03": 1125472,
+      "B01": 8899255,
+      "B02": 6960708,
+      "B03": 1125565,
       "B07": 197494,
       "B09": 130351,
       "B08": 122612,
       "B19": 35511
     },
-    "otros": 3815586,
-    "positivos": 21286049,
-    "blancos": 833399,
-    "dif": 639156,
-    "total": 22758604,
-    "inscriptos": 33730857,
+    "otros": 3815868,
+    "positivos": 21287364,
+    "blancos": 833584,
+    "dif": 639208,
+    "total": 22760156,
+    "inscriptos": 33732421,
     "lab_pos": "Votos positivos",
     "lab_bla": "Votos en blanco",
     "lab_nul": "Votos nulos / anulados"

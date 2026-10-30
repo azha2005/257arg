@@ -98,7 +98,7 @@ ATLAS = {
         article="Elecciones presidenciales de Argentina de 1983", tipo="elecciones presidenciales",
         fecha="30 de octubre de 1983", varones=False, geom="1980", antartida=True, cats_extra=["Election maps of Argentine presidential elections"],
         votos=[CALVO_PRES_CITA],
-        logos=["RA chapa.jpg", "Flag of the Justicialist Party (square version).svg", "Pacto Autonomista - Liberal.png", "Estrella bloquista.png", "Logo MPN.png", "Logo Mofepa.jpg"], hold=["contradice_wikipedia_1983"], hold_logos=[],
+        logos=["RA chapa.jpg", "Flag of the Justicialist Party (square version).svg", "Pacto Autonomista - Liberal.png", "Estrella bloquista.png", "Logo MPN.png", "Logo Mofepa.jpg"], hold=[], hold_logos=[],
         avisos=["**Contradice el mapa por departamento vigente en Commons** (`Elecciones presidenciales de Argentina de 1983 - Resultados.V1.png`): el ganador coincide solo en el 64 % de las unidades (cotejo en `cotejo_wikipedia/LEEME_COTEJO.md`). La tabla de diputados de la misma base da la razón a nuestro mapa en 126 de 130 discrepancias, y el contraste independiente de la UNCuyo en Mendoza coincide en 18/18 con el nuestro y en 15/18 con el de Wikipedia. Hay que discutirlo en la página del artículo ANTES de subir o proponer nada.",
                 "La Alianza Federal suma 106.773 por la base y 107.188 en la tabla de Wikipedia (415 votos de diferencia).",
                 "Capital Federal: las 28 circunscripciones son aproximadas (salen del dibujo de Wikipedia)."]),
@@ -125,7 +125,7 @@ ATLAS = {
         article="Elecciones presidenciales de Argentina de 1989", tipo="elecciones presidenciales",
         fecha="14 de mayo de 1989", varones=False, geom="1980", antartida=True, cats_extra=["Election maps of Argentine presidential elections"],
         votos=[CALVO_PRES_CITA],
-        logos=["Escudo de la UCR.svg", "UCEDE logo chico.png", "Emblema del Partido Socialista Argentino.svg", "Logo MPN.png"], hold=["contradice_wikipedia_1989", "malargue_1989"], hold_logos=[],
+        logos=["Escudo de la UCR.svg", "UCEDE logo chico.png", "Emblema del Partido Socialista Argentino.svg", "Logo MPN.png"], hold=[], hold_logos=[],
         avisos=["**Contradice el mapa por departamento vigente en Commons** (`Elecciones presidenciales de Argentina de 1989 - Resultados.V1.png`): el ganador coincide solo en el 76 % de las unidades. En Mendoza, el contraste de la UNCuyo coincide con el nuestro en 17/18 unidades y con el de Wikipedia en 11/18 (`cotejo_wikipedia/LEEME_COTEJO.md`). Discutir antes de subir.",
                 "**Error conocido a resolver antes de subir:** Malargüe 1989. Ernesto trae FREJUPO 3.864 y la UNCuyo 3.964; con 3.964 gana Menem. Falta decidir si se corrige el dato o se anota.",
                 "Antofagasta de la Sierra (Catamarca) figura ganada por Unidad Socialista (166 de 435 positivos): es lo que trae la base y es coherente con el total provincial de Wikipedia, pero es un resultado raro."]),
@@ -308,5 +308,7 @@ ATLAS['2001bronca'] = dict(ATLAS['2001'],year='2001',folder='mapa2001bronca',htm
 
 from leg2003_2025_config import register as _register_leg2003_2025
 _register_leg2003_2025(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT)
+from leg2003_2025_config import register_paso as _register_paso
+_register_paso(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT)
 
 

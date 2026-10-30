@@ -10,12 +10,17 @@ Elecciones primarias del 11 de agosto de 2019. Generado con `python comun/atlas_
 
 | Bloque | Base DINE | Referencia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Frente de Todos | 11.622.428 | 12.205.938 | -583.510 | 431 |
-| Juntos por el Cambio | 7.825.208 | 8.121.689 | -296.481 | 93 |
-| Consenso Federal | 2.007.035 | 2.081.315 | -74.280 | 1 |
+| Frente de Todos | 11.641.608 | 12.205.938 | -564.330 | 434 |
+| Juntos por el Cambio | 7.831.430 | 8.121.689 | -290.259 | 93 |
+| Consenso Federal | 2.008.456 | 2.081.315 | -72.859 | 1 |
 
 Referencia: tabla de la Wikipedia (presidenciales, escrutinio definitivo: el provisorio no trae todas las mesas, de ahí la diferencia negativa) o la misma suma de la DINE (legislativas, diferencia 0 por construcción).
 
-Sin mesas (beige, sin imputar): Catamarca: Antofagasta de la Sierra; Catamarca: Santa María; Chaco: Presidencia de la Plaza.
+Sin mesas (beige, sin imputar): ninguna.
+
+- Catamarca: Antofagasta de la Sierra: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.
+- Chaco: Pcia. de la Plaza: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 32 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.
+- Catamarca: Santa Maria: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 65 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.
+- Chaco: General Belgrano: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 31 mesas), que reemplaza el único voto del provisorio (una mesa suelta). La planilla no trae inscriptos: sin participación.
 
 Estado: generado localmente, sin PNG transparentes ni paquete de Commons.

@@ -68,6 +68,9 @@ def mode_names(ds):
             out["gan"] = ("bloque ganador por departamento", "Resultados por departamento")
         elif "provincial" in t.lower() and t.lower().startswith("participaci"):
             out[m["id"]] = ("participación provincial (votos sobre electores registrados; sin cifras por departamento)", "Participacion por provincia")
+        elif m["id"].startswith("int"):   # PASO: precandidato que gana la interna de una agrupación
+            lab = re.sub(r"^Interna de\s+", "", t, flags=re.I) or m.get("tile") or m["id"]
+            out[m["id"]] = ("precandidato más votado en la interna de %s por departamento" % lab, "Interna de %s por departamento" % ascii_fold(lab))
         elif m["id"] == "par" or t.lower().startswith("participaci"):
             out[m["id"]] = ("participación (votantes sobre inscriptos) por departamento", "Participacion por departamento")
         else:
@@ -202,7 +205,9 @@ def wikitext(year, cfg, mode, kind, names, cats, logos_ok, logos_missing, files)
     MES = {"enero": "January", "febrero": "February", "marzo": "March", "abril": "April", "mayo": "May", "junio": "June", "julio": "July", "agosto": "August",
            "septiembre": "September", "octubre": "October", "noviembre": "November", "diciembre": "December"}
     TIPO = {"elecciones presidenciales": "presidential election", "elecciones legislativas (diputados nacionales)": "legislative election (national deputies)",
-            "elecciones de convencionales constituyentes": "constituent convention election"}
+            "elecciones de convencionales constituyentes": "constituent convention election",
+            "elecciones primarias abiertas, simultáneas y obligatorias (PASO) de presidente": "open primary election (PASO), president",
+            "elecciones primarias abiertas, simultáneas y obligatorias (PASO) de diputados nacionales": "open primary election (PASO), national deputies"}
     if cfg.get('fecha_en'):
         fecha_en=cfg['fecha_en']
     else:

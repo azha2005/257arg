@@ -4,17 +4,12 @@
   "cargo": "diputados nacionales",
   "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
   "units": 529,
-  "with_data": 524,
-  "missing": [
-    "Catamarca: Antofagasta de la Sierra",
-    "Catamarca: Santa María",
-    "Chaco: General Belgrano",
-    "Chaco: Presidencia de la Plaza"
-  ],
+  "with_data": 528,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
-    "Juntos por el Cambio": 111,
-    "Frente de Todos": 403,
+    "Juntos por el Cambio": 112,
+    "Frente de Todos": 406,
     "Consenso Federal": 5,
     "Alianza Frente Renovador de la Concordia": 3,
     "Movimiento Popular Neuquino": 2
@@ -42,23 +37,27 @@
     }
   ],
   "corrections": [
-    "Emparejamiento con la general (votos): nombre 97.7 %; sin bloque 2.0 %; nombre contenido 0.4 %."
+    "Emparejamiento con la general (votos): nombre 97.7 %; sin bloque 2.0 %; nombre contenido 0.4 %.",
+    "Catamarca: Antofagasta de la Sierra: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Chaco: Pcia. de la Plaza: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 32 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Catamarca: Santa Maria: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 65 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Chaco: General Belgrano: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 31 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación."
   ],
   "national": {
     "art": "Elecciones primarias de Argentina de 2019",
     "blocs": {
-      "B01": 10793359,
-      "B02": 7693637,
-      "B03": 2013210,
+      "B01": 10812939,
+      "B02": 7699089,
+      "B03": 2014134,
       "B05": 149062,
       "B09": 73088
     },
-    "otros": 1675438,
-    "positivos": 22397794,
-    "blancos": 1683530,
-    "dif": 380428,
-    "total": 24461752,
-    "inscriptos": 33419676,
+    "otros": 1676238,
+    "positivos": 22424550,
+    "blancos": 1687663,
+    "dif": 380664,
+    "total": 24492877,
+    "inscriptos": 33419673,
     "lab_pos": "Votos positivos",
     "lab_bla": "Votos en blanco",
     "lab_nul": "Votos nulos / anulados"

@@ -53,6 +53,60 @@ def load(year, pres):
     v['v'] = pd.to_numeric(v.v).astype(int)
     v = v[v.t != 'COMANDO']
     m['e'] = pd.to_numeric(m.mesa_electores, errors='coerce').fillna(0).astype(int)
+    return complementar(year, pres, v, m)
+
+
+# secciones sin mesas en el provisorio, completadas con la «Consulta de Escrutinio por Zona» de la CNE (padron.gob.ar/publica,
+# consultada a mano por el usuario; `datos/fuentes_leg2003_2025/padron_publica/paso/leer_cne_paso.py`)
+COMPL = ROOT / '../datos/fuentes_leg2003_2025/complementos_paso.json'
+CNE_NOTAS = {}   # (año, pres) -> {(d, s): nota de la ficha}
+
+
+def complementar(year, pres, v, m):
+    notas = CNE_NOTAS.setdefault((year, pres), {})
+    if not COMPL.exists(): return v, m
+    cargo = 'presidente' if pres else 'diputados'
+    for e in json.loads(COMPL.read_text(encoding='utf8')):
+        if e['year'] != year or cargo not in e['cargos']: continue
+        d, s, x = e['d'], e['s'], e['cargos'][cargo]
+        dist = v[v.d == d]; old = v[(v.d == d) & (v.s == s)]
+        name = next((n for n in old.seccion_nombre.dropna().astype(str) if n.strip()), None) or e['nombre']
+        tpl = dist.iloc[0].to_dict()
+        lists = dist[dist.t == 'POSITIVO'].drop_duplicates(['a', 'l'])
+        new = []
+        for agr, agn, ln, n in x['listas']:
+            nums = {str(int(q)).zfill(4) for q in re.findall(r'\d+', agr)}
+            cand = lists[[_num4(a) in nums for a in lists.a]]
+            if not len(cand):   # el definitivo de 2011 numera distinto algunos frentes (FPJ 502 = 0525 en el provisorio): por nombre
+                ab = lambda n: re.sub(r'^alianza ', '', _fold(n))
+                sc = {a: difflib.SequenceMatcher(None, ab(n), ab(agn)).ratio() for a, n in zip(lists.a, lists.agrupacion_nombre)}
+                best = max(sc, key=sc.get, default=None)
+                if best and sc[best] >= .6: cand = lists[lists.a == best]
+            if len(cand) > 1:   # varias listas internas: por la letra/número final y el parecido del nombre
+                f = _fold(ln); last = f.split()[-1] if f else ''
+                sc = [difflib.SequenceMatcher(None, _fold(r.lista_nombre), f).ratio() + (2 if last == _fold(r.l) else 0)
+                      + (1 if _fold(r.lista_nombre) and _fold(r.lista_nombre) in f else 0) for r in cand.itertuples()]
+                cand = cand.iloc[[max(range(len(sc)), key=sc.__getitem__)]]
+            if len(cand):
+                r = cand.iloc[0]; a, l, agname, lname = r.a, r.l, r.agrupacion_nombre, r.lista_nombre
+            else:
+                a, l, agname, lname = str(int(re.findall(r'\d+', agr)[0])).zfill(4), '', agn, ln
+            new.append(dict(tpl, a=a, l=l, agrupacion_id=a, lista_numero=l, agrupacion_nombre=agname, lista_nombre=lname, t='POSITIVO', votos_tipo='POSITIVO', v=n))
+        new += [dict(tpl, a='', l='', agrupacion_id='', lista_numero='', agrupacion_nombre='', lista_nombre='', t=t, votos_tipo=t, v=n)
+                for t, n in (('EN BLANCO', x['blancos']), ('NULO', x['nulos'])) if n]
+        new = pd.DataFrame(new).assign(s=s, seccion_id=int(s), seccion_nombre=name)
+        assert int(new.v.sum()) == x['total'], (year, d, s)
+        v = pd.concat([v[~((v.d == d) & (v.s == s))], new], ignore_index=True)
+        m = m[~((m.d == d) & (m.s == s))]
+        if e['electores']:
+            m = pd.concat([m, pd.DataFrame([dict(m.iloc[0].to_dict(), d=d, s=s, distrito_id=int(d), seccion_id=int(s), circuito_id='CNE', mesa_id='CNE', e=e['electores'])])], ignore_index=True)
+        prov = int(old[old.t == 'POSITIVO'].v.sum()) + int(old[old.t != 'POSITIVO'].v.sum())
+        src = (f"Votos del escrutinio definitivo de la DINE ({e['archivo']}; {e['mesas']} mesas)" if '.pdf' in e['archivo']
+               else f"Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, {e['mesas']} mesas)")
+        notas[(d, s)] = (src
+                         + ((f', que reemplaza los {prov} votantes del provisorio' if prov > 1 else ', que reemplaza el único voto del provisorio (una mesa suelta)')
+                            if prov else ', porque no hay mesas en el provisorio')
+                         + ('. ' + ('Inscriptos: ' + e['electores_fuente'] if e['electores'] else 'La planilla no trae inscriptos: sin participación') + '.'))
     return v, m
 
 
@@ -215,8 +269,16 @@ def prepare(key, U):
             for kk, n in x.items(): dst['bl'].setdefault(c, {})[kk] = dst['bl'].get(c, {}).get(kk, 0) + n
         dst['note'] += ' Incluye la subsección electoral ' + k[1] + '.'
         del sections[k]
+    for k, nt in CNE_NOTAS.get((year, pres), {}).items():
+        sections[k]['note'] = (sections[k]['note'] + ' ' + nt).strip()
+        changes.append(f"{D2P[k[0]]}: {titlecase(sections[k]['name'])}: {nt}")
+    for k, rec in list(sections.items()):   # restos de una mesa suelta (2019, General Belgrano: 1 voto): pendiente, no ganador
+        tot = rec['pos'] + rec['bla'] + rec['nul']
+        if 0 < tot < 50 and k != ('24', '003'):
+            changes.append(f"{D2P[k[0]]}: {rec['name']}: el provisorio trae solo {tot} votantes (mesas sueltas); queda pendiente.")
+            del sections[k]
     ant = sections.pop(('24', '003'), None)
-    idx = {(u['prov'], norm(u['name'])): i for i, u in enumerate(U) if u['name'] != 'Islas Malvinas'}
+    idx ={(u['prov'], norm(u['name'])): i for i, u in enumerate(U) if u['name'] != 'Islas Malvinas'}
     linked = {}; unmapped = []
     for (d, s), rec in sections.items():
         p = D2P[d]

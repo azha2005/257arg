@@ -10,9 +10,9 @@ Elecciones primarias del 12 de septiembre de 2021. Generado con `python comun/at
 
 | Bloque | Base DINE | Referencia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Juntos por el Cambio | 8.898.630 | 8.898.630 | +0 | 298 |
-| Frente de Todos | 6.960.393 | 6.960.393 | +0 | 189 |
-| Tercera Vía y Peronismo Federal | 1.125.472 | 1.125.472 | +0 | 3 |
+| Juntos por el Cambio | 8.899.255 | 8.899.255 | +0 | 300 |
+| Frente de Todos | 6.960.708 | 6.960.708 | +0 | 189 |
+| Tercera Vía y Peronismo Federal | 1.125.565 | 1.125.565 | +0 | 3 |
 | Frente Renovador de la Concordia | 197.494 | 197.494 | +0 | 9 |
 | Movimiento Popular Neuquino | 130.351 | 130.351 | +0 | 14 |
 | Juntos Somos Río Negro | 122.612 | 122.612 | +0 | 12 |
@@ -20,8 +20,10 @@ Elecciones primarias del 12 de septiembre de 2021. Generado con `python comun/at
 
 Referencia: tabla de la Wikipedia (presidenciales, escrutinio definitivo: el provisorio no trae todas las mesas, de ahí la diferencia negativa) o la misma suma de la DINE (legislativas, diferencia 0 por construcción).
 
-Sin mesas (beige, sin imputar): Catamarca: Antofagasta de la Sierra; Chubut: Gastre.
+Sin mesas (beige, sin imputar): ninguna.
 
 - Emparejamiento con la general (votos): nombre 94.3 %; sin bloque 4.8 %; bloque 0.8 %; número 0.2 %.
+- Catamarca: Antofagasta de la Sierra: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. Inscriptos: 1.057 votantes = 67,58 % de los inscriptos.
+- Chubut: Gastre: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.
 
 Estado: generado localmente, sin PNG transparentes ni paquete de Commons.

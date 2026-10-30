@@ -4,16 +4,12 @@
   "cargo": "presidente",
   "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
   "units": 529,
-  "with_data": 525,
-  "missing": [
-    "Catamarca: Antofagasta de la Sierra",
-    "Catamarca: Santa María",
-    "Chaco: Presidencia de la Plaza"
-  ],
+  "with_data": 528,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
     "Juntos por el Cambio": 93,
-    "Frente de Todos": 431,
+    "Frente de Todos": 434,
     "Consenso Federal": 1
   },
   "logos": [
@@ -30,7 +26,12 @@
       "bloque": "consenso"
     }
   ],
-  "corrections": [],
+  "corrections": [
+    "Catamarca: Antofagasta de la Sierra: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Chaco: Pcia. de la Plaza: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 32 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Catamarca: Santa Maria: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 65 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Chaco: General Belgrano: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 31 mesas), que reemplaza el único voto del provisorio (una mesa suelta). La planilla no trae inscriptos: sin participación."
+  ],
   "national": {
     "art": "Elecciones primarias de Argentina de 2019",
     "blocs": {

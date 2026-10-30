@@ -4,13 +4,11 @@
   "cargo": "presidente",
   "geometry": "Departamentos de 2010, 15 comunas de Capital Federal y Lezama separado",
   "units": 528,
-  "with_data": 526,
-  "missing": [
-    "Jujuy: Valle Grande"
-  ],
+  "with_data": 527,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
-    "Frente para la Victoria": 505,
+    "Frente para la Victoria": 506,
     "Unión para el Desarrollo Social": 2,
     "Frente Popular": 8,
     "Compromiso Federal": 9,
@@ -38,7 +36,9 @@
       "bloque": "cf11"
     }
   ],
-  "corrections": [],
+  "corrections": [
+    "Jujuy: Valle Grande: Votos del escrutinio definitivo de la DINE (jujuy_paso2011_archivo.pdf (escrutinio_primarias_jujuy.pdf de elecciones.gob.ar, copia de Wayback), página 9; 11 mesas), porque no hay mesas en el provisorio. Inscriptos: 2.357 según el escrutinio definitivo de la DINE."
+  ],
   "national": {
     "art": "Elecciones primarias de Argentina de 2011",
     "blocs": {
