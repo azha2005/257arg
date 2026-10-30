@@ -59,7 +59,7 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 ## Fuentes y licencia
 - **Votos:** Dirección Nacional Electoral, Resultados Provisionales Elecciones 2019, datos por mesa publicados en datos.gob.ar y agregados por departamento/comuna.
 - **Geometría:** Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Frente Renovador de la Concordia Social.png, Frente de Todos 2019.png, Juntos-Por-El-Cambio-Logo.svg, Logo Consenso Federal Argentina.svg, Logo JSRN Argentina.svg, Logo MPN.png. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Frente Renovador de la Concordia Social.png, Frente de Todos 2019.png, Juntos-Por-El-Cambio-Logo.svg, Logo Consenso Federal Argentina.svg, Logo JSRN Argentina.svg, Logo MPN.png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 27 de octubre de 2019 (cotejada con el artículo).
 
 

@@ -57,13 +57,13 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 - Color final de Frente Renovador de la Concordia: #5c6bc0; tabla de Wikipedia: #294593. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Movimiento Popular Neuquino: #00708b; tabla de Wikipedia: #0070B8. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Somos Energía para Renovar Santa Cruz: #d81b60; tabla de Wikipedia: #0268B3. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
-- Color final de Chubut Somos Todos: #c62828; tabla de Wikipedia: #2AB665. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
+- Color final de Chubut Somos Todos: #9ccc65; tabla de Wikipedia: #2AB665. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Tabla nacional de la Wikipedia con votantes (34.413.824) y electores (24.433.604) intercambiados; se usan al revés.
 
 ## Fuentes y licencia
 - **Votos:** Dirección Nacional Electoral, Resultados Provisionales Elecciones 2021, datos por mesa publicados en datos.gob.ar y agregados por departamento/comuna.
 - **Geometría:** Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Chubut Somos Todos logo.png, Frente Renovador de la Concordia Social.png, Frente de Todos logo.svg, Hacemos por Córdoba.png, Juntos-Por-El-Cambio-Logo.svg, Logo JSRN Argentina.svg, Logo MPN.png, SER Santa Cruz logo.png. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Chubut Somos Todos logo.png, Frente Renovador de la Concordia Social.png, Frente de Todos logo.svg, Hacemos por Córdoba.png, Juntos-Por-El-Cambio-Logo.svg, Logo JSRN Argentina.svg, Logo MPN.png, SER Santa Cruz logo.png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 14 de noviembre de 2021 (cotejada con el artículo).
 
 

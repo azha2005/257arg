@@ -56,13 +56,13 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 - Color final de peronismo no kirchnerista: #1aff98; tabla de Wikipedia: #318CE7. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Frente Progresista Cívico y Social: #ff6600; tabla de Wikipedia: #FF8C00. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Fuerza Republicana (FR): #7b3f00; tabla de Wikipedia: #00708B. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
-- Color final de Chubut para Todos (CpT): #c62828; tabla de Wikipedia: #2ab665. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
+- Color final de Chubut para Todos (CpT): #9ccc65; tabla de Wikipedia: #2ab665. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Movimiento Popular Neuquino (MPN): #00708b; tabla de Wikipedia: #0070B8. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 
 ## Fuentes y licencia
 - **Votos:** Dirección Nacional Electoral, Resultados Provisionales Elecciones 2017, datos por mesa publicados en datos.gob.ar y agregados por departamento/comuna.
 - **Geometría:** Departamentos de 2010, 15 comunas de Capital Federal y Lezama separado. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Cambiemos logo.png, Chubut Somos Todos logo.png, Flag of the Justicialist Party (square version).svg, Logo FPCyS.png, Logo MPN.png, Unidad Ciudadana.svg. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Cambiemos logo.png, Chubut Somos Todos logo.png, Flag of the Justicialist Party (square version).svg, Logo FPCyS.png, Logo MPN.png, Unidad Ciudadana.svg. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 22 de octubre de 2017 (cotejada con el artículo).
 
 

@@ -65,7 +65,7 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 ## Fuentes y licencia
 - **Votos:** dat.ar (datar.info), CSV departamental original conservado en raw/; cotejado por sumas de listas y métricas. No se imputa ninguna cifra ausente.
 - **Geometría:** Departamentos de 2001 y 28 circunscripciones de Capital Federal (ajustadas al contorno). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Las versiones con logos ShareAlike llevan `{{self|cc-by-sa-4.0}}`; las variantes que omiten esos emblemas conservan CC BY 4.0. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Ari Logo.svg, Compromiso para el Cambio.png, Escudo de la UCR.svg, Flag of the Justicialist Party (square version).svg, Logo Frente Civico de Cordoba.svg, Logo Fuerza Republicana.png, Logo MODIN.png, Logo MPN.png, PRS logo.png, Recrear logo.jpg. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Ari Logo.svg, Compromiso para el Cambio.png, Escudo de la UCR.svg, Flag of the Justicialist Party (square version).svg, Logo Frente Civico de Cordoba.svg, Logo Fuerza Republicana.png, Logo MODIN.png, Logo MPN.png, PRS logo.png, Recrear logo.jpg. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 27 de abril al 23 de noviembre de 2003 (cotejada con el artículo).
 
 
