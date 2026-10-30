@@ -8,6 +8,8 @@ def register(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT):
     meta_path=ROOT/'datos/fuentes_leg2003_2025/logos_metadata.json'
     metadata=json.loads(meta_path.read_text(encoding='utf8')) if meta_path.exists() else {}
     metadata={p['title'][5:]:p for p in metadata.values() if p.get('imageinfo')}
+    comp_path=ROOT/'datos/fuentes_leg2003_2025/complementos_departamentales.json'
+    complements=json.loads(comp_path.read_text(encoding='utf8')) if comp_path.exists() else []
     for y,date in DATES.items():
         p=ROOT/f'mapas/mapa{y}/control_cobertura.json'
         if not p.exists():continue
@@ -25,6 +27,10 @@ def register(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT):
         src=(f'dat.ar (datar.info), CSV departamental original conservado en raw/; cotejado por sumas de listas y métricas. No se imputa ninguna cifra ausente.' if y==2003 else
              f'PolAr_Data (electorArg), resultados provisorios INDRA / Atlas Electoral de Andy Tow por mesa, agregados por departamento y circunscripción.' if y<2011 else
              f'Dirección Nacional Electoral, Resultados Provisionales Elecciones {y}, datos por mesa publicados en datos.gob.ar y agregados por departamento/comuna.')
+        comp=[c for c in complements if c['year']==y]
+        cne=[c for c in comp if c['pdf'].startswith('padron_publica/')];dine=[c for c in comp if c not in cne]
+        if dine:src+=' '+'; '.join(sorted({c['name'] for c in dine}))+': escrutinio definitivo de la Dirección Nacional Electoral (PDF por distrito de elecciones.gob.ar, copia de la Wayback Machine), porque la fuente principal no trae esas unidades.'
+        if cne:src+=' '+'; '.join(sorted({c['name'] for c in cne}))+': escrutinio definitivo de la Cámara Nacional Electoral («Consulta de Escrutinio por Zona», padron.gob.ar/publica), porque la fuente principal no trae esa unidad.'
         ATLAS[str(y)]=dict(folder=f'mapa{y}',html=f'atlas_{y}.html',dataset=f'dataset_{y}.json',article=f'Elecciones legislativas de Argentina de {y}',
              tipo='elecciones legislativas (diputados nacionales)',fecha=date,varones=False,geom=g,antartida=True,
              cats_extra=['Election maps of Argentine Chamber of Deputies elections'],votos=[src],

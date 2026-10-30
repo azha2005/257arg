@@ -58,8 +58,11 @@ def load_votes(year,folder):
         changes.append('La Plata: 21 valores con separador de miles leído como decimal se multiplican por 1000; no se altera el CSV original.')
         for (di,si),sub in d.groupby(['provinciaId','departamentoId']):
             key=(str(di).zfill(2),str(si).zfill(3))
-            if sub.votos.isna().any():invalid[key]='La fuente deja al menos una lista sin cifra. Se conserva la unidad pendiente, sin sustituir la celda por cero.'
             pos=sub[sub.partidoId=='990'].votos.sum();s=sub[~sub.partidoId.isin(['990','991','992','994'])].votos.sum()
+            if sub.votos.isna().any():
+                # celda vacía: vale 0 sólo si las demás listas ya suman los positivos declarados
+                if int(s)==int(pos):changes.append(f"{sub.departamento.iloc[0].title()}: la fuente deja vacía la celda de {', '.join(sub[sub.votos.isna()].partido)}; las demás listas suman exactamente los positivos declarados ({num(pos)}), así que vale 0.")
+                else:invalid[key]='La fuente deja al menos una lista sin cifra. Se conserva la unidad pendiente, sin sustituir la celda por cero.'
             if int(s)!=int(pos):invalid[key]=f'La suma de listas ({num(s)}) no coincide con los positivos declarados ({num(pos)}). Dato pendiente de cotejo.'
         v=pd.DataFrame(dict(distrito_id=d.provinciaId.astype(int).astype(str).str.zfill(2),seccion_id=d.departamentoId.astype(int).astype(str).str.zfill(3),seccion_nombre=d.departamento,
                             agrupacion_id=d.partidoId,agrupacion_nombre=d.partido,cargo_nombre='DIPUTADOS NACIONALES',v=d.votos))

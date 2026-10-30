@@ -6,23 +6,24 @@ Geometría: Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con po
 
 Fuentes: `datos_oficiales/2021/agregado.pkl` (DINE, escrutinio provisorio por mesa).
 
-El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2021); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 23.238.621 positivos y la tabla nacional 23.265.427. No se ajustan los votos locales para forzar igualdad. `control_bloques_2021.csv` conserva todas las diferencias.
+El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2021); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 23.240.459 positivos y la tabla nacional 23.265.427. No se ajustan los votos locales para forzar igualdad. `control_bloques_2021.csv` conserva todas las diferencias.
 
 Sólo las fuerzas que ganan alguna unidad aparecen en la leyenda y en las barras nacionales; el resto integra otros en la torta y permanece en el detalle. `mapeo_listas` conserva cada lista y bloque. Colores de las filas de Wikipedia resueltos mediante expandtemplates; las excepciones por contraste se detallan abajo.
 
 | Bloque | Base | Wikipedia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Juntos por el Cambio | 9.806.007 | 9.945.804 | -139,797 | 293 |
-| Frente de Todos | 7.879.511 | 8.041.290 | -161,779 | 196 |
-| Tercera vía y el Peronismo Federal | 1.300.092 | 1.325.494 | -25,402 | 5 |
+| Juntos por el Cambio | 9.806.635 | 9.945.804 | -139,169 | 293 |
+| Frente de Todos | 7.880.416 | 8.041.290 | -160,874 | 197 |
+| Tercera vía y el Peronismo Federal | 1.300.096 | 1.325.494 | -25,398 | 5 |
 | Frente Renovador de la Concordia | 229.225 | 230.817 | -1,592 | 7 |
 | Juntos Somos Río Negro | 138.545 | 140.634 | -2,089 | 12 |
 | Movimiento Popular Neuquino | 111.177 | 112.027 | -850 | 12 |
 | Somos Energía para Renovar Santa Cruz | 46.500 | 46.633 | -133 | 1 |
 | Chubut Somos Todos | 28.793 | 29.622 | -829 | 1 |
 
-Faltantes (beige, sin imputar): Chaco: Tapenagá.
+Faltantes (beige, sin imputar): ninguno en el continente.
 
+Tapenagá: Cámara Nacional Electoral, «Consulta de Escrutinio por Zona» (escrutinio definitivo), padron.gob.ar/publica, consulta manual del usuario del 30-oct-2026; planilla `padron_publica/zona_secc_00009.xls`, columna DIPUTADO NACIONAL (13 mesas, 2.000 votantes). Inscriptos calculados del 61,03 % de votantes que da la consulta: 3.277 es el único entero que lo reproduce.
 Color final de Juntos por el Cambio: #f4ce00; tabla de Wikipedia: #FFD700. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Frente de Todos: #2ea3ff; tabla de Wikipedia: #009FE3. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Tercera vía y el Peronismo Federal: #2f3b81; tabla de Wikipedia: #15b587. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.

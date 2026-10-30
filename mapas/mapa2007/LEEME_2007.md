@@ -6,22 +6,23 @@ Geometría: Departamentos de 2001 y 28 circunscripciones de Capital Federal (aju
 
 Fuentes: `datos_oficiales/2007/agregado_polar.pkl` (PolAr/INDRA/Andy Tow, provisorio).
 
-El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2007); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 17.773.921 positivos y la tabla nacional 18.091.102. No se ajustan los votos locales para forzar igualdad. `control_bloques_2007.csv` conserva todas las diferencias.
+El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2007); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 17.775.614 positivos y la tabla nacional 18.091.102. No se ajustan los votos locales para forzar igualdad. `control_bloques_2007.csv` conserva todas las diferencias.
 
 Sólo las fuerzas que ganan alguna unidad aparecen en la leyenda y en las barras nacionales; el resto integra otros en la torta y permanece en el detalle. `mapeo_listas` conserva cada lista y bloque. Colores de las filas de Wikipedia resueltos mediante expandtemplates; las excepciones por contraste se detallan abajo.
 
 | Bloque | Base | Wikipedia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Frente para la Victoria | 8.241.550 | 8.524.699 | -283,149 | 461 |
-| Coalición Cívica | 3.371.782 | 3.606.840 | -235,058 | 33 |
-| Concertación para Una Nación Avanzada | 2.721.760 | 2.741.843 | -20,083 | 15 |
+| Frente para la Victoria | 8.242.914 | 8.524.699 | -281,785 | 462 |
+| Coalición Cívica | 3.371.785 | 3.606.840 | -235,055 | 33 |
+| Concertación para Una Nación Avanzada | 2.722.081 | 2.741.843 | -19,762 | 15 |
 | Alianza Propuesta Republicana y aliados | 1.079.181 | 1.102.035 | -22,854 | 1 |
-| Frente Justicia, Unión y Libertad / Peronismo Federal | 839.104 | 972.391 | -133,287 | 9 |
+| Frente Justicia, Unión y Libertad / Peronismo Federal | 839.105 | 972.391 | -133,286 | 9 |
 | Frente Renovador de la Concordia | 153.340 | 165.151 | -11,811 | 12 |
 | Movimiento Popular Neuquino (MPN) | 50.829 | 50.676 | +153 | 7 |
 
-Faltantes (beige, sin imputar): Jujuy: Valle Grande.
+Faltantes (beige, sin imputar): ninguno en el continente.
 
+Valle Grande: DINE definitivo: jujuy_2007_archivo.pdf (Jujuy_28_Oct_07.pdf de elecciones.gob.ar, copia de Wayback), página 15, columna DIPUTADO NAC. (total ambos sexos).
 Color final de Frente para la Victoria: #50ade6; tabla de Wikipedia: #75AADB. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Coalición Cívica: #74b744; tabla de Wikipedia: #008080. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Concertación para Una Nación Avanzada: #d31515; tabla de Wikipedia: #E10019. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.

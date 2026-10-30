@@ -3,14 +3,12 @@
   "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
   "solid": [],
   "units": 529,
-  "with_data": 527,
-  "missing": [
-    "Chaco: Tapenagá"
-  ],
+  "with_data": 528,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
     "Juntos por el Cambio": 293,
-    "Frente de Todos": 196,
+    "Frente de Todos": 197,
     "Chubut Somos Todos": 1,
     "Tercera vía y el Peronismo Federal": 5,
     "Frente Renovador de la Concordia": 7,
@@ -104,6 +102,7 @@
     }
   ],
   "corrections": [
+    "Tapenagá: Cámara Nacional Electoral, «Consulta de Escrutinio por Zona» (escrutinio definitivo), padron.gob.ar/publica, consulta manual del usuario del 30-oct-2026; planilla `padron_publica/zona_secc_00009.xls`, columna DIPUTADO NACIONAL (13 mesas, 2.000 votantes). Inscriptos calculados del 61,03 % de votantes que da la consulta: 3.277 es el único entero que lo reproduce.",
     "Color final de Juntos por el Cambio: #f4ce00; tabla de Wikipedia: #FFD700. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
     "Color final de Frente de Todos: #2ea3ff; tabla de Wikipedia: #009FE3. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
     "Color final de Tercera vía y el Peronismo Federal: #2f3b81; tabla de Wikipedia: #15b587. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
@@ -133,7 +132,7 @@
       "votos": 28688
     }
   ],
-  "base_positivos": 23238621,
+  "base_positivos": 23240459,
   "wikipedia_positivos": 23265427,
   "national": {
     "art": "Elecciones legislativas de Argentina de 2021",

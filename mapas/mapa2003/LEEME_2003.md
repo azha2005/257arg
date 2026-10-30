@@ -14,8 +14,8 @@ Provincias en color sólido: La Pampa. Total provincial, sin inventar resultados
 
 | Bloque | Base | Wikipedia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Partido Justicialista y aliados | 6.216.929 | 6.250.817 | -33,888 | 365 |
-| Unión Cívica Radical y aliados | 2.008.283 | 2.117.075 | -108,792 | 48 |
+| Partido Justicialista y aliados | 6.216.929 | 6.250.817 | -33,888 | 366 |
+| Unión Cívica Radical y aliados | 2.008.283 | 2.117.075 | -108,792 | 49 |
 | Afirmación para una República Igualitaria y aliados | 1.498.810 | 1.536.838 | -38,028 | 13 |
 | Movimiento Federal para Recrear el Crecimiento | 609.752 | 632.303 | -22,551 | 1 |
 | Frente Compromiso para el Cambio | 610.961 | 611.013 | -52 | 17 |
@@ -31,9 +31,11 @@ Provincias en color sólido: La Pampa. Total provincial, sin inventar resultados
 | Frente Cívico y Social de Catamarca | 63.415 | 63.415 | +0 | 16 |
 | Partido Demócrata Cristiano (PDC) | 70.908 | 51.449 | +19,459 | 1 |
 
-Faltantes (beige, sin imputar): Buenos Aires: Magdalena; Buenos Aires: Punta Indio.
+Faltantes (beige, sin imputar): ninguno en el continente.
 
 La Plata: 21 valores con separador de miles leído como decimal se multiplican por 1000; no se altera el CSV original.
+Magdalena: la fuente deja vacía la celda de MOV. VECIN. PROV.(MO.VE.PRO.); las demás listas suman exactamente los positivos declarados (7.110), así que vale 0.
+Punta Indio: la fuente deja vacía la celda de NACIONAL CONST.- UNIR; las demás listas suman exactamente los positivos declarados (3.893), así que vale 0.
 Color final de Partido Justicialista y aliados: #1c5ece; tabla de Wikipedia: #318CE7. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Afirmación para una República Igualitaria y aliados: #74b744; tabla de Wikipedia: #6fb53e. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Movimiento Federal para Recrear el Crecimiento: #f4ce00; tabla de Wikipedia: #35649C. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.

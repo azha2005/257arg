@@ -6,21 +6,22 @@ Geometría: Departamentos de 2010, 15 comunas de Capital Federal y Lezama separa
 
 Fuentes: `datos_oficiales/2011/agregado.pkl` (DINE, escrutinio provisorio por mesa).
 
-El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2011); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 20.158.660 positivos y la tabla nacional 20.574.048. No se ajustan los votos locales para forzar igualdad. `control_bloques_2011.csv` conserva todas las diferencias.
+El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2011); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 20.160.285 positivos y la tabla nacional 20.574.048. No se ajustan los votos locales para forzar igualdad. `control_bloques_2011.csv` conserva todas las diferencias.
 
 Sólo las fuerzas que ganan alguna unidad aparecen en la leyenda y en las barras nacionales; el resto integra otros en la torta y permanece en el detalle. `mapeo_listas` conserva cada lista y bloque. Colores de las filas de Wikipedia resueltos mediante expandtemplates; las excepciones por contraste se detallan abajo.
 
 | Bloque | Base | Wikipedia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Frente para la Victoria (FPV) y aliados | 10.530.147 | 10.793.689 | -263,542 | 495 |
-| Frente Amplio Progresista (FAP) y aliados | 2.733.265 | 2.780.984 | -47,719 | 4 |
-| Unión para el Desarrollo Social (UDESO) | 2.714.570 | 2.774.548 | -59,978 | 2 |
-| Frente Popular-Propuesta Republicana (alianza informal) | 1.424.043 | 1.424.685 | -642 | 6 |
-| Compromiso Federal (CF) | 1.196.971 | 1.218.949 | -21,978 | 9 |
+| Frente para la Victoria (FPV) y aliados | 10.531.348 | 10.793.689 | -262,341 | 496 |
+| Frente Amplio Progresista (FAP) y aliados | 2.733.275 | 2.780.984 | -47,709 | 4 |
+| Unión para el Desarrollo Social (UDESO) | 2.714.781 | 2.774.548 | -59,767 | 2 |
+| Frente Popular-Propuesta Republicana (alianza informal) | 1.424.236 | 1.424.685 | -449 | 6 |
+| Compromiso Federal (CF) | 1.196.974 | 1.218.949 | -21,975 | 9 |
 | Movimiento Popular Neuquino (MPN) | 86.662 | 88.197 | -1,535 | 10 |
 
-Faltantes (beige, sin imputar): Jujuy: Valle Grande.
+Faltantes (beige, sin imputar): ninguno en el continente.
 
+Valle Grande: DINE definitivo: jujuy_2011_archivo.pdf (resultados_nacionales_2011_jujuy.pdf de elecciones.gob.ar, copia de Wayback), página 10, columna DIP NAC. El Frente Primero Jujuy figura con el número 502; en el provisorio es la lista 0614.
 Color final de Frente para la Victoria (FPV) y aliados: #50ade6; tabla de Wikipedia: #75AADB. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Unión para el Desarrollo Social (UDESO): #d31515; tabla de Wikipedia: #E10019. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Frente Popular-Propuesta Republicana (alianza informal): #b73c96; tabla de Wikipedia: #c71585. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
