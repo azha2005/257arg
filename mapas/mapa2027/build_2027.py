@@ -396,7 +396,7 @@ pv.append('</g>')
 
 ds = dict(
     year="2027", slug="presidente_2027_escenario", locale="es-AR", country="Argentina",
-    title="Elecciones presidenciales de", exterior=False,
+    title="Elecciones presidenciales de Argentina de", exterior=False,
     sets={"1": dict(label="1ª V.", subtitle="Hipotético · 1ª vuelta"), "2": dict(label="2ª V.", subtitle="Hipotético · balotaje")},
     bins=[30, 40, 50, 60, 70, 80], bin_labels=["20%", "30%", "40%", "50%", "60%", "70%", "+80%"],
     labels=dict(results="Resultados", won="GANÓ", pie1="Proporción sobre votos positivos",

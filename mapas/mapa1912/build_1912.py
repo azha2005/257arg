@@ -506,7 +506,7 @@ ds = dict(
     title="Elecciones legislativas de Argentina de", year="1912",
     labels=dict(pie1="Proporción sobre votos positivos"),
     exterior=False, candidates=CAND,
-    sets={"1": dict(label="1912", subtitle="Deptos. de 1914")},
+    sets={"1": dict(label="1912", subtitle="Fuentes varias · deptos. de 1914")},
     modes=MODES, insets=INSETS, solid=sorted(SOLID),
     territories=[dict(n=disp.get(i, u["name"]), p=u["prov"], k=u["kind"]) for i, u in enumerate(U)],
 )

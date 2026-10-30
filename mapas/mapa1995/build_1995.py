@@ -545,10 +545,10 @@ pv.append("</g>")
 # dataset ----------------------------------------------------------------
 ds = dict(
     slug="elecciones_1995" + ("_ucr_frepaso" if UNION else ""), locale="es-AR", country="Argentina",
-    title=("Presidenciales de Argentina de" if UNION else "Elecciones presidenciales de Argentina de"), year="1995",
+    title=("Elecciones presidenciales de Argentina de"), year="1995",
     labels=dict(pie1="Proporción sobre votos positivos"),
     exterior=False, candidates=CAND,
-    sets={"1": dict(label="1995", subtitle=("Hipotético: FREPASO + UCR" if UNION else "Base de E. Calvo · deptos. de 1991"))},
+    sets={"1": dict(label="1995", subtitle=("Hipotético · FREPASO + UCR" if UNION else "Base de E. Calvo · deptos. de 1991"))},
     modes=MODES, insets=INSETS,
     territories=[dict(n=disp.get(i, u["name"]), p=u["prov"], k=u["kind"]) for i, u in enumerate(U)],
 )

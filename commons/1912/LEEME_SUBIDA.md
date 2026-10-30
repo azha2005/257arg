@@ -1,6 +1,6 @@
 # Paquete 1912 para Commons — Elecciones legislativas de Argentina de 1912
 
-Estado al 2026-10-14. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
+Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -35,9 +35,9 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 
 ## Fuentes y licencia
 - **Votos:** Capital Federal (20 circunscripciones) y Córdoba (21 de 26 departamentos): Cantón, Darío (1968). ''Materiales para el estudio de la sociología política en la Argentina'', tomo II, elecciones de diputados de 1912. Transcritos a mano desde las imágenes del libro. Mendoza (16 unidades): suma de las cifras expresas de las 188 mesas del expediente 42-D-1912 de la Cámara de Diputados (apym.hcdn.gob.ar), leídas a mano de las imágenes, con las repeticiones del 28/4 en lugar de las mesas anuladas. Los totales de Benegas (15.833) y Gaviola (8.247) coinciden con los del acta. Santa Fe (5 de 19 departamentos: Rosario, Las Colonias, San Lorenzo, Vera y Belgrano): diario ''Santa Fe'' (Archivo General de la Provincia, Hemeroteca Digital) del 18, 20 y 23/4/1912, escrutinio anterior al diploma del 29/4. Resto de las provincias: solo el total provincial de la tabla del artículo de la Wikipedia, sin detalle departamental.
-- **Geometría:** Departamentos de 1914 (censo de 1914). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**: por eso los archivos llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}` (ver las instrucciones genéricas).
-- **Logos** (solo «con leyenda» y PNG): Flag of Radical Civic Union.svg, Emblema del Partido Socialista Argentino.svg. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
-- **Fecha de la elección:** 7 de abril de 1912 (puesta de memoria; confirmar con el artículo).
+- **Geometría:** Departamentos de 1914 (censo de 1914). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
+- **Logos** (solo «con leyenda» y PNG): Flag of Radical Civic Union.svg, Emblema del Partido Socialista Argentino.svg. El detalle de cada licencia está en `logos/LICENCIAS.md`.
+- **Fecha de la elección:** 7 de abril de 1912 (confirmar con el artículo).
 - **Categorías de Commons que no existen y se omitieron:** 1912 election maps.
 
 ## Discusión del artículo

@@ -1,6 +1,6 @@
 # Paquete 1914 para Commons — Elecciones legislativas de Argentina de 1914
 
-Estado al 2026-10-14. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
+Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -35,9 +35,9 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 
 ## Fuentes y licencia
 - **Votos:** Cantón, Darío (1968). ''Materiales para el estudio de la sociología política en la Argentina'', tomo II, elecciones de diputados de 1914 (Buenos Aires, Capital Federal y Entre Ríos). Transcritos a mano desde las imágenes del libro; Buenos Aires se contrastó con Lupu y Stokes en 93 unidades. Córdoba, Corrientes, La Rioja y Mendoza: actas de la Junta Escrutadora Nacional en los expedientes 26-P-1914, 21-D-1914, 13-P-1914 y 29-P-1914 de la Cámara de Diputados (apym.hcdn.gob.ar; los de Corrientes y Mendoza por la Wayback Machine), leídos a mano de las imágenes de los expedientes, sin una segunda transcripción independiente. Santa Fe (13 de 19 departamentos): diario ''Santa Fe'' (Archivo General de la Provincia, Hemeroteca Digital), 28/3 a 2/4/1914, y ''La Prensa'' (Buenos Aires, 2/4/1914; Internet Archive) para General López, Caseros y Constitución; escrutinio en curso, anterior al definitivo del 8/4. Tres partidos de Buenos Aires (General San Martín, San Antonio de Areco, San Isidro) se completaron con ''La Prensa'' del 1 y 2/4/1914. Catamarca, Jujuy, Salta, San Juan, Santiago del Estero y Tucumán: solo el total provincial de la tabla del artículo de la Wikipedia, sin detalle departamental.
-- **Geometría:** Departamentos de 1914 (censo de 1914). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**: por eso los archivos llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}` (ver las instrucciones genéricas).
-- **Logos** (solo «con leyenda» y PNG): Flag of Radical Civic Union.svg, Emblema del Partido Socialista Argentino.svg. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
-- **Fecha de la elección:** 22 de marzo de 1914 (puesta de memoria; confirmar con el artículo).
+- **Geometría:** Departamentos de 1914 (censo de 1914). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
+- **Logos** (solo «con leyenda» y PNG): Flag of Radical Civic Union.svg, Emblema del Partido Socialista Argentino.svg. El detalle de cada licencia está en `logos/LICENCIAS.md`.
+- **Fecha de la elección:** 22 de marzo de 1914 (confirmar con el artículo).
 - **Categorías de Commons que no existen y se omitieron:** 1914 election maps.
 
 ## Discusión del artículo

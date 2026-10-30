@@ -70,7 +70,7 @@ CFG = {
                  modes=[("per", "PER", "PER", PJ_C, [0, 30, 40, 50, 60, 70, 80], "% Perón"),
                         ("ud", "UD", "UD", UCR_C, [0, 20, 30, 40, 50, 60, 70], "% Tamborini (Unión Democrática)")],
                  noeleccion={p: NO_TERR % p for p in TERR46}, solid={}, par=True),
-    "1948": dict(src="ls", title="Elecciones de diputados nacionales de Argentina de", tab="Diputados nacionales 1948", cargo="diputados",
+    "1948": dict(src="ls", title="Elecciones legislativas de Argentina de", tab="Diputados nacionales 1948", cargo="diputados",
                  fuente="diputados nacionales, 7 de marzo de 1948", geo="deptos. de 1947", cand=C1948,
                  modes=[("pp", "PP", "PP", PJ_C, [0, 30, 40, 50, 60, 70, 80], "% Partido Peronista"),
                         ("ucr", "UCR", "UCR", UCR_C, [0, 10, 20, 30, 40, 50, 60], "% Unión Cívica Radical")],
@@ -84,7 +84,7 @@ CFG = {
                   noeleccion={p: NO_TERR % p for p in TERR46},
                   solid={p: "Lupu y Stokes no traen %s en diciembre de 1948: se pinta la provincia con el total de la Wikipedia." % p
                          for p in ("Córdoba", "Corrientes", "Mendoza")}, par=False),
-    "1954": dict(src="canton", title="Elecciones de diputados nacionales de Argentina de", tab="Diputados nacionales 1954", cargo="diputados",
+    "1954": dict(src="canton", title="Elecciones legislativas de Argentina de", tab="Diputados nacionales 1954", cargo="diputados",
                  fuente="diputados nacionales, 25 de abril de 1954", geo="deptos. de 1960", cand=C1948,
                  modes=[("pp", "PP", "PP", PJ_C, [0, 40, 50, 60, 70, 80, 90], "% Partido Peronista"),
                         ("ucr", "UCR", "UCR", UCR_C, [0, 10, 20, 30, 40, 50, 60], "% Unión Cívica Radical")],
