@@ -549,6 +549,10 @@ def logos(year,codes,bycode,CAND,text,folder):
         if year==2023 and 'Por Santa Cruz' in g['grupo']:
             fn=ROOT/'../logos/Logo_Por_Santa_Cruz.png';title='Logo_Por_Santa_Cruz.png';reserve=False
             license='Aportado por el usuario; sin licencia libre verificada';source='logos/LICENCIAS.md';date='2023'
+        # Fuerza Patria 2025: las dos franjas del SVG de Commons (CC0), que la leyenda pasa a blanco como en el mapa original del AMBA del usuario (30-oct-2026).
+        if year==2025 and 'Fuerza Patria' in g['grupo']:
+            fn=ROOT/'../logos/Logo_de_Fuerza_Patria.svg';title='Logo de Fuerza Patria.svg';reserve=False
+            license='CC0';source='https://commons.wikimedia.org/wiki/File:Logo_de_Fuerza_Patria.svg';date='2025-07-10'
         if fn:
             if fn.suffix.lower()=='.svg':
                 import resvg_py
@@ -557,6 +561,8 @@ def logos(year,codes,bycode,CAND,text,folder):
             else:image=Image.open(fn).convert('RGBA')
             bb=image.getbbox()
             if bb:image=image.crop(bb)
+            if fn.name=='Logo_de_Fuerza_Patria.svg':   # margen transparente: las franjas no tocan el borde de la barra, como en el mapa del AMBA
+                pd=round(image.height*.16);im2=Image.new('RGBA',(image.width+2*pd,image.height+2*pd),(0,0,0,0));im2.paste(image,(pd,pd));image=im2
             if image.height>140:image.thumbnail((600,140),Image.Resampling.LANCZOS)
             b=io.BytesIO();image.save(b,'PNG')
             CAND[code].update(img='data:image/png;base64,'+base64.b64encode(b.getvalue()).decode(),ar=round(image.width/image.height,4),bl=min(1.05,82/max(1,image.width/image.height)/27))

@@ -103,7 +103,8 @@ Emblemas añadidos/reutilizados para los diez atlas nuevos. Fecha original de ex
 | Frente_Renovador_de_la_Concordia_Social.png (registro previo del proyecto) | 2005, 2007, 2019, 2021 | Ver LICENCIAS.md del proyecto | Sin fecha verificada | Sí; diseño de época no verificado |
 | [Frente_de_Todos_2019.png](https://commons.wikimedia.org/wiki/File:Frente_de_Todos_2019.png) | 2019 | Public domain | 2019 | Sin reserva detectada en los metadatos |
 | [Hacemos_por_Córdoba.png](https://commons.wikimedia.org/wiki/File:Hacemos_por_C%C3%B3rdoba.png) | 2021 | Public domain | 2019-05-01 | Sin reserva detectada en los metadatos |
-| [Homeland Force logo.png](https://commons.wikimedia.org/wiki/File:Homeland_Force_logo.png) | 2025 | Public domain | 2025-10-31 | Sí; diseño de época no verificado |
+| [Homeland Force logo.png](https://commons.wikimedia.org/wiki/File:Homeland_Force_logo.png) | 2025 (hasta el 30-oct-2026) | Public domain | 2025-10-31 | Sí; diseño de época no verificado |
+| [Logo de Fuerza Patria.svg](https://commons.wikimedia.org/wiki/File:Logo_de_Fuerza_Patria.svg) | 2025 (desde el 30-oct-2026; las dos franjas en blanco sobre la barra, como el mapa del AMBA 2025 del usuario) | CC0 | 2025-07-10 | Sin reserva detectada en los metadatos |
 | [Innovación Federal.png](https://commons.wikimedia.org/wiki/File:Innovaci%C3%B3n_Federal.png) | 2025 | CC BY-SA 4.0 | 2024-01-03 | Sin reserva detectada en los metadatos |
 | [Juntos-Por-El-Cambio-Logo.svg](https://commons.wikimedia.org/wiki/File:Juntos-Por-El-Cambio-Logo.svg) | 2019, 2021, 2023 | Public domain | 2019-10-16 | Sin reserva detectada en los metadatos |
 | [Logo Consenso Federal Argentina.svg](https://commons.wikimedia.org/wiki/File:Logo_Consenso_Federal_Argentina.svg) | 2019 | Public domain | 2023-03-01 | Sí; diseño de época no verificado |
