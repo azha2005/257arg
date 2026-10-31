@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explorador de transferencias</title>
+<style>
+:root{--fg:#222;--muted:#555;--line:#ddd;--bg:#fff;--panel:#f6f6f4;--accent:#1f4f8a;--warn:#a40000}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 Helvetica,Arial,sans-serif}
+header{padding:14px 16px 6px;border-bottom:1px solid var(--line)}
+h1{font-size:20px;margin:0 0 4px}
+header p{margin:0;color:var(--muted);font-size:13px}
+.ctl{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;padding:12px 16px;align-items:end}
+.sel label{display:block;font-size:12px;font-weight:bold;color:var(--muted);margin-bottom:3px}
+.sel input{width:100%;padding:5px 7px;font-size:14px;border:1px solid #bbb;border-radius:4px;margin-bottom:4px}
+.sel select{width:100%;font-size:14px;padding:4px}
+button{font-size:14px;padding:6px 12px;border:1px solid #999;border-radius:4px;background:#fff;cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+button:disabled{opacity:.5;cursor:default}
+.bar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:0 16px 10px;font-size:14px}
+.bar label{display:flex;gap:5px;align-items:center}
+#estado{padding:6px 16px;font-size:14px;color:var(--muted);min-height:1.6em}
+#estado.err{color:var(--warn);font-weight:bold}
+main{display:grid;grid-template-columns:minmax(0,900px) minmax(260px,1fr);gap:16px;padding:0 16px 24px}
+#dibujo svg{display:block;width:100%;height:auto}
+#dibujo path:hover{fill-opacity:.8;cursor:help}
+aside{background:var(--panel);border-radius:6px;padding:10px 14px;font-size:13px;align-self:start}
+aside h2{font-size:14px;margin:8px 0 4px}
+aside ul{margin:0;padding-left:18px}
+aside table{border-collapse:collapse;width:100%}
+aside td{padding:1px 4px;border-bottom:1px solid #e4e4e0}
+@media (max-width:900px){.ctl{grid-template-columns:1fr}main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<h1>Explorador de transferencias de votos</h1>
+<p>Elegí dos elecciones cualesquiera. La matriz se estima en el momento (inferencia ecológica RxC de E. Calvo, una matriz por provincia encogida hacia la nacional) y queda guardada. Es la estimación puntual, sin bootstrap: para un par que valga la pena, correr <code>estimar.py</code>.</p>
+</header>
+<div class="ctl">
+  <div class="sel"><label for="fo">Origen</label><input id="fo" placeholder="Filtrar (p. ej. 2019 paso, 1983, gobernador)"><select id="o" size="8"></select></div>
+  <div><button id="swap" title="Invertir origen y destino">⇄</button></div>
+  <div class="sel"><label for="fd">Destino</label><input id="fd" placeholder="Filtrar"><select id="d" size="8"></select></div>
+</div>
+<div class="bar">
+  <button class="primary" id="go">Calcular sankey</button>
+  <label><input type="checkbox" id="rapido"> Rápido (sin validación cruzada)</label>
+  <label>Vista <select id="vista"></select></label>
+  <label><input type="checkbox" id="votantes"> Sin «No votó»</label>
+  <label><input type="checkbox" id="reducido"> «No votó» a escala 1:4</label>
+  <button id="bsvg" disabled>Bajar SVG</button>
+  <button id="bcsv" disabled>Bajar CSV</button>
+</div>
+<div id="estado">Cargando el catálogo…</div>
+<main>
+  <div id="dibujo"></div>
+  <aside id="info" hidden></aside>
+</main>
+<script>
+const W=900,H=760,TOP=90,GAP=10,NODE=18,X0=250,X1=650,RED=.25;
+let CAT=null, R=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=p=>p.toFixed(1).replace('.',',')+' %';
+const num=v=>Math.round(v).toLocaleString('es-AR');
+const fold=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+
+function llenar(sel, filtro, actual){
+  const ws=fold(filtro).split(/\s+/).filter(Boolean);
+  sel.innerHTML='';
+  const grupos={};
+  for(const e of CAT.elecciones){
+    const t=fold(e.nombre+' '+e.grupo+' '+e.id);
+    if(ws.some(w=>!t.includes(w))) continue;
+    (grupos[e.grupo]=grupos[e.grupo]||[]).push(e);
+  }
+  for(const [g,es] of Object.entries(grupos)){
+    const og=document.createElement('optgroup'); og.label=g;
+    for(const e of es.sort((a,b)=>a.anio-b.anio||a.nombre.localeCompare(b.nombre))){
+      const op=document.createElement('option'); op.value=e.id; op.textContent=e.nombre+(e.nivel==='circuito'?'  [circuitos]':'');
+      if(e.id===actual) op.selected=true; og.appendChild(op);
+    }
+    sel.appendChild(og);
+  }
+}
+function nombre(id){const e=CAT.elecciones.find(x=>x.id===id);return e?e.nombre:id}
+
+function vistas(){
+  const v=$('vista'), prev=v.value||'nacional';
+  v.innerHTML='<option value="nacional">Nacional</option>';
+  for(const p of CAT.provincias){
+    const op=document.createElement('option'); op.value=p;
+    const inf=R&&R.info[p];
+    if(!R||!R.provincias[p]){op.textContent=p+' (sin datos en alguna de las dos)'; op.disabled=true}
+    else op.textContent=p+(inf.modo==='provincia entera'?' (provincia entera: casi la nacional)':'');
+    v.appendChild(op);
+  }
+  v.value=[...v.options].some(o=>o.value===prev&&!o.disabled)?prev:'nacional';
+}
+
+function matriz(){
+  let M=($('vista').value==='nacional'?R.nacional:R.provincias[$('vista').value]).map(r=>r.slice());
+  let rows=R.rows.slice(), cols=R.cols.slice();
+  if($('votantes').checked){
+    const i=rows.indexOf('No votó'), j=cols.indexOf('No votó');
+    if(i>=0){M.splice(i,1);rows.splice(i,1)}
+    if(j>=0){M.forEach(r=>r.splice(j,1));cols.splice(j,1)}
+  }
+  const ri=rows.map((_,i)=>i).filter(i=>M[i].reduce((a,b)=>a+b,0)>0);
+  const ci=cols.map((_,j)=>j).filter(j=>M.some(r=>r[j]>0));
+  return {M:ri.map(i=>ci.map(j=>M[i][j])), rows:ri.map(i=>rows[i]), cols:ci.map(j=>cols[j])};
+}
+
+function dibujar(){
+  const {M,rows,cols}=matriz(), prov=$('vista').value, red=$('reducido').checked;
+  const nvR=rows.map(r=>r==='No votó'), nvC=cols.map(c=>c==='No votó');
+  const G=M.map((r,i)=>r.map((v,j)=>red&&(nvR[i]||nvC[j])?v*RED:v));
+  const tot=M.flat().reduce((a,b)=>a+b,0), gtot=G.flat().reduce((a,b)=>a+b,0);
+  const notas=[];
+  if(prov!=='nacional'){
+    const inf=R.info[prov];
+    notas.push(`Matriz provincial (${inf.unidades_usadas} unidades: ${inf.modo}), encogida hacia la nacional. Las marcas * son nacionales.`);
+  }
+  if(red) notas.push('«No votó» y sus cintas a escala 1:4; las cifras son las reales.');
+  const noid=prov==='nacional'?new Set(R.no_identificadas):new Set();
+  if(noid.size) notas.push('* Fila no identificada: la matriz cambia más de 20 puntos con la variante de una sola matriz nacional (Calvo); los datos no alcanzan.');
+  for(const n of R.notas) notas.push(n);
+  const HH=H+18*Math.max(0,notas.length-1);
+  const usable=H-TOP-60, k0=(usable-GAP*(rows.length-1))/gtot, k1=(usable-GAP*(cols.length-1))/gtot;
+  const col=n=>R.colores[n]||'#888';
+  const nodes=(s,k)=>{let y=TOP;return s.map(v=>{const o=[y,v*k];y+=v*k+GAP;return o})};
+  const L=nodes(G.map(r=>r.reduce((a,b)=>a+b,0)),k0), Rn=nodes(cols.map((_,j)=>G.reduce((a,r)=>a+r[j],0)),k1);
+  const rs=M.map(r=>r.reduce((a,b)=>a+b,0)), cs=cols.map((_,j)=>M.reduce((a,r)=>a+r[j],0));
+  const titulo='Transferencias de votos'+(prov!=='nacional'?': '+prov:'');
+  const sub=`${nombre(R.origen)} → ${nombre(R.destino)}`;
+  const s=[`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${HH}" font-family="Helvetica, Arial, sans-serif">`,
+    '<rect width="100%" height="100%" fill="#fff"/>',
+    `<text x="${W/2}" y="40" font-size="30" font-weight="bold" text-anchor="middle" fill="#333"${titulo.length>49?' textLength="850" lengthAdjust="spacingAndGlyphs"':''}>${esc(titulo)}</text>`,
+    `<text x="${W/2}" y="68" font-size="16" font-weight="bold" text-anchor="middle" fill="#444"${sub.length>95?' textLength="860" lengthAdjust="spacingAndGlyphs"':''}>${esc(sub)}</text>`];
+  const lo=L.map(n=>n[0]), ro=Rn.map(n=>n[0]);
+  for(let i=0;i<rows.length;i++)for(let j=0;j<cols.length;j++){
+    const v=M[i][j]; if(v<=0) continue;
+    const h0=G[i][j]*k0, h1=G[i][j]*k1, ya=lo[i], yb=ro[j]; lo[i]+=h0; ro[j]+=h1;
+    if(v/tot<5e-4) continue;
+    const c=(X0+X1)/2, f=x=>x.toFixed(1);
+    s.push(`<path d="M${f(X0+NODE)} ${f(ya)} C${f(c)} ${f(ya)} ${f(c)} ${f(yb)} ${X1} ${f(yb)} L${X1} ${f(yb+h1)} C${f(c)} ${f(yb+h1)} ${f(c)} ${f(ya+h0)} ${f(X0+NODE)} ${f(ya+h0)}Z" fill="${col(rows[i])}" fill-opacity="0.45"><title>${esc(rows[i])} → ${esc(cols[j])}: ${num(v)} votos\n${fmt(100*v/rs[i])} del origen\n${fmt(100*v/cs[j])} del destino${noid.has(rows[i])?'\n(fila no identificada)':''}</title></path>`);
+  }
+  const pos=ns=>{let last=TOP-14;return ns.map(([y,h])=>{const p=Math.max(y+h/2,last+14);last=p;return p})};
+  const ly=pos(L), ry=pos(Rn);
+  L.forEach(([y,h],i)=>{
+    s.push(`<rect x="${X0}" y="${y.toFixed(1)}" width="${NODE}" height="${Math.max(h,1).toFixed(1)}" fill="${col(rows[i])}"/>`);
+    const lab=rows[i]+(noid.has(rows[i])?' *':'')+': '+fmt(100*rs[i]/tot);
+    s.push(`<text x="${X0-8}" y="${ly[i].toFixed(1)}" font-size="14" font-weight="bold" text-anchor="end" dominant-baseline="middle" fill="#222"${lab.length>30?' textLength="235" lengthAdjust="spacingAndGlyphs"':''}>${esc(lab)}</text>`);
+  });
+  Rn.forEach(([y,h],j)=>{
+    s.push(`<rect x="${X1}" y="${y.toFixed(1)}" width="${NODE}" height="${Math.max(h,1).toFixed(1)}" fill="${col(cols[j])}"/>`);
+    const lab=cols[j]+': '+fmt(100*cs[j]/tot);
+    s.push(`<text x="${X1+NODE+8}" y="${ry[j].toFixed(1)}" font-size="14" font-weight="bold" dominant-baseline="middle" fill="#222"${lab.length>30?' textLength="215" lengthAdjust="spacingAndGlyphs"':''}>${esc(lab)}</text>`);
+  });
+  const base=$('votantes').checked&&R.base==='padrón'?'los flujos estimados sin «No votó»':(R.base==='padrón'?'el padrón de destino':'los votos emitidos de destino');
+  s.push(`<text x="20" y="${HH-30}" font-size="11.5" fill="#555">Porcentajes sobre ${base} en las ${num(R.unidades)} unidades usadas (${R.nivel}). RxC penalizado (E. Calvo), una matriz por provincia; estimación puntual, sin intervalos.</text>`);
+  s.push(`<text x="20" y="${HH-12}" font-size="11.5" fill="#555">Explorador de transferencias (dataeleccproyecto). Las celdas de categorías chicas (&lt;5 %) tienen márgenes de error grandes.</text>`);
+  notas.forEach((t,i)=>s.push(`<text x="20" y="${HH-48-18*i}" font-size="11.5" fill="#555"${t.length>150?' textLength="860" lengthAdjust="spacingAndGlyphs"':''}>${esc(t)}</text>`));
+  s.push('</svg>');
+  $('dibujo').innerHTML=s.join('\n');
+  info();
+  guardarHash();
+}
+
+function info(){
+  const a=$('info'); a.hidden=false;
+  const prov=Object.entries(R.info).sort((x,y)=>x[0].localeCompare(y[0]));
+  a.innerHTML=`<h2>Ajuste</h2><ul>
+   <li>Nivel: <b>${esc(R.nivel)}</b>, base: <b>${esc(R.base)}</b></li>
+   <li>Unidades usadas: <b>${num(R.unidades)}</b></li>
+   <li>Penalización: ${R.lambda_}${Object.keys(R.cv).length?' (validación cruzada)':' (fija)'}</li>
+   <li>Error de ajuste medio: ${String(R.rmse_pp).replace('.',',')} puntos por categoría</li>
+   <li>Calculado en ${String(R.segundos).replace('.',',')} s</li></ul>
+   ${R.no_identificadas.length?`<h2>Filas no identificadas (*)</h2><ul>${R.no_identificadas.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+   <h2>Notas</h2><ul>${R.notas.map(x=>`<li>${esc(x)}</li>`).join('')||'<li>Sin observaciones.</li>'}</ul>
+   <h2>Provincias</h2><table>${CAT.provincias.map(p=>{const i=R.info[p];return `<tr><td>${esc(p)}</td><td>${i?esc(i.modo)+' · '+i.unidades_usadas:'<i>sin datos</i>'}</td></tr>`}).join('')}</table>`;
+}
+
+function guardarHash(){
+  const h=new URLSearchParams({o:$('o').value,d:$('d').value,v:$('vista').value});
+  if($('votantes').checked)h.set('sinnv','1'); if($('reducido').checked)h.set('red','1');
+  history.replaceState(null,'','#'+h.toString());
+}
+
+async function calcular(){
+  const o=$('o').value, d=$('d').value;
+  if(!o||!d){estado('Elegí origen y destino.',true);return}
+  if(o===d){estado('Origen y destino son la misma elección.',true);return}
+  $('go').disabled=true; estado('Calculando '+nombre(o)+' → '+nombre(d)+'… (la primera vez puede tardar hasta un minuto)');
+  const t=performance.now();
+  try{
+    const r=await fetch(`/api/sankey?o=${encodeURIComponent(o)}&d=${encodeURIComponent(d)}&rapido=${$('rapido').checked?1:0}`);
+    const j=await r.json();
+    if(!r.ok) throw new Error(j.error||r.statusText);
+    R=j; vistas(); dibujar(); $('bsvg').disabled=$('bcsv').disabled=false;
+    estado(`Listo (${((performance.now()-t)/1000).toFixed(1).replace('.',',')} s${R.segundos*1000<performance.now()-t-500?'':''}).`);
+  }catch(e){estado('No se pudo calcular: '+e.message,true)}
+  finally{$('go').disabled=false}
+}
+function estado(t,err){const e=$('estado');e.textContent=t;e.className=err?'err':''}
+
+function bajar(nom,txt,tipo){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:tipo}));a.download=nom;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+const archivo=()=>('sankey_'+R.origen+'_'+R.destino+'_'+$('vista').value).replace(/[^\w.-]+/g,'_');
+$('bsvg').onclick=()=>bajar(archivo()+'.svg',$('dibujo').innerHTML,'image/svg+xml');
+$('bcsv').onclick=()=>{const {M,rows,cols}=matriz();
+  const q=s=>'"'+String(s).replace(/"/g,'""')+'"';
+  bajar(archivo()+'.csv','﻿origen,'+cols.map(q).join(',')+'\n'+rows.map((r,i)=>q(r)+','+M[i].map(v=>Math.round(v)).join(',')).join('\n'),'text/csv')};
+
+$('fo').oninput=()=>llenar($('o'),$('fo').value,$('o').value);
+$('fd').oninput=()=>llenar($('d'),$('fd').value,$('d').value);
+$('swap').onclick=()=>{const a=$('o').value,b=$('d').value;$('fo').value=$('fd').value='';llenar($('o'),'',b);llenar($('d'),'',a)};
+$('go').onclick=calcular;
+for(const id of ['vista','votantes','reducido']) $(id).onchange=()=>R&&dibujar();
+$('o').ondblclick=$('d').ondblclick=calcular;
+
+(async()=>{
+  try{CAT=await (await fetch('/api/catalogo')).json()}catch(e){estado('No responde el servidor: ¿está corriendo servidor.py?',true);return}
+  const h=new URLSearchParams(location.hash.slice(1));
+  llenar($('o'),'',h.get('o')||'pkl:2023p'); llenar($('d'),'',h.get('d')||'pkl:2023b');
+  $('votantes').checked=h.get('sinnv')==='1'; $('reducido').checked=h.get('red')==='1';
+  vistas(); if(h.get('v')) $('vista').value=h.get('v');
+  estado(`${CAT.elecciones.length} elecciones disponibles. Elegí origen y destino y tocá «Calcular sankey» (o doble clic).`);
+  if(h.get('o')&&h.get('d')) calcular();
+})();
+</script>
+</body>
+</html>
