@@ -50,7 +50,9 @@ def invertir():
 
 
 st.markdown(
-    "<style>h1{letter-spacing:-0.04em;font-size:1.728rem!important;padding-bottom:0.25rem!important}"
+    "<style>.block-container{padding-top:2rem!important;padding-bottom:1rem!important;"
+    "max-width:calc(1304px + 10rem)!important;margin-inline:auto}"   # el mismo ancho que el contenido de index.html
+    "h1{letter-spacing:-0.04em;font-size:1.728rem!important;padding-bottom:0.25rem!important}"
     "[data-testid=stCaptionContainer]{max-width:75ch}</style>", unsafe_allow_html=True)
 st.title("Explorador de transferencias de votos")
 st.caption("Elegí dos elecciones argentinas cualesquiera (%d). La matriz se estima en el momento con inferencia ecológica "
@@ -60,9 +62,9 @@ c1, c2, c3 = st.columns([10, 1, 10], vertical_alignment="bottom")
 c1.selectbox("Origen", IDS, key="o", format_func=etiqueta)
 c2.button("⇄", on_click=invertir, help="Invertir origen y destino")
 c3.selectbox("Destino", IDS, key="d", format_func=etiqueta)
-b1, b2 = st.columns([2, 8], vertical_alignment="center")
-ir = b1.button("Calcular sankey", type="primary")
-rapido = b2.checkbox("Rápido (sin validación cruzada)")
+with st.container(horizontal=True, vertical_alignment="center", gap="medium"):
+    ir = st.button("Calcular sankey", type="primary")
+    rapido = st.checkbox("Rápido (sin validación cruzada)")
 
 o, d = st.session_state.o, st.session_state.d
 if ir or (qp.get("o") == o and qp.get("d") == d):
@@ -79,7 +81,7 @@ if ir or (qp.get("o") == o and qp.get("d") == d):
     emb = json.dumps(dict(cat=CAT, r=R), ensure_ascii=False).replace("</", "<\\/")
     html = open(os.path.join(HERE, "index.html"), encoding="utf8").read()
     html = html.replace("<script>\nconst W=", "<script>window.EMBED=%s;</script>\n<script>\nconst W=" % emb, 1)
-    components.html(html, height=1300, scrolling=True)
+    components.html(html, height=980 + 18 * len(R["notas"]), scrolling=True)   # el sankey a 900 px y el panel con provincias plegadas
 else:
     st.info("Elegí origen y destino y tocá «Calcular sankey». La vista por provincia, «sin No votó» y las descargas "
             "aparecen arriba del dibujo.")
