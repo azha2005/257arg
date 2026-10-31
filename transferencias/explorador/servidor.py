@@ -62,7 +62,7 @@ class H(BaseHTTPRequestHandler):
 def main():
     prioridad_baja()
     threading.Thread(target=lambda: (datos.master(), catalogo()), daemon=True).start()   # precarga
-    srv = ThreadingHTTPServer(("127.0.0.1", PUERTO), H)
+    srv = ThreadingHTTPServer((os.environ.get("HOST", "127.0.0.1"), PUERTO), H)   # HOST=0.0.0.0 en el Space
     url = "http://127.0.0.1:%d/" % PUERTO
     print("Explorador de sankeys en", url, flush=True)
     if "--sin-abrir" not in sys.argv:

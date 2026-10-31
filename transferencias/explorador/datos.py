@@ -87,7 +87,7 @@ def master():
     global _master
     if _master is None:
         f = os.path.join(CACHE, "master.pkl")
-        if not os.path.exists(f) or os.path.getmtime(f) < os.path.getmtime(MASTER):
+        if not os.path.exists(f) or (os.path.exists(MASTER) and os.path.getmtime(f) < os.path.getmtime(MASTER)):   # sin el xlsx (Space), vale la copia
             print("Leyendo MASTER_resultados.xlsx (una vez, ~2 min)...", flush=True)
             df = pd.read_excel(MASTER, sheet_name="largo", engine="openpyxl")
             df.drop(columns=["fuente"]).to_pickle(f)
