@@ -7,6 +7,9 @@ python transferencias/explorador/servidor.py      # abre http://127.0.0.1:8790
 ```
 En Windows también sirve doble clic en `abrir_explorador.bat`. La primera vez lee `MASTER_resultados.xlsx` (~2 min) y lo guarda en `cache/master.pkl`.
 
+## Estética
+Tema **Ink** de Hallmark (`.claude/skills/hallmark`, restyle de 31-oct-2026): papel blanco, tinta sin tono, Epilogue, filetes finos y un verde azulado solo para «matriz informativa»; el rojo de «poco informativa» es el del aviso del sankey. Los tokens y la base van dentro de `index.html` (el iframe de Streamlit no carga CSS aparte) y `.streamlit/config.toml` repite los mismos colores y la letra. **El dibujo del sankey (`dibujar()`) no se tocó**: sigue igual a los sankeys publicados. Para revisar un cambio de estilo: `node .claude/skills/hallmark/scripts/sloplint.mjs transferencias/explorador/index.html --scope app --render --url http://localhost:8790/` (necesita puppeteer-core; `HALLMARK_PUPPETEER` apunta a una instalación local).
+
 ## Publicado en Streamlit Community Cloud (gratis)
 `streamlit_app.py` es el explorador como app de Streamlit: los selectores y el cálculo van en Python y el sankey lo dibuja `index.html` en modo incrustado (`window.EMBED`), así se ve igual que la página local. Local: `streamlit run transferencias/explorador/streamlit_app.py` (o «sankeys-streamlit» en `.claude/launch.json`).
 

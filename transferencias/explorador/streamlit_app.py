@@ -49,6 +49,9 @@ def invertir():
     st.session_state.o, st.session_state.d = st.session_state.d, st.session_state.o
 
 
+st.markdown(
+    "<style>h1{letter-spacing:-0.04em;font-size:1.728rem!important;padding-bottom:0.25rem!important}"
+    "[data-testid=stCaptionContainer]{max-width:75ch}</style>", unsafe_allow_html=True)
 st.title("Explorador de transferencias de votos")
 st.caption("Elegí dos elecciones argentinas cualesquiera (%d). La matriz se estima en el momento con inferencia ecológica "
            "RxC (E. Calvo): una matriz por provincia encogida hacia la nacional. Es la estimación puntual, sin intervalos; "
@@ -76,7 +79,7 @@ if ir or (qp.get("o") == o and qp.get("d") == d):
     emb = json.dumps(dict(cat=CAT, r=R), ensure_ascii=False).replace("</", "<\\/")
     html = open(os.path.join(HERE, "index.html"), encoding="utf8").read()
     html = html.replace("<script>\nconst W=", "<script>window.EMBED=%s;</script>\n<script>\nconst W=" % emb, 1)
-    components.html(html, height=1250, scrolling=True)
+    components.html(html, height=1300, scrolling=True)
 else:
     st.info("Elegí origen y destino y tocá «Calcular sankey». La vista por provincia, «sin No votó» y las descargas "
             "aparecen arriba del dibujo.")
