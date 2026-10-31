@@ -13,7 +13,16 @@ En Windows también sirve doble clic en `abrir_explorador.bat`. La primera vez l
 - **Atlas** (`mapas/mapa*/dataset_*.json`, 65): lo que muestra cada mapa, incluidas las **PASO de presidente** (por precandidato o por agrupación) **y de diputados** 2011–2023, 1948, 1948c, 1973, 1973s, 2001 bronca, AMBA 2025 (sumado a partido y comuna) y los **escenarios hipotéticos** (1916 ficticio, 1985hip, 1995 UCR + FREPASO, 2023 Massa, 2027 y 2027 Kicillof), en su propio grupo.
 
 ## Método
-El de `estimar.py` (RxC penalizado de E. Calvo, una matriz por provincia encogida hacia la nacional, penalización por validación cruzada), **sin bootstrap**: es la estimación puntual. «Rápido» usa la penalización fija 2e-6 y no hace validación cruzada. Las filas cuya matriz cambia más de 20 puntos con la variante de una sola matriz nacional sin pesos (la del R de Calvo) llevan `*` (no identificadas). Para publicar un par, correr el flujo completo de `transferencias/LEEME.md` (bootstrap, auditoría).
+El de `estimar.py` (RxC penalizado de E. Calvo, una matriz por provincia encogida hacia la nacional, penalización por validación cruzada), **sin bootstrap**: es la estimación puntual. «Rápido» usa la penalización fija 2e-6 y no hace validación cruzada. 
+
+### Avisos de confiabilidad (los mismos criterios de `auditar.py` y `sankey.py`)
+- `*` **fila no identificada**: la matriz nacional difiere en más de 30 puntos (20 si la fila pesa menos del 5 %) de la variante de una sola matriz nacional sin pesos (la del R de Calvo).
+- `†` **fila cerca del promedio**: fila de 5 % o más (no «No votó», «Blanco y nulo» ni «Otros») cuya separación ½·Σ|fila − promedio| es menor a 25 puntos: se reparte casi como el total.
+- Aviso rojo **«Matriz poco informativa»**: la separación media de las filas grandes es menor a 25. En la vista provincial, `†` y el aviso se calculan con la matriz de esa provincia; `*` solo existe en la nacional.
+- Nota en la vista provincial si la matriz le da a un destino más del 125 % de sus votos reales (+2000).
+- El panel «Confiabilidad» muestra la separación y la diferencia con Calvo de cada fila.
+
+A diferencia de `auditar.py`, no hay bootstrap, así que no hay marca por intervalo ancho. Para publicar un par, correr el flujo completo de `transferencias/LEEME.md` (bootstrap, auditoría).
 
 ## Cómo se emparejan las unidades
 - Por nombre de departamento dentro de cada provincia (`datos.nk`/`nkp`: sin tildes, abreviaturas expandidas, «Cuarta Sección · San Rafael» → «San Rafael», números de E. Calvo quitados), con sinónimos por provincia en `SINONIMOS` (San Luis, Jujuy, Chaco, Formosa, Neuquén, Entre Ríos, Tierra del Fuego) y parecido de nombre ≥ 0,85 para el resto.

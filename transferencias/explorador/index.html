@@ -120,16 +120,23 @@ function dibujar(){
   const notas=[];
   if(prov!=='nacional'){
     const inf=R.info[prov];
-    notas.push(`Matriz provincial (${inf.unidades_usadas} unidades: ${inf.modo}), encogida hacia la nacional. Las marcas * son nacionales.`);
+    notas.push(`Matriz provincial (${inf.unidades_usadas} unidades: ${inf.modo}), encogida hacia la nacional. Las marcas * son de la matriz nacional; † y el aviso, de la provincial.`);
   }
   if(red) notas.push('«No votó» y sus cintas a escala 1:4; las cifras son las reales.');
-  const noid=prov==='nacional'?new Set(R.no_identificadas):new Set();
-  if(noid.size) notas.push('* Fila no identificada: la matriz cambia más de 20 puntos con la variante de una sola matriz nacional (Calvo); los datos no alcanzan.');
+  // Auditoría como la de auditar.py / sankey.py: * es de la matriz nacional; † y el aviso, de la que se dibuja
+  const A=R.auditoria||{filas:[],provincias:{}}, AP=prov==='nacional'?null:(A.provincias[prov]||{});
+  const noid=prov==='nacional'?new Set(A.filas.filter(f=>f.no_identificada).map(f=>f.origen)):new Set();
+  const cerca=new Set(prov==='nacional'?A.filas.filter(f=>f.cerca_promedio).map(f=>f.origen):(AP.cerca||[]));
+  const poco=prov==='nacional'?A.poco_informativa:AP.poco_informativa;
+  if(noid.size) notas.push('* Fila no identificada: los datos no alcanzan para saber adónde fue; las dos variantes del modelo no coinciden.');
+  if(cerca.size) notas.push('† Fila cerca del promedio: se reparte casi como el total; puede ser un reparto real o falta de señal para esa fila.');
+  if(AP&&(AP.imposibles||[]).length) notas.push('La matriz provincial le da a '+AP.imposibles.map(x=>`${x.destino} ${num(x.estimado)} votos (real: ${num(x.real)})`).join(', ')+': más de lo que sacó; leerla con cuidado.');
   for(const n of R.notas) notas.push(n);
   const HH=H+18*Math.max(0,notas.length-1);
-  const usable=H-TOP-60, k0=(usable-GAP*(rows.length-1))/gtot, k1=(usable-GAP*(cols.length-1))/gtot;
+  const T=poco?TOP+18:TOP;
+  const usable=H-T-60, k0=(usable-GAP*(rows.length-1))/gtot, k1=(usable-GAP*(cols.length-1))/gtot;
   const col=n=>R.colores[n]||'#888';
-  const nodes=(s,k)=>{let y=TOP;return s.map(v=>{const o=[y,v*k];y+=v*k+GAP;return o})};
+  const nodes=(s,k)=>{let y=T;return s.map(v=>{const o=[y,v*k];y+=v*k+GAP;return o})};
   const L=nodes(G.map(r=>r.reduce((a,b)=>a+b,0)),k0), Rn=nodes(cols.map((_,j)=>G.reduce((a,r)=>a+r[j],0)),k1);
   const rs=M.map(r=>r.reduce((a,b)=>a+b,0)), cs=cols.map((_,j)=>M.reduce((a,r)=>a+r[j],0));
   const titulo='Transferencias de votos'+(prov!=='nacional'?': '+prov:'');
@@ -138,19 +145,20 @@ function dibujar(){
     '<rect width="100%" height="100%" fill="#fff"/>',
     `<text x="${W/2}" y="40" font-size="30" font-weight="bold" text-anchor="middle" fill="#333"${titulo.length>49?' textLength="850" lengthAdjust="spacingAndGlyphs"':''}>${esc(titulo)}</text>`,
     `<text x="${W/2}" y="68" font-size="16" font-weight="bold" text-anchor="middle" fill="#444"${sub.length>95?' textLength="860" lengthAdjust="spacingAndGlyphs"':''}>${esc(sub)}</text>`];
+  if(poco) s.push(`<text x="${W/2}" y="86" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#a40000" textLength="870" lengthAdjust="spacingAndGlyphs">Matriz poco informativa: el voto de origen casi no predice el de destino, y las filas repiten el promedio por falta de señal.</text>`);
   const lo=L.map(n=>n[0]), ro=Rn.map(n=>n[0]);
   for(let i=0;i<rows.length;i++)for(let j=0;j<cols.length;j++){
     const v=M[i][j]; if(v<=0) continue;
     const h0=G[i][j]*k0, h1=G[i][j]*k1, ya=lo[i], yb=ro[j]; lo[i]+=h0; ro[j]+=h1;
     if(v/tot<5e-4) continue;
     const c=(X0+X1)/2, f=x=>x.toFixed(1);
-    s.push(`<path d="M${f(X0+NODE)} ${f(ya)} C${f(c)} ${f(ya)} ${f(c)} ${f(yb)} ${X1} ${f(yb)} L${X1} ${f(yb+h1)} C${f(c)} ${f(yb+h1)} ${f(c)} ${f(ya+h0)} ${f(X0+NODE)} ${f(ya+h0)}Z" fill="${col(rows[i])}" fill-opacity="0.45"><title>${esc(rows[i])} → ${esc(cols[j])}: ${num(v)} votos\n${fmt(100*v/rs[i])} del origen\n${fmt(100*v/cs[j])} del destino${noid.has(rows[i])?'\n(fila no identificada)':''}</title></path>`);
+    s.push(`<path d="M${f(X0+NODE)} ${f(ya)} C${f(c)} ${f(ya)} ${f(c)} ${f(yb)} ${X1} ${f(yb)} L${X1} ${f(yb+h1)} C${f(c)} ${f(yb+h1)} ${f(c)} ${f(ya+h0)} ${f(X0+NODE)} ${f(ya+h0)}Z" fill="${col(rows[i])}" fill-opacity="0.45"><title>${esc(rows[i])} → ${esc(cols[j])}: ${num(v)} votos\n${fmt(100*v/rs[i])} del origen\n${fmt(100*v/cs[j])} del destino${noid.has(rows[i])?'\n(fila no identificada)':''}${cerca.has(rows[i])?'\n(fila cerca del promedio)':''}</title></path>`);
   }
-  const pos=ns=>{let last=TOP-14;return ns.map(([y,h])=>{const p=Math.max(y+h/2,last+14);last=p;return p})};
+  const pos=ns=>{let last=T-14;return ns.map(([y,h])=>{const p=Math.max(y+h/2,last+14);last=p;return p})};
   const ly=pos(L), ry=pos(Rn);
   L.forEach(([y,h],i)=>{
     s.push(`<rect x="${X0}" y="${y.toFixed(1)}" width="${NODE}" height="${Math.max(h,1).toFixed(1)}" fill="${col(rows[i])}"/>`);
-    const lab=rows[i]+(noid.has(rows[i])?' *':'')+': '+fmt(100*rs[i]/tot);
+    const lab=rows[i]+(noid.has(rows[i])?' *':'')+(cerca.has(rows[i])?' †':'')+': '+fmt(100*rs[i]/tot);
     s.push(`<text x="${X0-8}" y="${ly[i].toFixed(1)}" font-size="14" font-weight="bold" text-anchor="end" dominant-baseline="middle" fill="#222"${lab.length>30?' textLength="235" lengthAdjust="spacingAndGlyphs"':''}>${esc(lab)}</text>`);
   });
   Rn.forEach(([y,h],j)=>{
@@ -177,9 +185,22 @@ function info(){
    <li>Penalización: ${R.lambda_}${Object.keys(R.cv).length?' (validación cruzada)':' (fija)'}</li>
    <li>Error de ajuste medio: ${String(R.rmse_pp).replace('.',',')} puntos por categoría</li>
    <li>Calculado en ${String(R.segundos).replace('.',',')} s</li></ul>
-   ${R.no_identificadas.length?`<h2>Filas no identificadas (*)</h2><ul>${R.no_identificadas.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+   ${confiab()}
    <h2>Notas</h2><ul>${R.notas.map(x=>`<li>${esc(x)}</li>`).join('')||'<li>Sin observaciones.</li>'}</ul>
    <h2>Provincias</h2><table>${CAT.provincias.map(p=>{const i=R.info[p];return `<tr><td>${esc(p)}</td><td>${i?esc(i.modo)+' · '+i.unidades_usadas:'<i>sin datos</i>'}</td></tr>`}).join('')}</table>`;
+}
+
+function confiab(){
+  const A=R.auditoria; if(!A) return '';
+  const pc=x=>x==null?'—':String(x).replace('.',',');
+  const malas=Object.entries(A.provincias).filter(([,v])=>v.poco_informativa).map(([p])=>p).sort();
+  const imp=Object.entries(A.provincias).filter(([,v])=>v.imposibles.length).map(([p])=>p).sort();
+  return `<h2>Confiabilidad</h2>
+   <p style="margin:2px 0;color:${A.poco_informativa?'#a40000':'inherit'}"><b>${A.poco_informativa?'Matriz poco informativa':'Matriz informativa'}</b>: separación media de las filas grandes ${pc(A.separacion)} puntos (mínimo ${A.umbral}).</p>
+   <table><tr><th>Origen</th><th>%</th><th>Separación</th><th>Dif. Calvo</th><th></th></tr>${A.filas.map(f=>`<tr><td>${esc(f.origen)}</td><td>${pc(f.peso)}</td><td>${pc(f.sep)}</td><td title="celda: ${esc(f.celda)}">${pc(f.dif_calvo)}</td><td>${f.no_identificada?'*':''}${f.cerca_promedio?'†':''}</td></tr>`).join('')}</table>
+   <p style="margin:4px 0;color:var(--muted)">Separación: ½·Σ|fila − promedio|; debajo de ${A.umbral}, la fila se reparte casi como el total. * = difiere más de 30 puntos (20 si pesa &lt;5 %) de una sola matriz nacional sin pesos (variante de Calvo).</p>
+   ${malas.length?`<p style="margin:2px 0">Provincias con matriz poco informativa: ${malas.map(esc).join(', ')}.</p>`:''}
+   ${imp.length?`<p style="margin:2px 0">Provincias donde un destino recibe más del 125 % de sus votos: ${imp.map(esc).join(', ')}.</p>`:''}`;
 }
 
 function guardarHash(){

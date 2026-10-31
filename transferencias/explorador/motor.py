@@ -16,12 +16,13 @@ sys.path.insert(0, HERE)
 import datos                                     # noqa: E402
 from datos import estimar                        # noqa: E402
 from rxc_calvo import fit                        # noqa: E402
+from auditar import SEPARACION_MIN, NO_PARTIDO   # noqa: E402  (mismos umbrales que los sankeys publicados)
 
 COBERTURA_DEPTO = .75
 RATIO = (0.5, 2.0)            # cambio de tamaño admitido de una unidad, relativo al cambio mediano
 LAMBDA_RAPIDA = 2e-6
 PARES = os.path.join(datos.CACHE, "pares"); os.makedirs(PARES, exist_ok=True)
-VERSION = 4                   # cambiar si cambia el cálculo: invalida los resultados guardados
+VERSION = 5                   # cambiar si cambia el cálculo: invalida los resultados guardados
 
 
 def _alinear_circuitos(o, d):
@@ -120,6 +121,47 @@ def _cv(XA, YB, w, g0, provs, folds=5):
     return max(k for k, v in cv.items() if v <= 1.01 * min(cv.values())), cv
 
 
+def _separacion(M):
+    """½·Σ|fila − promedio| de cada fila, en puntos, y peso de cada fila (% del total)."""
+    tot = M.sum()
+    P = 100 * M / np.maximum(M.sum(1, keepdims=True), 1e-9)
+    marg = 100 * M.sum(0) / max(tot, 1e-9)
+    return .5 * np.abs(P - marg).sum(1), 100 * M.sum(1) / max(tot, 1e-9), P
+
+
+def _sep_media(sep, peso, rows):
+    big = [i for i, r in enumerate(rows) if peso[i] >= 5 and r not in NO_PARTIDO]
+    return float((sep[big] * peso[big]).sum() / peso[big].sum()) if big else float("nan")
+
+
+def auditoria(M, Bc, rows, cols, por, real):
+    """Los criterios de auditar.py sobre la estimación puntual (sin el ancho del bootstrap, que acá no hay):
+    fila no identificada (difiere de la variante de Calvo en más de 30 puntos, o 20 si pesa menos de 5 %), fila cerca del
+    promedio (5 % o más del padrón y separación menor a SEPARACION_MIN), matriz poco informativa (separación media de las
+    filas grandes menor a SEPARACION_MIN) y provincias donde un destino recibe más del 125 % de sus votos reales."""
+    sep, peso, P = _separacion(M)
+    sep_c, _, _ = _separacion(Bc * M.sum(1, keepdims=True))
+    Q = 100 * Bc
+    filas = []
+    for i, r in enumerate(rows):
+        dif = np.abs(P[i] - Q[i])
+        filas.append(dict(origen=r, peso=round(float(peso[i]), 1), dif_calvo=round(float(dif.max()), 1), celda=cols[int(dif.argmax())],
+                          sep=round(float(sep[i]), 1), sep_calvo=round(float(sep_c[i]), 1),
+                          no_identificada=bool(dif.max() > 30 or (peso[i] < 5 and dif.max() > 20)),
+                          cerca_promedio=bool(peso[i] >= 5 and r not in NO_PARTIDO and sep[i] < SEPARACION_MIN)))
+    s = _sep_media(sep, peso, rows)
+    prov = {}
+    for p, Mpv in por.items():
+        sp, wp, _ = _separacion(Mpv)
+        sm = _sep_media(sp, wp, rows)
+        prov[p] = dict(separacion=None if np.isnan(sm) else round(sm, 1), poco_informativa=bool(sm < SEPARACION_MIN),
+                       cerca=[r for i, r in enumerate(rows) if wp[i] >= 5 and r not in NO_PARTIDO and sp[i] < SEPARACION_MIN],
+                       imposibles=[dict(destino=c, estimado=int(Mpv[:, j].sum()), real=int(real[p][j]))
+                                   for j, c in enumerate(cols) if Mpv[:, j].sum() > 1.25 * real[p][j] + 2000])
+    return dict(separacion=None if np.isnan(s) else round(s, 1), poco_informativa=bool(s < SEPARACION_MIN),
+                umbral=SEPARACION_MIN, filas=filas, provincias=prov)
+
+
 def calcular(o, d, rapido=False):
     t0 = time.time()
     clave = hashlib.md5(json.dumps([VERSION, o, d, rapido]).encode()).hexdigest()[:16]
@@ -165,10 +207,11 @@ def calcular(o, d, rapido=False):
         Bp = _fit_prov(XA.loc[p].values, YB.loc[p].values, lam, w.loc[p].values, g0)
         P = Bp * V.loc[p].sum().values[:, None]
         por[p] = P; M = M + P
-    # Variante «Calvo» (una matriz nacional, sin pesos, penalización 0.001 hacia cero): filas que cambian mucho = no identificadas
+    # Variante «Calvo» (una matriz nacional, sin pesos, penalización 0.001 hacia cero), para la auditoría de auditar.py
     Bc = fit(XA.values, YB.values, const=0.001)
     Mp = M / np.maximum(M.sum(1, keepdims=True), 1e-9)
-    noid = [r for i, r in enumerate(rows) if 100 * np.abs(Mp[i] - Bc[i]).max() > 20]
+    real = {p: B.loc[p].sum().values for p in provs}
+    aud = auditoria(M, Bc, rows, cols, por, real)
     pred = XA.values @ Mp
     rmse = float(np.sqrt(np.average(((pred - YB.values) * 100) ** 2, axis=0, weights=w.values)).mean())
     a0, a1 = datos.anio(o), datos.anio(d)
@@ -182,7 +225,8 @@ def calcular(o, d, rapido=False):
     out = dict(origen=o, destino=d, nivel=nivel, base="padrón" if nv else "votos emitidos", rows=rows, cols=cols,
                nacional=np.round(M, 1).tolist(), provincias={p: np.round(por[p], 1).tolist() for p in provs},
                info={p: dict(info.get(p, {}), unidades_usadas=int(len(A.loc[p]))) for p in provs},
-               lambda_=lam, cv={str(k): v for k, v in (cv or {}).items()}, no_identificadas=noid,
+               lambda_=lam, cv={str(k): v for k, v in (cv or {}).items()}, auditoria=aud,
+               no_identificadas=[f["origen"] for f in aud["filas"] if f["no_identificada"]],
                rmse_pp=round(rmse, 2), unidades=int(len(A)), notas=notas, segundos=round(time.time() - t0, 1),
                colores=datos.colores(rows + cols))
     json.dump(out, open(f, "w", encoding="utf8"), ensure_ascii=False)
