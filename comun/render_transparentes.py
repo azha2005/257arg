@@ -18,6 +18,7 @@ ATLAS.extend((f"mapa{y}dip", f"atlas_{y}_diputados.html") for y in (1983, 1989, 
 ATLAS.append(("mapa2001bronca", "atlas_2001bronca.html"))
 ATLAS.extend((f"mapa{y}", f"atlas_{y}.html") for y in (1958, 1962, 1965))   # Cantón (canton5865/atlas5865.py)
 ATLAS.extend((f"mapa{y}", f"atlas_{y}.html") for y in (2003,2005,2007,2011,2015,2017,2019,2021,2023,2025))
+ATLAS.extend(("mapaAMBA2025radios", f) for f in ("atlas_amba2025radios.html", "atlas_amba2025radios_pob.html"))   # por radio censal (método de Poblaciones)
 OUT = os.path.join(ROOT, "png_transparentes")
 bad = []
 with sync_playwright() as p:
