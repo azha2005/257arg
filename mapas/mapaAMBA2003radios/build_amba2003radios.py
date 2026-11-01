@@ -264,8 +264,9 @@ pct = lambda b: (lambda a: 100 * a["bloc"][b] / a["pos"])
 NATL = dict(cands=cands, slices=slices, partp=partp, metrics=NAT_MET)
 MODES = [dict(id="gan", tile="GANÓ", note=NOTE, units=[unit_rec[i] for i in range(len(UKEYS))], prov=prov_rec, national=NATL,
               legend=dict(keys=[[BEIGE, "Radio sin votos asignados"]] if any(r.get("fill") == BEIGE for r in unit_rec.values()) else []))]
-for mid, tile, b, edges in (("k", "KIRCH.", "K", [0, 15, 20, 25, 30, 35, 40]), ("m", "MENEM", "M", [0, 10, 15, 20, 25, 30, 35]),
-                            ("l", "LÓPEZ", "L", [0, 10, 15, 20, 25, 30, 35]), ("c", "CARRIÓ", "C", [0, 10, 15, 20, 25, 30, 35])):
+# cortes cerca de los percentiles 10-95 de cada candidato por radio, para que se noten los cambios
+for mid, tile, b, edges in (("k", "KIRCH.", "K", [0, 17, 20, 24, 28, 32, 36]), ("m", "MENEM", "M", [0, 14, 16, 19, 22, 25, 28]),
+                            ("l", "LÓPEZ", "L", [0, 8, 11, 15, 20, 27, 35]), ("c", "CARRIÓ", "C", [0, 10, 13, 16, 19, 21, 23])):
     un, pv_, lg = mode_choropleth(pct(b), COLOR[b], edges, "%% %s" % NAMES[b][0])
     MODES.append(dict(id=mid, tile=tile, note=NOTE, units=un, prov=pv_, national=NATL, legend=lg))
 
@@ -317,7 +318,8 @@ ds = dict(
     slug="presidenciales_amba_2003_radios" + SUF, locale="es-AR", country="Argentina",
     title="Elecciones presidenciales en el AMBA de", year="2003",
     labels=dict(pie1="Proporción sobre votos positivos", provinces=""),
-    exterior=False, candidates=CAND, bins=[30, 35, 40, 45, 50, 55], bin_labels=["<30%", "30%", "35%", "40%", "45%", "50%", "+55%"],
+    # escala fina, como el AMBA 2025 por radio: con cinco fuerzas el ganador saca entre 22 y 37 % en el 90 % de los radios (mediana 27)
+    exterior=False, candidates=CAND, bins=[22, 24, 27, 30, 33, 37], bin_labels=["<22%", "22%", "24%", "27%", "30%", "33%", "+37%"],
     sets={"1": dict(label="2003", subtitle=("Por radio censal · estimado" if VAR == "idw" else "Por radio · estimado (población)"))},
     modes=MODES, insets=INSETS,
     territories=[dict(n=disp[i], p=PART[i], k="radio") for i in range(len(UKEYS))],

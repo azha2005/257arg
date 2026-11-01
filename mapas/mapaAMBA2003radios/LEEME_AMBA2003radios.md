@@ -45,8 +45,9 @@ Capital se restringe por circunscripción (las 28 secciones electorales de 2003;
 ## Estilo
 - Paleta del mapa presidencial 2003 de la Wikipedia, la misma de las legislativas 2003–2005 del proyecto: Menem #1c5ece, Kirchner #50ade6, López Murphy #f4ce00, Rodríguez Saá #1aff98, Carrió #74b744. Logos: bloques del mismo mapa (`logos/bloques_presidenciales/menem.png`, `fpv03.png`, `recrear.png`, `mnp.png`, `ari.png`; CC0).
 - Modos: Ganó, % Kirchner, % Menem, % López Murphy y % Carrió (la plantilla admite cinco pestañas; la participación sale en las fichas y en el anillo). Las rampas de los porcentajes van de casi blanco al color del candidato y después más oscuro, porque los colores de 2003 son claros.
+- **Cortes según la distribución por radio** (pedido del usuario, como en 2025): con cinco fuerzas el ganador saca entre 22 y 37 % en el 90 % de los radios (mediana 27), así que «Ganó» usa 22, 24, 27, 30, 33 y 37 %. Las coropletas siguen los percentiles 10 a 95 de cada candidato: Kirchner 17–36, Menem 14–28, López Murphy 8–35 y Carrió 10–23. Con los cortes de 10 puntos casi todo caía en el primer tono. En los tonos oscuros del modo «Ganó» los azules de Menem y Kirchner se parecen, como en el mapa de la Wikipedia.
 - Recuadro de Capital más arriba y más bajo que en 2025: la leyenda tiene seis filas y arranca en y=1024. Circunscripciones de Capital como divisores.
 - No va a Commons salvo pedido.
 
 ## Para Twitter
-`python exportar_tw.py` (copia del de `../mapaAMBA2025radios/`) renderiza el póster del modo «Ganó» a 4021×3453 px y los modos de Kirchner, Menem, López Murphy y Carrió para la respuesta, en `tw/`. Se guardan como PNG de paleta de 256 colores (1,3 a 1,4 MB), con el borde de los radios a 0,18 px.
+`python exportar_tw.py` (copia del de `../mapaAMBA2025radios/`) renderiza el póster del modo «Ganó» a 4021×3453 px y los modos de Kirchner, Menem, López Murphy y Carrió para la respuesta, en `tw/`. Se guardan como PNG de paleta de 256 colores (1,2 a 1,4 MB), con el borde de los radios a 0,18 px. `tw/texto_respuesta.txt` tiene el texto del segundo tuit con la metodología (266 caracteres), en el formato del de 2025.
