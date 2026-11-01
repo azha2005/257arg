@@ -504,7 +504,7 @@ pv.append("</g>")
 # dataset ----------------------------------------------------------------
 ds = dict(
     slug="elecciones_1930", locale="es-AR", country="Argentina",
-    title="Elecciones de diputados nacionales de Argentina de", year="1930",
+    title="Elecciones legislativas de Argentina de", year="1930",
     labels=dict(pie1="Proporción sobre votos positivos"),
     exterior=False, candidates=CAND,
     sets={"1": dict(label="1930", subtitle="Cantón (1968) · deptos. de 1914")},

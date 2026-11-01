@@ -1,0 +1,20 @@
+# Tema Ink (Hallmark), el mismo que transferencias/explorador/index.html: papel blanco, tinta sin tono, Epilogue
+[theme]
+base = "light"
+primaryColor = "#0d0d0d"
+backgroundColor = "#fefdfb"
+secondaryBackgroundColor = "#f6f5f2"
+textColor = "#292929"
+linkColor = "#0d0d0d"
+borderColor = "#525252"
+showWidgetBorder = true
+baseRadius = "10px"
+baseFontSize = 14
+font = "Epilogue:https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap"
+headingFontWeights = [700, 700, 700, 600, 600, 600]
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

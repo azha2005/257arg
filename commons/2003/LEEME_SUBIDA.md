@@ -5,38 +5,37 @@ Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
 
-**No subir nada hasta resolver lo de arriba.** 
+**Prioridad:** subir primero `gan` «solo mapa» y comprobar la miniatura; después el resto de los modos. 
 
 | Modo | Versión | Estado |
 |---|---|---|
-| Resultados por departamento | solo mapa | **NO subir todavía** |
+| Resultados por departamento | solo mapa | Para subir |
 | Resultados por departamento | con leyenda | **NO subir todavía** |
 | Resultados por departamento | png | **NO subir todavía** |
-| Resultados por departamento | con leyenda y siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Resultados por departamento | png con siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Partido Justicialista por departamento | solo mapa | **NO subir todavía** |
+| Resultados por departamento | con leyenda y siglas (sin emblemas dudosos) | Para subir |
+| Resultados por departamento | png con siglas (sin emblemas dudosos) | Para subir |
+| Voto a Partido Justicialista por departamento | solo mapa | Para subir |
 | Voto a Partido Justicialista por departamento | con leyenda | **NO subir todavía** |
 | Voto a Partido Justicialista por departamento | png | **NO subir todavía** |
-| Voto a Partido Justicialista por departamento | con leyenda y siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Partido Justicialista por departamento | png con siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Union Civica Radical por departamento | solo mapa | **NO subir todavía** |
+| Voto a Partido Justicialista por departamento | con leyenda y siglas (sin emblemas dudosos) | Para subir |
+| Voto a Partido Justicialista por departamento | png con siglas (sin emblemas dudosos) | Para subir |
+| Voto a Union Civica Radical por departamento | solo mapa | Para subir |
 | Voto a Union Civica Radical por departamento | con leyenda | **NO subir todavía** |
 | Voto a Union Civica Radical por departamento | png | **NO subir todavía** |
-| Voto a Union Civica Radical por departamento | con leyenda y siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Union Civica Radical por departamento | png con siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Afirmacion para una Republica Igualitaria por departamento | solo mapa | **NO subir todavía** |
+| Voto a Union Civica Radical por departamento | con leyenda y siglas (sin emblemas dudosos) | Para subir |
+| Voto a Union Civica Radical por departamento | png con siglas (sin emblemas dudosos) | Para subir |
+| Voto a Afirmacion para una Republica Igualitaria por departamento | solo mapa | Para subir |
 | Voto a Afirmacion para una Republica Igualitaria por departamento | con leyenda | **NO subir todavía** |
 | Voto a Afirmacion para una Republica Igualitaria por departamento | png | **NO subir todavía** |
-| Voto a Afirmacion para una Republica Igualitaria por departamento | con leyenda y siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Afirmacion para una Republica Igualitaria por departamento | png con siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Movimiento Federal para Recrear el Crecimiento por departamento | solo mapa | **NO subir todavía** |
+| Voto a Afirmacion para una Republica Igualitaria por departamento | con leyenda y siglas (sin emblemas dudosos) | Para subir |
+| Voto a Afirmacion para una Republica Igualitaria por departamento | png con siglas (sin emblemas dudosos) | Para subir |
+| Voto a Movimiento Federal para Recrear el Crecimiento por departamento | solo mapa | Para subir |
 | Voto a Movimiento Federal para Recrear el Crecimiento por departamento | con leyenda | **NO subir todavía** |
 | Voto a Movimiento Federal para Recrear el Crecimiento por departamento | png | **NO subir todavía** |
-| Voto a Movimiento Federal para Recrear el Crecimiento por departamento | con leyenda y siglas (sin emblemas dudosos) | **NO subir todavía** |
-| Voto a Movimiento Federal para Recrear el Crecimiento por departamento | png con siglas (sin emblemas dudosos) | **NO subir todavía** |
+| Voto a Movimiento Federal para Recrear el Crecimiento por departamento | con leyenda y siglas (sin emblemas dudosos) | Para subir |
+| Voto a Movimiento Federal para Recrear el Crecimiento por departamento | png con siglas (sin emblemas dudosos) | Para subir |
 
 ## Antes de subir
-- **Todo el atlas en espera:** Faltan resultados desagregados: Buenos Aires: Magdalena, Buenos Aires: Punta Indio. Resolver antes de publicar el atlas completo.
 - **Versiones con logos en espera («con leyenda» y PNG):** Revisar licencias/fechas de los logos reutilizados antes de subir las versiones con emblemas. La variante con siglas omite estos emblemas.
 
 ## Avisos de este atlas
@@ -44,9 +43,11 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 - Alianzas y colores de las tablas de Wikipedia (instantáneas y revisiones en fuentes_leg2003_2025/); mapeo de todas las listas y diferencias por bloque en el LEEME y CSV del atlas.
 - Sólo los bloques con alguna unidad ganada aparecen en la leyenda nacional. Las demás listas permanecen en las fichas de cada unidad.
 - Geometría histórica: Departamentos de 2001 y 28 circunscripciones de Capital Federal (ajustadas al contorno). El límite La Paz/Choya se conserva como en el shapefile histórico.
-- Faltantes sin imputación: Buenos Aires: Magdalena, Buenos Aires: Punta Indio.
+- Faltantes sin imputación: ninguno.
 - Logos tomados del artículo de la elección o del partido. Las reconstrucciones posteriores se anotan como diseño de época no verificado. Ver logos_usados.json y LICENCIAS.md.
 - La Plata: 21 valores con separador de miles leído como decimal se multiplican por 1000; no se altera el CSV original.
+- Magdalena: la fuente deja vacía la celda de MOV. VECIN. PROV.(MO.VE.PRO.); las demás listas suman exactamente los positivos declarados (7.110), así que vale 0.
+- Punta Indio: la fuente deja vacía la celda de NACIONAL CONST.- UNIR; las demás listas suman exactamente los positivos declarados (3.893), así que vale 0.
 - Color final de Partido Justicialista y aliados: #1c5ece; tabla de Wikipedia: #318CE7. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Afirmación para una República Igualitaria y aliados: #74b744; tabla de Wikipedia: #6fb53e. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Movimiento Federal para Recrear el Crecimiento: #f4ce00; tabla de Wikipedia: #35649C. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
@@ -65,7 +66,7 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 ## Fuentes y licencia
 - **Votos:** dat.ar (datar.info), CSV departamental original conservado en raw/; cotejado por sumas de listas y métricas. No se imputa ninguna cifra ausente.
 - **Geometría:** Departamentos de 2001 y 28 circunscripciones de Capital Federal (ajustadas al contorno). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Las versiones con logos ShareAlike llevan `{{self|cc-by-sa-4.0}}`; las variantes que omiten esos emblemas conservan CC BY 4.0. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Ari Logo.svg, Compromiso para el Cambio.png, Escudo de la UCR.svg, Flag of the Justicialist Party (square version).svg, Logo Frente Civico de Cordoba.svg, Logo Fuerza Republicana.png, Logo MODIN.png, Logo MPN.png, PRS logo.png, Recrear logo.jpg. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Ari Logo.svg, Compromiso para el Cambio.png, Escudo de la UCR.svg, Flag of the Justicialist Party (square version).svg, Logo Frente Civico de Cordoba.svg, Logo Fuerza Republicana.png, Logo MODIN.png, Logo MPN.png, PRS logo.png, Recrear logo.jpg. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 27 de abril al 23 de noviembre de 2003 (cotejada con el artículo).
 
 

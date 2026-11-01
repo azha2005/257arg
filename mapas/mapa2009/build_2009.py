@@ -556,8 +556,9 @@ sub("""    const h=50,win=idx===0&&!LG,bar=C.bar||C.base;
     }
     y+=h+(idx+1<rows.length&&!LG&&wins[rows[idx+1].code]?5:7);
   });""",
-    """    LEGEND_ROW(g,C,c,y,rows,idx===0&&!LG,27);
-    y+=27+2.5;
+    """    if(!hasRamp&&!LG&&rows.some(r=>wins[r.code]))y+=SZ.ra;   // mismo espacio aunque no gane ninguna unidad
+    LEGEND_ROW(g,C,c,y,rows,idx===0&&!LG,SZ.h,SZ.s);
+    y+=SZ.h+2.5;
   });
   if(KEYS){
     y+=(rows.length?14:12);
@@ -573,10 +574,10 @@ sub("""      for(let i=0;i<7;i++){
       y+=15;""",
     """      for(let i=0;i<7;i++){
         const x=93+i*46.2,w=43.5;
-        el("rect",{x,y,width:w,height:5.5,fill:shade(c.code,i),opacity:(used[c.code]&&used[c.code][i])?1:.38},g);
-        if(idx===0)el("text",{x:x+w/2,y:y-4,"font-size":13,"font-style":"italic",fill:"#616161","text-anchor":"middle"},g,BIN_LABEL[i]);
+        el("rect",{x,y,width:w,height:SZ.rh,fill:shade(c.code,i),opacity:(used[c.code]&&used[c.code][i])?1:.38},g);
+        if(idx===0)el("text",{x:x+w/2,y:y-4*SZ.ts,"font-size":13*SZ.ts,"font-style":"italic",fill:"#616161","text-anchor":"middle"},g,BIN_LABEL[i]);
       }
-      y+=8.5;""")
+      y+=SZ.ra;""")
 
 sub("""  const LG=MODES[MODE].legend;                                   // leyenda propia para mapas de color explícito (coropletas)""",
     """  const LG0=MODES[MODE].legend;const LG=(LG0&&LG0.stops)?LG0:null;
@@ -586,8 +587,9 @@ sub("const rows=(LG&&LG.bars===false)?[]:N.cands;", "const rows=(LG0&&LG0.bars==
 sub("""  el("text",{x:93,y:1266,"font-size":20,fill:"#616161"},g,(LG&&LG.title)||LAB.results);
   let y=1292;""",
     """  const Y0=(!(LG0&&LG0.bars===false)&&N.cands.length>=8)?1160:1266;
-  el("text",{x:93,y:Y0,"font-size":19,fill:"#616161"},g,(LG&&LG.title)||LAB.results);
-  let y=Y0+22;""")
+  const SZ=LEG_SZ((LG0&&LG0.bars===false)?0:N.cands.length,{h:27,ra:8.5});
+  el("text",{x:93,y:Y0,"font-size":19*SZ.ts,fill:"#616161"},g,(LG&&LG.title)||LAB.results);
+  let y=Y0+22*SZ.ts;""")
 
 sub("""$("#pie1").textContent=LAB.pie1;$("#pie2").textContent=LAB.pie2;""", """$("#pie1").textContent=LAB.pie1;$("#pie2").textContent=LAB.pie2;$("#pie1").setAttribute("x",184);""")
 sub("return out.slice(0,4);", "return out.slice(0,6);")

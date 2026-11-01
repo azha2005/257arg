@@ -11,13 +11,15 @@ Una carpeta por atlas, cada una con `subir/` (archivos + wikitext) y su `LEEME_S
 | [1916](1916/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1916 | 8 SVG + 4 PNG | Se puede subir |
 | [1922](1922/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1922 | 8 SVG + 4 PNG | Se puede subir |
 | [1930](1930/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1930 | 10 SVG + 5 PNG | Se puede subir |
-| [1983](1983/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1983 | 8 SVG + 4 PNG | **En espera:** El mapa contradice el vigente en Commons; discutir en el artículo antes de subir. |
+| [1983](1983/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1983 | 8 SVG + 4 PNG | **Subido** (el usuario, octubre de 2026). |
 | [1985](1985/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1985 | 15 SVG + 10 PNG | Se puede subir; «con leyenda» y PNG llevan un logo sin licencia libre (riesgo asumido) y hay versiones «con siglas» sin ese logo |
 | [1987](1987/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1987 | 8 SVG + 4 PNG | Se puede subir |
-| [1989](1989/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1989 | 8 SVG + 4 PNG | **En espera:** El mapa contradice el vigente en Commons; discutir en el artículo antes de subir.; Resolver Malargüe 1989 (corregir o anotar) antes de subir. |
+| [1989](1989/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1989 | 8 SVG + 4 PNG | **Subido** (el usuario, octubre de 2026). |
 | [1991](1991/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1991 | 12 SVG + 8 PNG | Se puede subir; «con leyenda» y PNG llevan un logo sin licencia libre (riesgo asumido) y hay versiones «con siglas» sin ese logo |
 | [1993](1993/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1993 | 6 SVG + 3 PNG | Se puede subir |
 | [1994](1994/LEEME_SUBIDA.md) | Elecciones de convencionales constituyentes de Argentina de 1994 | 15 SVG + 10 PNG | Se puede subir; «con leyenda» y PNG llevan un logo sin licencia libre (riesgo asumido) y hay versiones «con siglas» sin ese logo |
+| [1995](1995/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1995 | 8 SVG + 4 PNG | Se puede subir; Deseado imputado; coincide en 96 % con el mapa vigente (diferencias de agrupación); sin la versión hipotética FREPASO + UCR |
+| [1999](1999/LEEME_SUBIDA.md) | Elecciones presidenciales de Argentina de 1999 | 8 SVG + 4 PNG | Se puede subir; San Luis y Santa Cruz de Lupu–Stokes (Cavallo sin desglose, beige); difiere del mapa vigente (284/243 contra 340/198), no cotejado unidad por unidad |
 | [1997](1997/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 1997 | 8 SVG + 4 PNG | Se puede subir; San Luis en color sólido (sin datos departamentales); la Alianza suma UCR y FREPASO |
 | [2001](2001/LEEME_SUBIDA.md) | Elecciones legislativas de Argentina de 2001 | 8 SVG + 4 PNG | Se puede subir; la base trae un 2,3 % menos de votos que la tabla del artículo (leer los avisos) |
 
@@ -27,7 +29,7 @@ No hay paquete de 1995 (hay dos versiones del atlas, por lista y por bloque, y y
 1. **1930, 1922 y 1916**: misma fuente y geometría que 1928 (Cantón; base de 1914 de Rodríguez). En Commons hay solo mapas por provincia.
 2. **1987, 1993**: sin logos dudosos, pero con la base de Ernesto, que no está publicada (un revisor puede pedir de dónde sale cada cifra).
 3. **1985, 1991, 1994**: igual; las versiones con leyenda y PNG llevan un logo sin licencia libre (riesgo asumido). Cada una tiene además una versión «con siglas» sin ese logo: subirla también, así, si Commons borra la del logo, no se pierde todo.
-4. **1983 y 1989**: antes hay que discutirlo en el artículo (contradicen los mapas vigentes) y, en 1989, resolver Malargüe.
+4. **1983 y 1989**: ya subidos por el usuario (octubre de 2026).
 
 ## Herramientas
 - `INSERTAR_EN_ARTICULOS.md` (generado por `insertar_en_articulos.py`): cómo poner los mapas ya subidos en cada artículo de es.wikipedia, con el wikitext listo por año y qué hacer si la discusión no tiene respuesta.

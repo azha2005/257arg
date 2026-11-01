@@ -1,0 +1,54 @@
+{
+  "key": "2019paso",
+  "year": 2019,
+  "cargo": "presidente",
+  "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
+  "units": 529,
+  "with_data": 528,
+  "missing": [],
+  "antartida_sin_dato": false,
+  "winners": {
+    "Juntos por el Cambio": 93,
+    "Frente de Todos": 434,
+    "Consenso Federal": 1
+  },
+  "logos": [
+    {
+      "code": "B01",
+      "bloque": "fdt"
+    },
+    {
+      "code": "B02",
+      "bloque": "sisepuede"
+    },
+    {
+      "code": "B03",
+      "bloque": "consenso"
+    }
+  ],
+  "corrections": [
+    "Catamarca: Antofagasta de la Sierra: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 5 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Chaco: Pcia. de la Plaza: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 32 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Catamarca: Santa Maria: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 65 mesas), porque no hay mesas en el provisorio. La planilla no trae inscriptos: sin participación.",
+    "Chaco: General Belgrano: Votos de la consulta de escrutinio por zona de la CNE (padron.gob.ar/publica, 31 mesas), que reemplaza el único voto del provisorio (una mesa suelta). La planilla no trae inscriptos: sin participación."
+  ],
+  "national": {
+    "art": "Elecciones primarias de Argentina de 2019",
+    "blocs": {
+      "B01": 12205938,
+      "B02": 8121689,
+      "B03": 2081315
+    },
+    "otros": 2251440,
+    "positivos": 24660382,
+    "blancos": 882659,
+    "dif": 318009,
+    "total": 25861050,
+    "inscriptos": 33841837,
+    "lab_pos": "Votos afirmativos",
+    "lab_bla": "Votos en blanco",
+    "lab_nul": "Votos nulos / anulados"
+  },
+  "metrics_src": "tabla presidencial de «Elecciones primarias de Argentina de 2019» en la Wikipedia en español",
+  "internas": []
+}

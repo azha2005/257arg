@@ -58,8 +58,11 @@ def load_votes(year,folder):
         changes.append('La Plata: 21 valores con separador de miles leído como decimal se multiplican por 1000; no se altera el CSV original.')
         for (di,si),sub in d.groupby(['provinciaId','departamentoId']):
             key=(str(di).zfill(2),str(si).zfill(3))
-            if sub.votos.isna().any():invalid[key]='La fuente deja al menos una lista sin cifra. Se conserva la unidad pendiente, sin sustituir la celda por cero.'
             pos=sub[sub.partidoId=='990'].votos.sum();s=sub[~sub.partidoId.isin(['990','991','992','994'])].votos.sum()
+            if sub.votos.isna().any():
+                # celda vacía: vale 0 sólo si las demás listas ya suman los positivos declarados
+                if int(s)==int(pos):changes.append(f"{sub.departamento.iloc[0].title()}: la fuente deja vacía la celda de {', '.join(sub[sub.votos.isna()].partido)}; las demás listas suman exactamente los positivos declarados ({num(pos)}), así que vale 0.")
+                else:invalid[key]='La fuente deja al menos una lista sin cifra. Se conserva la unidad pendiente, sin sustituir la celda por cero.'
             if int(s)!=int(pos):invalid[key]=f'La suma de listas ({num(s)}) no coincide con los positivos declarados ({num(pos)}). Dato pendiente de cotejo.'
         v=pd.DataFrame(dict(distrito_id=d.provinciaId.astype(int).astype(str).str.zfill(2),seccion_id=d.departamentoId.astype(int).astype(str).str.zfill(3),seccion_nombre=d.departamento,
                             agrupacion_id=d.partidoId,agrupacion_nombre=d.partido,cargo_nombre='DIPUTADOS NACIONALES',v=d.votos))
@@ -546,6 +549,10 @@ def logos(year,codes,bycode,CAND,text,folder):
         if year==2023 and 'Por Santa Cruz' in g['grupo']:
             fn=ROOT/'../logos/Logo_Por_Santa_Cruz.png';title='Logo_Por_Santa_Cruz.png';reserve=False
             license='Aportado por el usuario; sin licencia libre verificada';source='logos/LICENCIAS.md';date='2023'
+        # Fuerza Patria 2025: las dos franjas del SVG de Commons (CC0), que la leyenda pasa a blanco como en el mapa original del AMBA del usuario (30-oct-2026).
+        if year==2025 and 'Fuerza Patria' in g['grupo']:
+            fn=ROOT/'../logos/Logo_de_Fuerza_Patria.svg';title='Logo de Fuerza Patria.svg';reserve=False
+            license='CC0';source='https://commons.wikimedia.org/wiki/File:Logo_de_Fuerza_Patria.svg';date='2025-07-10'
         if fn:
             if fn.suffix.lower()=='.svg':
                 import resvg_py
@@ -554,6 +561,8 @@ def logos(year,codes,bycode,CAND,text,folder):
             else:image=Image.open(fn).convert('RGBA')
             bb=image.getbbox()
             if bb:image=image.crop(bb)
+            if fn.name=='Logo_de_Fuerza_Patria.svg':   # margen transparente: las franjas no tocan el borde de la barra, como en el mapa del AMBA
+                pd=round(image.height*.16);im2=Image.new('RGBA',(image.width+2*pd,image.height+2*pd),(0,0,0,0));im2.paste(image,(pd,pd));image=im2
             if image.height>140:image.thumbnail((600,140),Image.Resampling.LANCZOS)
             b=io.BytesIO();image.save(b,'PNG')
             CAND[code].update(img='data:image/png;base64,'+base64.b64encode(b.getvalue()).decode(),ar=round(image.width/image.height,4),bl=min(1.05,82/max(1,image.width/image.height)/27))

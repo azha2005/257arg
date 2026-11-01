@@ -64,7 +64,7 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 ## Fuentes y licencia
 - **Votos:** Dirección Nacional Electoral, Resultados Provisionales Elecciones 2025, datos por mesa publicados en datos.gob.ar y agregados por departamento/comuna.
 - **Geometría:** Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Las versiones con logos ShareAlike llevan `{{self|cc-by-sa-4.0}}`; las variantes que omiten esos emblemas conservan CC BY 4.0. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Homeland Force logo.png, Innovación Federal.png, Logo La Libertad Avanza (sin águila).svg, Logo de "Provincias Unidas".svg. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Innovación Federal.png, Logo La Libertad Avanza (sin águila).svg, Logo de "Provincias Unidas".svg, Logo de Fuerza Patria.svg. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 26 de octubre de 2025 (cotejada con el artículo).
 
 

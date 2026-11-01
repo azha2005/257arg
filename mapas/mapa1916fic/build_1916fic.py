@@ -821,7 +821,7 @@ ds = dict(
     title="Elecciones presidenciales de Argentina de", year="1916",
     labels=dict(pie1="Proporción sobre votos positivos", won="MÁS VOTADO"),
     exterior=False, candidates=CAND,
-    sets={"1": dict(label="Result.", subtitle="Alt-timeline · estimado"), "2": dict(label="Otros", subtitle="Alt-timeline · estimado")},
+    sets={"1": dict(label="Result.", subtitle="Ucronía · estimado"), "2": dict(label="Otros", subtitle="Ucronía · estimado")},
     modes=MODES, insets=INSETS,
     territories=[dict(n=disp.get(i, u["name"]), p=u["prov"], k=u["kind"]) for i, u in enumerate(U)],
 )

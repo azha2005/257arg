@@ -104,6 +104,14 @@ WIKI = {
         positivos=17395284, blancos=653443, dif=125112, total=18203924, inscriptos=22178201,
         extra=[["Diferencia de actas", 30085]],
         lab_pos="Votos positivos", lab_bla="En blanco", lab_nul="Anulados"),
+    1999: dict(
+        art="Elecciones presidenciales de Argentina de 1999",
+        # totales por formula de la tabla de Wikipedia. Cavallo no gana ninguna unidad, pero va en la leyenda como tercera fuerza (10,22 %; pedido del usuario, 29-oct-2026)
+        # Walsh, Mendez, Altamira y los demas van en «otros»
+        blocs={"DLR": 9167220, "DUH": 7253902, "CAV": 1937544},
+        otros=18953704 - (9167220 + 7253902 + 1937544),
+        positivos=18953704, blancos=708876, dif=186761, total=19849341, inscriptos=24111270,
+        lab_pos="Votos positivos", lab_bla="En blanco", lab_nul="Anulados"),
     "1995u": dict(
         art="Elecciones presidenciales de Argentina de 1995",
         # version hipotetica: Bordon (FREPASO) y Massaccesi (UCR) sumados
@@ -207,6 +215,49 @@ for _k in ("otros", "positivos", "blancos", "dif", "total", "inscriptos"): _w[_k
 assert sum(_w["blocs"].values()) + _w["otros"] == _w["positivos"] and _w["inscriptos"] == 11460766
 _w["nota"] = (" La tabla nacional de la Wikipedia omite Catamarca, Formosa, La Rioja y Misiones; se suman con las cifras de Cantón "
               "(t. I y II), que las trae como elecciones de diputados nacionales.")
+
+# Elecciones peronistas (transcripciones/peronismo/atlas4673.py): claves de texto porque 1948 y 1973 tienen dos elecciones.
+WIKI.update({
+    "1946": dict(
+        art="Elecciones presidenciales de Argentina de 1946",
+        blocs={"PER": 1485468, "UD": 1207178, "UCRB": 13469},
+        otros=43499 + 12362 + 3918,             # Partido Demócrata Nacional, UCR de Santiago del Estero, UCR Lencinista
+        positivos=2765894, blancos=20831 + 15, dif=37019, total=2823759, inscriptos=3477169,
+        lab_pos="Votos positivos", lab_bla="En blanco y anulados", lab_nul="Diferencia de actas"),
+    "1948": dict(
+        art="Elecciones legislativas de Argentina de 1948",
+        blocs={"PP": 1431284, "UCR": 622453, "PDP": 50181},
+        otros=151581 + 98852 + 93012 + 88190 + 4205 + 1446,   # PS, laborismo disidente, PD, PC, Concentración Obrera, otros
+        positivos=2541204, blancos=77576, dif=8852, total=2627632, inscriptos=3494620,
+        lab_pos="Votos válidos", lab_bla="En blanco y anulados", lab_nul="Diferencia de actas"),
+    "1948c": dict(
+        art="Elecciones de convencionales constituyentes de Argentina de 1948",
+        blocs={"PP": 1725658, "UCR": 767730},
+        otros=83490 + 4091 + 1659 + 790 + 450,  # PC, CO, Partido Nacionalista Independiente, Laborista, ALN
+        positivos=2583868, blancos=114776, dif=130019, total=2828663, inscriptos=3807326,
+        lab_pos="Votos positivos", lab_bla="En blanco y anulados", lab_nul="Diferencia de actas"),
+    "1954": dict(
+        art="Elecciones legislativas de Argentina de 1954",
+        blocs={"PP": 4977586, "UCR": 2502109},
+        otros=104006 + 88007 + 46077 + 22516 + 3183,   # PD, PC, PDP, PSRN, CO
+        positivos=7743484, blancos=163374, dif=0, total=7906858, inscriptos=9194157,
+        lab_pos="Votos válidos", lab_bla="En blanco y anulados"),
+    "1973": dict(
+        art="Elecciones presidenciales de Argentina de marzo de 1973",
+        blocs={"FJL": 5899642, "UCR": 2535581, "APF": 1775767, "ARF": 347262},
+        otros=885274 + 235188 + 109068 + 73799 + 48571,   # APR, Nueva Fuerza, PSD, PST, FIP
+        positivos=11910152, blancos=214575, dif=51284, total=12176011, inscriptos=14276977,
+        lab_pos="Votos positivos", lab_bla="En blanco", lab_nul="Anulados"),
+    "1973s": dict(
+        art="Elecciones presidenciales de Argentina de septiembre de 1973",
+        blocs={"FJL": 6469525 + 889727, "UCR": 2905719},   # Perón: boletas del FREJULI y del FIP
+        otros=1450996 + 181474,                 # APF, PST
+        positivos=11897441, blancos=108778, dif=48873, total=12055092, inscriptos=14276977,
+        lab_pos="Votos positivos", lab_bla="En blanco", lab_nul="Anulados"),
+})
+for _k in ("1946", "1948", "1948c", "1954", "1973", "1973s"):
+    assert sum(WIKI[_k]["blocs"].values()) + WIKI[_k]["otros"] == WIKI[_k]["positivos"], _k
+
 
 def _n(v):
     return "{:,}".format(int(v)).replace(",", ".")

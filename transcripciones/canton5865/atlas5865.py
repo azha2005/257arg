@@ -52,7 +52,7 @@ CFG = {
                               blanul=14851, vot=61371, part=80.86)},
         tdf="Tierra del Fuego era territorio nacional; Cantón suma sus votos presidenciales a los de Capital Federal («Capital Federal y Tierra del Fuego»), sin detalle propio."),
     1962: dict(
-        title="Elecciones de diputados nacionales de Argentina de", tab="Diputados nacionales 1962", cargo="diputados",
+        title="Elecciones legislativas de Argentina de", tab="Diputados nacionales 1962", cargo="diputados",
         cand={"FJ": dict(n="Frente Justicialista", sub="UP y neoperonistas", base="#318ce7", logo="FJ", img=("Flag_PJ_escudo_clasico_cuadrada.svg", None)),
               "UCRI": dict(n="UCR Intransigente", sub="UCRI", base=UCRI_C, logo="UCRI", img=("Escudo_UCRI_1963_plano.svg", None)),
               "UCRP": dict(n="UCR del Pueblo", sub="UCRP y afines", base=UCRP_C, logo="UCRP", img=("UCRP_escudo.svg", None)),
@@ -67,7 +67,7 @@ CFG = {
         solid={"Santiago del Estero": dict(src="Cantón no trae los diputados de Santiago del Estero de 1962: se pinta la provincia con el total de la Wikipedia.", wiki=True)},
         tdf="Tierra del Fuego era territorio nacional: no elegía diputados nacionales."),
     1965: dict(
-        title="Elecciones de diputados nacionales de Argentina de", tab="Diputados nacionales 1965", cargo="diputados",
+        title="Elecciones legislativas de Argentina de", tab="Diputados nacionales 1965", cargo="diputados",
         cand={"UP": dict(n="Unión Popular", sub="UP", base="#009999", logo="UP", img=("Union_popular_logo_blanco.png", None)),
               "UCRP": dict(n="UCR del Pueblo", sub="UCRP", base=UCRP_C, logo="UCRP", img=("UCRP_escudo.svg", None)),
               "FNPC": dict(n="Fed. de Partidos de Centro", sub="Conservadores", base=FNPC_C, logo="FNPC", img=("Logo_de_la_FdC.png", None)),

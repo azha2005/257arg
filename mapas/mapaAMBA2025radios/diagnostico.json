@@ -1,0 +1,47 @@
+{
+ "locales": 5487,
+ "fuente_locales": {
+  "escuela_dir": 3904,
+  "escuela_codigo": 697,
+  "georef": 244,
+  "escuela_nombre": 173,
+  "centro_circuito": 167,
+  "lanacion2021": 158,
+  "escuela_dir_cerca": 81,
+  "georef_variante": 28,
+  "georef_cerca": 15,
+  "escuela_codigo_cerca": 12,
+  "escuela_nombre_cerca": 5,
+  "lanacion2021_cerca": 3
+ },
+ "electores_por_fuente": {
+  "centro_circuito": 0.0275,
+  "escuela_codigo": 0.13,
+  "escuela_codigo_cerca": 0.002,
+  "escuela_dir": 0.7162,
+  "escuela_dir_cerca": 0.0152,
+  "escuela_nombre": 0.0303,
+  "escuela_nombre_cerca": 0.0011,
+  "georef": 0.0395,
+  "georef_cerca": 0.0032,
+  "georef_variante": 0.0045,
+  "lanacion2021": 0.03,
+  "lanacion2021_cerca": 0.0005
+ },
+ "idw": {
+  "pares_vecinos_mismo_partido": 55060,
+  "pares_que_cruzan_circuito": 0.1705,
+  "cambios_de_ganador": 2410,
+  "cambios_de_ganador_sobre_limite_de_circuito": 0.2556,
+  "prob_cambio_si_cruza_circuito": 0.0656,
+  "prob_cambio_dentro_del_circuito": 0.0393
+ },
+ "pob": {
+  "pares_vecinos_mismo_partido": 53514,
+  "pares_que_cruzan_circuito": 0.1653,
+  "cambios_de_ganador": 2680,
+  "cambios_de_ganador_sobre_limite_de_circuito": 0.6922,
+  "prob_cambio_si_cruza_circuito": 0.2097,
+  "prob_cambio_dentro_del_circuito": 0.0185
+ }
+}

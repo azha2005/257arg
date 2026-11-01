@@ -6,22 +6,23 @@ Geometría: Departamentos de 2010, 15 comunas de Capital Federal y Lezama separa
 
 Fuentes: `datos_oficiales/2017/agregado.pkl` (DINE, escrutinio provisorio por mesa).
 
-El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2017); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 24.329.184 positivos y la tabla nacional 24.580.114. No se ajustan los votos locales para forzar igualdad. `control_bloques_2017.csv` conserva todas las diferencias.
+El cartel nacional usa la tabla de [Wikipedia](https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_2017); snapshots y revisión de origen en `fuentes_leg2003_2025/`. Los votos de la base suman 24.331.249 positivos y la tabla nacional 24.580.114. No se ajustan los votos locales para forzar igualdad. `control_bloques_2017.csv` conserva todas las diferencias.
 
 Sólo las fuerzas que ganan alguna unidad aparecen en la leyenda y en las barras nacionales; el resto integra otros en la torta y permanece en el detalle. `mapeo_listas` conserva cada lista y bloque. Colores de las filas de Wikipedia resueltos mediante expandtemplates; las excepciones por contraste se detallan abajo.
 
 | Bloque | Base | Wikipedia | Diferencia | Unidades ganadas |
 |---|---:|---:|---:|---:|
-| Cambiemos | 10.161.053 | 10.263.329 | -102,276 | 267 |
+| Cambiemos | 10.162.243 | 10.263.329 | -101,086 | 268 |
 | Unidad Ciudadana y el kirchnerismo | 5.504.474 | 5.577.812 | -73,338 | 97 |
-| peronismo no kirchnerista | 4.066.934 | 3.935.362 | +131,572 | 148 |
+| peronismo no kirchnerista | 4.067.117 | 3.935.362 | +131,755 | 148 |
 | Frente Progresista Cívico y Social | 345.918 | 347.853 | -1,935 | 1 |
 | Chubut para Todos (CpT) | 100.326 | 101.613 | -1,287 | 9 |
 | Movimiento Popular Neuquino (MPN) | 80.732 | 81.077 | -345 | 4 |
 
-Faltantes (beige, sin imputar): Jujuy: Valle Grande.
+Faltantes (beige, sin imputar): ninguno en el continente.
 Tolhuin todavía no era un departamento en la fecha de esta elección: la ley provincial 1186 se sancionó el 27-oct-2017, después de los comicios del 22-oct-2017. Se conserva la división de Río Grande/Ushuaia del shapefile 2010. Fuente: https://www.legistdf.gob.ar/lp/leyes/Provinciales/LEYP1186.pdf
 
+Valle Grande: Cámara Nacional Electoral, «Consulta de Escrutinio por Zona» (escrutinio definitivo), padron.gob.ar/publica, consulta manual del usuario del 30-oct-2026; planilla `padron_publica/zona_secc_00008.xls`, columna DIPUTADO NACIONAL (12 mesas, 2.316 votantes). La consulta no trae inscriptos: se usa el padrón de las 12 mesas del provisorio (2.697); la consulta da 85,57 % de votantes, que implica unos 2.706.
 Color final de Cambiemos: #f4ce00; tabla de Wikipedia: #FFD700. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de Unidad Ciudadana y el kirchnerismo: #2ea3ff; tabla de Wikipedia: #75AADB. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 Color final de peronismo no kirchnerista: #1aff98; tabla de Wikipedia: #318CE7. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.

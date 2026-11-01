@@ -1,5 +1,7 @@
 # Transferencias de voto entre legislativas (diputados nacionales)
 
+**Explorador (30-oct-2026):** `python transferencias/explorador/servidor.py` abre una página para elegir dos elecciones cualesquiera (las 56 de los pkl, las 158 del MASTER y las 65 de los atlas, con las PASO) y ver el sankey al momento, nacional o por provincia. Es la estimación puntual de este mismo método, sin bootstrap. Ver [explorador/LEEME.md](explorador/LEEME.md).
+
 ## Diputados 2017 → diputados 2025
 
 `2017_2025/`: matrices nacional/provinciales, variante Calvo, intervalos de 200 remuestreos y HTML con selector de los 24 distritos, completo y sin No votó. Fuentes: agregados DINE por circuito `circ_2017.pkl` / `circ_2025.pkl`, con los bloques de los atlas de cada año. Se reutilizan las equivalencias de Santa Fe y las uniones documentadas de los cruces hacia 2025. [Decisiones territoriales](FUENTES_2015_2025.md#extension-a-diputados-2017--2025), [resumen y reservas](2017_2025/RESUMEN.md).

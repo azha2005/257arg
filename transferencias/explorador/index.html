@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explorador de transferencias de votos</title>
+<meta name="description" content="Elegí dos elecciones argentinas y mirá cómo se movieron los votos de una a otra, con un sankey estimado al momento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · shape: app screen · genre: editorial · theme: Ink (deal 1/3, seed tool-pick-two-argentine-7c25·6dd3acff·2026-10-31·r0) · redesign: restyle
+ * nav: kept (a header over the two pickers) · signature: the sankey on its sheet, with the reliability verdict as a pill · states: loading, error, full · ink: paper
+ * axes: light/grotesk-sans/chromatic-teal · posture: restrained · contrast: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V4 · weakest: P, a tool restyle has little argument; the verdict pill says in one glance whether the matrix can be read */
+/* Hallmark · waive 22 · ink and greys at zero chroma · a notice board is printed in plain black, and the sankey's party colours carry all the hue */
+/* Hallmark · reworded "Ajuste" to "Ajuste del modelo" and "Provincias" to "Provincias (unidades usadas en cada una)" · now folded summaries so the panel is short */
+
+/* tokens: Ink, plus the shared scale */
+:root {
+  color-scheme: light;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem;
+  --text-display: 1.728rem; --text-section: 1rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-micro: 120ms; --dur-short: 220ms;
+  --color-error: oklch(52% 0.19 27);
+  --container: 1440px; --gutter: 32px;
+  --color-paper: oklch(99.5% 0.003 100); --color-paper-2: oklch(97% 0.004 100); --color-paper-3: oklch(94% 0.006 100);
+  --color-ink: oklch(16% 0 0); --color-ink-2: oklch(28% 0 0); --color-muted: oklch(44% 0 0);
+  --color-rule: oklch(89% 0.004 100); --color-rule-2: oklch(93.5% 0.003 100);
+  --color-accent: oklch(50% 0.095 188); --color-accent-soft: oklch(93% 0.05 190); --color-accent-soft-ink: oklch(27% 0.045 190);
+  --color-focus: oklch(50% 0.095 188);
+  --color-warn: oklch(44.6% 0.17 28); --color-warn-soft: oklch(95% 0.03 28);   /* el rojo del aviso del sankey (#a40000) */
+  --font-display: "Epilogue", ui-sans-serif, system-ui, sans-serif; --font-body: var(--font-display);
+  --radius-card: 12px; --radius-control: 10px; --radius-pill: 999px; --rule-hair: 1px;
+  --tracking-display: -0.04em; --display-weight: 700;
+  --control-h: 36px;
+  --ancho-app: calc(920px + 24px + 360px);   /* sankey + separación + panel: el ancho de todo el contenido */
+}
+
+/* base */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink-2); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.55; -webkit-font-smoothing: antialiased; caret-color: var(--color-accent); }
+::selection { background: var(--color-accent-soft); color: var(--color-accent-soft-ink); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+h1, h2 { margin: 0; color: var(--color-ink); font-family: var(--font-display); font-weight: var(--display-weight); font-synthesis: none; letter-spacing: var(--tracking-display); line-height: 1.05; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+[hidden] { display: none !important; }
+button, input, select { font: inherit; color: inherit; }
+code { font-size: 0.92em; }
+@media (max-width: 40rem) { :root { --gutter: 16px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; } }
+
+/* page */
+.wrap { max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+header { padding-block: var(--space-lg) var(--space-md); border-bottom: var(--rule-hair) solid var(--color-ink); }
+h1 { font-size: var(--text-display); max-width: none; }
+header { max-width: var(--ancho-app); }
+header p { margin-top: var(--space-xs); max-width: 75ch; font-size: var(--text-sm); color: var(--color-muted); }
+
+.ctl { max-width: var(--ancho-app); display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: var(--space-md); padding-block: var(--space-lg) var(--space-md); align-items: end; }
+.sel label { display: block; margin-bottom: var(--space-2xs); font-size: var(--text-sm); font-weight: 600; color: var(--color-ink); }
+.sel input, .sel select, .bar select { width: 100%; border: var(--rule-hair) solid var(--color-muted); border-radius: var(--radius-control); background: var(--color-paper); }
+.sel input { min-height: var(--control-h); padding: var(--space-2xs) var(--space-sm); margin-bottom: var(--space-xs); }
+.sel input::placeholder { color: var(--color-muted); }
+.sel select { padding: var(--space-2xs); font-size: var(--text-sm); }
+.sel select option { padding: var(--space-3xs) var(--space-xs); border-radius: 6px; }
+.sel select option:checked { background: var(--color-ink) linear-gradient(var(--color-ink), var(--color-ink)); color: var(--color-paper); }
+.sel select optgroup { font-weight: 600; color: var(--color-ink); }
+.sel input:hover, .sel select:hover, .bar select:hover { border-color: var(--color-ink); }
+
+button { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs); min-height: var(--control-h); padding: var(--space-2xs) var(--space-md); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-control); background: var(--color-paper-2); color: var(--color-ink); font-weight: 600; cursor: pointer; transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
+button:hover { background: var(--color-paper-3); border-color: var(--color-muted); }
+button:active { transform: translateY(1px); }
+button.primary { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper); }
+button.primary:hover { background: var(--color-ink-2); border-color: var(--color-ink-2); }
+button:disabled, button:disabled:hover { opacity: 0.55; cursor: not-allowed; background: var(--color-paper-3); border-color: var(--color-rule); color: var(--color-muted); transform: none; }
+button.primary:disabled { background: var(--color-muted); border-color: var(--color-muted); color: var(--color-paper); }
+#swap { width: var(--control-h); padding: 0; margin-bottom: var(--space-xs); font-size: var(--text-lg); }
+
+.bar { max-width: var(--ancho-app); display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-md); align-items: center; padding-block: var(--space-xs) var(--space-sm); font-size: var(--text-sm); }
+.bar label { display: flex; gap: var(--space-xs); align-items: center; min-height: var(--control-h); color: var(--color-ink); cursor: pointer; }
+.bar input[type=checkbox] { width: 16px; height: 16px; margin: 0; accent-color: var(--color-ink); cursor: pointer; }
+.bar select { width: auto; max-width: 100%; min-width: 0; min-height: var(--control-h); padding: var(--space-2xs) var(--space-sm); }
+.bar .desc { display: flex; gap: var(--space-xs); margin-left: auto; }
+
+#estado { min-height: 2.2em; padding-block: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); border-top: var(--rule-hair) solid var(--color-rule); }
+#estado.err { color: var(--color-error); font-weight: 600; }
+
+main { max-width: var(--ancho-app); display: grid; grid-template-columns: minmax(0, 920px) minmax(280px, 360px); justify-content: start; gap: var(--space-lg); padding-bottom: var(--space-2xl); align-items: start; }
+#dibujo:not(:empty) { border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); overflow: hidden; }
+#dibujo svg { display: block; width: 100%; max-width: 900px; height: auto; margin-inline: auto; }   /* a su tamaño, nunca agrandado */
+#dibujo path:hover { fill-opacity: 0.8; cursor: help; }
+
+aside { padding: var(--space-md); background: var(--color-paper-2); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); font-size: var(--text-sm); }
+aside h2 { margin: var(--space-lg) 0 var(--space-xs); padding-top: var(--space-xs); border-top: var(--rule-hair) solid var(--color-ink); font-size: var(--text-section); letter-spacing: -0.02em; }
+aside h2:first-child { margin-top: 0; }
+aside ul { margin: 0; padding-left: var(--space-md); }
+aside li + li { margin-top: var(--space-2xs); }
+aside dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--space-2xs) var(--space-sm); margin: 0; }
+aside dt { color: var(--color-muted); }
+aside dd { margin: 0; color: var(--color-ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+aside table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+aside th { padding: var(--space-2xs) var(--space-3xs); text-align: left; font-weight: 600; color: var(--color-ink); white-space: nowrap; border-bottom: var(--rule-hair) solid var(--color-ink); }
+aside td:first-child { overflow-wrap: break-word; }
+aside td { padding: var(--space-2xs) var(--space-3xs); border-bottom: var(--rule-hair) solid var(--color-rule); vertical-align: top; }
+aside td.n, aside th.n { text-align: right; }
+aside .nota { margin-top: var(--space-xs); color: var(--color-muted); }
+aside .sinf { color: var(--color-muted); }
+aside details { margin-top: var(--space-md); padding-top: var(--space-xs); border-top: var(--rule-hair) solid var(--color-ink); }
+aside summary { cursor: pointer; color: var(--color-ink); font-weight: 700; letter-spacing: -0.02em; }
+aside summary:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+aside details table { margin-top: var(--space-xs); }
+aside details:not([open]) > :not(summary) { display: none; }
+.veredicto { display: flex; flex-wrap: wrap; gap: var(--space-xs); align-items: center; margin-bottom: var(--space-sm); }
+.tag { display: inline-flex; padding: var(--space-3xs) var(--space-sm); border-radius: var(--radius-pill); font-size: var(--text-xs); font-weight: 600; }
+.tag--in { background: var(--color-accent-soft); color: var(--color-accent-soft-ink); }
+.tag--warn { background: var(--color-warn-soft); color: var(--color-warn); box-shadow: inset 0 0 0 var(--rule-hair) var(--color-warn); }
+.marca { white-space: nowrap; display: inline; padding-inline: var(--space-2xs); border-radius: var(--radius-pill); box-shadow: inset 0 0 0 var(--rule-hair) var(--color-rule); color: var(--color-ink); font-weight: 600; }
+
+body.embed header, body.embed .ctl, body.embed #go, body.embed #lrapido, body.embed #estado { display: none; }
+body.embed .bar { padding-top: var(--space-sm); }
+body.embed .wrap { max-width: none; padding-inline: 0; }   /* mismo borde izquierdo que los controles de Streamlit */
+
+@media (max-width: 60rem) {
+  .ctl { grid-template-columns: minmax(0, 1fr); }
+  #swap { justify-self: start; margin-bottom: 0; }
+  main { grid-template-columns: minmax(0, 1fr); }
+  .bar .desc { margin-left: 0; }
+}
+@media (max-width: 40rem) {
+  .bar label:has(select) { flex: 1 1 100%; min-width: 0; }
+  .bar label:has(select) select { flex: 1 1 auto; width: 0; }
+}
+@media (max-width: 40rem) {
+  #dibujo:not(:empty) { overflow-x: auto; }
+  #dibujo svg { min-width: 640px; }
+  aside { padding: var(--space-sm); }
+  aside th { white-space: normal; }
+  aside th.n { hyphens: auto; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Explorador de transferencias de votos</h1>
+<p>Elegí dos elecciones cualesquiera. La matriz se estima en el momento (inferencia ecológica RxC de E. Calvo, una matriz por provincia encogida hacia la nacional) y queda guardada. Es la estimación puntual, sin bootstrap: para un par que valga la pena, correr <code>estimar.py</code>.</p>
+</header>
+<div class="ctl">
+  <div class="sel"><label for="fo">Origen</label><input id="fo" type="search" autocomplete="off" placeholder="Filtrar (p. ej. 2019 paso, 1983, gobernador)"><select id="o" size="8" aria-label="Elección de origen"></select></div>
+  <div><button id="swap" type="button" title="Invertir origen y destino" aria-label="Invertir origen y destino">⇄</button></div>
+  <div class="sel"><label for="fd">Destino</label><input id="fd" type="search" autocomplete="off" placeholder="Filtrar"><select id="d" size="8" aria-label="Elección de destino"></select></div>
+</div>
+<div class="bar">
+  <button class="primary" id="go" type="button">Calcular sankey</button>
+  <label id="lrapido"><input type="checkbox" id="rapido"> Rápido (sin validación cruzada)</label>
+  <label>Vista <select id="vista"></select></label>
+  <label><input type="checkbox" id="votantes"> Sin «No votó»</label>
+  <label><input type="checkbox" id="reducido"> «No votó» a escala 1:4</label>
+  <span class="desc"><button id="bsvg" type="button" disabled>Bajar SVG</button>
+  <button id="bcsv" type="button" disabled>Bajar CSV</button></span>
+</div>
+<div id="estado" role="status">Cargando el catálogo…</div>
+<main>
+  <div id="dibujo"></div>
+  <aside id="info" hidden></aside>
+</main>
+</div>
+<script>
+const W=900,H=760,TOP=90,GAP=10,NODE=18,X0=250,X1=650,RED=.25;
+let CAT=null, R=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=p=>p.toFixed(1).replace('.',',')+' %';
+const num=v=>Math.round(v).toLocaleString('es-AR');
+const fold=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+
+function llenar(sel, filtro, actual){
+  const ws=fold(filtro).split(/\s+/).filter(Boolean);
+  sel.innerHTML='';
+  const grupos={};
+  for(const e of CAT.elecciones){
+    const t=fold(e.nombre+' '+e.grupo+' '+e.id);
+    if(ws.some(w=>!t.includes(w))) continue;
+    (grupos[e.grupo]=grupos[e.grupo]||[]).push(e);
+  }
+  for(const [g,es] of Object.entries(grupos)){
+    const og=document.createElement('optgroup'); og.label=g;
+    for(const e of es.sort((a,b)=>a.anio-b.anio||a.nombre.localeCompare(b.nombre))){
+      const op=document.createElement('option'); op.value=e.id; op.textContent=e.nombre+(e.nivel==='circuito'?'  [circuitos]':'');
+      if(e.id===actual) op.selected=true; og.appendChild(op);
+    }
+    sel.appendChild(og);
+  }
+}
+function nombre(id){const e=CAT.elecciones.find(x=>x.id===id);return e?e.nombre:id}
+
+function vistas(){
+  const v=$('vista'), prev=v.value||'nacional';
+  v.innerHTML='<option value="nacional">Nacional</option>';
+  for(const p of CAT.provincias){
+    const op=document.createElement('option'); op.value=p;
+    const inf=R&&R.info[p];
+    if(!R||!R.provincias[p]){op.textContent=p+' (sin datos en alguna de las dos)'; op.disabled=true}
+    else op.textContent=p+(inf.modo==='provincia entera'?' (provincia entera: casi la nacional)':'');
+    v.appendChild(op);
+  }
+  v.value=[...v.options].some(o=>o.value===prev&&!o.disabled)?prev:'nacional';
+}
+
+function matriz(){
+  let M=($('vista').value==='nacional'?R.nacional:R.provincias[$('vista').value]).map(r=>r.slice());
+  let rows=R.rows.slice(), cols=R.cols.slice();
+  if($('votantes').checked){
+    const i=rows.indexOf('No votó'), j=cols.indexOf('No votó');
+    if(i>=0){M.splice(i,1);rows.splice(i,1)}
+    if(j>=0){M.forEach(r=>r.splice(j,1));cols.splice(j,1)}
+  }
+  const ri=rows.map((_,i)=>i).filter(i=>M[i].reduce((a,b)=>a+b,0)>0);
+  const ci=cols.map((_,j)=>j).filter(j=>M.some(r=>r[j]>0));
+  return {M:ri.map(i=>ci.map(j=>M[i][j])), rows:ri.map(i=>rows[i]), cols:ci.map(j=>cols[j])};
+}
+
+function dibujar(){
+  const {M,rows,cols}=matriz(), prov=$('vista').value, red=$('reducido').checked;
+  const nvR=rows.map(r=>r==='No votó'), nvC=cols.map(c=>c==='No votó');
+  const G=M.map((r,i)=>r.map((v,j)=>red&&(nvR[i]||nvC[j])?v*RED:v));
+  const tot=M.flat().reduce((a,b)=>a+b,0), gtot=G.flat().reduce((a,b)=>a+b,0);
+  const notas=[];
+  if(prov!=='nacional'){
+    const inf=R.info[prov];
+    notas.push(`Matriz provincial (${inf.unidades_usadas} unidades: ${inf.modo}), encogida hacia la nacional. Las marcas * son de la matriz nacional; † y el aviso, de la provincial.`);
+  }
+  if(red) notas.push('«No votó» y sus cintas a escala 1:4; las cifras son las reales.');
+  // Auditoría como la de auditar.py / sankey.py: * es de la matriz nacional; † y el aviso, de la que se dibuja
+  const A=R.auditoria||{filas:[],provincias:{}}, AP=prov==='nacional'?null:(A.provincias[prov]||{});
+  const noid=prov==='nacional'?new Set(A.filas.filter(f=>f.no_identificada).map(f=>f.origen)):new Set();
+  const cerca=new Set(prov==='nacional'?A.filas.filter(f=>f.cerca_promedio).map(f=>f.origen):(AP.cerca||[]));
+  const poco=prov==='nacional'?A.poco_informativa:AP.poco_informativa;
+  if(noid.size) notas.push('* Fila no identificada: los datos no alcanzan para saber adónde fue; las dos variantes del modelo no coinciden.');
+  if(cerca.size) notas.push('† Fila cerca del promedio: se reparte casi como el total; puede ser un reparto real o falta de señal para esa fila.');
+  if(AP&&(AP.imposibles||[]).length) notas.push('La matriz provincial le da a '+AP.imposibles.map(x=>`${x.destino} ${num(x.estimado)} votos (real: ${num(x.real)})`).join(', ')+': más de lo que sacó; leerla con cuidado.');
+  for(const n of R.notas) notas.push(n);
+  const HH=H+18*Math.max(0,notas.length-1);
+  const T=poco?TOP+18:TOP;
+  const usable=H-T-60, k0=(usable-GAP*(rows.length-1))/gtot, k1=(usable-GAP*(cols.length-1))/gtot;
+  const col=n=>R.colores[n]||'#888';
+  const nodes=(s,k)=>{let y=T;return s.map(v=>{const o=[y,v*k];y+=v*k+GAP;return o})};
+  const L=nodes(G.map(r=>r.reduce((a,b)=>a+b,0)),k0), Rn=nodes(cols.map((_,j)=>G.reduce((a,r)=>a+r[j],0)),k1);
+  const rs=M.map(r=>r.reduce((a,b)=>a+b,0)), cs=cols.map((_,j)=>M.reduce((a,r)=>a+r[j],0));
+  const titulo='Transferencias de votos'+(prov!=='nacional'?': '+prov:'');
+  const sub=`${nombre(R.origen)} → ${nombre(R.destino)}`;
+  const s=[`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${HH}" font-family="Helvetica, Arial, sans-serif">`,
+    '<rect width="100%" height="100%" fill="#fff"/>',
+    `<text x="${W/2}" y="40" font-size="30" font-weight="bold" text-anchor="middle" fill="#333"${titulo.length>49?' textLength="850" lengthAdjust="spacingAndGlyphs"':''}>${esc(titulo)}</text>`,
+    `<text x="${W/2}" y="68" font-size="16" font-weight="bold" text-anchor="middle" fill="#444"${sub.length>95?' textLength="860" lengthAdjust="spacingAndGlyphs"':''}>${esc(sub)}</text>`];
+  if(poco) s.push(`<text x="${W/2}" y="86" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#a40000" textLength="870" lengthAdjust="spacingAndGlyphs">Matriz poco informativa: el voto de origen casi no predice el de destino, y las filas repiten el promedio por falta de señal.</text>`);
+  const lo=L.map(n=>n[0]), ro=Rn.map(n=>n[0]);
+  for(let i=0;i<rows.length;i++)for(let j=0;j<cols.length;j++){
+    const v=M[i][j]; if(v<=0) continue;
+    const h0=G[i][j]*k0, h1=G[i][j]*k1, ya=lo[i], yb=ro[j]; lo[i]+=h0; ro[j]+=h1;
+    if(v/tot<5e-4) continue;
+    const c=(X0+X1)/2, f=x=>x.toFixed(1);
+    s.push(`<path d="M${f(X0+NODE)} ${f(ya)} C${f(c)} ${f(ya)} ${f(c)} ${f(yb)} ${X1} ${f(yb)} L${X1} ${f(yb+h1)} C${f(c)} ${f(yb+h1)} ${f(c)} ${f(ya+h0)} ${f(X0+NODE)} ${f(ya+h0)}Z" fill="${col(rows[i])}" fill-opacity="0.45"><title>${esc(rows[i])} → ${esc(cols[j])}: ${num(v)} votos\n${fmt(100*v/rs[i])} del origen\n${fmt(100*v/cs[j])} del destino${noid.has(rows[i])?'\n(fila no identificada)':''}${cerca.has(rows[i])?'\n(fila cerca del promedio)':''}</title></path>`);
+  }
+  const pos=ns=>{let last=T-14;return ns.map(([y,h])=>{const p=Math.max(y+h/2,last+14);last=p;return p})};
+  const ly=pos(L), ry=pos(Rn);
+  L.forEach(([y,h],i)=>{
+    s.push(`<rect x="${X0}" y="${y.toFixed(1)}" width="${NODE}" height="${Math.max(h,1).toFixed(1)}" fill="${col(rows[i])}"/>`);
+    const lab=rows[i]+(noid.has(rows[i])?' *':'')+(cerca.has(rows[i])?' †':'')+': '+fmt(100*rs[i]/tot);
+    s.push(`<text x="${X0-8}" y="${ly[i].toFixed(1)}" font-size="14" font-weight="bold" text-anchor="end" dominant-baseline="middle" fill="#222"${lab.length>30?' textLength="235" lengthAdjust="spacingAndGlyphs"':''}>${esc(lab)}</text>`);
+  });
+  Rn.forEach(([y,h],j)=>{
+    s.push(`<rect x="${X1}" y="${y.toFixed(1)}" width="${NODE}" height="${Math.max(h,1).toFixed(1)}" fill="${col(cols[j])}"/>`);
+    const lab=cols[j]+': '+fmt(100*cs[j]/tot);
+    s.push(`<text x="${X1+NODE+8}" y="${ry[j].toFixed(1)}" font-size="14" font-weight="bold" dominant-baseline="middle" fill="#222"${lab.length>30?' textLength="215" lengthAdjust="spacingAndGlyphs"':''}>${esc(lab)}</text>`);
+  });
+  const base=$('votantes').checked&&R.base==='padrón'?'los flujos estimados sin «No votó»':(R.base==='padrón'?'el padrón de destino':'los votos emitidos de destino');
+  s.push(`<text x="20" y="${HH-30}" font-size="11.5" fill="#555">Porcentajes sobre ${base} en las ${num(R.unidades)} unidades usadas (${R.nivel}). RxC penalizado (E. Calvo), una matriz por provincia; estimación puntual, sin intervalos.</text>`);
+  s.push(`<text x="20" y="${HH-12}" font-size="11.5" fill="#555">Explorador de transferencias (dataeleccproyecto). Las celdas de categorías chicas (&lt;5 %) tienen márgenes de error grandes.</text>`);
+  notas.forEach((t,i)=>s.push(`<text x="20" y="${HH-48-18*i}" font-size="11.5" fill="#555"${t.length>150?' textLength="860" lengthAdjust="spacingAndGlyphs"':''}>${esc(t)}</text>`));
+  s.push('</svg>');
+  $('dibujo').innerHTML=s.join('\n');
+  info();
+  guardarHash();
+}
+
+function info(){
+  // Corto a la vista (veredicto, filas, notas); lo técnico plegado
+  const a=$('info'); a.hidden=false;
+  a.innerHTML=`${confiab()}
+   ${R.notas.length?`<h2>Notas</h2><ul>${R.notas.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+   <details><summary>Ajuste del modelo</summary><dl>
+   <dt>Nivel</dt><dd>${esc(R.nivel)}</dd>
+   <dt>Base</dt><dd>${esc(R.base)}</dd>
+   <dt>Unidades usadas</dt><dd>${num(R.unidades)}</dd>
+   <dt>Penalización</dt><dd>${R.lambda_}${Object.keys(R.cv).length?' (validación cruzada)':' (fija)'}</dd>
+   <dt>Error de ajuste medio</dt><dd>${String(R.rmse_pp).replace('.',',')} puntos por categoría</dd>
+   <dt>Calculado en</dt><dd>${String(R.segundos).replace('.',',')} s</dd></dl></details>
+   <details><summary>Provincias (unidades usadas en cada una)</summary><table><tr><th>Provincia</th><th>Modo</th><th class="n">Unidades</th></tr>${CAT.provincias.map(p=>{const i=R.info[p];return `<tr><td>${esc(p)}</td>${i?`<td>${esc(i.modo)}</td><td class="n">${i.unidades_usadas}</td>`:'<td class="sinf" colspan="2">sin datos</td>'}</tr>`}).join('')}</table></details>`;
+}
+
+function confiab(){
+  const A=R.auditoria; if(!A) return '';
+  const pc=x=>x==null?'—':String(x).replace('.',',');
+  const malas=Object.entries(A.provincias).filter(([,v])=>v.poco_informativa).map(([p])=>p).sort();
+  const imp=Object.entries(A.provincias).filter(([,v])=>v.imposibles.length).map(([p])=>p).sort();
+  const marca=f=>[f.no_identificada?'*':'',f.cerca_promedio?'†':''].filter(Boolean).map(m=>`<span class="marca">${m}</span>`).join(' ');
+  return `<h2>Confiabilidad</h2>
+   <p class="veredicto"><span class="tag ${A.poco_informativa?'tag--warn':'tag--in'}">${A.poco_informativa?'Matriz poco informativa':'Matriz informativa'}</span> <span class="sinf">separación media ${pc(A.separacion)} (mínimo ${A.umbral})</span></p>
+   <table><tr><th>Origen</th><th class="n">%</th><th class="n">Separación</th><th class="n">Dif. Calvo</th></tr>${A.filas.map(f=>`<tr><td>${f.no_identificada||f.cerca_promedio?marca(f)+'&nbsp;':''}${esc(f.origen)}</td><td class="n">${pc(f.peso)}</td><td class="n">${pc(f.sep)}</td><td class="n" title="celda: ${esc(f.celda)}">${pc(f.dif_calvo)}</td></tr>`).join('')}</table>
+   ${malas.length?`<p class="nota">Poco informativa también en ${malas.length} provincia${malas.length>1?'s':''}: ${malas.map(esc).join(', ')}.</p>`:''}
+   ${imp.length?`<p class="nota">Un destino recibe más del 125 % de sus votos en: ${imp.map(esc).join(', ')}.</p>`:''}
+   <details><summary>Cómo se lee</summary><p class="nota">Separación: ½·Σ|fila − promedio|; debajo de ${A.umbral}, la fila se reparte casi como el total († fila cerca del promedio). * = la fila difiere más de 30 puntos (20 si pesa &lt;5 %) de una sola matriz nacional sin pesos (variante de Calvo): no identificada.</p></details>`;
+}
+
+function guardarHash(){
+  if(window.EMBED) return;
+  const h=new URLSearchParams({o:$('o').value,d:$('d').value,v:$('vista').value});
+  if($('votantes').checked)h.set('sinnv','1'); if($('reducido').checked)h.set('red','1');
+  history.replaceState(null,'','#'+h.toString());
+}
+
+async function calcular(){
+  const o=$('o').value, d=$('d').value;
+  if(!o||!d){estado('Elegí origen y destino.',true);return}
+  if(o===d){estado('Origen y destino son la misma elección.',true);return}
+  $('go').disabled=true; estado('Calculando '+nombre(o)+' → '+nombre(d)+'… (la primera vez puede tardar hasta un minuto)');
+  const t=performance.now();
+  try{
+    const r=await fetch(`/api/sankey?o=${encodeURIComponent(o)}&d=${encodeURIComponent(d)}&rapido=${$('rapido').checked?1:0}`);
+    const j=await r.json();
+    if(!r.ok) throw new Error(j.error||r.statusText);
+    R=j; vistas(); dibujar(); $('bsvg').disabled=$('bcsv').disabled=false;
+    estado(`Listo (${((performance.now()-t)/1000).toFixed(1).replace('.',',')} s${R.segundos*1000<performance.now()-t-500?'':''}).`);
+  }catch(e){estado('No se pudo calcular: '+e.message,true)}
+  finally{$('go').disabled=false}
+}
+function estado(t,err){const e=$('estado');e.textContent=t;e.className=err?'err':''}
+
+function bajar(nom,txt,tipo){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:tipo}));a.download=nom;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+const archivo=()=>('sankey_'+R.origen+'_'+R.destino+'_'+$('vista').value).replace(/[^\w.-]+/g,'_');
+$('bsvg').onclick=()=>bajar(archivo()+'.svg',$('dibujo').innerHTML,'image/svg+xml');
+$('bcsv').onclick=()=>{const {M,rows,cols}=matriz();
+  const q=s=>'"'+String(s).replace(/"/g,'""')+'"';
+  bajar(archivo()+'.csv','﻿origen,'+cols.map(q).join(',')+'\n'+rows.map((r,i)=>q(r)+','+M[i].map(v=>Math.round(v)).join(',')).join('\n'),'text/csv')};
+
+$('fo').oninput=()=>llenar($('o'),$('fo').value,$('o').value);
+$('fd').oninput=()=>llenar($('d'),$('fd').value,$('d').value);
+$('swap').onclick=()=>{const a=$('o').value,b=$('d').value;$('fo').value=$('fd').value='';llenar($('o'),'',b);llenar($('d'),'',a)};
+$('go').onclick=calcular;
+for(const id of ['vista','votantes','reducido']) $(id).onchange=()=>R&&dibujar();
+$('o').ondblclick=$('d').ondblclick=calcular;
+
+(async()=>{
+  if(window.EMBED){   // dentro de la app de Streamlit: el cálculo y los selectores los pone Python
+    CAT=EMBED.cat; R=EMBED.r; document.body.classList.add('embed');
+    vistas(); dibujar(); $('bsvg').disabled=$('bcsv').disabled=false; return;
+  }
+  try{CAT=await (await fetch('/api/catalogo')).json()}catch(e){estado('No responde el servidor: ¿está corriendo servidor.py?',true);return}
+  const h=new URLSearchParams(location.hash.slice(1));
+  llenar($('o'),'',h.get('o')||'pkl:2023p'); llenar($('d'),'',h.get('d')||'pkl:2023b');
+  $('votantes').checked=h.get('sinnv')==='1'; $('reducido').checked=h.get('red')==='1';
+  vistas(); if(h.get('v')) $('vista').value=h.get('v');
+  estado(`${CAT.elecciones.length} elecciones disponibles. Elegí origen y destino y tocá «Calcular sankey» (o doble clic).`);
+  if(h.get('o')&&h.get('d')) calcular();
+})();
+</script>
+</body>
+</html>

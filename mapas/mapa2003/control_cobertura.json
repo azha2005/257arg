@@ -5,15 +5,12 @@
     "La Pampa"
   ],
   "units": 540,
-  "with_data": 515,
-  "missing": [
-    "Buenos Aires: Magdalena",
-    "Buenos Aires: Punta Indio"
-  ],
+  "with_data": 517,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
-    "Partido Justicialista y aliados": 365,
-    "Unión Cívica Radical y aliados": 48,
+    "Partido Justicialista y aliados": 366,
+    "Unión Cívica Radical y aliados": 49,
     "Acción Federalista por Buenos Aires": 1,
     "Movimiento por la Dignidad y la Independencia y aliados": 1,
     "Afirmación para una República Igualitaria y aliados": 13,
@@ -195,6 +192,8 @@
   ],
   "corrections": [
     "La Plata: 21 valores con separador de miles leído como decimal se multiplican por 1000; no se altera el CSV original.",
+    "Magdalena: la fuente deja vacía la celda de MOV. VECIN. PROV.(MO.VE.PRO.); las demás listas suman exactamente los positivos declarados (7.110), así que vale 0.",
+    "Punta Indio: la fuente deja vacía la celda de NACIONAL CONST.- UNIR; las demás listas suman exactamente los positivos declarados (3.893), así que vale 0.",
     "Color final de Partido Justicialista y aliados: #1c5ece; tabla de Wikipedia: #318CE7. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
     "Color final de Afirmación para una República Igualitaria y aliados: #74b744; tabla de Wikipedia: #6fb53e. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
     "Color final de Movimiento Federal para Recrear el Crecimiento: #f4ce00; tabla de Wikipedia: #35649C. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",

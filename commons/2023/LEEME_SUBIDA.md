@@ -10,26 +10,26 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 | Modo | Versión | Estado |
 |---|---|---|
 | Resultados por departamento | solo mapa | Para subir |
-| Resultados por departamento | con leyenda | Para subir |
-| Resultados por departamento | png | Para subir |
+| Resultados por departamento | con leyenda | **NO subir todavía** |
+| Resultados por departamento | png | **NO subir todavía** |
 | Voto a Union por la Patria por departamento | solo mapa | Para subir |
-| Voto a Union por la Patria por departamento | con leyenda | Para subir |
-| Voto a Union por la Patria por departamento | png | Para subir |
+| Voto a Union por la Patria por departamento | con leyenda | **NO subir todavía** |
+| Voto a Union por la Patria por departamento | png | **NO subir todavía** |
 | Voto a La Libertad Avanza por departamento | solo mapa | Para subir |
-| Voto a La Libertad Avanza por departamento | con leyenda | Para subir |
-| Voto a La Libertad Avanza por departamento | png | Para subir |
+| Voto a La Libertad Avanza por departamento | con leyenda | **NO subir todavía** |
+| Voto a La Libertad Avanza por departamento | png | **NO subir todavía** |
 | Voto a Juntos por el Cambio por departamento | solo mapa | Para subir |
-| Voto a Juntos por el Cambio por departamento | con leyenda | Para subir |
-| Voto a Juntos por el Cambio por departamento | png | Para subir |
+| Voto a Juntos por el Cambio por departamento | con leyenda | **NO subir todavía** |
+| Voto a Juntos por el Cambio por departamento | png | **NO subir todavía** |
 | Voto a Hacemos por Nuestro Pais por departamento | solo mapa | Para subir |
-| Voto a Hacemos por Nuestro Pais por departamento | con leyenda | Para subir |
-| Voto a Hacemos por Nuestro Pais por departamento | png | Para subir |
+| Voto a Hacemos por Nuestro Pais por departamento | con leyenda | **NO subir todavía** |
+| Voto a Hacemos por Nuestro Pais por departamento | png | **NO subir todavía** |
 | Participacion por departamento | solo mapa | Para subir |
-| Participacion por departamento | con leyenda | Para subir |
-| Participacion por departamento | png | Para subir |
+| Participacion por departamento | con leyenda | **NO subir todavía** |
+| Participacion por departamento | png | **NO subir todavía** |
 
 ## Antes de subir
-- Sin impedimentos conocidos más allá de los avisos de abajo.
+- **Versiones con logos en espera («con leyenda» y PNG):** Revisar licencias/fechas de los logos reutilizados antes de subir las versiones con emblemas. La variante con siglas omite estos emblemas.
 
 ## Avisos de este atlas
 - El resultado nacional sale de la tabla del artículo de Wikipedia; el mapa utiliza los resultados territoriales de la fuente indicada. Los positivos de la base suman 24,059,851 y Wikipedia 24,546,861. No se ajustaron las cifras para forzar igualdad.
@@ -42,13 +42,13 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 - Color final de Libertad Avanza: #6c4c98; tabla de Wikipedia: #6C4C99. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Juntos por el Cambio: #fcbc00; tabla de Wikipedia: #FFD700. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Hacemos por Nuestro País: #283084; tabla de Wikipedia: #0B5397. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
-- Color final de Por Santa Cruz: #d81b60; tabla de Wikipedia: #0268B3. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
+- Color final de Por Santa Cruz: #ea5530; tabla de Wikipedia: #0268B3. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 - Color final de Movimiento Popular Neuquino: #00708b; tabla de Wikipedia: #0070B8. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 
 ## Fuentes y licencia
 - **Votos:** Dirección Nacional Electoral, Resultados Provisionales Elecciones 2023, datos por mesa publicados en datos.gob.ar y agregados por departamento/comuna.
 - **Geometría:** Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
-- **Logos** (solo «con leyenda» y PNG): Juntos-Por-El-Cambio-Logo.svg, Logo Hacemos por nuestro pais.svg, Logo JSRN Argentina.svg, Logo La Libertad Avanza (sin águila).svg, Logo Union por la Patria.svg, SER Santa Cruz logo.png. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
+- **Logos** (solo «con leyenda» y PNG): Juntos-Por-El-Cambio-Logo.svg, Logo Hacemos por nuestro pais.svg, Logo JSRN Argentina.svg, Logo La Libertad Avanza (sin águila).svg, Logo Por Santa Cruz.png, Logo Union por la Patria.svg. Sin página en Commons con ese nombre (se dejaron sin enlace): Logo Por Santa Cruz.png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 22 de octubre de 2023 (cotejada con el artículo).
 
 

@@ -98,7 +98,7 @@ ATLAS = {
         article="Elecciones presidenciales de Argentina de 1983", tipo="elecciones presidenciales",
         fecha="30 de octubre de 1983", varones=False, geom="1980", antartida=True, cats_extra=["Election maps of Argentine presidential elections"],
         votos=[CALVO_PRES_CITA],
-        logos=["RA chapa.jpg", "Flag of the Justicialist Party (square version).svg", "Pacto Autonomista - Liberal.png", "Estrella bloquista.png", "Logo MPN.png", "Logo Mofepa.jpg"], hold=["contradice_wikipedia_1983"], hold_logos=[],
+        logos=["RA chapa.jpg", "Flag of the Justicialist Party (square version).svg", "Pacto Autonomista - Liberal.png", "Estrella bloquista.png", "Logo MPN.png", "Logo Mofepa.jpg"], hold=[], hold_logos=[],
         avisos=["**Contradice el mapa por departamento vigente en Commons** (`Elecciones presidenciales de Argentina de 1983 - Resultados.V1.png`): el ganador coincide solo en el 64 % de las unidades (cotejo en `cotejo_wikipedia/LEEME_COTEJO.md`). La tabla de diputados de la misma base da la razón a nuestro mapa en 126 de 130 discrepancias, y el contraste independiente de la UNCuyo en Mendoza coincide en 18/18 con el nuestro y en 15/18 con el de Wikipedia. Hay que discutirlo en la página del artículo ANTES de subir o proponer nada.",
                 "La Alianza Federal suma 106.773 por la base y 107.188 en la tabla de Wikipedia (415 votos de diferencia).",
                 "Capital Federal: las 28 circunscripciones son aproximadas (salen del dibujo de Wikipedia)."]),
@@ -125,7 +125,7 @@ ATLAS = {
         article="Elecciones presidenciales de Argentina de 1989", tipo="elecciones presidenciales",
         fecha="14 de mayo de 1989", varones=False, geom="1980", antartida=True, cats_extra=["Election maps of Argentine presidential elections"],
         votos=[CALVO_PRES_CITA],
-        logos=["Escudo de la UCR.svg", "UCEDE logo chico.png", "Emblema del Partido Socialista Argentino.svg", "Logo MPN.png"], hold=["contradice_wikipedia_1989", "malargue_1989"], hold_logos=[],
+        logos=["Escudo de la UCR.svg", "UCEDE logo chico.png", "Emblema del Partido Socialista Argentino.svg", "Logo MPN.png"], hold=[], hold_logos=[],
         avisos=["**Contradice el mapa por departamento vigente en Commons** (`Elecciones presidenciales de Argentina de 1989 - Resultados.V1.png`): el ganador coincide solo en el 76 % de las unidades. En Mendoza, el contraste de la UNCuyo coincide con el nuestro en 17/18 unidades y con el de Wikipedia en 11/18 (`cotejo_wikipedia/LEEME_COTEJO.md`). Discutir antes de subir.",
                 "**Error conocido a resolver antes de subir:** Malargüe 1989. Ernesto trae FREJUPO 3.864 y la UNCuyo 3.964; con 3.964 gana Menem. Falta decidir si se corrige el dato o se anota.",
                 "Antofagasta de la Sierra (Catamarca) figura ganada por Unidad Socialista (166 de 435 positivos): es lo que trae la base y es coherente con el total provincial de Wikipedia, pero es un resultado raro."]),
@@ -198,6 +198,36 @@ ATLAS = {
                 "En la tabla nacional del artículo de la Wikipedia, el subtotal del Frente Progresista Cívico y Social (5.510.949) no incluye el FAP de Entre Ríos (45.026 votos en el definitivo; 128.431 en el provisorio) y suma en Capital Federal los votos de UNEN a senadores (509.446) en vez de diputados (589.545); por eso la suma provisoria del bloque (5.582.090) supera en 1,29 % al subtotal impreso en la tabla.",
                 "El Frente Renovador (color #1B2936 de la tabla de Wikipedia), el Partido Acción Chubutense (#00598C, cambiado de #0087D1 para separarlo del PJ y el Partido Fe), el MPN (#00708B) y el Partido Fe (#1268B3) respetan los colores del artículo o tonos diferenciados dentro de la leyenda."]),
 }
+
+# Presidenciales 1995 y 1999 (29-oct-2026, pedido de Clover DreemurrUTY en es.wikipedia: solo tiene el provisorio de 1995 y los porcentajes de 1999).
+# La version hipotetica de 1995 (FREPASO + UCR sumados, atlas_1995_ucr_frepaso.html) no se empaqueta: no es un resultado real.
+ATLAS["1995"] = dict(
+    folder="mapa1995", html="atlas_1995.html", dataset="dataset_1995.json",
+    article="Elecciones presidenciales de Argentina de 1995", tipo="elecciones presidenciales",
+    fecha="14 de mayo de 1995", varones=False, geom="1991 and 2001", antartida=True, cats_extra=["Election maps of Argentine presidential elections"],
+    votos=[CALVO_PRES_CITA + " Totales por fórmula: Menem 8.685.779 (Wikipedia 8.687.511), Bordón 5.095.318 (5.096.104), Massaccesi 2.955.794 (2.956.137); 20 de 24 provincias coinciden exacto o a menos de 700 votos con la tabla por distrito del artículo."],
+    logos=["Flag of the Justicialist Party (square version).svg", "Arg FREPASO logo Remake (cropped).png", "Escudo de la UCR.svg"],
+    hold=[], hold_logos=[],
+    avisos=["Son votos del escrutinio por departamento de la base de Ernesto Calvo, no del provisorio; incluye la Antártida (sumada a Ushuaia, que el mapa de 1991 no separa).",
+            "Deseado (Santa Cruz): la base trae solo 221 positivos con 34.173 electores. Se imputaron 26.265 votos (PJ 16.790, FREPASO 4.562, UCR 4.913) para que las tres fórmulas de Santa Cruz coincidan con la tabla provincial; las demás fuerzas quedan como en la base. La ficha lo dice.",
+            "En Tucumán la columna «fr» de la base (167.796 votos) coincide exacto con Bordón en la tabla provincial: se cuenta como FREPASO. Chaco: la tabla provincial de la Wikipedia tiene un error (Menem 207.857, Massaccesi 101.763); se mantuvo la base (227.857 y 91.763), que con las demás provincias da el total nacional exacto.",
+            "Cotejo con el mapa por departamento vigente en Commons: el ganador coincide en el 96 % de las unidades; casi todas las diferencias son de agrupación (aquel pinta por lista, este por fórmula, como la tabla del artículo). General Guido y Vicente López no se explican por eso (`analisis/cotejo_wikipedia/LEEME_COTEJO.md`).",
+            "Diamante (Entre Ríos) trae más votantes que inscriptos en la base: su ficha no muestra participación. Los partidos creados después del censo de 1991 tienen polígono propio (shapefile de 2001 recortado al contorno de 1991).",
+            "El emblema del FREPASO es la recreación de Commons de 2025 (CC0) que usa el artículo; el diseño de época no está verificado (la boleta de 1995 muestra otro recuadro)."])
+ATLAS["1999"] = dict(
+    folder="mapa1999", html="atlas_1999.html", dataset="dataset_1999.json",
+    article="Elecciones presidenciales de Argentina de 1999", tipo="elecciones presidenciales",
+    fecha="24 de octubre de 1999", varones=False, geom="1991 and 2001", antartida=True, cats_extra=["Election maps of Argentine presidential elections"],
+    votos=[CALVO_PRES_CITA + " Coincide con la tabla «Resultados por distrito» del artículo a menos de 0,5 % del total provincial (Formosa, 1 punto en De la Rúa).",
+           "San Luis y Santa Cruz, que faltan en esa base: Lupu, Noam; Stokes, Susan, ''Argentine Electoral Data, 1912–2003'' (por departamento), que traen solo la Alianza, la Concertación Justicialista y el total de votos positivos."],
+    logos=["Alianza.png", "Flag of the Justicialist Party (square version).svg", "Logo Accion por la Republica.svg"],
+    hold=[], hold_logos=[],
+    avisos=["Son votos del escrutinio por departamento, no porcentajes del provisorio. Las listas se suman por fórmula según la tabla «Acceso a boletas» del artículo (la UCeDé va con Duhalde salvo en Santa Fe, donde llevó a Cavallo; el PDP de Santa Fe y el PAL-PDP de Corrientes con De la Rúa).",
+            "San Luis y Santa Cruz: Cavallo y las demás fórmulas vienen juntos en la fuente y no se reparten. En el mapa de Cavallo esas dos provincias van en beige, con clave en la leyenda; por eso la suma departamental de Cavallo (1.912.819) queda 24.725 votos por debajo de la tabla (1.937.544). Para ellas no hay blancos, nulos ni inscriptos.",
+            "Cavallo (10,22 %) no gana ninguna unidad pero va en la leyenda como tercera fuerza. Sin mapa de participación: la base no trae inscriptos para Buenos Aires, Catamarca, Córdoba ni Tierra del Fuego.",
+            "La Antártida viene aparte en la base (153 votantes; Duhalde 92, De la Rúa 23): se suma a Ushuaia porque el mapa de 1991 no la separa, pero el recuadro de la Antártida se pinta con su propio resultado. La tabla del artículo repite en «otros» de Tierra del Fuego la cifra de Cavallo (8.707); la base da 1.307.",
+            "**Difiere del mapa por departamento vigente** (`Resultados de las Elecciones presidenciales de Argentina de 1999 (por departamento).svg`, De la Rúa 284 y Duhalde 243 unidades; aquí 340 y 198 sobre 538, con las 28 circunscripciones de Capital y los partidos nuevos). Según su autor, aquel se hizo con los porcentajes del provisorio. No se cotejó unidad por unidad: conviene decirlo en la discusión.",
+            "San Salvador (Entre Ríos) y los partidos creados después del censo de 1991 tienen polígono propio (shapefile de 2001 recortado al contorno de 1991)."])
 
 # palabras clave de `hold`
 GEOM["2009"] = "Departamentos de 2010 y las 15 comunas de Capital Federal; Chascomús incluye Lezama, que aún no existía en junio de 2009. Antártida con resultado departamental propio."
@@ -278,5 +308,7 @@ ATLAS['2001bronca'] = dict(ATLAS['2001'],year='2001',folder='mapa2001bronca',htm
 
 from leg2003_2025_config import register as _register_leg2003_2025
 _register_leg2003_2025(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT)
+from leg2003_2025_config import register_paso as _register_paso
+_register_paso(ATLAS,GEOM,GEOM_SHORT,HOLD_TEXT)
 
 

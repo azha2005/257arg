@@ -1,6 +1,6 @@
 # Paquete 1930 para Commons — Elecciones legislativas de Argentina de 1930
 
-Estado al 2026-10-14. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
+Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -33,9 +33,9 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 
 ## Fuentes y licencia
 - **Votos:** Cantón, Darío (1968). ''Materiales para el estudio de la sociología política en la Argentina'', tomo II, pp. PDF 123–140, «Elecciones nacionales de diputados, año 1930 (varones solamente)»; totales provinciales: tomo I, cap. III, pp. PDF 182–183. Transcritos a mano desde las imágenes del libro; contraste con Lupu y Stokes.
-- **Geometría:** Departamentos de 1914 (censo de 1914). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**: por eso los archivos llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}` (ver las instrucciones genéricas).
-- **Logos** (solo «con leyenda» y PNG): Flag of Radical Civic Union.svg, Emblema del Partido Socialista Argentino.svg, Escudo del PDP.svg, Logo Partido Socialista Independiente.svg, Monograma utilizado por la UCR Antipersonalista.svg, Logo of the Bloquista Party of San Juan (Argentina).png. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
-- **Fecha de la elección:** 2 de marzo de 1930 (puesta de memoria; confirmar con el artículo).
+- **Geometría:** Departamentos de 1914 (censo de 1914). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
+- **Logos** (solo «con leyenda» y PNG): Flag of Radical Civic Union.svg, Emblema del Partido Socialista Argentino.svg, Escudo del PDP.svg, Logo Partido Socialista Independiente.svg, Monograma utilizado por la UCR Antipersonalista.svg, Logo of the Bloquista Party of San Juan (Argentina).png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
+- **Fecha de la elección:** 2 de marzo de 1930 (confirmar con el artículo).
 - **Categorías de Commons que no existen y se omitieron:** 1930 election maps.
 
 ## Discusión del artículo

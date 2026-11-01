@@ -103,7 +103,7 @@ for mode in modes:
         ref=mode['prov']['Tierra del Fuego']
         mode['units'][i]={k:v for k,v in ref.items() if k in ('w','q','fill')}
         mode['units'][i].update(lines=[],metrics=[],note='Color de referencia: resultado provincial de Tierra del Fuego. No se asignan ni suman votos propios a las Malvinas.')
-base.update(slug='presidenciales_1985_hipoteticas',title='Presidenciales hipotéticas de',modes=modes,sets={'1':dict(label='1985',subtitle='Simulación · 10 de marzo')})
+base.update(slug='presidenciales_1985_hipoteticas',title='Elecciones presidenciales de Argentina de',modes=modes,sets={'1':dict(label='1985',subtitle='Hipotético · 10 de marzo')})
 payload=json.dumps(base,ensure_ascii=False,separators=(',',':'))
 (HERE/'dataset_1985hip.json').write_text(payload,encoding='utf8')
 html=(ROOT/'mapa1985/atlas_1985.html').read_text(encoding='utf8')

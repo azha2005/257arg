@@ -3,14 +3,12 @@
   "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
   "solid": [],
   "units": 529,
-  "with_data": 527,
-  "missing": [
-    "Catamarca: Antofagasta de la Sierra"
-  ],
+  "with_data": 528,
+  "missing": [],
   "antartida_sin_dato": false,
   "winners": {
     "Juntos por el Cambio y aliados": 160,
-    "Frente de Todos y aliados": 355,
+    "Frente de Todos y aliados": 356,
     "Consenso Federal y aliados": 1,
     "Alianza Frente Renovador de la Concordia (FRC)": 5,
     "Movimiento Popular Neuquino (MPN)": 5,
@@ -82,6 +80,7 @@
     }
   ],
   "corrections": [
+    "Antofagasta de la Sierra: Cámara Nacional Electoral, «Consulta de Escrutinio por Zona» (escrutinio definitivo), padron.gob.ar/publica, consulta manual del usuario del 30-oct-2026; planilla `padron_publica/zona_muni_0032.xls` (localidad 0032, que es toda la sección 14), columna DIPUTADO NACIONAL (5 mesas, 1.127 votantes). La consulta no trae inscriptos y la sección no está en el provisorio: sin participación.",
     "Color final de Frente de Todos y aliados: #2ea3ff; tabla de Wikipedia: #009FE3. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
     "Color final de Juntos por el Cambio y aliados: #f4ce00; tabla de Wikipedia: #FFD700. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
     "Color final de Consenso Federal y aliados: #2f3b81; tabla de Wikipedia: #283084. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.",
@@ -125,7 +124,7 @@
       "votos": 6449
     }
   ],
-  "base_positivos": 24769142,
+  "base_positivos": 24770126,
   "wikipedia_positivos": 25639274,
   "national": {
     "art": "Elecciones legislativas de Argentina de 2019",
