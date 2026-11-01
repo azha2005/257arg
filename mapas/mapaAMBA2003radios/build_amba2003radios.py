@@ -178,6 +178,19 @@ CAND = {b: dict(n=NAMES[b][0], sub=NAMES[b][1], base=COLOR[b]) for b in BLOCS}
 CAND["L"].update(bar="#e8c000", txt="#a88a00")
 CAND["R"].update(bar="#12d985", txt="#0f9e62")
 CAND["C"].update(txt="#5a9433")
+
+
+# rampas propias de los 7 tonos del modo «Ganó» (parche a shade() en la cola): con el .25 de la plantilla los oscuros de Menem y
+# Kirchner terminaban en el mismo azul marino. Kirchner se queda en celestes y azul acero; los demás se oscurecen hasta .55.
+def _hx(h): return [int(h[i:i + 2], 16) for i in (1, 3, 5)]
+def _rgb(c): return "#%02x%02x%02x" % tuple(max(0, min(255, round(v))) for v in c)
+def _mixw(h, t): return _rgb([c + (255 - c) * t for c in _hx(h)])
+def _mulc(h, k): return _rgb([c * k for c in _hx(h)])
+
+
+for b in BLOCS:
+    CAND[b]["ramp"] = [_mixw(COLOR[b], .15), COLOR[b]] + [_mulc(COLOR[b], k) for k in (.9, .8, .7, .62, .55)]
+CAND["K"]["ramp"] = [_mixw(COLOR["K"], .45), _mixw(COLOR["K"], .3), _mixw(COLOR["K"], .15), COLOR["K"]] + [_mulc(COLOR["K"], k) for k in (.9, .8, .72)]
 CAND["OTR"] = dict(n="Otros", sub="Resto de las candidaturas", base="#b3b3b3", bar="#a6a6a6", txt="#8f8f8f", logo="···")
 for c in PCATS:
     CAND["P_" + c] = dict(n=LAB[c], base=COLOR.get(c, DEFAULT_COL), minor=True)
@@ -188,6 +201,13 @@ CAND["P_NUL"] = dict(n="Nulos", base="#b0b0b0", minor=True)
 def _logo_raster(fn, h=50):
     from PIL import Image
     im = Image.open(fn).convert("RGBA")
+    # el recorte del mapa de la Wikipedia arrastra a veces el comienzo del nombre (MNP: una «A» y una «F» a la derecha):
+    # se corta en el primer hueco transparente de 10 columnas o más después del emblema
+    col = (np.array(im)[..., 3] > 40).any(0)
+    xs = np.flatnonzero(col)
+    if len(xs):
+        gaps = np.flatnonzero(np.diff(xs) >= 10)
+        if len(gaps): im = im.crop((0, 0, int(xs[gaps[0]]) + 3, im.height))
     b = io.BytesIO(); im.save(b, "PNG", optimize=True)
     ar = im.width / im.height
     return dict(img="data:image/png;base64," + base64.b64encode(b.getvalue()).decode(), ar=ar, bl=round(min(1.1, 98 / (ar * h)), 3))
@@ -339,6 +359,7 @@ def load_part(fn, patches):
 TAIL = load_part("tail_amba.py", [
     ('sub("<title>Atlas electoral</title>", "<title>Diputados nacionales 2025 · AMBA por circuito</title>")',
      'sub("<title>Atlas electoral</title>", "<title>Presidenciales 2003 · AMBA por radio</title>")\n'
+     'sub("const shade=(code,i)=>{const b=CAND[code].base;", "const shade=(code,i)=>{const b=CAND[code].base;if(CAND[code].ramp)return CAND[code].ramp[i];")\n'
      'sub("const MODES={};DATA.modes.forEach(m=>MODES[m.id]=m);", "const MODES={};DATA.modes.forEach(m=>MODES[m.id]=m);'
      'DATA.modes.slice(1).forEach(m=>m.units.forEach((u,i)=>{const g=DATA.modes[0].units[i];if(!u.lines){u.lines=g.lines;u.metrics=g.metrics;if(g.note)u.note=g.note;}}));")\n'
      'sub(\'mw.style.setProperty("--sd",(1.5/Z.k).toFixed(4)+"px");\', \'mw.style.setProperty("--sd",(0.3/Z.k).toFixed(4)+"px");\')'),
