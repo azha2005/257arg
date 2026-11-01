@@ -202,7 +202,8 @@ let MODE=START_MODE;{const hm=/m-([\w-]+)/.exec(location.hash);if(hm&&MODES[hm[1
 
 function recolor(){
   const SOL=new Set(DATA.solid||[]);   // provincias sin datos departamentales: se pintan enteras con el color de su resultado provincial, sin mostrar los límites departamentales
-  for(const e of mapEls){const i=+e.dataset.i,pv=DATA.territories[i].p,sol=SOL.has(pv),c=colorRec(sol?provRec(MODE,pv):recOf(MODE,i));e.setAttribute("fill",c);e.style.stroke=sol?c:"";}
+  const SOLX=new Set(DATA.solidExcept||[]);   // unidades de esas provincias que sí tienen dato propio: se pintan con el suyo
+  for(const e of mapEls){const i=+e.dataset.i,pv=DATA.territories[i].p,sol=SOL.has(pv)&&!SOLX.has(i),c=colorRec(sol?provRec(MODE,pv):recOf(MODE,i));e.setAttribute("fill",c);e.style.stroke=sol?c:"";}
   const tc=colorRec(provRec(MODE,"Tierra del Fuego"));
   for(const e of antEls)e.setAttribute("fill",tc);
   const cc=colorRec(provRec(MODE,"Capital Federal"));for(const e of cabaEls)e.setAttribute("fill",cc);

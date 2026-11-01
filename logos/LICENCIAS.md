@@ -132,3 +132,7 @@ Emblemas añadidos/reutilizados para los diez atlas nuevos. Fecha original de ex
 | [Unidad Ciudadana.svg](https://commons.wikimedia.org/wiki/File:Unidad_Ciudadana.svg) | 2017 | Public domain | 2017 | Sin reserva detectada en los metadatos |
 
 Las fuerzas sin logo disponible conservan la sigla; no se generaron emblemas inventados.
+
+## Escenarios presidenciales 2003 — 31-oct-2026
+
+Los 18 HTML de `mapas/mapa2003escenarios/` reutilizan, sin editar, los emblemas ya incorporados en el atlas de 2003: bandera PJ (`Flag of the Justicialist Party (square version).svg`, fecha original 1946, dominio público), Recrear (`Recrear logo.jpg`, 2002, dominio público) y ARI (`Ari Logo.svg`, 2002, dominio público). Se mantienen las atribuciones y metadatos de las filas anteriores. FPV y MNP llevan sigla, al igual que los menores sin emblema incorporado; no se añaden rediseños posteriores a 2003. Son simulaciones locales, sin paquete de publicación en Commons.
