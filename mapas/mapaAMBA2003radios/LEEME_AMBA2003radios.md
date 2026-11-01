@@ -47,3 +47,6 @@ Capital se restringe por circunscripción (las 28 secciones electorales de 2003;
 - Modos: Ganó, % Kirchner, % Menem, % López Murphy y % Carrió (la plantilla admite cinco pestañas; la participación sale en las fichas y en el anillo). Las rampas de los porcentajes van de casi blanco al color del candidato y después más oscuro, porque los colores de 2003 son claros.
 - Recuadro de Capital más arriba y más bajo que en 2025: la leyenda tiene seis filas y arranca en y=1024. Circunscripciones de Capital como divisores.
 - No va a Commons salvo pedido.
+
+## Para Twitter
+`python exportar_tw.py` (copia del de `../mapaAMBA2025radios/`) renderiza el póster del modo «Ganó» a 4021×3453 px y los modos de Kirchner, Menem, López Murphy y Carrió para la respuesta, en `tw/`. Se guardan como PNG de paleta de 256 colores (1,3 a 1,4 MB), con el borde de los radios a 0,18 px.
