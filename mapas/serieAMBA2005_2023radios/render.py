@@ -207,6 +207,9 @@ def _mulc(h, k): return _rgb([c * k for c in _hx(h)])
 
 for b in BLOCS:
     CAND[b]["ramp"] = [_mixw(COLOR[b], .15), COLOR[b]] + [_mulc(COLOR[b], k) for k in (.9, .8, .7, .62, .55)]
+if KEY == '2013dip':
+    # El gris oscuro del FR perdía variación al multiplicarlo por tonos más oscuros.
+    CAND['FR']['ramp'] = [_mixw(COLOR['FR'], t) for t in (.88, .74, .60, .46, .32, .18, .04)]
 CAND["OTR"] = dict(n="Otros", sub="Resto de las candidaturas", base="#b3b3b3", bar="#a6a6a6", txt="#8f8f8f", logo="···")
 for c in PCATS:
     CAND["P_" + c] = dict(n=LAB[c], base=COLOR.get(c, DEFAULT_COL), minor=True)
@@ -330,8 +333,11 @@ if ISPASO:
              "Torta regional sobre positivos, no resultado nacional. La proporción entre métodos no mide acierto observado por radio.")
 
 
-def mode_choropleth(fn, base, edges, title):
+def mode_choropleth(fn, base, edges, title, palette=None):
     cols, labels = stops_for(base, edges)
+    if palette is not None:
+        assert len(palette) == len(edges)
+        cols = palette
     units = []
     for i in range(len(UKEYS)):
         r = unit_rec[i]; a = unit_an[i]
@@ -365,7 +371,11 @@ for b in (RANKED if PASCAND else RANKED[:4]):
             hi=max(float(values.max()),1e-6)
             edges=[0,hi/3,hi*2/3,hi]
     else:edges=[0]+sorted(set(round(float(v),1) for v in cuts))
-    un, pv_, lg = mode_choropleth(pct(b), COLOR[b], edges, "%% %s" % NAMES[b][0])
+    palette = None
+    if KEY == '2013dip' and b == 'FR':
+        edges = sorted(set(edges))  # Los radios sin FR generaban dos límites de 0 %.
+        palette = [_mixw(COLOR[b], float(t)) for t in np.linspace(.94, .04, len(edges))]
+    un, pv_, lg = mode_choropleth(pct(b), COLOR[b], edges, "%% %s" % NAMES[b][0], palette=palette)
     MODES.append(dict(id=mid, tile=tile, label='% '+NAMES[b][0], note=NOTE, units=un, prov=pv_, national=NATL, legend=lg))
 
 # ---------------------------------------------------------------- SVG

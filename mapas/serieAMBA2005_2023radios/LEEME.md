@@ -98,6 +98,8 @@ La autorización permite este modelo, pero **no recupera los resultados observad
 
 ## Controles y lectura
 
+**Escala del Frente Renovador en 2013:** se amplía el contraste en «Ganó» y «% FR», de gris claro al gris oscuro de la fuerza, porque la rampa anterior concentraba casi todos los tonos en oscuros similares. Se mantiene el color base del partido y los cortes porcentuales efectivos; en la coropleta se elimina el límite de 0 % duplicado, que producía un intervalo vacío. Votos, porcentajes y ganadores no cambian. Los otros partidos y años conservan sus escalas.
+
 `control_<elección>.json` registra fuentes, censo, circuitos sin geometría/escuela, cobertura, población sin votos, ganadores y error máximo de conservación. `VALIDACION.json` registra la verificación de cada modo en Chrome y el clic de ficha. `CONTACTO.png` reúne los modos Ganó para inspección visual.
 
 Se comprueba la conservación de cada categoría por partido/comuna/circunscripción antes del redondeo, con tolerancia inferior a 0,000001 voto. **La suma espacial de radios contenidos en un circuito no reproduce necesariamente su total**, porque la IDW cruza circuitos dentro del partido. El aporte original de cada circuito se conserva al repartirlo.
