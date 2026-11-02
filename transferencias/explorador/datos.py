@@ -133,6 +133,66 @@ PKL = {"1914d": (1914, "Diputados (Cantón y actas)"), "1916d": (1916, "Diputado
 DEPTO_PKL = lambda k: PKL[k][0] < 2003 and not k.endswith("c")    # los pkl anteriores a 2003 son por departamento
 
 
+# Cruces provinciales ya preparados (transferencias/provinciales*): cada pkl es {clave: (origen, destino, meta)}.
+# El lado provincial (gobernador, legislatura…) entra como elección propia; el lado nacional, con las mismas unidades,
+# para cruzarlos unidad por unidad (circuitos y subcircuitos incluidos).
+PROVPKL = {"p23": "provinciales2023/bases.pkl", "p25": "provinciales2025/bases.pkl", "pc": "provinciales/circuitos/bases.pkl"}
+NACIONAL_RE = re.compile(r"^(Presidente|Balotaje|Diputados nacionales)")
+_provpkl = {}
+
+
+def _bases(f):
+    if f not in _provpkl:
+        p = os.path.join(TR, PROVPKL[f])
+        _provpkl[f] = pd.read_pickle(p) if os.path.exists(p) else {}
+    return _provpkl[f]
+
+
+def _anio_txt(t, defecto):
+    m = re.findall(r"(?:19|20)\d\d", t)
+    return int(m[-1]) if m else defecto
+
+
+def catalogo_prov():
+    out, vistos = [], {}
+    for f in PROVPKL:
+        for k, (X, Y, meta) in _bases(f).items():
+            prov = prov_canon(meta["nombre"]); fecha = _anio_txt(meta.get("fecha", ""), 2023)
+            circ = f == "pc" or meta.get("nivel") not in ("departamentos", "municipios")
+            lados = {"o": (meta["origen"], X), "d": (meta["destino"], Y)}
+            lp = "d" if NACIONAL_RE.match(meta["origen"]) else "o"
+            ln = "o" if lp == "d" else "d"
+            g = "Provinciales 2023 y 2025 (cruces preparados, una provincia)"
+            nivel = "circuito" if circ else "departamento"
+            clave = (prov, lados[lp][0])
+            e = dict(id="pr:%s|%s|%s" % (f, k, lp), anio=fecha, nombre="%d · %s: %s" % (fecha, prov, lados[lp][0]),
+                     grupo=g, nivel=nivel, _n=len(lados[lp][1]))
+            if clave not in vistos or vistos[clave]["_n"] < e["_n"]: vistos[clave] = e
+            otro = lados[lp][0].split(" (")[0]
+            out.append(dict(id="pr:%s|%s|%s" % (f, k, ln), anio=_anio_txt(lados[ln][0], fecha), grupo=g, nivel=nivel,
+                            nombre="%d · %s: %s (mismas unidades que %s)" % (_anio_txt(lados[ln][0], fecha), prov, lados[ln][0], otro)))
+    for e in vistos.values():
+        e.pop("_n"); out.append(e)
+    return out
+
+
+def tabla_prov(eid):
+    f, k, lado = eid.split("|")
+    X, Y, meta = _bases(f)[k]
+    T = (X if lado == "o" else Y).copy()
+    prov = prov_canon(meta["nombre"])
+    circ = f == "pc" or meta.get("nivel") not in ("departamentos", "municipios")
+    T = T.rename(columns={"Blanco": "Blanco y nulo", "Otras listas": "Otros"})
+    nombres = {}
+    idx = []
+    for u in T.index:
+        idx.append((prov, str(u) if circ else nkp(prov, u))); nombres[idx[-1]] = str(u)
+    T.index = pd.MultiIndex.from_tuples(idx, names=["prov", "u"])
+    T = T.groupby(level=[0, 1]).sum(min_count=1).astype(float)
+    T.attrs["nombres"] = nombres
+    return T
+
+
 HIPOTETICOS = {"mapa1916fic", "mapa1985hip", "mapa2027", "mapa2027kic", "mapa2023massa"}
 PASO_PRES = re.compile(r"^mapa(2011|2015|2019|2023)paso$")   # PASO presidenciales (las de 2013, 2017 y 2021 son de diputados)
 
@@ -181,7 +241,7 @@ def catalogo():
         out.append(dict(id="m:%d|%s|%s" % (r.anio, r.cargo, r.fuente_id), anio=int(r.anio),
                         nombre="%d · %s%s" % (r.anio, c, " (" + f + ")" if f else ""),
                         grupo="Todas las elecciones del MASTER (por departamento)", nivel=str(r.nivel)))
-    return out
+    return out + catalogo_prov()
 
 
 # --- tablas -------------------------------------------------------------------------------------------------
@@ -414,6 +474,8 @@ def tabla(eid):
             T = tabla_atlas(eid[2:])
         elif eid.startswith("pkl:"):
             T = tabla_pkl(eid[4:])
+        elif eid.startswith("pr:"):
+            T = tabla_prov(eid[3:])
         else:
             a, c, f = eid[2:].split("|")
             T = tabla_master(int(a), c, f)
@@ -438,6 +500,10 @@ def emparejar(ua, ub):
 def anio(eid):
     if eid.startswith("pkl:"): return PKL[eid[4:]][0]
     if eid.startswith("m:"): return int(eid[2:].split("|")[0])
+    if eid.startswith("pr:"):
+        f, k, lado = eid[3:].split("|"); meta = _bases(f)[k][2]
+        fecha = _anio_txt(meta.get("fecha", ""), 2023)
+        return _anio_txt(meta["origen" if lado == "o" else "destino"], fecha)
     import json
     return int(json.load(open(os.path.join(ROOT, eid[2:].partition("#")[0]), encoding="utf8"))["year"])
 
