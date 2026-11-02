@@ -57,13 +57,14 @@ def recortar(uri):
 def candidatos(cands, rel="", exc=None):
     """Recorta los logos de un diccionario de candidaturas (lo pueden llamar los constructores)."""
     exc = excepciones() if exc is None else exc
+    n = 0
     for code, c in cands.items():
         if not isinstance(c, dict) or not c.get("img") or c.get("minor"): continue
         if es_excepcion(rel, code, c, exc):
             c["ras"] = False; continue
         c.pop("ras", None)
-        c["img"], c["ar"] = recortar(c["img"])
-    return cands
+        c["img"], c["ar"] = recortar(c["img"]); n += 1
+    return n
 
 
 # --------------------------------------------------------------------- JS de cada familia
@@ -124,14 +125,14 @@ def aplicar(path, exc=None):
     i = s.index("const DATA"); j = s.index("=", i) + 1
     if s[j:j + 1] == "{":
         data, end = json.JSONDecoder().raw_decode(s[j:])
-        candidatos(data.get("candidates", {}), rel, exc)
+        n = candidatos(data.get("candidates", {}), rel, exc)
         s = s[:j] + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + s[j + end:]
     else:
         # Escenarios 2003: DATA se arma en el navegador; los logos están en ATLAS_INPUT.logos ({código: uri}).
         k = s.index("ATLAS_INPUT="); j = s.index("{", k)
         data, end = json.JSONDecoder().raw_decode(s[j:])
         cands = {c: {"img": u, "n": c} for c, u in data.get("logos", {}).items()}
-        candidatos(cands, rel, exc)
+        n = candidatos(cands, rel, exc)
         data["logos"] = {c: v["img"] for c, v in cands.items()}
         data["logo_ar"] = {c: v["ar"] for c, v in cands.items() if "ar" in v}
         data["logo_ras"] = {c: False for c, v in cands.items() if v.get("ras") is False}
@@ -140,7 +141,8 @@ def aplicar(path, exc=None):
         if old in s and "logo_ar" not in s[s.index(old) - 5:s.index(old) + 120]:
             s = s.replace(old, old + "if(ATLAS_INPUT.logo_ar&&ATLAS_INPUT.logo_ar[k])C[k].ar=ATLAS_INPUT.logo_ar[k];"
                                      "if(ATLAS_INPUT.logo_ras&&ATLAS_INPUT.logo_ras[k]===false)C[k].ras=false;", 1)
-    s, fam = parchar_js(s)
+    # Atlas con todos sus logos en excepción (los subidos a Commons): el dibujo queda idéntico al anterior.
+    s, fam = parchar_js(s) if n else (s, ["excepción"])
     tmp = path + ".tmp"
     open(tmp, "w", encoding="utf8").write(s); os.replace(tmp, path)
     return fam
