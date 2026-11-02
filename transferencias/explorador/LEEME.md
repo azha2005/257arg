@@ -63,3 +63,6 @@ Bloque de la Wikipedia si la elección lo tiene; si no, el partido (en 1983–19
 | `index.html` | la página: selectores con filtro, vista nacional o provincial, sin «No votó», escala 1:4, SVG y CSV |
 
 Límites: pares de épocas lejanas son comparación de geografías, no traspasos (la nota lo avisa a partir de 12 años); las categorías chicas tienen márgenes grandes; Capital Federal no se cruza entre esquemas distintos de secciones.
+
+
+**Provinciales 2023 y 2025 (2-nov-2026):** los cruces de `transferencias/provinciales2023/`, `provinciales2025/` y `provinciales/circuitos/` (sus `bases.pkl`) entran como elecciones `pr:<pkl>|<clave>|o|d`: el lado provincial (gobernador, legislatura, convencionales) y el nacional con las mismas unidades, para cruzarlos circuito por circuito. El lado provincial por departamento también se cruza con cualquier otra elección; el de circuitos, contra otra fuente, queda como provincia entera. `space/armar.py` sube los tres `bases.pkl`.

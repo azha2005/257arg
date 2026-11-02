@@ -15,6 +15,7 @@ PATRONES = [
     "transferencias/historicos_1989/*.csv", "transferencias/historicos_1989/*.json", "transferencias/historicos_1989/raw_*.pkl",
     "transferencias/fuentes_1914_1916/correspondencias.csv",
     "transferencias/correspondencias_2013_2017/santa_fe_2022.csv",
+    "transferencias/provinciales2023/bases.pkl", "transferencias/provinciales2025/bases.pkl", "transferencias/provinciales/circuitos/bases.pkl",
     "transferencias/explorador/*.py", "transferencias/explorador/index.html", "transferencias/explorador/LEEME.md",
     "transferencias/explorador/cache/master.pkl", "transferencias/explorador/cache/pares/*.json",
     "datos_oficiales/*/x/**/*mbito*.csv",
