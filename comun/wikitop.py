@@ -297,6 +297,13 @@ for _year in (2003,2005,2007,2011,2015,2017,2019,2021,2023,2025):
         WIKI[_year]=_row
 
 # Presidenciales 2007 por circuito: clave propia, separada de diputados 2007.
+for _key in ('2003pres', '2007pres', '2011pres', '2015pres', '2015bal', '2019pres', '2023pres', '2023bal'):
+    _snapshot = _Path(__file__).resolve().parent.parent/'mapas'/f'mapa{_key}'/f'wiki_nacional_{_key}.json'
+    if _snapshot.exists():
+        _row = _json.loads(_snapshot.read_text(encoding='utf8'))
+        assert sum(_row['blocs'].values()) + _row['otros'] == _row['positivos'], _key
+        WIKI[_key] = _row
+
 _pres07=_Path(__file__).resolve().parent.parent/'mapas/mapa2007circuitos/wiki_nacional_2007circuitos.json'
 if _pres07.exists():
     _row=_json.loads(_pres07.read_text(encoding='utf8'))

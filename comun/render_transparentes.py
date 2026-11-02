@@ -13,6 +13,8 @@ ATLAS.append(("mapa2009", "atlas_2009.html"))
 ATLAS.append(("mapa2027", "atlas_2027.html"))
 ATLAS.append(("mapa2027kic", "atlas_2027kic.html"))
 ATLAS.append(("mapa2023massa", "atlas_2023massa.html"))
+ATLAS.extend((f"mapa{k}", f"atlas_{k}.html") for k in
+             ("2003pres", "2007pres", "2011pres", "2015pres", "2015bal", "2019pres", "2023pres", "2023bal"))
 ATLAS.append(("mapa1985hip", "atlas_1985hip.html"))
 ATLAS.append(("mapa1983hipotetico", "atlas_1983_hipotetico.html"))
 ATLAS.append(("mapa1985peronismo", "atlas_1985_peronismo.html"))

@@ -1,0 +1,52 @@
+{
+  "key": "2003pres",
+  "year": 2003,
+  "cargo": "presidente",
+  "subtitle": "Primera vuelta",
+  "geometry": "Departamentos de 2001 y 28 circunscripciones de Capital Federal (ajustadas al contorno)",
+  "units": 540,
+  "with_data": 539,
+  "missing": [],
+  "antartida_sin_dato": false,
+  "ties": [],
+  "winners": {
+    "Carlos Menem": 286,
+    "Néstor Kirchner": 151,
+    "Ricardo López Murphy": 35,
+    "Adolfo Rodríguez Saá": 57,
+    "Elisa Carrió": 10
+  },
+  "national": {
+    "art": "Elecciones presidenciales de Argentina de 2003",
+    "blocs": {
+      "M": 4741200,
+      "K": 4313131,
+      "L": 3173584,
+      "R": 2736091,
+      "C": 2723207
+    },
+    "otros": 1701482,
+    "positivos": 19388695,
+    "blancos": 196563,
+    "dif": 345651,
+    "total": 19930909,
+    "inscriptos": 25481410,
+    "lab_pos": "Votos positivos",
+    "lab_bla": "Votos en blanco",
+    "lab_nul": "Votos nulos / anulados"
+  },
+  "base_positivos": 19679671,
+  "wiki_suma_candidatos_menos_positivos": 0,
+  "corrections": [
+    "Rinconada: dat.ar, categoría Presidente, Jujuy/Rinconada. Las listas suman los 824 positivos declarados y cierran con 880 votantes; sin padrón publicado. Menem incluye UCeDé; Rodríguez Saá, Unión y Libertad; Arcagni, Unión Popular.",
+    "Valle Grande: dat.ar, categoría Presidente, Jujuy/Valle Grande. Las listas suman los 1325 positivos declarados y cierran con 1339 votantes; sin padrón publicado. Menem incluye UCeDé; Rodríguez Saá, Unión y Libertad; Arcagni, Unión Popular."
+  ],
+  "logos_source": "mapas\\mapaAMBA2003radios\\atlas_amba2003radios.html",
+  "sources_sha256": {
+    "transferencias/circ_2003p.pkl": "be5a3507dd439855ee959428ec09d6de86f4fad027e62aae44c1a5e07c06c6d0",
+    "datos/fuentes_leg2003_2025/presidenciales/wpres2003.txt": "50c9f62c9282c8d19a40dcead287bedb2f90b23588aa15b73cfacffbef440435",
+    "mapas/mapaAMBA2003radios/atlas_amba2003radios.html": "c06362302f1160ed28258cc8b4a4ab02b2d7d0375d09e58c03f28adabf1068c6",
+    "datos/fuentes_leg2003_2025/presidenciales/complementos.json": "7df7db582b9e0af63563b32a4c2e55faf126f8b23685baf97cd76602e3c8ed66",
+    "raw/datar_2003_departamento_SIN_VALIDAR.csv": "10cf30f31863168ef72bf9a6b84c8d3410fc17a30c0c5f9af823bbdc8e2d7bb9"
+  }
+}

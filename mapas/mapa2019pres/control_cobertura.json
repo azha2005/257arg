@@ -1,0 +1,45 @@
+{
+  "key": "2019pres",
+  "year": 2019,
+  "cargo": "presidente",
+  "subtitle": "Primera vuelta",
+  "geometry": "Departamentos de 2010, 15 comunas, Lezama y Tolhuin separados con polígonos INDEC 2022 recortados al contorno histórico",
+  "units": 529,
+  "with_data": 528,
+  "missing": [],
+  "antartida_sin_dato": false,
+  "ties": [],
+  "winners": {
+    "Mauricio Macri": 143,
+    "Alberto Fernández": 385
+  },
+  "national": {
+    "art": "Elecciones presidenciales de Argentina de 2019",
+    "blocs": {
+      "FDT": 12946037,
+      "JXC": 10811586
+    },
+    "otros": 3080713,
+    "positivos": 26838336,
+    "blancos": 434379,
+    "dif": 252388,
+    "total": 27525103,
+    "inscriptos": 34231895,
+    "lab_pos": "Votos positivos",
+    "lab_bla": "Votos en blanco",
+    "lab_nul": "Votos nulos / anulados"
+  },
+  "base_positivos": 25932592,
+  "wiki_suma_candidatos_menos_positivos": 0,
+  "corrections": [
+    "Antofagasta de la Sierra: CNE, consulta por zona descargada manualmente por el usuario; localidad 0032, que cubre la sección 14. Columna PRESIDENTE Y VICE: 1127 votantes, cinco mesas. Sin inscriptos en la planilla: no se calcula participación."
+  ],
+  "logos_source": "mapas\\serieAMBA2005_2023radios\\atlas_2019pres.html",
+  "sources_sha256": {
+    "transferencias/circ_2019p.pkl": "601c5672b58d05633aee7fbc0c9ce90a99ac5c4e2f3d085d49796081429c04d4",
+    "datos/fuentes_leg2003_2025/presidenciales/wpres2019.txt": "d43946abe3a44ed388c70f033421477dcd8a538a6318a5b37e13f8a16a4861dc",
+    "mapas/serieAMBA2005_2023radios/atlas_2019pres.html": "a2cab0825eab51a6cff4a30f4d473df7d7f65ab14d6e0e9f1a8f4fe683203dc7",
+    "datos/fuentes_leg2003_2025/presidenciales/complementos.json": "7df7db582b9e0af63563b32a4c2e55faf126f8b23685baf97cd76602e3c8ed66",
+    "datos/fuentes_leg2003_2025/padron_publica/zona_muni_0032.xls": "77a040cb160642c55a5805ea867948d2dc6eb3a8c5068fb311e13f23a0440c22"
+  }
+}

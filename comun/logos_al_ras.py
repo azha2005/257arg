@@ -121,6 +121,9 @@ def parchar_js(s):
 
 def aplicar(path, exc=None):
     rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
+    exc = excepciones() if exc is None else exc
+    if any(e.get('preservar_atlas') and fnmatch.fnmatch(rel, e.get('archivo', '*')) for e in exc):
+        return ['posición y zoom de la referencia por radio']
     s = open(path, encoding="utf8", newline="").read()   # sin traducir los finales de línea
     i = s.index("const DATA"); j = s.index("=", i) + 1
     if s[j:j + 1] == "{":
