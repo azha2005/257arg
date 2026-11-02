@@ -71,6 +71,16 @@ def indice():
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atlas electorales argentinos</title>
 <meta name="description" content="{n} atlas electorales de la Argentina por departamento, circuito y radio censal, de 1912 a 2025, al estilo de los mapas de la Wikipedia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://azha2005.github.io/257arg/">
+<meta property="og:title" content="Atlas electorales de la Argentina, 1912–2025">
+<meta property="og:description" content="{n} atlas: elecciones por departamento de 1912 a 2025, PASO incluidas, y el AMBA radio por radio.">
+<meta property="og:image" content="https://azha2005.github.io/257arg/vista_previa.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuatro atlas electorales: 1928, 1946, PASO 2023 y AMBA 2025 por radio censal">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://azha2005.github.io/257arg/vista_previa.png">
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet">
 <script>try{{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
 <style>
@@ -273,6 +283,7 @@ def copiar(dest):
     for pat in EXTRA: rutas += [os.path.relpath(f, ROOT).replace(os.sep, "/") for f in glob.glob(os.path.join(ROOT, pat))]
     os.makedirs(dest, exist_ok=True)
     shutil.copy(os.path.join(HERE, "index.html"), dest)
+    shutil.copy(os.path.join(HERE, "vista_previa.png"), dest)   # imagen de la tarjeta del enlace (og:image)
     shutil.copytree(MINIS, os.path.join(dest, "miniaturas"), dirs_exist_ok=True)
     open(os.path.join(dest, ".nojekyll"), "w").close()
     tot = 0
