@@ -1,6 +1,6 @@
 # Atlas electorales estilo Wikipedia 1999: flujo de trabajo
 
-- **Escala FR 2013 por radio (1-nov-2026)**: en `mapas/serieAMBA2005_2023radios/atlas_2013dip.html`, «Ganó» y «% FR» usan una rampa de gris claro a oscuro con mayor contraste. Se conserva el color base, los cortes efectivos, votos y ganadores; se elimina el límite de 0 % duplicado de la coropleta. Otros partidos y años intactos. HTML, dataset y PNG regenerados; controles de los cinco modos.
+- **Escala FR 2013 por radio (1-nov-2026)**: en `mapas/serieAMBA2005_2023radios/atlas_2013dip.html`, «Ganó» y «% FR» conservan una gama oscura, del gris acero al casi negro, con pasos de luminosidad separados. El usuario rechazó la primera revisión demasiado clara. Se conserva el color base, los cortes efectivos, votos y ganadores; se elimina el límite de 0 % duplicado de la coropleta. Otros partidos y años intactos. HTML, dataset y PNG regenerados; controles de los cinco modos.
 
 - **Logos de la serie AMBA por radio (1-nov-2026)**: revisados los veinte visores de `mapas/serieAMBA2005_2023radios/`, incluidas todas las internas. Imágenes centradas y ajustadas por ambos ejes, sin recorte; franjas Cambiemos/JxC conservadas por pedido del usuario y reextraídas sin borrar los amarillos, FAP con estrella completa, CC/UNA y UP con símbolos completos ya conservados, LLA con logotipo tipográfico blanco. Nuevos recursos exclusivos de la serie; otros atlas no se modifican. Ver `logos_serie.py`, `AUDITORIA_LOGOS.json`, validaciones y licencias.
 

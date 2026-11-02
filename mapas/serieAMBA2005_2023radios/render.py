@@ -205,11 +205,16 @@ def _mixw(h, t): return _rgb([c + (255 - c) * t for c in _hx(h)])
 def _mulc(h, k): return _rgb([c * k for c in _hx(h)])
 
 
+def fr2013_ramp(n):
+    # Gris acero a casi negro: separar tonos sin volver pastel el mapa del FR.
+    light, dark = np.array([139, 147, 155]), np.array([7, 15, 23])
+    return [_rgb(light + (dark - light) * t) for t in np.linspace(0, 1, n)]
+
+
 for b in BLOCS:
     CAND[b]["ramp"] = [_mixw(COLOR[b], .15), COLOR[b]] + [_mulc(COLOR[b], k) for k in (.9, .8, .7, .62, .55)]
 if KEY == '2013dip':
-    # El gris oscuro del FR perdía variación al multiplicarlo por tonos más oscuros.
-    CAND['FR']['ramp'] = [_mixw(COLOR['FR'], t) for t in (.88, .74, .60, .46, .32, .18, .04)]
+    CAND['FR']['ramp'] = fr2013_ramp(7)
 CAND["OTR"] = dict(n="Otros", sub="Resto de las candidaturas", base="#b3b3b3", bar="#a6a6a6", txt="#8f8f8f", logo="···")
 for c in PCATS:
     CAND["P_" + c] = dict(n=LAB[c], base=COLOR.get(c, DEFAULT_COL), minor=True)
@@ -374,7 +379,7 @@ for b in (RANKED if PASCAND else RANKED[:4]):
     palette = None
     if KEY == '2013dip' and b == 'FR':
         edges = sorted(set(edges))  # Los radios sin FR generaban dos límites de 0 %.
-        palette = [_mixw(COLOR[b], float(t)) for t in np.linspace(.94, .04, len(edges))]
+        palette = fr2013_ramp(len(edges))
     un, pv_, lg = mode_choropleth(pct(b), COLOR[b], edges, "%% %s" % NAMES[b][0], palette=palette)
     MODES.append(dict(id=mid, tile=tile, label='% '+NAMES[b][0], note=NOTE, units=un, prov=pv_, national=NATL, legend=lg))
 
