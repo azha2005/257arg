@@ -25,6 +25,10 @@ ATLAS.extend(("mapaAMBA2025radios", f) for f in ("atlas_amba2025radios.html", "a
 ATLAS.extend(("mapaAMBA2003radios", f) for f in ("atlas_amba2003radios.html", "atlas_amba2003radios_pob.html"))   # presidenciales 2003 por radio 2001 (escuelas 2025)
 ATLAS.extend([("mapaAMBA2007", "atlas_amba2007.html"), ("mapa2007circuitos", "atlas_2007circuitos.html")])
 OUT = os.path.join(ROOT, "png_transparentes")
+ATLAS.extend(("serieAMBA2005_2023radios", f"atlas_{k}.html") for k in
+             [f"{y}dip" for y in range(2005, 2024, 2)] +
+             [f"{y}pres" for y in (2007, 2011, 2015, 2019, 2023)] + ["2015bal", "2023bal", "2023pasofuerza", "2023pasocand"])
+ATLAS.append(("serieAMBA2005_2023radios", "atlas_2023pasointernas.html"))
 bad = []
 with sync_playwright() as p:
     b = p.chromium.launch(channel="chrome")
