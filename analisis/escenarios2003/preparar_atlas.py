@@ -3,6 +3,7 @@
 No ejecuta ni modifica el atlas legislativo de origen. La fuente presidencial
 es PolAr, la misma de los Sankey. Los faltantes quedan beige.
 """
+import base64
 from pathlib import Path
 import difflib
 import hashlib
@@ -81,9 +82,13 @@ def main():
     # Los nombres geográficos siguen los de la geometría (Capital Federal),
     # aunque el catálogo de transferencias rotule el distrito «CABA».
     for g in data['geographies'][1:]:g['name']=D2P[g['id']]
-    # Emblemas ya verificados y usados por la base de 2003. FPV y MNP
-    # conservan sigla: no se añade un rediseño posterior a la elección.
-    logos={key:original['candidates'][source]['img'] for key,source in {'M':'B01','L':'B04','C':'B03'}.items() if original['candidates'][source].get('img')}
+    # Bloques del mapa presidencial 2003 de la Wikipedia (CC0), los mismos del atlas AMBA 2003 por radio
+    # (2-nov-2026, pedido del usuario): Menem, Kirchner/FPV, López Murphy/Recrear, Rodríguez Saá/MNP y Carrió/ARI.
+    from PIL import Image
+    logos={}
+    for key,f in dict(M='menem',K='fpv03',L='recrear',R='mnp',C='ari').items():
+        fn=ROOT/'logos/bloques_presidenciales'/(f+'.png');im=Image.open(fn)
+        logos[key]=dict(img='data:image/png;base64,'+base64.b64encode(fn.read_bytes()).decode(),ar=round(im.width/im.height,4),blk=True)
     payload=dict(sim=data,units=rows,territories=T,insets=original['insets'],logos=logos)
     (OUT/'base_territorial.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf8')
     if '--solo-base' in sys.argv:

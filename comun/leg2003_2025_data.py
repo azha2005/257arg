@@ -405,7 +405,8 @@ def finish(year,U,folder,groups,bycode,CAND,linked,ant,maprows,unmatched,changes
     wikitop.WIKI[year]=W
     cands,slices,partp,metrics=wikitop.national(year)
     # Los logos se incrustan sólo después de determinar los ganadores de unidades.
-    logo_info=logos(year,win_codes,bycode,CAND,text,folder)
+    extra=[c for c in bycode if c not in win_codes and (year,short(bycode[c]['grupo'])) in {(2017,'1País'),(2023,'MPN')}]   # ganan en la PASO del año, que hereda los logos de acá
+    logo_info=logos(year,win_codes+extra,bycode,CAND,text,folder)
     control=[]
     for c,g in bycode.items():
         b=sum(r['votos'] for r in maprows if r['codigo']==c)
@@ -553,6 +554,14 @@ def logos(year,codes,bycode,CAND,text,folder):
         if year==2025 and 'Fuerza Patria' in g['grupo']:
             fn=ROOT/'../logos/Logo_de_Fuerza_Patria.svg';title='Logo de Fuerza Patria.svg';reserve=False
             license='CC0';source='https://commons.wikimedia.org/wiki/File:Logo_de_Fuerza_Patria.svg';date='2025-07-10'
+        # Unidad Ciudadana 2017: texto en blanco y sol amarillo sobre la barra (2-nov-2026, pedido del usuario).
+        if year==2017 and 'Unidad Ciudadana' in g['grupo']:
+            fn=ROOT/'../logos/Unidad_Ciudadana_texto_blanco.png';title='Unidad Ciudadana.svg';reserve=False
+            license='Public domain';source='https://commons.wikimedia.org/wiki/File:Unidad_Ciudadana.svg';date='2017'
+        # 1País 2017 (Massa–Stolbizer): logotipo de Commons, PD textlogo (2-nov-2026, pedido del usuario).
+        if year==2017 and '1País' in g['grupo'] and not fn:
+            fn=ROOT/'../datos/fuentes_leg2003_2025/logos/1_paislogo.png';title='1 paislogo.png';reserve=False
+            license='PD textlogo';source='https://commons.wikimedia.org/wiki/File:1_paislogo.png';date='Unknown date'
         if fn:
             if fn.suffix.lower()=='.svg':
                 import resvg_py

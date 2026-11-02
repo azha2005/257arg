@@ -32,6 +32,8 @@ def corregir(candidates):
         if not c.get('img'): continue
         raw = base64.b64decode(c['img'].split(',', 1)[1])
         target = replacements.get(signature(raw))
+        if c.get('n') == 'Unidad Ciudadana':   # texto blanco y sol amarillo, como en mapa2017 (2-nov-2026, pedido del usuario)
+            target = 'logos/Unidad_Ciudadana_texto_blanco.png'
         if target:
             if target.endswith('.svg'):
                 import resvg_py

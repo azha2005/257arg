@@ -16,7 +16,7 @@ const shade=(code,i)=>{const b=CAND[code].base;if(i===0)return mixw(b,.15);const
 /* Los partidos con bloque de un mapa presidencial de la Wikipedia (bloques_wiki.py: FPV, Cambiemos, JxC, FdT, UP,
    LLA, UNA, CF, Hacemos, ARI, CC, FAP, UDESO, FP...) no pasan por esta tabla. */
 const LOGO_ESTILO=[
-  ["unidad ciudadana","blanco"],["fuerza patria","blanco"],["juntos somos río negro","blanco"],["unión por córdoba","blanco"],
+  ["fuerza patria","blanco"],["juntos somos río negro","blanco"],["unión por córdoba","blanco"],
   ["innovación federal","tinta"],["renovador de salta","tinta"],["acuerdo cívico","tinta"],
   ["dignidad y la independencia","tinta"],["compromiso para el cambio","tinta"],["nuevo encuentro","tinta"],
   ["unión de los neuquinos","tinta"]];
