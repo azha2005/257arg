@@ -51,7 +51,8 @@ CSS = open(os.path.join(HERE, "estilo.css"), encoding="utf8").read()
 
 def indice():
     n = sum(1 for _ in entradas())
-    nav = "".join(f'<a href="#{gid}">{html.escape(t.split(",")[0])}</a>' for gid, t, _, _ in GRUPOS)
+    corto = {"2003-2025": "2003–2025", "amba": "AMBA", "escenarios": "Escenarios"}   # la barra entra en una línea
+    nav = "".join(f'<a href="#{gid}">{html.escape(corto.get(gid, t.split(",")[0]))}</a>' for gid, t, _, _ in GRUPOS)
     secs = []
     for gid, titulo, bajada, items in GRUPOS:
         cards = []
@@ -138,6 +139,16 @@ SITIO_JS = ('<script>/*sitio*/(function(){var b=document.body,bar=document.getEl
             'if(g&&t.indexOf(g)>=0){t=t.replace(" · "+g,"").replace(g,"").trim();if(t)n.textContent=t;else n.remove();}});})'
             '.observe(c,{childList:true,subtree:true});}'
             'sinNota(document.getElementById("card"));sinNota(document.getElementById("tip"));'
+            # con muchas fuerzas (1965, PASO…) la ficha junta las menores al 2 % desde la 7.ª en «Otras N fuerzas», que se despliega
+            'var BN=/blanc|nul|impugn|recurr|no vot|bronca/i;function pc(r){var e=r.querySelector(".pc");return e?parseFloat(e.textContent.replace(/\\./g,"").replace(",","."))||0:0}'
+            'function plegar(c,tip){if(c.querySelector(".c-mas"))return;var t=c.querySelector(".c-title"),k=t?t.textContent:"";if(c.dataset.todas===k)return;'
+            'var par=[].slice.call(c.querySelectorAll(".c-row")).filter(function(r){var n=r.querySelector(".nm");return n&&!BN.test(n.textContent)});if(par.length<10)return;'
+            'var esc=par.filter(function(r,i){return i>=6&&pc(r)<2});if(esc.length<3)return;var tot=0;esc.forEach(function(r){tot+=pc(r);r.classList.add("c-esc")});'
+            'var m=document.createElement("div");m.className="c-row c-mas";m.innerHTML=\'<span class="nm"><i style="background:#bdbdbd"></i>Otras \'+esc.length+\' fuerzas\'+(tip?"":\' <u>ver todas</u>\')+\'</span><span class="pc">\'+tot.toFixed(2).replace(".",",")+\' %</span><span class="vt"></span>\';'
+            'esc[0].parentNode.insertBefore(m,esc[0]);if(!tip)m.addEventListener("click",function(ev){ev.stopPropagation();c.dataset.todas=k;esc.forEach(function(r){r.classList.remove("c-esc")});m.remove();});}'
+            'function vigilar(c,tip){if(!c)return;plegar(c,tip);new MutationObserver(function(){plegar(c,tip)}).observe(c,{childList:true,subtree:true});}'
+            'vigilar(document.getElementById("card"),false);vigilar(document.getElementById("tip"),true);'
+            'var cs=document.createElement("style");cs.textContent=".c-esc{display:none!important}.c-mas{cursor:pointer}.c-mas u{font-weight:400;opacity:.7;margin-left:4px}#tip .c-mas{cursor:default}";document.head.appendChild(cs);'
             '})();</script>\n')
 
 # Modo celular (pantallas de hasta 760 px): el póster de 1920 px no se lee achicado, así que se muestra por partes
