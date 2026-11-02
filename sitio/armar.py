@@ -9,6 +9,7 @@ El índice sigue el estilo Ink de transferencias/provinciales/INDICE.html, con m
 import glob, html, io, os, shutil, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from catalogo import GRUPOS, EXTRA, MINI, CRUDOS
+from rendimiento import optimizar
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, "sitio")
@@ -250,7 +251,7 @@ MOVIL_JS = ('<script>/*movil*/(function(){var sv=document.getElementById("atlas"
             '.observe(sv.querySelector("#legend")||sv,{childList:true});'
             # dos dedos: acercar (la escala se lee del transform del mapa); con un dedo el atlas ya arrastra
             'var zg=sv.querySelector("#zoomg"),dedos=new Set(),P=null;'
-            'function esc(){var m=/scale\\(([\\d.]+)\\)/.exec(zg&&zg.getAttribute("transform")||"");return m?+m[1]:1;}'
+            'function esc(){if(window.__atlas&&window.__atlas.zoom!=null)return window.__atlas.zoom;var m=/scale\\(([\\d.]+)\\)/.exec(zg&&zg.getAttribute("transform")||"");return m?+m[1]:1;}'
             'function mid(e){var a=e.touches[0],z=e.touches[1];return {x:(a.clientX+z.clientX)/2,y:(a.clientY+z.clientY)/2,d:Math.hypot(a.clientX-z.clientX,a.clientY-z.clientY)};}'
             'function pp(q){var m=sv.getScreenCTM().inverse();var p=new DOMPoint(q.x,q.y).matrixTransform(m);return [p.x,p.y];}'
             'addEventListener("pointerdown",function(e){if(e.pointerType==="touch")dedos.add(e.pointerId);},true);'
@@ -273,6 +274,7 @@ MOVIL_JS = ('<script>/*movil*/(function(){var sv=document.getElementById("atlas"
 
 def preparar(html):
     if "/*sitio*/" in html or '<div id="bar">' not in html: return html
+    html = optimizar(html)
     html = html.replace("</head>", SITIO_CSS + MOVIL_CSS + "</head>", 1)
     i = html.rindex("</body>") if "</body>" in html else len(html)
     return html[:i] + SITIO_JS + MOVIL_JS + html[i:]
