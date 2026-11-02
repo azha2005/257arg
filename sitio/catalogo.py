@@ -42,6 +42,16 @@ GRUPOS = [
         ("mapas/mapa2001/atlas_2001.html", "2001", "Diputados nacionales", ""),
         ("mapas/mapa2001bronca/atlas_2001bronca.html", "2001", "Diputados, con el voto bronca", "Blancos y nulos como una opción"),
     ]),
+    ("pres2003-2023", "Presidente, 2003 a 2023", "Primeras vueltas y balotajes por departamento. Votos locales de PolAr y la DINE; cartel nacional de la Wikipedia.", [
+        ("mapas/mapa2003pres/atlas_2003pres.html", "2003", "Presidente", ""),
+        ("mapas/mapa2007pres/atlas_2007pres.html", "2007", "Presidente", ""),
+        ("mapas/mapa2011pres/atlas_2011pres.html", "2011", "Presidente", ""),
+        ("mapas/mapa2015pres/atlas_2015pres.html", "2015", "Presidente, primera vuelta", ""),
+        ("mapas/mapa2015bal/atlas_2015bal.html", "2015", "Presidente, balotaje", ""),
+        ("mapas/mapa2019pres/atlas_2019pres.html", "2019", "Presidente", ""),
+        ("mapas/mapa2023pres/atlas_2023pres.html", "2023", "Presidente, primera vuelta", ""),
+        ("mapas/mapa2023bal/atlas_2023bal.html", "2023", "Presidente, balotaje", ""),
+    ]),
     ("2003-2025", "Diputados nacionales, 2003 a 2025", "Escrutinio por mesa de la DINE y PolAr, agrupado como la Wikipedia.", [
         ("mapas/mapa2003/atlas_2003.html", "2003", "Diputados nacionales", ""),
         ("mapas/mapa2005/atlas_2005.html", "2005", "Diputados nacionales", ""),

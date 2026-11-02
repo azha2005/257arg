@@ -8,6 +8,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 KEY = sys.argv[1]                      # 2003…2025, o <año>paso para las PASO 2011–2023 (comun/paso_data.py)
 YEAR = int(KEY[:4])
 PASO = "paso" in KEY                   # <año>pasodip: diputados de las PASO de un año presidencial
+PRESIDENTE = KEY.endswith(('pres', 'bal'))
 HERE = os.path.join(ROOT, f"../mapas/mapa{KEY}")
 os.makedirs(HERE, exist_ok=True)
 sys.path.insert(0, HERE)
@@ -112,7 +113,10 @@ prov_mini = {p: g.simplify(1.2) for p, g in prov_geom.items()}
 
 
 # Datos y controles compartidos: el cartel nacional se conserva separado del mapa.
-if PASO:
+if PRESIDENTE:
+    from pres2003_2023_data import prepare
+    D = prepare(KEY, U)
+elif PASO:
     from paso_data import prepare, PRES
     D = prepare(KEY, U)
 else:
@@ -183,10 +187,10 @@ for _i, _u in enumerate(U):   # Malvinas en gris tambien en el mini de provincia
 pv.append('</g>')
 
 ds = dict(
-    year=YEAR, slug=f"paso_{YEAR}" if PASO else f"diputados_{YEAR}", locale="es-AR", country="Argentina",
-    title="Elecciones primarias de Argentina de" if PASO else "Elecciones legislativas de Argentina de",
+    year=YEAR, slug=KEY if PRESIDENTE else f"paso_{YEAR}" if PASO else f"diputados_{YEAR}", locale="es-AR", country="Argentina",
+    title="Elecciones presidenciales de Argentina de" if PRESIDENTE else "Elecciones primarias de Argentina de" if PASO else "Elecciones legislativas de Argentina de",
     exterior=False,
-    sets={"1": dict(label="Resultados", subtitle=("PASO · " + D.report["cargo"]) if PASO else "Diputados nacionales")},
+    sets={"1": dict(label="Resultados", subtitle=D.report['subtitle'] if PRESIDENTE else ("PASO · " + D.report["cargo"]) if PASO else "Diputados nacionales")},
     labels=dict(results="Resultados", won="GANÓ", pie1="Proporción sobre votos positivos",
                 pie2="Anillo exterior: Participación", provinces="Provincias"),
     candidates=CAND, insets=INSETS, solid=D.report.get("solid", []),
@@ -205,7 +209,7 @@ def sub(old, new):
     tpl = tpl.replace(old, new, 1)
 
 
-sub("<title>Atlas electoral</title>", (f"<title>PASO {YEAR} ({D.report['cargo']})</title>" if PASO else f"<title>Elecciones legislativas {YEAR}</title>"))
+sub("<title>Atlas electoral</title>", (f"<title>Presidente {YEAR}</title>" if PRESIDENTE else f"<title>PASO {YEAR} ({D.report['cargo']})</title>" if PASO else f"<title>Elecciones legislativas {YEAR}</title>"))
 sub('<image id="frontiers" href="{{FRONTIERS}}" x="570" y="100" width="840" height="1540"/>', '<g id="frontiers"></g>')
 sub('<g id="pv" transform="matrix(0.1448 0 0 0.1448 55.7 599.8)" style="--spf:9.7px">',
     '<g id="pv" transform="matrix(%s 0 0 %s %.2f %.2f)" style="--spf:9.7px">' % (KPV, KPV, pv_tx, pv_ty))
@@ -294,6 +298,42 @@ sub("    const sw=(t.length>6)?68:48,xx=xs[i];",
 sub("    if(t.length>5)tt.setAttribute(\"font-size\",15);",
     "    if(t.length>=5)tt.setAttribute(\"font-size\",12.5);")
 
+if PRESIDENTE:
+    # Los títulos presidenciales son más largos; medir hasta la primera pestaña.
+    # Se hereda literalmente el dibujo de la leyenda del atlas por radio del año:
+    # mismas imágenes, posición, tamaño y recorte; sin volver a agrandarlas por s=1.4.
+    from pres2003_2023_data import read_atlas
+    reference_path = os.path.join(os.path.dirname(ROOT), D.report['logos_source'])
+    reference_text = open(reference_path, encoding='utf8').read()
+    reference_ds = read_atlas(__import__('pathlib').Path(reference_path))
+    rn = len(reference_ds['modes'][0]['national']['cands'])
+    rh = 35 if rn > 10 else 42 if rn > 5 else 50
+    a = reference_text.index('function drawLegend(N){')
+    legend = reference_text[a:reference_text.index('\n}\n', a)+2]
+    import re
+    legend = re.sub(r'const MANY=N.cands.length>5,Y0=.*?;',
+                    f'const MANY={str(rn > 5).lower()},Y0=1266;', legend, count=1)
+    legend = legend.replace('const h=MANY?(N.cands.length>10?35:42):50,k=h/50,', f'const h={rh},k=h/50,')
+    # Mantener el anclaje actual de Resultados y sólo las claves usadas.
+    legend = legend.replace('KEYS.keys.forEach', 'KEYS.keys.filter(([col])=>[...document.querySelectorAll("#B .d,#B .dc")].some(e=>(e.getAttribute("fill")||"").toLowerCase()===col.toLowerCase())).forEach')
+    legend = legend[:-1] + '  ANCHOR_LEGEND(g);\n}'
+    a = tpl.index('function drawLegend(N){')
+    z = tpl.index('\n}\n', a)+2
+    tpl = tpl[:a] + legend + tpl[z:]
+    if 'RAS(' in legend:
+        from logos_al_ras import RAS_JS
+        tpl = tpl.replace('function drawLegend(N){', RAS_JS+'function drawLegend(N){', 1)
+    tpl = tpl.replace('return out.slice(0,6);', 'return out.slice(0,8);')
+    tpl = tpl.replace('xs=list.length>5?', 'xs=list.length>6?[1092,1144,1196,1248,1300,1352,1404,1456].slice(0,list.length):list.length>5?')
+    sub('const tl=Math.min(1088,Math.round(1088*title.length/41));',
+        'const x0=Math.min(...[...document.querySelectorAll("#tiles rect")].map(r=>+r.getAttribute("x")));const tl=Math.min(1088,x0-22-13-114-14);')
+    related = [(f'../mapa{YEAR}/atlas_{YEAR}.html', f'Diputados {YEAR}')]
+    if YEAR in (2015, 2023):
+        other = f'{YEAR}pres' if KEY.endswith('bal') else f'{YEAR}bal'
+        related.append((f'../mapa{other}/atlas_{other}.html', 'Primera vuelta' if KEY.endswith('bal') else 'Balotaje'))
+    sub('  <div id="barnote"></div>',
+        '  <div class="grp" id="otras-elecciones">' + ' · '.join(f'<a href="{url}" style="color:inherit">{label}</a>' for url,label in related) + '</div>\n  <div id="barnote"></div>')
+
 tpl = tpl.replace("{{MAIN_S}}", "1").replace("{{MAIN_TX}}", "0").replace("{{MAIN_TY}}", "0")
 html = (tpl.replace("{{MAP}}", "".join(body)).replace("{{PV}}", "".join(pv))
            .replace("{{DATA}}", json.dumps(ds, ensure_ascii=False, separators=(",", ":"))).replace("{{MODE}}", "gan"))
@@ -302,5 +342,6 @@ open(out, "w", encoding="utf8", newline="\n").write(html)
 # logos de la leyenda al ras de la barra, con las excepciones de comun/logos_ras_excepciones.json (2-nov-2026)
 _c = os.path.abspath(__file__)
 while not os.path.isdir(os.path.join(_c, "comun")): _c = os.path.dirname(_c)
-__import__("sys").path.insert(0, os.path.join(_c, "comun")); __import__("logos_al_ras").aplicar(out)
+__import__("sys").path.insert(0, os.path.join(_c, "comun"))
+if not PRESIDENTE: __import__("logos_al_ras").aplicar(out)
 print("escrito", out, round(len(html) / 1e6, 2), "MB", file=sys.stderr)

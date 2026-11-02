@@ -1,0 +1,53 @@
+{
+  "key": "2011pres",
+  "year": 2011,
+  "cargo": "presidente",
+  "subtitle": "Primera vuelta",
+  "geometry": "Departamentos de 2010, 15 comunas de Capital Federal y Lezama separado",
+  "units": 528,
+  "with_data": 527,
+  "missing": [],
+  "antartida_sin_dato": false,
+  "ties": [],
+  "winners": {
+    "Cristina Fernández de Kirchner": 506,
+    "Hermes Binner": 10,
+    "Eduardo Duhalde": 2,
+    "Alberto Rodríguez Saá": 9
+  },
+  "national": {
+    "art": "Elecciones presidenciales de Argentina de 2011",
+    "blocs": {
+      "FPV": 11865055,
+      "FAP": 3684970,
+      "CF": 1745354,
+      "FP": 1285830
+    },
+    "otros": 3346073,
+    "positivos": 21927282,
+    "blancos": 803362,
+    "dif": 225741,
+    "total": 22956385,
+    "inscriptos": 28916183,
+    "lab_pos": "Votos positivos",
+    "lab_bla": "Votos en blanco",
+    "lab_nul": "Votos nulos / anulados"
+  },
+  "base_positivos": 21486638,
+  "wiki_suma_candidatos_menos_positivos": 0,
+  "corrections": [
+    "Entre Ríos: subsección 002 sumada a 001.",
+    "Santa Fe: subsección 010 sumada a 009.",
+    "Santa Fe: subsección 014 sumada a 013.",
+    "Santa Fe: subsección 015 sumada a 013.",
+    "Valle Grande: DINE, escrutinio definitivo, resultados_nacionales_2011_jujuy.pdf (copia archivada), página 10, columna PV. No incluye exterior ni privados de libertad; padrón definitivo de la sección: 2360."
+  ],
+  "logos_source": "mapas\\serieAMBA2005_2023radios\\atlas_2011pres.html",
+  "sources_sha256": {
+    "transferencias/circ_2011p.pkl": "76258a331f8821aab591f633f09b75e3b89ed1b5a79564ed5874ca023a654688",
+    "datos/fuentes_leg2003_2025/presidenciales/wpres2011.txt": "085bac5dfa87117647383e0e425957a2a7e46b66b14197c42c37bb1d3ea4698c",
+    "mapas/serieAMBA2005_2023radios/atlas_2011pres.html": "0e9d2b595c37b920828927a63e7c44e5863414caad300c45d0d0db1b3dab9a96",
+    "datos/fuentes_leg2003_2025/presidenciales/complementos.json": "7df7db582b9e0af63563b32a4c2e55faf126f8b23685baf97cd76602e3c8ed66",
+    "datos/fuentes_leg2003_2025/jujuy_2011_archivo.pdf": "476bd9ccee9a9e3bd50305b94e1a09536d3df738d5d10159b2f6076b0414a4e3"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "key": "2007pres",
+  "year": 2007,
+  "cargo": "presidente",
+  "subtitle": "Primera vuelta",
+  "geometry": "Departamentos de 2001 y 28 circunscripciones de Capital Federal (ajustadas al contorno)",
+  "units": 540,
+  "with_data": 539,
+  "missing": [],
+  "antartida_sin_dato": false,
+  "ties": [],
+  "winners": {
+    "Elisa Carrió": 41,
+    "Cristina Fernández de Kirchner": 467,
+    "Roberto Lavagna": 15,
+    "Alberto Rodríguez Saá": 13,
+    "Jorge Sobisch": 3
+  },
+  "national": {
+    "art": "Elecciones presidenciales de Argentina de 2007",
+    "blocs": {
+      "FPV": 8652293,
+      "CC": 4403642,
+      "UNA": 3230236,
+      "FREJULI": 1459174,
+      "SOB": 268401
+    },
+    "otros": 1093394,
+    "positivos": 19107140,
+    "blancos": 1331011,
+    "dif": 241175,
+    "total": 20679327,
+    "inscriptos": 27137536,
+    "lab_pos": "Votos positivos",
+    "lab_bla": "Votos en blanco",
+    "lab_nul": "Votos nulos / anulados"
+  },
+  "base_positivos": 18882691,
+  "wiki_suma_candidatos_menos_positivos": 6,
+  "corrections": [
+    "Sarmiento: DINE, escrutinio definitivo, Sgo_Estero_28_Oct_07.pdf, página 31, columna PRESIDENTE Y VICE, TOTAL ambos sexos. Tabla cotejada visualmente: 1424 positivos, 38 blancos, 5 nulos, 1467 votantes y 2615 electores. Sobisch suma MPU 10, MAV 4 y Unión Popular 2. Reemplaza íntegramente el registro dudoso de PolAr (PO 2000, FPV 193), sin corregirlo por residuo ni imputar votos.",
+    "Valle Grande: DINE, escrutinio definitivo, Jujuy_28_Oct_07.pdf (copia archivada), página 15, columna PRESIDENTE Y VICE, ambos sexos. Sobisch suma MPU y MAV (1 voto cada uno)."
+  ],
+  "logos_source": "mapas\\serieAMBA2005_2023radios\\atlas_2007pres.html",
+  "sources_sha256": {
+    "transferencias/circ_2007p.pkl": "400fc298edbd835a2352c905e13ba98e01499979711ab4c81f58136513e92bf2",
+    "datos/fuentes_leg2003_2025/presidenciales/wpres2007.txt": "9f381d62907b0e351163c448df712638cb2ea0a057fd6d99f859b249eb8b9f92",
+    "mapas/serieAMBA2005_2023radios/atlas_2007pres.html": "24ed5bab7a8f4b014a9f71667a93f0536726b4dcccf8ff56621fb9abe91e0bb4",
+    "datos/fuentes_leg2003_2025/presidenciales/complementos.json": "e433fadd18b1f6d3ad56ad3442da9446abc671eec5011445b08ec16c84bf644e",
+    "datos/fuentes_leg2003_2025/presidenciales/busqueda_faltantes/sgo_estero2007_definitivo.pdf": "833205d9b51c5a26cf6bf2c14a282fff4e991892ff90943badad3ad4f453bd20",
+    "datos/fuentes_leg2003_2025/jujuy_2007_archivo.pdf": "6069f04948dd807b681bd2f097bd296e85d49cb99b6ac9ca5c49b8173ff0406a"
+  }
+}
