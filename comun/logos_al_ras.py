@@ -121,7 +121,7 @@ def parchar_js(s):
 
 def aplicar(path, exc=None):
     rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
-    s = open(path, encoding="utf8").read()
+    s = open(path, encoding="utf8", newline="").read()   # sin traducir los finales de línea
     i = s.index("const DATA"); j = s.index("=", i) + 1
     if s[j:j + 1] == "{":
         data, end = json.JSONDecoder().raw_decode(s[j:])
@@ -144,7 +144,7 @@ def aplicar(path, exc=None):
     # Atlas con todos sus logos en excepción (los subidos a Commons): el dibujo queda idéntico al anterior.
     s, fam = parchar_js(s) if n else (s, ["excepción"])
     tmp = path + ".tmp"
-    open(tmp, "w", encoding="utf8").write(s); os.replace(tmp, path)
+    open(tmp, "w", encoding="utf8", newline="").write(s); os.replace(tmp, path)
     return fam
 
 
