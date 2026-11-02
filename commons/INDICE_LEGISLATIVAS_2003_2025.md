@@ -1,6 +1,6 @@
 # Legislativas 2003–2025: atlas y paquetes para Commons
 
-Diputados nacionales, compilación 20-oct-2026. Diez atlas nuevos y las referencias 2009/2013. Todos los mapas conservan el estilo del proyecto. No se subieron archivos a Commons.
+Diputados nacionales, compilación 20-oct-2026. Diez atlas nuevos y las referencias 2009/2013. Todos los mapas conservan el estilo del proyecto. Publicados y verificados el 30-oct-2026; ver [registro de publicación](publicacion_20261030/ESTADO.md).
 
 Colores de las barras/partidos de Wikipedia (no los fondos pastel de los subtotales) y colores ya verificados en los atlas de 2009 y 2013 para las mismas fuerzas. Provincias Unidas 2025 usa naranja **#FF682C**, por pedido del usuario. Los cambios de contraste están en cada LEEME.
 

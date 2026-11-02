@@ -1,6 +1,6 @@
 # Paquete 2019paso para Commons — Elecciones primarias de Argentina de 2019
 
-Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
+Estado al 2026-10-20. Todos los archivos publicados o enlazados y verificados el 30-oct-2026. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -57,3 +57,8 @@ Las cifras salen de las fuentes citadas en la descripción de cada archivo y los
 
 Propongo sumarlo en la sección de resultados, sin reemplazar los mapas que ya están. ¿Les parece bien? ~~~~
 ```
+
+
+## Publicación verificada el 30-oct-2026
+
+Todos los 15 nombres del paquete están publicados o redirigen a una imagen idéntica, verificados por SHA1. El usuario autorizó las versiones con logos el 30-oct-2026. Los estados de espera por logos anteriores quedan superados por esa autorización; se conservan las reservas documentales y de licencia. [Registro y auditoría](../publicacion_20261030/ESTADO.md).

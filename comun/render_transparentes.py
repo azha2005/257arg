@@ -14,12 +14,24 @@ ATLAS.append(("mapa2027", "atlas_2027.html"))
 ATLAS.append(("mapa2027kic", "atlas_2027kic.html"))
 ATLAS.append(("mapa2023massa", "atlas_2023massa.html"))
 ATLAS.append(("mapa1985hip", "atlas_1985hip.html"))
+ATLAS.append(("mapa1983hipotetico", "atlas_1983_hipotetico.html"))
+ATLAS.append(("mapa1985peronismo", "atlas_1985_peronismo.html"))
+ATLAS.append(("mapa1989convergencia", "atlas_1989_convergencia.html"))
 ATLAS.extend((f"mapa{y}dip", f"atlas_{y}_diputados.html") for y in (1983, 1989, 1995, 1999))
 ATLAS.append(("mapa2001bronca", "atlas_2001bronca.html"))
 ATLAS.extend((f"mapa{y}", f"atlas_{y}.html") for y in (1958, 1962, 1965))   # Cantón (canton5865/atlas5865.py)
 ATLAS.extend((f"mapa{y}", f"atlas_{y}.html") for y in (2003,2005,2007,2011,2015,2017,2019,2021,2023,2025))
+ATLAS.extend(("mapa2003escenarios", f"atlas_2003_sin_{c}.html") for c in
+             ("m","k","l","r","c","moreau","walsh","bravo","altamira","venturino",
+              "sullings","arcagni","mazzitelli","zaffore","herrera","breide","mussa","teran"))
 ATLAS.extend(("mapaAMBA2025radios", f) for f in ("atlas_amba2025radios.html", "atlas_amba2025radios_pob.html"))   # por radio censal (método de Poblaciones)
+ATLAS.extend(("mapaAMBA2003radios", f) for f in ("atlas_amba2003radios.html", "atlas_amba2003radios_pob.html"))   # presidenciales 2003 por radio 2001 (escuelas 2025)
+ATLAS.extend([("mapaAMBA2007", "atlas_amba2007.html"), ("mapa2007circuitos", "atlas_2007circuitos.html")])
 OUT = os.path.join(ROOT, "png_transparentes")
+ATLAS.extend(("serieAMBA2005_2023radios", f"atlas_{k}.html") for k in
+             [f"{y}dip" for y in range(2005, 2024, 2)] +
+             [f"{y}pres" for y in (2007, 2011, 2015, 2019, 2023)] + ["2015bal", "2023bal", "2023pasofuerza", "2023pasocand"])
+ATLAS.append(("serieAMBA2005_2023radios", "atlas_2023pasointernas.html"))
 bad = []
 with sync_playwright() as p:
     b = p.chromium.launch(channel="chrome")

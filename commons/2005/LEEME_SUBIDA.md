@@ -1,6 +1,6 @@
 # Paquete 2005 para Commons — Elecciones legislativas de Argentina de 2005
 
-Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
+Estado al 2026-10-20. Todos los archivos publicados o enlazados y verificados el 30-oct-2026. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -71,7 +71,7 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 - Color final de Partido Acción Chubutense (PACH): #c2185b; tabla de Wikipedia: #0A1172. Ajuste por contraste o continuidad con los atlas verificados de 2009/2013.
 
 ## Fuentes y licencia
-- **Votos:** PolAr_Data (electorArg), resultados provisorios INDRA / Atlas Electoral de Andy Tow por mesa, agregados por departamento y circunscripción.
+- **Votos:** PolAr_Data (electorArg), resultados provisorios INDRA / Atlas Electoral de Andy Tow por mesa, agregados por departamento y circunscripción. Quemú Quemú; Rancul; Realicó; Toay; Trenel; Utracán; Valle Grande: escrutinio definitivo de la Dirección Nacional Electoral (PDF por distrito de elecciones.gob.ar, copia de la Wayback Machine), porque la fuente principal no trae esas unidades.
 - **Geometría:** Departamentos de 2001 y 28 circunscripciones de Capital Federal (ajustadas al contorno). Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Las versiones con logos ShareAlike llevan `{{self|cc-by-sa-4.0}}`; las variantes que omiten esos emblemas conservan CC BY 4.0. Ver las instrucciones genéricas.
 - **Logos** (solo «con leyenda» y PNG): Escudo de la UCR.svg, Flag of the Justicialist Party (square version).svg, Frente Renovador de la Concordia Social.png, Logo FPCyS.png, Logo Frente Civico de Cordoba.svg, Logo Frente para la Victoria.svg, Logo MPN.png, Old PRO Logo.png, PRS logo.png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
 - **Fecha de la elección:** 23 de octubre de 2005 (cotejada con el artículo).
@@ -87,3 +87,8 @@ Las cifras salen de las fuentes citadas en la descripción de cada archivo y los
 
 Propongo sumarlo en la sección de resultados, sin reemplazar los mapas que ya están. ¿Les parece bien? ~~~~
 ```
+
+
+## Publicación verificada el 30-oct-2026
+
+Todos los 30 nombres del paquete están publicados o redirigen a una imagen idéntica, verificados por SHA1. El usuario autorizó las versiones con logos el 30-oct-2026. Los estados de espera por logos anteriores quedan superados por esa autorización; se conservan las reservas documentales y de licencia. [Registro y auditoría](../publicacion_20261030/ESTADO.md).

@@ -5,7 +5,8 @@
 
 Geometria : la de mapa2001 (Departamentos_1991.shp + partidos/departamentos nuevos del shapefile de 2001, newpartidos.py) + 28 circunscripciones de Capital.
 Datos     : base de Ernesto Calvo (TPDENP1999T.xls; ../../datos/base8399/ernesto/1999_presidente/dpto_partidos.csv). San Luis y Santa Cruz no estan:
-            Lupu y Stokes por departamento (solo Alianza, PJ y total de positivos; el resto queda sin desglose, no se imputa).
+            Lupu y Stokes por departamento (Alianza, PJ y total de positivos); el resto se reparte con los porcentajes del provisorio del INAP
+            (../../datos/base8399/inap/1999_presidente_pct.csv).
 Nacional  : tabla de «Elecciones presidenciales de Argentina de 1999» de la Wikipedia en espanol (w1999.txt, ../../comun/wikitop.py).
 """
 import os as _os, sys as _sys; _sys.path[:0] = [_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "comun")]  # módulos compartidos (reorganización: ver README)
@@ -133,12 +134,27 @@ for r in csv.DictReader(open(ERNESTO, encoding="utf-8-sig")):
     elif t == "electores": e["el"] = v
 assert not any(p in ("San Luis", "Santa Cruz") for p, _ in ENT)
 # San Luis y Santa Cruz no estan en la base de Ernesto: Lupu y Stokes por departamento traen la Alianza («ucr»), la Concertacion («pj») y el total de
-# positivos; el resto (Cavallo y los demas) va junto como «sin desglose» (no se reparte: regla del proyecto, lo que falta no se imputa). Sin blancos, nulos ni inscriptos.
-SD = "_sd"
+# positivos. El resto (Cavallo y los demas) se reparte con los porcentajes del provisorio del INAP («Datos Departamentales 1999», ../../datos/base8399/inap/),
+# cuyos de la Alianza y el PJ coinciden con Lupu y Stokes a 0,03 puntos: el residuo de Lupu y Stokes se divide en proporcion a los porcentajes de las demas
+# listas (resto mayor). Son votos estimados; sin blancos, nulos ni inscriptos.
+INAP = os.path.join(HERE, "..", "../datos/base8399", "inap", "1999_presidente_pct.csv")
+INAP_COD = {"AlAc-Rep": "aapr", "PO": "po", "PH": "ph", "Fte.Resist.": "fres", "AlIzUn": "aiu", "A.S.C.": "asocr", "FUT": "fut"}
+INAP_PCT = collections.defaultdict(dict)
+for r in csv.DictReader(open(INAP, encoding="utf-8")):
+    if r["provincia"] in ("San Luis", "Santa Cruz") and r["sigla"] not in ("ALIANZA", "AlConceJust"):
+        INAP_PCT[(r["provincia"], norm(r["departamento"]))][INAP_COD[r["sigla"]]] = float(r["pct"])
+INAP_ALIAS = {norm("Gdor. Dupuy"): norm("Gobernador Dupuy")}
 for r in csv.DictReader(open(LUPU, encoding="utf-8-sig")):
     if r["province"] not in ("San Luis", "Santa Cruz"): continue
     tot, ali, pj = (int(float(r[c])) for c in ("total", "ucr", "pj"))
-    ENT[(r["province"], r["department"])] = dict(prov=r["province"], name=r["department"], P={"ali": ali, "cjc": pj, SD: tot - ali - pj}, pos=tot, bla=None, nul=None, tot=None, el=None, lupu=True)
+    pct = INAP_PCT[(r["province"], INAP_ALIAS.get(norm(r["department"]), norm(r["department"])))]
+    assert pct, r["department"]
+    resto, sp = tot - ali - pj, sum(pct.values())
+    q = {c: resto * x / sp for c, x in pct.items()}
+    P = {c: int(x) for c, x in q.items()}
+    for c in sorted(q, key=lambda c: -(q[c] - P[c]))[:resto - sum(P.values())]: P[c] += 1
+    P.update(ali=ali, cjc=pj)
+    ENT[(r["province"], r["department"])] = dict(prov=r["province"], name=r["department"], P=P, pos=tot, bla=None, nul=None, tot=None, el=None, lupu=True)
 
 
 # Unidades que la base trae aparte y el mapa de 1991 incluye en otra: se suman
@@ -257,7 +273,7 @@ LABEL = {"ali": "Alianza para el Trabajo, la Justicia y la Educación", "ali00":
          "aiu": "Izquierda Unida", "aiumst": "Izquierda Unida", "aiupc": "Izquierda Unida", "iu": "Izquierda Unida", "ph": "Partido Humanista", "po": "Partido Obrero",
          "fres": "Frente de la Resistencia", "afres": "Frente de la Resistencia", "asocr": "Alianza Social Cristiana", "asocra": "Alianza Social Cristiana", "asoc": "Alianza Social Cristiana",
          "pts": "Partido de los Trabajadores Socialistas", "psa": "Partido Socialista Auténtico", "cpl": "Corriente Patria Libre",
-         SD: "Cavallo y otros (sin desglose en la fuente)"}
+         "fut": "Frente de Unidad Trabajadora"}
 _CODES = sorted({c for e in ENT.values() for c in e["P"]})
 for c in _CODES: LABEL.setdefault(c, c.upper())
 # colores de los otros atlas: Alianza #dc0143 (1997, 2001, 1999 diputados), PJ #318ce7, Accion por la Republica #3e5298
@@ -267,7 +283,7 @@ DEFAULT_COL = "#9a9a9a"
 COLOR = {}
 for c in _CODES:
     COLOR[c] = COL_DUH if c in DUH_C else COL_DLR if c in DLR_C else COL_CAV if c in CAV_C else DEFAULT_COL
-COLOR.update({"ucd": "#8e6bd8", "ph": "#ff8800", "aiu": "#a31515", "aiumst": "#a31515", "aiupc": "#a31515", "iu": "#a31515", SD: "#bdbdbd"})
+COLOR.update({"ucd": "#8e6bd8", "ph": "#ff8800", "aiu": "#a31515", "aiumst": "#a31515", "aiupc": "#a31515", "iu": "#a31515"})
 CAND = {
     "DLR": dict(n="Fernando de la Rúa", sub="Alianza", base=COL_DLR, logo="ALI"),
     "DUH": dict(n="Eduardo Duhalde", sub="Concertación Justicialista", base=COL_DUH, logo="PJ"),
@@ -385,7 +401,7 @@ for i, u in enumerate(U):
     if norm(e["name"]) != norm(u["name"]) and p != "Capital Federal": extras.append("Nombre en la base: «%s»." % e["name"])
     if e.get("merged"): extras.append(e["merged"])
     if e.get("imput"): extras.append(e["imput"])
-    if e.get("lupu"): extras.append("San Luis y Santa Cruz no están en la base de Ernesto Calvo: datos de Lupu y Stokes, que solo traen la Alianza, la Concertación Justicialista y el total de votos positivos. Cavallo y las demás fórmulas van juntos, sin desglose; no hay blancos, nulos ni inscriptos.")
+    if e.get("lupu"): extras.append("San Luis y Santa Cruz no están en la base de Ernesto Calvo: la Alianza, la Concertación Justicialista y el total de votos positivos son de Lupu y Stokes; Cavallo y las demás fórmulas, estimados con los porcentajes del escrutinio provisorio (INAP, «Datos Departamentales 1999»). No hay blancos, nulos ni inscriptos.")
     elif e["tot"] is None: extras.append("La base no trae el total de votantes de esta unidad: se calculó como positivos + blancos + nulos.")
     unit_rec[i] = rec_from(a, " ".join(extras) or None)
 
@@ -406,7 +422,7 @@ for p, t in prov_an.items():
     if not t["ins_ok"]: t["ins"] = None
     # participacion provincial: solo con los departamentos de padron consistente
     t["par"] = 100 * t["E_ok"] / t["ins_good"] if (t["ins"] and t["ins_good"]) else None
-prov_rec = {p: rec_from(t, ("Suma de los departamentos de Lupu y Stokes (solo Alianza, Concertación y positivos; Cavallo y otros sin desglose)." if t["lupu"] else "Suma de los departamentos de la base de Ernesto Calvo.")
+prov_rec = {p: rec_from(t, ("Suma de los departamentos: Alianza, Concertación y positivos de Lupu y Stokes; Cavallo y los demás, estimados con los porcentajes del provisorio (INAP)." if t["lupu"] else "Suma de los departamentos de la base de Ernesto Calvo.")
                          + ("" if t["ins_ok"] else " La base no trae inscriptos para esta provincia.")) for p, t in prov_an.items()}
 # unidades sin dato propio (Islas Malvinas): heredan la provincia
 for i in range(len(U)):
@@ -442,7 +458,7 @@ def bin_of(p, edges):
 
 
 NOTE = ("Fuente: departamentos y provincias, base de Ernesto Calvo (datos del Ministerio del Interior); San Luis y Santa Cruz, que faltan en ella, de Lupu y Stokes "
-        "(solo Alianza, Concertación y total: Cavallo y los demás van juntos, sin desglose). Porcentajes sobre votos positivos. "
+        "(Alianza, Concertación y total), con Cavallo y los demás estimados con los porcentajes del provisorio (INAP). Porcentajes sobre votos positivos. "
         "Resultado nacional (torta y barras): tabla de «Elecciones presidenciales de Argentina de 1999» de la Wikipedia en español. "
         "Geometría: departamentos del censo de 1991 (con los creados después con polígono propio) y circunscripciones de Capital Federal del mapa de Wikipedia. "
         "Las fórmulas siguen la tabla «Acceso a boletas» del artículo: De la Rúa = Alianza, PDP de Santa Fe y PAL-PDP de Corrientes; "
@@ -486,7 +502,7 @@ MODES = [dict(id="gan", tile="GANÓ", note=NOTE, units=[unit_rec[i] for i in ran
               national=dict(cands=cands, slices=slices, partp=partp, metrics=NAT_MET), legend={})]
 _SPEC = [("dlr", "DLR", lambda a: 100 * a["bloc"]["DLR"] / a["pos"], COL_DLR, [0, 30, 40, 50, 60, 70, 80], "% De la Rúa - Álvarez (Alianza)", False),
          ("duh", "DUH", lambda a: 100 * a["bloc"]["DUH"] / a["pos"], COL_DUH, [0, 30, 40, 50, 60, 70, 80], "% Duhalde - Ortega (Concertación)", False),
-         ("cav", "CAV", lambda a: 100 * a["bloc"]["CAV"] / a["pos"], COL_CAV, [0, 5, 10, 15, 20, 25, 30], "% Cavallo - Caro Figueroa (AR)", True)]
+         ("cav", "CAV", lambda a: 100 * a["bloc"]["CAV"] / a["pos"], COL_CAV, [0, 5, 10, 15, 20, 25, 30], "% Cavallo - Caro Figueroa (AR)", False)]
 for mid, tile, fn, base, edges, title, pend in _SPEC:
     un, pv, lg = mode_choropleth(fn, base, edges, title, pend=pend)
     MODES.append(dict(id=mid, tile=tile, note=NOTE, units=un, prov=pv,
@@ -654,4 +670,8 @@ html = (tpl.replace("{{MAP}}", "".join(body)).replace("{{PV}}", "".join(pv))
            .replace("{{DATA}}", json.dumps(ds, ensure_ascii=False, separators=(",", ":"))).replace("{{MODE}}", "gan"))
 out = os.path.join(HERE, "atlas_1999.html")
 open(out, "w", encoding="utf8", newline="\n").write(html)
+# logos de la leyenda al ras de la barra, con las excepciones de comun/logos_ras_excepciones.json (2-nov-2026)
+_c = os.path.abspath(__file__)
+while not os.path.isdir(os.path.join(_c, "comun")): _c = os.path.dirname(_c)
+__import__("sys").path.insert(0, os.path.join(_c, "comun")); __import__("logos_al_ras").aplicar(out)
 print("escrito", out, round(len(html) / 1e6, 2), "MB", file=sys.stderr)

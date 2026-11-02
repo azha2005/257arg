@@ -110,8 +110,12 @@ html=(ROOT/'mapa1985/atlas_1985.html').read_text(encoding='utf8')
 html,n=re.subn(r'const DATA=.*?;\n',lambda m:'const DATA='+payload+';\n',html,count=1)
 assert n==1
 html=html.replace('<title>Elecciones legislativas 1985</title>','<title>1985 · Presidenciales hipotéticas</title>')
+# el título presidencial es más largo que el legislativo y las cinco pestañas tapaban la caja del año: se comprime hasta dejarla libre
+TL_OLD='const tl=Math.min(1088,Math.round(1088*title.length/41));'
+assert html.count(TL_OLD)==1
+html=html.replace(TL_OLD,'const r0=document.querySelector("#tiles rect"),x0=r0?+r0.getAttribute("x"):1262;const tl=Math.min(1088,Math.round(1088*title.length/41),x0-22-13-114-14);')
 html=html.replace('class="pfm" style="fill:#a9a9a9;stroke:#a9a9a9;stroke-width:5px;stroke-linejoin:round"', 'class="pf" data-prov="Tierra del Fuego" style="stroke:#1b1b1b;stroke-width:5px;stroke-linejoin:round"')
-(HERE/'atlas_1985hip.html').write_text(html,encoding='utf8')
+(HERE/'atlas_1985hip.html').write_text(html,encoding='utf8'); __import__("sys").path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2] / "comun")); __import__("logos_al_ras").aplicar(str(HERE/'atlas_1985hip.html'))   # logos al ras (2-nov-2026)
 report=dict(totales_provincias=tot,total_declarado_docx=doc_total,diferencia=[a-b for a,b in zip(tot,doc_total)],ganadores=dict(wins),auditoria=audit,mapeo=dict(Massera=sorted(pj),Nadra=sorted(pc),Manrique=sorted(af),Alfonsin='Todos los códigos restantes',flib='Massera en Capital; Nadra en el resto'))
 (HERE/'auditoria.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8')
 with (HERE/'estimaciones_departamentales.csv').open('w',encoding='utf-8-sig',newline='') as f:

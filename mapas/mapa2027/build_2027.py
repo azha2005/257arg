@@ -486,6 +486,9 @@ sub('el("text",{x:476,y:y+33,"font-size":23,', 'el("text",{x:476,y:y+33*k,"font-
 sub("return out.slice(0,4);", "return out.slice(0,6);")
 sub("const list=tilesNow(),xs=[1262,1316,1370,1424];",
     "const list=tilesNow(),xs=list.length>5?[1196,1248,1300,1352,1404,1456]:list.length>4?[1208,1262,1316,1370,1424]:[1262,1316,1370,1424];")
+# con seis pestañas la primera empieza en x 1196 y tapaba la caja del año: el título se comprime hasta dejarla libre
+sub("const tl=Math.min(1088,Math.round(1088*title.length/41));",
+    "const r0=document.querySelector(\"#tiles rect\"),x0=r0?+r0.getAttribute(\"x\"):1262;const tl=Math.min(1088,Math.round(1088*title.length/41),x0-22-13-114-14);")
 sub("    const sw=(t.length>6)?68:48,xx=xs[i];",
     "    const sw=(t.length>6)?68:48,xx=xs[i];")
 sub("    if(t.length>5)tt.setAttribute(\"font-size\",15);",
@@ -496,4 +499,8 @@ html = (tpl.replace("{{MAP}}", "".join(body)).replace("{{PV}}", "".join(pv))
            .replace("{{DATA}}", json.dumps(ds, ensure_ascii=False, separators=(",", ":"))).replace("{{MODE}}", "gan"))
 out = os.path.join(HERE, "atlas_2027.html")
 open(out, "w", encoding="utf8", newline="\n").write(html)
+# logos de la leyenda al ras de la barra, con las excepciones de comun/logos_ras_excepciones.json (2-nov-2026)
+_c = os.path.abspath(__file__)
+while not os.path.isdir(os.path.join(_c, "comun")): _c = os.path.dirname(_c)
+__import__("sys").path.insert(0, os.path.join(_c, "comun")); __import__("logos_al_ras").aplicar(out)
 print("escrito", out, round(len(html) / 1e6, 2), "MB", file=sys.stderr)

@@ -1,0 +1,43 @@
+const {chromium}=require('C:/Users/JC/Downloads/elefanopus55/videoelefante/node_modules/playwright-core');
+const fs=require('fs'),path=require('path');
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1100}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('file:///'+path.join(__dirname,'simulador_2003.html').replaceAll('\\','/'));
+ await page.waitForFunction(()=>window.__simState);
+ await page.screenshot({path:path.join(__dirname,'vista_escritorio.png'),fullPage:false});
+ let interactions=0;
+ for(const r of ['0','1','2','3','4','17','-1'])for(const m of ['0','1','2','3']) {
+  await page.selectOption('#removed',r);await page.selectOption('#model',m);
+  const s=await page.evaluate(()=>({error:document.querySelector('#error').textContent,rows:document.querySelectorAll('#allScenarios tbody tr').length,state:window.__simState.o}));
+  if(s.error||s.rows!==18||s.state.removed!==Number(r))throw Error(JSON.stringify(s));interactions++;
+ }
+ await page.click('#reset');
+ await page.selectOption('#removed','1');
+ await page.selectOption('#pollMode','may');
+ await page.uncheck('#autoPair');
+ await page.selectOption('#finalA','0');await page.selectOption('#finalB','2');
+ await page.selectOption('#geo','24');
+ await page.locator('#blank').fill('80');await page.locator('#blank').dispatchEvent('input');
+ await page.locator('#abstain').fill('50');await page.locator('#abstain').dispatchEvent('input');
+ const vals=await page.evaluate(()=>({b:+document.querySelector('#blank').value,a:+document.querySelector('#abstain').value,error:document.querySelector('#error').textContent}));
+ if(vals.b+vals.a!==100||vals.error)throw Error(JSON.stringify(vals));
+ await page.click('#reset');
+ await page.locator('#customPanel summary').click();
+ await page.locator('#p1').fill('100');
+ await page.click('#applyCustom');
+ if(!await page.evaluate(()=>window.__simState.o.custom!==null))throw Error('No se aplicó reparto manual');
+ await page.click('#clearCustom');
+ await page.locator('#customPanel summary').click();
+ const download=page.waitForEvent('download');await page.click('#csv');await (await download).saveAs(path.join(__dirname,'exportacion_ui.csv'));
+ await page.selectOption('#localMethod','province');await page.selectOption('#localMethod','local');
+ await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(__dirname,'vista_movil.png'),fullPage:false});
+ const mobile=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth,error:document.querySelector('#error').textContent}));
+ if(mobile.scroll>mobile.width||mobile.error)throw Error(JSON.stringify(mobile));
+ await page.setViewportSize({width:1440,height:1100});
+ await page.locator('#sankey').screenshot({path:path.join(__dirname,'vista_sankey.png')});
+ await browser.close();if(errors.length)throw Error(errors.join('\n'));
+ const result={interactions:interactions+10,mobile_width:mobile.width,horizontal_overflow:false,js_errors:errors};
+ fs.writeFileSync(path.join(__dirname,'revision_pagina.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+})().catch(e=>{console.error(e);process.exitCode=1});

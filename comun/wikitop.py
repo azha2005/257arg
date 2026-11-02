@@ -295,3 +295,10 @@ for _year in (2003,2005,2007,2011,2015,2017,2019,2021,2023,2025):
         _row=_json.loads(_snapshot.read_text(encoding='utf8'))
         assert sum(_row['blocs'].values())+_row['otros']==_row['positivos'],_year
         WIKI[_year]=_row
+
+# Presidenciales 2007 por circuito: clave propia, separada de diputados 2007.
+_pres07=_Path(__file__).resolve().parent.parent/'mapas/mapa2007circuitos/wiki_nacional_2007circuitos.json'
+if _pres07.exists():
+    _row=_json.loads(_pres07.read_text(encoding='utf8'))
+    assert sum(_row['blocs'].values())+_row['otros']==_row['positivos']
+    WIKI['2007circuitos']=_row

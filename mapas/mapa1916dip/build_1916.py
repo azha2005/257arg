@@ -306,6 +306,11 @@ PENDIENTES = set()
 PROV_ONLY = {"San Juan": dict(P={"CNS": 9244.0, "UCR": 7742.0, "SOC": 383.0}, ins=23379.0, vot=17750.0, exp="53-D-1916", lab="Partido Conservador 9.244 (53,2 %), UCR 7.742 (44,6 %), Socialista 383 (2,2 %)"),
              "Santiago del Estero": dict(P={"DEM": 15146.0, "UCR": 14721.0, "PDP": 1842.0, "SOC": 303.0}, ins=56599.0, vot=32012.0, exp="7-D-1916", lab="Unión Democrática 15.146 (47,3 %), UCR 14.721 (46,0 %), Demócrata Progresista 1.842 (5,8 %), Socialista 303 (0,9 %)")}
 SOLID = set(PROV_ONLY)
+# Departamentos de esas provincias con dato propio (DATA.solidExcept): se pintan con su resultado, el resto de la provincia sigue en color sólido.
+# San Juan Capital: telegrama del 3-abr en La Época del 4-abr-1916 (pp. 1 y 4), ver transcripciones/1916dip/laepoca_abril1916/LEEME.md.
+SOLID_UNITS = {("San Juan", "Capital"): dict(P={"UCR": 1132.0, "CNS": 873.0, "SOC": 78.0},
+    note="Dato propio del departamento: La Época, 4 de abril de 1916, pp. 1 y 4 (telegrama del 3: «se escrutaron dos distritos que faltaban de la ciudad»). "
+         "Votos del primer candidato de cada lista (Quiroga, Vidart, Cantoni); los segundos sacaron 1.112, 836 y 76. Diario de partido (yrigoyenista), cifras del escrutinio en curso, no del acta.")}
 PROV_NOTE = {p: "Total provincial según la Wikipedia (expediente %s de la Cámara de Diputados): %s. Cantón no trae el cuadro departamental: el mapa pinta toda la provincia con este resultado." % (v["exp"], v["lab"]) for p, v in PROV_ONLY.items()}
 
 # ---- Salta: planilla del 15 de abril de 1916 (exp. 58-D-1916), 38 colegios -> 21 departamentos de 1914 (agrupacion = hipotesis del paquete 1916dip)
@@ -416,8 +421,12 @@ for i, u in enumerate(U):
         unit_rec[i] = {"fill": GREY_T, "lines": [], "note": "Territorio Nacional de Los Andes (1900-1943): sus habitantes no votaban (Cacopardo 1967)."}
     elif p in PENDIENTES:
         unit_rec[i] = {"fill": GREY_P, "lines": [], "note": "Sin datos todavía: no hay cuadro de %s para 1916 en las fuentes reunidas." % p}
+    elif (p, u["name"]) in SOLID_UNITS:
+        su = SOLID_UNITS[(p, u["name"])]
+        a = analyse(dict(P={c: [x, None] for c, x in su["P"].items()}, ins=None, vot=None)); unit_an[i] = a
+        unit_rec[i] = rec_from(a, su["note"])
     elif p in SOLID:
-        unit_rec[i] = {"fill": GREY_P, "lines": [], "note": "Sin cuadro departamental en Cantón. " + PROV_NOTE[p]}
+        unit_rec[i] ={"fill": GREY_P, "lines": [], "note": "Sin cuadro departamental en Cantón. " + PROV_NOTE[p]}
     elif i in salta_idx:
         s_ = salta_idx[i]
         a = analyse(dict(P={c: [float(s_[c]), None] for c in ("UCR", "UPV", "SOC") if s_[c] > 0}, ins=None, vot=float(s_["suf"])))
@@ -520,7 +529,7 @@ def bin_of(p, edges):
 
 NOTE = ("Fuente: D. Cantón, «Materiales para el estudio de la sociología política en la Argentina» (1968), t. II, diputados nacionales, 2 abr. 1916 (transcripción del paquete 1916dip); "
         "Salta: expediente 58-D-1916 (partidos según la Wikipedia). Cada columna partidaria de Cantón puede ser el candidato más votado de la lista y no el total del partido. "
-        "Geometría: departamentos del censo de 1914.. San Juan y Santiago del Estero: solo total provincial (Wikipedia), sin datos departamentales.")
+        "Geometría: departamentos del censo de 1914.. San Juan y Santiago del Estero: solo total provincial (Wikipedia), salvo el departamento Capital de San Juan (La Época, 4 abr. 1916).")
 NOTE = wikitop.note(1916) + " " + NOTE
 
 
@@ -600,7 +609,8 @@ caba_b = bbox_of(cap_idx)
 cx, cy = (caba_b[0] + caba_b[2]) / 2, (caba_b[1] + caba_b[3]) / 2
 gba_w = 62.0
 import insets99    # los recuadros que faltaban (Gran San Juan, Gran Mendoza, Resistencia + Corrientes y Antártida), como en Wikipedia 1999
-X99 = insets99.build(U, G_raw, window, bbox_of, style95=True, antarctic=False, omit=("sj",), sj_names={"Capital", "Santa Lucia", "Chimbas", "Rivadavia", "Pocito", "Albardon", "Trinidad", "Concepcion", "Desamparados", "Zonda", "Rawson"}, chaco_names={"Resistencia"})
+# Gran San Juan: encuadrado en el departamento Capital (en el shp de 1914 es solo la ciudad; con sus vecinos quedaba en un punto)
+X99 = insets99.build(U, G_raw, window, bbox_of, style95=True, antarctic=False, sj_names={"Capital"}, chaco_names={"Resistencia"})
 body.append(X99["ant_body"])
 INSETS = [
     dict(id="tuc", label="Tucumán", f=[450, 300, 200, 185], win=window(bbox_of(tuc), 200 / 185), show=["d", "pb"], sd=2.6, sp=3.4),
@@ -634,6 +644,7 @@ ds = dict(
     exterior=False, candidates=CAND,
     sets={"1": dict(label="1916", subtitle="Cantón (1968) · deptos. de 1914")},
     modes=MODES, insets=INSETS, solid=sorted(SOLID),
+    solidExcept=[i for i, u in enumerate(U) if (u["prov"], u["name"]) in SOLID_UNITS],
     territories=[dict(n=disp.get(i, u["name"]), p=u["prov"], k=u["kind"]) for i, u in enumerate(U)],
 )
 json.dump(ds, open(os.path.join(HERE, "dataset_1916.json"), "w", encoding="utf8"), ensure_ascii=False)
@@ -700,5 +711,9 @@ html = (tpl.replace("{{MAP}}", "".join(body)).replace("{{PV}}", "".join(pv))
            .replace("{{DATA}}", json.dumps(ds, ensure_ascii=False, separators=(",", ":"))).replace("{{MODE}}", "gan"))
 out = os.path.join(HERE, "atlas_1916_diputados.html")
 open(out, "w", encoding="utf8", newline="\n").write(html)
+# logos de la leyenda al ras de la barra, con las excepciones de comun/logos_ras_excepciones.json (2-nov-2026)
+_c = os.path.abspath(__file__)
+while not os.path.isdir(os.path.join(_c, "comun")): _c = os.path.dirname(_c)
+__import__("sys").path.insert(0, os.path.join(_c, "comun")); __import__("logos_al_ras").aplicar(out)
 print("escrito", out, round(len(html) / 1e6, 2), "MB", file=sys.stderr)
 

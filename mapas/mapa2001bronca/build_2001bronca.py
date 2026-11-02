@@ -65,6 +65,6 @@ payload=json.dumps(ds,ensure_ascii=False,separators=(',',':'))
 html=(src/'atlas_2001.html').read_text(encoding='utf8')
 html,n=re.subn(r'const DATA=.*?;\n',lambda m:'const DATA='+payload+';\n',html,count=1);assert n==1
 html=re.sub(r'<title>.*?</title>','<title>Legislativas 2001 · Variante con voto bronca</title>',html,count=1)
-(HERE/'atlas_2001bronca.html').write_text(html,encoding='utf8')
+(HERE/'atlas_2001bronca.html').write_text(html,encoding='utf8'); __import__("sys").path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2] / "comun")); __import__("logos_al_ras").aplicar(str(HERE/'atlas_2001bronca.html'))   # logos al ras (2-nov-2026)
 (HERE/'auditoria.json').write_text(json.dumps(dict(ganadores=dict(wins),bronca_nacional=bronca,denominador_nacional=den,porcentaje=round(100*bronca/den,4),provincias_ganadas=[p for p,r in prov.items() if r.get('w')=='BRONCA']),ensure_ascii=False,indent=2),encoding='utf8')
 print('Ganadores',dict(wins),'Voto bronca nacional',bronca,'/',den)
