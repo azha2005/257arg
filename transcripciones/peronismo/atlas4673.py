@@ -62,7 +62,7 @@ CFG = {
     "1946": dict(src="canton", title="Elecciones presidenciales de Argentina de", tab="Elecciones presidenciales 1946", cargo="presidente",
                  fuente="elección de electores de presidente del 24 de febrero de 1946", geo="deptos. de 1947",
                  cand=dict(PER=dict(n="Juan Domingo Perón", sub="Laborismo y UCR-JR", base=PJ_C, logo="PER", img=PJ_IMG),
-                           UD=dict(n="José P. Tamborini", sub="Unión Democrática", base=UCR_C, logo="UD"),
+                           UD=dict(n="José P. Tamborini", sub="Unión Democrática", base=UCR_C, logo="UD", img=("Emblema_de_la_Union_Democratica.svg", None)),   # gorro frigio de la UD, Commons (2-nov-2026)
                            PDN=dict(n="Partido Demócrata Nacional", sub="Conservadores", base=CON_C, logo="PDN"),
                            UCRB=dict(n="UCR Bloquista", sub="San Juan", base="#44944a", logo="UCRB", img=("Estrella_bloquista.png", None)),
                            UCRSE=dict(n="UCR de Santiago del Estero", sub="Unificada", base="#a52a2a", logo="UCRU"),
