@@ -54,6 +54,11 @@ límites legales de 1904. `CONTROL_GEOMETRIA.json` registra los controles y la
 cobertura del marco SHP. Los Andes se mantiene como territorio nacional;
 sin recuadro antártico. Malvinas en gris.
 
+Malvinas: el mapa grande y el pequeño de provincias reutilizan exactamente
+el trazo del atlas 1912, en la misma proyección y con la misma simplificación
+del SHP. Contorno negro en el grande y gris de 5 px antes de la escala en el
+pequeño, como los demás atlas. No se colorean con resultados electorales.
+
 Capital Federal conserva las veinte circunscripciones históricas numeradas
 de Vélez Sarsfield (1) a Socorro (20), las mismas identificadas en el SVG y en
 el atlas 1912. Se usan directamente los veinte trazos nativos del SHP, sin

@@ -22,6 +22,8 @@ with sync_playwright()as p:
         page.wait_for_timeout(100)
         assert not errors,errors
         assert page.locator('#B .mal').is_visible()
+        assert page.locator('#pv .pfm').is_visible()
+        assert page.locator('#B .mal').get_attribute('d')==page.locator('#pv .pfm').get_attribute('d')
         assert page.locator('#legend').evaluate('''e=>[...e.querySelectorAll('svg image')].every(im=>{
           const y=+im.parentElement.getAttribute('y');return ![...e.querySelectorAll('rect')].some(r=>+r.getAttribute('x')===104&&+r.getAttribute('y')===y+32);
         })''')
