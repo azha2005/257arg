@@ -25,6 +25,7 @@ def mini_nombre(ruta):
 
 
 def miniaturas(filtro=""):
+    """Dos capturas del póster (#atlas, sin la barra): fondo negro y fondo blanco, como el modo del índice."""
     from playwright.sync_api import sync_playwright
     from PIL import Image
     os.makedirs(MINIS, exist_ok=True)
@@ -34,12 +35,13 @@ def miniaturas(filtro=""):
         for ruta, *_ in entradas():
             if filtro not in ruta: continue
             src = MINI.get(ruta, ruta)
-            pg.goto("about:blank")
-            pg.goto("file:///" + os.path.join(ROOT, src).replace(os.sep, "/"))
-            pg.wait_for_timeout(2500)
-            im = Image.open(io.BytesIO(pg.screenshot())).convert("RGB")
-            im.thumbnail((640, 640), Image.LANCZOS)
-            im.save(os.path.join(MINIS, mini_nombre(ruta)), "WEBP", quality=72, method=6)
+            for hash_, suf in (("#bare", ""), ("#bare-white", "_claro")):
+                pg.goto("about:blank")
+                pg.goto("file:///" + os.path.join(ROOT, src).replace(os.sep, "/") + hash_)
+                pg.wait_for_timeout(2500)
+                im = Image.open(io.BytesIO(pg.locator("#atlas").screenshot())).convert("RGB")
+                im.thumbnail((640, 640), Image.LANCZOS)
+                im.save(os.path.join(MINIS, mini_nombre(ruta).replace(".webp", suf + ".webp")), "WEBP", quality=72, method=6)
             print(ruta, flush=True)
         b.close()
 
@@ -56,7 +58,9 @@ def indice():
         for ruta, anio, rot, nota in items:
             m = mini_nombre(ruta)
             ok = os.path.exists(os.path.join(MINIS, m))
-            img = (f'<img src="miniaturas/{m}" alt="" loading="lazy" width="640" height="567">' if ok else "")
+            mc = m.replace(".webp", "_claro.webp")
+            img = ((f'<img class="osc" src="miniaturas/{m}" alt="" loading="lazy" width="640" height="550">'
+                    f'<img class="cla" src="miniaturas/{mc}" alt="" loading="lazy" width="640" height="550">') if ok else "")
             nota_h = f'<span class="nota">{html.escape(nota)}</span>' if nota else ""
             cards.append(f'<li><a class="atlas" href="{ruta}"><span class="mini">{img}</span>'
                          f'<span class="anio num">{anio}</span><span class="rot">{html.escape(rot)}</span>{nota_h}</a></li>')
@@ -110,6 +114,11 @@ SITIO_JS = ('<script>/*sitio*/(function(){var b=document.body,bar=document.getEl
             'var t=null;try{t=localStorage.getItem("tema");}catch(e){}'
             'var claro=t?t==="light":matchMedia("(prefers-color-scheme: light)").matches;'
             'if(claro&&location.hash.indexOf("bare")<0){b.dataset.bg="white";var g=document.getElementById("b-bg");if(g)g.textContent="Fondo: blanco";}'
+            # el póster entero a la vista: el ancho se limita para que quepa en el alto de la ventana (con la barra)
+            'var sv=document.getElementById("atlas"),w=document.getElementById("wrap");'
+            'function fit(){if(!sv||!w||location.hash.indexOf("bare")>=0)return;var vb=sv.viewBox&&sv.viewBox.baseVal;if(!vb||!vb.height)return;'
+            'var bh=bar?bar.offsetHeight:0;w.style.maxWidth=Math.max(760,Math.min(1920,(innerHeight-bh-28)*vb.width/vb.height))+"px";}'
+            'fit();addEventListener("resize",fit);'
             '})();</script>\n')
 
 
