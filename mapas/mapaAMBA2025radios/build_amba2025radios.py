@@ -164,6 +164,46 @@ print(VAR, "radios:", len(UKEYS), "ganadores:", dict(WIN), "beige:", sum(1 for r
       "AMBA positivos", round(TOT["pos"]), file=sys.stderr)
 LEG = [b for b in BLOCS if WIN.get(b)]   # regla 3: solo los que ganan algun radio
 
+# ---------------------------------------------------------------- niveles «Partido» y «Circuito» (selector de nivel, 2-nov-2026)
+# Como en la serie 2005-2023: las unidades extra van después de los radios. Partido (y comuna en Capital) = suma
+# exacta de sus radios; circuito = resultado observado del atlas por circuito (mismas proyección y fichas).
+NR = len(UKEYS)
+EXTRA = []   # (clase, nombre, partido, d del mapa, d del recuadro de Capital o None)
+_grp = collections.defaultdict(list)
+for i, k in enumerate(UKEYS):
+    _grp[("01", int(k[1][2:5]) // 7) if k[0] == "01" else ("02", PART[i])].append(i)
+for g in sorted(_grp, key=lambda g: (g[0], g[1])):
+    ix = np.array(_grp[g]); capital = g[0] == "01"
+    name = "Comuna %d" % g[1] if capital else g[1]
+    a = agg_rows(ix); a["ok"] = 1 if a["pos"] >= 0.5 else 0
+    j = NR + len(EXTRA)
+    unit_an[j] = a; disp[j] = name
+    unit_rec[j] = rec_from(a, float(POBR[ix].sum()), "Suma de las estimaciones por radio: coincide con el escrutinio provisorio.", unit=False)
+    u = fill_slivers(unary_union([G_raw[i] for i in ix]).buffer(0.7, join_style=2).buffer(-0.7, join_style=2))
+    EXTRA.append(("pp", name, PART[ix[0]], geom_d(u.simplify(0.04, preserve_topology=True)),
+                  geom_d(u.simplify(0.01, preserve_topology=True)) if capital else None))
+_cds = json.load(open(os.path.join(CIRC, "dataset_amba2025.json"), encoding="utf8"))
+_chtml = open(os.path.join(CIRC, "atlas_amba2025.html"), encoding="utf8").read()
+_cd = {(c, int(i)): d for c, i, d in re.findall(r'<path class="(d|dc)" data-i="(\d+)" d="([^"]*)"', _chtml)}
+_num = lambda s: float(re.sub(r"[^\d,]", "", s).replace(",", ".") or 0)
+for ci_, (t, r) in enumerate(zip(_cds["territories"], _cds["modes"][0]["units"])):
+    if (("d", ci_)) not in _cd: continue
+    met = {m[0]: m[1] for m in r.get("metrics", [])}
+    lv = {l[0][2:]: l[1] for l in r.get("lines", [])}
+    pos = _num(met.get("Votos positivos", "0"))
+    a = dict(bloc={b: lv.get(b, 0) for b in BLOCS}, pos=pos, E=_num(met.get("Votantes", "0")),
+             elok=_num(met.get("Electores (mesas escrutadas)", "0")), ok=1 if pos >= 0.5 and not r.get("fill") else 0)
+    rec = dict(r); rec["note"] = ((r.get("note", "") + " ") if r.get("note") else "") + "Resultado observado del circuito (escrutinio provisorio): no es una estimación."
+    j = NR + len(EXTRA)
+    unit_an[j] = a; unit_rec[j] = rec; disp[j] = t["n"]
+    EXTRA.append(("ck", t["n"], t["p"], _cd[("d", ci_)], _cd.get(("dc", ci_))))
+NU = NR + len(EXTRA)
+_pk = {ascii_t(p).lower(): p for p in PART}   # el atlas por circuito escribe los partidos con tildes
+EXTRA = [e[:2] + (_pk[ascii_t(e[2]).lower()],) + e[3:] for e in EXTRA]
+print("niveles:", collections.Counter(e[0] for e in EXTRA), file=sys.stderr)
+_SVG_EXTRA = "".join('<path class="%s" data-i="%d" d="%s"/>' % (e[0], j, e[3]) + ('<path class="%sc" data-i="%d" d="%s"/>' % (e[0], j, e[4]) if e[4] else "")
+                     for j, e in enumerate(EXTRA, NR))
+
 # ---------------------------------------------------------------- parte del medio y cola del atlas por circuito, con reemplazos
 def load_part(fn, patches):
     t = open(os.path.join(CIRC, fn), encoding="utf8").read()
@@ -193,7 +233,11 @@ MID = load_part("mid_amba.py", [
      '    ("par", "PART.", lambda a: 100 * a["E"] / a["elok"], "#4a4a4a", [40, 55, 62, 66, 70, 74, 78], "Participación estimada")):'),
     ('slug="diputados_amba_2025"', 'slug="diputados_amba_2025_radios" + SUF'),
     ('sets={"1": dict(label="2025", subtitle="Por circuito · provisorio")},', 'sets={"1": dict(label="2025", subtitle=("Por radio censal · estimado" if VAR == "idw" else "Por radio · estimado (población)"))},'),
-    ('territories=[dict(n=disp[i], p=PART[i], k="circuito") for i in range(len(UKEYS))],', 'territories=[dict(n=disp[i], p=PART[i], k="radio") for i in range(len(UKEYS))],'),
+    ('territories=[dict(n=disp[i], p=PART[i], k="circuito") for i in range(len(UKEYS))],',
+     'territories=[dict(n=disp[i], p=PART[i], k="radio") for i in range(NR)] + [dict(n=e[1], p=e[2], k="partido" if e[0] == "pp" else "circuito") for e in EXTRA],'),
+    ('    for i in range(len(UKEYS)):\n        r = unit_rec[i]; a = unit_an[i]', '    for i in range(NU):\n        r = unit_rec[i]; a = unit_an[i]'),
+    ('units=[unit_rec[i] for i in range(len(UKEYS))], prov=prov_rec', 'units=[unit_rec[i] for i in range(NU)], prov=prov_rec'),
+    ('PGEOM = {}\n', 'body.append(_SVG_EXTRA)\nPGEOM = {}\n'),
     ('json.dump(ds, open(os.path.join(HERE, "dataset_amba2025.json"), "w", encoding="utf8"), ensure_ascii=False)',
      'json.dump(ds, open(os.path.join(HERE, "dataset_amba2025radios%s.json" % SUF), "w", encoding="utf8"), ensure_ascii=False)'),
     # escala mas fina (pedido del usuario): por radio el ganador saca 41-58 % en el 90 % de los casos y la de 10 puntos dejaba dos tonos
@@ -225,5 +269,36 @@ TAIL = load_part("tail_amba.py", [
     ("--v-mk:inline;--sd:1.5px;", "--v-mk:inline;--sd:0.3px;"),
     ('out = os.path.join(HERE, "atlas_amba2025.html")', 'out = os.path.join(HERE, "atlas_amba2025radios%s.html" % SUF)'),
 ])
+# Selector de nivel (2-nov-2026, pedido del usuario): el mismo de la serie 2005-2023 (render.py), con sus explicaciones.
+NIVEL_PATCHES = [
+    ('.d{display:var(--v-d,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}',
+     '.d{display:var(--v-d,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}\n'
+     '.ck,.ckc,.pp,.ppc{stroke:#fff;stroke-linejoin:round;stroke-linecap:round;stroke-width:calc(var(--sd,2px) / var(--k,1))}\n'
+     '.ck{display:var(--v-ck,none)}.ckc{display:var(--v-ckc,none)}.pp{display:var(--v-pp,none)}.ppc{display:var(--v-ppc,none)}\n'
+     '#niv button.on{background:#70a6d7;color:#111;border-color:#70a6d7}'),
+    ('<span class="sp"></span>',
+     '<div class="grp" id="niv" role="group" aria-label="Nivel del mapa"><span>Nivel:</span>'
+     '<button data-n="p" title="Partidos y, en Capital, comunas: suma de los radios">Partido</button>'
+     '<button data-n="c" title="Circuitos electorales: votos observados del escrutinio provisorio">Circuito</button>'
+     '<button data-n="r" class="on" title="Radios censales: estimación">Radio</button></div><span class="sp"></span>'),
+    ('let st=I.show.map(c=>`--v-${c}:inline`).join(";");', 'let st=I.show.map(c=>`--v-${nivCls(c)}:inline`).join(";");'),
+    ('function selectUnit(i,zoom,pos){', 'function selectUnit(i,zoom,pos){if(T[i].k!==NIVK[NIVEL])setNivel(NIVOF[T[i].k]);'),
+    ('M.units.forEach((u,i)=>{const row=', 'M.units.forEach((u,i)=>{if(T[i].k!==NIVK[NIVEL])return;const row='),
+    ('drawTiles();drawTitle();renderCard();highlight();}',
+     'drawTiles();drawTitle();renderCard();highlight();}\n'
+     'const NIV={r:["d","dc"],c:["ck","ckc"],p:["pp","ppc"]},NIVK={r:"radio",c:"circuito",p:"partido"},NIVOF={radio:"r",circuito:"c",partido:"p"};\n'
+     'let NIVEL=((location.hash.match(/nv-([rcp])/)||[])[1])||"r";\n'
+     'function nivCls(c){return c==="d"?NIV[NIVEL][0]:c==="dc"?NIV[NIVEL][1]:c;}\n'
+     'function setNivel(n){NIVEL=n;const mw=$("#mainwrap");if(mw.dataset.o==null)mw.dataset.o=mw.getAttribute("style");\n'
+     '  mw.setAttribute("style",mw.dataset.o.replace(/--v-(dc|d):/g,(m,c)=>"--v-"+nivCls(c)+":"));drawInsets();\n'
+     '  document.querySelectorAll("#niv button").forEach(b=>b.classList.toggle("on",b.dataset.n===n));\n'
+     '  if(SEL&&SEL.type==="unit"&&T[SEL.i].k!==NIVK[n])clearSel();}'),
+    ('const tip=$("#tip");', 'document.querySelectorAll("#niv button").forEach(b=>b.addEventListener("click",()=>setNivel(b.dataset.n)));\nconst tip=$("#tip");'),
+    ('let DRAG=null,SEL=null;', 'let DRAG=null,SEL=null;\nsetNivel(NIVEL);'),
+]
+_marker = 'html = (tpl.replace('
+assert TAIL.count(_marker) == 1
+for old, new in NIVEL_PATCHES:
+    TAIL = TAIL.replace(_marker, 'sub(' + repr(old) + ',' + repr(new) + ')\n' + _marker)
 exec(MID)
 exec(TAIL)

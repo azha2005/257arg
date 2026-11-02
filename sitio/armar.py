@@ -96,6 +96,30 @@ b.addEventListener("click",function(){{r.dataset.theme=oscuro()?"light":"dark";t
     print("index.html,", n, "entradas")
 
 
+# Solo en la copia publicada (los HTML del repo no cambian): enlace al índice, la nota de fuentes plegada
+# y el modo claro u oscuro que eligió el visitante en el índice (localStorage «tema», el mismo origen).
+SITIO_CSS = ('<style>/*sitio*/#bar a.sitio-ind{color:var(--ctlfg);text-decoration:none;font-weight:600;padding:4px 6px}'
+             '#bar a.sitio-ind:hover{text-decoration:underline}'
+             '#barnote-d{flex-basis:100%;order:9;color:var(--mut);font-size:13px}'
+             '#barnote-d summary{cursor:pointer;width:max-content}#barnote-d #barnote{margin-top:4px}</style>\n')
+SITIO_JS = ('<script>/*sitio*/(function(){var b=document.body,bar=document.getElementById("bar"),n=document.getElementById("barnote");'
+            'if(bar){var a=document.createElement("a");a.className="sitio-ind";a.href="../../";a.textContent="Todos los atlas";'
+            'bar.insertBefore(a,bar.firstChild);}'
+            'if(n){var d=document.createElement("details");d.id="barnote-d";var s=document.createElement("summary");'
+            's.textContent="Fuentes y notas";d.appendChild(s);n.parentNode.insertBefore(d,n);d.appendChild(n);}'
+            'var t=null;try{t=localStorage.getItem("tema");}catch(e){}'
+            'var claro=t?t==="light":matchMedia("(prefers-color-scheme: light)").matches;'
+            'if(claro&&location.hash.indexOf("bare")<0){b.dataset.bg="white";var g=document.getElementById("b-bg");if(g)g.textContent="Fondo: blanco";}'
+            '})();</script>\n')
+
+
+def preparar(html):
+    if "/*sitio*/" in html or '<div id="bar">' not in html: return html
+    html = html.replace("</head>", SITIO_CSS + "</head>", 1)
+    i = html.rindex("</body>") if "</body>" in html else len(html)
+    return html[:i] + SITIO_JS + html[i:]
+
+
 def copiar(dest):
     rutas = [e[0] for e in entradas()]
     for pat in EXTRA: rutas += [os.path.relpath(f, ROOT).replace(os.sep, "/") for f in glob.glob(os.path.join(ROOT, pat))]
@@ -106,7 +130,8 @@ def copiar(dest):
     tot = 0
     for r in sorted(set(rutas)):
         d = os.path.join(dest, r); os.makedirs(os.path.dirname(d), exist_ok=True)
-        shutil.copy(os.path.join(ROOT, r), d); tot += os.path.getsize(d)
+        s = open(os.path.join(ROOT, r), encoding="utf8").read()
+        open(d, "w", encoding="utf8", newline="").write(preparar(s)); tot += os.path.getsize(d)
     print(len(set(rutas)), "HTML,", round(tot / 2**20), "MB")
 
 

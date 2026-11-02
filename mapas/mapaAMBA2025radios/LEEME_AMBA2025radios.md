@@ -62,3 +62,8 @@ Los 167 locales sin punto válido (clubes, facultades, sociedades de fomento, el
 
 ## Para Twitter
 `python exportar_tw.py` renderiza el mismo póster (modo «Ganó») a 4021×3453 px (Twitter acepta hasta 4096 por lado) y los otros cuatro modos para la respuesta, en `tw/`. Se guardan como PNG de paleta de 256 colores (1,5 a 1,7 MB): por encima de 5 MB Twitter los pasa a JPEG y se manchan los bordes finos. En la exportación el borde de los radios baja a 0,18 px. Se probó un acercamiento al conurbano y otro encuadre: el usuario prefirió el diseño del póster.
+
+
+## Selector de nivel (2-nov-2026)
+
+«Nivel: Partido / Circuito / Radio», como en la serie 2005–2023. Partido (y comuna en Capital) es la suma exacta de los radios, que coincide con el escrutinio provisorio. Circuito toma las fichas del atlas por circuito (`../mapaAMBA2025/dataset_amba2025.json` y sus trazos): son votos observados, no estimados. `#nv-p` o `#nv-c` en la URL abren en ese nivel.
