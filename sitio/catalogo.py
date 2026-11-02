@@ -5,6 +5,9 @@ Lo que no está acá no se publica (wiki.html, hemiciclos, mapa2007circuitos, qu
 """
 
 GRUPOS = [
+    ("1904", "Circunscripciones uninominales, 1904", "Las 120 circunscripciones de la ley 4161; votos publicados por candidato y afiliación partidaria.", [
+        ("mapas/mapa1904/atlas_1904.html", "1904", "Diputados nacionales", "59 de 60 circunscripciones con votos"),
+    ]),
     ("1912-1930", "Ley Sáenz Peña, 1912 a 1930", "Por departamento, con Cantón, actas del Congreso y prensa de época.", [
         ("mapas/mapa1912/atlas_1912_diputados.html", "1912", "Diputados nacionales", "Cobertura parcial"),
         ("mapas/mapa1914/atlas_1914_diputados.html", "1914", "Diputados nacionales", "Cobertura parcial"),

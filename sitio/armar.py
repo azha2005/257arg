@@ -71,11 +71,11 @@ def indice():
     out = f"""<!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atlas electorales argentinos</title>
-<meta name="description" content="{n} atlas electorales de la Argentina por departamento, circuito y radio censal, de 1912 a 2025, al estilo de los mapas de la Wikipedia.">
+<meta name="description" content="{n} atlas electorales de la Argentina por circunscripción, departamento, circuito y radio censal, de 1904 a 2025, al estilo de los mapas de la Wikipedia.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://azha2005.github.io/257arg/">
-<meta property="og:title" content="Atlas electorales de la Argentina, 1912–2025">
-<meta property="og:description" content="{n} atlas: elecciones por departamento de 1912 a 2025, PASO incluidas, y el AMBA radio por radio.">
+<meta property="og:title" content="Atlas electorales de la Argentina, 1904–2025">
+<meta property="og:description" content="{n} atlas: elecciones por departamento de 1904 a 2025, PASO incluidas, y el AMBA radio por radio.">
 <meta property="og:image" content="https://azha2005.github.io/257arg/vista_previa.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Cuatro atlas electorales: 1928, 1946, PASO 2023 y AMBA 2025 por radio censal">
@@ -92,7 +92,7 @@ def indice():
 <button type="button" class="tema" id="tema" aria-label="Cambiar entre modo claro y oscuro">Modo oscuro</button></div></header>
 <main>
 <section class="hero container"><h1>Cómo votó la Argentina, departamento por departamento</h1>
-<p class="lead">{n} atlas interactivos de 1912 a 2025, al estilo Wikipedia.</p>
+<p class="lead">{n} atlas interactivos de 1904 a 2025, al estilo Wikipedia.</p>
 <p class="acc"><a class="btn" href="#1912-1930">Ver los atlas</a></p></section>
 <div class="container">{"".join(secs)}</div>
 </main>

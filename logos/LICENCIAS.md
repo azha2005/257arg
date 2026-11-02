@@ -1,5 +1,7 @@
 Emblemas tomados de Wikimedia Commons (los que usa la Wikipedia en español en los artículos de cada elección o partido).
 
+**1904, pedido del usuario (2-nov-2026)**: reutiliza las imágenes de `mapas/mapa1916fic/dataset_1916fic.json` (1916alt): escarapela PAN redibujada del cartel del usuario, bandera circular UCR del mismo cartel y `Emblema_del_Partido_Socialista_Argentino.svg`. Los dos primeros son recreaciones ya usadas en ese atlas; diseño específico de 1904 no verificado. No se traslada el logo PDP, posterior a 1904. Posición centrada con zoom, sin línea blanca bajo los emblemas. La cartografía de Faustino Sojo es CC BY-SA 4.0 y se acredita por separado en el LEEME de 1904.
+
 Logo adicional `Luder_Presidente_usuario.png`: imagen «Luder Presidente» aportada por el usuario el 1-nov-2026 para `mapa1983hipotetico`; se conserva sin modificar. Autoría, fecha del archivo y licencia no acreditadas. Uso local solicitado, sin publicación en Commons.
 
 `Luder_Presidente_transparente.png`: derivado del original anterior solo mediante código (`mapas/mapa1983hipotetico/preparar_logo_luder.py`); fondo negro eliminado por alfa y letras blancas a pedido del usuario, con los colores originales de la banda y el sol conservados. Mismas reservas de autoría y licencia. No usa la imagen generada por IA.
