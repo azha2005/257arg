@@ -203,6 +203,7 @@ for p in prov:
         winner= votes.most_common(1)[0][0]
         prov[p]=dict(w=winner,q=100*votes[winner]/s,lines=[[c,v,100*v/s]for c,v in votes.most_common()],note='Agregado provincial de votos publicados por afiliación; el mapa y las fichas individuales mantienen las circunscripciones uninominales. En Catamarca no hay cifras publicadas.')
 NATIONAL_NOTE+=' Las circunscripciones del SVG se adaptan geométricamente a los contornos del SHP 1914 y la proyección habitual del proyecto; los límites internos son una aproximación cartográfica, sin transformar los resultados a municipios ni departamentos.'
+NATIONAL_NOTE+=' Agradecemos a Faustino Sojo, usuario de Wikipedia, por la elaboración de los SVG y la recopilación de los datos de esta elección.'
 NATIONAL_NOTE+=' SVG original: Faustino Sojo (2022), CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Mapa_de_las_elecciones_legislativas_de_Argentina_de_1904_por_circunscripci%C3%B3n.svg . SHP histórico: Rodríguez/CONICET, CC BY 2.5 Argentina. Cartografía adaptada: CC BY-SA 4.0.'
 modes=[dict(id='gan',tile='GANÓ',set='1',units=records,prov=prov,national=national,note=NATIONAL_NOTE)]
 for code in ('PAN','PR','PS'):
