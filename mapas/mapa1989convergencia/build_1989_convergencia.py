@@ -52,6 +52,8 @@ for c in sorted(extra_winners):
     CODE2BLOC[c] = b
     BLOCS.append(b)
     CAND[b] = dict(n=LABEL[c],sub='',base=COLOR[c],logo={'fr':'FR','ablo':'BLO'}.get(c,c.upper()))
+    # mismo emblema que en los atlas de 1987–1994 (2-nov-2026, pedido del usuario: reusar logos ya usados)
+    if c in ('fr','ablo'): CAND[b].update(_logo_raster({'fr':'Logo_Fuerza_Republicana.png','ablo':'Estrella_bloquista.png'}[c]))
 for c,v in requested.items(): assert round(100*scenario_totals[c]/rows.sum(),2)==round(v*100,2)
 assert np.all(rounded.sum(axis=1)==rows)
 audit = dict(method='IPF sobre perfiles presidenciales históricos, con redondeo por mayores restos local',

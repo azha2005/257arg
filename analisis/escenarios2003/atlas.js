@@ -8,7 +8,7 @@ const AtlasScenario2003=(()=>{
  let stage=1,focus=1,pair='auto',ds,current;
  const codes=D.candidates.map(c=>c.id),C=Object.fromEntries(D.candidates.map((c,i)=>[c.id,{n:c.short+(i>=5?'*':''),sub:c.id==='M'?'Lealtad':c.id==='K'?'Frente para la Victoria':c.id==='L'?'Recrear':c.id==='R'?'Movimiento Popular':c.id==='C'?'ARI':'Perfil agregado',base:c.color,logo:({M:'PJ',K:'FPV',L:'REC',R:'MNP',C:'ARI',MOREAU:'UCR'})[c.id]||c.short.slice(0,3).toUpperCase()}]));
  C.BN={n:'Blanco y nulo',base:'#888888',logo:'B/N'};C.NV={n:'No votó',base:'#a5a5a5',logo:'NV'};C.OUT={n:'Fuera del voto positivo',base:'#888888',logo:'—'};
- if(ATLAS_INPUT.logos)for(const [k,img]of Object.entries(ATLAS_INPUT.logos)){C[k].img=img;C[k].logo_mode='original';}
+ if(ATLAS_INPUT.logos)for(const [k,lg]of Object.entries(ATLAS_INPUT.logos)){if(!C[k])continue;if(typeof lg==='string')C[k].img=lg;else Object.assign(C[k],lg);C[k].logo_mode='original';}
  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function calc(geo=0,precomputed=null,finalists=null){
   const r1=E.first(D,{...opts,geo}),nat=geo===0?r1:finalists?null:E.first(D,opts);
