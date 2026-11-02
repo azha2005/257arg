@@ -45,3 +45,27 @@ Un arrastre de 60 movimientos escribe una transformación y no modifica los
 grosores. Estas cifras describen trabajo evitado, no garantizan una tasa de
 fotogramas en dispositivos físicos. La geometría detallada sigue teniendo un
 costo de dibujo, especialmente en los mapas por radio.
+
+## Segunda revisión para celular
+
+Los recuadros instancian su geometría solo en las vistas Recuadros/Póster o
+al exportar. Al volver a Mapa/Resultados se libera esa referencia; las descargas
+incluyen los recuadros completos. El buscador ofrece hasta 60 coincidencias
+cuando se usa, sin crear miles de opciones al iniciar; busca en toda la base.
+
+Durante un gesto se difiere el ajuste de grosores hasta 160 ms de reposo y,
+en mapas con más de 5.000 trazos en celular, se ocultan temporalmente los
+bordes finos. Al soltar se recupera el detalle; la exportación lo recupera
+sincrónicamente. Las coordenadas del gesto reutilizan la matriz inicial.
+
+La ficha mantiene su contenido y estilo: su altura máxima baja del 52 % al
+32 % de la ventana (o el 42 % del espacio disponible bajo la barra, si es
+menor), con desplazamiento interno. Un movimiento del dedo superior a 8 px
+no selecciona accidentalmente; al arrastrar se cierra la ficha. El botón de
+cierre mantiene su aspecto con un área táctil de al menos 44 × 44 px.
+
+Validación adicional: búsqueda de la última unidad de la base, carga y descarga
+de los recuadros al cambiar de vista, exportación completa desde celular,
+distinción toque/desplazamiento y límite de altura de la ficha. La emulación
+de CPU lenta permite comparar versiones, pero no sustituye una prueba en
+teléfonos físicos.

@@ -46,3 +46,23 @@ svg.addEventListener("mousemove",ev=>{
 });
 svg.addEventListener("mouseleave",hideTip);
 svg.addEventListener("pointerdown",hideTip);
+// Un desplazamiento del dedo no es un toque, incluso cuando el navegador
+// intercepta el movimiento para desplazar la página sin zoom.
+let touchTap=null;
+svg.addEventListener("pointerdown",ev=>{
+  if(ev.pointerType==="touch")touchTap={id:ev.pointerId,x:ev.clientX,y:ev.clientY,moved:false};
+});
+window.addEventListener("pointermove",ev=>{
+  if(!touchTap||ev.pointerId!==touchTap.id||touchTap.moved)return;
+  if(Math.hypot(ev.clientX-touchTap.x,ev.clientY-touchTap.y)>8){
+    touchTap.moved=true;
+    if(document.body.classList.contains("movil")&&SEL)clearSel();
+  }
+},true);
+window.addEventListener("pointerup",ev=>{
+  if(touchTap&&ev.pointerId===touchTap.id){
+    if(touchTap.moved&&DRAG){DRAG.moved=true;}
+    touchTap=null;
+  }
+},true);
+window.addEventListener("pointercancel",()=>{touchTap=null;},true);
