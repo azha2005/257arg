@@ -3,7 +3,7 @@
 python mapas/serieAMBA2005_2023radios/construir.py
 python mapas/serieAMBA2005_2023radios/construir.py 2023pres --sin-preparar
 """
-import argparse,subprocess,sys
+import argparse,subprocess,sys,time
 from pathlib import Path
 from serie import KEYS,HERE
 
@@ -14,7 +14,12 @@ p.add_argument('--sin-png',action='store_true',help='Omitir las capturas de nave
 args=p.parse_args()
 if any(k not in KEYS for k in args.elecciones):p.error('Elección desconocida')
 keys=args.elecciones or KEYS
-def run(file,*values):subprocess.run([sys.executable,str(HERE/file),*values],check=True)
+def run(file,*values):
+    # Windows a veces bloquea un momento los HTML grandes recién escritos (Errno 22): se reintenta.
+    for intento in range(3):
+        if subprocess.run([sys.executable,str(HERE/file),*values]).returncode==0:return
+        time.sleep(20)
+    raise SystemExit(f'falló {file} {" ".join(values)}')
 if not args.sin_preparar:run('serie.py',*keys)
 for key in keys:run('render.py',key)
 if '2023pasocand' in keys:run('internas2023.py')

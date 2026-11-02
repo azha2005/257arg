@@ -13,6 +13,9 @@ KEY='2023pasointernas'
 source=json.loads((HERE/'dataset_2023pasocand.json').read_text(encoding='utf8'))
 allocation=pd.read_pickle(HERE/'asignacion_2023pasocand.pkl')
 A=allocation['A'];ci={c:i for i,c in enumerate(allocation['CATS'])}
+NR=len(A)
+# Unidades del selector de nivel (partidos y circuitos), guardadas por render.py después de los radios.
+_niv=pd.read_pickle(HERE/'niveles_2023pasocand.pkl');A=np.vstack([A,_niv['V']])
 members=defaultdict(list)
 for c,value in source['candidates'].items():
     if c in ci and value.get('agr'):members[value['agr']].append(c)
@@ -25,7 +28,8 @@ short={g:forces[g].get('logo',g) for g in order}
 candidates={c:copy.deepcopy(source['candidates'][c]) for cs in members.values() for c in cs}
 territories=source['territories'];n=len(territories)
 part_rows=defaultdict(list)
-for i,t in enumerate(territories):part_rows[t['p']].append(i)
+for i,t in enumerate(territories[:NR]):part_rows[t['p']].append(i)
+assert len(territories)==len(A),(len(territories),len(A))
 BEIGE='#e6dcc3';GREY='#8c8c8c'
 modes=[];sets={};checks=[]
 edges=[0,20,35,50,65,80,95]
@@ -65,7 +69,7 @@ for g in order:
     sets[g]=dict(label=names[g],subtitle='Interna '+short[g]+' · estimada')
     prov={}
     for p,idx in part_rows.items():prov[p]=records(values[idx].sum(axis=0,keepdims=True),cs)[0][0]
-    regional=values.sum(axis=0);den=float(regional.sum())
+    regional=values[:NR].sum(axis=0);den=float(regional.sum())
     national=dict(cands=[dict(code=c,votes=float(regional[j]),pct=round(float(regional[j]/den*100),2)) for j,c in enumerate(cs)],
                   slices=[dict(code=c,v=float(regional[j])) for j,c in enumerate(cs)],partp=None,metrics=[])
     note=(names[g]+': porcentajes sobre la suma de votos de sus '+str(len(cs))+' precandidatos. '
@@ -89,8 +93,8 @@ for g in order:
                           card_base=gan,units=units,prov=pv,national=national,note=note,
                           legend=dict(title='% '+candidates[c]['n']+' en la interna',stops=[[col,('%g%%'%e if i<6 else '+%g%%'%e)] for i,(col,e) in enumerate(zip(cols,edges))],bars=False,keys=keys)))
     checks.append(dict(grupo=g,nombre=names[g],candidatos=cs,positivos_interna=den,
-                       error_max_suma_porcentajes=error,radios_sin_votos=int((~active).sum()),
-                       ganadores=dict(Counter(r.get('w') for r in rec if r.get('w')))))
+                       error_max_suma_porcentajes=error,radios_sin_votos=int((~active[:NR]).sum()),
+                       ganadores=dict(Counter(r.get('w') for r in rec[:NR] if r.get('w')))))
 
 data=dict(slug=KEY,locale='es-AR',country='Argentina',title='PASO presidenciales en el AMBA de',year='2023',
           labels=dict(pie1='Porcentajes dentro de la interna',pie2='',provinces=''),exterior=False,
@@ -135,11 +139,11 @@ sub('const MANY=N.cands.length>5,Y0=MODE==="gan"?1200:1266;', 'const MANY=N.cand
 start=text.index('$("#b-csv").addEventListener("click",()=>{');end=text.index('\n});',start)+4
 text=text[:start]+'''$("#b-csv").addEventListener("click",()=>{
   const M=MODES[MODE],codes=M.national.cands.map(c=>c.code),q=v=>'"'+String(v).replace(/"/g,'""')+'"';
-  const rows=[["partido","radio",...codes.map(c=>CAND[c].n+" (%)")].map(q).join(",")];
-  M.units.forEach((u,i)=>rows.push([T[i].p,T[i].n,...codes.map(c=>{const l=(u.lines||[]).find(x=>x[0]===c);return l?l[2]:"";})].map(q).join(",")));
+  const rows=[["partido",NIVK[NIVEL],...codes.map(c=>CAND[c].n+" (%)")].map(q).join(",")];
+  M.units.forEach((u,i)=>T[i].k===NIVK[NIVEL]&&rows.push([T[i].p,T[i].n,...codes.map(c=>{const l=(u.lines||[]).find(x=>x[0]===c);return l?l[2]:"";})].map(q).join(",")));
   save(new Blob(["\\ufeff"+rows.join("\\n")],{type:"text/csv;charset=utf-8"}),"interna_"+M.set+".csv");
 });'''+text[end:]
-(HERE/f'atlas_{KEY}.html').write_text(text,encoding='utf8')
+(HERE/f'atlas_{KEY}.html').write_text(text,encoding='utf8'); __import__("sys").path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2] / "comun")); __import__("logos_al_ras").aplicar(str(HERE/f'atlas_{KEY}.html'))   # logos al ras (2-nov-2026)
 dump(HERE/'CONTROL_INTERNAS2023.json',dict(radios=n,internas=checks,modos=len(modes),
      denominador='Suma de los votos estimados de los candidatos de la interna seleccionada',
      color_HRL=candidates['C132_A']['base'],fuente_asignacion='asignacion_2023pasocand.pkl'))

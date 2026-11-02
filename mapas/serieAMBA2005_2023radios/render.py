@@ -6,7 +6,7 @@ import numpy as np, shapely
 from shapely.ops import unary_union
 from shapely.geometry import Polygon, MultiPolygon, shape
 
-from serie import KEYS, radios
+from serie import KEYS, radios, norm
 KEY = sys.argv[1]
 assert KEY in KEYS
 VAR = 'idw'
@@ -180,6 +180,117 @@ for i, k in enumerate(UKEYS):
         unit_rec[i].pop('w',None);unit_rec[i].pop('q',None)
         unit_rec[i].update(fill=BEIGE,note='Excluido por pedido del usuario: NE resulta primero en esta estimación. NE se distribuye con la misma proporción municipal de positivos; no se conocen sus votos por circuito o radio.')
     a["ok"] = 1 if a["pos"] >= 0.5 and not excluded_NE else 0
+# ---------------------------------------------------------------- niveles «Partido» y «Circuito» (selector de nivel)
+# Las unidades extra van después de los radios (mismo índice data-i en el SVG y en los modos): partidos y comunas
+# o circunscripciones de Capital como suma exacta de sus radios; circuitos con los votos observados de la fuente.
+NR = len(UKEYS)
+EXTRA_V = []   # votos (columnas de A) de cada unidad extra: los usa internas2023.py
+EXTRA = []   # (kind, nombre, geometría proyectada, es_capital)
+_units = list(rp.unit)
+UNIT_IDX = collections.defaultdict(list)
+for i, u in enumerate(_units): UNIT_IDX[tuple(u)].append(i)
+UNIT_GEOM = {u: unary_union([G_raw[i] for i in ix]) for u, ix in UNIT_IDX.items()}
+for u in sorted(UNIT_IDX, key=lambda u: (u[0], PART[UNIT_IDX[u][0]] if u[0] == '02' else CIRCUNS.get(u[1], u[1]))):
+    ix = np.array(UNIT_IDX[u])
+    capital = u[0] == '01'
+    name = ('Comuna %d' % int(u[1]) if YEAR >= 2009 else CIRCUNS.get(u[1], u[1])) if capital else rp.partido[ix[0]]
+    a = agg_rows(ix)
+    rec = rec_from(a, float(POBR[ix].sum()), 'Suma de las estimaciones por radio: coincide con el total de la fuente.')
+    if AS['ctrl'].get('NE_estimado_municipal') and a['P'] and max(a['P'], key=a['P'].get) == 'NE':
+        rec.pop('w', None); rec.pop('q', None)
+        rec.update(fill=BEIGE, note='Excluido por pedido del usuario: NE resulta primero; NE solo tiene total municipal.')
+        a['ok'] = 0
+    else: a['ok'] = 1 if a['pos'] >= 0.5 else 0
+    j = NR + len(EXTRA)
+    unit_an[j] = a; unit_rec[j] = rec; disp[j] = name
+    g = fill_slivers(UNIT_GEOM[u].buffer(0.7, join_style=2).buffer(-0.7, join_style=2))
+    EXTRA.append(('partido', name, g, capital, PART[ix[0]])); EXTRA_V.append(A[ix].sum(0))
+_cf = os.path.join(HERE, 'circuitos_%s.pkl' % KEY)
+CAPA_CIRC = pickle.load(open(_cf, 'rb')) if os.path.exists(_cf) else None
+if CAPA_CIRC is not None:
+    _cats = list(AS['CATS']); CIRC_PEND = []
+    for k, wkb in sorted(CAPA_CIRC['geom'].items()):
+        u = tuple(CAPA_CIRC['unit'][k])
+        if u not in UNIT_GEOM: continue
+        v = CAPA_CIRC['V'].loc[k].reindex(_cats, fill_value=0).to_numpy(float)
+        a = agg_vector(v)
+        capital = k[0] == '01'
+        sec = CAPA_CIRC['seccion'].get(k, k[1])
+        name = 'Circuito %s · %s' % (k[2], ('Comuna %d' % int(u[1]) if YEAR >= 2009 else CIRCUNS.get(u[1], sec)) if capital else sec)
+        if YEAR == 2009 and AS['ctrl'].get('NE_estimado_municipal') and not capital:
+            rec = dict(lines=[], metrics=[], fill=BEIGE, note='NE no tiene votos por circuito en 2009 (solo totales municipales): '
+                       'sin el resultado completo, el circuito no se colorea. Ver el nivel Partido.')
+            a['ok'] = 0
+        else:
+            rec = rec_from(a, None, 'Resultado observado del circuito (%s); no es una estimación.' % AS['ctrl'].get('source_kind', 'fuente'))
+            a['ok'] = 1 if a['pos'] >= 0.5 else 0
+        g = proj_geom(shapely.from_wkb(wkb))
+        try: g = g.intersection(UNIT_GEOM[u])
+        except Exception: g = shapely.make_valid(g).intersection(UNIT_GEOM[u])
+        if g.is_empty: continue
+        CIRC_PEND.append((u, a, rec, name, g, capital, v))
+    # La cartografía de circuitos no cubre todo el recorte (islas del Delta, rurales). Las rendijas chicas
+    # (<1 % del partido) se suman al circuito vecino más cercano; el resto queda beige y rotulado: no se
+    # adjudica territorio a un circuito sin saber a cuál pertenece.
+    _sin_pol = collections.Counter(('01', k[1]) if k[0] == '01' else ('02', norm(CAPA_CIRC['seccion'].get(tuple(k), ''))) for k in CAPA_CIRC['missing'])
+    for u in sorted({c[0] for c in CIRC_PEND}):
+        mine = [c for c in CIRC_PEND if c[0] == u]
+        gap = UNIT_GEOM[u].difference(unary_union([c[4] for c in mine]))
+        resto = []
+        for piece in getattr(gap, 'geoms', [gap]):
+            if piece.is_empty or piece.area <= 0: continue
+            if piece.area < 0.01 * UNIT_GEOM[u].area:
+                n = min(range(len(mine)), key=lambda t: mine[t][4].distance(piece))
+                mine[n] = mine[n][:4] + (mine[n][4].union(piece),) + mine[n][5:]
+            else: resto.append(piece)
+        for (u_, a, rec, name, g, capital, v) in mine:
+            j = NR + len(EXTRA)
+            unit_an[j] = a; unit_rec[j] = rec; disp[j] = name
+            EXTRA.append(('circuito', name, g, capital, PART[UNIT_IDX[u][0]])); EXTRA_V.append(v)
+        if resto:
+            j = NR + len(EXTRA)
+            sec = ('Comuna %d' % int(u[1]) if YEAR >= 2009 else CIRCUNS.get(u[1], u[1])) if u[0] == '01' else rp.partido[UNIT_IDX[u][0]]
+            unit_an[j] = dict(agg_vector(np.zeros(len(AS['CATS']))), ok=0)
+            unit_rec[j] = dict(lines=[], metrics=[], fill=BEIGE, note=(
+                'Sin polígono de circuito en la cartografía' + (' (la fuente trae %d circuito(s) de este partido sin polígono)' % _sin_pol[u] if _sin_pol[u] else '') +
+                ': el área no se adjudica a ningún circuito. Ver el nivel Radio.'))
+            disp[j] = 'Área sin circuito · ' + sec
+            EXTRA.append(('circuito', disp[j], unary_union(resto), u[0] == '01', PART[UNIT_IDX[u][0]])); EXTRA_V.append(np.zeros(A.shape[1]))
+NU = NR + len(EXTRA)
+pickle.dump(dict(V=np.array(EXTRA_V, float).reshape(len(EXTRA_V), A.shape[1]), kind=[e[0] for e in EXTRA]),
+            open(os.path.join(HERE, 'niveles_%s.pkl' % KEY), 'wb'))
+
+# circuitos del recorte que la fuente trae en cero (p. ej. el Delta de San Fernando y dos rurales de Cañuelas en el
+# provisorio del balotaje 2023): sus radios quedan beige y la ficha y la clave dicen por qué, sin imputar votos.
+# Solo cuentan los circuitos con votos en otra elección del mismo año: los que no votan nunca (La Plata 493) no
+# explican nada y sus radios conservan la nota genérica.
+SIN_MESAS = collections.defaultdict(list); NOMBRE_SEC = {}
+def _circ_votos(rel):
+    f = os.path.join(HERE, "..", "..", rel)
+    if not (rel.endswith('.pkl') and os.path.exists(f)): return None
+    d = pickle.load(open(f, 'rb'))[0]
+    d = d.assign(sk=d.distrito_id + '_' + d.seccion_id.astype(str).str.zfill(3))
+    return d.groupby(['sk', 'circuito']).v.sum()
+_aqui = _circ_votos(AS['ctrl'].get('source', ''))
+if _aqui is not None:
+    _otras = set()
+    for _k in KEYS:
+        _cf = os.path.join(HERE, 'control_%s.json' % _k)
+        if _k != KEY and _k[:4] == KEY[:4] and os.path.exists(_cf):
+            _s = json.load(open(_cf, encoding='utf-8')).get('source', '')
+            if _s and _s != AS['ctrl'].get('source'):
+                _v = _circ_votos(_s)
+                if _v is not None: _otras |= set(_v[_v > 0].index)
+    _sec = AS['ctrl'].get('sections', {})
+    for (sk, circ), v in _aqui.items():
+        if v == 0 and sk.startswith('02') and sk in _sec and (sk, circ) in _otras: SIN_MESAS[norm(_sec[sk])].append(circ); NOMBRE_SEC[norm(_sec[sk])] = _sec[sk]
+for i, r in unit_rec.items():
+    if i >= NR: continue
+    p = rp.unit[i][1]
+    if r.get('fill') == BEIGE and not r.get('w') and SIN_MESAS.get(p):
+        r['note'] = ('Sin votos asignados: la fuente (%s) no trae votos %s %s de %s; no se imputan.'
+                     % (AS['ctrl'].get('source_kind', 'fuente'), 'de los circuitos' if len(SIN_MESAS[p]) > 1 else 'del circuito',
+                        ', '.join(sorted(SIN_MESAS[p])), NOMBRE_SEC[p]))
 TOT = agg_vector(AS['total_vector']) if 'total_vector' in AS else agg_rows(np.arange(len(UKEYS)))
 PARTIDOS = sorted(set(PART))
 part_an = {p: agg_rows(np.array([i for i in range(len(UKEYS)) if PART[i] == p])) for p in PARTIDOS}
@@ -188,8 +299,8 @@ for p in PARTIDOS:
     pk='Ciudad de Buenos Aires' if p=='Ciudad de Buenos Aires' else norm(p)
     if pk in AS.get('part_totals',{}):part_an[p]=agg_vector(AS['part_totals'][pk])
 prov_rec = {p: rec_from(a, None, "Suma de estimaciones; totales conservados de la fuente en las unidades cubiertas.", unit=False) for p, a in part_an.items()}
-WIN = collections.Counter(r.get("w") for r in unit_rec.values() if r.get("w"))
-print(VAR, "radios:", len(UKEYS), "ganadores:", dict(WIN), "beige:", sum(1 for r in unit_rec.values() if r.get("fill") == BEIGE),
+WIN = collections.Counter(unit_rec[i].get("w") for i in range(NR) if unit_rec[i].get("w"))
+print(VAR, "radios:", len(UKEYS), "ganadores:", dict(WIN), "beige:", sum(1 for i in range(NR) if unit_rec[i].get("fill") == BEIGE), "partidos y circuitos:", collections.Counter(e[0] for e in EXTRA),
       "AMBA positivos", round(TOT["pos"]), {b: round(100 * TOT["bloc"][b] / TOT["pos"], 2) for b in sorted(BLOCS,key=lambda b:-TOT['bloc'][b])[:6]}, file=sys.stderr)
 LEG = [b for b in BLOCS if WIN.get(b)]   # regla 3: solo los que ganan algún radio
 
@@ -211,8 +322,20 @@ def fr2013_ramp(n):
     return [_rgb(light + (dark - light) * t) for t in np.linspace(0, 1, n)]
 
 
+import colorsys
+def _warm(h):
+    H, L, S = colorsys.rgb_to_hls(*[c / 255 for c in _hx(h)]); return 38 < H * 360 < 68 and S > .5
+def _amber(h, k):
+    # Como leyenda_clara.js de los atlas legislativos: los amarillos se oscurecen hacia el ámbar, no hacia el oliva.
+    H, L, S = colorsys.rgb_to_hls(*[c / 255 for c in _hx(h)])
+    return _rgb([v * 255 for v in colorsys.hls_to_rgb(((H * 360 - (1 - k) * 24) % 360) / 360, L * (.3 + .7 * k), S)])
 for b in BLOCS:
-    CAND[b]["ramp"] = [_mixw(COLOR[b], .15), COLOR[b]] + [_mulc(COLOR[b], k) for k in (.9, .8, .7, .62, .55)]
+    dark = _amber if _warm(COLOR[b]) else _mulc
+    CAND[b]["ramp"] = [_mixw(COLOR[b], .15), COLOR[b]] + [dark(COLOR[b], k) for k in (.9, .8, .7, .62, .55)]
+    # Barra con el color del partido, como las legislativas 2003-2025 (pedido del usuario: Cambiemos amarillo, no oliva).
+    CAND[b].pop("bar", None)
+    if _warm(COLOR[b]): CAND[b]["txt"] = _amber(COLOR[b], .55)
+    if CAND[b].get("n") == "Unidos por una Nueva Alternativa": CAND[b]["n"] = "UNA"   # pedido del usuario
 if KEY == '2013dip':
     CAND['FR']['ramp'] = fr2013_ramp(7)
 CAND["OTR"] = dict(n="Otros", sub="Resto de las candidaturas", base="#b3b3b3", bar="#a6a6a6", txt="#8f8f8f", logo="···")
@@ -271,8 +394,10 @@ json.dump(LOGOS_CORREGIDOS, open(os.path.join(HERE, 'logos_ajustados_'+KEY+'.jso
 pos = round(TOT["pos"])
 cands = sorted([{"code": b, "votes": int(round(TOT["bloc"][b])), "pct": round(100 * TOT["bloc"][b] / pos, 2)} for b in LEG], key=lambda c: -c["votes"])
 otros = pos - sum(c["votes"] for c in cands)
-cands.append({"code": "OTR", "votes": int(otros), "pct": round(100 * otros / pos, 2)})
-slices = [{"code": c["code"], "v": c["votes"]} for c in cands[:-1]] + [{"fill": "#717274", "v": int(otros)}]
+slices = [{"code": c["code"], "v": c["votes"]} for c in cands]
+if 100 * otros / pos >= 0.005:   # en los balotajes no queda resto (a lo sumo el redondeo): sin fila «Otros 0,00 %»
+    cands.append({"code": "OTR", "votes": int(otros), "pct": round(100 * otros / pos, 2)})
+    slices.append({"fill": "#717274", "v": int(otros)})
 partp = round(100 * TOT["E"] / TOT["elok"], 2)
 NAT_MET = [["Electores (mesas con votos)", fmt_n(TOT["elok"])], ["Votantes", fmt_n(TOT["E"])], ["Participación", fmt_p(partp) + " %"],
            ["Votos positivos", fmt_n(pos)], ["Votos en blanco", fmt_n(TOT["bla"])], ["Votos nulos", fmt_n(TOT["nul"])],
@@ -344,7 +469,7 @@ def mode_choropleth(fn, base, edges, title, palette=None):
         assert len(palette) == len(edges)
         cols = palette
     units = []
-    for i in range(len(UKEYS)):
+    for i in range(NU):
         r = unit_rec[i]; a = unit_an[i]
         nr = {k: v for k, v in r.items() if k in ("fill",)}
         nr["fill"] = BEIGE if not a["ok"] or not a["pos"] else cols[bin_of(fn(a), edges)]
@@ -360,14 +485,14 @@ def mode_choropleth(fn, base, edges, title, palette=None):
 
 pct = lambda b: (lambda a: 100 * a["bloc"][b] / a["pos"])
 NATL = dict(cands=cands, slices=slices, partp=partp, metrics=NAT_MET)
-MODES = [dict(id="gan", tile="GANÓ", note=NOTE, units=[unit_rec[i] for i in range(len(UKEYS))], prov=prov_rec, national=NATL,
-              legend=dict(keys=[[BEIGE, "NE estimado excluido / sin asignación" if C.get('NE_estimado_municipal') else "Radio sin votos asignados"]] if any(r.get("fill") == BEIGE for r in unit_rec.values()) else []))]
+MODES = [dict(id="gan", tile="GANÓ", note=NOTE, units=[unit_rec[i] for i in range(NU)], prov=prov_rec, national=NATL,
+              legend=dict(keys=[[BEIGE, "NE estimado excluido / sin asignación" if C.get('NE_estimado_municipal') else ("Sin votos: circuito en cero en la fuente" if any(r.get("fill") == BEIGE and 'no se imputan' in r.get('note', '') for r in unit_rec.values()) else "Radio sin votos asignados") + (" o área sin circuito" if any(str(d).startswith('Área sin circuito') for d in disp.values()) else "")]] if any(r.get("fill") == BEIGE for r in unit_rec.values()) else []))]
 # Cortes adaptados a los percentiles por radio, como en 2003 y 2025.
 RANKED = sorted(BLOCS,key=lambda b:-TOT['bloc'][b])
 if C.get('NE_estimado_municipal'):RANKED=[b for b in RANKED if b!='NE']
 for b in (RANKED if PASCAND else RANKED[:4]):
     mid=b.lower(); tile=CAND[b].get('logo',b)[:6]
-    values=np.array([100*a['bloc'][b]/a['pos'] for a in unit_an.values() if a['pos']>=.5])
+    values=np.array([100*unit_an[i]['bloc'][b]/unit_an[i]['pos'] for i in range(NR) if unit_an[i]['pos']>=.5])
     cuts=np.percentile(values,[10,25,40,60,80,95])
     if PASCAND:
         digits=1 if cuts[-1]>=5 else 2 if cuts[-1]>=.5 else 3
@@ -390,6 +515,11 @@ for i, g in enumerate(G):
 caba_idx = [i for i, k in enumerate(UKEYS) if k[0] == "01"]
 for i in caba_idx:
     body.append('<path class="dc" data-i="%d" d="%s"/>' % (i, geom_d(shapely.simplify(G_raw[i], 0.01))))
+# niveles: partido (pp, y ppc para el recuadro de Capital) y circuito (ck, ckc); el selector cambia qué clase muestran
+for j, (kind, _n, g, capital, _p) in enumerate(EXTRA, NR):
+    cl = 'pp' if kind == 'partido' else 'ck'
+    body.append('<path class="%s" data-i="%d" d="%s"/>' % (cl, j, geom_d(g.simplify(0.04, preserve_topology=True))))
+    if capital: body.append('<path class="%sc" data-i="%d" d="%s"/>' % (cl, j, geom_d(g.simplify(0.01, preserve_topology=True))))
 for p in PARTIDOS:
     u = unary_union([G_raw[i] for i in range(len(UKEYS)) if PART[i] == p])
     u = fill_slivers(u.buffer(0.7, join_style=2).buffer(-0.7, join_style=2))
@@ -432,11 +562,11 @@ ds = dict(
     title=TITLE+" en el AMBA de", year=str(YEAR),
     labels=dict(pie1="Proporción sobre votos positivos", provinces=""),
     # escala fina, como el AMBA 2025 por radio: con cinco fuerzas el ganador saca entre 22 y 37 % en el 90 % de los radios (mediana 27)
-    exterior=False, candidates=CAND, bins=(WIN_BINS:=sorted(set(int(round(v)) for v in np.percentile([r['q'] for r in unit_rec.values() if 'q' in r],[10,25,40,60,80,95])))),
+    exterior=False, candidates=CAND, bins=(WIN_BINS:=sorted(set(int(round(v)) for v in np.percentile([unit_rec[i]['q'] for i in range(NR) if 'q' in unit_rec[i]],[10,25,40,60,80,95])))),
     bin_labels=[('<' if i==0 else '+' if i==len(WIN_BINS) else '')+str(v)+'%' for i,v in enumerate([WIN_BINS[0]]+WIN_BINS)],
     sets={"1": dict(label=str(YEAR), subtitle=("Por candidato · estimado" if PASCAND else "Por fuerza · estimado" if ISPASO else "Por radio censal · estimado"))},
     modes=MODES, insets=INSETS,
-    territories=[dict(n=disp[i], p=PART[i], k="radio") for i in range(len(UKEYS))],
+    territories=[dict(n=disp[i], p=PART[i], k="radio") for i in range(NR)] + [dict(n=e[1], p=e[4], k=e[0]) for e in EXTRA],
 )
 json.dump(ds, open(os.path.join(HERE, "dataset_%s.json" % KEY), "w", encoding="utf8"), ensure_ascii=False)
 
@@ -461,17 +591,64 @@ TAIL = load_part("tail_amba.py", [
     ('out = os.path.join(HERE, "atlas_amba2025.html")', 'out = os.path.join(HERE, "atlas_%s.html" % KEY)'),
 ])
 old_name='el("text",{x:424,y:y+20*k,"font-size":MANY?18:21,fill:"#fff","text-anchor":"end"},g,C.n);'
-new_name=('const cname='+old_name[:-1]+';'
-          'if(cname.getComputedTextLength()>215){cname.setAttribute("textLength","215");cname.setAttribute("lengthAdjust","spacingAndGlyphs");}')
+# con un bloque de la Wikipedia a toda la altura, el nombre y el subtítulo se comprimen al espacio que queda a su derecha
+new_name=('const nlim=C.img&&C.blk?Math.min(215,424-93-h*1.05*(C.ar||1)-10):215,cname='+old_name[:-1]+';'
+          'if(cname.getComputedTextLength()>nlim){cname.setAttribute("textLength",nlim);cname.setAttribute("lengthAdjust","spacingAndGlyphs");}')
+old_subt='el("text",{x:424,y:y+37*k,"font-size":MANY?13:15,fill:"#fff","text-anchor":"end",opacity:.95},g,C.sub);'
+new_subt=('{const csub='+old_subt[:-1]+';'   # va detrás de un if(C.sub): entre llaves
+          'if(csub.getComputedTextLength()>nlim){csub.setAttribute("textLength",nlim);csub.setAttribute("lengthAdjust","spacingAndGlyphs");}}')
 marker='html = (tpl.replace('
 assert TAIL.count(marker)==1
 TAIL=TAIL.replace(marker,'sub('+repr(old_name)+','+repr(new_name)+')\n'+marker)
+TAIL=TAIL.replace(marker,'sub('+repr(old_subt)+','+repr(new_subt)+')\n'+marker)
 # Ajustar al marco completo, sin depender del bl heredado de otra altura de fila.
 old_logo = '''if(C.img){const ih=h*(C.bl||1.2),iw=ih*(C.ar||1),cv=el("svg",{x:93,y,width:110,height:h,overflow:"hidden"},g);   // el logo desborda la barra y se recorta al marco
       el("image",{href:C.img,x:Math.max(3,4+(h*1.2-iw)/2),y:-(ih-h)/2,width:iw,height:ih,preserveAspectRatio:"xMidYMid meet"},cv);}'''
-new_logo = '''if(C.img){const ar=C.ar||1,ih=Math.min(h-6,102/ar),iw=ih*ar,cv=el("svg",{x:93,y,width:110,height:h,overflow:"hidden"},g);
+# Los bloques de los mapas presidenciales de la Wikipedia van pegados al borde izquierdo de la barra y a toda su
+# altura (leve zoom que recorta apenas arriba y abajo), como en los mapas ya subidos: sin franjas entre el bloque y
+# la barra, así que el ancho es el que dé la proporción (no se limita al marco de 110 px). Los demás logos, centrados.
+new_logo = '''if(C.img&&C.blk){const ar=C.ar||1,bh=h*1.05,bw=bh*ar,cv=el("svg",{x:93,y,width:bw,height:h,overflow:"hidden"},g);
+      el("image",{href:C.img,x:0,y:(h-bh)/2,width:bw,height:bh,preserveAspectRatio:"xMinYMid meet"},cv);}
+    else if(C.img){const ar=C.ar||1,ih=Math.min(h-6,102/ar),iw=ih*ar,cv=el("svg",{x:93,y,width:110,height:h,overflow:"hidden"},g);
       el("image",{href:C.img,x:(110-iw)/2,y:(h-ih)/2,width:iw,height:ih,preserveAspectRatio:"xMidYMid meet"},cv);}'''
 TAIL=TAIL.replace(marker,'sub('+repr(old_logo)+','+repr(new_logo)+')\n'+marker)
+# Selector de nivel (2-nov-2026, pedido del usuario): Partido / Circuito / Radio. Cada nivel es una clase de trazos
+# (d/dc, ck/ckc, pp/ppc); el nivel elegido renombra las variables --v-d y --v-dc del mapa y de los recuadros.
+# La búsqueda salta al nivel de la unidad elegida y el CSV baja solo el nivel visible. #nv-c o #nv-p en la URL.
+NIVEL_PATCHES = [
+    ('.d{display:var(--v-d,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}',
+     '.d{display:var(--v-d,none);stroke-width:calc(var(--sd,2px) / var(--k,1))}\n'
+     '.ck,.ckc,.pp,.ppc{stroke:#fff;stroke-linejoin:round;stroke-linecap:round;stroke-width:calc(var(--sd,2px) / var(--k,1))}\n'
+     '.ck{display:var(--v-ck,none)}.ckc{display:var(--v-ckc,none)}.pp{display:var(--v-pp,none)}.ppc{display:var(--v-ppc,none)}\n'
+     '#niv button.on{background:#70a6d7;color:#111;border-color:#70a6d7}'),
+    ('<span class="sp"></span>',
+     '<div class="grp" id="niv" role="group" aria-label="Nivel del mapa"><span>Nivel:</span>'
+     '<button data-n="p" title="Partidos y, en Capital, %s: suma de los radios">Partido</button>'
+     '<button data-n="c" title="Circuitos electorales: votos observados de la fuente">Circuito</button>'
+     '<button data-n="r" class="on" title="Radios censales: estimación">Radio</button></div><span class="sp"></span>'
+     % ('comunas' if YEAR >= 2009 else 'circunscripciones')),
+    ('let st=I.show.map(c=>`--v-${c}:inline`).join(";");',
+     'let st=I.show.map(c=>`--v-${nivCls(c)}:inline`).join(";");'),
+    ('function selectUnit(i,zoom,pos){',
+     'function selectUnit(i,zoom,pos){if(T[i].k!==NIVK[NIVEL])setNivel(NIVOF[T[i].k]);'),
+    ('M.units.forEach((u,i)=>{const row=',
+     'M.units.forEach((u,i)=>{if(T[i].k!==NIVK[NIVEL])return;const row='),
+    ('drawTiles();drawTitle();renderCard();highlight();}',
+     'drawTiles();drawTitle();renderCard();highlight();}\n'
+     'const NIV={r:["d","dc"],c:["ck","ckc"],p:["pp","ppc"]},NIVK={r:"radio",c:"circuito",p:"partido"},NIVOF={radio:"r",circuito:"c",partido:"p"};\n'
+     'let NIVEL=((location.hash.match(/nv-([rcp])/)||[])[1])||"r";\n'
+     'function nivCls(c){return c==="d"?NIV[NIVEL][0]:c==="dc"?NIV[NIVEL][1]:c;}\n'
+     'function setNivel(n){NIVEL=n;const mw=$("#mainwrap");if(mw.dataset.o==null)mw.dataset.o=mw.getAttribute("style");\n'
+     '  mw.setAttribute("style",mw.dataset.o.replace(/--v-(dc|d):/g,(m,c)=>"--v-"+nivCls(c)+":"));drawInsets();\n'
+     '  document.querySelectorAll("#niv button").forEach(b=>b.classList.toggle("on",b.dataset.n===n));\n'
+     '  if(SEL&&SEL.type==="unit"&&T[SEL.i].k!==NIVK[n])clearSel();}'),
+    ('const tip=$("#tip");',
+     'document.querySelectorAll("#niv button").forEach(b=>b.addEventListener("click",()=>setNivel(b.dataset.n)));\n'
+     'const tip=$("#tip");'),
+    ('let DRAG=null,SEL=null;', 'let DRAG=null,SEL=null;\nsetNivel(NIVEL);'),
+]
+for old, new in NIVEL_PATCHES:
+    TAIL = TAIL.replace(marker, 'sub(' + repr(old) + ',' + repr(new) + ')\n' + marker)
 if (YEAR==2009 and C.get('NE_estimado_municipal')) or PASCAND:
     old_y='const MANY=N.cands.length>5,Y0=MANY?(N.cands.length>9?1008:1024):1266;'
     new_y='const MANY=N.cands.length>5,Y0=MODE==="gan"?1200:1266;'

@@ -304,7 +304,7 @@ def build(year):
     html=html.replace('return out.slice(0,4);','return out.slice(0,5);')
     html=html.replace('const MANY=N.cands.length>5','const MANY=N.cands.length>4')
     html=html.replace('const list=tilesNow(),xs=[1262,1316,1370,1424];','const list=tilesNow(),xs=tilesNow().length>4?[1208,1262,1316,1370,1424]:[1262,1316,1370,1424];')
-    (folder/f'atlas_{year}_diputados.html').write_text(html,encoding='utf8')
+    (folder/f'atlas_{year}_diputados.html').write_text(html,encoding='utf8'); __import__("sys").path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[1] / "comun")); __import__("logos_al_ras").aplicar(str(folder/f'atlas_{year}_diputados.html'))   # logos al ras (2-nov-2026)
     sums=aggregate(list(matched.values())+list(solid.values()))['P']
     audit=dict(year=year,ganadores=dict(wins),unidades=len(units),con_datos=len(matched),sin_dato=[dict(prov=u['prov'],nombre=u['name']) for i,u in enumerate(units) if i not in matched and u['prov'] not in solid],solidas={p:dict(P=dict(e['P']),m=dict(e['m'])) for p,e in solid.items()},comparacion=[dict(bloque=c,base=sums[c],wikipedia=v,diferencia=sums[c]-v) for c,v in NATIONAL[year].items()],mapeo=FAMS[year],wiki_entry=wikitop.WIKI[key],provincias={p:dict(e['P']) for p,e in provinces.items()})
     audit['imputados']=[dict(prov=e['p'],nombre=e['n'],**e['imputado']) for e in matched.values() if e.get('imputado')]

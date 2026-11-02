@@ -1,6 +1,6 @@
 # Paquete 1995dip para Commons — Elecciones legislativas de Argentina de 1995
 
-Estado al 2026-10-20. **Publicado en Commons y verificado por SHA1**. Véase [registro de publicación](../ESTADO_LEGISLATIVAS_2026-10-20.md). Usuario: `ItsAHardLife`.
+Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -9,21 +9,21 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 
 | Modo | Versión | Estado |
 |---|---|---|
-| Resultados por departamento | solo mapa | Subido y verificado |
-| Resultados por departamento | con leyenda | Subido y verificado |
-| Resultados por departamento | png | Subido y verificado |
-| Voto a Partido Justicialista por departamento | solo mapa | Subido y verificado |
-| Voto a Partido Justicialista por departamento | con leyenda | Subido y verificado |
-| Voto a Partido Justicialista por departamento | png | Subido y verificado |
-| Voto a Union Civica Radical por departamento | solo mapa | Subido y verificado |
-| Voto a Union Civica Radical por departamento | con leyenda | Subido y verificado |
-| Voto a Union Civica Radical por departamento | png | Subido y verificado |
-| Voto a Frente Pais Solidario por departamento | solo mapa | Subido y verificado |
-| Voto a Frente Pais Solidario por departamento | con leyenda | Subido y verificado |
-| Voto a Frente Pais Solidario por departamento | png | Subido y verificado |
-| Participacion por departamento | solo mapa | Subido y verificado |
-| Participacion por departamento | con leyenda | Subido y verificado |
-| Participacion por departamento | png | Subido y verificado |
+| Resultados por departamento | solo mapa | Para subir |
+| Resultados por departamento | con leyenda | Para subir |
+| Resultados por departamento | png | Para subir |
+| Voto a Partido Justicialista por departamento | solo mapa | Para subir |
+| Voto a Partido Justicialista por departamento | con leyenda | Para subir |
+| Voto a Partido Justicialista por departamento | png | Para subir |
+| Voto a Union Civica Radical por departamento | solo mapa | Para subir |
+| Voto a Union Civica Radical por departamento | con leyenda | Para subir |
+| Voto a Union Civica Radical por departamento | png | Para subir |
+| Voto a Frente Pais Solidario por departamento | solo mapa | Para subir |
+| Voto a Frente Pais Solidario por departamento | con leyenda | Para subir |
+| Voto a Frente Pais Solidario por departamento | png | Para subir |
+| Participacion por departamento | solo mapa | Para subir |
+| Participacion por departamento | con leyenda | Para subir |
+| Participacion por departamento | png | Para subir |
 
 ## Antes de subir
 - Sin impedimentos conocidos más allá de los avisos de abajo.
@@ -33,13 +33,13 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 - Córdoba: la base no trae la columna del Partido Federal; el residuo de cada departamento entre positivos declarados y suma de las fuerzas (14.914 votos en total, la Wikipedia da 14.915) se imputa a la UCR, con nota en la ficha. San Juan trae la fila de positivos repetida: se toma la primera, que coincide con la suma de las fuerzas.
 - Deseado (Santa Cruz): la base trae un registro incompleto; por pedido del usuario se calcula como el total provincial de la Wikipedia menos los otros seis departamentos, fuerza por fuerza y para blancos, nulos, votantes e inscriptos (original y cálculo en `mapa1995dip/deseado_extrapolado.json`). No es un resultado departamental observado.
 - Los partidos creados después del censo de 1991 tienen su propio polígono, tomado del shapefile de 2001 y recortado al contorno de 1991. El Sector Antártico de la base se suma a Ushuaia.
-- Logos reutilizados del proyecto; en varios emblemas provinciales el diseño de época no está verificado (ver `logos_wikipedia/LICENCIAS.md`).
+- Logos reutilizados del proyecto; en varios emblemas provinciales el diseño de época no está verificado (ver `logos/LICENCIAS.md`).
 
 ## Fuentes y licencia
 - **Votos:** Base de datos electorales por departamento de Ernesto Calvo, hojas por provincia de `TPDENP1995T.xls` (diputados nacionales). Base no publicada: se contrastó con las tablas nacional y provinciales del artículo de la Wikipedia (PJ −0,02 %, UCR −0,003 %, FREPASO −0,03 %).
-- **Geometría:** Departamentos de 1991 y, para los partidos y departamentos creados después del censo de 1991 (Ezeiza, Hurlingham, Ituzaingó, Presidente Perón, Punta Indio, San Miguel, José C. Paz, Malvinas Argentinas, 2 de Abril y, en 2001, San Salvador), su polígono del shapefile de 2001 recortado al contorno de 1991; para Capital Federal, las 28 circunscripciones del SVG de Wikipedia 1999 ajustadas al contorno del shapefile. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**: por eso los archivos llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}` (ver las instrucciones genéricas).
-- **Logos** (solo «con leyenda» y PNG): Flag of the Justicialist Party (square version).svg, Escudo de la UCR.svg, Arg FREPASO logo Remake (cropped).png, Pacto Autonomista - Liberal.png, Logo MPN.png. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
-- **Fecha de la elección:** 14 de mayo de 1995 (puesta de memoria; confirmar con el artículo).
+- **Geometría:** Departamentos de 1991 y, para los partidos y departamentos creados después del censo de 1991 (Ezeiza, Hurlingham, Ituzaingó, Presidente Perón, Punta Indio, San Miguel, José C. Paz, Malvinas Argentinas, 2 de Abril y, en 2001, San Salvador), su polígono del shapefile de 2001 recortado al contorno de 1991; para Capital Federal, las 28 circunscripciones del SVG de Wikipedia 1999 ajustadas al contorno del shapefile. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
+- **Logos** (solo «con leyenda» y PNG): Flag of the Justicialist Party (square version).svg, Escudo de la UCR.svg, Arg FREPASO logo Remake (cropped).png, Pacto Autonomista - Liberal.png, Logo MPN.png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
+- **Fecha de la elección:** 14 de mayo de 1995 (confirmar con el artículo).
 - **Categorías de Commons que no existen y se omitieron:** 1995 Argentine legislative election, 1995 Argentine presidential election.
 
 ## Discusión del artículo
@@ -52,7 +52,3 @@ Las cifras salen de las fuentes citadas en la descripción de cada archivo y los
 
 Propongo sumarlo en la sección de resultados, sin reemplazar los mapas que ya están. ¿Les parece bien? ~~~~
 ```
-
-## Publicación del 20-oct-2026
-
-Verificados 15 nombres: 15 imágenes distintas y 0 redirecciones a imágenes idénticas. Todas coinciden con el SHA1 local. Artículo publicado conservando sus mapas previos; ver el registro enlazado arriba.

@@ -20,13 +20,15 @@ with sync_playwright() as pw:
         ds=json.loads((HERE/f'dataset_{key}.json').read_text(encoding='utf8'))
         control=json.loads((HERE/f'control_{key}.json').read_text(encoding='utf8'))
         assert control['error_max_unidad_categoria']<1e-6
-        assert len(ds['territories'])==control['radios']
+        # Después de los radios van los partidos y circuitos del selector de nivel (render.py).
+        nradios=sum(1 for t in ds['territories'] if t.get('k','radio')=='radio');assert nradios==control['radios']
+        assert all(t.get('k','radio')=='radio' for t in ds['territories'][:nradios])
         national=ds['modes'][0]['national']
         assert sum(c['votes'] for c in national['cands'])==round(control['positivos_fuente'])
-        winners={u.get('w') for u in ds['modes'][0]['units'] if u.get('w')}
+        winners={u.get('w') for u in ds['modes'][0]['units'][:nradios] if u.get('w')}
         assert {c['code'] for c in national['cands'] if c['code']!='OTR'}==winners
         assert len(ds['modes'])<=5 or control.get('desagregacion')=='candidato'
-        for m in ds['modes']:assert len(m['units'])==control['radios']
+        for m in ds['modes']:assert len(m['units'])==len(ds['territories'])
         url=(HERE/f'atlas_{key}.html').as_uri()
         modes=[]
         trans=ROOT/'png_transparentes/serieAMBA2005_2023radios';trans.mkdir(exist_ok=True)
@@ -67,7 +69,7 @@ with sync_playwright() as pw:
                            radios_excluidos_NE=control.get('radios_excluidos_NE',0)))
         if control.get('NE_estimado_municipal'):
             baseline=ds['modes'][0]['units']
-            excluded=[i for i,u in enumerate(baseline) if 'Excluido por pedido' in u.get('note','')]
+            excluded=[i for i,u in enumerate(baseline[:nradios]) if 'Excluido por pedido' in u.get('note','')]
             assert len(excluded)==control['radios_excluidos_NE']
             assert not any(u.get('w')=='NE' for u in baseline)
             for m in ds['modes']:

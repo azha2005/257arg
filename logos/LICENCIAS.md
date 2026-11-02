@@ -1,4 +1,8 @@
 Emblemas tomados de Wikimedia Commons (los que usa la Wikipedia en español en los artículos de cada elección o partido).
+
+Logo adicional `Luder_Presidente_usuario.png`: imagen «Luder Presidente» aportada por el usuario el 1-nov-2026 para `mapa1983hipotetico`; se conserva sin modificar. Autoría, fecha del archivo y licencia no acreditadas. Uso local solicitado, sin publicación en Commons.
+
+`Luder_Presidente_transparente.png`: derivado del original anterior solo mediante código (`mapas/mapa1983hipotetico/preparar_logo_luder.py`); fondo negro eliminado por alfa y letras blancas a pedido del usuario, con los colores originales de la banda y el sol conservados. Mismas reservas de autoría y licencia. No usa la imagen generada por IA.
 Descargados el 8 y el 11-oct-2026. La licencia y la autoría de cada uno están en commons.wikimedia.org/wiki/File:<nombre>.
 
 | Archivo | Uso en los atlas | Dónde lo usa Wikipedia |

@@ -6,7 +6,7 @@ from shapely.ops import unary_union
 import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 # copia local de github.com/.../circuitos_electorales_AR (carpeta geojson)
-GJ = os.environ.get("CIRCUITOS_AR_GEOJSON", os.path.join(HERE, "..", "..", "circuitos_electorales_AR-main", "geojson"))
+GJ = os.environ.get("CIRCUITOS_AR_GEOJSON", os.path.join(HERE, "..", "..", "geometria", "circuitos_busqueda", "galeano_snapshot_2021", "geojson"))
 
 def load():
     d = pd.read_pickle(os.path.join(HERE, "dip_amba_mesas.pkl"))

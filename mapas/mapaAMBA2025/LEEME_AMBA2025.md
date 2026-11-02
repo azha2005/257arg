@@ -18,6 +18,8 @@
 ## Logos
 Wikipedia 2025: `Homeland_Force_logo.png` (Fuerza Patria), `Logo_La_Libertad_Avanza_sin_aguila.svg` (versión en blanco `..._blanco.svg` para el fondo violeta), `Logo_FIT_Unidad.svg`, `Logo_Provincias_Unidas.svg`. Todos de dominio público según Commons/es-Wikipedia.
 
+El build usa hoy los recortes del PNG original del usuario (`logos_amba2025.py`: FIT y PU). **Fuerza Patria (2-nov-2026, pedido del usuario)**: el mismo logo que `mapaAMBA2025radios`, `Logo_de_Fuerza_Patria.svg` (Commons, CC0) tomado del atlas legislativo 2025 con las franjas en blanco. **La Libertad Avanza (2-nov-2026, pedido del usuario)**: también como el atlas por radio, el bloque del águila del mapa presidencial de la Wikipedia (CC0) del atlas legislativo 2025, barra #5a3f80. La ruta de los circuitos pasa a `geometria/circuitos_busqueda/galeano_snapshot_2021/geojson` (la vieja `circuitos_electorales_AR-main` dejó de existir con la reorganización); el resultado es idéntico salvo el logo.
+
 ## Pendiente
 - Definitivo para las mesas sin escrutar.
 - Verificar si los 7 polígonos beige son circuitos realmente sin electores.

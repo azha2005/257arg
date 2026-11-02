@@ -1,6 +1,6 @@
 # Paquete 2001 para Commons — Elecciones legislativas de Argentina de 2001
 
-Estado al 2026-10-20. **Publicado en Commons y verificado por SHA1**. Véase [registro de publicación](../ESTADO_LEGISLATIVAS_2026-10-20.md). Usuario: `ItsAHardLife`.
+Estado al 2026-10-20. Todo **sin subir**. Instrucciones del procedimiento: [`../INSTRUCCIONES_GENERICAS.md`](../INSTRUCCIONES_GENERICAS.md). Usuario de Commons: `ItsAHardLife`.
 
 ## Qué hay en `subir/`
 Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>.txt`): `(solo mapa).svg` (sin texto ni leyenda, como el mapa por departamento de 2019 de es.wikipedia; cada unidad con `<title>`), `(con leyenda).svg` (el cartel completo, texto a trazados) y `.png` (el cartel del atlas, transparente).
@@ -9,18 +9,18 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 
 | Modo | Versión | Estado |
 |---|---|---|
-| Resultados por departamento | solo mapa | Subido y verificado |
-| Resultados por departamento | con leyenda | Subido y verificado |
-| Resultados por departamento | png | Subido y verificado |
-| Voto a Concertacion Justicialista por departamento | solo mapa | Subido y verificado |
-| Voto a Concertacion Justicialista por departamento | con leyenda | Subido y verificado |
-| Voto a Concertacion Justicialista por departamento | png | Subido y verificado |
-| Voto a Alianza (UCR, FREPASO y aliados) por departamento | solo mapa | Subido y verificado |
-| Voto a Alianza (UCR, FREPASO y aliados) por departamento | con leyenda | Subido y verificado |
-| Voto a Alianza (UCR, FREPASO y aliados) por departamento | png | Subido y verificado |
-| Voto a ARI y socios por departamento | solo mapa | Subido y verificado |
-| Voto a ARI y socios por departamento | con leyenda | Subido y verificado |
-| Voto a ARI y socios por departamento | png | Subido y verificado |
+| Resultados por departamento | solo mapa | Para subir |
+| Resultados por departamento | con leyenda | Para subir |
+| Resultados por departamento | png | Para subir |
+| Voto a Concertacion Justicialista por departamento | solo mapa | Para subir |
+| Voto a Concertacion Justicialista por departamento | con leyenda | Para subir |
+| Voto a Concertacion Justicialista por departamento | png | Para subir |
+| Voto a Alianza (UCR, FREPASO y aliados) por departamento | solo mapa | Para subir |
+| Voto a Alianza (UCR, FREPASO y aliados) por departamento | con leyenda | Para subir |
+| Voto a Alianza (UCR, FREPASO y aliados) por departamento | png | Para subir |
+| Voto a ARI y socios por departamento | solo mapa | Para subir |
+| Voto a ARI y socios por departamento | con leyenda | Para subir |
+| Voto a ARI y socios por departamento | png | Para subir |
 
 ## Antes de subir
 - Sin impedimentos conocidos más allá de los avisos de abajo.
@@ -35,9 +35,9 @@ Por cada modo del atlas, tres versiones (cada archivo con su wikitext `<archivo>
 
 ## Fuentes y licencia
 - **Votos:** Base de datos electorales por departamento de Ernesto Calvo, planillas por provincia de `2001 x DTO/Diputados Nacionales` (diputados nacionales). Base no publicada: se contrastó con las tablas provinciales del artículo de la Wikipedia (queda 0 a 3 % por debajo en casi todas las provincias, 6 % en Salta).
-- **Geometría:** Departamentos de 1991 y, para los partidos y departamentos creados después del censo de 1991 (Ezeiza, Hurlingham, Ituzaingó, Presidente Perón, Punta Indio, San Miguel, José C. Paz, Malvinas Argentinas, 2 de Abril y, en 2001, San Salvador), su polígono del shapefile de 2001 recortado al contorno de 1991; para Capital Federal, las 28 circunscripciones del SVG de Wikipedia 1999 ajustadas al contorno del shapefile. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**: por eso los archivos llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}` (ver las instrucciones genéricas).
-- **Logos** (solo «con leyenda» y PNG): Flag of the Justicialist Party (square version).svg, Alianza.png, Ari Logo.svg, Logo Accion por la Republica.svg, Escudo del Partido Demócrata (Argentina).svg, Logo MPN.png. El detalle de cada licencia está en `logos_wikipedia/LICENCIAS.md`.
-- **Fecha de la elección:** 14 de octubre de 2001 (puesta de memoria; confirmar con el artículo).
+- **Geometría:** Departamentos de 1991 y, para los partidos y departamentos creados después del censo de 1991 (Ezeiza, Hurlingham, Ituzaingó, Presidente Perón, Punta Indio, San Miguel, José C. Paz, Malvinas Argentinas, 2 de Abril y, en 2001, San Salvador), su polígono del shapefile de 2001 recortado al contorno de 1991; para Capital Federal, las 28 circunscripciones del SVG de Wikipedia 1999 ajustadas al contorno del shapefile. Rodríguez, G. M. (2022), CONICET, hdl:11336/149867, **CC BY 2.5 Argentina**. Los mapas sin emblemas llevan `{{self|cc-by-4.0}}` + `{{Cc-by-2.5-ar}}`. Ver las instrucciones genéricas.
+- **Logos** (solo «con leyenda» y PNG): Flag of the Justicialist Party (square version).svg, Alianza.png, Ari Logo.svg, Logo Accion por la Republica.svg, Escudo del Partido Demócrata (Argentina).svg, Logo MPN.png. El detalle de cada licencia está en `logos/LICENCIAS.md`.
+- **Fecha de la elección:** 14 de octubre de 2001 (confirmar con el artículo).
 
 
 ## Discusión del artículo
@@ -50,7 +50,3 @@ Las cifras salen de las fuentes citadas en la descripción de cada archivo y los
 
 Propongo sumarlo en la sección de resultados, sin reemplazar los mapas que ya están. ¿Les parece bien? ~~~~
 ```
-
-## Publicación del 20-oct-2026
-
-Verificados 12 nombres: 12 imágenes distintas y 0 redirecciones a imágenes idénticas. Todas coinciden con el SHA1 local. Artículo publicado conservando sus mapas previos; ver el registro enlazado arriba.

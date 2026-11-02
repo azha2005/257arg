@@ -19,7 +19,7 @@ def candidates(key):
     ar=im.width/im.height
     groups['B02'].update(img='data:image/png;base64,'+base64.b64encode(buffer.getvalue()).decode(),
                          ar=ar,bl=round(min(1.1,98/(ar*50)),3),logo_file='logos/bloques_presidenciales/jxc23_franja_completa.png')
-    groups['B02'].pop('blk',None)
+    groups['B02']['blk']=True   # franja de la Wikipedia: pegada a la barra y a su alto, como en la general 2023
     raw,_=pd.read_pickle(ROOT/'datos_oficiales/2023_paso/agregado.pkl')
     nomen=raw[raw.cargo_nombre.str.contains('PRESIDENTE')&(raw.votos_tipo=='POSITIVO')][['agrupacion_id','agrupacion_nombre','lista_numero','lista_nombre']].drop_duplicates()
     by_num={re.match(r'\d+',a['listas'][0]['codigo']).group(): (f'B{i:02d}',a) for i,a in enumerate(wiki['agr'],1)}

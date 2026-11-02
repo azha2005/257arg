@@ -22,8 +22,8 @@ def corregir(candidates):
         ('cambiemos.png', 'logos/bloques_presidenciales/cambiemos_franja_completa.png'),
         ('sisepuede.png', 'logos/bloques_presidenciales/sisepuede_franja_completa.png'),
         ('jxc23.png', 'logos/bloques_presidenciales/jxc23_franja_completa.png'),
-        ('lla.png', 'logos/Logo_La_Libertad_Avanza_sin_aguila_blanco.svg'),
-        ('up.png', 'datos/fuentes_leg2003_2025/logos/Logo_Union_por_la_Patria.svg'),
+        # UP y LLA (2-nov-2026, pedido del usuario): quedan los bloques del mapa presidencial de la Wikipedia
+        # (sol de UP y águila de LLA), como en mapa2023massa y las PASO 2023, no el símbolo suelto ni el logotipo
     ]:
         raw = (ROOT / 'logos/bloques_presidenciales' / old).read_bytes()
         replacements[signature(raw)] = new
@@ -49,10 +49,13 @@ def corregir(candidates):
             buf = io.BytesIO(); im.save(buf, 'PNG', optimize=True)
             c.update(img='data:image/png;base64,' + base64.b64encode(buf.getvalue()).decode(),
                      logo_file=target)
-            c.pop('blk', None)
+            if not target.startswith('logos/bloques_presidenciales/'):   # las franjas completas siguen siendo bloques
+                c.pop('blk', None)
             changes.append(dict(codigo=code, archivo=target))
         else:
             im = Image.open(io.BytesIO(raw))
+        if str(c.get('logo_file', '')).startswith('logos/bloques_presidenciales/'):
+            c['blk'] = True   # bloques de la Wikipedia (incl. la franja JxC de la PASO): al alto de la barra, sin margen
         # La relación de aspecto se obtiene del archivo, no de un atlas heredado.
         c['ar'] = im.width / im.height
     return changes

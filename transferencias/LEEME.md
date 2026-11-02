@@ -1,5 +1,9 @@
 # Transferencias de voto entre legislativas (diputados nacionales)
 
+**Electorados provinciales (2-nov-2026):** [visor Sankey](provinciales/INDICE.html), 25 cruces con intervalos y comparación entre variantes. Río Negro, Neuquén, Misiones y Salta 2023; provinciales de nueve distritos de 2025 hacia diputados nacionales, con Formosa pendiente de recuperar. [Fuentes, cobertura y límites](provinciales/LEEME.md). Diseño Ink del explorador de Streamlit, con Hallmark. Versión local, sin publicar.
+
+Ampliación por circuito: 52 versiones en el mismo visor. Nuevas provinciales 2023 de Chaco, Santa Fe, Buenos Aires, CABA y Catamarca; Salta y Misiones con mayor detalle; Chaco/Corrientes/Misiones/Santa Fe 2025 con empalmes más finos. [Fuentes y correspondencias](provinciales/circuitos/LEEME.md), incluidas las uniones necesarias y los cargos simultáneos. Las versiones originales se conservan.
+
 **Explorador (30-oct-2026):** `python transferencias/explorador/servidor.py` abre una página para elegir dos elecciones cualesquiera (las 56 de los pkl, las 158 del MASTER y las 65 de los atlas, con las PASO) y ver el sankey al momento, nacional o por provincia. Es la estimación puntual de este mismo método, sin bootstrap. Ver [explorador/LEEME.md](explorador/LEEME.md).
 
 ## Diputados 2017 → diputados 2025

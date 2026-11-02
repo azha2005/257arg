@@ -392,6 +392,21 @@ def allocate(V, rp, gs, units, ukey, seats, r2c, variant='idw'):
     return A,float(err),fallback
 
 
+def circuit_layer(key):
+    """Capa «por circuito» del selector de nivel: votos observados de la fuente por circuito y su polígono.
+    No reparte nada; los circuitos sin polígono quedan fuera del dibujo y sus votos, en los totales."""
+    year=int(key[:4]);cen=census(year)
+    _,rp,gs=radios(cen)
+    cand,lookup,labels=candidates(key)
+    V,ns,meta=load_votes(key,lookup,labels)
+    CG,provenance,missing,units,r2c,ukey=spatial(year,V,ns,rp,gs)
+    data=dict(V=V,geom={k:shapely.to_wkb(g) for k,g in CG.items()},unit={k:ukey(k) for k in CG},
+              seccion={k:ns.get(k[:2],k[1]) for k in V.index},missing=[list(k) for k in missing],
+              provenance={str(k):v for k,v in provenance.items()})
+    pd.to_pickle(data,HERE/f'circuitos_{key}.pkl')
+    print(key,'circuitos',len(V),'con polígono',len(CG),'sin polígono',len(missing),flush=True)
+
+
 def prepare(key):
     assert key in KEYS
     year=int(key[:4]);cen=census(year)
