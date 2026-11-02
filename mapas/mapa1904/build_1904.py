@@ -164,11 +164,17 @@ for p,g in province_shapes.items():
     label='Territorios nacionales'if p in [u['n']for u in units if u['k']=='territorio nacional']else p
     pv.append(f'<path class="pf" data-prov="{html.escape(label)}" d="{d_path(g.simplify(.3))}"/>')
 import shapely
-for u in pickle.loads(raw_cache.read_bytes()):
-    if u['name']=='Islas Malvinas':
-        def project(a):
-            a=a.copy();a[:,0]=(a[:,0]+73.5708041)*math.cos(math.radians(38))*44+643;a[:,1]=(-21.7807776-a[:,1])*44+150;return a
-        body.append('<path class="mal" style="display:inline;fill:#a9a9a9;stroke:#616161;stroke-width:1" d="'+d_path(shapely.transform(u['geom'],project).simplify(.1))+'"/>')
+import lxml.html
+# Mismo trazo SHP, simplificación y proyección del atlas 1912; no una
+# segunda versión de las islas con mayor densidad o contorno distinto.
+reference=json.loads((ROOT/'mapas/mapa1912/dataset_1912.json').read_text(encoding='utf8'))
+mal_index=next(i for i,u in enumerate(reference['territories'])if u['n']=='Islas Malvinas')
+reference_svg=lxml.html.parse(str(ROOT/'mapas/mapa1912/atlas_1912_diputados.html')).getroot().get_element_by_id('B')
+mal_paths=[p.get('d')for p in reference_svg.iter('path')if p.get('data-i')==str(mal_index)]
+assert len(mal_paths)==1
+mal_path=mal_paths[0]
+body.append('<path class="mal" style="display:inline;fill:#a9a9a9;stroke:#1b1b1b;stroke-width:1" d="'+mal_path+'"/>')
+pv.append('<path class="pfm" style="fill:#a9a9a9;stroke:#a9a9a9;stroke-width:5px;stroke-linejoin:round" d="'+mal_path+'"/>')
 
 def window(prov, nums=None, pad=.07):
     import shapely
