@@ -1,0 +1,3754 @@
+{
+  "version": 7,
+  "empalmes": 52,
+  "accesos": 208,
+  "calculos": 416,
+  "errores": [],
+  "segundos": 0.8,
+  "resultados": [
+    {
+      "origen": "pr:p23|rn_2019p_gob2023|o",
+      "destino": "pr:p23|rn_2019p_gob2023|d",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_2019p_gob2023|d",
+      "destino": "pr:p23|rn_2019p_gob2023|o",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:p23|rn_2019p_gob2023|d",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_2019p_gob2023|d",
+      "destino": "pkl:2019p",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_gob2023_2023p|o",
+      "destino": "pr:p23|rn_gob2023_2023p|d",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_gob2023_2023p|d",
+      "destino": "pr:p23|rn_gob2023_2023p|o",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_gob2023_2023p|o",
+      "destino": "pkl:2023p",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:p23|rn_gob2023_2023p|o",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_gob2023_2023b|o",
+      "destino": "pr:p23|rn_gob2023_2023b|d",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_gob2023_2023b|d",
+      "destino": "pr:p23|rn_gob2023_2023b|o",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|rn_gob2023_2023b|o",
+      "destino": "pkl:2023b",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:p23|rn_gob2023_2023b|o",
+      "unidades": 13,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 13,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 13,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_2019p_gob2023|o",
+      "destino": "pr:p23|neuquen_2019p_gob2023|d",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_2019p_gob2023|d",
+      "destino": "pr:p23|neuquen_2019p_gob2023|o",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:p23|neuquen_2019p_gob2023|d",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_2019p_gob2023|d",
+      "destino": "pkl:2019p",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_gob2023_2023p|o",
+      "destino": "pr:p23|neuquen_gob2023_2023p|d",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_gob2023_2023p|d",
+      "destino": "pr:p23|neuquen_gob2023_2023p|o",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_gob2023_2023p|o",
+      "destino": "pkl:2023p",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:p23|neuquen_gob2023_2023p|o",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_gob2023_2023b|o",
+      "destino": "pr:p23|neuquen_gob2023_2023b|d",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_gob2023_2023b|d",
+      "destino": "pr:p23|neuquen_gob2023_2023b|o",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|neuquen_gob2023_2023b|o",
+      "destino": "pkl:2023b",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:p23|neuquen_gob2023_2023b|o",
+      "unidades": 16,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 16,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 16,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_2019p_gob2023|o",
+      "destino": "pr:p23|misiones_2019p_gob2023|d",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_2019p_gob2023|d",
+      "destino": "pr:p23|misiones_2019p_gob2023|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:p23|misiones_2019p_gob2023|d",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_2019p_gob2023|d",
+      "destino": "pkl:2019p",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_gob2023_2023p|o",
+      "destino": "pr:p23|misiones_gob2023_2023p|d",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_gob2023_2023p|d",
+      "destino": "pr:p23|misiones_gob2023_2023p|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_gob2023_2023p|o",
+      "destino": "pkl:2023p",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:p23|misiones_gob2023_2023p|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_gob2023_2023b|o",
+      "destino": "pr:p23|misiones_gob2023_2023b|d",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_gob2023_2023b|d",
+      "destino": "pr:p23|misiones_gob2023_2023b|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|misiones_gob2023_2023b|o",
+      "destino": "pkl:2023b",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:p23|misiones_gob2023_2023b|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_2019p_gob2023|o",
+      "destino": "pr:p23|salta_2019p_gob2023|d",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_2019p_gob2023|d",
+      "destino": "pr:p23|salta_2019p_gob2023|o",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:p23|salta_2019p_gob2023|d",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_2019p_gob2023|d",
+      "destino": "pkl:2019p",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_gob2023_2023p|o",
+      "destino": "pr:p23|salta_gob2023_2023p|d",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_gob2023_2023p|d",
+      "destino": "pr:p23|salta_gob2023_2023p|o",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_gob2023_2023p|o",
+      "destino": "pkl:2023p",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:p23|salta_gob2023_2023p|o",
+      "unidades": 23,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 23,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 23,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_gob2023_2023b|o",
+      "destino": "pr:p23|salta_gob2023_2023b|d",
+      "unidades": 22,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 22,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 22,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_gob2023_2023b|d",
+      "destino": "pr:p23|salta_gob2023_2023b|o",
+      "unidades": 22,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 22,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 22,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p23|salta_gob2023_2023b|o",
+      "destino": "pkl:2023b",
+      "unidades": 22,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 22,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 22,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:p23|salta_gob2023_2023b|o",
+      "unidades": 22,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 22,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 22,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|pba_prov2025_dn2025|o",
+      "destino": "pr:p25|pba_prov2025_dn2025|d",
+      "unidades": 135,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 135,
+          "segundos": 0.6
+        },
+        {
+          "rapido": true,
+          "unidades": 135,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|pba_prov2025_dn2025|d",
+      "destino": "pr:p25|pba_prov2025_dn2025|o",
+      "unidades": 135,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 135,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 135,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|pba_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 135,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 135,
+          "segundos": 0.6
+        },
+        {
+          "rapido": true,
+          "unidades": 135,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|pba_prov2025_dn2025|o",
+      "unidades": 135,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 135,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 135,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|caba_prov2025_dn2025|o",
+      "destino": "pr:p25|caba_prov2025_dn2025|d",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|caba_prov2025_dn2025|d",
+      "destino": "pr:p25|caba_prov2025_dn2025|o",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.1
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|caba_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|caba_prov2025_dn2025|o",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.1
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|chaco_prov2025_dn2025|o",
+      "destino": "pr:p25|chaco_prov2025_dn2025|d",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|chaco_prov2025_dn2025|d",
+      "destino": "pr:p25|chaco_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|chaco_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|chaco_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_diputados_prov2025_dn2025|o",
+      "destino": "pr:p25|corrientes_diputados_prov2025_dn2025|d",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_diputados_prov2025_dn2025|d",
+      "destino": "pr:p25|corrientes_diputados_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_diputados_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|corrientes_diputados_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_gobernador_prov2025_dn2025|o",
+      "destino": "pr:p25|corrientes_gobernador_prov2025_dn2025|d",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_gobernador_prov2025_dn2025|d",
+      "destino": "pr:p25|corrientes_gobernador_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_gobernador_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|corrientes_gobernador_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_senadores_prov2025_dn2025|o",
+      "destino": "pr:p25|corrientes_senadores_prov2025_dn2025|d",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_senadores_prov2025_dn2025|d",
+      "destino": "pr:p25|corrientes_senadores_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|corrientes_senadores_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|corrientes_senadores_prov2025_dn2025|o",
+      "unidades": 25,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 25,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 25,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|jujuy_prov2025_dn2025|o",
+      "destino": "pr:p25|jujuy_prov2025_dn2025|d",
+      "unidades": 139,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 139,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 139,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|jujuy_prov2025_dn2025|d",
+      "destino": "pr:p25|jujuy_prov2025_dn2025|o",
+      "unidades": 139,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 139,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 139,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|jujuy_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 139,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 139,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 139,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|jujuy_prov2025_dn2025|o",
+      "unidades": 139,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 139,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 139,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|misiones_prov2025_dn2025|o",
+      "destino": "pr:p25|misiones_prov2025_dn2025|d",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|misiones_prov2025_dn2025|d",
+      "destino": "pr:p25|misiones_prov2025_dn2025|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|misiones_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|misiones_prov2025_dn2025|o",
+      "unidades": 17,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 17,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 17,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|salta_diputado_prov2025_dn2025|o",
+      "destino": "pr:p25|salta_diputado_prov2025_dn2025|d",
+      "unidades": 209,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 209,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 209,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|salta_diputado_prov2025_dn2025|d",
+      "destino": "pr:p25|salta_diputado_prov2025_dn2025|o",
+      "unidades": 209,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 209,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 209,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|salta_diputado_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 209,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 209,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 209,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|salta_diputado_prov2025_dn2025|o",
+      "unidades": 209,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 209,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 209,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|salta_senador_prov2025_dn2025|o",
+      "destino": "pr:p25|salta_senador_prov2025_dn2025|d",
+      "unidades": 138,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 138,
+          "segundos": 0.6
+        },
+        {
+          "rapido": true,
+          "unidades": 138,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|salta_senador_prov2025_dn2025|d",
+      "destino": "pr:p25|salta_senador_prov2025_dn2025|o",
+      "unidades": 138,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 138,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 138,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|salta_senador_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 138,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 138,
+          "segundos": 0.6
+        },
+        {
+          "rapido": true,
+          "unidades": 138,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|salta_senador_prov2025_dn2025|o",
+      "unidades": 138,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 138,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 138,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|sanluis_diputados_prov2025_dn2025|o",
+      "destino": "pr:p25|sanluis_diputados_prov2025_dn2025|d",
+      "unidades": 5,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 5,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 5,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|sanluis_diputados_prov2025_dn2025|d",
+      "destino": "pr:p25|sanluis_diputados_prov2025_dn2025|o",
+      "unidades": 5,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 5,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 5,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|sanluis_diputados_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 5,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 5,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 5,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|sanluis_diputados_prov2025_dn2025|o",
+      "unidades": 5,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 5,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 5,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|sanluis_senadores_prov2025_dn2025|o",
+      "destino": "pr:p25|sanluis_senadores_prov2025_dn2025|d",
+      "unidades": 4,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 4,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 4,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|sanluis_senadores_prov2025_dn2025|d",
+      "destino": "pr:p25|sanluis_senadores_prov2025_dn2025|o",
+      "unidades": 4,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 4,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 4,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|sanluis_senadores_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 4,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 4,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 4,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|sanluis_senadores_prov2025_dn2025|o",
+      "unidades": 4,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 4,
+          "segundos": 0.0
+        },
+        {
+          "rapido": true,
+          "unidades": 4,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|santafe_prov2025_dn2025|o",
+      "destino": "pr:p25|santafe_prov2025_dn2025|d",
+      "unidades": 19,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 19,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 19,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|santafe_prov2025_dn2025|d",
+      "destino": "pr:p25|santafe_prov2025_dn2025|o",
+      "unidades": 19,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 19,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 19,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:p25|santafe_prov2025_dn2025|o",
+      "destino": "pkl:2025",
+      "unidades": 19,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 19,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 19,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:p25|santafe_prov2025_dn2025|o",
+      "unidades": 19,
+      "nivel": "departamentos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 19,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 19,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_2019p_gob2023_circuitos|o",
+      "destino": "pr:pc|salta_2019p_gob2023_circuitos|d",
+      "unidades": 270,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 270,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 270,
+          "segundos": 0.1
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_2019p_gob2023_circuitos|d",
+      "destino": "pr:pc|salta_2019p_gob2023_circuitos|o",
+      "unidades": 270,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 270,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 270,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|salta_2019p_gob2023_circuitos|d",
+      "unidades": 270,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 270,
+          "segundos": 0.7
+        },
+        {
+          "rapido": true,
+          "unidades": 270,
+          "segundos": 0.1
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_2019p_gob2023_circuitos|d",
+      "destino": "pkl:2019p",
+      "unidades": 270,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 270,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 270,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_gob2023_2023p_circuitos|o",
+      "destino": "pr:pc|salta_gob2023_2023p_circuitos|d",
+      "unidades": 284,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 284,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 284,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_gob2023_2023p_circuitos|d",
+      "destino": "pr:pc|salta_gob2023_2023p_circuitos|o",
+      "unidades": 284,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 284,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 284,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_gob2023_2023p_circuitos|o",
+      "destino": "pkl:2023p",
+      "unidades": 284,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 284,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 284,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|salta_gob2023_2023p_circuitos|o",
+      "unidades": 284,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 284,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 284,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_gob2023_2023b_circuitos|o",
+      "destino": "pr:pc|salta_gob2023_2023b_circuitos|d",
+      "unidades": 277,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 277,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 277,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_gob2023_2023b_circuitos|d",
+      "destino": "pr:pc|salta_gob2023_2023b_circuitos|o",
+      "unidades": 277,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 277,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 277,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|salta_gob2023_2023b_circuitos|o",
+      "destino": "pkl:2023b",
+      "unidades": 277,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 277,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 277,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|salta_gob2023_2023b_circuitos|o",
+      "unidades": 277,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 277,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 277,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_2019p_gob2023_circuitos|o",
+      "destino": "pr:pc|chaco_2019p_gob2023_circuitos|d",
+      "unidades": 146,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 146,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 146,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_2019p_gob2023_circuitos|d",
+      "destino": "pr:pc|chaco_2019p_gob2023_circuitos|o",
+      "unidades": 146,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 146,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 146,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|chaco_2019p_gob2023_circuitos|d",
+      "unidades": 146,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 146,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 146,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_2019p_gob2023_circuitos|d",
+      "destino": "pkl:2019p",
+      "unidades": 146,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 146,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 146,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_gob2023_2023p_circuitos|o",
+      "destino": "pr:pc|chaco_gob2023_2023p_circuitos|d",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_gob2023_2023p_circuitos|d",
+      "destino": "pr:pc|chaco_gob2023_2023p_circuitos|o",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_gob2023_2023p_circuitos|o",
+      "destino": "pkl:2023p",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|chaco_gob2023_2023p_circuitos|o",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_gob2023_2023b_circuitos|o",
+      "destino": "pr:pc|chaco_gob2023_2023b_circuitos|d",
+      "unidades": 148,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 148,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 148,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_gob2023_2023b_circuitos|d",
+      "destino": "pr:pc|chaco_gob2023_2023b_circuitos|o",
+      "unidades": 148,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 148,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 148,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_gob2023_2023b_circuitos|o",
+      "destino": "pkl:2023b",
+      "unidades": 148,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 148,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 148,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|chaco_gob2023_2023b_circuitos|o",
+      "unidades": 148,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 148,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 148,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_2019p_gob2023_circuitos|o",
+      "destino": "pr:pc|santafe_2019p_gob2023_circuitos|d",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_2019p_gob2023_circuitos|d",
+      "destino": "pr:pc|santafe_2019p_gob2023_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|santafe_2019p_gob2023_circuitos|d",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_2019p_gob2023_circuitos|d",
+      "destino": "pkl:2019p",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_gob2023_2023p_circuitos|o",
+      "destino": "pr:pc|santafe_gob2023_2023p_circuitos|d",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_gob2023_2023p_circuitos|d",
+      "destino": "pr:pc|santafe_gob2023_2023p_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_gob2023_2023p_circuitos|o",
+      "destino": "pkl:2023p",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|santafe_gob2023_2023p_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_gob2023_2023b_circuitos|o",
+      "destino": "pr:pc|santafe_gob2023_2023b_circuitos|d",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_gob2023_2023b_circuitos|d",
+      "destino": "pr:pc|santafe_gob2023_2023b_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_gob2023_2023b_circuitos|o",
+      "destino": "pkl:2023b",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|santafe_gob2023_2023b_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_2019p_gob2023_circuitos|o",
+      "destino": "pr:pc|pba_2019p_gob2023_circuitos|d",
+      "unidades": 917,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 917,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 917,
+          "segundos": 0.1
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_2019p_gob2023_circuitos|d",
+      "destino": "pr:pc|pba_2019p_gob2023_circuitos|o",
+      "unidades": 917,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 917,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 917,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|pba_2019p_gob2023_circuitos|d",
+      "unidades": 917,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 917,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 917,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_2019p_gob2023_circuitos|d",
+      "destino": "pkl:2019p",
+      "unidades": 917,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 917,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 917,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_gob2023_2023p_circuitos|o",
+      "destino": "pr:pc|pba_gob2023_2023p_circuitos|d",
+      "unidades": 1042,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1042,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 1042,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_gob2023_2023p_circuitos|d",
+      "destino": "pr:pc|pba_gob2023_2023p_circuitos|o",
+      "unidades": 1042,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1042,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 1042,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_gob2023_2023p_circuitos|o",
+      "destino": "pkl:2023p",
+      "unidades": 1042,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1042,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 1042,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|pba_gob2023_2023p_circuitos|o",
+      "unidades": 1042,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1042,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 1042,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_gob2023_2023b_circuitos|o",
+      "destino": "pr:pc|pba_gob2023_2023b_circuitos|d",
+      "unidades": 1035,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1035,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 1035,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_gob2023_2023b_circuitos|d",
+      "destino": "pr:pc|pba_gob2023_2023b_circuitos|o",
+      "unidades": 1035,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1035,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 1035,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|pba_gob2023_2023b_circuitos|o",
+      "destino": "pkl:2023b",
+      "unidades": 1035,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1035,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 1035,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|pba_gob2023_2023b_circuitos|o",
+      "unidades": 1035,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 1035,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 1035,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_2019p_gob2023_circuitos|o",
+      "destino": "pr:pc|caba_2019p_gob2023_circuitos|d",
+      "unidades": 164,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 164,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 164,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_2019p_gob2023_circuitos|d",
+      "destino": "pr:pc|caba_2019p_gob2023_circuitos|o",
+      "unidades": 164,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 164,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 164,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|caba_2019p_gob2023_circuitos|d",
+      "unidades": 164,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 164,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 164,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_2019p_gob2023_circuitos|d",
+      "destino": "pkl:2019p",
+      "unidades": 164,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 164,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 164,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_gob2023_2023p_circuitos|o",
+      "destino": "pr:pc|caba_gob2023_2023p_circuitos|d",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_gob2023_2023p_circuitos|d",
+      "destino": "pr:pc|caba_gob2023_2023p_circuitos|o",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_gob2023_2023p_circuitos|o",
+      "destino": "pkl:2023p",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|caba_gob2023_2023p_circuitos|o",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_gob2023_2023b_circuitos|o",
+      "destino": "pr:pc|caba_gob2023_2023b_circuitos|d",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_gob2023_2023b_circuitos|d",
+      "destino": "pr:pc|caba_gob2023_2023b_circuitos|o",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|caba_gob2023_2023b_circuitos|o",
+      "destino": "pkl:2023b",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|caba_gob2023_2023b_circuitos|o",
+      "unidades": 167,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 167,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 167,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_2019p_gob2023_circuitos|o",
+      "destino": "pr:pc|catamarca_2019p_gob2023_circuitos|d",
+      "unidades": 141,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 141,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 141,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_2019p_gob2023_circuitos|d",
+      "destino": "pr:pc|catamarca_2019p_gob2023_circuitos|o",
+      "unidades": 141,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 141,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 141,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|catamarca_2019p_gob2023_circuitos|d",
+      "unidades": 141,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 141,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 141,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_2019p_gob2023_circuitos|d",
+      "destino": "pkl:2019p",
+      "unidades": 141,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 141,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 141,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_gob2023_2023p_circuitos|o",
+      "destino": "pr:pc|catamarca_gob2023_2023p_circuitos|d",
+      "unidades": 157,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 157,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 157,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_gob2023_2023p_circuitos|d",
+      "destino": "pr:pc|catamarca_gob2023_2023p_circuitos|o",
+      "unidades": 157,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 157,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 157,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_gob2023_2023p_circuitos|o",
+      "destino": "pkl:2023p",
+      "unidades": 157,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 157,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 157,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|catamarca_gob2023_2023p_circuitos|o",
+      "unidades": 157,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 157,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 157,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_gob2023_2023b_circuitos|o",
+      "destino": "pr:pc|catamarca_gob2023_2023b_circuitos|d",
+      "unidades": 153,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 153,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 153,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_gob2023_2023b_circuitos|d",
+      "destino": "pr:pc|catamarca_gob2023_2023b_circuitos|o",
+      "unidades": 153,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 153,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 153,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|catamarca_gob2023_2023b_circuitos|o",
+      "destino": "pkl:2023b",
+      "unidades": 153,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 153,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 153,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|catamarca_gob2023_2023b_circuitos|o",
+      "unidades": 153,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 153,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 153,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_prov2025_dn2025_circuitos|o",
+      "destino": "pr:pc|chaco_prov2025_dn2025_circuitos|d",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_prov2025_dn2025_circuitos|d",
+      "destino": "pr:pc|chaco_prov2025_dn2025_circuitos|o",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|chaco_prov2025_dn2025_circuitos|o",
+      "destino": "pkl:2025",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:pc|chaco_prov2025_dn2025_circuitos|o",
+      "unidades": 152,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 152,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 152,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_diputados_prov2025_dn2025_circuitos|o",
+      "destino": "pr:pc|corrientes_diputados_prov2025_dn2025_circuitos|d",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_diputados_prov2025_dn2025_circuitos|d",
+      "destino": "pr:pc|corrientes_diputados_prov2025_dn2025_circuitos|o",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_diputados_prov2025_dn2025_circuitos|o",
+      "destino": "pkl:2025",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:pc|corrientes_diputados_prov2025_dn2025_circuitos|o",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_gobernador_prov2025_dn2025_circuitos|o",
+      "destino": "pr:pc|corrientes_gobernador_prov2025_dn2025_circuitos|d",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_gobernador_prov2025_dn2025_circuitos|d",
+      "destino": "pr:pc|corrientes_gobernador_prov2025_dn2025_circuitos|o",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_gobernador_prov2025_dn2025_circuitos|o",
+      "destino": "pkl:2025",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:pc|corrientes_gobernador_prov2025_dn2025_circuitos|o",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_senadores_prov2025_dn2025_circuitos|o",
+      "destino": "pr:pc|corrientes_senadores_prov2025_dn2025_circuitos|d",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_senadores_prov2025_dn2025_circuitos|d",
+      "destino": "pr:pc|corrientes_senadores_prov2025_dn2025_circuitos|o",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|corrientes_senadores_prov2025_dn2025_circuitos|o",
+      "destino": "pkl:2025",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:pc|corrientes_senadores_prov2025_dn2025_circuitos|o",
+      "unidades": 172,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 172,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 172,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_prov2025_dn2025_circuitos|o",
+      "destino": "pr:pc|santafe_prov2025_dn2025_circuitos|d",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_prov2025_dn2025_circuitos|d",
+      "destino": "pr:pc|santafe_prov2025_dn2025_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|santafe_prov2025_dn2025_circuitos|o",
+      "destino": "pkl:2025",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:pc|santafe_prov2025_dn2025_circuitos|o",
+      "unidades": 70,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 70,
+          "segundos": 0.4
+        },
+        {
+          "rapido": true,
+          "unidades": 70,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_2019p_gob2023_municipios|o",
+      "destino": "pr:pc|misiones_2019p_gob2023_municipios|d",
+      "unidades": 76,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 76,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 76,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_2019p_gob2023_municipios|d",
+      "destino": "pr:pc|misiones_2019p_gob2023_municipios|o",
+      "unidades": 76,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 76,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 76,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2019p",
+      "destino": "pr:pc|misiones_2019p_gob2023_municipios|d",
+      "unidades": 76,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 76,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 76,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_2019p_gob2023_municipios|d",
+      "destino": "pkl:2019p",
+      "unidades": 76,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 76,
+          "segundos": 0.3
+        },
+        {
+          "rapido": true,
+          "unidades": 76,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_gob2023_2023p_municipios|o",
+      "destino": "pr:pc|misiones_gob2023_2023p_municipios|d",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_gob2023_2023p_municipios|d",
+      "destino": "pr:pc|misiones_gob2023_2023p_municipios|o",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_gob2023_2023p_municipios|o",
+      "destino": "pkl:2023p",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023p",
+      "destino": "pr:pc|misiones_gob2023_2023p_municipios|o",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.2
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_gob2023_2023b_municipios|o",
+      "destino": "pr:pc|misiones_gob2023_2023b_municipios|d",
+      "unidades": 74,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 74,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 74,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_gob2023_2023b_municipios|d",
+      "destino": "pr:pc|misiones_gob2023_2023b_municipios|o",
+      "unidades": 74,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 74,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 74,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_gob2023_2023b_municipios|o",
+      "destino": "pkl:2023b",
+      "unidades": 74,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 74,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 74,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2023b",
+      "destino": "pr:pc|misiones_gob2023_2023b_municipios|o",
+      "unidades": 74,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 74,
+          "segundos": 0.1
+        },
+        {
+          "rapido": true,
+          "unidades": 74,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_prov2025_dn2025_municipios|o",
+      "destino": "pr:pc|misiones_prov2025_dn2025_municipios|d",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_prov2025_dn2025_municipios|d",
+      "destino": "pr:pc|misiones_prov2025_dn2025_municipios|o",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pr:pc|misiones_prov2025_dn2025_municipios|o",
+      "destino": "pkl:2025",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    },
+    {
+      "origen": "pkl:2025",
+      "destino": "pr:pc|misiones_prov2025_dn2025_municipios|o",
+      "unidades": 75,
+      "nivel": "circuitos",
+      "calculos": [
+        {
+          "rapido": false,
+          "unidades": 75,
+          "segundos": 0.5
+        },
+        {
+          "rapido": true,
+          "unidades": 75,
+          "segundos": 0.0
+        }
+      ]
+    }
+  ]
+}

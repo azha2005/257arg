@@ -28,7 +28,7 @@ def candado():
 
 
 @st.cache_data(max_entries=200, show_spinner=False)
-def sankey(o, d, rapido):
+def sankey(o, d, rapido, version):
     with candado():
         return motor.calcular(o, d, rapido=rapido)
 
@@ -74,7 +74,7 @@ if ir or (qp.get("o") == o and qp.get("d") == d):
         st.stop()
     try:
         with st.spinner("Calculando %s → %s…" % (POR_ID[o]["nombre"], POR_ID[d]["nombre"])):
-            R = sankey(o, d, rapido)
+            R = sankey(o, d, rapido, motor.VERSION)
     except Exception as e:
         st.error("No se pudo calcular: %s" % e)
         st.stop()

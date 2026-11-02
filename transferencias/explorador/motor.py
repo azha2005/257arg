@@ -5,6 +5,7 @@ sin bootstrap: una sola estimación puntual. La penalización se elige por valid
 como en estimar.py; con `rapido=True` se usa la fija 2e-6.
 
 Unidades:
+- Provinciales preparadas (pr:…) con su contraparte: empalme auditado, también si se elige la nacional curada.
 - Dos elecciones con pkl de circuitos (pkl:…): estimar.prepare, con las correspondencias revisadas de cada par.
 - Cualquier otro par: departamentos emparejados por nombre dentro de cada provincia. Si los emparejados cubren
   menos del 75 % de los votos de la provincia en alguna de las dos, la provincia entra como una sola unidad."""
@@ -22,7 +23,36 @@ COBERTURA_DEPTO = .75
 RATIO = (0.5, 2.0)            # cambio de tamaño admitido de una unidad, relativo al cambio mediano
 LAMBDA_RAPIDA = 2e-6
 PARES = os.path.join(datos.CACHE, "pares"); os.makedirs(PARES, exist_ok=True)
-VERSION = 5                   # cambiar si cambia el cálculo: invalida los resultados guardados
+VERSION = 7                   # cambiar si cambia el cálculo: invalida los resultados guardados
+
+
+def alinear(o, d):
+    """Selecciona primero empalmes provinciales auditados; después los cruces generales."""
+    preparado = datos.par_preparado(o, d)
+    if preparado is not None:
+        A, B, meta = preparado
+        if not A.index.equals(B.index):
+            raise ValueError("El empalme provincial preparado tiene unidades diferentes en ambos lados.")
+        prov = datos.prov_canon(meta["nombre"])
+        modo = meta.get("nivel", "departamentos")
+        info = {prov: dict(unidades=len(A), modo=modo, empalme_verificado=True,
+                          cobertura_origen=meta.get("cobertura_origen"),
+                          cobertura_destino=meta.get("cobertura_destino"))}
+        notas = ["Empalme provincial verificado: %d unidades (%s). Se conservan las categorías del cruce preparado." % (len(A), modo)]
+        for campo in ("nota", "fuente"):
+            if meta.get(campo): notas.append(meta[campo])
+        if meta.get("base"): notas.append("Base del empalme: %s." % meta["base"])
+        if meta.get("pendientes"):
+            notas.append("El empalme conserva %d exclusiones o pendientes documentados, sin imputarlos." % len(meta["pendientes"]))
+        return A, B, info, notas, "departamentos" if modo in ("departamentos", "municipios") else "circuitos"
+    notas = []
+    if o.startswith("pkl:") and d.startswith("pkl:"):
+        alin, motivo = _alinear_circuitos(o, d)
+        if alin is not None:
+            return (*alin, "circuitos")
+        notas.append("No se pudo cruzar por circuito (%s): se cruza por departamento." % motivo)
+    A, B, info, n2 = _alinear_departamentos(datos.tabla_departamentos(o), datos.tabla_departamentos(d))
+    return A, B, info, notas + n2, "departamentos"
 
 
 def _alinear_circuitos(o, d):
@@ -83,8 +113,10 @@ def _base_comun(A, B, notas):
             if (~ok).any():
                 notas.append("Sin electores en %d unidades: quedan afuera." % (~ok).sum())
             return A[ok], B[ok], True
-    notas.append("Base: votos emitidos (sin «No votó»), porque %s no trae electores en todas sus unidades." %
-                 ("ninguna de las dos" if "No votó" not in A and "No votó" not in B else "una de las dos"))
+    if "Blanco" in A and "Blanco" in B:
+        notas.append("Base: votos válidos (positivos + blancos), sin nulos ni abstención.")
+    else:
+        notas.append("Base: votos emitidos (sin «No votó»); faltan electores en al menos una de las elecciones.")
     return A.drop(columns="No votó", errors="ignore"), B.drop(columns="No votó", errors="ignore"), False
 
 
@@ -168,22 +200,14 @@ def calcular(o, d, rapido=False):
     f = os.path.join(PARES, clave + ".json")
     if os.path.exists(f):
         return json.load(open(f, encoding="utf8"))
-    notas = []
-    alin = None
-    if o.startswith("pkl:") and d.startswith("pkl:"):
-        alin, motivo = _alinear_circuitos(o, d)
-        if alin is None: notas.append("No se pudo cruzar por circuito (%s): se cruza por departamento." % motivo)
-    if alin is None:
-        A, B, info, n2 = _alinear_departamentos(datos.tabla(o), datos.tabla(d))
-        nivel = "departamentos"
-    else:
-        A, B, info, n2 = alin
-        nivel = "circuitos"
-    notas += n2
+    A, B, info, notas, nivel = alinear(o, d)
     A, B, nv = _base_comun(A, B, notas)
     A, B = A.fillna(0), B.fillna(0)
     A, B = A.loc[:, A.sum() > 0], B.loc[:, B.sum() > 0]
-    A, B = _filtro_tamano(A, B, notas)
+    # Los empalmes provinciales ya tienen controles y exclusiones propios.
+    # Volver a filtrarlos por cambio de participación descartaría áreas válidas.
+    if not all(v.get("empalme_verificado") for v in info.values()):
+        A, B = _filtro_tamano(A, B, notas)
     if len(A) < 3:
         pa, pb = (sorted(set(datos.tabla(x).index.get_level_values(0))) for x in (o, d))
         comun = sorted(set(pa) & set(pb))
@@ -222,7 +246,8 @@ def calcular(o, d, rapido=False):
     nprov_entera = sum(1 for v in info.values() if v["modo"] == "provincia entera")
     if nprov_entera:
         notas.append("%d provincias entran como una sola unidad (nombres de departamento que no coinciden o cobertura parcial): su matriz es casi la nacional." % nprov_entera)
-    out = dict(origen=o, destino=d, nivel=nivel, base="padrón" if nv else "votos emitidos", rows=rows, cols=cols,
+    base = "padrón" if nv else "votos válidos (positivos + blancos)" if "Blanco" in rows + cols else "votos emitidos"
+    out = dict(origen=o, destino=d, nivel=nivel, base=base, rows=rows, cols=cols,
                nacional=np.round(M, 1).tolist(), provincias={p: np.round(por[p], 1).tolist() for p in provs},
                info={p: dict(info.get(p, {}), unidades_usadas=int(len(A.loc[p]))) for p in provs},
                lambda_=lam, cv={str(k): v for k, v in (cv or {}).items()}, auditoria=aud,

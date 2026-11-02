@@ -9,6 +9,7 @@ Dos fuentes:
 «Blanco y nulo» y, si hay electores, «No votó». Las categorías de MASTER salen del bloque de la Wikipedia
 cuando la elección lo tiene y, si no, del partido; las chicas van a «Otros»."""
 import os, re, sys, unicodedata, difflib
+from functools import lru_cache
 import numpy as np, pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -182,7 +183,7 @@ def tabla_prov(eid):
     T = (X if lado == "o" else Y).copy()
     prov = prov_canon(meta["nombre"])
     circ = f == "pc" or meta.get("nivel") not in ("departamentos", "municipios")
-    T = T.rename(columns={"Blanco": "Blanco y nulo", "Otras listas": "Otros"})
+    T = T.rename(columns={"Otras listas": "Otros"})
     nombres = {}
     idx = []
     for u in T.index:
@@ -191,6 +192,95 @@ def tabla_prov(eid):
     T = T.groupby(level=[0, 1]).sum(min_count=1).astype(float)
     T.attrs["nombres"] = nombres
     return T
+
+
+def nacional_preparada(nombre):
+    """Identidad de la elección nacional de un empalme, sin confundir cargos ni vueltas."""
+    if not NACIONAL_RE.match(nombre):
+        return None
+    anio = _anio_txt(nombre, 0)
+    if not anio:
+        return None
+    sufijo = "b" if nombre.startswith("Balotaje") else "p" if nombre.startswith("Presidente") else ""
+    return "pkl:%d%s" % (anio, sufijo)
+
+
+def par_preparado(o, d):
+    """Recupera el empalme auditado también al elegir la nacional del catálogo curado.
+
+    No une códigos por parecido ni compara una unidad completa con un subconjunto.
+    Las categorías nacionales son las del empalme provincial, no una redistribución.
+    """
+    for provincial, nacional, invertir in ((o, d, False), (d, o, True)):
+        if not provincial.startswith("pr:"):
+            continue
+        f, k, lado = provincial[3:].split("|")
+        X, Y, meta = _bases(f)[k]
+        nombre = meta["origen" if lado == "o" else "destino"]
+        if nacional.startswith("pr:"):
+            fn, kn, ln = nacional[3:].split("|")
+            if (f, k) == (fn, kn) and lado != ln:
+                return tabla(provincial), tabla(nacional), meta
+            continue
+        if nacional_preparada(nombre) is not None:
+            continue
+        identidad = nombre.split(" (")[0]
+        candidatos = []
+        for kk, (XX, YY, mm) in _bases(f).items():
+            if prov_canon(mm["nombre"]) != prov_canon(meta["nombre"]):
+                continue
+            for lp, ln in (("o", "d"), ("d", "o")):
+                np, nn = mm["origen" if lp == "o" else "destino"], mm["origen" if ln == "o" else "destino"]
+                if np.split(" (")[0] == identidad and nacional_preparada(nn) == nacional:
+                    candidatos.append((len(XX), kk, lp, ln, mm))
+        if candidatos:
+            _, kk, lp, ln, mm = max(candidatos, key=lambda c: c[0])
+            A, B = tabla("pr:%s|%s|%s" % (f, kk, lp)), tabla("pr:%s|%s|%s" % (f, kk, ln))
+            return (B, A, mm) if invertir else (A, B, mm)
+    return None
+
+
+@lru_cache(maxsize=None)
+def tabla_departamentos(eid):
+    """Agrega una provincial fina antes de compararla con otra fuente por departamento.
+
+    Las claves con prefijo incluyen su departamento. Para los códigos solos se usa
+    la pertenencia de la base nacional 2025, sólo cuando es unívoca. Una unión entre
+    departamentos no se desarma: se conserva la provincia completa.
+    """
+    T = tabla(eid)
+    if not eid.startswith("pr:"):
+        return T
+    f, k, _ = eid[3:].split("|")
+    _, _, meta = _bases(f)[k]
+    if meta.get("nivel") in ("departamentos", "municipios"):
+        return T
+    prov = prov_canon(meta["nombre"])
+    codigos = {}
+    if f != "pc":
+        v, _ = pd.read_pickle(os.path.join(TR, "circ_2025.pkl"))
+        v = v[v.distrito_id.eq(str(meta["distrito"]).zfill(2))]
+        for s, c in v[["seccion_id", "circuito"]].drop_duplicates().itertuples(index=False, name=None):
+            code = str(c).upper().lstrip("0") or "0"
+            codigos.setdefault(code, set()).add(nkp(prov, _secname("2025", str(meta["distrito"]).zfill(2), s)))
+    unidades = []
+    for _, u in T.index:
+        if f == "pc":
+            dep = u.split(":")[0] if ":" in u and not u.startswith("UNION:") else None
+        else:
+            opciones = codigos.get(str(u).upper().lstrip("0") or "0", set())
+            dep = next(iter(opciones)) if len(opciones) == 1 else None
+        if dep is not None and prov == "Ciudad de Buenos Aires":
+            dep = re.sub(r"^COMUNA0+(?=\d)", "COMUNA", dep)
+        unidades.append(nkp(prov, dep) if dep is not None else None)
+    if None in unidades:
+        unidades = ["(provincia entera)"] * len(T)
+    out = T.copy()
+    out.index = pd.MultiIndex.from_arrays([[prov] * len(T), unidades], names=["prov", "u"])
+    out = out.groupby(level=[0, 1]).sum(min_count=1)
+    if "No votó" in T and T["No votó"].isna().any():
+        out["No votó"] = np.nan
+    return out
 
 
 HIPOTETICOS = {"mapa1916fic", "mapa1985hip", "mapa2027", "mapa2027kic", "mapa2023massa"}
@@ -510,7 +600,7 @@ def anio(eid):
 
 # --- colores ------------------------------------------------------------------------------------------------
 _colores = None
-HEUR = [(r"BLANCO Y NULO", "#5b5b5b"), (r"NO VOTO", "#c8c8c8"), (r"^OTROS", "#9e9e9e"),
+HEUR = [(r"^BLANCO(?: Y NULO)?$", "#5b5b5b"), (r"NO VOTO", "#c8c8c8"), (r"^OTROS", "#9e9e9e"),
         (r"LIBERTAD AVANZA|MILEI|LIBERTARIO", "#6c4c98"), (r"FUERZA PATRIA|UNION POR LA PATRIA|MASSA", "#009ce4"),
         (r"FRENTE DE TODOS|UNIDAD CIUDADANA|FERNANDEZ", "#2ea3ff"), (r"VICTORIA|KIRCHNER|SCIOLI", "#50ade6"),
         (r"JUNTOS POR EL CAMBIO|CAMBIEMOS|MACRI|BULLRICH|PROPUESTA REPUBLICANA|\bPRO\b|UNION PRO", "#f4ce00"),
