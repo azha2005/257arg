@@ -92,7 +92,6 @@ GRUPOS = [
         ("mapas/serieAMBA2005_2023radios/atlas_2023dip.html", "2023", "Diputados, por radio", "Estimado"),
         ("mapas/serieAMBA2005_2023radios/atlas_2023pres.html", "2023", "Presidente, por radio", "Estimado"),
         ("mapas/serieAMBA2005_2023radios/atlas_2023bal.html", "2023", "Balotaje, por radio", "Estimado"),
-        ("mapas/mapaAMBA2025/atlas_amba2025.html", "2025", "Diputados, por circuito", ""),
         ("mapas/mapaAMBA2025radios/atlas_amba2025radios.html", "2025", "Diputados, por radio", "Estimado"),
     ]),
     ("escenarios", "Escenarios hipotéticos", "Ucronías y simulaciones a partir de resultados reales. No son resultados.", [
