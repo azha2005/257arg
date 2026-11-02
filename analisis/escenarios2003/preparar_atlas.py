@@ -3,7 +3,6 @@
 No ejecuta ni modifica el atlas legislativo de origen. La fuente presidencial
 es PolAr, la misma de los Sankey. Los faltantes quedan beige.
 """
-import base64
 from pathlib import Path
 import difflib
 import hashlib
@@ -82,13 +81,11 @@ def main():
     # Los nombres geográficos siguen los de la geometría (Capital Federal),
     # aunque el catálogo de transferencias rotule el distrito «CABA».
     for g in data['geographies'][1:]:g['name']=D2P[g['id']]
-    # Bloques del mapa presidencial 2003 de la Wikipedia (CC0), los mismos del atlas AMBA 2003 por radio
-    # (2-nov-2026, pedido del usuario): Menem, Kirchner/FPV, López Murphy/Recrear, Rodríguez Saá/MNP y Carrió/ARI.
-    from PIL import Image
-    logos={}
-    for key,f in dict(M='menem',K='fpv03',L='recrear',R='mnp',C='ari').items():
-        fn=ROOT/'logos/bloques_presidenciales'/(f+'.png');im=Image.open(fn)
-        logos[key]=dict(img='data:image/png;base64,'+base64.b64encode(fn.read_bytes()).decode(),ar=round(im.width/im.height,4),blk=True)
+    # Logos del atlas AMBA 2003 por radio (2-nov-2026, pedido del usuario): mismas imágenes y proporciones,
+    # con sus arreglos (bloques del mapa presidencial 2003 de la Wikipedia, MNP sin el verde, etc.).
+    amba=(ROOT/'mapas/mapaAMBA2003radios/atlas_amba2003radios.html').read_text(encoding='utf8')
+    ca,_=json.JSONDecoder().raw_decode(amba[amba.index('{',amba.index('"candidates"')):])
+    logos={k:{x:ca[k][x] for x in ('img','ar','bl') if x in ca[k]} for k in 'MKLRC' if ca.get(k,{}).get('img')}
     payload=dict(sim=data,units=rows,territories=T,insets=original['insets'],logos=logos)
     (OUT/'base_territorial.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf8')
     if '--solo-base' in sys.argv:
