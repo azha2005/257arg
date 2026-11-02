@@ -88,6 +88,7 @@ def indice():
 <footer class="pie"><div class="container">
 <p>Cada atlas es un HTML autocontenido: pestañas por modo, ficha de cada unidad y descarga en SVG o PNG. Lo que falta queda en beige y rotulado; no se imputa.</p>
 <p>Fuentes: Darío Cantón, base de Ernesto Calvo, Lupu y Stokes, DINE, PolAr (Andy Tow), CNE, Wikipedia. Cartografía de Rodríguez (CEUR-CONICET), CC BY 2.5 Argentina. Código y datos en <a href="https://github.com/azha2005/257arg">github.com/azha2005/257arg</a>.</p>
+<p>Hecho por azhadron / elfiguretti / itsahardlife.</p>
 </div></footer>
 <script>
 (function(){{const b=document.getElementById("tema"),r=document.documentElement;
@@ -106,13 +107,13 @@ b.addEventListener("click",function(){{r.dataset.theme=oscuro()?"light":"dark";t
 SITIO_CSS = ('<style>/*sitio*/#bar a.sitio-ind{color:var(--ctlfg);text-decoration:none;font-weight:600;padding:4px 6px}'
              '#bar a.sitio-ind:hover{text-decoration:underline}'
              '#barnote-d{flex-basis:100%;order:9;color:var(--mut);font-size:13px}'
-             '#barnote-d summary{cursor:pointer;width:max-content}#barnote-d #barnote{margin-top:4px}'
+             '#barnote-d summary{cursor:pointer;width:max-content}#barnote-d #barnote{margin-top:4px}#barnote-d .sitio-autor{margin:6px 0 0}'
              'body.sin-rec #insets>:not(.keep):not(#cababub){display:none}</style>\n')
 SITIO_JS = ('<script>/*sitio*/(function(){var b=document.body,bar=document.getElementById("bar"),n=document.getElementById("barnote");'
             'if(bar){var a=document.createElement("a");a.className="sitio-ind";a.href="../../";a.textContent="Todos los atlas";'
             'bar.insertBefore(a,bar.firstChild);}'
             'if(n){var d=document.createElement("details");d.id="barnote-d";var s=document.createElement("summary");'
-            's.textContent="Fuentes y notas";d.appendChild(s);n.parentNode.insertBefore(d,n);d.appendChild(n);}'
+            's.textContent="Fuentes y notas";d.appendChild(s);n.parentNode.insertBefore(d,n);d.appendChild(n);var hc=document.createElement("p");hc.className="sitio-autor";hc.textContent="Hecho por azhadron / elfiguretti / itsahardlife.";d.appendChild(hc);}'
             'var t=null;try{t=localStorage.getItem("tema");}catch(e){}'
             'var claro=t?t==="light":matchMedia("(prefers-color-scheme: light)").matches;'
             'if(claro&&location.hash.indexOf("bare")<0){b.dataset.bg="white";var g=document.getElementById("b-bg");if(g)g.textContent="Fondo: blanco";}'
