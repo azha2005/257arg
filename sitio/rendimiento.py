@@ -70,6 +70,12 @@ function highlight(){
 ''' + texto[j:]
 
     # Evitar que el gesto de arrastrar un rótulo active selección de texto.
+    # El AMBA se extiende a la derecha del rectángulo del mapa nacional:
+    # sus polígonos también deben responder al arrastre y a la rueda.
+    texto = _una(texto, 'if(!inReg(x,y))return;ev.preventDefault();zoomAt(',
+                'if(!inReg(x,y)&&!(ev.target.closest&&ev.target.closest("#mainwrap")))return;ev.preventDefault();zoomAt(')
+    texto = _una(texto, 'if(ev.button!==0||!inReg(x,y))return;DRAG=',
+                'if(ev.button!==0||(!inReg(x,y)&&!(ev.target.closest&&ev.target.closest("#mainwrap"))))return;DRAG=')
     texto = _una(texto, 'DRAG={x,y,tx:Z.tx,ty:Z.ty,moved:false,',
                 'if(ev.pointerType!=="touch")ev.preventDefault();DRAG={id:ev.pointerId,x,y,tx:Z.tx,ty:Z.ty,moved:false,')
     texto = _una(texto, 'window.addEventListener("pointermove",ev=>{if(!DRAG)return;',

@@ -19,6 +19,8 @@ y las mejoras de interacción se aplican durante esta copia.
   bordes que ya tienen el valor correspondiente.
 - El texto del SVG no se selecciona al arrastrar. Se limpian los gestos al
   cancelar un puntero, perder el foco o empezar un pellizco con dos dedos.
+- Los polígonos del AMBA que salen del rectángulo del mapa nacional también
+  responden al arrastre y a la rueda del mouse.
 
 `window.__atlas.zoom` expone la escala actual aunque su dibujo esté pendiente,
 para conservar todos los movimientos de un pellizco entre dos fotogramas.

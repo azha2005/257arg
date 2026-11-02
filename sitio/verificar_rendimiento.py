@@ -108,6 +108,13 @@ def verificar_navegador(destino, solo_movil=False):
               for(let n=0;n<60;n++)window.dispatchEvent(pe('pointermove',n+6));
               window.dispatchEvent(pe('pointerup',66));await frame();observer.disconnect();
               if(transforms!==1||strokes!==0)throw Error('Arrastre sin agrupar: '+transforms+'/'+strokes);
+              // El AMBA llega más allá del rectángulo del mapa nacional.
+              // Incluso ahí el gesto debe funcionar si nace sobre un polígono.
+              const exterior=new DOMPoint(1500,800).matrixTransform(sv.getScreenCTM());
+              const outside=(type,dx)=>new PointerEvent(type,{bubbles:true,pointerId:1,pointerType:'mouse',button:0,clientX:exterior.x+dx,clientY:exterior.y});
+              const outsideBefore=z.getAttribute('transform');
+              target.dispatchEvent(outside('pointerdown',0));window.dispatchEvent(outside('pointermove',20));window.dispatchEvent(outside('pointerup',20));await frame();
+              if(z.getAttribute('transform')===outsideBefore)throw Error('No arrastra fuera del rectángulo nacional');
               if(window.getSelection().toString())throw Error('Seleccionó texto al arrastrar');
               if(getComputedStyle(sv.querySelector('text')).userSelect!=='none')throw Error('Texto seleccionable');
               // Cancelar el puntero no puede dejar un arrastre pendiente.
