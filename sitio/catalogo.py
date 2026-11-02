@@ -1,7 +1,7 @@
 """Qué atlas van al sitio de GitHub Pages y cómo se agrupan (2-nov-2026).
 
 Cada entrada: (ruta del HTML desde la raíz, año, rótulo, nota corta o "").
-Lo que no está acá no se publica (wiki.html, hemiciclos, mapa2007circuitos, que era una prueba).
+Lo que no está acá no se publica (wiki.html, hemiciclos, mapa2007circuitos, que era una prueba, ni el AMBA 2007 por circuito).
 """
 
 GRUPOS = [
@@ -72,7 +72,6 @@ GRUPOS = [
     ("amba", "AMBA por circuito y por radio censal", "Capital y 40 partidos. Por radio son estimaciones: el voto se publica por mesa.", [
         ("mapas/mapaAMBA2003radios/atlas_amba2003radios.html", "2003", "Presidente, por radio", "Estimado"),
         ("mapas/serieAMBA2005_2023radios/atlas_2005dip.html", "2005", "Diputados, por radio", "Estimado"),
-        ("mapas/mapaAMBA2007/atlas_amba2007.html", "2007", "Presidente, por circuito", ""),
         ("mapas/serieAMBA2005_2023radios/atlas_2007dip.html", "2007", "Diputados, por radio", "Estimado"),
         ("mapas/serieAMBA2005_2023radios/atlas_2007pres.html", "2007", "Presidente, por radio", "Estimado"),
         ("mapas/serieAMBA2005_2023radios/atlas_2009dip.html", "2009", "Diputados, por radio", "Estimado; 321 radios excluidos"),
