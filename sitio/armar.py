@@ -126,8 +126,18 @@ SITIO_JS = ('<script>/*sitio*/(function(){var b=document.body,bar=document.getEl
             'if(bg&&ins){var r=document.createElement("button");r.id="b-rec";r.type="button";'
             'function rr(){r.textContent=b.classList.contains("sin-rec")?"Mostrar recuadros":"Ocultar recuadros";}'
             'try{if(localStorage.getItem("recuadros")==="no")b.classList.add("sin-rec");}catch(e){}'
-            'r.addEventListener("click",function(){var o=b.classList.toggle("sin-rec");try{localStorage.setItem("recuadros",o?"no":"si");}catch(e){}rr();});'
+            'r.addEventListener("click",function(){var o=b.classList.toggle("sin-rec");try{localStorage.setItem("recuadros",o?"no":"si");}catch(e){}rr();window.__huecos();});'
             'rr();bg.parentNode.insertBefore(r,bg);}'
+            # el mapa principal se recorta con huecos donde van los recuadros: sin recuadros, el hueco quedaría vacío
+            'var cp=document.getElementById("clippath"),cpd=cp&&cp.getAttribute("d");'
+            'window.__huecos=function(){if(!cp)return;var v=b.dataset.vista,sin=b.classList.contains("sin-rec")||(b.classList.contains("movil")&&v!=="rec"&&v!=="todo");'
+            'cp.setAttribute("d",sin?cpd.replace(/ M[\\s\\S]*$/,""):cpd);};window.__huecos();'
+            # la ficha no repite la nota general del modo (está en «Fuentes y notas»); quedan las notas propias de la unidad
+            'function sinNota(c){if(!c)return;'
+            'new MutationObserver(function(){var bn=document.getElementById("barnote"),g=bn?bn.textContent.trim():"";c.querySelectorAll(".c-note").forEach(function(n){var t=n.textContent;'
+            'if(g&&t.indexOf(g)>=0){t=t.replace(" · "+g,"").replace(g,"").trim();if(t)n.textContent=t;else n.remove();}});})'
+            '.observe(c,{childList:true,subtree:true});}'
+            'sinNota(document.getElementById("card"));sinNota(document.getElementById("tip"));'
             '})();</script>\n')
 
 # Modo celular (pantallas de hasta 760 px): el póster de 1920 px no se lee achicado, así que se muestra por partes
@@ -149,9 +159,9 @@ MOVIL_CSS = ('<style>/*movil*/#m-row,#m-cab{display:none}'
              '#m-rq button{flex:none;font:inherit;font-size:12.5px;padding:5px 9px;color:var(--ctlfg);background:var(--ctl);border:1px solid var(--line);border-radius:14px;white-space:nowrap}'
              '#m-rq button.on{border-color:#70a6d7;font-weight:700}'
              'body.movil:not([data-vista="mapa"]) #atlas{height:auto;max-height:calc(100svh - var(--mh,150px));margin:0 auto}'
-             'body.movil #card .c-title{font-size:19px}body.movil #card .c-row{grid-template-columns:1fr 58px 76px;font-size:14px}'
+             'body.movil #card .c-title{font-size:19px}body.movil #card .c-sec{font-size:13px}body.movil #card .c-row{grid-template-columns:1fr 58px 76px;font-size:14px}'
              'body.movil #wrap{padding:0 0 10px;max-width:none!important}'
-             'body.movil[data-vista="mapa"] #atlas{height:calc(100svh - var(--mh,150px));width:min(100%,calc((100svh - var(--mh,150px))*var(--ar,.545)));margin:0 auto;touch-action:none}'
+             'body.movil[data-vista="mapa"] #atlas{height:calc(100svh - var(--mh,150px));width:min(100%,calc((100svh - var(--mh,150px))*var(--ar,.545)));margin:0 auto;touch-action:pan-y}'
              'body.movil[data-vista="mapa"] #insets>:not(.keep):not(#cababub),body.movil[data-vista="res"] #insets>:not(.keep):not(#cababub){display:none}'
              'body.movil[data-vista="rec"] #insets>*{display:inline!important}'
              'body.movil #tip{display:none!important}'
@@ -186,7 +196,7 @@ MOVIL_JS = ('<script>/*movil*/(function(){var sv=document.getElementById("atlas"
             'x.addEventListener("click",function(){rq=i;poner("rec");});ch.appendChild(x);});'
             'if(RQ[rq])vb=RQ[rq].v.map(function(n){return n.toFixed(1)}).join(" ");}'
             'sv.setAttribute("viewBox",vb);var q=vb.split(/[ ,]+/).map(Number);sv.style.aspectRatio=v==="mapa"?"":(q[2]/q[3]).toFixed(4);'
-            'document.querySelectorAll("#m-vis button").forEach(function(x){x.classList.toggle("on",x.dataset.v===v)});alto();}'
+            'document.querySelectorAll("#m-vis button").forEach(function(x){x.classList.toggle("on",x.dataset.v===v)});alto();if(window.__huecos)window.__huecos();if(window.__tacto)window.__tacto();}'
             'function alto(){var w=document.getElementById("wrap");var t=w?w.getBoundingClientRect().top+scrollY:150;b.style.setProperty("--mh",(t+12)+"px");}'
             'function cab(){var c=document.getElementById("m-cab");if(!c)return;var s=document.getElementById("sub"),st=s&&s.getAttribute("display")!=="none"?s.textContent:"";'
             'c.firstChild.textContent=(DATA.title||"")+" "+(DATA.year||"");c.querySelector("small").textContent=st;'
@@ -224,7 +234,10 @@ MOVIL_JS = ('<script>/*movil*/(function(){var sv=document.getElementById("atlas"
             'addEventListener("pointerdown",function(e){if(e.pointerType==="touch")dedos.add(e.pointerId);},true);'
             '["pointerup","pointercancel"].forEach(function(t){addEventListener(t,function(e){dedos.delete(e.pointerId);},true);});'
             # con dos dedos (y hasta levantarlos todos) el arrastre del atlas no recibe los movimientos
-            'addEventListener("pointermove",function(e){if(e.pointerType==="touch"&&(dedos.size>1||P||cortar))e.stopImmediatePropagation();},true);var cortar=false;'
+            # sin acercar, un dedo desplaza la página (no arrastra el mapa); acercado, arrastra el mapa
+            'function tacto(){sv.style.touchAction=b.classList.contains("movil")&&vista==="mapa"&&esc()>1.01?"none":"";}'
+            'window.__tacto=tacto;if(zg)new MutationObserver(tacto).observe(zg,{attributes:true,attributeFilter:["transform"]});'
+            'addEventListener("pointermove",function(e){if(e.pointerType==="touch"&&(dedos.size>1||P||cortar||(vista==="mapa"&&esc()<=1.01)))e.stopImmediatePropagation();},true);var cortar=false;'
             'sv.addEventListener("touchstart",function(e){if(!b.classList.contains("movil")||vista!=="mapa"||e.touches.length!==2||!window.__atlas)return;P=mid(e);cortar=true;e.preventDefault();},{passive:false});'
             'sv.addEventListener("touchmove",function(e){if(!P||e.touches.length!==2)return;e.preventDefault();var q=mid(e),c=pp(q);'
             'window.__atlas.zoomAt(c[0],c[1],esc()*q.d/Math.max(1,P.d));P=q;},{passive:false});'
