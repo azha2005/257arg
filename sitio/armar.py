@@ -8,7 +8,7 @@ El índice sigue el estilo Ink de transferencias/provinciales/INDICE.html, con m
 """
 import glob, html, io, os, shutil, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from catalogo import GRUPOS, EXTRA, MINI
+from catalogo import GRUPOS, EXTRA, MINI, CRUDOS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.join(ROOT, "sitio")
@@ -268,7 +268,10 @@ def copiar(dest):
         d = os.path.join(dest, r); os.makedirs(os.path.dirname(d), exist_ok=True)
         s = open(os.path.join(ROOT, r), encoding="utf8").read()
         open(d, "w", encoding="utf8", newline="").write(preparar(s)); tot += os.path.getsize(d)
-    print(len(set(rutas)), "HTML,", round(tot / 2**20), "MB")
+    for r in CRUDOS:
+        d = os.path.join(dest, r); os.makedirs(os.path.dirname(d), exist_ok=True)
+        shutil.copy(os.path.join(ROOT, r), d); tot += os.path.getsize(d)
+    print(len(set(rutas)) + len(CRUDOS), "HTML,", round(tot / 2**20), "MB")
 
 
 if __name__ == "__main__":

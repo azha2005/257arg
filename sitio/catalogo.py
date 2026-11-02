@@ -112,5 +112,12 @@ EXTRA = ["mapas/mapa2003escenarios/atlas_2003_sin_*.html",
          "mapas/mapaAMBA2003radios/atlas_amba2003radios_pob.html",
          "mapas/mapaAMBA2025radios/atlas_amba2025radios_pob.html"]
 
+# Páginas que no son atlas (simulador y sankeys enlazados): se copian tal cual, sin la capa del sitio.
+CRUDOS = ["analisis/escenarios2003/simulador_2003.html",
+          "transferencias/1999pe_2003pe/sankey_1999pe_2003pe.html",
+          "transferencias/2003p_2005/sankey_2003p_2005.html",
+          "transferencias/2003p_2007p/sankey_2003p_2007p.html",
+          "transferencias/2003p_2009/sankey_2003p_2009.html"]
+
 # Miniatura de las entradas que no son un atlas.
 MINI = {"mapas/mapa2003escenarios/index.html": "mapas/mapa2003escenarios/atlas_2003_sin_k.html"}
