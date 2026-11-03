@@ -1,0 +1,36 @@
+{
+  "id": "rodriguezsaa",
+  "title": "Rodríguez Saá–López Murphy",
+  "html": "atlas_2003alt_rodriguezsaa.html",
+  "readable": 507,
+  "modeled": 539,
+  "matched": 507,
+  "winners": {
+    "R": 301,
+    "L": 238
+  },
+  "national_target": {
+    "R": 10746746,
+    "L": 10090105
+  },
+  "denominator_estimated_from_turnout": 20912137,
+  "national_residual_not_geographically_allocated": 75286,
+  "national_percent_discrepancies": [],
+  "percent_sum": 99.64,
+  "max_national_error": 0,
+  "max_row_error": 1.1641532182693481e-10,
+  "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "iterations": 4,
+  "winner_ratio": 1.02,
+  "provincial_winners_matched": true,
+  "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+  "rounding": {
+    "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+    "max_cell_change": 0.7574636059716795,
+    "max_local_total_change": 0.5145778605656233,
+    "national_error": 0,
+    "local_total_error": 0,
+    "local_winners_changed": 0,
+    "provincial_winners_changed": 0
+  }
+}

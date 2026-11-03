@@ -115,6 +115,7 @@ GRUPOS = [
         ("mapas/mapa1989convergencia/atlas_1989_convergencia.html", "1989", "Presidente", "Casella y Convergencia"),
         ("mapas/mapa1995/atlas_1995_ucr_frepaso.html", "1995", "Presidente", "FREPASO y UCR sumados"),
         ("mapas/mapa2003escenarios/index.html", "2003", "Presidente, 18 retiradas", "Un atlas por candidato que se baja"),
+        ("mapas/mapa2003alt/index.html", "2003", "Ocho escenarios alternativos", "Originales de u/Alarmed_Rope5383"),
         ("mapas/mapa2023massa/atlas_2023massa.html", "2023", "Presidente", "Massa 40,21 %"),
         ("mapas/mapa2027/atlas_2027.html", "2027", "Presidente y balotaje", "Simulación"),
         ("mapas/mapa2027kic/atlas_2027kic.html", "2027", "Balotaje", "Kicillof contra Milei"),
@@ -123,6 +124,7 @@ GRUPOS = [
 
 # Además de las entradas, se publican estos HTML (atlas enlazados desde otra página del sitio).
 EXTRA = ["mapas/mapa2003escenarios/atlas_2003_sin_*.html",
+         "mapas/mapa2003alt/atlas_2003alt_*.html",
          "mapas/mapaAMBA2003radios/atlas_amba2003radios_pob.html",
          "mapas/mapaAMBA2025radios/atlas_amba2025radios_pob.html"]
 
@@ -135,3 +137,11 @@ CRUDOS = ["analisis/escenarios2003/simulador_2003.html",
 
 # Miniatura de las entradas que no son un atlas.
 MINI = {"mapas/mapa2003escenarios/index.html": "mapas/mapa2003escenarios/atlas_2003_sin_k.html"}
+MINI["mapas/mapa2003alt/index.html"] = "mapas/mapa2003alt/atlas_2003alt_bilardo.html"
+CRUDOS += ["mapas/mapa2003alt/LEEME_2003ALT.md"]
+CRUDOS += [f"mapas/mapa2003alt/estimacion_{c}.csv" for c in
+           ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann")]
+CRUDOS += [f"mapas/mapa2003alt/miniaturas/{c}{suffix}.webp" for c in
+           ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann") for suffix in ("", "_oscuro")]
+CRUDOS += ["mapas/mapa2003alt/miniaturas/portada.jpg", "mapas/mapa2003alt/assets/Epilogue-OFL.txt"]
+CRUDOS += [f"mapas/mapa2003alt/assets/epilogue-{weight}.woff2" for weight in (400,600,700)]

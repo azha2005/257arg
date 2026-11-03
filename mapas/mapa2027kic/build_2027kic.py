@@ -490,4 +490,4 @@ _c = os.path.abspath(__file__)
 while not os.path.isdir(os.path.join(_c, "comun")): _c = os.path.dirname(_c)
 __import__("sys").path.insert(0, os.path.join(_c, "comun")); __import__("logos_al_ras").aplicar(out)
 print("escrito", out, round(len(html) / 1e6, 2), "MB", file=sys.stderr)
-
+__import__("creditos_escenarios").aplicar(out)

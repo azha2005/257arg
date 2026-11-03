@@ -21,6 +21,8 @@ ATLAS.append(("mapa1985hip", "atlas_1985hip.html"))
 ATLAS.append(("mapa1983hipotetico", "atlas_1983_hipotetico.html"))
 ATLAS.append(("mapa1985peronismo", "atlas_1985_peronismo.html"))
 ATLAS.append(("mapa1989convergencia", "atlas_1989_convergencia.html"))
+ATLAS.extend(("mapa2003alt", f"atlas_2003alt_{c}.html") for c in
+             ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann"))
 ATLAS.extend((f"mapa{y}dip", f"atlas_{y}_diputados.html") for y in (1983, 1989, 1995, 1999))
 ATLAS.append(("mapa2001bronca", "atlas_2001bronca.html"))
 ATLAS.extend((f"mapa{y}", f"atlas_{y}.html") for y in (1958, 1962, 1965))   # Cantón (canton5865/atlas5865.py)

@@ -1,0 +1,36 @@
+{
+  "id": "reutemann",
+  "title": "Reutemann–Menem",
+  "html": "atlas_2003alt_reutemann.html",
+  "readable": 504,
+  "modeled": 539,
+  "matched": 504,
+  "winners": {
+    "REU": 406,
+    "M": 133
+  },
+  "national_target": {
+    "REU": 10845282,
+    "M": 6452597
+  },
+  "denominator_estimated_from_turnout": 19215597,
+  "national_residual_not_geographically_allocated": 1917718,
+  "national_percent_discrepancies": [],
+  "percent_sum": 90.02,
+  "max_national_error": 0,
+  "max_row_error": 5.820766091346741e-11,
+  "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "iterations": 4,
+  "winner_ratio": 1.02,
+  "provincial_winners_matched": true,
+  "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+  "rounding": {
+    "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+    "max_cell_change": 0.7247978238629003,
+    "max_local_total_change": 0.5065844850760186,
+    "national_error": 0,
+    "local_total_error": 0,
+    "local_winners_changed": 0,
+    "provincial_winners_changed": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "alvarez",
+  "title": "Álvarez–Cavallo–Duhalde",
+  "html": "atlas_2003alt_alvarez.html",
+  "readable": 500,
+  "modeled": 539,
+  "matched": 500,
+  "winners": {
+    "ALV": 330,
+    "HIL": 51,
+    "CAV": 153,
+    "R": 5
+  },
+  "national_target": {
+    "ALV": 7259598,
+    "CAV": 5933915,
+    "HIL": 4713099,
+    "R": 1343491,
+    "C": 534231
+  },
+  "denominator_estimated_from_turnout": 19786315,
+  "national_residual_not_geographically_allocated": 1981,
+  "national_percent_discrepancies": [
+    {
+      "code": "HIL",
+      "printed": 23.84,
+      "calculated": 23.82
+    }
+  ],
+  "percent_sum": 100.01,
+  "max_national_error": 0,
+  "max_row_error": 1.1641532182693481e-10,
+  "optimizer": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "iterations": 12,
+  "winner_ratio": 1.02,
+  "provincial_winners_matched": true,
+  "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+  "rounding": {
+    "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+    "max_cell_change": 0.8238777553924592,
+    "max_local_total_change": 0.5183626291291148,
+    "national_error": 0,
+    "local_total_error": 0,
+    "local_winners_changed": 0,
+    "provincial_winners_changed": 0
+  }
+}

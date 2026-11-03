@@ -1,0 +1,43 @@
+{
+  "id": "bilardo",
+  "title": "Bilardo presidente",
+  "html": "atlas_2003alt_bilardo.html",
+  "readable": 492,
+  "modeled": 539,
+  "matched": 492,
+  "winners": {
+    "BIL": 456,
+    "M": 66,
+    "K": 6,
+    "L": 1,
+    "R": 10
+  },
+  "national_target": {
+    "BIL": 8552775,
+    "M": 4168649,
+    "L": 2813631,
+    "C": 2716252,
+    "R": 1429606,
+    "K": 830829
+  },
+  "denominator_estimated_from_turnout": 20718934,
+  "national_residual_not_geographically_allocated": 207192,
+  "national_percent_discrepancies": [],
+  "percent_sum": 99.00000000000001,
+  "max_national_error": 0,
+  "max_row_error": 2.3283064365386963e-10,
+  "optimizer": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "iterations": 15,
+  "winner_ratio": 1.02,
+  "provincial_winners_matched": true,
+  "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+  "rounding": {
+    "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+    "max_cell_change": 0.731090916805897,
+    "max_local_total_change": 0.5016332336053893,
+    "national_error": 0,
+    "local_total_error": 0,
+    "local_winners_changed": 0,
+    "provincial_winners_changed": 0
+  }
+}

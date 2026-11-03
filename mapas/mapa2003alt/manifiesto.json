@@ -1,0 +1,318 @@
+[
+  {
+    "id": "macri",
+    "title": "Macri–Menem",
+    "html": "atlas_2003alt_macri.html",
+    "readable": 507,
+    "modeled": 539,
+    "matched": 507,
+    "winners": {
+      "MAC": 454,
+      "M": 85
+    },
+    "national_target": {
+      "MAC": 13526404,
+      "M": 5902791
+    },
+    "denominator_estimated_from_turnout": 19847990,
+    "national_residual_not_geographically_allocated": 418795,
+    "national_percent_discrepancies": [],
+    "percent_sum": 97.89,
+    "max_national_error": 0,
+    "max_row_error": 2.9103830456733704e-11,
+    "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 4,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.7214261073386297,
+      "max_local_total_change": 0.5018359300829616,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "alvarez",
+    "title": "Álvarez–Cavallo–Duhalde",
+    "html": "atlas_2003alt_alvarez.html",
+    "readable": 500,
+    "modeled": 539,
+    "matched": 500,
+    "winners": {
+      "ALV": 330,
+      "HIL": 51,
+      "CAV": 153,
+      "R": 5
+    },
+    "national_target": {
+      "ALV": 7259598,
+      "CAV": 5933915,
+      "HIL": 4713099,
+      "R": 1343491,
+      "C": 534231
+    },
+    "denominator_estimated_from_turnout": 19786315,
+    "national_residual_not_geographically_allocated": 1981,
+    "national_percent_discrepancies": [
+      {
+        "code": "HIL",
+        "printed": 23.84,
+        "calculated": 23.82
+      }
+    ],
+    "percent_sum": 100.01,
+    "max_national_error": 0,
+    "max_row_error": 1.1641532182693481e-10,
+    "optimizer": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 12,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.8238777553924592,
+      "max_local_total_change": 0.5183626291291148,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "bilardo",
+    "title": "Bilardo presidente",
+    "html": "atlas_2003alt_bilardo.html",
+    "readable": 492,
+    "modeled": 539,
+    "matched": 492,
+    "winners": {
+      "BIL": 456,
+      "M": 66,
+      "K": 6,
+      "L": 1,
+      "R": 10
+    },
+    "national_target": {
+      "BIL": 8552775,
+      "M": 4168649,
+      "L": 2813631,
+      "C": 2716252,
+      "R": 1429606,
+      "K": 830829
+    },
+    "denominator_estimated_from_turnout": 20718934,
+    "national_residual_not_geographically_allocated": 207192,
+    "national_percent_discrepancies": [],
+    "percent_sum": 99.00000000000001,
+    "max_national_error": 0,
+    "max_row_error": 2.3283064365386963e-10,
+    "optimizer": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 15,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.731090916805897,
+      "max_local_total_change": 0.5016332336053893,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "kirchner",
+    "title": "Kirchner–Menem",
+    "html": "atlas_2003alt_kirchner.html",
+    "readable": 508,
+    "modeled": 539,
+    "matched": 508,
+    "winners": {
+      "K": 424,
+      "M": 115
+    },
+    "national_target": {
+      "K": 11341446,
+      "M": 6110651
+    },
+    "denominator_estimated_from_turnout": 19337504,
+    "national_residual_not_geographically_allocated": 1885407,
+    "national_percent_discrepancies": [],
+    "percent_sum": 90.25,
+    "max_national_error": 0,
+    "max_row_error": 5.820766091346741e-11,
+    "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 6,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.7291063181685331,
+      "max_local_total_change": 0.5101390160434676,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "rodriguezsaa",
+    "title": "Rodríguez Saá–López Murphy",
+    "html": "atlas_2003alt_rodriguezsaa.html",
+    "readable": 507,
+    "modeled": 539,
+    "matched": 507,
+    "winners": {
+      "R": 301,
+      "L": 238
+    },
+    "national_target": {
+      "R": 10746746,
+      "L": 10090105
+    },
+    "denominator_estimated_from_turnout": 20912137,
+    "national_residual_not_geographically_allocated": 75286,
+    "national_percent_discrepancies": [],
+    "percent_sum": 99.64,
+    "max_national_error": 0,
+    "max_row_error": 1.1641532182693481e-10,
+    "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 4,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.7574636059716795,
+      "max_local_total_change": 0.5145778605656233,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "lemas",
+    "title": "Elección con lemas",
+    "html": "atlas_2003alt_lemas.html",
+    "readable": 503,
+    "modeled": 539,
+    "matched": 503,
+    "winners": {
+      "L": 95,
+      "M": 233,
+      "K": 58,
+      "DLS": 98,
+      "C": 19,
+      "R": 36
+    },
+    "national_target": {
+      "M": 4352090,
+      "DLS": 3533654,
+      "R": 2547475,
+      "K": 2088487,
+      "L": 2744711,
+      "C": 2578811,
+      "TERR": 352075,
+      "MOREAU": 226728
+    },
+    "denominator_estimated_from_turnout": 18433252,
+    "national_residual_not_geographically_allocated": 9221,
+    "national_percent_discrepancies": [],
+    "percent_sum": 99.95,
+    "max_national_error": 0,
+    "max_row_error": 1.1641532182693481e-10,
+    "optimizer": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "iterations": 19,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.7304867424654731,
+      "max_local_total_change": 0.5140453313433682,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "menem",
+    "title": "Menem–Kirchner",
+    "html": "atlas_2003alt_menem.html",
+    "readable": 510,
+    "modeled": 539,
+    "matched": 510,
+    "winners": {
+      "M": 329,
+      "K": 210
+    },
+    "national_target": {
+      "M": 9990110,
+      "K": 9644541
+    },
+    "denominator_estimated_from_turnout": 19634653,
+    "national_residual_not_geographically_allocated": 2,
+    "national_percent_discrepancies": [],
+    "percent_sum": 100.0,
+    "max_national_error": 0,
+    "max_row_error": 1.1641532182693481e-10,
+    "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 4,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.736969584385406,
+      "max_local_total_change": 0.5313898286212861,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  },
+  {
+    "id": "reutemann",
+    "title": "Reutemann–Menem",
+    "html": "atlas_2003alt_reutemann.html",
+    "readable": 504,
+    "modeled": 539,
+    "matched": 504,
+    "winners": {
+      "REU": 406,
+      "M": 133
+    },
+    "national_target": {
+      "REU": 10845282,
+      "M": 6452597
+    },
+    "denominator_estimated_from_turnout": 19215597,
+    "national_residual_not_geographically_allocated": 1917718,
+    "national_percent_discrepancies": [],
+    "percent_sum": 90.02,
+    "max_national_error": 0,
+    "max_row_error": 5.820766091346741e-11,
+    "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 4,
+    "winner_ratio": 1.02,
+    "provincial_winners_matched": true,
+    "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+    "rounding": {
+      "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+      "max_cell_change": 0.7247978238629003,
+      "max_local_total_change": 0.5065844850760186,
+      "national_error": 0,
+      "local_total_error": 0,
+      "local_winners_changed": 0,
+      "provincial_winners_changed": 0
+    }
+  }
+]
