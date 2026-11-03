@@ -20,6 +20,7 @@ GRUPOS = [
         ("mapas/mapa1946/atlas_1946.html", "1946", "Presidente", ""),
         ("mapas/mapa1948/atlas_1948.html", "1948", "Diputados nacionales", ""),
         ("mapas/mapa1948c/atlas_1948c.html", "1948", "Convencionales constituyentes", ""),
+        ("mapas/mapa1951/atlas_1951.html", "1951", "Diputados y delegados por circunscripción", "SVG adaptado al SHP histórico"),
         ("mapas/mapa1954/atlas_1954.html", "1954", "Diputados nacionales", ""),
         ("mapas/mapa1958/atlas_1958.html", "1958", "Presidente", ""),
         ("mapas/mapa1962/atlas_1962.html", "1962", "Diputados nacionales", ""),
