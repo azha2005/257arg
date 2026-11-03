@@ -31,9 +31,30 @@ Deducidos de los datos y verificados contra la DINE (el post de Graficar PBA no 
 
 La auditoría no marca filas no identificadas (máxima diferencia con Calvo: 8,0 puntos en FIT-U). Entre variantes cambian 808.282 votos (6,1 % del total modelado). Son estimaciones ecológicas a partir de territorios, no observaciones de voto individual.
 
+## Comparación con la versión por municipio (`pba_prov2025_dn2025`)
+La base de `provinciales2025/bases.pkl` usa los 135 municipios del escrutinio definitivo y votos válidos (sin No votó). Para comparar se corrió el mismo ajuste (RxC de Calvo ponderado, una matriz) con sus categorías y su base en tres versiones: (1) la original, (2) esta base sumada a municipio y (3) esta base por circuito (1.041).
+
+| % de la fila | (1) municipios, definitivo | (3) circuitos, provisorio | diferencia |
+|---|---|---|---|
+| LLA → LLA | 83,1 | 87,6 | +4,4 |
+| FP → FP | 73,7 | 76,8 | +3,1 |
+| FP → LLA | 8,4 | 6,1 | −2,3 |
+| Somos → LLA | 63,3 | 63,4 | 0 |
+| Somos → FP | 14,2 | 14,9 | +0,7 |
+| Potencia → LLA | 62,2 | 69,9 | +7,7 |
+| **FIT-U → FIT-U** | **10,1** | **37,4** | **+27,3** |
+| **FIT-U → FP** | **73,6** | **56,0** | **−17,6** |
+| Blanco → LLA | 48,1 | 44,4 | −3,7 |
+
+- **Fuente**: (1) y (2) cambian el 0,3 % de los votos de celda. El provisorio por mesa y el definitivo municipal dan lo mismo.
+- **Nivel**: (2) contra (3) cambia el 6,7 %. Casi todo es FIT-U: con 135 municipios su voto queda confundido con el del peronismo del conurbano y la versión municipal manda tres cuartos a Fuerza Patria, lo que no cierra con que FIT-U pasara de 349 mil a 439 mil votos. Por circuito retiene el 37 %; sigue siendo una celda débil.
+- Somos → LLA (63 %) no depende del nivel.
+- Distancia principal–Calvo (puntos ponderados): 4,8 por municipio, 4,2 por circuito.
+
 Reproducir:
 ```
 python datos/provinciales/pba2025/agregar.py
 python -X utf8 transferencias/estimar.py 2025s 2025
 python -X utf8 transferencias/sankey.py 2025s 2025          # también --votantes y --reducido
+python transferencias/2025s_2025/comparar_municipios.py   # comparación con la versión municipal
 ```
