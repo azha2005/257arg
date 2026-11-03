@@ -98,6 +98,10 @@ CAT['2015pp'] = {
     'ALIANZA FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES | LISTA 1 A RENOVAR Y FORTALECER EL FRENTE': 'Del Caño (FIT)',
     'ALIANZA FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES | LISTA UNIDAD - 2 U': 'Altamira (FIT)',
 }
+# Provinciales bonaerenses 7-sep-2025 (senadores/diputados segun la seccion; datos/provinciales/pba2025/agregar.py): por nombre de lista
+CAT["2025s"] = {"FUERZA PATRIA": "Fuerza Patria", "LA LIBERTAD AVANZA": "La Libertad Avanza", "SOMOS BUENOS AIRES": "Somos Buenos Aires",
+                "FTE DE IZQ. Y DE TRABAJADORES - UNIDAD": "FIT-U"}
+PROVINCIAL = {"2025s": "02"}   # elecciones de un solo distrito: la otra del par se recorta a ese distrito
 CAT["2003pc"] = CAT["2003p"]     # Córdoba 2003 sin «No votó», para empalmar con cordoba_circuitos.py
 CAT["1999pe"] = {"DLR": "Alianza (De la Rúa)", "DUH": "PJ (Duhalde)", "CAV": "AR (Cavallo)"}   # presidente_1999.py: por candidato
 CAT["2003pe"] = CAT["2003p"]     # nacional sobre votos emitidos (1999 -> 2003 como Calvo y Escolar)
@@ -140,7 +144,7 @@ LAMBDA = float(os.environ["LAMBDA"]) if "LAMBDA" in os.environ else None
 
 def secnames(anio):
     """(distrito, seccion_id) -> nombre de seccion normalizado, de los archivos de ambitos de la DINE."""
-    anio = int(str(anio).rstrip("pbdce"))
+    anio = int(str(anio).rstrip("pbdces"))
     f = glob.glob(os.path.join(ROOT, "datos_oficiales", str(anio), "x", "**", "*mbito*.csv"), recursive=True)
     if f:
         a = pd.read_csv(f[0], dtype=str).dropna(subset=["seccion_id"])
@@ -176,7 +180,7 @@ def mapeo(anio):
 
 def load(anio, raw=False):
     v, e = pd.read_pickle(os.path.join(HERE,'historicos_1989','raw_%s.pkl'%anio) if raw else os.path.join(HERE, "circ_%s.pkl" % anio))
-    if str(anio).endswith(("p", "b", "d", "c", "e")):   # presidente (b: balotaje; d: diputados de Cantón): la agrupacion ya viene en el pkl
+    if str(anio).endswith(("p", "b", "d", "c", "e", "s")):   # presidente (b: balotaje; d: diputados de Cantón): la agrupacion ya viene en el pkl
         m = pd.DataFrame([dict(distrito=d, lista=a, codigo=a) for d in DISTRITOS for a in v.agrupacion_id.unique()])
     else:
         m = mapeo(anio)
@@ -203,8 +207,11 @@ def prepare(y0, y1):
     """Circuitos (o secciones) comunes y filtrados: X, Y en proporcion del padron, pesos y controles."""
     raw = (y0,y1) in [('1995p','1997d'),('1995p','1999p'),('1983p','1985d')]
     A, rows = load(y0,raw=raw); B, cols = load(y1,raw=raw)
-    a0, a1 = (int(str(y).rstrip("pbdce")) for y in (y0, y1))
-    if a0 > 1990 and a0 < caba_cruce.CORTE <= a1:   # Capital renumero sus circuitos en 2008: se cruza por circunscripcion
+    for y in (y0, y1):
+        if y in PROVINCIAL:
+            A, B = A.loc[[PROVINCIAL[y]]], B.loc[[PROVINCIAL[y]]]
+    a0, a1 = (int(str(y).rstrip("pbdces")) for y in (y0, y1))
+    if a0 > 1990 and a0 < caba_cruce.CORTE <= a1 and "01" in A.index.get_level_values(0):   # Capital renumero sus circuitos en 2008: se cruza por circunscripcion
         A = caba_cruce.cruzar(A, a0)
         ev = A.loc["01"].sum(1).droplevel(0); ev.index = [int(c[1:]) for c in ev.index]
         B = caba_cruce.cruzar(B, a1, ev)
@@ -361,4 +368,4 @@ def main(y0, y1, out=None):
 
 
 if __name__ == "__main__":
-    main(*[a if a.endswith(("p", "b", "d", "c", "e")) else int(a) for a in sys.argv[1:3]])
+    main(*[a if a.endswith(("p", "b", "d", "c", "e", "s")) else int(a) for a in sys.argv[1:3]])

@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 COL = {"Frente de Todos": "#2ea3ff", "Juntos por el Cambio": "#f4ce00", "Libertarios (AL + LLA)": "#6c4c98",
        "FIT-U": "#f65058", "Tercera Vía / PF": "#2f3b81", "Unión por la Patria": "#009ce4",
        "La Libertad Avanza": "#6c4c98", "Hacemos": "#283084", "Fuerza Patria": "#009ce4",
-       "Provincias Unidas": "#FF682C", "Frente para la Victoria": "#50ade6", "UDESO (UCR)": "#d31515",
+       "Provincias Unidas": "#FF682C", "Somos Buenos Aires": "#FF682C", "Frente para la Victoria": "#50ade6", "UDESO (UCR)": "#d31515",
        "FAP": "#ff6600", "Frente Popular / PRO": "#b73c96", "Frente Popular": "#b73c96", "Compromiso Federal": "#1aff98", "CC-ARI": "#6FB53E",
        "FIT": "#f65058", "Consenso Federal": "#2f3b81", "NOS + Unite": "#8d6e63", "FPCyS / UNEN": "#ff6600",
        "Frente Renovador": "#3d454d", "Acuerdo Cívico y Social": "#e10019", "PRO / Unión-PRO": "#f4ce00",
@@ -78,6 +78,8 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         cargo, t0, t1 = "Presidente", {"2023pp": "2023, PASO", "2023p": "2023, general", "2023b": "2023, balotaje"}[str(y0)], "diputados 2025"
     if str(y0) in ("2015pp", "2015p", "2015b") and y1 == 2025:
         cargo, t0, t1 = "Presidente", {"2015pp": "2015, PASO", "2015p": "2015, general", "2015b": "2015, balotaje"}[str(y0)], "diputados 2025"
+    if str(y0) == "2025s":   # provinciales bonaerenses de septiembre -> diputados nacionales de octubre
+        cargo, t0, t1 = "Buenos Aires: legisladores provinciales", "7-sep-2025", "diputados nacionales 26-oct-2025"
     if cba: cargo = "Córdoba: " + cargo.lower()
     historical = (y0, y1) in [('1989p','1995p'), ('1989d','1994c'), ('1985d','1987d'),('1983p','1989p'),('1987d','1989p'),('1985d','1989p'),('1989p','1997d')]
     historical |= (y0,y1) in [('1995p','1997d'),('1995p','1999p'),('1983p','1985d')]
@@ -115,7 +117,7 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         k0 = (usable - GAP * (len(M) - 1)) / G.values.sum(); k1 = (usable - GAP * (len(M.columns) - 1)) / G.values.sum()
 
         def col(name, y):
-            y = int(str(y).rstrip("pbdce"))
+            y = int(str(y).rstrip("pbdces"))
             return JXC[y] if name == "Juntos por el Cambio" and y in JXC else COL.get(name, "#888")
 
         def nodes(sizes, k):
@@ -143,7 +145,7 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         if cerca: notas.append("† Fila cerca del promedio: se reparte casi como el total; puede ser un reparto real o falta de señal para esa fila (ver AUDITORIA.md).")
         if sens: notas.append("° Fila sensible: alguna celda cambia más de 10 puntos con otra escala territorial o especificación del modelo (ver AUDITORIA.md).")
         if borde: notas.append("‡ Alguna celda quedó por debajo de 0,5 %, en el límite del modelo (no puede dar menos de 0): el valor real puede ser mayor.")
-        unidad = "departamento; Córdoba por circuito" if emi else "departamento" if int(n0.rstrip("pbd")) < 1960 else "circuito"
+        unidad = "departamento; Córdoba por circuito" if emi else "departamento" if int(n0.rstrip("pbds")) < 1960 else "circuito"
         if br: unidad = "sección electoral"
         if ctl.get("unidades_por_provincia") and ctl.get("correspondencias"):
             ids = [k for k in ctl["unidades_por_provincia"] if not prov or DISTRITOS.get(k) == prov]
@@ -218,7 +220,7 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
             label = html.escape(n) + ": " + fmt(100 * M[n].sum() / tot)
             fit_label = ' textLength="210" lengthAdjust="spacingAndGlyphs"' if len(label) > 30 else ""
             s.append('<text x="%d" y="%.1f" font-size="14" font-weight="bold" dominant-baseline="middle" fill="#222"%s>%s</text>' % (X1 + NODE + 8, ry[n], fit_label, label))
-        s.append('<text x="20" y="%d" font-size="11.5" fill="#555">Porcentajes sobre el padrón %s de los %s usados. Método: mínimos cuadrados penalizados RxC (código de E. Calvo), una matriz por provincia.</text>' % (HH - 30, ("del balotaje " + n1.rstrip("b")) if n1.endswith("b") else "de " + n1.rstrip("pd"), "departamentos" if int(n0.rstrip("pbd")) < 1960 else "circuitos"))
+        s.append('<text x="20" y="%d" font-size="11.5" fill="#555">Porcentajes sobre el padrón %s de los %s usados. Método: mínimos cuadrados penalizados RxC (código de E. Calvo), una matriz por provincia.</text>' % (HH - 30, ("del balotaje " + n1.rstrip("b")) if n1.endswith("b") else "de " + n1.rstrip("pd"), "departamentos" if int(n0.rstrip("pbds")) < 1960 else "circuitos"))
         if emi:
             s[-1] = s[-1].replace("Porcentajes sobre el padrón de %s de los circuitos usados" % n1.rstrip("pd"),
                                   "Porcentajes sobre los votos emitidos de %s (como Calvo y Escolar, 2005)" % n1.rstrip("pd")).replace(" (código de E. Calvo)", "")
@@ -239,9 +241,10 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
         if br and not votantes:s[-1]=f'<text x="20" y="{HH-30}" font-size="11.5" fill="#555">Porcentajes sobre el padrón del balotaje de las secciones usadas. RxC penalizado (E. Calvo), una matriz por {nivel_br} del IBGE.</text>'
         fuente = ("E. Calvo (Córdoba por circuito), Lupu y Stokes (San Luis, Santa Cruz) y PolAr" if emi else
                   "E. Calvo, Córdoba por circuito" + (", y PolAr (A. Tow), por mesa" if int(n1.rstrip("pbd")) >= 2003 else "") if cba else
-                  "Cantón, Materiales... (1968), t. II, por departamento" if int(n0.rstrip("pbd")) < 1960 else
+                  "Cantón, Materiales... (1968), t. II, por departamento" if int(n0.rstrip("pbds")) < 1960 else
                   "PolAr (Atlas Electoral de A. Tow), por mesa" if int(n1.rstrip("pbd")) <= 2009 else
-                  "PolAr (Atlas Electoral de A. Tow) y DINE, por mesa" if int(n0.rstrip("pbd")) <= 2009 else "DINE, escrutinio provisorio por mesa")
+                  "PolAr (Atlas Electoral de A. Tow) y DINE, por mesa" if int(n0.rstrip("pbds")) <= 2009 else "DINE, escrutinio provisorio por mesa")
+        if str(y0) == "2025s": fuente = "Junta Electoral PBA (vía Graficar PBA) y DINE, provisorios por mesa"
         if historical: fuente = 'Base departamental de E. Calvo; agrupaciones de los atlas locales'
         if br: fuente = "TSE, votos y padrón por sección (26/10/2026)"
         if y0=='1914d':fuente='Cantón y actas HCDN, transcripciones locales; sin cifras estimadas ni duplicación de datos compartidos'
@@ -285,4 +288,4 @@ def main(y0, y1, votantes=False, reducido=False, breve=False):
 
 
 if __name__ == "__main__":
-    main(*[a if a.endswith(("p", "b", "d", "c", "e")) or a.startswith("brasil") else int(a) for a in sys.argv[1:3]], votantes="--votantes" in sys.argv, reducido="--reducido" in sys.argv, breve="--breve" in sys.argv)
+    main(*[a if a.endswith(("p", "b", "d", "c", "e", "s")) or a.startswith("brasil") else int(a) for a in sys.argv[1:3]], votantes="--votantes" in sys.argv, reducido="--reducido" in sys.argv, breve="--breve" in sys.argv)
