@@ -61,9 +61,11 @@ SECN = {1: "Primera", 2: "Segunda", 3: "Tercera", 4: "Cuarta", 5: "Quinta", 6: "
 p2s = {p: int(s) for p, s in d.drop_duplicates("part")[["part", "secc"]].itertuples(index=False)}
 p2keys = collections.defaultdict(list)
 for k in target: p2keys[part_of[(k[0], k[1])]].append(k)
-def _shape(ix):
-    u = unary_union([G_raw[i] for i in ix])
-    return fill_slivers(u.buffer(0.7, join_style=2).buffer(-0.7, join_style=2)).simplify(0.04, preserve_topology=True)
+import partidos_geo   # partidos INDEC 2022: la union de circuitos de la capa 2021 deja huecos
+PGEO = {p: proj_geom(g).buffer(0) for p, g in partidos_geo.load(PARTIDOS).items()}
+def _shape_p(ps):
+    u = unary_union([PGEO[p] for p in ps])
+    return fill_slivers(u.buffer(0.3, join_style=2).buffer(-0.3, join_style=2)).simplify(0.04, preserve_topology=True)
 SEC_GEOM = {}
 if REGION == "pba":
     for s in sorted(set(p2s.values())):
@@ -71,13 +73,13 @@ if REGION == "pba":
         a = agg_for([k for p in ps for k in p2keys[p]]); a["ok"] = 1 if a["pos"] else 0
         j = NR + len(EXTRA); unit_an[j] = a; disp[j] = "Sección %s" % SECN[s]
         unit_rec[j] = rec_from(a, "Sección electoral %s: %d partidos, suma de sus circuitos. Eligió %s provinciales." % (SECN[s], len(ps), "senadores" if s in (1, 4, 5, 7) else "diputados"))
-        SEC_GEOM[s] = _shape([i for i in range(NR) if p2s.get(PART[i]) == s])
+        SEC_GEOM[s] = _shape_p(ps)
         EXTRA.append(("ss", disp[j], ps[0], geom_d(SEC_GEOM[s]), "seccion"))
 for p in PARTIDOS:
     a = agg_for(p2keys[p]); a["ok"] = 1 if a["pos"] else 0
     j = NR + len(EXTRA); unit_an[j] = a; disp[j] = p
     unit_rec[j] = rec_from(a, "Suma de los circuitos del partido (sección %s)." % SECN[p2s[p]])
-    EXTRA.append(("pp", p, p, geom_d(_shape([i for i in range(NR) if PART[i] == p])), "partido"))
+    EXTRA.append(("pp", p, p, geom_d(_shape_p([p])), "partido"))
 NU = NR + len(EXTRA)
 _SVG_EXTRA = "".join('<path class="%s" data-i="%d" d="%s"/>' % (e[0], j, e[3]) for j, e in enumerate(EXTRA, NR))
 if REGION == "pba":   # limites de seccion electoral, mas gruesos que los de partido
@@ -136,6 +138,8 @@ MID = patch(_mid, [
     ('    for i in range(len(UKEYS)):\n        r = unit_rec[i]; a = unit_an[i]', '    for i in range(NU):\n        r = unit_rec[i]; a = unit_an[i]'),
     ('units=[unit_rec[i] for i in range(len(UKEYS))], prov=prov_rec', 'units=[unit_rec[i] for i in range(NU)], prov=prov_rec'),
     ('PGEOM = {}\n', 'body.append(_SVG_EXTRA)\nPGEOM = {}\n'),
+    ('    u = unary_union([G_raw[i] for i in range(len(UKEYS)) if PART[i] == p])\n    u = fill_slivers(u.buffer(0.7, join_style=2).buffer(-0.7, join_style=2))\n',
+     '    u = _shape_p([p])   # limite INDEC 2022, sin los huecos de la union de circuitos\n'),
     ('slug="diputados_amba_2025"', 'slug=OUT'),
     ('title="Elecciones legislativas en el AMBA de", year="2025"',
      'title=("Legislativas bonaerenses en el AMBA de" if REGION == "amba" else "Legislativas bonaerenses de"), year="2025"'),
