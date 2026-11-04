@@ -3,8 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>257 distritos uninominales</title>
-<meta name="description" content="La Cámara de Diputados argentina con 257 distritos uninominales dibujados por algoritmo: cuatro planes, con y sin departamentos, y quién ganaría cada distrito en 2023 y 2025.">
+<title>Argentina con 257 distritos uninominales: mapa interactivo</title>
+<meta name="description" content="¿Y si cada diputado se eligiera en su distrito? Los 257 distritos uninominales de la Argentina, dibujados con el censo 2022, y quién los ganaría en 2023 y 2025.">
+<meta name="keywords" content="distritos uninominales, sistema uninominal, circunscripciones uninominales, reforma electoral, Cámara de Diputados, gerrymandering, redistritación, ley 22.847, censo 2022, elecciones 2025, elecciones 2023, Argentina, mapa electoral">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://azha2005.github.io/257arg/uninominal/">
+<meta name="theme-color" content="#fcfcfa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141619" media="(prefers-color-scheme: dark)">
+<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atlas electorales argentinos">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://azha2005.github.io/257arg/uninominal/">
+<meta property="og:title" content="Argentina con 257 distritos uninominales">
+<meta property="og:description" content="Cada banca de Diputados, un distrito. Con los votos de 2025 y cada partido por separado, LLA gana 160 de 257 bancas con el 40,8 %.">
+<meta property="og:image" content="https://azha2005.github.io/257arg/uninominal/portada.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mapa de la Argentina dividida en 257 distritos y hemiciclo con los votos de diputados 2025: La Libertad Avanza 160 bancas, Fuerza Patria 83, Innovación Federal 7, Provincias Unidas 3, La Neuquinidad 2 y Por San Juan 2">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Argentina con 257 distritos uninominales">
+<meta name="twitter:description" content="Cada banca de Diputados, un distrito. Con los votos de 2025 y cada partido por separado, LLA gana 160 de 257 bancas con el 40,8 %.">
+<meta name="twitter:image" content="https://azha2005.github.io/257arg/uninominal/portada.png">
+<meta name="twitter:image:alt" content="Mapa de la Argentina dividida en 257 distritos y hemiciclo con los votos de diputados 2025: La Libertad Avanza 160 bancas, Fuerza Patria 83, Innovación Federal 7, Provincias Unidas 3, La Neuquinidad 2 y Por San Juan 2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://azha2005.github.io/257arg/uninominal/", "url": "https://azha2005.github.io/257arg/uninominal/", "name": "Argentina con 257 distritos uninominales: mapa interactivo", "description": "¿Y si cada diputado se eligiera en su distrito? Los 257 distritos uninominales de la Argentina, dibujados con el censo 2022, y quién los ganaría en 2023 y 2025.", "inLanguage": "es-AR", "isPartOf": {"@type": "WebSite", "name": "Atlas electorales argentinos", "url": "https://azha2005.github.io/257arg/"}, "primaryImageOfPage": "https://azha2005.github.io/257arg/uninominal/portada.png", "datePublished": "2026-11-04", "keywords": "distritos uninominales, sistema uninominal, circunscripciones uninominales, reforma electoral, Cámara de Diputados, gerrymandering, redistritación, ley 22.847, censo 2022, elecciones 2025, elecciones 2023, Argentina, mapa electoral", "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Atlas electorales", "item": "https://azha2005.github.io/257arg/"}, {"@type": "ListItem", "position": 2, "name": "257 distritos uninominales", "item": "https://azha2005.github.io/257arg/uninominal/"}]}}, {"@type": "Map", "name": "Argentina con 257 distritos uninominales", "url": "https://azha2005.github.io/257arg/uninominal/", "image": "https://azha2005.github.io/257arg/uninominal/portada.png", "inLanguage": "es-AR", "about": ["Sistema electoral uninominal", "Cámara de Diputados de la Nación Argentina", "Gerrymandering"], "spatialCoverage": {"@type": "Country", "name": "Argentina"}, "isBasedOn": ["Censo Nacional 2022, radios censales (INDEC / CONICET)", "Escrutinio provisorio DINE 2023 y 2025", "Mosaic (ReCom y recocido simulado)"], "sameAs": "https://github.com/azha2005/257arg/tree/master/analisis/uninominal", "license": "https://creativecommons.org/licenses/by/4.0/"}]}</script>
+<!--/seo-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,7 +36,7 @@
  * axes: light/grotesk-sans/chromatic-teal · posture: restrained · contrast: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: E, a tool screen has little argument; the seat sheet sits beside the map so the count and the geography are read together */
 /* Hallmark · waive 22 · ink and greys at zero chroma · the party colours of the map and the hemicycle carry all the hue, as in the explorer */
-/* Hallmark · dropped the dark theme · the explorer it matches is printed on paper only */
+/* Hallmark · dark theme added on request (4-nov-2026) · the tokens of the site index (sitio/estilo.css) */
 
 /* tokens: Ink, plus the shared scale (as in transferencias/explorador/index.html) */
 :root {
@@ -38,6 +60,32 @@
   --control-h: 36px;
   --ancho-app: calc(560px + 24px + 720px);   /* mapa del país + separación + columna derecha */
 }
+
+/* tema oscuro (4-nov-2026) */
+:root { --mix-base: 250,250,248; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  color-scheme: dark;
+  --color-paper: oklch(17% 0.004 250); --color-paper-2: oklch(21% 0.005 250); --color-paper-3: oklch(25% 0.006 250);
+  --color-ink: oklch(95% 0 0); --color-ink-2: oklch(85% 0 0); --color-muted: oklch(72% 0 0);
+  --color-rule: oklch(32% 0.006 250);
+  --color-accent: oklch(74% 0.1 188); --color-accent-soft: oklch(32% 0.05 190); --color-accent-soft-ink: oklch(92% 0.04 190);
+  --color-focus: oklch(74% 0.1 188); --color-tip-shadow: oklch(0% 0 0 / 0.5);
+  --mix-base: 20,22,25;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(17% 0.004 250); --color-paper-2: oklch(21% 0.005 250); --color-paper-3: oklch(25% 0.006 250);
+  --color-ink: oklch(95% 0 0); --color-ink-2: oklch(85% 0 0); --color-muted: oklch(72% 0 0);
+  --color-rule: oklch(32% 0.006 250);
+  --color-accent: oklch(74% 0.1 188); --color-accent-soft: oklch(32% 0.05 190); --color-accent-soft-ink: oklch(92% 0.04 190);
+  --color-focus: oklch(74% 0.1 188); --color-tip-shadow: oklch(0% 0 0 / 0.5);
+  --mix-base: 20,22,25;
+}
+.volver { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-xs); }
+.tema { min-height: var(--control-h); padding: var(--space-2xs) var(--space-sm); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-control); background: var(--color-paper-2); color: var(--color-ink); font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
+.tema:hover { background: var(--color-paper-3); border-color: var(--color-muted); }
 
 /* base */
 *, *::before, *::after { box-sizing: border-box; }
@@ -121,11 +169,15 @@ td.b { font-size: var(--text-xl); font-weight: 700; letter-spacing: -0.03em; col
 
 @media (max-width: 80rem) { main { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 40rem) { #res { grid-template-columns: minmax(0, 1fr); } .hoja { padding: var(--space-sm); } }
+.volver { margin: 0 0 var(--space-xs); font-size: var(--text-sm); }
+.volver a { color: var(--color-accent); font-weight: 600; text-decoration: none; }
+.volver a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
+<p class="volver"><a href="https://azha2005.github.io/257arg/">← Todos los atlas electorales</a><button type="button" class="tema" id="tema" aria-label="Cambiar entre modo claro y oscuro">Modo oscuro</button></p>
 <h1>Argentina con 257 distritos uninominales</h1>
 <p>Cada provincia dividida en tantos distritos como bancas le da la ley 22.847 con el censo 2022 (sin la garantía de 1983). Los distritos se dibujaron con Mosaic (ReCom y recocido simulado) sobre radios censales 2022. Gana cada distrito la fuerza más votada: entre dos bloques, como en Estados Unidos, o entre todos los partidos por separado.</p>
 </header>
@@ -162,8 +214,14 @@ const NS="http://www.w3.org/2000/svg";
 const $=id=>document.getElementById(id);
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
 function mix(hex,t){// t 0..1 hacia blanco (0) o color pleno (1)
- const n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255,w=[250,250,248];
+ const n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255,w=MIXB;
  const f=(c,i)=>Math.round(w[i]+(c-w[i])*t);return `rgb(${f(r,0)},${f(g,1)},${f(b,2)})`}
+let MIXB=[250,250,248];function leerBase(){const v=css("--mix-base");if(v)MIXB=v.split(",").map(Number)}
+(function(){const b=$("tema"),r=document.documentElement,mq=matchMedia("(prefers-color-scheme: dark)");
+ const osc=()=>r.dataset.theme?r.dataset.theme==="dark":mq.matches,rot=()=>{b.textContent=osc()?"Modo claro":"Modo oscuro"};
+ const re=()=>{leerBase();rot();if(typeof draw==="function"&&DATA)draw()};
+ b.addEventListener("click",()=>{r.dataset.theme=osc()?"light":"dark";try{localStorage.setItem("tema",r.dataset.theme)}catch(e){}re()});
+ mq.addEventListener("change",()=>{if(!r.dataset.theme)re()});leerBase();rot()})();
 function ei(e){return DATA.elec.findIndex(x=>x.k===e)}
 function votos(d,k){const i=ei(k);return [d.v[2*i],d.v[2*i+1]]}
 function elecDe(d){return st.ren==="half"?(d.c==="A"?"23":"25"):DATA.elec[st.elec].k}

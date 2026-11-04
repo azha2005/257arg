@@ -131,6 +131,7 @@ GRUPOS = [
         ("mapas/mapa2023massa/atlas_2023massa.html", "2023", "Presidente", "Massa 40,21 %"),
         ("mapas/mapa2027/atlas_2027.html", "2027", "Presidente y balotaje", "Simulación"),
         ("mapas/mapa2027kic/atlas_2027kic.html", "2027", "Balotaje", "Kicillof contra Milei"),
+        ("analisis/uninominal/mapa_257.html", "2023-2025", "257 distritos uninominales", "Ocho planes y tres elecciones, con gerrymanders"),
     ]),
 ]
 
@@ -156,4 +157,11 @@ CRUDOS += [f"mapas/mapa2003alt/estimacion_{c}.csv" for c in
 CRUDOS += [f"mapas/mapa2003alt/miniaturas/{c}{suffix}.webp" for c in
            ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann") for suffix in ("", "_oscuro")]
 CRUDOS += ["mapas/mapa2003alt/miniaturas/portada.jpg", "mapas/mapa2003alt/assets/Epilogue-OFL.txt"]
+CRUDOS += [f"mapas/mapa2003alt/miniaturas/portada_{c}.jpg" for c in   # og:image de cada escenario (analisis/remake2003/portadas.py)
+           ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann")]
 CRUDOS += [f"mapas/mapa2003alt/assets/epilogue-{weight}.woff2" for weight in (400,600,700)]
+
+# Páginas que se publican con otra ruta (origen -> ruta en el sitio). La tarjeta del índice enlaza la carpeta.
+DESTINO = {"analisis/uninominal/mapa_257.html": "uninominal/index.html",
+           "analisis/uninominal/portada.png": "uninominal/portada.png"}   # og:image, de analisis/uninominal/portada.py
+CRUDOS += ["analisis/uninominal/portada.png"]

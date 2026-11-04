@@ -1,10 +1,13 @@
 # Atlas electorales argentinos por departamento
 
-Mapas de resultados electorales de la Argentina por departamento (y por circunscripción en Capital Federal), de 1912 a 2025, en el estilo del mapa de la Wikipedia de las presidenciales de 1999. Incluye además:
+Mapas de resultados electorales de la Argentina por departamento (y por circunscripción en Capital Federal y en 1904), de 1904 a 2025, en el estilo del mapa de la Wikipedia de las presidenciales de 1999. Incluye además:
 
 - una planilla con todos los resultados por departamento que reúne el proyecto;
 - estimaciones de transferencias de voto entre elecciones por inferencia ecológica, con diagramas de Sankey;
+- un ejercicio con la Cámara de Diputados en 257 distritos uninominales dibujados por algoritmo sobre el censo 2022 (`analisis/uninominal/`);
 - los paquetes para subir los mapas a Wikimedia Commons.
+
+Sitio con todos los atlas: <https://azha2005.github.io/257arg/>. Los 257 distritos: <https://azha2005.github.io/257arg/uninominal/>.
 
 Cada atlas es un HTML autocontenido con pestañas por modo (ganador, porcentaje de cada fuerza, participación), descripción de cada unidad al pasar el mouse y descarga en SVG y PNG.
 

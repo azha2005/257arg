@@ -3,7 +3,7 @@ name: Atlas en GitHub Pages
 on:
   push:
     branches: [master]
-    paths: ["mapas/**/*.html", "sitio/**", "analisis/escenarios2003/simulador_2003.html", "transferencias/**/sankey_*.html", ".github/workflows/pages.yml"]
+    paths: ["mapas/**/*.html", "sitio/**", "analisis/escenarios2003/simulador_2003.html", "transferencias/**/sankey_*.html", "analisis/uninominal/mapa_257.html", "analisis/uninominal/portada.png", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -30,6 +30,8 @@ jobs:
             /transferencias/2003p_2005/sankey_2003p_2005.html
             /transferencias/2003p_2007p/sankey_2003p_2007p.html
             /transferencias/2003p_2009/sankey_2003p_2009.html
+            /analisis/uninominal/mapa_257.html
+            /analisis/uninominal/portada.png
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

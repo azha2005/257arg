@@ -8,7 +8,7 @@ El índice sigue el estilo Ink de transferencias/provinciales/INDICE.html, con m
 """
 import glob, html, io, os, shutil, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from catalogo import GRUPOS, EXTRA, MINI, CRUDOS
+from catalogo import GRUPOS, EXTRA, MINI, CRUDOS, DESTINO
 from rendimiento import optimizar
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,8 +21,22 @@ def entradas():
         for e in g[3]: yield e
 
 
+SITIO = "https://azha2005.github.io/257arg/"
+
+
+def destino(ruta):
+    """Ruta en el sitio publicado (casi siempre la misma del repositorio; ver DESTINO en catalogo.py)."""
+    return DESTINO.get(ruta, ruta)
+
+
+def enlace(ruta):
+    """Lo que enlazan el índice y el sitemap: una carpeta con index.html se enlaza por la carpeta."""
+    d = destino(ruta)
+    return d[:-len("index.html")] if d in DESTINO.values() and d.endswith("/index.html") else d
+
+
 def mini_nombre(ruta):
-    return ruta.replace("mapas/", "").replace("/", "__").replace(".html", ".webp")
+    return destino(ruta).replace("mapas/", "").replace("/", "__").replace(".html", ".webp")
 
 
 def miniaturas(filtro=""):
@@ -34,7 +48,7 @@ def miniaturas(filtro=""):
         b = p.chromium.launch(channel="chrome")
         pg = b.new_page(viewport={"width": 1920, "height": 1700})
         for ruta, *_ in entradas():
-            if filtro not in ruta: continue
+            if filtro not in ruta or ruta in DESTINO: continue   # las de DESTINO hacen su propia miniatura
             src = MINI.get(ruta, ruta)
             for hash_, suf in (("#bare", ""), ("#bare-white", "_claro")):
                 pg.goto("about:blank")
@@ -64,7 +78,7 @@ def indice():
             img = ((f'<img class="osc" src="miniaturas/{m}" alt="" loading="lazy" width="640" height="550">'
                     f'<img class="cla" src="miniaturas/{mc}" alt="" loading="lazy" width="640" height="550">') if ok else "")
             nota_h = f'<span class="nota">{html.escape(nota)}</span>' if nota else ""
-            cards.append(f'<li><a class="atlas" href="{ruta}"><span class="mini">{img}</span>'
+            cards.append(f'<li><a class="atlas" href="{enlace(ruta)}"><span class="mini">{img}</span>'
                          f'<span class="anio num">{anio}</span><span class="rot">{html.escape(rot)}</span>{nota_h}</a></li>')
         secs.append(f'<section id="{gid}" aria-labelledby="h-{gid}"><div class="cab"><h2 id="h-{gid}">{html.escape(titulo)}</h2>'
                     f'<p>{html.escape(bajada)}</p></div><ul class="grilla">{"".join(cards)}</ul></section>')
@@ -72,13 +86,14 @@ def indice():
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atlas electorales argentinos</title>
 <meta name="description" content="{n} atlas electorales de la Argentina por circunscripción, departamento, circuito y radio censal, de 1904 a 2025, al estilo de los mapas de la Wikipedia.">
+<link rel="canonical" href="https://azha2005.github.io/257arg/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://azha2005.github.io/257arg/">
 <meta property="og:title" content="Atlas electorales de la Argentina, 1904–2025">
 <meta property="og:description" content="{n} atlas: elecciones por departamento de 1904 a 2025, PASO incluidas, y el AMBA radio por radio.">
 <meta property="og:image" content="https://azha2005.github.io/257arg/vista_previa.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Cuatro atlas electorales: 1928, 1946, PASO 2023 y AMBA 2025 por radio censal">
+<meta property="og:image:alt" content="Cuatro atlas electorales: 1904, 1946, balotaje 2023 y AMBA 2025 por radio censal">
 <meta property="og:locale" content="es_AR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://azha2005.github.io/257arg/vista_previa.png">
@@ -283,6 +298,7 @@ def preparar(html):
 
 def copiar(dest):
     rutas = [e[0] for e in entradas()]
+    publicas = [SITIO] + [SITIO + enlace(r) for r in rutas]   # el sitemap lleva el índice y las entradas, no los EXTRA
     for pat in EXTRA: rutas += [os.path.relpath(f, ROOT).replace(os.sep, "/") for f in glob.glob(os.path.join(ROOT, pat))]
     os.makedirs(dest, exist_ok=True)
     shutil.copy(os.path.join(HERE, "index.html"), dest)
@@ -291,13 +307,18 @@ def copiar(dest):
     open(os.path.join(dest, ".nojekyll"), "w").close()
     tot = 0
     for r in sorted(set(rutas)):
-        d = os.path.join(dest, r); os.makedirs(os.path.dirname(d), exist_ok=True)
+        d = os.path.join(dest, destino(r)); os.makedirs(os.path.dirname(d), exist_ok=True)
         s = open(os.path.join(ROOT, r), encoding="utf8").read()
         open(d, "w", encoding="utf8", newline="").write(preparar(s)); tot += os.path.getsize(d)
     for r in CRUDOS:
-        d = os.path.join(dest, r); os.makedirs(os.path.dirname(d), exist_ok=True)
+        d = os.path.join(dest, destino(r)); os.makedirs(os.path.dirname(d), exist_ok=True)
         shutil.copy(os.path.join(ROOT, r), d); tot += os.path.getsize(d)
-    print(len(set(rutas)) + len(CRUDOS), "HTML,", round(tot / 2**20), "MB")
+    # sitemap para Search Console (en un sitio de proyecto no hay robots.txt propio: va en la raíz del dominio)
+    hoy = __import__("datetime").date.today().isoformat()
+    urls = "".join(f"<url><loc>{html.escape(u)}</loc><lastmod>{hoy}</lastmod></url>\n" for u in dict.fromkeys(publicas))
+    open(os.path.join(dest, "sitemap.xml"), "w", encoding="utf8", newline="\n").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n")
+    print(len(set(rutas)) + len(CRUDOS), "HTML,", round(tot / 2**20), "MB;", len(dict.fromkeys(publicas)), "URL en sitemap.xml")
 
 
 if __name__ == "__main__":
