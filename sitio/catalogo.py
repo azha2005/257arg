@@ -114,6 +114,11 @@ GRUPOS = [
         ("mapas/serieAMBA2005_2023radios/atlas_2023bal.html", "2023", "Balotaje, por radio", "Estimado"),
         ("mapas/mapaAMBA2025radios/atlas_amba2025radios.html", "2025", "Diputados, por radio", "Estimado"),
     ]),
+    ("pba2025sep", "Legislativas bonaerenses, 7 de septiembre de 2025", "Senadores y diputados provinciales, recuento provisorio por mesa. Por radio son estimaciones.", [
+        ("mapas/mapaPBA2025sep/atlas_pba2025sep.html", "2025", "Provincia de Buenos Aires", "Por sección, partido y circuito"),
+        ("mapas/mapaPBA2025sep/atlas_amba2025sep.html", "2025", "AMBA, por circuito", "Por partido y circuito"),
+        ("mapas/mapaPBA2025sep/atlas_amba2025sep_radios.html", "2025", "AMBA, por radio", "Estimado; por partido, circuito y radio"),
+    ]),
     ("escenarios", "Escenarios hipotéticos", "Ucronías y simulaciones a partir de resultados reales. No son resultados.", [
         ("mapas/mapa1916fic/atlas_1916_alt.html", "1916", "Presidente, ucronía", "De la Torre contra el ex-PAN"),
         ("mapas/mapa1983hipotetico/atlas_1983_hipotetico.html", "1983", "Presidente", "Luder 50,33 %"),
