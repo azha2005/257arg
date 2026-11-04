@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4167_88cdd95881",
+  "shp": "M4167.shp",
+  "entidades": 22,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4167.dbf",
+      "bytes": 4720,
+      "sha256": "059f12ec6d47d799d5b4d4930f66a0cb7e12e1893345c4ed769668d4a17c0023"
+    },
+    {
+      "archivo": "M4167.shp",
+      "bytes": 3348,
+      "sha256": "0a23d96ed24ddc215bc12ed4c20ce9840129b0589397c6fbb36a40f02bce8750"
+    },
+    {
+      "archivo": "M4167.shx",
+      "bytes": 276,
+      "sha256": "4197c88b28f8448ae161d5c27914120551b62cd1d9a121665bde3a69d5a6427f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Coloniadurana3v.zip!M4167.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f9a5352ee5",
+    "archivo": "santafe/ipec/2010/Coloniadurana3v.zip!M4167.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 22,
+    "registros_shx": 22,
+    "shape_type": 5,
+    "bbox": [
+      5506931.0,
+      6730275.0,
+      5507283.5,
+      6731993.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Coloniadurana3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1a9fb3a80dcc693f71cbf27426a7e02338d9f0db0986195990c1002b32dc7207"
+}

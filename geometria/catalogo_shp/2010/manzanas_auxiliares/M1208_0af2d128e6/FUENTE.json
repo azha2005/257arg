@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1208_0af2d128e6",
+  "shp": "M1208.shp",
+  "entidades": 20,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1208.dbf",
+      "bytes": 4326,
+      "sha256": "9b816785f3c89096b23d4c4eb8414dad7ad76fcdcd06612c0ce6183b292a5028"
+    },
+    {
+      "archivo": "M1208.shp",
+      "bytes": 3572,
+      "sha256": "3077d92a076476f7e684a6799a0e6a70272e57df6178422c850f13399d448020"
+    },
+    {
+      "archivo": "M1208.shx",
+      "bytes": 260,
+      "sha256": "ae9486c71a1901d0456df7518d37613be311994e16db3337fc48aed6f6c0202d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pavona3h.zip!M1208.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_938d81e0c1",
+    "archivo": "santafe/ipec/2010/pavona3h.zip!M1208.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 5,
+    "bbox": [
+      5461771.0,
+      6321811.0,
+      5462552.0,
+      6322654.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pavona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5d711c93ad217352b6dc33e7302b32bb184347c352a0c5b04e9c298231820fba"
+}

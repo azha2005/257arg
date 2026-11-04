@@ -27,3 +27,5 @@ Malvinas no recibe votos propios; por pedido del usuario del 19-oct-2026 se colo
 
 No se prepara paquete para Commons: es una simulación.
 
+
+Escenario original: **@fedepdice_**, según atribución aportada por el usuario. La estimación territorial del atlas pertenece al proyecto.

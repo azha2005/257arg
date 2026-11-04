@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1358_d124eaa8e7",
+  "shp": "M1358.shp",
+  "entidades": 539,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1358.dbf",
+      "bytes": 106569,
+      "sha256": "361f5631b5c9b7d38c6fc66b5eb8a022b42d0221f34d2c22b835c6c36d0f2a81"
+    },
+    {
+      "archivo": "M1358.shp",
+      "bytes": 119436,
+      "sha256": "f7463512213718eaa709ab67e9d6c5462f3fd4f1cf7b29e2b76bcb00ef5e5497"
+    },
+    {
+      "archivo": "M1358.shx",
+      "bytes": 4412,
+      "sha256": "b4fdcb28da35d1b8fbb57b97b7119bcda54659d36047f2faa6023f6eac9bbb70"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sauceviejoa0v.zip!M1358.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_722450b7ce",
+    "archivo": "santafe/ipec/2010/sauceviejoa0v.zip!M1358.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 539,
+    "registros_shx": 539,
+    "shape_type": 5,
+    "bbox": [
+      5418401.0,
+      6482209.5,
+      5428115.5,
+      6493991.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sauceviejoa0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8a06be5b0c69273359d1b5040aa4fb37f527a1f0d74c1aa5ebbeb011467202a8"
+}

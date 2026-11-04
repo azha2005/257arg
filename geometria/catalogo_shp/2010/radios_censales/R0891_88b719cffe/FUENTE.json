@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0891_88b719cffe",
+  "shp": "R0891.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0891.dbf",
+      "bytes": 1298,
+      "sha256": "f920e693288991c2571b70b3c8f37038eff6d1093cc3ed1149320e9137701bae"
+    },
+    {
+      "archivo": "R0891.shp",
+      "bytes": 2212,
+      "sha256": "16f1f95e15649cb970054f59b7e57c0a2f58adecf5d166213cf8383d1db34890"
+    },
+    {
+      "archivo": "R0891.shx",
+      "bytes": 132,
+      "sha256": "c67847e413faded94ea80ec5babe63bda08a8721997d9c7751f878d407bd16cd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lacriollaa3h.zip!R0891.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3cb0b24db0",
+    "archivo": "santafe/ipec/2010/lacriollaa3h.zip!R0891.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5464192.0,
+      6655971.5,
+      5466105.5,
+      6657551.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lacriollaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1c8fe4fe66b3fb761a9e611156ef77c97ac071f3637c4922ab625b59e22a3103"
+}

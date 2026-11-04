@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0267_9da2972107",
+  "shp": "M0267.shp",
+  "entidades": 366,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0267.dbf",
+      "bytes": 72488,
+      "sha256": "c98ce4e02cbf0d56c704396dec21d599a1b767a2421fad04b233df9b709677af"
+    },
+    {
+      "archivo": "M0267.shp",
+      "bytes": 76292,
+      "sha256": "90187377249831d0f51d3769cd8f3b96a363c0eb34a1e9c70101e8a91613c825"
+    },
+    {
+      "archivo": "M0267.shx",
+      "bytes": 3028,
+      "sha256": "1a27c80b6098a7828fb5f6f1754a30734939a0e40be7d0df253a9fa3ae8699d6"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjaviera1v.zip!M0267.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0fca14ae2b",
+    "archivo": "santafe/ipec/2010/sanjaviera1v.zip!M0267.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 366,
+    "registros_shx": 366,
+    "shape_type": 5,
+    "bbox": [
+      5505213.5,
+      6615618.5,
+      5507937.0,
+      6618910.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjaviera1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b370b8ace2d9269474cef57d257d329e63839243dbdefd024b0e83a7abf2873e"
+}

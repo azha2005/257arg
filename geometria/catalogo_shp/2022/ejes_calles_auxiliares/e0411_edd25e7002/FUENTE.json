@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0411_edd25e7002",
+  "shp": "e0411.shp",
+  "entidades": 377,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0411.dbf",
+      "bytes": 112956,
+      "sha256": "97254bab779527389ce2da23bf47b959b5ed24506ca28ed73957c669d9a97a95"
+    },
+    {
+      "archivo": "e0411.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0411.shp",
+      "bytes": 33292,
+      "sha256": "cc431ad4bb8f76838c98026df7e8deee6f8478cc0f2f7917510d3a492189a3d2"
+    },
+    {
+      "archivo": "e0411.shx",
+      "bytes": 3116,
+      "sha256": "45d3422f3da17f6cfb17d0a4f798d867253bc0d95410a6414f8db11bc9901fbc"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/WHEELWRIGHT.zip!e0411.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_b9c078f365",
+    "archivo": "santafe/ipec/2022/WHEELWRIGHT.zip!e0411.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 377,
+    "registros_shx": 377,
+    "shape_type": 3,
+    "bbox": [
+      5386480.5,
+      6259608.5,
+      5388824.5,
+      6261938.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/WHEELWRIGHT.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "ca3db1c1534869353039578def52575a000a1cb4121107e9120b82f9b3220119"
+}

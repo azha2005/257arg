@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4180_8ea66d656c",
+  "shp": "R4180.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4180.dbf",
+      "bytes": 686,
+      "sha256": "ed15aafed74b80fe252291d4108125d1b1dd88e1d2b41a473873c20a29e9251a"
+    },
+    {
+      "archivo": "R4180.shp",
+      "bytes": 1100,
+      "sha256": "4436d46aa01592d728257a47c8ff6e6c682fdc188fe522f8d39cfc4bab67e5c0"
+    },
+    {
+      "archivo": "R4180.shx",
+      "bytes": 108,
+      "sha256": "c387e9d987f53622facdf3e6b9e51c18dbfd9bd573e64d85784184586c71b269"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pueblosantaluciaa3v.zip!R4180.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f9f39d4315",
+    "archivo": "santafe/ipec/2010/pueblosantaluciaa3v.zip!R4180.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5460558.0,
+      6760282.0,
+      5461588.0,
+      6761782.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pueblosantaluciaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6d43caf89f0fbdc93b0cae9f8a0ec0682e9a5bc476a11948d5d84f0c79d02e9a"
+}

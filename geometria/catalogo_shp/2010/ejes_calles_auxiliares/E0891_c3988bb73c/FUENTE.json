@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0891_c3988bb73c",
+  "shp": "E0891.shp",
+  "entidades": 199,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0891.dbf",
+      "bytes": 69862,
+      "sha256": "4a50937436b50e0bf0f23edb7a5845b44db939d7d8ba79ba62060dcc72bd36ad"
+    },
+    {
+      "archivo": "E0891.shp",
+      "bytes": 17724,
+      "sha256": "0815819377eaaa6997f81a242b5d85716069309a326e458cd77225d73f16081e"
+    },
+    {
+      "archivo": "E0891.shx",
+      "bytes": 1692,
+      "sha256": "bedb4ed52aee4c5e66e5055a6914a4ea99aa494fe76a55e6af5fa9522e9713ee"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lacriollaa3h.zip!E0891.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3cb0b24db0",
+    "archivo": "santafe/ipec/2010/lacriollaa3h.zip!E0891.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 199,
+    "registros_shx": 199,
+    "shape_type": 3,
+    "bbox": [
+      5464192.0,
+      6655971.5,
+      5466105.5,
+      6657551.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lacriollaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "45c89f9f0dc3f20e2314384787a2d0c2e8d22df98052b8d646fa77c577dbf665"
+}

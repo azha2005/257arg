@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1487_5e6300f567",
+  "shp": "E1487.shp",
+  "entidades": 109,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1487.dbf",
+      "bytes": 38542,
+      "sha256": "767627f66f7ae30ff7922a9222a9313392e974c5c31ed3f8bab2ad11fd5a9fe6"
+    },
+    {
+      "archivo": "E1487.shp",
+      "bytes": 9724,
+      "sha256": "29f371fb86892572208e966f3bcde2fbc557c484477a82b10d3e772e3a8c6512"
+    },
+    {
+      "archivo": "E1487.shx",
+      "bytes": 972,
+      "sha256": "e5b33bec4fe7fee98a773a97681e8e4cc6bb8f71e165e7137fd9730f1557a2b5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/huanquerosa3h.zip!E1487.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_647a9d53d7",
+    "archivo": "santafe/ipec/2010/huanquerosa3h.zip!E1487.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 109,
+    "registros_shx": 109,
+    "shape_type": 3,
+    "bbox": [
+      5381740.5,
+      6679398.5,
+      5382998.0,
+      6680579.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/huanquerosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "04fce50debf855827c59f6f0f20d08aa0a0b3c39f382eed2d41bfd959f8eaf3f"
+}

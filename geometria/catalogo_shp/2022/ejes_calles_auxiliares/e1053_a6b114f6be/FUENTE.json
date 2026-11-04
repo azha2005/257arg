@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1053_a6b114f6be",
+  "shp": "e1053.shp",
+  "entidades": 216,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1053.dbf",
+      "bytes": 64978,
+      "sha256": "01492b2724b76fda9d26d33dceaa680a5369af32a1252097fd2a849e3ef399db"
+    },
+    {
+      "archivo": "e1053.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1053.shp",
+      "bytes": 19524,
+      "sha256": "84976a91982b557c87cfedfdf63b57335a1bd130053907ea53594d1d440c4fc1"
+    },
+    {
+      "archivo": "e1053.shx",
+      "bytes": 1828,
+      "sha256": "722ad9c5cb049647cdd580e96b5eb467673e7f2b1b8393c53fc9b1a3f6bead2d"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/TARTAGAL.zip!e1053.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_419b820094",
+    "archivo": "santafe/ipec/2022/TARTAGAL.zip!e1053.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 216,
+    "registros_shx": 216,
+    "shape_type": 3,
+    "bbox": [
+      5514558.5,
+      6828171.5,
+      5515798.5,
+      6830095.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/TARTAGAL.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "ed8c105349751e9caa0bf7f0a52075c5e6ad2198515d5457f85b585bd2364c9a"
+}

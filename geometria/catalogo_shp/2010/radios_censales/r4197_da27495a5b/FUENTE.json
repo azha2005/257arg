@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r4197_da27495a5b",
+  "shp": "r4197.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r4197.shx",
+      "bytes": 108,
+      "sha256": "34343142cc2bc1f60607845434c34cadfbc3679609c090538e71c3ceb3eeadcb"
+    },
+    {
+      "archivo": "r4197.shp",
+      "bytes": 348,
+      "sha256": "6f9176d9fc6ec9ede19ac3c3473ebbeed1d5732087d66485ba85c7c081049cb9"
+    },
+    {
+      "archivo": "r4197.sbx",
+      "bytes": 116,
+      "sha256": "6bc73cb6bd9652335a090d3f71797f4508fbfa930573daa99431ecf0e55efc49"
+    },
+    {
+      "archivo": "r4197.sbn",
+      "bytes": 132,
+      "sha256": "5a2f177c0090b286fce36cd494c4c294bf7ae77f54963ce93b13f036ac100605"
+    },
+    {
+      "archivo": "r4197.dbf",
+      "bytes": 685,
+      "sha256": "7c6244f4db80e9ea52d64943d355e4d99f67fce33c9526ba0390c2d422d7a20f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/FORTINCHARRUA.zip!r4197.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_367b25a1cb",
+    "archivo": "santafe/ipec/2010/FORTINCHARRUA.zip!r4197.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5408633.0,
+      6778010.5,
+      5409484.0,
+      6778273.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/FORTINCHARRUA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e7e419f6f308cf0766fc21889212f9675f6b97017ba6e643697748ac075a28c3"
+}

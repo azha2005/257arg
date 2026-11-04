@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4114_e7834f9c34",
+  "shp": "E4114.shp",
+  "entidades": 169,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4114.dbf",
+      "bytes": 59422,
+      "sha256": "5a4340d07092cecea9a332c1167d4e8812facba30d3f9908c2159efab7eeb8d6"
+    },
+    {
+      "archivo": "E4114.shp",
+      "bytes": 14972,
+      "sha256": "9e5d26afc22953245c557882da094e4101aecdd4c69f67b71cc486a4f69a37e4"
+    },
+    {
+      "archivo": "E4114.shx",
+      "bytes": 1452,
+      "sha256": "9f309750dd1b0bade0fd65043c11461292dd3f1db24b2e3cbd8e481e06f2ac5d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanfranciscodesantafea3h.zip!E4114.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bae9c095b6",
+    "archivo": "santafe/ipec/2010/sanfranciscodesantafea3h.zip!E4114.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 169,
+    "registros_shx": 169,
+    "shape_type": 3,
+    "bbox": [
+      5302213.0,
+      6281296.0,
+      5303470.5,
+      6282554.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanfranciscodesantafea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f2b85c061aefff0c5b2416e35e4c08f5e30db483f9df55eaaee6f3a62a27cf1e"
+}

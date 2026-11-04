@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4171_45b207a490",
+  "shp": "M4171.shp",
+  "entidades": 11,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4171.dbf",
+      "bytes": 2553,
+      "sha256": "0cc170116cf6b0ef8f0d57952c6fbd3545ace6b6c24b6d1baa48bcf02cbe9ea8"
+    },
+    {
+      "archivo": "M4171.shp",
+      "bytes": 1900,
+      "sha256": "62efa1b804466c05d785ea7c86565fe2cf23a7474005a6acacdb7218b8d86362"
+    },
+    {
+      "archivo": "M4171.shx",
+      "bytes": 188,
+      "sha256": "49919535a2759c40a94fccbad0f05ca8f7618003f104b3bb267c5f1b11ba86fc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lapencaycaraguataa3h.zip!M4171.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a2de814be7",
+    "archivo": "santafe/ipec/2010/lapencaycaraguataa3h.zip!M4171.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 11,
+    "registros_shx": 11,
+    "shape_type": 5,
+    "bbox": [
+      5449363.0,
+      6642959.5,
+      5450016.5,
+      6643555.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lapencaycaraguataa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "05aae5f3c6d373aa9a09bfb53bce6499e99955d3dc13afe651bb6e5e0b126d0e"
+}

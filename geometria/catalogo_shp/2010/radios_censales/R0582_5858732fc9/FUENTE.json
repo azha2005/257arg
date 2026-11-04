@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0582_5858732fc9",
+  "shp": "R0582.shp",
+  "entidades": 3,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0582.dbf",
+      "bytes": 1094,
+      "sha256": "7821531a745d42903f1f081aaa80ed760aeaac6d9769edcac15c71d42e3953c6"
+    },
+    {
+      "archivo": "R0582.shp",
+      "bytes": 2332,
+      "sha256": "fc86342f05a62e16f50ae5eac64002016edb11db8eb80827db3f4034e2e5a490"
+    },
+    {
+      "archivo": "R0582.shx",
+      "bytes": 124,
+      "sha256": "eaa21f07b36768c07230d6023e7bcffb6d09f79d4b1a641d1282b4e1890e3e0d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/piamontea2h.zip!R0582.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_05d1e4db2a",
+    "archivo": "santafe/ipec/2010/piamontea2h.zip!R0582.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 5,
+    "bbox": [
+      5311836.0,
+      6441631.5,
+      5314101.0,
+      6443833.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/piamontea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7ea176ab387e0e35634c1e75b30e1a596c87104f19986f37c4a1100fd283f368"
+}

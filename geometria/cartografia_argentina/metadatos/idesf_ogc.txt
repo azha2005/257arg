@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset=UTF-8 >
+        <title>IDESF</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://www.santafe.gob.ar/assets/standard/images/favicon.ico">
+        <link href="//www.santafe.gov.ar/assets/app/portal/css/fonts.css" rel="stylesheet">
+        <!--link href="//www.santafe.gob.ar/assets/app/portal/css/santafe.css" rel="stylesheet"-->
+                                                <!--link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet"-->
+        <link href="/idesf/geoportal/css/../assets/bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/idesf/geoportal/css/estilos.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/idesf/geoportal/css/../assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<script type="text/javascript" src="/idesf/geoportal/javascript/../assets/jquery-3.1.1.min.js"></script>
+
+    </head>
+    <body id="top">
+        <div id="content-header" class="navbar-fixed-top"><!-- Diseño nuevo -->
+<div id="header" class="container ">
+    <div id="logoidesf"><a title="inicio del portal" href="/idesf/geoportal/" title="IDESF">IDESF</a></div>
+        
+        <ul id="menu-horizontal" class="nav navbar-nav">
+            <!--li class=" ">
+                <a href="/idesf" class="" title="Ir al inicio">Inicio</a>
+            </li-->  
+            <li class=" "><a href="/idesf/catalogo" class="" title="Acceder al Catálogo de Metadatos" target="_blank">Catálogo</a></li>            
+            <li class=" "><a href="/idesf/visualizador" class="" title="Acceder al Visualizador de IG" target="_blank">Visualizador</a>            </li>            
+            <li class=" "><a href="/idesf/descargas" class="" title="Acceder al área de Descargas de IG" target="_blank">Descargas</a>            </li>
+            <li class=" "><a href="/idesf/geoportal/paginas/servicios" class="" title="Acceder a los Servicios IDESF">Servicios</a>            </li>
+        </ul>
+        
+        <ul id="menu-right" class="">
+            <li class="divider">
+                <div id="menu-horizontal-alt-container" class="dropdown">
+                    <button id="menu-horizontal-alt-button" class="dropbtn menu-horizontal-alt"><i class="icon-menu" aria-hidden="true"></i></button>
+                    <div id="menu-horizontal-alt" class="dropdown-content" style="display: none">
+                        <span class="dropdown-arrow"></span>
+                        
+                        <div id="menu-horizontal-secundario">
+                        <ul id="menu-horizontal-alt-items-ppales" class="">
+                              <li class=" "><a href="/idesf" class="" title="Ir al inicio">Inicio</a></li>  
+                              <li class=" "><a href="/idesf/catalogo" class="" title="Acceder al Catálogo de Metadatos" target="_blank">Catálogo</a></li>            
+                              <li class=" "><a href="/idesf/visualizador" class="" title="Acceder al Visualizador de IG" target="_blank">Visualizador</a></li>            
+                              <li class=" "><a href="/idesf/descargas" class="" title="Acceder al área de Descargas de IG" target="_blank">Descargas</a>                              </li>
+                              <li class=" "><a href="/idesf/geoportal/paginas/servicios" class="" title="Acceder a los Servicios IDESF">Servicios</a>                              </li>
+                        </ul>
+                        <h4>Institucional</h4>
+
+<ul >
+
+	<li onClick="location.href='/idesf/geoportal/paginas/ide'"><a>¿Qué es una IDE?</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/la-idesf'"><a>La IDESF</a> </li>
+
+	<!--
+
+	<li onClick="location.href='/idesf/geoportal/paginas/idesf'"><a>IDESF</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/organizacion'"><a>Organización</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/beneficios'"><a>Beneficios</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/servidor-de-datos'"><a>Servidor de Datos</a> </li>
+
+	-->
+
+	<li onClick="location.href='/idesf/geoportal/paginas/restricciones-de-uso'"><a>Restricciones de Uso</a> </li>
+
+	<li onClick="location.href = '/idesf/geoportal/paginas/documentos#documentos-caracter-institucional'"><a>Normativas</a> </li>
+
+</ul>
+
+<h4>Difusión </h4>
+
+<ul>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/eventos'"><a>Eventos IDESF</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/capacitacion'"><a>Capacitación</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/medios-de-comunicacion'"><a>IDESF en Medios</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/galeria-de-fotos'"><a>Galería de Fotos</a> </li>
+
+</ul>
+
+<h4>Actividades</h4>
+
+<ul>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/proyectos'"><a>Proyectos</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/asistencia-a-productores'"><a>Asistencia a productores</a> </li>
+
+	<!--li onClick="location.href='/idesf/geoportal/paginas/medios-de-comunicacion'"><a>Colaboraciones con terceros</a> </li-->
+
+	<li onClick="location.href='/idesf/geoportal/paginas/universidad'"><a>Universidad</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/convenios'"><a> Convenios</a> </li>
+
+</ul>
+
+<h4>Recursos</h4>
+
+<ul>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/referencia-geografica'"><a>Referencia Geográfica</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/google-earth'"><a>Google Earth</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/situacion-hidrica'"><a>Situación Hídrica</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/documentos'"><a>Documentos</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/geo-tutoriales'"><a>Geo-tutoriales</a> </li>
+
+</ul>                        <h4>Sitios de Interés</h4>
+                <ul>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/sitios-referentes'"><a>Sitios Referentes</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-de-argentina'"><a>IDEs de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-del-mundo'"><a>IDEs del Mundo</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/visualizadores-de-argentina'"><a>Visualizadores de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/formacion'"><a>Formación</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/software'"><a>Software</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/boletines-y-revistas'"><a>Boletines y Revistas</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/utilidades'"><a>Utilidades</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/datos-para-descarga'"><a>Datos para Descarga</a> </li>
+            	    </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="search" class="divider">
+                <div id="search-container" class="dropdown">
+                    <button id="search-button" class="dropbtn search"><i class="icon-lupa" aria-hidden="true"></i></button>
+                    <div id="" class="search-form dropdown-content search">
+                        <span class="dropdown-arrow"></span>
+                        <form action="//www.santafe.gob.ar/searchgoogle" class="" target="_blank">
+                            <label class="sr-only" for="q">Search:</label>
+                            <input type="text" name="q" id="q" placeholder="BUSCAR" class="search"><button><i class="appen icon-lupa"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <li id="logogob1" class="divider"><a target="_blank" href="/"> </a></li>
+        </ul>
+</div>
+
+</div>
+        <!-- BODY -->
+        <div class="container margin-top-header">
+
+        
+
+<div class="titulo-seccion">    <h2 class="categoria"> Servicios IDESF</h2></div>
+<div><h1 class="titulo">SERVICIO WMS OFRECIDO POR LA IDESF</h1></div>
+
+<div class="contenedor-paginas-comunes" ><p >El servicio Web Map Service (WMS), definido por el OGC, es un estándar que permite la visualización de información geográfica en forma de imagen. </p>
+
+<p >WMS (estándar e interoperable) permite acceder a datos vectoriales y raster, en distintos formatos, con diferentes sistemas de referencia y coordenadas, ofrecidos desde distintos servidores remotos, y superponerlos en un visualizador. Además se puede consultar cierta información disponible y las características de la imagen del mapa. </p>
+
+<p >Dado que se cumplen las especificaciones OGC, se puede acceder a través de cualquier tipo de cliente IDE, ya sea navegador web (cliente ligero) o una aplicación de escritorio como ArcGIS, gvSIG, Geomedia (cliente pesado). </p>
+
+<h3>Dirección del servicio WMS de la IDESF: </h3>
+
+<p class="center"><a href="https://aswe.santafe.gov.ar/idesf/wms" target="_blank">https://aswe.santafe.gov.ar/idesf/wms</a></p>
+
+<h3>Operaciones: </h3>
+
+<p><strong>GetCapabilities:</strong> Devuelve los metadatos del servicio y de las capas de información que contiene. </p>
+
+<p class="center margenTop0"><a href="https://aswe.santafe.gov.ar/idesf/wms?service=WMS&version=1.3.0&request=GetCapabilities" target="_blank">https://aswe.santafe.gov.ar/idesf/wms?service=WMS&version=1.1.1&request=GetCapabilities</a></p>
+
+<p><strong>GetMap:</strong> Devuelve un mapa en formato de imagen. </p>
+
+<p class="margen0">Ejemplo:</p>
+
+<p class="center margen0">
+	
+	<a href="https://aswe.santafe.gov.ar/idesf/wms?service=WMS&version=1.1.1&request=GetMap&layers=departamentos&srs=EPSG:5347&bbox=5000000,6000000,6000000,7000000&format=image/png&width=500&height=500&styles=default" target="_blank">
+		
+		https://aswe.santafe.gov.ar/idesf/wms?service=WMS<br>
+		
+		&version=1.1.1& request=GetMap&layers=departamentos<br>
+		
+		&srs=EPSG:5347&bbox=5000000,6000000,6000000,7000000<br>
+		
+		&format=image/png&width=500&height=500&styles=default
+		
+	</a>
+	
+</p>
+
+<p><strong>GetFeatureInfo:</strong> Devuelve información sobre elementos de un mapa. </p>
+
+<p class="margen0">Ejemplo:</p>
+
+<p class="center margenTop0">
+	
+	<a href="https://aswe.santafe.gov.ar/idesf/wms?service=WMS&version=1.1.1&request=GetFeatureInfo&layers=escuelas_urbano&styles=&srs=EPSG:4326&bbox=-63.4154,-34.8242,-57.9377,-27.6729&width=550&height=500&format=image/jpeg&transparent&query_layers=escuelas_urbano&feature_count=1&x=275&y=285" target="_blank">
+		
+		https://aswe.santafe.gov.ar/idesf/wms?service=WMS&version=1.1.1<br>
+		
+		&request=GetFeatureInfo&layers=escuelas_urbano&styles=&srs=EPSG:4326<br>
+		
+		&bbox=-63.4154,-34.8242,-57.9377,-27.6729&width=550&height=500<br>
+		
+		&format=image/jpeg&transparent&query_layers=escuelas_urbano<br>
+		
+		&feature_count=1&x=275&y=285
+		
+	</a>
+	
+</p>
+
+<h3>Características WMS:</h3>
+
+<ul class="sinVinieta ulLiMargen">
+	
+	<li>
+		
+		Versión implementada:
+		
+		<ul class="sinVinieta ulLiMarcadorIdesf">
+			
+			<li>Versión 1.1.1			</li>
+			
+		</ul>
+		
+	</li>
+	
+	<li >
+		
+		SRS (Sistemas de Referencia) admitidos:
+		
+		<ul class="sinVinieta ulLiMarcadorIdesf">
+			
+			<li>Para coordenadas geográficas: EPSG:4326 WGS 84</li>
+			
+			<li>Para coordenadas planas: EPSG:22185 POSGAR94 / Argentina 5 – WGS 84. <br/>Las capas producidas por el SCIT se brindan en EPSG:5347 POSGAR07 / Argentina 5.</li>
+			
+			<li>Para ofrecer compatibilidad con servicios de mapas a nivel internacional:<br>EPSG:3857 - EPSG:900913</li>
+			
+		</ul>
+		
+	</li>
+	
+	<li >
+		
+		Formatos de imagen admitidos:
+		
+		<ul class="sinVinieta ulLiMarcadorIdesf">
+			
+			<li>image/png24 - image/png - image/jpeg</li>
+			
+		</ul>
+		
+	</li>
+	
+	<li >
+		
+		Servicios <a href="http://www.opengeospatial.org/" target="_blank" title="Ir al sitio de OGC">OGC</a> (Open Geospatial Consortium)
+		
+	</li>
+	
+</ul>
+
+</div>
+
+</div>        </div>
+        <div id="" class=" container-menu-horizontal">
+    <div id="" class="container">
+        <!--div class="col-md-3 menu-horizontal">
+            <h4>Institucional</h4>
+            <ul>
+                <li onClick="location.href = '/idesf/geoportal/paginas/ide'"><a>¿Qué es una IDE?</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/idesf'"><a>IDESF</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/organizacion'"><a>Organización</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/beneficios'"><a>Beneficios</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/servidor-de-datos'"><a>Servidor de Datos</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/restricciones-de-uso'"><a>Restricciones de Uso</a> </li>
+            </ul>
+        </div>
+        <div class="col-md-3 menu-horizontal">
+            <h4>Difusión </h4>
+            <ul>
+                <li onClick="location.href = '/idesf/geoportal/paginas/eventos'"><a>Eventos IDESF</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/capacitacion'"><a>Capacitación</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/medios-de-comunicacion'"><a>IDESF en Medios</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/galeria'"><a>Galería de Fotos</a> </li>
+            </ul>
+
+        </div>
+        <div class="col-md-3 menu-horizontal">
+            <h4>Recursos</h4>
+            <ul>
+                <li onClick="location.href = '/idesf/geoportal/paginas/referencia-geografica'"><a>Referencia Geográfica</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/google-earth'"><a>Google Earth</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/situacion-hidrica'"><a>Situación Hídrica</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/documentos'"><a>Documentos</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/geo-tutoriales'"><a>Geo-tutoriales</a> </li>
+            </ul>
+        </div-->
+        <div class="col-md-3 menu-horizontal">
+
+	<h4>Institucional</h4>
+
+	<ul>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/ide'"><a>¿Qué es una IDE?</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/la-idesf'"><a>La IDESF</a> </li>
+
+		<!--
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/idesf'"><a>IDESF</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/organizacion'"><a>Organización</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/beneficios'"><a>Beneficios</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/servidor-de-datos'"><a>Servidor de Datos</a> </li>
+
+		-->
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/restricciones-de-uso'"><a>Restricciones de Uso</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/documentos#documentos-caracter-institucional'"><a>Normativas</a> </li>
+
+	</ul>
+
+	<h4>Difusión </h4>
+
+	<ul>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/eventos'"><a>Eventos IDESF</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/capacitacion'"><a>Capacitación</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/medios-de-comunicacion'"><a>IDESF en Medios</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/galeria-de-fotos'"><a>Galería de Fotos</a> </li>
+
+	</ul>
+
+</div>
+
+<div class="col-md-3 menu-horizontal">
+
+	<h4>Actividades</h4>
+
+	<ul>
+
+		<li onClick="location.href='/idesf/geoportal/paginas/proyectos'"><a>Proyectos</a> </li>
+
+		<li onClick="location.href='/idesf/geoportal/paginas/asistencia-a-productores'"><a>Asistencia a productores</a> </li>
+
+		<!--li onClick="location.href='/idesf/geoportal/paginas/medios-de-comunicacion'"><a>Colaboraciones con terceros</a> </li-->
+
+		<li onClick="location.href='/idesf/geoportal/paginas/universidad'"><a>Universidad</a> </li>
+
+		<li onClick="location.href='/idesf/geoportal/paginas/convenios'"><a>Convenios</a> </li>
+
+	</ul>
+
+</div>
+
+<div class="col-md-3 menu-horizontal">
+
+	<h4>Recursos</h4>
+
+	<ul>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/referencia-geografica'"><a>Referencia Geográfica</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/google-earth'"><a>Google Earth</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/situacion-hidrica'"><a>Situación Hídrica</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/documentos'"><a>Documentos</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/geo-tutoriales'"><a>Geo-tutoriales</a> </li>
+
+	</ul>
+
+</div>
+
+        <div class="col-md-3 menu-horizontal">
+            <h4>Sitios de Interés</h4>
+            <ul>
+                                        <li onClick="location.href='/idesf/geoportal/paginas/sitios-referentes'"><a>Sitios Referentes</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-de-argentina'"><a>IDEs de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-del-mundo'"><a>IDEs del Mundo</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/visualizadores-de-argentina'"><a>Visualizadores de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/formacion'"><a>Formación</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/software'"><a>Software</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/boletines-y-revistas'"><a>Boletines y Revistas</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/utilidades'"><a>Utilidades</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/datos-para-descarga'"><a>Datos para Descarga</a> </li>
+            
+
+            </ul>
+        </div>
+    </div>
+</div>        
+<!--section id="footer" class="anchoSitio "-->
+
+<!--section id="footer" class="anchoSitio "-->
+<!-- el comodin /idesf/geoportal/paginas/  se reemplaza en tiempo de ejecucion -->
+
+<div class="footer">
+	<div class="container">
+		<div class="col-md-4">
+			<p><strong>IDESF</strong></p>
+			<p>Infraestructura de Datos Espaciales de Santa Fe</p>
+			<!--p>Secretaría de Tecnologías para la Gestión</p>
+        <p>Ministerio de Gobierno y Reforma del Estado</p>
+			<p>Gobierno Provinicia Santa Fe</p-->
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i> San Martín 2466 - 6to. Piso (S3000FSB) Santa Fe </p>
+			<p><i class="fa fa-phone" aria-hidden="true"></i> 54 + 342 4508700 - Int. 5147 / 5149.</p>
+		</div>
+		<div class="col-md-4">
+			<ul id="reg_contact">
+				<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="/idesf/geoportal/paginas/contacto" ><span> Contacto</span></a></li>
+				<li><i class="fa fa-info-circle" aria-hidden="true"></i><a class="registrarse" href="/idesf/geoportal/paginas/infraestructura-tecnologica-utilizada" > <span> Infraestructura tecnológica utilizada</span></a></li>
+				<li><i class="fa fa-sitemap" aria-hidden="true"></i><a href="/idesf/geoportal/paginas/sitemap" > <span> Mapa Web</span></a></li>
+				<li><i class="fa fa-linkedin"aria-hidden="true"></i><a href="https://www.linkedin.com/company/idesf-infraestructura-de-datos-espaciales-de-santa-fe/?viewAsMember=true" target="_blank"> <span> Seguinos en Linkedin</span></a></li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+		</div>
+		<p class="footer-right">&copy;<span id="fecha_rights"></span>  - Todos los derechos reservados.</p>
+		<script>
+			const d = new Date();
+			document.getElementById("fecha_rights").innerHTML = d.getFullYear();
+		</script>
+	</div>
+	<!--</section>-->
+</div>
+</div>   
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up  fa-2x" aria-hidden="true"></i></button>
+
+<style>
+    #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4276bc; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 12px 15px; /*15px;*/ /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+    
+</style>
+
+<script>
+    $(document).ready( function () { 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+    })
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+        document.documentElement.scrollTop = 0; // For IE and Firefox
+    }
+</script>    
+        <script type="text/javascript" src="/idesf/geoportal/javascript/header.js"></script>        <script type="text/javascript" src="/idesf/geoportal/javascript/../assets/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+        
+
+
+    </body>
+</html>

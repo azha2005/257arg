@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4169_597f9e32a6",
+  "shp": "E4169.shp",
+  "entidades": 50,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4169.dbf",
+      "bytes": 18010,
+      "sha256": "c081ed1d40461ce343b56fd05fbda7ecc0a1d9be162a546d5f5e3ea5f2c1fb56"
+    },
+    {
+      "archivo": "E4169.shp",
+      "bytes": 4500,
+      "sha256": "147af093a44149f64994a866d1ce7f97f148582f6047bb4d6caad1d9c1488ccb"
+    },
+    {
+      "archivo": "E4169.shx",
+      "bytes": 500,
+      "sha256": "d1997b7d1a8d0214e800a4a221a2b278b75ea28696ee63187d5a9da753cd18c8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/garibaldia3h.zip!E4169.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_092b8b50b2",
+    "archivo": "santafe/ipec/2010/garibaldia3h.zip!E4169.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 50,
+    "registros_shx": 50,
+    "shape_type": 3,
+    "bbox": [
+      5328357.0,
+      6497032.5,
+      5329191.5,
+      6498067.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/garibaldia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a6c5a2cd7ef9cea592912addb530ffadcf347e26c76714d48cfe45d79920d600"
+}

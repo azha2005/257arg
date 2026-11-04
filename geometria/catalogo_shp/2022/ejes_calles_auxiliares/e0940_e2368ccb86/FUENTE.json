@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0940_e2368ccb86",
+  "shp": "e0940.shp",
+  "entidades": 102,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0940.dbf",
+      "bytes": 31006,
+      "sha256": "dfd7e3804b665f878af6fe6184a34831db9f9fbb1177ac0c98b0e0249d5a5aa4"
+    },
+    {
+      "archivo": "e0940.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0940.shp",
+      "bytes": 9172,
+      "sha256": "bed7ec85befbee4aa7ba6d24608338482331913d7ee26ddea96250167e75ff18"
+    },
+    {
+      "archivo": "e0940.shx",
+      "bytes": 916,
+      "sha256": "f018d040e18bf52954129b26d3b2d8174636881d785d1e6f0ac8ea0b1bc581c4"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/JUANBMOLINA.zip!e0940.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1238ed83df",
+    "archivo": "santafe/ipec/2022/JUANBMOLINA.zip!e0940.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 102,
+    "registros_shx": 102,
+    "shape_type": 3,
+    "bbox": [
+      5451707.5,
+      6293607.0,
+      5453083.5,
+      6294965.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/JUANBMOLINA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2b23db72f5aff243cbf7fa4bfcb6e31ec6799c72ecc2470185161294bcd2924a"
+}

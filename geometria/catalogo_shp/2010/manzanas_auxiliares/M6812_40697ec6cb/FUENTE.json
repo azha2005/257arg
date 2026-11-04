@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6812_40697ec6cb",
+  "shp": "M6812.shp",
+  "entidades": 8,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6812.dbf",
+      "bytes": 1962,
+      "sha256": "93d9512fbc62bd6c7d1702fdce2b94cb41941f421d7ed06bc40dbe8e0df03f78"
+    },
+    {
+      "archivo": "M6812.shp",
+      "bytes": 1460,
+      "sha256": "63ba8f9089ede1f4d7af4d64083d39bef78195c34f69037756dff27601edbe3e"
+    },
+    {
+      "archivo": "M6812.shx",
+      "bytes": 164,
+      "sha256": "715e393105a53d28e0990cb0ee1c301200cdf499f821f683f6c376e71c33b73f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nuevalehmanna3h.zip!M6812.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b421c42b4c",
+    "archivo": "santafe/ipec/2010/nuevalehmanna3h.zip!M6812.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 8,
+    "registros_shx": 8,
+    "shape_type": 5,
+    "bbox": [
+      5355176.5,
+      6556586.5,
+      5355684.0,
+      6557414.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nuevalehmanna3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2ea8fa11b31b88060de4293ec339ae52e501a5efe36b6be44594b4101bc91b1d"
+}

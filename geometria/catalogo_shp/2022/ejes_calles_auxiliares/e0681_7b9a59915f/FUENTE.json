@@ -1,0 +1,89 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0681_7b9a59915f",
+  "shp": "e0681.shp",
+  "entidades": 437,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0681.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "e0681.dbf",
+      "bytes": 352896,
+      "sha256": "a62de8be2240554b1fa84896ad718a84795696ac5d83cb0179384802cca77494"
+    },
+    {
+      "archivo": "e0681.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0681.qmd",
+      "bytes": 651,
+      "sha256": "285133d778e3ba9cc03d068bc653b90e4f8ffdbe0449e1212cd3594f69c3c806"
+    },
+    {
+      "archivo": "e0681.shp",
+      "bytes": 38668,
+      "sha256": "4beab2ebf5c550a690263fdfccddff825de8737d4b902df9c91b9dd6410b6f53"
+    },
+    {
+      "archivo": "e0681.shx",
+      "bytes": 3596,
+      "sha256": "f01c6c2d9157888f9c8ad64fc863929e4ea2e5519d5d3c55d5d485fa1204e8c9"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PEYRANO.zip!e0681.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_c5b8db34b6",
+    "archivo": "santafe/ipec/2022/PEYRANO.zip!e0681.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 437,
+    "registros_shx": 437,
+    "shape_type": 3,
+    "bbox": [
+      5424439.5,
+      6287958.5,
+      5426473.0,
+      6289979.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI",
+      "layer",
+      "path"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PEYRANO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8"
+  },
+  "firma_componentes": "0f505dafd6fd8e37b146569a3fa9caa187509100b4a0babce057517ac5358e0b"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6804_63cfecccf7",
+  "shp": "M6804.shp",
+  "entidades": 7,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6804.dbf",
+      "bytes": 1765,
+      "sha256": "665a612e521939c2107d20638da024fa3f20c60c539430542c6de6bb106c9bd3"
+    },
+    {
+      "archivo": "M6804.shp",
+      "bytes": 1372,
+      "sha256": "79c3aafc7b52291c461df1d0f8acdbc2c556cf61643e201368f9a1176e7717b6"
+    },
+    {
+      "archivo": "M6804.shx",
+      "bytes": 156,
+      "sha256": "e4fcc8d0a9a415dd67e150ef73718c816956ace6e57471e35bd09d76a31fa744"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Cululua3h.zip!M6804.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a49d8526b",
+    "archivo": "santafe/ipec/2010/Cululua3h.zip!M6804.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 7,
+    "registros_shx": 7,
+    "shape_type": 5,
+    "bbox": [
+      5411145.0,
+      6547568.0,
+      5411539.5,
+      6547899.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Cululua3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "de7be3182ee25a5d95a4e8c987614f5871b266cfda3dd1633d540e77acfff196"
+}

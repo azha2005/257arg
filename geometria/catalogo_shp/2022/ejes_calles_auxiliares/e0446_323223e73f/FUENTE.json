@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0446_323223e73f",
+  "shp": "e0446.shp",
+  "entidades": 497,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0446.dbf",
+      "bytes": 148716,
+      "sha256": "47ab1737ea575b01caf65ec98f2fca7035911aaad67b2e83b8e82ef0262e0e49"
+    },
+    {
+      "archivo": "e0446.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0446.shp",
+      "bytes": 44780,
+      "sha256": "7efeba7f3a9ecb42fec7bac7273db6e691691b965a584d8e9c46aa541a5e461e"
+    },
+    {
+      "archivo": "e0446.shx",
+      "bytes": 4076,
+      "sha256": "9a1a55e5a0219f0555d82b100be04296c51cc5ca565e372b402584dfd229fb84"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/HELVECIA.zip!e0446.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1d1e067381",
+    "archivo": "santafe/ipec/2022/HELVECIA.zip!e0446.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 497,
+    "registros_shx": 497,
+    "shape_type": 3,
+    "bbox": [
+      5490163.0,
+      6558803.0,
+      5492491.0,
+      6562320.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/HELVECIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "78b277a061ed7255d55c5f0232f56d067498b81d36cd107705c7d5cf8abdbfc9"
+}

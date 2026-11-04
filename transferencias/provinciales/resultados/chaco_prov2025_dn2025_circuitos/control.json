@@ -1,0 +1,103 @@
+{
+  "nombre": "Chaco",
+  "distrito": "06",
+  "serie": "2025",
+  "fecha": "11/05/2025",
+  "origen": "Diputados provinciales 11/05/2025 (circuitos)",
+  "destino": "Diputados nacionales 26/10/2025",
+  "nivel": "circuitos y uniones",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.electoralchaco.gob.ar/historico/15/cargos-provinciales/",
+  "nota": "Definitivo por circuito. Se agrupan las seis parejas expresamente indicadas por el aviso del visor oficial; no se reparten votos.",
+  "id": "chaco_prov2025_dn2025_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "origen",
+  "foco": [],
+  "unidades": 152,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 63.65581902241026,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.012334696589705383,
+    "0.0001": 0.008874702415633262,
+    "1e-05": 0.007533417904963939,
+    "1e-06": 0.007412632815419471,
+    "1e-07": 0.007355053860536569
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 3.002936202244058,
+  "desviacion_max_margen_destino_pp": 0.4522461982256337,
+  "electores_o_votos_origen": 528845.0,
+  "electores_o_votos_destino": 652681.0,
+  "filas": [
+    {
+      "origen": "652 - FRENTE CHACO MERECE MÁS",
+      "peso": 32.75,
+      "dif_variante_pp": 5.21,
+      "sensibilidad_pp": 19.21,
+      "ancho_intervalo_pp": 8.34,
+      "separacion_pp": 55.27,
+      "no_identificada": false
+    },
+    {
+      "origen": "653 - CHACO PUEDE + LA LIBERTAD AVANZA",
+      "peso": 44.47,
+      "dif_variante_pp": 5.7,
+      "sensibilidad_pp": 9.96,
+      "ancho_intervalo_pp": 7.45,
+      "separacion_pp": 40.81,
+      "no_identificada": false
+    },
+    {
+      "origen": "655 - FRENTE PRIMERO CHACO",
+      "peso": 10.99,
+      "dif_variante_pp": 9.81,
+      "sensibilidad_pp": 28.14,
+      "ancho_intervalo_pp": 25.72,
+      "separacion_pp": 27.23,
+      "no_identificada": false
+    },
+    {
+      "origen": "656 - NUEVO ESPACIO CHACO INDEPENDIENTE",
+      "peso": 1.98,
+      "dif_variante_pp": 8.94,
+      "sensibilidad_pp": 28.74,
+      "ancho_intervalo_pp": 58.21,
+      "separacion_pp": 60.18,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 7.16,
+      "dif_variante_pp": 28.38,
+      "sensibilidad_pp": 43.58,
+      "ancho_intervalo_pp": 36.47,
+      "separacion_pp": 43.22,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.66,
+      "dif_variante_pp": 38.2,
+      "sensibilidad_pp": 42.39,
+      "ancho_intervalo_pp": 47.34,
+      "separacion_pp": 71.16,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

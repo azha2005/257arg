@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0267_8cd0bb7ce1",
+  "shp": "e0267.shp",
+  "entidades": 988,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0267.dbf",
+      "bytes": 295034,
+      "sha256": "16193e2548f617c49aba86c6b4ed124f3c2054bae98f9b70eaab4daa2dd58a33"
+    },
+    {
+      "archivo": "e0267.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0267.shp",
+      "bytes": 90564,
+      "sha256": "b5d13313426bf0d8299badb8de404d08568a0f2d69af31f6bf75a2dbc04892a2"
+    },
+    {
+      "archivo": "e0267.shx",
+      "bytes": 8004,
+      "sha256": "1f0a71c13965170dbfad8271791af324086cb7d500097e3d898b7f3128bffdbd"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANJAVIER.zip!e0267.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_54c44b1e8c",
+    "archivo": "santafe/ipec/2022/SANJAVIER.zip!e0267.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 988,
+    "registros_shx": 988,
+    "shape_type": 3,
+    "bbox": [
+      5505135.5,
+      6615608.5,
+      5507970.0,
+      6618995.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANJAVIER.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "27d9c8cd946491beb94c2cafafed37c80f43fcb3e06fef8204ffc53d62702631"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0533_9721f958af",
+  "shp": "R0533.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0533.dbf",
+      "bytes": 1706,
+      "sha256": "693460bb389ec359143491ceb65a52ce11ee8ba680d96d4ab00013c10023a1dc"
+    },
+    {
+      "archivo": "R0533.shp",
+      "bytes": 4516,
+      "sha256": "785f20f6777d028cbe91e4eb4ff7f4f55b233d912aa37fa742af68a194f47b1b"
+    },
+    {
+      "archivo": "R0533.shx",
+      "bytes": 148,
+      "sha256": "61cac435f8e9e83e8c2fc2d8cc6952aa0105c770badfff49fd8db89282d42422"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gobernadorcrespoa2v.zip!R0533.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_02682d8ad5",
+    "archivo": "santafe/ipec/2010/gobernadorcrespoa2v.zip!R0533.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5460462.0,
+      6640676.0,
+      5462050.0,
+      6642866.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gobernadorcrespoa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5e2f8c9b8b436c76c8aa57dba9516c952c685ae3db5b25530a8ad8a23e8f750e"
+}

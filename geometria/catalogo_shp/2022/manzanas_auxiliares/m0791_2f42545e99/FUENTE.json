@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0791_2f42545e99",
+  "shp": "m0791.shp",
+  "entidades": 140,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0791.dbf",
+      "bytes": 27966,
+      "sha256": "fae8c92dac026ee7997cfcdb005aba20ea36b2d422c5c3a0cfac575fce53cdcf"
+    },
+    {
+      "archivo": "m0791.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0791.shp",
+      "bytes": 24068,
+      "sha256": "e7c83e33506e14d9d8597ed9113c49366956ace83ca70d7317e3399433827019"
+    },
+    {
+      "archivo": "m0791.shx",
+      "bytes": 1220,
+      "sha256": "cfdb82b2527640585144a8d56536495fdb6714f5439a2ed9ecebd53de3802a06"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/TIMBUES.zip!m0791.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_958ed5b4d0",
+    "archivo": "santafe/ipec/2022/TIMBUES.zip!m0791.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 140,
+    "registros_shx": 140,
+    "shape_type": 5,
+    "bbox": [
+      5424916.0,
+      6383737.0,
+      5427146.0,
+      6386926.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/TIMBUES.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "ac8260cd6cb65e35205053a711dbb561989a5b063ddd98cf5729c6fa3f28c1fe"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4178_a219d9576c",
+  "shp": "R4178.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4178.dbf",
+      "bytes": 686,
+      "sha256": "90888ae9f84d885e1e307dea7956d5f369b4835a171152eb07c0099e5d4833d7"
+    },
+    {
+      "archivo": "R4178.shp",
+      "bytes": 1596,
+      "sha256": "0dd6795f1f0eb12ff0c32a285d9879f04695f0e8ae69046d00ddba364bcf5d8e"
+    },
+    {
+      "archivo": "R4178.shx",
+      "bytes": 108,
+      "sha256": "273d27c7ad6d053788206c8b31bd045b4ce4e40ea70672fc095b0c181010ff64"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puertoaragona3h.zip!R4178.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e24743fd48",
+    "archivo": "santafe/ipec/2010/puertoaragona3h.zip!R4178.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5412504.0,
+      6431982.0,
+      5414194.5,
+      6433773.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puertoaragona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "708f3ab47c4b5b4f4e3316e2b70c203c613a1d8c12d42fa87e4fd4f1a5e4c436"
+}

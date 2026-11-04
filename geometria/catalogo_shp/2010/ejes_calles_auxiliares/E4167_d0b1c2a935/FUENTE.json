@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4167_d0b1c2a935",
+  "shp": "E4167.shp",
+  "entidades": 70,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4167.dbf",
+      "bytes": 24970,
+      "sha256": "d506f4d466742283372303cccd6026bfe4841507013f9072087d0630fafd4869"
+    },
+    {
+      "archivo": "E4167.shp",
+      "bytes": 6260,
+      "sha256": "c76b4e74f089c58cb1c399a70561ddc694920ce256dece6dd7d975768e089ace"
+    },
+    {
+      "archivo": "E4167.shx",
+      "bytes": 660,
+      "sha256": "cb9fa4fd8b4a40e3d4b2ac572807ba0aecbf1808c37f11af5d59d34e11652a8f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Coloniadurana3v.zip!E4167.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f9a5352ee5",
+    "archivo": "santafe/ipec/2010/Coloniadurana3v.zip!E4167.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 70,
+    "registros_shx": 70,
+    "shape_type": 3,
+    "bbox": [
+      5506919.5,
+      6730264.5,
+      5507287.0,
+      6732004.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Coloniadurana3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "94c371b8382800c4fcced3ce8fdeb64672b111e5d3a7cd6571066d565d65cfc7"
+}

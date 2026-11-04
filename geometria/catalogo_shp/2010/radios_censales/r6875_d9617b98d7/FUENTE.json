@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6875_d9617b98d7",
+  "shp": "r6875.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6875.shx",
+      "bytes": 108,
+      "sha256": "a6a2d9cafba48099920b58f97f068572776a72d789944422e559c61ed1529e5f"
+    },
+    {
+      "archivo": "r6875.shp",
+      "bytes": 556,
+      "sha256": "d044c0bd739dcbfc2ffd8bac72262d3d887bab7909d5890abf845cdc977fe7a3"
+    },
+    {
+      "archivo": "r6875.sbx",
+      "bytes": 116,
+      "sha256": "e1de8db6d4893ac5d98079c9918c7302253a032641878ed4517e063fba5b18f5"
+    },
+    {
+      "archivo": "r6875.sbn",
+      "bytes": 132,
+      "sha256": "4b15029ee5062e6d8ec9f5b5b109be65072af146ea66792afa0344bef91e43f2"
+    },
+    {
+      "archivo": "r6875.dbf",
+      "bytes": 685,
+      "sha256": "7380390b285ef7f59be2dd0f31ccc485f0e70bfb8c35b53224bb300da2c03be5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ELCARMENDEAVELLANEDA.zip!r6875.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6676e890d1",
+    "archivo": "santafe/ipec/2010/ELCARMENDEAVELLANEDA.zip!r6875.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5533151.0,
+      6787104.0,
+      5533808.0,
+      6787787.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ELCARMENDEAVELLANEDA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ab5c67c4861e3f3482e93d0d71a5e75dc98c6bfaf9a001554f3e2e3c41b0106a"
+}

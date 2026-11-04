@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6814_3645a5a345",
+  "shp": "E6814.shp",
+  "entidades": 29,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6814.dbf",
+      "bytes": 10702,
+      "sha256": "9b285b6c282a6ba3aae339bad29ef18ca37035a1cfbcea66e815b30a1be20de9"
+    },
+    {
+      "archivo": "E6814.shp",
+      "bytes": 2652,
+      "sha256": "69ec3430adc11258c15090ca18b65817cbeb40c7daaef1a9a7f8277a39c693f0"
+    },
+    {
+      "archivo": "E6814.shx",
+      "bytes": 332,
+      "sha256": "29d654b5f0ac300197559aa1e261314a240e0c227ce70eb0987f9638cd2a7c4f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nanducitaa3h.zip!E6814.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3e21efa993",
+    "archivo": "santafe/ipec/2010/nanducitaa3h.zip!E6814.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 29,
+    "registros_shx": 29,
+    "shape_type": 3,
+    "bbox": [
+      5390728.0,
+      6639931.5,
+      5391576.5,
+      6640648.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nanducitaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d84573527315c299ebc3196801079fa54dce999a134bfbcdad1f8de5ed1e980d"
+}

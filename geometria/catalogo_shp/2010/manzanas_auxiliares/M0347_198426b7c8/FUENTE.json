@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0347_198426b7c8",
+  "shp": "M0347.shp",
+  "entidades": 210,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0347.dbf",
+      "bytes": 41756,
+      "sha256": "41c81d6c7d63f849aa448985591d46582e908b977481576c15a7445b402dfdca"
+    },
+    {
+      "archivo": "M0347.shp",
+      "bytes": 36012,
+      "sha256": "6afab422265629a4c7bac0cd38172b51c140bdeb28b076814bc604c7d6b18518"
+    },
+    {
+      "archivo": "M0347.shx",
+      "bytes": 1780,
+      "sha256": "5d269dc0fec825e153e0d1fe1bcaa26082e78bb742be0f8a6106f9bc22c5edcb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/chabasa3v.zip!M0347.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_63953fab8f",
+    "archivo": "santafe/ipec/2010/chabasa3v.zip!M0347.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 210,
+    "registros_shx": 210,
+    "shape_type": 5,
+    "bbox": [
+      5372453.5,
+      6320131.0,
+      5374377.0,
+      6322268.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/chabasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a6f645c94e1fe50ab772fd8adbd7dc391c2699c4c9d139c0af520beb8cb44def"
+}

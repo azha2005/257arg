@@ -1,0 +1,97 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "2022; confirmar metadata",
+  "tipo": "fracciones_censales",
+  "carpeta": "sin_fecha_verificada/fracciones_censales/fracciones_censales_7e47dfc3e6",
+  "shp": "fracciones_censales.shp",
+  "entidades": 6571,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "fracciones_censales.prj",
+      "bytes": 749,
+      "sha256": "fd0c281dc9eea0c3bffda45266e5eed985e4fde2e56a50b30360120a21b52f01"
+    },
+    {
+      "archivo": "fracciones_censales.shx",
+      "bytes": 52668,
+      "sha256": "aad1a2d980a11b87855318734603eefc98ab4d2c3142b317fd2b2d8d7aedad86"
+    },
+    {
+      "archivo": "fracciones_censales.dbf",
+      "bytes": 13418303,
+      "sha256": "8c5a1db71577b4ebd459c24b3bbf31f7278277f6e0694f6682ff0c6e454e7898"
+    },
+    {
+      "archivo": "fracciones_censales.shp",
+      "bytes": 50332052,
+      "sha256": "dad6d4c79e5d428dce333cdc97305bc07043dbec49ae538b2af6aea16f8e21d5"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2022/fracciones_censales.zip!fracciones_censales.shp",
+  "metadata_original": {
+    "id_fuente": "indec2022_fracciones_censales",
+    "archivo": "indec/2022/fracciones_censales.zip!fracciones_censales.shp",
+    "tipo": "fracción censal",
+    "corte": "2022; confirmar metadata",
+    "cobertura": "Argentina",
+    "features": 6571,
+    "registros_shx": 6571,
+    "shape_type": 5,
+    "bbox": [
+      -8237642.3187022,
+      -37718348.6514006,
+      -2782987.269831893,
+      -2485234.617560819
+    ],
+    "campos": [
+      "fid",
+      "id",
+      "cpr",
+      "jur",
+      "cde",
+      "dpto",
+      "cfn",
+      "cod_indec",
+      "sag"
+    ],
+    "formato": "SHP",
+    "fuente": "https://geonode.indec.gob.ar/layers/geonode_data:geonode:fracciones_censales",
+    "nota": "Conservar diferencias con IGN y Georef; guardar conteo WFS hits.",
+    "licencia": "ver ficha de origen",
+    "url_descarga": "https://geonode.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:fracciones_censales&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\", GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]], PROJECTION[\"Popular Visualisation Pseudo Mercator\", AUTHORITY[\"EPSG\",\"1024\"]], PARAMETER[\"semi_minor\", 6378137.0], PARAMETER[\"latitude_of_origin\", 0.0], PARAMETER[\"central_meridian\", 0.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 0.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"3857\"]]",
+    "entidades_por_provincia": {
+      "06": 2772,
+      "38": 114,
+      "70": 101,
+      "18": 289,
+      "66": 160,
+      "54": 217,
+      "22": 203,
+      "82": 238,
+      "42": 108,
+      "10": 99,
+      "62": 125,
+      "86": 151,
+      "46": 54,
+      "02": 356,
+      "94": 24,
+      "34": 114,
+      "30": 302,
+      "14": 397,
+      "50": 221,
+      "90": 191,
+      "26": 117,
+      "74": 87,
+      "58": 74,
+      "78": 57
+    },
+    "campo_codigo": "cod_indec",
+    "codigos_distintos": 6571,
+    "codigos_vacios": 0,
+    "features_wfs_hits": 6571
+  },
+  "firma_componentes": "6f5d452412f535fb3c08ff332f928e87d9d3c9dde80299b7eb2d9b3ba6bdef3f"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e8595_049c120164",
+  "shp": "e8595.shp",
+  "entidades": 4057,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e8595.dbf",
+      "bytes": 1209596,
+      "sha256": "0f22bc98e9cf87102524aec1ed82011d2c835a1c5916d79a174f9ad1974a8c65"
+    },
+    {
+      "archivo": "e8595.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e8595.shp",
+      "bytes": 382364,
+      "sha256": "cb6f4b6c8e2c969135d5736a4589bd4a3c3390256527d73e9a182147c91aff1c"
+    },
+    {
+      "archivo": "e8595.shx",
+      "bytes": 32556,
+      "sha256": "2bbbef08f1187693c616f013bed4d46a8aa73565800e4f96bcae8ad69842568d"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANTOTOME.zip!e8595.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1a2565958a",
+    "archivo": "santafe/ipec/2022/SANTOTOME.zip!e8595.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4057,
+    "registros_shx": 4057,
+    "shape_type": 3,
+    "bbox": [
+      5423109.0,
+      6492700.0,
+      5429484.5,
+      6502369.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANTOTOME.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c0ed24f96ca25e6d030c97d08a6fc47c58dac484f6110fa7d8de047a77463582"
+}

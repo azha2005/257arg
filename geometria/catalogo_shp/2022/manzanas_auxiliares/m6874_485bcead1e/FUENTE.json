@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m6874_485bcead1e",
+  "shp": "m6874.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m6874.dbf",
+      "bytes": 2947,
+      "sha256": "5ce2ffb290092ac43bf637d02f5b2129d2991d7c39af7935c2f97ccdc864b631"
+    },
+    {
+      "archivo": "m6874.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m6874.shp",
+      "bytes": 2348,
+      "sha256": "863207400e8e4ff9b59e6f5c2e98037033029137ec887ac93f914b6f12df3d86"
+    },
+    {
+      "archivo": "m6874.shx",
+      "bytes": 204,
+      "sha256": "70aab147b65ba7ba88731639a6598f253b626e50162a9f64852a6929f1094830"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAADELA.zip!m6874.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_ddf18833c5",
+    "archivo": "santafe/ipec/2022/VILLAADELA.zip!m6874.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5556652.5,
+      6848642.0,
+      5559489.5,
+      6849686.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAADELA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "699a708663520f964ec531710d78440e9dc2c1d1f3162986d195db91bae32d1d"
+}

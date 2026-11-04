@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4135_0b7d80e17f",
+  "shp": "M4135.shp",
+  "entidades": 61,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4135.dbf",
+      "bytes": 12403,
+      "sha256": "0af78114f9147ead70a68bdbf1098736b270623c6ef7bec738d3af2034583461"
+    },
+    {
+      "archivo": "M4135.shp",
+      "bytes": 9580,
+      "sha256": "1ee5ca913d39873d62fec91b937af00751afbb5b93e24d4e271b98d7977c835d"
+    },
+    {
+      "archivo": "M4135.shx",
+      "bytes": 588,
+      "sha256": "5bb0e1a586e2da3dde191d617ff2c4ebd4544ca8bfa3abfb6534e5ca28d5852d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniarosaa3h.zip!M4135.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_524ca6c2cc",
+    "archivo": "santafe/ipec/2010/coloniarosaa3h.zip!M4135.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 61,
+    "registros_shx": 61,
+    "shape_type": 5,
+    "bbox": [
+      5308504.5,
+      6646244.5,
+      5309882.0,
+      6647380.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniarosaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3bfc42905fcc5cc5826bd910622113ff4cfdd3fef672e229273bb7e8a5d1ba7b"
+}

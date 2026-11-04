@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m1506_24ae2472a7",
+  "shp": "m1506.shp",
+  "entidades": 43,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m1506.dbf",
+      "bytes": 8857,
+      "sha256": "6f4eb84c29b23f58304308da5896153e85fdbbbcb00f7fc3bd1d0257e53ee761"
+    },
+    {
+      "archivo": "m1506.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m1506.shp",
+      "bytes": 8380,
+      "sha256": "1be780419d74ade88870f72d177daa897cd8191e53e8e747e7ffb0243508ab25"
+    },
+    {
+      "archivo": "m1506.shx",
+      "bytes": 444,
+      "sha256": "4203f70ccc3bbf17d8da30bf9517e397e02e3f06e16858bc6d2cd3e8bed21716"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ARROYOAGUIAR.zip!m1506.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_59dc8e16ca",
+    "archivo": "santafe/ipec/2022/ARROYOAGUIAR.zip!m1506.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 43,
+    "registros_shx": 43,
+    "shape_type": 5,
+    "bbox": [
+      5435967.5,
+      6522234.0,
+      5437646.0,
+      6523982.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ARROYOAGUIAR.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "86b1cdb3952e4d186eab944de135e9836b17c2309c1478be2d3a4b4f6f2a3265"
+}

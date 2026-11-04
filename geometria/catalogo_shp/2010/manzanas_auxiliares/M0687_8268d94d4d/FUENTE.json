@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0687_8268d94d4d",
+  "shp": "M0687.shp",
+  "entidades": 74,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0687.dbf",
+      "bytes": 14964,
+      "sha256": "72061437880eb4f876ad973cfbd21864971c72a48615c760b39592dbf161d7a6"
+    },
+    {
+      "archivo": "M0687.shp",
+      "bytes": 11220,
+      "sha256": "4a94f75be27abc0171038b0ff9a7ad4a8c283baad7cecbdb3df2f61297435850"
+    },
+    {
+      "archivo": "M0687.shx",
+      "bytes": 692,
+      "sha256": "555ccd1247ac91c784c69fd09e33261db97ae16f384d36b44132fe183b1d93df"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/moisesvillea2h.zip!M0687.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dc205ef85f",
+    "archivo": "santafe/ipec/2010/moisesvillea2h.zip!M0687.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 74,
+    "registros_shx": 74,
+    "shape_type": 5,
+    "bbox": [
+      5358372.0,
+      6600437.0,
+      5360435.0,
+      6602604.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/moisesvillea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "49c3a7045d0cdef725c19873a931b53c1d511a94809a1794d0ed763fac40904d"
+}

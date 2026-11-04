@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1560_00964ed399",
+  "shp": "E1560.shp",
+  "entidades": 109,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1560.dbf",
+      "bytes": 38542,
+      "sha256": "46add307c1bdd6d06db1cd68d72b791e072c089e9452813c69aaaed57ec7c64e"
+    },
+    {
+      "archivo": "E1560.shp",
+      "bytes": 9692,
+      "sha256": "91f12ee8dc328e4313a2f3a6a950022bfc7e538be58b6be00bf84ac3bd9cd960"
+    },
+    {
+      "archivo": "E1560.shx",
+      "bytes": 972,
+      "sha256": "b78be2309551d96a4ee3c60f39a70eb50bbd47137fe4301b7e3c26f8be381a78"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/casasa3h.zip!E1560.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dcea6d2844",
+    "archivo": "santafe/ipec/2010/casasa3h.zip!E1560.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 109,
+    "registros_shx": 109,
+    "shape_type": 3,
+    "bbox": [
+      5353902.0,
+      6444458.0,
+      5355117.5,
+      6445640.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/casasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a41ddfa7c4336963c694841c2cacaacb03c0efd36120625cdbb14a461a7dc59c"
+}

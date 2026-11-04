@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0687_a251d48270",
+  "shp": "E0687.shp",
+  "entidades": 201,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0687.dbf",
+      "bytes": 70558,
+      "sha256": "7a847820664ebb4f0a518a883fc20b6273ee6dd07b756e882a6b44efc38b3241"
+    },
+    {
+      "archivo": "E0687.shp",
+      "bytes": 18364,
+      "sha256": "78e99628b69ae86febfee112df70af4501143dd7e9c795fe4cf7529f57235979"
+    },
+    {
+      "archivo": "E0687.shx",
+      "bytes": 1708,
+      "sha256": "731f3e715316c510308d9eb6b234c41f8d5b2e6e558de4da376dafa88b98ead0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/moisesvillea2h.zip!E0687.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dc205ef85f",
+    "archivo": "santafe/ipec/2010/moisesvillea2h.zip!E0687.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 201,
+    "registros_shx": 201,
+    "shape_type": 3,
+    "bbox": [
+      5358361.0,
+      6600425.5,
+      5360448.0,
+      6602616.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/moisesvillea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2bdb19bc58655dc01cea62324007cca7c82df0b9fbd4cc0583aa0d8785a2df1f"
+}

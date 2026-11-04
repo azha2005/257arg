@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6843_2e0ca3816a",
+  "shp": "R6843.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6843.dbf",
+      "bytes": 686,
+      "sha256": "0b1b0a6213f0e87bf4851d48b008a631cc72548a7e9eec77ee9e80466ed959b8"
+    },
+    {
+      "archivo": "R6843.shp",
+      "bytes": 540,
+      "sha256": "09009a58a4c96eb347db227935918d1902e2d8290763986edad68e51c0fa80ad"
+    },
+    {
+      "archivo": "R6843.shx",
+      "bytes": 108,
+      "sha256": "5ee4cd9f2f32b01a1ef5e8eeef04ac4cf68c86ae0a2ffbad0bcd03de6259334a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/losnogalesa3h.zip!R6843.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6c68f67a0c",
+    "archivo": "santafe/ipec/2010/losnogalesa3h.zip!R6843.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5349725.5,
+      6332049.0,
+      5350820.0,
+      6332786.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/losnogalesa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "27d1c8418061eb81edc09311d99d60210b583c97d56a07db3f22562375a60486"
+}

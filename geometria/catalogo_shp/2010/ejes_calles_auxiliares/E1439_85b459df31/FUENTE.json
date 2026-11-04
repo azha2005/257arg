@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1439_85b459df31",
+  "shp": "E1439.shp",
+  "entidades": 209,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1439.dbf",
+      "bytes": 73342,
+      "sha256": "813da4a7a63546cfda910b2697b3a11bae2ad4a72d85bfc0c7cf5abae2e299a2"
+    },
+    {
+      "archivo": "E1439.shp",
+      "bytes": 18492,
+      "sha256": "194bb7940c76b9406f9b8e681d04b91ca2bc81b1cbe7237c59a2a34bc58ccde9"
+    },
+    {
+      "archivo": "E1439.shx",
+      "bytes": 1772,
+      "sha256": "0e7748e0bfa99860434c2e0758b65e9b6442ce192bda7d2849b0e71a68e93bc4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/candiotia3v.zip!E1439.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a927110197",
+    "archivo": "santafe/ipec/2010/candiotia3v.zip!E1439.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 209,
+    "registros_shx": 209,
+    "shape_type": 3,
+    "bbox": [
+      5428176.0,
+      6525405.5,
+      5429443.0,
+      6527004.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/candiotia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "cd7f08bcb5a3bb83452a902a20e5872ca6c45f86a85f27b45fcf5614f1f4b2a8"
+}

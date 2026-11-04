@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1517_09fe465086",
+  "shp": "E1517.shp",
+  "entidades": 729,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1517.dbf",
+      "bytes": 254302,
+      "sha256": "9b4f9e265fa7457a003d76ecf31c698014c5aa01d335e8a0790d80ebce9f3ce5"
+    },
+    {
+      "archivo": "E1517.shp",
+      "bytes": 65436,
+      "sha256": "fbf8f34128ebea7383ea534790740e86ce09d12960daa22df732d2d4a2f76083"
+    },
+    {
+      "archivo": "E1517.shx",
+      "bytes": 5932,
+      "sha256": "6d25e3b468d58ce6be5f20ef4dd76327a91292c42dd92805bf32278731869d72"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Ibarluceaa1h.zip!E1517.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4332718a92",
+    "archivo": "santafe/ipec/2010/Ibarluceaa1h.zip!E1517.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 729,
+    "registros_shx": 729,
+    "shape_type": 3,
+    "bbox": [
+      5425215.5,
+      6362979.0,
+      5432141.5,
+      6365993.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Ibarluceaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "97a41b1d12dbaa0095cc1a9d07e56d1f4f7e74a28be5bcc57b4c250768d04c87"
+}

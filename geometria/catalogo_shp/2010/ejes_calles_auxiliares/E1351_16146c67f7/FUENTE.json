@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1351_16146c67f7",
+  "shp": "E1351.shp",
+  "entidades": 134,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1351.dbf",
+      "bytes": 47242,
+      "sha256": "87b4aa563af3beaac51f97f3acb1890a09515fb88186d8a3eb465660e6a321b9"
+    },
+    {
+      "archivo": "E1351.shp",
+      "bytes": 12004,
+      "sha256": "f122e571e9bdbb5cf3747cfb8e2442606e793b40515e1cfdb06794a79c1e4a1a"
+    },
+    {
+      "archivo": "E1351.shx",
+      "bytes": 1172,
+      "sha256": "3481402cebf893e77d23cd5b6dad21d9c1f6f19bd51d54f98d073a8d38bbfa19"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gesslera3v.zip!E1351.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b21af920dc",
+    "archivo": "santafe/ipec/2010/gesslera3v.zip!E1351.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 134,
+    "registros_shx": 134,
+    "shape_type": 3,
+    "bbox": [
+      5392812.5,
+      6472789.0,
+      5393679.5,
+      6474105.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gesslera3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8028092bbaec8856e01ce8b4f061d95d1ff1c99b022ac163fc4b79d7ca130156"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0243_78a7b48230",
+  "shp": "M0243.shp",
+  "entidades": 240,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0243.dbf",
+      "bytes": 47666,
+      "sha256": "7b7427565baa76b61de684542043adf5ee0426b6b7162cf7f5514c4cf8337b73"
+    },
+    {
+      "archivo": "M0243.shp",
+      "bytes": 42868,
+      "sha256": "14ce17aba27f59b33d0de33b0859a7df448583dc4689a875b9dcf6ac67883ac4"
+    },
+    {
+      "archivo": "M0243.shx",
+      "bytes": 2020,
+      "sha256": "d55d7ab3b2607eeeb7820d12399da80c0b0f3d86512e2631f608f7d0a1dac44a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasparejasa2v.zip!M0243.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4518e8805",
+    "archivo": "santafe/ipec/2010/lasparejasa2v.zip!M0243.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 240,
+    "registros_shx": 240,
+    "shape_type": 5,
+    "bbox": [
+      5356207.0,
+      6381752.0,
+      5358673.5,
+      6384687.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasparejasa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "216cdd89b76b7e993eecf1013005f671ca0027f5cfa2203587706691f4ce1cd0"
+}

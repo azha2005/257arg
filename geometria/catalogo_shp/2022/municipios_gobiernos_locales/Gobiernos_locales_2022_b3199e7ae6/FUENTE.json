@@ -1,0 +1,102 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "municipios_gobiernos_locales",
+  "carpeta": "2022/municipios_gobiernos_locales/Gobiernos_locales_2022_b3199e7ae6",
+  "shp": "Gobiernos locales (2022).shp",
+  "entidades": 2078,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Gobiernos locales (2022).dbf",
+      "bytes": 912596,
+      "sha256": "61c216ba843f76073371645ecfb00072a856c7120d62acd6f9cf9e97666410c5"
+    },
+    {
+      "archivo": "Gobiernos locales (2022).prj",
+      "bytes": 219,
+      "sha256": "514d90b133d45328d2d8a70e74c01e5cddc18196b90fff7cf818f0f381a11673"
+    },
+    {
+      "archivo": "Gobiernos locales (2022).shp",
+      "bytes": 24212748,
+      "sha256": "a50596d0785a91d17ecc0b048c1d1e641f5f07095a398c6498fce24a0028c11d"
+    },
+    {
+      "archivo": "Gobiernos locales (2022).shx",
+      "bytes": 16724,
+      "sha256": "81c641cbaed764ed3a49af7c10882646c169f4b14dd91105465eb9c852f9836f"
+    },
+    {
+      "archivo": "Gobiernos locales (2022).cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/poblaciones/Gobiernos_locales_2022.zip!Gobiernos locales (2022).shp",
+  "metadata_original": {
+    "id_fuente": "poblaciones_b19_v21",
+    "archivo": "poblaciones/Gobiernos_locales_2022.zip!Gobiernos locales (2022).shp",
+    "tipo": "gobierno local",
+    "corte": "2022",
+    "cobertura": "Total país",
+    "features": 2078,
+    "registros_shx": 2078,
+    "shape_type": 5,
+    "bbox": [
+      -72.90065323063331,
+      -54.85838475099997,
+      -53.637507952633,
+      -21.780860444146953
+    ],
+    "campos": [
+      "CODIGO",
+      "NOMBRE",
+      "TIPO",
+      "CODPROV",
+      "PROV",
+      "CODDPTO",
+      "DPTO",
+      "SUPERFICIE",
+      "LATITUD_CE",
+      "LONGITUD_C"
+    ],
+    "formato": "SHP",
+    "fuente": "https://n2t.net/ark:/26680/b19",
+    "nota": "Descarga completa del visor público, versión identificada en metadata. No inferir que otro proveedor representa la misma delimitación.",
+    "licencia": "{\"licenseType\":1,\"licenseOpen\":\"always\",\"licenseCommercial\":1,\"licenseVersion\":\"4.0/deed.es\"}",
+    "url_descarga": "https://datos-poblaciones.conicet.gov.ar/services/download/GetBoundaryFile?t=hw&s=b&b=19&v=21",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433],METADATA[\"World\",-180.0,-90.0,180.0,90.0,0.0,0.0174532925199433,0.0,1262]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "Buenos Aires": 135,
+      "La Rioja": 18,
+      "Mendoza": 18,
+      "San Juan": 19,
+      "Santa Fe": 365,
+      "Entre RÃ­os": 240,
+      "CÃ³rdoba": 358,
+      "La Pampa": 76,
+      "NeuquÃ©n": 51,
+      "Formosa": 37,
+      "Santa Cruz": 20,
+      "Chubut": 40,
+      "RÃ­o Negro": 59,
+      "San Luis": 63,
+      "Jujuy": 63,
+      "Santiago del Estero": 83,
+      "Catamarca": 36,
+      "TucumÃ¡n": 112,
+      "Chaco": 70,
+      "Corrientes": 75,
+      "Misiones": 77,
+      "Salta": 60,
+      "Tierra del Fuego, AntÃ¡rtida e Islas del AtlÃ¡ntico Sur": 3
+    },
+    "campo_codigo": "CODIGO",
+    "codigos_distintos": 2078,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "dfd50f7f8ea9539784d355cda79f084ddc706e7b87f0a2de09fc25c18fd3c05a"
+}

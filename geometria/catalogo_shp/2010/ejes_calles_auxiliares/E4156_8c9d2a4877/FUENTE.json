@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4156_8c9d2a4877",
+  "shp": "E4156.shp",
+  "entidades": 72,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4156.dbf",
+      "bytes": 25666,
+      "sha256": "aea436397b17d69a707809432c3b31e1d04f491e92d22a1b6d6d2b30ab98f187"
+    },
+    {
+      "archivo": "E4156.shp",
+      "bytes": 6532,
+      "sha256": "7a8192583df47374d4544d6378d95dcec55ed0feeecbfe930dffc82ca6b55ecc"
+    },
+    {
+      "archivo": "E4156.shx",
+      "bytes": 676,
+      "sha256": "6e13e2748ec180ba9a578c4bab0d3f39d95813fda1b1ec2137a75249297a9e9c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Crispia3h.zip!E4156.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2b7031d3e1",
+    "archivo": "santafe/ipec/2010/Crispia3h.zip!E4156.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 72,
+    "registros_shx": 72,
+    "shape_type": 3,
+    "bbox": [
+      5306453.5,
+      6486645.5,
+      5307601.0,
+      6487818.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Crispia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4619d5b347d414fde5e96d21aba9e61540a7c640dbd221e16d6dd241b4ce80bb"
+}

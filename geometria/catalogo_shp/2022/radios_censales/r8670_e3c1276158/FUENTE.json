@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r8670_e3c1276158",
+  "shp": "r8670.shp",
+  "entidades": 1538,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r8670.dbf",
+      "bytes": 300392,
+      "sha256": "17378d4f32b11babadef093a85f693b24c23c2979d4bbfecb8d9b1e8254951d9"
+    },
+    {
+      "archivo": "r8670.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r8670.shp",
+      "bytes": 546916,
+      "sha256": "ec3749b92912e0f6ba89d8db5d844cad1e53b208a5a475f2dff0aec42e842ae2"
+    },
+    {
+      "archivo": "r8670.shx",
+      "bytes": 12404,
+      "sha256": "ebf4f524a40de7d96399b57cf31b832a42f6f92f890215276ccf13f009064ecc"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ROSARIO.zip!r8670.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_806307952c",
+    "archivo": "santafe/ipec/2022/ROSARIO.zip!r8670.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1538,
+    "registros_shx": 1538,
+    "shape_type": 5,
+    "bbox": [
+      5425446.0,
+      6344688.5,
+      5444617.0,
+      6363392.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ROSARIO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "f8a115e4f42f9a418abb1a5d2772aca49a8f6b221909e6b29b6d64c8a386f600"
+}

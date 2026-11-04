@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1341_d1eab229ab",
+  "shp": "R1341.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1341.dbf",
+      "bytes": 686,
+      "sha256": "200928a3b7a6841efcc3fe716a0d678720fd445b0c04ef0615dc48224399bec8"
+    },
+    {
+      "archivo": "R1341.shp",
+      "bytes": 588,
+      "sha256": "b8f0f97dd9ec914b4c908742fa5072e58dfaeaad7ee395fe7977b54894a3c805"
+    },
+    {
+      "archivo": "R1341.shx",
+      "bytes": 108,
+      "sha256": "f7d746a084a344f1e8fb842ff7c25d704e0a74d36053f1410f764a626f97436b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/cnelarnolda3h.zip!R1341.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1225697a0a",
+    "archivo": "santafe/ipec/2010/cnelarnolda3h.zip!R1341.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5409262.0,
+      6336689.0,
+      5410399.0,
+      6337710.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/cnelarnolda3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7c0cd1c71d59e64362a2e75a003796f65b03d73111a05eeeb06276134f974aac"
+}

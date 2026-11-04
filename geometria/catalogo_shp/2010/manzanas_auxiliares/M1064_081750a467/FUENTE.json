@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1064_081750a467",
+  "shp": "M1064.shp",
+  "entidades": 56,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1064.dbf",
+      "bytes": 11418,
+      "sha256": "be9fabc7ebbca5e486144e8252240a13d89227309208d8051b83fbfc84dbe9ff"
+    },
+    {
+      "archivo": "M1064.shp",
+      "bytes": 10900,
+      "sha256": "0a47797b39444c28de5f11fb411fe701b3c5d6e03602cd90a9296706df85e6df"
+    },
+    {
+      "archivo": "M1064.shx",
+      "bytes": 548,
+      "sha256": "18d2921ac2c6900d9227f03b9e396e619d8fc1dc57d8e334e1b9e2da9c7184e9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/godoya3h.zip!M1064.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e1118a65c5",
+    "archivo": "santafe/ipec/2010/godoya3h.zip!M1064.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 56,
+    "registros_shx": 56,
+    "shape_type": 5,
+    "bbox": [
+      5452054.5,
+      6307537.0,
+      5453780.0,
+      6308737.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/godoya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "04219b7c07f85f811123a85d5c7e89ca8d433855b49289cf9565b9dfcdfc6030"
+}

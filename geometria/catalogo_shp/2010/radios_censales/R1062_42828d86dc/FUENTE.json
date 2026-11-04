@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1062_42828d86dc",
+  "shp": "R1062.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1062.dbf",
+      "bytes": 686,
+      "sha256": "d8140de0225f61c525c9fc00b854ee978c1e5c0623af04c8d5bf499bb5304a90"
+    },
+    {
+      "archivo": "R1062.shp",
+      "bytes": 732,
+      "sha256": "7773beaf271439cb6ff0102661406781714643df7c176ccb2e597f61d85f3adf"
+    },
+    {
+      "archivo": "R1062.shx",
+      "bytes": 108,
+      "sha256": "ed8b63f284fc4d995aaf6f28e8eed6a9518198139cdda5518a0c7e35dfbb6a50"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/amenabara2h.zip!R1062.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_fbfa60e8f8",
+    "archivo": "santafe/ipec/2010/amenabara2h.zip!R1062.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5275554.5,
+      6220221.0,
+      5277210.5,
+      6221887.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/amenabara2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1fbe38a9ea613bd80d8b0b881d2a948fb7165ef59896988bad6aaf0dbb476d8d"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1583_fff96e6a72",
+  "shp": "e1583.shp",
+  "entidades": 107,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1583.dbf",
+      "bytes": 32496,
+      "sha256": "2734b0bd3df92c426ebf81632bfbe01b25d905879ad5a273d349d67dfe96ad9d"
+    },
+    {
+      "archivo": "e1583.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1583.shp",
+      "bytes": 9516,
+      "sha256": "90a5c599d985ad357cf3bbe866f21b95853cc5a31fe5994a21e61f4116335233"
+    },
+    {
+      "archivo": "e1583.shx",
+      "bytes": 956,
+      "sha256": "bd1513a3575a9027490d772323ec0111980c70cf2dccaf7be08a14c1efb8552c"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GATOCOLORADO.zip!e1583.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_87e5668164",
+    "archivo": "santafe/ipec/2022/GATOCOLORADO.zip!e1583.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 107,
+    "registros_shx": 107,
+    "shape_type": 3,
+    "bbox": [
+      5382867.5,
+      6900066.5,
+      5383539.5,
+      6900919.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GATOCOLORADO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "97b7a5bfcbc36b3a591e2f67bb74952521a345780c86e4352e88d041a9315e2b"
+}

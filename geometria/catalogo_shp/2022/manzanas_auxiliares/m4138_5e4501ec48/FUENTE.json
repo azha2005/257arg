@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4138_5e4501ec48",
+  "shp": "m4138.shp",
+  "entidades": 10,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4138.dbf",
+      "bytes": 2356,
+      "sha256": "6e7d19bc4d669582376e7ec8160b898b95cd97bc8acd934c09d250c14bd96ea1"
+    },
+    {
+      "archivo": "m4138.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4138.shp",
+      "bytes": 2084,
+      "sha256": "204072bf98866de0de4b3bea3fe996cd0a77024f0123f4070ad049539a5885d5"
+    },
+    {
+      "archivo": "m4138.shx",
+      "bytes": 180,
+      "sha256": "46fb4fbc6c9a1d43f98a743fae000759f012d109ce6d2013301d7ab27aa8f7bc"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ESTACIONSAGUIER.zip!m4138.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e8af28eb1b",
+    "archivo": "santafe/ipec/2022/ESTACIONSAGUIER.zip!m4138.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 10,
+    "registros_shx": 10,
+    "shape_type": 5,
+    "bbox": [
+      5338399.5,
+      6534314.5,
+      5339361.0,
+      6534909.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ESTACIONSAGUIER.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "9a185558c5005f27e4cf1d84906a28840e1b5398e6570d9bddb5497066b4cf08"
+}

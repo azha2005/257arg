@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r0622_331b870b3b",
+  "shp": "r0622.shp",
+  "entidades": 3,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0622.dbf",
+      "bytes": 1094,
+      "sha256": "02bc57f3f537f8f885daa531253bb4e8e91b44a7e78083fbeb014d023e40d259"
+    },
+    {
+      "archivo": "r0622.sbn",
+      "bytes": 148,
+      "sha256": "45cdd89cd51d538a5c8001ceb9a72f7b86bb24fa5a182cbee7fc4a92a8e03377"
+    },
+    {
+      "archivo": "r0622.sbx",
+      "bytes": 116,
+      "sha256": "9782f73456118bfd27540d4b6515416e6e75c79952626089ab1c1bff359e2123"
+    },
+    {
+      "archivo": "r0622.shp",
+      "bytes": 1436,
+      "sha256": "029a6ac9b646b3f14d133a430c7e34c75acbefcc05e19c10b55a6d2af428b584"
+    },
+    {
+      "archivo": "r0622.shx",
+      "bytes": 124,
+      "sha256": "4005fe5c7323dfae66d9c0a10d7668d4c7452b8cc564cd767a74ac22ba403a97"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SANTATERESA.zip!r0622.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1adf368111",
+    "archivo": "santafe/ipec/2010/SANTATERESA.zip!r0622.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 5,
+    "bbox": [
+      5425243.0,
+      6299346.0,
+      5427411.5,
+      6300917.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SANTATERESA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8ec520b1004550c071286bd5405f51d8c0c4dbe2f61e31451c78939215e4ad16"
+}

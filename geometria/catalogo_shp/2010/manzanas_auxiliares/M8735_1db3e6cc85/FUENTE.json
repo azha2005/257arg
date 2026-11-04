@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M8735_1db3e6cc85",
+  "shp": "M8735.shp",
+  "entidades": 262,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M8735.dbf",
+      "bytes": 52000,
+      "sha256": "6ab6b2f5e29a0c1954d1b09553b2a5b492b2f3f82e453e977a424690101fe9b9"
+    },
+    {
+      "archivo": "M8735.shp",
+      "bytes": 43844,
+      "sha256": "119fb93a98b439fc99e23acee53d32e7aa79224be0c8a2762a520494383b3b15"
+    },
+    {
+      "archivo": "M8735.shx",
+      "bytes": 2196,
+      "sha256": "db09e9e19e7be3fac831c35192ea6709bb02b7fc81cf12006ce77a9bb2edb5bc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sangenaroa1h.zip!M8735.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_33be1acb7e",
+    "archivo": "santafe/ipec/2010/sangenaroa1h.zip!M8735.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 262,
+    "registros_shx": 262,
+    "shape_type": 5,
+    "bbox": [
+      5370937.0,
+      6417242.5,
+      5375076.0,
+      6419636.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sangenaroa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b64835a64c3da4835f69a2e5898dc86fe1573d9f5519583d95f60d253349d79c"
+}

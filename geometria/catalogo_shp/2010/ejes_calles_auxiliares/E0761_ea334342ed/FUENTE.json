@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0761_ea334342ed",
+  "shp": "E0761.shp",
+  "entidades": 329,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0761.dbf",
+      "bytes": 115102,
+      "sha256": "c3f93bbae06f658254fbd85e2ae10d58a2e9ab3c2e0418d74a5a9895acbaefeb"
+    },
+    {
+      "archivo": "E0761.shp",
+      "bytes": 29148,
+      "sha256": "d2d6a4522f4a3742b3e1bd0f8b39574eae461cdd9b9727593e9f7e6074aa0783"
+    },
+    {
+      "archivo": "E0761.shx",
+      "bytes": 2732,
+      "sha256": "a1d2f012ff52471df45e7b2a71d247de3582838de6cd22bc7d273804352d2949"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santaclaradebuenavistaa2h.zip!E0761.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bbadcdaef1",
+    "archivo": "santafe/ipec/2010/santaclaradebuenavistaa2h.zip!E0761.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 329,
+    "registros_shx": 329,
+    "shape_type": 3,
+    "bbox": [
+      5373859.0,
+      6484788.5,
+      5375905.5,
+      6486467.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santaclaradebuenavistaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6bfefb0fc9f700eca074d6791e8ccfb8706e91930f8b2aea1c54ca78aecfc604"
+}

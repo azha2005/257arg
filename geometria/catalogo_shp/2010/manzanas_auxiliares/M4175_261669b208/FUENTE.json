@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4175_261669b208",
+  "shp": "M4175.shp",
+  "entidades": 28,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4175.dbf",
+      "bytes": 5902,
+      "sha256": "afd4a9d9362f6d6712f41f2e3e51f26ddbafbd3dde5a3a6893b8582b49a7c7ec"
+    },
+    {
+      "archivo": "M4175.shp",
+      "bytes": 5364,
+      "sha256": "7c8af1ada1ba94d705ae796972620682378f77b00d33d4c02b40e4d1631d8c5e"
+    },
+    {
+      "archivo": "M4175.shx",
+      "bytes": 324,
+      "sha256": "d9eec148c9b79df10ebbda7f7ac2c5a6402ae57892758d71eb064333db32d32a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Trailla3v.zip!M4175.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f38ab6cb4f",
+    "archivo": "santafe/ipec/2010/Trailla3v.zip!M4175.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 28,
+    "registros_shx": 28,
+    "shape_type": 5,
+    "bbox": [
+      5338565.0,
+      6467011.0,
+      5339577.5,
+      6468274.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Trailla3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "88e3babf24c46e3698a43e194b8cb46f8ba604da431ba7dfb6f2c70d42ff92aa"
+}

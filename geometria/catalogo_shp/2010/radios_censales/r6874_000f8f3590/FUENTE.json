@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6874_000f8f3590",
+  "shp": "r6874.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6874.shx",
+      "bytes": 116,
+      "sha256": "46c8f0adb7060cb92435ea48b1e643ca8c828653c867acdbbd0b953a15816e07"
+    },
+    {
+      "archivo": "r6874.shp",
+      "bytes": 740,
+      "sha256": "595739885cfc634086e1396c2a318e6ddd5c7897662bb57fc8a11824fd8b6747"
+    },
+    {
+      "archivo": "r6874.sbx",
+      "bytes": 124,
+      "sha256": "144914ff3ab9317a155a640ecbae7f10912e57e2d99d58734f382db5c13cbd63"
+    },
+    {
+      "archivo": "r6874.sbn",
+      "bytes": 164,
+      "sha256": "4bc4707345716869d592a48841ace5e613560f2ddb15625cb0a084592a1f2e39"
+    },
+    {
+      "archivo": "r6874.dbf",
+      "bytes": 889,
+      "sha256": "706b68a1e223c8a3fc0bfc037353a4bb6916307d1cdc5b9b1beb679296478b24"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/VILLAADELA.zip!r6874.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ce618460df",
+    "archivo": "santafe/ipec/2010/VILLAADELA.zip!r6874.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5557347.0,
+      6848627.0,
+      5559499.5,
+      6849320.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RADIO2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/VILLAADELA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8ec6c381c1dd77af61de391a1d6cd5e9b21fb8e659c794d296a320215dd59bf4"
+}

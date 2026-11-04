@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0095_fa255ca560",
+  "shp": "r0095.shp",
+  "entidades": 44,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0095.dbf",
+      "bytes": 9062,
+      "sha256": "a6712d0a9d5485ae65a7474d3947631699dad15788ae6da9414047448ea10145"
+    },
+    {
+      "archivo": "r0095.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0095.shp",
+      "bytes": 20372,
+      "sha256": "6319986736c0848067df5d00c3d7b5da44c121de0f821cd8e9a54024fd8246f2"
+    },
+    {
+      "archivo": "r0095.shx",
+      "bytes": 452,
+      "sha256": "53038cbb576dab9f88cbf6c686314502c375d05476507dfc77d3e7f3cc846843"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CANADADEGOMEZ.zip!r0095.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_cf4c938069",
+    "archivo": "santafe/ipec/2022/CANADADEGOMEZ.zip!r0095.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 44,
+    "registros_shx": 44,
+    "shape_type": 5,
+    "bbox": [
+      5366244.0,
+      6366546.5,
+      5371386.5,
+      6370833.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CANADADEGOMEZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3740da28a12e10e2fcc06cc6dbb64159b3555050dce2d0ac532aa15042890905"
+}

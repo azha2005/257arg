@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0525_4ac2d10be2",
+  "shp": "e0525.shp",
+  "entidades": 260,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0525.dbf",
+      "bytes": 78090,
+      "sha256": "c9137d4092c62a089706d3c4eee58b273314ea4b0a1473a0950347e7fc6ddd63"
+    },
+    {
+      "archivo": "e0525.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0525.shp",
+      "bytes": 22996,
+      "sha256": "42c2d4f257e5a8199d28f5bb25c832a0c3c45c6af5ad4410309ae3cba6e1ac9b"
+    },
+    {
+      "archivo": "e0525.shx",
+      "bytes": 2180,
+      "sha256": "76d3757a3a0426bb3ba04f05ea950b379372f07e0e2baf99606356354ebb07a5"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MAXIMOPAZ.zip!e0525.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_78aa37c82e",
+    "archivo": "santafe/ipec/2022/MAXIMOPAZ.zip!e0525.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 260,
+    "registros_shx": 260,
+    "shape_type": 3,
+    "bbox": [
+      5410014.0,
+      6293780.0,
+      5411747.0,
+      6296455.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MAXIMOPAZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "979271278909c333af9bfa07cfb03970d9e71e8db34957215584592c69a76585"
+}

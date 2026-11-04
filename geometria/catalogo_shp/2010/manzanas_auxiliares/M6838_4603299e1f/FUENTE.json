@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6838_4603299e1f",
+  "shp": "M6838.shp",
+  "entidades": 86,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6838.dbf",
+      "bytes": 17328,
+      "sha256": "59ffa732d1aeccd94a3f652087f2f76640e624ed5399712fd6a275b0e1b101c0"
+    },
+    {
+      "archivo": "M6838.shp",
+      "bytes": 21908,
+      "sha256": "e68630179020e4380ac070480d10c240ac43ff4c9a17b5b0cd1986800628a89c"
+    },
+    {
+      "archivo": "M6838.shx",
+      "bytes": 788,
+      "sha256": "9f6f9565cba947b24a9c7694dcf9917de4c187af289fc6197d84250c81404a4f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/rinconpotreroa1h.zip!M6838.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_890e32c099",
+    "archivo": "santafe/ipec/2010/rinconpotreroa1h.zip!M6838.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 86,
+    "registros_shx": 86,
+    "shape_type": 5,
+    "bbox": [
+      5451881.0,
+      6510864.0,
+      5457999.5,
+      6515902.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/rinconpotreroa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "717f09f649c2b6570719004ec1a75f381b78ddff67ce389c448f1684d91711c5"
+}

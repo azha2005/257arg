@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1358_54021110cf",
+  "shp": "E1358.shp",
+  "entidades": 1466,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1358.dbf",
+      "bytes": 510778,
+      "sha256": "474fb561c6c301f9fb2a75ef0ca38a6b822af3abb9d02abe956ff92e4138e469"
+    },
+    {
+      "archivo": "E1358.shp",
+      "bytes": 138356,
+      "sha256": "293cded92bcb0c68e24dd21b7863f9733e1e2ac7f996074f45549d104778e0a9"
+    },
+    {
+      "archivo": "E1358.shx",
+      "bytes": 11828,
+      "sha256": "388bc809f120571528d280d9caea29816bff8ee4ccfc6454e8f12bda31e63e19"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sauceviejoa0v.zip!E1358.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_722450b7ce",
+    "archivo": "santafe/ipec/2010/sauceviejoa0v.zip!E1358.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1466,
+    "registros_shx": 1466,
+    "shape_type": 3,
+    "bbox": [
+      5418383.5,
+      6482208.5,
+      5428116.5,
+      6494004.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sauceviejoa0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "18c9058049fd04def91eedc3c24cbadd7b0f977771aee7ae6701ba603ef5af97"
+}

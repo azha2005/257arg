@@ -1,0 +1,82 @@
+{
+  "anio_carpeta": "1980",
+  "criterio_anio": "Año censal identificado en nombre de capa y colección departamental",
+  "tipo": "departamentos",
+  "carpeta": "1980/departamentos/Departamentos_1980_IPUMS_9459ba8dc8",
+  "shp": "Departamentos_1980_IPUMS.shp",
+  "entidades": 347,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Departamentos_1980_IPUMS.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.dbf",
+      "bytes": 90350,
+      "sha256": "a44a3ec3bb8cd1c42b6167941c957a3196efbfae91d65cb8033eb8963cd0d0ca"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.prj",
+      "bytes": 153,
+      "sha256": "290ec80044946d89b4b6d0daa27ad2242e03165536568c0340ea72603918408c"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.sbn",
+      "bytes": 3436,
+      "sha256": "618b6c3d893fc9b057e6686ab744864ba79b37d109af0568bf87e8e0cfa96772"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.sbx",
+      "bytes": 220,
+      "sha256": "c16ae63b4768a02cd534c83b896ff21d379649a7382823733f50967630bc5651"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.shp",
+      "bytes": 13836940,
+      "sha256": "3f67ea3e3d6b0d22097b46994a76ad1f1e215153493872b54c10496d1435254d"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.shp.xml",
+      "bytes": 7860,
+      "sha256": "7a10bbc095c0f8b89ed8fc9d432841d5dc095b959bc771113b89ff23b550211f"
+    },
+    {
+      "archivo": "Departamentos_1980_IPUMS.shx",
+      "bytes": 2876,
+      "sha256": "31d4fcb7640a2b670ad22b03d047aa69d31b1e2012e6ba0ddfce6b2d77907b56"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/deptos/Base_deptos_1869-2022.zip!Base deptos 1869-2022/Departamentos_1980_IPUMS.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_deptos_1f67c7fe-37d4-45d2-bb5b-6b781d1720d5",
+    "archivo": "conicet/deptos/Base_deptos_1869-2022.zip!Base deptos 1869-2022/Departamentos_1980_IPUMS.shp",
+    "tipo": "departamento",
+    "corte": "1869",
+    "cobertura": "Argentina",
+    "features": 347,
+    "registros_shx": 347,
+    "shape_type": 5,
+    "bbox": [
+      -74.00000000200001,
+      -89.9999999999999,
+      -24.999999995999893,
+      -21.780777633999946
+    ],
+    "campos": [
+      "PROV_COD",
+      "DEPTO",
+      "LINK_"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149867",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/1f67c7fe-37d4-45d2-bb5b-6b781d1720d5/content",
+    "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"degree\",0.0174532925199433]]",
+    "encoding_declarado": "UTF-8"
+  },
+  "firma_componentes": "96369c1044a2cc77fca70ae6ecd4ed6b6ba95a5eb02cf72673508e6b6e358219"
+}

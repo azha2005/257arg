@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4120_17c2e7565a",
+  "shp": "E4120.shp",
+  "entidades": 69,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4120.dbf",
+      "bytes": 24622,
+      "sha256": "fe9aae2371351c1ade8b053da785541286018e3ccc5331145b37674352a65c7b"
+    },
+    {
+      "archivo": "E4120.shp",
+      "bytes": 6460,
+      "sha256": "014180677e8a4715df308c5e57f3d6f4cfe8cf172a2fc05d057c21fad7d15e21"
+    },
+    {
+      "archivo": "E4120.shx",
+      "bytes": 652,
+      "sha256": "366207109d7a2a84fb98679dabe4ac8f7e1959e1b3ff2403c421ef4d10812d94"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Golondrinaa3v.zip!E4120.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7aac169d63",
+    "archivo": "santafe/ipec/2010/Golondrinaa3v.zip!E4120.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 69,
+    "registros_shx": 69,
+    "shape_type": 3,
+    "bbox": [
+      5497198.5,
+      6840802.0,
+      5498320.0,
+      6842598.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Golondrinaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c0a96b768668387c41954aac978ffb19f789c8769d4c5d8c07c0a2f5d26bbae8"
+}

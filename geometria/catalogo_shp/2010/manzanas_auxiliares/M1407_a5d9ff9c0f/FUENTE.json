@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1407_a5d9ff9c0f",
+  "shp": "M1407.shp",
+  "entidades": 68,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1407.dbf",
+      "bytes": 13782,
+      "sha256": "2094357d299612097562627d921f42f6f17b5f6693c1af992b93f7708319c464"
+    },
+    {
+      "archivo": "M1407.shp",
+      "bytes": 10564,
+      "sha256": "75a6912e1d8f97f02535ad3fa68704a33b14b6f9bf883f72a933b83569d92ced"
+    },
+    {
+      "archivo": "M1407.shx",
+      "bytes": 644,
+      "sha256": "40c080899fa4dd17ee9c1ea95a29d3075ecfce410977caf3bc842c836fb0cff4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santamargaritaa3h.zip!M1407.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_26ffa37fea",
+    "archivo": "santafe/ipec/2010/santamargaritaa3h.zip!M1407.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 68,
+    "registros_shx": 68,
+    "shape_type": 5,
+    "bbox": [
+      5347645.0,
+      6867290.5,
+      5348595.0,
+      6868420.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santamargaritaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "aa0f8b54e25f367cdb5862bbcd9ea77cbe95e49c2bbf2089519666358b6609b8"
+}

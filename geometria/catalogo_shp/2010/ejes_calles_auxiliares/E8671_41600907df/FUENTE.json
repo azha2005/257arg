@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8671_41600907df",
+  "shp": "E8671.shp",
+  "entidades": 299,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8671.dbf",
+      "bytes": 104662,
+      "sha256": "3ea555e81fe9629085507c89fcaed7a544a2a6029eeb23cba848752dadc9dbe1"
+    },
+    {
+      "archivo": "E8671.shp",
+      "bytes": 26652,
+      "sha256": "70a755021f3f4958100714db01d795b00de13ed3d8b0a134268ba3454128b047"
+    },
+    {
+      "archivo": "E8671.shx",
+      "bytes": 2492,
+      "sha256": "4c41daa5a1041b53b787c4cb9e405d5dcdad0148d96c6a2e556d6f62776c2c34"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/soldinia3v.zip!E8671.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e6e5bc7621",
+    "archivo": "santafe/ipec/2010/soldinia3v.zip!E8671.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 299,
+    "registros_shx": 299,
+    "shape_type": 3,
+    "bbox": [
+      5428882.0,
+      6345195.0,
+      5430030.0,
+      6348023.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/soldinia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "82e035d621eade63ff5886353835ceae57bcbc81867f6b69a343ed031a65698c"
+}

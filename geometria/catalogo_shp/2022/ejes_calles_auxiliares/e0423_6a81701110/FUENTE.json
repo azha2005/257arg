@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0423_6a81701110",
+  "shp": "e0423.shp",
+  "entidades": 520,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0423.dbf",
+      "bytes": 155570,
+      "sha256": "ed9afad109889a3825c60fbebc1cf8bd1b407aea76b6ddcb384a7bcd1b5ec81b"
+    },
+    {
+      "archivo": "e0423.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0423.shp",
+      "bytes": 49012,
+      "sha256": "ecdca482418bb99f02bc9de5b847975949846fd8cb712487d80a93398d059011"
+    },
+    {
+      "archivo": "e0423.shx",
+      "bytes": 4260,
+      "sha256": "271feeef2273b96497f5ba6894e41cef301aa84289fdcb680c83c3f008ee0460"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANVICENTE.zip!e0423.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4c2296030e",
+    "archivo": "santafe/ipec/2022/SANVICENTE.zip!e0423.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 520,
+    "registros_shx": 520,
+    "shape_type": 3,
+    "bbox": [
+      5350649.0,
+      6491375.5,
+      5352696.5,
+      6493432.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANVICENTE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "ad867fbfc3fea24ef0241eef597c35b46835a7e8caf3484b3795dc076cb9fc4a"
+}

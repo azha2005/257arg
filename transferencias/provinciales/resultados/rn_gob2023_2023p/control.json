@@ -1,0 +1,141 @@
+{
+  "nombre": "Río Negro",
+  "distrito": "16",
+  "fecha": "16/04/2023",
+  "foco": [
+    "JSRN",
+    "Nos Une Río Negro"
+  ],
+  "nota": "JSRN es la lista propia (113.953 votos provinciales). Nos Une Río Negro (40.136), también de Weretilneck, queda separada. No se identifica JSRN con toda la coalición.",
+  "id": "rn_gob2023_2023p",
+  "nivel": "departamentos",
+  "unidades": 13,
+  "base": "padrón",
+  "origen": "Gobernador 16/04/2023",
+  "destino": "Presidente 22/10/2023",
+  "foco_lado": "origen",
+  "pendientes": [],
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "categorias_origen": 10,
+  "rango": 10,
+  "condicion": 258.7003415716549,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.025135641036529068,
+    "0.0001": 0.012438884676066632,
+    "1e-05": 0.00300541715132568,
+    "1e-06": 0.002886706079036919,
+    "1e-07": 0.003046085659421583
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 0.8631308898000595,
+  "desviacion_max_margen_destino_pp": 0.29678292749465984,
+  "electores_o_votos_origen": 589251.0,
+  "electores_o_votos_destino": 590603.0,
+  "filas": [
+    {
+      "origen": "Otras listas",
+      "peso": 3.94,
+      "dif_variante_pp": 48.8,
+      "sensibilidad_pp": 62.12,
+      "ancho_intervalo_pp": 72.76,
+      "separacion_pp": 43.26,
+      "no_identificada": true
+    },
+    {
+      "origen": "Primero Río Negro",
+      "peso": 5.66,
+      "dif_variante_pp": 32.28,
+      "sensibilidad_pp": 66.5,
+      "ancho_intervalo_pp": 87.4,
+      "separacion_pp": 52.91,
+      "no_identificada": true
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 1.83,
+      "dif_variante_pp": 19.32,
+      "sensibilidad_pp": 33.77,
+      "ancho_intervalo_pp": 52.7,
+      "separacion_pp": 47.65,
+      "no_identificada": true
+    },
+    {
+      "origen": "Nos Une Río Negro",
+      "peso": 6.82,
+      "dif_variante_pp": 12.94,
+      "sensibilidad_pp": 29.79,
+      "ancho_intervalo_pp": 56.25,
+      "separacion_pp": 20.74,
+      "no_identificada": true
+    },
+    {
+      "origen": "Unidad para la Victoria",
+      "peso": 2.85,
+      "dif_variante_pp": 12.56,
+      "sensibilidad_pp": 37.7,
+      "ancho_intervalo_pp": 77.12,
+      "separacion_pp": 13.12,
+      "no_identificada": true
+    },
+    {
+      "origen": "Cambia Río Negro",
+      "peso": 14.72,
+      "dif_variante_pp": 11.85,
+      "sensibilidad_pp": 42.41,
+      "ancho_intervalo_pp": 85.88,
+      "separacion_pp": 44.47,
+      "no_identificada": true
+    },
+    {
+      "origen": "Vamos con Todos",
+      "peso": 6.5,
+      "dif_variante_pp": 18.89,
+      "sensibilidad_pp": 47.64,
+      "ancho_intervalo_pp": 54.66,
+      "separacion_pp": 34.24,
+      "no_identificada": true
+    },
+    {
+      "origen": "JSRN",
+      "peso": 19.34,
+      "dif_variante_pp": 5.64,
+      "sensibilidad_pp": 39.57,
+      "ancho_intervalo_pp": 21.51,
+      "separacion_pp": 46.69,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 6.51,
+      "dif_variante_pp": 10.89,
+      "sensibilidad_pp": 65.35,
+      "ancho_intervalo_pp": 81.75,
+      "separacion_pp": 30.16,
+      "no_identificada": true
+    },
+    {
+      "origen": "No votó",
+      "peso": 31.83,
+      "dif_variante_pp": 12.17,
+      "sensibilidad_pp": 37.7,
+      "ancho_intervalo_pp": 17.99,
+      "separacion_pp": 36.42,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "serie": "2023",
+  "fuente": "https://www.jusrionegro.gov.ar/inicio/web/escrutinio-16-04-2023/"
+}

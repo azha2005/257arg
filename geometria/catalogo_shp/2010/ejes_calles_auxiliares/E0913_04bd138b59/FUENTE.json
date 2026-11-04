@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0913_04bd138b59",
+  "shp": "E0913.shp",
+  "entidades": 372,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0913.dbf",
+      "bytes": 130066,
+      "sha256": "09552b958003da80628a145f34efea25c9e734b990e7085c5a4b1105eba052a1"
+    },
+    {
+      "archivo": "E0913.shp",
+      "bytes": 32852,
+      "sha256": "3666734db4c9826e34ed36a303c6b6671471e90db0ba5e152a8a39c0e5711898"
+    },
+    {
+      "archivo": "E0913.shx",
+      "bytes": 3076,
+      "sha256": "7a7ebe1c57c10969aa878a447e1ce2083904c47bc833991de2037e1b3f697034"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Godekena3h.zip!E0913.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_08deb83b5e",
+    "archivo": "santafe/ipec/2010/Godekena3h.zip!E0913.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 372,
+    "registros_shx": 372,
+    "shape_type": 3,
+    "bbox": [
+      5327583.0,
+      6302387.5,
+      5329337.5,
+      6304134.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Godekena3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3bed02bf6be5542a7c53f80b9339631fd17bc53e1304e2ad93e8eca760b17eee"
+}

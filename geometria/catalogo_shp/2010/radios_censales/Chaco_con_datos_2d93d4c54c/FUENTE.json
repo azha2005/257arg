@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Chaco_con_datos_2d93d4c54c",
+  "shp": "Chaco_con_datos.shp",
+  "entidades": 1483,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Chaco_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Chaco_con_datos.shp",
+      "bytes": 1418336,
+      "sha256": "0c2e76e5b09539f77af646e65707125196ddc971382a3d16f0f60d12c2db0241"
+    },
+    {
+      "archivo": "Chaco_con_datos.shx",
+      "bytes": 11964,
+      "sha256": "1849ba999501af5570de294602b1130247f793cb71c75afc03002507b60f7376"
+    },
+    {
+      "archivo": "Chaco_con_datos.dbf",
+      "bytes": 606836,
+      "sha256": "3a7f9bc74ac42d9bb1d237f46731b774b89c59d1a2c74f1bae49244efb50a64b"
+    },
+    {
+      "archivo": "Chaco_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Chaco_con_datos.zip!Chaco_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_22",
+    "archivo": "indec/2010/Codgeo_Chaco_con_datos.zip!Chaco_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Chaco",
+    "features": 1483,
+    "registros_shx": 1483,
+    "shape_type": 5,
+    "bbox": [
+      3758832.1593445768,
+      6875922.76271789,
+      4258823.90374905,
+      7332834.197877472
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Chaco_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 1483,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "a2b7284ba3039568b89d61b05e35837c088f2788abe95ac0efda77e28bc56dfa"
+}

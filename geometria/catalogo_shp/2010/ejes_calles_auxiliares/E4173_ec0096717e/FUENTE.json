@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4173_ec0096717e",
+  "shp": "E4173.shp",
+  "entidades": 54,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4173.dbf",
+      "bytes": 19402,
+      "sha256": "db763e19106d7af88c64082c359a0634db36470716b08240b49636ec71b057b6"
+    },
+    {
+      "archivo": "E4173.shp",
+      "bytes": 4852,
+      "sha256": "ff257c9441a7c0c75ba0a971b4bf1c63a7e0f6e835ab6f50507074f4f8344665"
+    },
+    {
+      "archivo": "E4173.shx",
+      "bytes": 532,
+      "sha256": "41dd7ed77be042b736e8a2b435608f589d09e67f961e814d7788fc655020c7a4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/theobalda3h.zip!E4173.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_60da7c729c",
+    "archivo": "santafe/ipec/2010/theobalda3h.zip!E4173.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 54,
+    "registros_shx": 54,
+    "shape_type": 3,
+    "bbox": [
+      5470438.5,
+      6314250.5,
+      5471457.5,
+      6315196.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/theobalda3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0bb84ecca2545c2c4ab1757e940348ee539660e5fe07141b481da3d30152ae3b"
+}

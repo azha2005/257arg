@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4143_d87b27d2a0",
+  "shp": "E4143.shp",
+  "entidades": 58,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4143.dbf",
+      "bytes": 20794,
+      "sha256": "a71bc7e1c61441516737bb72c48e319a68615bc2dac791ca0a99d9283ce1e8e5"
+    },
+    {
+      "archivo": "E4143.shp",
+      "bytes": 5204,
+      "sha256": "36be1e7059489570b608ef4f70bf109dc5ac420c60638e64bca2040a9630f766"
+    },
+    {
+      "archivo": "E4143.shx",
+      "bytes": 564,
+      "sha256": "73b211ea48f765b437921e094b3f42c3e894aefa6b3d1d05c455be6545e87a80"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniadoloresa3h.zip!E4143.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_aa2275aadb",
+    "archivo": "santafe/ipec/2010/coloniadoloresa3h.zip!E4143.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 58,
+    "registros_shx": 58,
+    "shape_type": 3,
+    "bbox": [
+      5467907.0,
+      6639178.0,
+      5468660.0,
+      6639766.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniadoloresa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b1bb6bfbc97fb7fdf646a8cb94b5e61c0dd9bac84a8ae2128ee6b1f4043a4609"
+}

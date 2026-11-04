@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6827_99303fd2f3",
+  "shp": "E6827.shp",
+  "entidades": 3,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6827.dbf",
+      "bytes": 1654,
+      "sha256": "0e6320909e83aaa361af37fe77f94db32d23dab3d070a3fec87b86bdfe9c8d03"
+    },
+    {
+      "archivo": "E6827.shp",
+      "bytes": 380,
+      "sha256": "389c18ed44b7882582d40d0c445213bdd2d81f841ae3d9f1c33204b5fda12fbc"
+    },
+    {
+      "archivo": "E6827.shx",
+      "bytes": 124,
+      "sha256": "f20fc034cfda84ce1452145c05d037095f2a51f40ab7002c5c04183eb78b0f5d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/barriocicarellia3v.zip!E6827.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_12814315d2",
+    "archivo": "santafe/ipec/2010/barriocicarellia3v.zip!E6827.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 3,
+    "bbox": [
+      5375642.5,
+      6391686.0,
+      5375838.0,
+      6392020.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/barriocicarellia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "79392b2359730f78924349583efeaf7a2978c2224766bd1edbbc241215cfd002"
+}

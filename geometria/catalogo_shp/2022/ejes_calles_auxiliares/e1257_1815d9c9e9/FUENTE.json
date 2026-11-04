@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1257_1815d9c9e9",
+  "shp": "e1257.shp",
+  "entidades": 90,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1257.dbf",
+      "bytes": 27430,
+      "sha256": "024f1153856bb31116a7d849576b6378bc9fe621b9ee1fd36ce8425c1278e3cb"
+    },
+    {
+      "archivo": "e1257.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1257.shp",
+      "bytes": 8068,
+      "sha256": "4b80d1b5b1de956b1402898afd6781aa26158186d0453b519c363580c28c9541"
+    },
+    {
+      "archivo": "e1257.shx",
+      "bytes": 820,
+      "sha256": "078579419ac8b79cf4392d5b42052db1561acfc068b88ea62a78fe7884d04903"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CANADADELUCLE.zip!e1257.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_98026e0ac7",
+    "archivo": "santafe/ipec/2022/CANADADELUCLE.zip!e1257.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 90,
+    "registros_shx": 90,
+    "shape_type": 3,
+    "bbox": [
+      5349913.5,
+      6302236.0,
+      5351097.0,
+      6303236.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CANADADELUCLE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "73b7f562e7d9330e2736b3eb427a10b35f3cb3c05a1bb8bdb81e8e66b2d89697"
+}

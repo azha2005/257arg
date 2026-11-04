@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8765_5b24a33da1",
+  "shp": "E8765.shp",
+  "entidades": 824,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8765.dbf",
+      "bytes": 287362,
+      "sha256": "9f02efb1e72142697144cc08071ae4636ebaec9b869a63403f352604542df91c"
+    },
+    {
+      "archivo": "E8765.shp",
+      "bytes": 77028,
+      "sha256": "2fe243ae5829c8ccd6086c490220eace31cd405436a6537c5a771af004c9436c"
+    },
+    {
+      "archivo": "E8765.shx",
+      "bytes": 6692,
+      "sha256": "fc9297dd1e568e407142b65358ee6d660acc415878c74db107cb0c24b2017436"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/frayluisbeltrana2h.zip!E8765.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7fb5236f12",
+    "archivo": "santafe/ipec/2010/frayluisbeltrana2h.zip!E8765.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 824,
+    "registros_shx": 824,
+    "shape_type": 3,
+    "bbox": [
+      5430055.5,
+      6371087.5,
+      5433199.5,
+      6373790.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/frayluisbeltrana2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "451df02205318964034bdbe378fd4a59a00f867e396333e72ef49f44778b9ac9"
+}

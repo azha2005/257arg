@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0158_a61b9fa45a",
+  "shp": "m0158.shp",
+  "entidades": 560,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0158.dbf",
+      "bytes": 110706,
+      "sha256": "48e0cce5e975fea62d794a2d88c306e12d047dc37ffca41f5e8dbb572141d08a"
+    },
+    {
+      "archivo": "m0158.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0158.shp",
+      "bytes": 91716,
+      "sha256": "f80e2bbe08788cabe52364638e25a93b15bc69e471477d21d5b4c03d8fd723ea"
+    },
+    {
+      "archivo": "m0158.shx",
+      "bytes": 4580,
+      "sha256": "3579f14161c5a6381fcbcc71beda6a5c26fa234817251061023af9fc56fa0083"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GALVEZ.zip!m0158.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_53fe5ec520",
+    "archivo": "santafe/ipec/2022/GALVEZ.zip!m0158.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 560,
+    "registros_shx": 560,
+    "shape_type": 5,
+    "bbox": [
+      5383537.0,
+      6454873.0,
+      5386785.0,
+      6457663.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GALVEZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2f064504c68f1976dbdd3dccb3ef301bfabb0f061a22d53277ab721c801607e2"
+}

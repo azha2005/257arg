@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0891_3c72208a4d",
+  "shp": "M0891.shp",
+  "entidades": 81,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0891.dbf",
+      "bytes": 16343,
+      "sha256": "04f8380a6c4060f629951a4d4bfa4565c74ab0ab61f382f13f735d64a6fc2817"
+    },
+    {
+      "archivo": "M0891.shp",
+      "bytes": 13484,
+      "sha256": "41ecd010efdda1929dbd9e1a82456cdd31b97cec0f970723dc91bd20ea9cc4ad"
+    },
+    {
+      "archivo": "M0891.shx",
+      "bytes": 748,
+      "sha256": "6ce93cb1d5b266f2afb15979d3528a31b052127ea92cbdca5faa67dfa192cfb5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lacriollaa3h.zip!M0891.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3cb0b24db0",
+    "archivo": "santafe/ipec/2010/lacriollaa3h.zip!M0891.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 5,
+    "bbox": [
+      5464194.5,
+      6655988.5,
+      5466089.0,
+      6657549.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lacriollaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5a46ed12843c58bf15b3bdd64b6b4ec75a09e16a4a6a39445980c4fcc43309a1"
+}

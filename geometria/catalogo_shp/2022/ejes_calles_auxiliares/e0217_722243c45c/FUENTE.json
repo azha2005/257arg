@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0217_722243c45c",
+  "shp": "e0217.shp",
+  "entidades": 975,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0217.dbf",
+      "bytes": 291160,
+      "sha256": "d0e9e57e39889965c23059e6b19743d5d86688418ec45cd69bc9f4b8a3a0691f"
+    },
+    {
+      "archivo": "e0217.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0217.shp",
+      "bytes": 87180,
+      "sha256": "207e632981b8749ffbc52b043dada30736ec97e3766e0bbbd10573b3b4ea1cee"
+    },
+    {
+      "archivo": "e0217.shx",
+      "bytes": 7900,
+      "sha256": "a8a1f66cdf2a7f78c626d32c6f513646c072ba0360b48b1264e61a8dd471a8e6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAOCAMPO.zip!e0217.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_9321aabfaa",
+    "archivo": "santafe/ipec/2022/VILLAOCAMPO.zip!e0217.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 975,
+    "registros_shx": 975,
+    "shape_type": 3,
+    "bbox": [
+      5560754.5,
+      6847672.5,
+      5565703.0,
+      6850784.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAOCAMPO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "4b638b8e489913ec1a7f7f91b5e734800d4135b4cf6b35dd85cf502d50a2edd3"
+}

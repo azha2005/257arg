@@ -1,0 +1,62 @@
+{
+  "anio_carpeta": "2019",
+  "criterio_anio": "Copia existente en marzo de 2019; vigencia electoral no verificada",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "2019/circuitos_y_auxiliares/circuito_01_def60c131b",
+  "shp": "circuito_01.shp",
+  "entidades": 167,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "circuito_01.dbf",
+      "bytes": 298885,
+      "sha256": "b63d5858b15fa9f924bcd47ef34f3e1122c5566fd21c36f50bdcc9843683e495"
+    },
+    {
+      "archivo": "circuito_01.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "circuito_01.shp",
+      "bytes": 217992,
+      "sha256": "d627c7cc8ef8497a09da34f7ba57994680d4b0efdcb942d51aa4397b3735807c"
+    },
+    {
+      "archivo": "circuito_01.shx",
+      "bytes": 1436,
+      "sha256": "4b0057134abcd0624ec393baa7b1878e33cc9dbb5e47638303c741503a35596d"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/snapshot_20190308/data/circuitos/circuito_01/circuito_01.shp",
+  "metadata_original": {
+    "archivo": "snapshot_20190308/data/circuitos/circuito_01/circuito_01.shp",
+    "formato": "SHP",
+    "features": 167,
+    "shapes": 167,
+    "bbox": [
+      -58.53151879355111,
+      -34.705293133581485,
+      -58.33514302492399,
+      -34.52646142711395
+    ],
+    "campos": [
+      "gid",
+      "distrito",
+      "provincia",
+      "departamen",
+      "cabecera",
+      "circuito",
+      "indec_p",
+      "indec_d"
+    ],
+    "sha256": "d627c7cc8ef8497a09da34f7ba57994680d4b0efdcb942d51aa4397b3735807c",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "url": "https://raw.githubusercontent.com/tartagalensis/EleccionesARG/6d03b2536369/data/circuitos/circuito_01/circuito_01.shp",
+    "fuente": "https://github.com/tartagalensis/EleccionesARG/tree/6d03b2536369",
+    "corte_declarado": "existente al 2019-03-08",
+    "nota": "Fecha de archivo versionado, no validación de vigencia 2019"
+  },
+  "firma_componentes": "0578d5bc599a0e5a5460bf3029366bad40415e1754f58d71d6e91fb7dbc41fbf"
+}

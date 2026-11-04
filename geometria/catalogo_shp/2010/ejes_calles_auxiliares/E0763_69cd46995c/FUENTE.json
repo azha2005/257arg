@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0763_69cd46995c",
+  "shp": "E0763.shp",
+  "entidades": 346,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0763.dbf",
+      "bytes": 121018,
+      "sha256": "bc001e826818cb0b63df54c957e856011fa2107f25e2dc42552eaa86721da550"
+    },
+    {
+      "archivo": "E0763.shp",
+      "bytes": 30548,
+      "sha256": "ff42280adc5aa2728f8625df80339a35f6b5c1e73042a539e2f9d4b51d5c175c"
+    },
+    {
+      "archivo": "E0763.shx",
+      "bytes": 2868,
+      "sha256": "f9694e511e108a1aee2ade954133e24718aed1e54dd670ac3ef8cccbc498eb18"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/melincuea1h.zip!E0763.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_be5a782244",
+    "archivo": "santafe/ipec/2010/melincuea1h.zip!E0763.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 346,
+    "registros_shx": 346,
+    "shape_type": 3,
+    "bbox": [
+      5364129.5,
+      6274216.0,
+      5366581.0,
+      6276887.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/melincuea1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "56b16c05d146aa21cd406745618373f98f2026b1b4225187a5e27a3a0b40f6ed"
+}

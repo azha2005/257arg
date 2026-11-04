@@ -1,0 +1,240 @@
+window.LAYERS_UNIDADES = {
+    
+departamentos_202610: {
+    name: 'Departamentos',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'Departamento',
+    year: 2022,
+    unit: 'Departamento',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:departamentos_202610',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:departamentos_202610&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'fna'
+},
+
+nodos_regiones: {
+    name: 'Nodos regionales',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'regiones',
+    year: 2022,
+    unit: 'Región',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:nodos_regiones',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:nodos_regiones&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'fna'
+},
+
+    
+
+regiones: {
+    name: 'Regiones Ley N° 3480/24',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'Regiones',
+    year: 2022,
+    unit: 'Región',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    titleField: 'nam',
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:regiones_relleno',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:regiones_relleno&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'nam'
+},
+
+gob_locales_2022: {
+    name: 'Gobiernos locales 2022',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'Regiones',
+    year: 2022,
+    unit: 'Región',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    titleField: 'gob_local',
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:gob_locales_2022',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:gob_locales_2022&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'nam'
+},
+
+radios_censales_2022: {
+    name: 'Radios censales 2022',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'Departamento',
+    year: 2022,
+    unit: 'Radio censal',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    titleField: 'etiqueta',
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:radios_censales_2022',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:radios_censales_2022&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'nam'
+},
+
+// barrios_provincia: {
+//     name: 'Barrios provincia ',
+//     //agregado de metadatos para agrupar en el selector de capas
+//     theme: 'Unidades geoestadísticas',
+//     subtheme: 'Departamento',
+//     year: 2022,
+//     unit: 'Radio censal',
+
+//     type: 'wms_wfs',  
+//     hasServerStyle: true, 
+
+//     titleField: 'etiqueta',
+
+//     // --- WMS (para colores reales) ---
+//     wms: {
+//         url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+//         layers: 'geonode:barrios_provincia',
+//         format: 'image/png',
+//         transparent: true,
+//         // opacity: 0.8
+//     },
+
+//     // --- WFS (para datos y popups) ---
+//     wfs: {
+//         url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:barrios_provincia&outputFormat=application/json&srsName=EPSG:4326'
+//     },
+
+//     //labelField: 'nam'
+// },
+barrios_provincia_20261029: {
+    name: 'Barrios',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'Departamento',
+    year: 2022,
+    unit: 'Radio censal',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    titleField: 'etiqueta',
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:barrios_provincia_20261029',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:barrios_provincia_20261029&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'nam'
+},
+parajes058: {
+    name: 'Parajes de la provincia del Neuquén ',
+    //agregado de metadatos para agrupar en el selector de capas
+    theme: 'Unidades geoestadísticas',
+    subtheme: 'Departamento',
+    year: 2022,
+    unit: 'Radio censal',
+
+    type: 'wms_wfs',  
+    hasServerStyle: true, 
+
+    titleField: 'etiqueta',
+
+    // --- WMS (para colores reales) ---
+    wms: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/wms',
+        layers: 'geonode:parajes058',
+        format: 'image/png',
+        transparent: true,
+        // opacity: 0.8
+    },
+
+    // --- WFS (para datos y popups) ---
+    wfs: {
+        url: 'https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:parajes058&outputFormat=application/json&srsName=EPSG:4326'
+    },
+
+    //labelField: 'nam'
+},
+
+
+};

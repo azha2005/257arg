@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0635_454c2b7e6a",
+  "shp": "M0635.shp",
+  "entidades": 198,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0635.dbf",
+      "bytes": 39392,
+      "sha256": "8ee733826647754599915dfc64c1359d6cfc5462d668e2c321ad816c6b4708d7"
+    },
+    {
+      "archivo": "M0635.shp",
+      "bytes": 33444,
+      "sha256": "333f84184d85a6b38f39cb0b7131aeaecfa3d2ad76c9ccfcde073322f95b6286"
+    },
+    {
+      "archivo": "M0635.shx",
+      "bytes": 1684,
+      "sha256": "2cba85c882dc9a751d6908a5197a1b5c9bc8dee3675048fb393d37fb79f98bf9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/oliverosa2v.zip!M0635.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_aa1872cd3e",
+    "archivo": "santafe/ipec/2010/oliverosa2v.zip!M0635.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 198,
+    "registros_shx": 198,
+    "shape_type": 5,
+    "bbox": [
+      5418765.0,
+      6393284.5,
+      5421406.0,
+      6398137.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/oliverosa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a47a373c4658a5eb9cb0908b9da4812c8525cd37e0c7619c3b2b2fd434adb20f"
+}

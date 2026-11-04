@@ -1,0 +1,118 @@
+{
+  "id": "pba_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Buenos Aires",
+  "distrito": "02",
+  "fecha": "07/09/2025",
+  "cargo": "Legislatura provincial",
+  "nivel": "municipios",
+  "origen": "Legislatura provincial 07/09/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [
+    "ALIANZA SOMOS BUENOS AIRES",
+    "ALIANZA POTENCIA"
+  ],
+  "foco_lado": "origen",
+  "nota": "135 municipios. Se combina diputados o senadores provinciales según la sección. Sólo votos válidos: la publicación municipal no informa nulos. Somos Buenos Aires y Potencia se conservan separados. Las páginas públicas de San Miguel y Lezama no están enlazadas en el índice, pero fueron recuperadas por su nombre de archivo y verificadas por encabezado.",
+  "base": "votos válidos (positivos + blancos)",
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "departamentos_cargo": [],
+  "fuente": "https://www.juntaelectoral.gba.gov.ar/escrutinio-definitivo-2025/escrutinio-argentinos/",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 135,
+  "categorias_origen": 7,
+  "rango": 7,
+  "condicion": 36.73791129076227,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.014599173150242643,
+    "0.0001": 0.0060916769949644406,
+    "1e-05": 0.0040232520157037705,
+    "1e-06": 0.0032844663745107694,
+    "1e-07": 0.003184045578687908
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.613357888059776,
+  "desviacion_max_margen_destino_pp": 0.1341590585025077,
+  "electores_o_votos_origen": 8509935.0,
+  "electores_o_votos_destino": 8800583.0,
+  "filas": [
+    {
+      "origen": "ALIANZA LA LIBERTAD AVANZA",
+      "peso": 31.62,
+      "dif_variante_pp": 3.64,
+      "sensibilidad_pp": 6.71,
+      "ancho_intervalo_pp": 7.53,
+      "separacion_pp": 43.74,
+      "no_identificada": false
+    },
+    {
+      "origen": "ALIANZA FUERZA PATRIA",
+      "peso": 43.73,
+      "dif_variante_pp": 3.55,
+      "sensibilidad_pp": 6.37,
+      "ancho_intervalo_pp": 6.7,
+      "separacion_pp": 34.34,
+      "no_identificada": false
+    },
+    {
+      "origen": "ALIANZA SOMOS BUENOS AIRES",
+      "peso": 4.9,
+      "dif_variante_pp": 2.34,
+      "sensibilidad_pp": 37.31,
+      "ancho_intervalo_pp": 16.55,
+      "separacion_pp": 27.66,
+      "no_identificada": true
+    },
+    {
+      "origen": "ALIANZA POTENCIA",
+      "peso": 1.27,
+      "dif_variante_pp": 21.9,
+      "sensibilidad_pp": 66.71,
+      "ancho_intervalo_pp": 33.94,
+      "separacion_pp": 42.35,
+      "no_identificada": true
+    },
+    {
+      "origen": "FTE. DE IZQUIERDA Y DE TRABAJADORES - UNIDAD",
+      "peso": 4.11,
+      "dif_variante_pp": 46.21,
+      "sensibilidad_pp": 69.41,
+      "ancho_intervalo_pp": 50.32,
+      "separacion_pp": 53.78,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 7.3,
+      "dif_variante_pp": 3.4,
+      "sensibilidad_pp": 19.83,
+      "ancho_intervalo_pp": 21.52,
+      "separacion_pp": 14.88,
+      "no_identificada": false
+    },
+    {
+      "origen": "Blanco",
+      "peso": 7.07,
+      "dif_variante_pp": 3.35,
+      "sensibilidad_pp": 20.62,
+      "ancho_intervalo_pp": 14.62,
+      "separacion_pp": 18.34,
+      "no_identificada": false
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 1.0
+}

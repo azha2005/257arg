@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4173_98c126851f",
+  "shp": "M4173.shp",
+  "entidades": 20,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4173.dbf",
+      "bytes": 4326,
+      "sha256": "3fad8e2bdda5c44c3652ee7ef09cd974f2e1c2b687bc65f8c1fc4578e255ff38"
+    },
+    {
+      "archivo": "M4173.shp",
+      "bytes": 3588,
+      "sha256": "8831b25bf3d3b3ad951bb6e9a4497801a86bd77c7e405074b65b230398c30ede"
+    },
+    {
+      "archivo": "M4173.shx",
+      "bytes": 260,
+      "sha256": "9aed93233a99bb53bd8a594c83c6dfcce7135416e51692dcccc3fed8f9b6ab01"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/theobalda3h.zip!M4173.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_60da7c729c",
+    "archivo": "santafe/ipec/2010/theobalda3h.zip!M4173.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 5,
+    "bbox": [
+      5470452.5,
+      6314263.5,
+      5471443.0,
+      6315182.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/theobalda3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e9bcd9db61666638f4f37b8bad0ac0fe92e92cdafc1125a3fb737cf0c0bda72f"
+}

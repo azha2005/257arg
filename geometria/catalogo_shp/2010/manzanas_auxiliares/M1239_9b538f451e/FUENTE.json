@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1239_9b538f451e",
+  "shp": "M1239.shp",
+  "entidades": 68,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1239.dbf",
+      "bytes": 13782,
+      "sha256": "16ba73e6567f35fb470b4a7832fa8e17b593c5d4d6d6868007b25933c7ebadcf"
+    },
+    {
+      "archivo": "M1239.shp",
+      "bytes": 9908,
+      "sha256": "3883042bba1e9a026d1136e82b902eafe9a3f03e12f8cb5ab33c3f9b98014e75"
+    },
+    {
+      "archivo": "M1239.shx",
+      "bytes": 644,
+      "sha256": "ac46fcd629224447a3cbcce826d1737169fdcdc5867f2c608b9b72851a7e83f0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasgarzasa3v.zip!M1239.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c606486fb7",
+    "archivo": "santafe/ipec/2010/lasgarzasa3v.zip!M1239.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 68,
+    "registros_shx": 68,
+    "shape_type": 5,
+    "bbox": [
+      5548243.5,
+      6809079.0,
+      5549274.0,
+      6810108.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasgarzasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "aecf7a3083f1470680ab65b28b73bbe0fbea4d23053e181f2ec5bc6be8ea78de"
+}

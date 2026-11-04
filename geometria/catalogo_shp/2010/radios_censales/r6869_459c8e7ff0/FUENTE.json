@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6869_459c8e7ff0",
+  "shp": "r6869.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6869.shx",
+      "bytes": 116,
+      "sha256": "43557719b791a994f30ab2da3f0cdb59ecbfe87bc5e5b09881df85976f8e7f5b"
+    },
+    {
+      "archivo": "r6869.shp",
+      "bytes": 964,
+      "sha256": "682f2f8708c2808c2a4b8929dff82ade67bb423c65dbd1a32cbc56180f8c93a5"
+    },
+    {
+      "archivo": "r6869.sbx",
+      "bytes": 116,
+      "sha256": "e23b3e2fe320dbceb157d1f51d7542df84f4a80fe68009ab1ac9199a28e86ddc"
+    },
+    {
+      "archivo": "r6869.sbn",
+      "bytes": 140,
+      "sha256": "5baec852aad23109c496b4ef580aef33d2f1da21454ca4da1804c10efd970984"
+    },
+    {
+      "archivo": "r6869.dbf",
+      "bytes": 889,
+      "sha256": "35e4f1598392ada887b13a6f951e22780ca978c81f79c4d86800c5c5c52dbd8a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PUJATONORTE.zip!r6869.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d59951e895",
+    "archivo": "santafe/ipec/2010/PUJATONORTE.zip!r6869.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5411011.0,
+      6512644.0,
+      5412424.5,
+      6514780.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PUJATONORTE.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3118029c9323a36f2a9d2439f7d06e2cbee2bc0703c062582785110c1e89e173"
+}

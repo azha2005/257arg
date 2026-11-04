@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4116_146c811a4b",
+  "shp": "e4116.shp",
+  "entidades": 74,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4116.dbf",
+      "bytes": 22662,
+      "sha256": "63e76f011c735be2d1a24c62e65eac291b24ec80db527524171395afa1364952"
+    },
+    {
+      "archivo": "e4116.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4116.shp",
+      "bytes": 6772,
+      "sha256": "de41a9cd694d61c7a19a5d3a8f47c515fad47fa3cafe451f76663678b1a84283"
+    },
+    {
+      "archivo": "e4116.shx",
+      "bytes": 692,
+      "sha256": "51af73a3f8684edbfbe919b2ee9afeb9ec0c22ef6b202f759970a6e9ee8c6462"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LABRAVA.zip!e4116.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_a2a4d68840",
+    "archivo": "santafe/ipec/2022/LABRAVA.zip!e4116.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 74,
+    "registros_shx": 74,
+    "shape_type": 3,
+    "bbox": [
+      5485660.5,
+      6630724.0,
+      5487455.0,
+      6634063.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LABRAVA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "31f46816f1f863845f5861ce4aa357cd66951fe5dff5e0af0b2030e732a9a201"
+}

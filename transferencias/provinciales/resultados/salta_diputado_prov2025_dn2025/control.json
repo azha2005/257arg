@@ -1,0 +1,196 @@
+{
+  "id": "salta_diputado_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Salta",
+  "distrito": "17",
+  "fecha": "11/05/2025",
+  "cargo": "Diputados provinciales",
+  "nivel": "subcircuitos",
+  "origen": "Diputados provinciales 11/05/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "Subcircuitos del cargo correspondiente. Se excluyen resoluciones sin subcircuito y códigos sin correspondencia nacional; cobertura cuantificada. Sólo válidos (positivos y blancos): la planilla no incluye nulos. Cada cargo cubre departamentos distintos.",
+  "base": "votos válidos (positivos + blancos)",
+  "cobertura_origen": 0.9961513524923856,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "Resoluciones sin subcircuito: 417 votos",
+    "46H",
+    "69A",
+    "Sin votos informados en una de las elecciones: 17B",
+    "Sin votos informados en una de las elecciones: 18C",
+    "Sin votos informados en una de las elecciones: 22B",
+    "Sin votos informados en una de las elecciones: 28G",
+    "Sin votos informados en una de las elecciones: 39A",
+    "Sin votos informados en una de las elecciones: 40C",
+    "Sin votos informados en una de las elecciones: 44B",
+    "Sin votos informados en una de las elecciones: 47C",
+    "Sin votos informados en una de las elecciones: 48A",
+    "Sin votos informados en una de las elecciones: 70B",
+    "Sin votos informados en una de las elecciones: 72C"
+  ],
+  "departamentos_cargo": [
+    "ANTA",
+    "CACHI",
+    "CAFAYATE",
+    "CAPITAL",
+    "CHICOANA",
+    "IRUYA",
+    "METAN",
+    "ORAN",
+    "RIVADAVIA",
+    "ROS. DE LA FRONTERA",
+    "SAN MARTIN"
+  ],
+  "fuente": "https://www.electoralsalta.gov.ar/elecciones/escrutinio/escrutinio-definitivo-generales-2025.xlsx",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 209,
+  "categorias_origen": 13,
+  "rango": 13,
+  "condicion": 38.07081393612016,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.02575189388526838,
+    "0.0001": 0.015500209291534468,
+    "1e-05": 0.01437755537190178,
+    "1e-06": 0.01400602411820302,
+    "1e-07": 0.014005937298767583
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 3.0280286413484414,
+  "desviacion_max_margen_destino_pp": 0.5358159427435283,
+  "electores_o_votos_origen": 528534.0,
+  "electores_o_votos_destino": 564133.0,
+  "filas": [
+    {
+      "origen": "FRENTE CAMBIEMOS SALTA",
+      "peso": 3.9,
+      "dif_variante_pp": 28.86,
+      "sensibilidad_pp": 48.68,
+      "ancho_intervalo_pp": 79.94,
+      "separacion_pp": 35.39,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES",
+      "peso": 2.69,
+      "dif_variante_pp": 25.12,
+      "sensibilidad_pp": 82.59,
+      "ancho_intervalo_pp": 57.28,
+      "separacion_pp": 66.89,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE JUNTOS",
+      "peso": 4.22,
+      "dif_variante_pp": 24.74,
+      "sensibilidad_pp": 79.2,
+      "ancho_intervalo_pp": 67.34,
+      "separacion_pp": 36.68,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE JUSTICIALISTA SALTEÑO",
+      "peso": 6.67,
+      "dif_variante_pp": 14.68,
+      "sensibilidad_pp": 29.71,
+      "ancho_intervalo_pp": 36.12,
+      "separacion_pp": 25.63,
+      "no_identificada": false
+    },
+    {
+      "origen": "FRENTE LIBERAL SALTEÑO POR SALTA LIBRE",
+      "peso": 3.49,
+      "dif_variante_pp": 34.17,
+      "sensibilidad_pp": 52.44,
+      "ancho_intervalo_pp": 32.82,
+      "separacion_pp": 18.65,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE SALTA VA CON FELICIDAD",
+      "peso": 2.62,
+      "dif_variante_pp": 6.28,
+      "sensibilidad_pp": 52.31,
+      "ancho_intervalo_pp": 74.34,
+      "separacion_pp": 27.07,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE SI-SALTA UNIDA",
+      "peso": 2.99,
+      "dif_variante_pp": 4.65,
+      "sensibilidad_pp": 15.82,
+      "ancho_intervalo_pp": 28.82,
+      "separacion_pp": 25.3,
+      "no_identificada": false
+    },
+    {
+      "origen": "FRENTE UNIDOS POR SALTA",
+      "peso": 17.51,
+      "dif_variante_pp": 15.93,
+      "sensibilidad_pp": 26.88,
+      "ancho_intervalo_pp": 26.01,
+      "separacion_pp": 38.06,
+      "no_identificada": false
+    },
+    {
+      "origen": "FRENTE VAMOS SALTA!",
+      "peso": 18.24,
+      "dif_variante_pp": 4.51,
+      "sensibilidad_pp": 7.25,
+      "ancho_intervalo_pp": 15.59,
+      "separacion_pp": 23.23,
+      "no_identificada": false
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 24.34,
+      "dif_variante_pp": 3.86,
+      "sensibilidad_pp": 15.28,
+      "ancho_intervalo_pp": 18.77,
+      "separacion_pp": 52.38,
+      "no_identificada": false
+    },
+    {
+      "origen": "MOVIMIENTO SOCIALISTA DE LOS TRABAJADORES",
+      "peso": 2.14,
+      "dif_variante_pp": 80.06,
+      "sensibilidad_pp": 80.92,
+      "ancho_intervalo_pp": 90.65,
+      "separacion_pp": 46.43,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 4.96,
+      "dif_variante_pp": 9.97,
+      "sensibilidad_pp": 38.9,
+      "ancho_intervalo_pp": 64.11,
+      "separacion_pp": 27.57,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco",
+      "peso": 6.24,
+      "dif_variante_pp": 77.34,
+      "sensibilidad_pp": 81.08,
+      "ancho_intervalo_pp": 31.99,
+      "separacion_pp": 66.18,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 0.9961513524923856
+}

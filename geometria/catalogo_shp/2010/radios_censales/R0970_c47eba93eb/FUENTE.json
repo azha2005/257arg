@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0970_c47eba93eb",
+  "shp": "R0970.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0970.dbf",
+      "bytes": 890,
+      "sha256": "74c821b3b371448a826e0afc910b6b491dae718d87054b9264e39dbb6e73d4d1"
+    },
+    {
+      "archivo": "R0970.shp",
+      "bytes": 6740,
+      "sha256": "731f7825aae7a08f06b06922e700379d19620cb18ac5e9b3d505ec3b7424c47c"
+    },
+    {
+      "archivo": "R0970.shx",
+      "bytes": 116,
+      "sha256": "357daa2ed9e9267fcbbd7634723b285a5489187699e334b0711b77aca77b0eae"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puebloandinoa2h.zip!R0970.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_13d133f465",
+    "archivo": "santafe/ipec/2010/puebloandinoa2h.zip!R0970.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5416951.5,
+      6384345.0,
+      5420043.0,
+      6386999.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puebloandinoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4b869b19a5ecddc6d6e2d46bcb55735a781a27d487b6e48a3bca44c2ced8dbee"
+}

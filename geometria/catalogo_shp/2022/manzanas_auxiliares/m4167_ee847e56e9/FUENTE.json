@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4167_ee847e56e9",
+  "shp": "m4167.shp",
+  "entidades": 31,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4167.dbf",
+      "bytes": 6493,
+      "sha256": "d5c5c274b5bb6279a0ef091fcca52b1743bafaac9e0046d057515dfc28d601ec"
+    },
+    {
+      "archivo": "m4167.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4167.shp",
+      "bytes": 4412,
+      "sha256": "2e130267e03e4a38f1eb4c6f4d5a454e662d2fa8821b44cac2fb9167ff128731"
+    },
+    {
+      "archivo": "m4167.shx",
+      "bytes": 348,
+      "sha256": "5ae25d48381b6f8d15ff92f00f597dbc5dd85c159a8018fce5e76d696b4a7703"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIADURAN.zip!m4167.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4c7a4c30ac",
+    "archivo": "santafe/ipec/2022/COLONIADURAN.zip!m4167.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 31,
+    "registros_shx": 31,
+    "shape_type": 5,
+    "bbox": [
+      5506913.0,
+      6730267.5,
+      5507277.0,
+      6731992.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIADURAN.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "558933786f6c9d2f3d558923912ee473ba8c371a57313e3b12c74752af16f81f"
+}

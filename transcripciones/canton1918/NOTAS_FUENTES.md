@@ -1,0 +1,22 @@
+# Fuentes impresas y cotejo de inscriptos y votantes — 1918
+
+Lectura de las láminas originales del tomo II. Las páginas PDF 44–54 corresponden a las páginas impresas 35–45. Todos los encabezados dicen elecciones nacionales de diputados, año 1918, varones solamente, votos por partidos políticos.
+
+## Claves y fuentes impresas
+
+- **PDF 44 / libro 35, Capital Federal.** Clave: 1 Inscriptos; 2 Votantes; 3 Unión Cívica Radical; 4 Demócrata Progresista; 5 Socialista; 6 Socialista Argentino. La fuente dice: «Para inscriptos y votantes “La Nación” del 4 de mayo de 1918. Los datos de los partidos políticos fueron obtenidos de “La Nación” 7, 8, 10, 11, 12, 17, 18, 19, 20 de Abril de 1922.» El año 1922 aparece así impreso pese al encabezado 1918; se transcribe sin sustituirlo ni explicar su causa. El asterisco junto al encabezado «Circunscripciones» remite a una nota que explica su equivalencia con los partidos bonaerenses y departamentos del resto del país; los números a la derecha identifican habitualmente las circunscripciones. Dos asteriscos indican cifras subsumidas bajo una unidad mayor o no tomadas en cuenta, remitiendo al texto.
+- **PDF 45–48 / libro 36–39, Buenos Aires.** Cuatro páginas consecutivas; la clave y fuente aparecen al pie de la última. Clave: 1 Inscriptos; 2 Votantes; 3 Unión Cívica Radical; 4 Socialista; 5 Conservador. Inscriptos: La Nación del 3 de marzo de 1918; partidos: La Nación del 7 de abril de 1918. Encabezado 2 lleva * («Sin datos»); ** señala cifras subsumidas bajo una unidad mayor o no tomadas en cuenta.
+- **PDF 49 / libro 40, Catamarca.** 1 Inscriptos; 2 Votantes; 3 Unión Cívica Radical; 4 Concentración. Los datos partidarios se atribuyen a La Prensa del 6 de marzo de 1918. Los encabezados 1 y 2 llevan * («Sin datos»); ** indica cifras subsumidas o no tomadas en cuenta.
+- **PDF 50 / libro 41, Córdoba.** 1 Inscriptos; 2 Votantes; 3 Radicales Azules; 4 Radicales Rojos; 5 Demócratas. Todos los datos se atribuyen al Anuario Estadístico, Provincia de Córdoba, año 1923. ** indica cifras subsumidas o no tomadas en cuenta.
+- **PDF 51 / libro 42, Corrientes.** 1 Inscriptos; 2 Votantes; 3 Radicales; 4 Liberales; 5 Autonomista; 6 Radical disidente. Partidos: La Nación del 10 de marzo de 1918. Los encabezados 1 y 2 llevan * («Sin datos»); ** indica cifras subsumidas o no tomadas en cuenta.
+- **PDF 52 / libro 43, Entre Ríos.** 1 Inscriptos; 2 Votantes; 3 Unión Cívica Radical; 4 Radical Disidente; 5 Concentración. Partidos: La Prensa del 6 y 10 de marzo de 1918. Los encabezados 1 y 2 llevan * («Sin datos»).
+- **PDF 53 / libro 44, Mendoza.** 1 Inscriptos; 2 Votantes; 3 Unión Cívica Radical; 4 Socialista; 5 Concentración Mendocina. Votantes: La Nación del 9, 10, 12 y 13 de marzo de 1918; partidos: los mismos periódicos más La Nación del 4 de abril de 1918. El encabezado 1 lleva *; también hay * impresos en celdas individuales de votantes. ** indica cifras subsumidas o no tomadas en cuenta.
+- **PDF 54 / libro 45, Santa Fe.** 1 Inscriptos; 2 Votantes; 3 Unión Cívica Radical; 4 Demócrata Progresista; 5 Radical disidente. Para votantes la fuente impresa cita La Nación del 8 de abril de 1918 y 4 de abril de 1918; para partidos, La Nación del 8 de abril de 1922. Se conserva la fecha 1922 tal como aparece. El encabezado 1 lleva * («Sin datos»).
+
+## Alcance de los asteriscos
+
+Los asteriscos en los encabezados antes identificados son explícitos en el libro; las celdas de esas columnas están vacías. Representar * en cada fila es una propagación de la marca general del encabezado, no una marca impresa en cada celda. En Mendoza sí aparecen además asteriscos individuales en celdas de la columna 2. Los ** de filas como Puerto, General Roca o General Alvear están impresos en las celdas correspondientes y no significan cero.
+
+## Cotejo visual de columnas 1 y 2
+
+Se releen contra el manual las cifras visibles de Capital (ambas columnas), Buenos Aires (inscriptos), Córdoba (ambas), Mendoza y Santa Fe (votantes). En Catamarca, Corrientes y Entre Ríos ambas columnas están declaradas sin datos en el encabezado. No detecté diferencias adicionales numéricas de lectura respecto de la versión manual revisada. Capital, Vélez Sarsfield, columna 1, sigue débil y figura como ilegible en la lectura manual: se ven candidatos 9.455/9.459, sin resolución segura. La comprobación no resuelve discrepancias aritméticas impresas ni sustituye el cotejo independiente del resto de las columnas.

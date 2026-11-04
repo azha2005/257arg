@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4131_bde86b5305",
+  "shp": "M4131.shp",
+  "entidades": 40,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4131.dbf",
+      "bytes": 8266,
+      "sha256": "b699d6fbb712bc614901c9ec6a18e4ac84061a7b95f9c2e2dbcf118b5ebd7d89"
+    },
+    {
+      "archivo": "M4131.shp",
+      "bytes": 6260,
+      "sha256": "4aa1a439cc6ea29992beaed6ecf3d4964dd7950abe48e1bb1ad8ee463ceda713"
+    },
+    {
+      "archivo": "M4131.shx",
+      "bytes": 420,
+      "sha256": "033a126bddcc42f8be63283358982d80208ab3adb37bc48f71b3301fbd982c26"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/larubiaa3h.zip!M4131.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1d337c6602",
+    "archivo": "santafe/ipec/2010/larubiaa3h.zip!M4131.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 40,
+    "registros_shx": 40,
+    "shape_type": 5,
+    "bbox": [
+      5326770.0,
+      6667937.0,
+      5327798.5,
+      6668932.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/larubiaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a4a90d811a1b74cd22065a912cc858b06b9fc807e44235868182a2766d2c4e45"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1475_bde57d82a3",
+  "shp": "M1475.shp",
+  "entidades": 29,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1475.dbf",
+      "bytes": 6099,
+      "sha256": "2c24af522b06c32afeaa807a5858136ec67e6059fb92bcffb305cecfb0683d69"
+    },
+    {
+      "archivo": "M1475.shp",
+      "bytes": 5628,
+      "sha256": "f221e9a99c3c452aebe936f35968d4df5e0ab686f2f9ffd205b944f2704f7c15"
+    },
+    {
+      "archivo": "M1475.shx",
+      "bytes": 332,
+      "sha256": "dfae50d9df95b34a3cbff65e7b22d61b1b8d274e0d63e89fea1dc68203bbc8a2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanfabiana3v.zip!M1475.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a49733ae3c",
+    "archivo": "santafe/ipec/2010/sanfabiana3v.zip!M1475.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 29,
+    "registros_shx": 29,
+    "shape_type": 5,
+    "bbox": [
+      5406821.0,
+      6443888.5,
+      5407550.0,
+      6445039.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanfabiana3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b5abf0297315fad8e002e733a7ab2a41c7513ffa6cb9d2f76f0af25503f619d7"
+}

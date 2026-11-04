@@ -1,0 +1,105 @@
+{
+  "nombre": "Misiones",
+  "distrito": "14",
+  "serie": "2023",
+  "fecha": "07/05/2023",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 07/05/2023 (municipios empalmados)",
+  "nivel": "municipios y departamentos empalmados",
+  "base": "votos emitidos",
+  "fuente": "https://www.electoralmisiones.gov.ar/wp-content/uploads/2023/05/Acta-Acuerdo-N%C2%B01166-Anexo-I.pdf",
+  "foco": [
+    "Frente Renovador de la Concordia"
+  ],
+  "nota": "Resultado provincial observado por municipio; se agregan circuitos nacionales con la correspondencia explícita del mapa oficial de abril 2023. No son resultados observados por circuito provincial. Donde hay códigos nuevos o municipios sin equivalente previo, se agrega todo el departamento en ambos lados. Departamentos agregados: GUARANI. Fracrán tiene reserva de límites en el propio mapa. Se conservan las diferencias internas de publicación ya documentadas.",
+  "id": "misiones_2019p_gob2023_municipios",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "destino",
+  "unidades": 76,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 221.08798611790021,
+  "lambda_": 1e-05,
+  "validacion_cruzada": {
+    "0.001": 0.01819119150744228,
+    "0.0001": 0.013794779801576298,
+    "1e-05": 0.013104911276640869,
+    "1e-06": 0.013261355523779734,
+    "1e-07": 0.013329308979619627
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 4.235374443472775,
+  "desviacion_max_margen_destino_pp": 0.39133280395280345,
+  "electores_o_votos_origen": 719819.0,
+  "electores_o_votos_destino": 695488.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 57.28,
+      "dif_variante_pp": 4.41,
+      "sensibilidad_pp": 5.47,
+      "ancho_intervalo_pp": 11.27,
+      "separacion_pp": 20.93,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 32.09,
+      "dif_variante_pp": 7.46,
+      "sensibilidad_pp": 21.27,
+      "ancho_intervalo_pp": 26.55,
+      "separacion_pp": 33.44,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 3.18,
+      "dif_variante_pp": 7.43,
+      "sensibilidad_pp": 75.09,
+      "ancho_intervalo_pp": 31.3,
+      "separacion_pp": 22.76,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 3.94,
+      "dif_variante_pp": 19.17,
+      "sensibilidad_pp": 52.14,
+      "ancho_intervalo_pp": 80.22,
+      "separacion_pp": 55.53,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 0.91,
+      "dif_variante_pp": 16.66,
+      "sensibilidad_pp": 35.78,
+      "ancho_intervalo_pp": 51.53,
+      "separacion_pp": 41.18,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.59,
+      "dif_variante_pp": 32.03,
+      "sensibilidad_pp": 59.98,
+      "ancho_intervalo_pp": 71.99,
+      "separacion_pp": 18.39,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

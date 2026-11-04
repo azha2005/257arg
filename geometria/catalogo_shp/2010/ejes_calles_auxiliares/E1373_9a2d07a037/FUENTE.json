@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1373_9a2d07a037",
+  "shp": "E1373.shp",
+  "entidades": 200,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1373.dbf",
+      "bytes": 70210,
+      "sha256": "4ea26ff8ecb0a8c9e613b0bafd0ba995da70bd327455ce92025f879af8e9c67a"
+    },
+    {
+      "archivo": "E1373.shp",
+      "bytes": 18868,
+      "sha256": "caf74c36e94da055226f7293944f730cd8ce4fc006885e9b9cc8f0542e4259f2"
+    },
+    {
+      "archivo": "E1373.shx",
+      "bytes": 1700,
+      "sha256": "7e5dde47572fda309730920b7cd631fb01ebb5ddf8cf1985ca45d63a5aab0fef"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/LANTERIA3H.zip!E1373.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9d924958ab",
+    "archivo": "santafe/ipec/2010/LANTERIA3H.zip!E1373.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 200,
+    "registros_shx": 200,
+    "shape_type": 3,
+    "bbox": [
+      5534813.5,
+      6809713.5,
+      5536252.0,
+      6811153.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/LANTERIA3H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9e6b7c8df8f4c90a3744d6125f14b974d322763090e54cb7c5e730349debeadd"
+}

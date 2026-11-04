@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6835_9c6cec346e",
+  "shp": "e6835.shp",
+  "entidades": 21,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6835.dbf",
+      "bytes": 6868,
+      "sha256": "ff90db4afba8d1a94973a05944e13977a6cc633a4b87060d20d56d1ffc85a25a"
+    },
+    {
+      "archivo": "e6835.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6835.shp",
+      "bytes": 1948,
+      "sha256": "1badf2fb226b39d6e84ec2e44cf2335ce03d0ccd400734519163313ff1f52744"
+    },
+    {
+      "archivo": "e6835.shx",
+      "bytes": 268,
+      "sha256": "6cc61ea00aa3fbf7e29bea42984d37d09350c40ac96a69c9b7e31e57439c83e9"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANBERNARDOSANJUSTO.zip!e6835.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_51d69ac9f5",
+    "archivo": "santafe/ipec/2022/SANBERNARDOSANJUSTO.zip!e6835.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 21,
+    "registros_shx": 21,
+    "shape_type": 3,
+    "bbox": [
+      5444966.5,
+      6582705.0,
+      5445280.0,
+      6583458.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANBERNARDOSANJUSTO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3bef95a02f81e4fe41772191dd717b22c1a5320809b4a8913c10b14e7917db61"
+}

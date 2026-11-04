@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4137_cc6d782159",
+  "shp": "M4137.shp",
+  "entidades": 56,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4137.dbf",
+      "bytes": 11418,
+      "sha256": "958a0dcb6fddc7d8610e7209abac3ab165c19727cdc27751155b9127a07d46e3"
+    },
+    {
+      "archivo": "M4137.shp",
+      "bytes": 8244,
+      "sha256": "e07d81ffc6a707f6dde0e1dde4235740b639f349f058b690b315bdf2f7119bd9"
+    },
+    {
+      "archivo": "M4137.shx",
+      "bytes": 548,
+      "sha256": "fb8017c235468a0cb387f07f0c7edfb0ae195293413643b43f97a28d53fe852c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/cayastacitoa3v.zip!M4137.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d3a1b1e533",
+    "archivo": "santafe/ipec/2010/cayastacitoa3v.zip!M4137.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 56,
+    "registros_shx": 56,
+    "shape_type": 5,
+    "bbox": [
+      5443945.0,
+      6557882.5,
+      5445078.0,
+      6558968.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/cayastacitoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1f911505b57896ed9e1c6160990b584b56b39988eaa5690cdd38443e0e2b7352"
+}

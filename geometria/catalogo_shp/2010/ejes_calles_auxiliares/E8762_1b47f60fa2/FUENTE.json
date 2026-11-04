@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8762_1b47f60fa2",
+  "shp": "E8762.shp",
+  "entidades": 1147,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8762.dbf",
+      "bytes": 399766,
+      "sha256": "f866c28f55c24dc3ffb5653a50422207985aa045f597ca73da7e7fc7c49263b2"
+    },
+    {
+      "archivo": "E8762.shp",
+      "bytes": 105708,
+      "sha256": "8da6c23549d6be7a1dbe570bb982d48ed6dc7e5b9a6ad133980a9815203a7f3d"
+    },
+    {
+      "archivo": "E8762.shx",
+      "bytes": 9276,
+      "sha256": "7767bc5221a93afbd380ad6388a81c306bb7cfd3e30f12ddeae8da19df13085e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/capitanbermudeza1v.zip!E8762.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dba9c3e470",
+    "archivo": "santafe/ipec/2010/capitanbermudeza1v.zip!E8762.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1147,
+    "registros_shx": 1147,
+    "shape_type": 3,
+    "bbox": [
+      5431508.0,
+      6367117.0,
+      5434521.5,
+      6371254.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/capitanbermudeza1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1566df6b7459f7f0794885e9f728ba54292b3985f03821e0bfb8160129f99cf6"
+}

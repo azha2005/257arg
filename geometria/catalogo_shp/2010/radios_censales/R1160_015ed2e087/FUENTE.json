@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1160_015ed2e087",
+  "shp": "R1160.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1160.dbf",
+      "bytes": 686,
+      "sha256": "c3c79fadf57ab3862faab44cb5550821535b765dba87b5f341394ecd82bd6491"
+    },
+    {
+      "archivo": "R1160.shp",
+      "bytes": 828,
+      "sha256": "e28a110aa28ba284a54d661c9c1f032dcaf2a60eebbe73f86adf838790bf9f49"
+    },
+    {
+      "archivo": "R1160.shx",
+      "bytes": 108,
+      "sha256": "176e0c1bb4441245522f08c30ceb069d2c1b7b0a775c13d6741fda951ea7e652"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tacurala3h.zip!R1160.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0f5dc6757d",
+    "archivo": "santafe/ipec/2010/tacurala3h.zip!R1160.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5346728.5,
+      6586409.0,
+      5348158.5,
+      6587766.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tacurala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5e402170ddebd3e22808c6261108e44e58f7b1dc9dcd29ec7d8614c25a627bd4"
+}

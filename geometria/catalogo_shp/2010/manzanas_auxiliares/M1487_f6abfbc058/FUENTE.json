@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1487_f6abfbc058",
+  "shp": "M1487.shp",
+  "entidades": 45,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1487.dbf",
+      "bytes": 9251,
+      "sha256": "3d710b34a319a07a7f487bf1d3ee237131d5d306bf3ae157837550e1d4c93ddd"
+    },
+    {
+      "archivo": "M1487.shp",
+      "bytes": 7468,
+      "sha256": "6a6f15263d829624e6920c05134d809826a555fdd71db352769e530d9948b0b1"
+    },
+    {
+      "archivo": "M1487.shx",
+      "bytes": 460,
+      "sha256": "e3552eb95f9a1d1e347f6b56231db0616c4931fadbff311b1e86ba1af0658cff"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/huanquerosa3h.zip!M1487.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_647a9d53d7",
+    "archivo": "santafe/ipec/2010/huanquerosa3h.zip!M1487.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 45,
+    "registros_shx": 45,
+    "shape_type": 5,
+    "bbox": [
+      5381753.5,
+      6679409.0,
+      5382984.5,
+      6680569.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/huanquerosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ffc04e16878eebd784deb149f8ad3b99c64b07c079d18f3c0b85a0ff68583781"
+}

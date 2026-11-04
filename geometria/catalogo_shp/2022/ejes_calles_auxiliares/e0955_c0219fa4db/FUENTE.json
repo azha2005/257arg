@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0955_c0219fa4db",
+  "shp": "e0955.shp",
+  "entidades": 199,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0955.dbf",
+      "bytes": 59912,
+      "sha256": "ab84034b09d2048f8708a0560a029aba1e80ed90aafac195c6d9af4347e24a44"
+    },
+    {
+      "archivo": "e0955.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0955.shp",
+      "bytes": 17644,
+      "sha256": "0759009653326325989e8e53a097326284d76b0e902247e849d44698b70613d1"
+    },
+    {
+      "archivo": "e0955.shx",
+      "bytes": 1692,
+      "sha256": "c28d994facc7743831e8745feae77b5557b3d2cbe92035572deaefdc4ef49794"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/FORTINOLMOS.zip!e0955.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4ed50d80f5",
+    "archivo": "santafe/ipec/2022/FORTINOLMOS.zip!e0955.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 199,
+    "registros_shx": 199,
+    "shape_type": 3,
+    "bbox": [
+      5459022.5,
+      6786066.5,
+      5460812.0,
+      6787406.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/FORTINOLMOS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d86afa8b6c02b24073d53567de5df4ffd9ae12f51c4f10c8de19d84362067898"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6852_1df2ce41f7",
+  "shp": "e6852.shp",
+  "entidades": 274,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6852.dbf",
+      "bytes": 82262,
+      "sha256": "a2d2318545a0f7851678363dcc1df5ec749a564a7840e9b1b4c1d3c072239c98"
+    },
+    {
+      "archivo": "e6852.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6852.shp",
+      "bytes": 26068,
+      "sha256": "fda6375b6b1ec025d88dc354edcfc3196288ff305e98264b510b3f3f743cd4ea"
+    },
+    {
+      "archivo": "e6852.shx",
+      "bytes": 2292,
+      "sha256": "ec9d4a1173d550ca61a848c7dc3f3acea506182665a529be1b13fa16261fb1b0"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/BARRIOCAIMA.zip!e6852.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_270cc7d64b",
+    "archivo": "santafe/ipec/2022/BARRIOCAIMA.zip!e6852.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 274,
+    "registros_shx": 274,
+    "shape_type": 3,
+    "bbox": [
+      5416641.5,
+      6476170.0,
+      5419240.0,
+      6479868.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/BARRIOCAIMA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d71d2829e1bcc447e02a7ab304cd183a3d9605b63486b72828b0316dc5eaee2d"
+}

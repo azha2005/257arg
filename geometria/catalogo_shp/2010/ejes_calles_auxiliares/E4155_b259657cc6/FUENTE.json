@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4155_b259657cc6",
+  "shp": "E4155.shp",
+  "entidades": 50,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4155.dbf",
+      "bytes": 18010,
+      "sha256": "ac7758ef8e83c6f74c2a73d78deac8e4e961265d4ad065f2e35eaa2ccdedd271"
+    },
+    {
+      "archivo": "E4155.shp",
+      "bytes": 4516,
+      "sha256": "ef203ad405adc34f067ae009f6ee4288bf28d28186ec0b7b305d3ba4c16434af"
+    },
+    {
+      "archivo": "E4155.shx",
+      "bytes": 500,
+      "sha256": "8fbb805540637daf9ec6ee2e458411e94e30b5f65379430905ba70d3d1b33399"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/cuatroesquinasa3v.zip!E4155.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_132a9a959a",
+    "archivo": "santafe/ipec/2010/cuatroesquinasa3v.zip!E4155.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 50,
+    "registros_shx": 50,
+    "shape_type": 3,
+    "bbox": [
+      5428585.5,
+      6321498.0,
+      5429041.5,
+      6322126.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/cuatroesquinasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4e128d9eb062a267c6c732e9af541d6e4339c12711f2e499734ea63445360037"
+}

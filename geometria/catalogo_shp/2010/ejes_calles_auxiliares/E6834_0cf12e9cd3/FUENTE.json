@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6834_0cf12e9cd3",
+  "shp": "E6834.shp",
+  "entidades": 338,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6834.dbf",
+      "bytes": 118234,
+      "sha256": "ecdc55ec9bff51f48d4186d602be18b6d458ea5ec9c1940089fc80a2bee5328c"
+    },
+    {
+      "archivo": "E6834.shp",
+      "bytes": 30036,
+      "sha256": "113a2c37b4621e3ecfcd8198cc044d9ad6da7926ba7ad244ceb90a6d0f04ff92"
+    },
+    {
+      "archivo": "E6834.shx",
+      "bytes": 2804,
+      "sha256": "e4915f16eed70321a9131b23236641ad30bcfaa77450e92063f53828992d3c2a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/elcarameloyvilladelplataa2v.zip!E6834.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_97d82e67b1",
+    "archivo": "santafe/ipec/2010/elcarameloyvilladelplataa2v.zip!E6834.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 338,
+    "registros_shx": 338,
+    "shape_type": 3,
+    "bbox": [
+      5432648.5,
+      6332345.0,
+      5434404.0,
+      6335433.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/elcarameloyvilladelplataa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6299782fbf648bf28d238c985497dae3c3e2e99b937789685e4ea9f288d926da"
+}

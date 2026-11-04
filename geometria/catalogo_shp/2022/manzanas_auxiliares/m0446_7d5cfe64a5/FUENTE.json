@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0446_7d5cfe64a5",
+  "shp": "m0446.shp",
+  "entidades": 204,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0446.dbf",
+      "bytes": 40574,
+      "sha256": "f4774a157164ed51b83f14b1b0a9d1fc0b42ba24572a6656565f9121cf3acf8a"
+    },
+    {
+      "archivo": "m0446.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0446.shp",
+      "bytes": 32164,
+      "sha256": "d84b21e5e59504bb97d176c4f584fe6d2c8ac825929b5891f784cf8aa49564f4"
+    },
+    {
+      "archivo": "m0446.shx",
+      "bytes": 1732,
+      "sha256": "d308e2c59142cebcb28ff3c9aff54da2e2665d628c692a5077f5b5b689ad399b"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/HELVECIA.zip!m0446.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1d1e067381",
+    "archivo": "santafe/ipec/2022/HELVECIA.zip!m0446.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 204,
+    "registros_shx": 204,
+    "shape_type": 5,
+    "bbox": [
+      5490175.0,
+      6558814.54455491,
+      5492485.0,
+      6562306.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/HELVECIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "f14714433ac7298926c3fe292f43c541c18f98cc841eb057391214e609d5f73c"
+}

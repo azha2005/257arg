@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0264_94ecbe016b",
+  "shp": "M0264.shp",
+  "entidades": 360,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0264.dbf",
+      "bytes": 71306,
+      "sha256": "a1838856cf506a40f86dfad30504aa3da970e23e20e8d1362ad7e6f2f7cd71bf"
+    },
+    {
+      "archivo": "M0264.shp",
+      "bytes": 57476,
+      "sha256": "77c24ada566e6336c7dd8ec2beacf6c43bbf3cb11757996ddc3c765fb9f7862a"
+    },
+    {
+      "archivo": "M0264.shx",
+      "bytes": 2980,
+      "sha256": "1fabe853e28fdd29e58dd9c92476f153d73408223fd26e923a75883975b2e324"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/eltrebola1v.zip!M0264.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_21c14fe094",
+    "archivo": "santafe/ipec/2010/eltrebola1v.zip!M0264.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 360,
+    "registros_shx": 360,
+    "shape_type": 5,
+    "bbox": [
+      5337805.5,
+      6435116.0,
+      5340457.0,
+      6439413.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/eltrebola1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "63828511df6b2ac836c916594d222e29cf434b5241271e4b359e1b006545a40b"
+}

@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0558_a1f3ce3a68",
+  "shp": "r0558.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0558.dbf",
+      "bytes": 1652,
+      "sha256": "42a4843ec572e9751c0ca4e87b22ede53f111c0fec5187287680e454cbbbd270"
+    },
+    {
+      "archivo": "r0558.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0558.shp",
+      "bytes": 3172,
+      "sha256": "af81f0c9029082707b57a22452aaeb63e1205b3c75d712ad5d737c076b1ee5a9"
+    },
+    {
+      "archivo": "r0558.shx",
+      "bytes": 148,
+      "sha256": "3265a40fdf06d1dc20103165202ee3df2bb3e124c25698d61cb67ac1f73892f2"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANCTISPIRITU.zip!r0558.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_ea984c7e53",
+    "archivo": "santafe/ipec/2022/SANCTISPIRITU.zip!r0558.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5292072.5,
+      6233718.0,
+      5294014.5,
+      6235812.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANCTISPIRITU.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d833f33c907e43e3237b3535f9294662211fc6442a6276857ff727753c36a3e8"
+}

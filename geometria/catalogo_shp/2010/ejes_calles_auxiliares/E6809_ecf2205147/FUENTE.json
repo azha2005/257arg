@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6809_ecf2205147",
+  "shp": "E6809.shp",
+  "entidades": 42,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6809.dbf",
+      "bytes": 15226,
+      "sha256": "a5a0746b645481eb09bae507c14f6e8d0c844539b8072426e06657e7b1efe62d"
+    },
+    {
+      "archivo": "E6809.shp",
+      "bytes": 3796,
+      "sha256": "30c5335a8734f06a967478433871458e9aec5646ce69e36677ae9b0cf50b5030"
+    },
+    {
+      "archivo": "E6809.shx",
+      "bytes": 436,
+      "sha256": "927dad4fd509e36cb474955c4e19901ca90d627d4a3e6e445a7ffcfdf48889d0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lomaaltaa3h.zip!E6809.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6303c09179",
+    "archivo": "santafe/ipec/2010/lomaaltaa3h.zip!E6809.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 42,
+    "registros_shx": 42,
+    "shape_type": 3,
+    "bbox": [
+      5388319.0,
+      6463645.5,
+      5389082.0,
+      6464195.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lomaaltaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3840e3ea5259c091bdc5c49bff3926b0bfd38dfa84226502e2de5d40b70c588d"
+}

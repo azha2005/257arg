@@ -1,0 +1,32 @@
+{
+  "scope": "app",
+  "source": "https://sankeydron.streamlit.app/",
+  "evidence": [
+    "transferencias/explorador/index.html:29-42: Ink, Epilogue, paper and reliability colours",
+    ".streamlit/config.toml:1-15: same Streamlit palette and face"
+  ],
+  "preserve": [
+    "all electoral data",
+    "all controls and exports",
+    "party colours",
+    "source and uncertainty notices"
+  ],
+  "introduce": [
+    "same Ink system",
+    "ruled workbench",
+    "compact status row",
+    "responsive labelled profile"
+  ],
+  "files": [
+    "transferencias/provinciales/visor.html",
+    "transferencias/provinciales/estilo.css",
+    "transferencias/provinciales/tokens.css",
+    "transferencias/provinciales/base.css"
+  ],
+  "material": {
+    "real": "25 calculated electoral crosses; official sources and audit tables",
+    "pictures": "the actual Sankey",
+    "absent": "photographs, invented metrics and decorative assets"
+  },
+  "user_scope": "Local viewer style; no change or deployment to the existing Streamlit app."
+}

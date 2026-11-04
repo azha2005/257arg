@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0558_4c3587b3ef",
+  "shp": "M0558.shp",
+  "entidades": 125,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0558.dbf",
+      "bytes": 25011,
+      "sha256": "11ff7a9362b1b65c0cfded521b42452f34f3971158079afa0b1d5bd42aaced5d"
+    },
+    {
+      "archivo": "M0558.shp",
+      "bytes": 17996,
+      "sha256": "bfb779047499825eb7457e2cfe7ed5efba67b3eaf468c61c215c31e326432c0d"
+    },
+    {
+      "archivo": "M0558.shx",
+      "bytes": 1100,
+      "sha256": "82d7981b9aa3c046cf72a2045f683880731bec7aca2a675edfbcf7152ac0360d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanctispiritua2h.zip!M0558.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_de9e4b0922",
+    "archivo": "santafe/ipec/2010/sanctispiritua2h.zip!M0558.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 125,
+    "registros_shx": 125,
+    "shape_type": 5,
+    "bbox": [
+      5291944.5,
+      6233725.0,
+      5294000.5,
+      6235912.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanctispiritua2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "39fa5d9f832394dc72101ea6a1324a0e8c505c1fe33b6ecd2f7912c5c489910c"
+}

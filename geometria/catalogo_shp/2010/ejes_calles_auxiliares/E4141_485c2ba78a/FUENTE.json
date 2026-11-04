@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4141_485c2ba78a",
+  "shp": "E4141.shp",
+  "entidades": 75,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4141.dbf",
+      "bytes": 26710,
+      "sha256": "5d0b493c0af669ddb68be7820a0add8c179e1ac9d991b116c2223d117d4c140d"
+    },
+    {
+      "archivo": "E4141.shp",
+      "bytes": 6748,
+      "sha256": "0982eb532fd9ed21e4b5097279a9dbbfa0c7b1d158d76aeabf0a80f5a3e404f1"
+    },
+    {
+      "archivo": "E4141.shx",
+      "bytes": 700,
+      "sha256": "e2ebb695793b52522a7e6086e91a5f671953c856d16a66589bf02e2ec738b4eb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villasaraleguia3v.zip!E4141.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_09e45f0247",
+    "archivo": "santafe/ipec/2010/villasaraleguia3v.zip!E4141.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 75,
+    "registros_shx": 75,
+    "shape_type": 3,
+    "bbox": [
+      5427420.5,
+      6621169.5,
+      5428889.0,
+      6622356.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villasaraleguia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3db62df2ca8a6ef23c942ef8948f24f1e49cceadaef472710972e34a9443d94d"
+}

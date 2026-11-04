@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1616_d61502e8df",
+  "shp": "M1616.shp",
+  "entidades": 45,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1616.dbf",
+      "bytes": 9251,
+      "sha256": "24fc60bf3e52e70a7b4f2e3d11e7d779ddfbdb35ef629e0e963f35cf396a9157"
+    },
+    {
+      "archivo": "M1616.shp",
+      "bytes": 7532,
+      "sha256": "5a4287576afb41c73b1222d44b5e61dcb4e9bcfb4b460b17060e623086ebecb4"
+    },
+    {
+      "archivo": "M1616.shx",
+      "bytes": 460,
+      "sha256": "9fb6f2ee349bf99d6a984ef1716753985fdcfa17c47cdadf075d16c12b8ff937"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Castelara3h.zip!M1616.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f4e06ac469",
+    "archivo": "santafe/ipec/2010/Castelara3h.zip!M1616.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 45,
+    "registros_shx": 45,
+    "shape_type": 5,
+    "bbox": [
+      5301207.0,
+      6494374.5,
+      5302298.5,
+      6495476.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Castelara3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "505640af0082ee8eb90a582158992a944119d302239a21dba4c0b412ec49d26b"
+}

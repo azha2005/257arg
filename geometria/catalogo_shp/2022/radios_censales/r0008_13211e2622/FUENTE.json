@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0008_13211e2622",
+  "shp": "r0008.shp",
+  "entidades": 20,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0008.dbf",
+      "bytes": 4382,
+      "sha256": "d88115fdbe94ff379c41674c9d5c04030ad3df449153cc73d1ed9c224b142453"
+    },
+    {
+      "archivo": "r0008.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0008.shp",
+      "bytes": 25364,
+      "sha256": "497ba705d5acb0cb951cec262667cd76017f32000b6d7479d3c5ed54f029ee1b"
+    },
+    {
+      "archivo": "r0008.shx",
+      "bytes": 260,
+      "sha256": "65134f4bad08bfb3fc5f6a25e41cb8524902e63f6fa8990b37b7a31c5e455800"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANJOSEDELRINCON.zip!r0008.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_88f71f0692",
+    "archivo": "santafe/ipec/2022/SANJOSEDELRINCON.zip!r0008.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 5,
+    "bbox": [
+      5439293.0,
+      6502182.0,
+      5450564.5,
+      6507650.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANJOSEDELRINCON.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "522a87cc26f998d03db1b37c6c8324796465391c02e9a27f145595a1421f011a"
+}

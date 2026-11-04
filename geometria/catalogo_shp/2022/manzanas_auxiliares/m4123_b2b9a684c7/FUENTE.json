@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4123_b2b9a684c7",
+  "shp": "m4123.shp",
+  "entidades": 28,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4123.dbf",
+      "bytes": 5902,
+      "sha256": "68b5f5775ea07fdc769f35274ca4ede3573850be092862c3360c643b2d4b9a2d"
+    },
+    {
+      "archivo": "m4123.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4123.shp",
+      "bytes": 4196,
+      "sha256": "ae04885aa3eba7a7931ea5b89d80dc0276cca000b8011726433d881e6fc38f12"
+    },
+    {
+      "archivo": "m4123.shx",
+      "bytes": 324,
+      "sha256": "c396c6126758a25ba5db79902221576528864ce4ee60f77bdcfadcf8a12081ce"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MONIGOTES.zip!m4123.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_f61df1c400",
+    "archivo": "santafe/ipec/2022/MONIGOTES.zip!m4123.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 28,
+    "registros_shx": 28,
+    "shape_type": 5,
+    "bbox": [
+      5342576.5,
+      6626167.5,
+      5343297.0,
+      6626973.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MONIGOTES.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c6b56480e468b4867ec2197ce497d78230b08b176fe2b1cb0acdf2891b8e8171"
+}

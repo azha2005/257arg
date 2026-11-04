@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0470_16c7b9771a",
+  "shp": "M0470.shp",
+  "entidades": 174,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0470.dbf",
+      "bytes": 34664,
+      "sha256": "3f5e2ef4f7cb4f7999d69914813741e26d7e1043e67999e037e17b1a1f76c328"
+    },
+    {
+      "archivo": "M0470.shp",
+      "bytes": 24644,
+      "sha256": "5abed13325a59a2916afaec5b82d5ea1d9cf68aed6a105c3dc8295f88daa14cb"
+    },
+    {
+      "archivo": "M0470.shx",
+      "bytes": 1492,
+      "sha256": "dd811473cdce4b13c997693174dd0f33a3bc67f81719cb8a21bb858b516c093d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/canadarosquina2h.zip!M0470.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a301c1f5c7",
+    "archivo": "santafe/ipec/2010/canadarosquina2h.zip!M0470.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 174,
+    "registros_shx": 174,
+    "shape_type": 5,
+    "bbox": [
+      5347892.0,
+      6452168.5,
+      5349799.0,
+      6454290.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/canadarosquina2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "cc15bde8b775c800ea1dbe0934adcdea3f2b0d322310541147ccc10c3b8e56cc"
+}

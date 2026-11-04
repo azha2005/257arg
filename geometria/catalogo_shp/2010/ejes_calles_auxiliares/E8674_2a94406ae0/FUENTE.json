@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8674_2a94406ae0",
+  "shp": "E8674.shp",
+  "entidades": 2602,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8674.dbf",
+      "bytes": 906106,
+      "sha256": "60cc150cec733789571d15b166b07543e988b6456301811b6187d35a439ff18b"
+    },
+    {
+      "archivo": "E8674.shp",
+      "bytes": 245700,
+      "sha256": "ebdab08aecf880fca880aba2820f894e7e5b21e7308e81b70981ff033110dc52"
+    },
+    {
+      "archivo": "E8674.shx",
+      "bytes": 20916,
+      "sha256": "287a1f9a664a6e6bf2ef592da1a778965929a58768b7d0cd49b569892eea2519"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanlorenzoa0v.zip!E8674.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d1a99eb47d",
+    "archivo": "santafe/ipec/2010/sanlorenzoa0v.zip!E8674.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2602,
+    "registros_shx": 2602,
+    "shape_type": 3,
+    "bbox": [
+      5427330.0,
+      6373347.0,
+      5433132.0,
+      6380457.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanlorenzoa0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d090e1a511667bc9df65fa2cc0f6114f464ce3dee47e92ab8707c28d2c2fd5a6"
+}

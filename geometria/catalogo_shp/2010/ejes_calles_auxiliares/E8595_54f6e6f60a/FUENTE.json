@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8595_54f6e6f60a",
+  "shp": "E8595.shp",
+  "entidades": 3847,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8595.dbf",
+      "bytes": 1339366,
+      "sha256": "68e878b088a96d41921524b9d61a21ece3dee4861e82b0a78027c9a878730132"
+    },
+    {
+      "archivo": "E8595.shp",
+      "bytes": 371692,
+      "sha256": "68c94479c735ae6c4876edc3ff673b7950121c16ee5901c9f3db773bfd6b0737"
+    },
+    {
+      "archivo": "E8595.shx",
+      "bytes": 30876,
+      "sha256": "73e8f3be17d1894cdb2707ee0605c850bb983cd50eaaa25983eb02b198e61f07"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Santotomea0v.zip!E8595.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d5051a4ef5",
+    "archivo": "santafe/ipec/2010/Santotomea0v.zip!E8595.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3847,
+    "registros_shx": 3847,
+    "shape_type": 3,
+    "bbox": [
+      5423109.0,
+      6492971.0,
+      5429511.5,
+      6502369.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Santotomea0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7a5108859ba5b909cd57588f182189d50052bd3ffe746bb760ca1ffd2fb61312"
+}

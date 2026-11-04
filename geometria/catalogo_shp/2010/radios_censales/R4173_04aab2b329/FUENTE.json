@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4173_04aab2b329",
+  "shp": "R4173.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4173.dbf",
+      "bytes": 686,
+      "sha256": "0f1631365e714dcd94f163738aecae6302518e4faa6e1619223dd9f389f0d029"
+    },
+    {
+      "archivo": "R4173.shp",
+      "bytes": 556,
+      "sha256": "5771283be198728537ba5a7423079ebb6e494ae9833e87ef79d8c9add1826d1a"
+    },
+    {
+      "archivo": "R4173.shx",
+      "bytes": 108,
+      "sha256": "ba4bacb8984ed89c6970c47a3871de31cf5c5d177bcd406b5827410dd1b50f67"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/theobalda3h.zip!R4173.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_60da7c729c",
+    "archivo": "santafe/ipec/2010/theobalda3h.zip!R4173.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5470438.5,
+      6314250.5,
+      5471457.5,
+      6315196.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/theobalda3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b446ca2afe161e6a57498565b5c2220278ebb7087ad92c2ee9ab5704e25150a3"
+}

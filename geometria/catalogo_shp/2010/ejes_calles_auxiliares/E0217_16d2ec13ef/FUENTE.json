@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0217_16d2ec13ef",
+  "shp": "E0217.shp",
+  "entidades": 820,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0217.dbf",
+      "bytes": 285970,
+      "sha256": "a8b1fb02142173f03e38cabb33b20a545faa34373aa6859262b45cbe2ac6dba8"
+    },
+    {
+      "archivo": "E0217.shp",
+      "bytes": 72932,
+      "sha256": "f3f9823af84b91dcf2348aa14595389e11a98d11538dc4e37a487c804879b3f4"
+    },
+    {
+      "archivo": "E0217.shx",
+      "bytes": 6660,
+      "sha256": "25a84394ae0ee4d338f2e71e503e2ca4c44e8dab66a18c83060eb68da8edd2ae"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaocampoa1h.zip!E0217.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b485f09c0b",
+    "archivo": "santafe/ipec/2010/villaocampoa1h.zip!E0217.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 820,
+    "registros_shx": 820,
+    "shape_type": 3,
+    "bbox": [
+      5560908.0,
+      6847672.5,
+      5564094.5,
+      6850757.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaocampoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "990c2660dd7e1b18e8c79e197c4f3f5c37dc4b9e8e8f772ca12e2fa492f4d190"
+}

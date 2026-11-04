@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4127_14e1db2da9",
+  "shp": "R4127.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4127.dbf",
+      "bytes": 686,
+      "sha256": "a0f6682105f7d6faf76940d55cb8026f7abc2436f66983ca2b28b283ff371d19"
+    },
+    {
+      "archivo": "R4127.shp",
+      "bytes": 636,
+      "sha256": "7ad5fc096f864c0ec1309fadb0fae0b7177c8c3772f55c417f32d0d6ba689aa8"
+    },
+    {
+      "archivo": "R4127.shx",
+      "bytes": 108,
+      "sha256": "de05374bb8a7ddcae3cac12e594dee9e7609293fbc0dde1591853483ec49d493"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/classona3h.zip!R4127.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_928fd12417",
+    "archivo": "santafe/ipec/2010/classona3h.zip!R4127.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5378150.0,
+      6407702.5,
+      5379088.5,
+      6408744.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/classona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a676ff0299904934f6d310a2271da31163594170d25e23dca5aa0e8222ac2cef"
+}

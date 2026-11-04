@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1064_1521895c2c",
+  "shp": "E1064.shp",
+  "entidades": 156,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1064.dbf",
+      "bytes": 54898,
+      "sha256": "dea501a75eb39b698593c7265052d04a87df36b7800aab1b95a105f668974e24"
+    },
+    {
+      "archivo": "E1064.shp",
+      "bytes": 13908,
+      "sha256": "1ab09cd1dae6645049a977ba86e16322afe96cf94ff7afbe0ab9172a943ddb4d"
+    },
+    {
+      "archivo": "E1064.shx",
+      "bytes": 1348,
+      "sha256": "3f14d1dd0c1a96e05e55a3b56778be31adbd1794ecaeb869cec66aaea27086cb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/godoya3h.zip!E1064.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e1118a65c5",
+    "archivo": "santafe/ipec/2010/godoya3h.zip!E1064.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 156,
+    "registros_shx": 156,
+    "shape_type": 3,
+    "bbox": [
+      5452045.0,
+      6307536.0,
+      5453792.5,
+      6308744.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/godoya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1c0e990dd221fa890e3108d33da6437d5861f5bf2804dd52c82a2982cc42ff3d"
+}

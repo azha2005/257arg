@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1053_46edf6880e",
+  "shp": "R1053.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1053.dbf",
+      "bytes": 686,
+      "sha256": "2793b3caefe461e2c883427a5ede3ef865bf7126c61d6164db686a66a9ac98fb"
+    },
+    {
+      "archivo": "R1053.shp",
+      "bytes": 1228,
+      "sha256": "4caf42483e1b3c90ab768215772f402e2c6242aaf9b4abf8c08ddf8177868bad"
+    },
+    {
+      "archivo": "R1053.shx",
+      "bytes": 108,
+      "sha256": "f4a0e34fcd65636215d552a2bb513626a4778aeec2ca654cfcba45968025eb6b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tartagala3v.zip!R1053.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bcec3d5381",
+    "archivo": "santafe/ipec/2010/tartagala3v.zip!R1053.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5514558.5,
+      6828263.0,
+      5515798.5,
+      6830111.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tartagala3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1293879f7ef567446c88dcf8c14941d9a97d6f012dbc7ac4fd54ffb22b11af1b"
+}

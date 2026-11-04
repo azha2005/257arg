@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0738_400c5ba5f8",
+  "shp": "M0738.shp",
+  "entidades": 91,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0738.dbf",
+      "bytes": 18313,
+      "sha256": "5226b33ac2877c7bee465166c7b286342de44b1075a8d72c7efd08bcdf71a431"
+    },
+    {
+      "archivo": "M0738.shp",
+      "bytes": 12828,
+      "sha256": "8dda2f55e09e306092bd6193e7e44d55059fd6be8a7ea9032e49b6d14211d9c4"
+    },
+    {
+      "archivo": "M0738.shx",
+      "bytes": 828,
+      "sha256": "2f764b923254c464bd76e5bad0ef81cdf485f38e68df949cc3f60ea8accc2251"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/BerabevuA3h.zip!M0738.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8426037bb0",
+    "archivo": "santafe/ipec/2010/BerabevuA3h.zip!M0738.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 91,
+    "registros_shx": 91,
+    "shape_type": 5,
+    "bbox": [
+      5326000.0,
+      6309421.0,
+      5327399.0,
+      6310716.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/BerabevuA3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ed9d62dfca5eef87c319612c76217c8f16eb547e4633d765a567ea281898c487"
+}

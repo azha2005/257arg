@@ -1,0 +1,78 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m7507_ad2ee685e1",
+  "shp": "m7507.shp",
+  "entidades": 9,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m7507.shx",
+      "bytes": 172,
+      "sha256": "9bcf55d73a670cf52213ae9e080a48ed1b8ac60bc25e1a4896df29ab893fac66"
+    },
+    {
+      "archivo": "m7507.shp",
+      "bytes": 2364,
+      "sha256": "35f1d13fb4b7a109e2457c5fb4919a344837982e87e922b835e33eb59d201456"
+    },
+    {
+      "archivo": "m7507.sbx",
+      "bytes": 132,
+      "sha256": "23a5ccfe47098a8221d5c786085c6777f549448a95dd73af3b72380cc9d0b1c6"
+    },
+    {
+      "archivo": "m7507.sbn",
+      "bytes": 228,
+      "sha256": "bce5ac239f5b9cf8ca6330f950e6cdce197d3f153309cd9be728991acdce6ad8"
+    },
+    {
+      "archivo": "m7507.dbf",
+      "bytes": 2771,
+      "sha256": "bc86e955723b44728d7f09b95fbc2565997152722e5c5aa8577af53600fc0cdb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/KILOMETRO302.zip!m7507.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4d7862665",
+    "archivo": "santafe/ipec/2010/KILOMETRO302.zip!m7507.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 9,
+    "registros_shx": 9,
+    "shape_type": 5,
+    "bbox": [
+      5486125.5,
+      6790227.0,
+      5486381.0,
+      6791777.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE",
+      "VC",
+      "DESCRIPCIO"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/KILOMETRO302.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a6dda92cdb0b55034c0abd9662078670e25ccf473ee72ed3aad435cb34d3e029"
+}

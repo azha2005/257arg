@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6831_c3eb2b4d7c",
+  "shp": "M6831.shp",
+  "entidades": 42,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6831.dbf",
+      "bytes": 8660,
+      "sha256": "38ca0346bef52c484144f4db9c70c9edea96817f3c0b4ebbdf94e61ef7e43607"
+    },
+    {
+      "archivo": "M6831.shp",
+      "bytes": 6324,
+      "sha256": "6048884806c1bc991bc8542edbc7c81f2b96999ae7b9b7e9af15af64b667d626"
+    },
+    {
+      "archivo": "M6831.shx",
+      "bytes": 436,
+      "sha256": "2d7f36b85b5f3513fc91b71c11720b4e5b92a29ced4c634ab73589fdf1469d33"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/balnearioMonjea3v.zip!M6831.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_90bc73fd98",
+    "archivo": "santafe/ipec/2010/balnearioMonjea3v.zip!M6831.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 42,
+    "registros_shx": 42,
+    "shape_type": 5,
+    "bbox": [
+      5416942.0,
+      6422314.5,
+      5417932.5,
+      6423376.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/balnearioMonjea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "31e7518c2ea6f3364bd84412f64782b3ad30847498e105d36943853be2250e84"
+}

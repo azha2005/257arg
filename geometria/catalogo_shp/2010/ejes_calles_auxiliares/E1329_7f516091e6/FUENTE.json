@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1329_7f516091e6",
+  "shp": "E1329.shp",
+  "entidades": 99,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1329.dbf",
+      "bytes": 35062,
+      "sha256": "2c41e3428f02161dfcd946ed5702388e9a863fe5f0b2c6009e8a9ff570d0e1f9"
+    },
+    {
+      "archivo": "E1329.shp",
+      "bytes": 8860,
+      "sha256": "d5a04801d1568519bac6e97a93d11f5a13f4ef61c3e3dadd13a73dc926cceaaf"
+    },
+    {
+      "archivo": "E1329.shx",
+      "bytes": 892,
+      "sha256": "535e03b418dc86a6a719399a9218abe20cf5d5c109a485496f8011b4e8e4f4e2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/urangaa3v.zip!E1329.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7e6b2b4576",
+    "archivo": "santafe/ipec/2010/urangaa3v.zip!E1329.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 99,
+    "registros_shx": 99,
+    "shape_type": 3,
+    "bbox": [
+      5433781.0,
+      6318717.0,
+      5434750.5,
+      6320362.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/urangaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "cafe879f498aa2037d41f57c6fea8872e332d96637a64095399d17c93a7bd261"
+}

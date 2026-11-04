@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0399_523f0f9e29",
+  "shp": "r0399.shp",
+  "entidades": 11,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0399.dbf",
+      "bytes": 2627,
+      "sha256": "d4f6f935fab0a0703f2b2c071066f3760a8366fb4f88ba6f8912455eb047a40b"
+    },
+    {
+      "archivo": "r0399.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0399.shp",
+      "bytes": 4220,
+      "sha256": "cd74b9f01bf045d37a5dfd35f78b25860f2d2bab900ba67ccb684d257e68d09e"
+    },
+    {
+      "archivo": "r0399.shx",
+      "bytes": 188,
+      "sha256": "c0be480b4c96ef9dd6a62b5da241071f4bb06609733d388fb9fbad0060a72c61"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CHANARLADEADO.zip!r0399.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_9cd972b6a6",
+    "archivo": "santafe/ipec/2022/CHANARLADEADO.zip!r0399.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 11,
+    "registros_shx": 11,
+    "shape_type": 5,
+    "bbox": [
+      5309401.5,
+      6310346.0,
+      5311234.0,
+      6313410.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CHANARLADEADO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2551abb4f426f4b69d7a6c50b92d5523c820d3d80f30cec2e4cc1d918efdcd5d"
+}

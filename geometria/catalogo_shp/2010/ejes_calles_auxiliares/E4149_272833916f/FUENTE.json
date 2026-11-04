@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4149_272833916f",
+  "shp": "E4149.shp",
+  "entidades": 70,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4149.dbf",
+      "bytes": 24970,
+      "sha256": "e3de2336c3b1a3bb6b6f8ee9f73cd9bf826dd85220cbd4d195914babd67b4ece"
+    },
+    {
+      "archivo": "E4149.shp",
+      "bytes": 6260,
+      "sha256": "2ddf74c2636f502913e76457de89f29c7f8e0e0b4b67f72bce8efaa7cd78e79a"
+    },
+    {
+      "archivo": "E4149.shx",
+      "bytes": 660,
+      "sha256": "5349619ca6c83817b2715c778edc8700ad0b81b7982af1ae67c3cb2ca717b48a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bauerysigela3h.zip!E4149.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_571bb575bb",
+    "archivo": "santafe/ipec/2010/bauerysigela3h.zip!E4149.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 70,
+    "registros_shx": 70,
+    "shape_type": 3,
+    "bbox": [
+      5314250.5,
+      6538718.5,
+      5315643.0,
+      6539678.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bauerysigela3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0a78d12a874f2038d5e6c82ed22d6dd5061b25a7184bd3105fc293b23ca90917"
+}

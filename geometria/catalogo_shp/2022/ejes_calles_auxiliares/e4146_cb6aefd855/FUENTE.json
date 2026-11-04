@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4146_cb6aefd855",
+  "shp": "e4146.shp",
+  "entidades": 78,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4146.dbf",
+      "bytes": 23854,
+      "sha256": "329528bfba0b0d17d29e9606e4765b98c07a7f9bb44cc8599e46951b00575ff2"
+    },
+    {
+      "archivo": "e4146.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4146.shp",
+      "bytes": 6964,
+      "sha256": "45cc7a691df471c2e4a4803dadfd3569b976d41d9da592225d006e893836943a"
+    },
+    {
+      "archivo": "e4146.shx",
+      "bytes": 724,
+      "sha256": "dbda064fb46c259f94c55f7da2deaf3177e9f17b0af666483dd793b87ab37143"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANANTONIO.zip!e4146.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e6719541e8",
+    "archivo": "santafe/ipec/2022/SANANTONIO.zip!e4146.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 78,
+    "registros_shx": 78,
+    "shape_type": 3,
+    "bbox": [
+      5335359.0,
+      6545986.5,
+      5336173.0,
+      6546784.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANANTONIO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "62ee9ff0f9a3dc6293c9462fa4a13834730eac5dd4ab861e3f1a17e0d87a1872"
+}

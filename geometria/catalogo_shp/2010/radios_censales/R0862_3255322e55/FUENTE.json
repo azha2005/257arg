@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0862_3255322e55",
+  "shp": "R0862.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0862.dbf",
+      "bytes": 890,
+      "sha256": "d0bf43785d529216e06527ea1cef5f8fdd0754a6c16c06f741e2efe0ea6e4d49"
+    },
+    {
+      "archivo": "R0862.shp",
+      "bytes": 1604,
+      "sha256": "e22cba78023930cf835ed468fed38786a0cf85a619c1d796a5e256f1b33f9b3a"
+    },
+    {
+      "archivo": "R0862.shx",
+      "bytes": 116,
+      "sha256": "d8c9502174e28324bcc2fe4d4ee418aa8d75148f0473af5a104114e10d636f86"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/llambicampbella2h.zip!R0862.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2c9205f874",
+    "archivo": "santafe/ipec/2010/llambicampbella2h.zip!R0862.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5428177.5,
+      6549480.5,
+      5429371.0,
+      6550875.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/llambicampbella2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b231827a59b200d4d2054b9e996df8c5ead5ec35abdb2a0801fd55df993bb6cc"
+}

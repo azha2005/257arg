@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6805_04ab0d2466",
+  "shp": "M6805.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6805.dbf",
+      "bytes": 3538,
+      "sha256": "01f12699043aaa8def2af9cee0ff14ba6dd92aea924516b7bc27f9d81f83644e"
+    },
+    {
+      "archivo": "M6805.shp",
+      "bytes": 2436,
+      "sha256": "2dba0253685a0f2204f20974fc4a7acdf3eb4c7a35785d862ac6e2f721ef3d82"
+    },
+    {
+      "archivo": "M6805.shx",
+      "bytes": 228,
+      "sha256": "f7becf74d453e724b4c97649f9c1cd72eb52c59e0c53f6d34653cdad5476b9f3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/montefiorea3v.zip!M6805.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_03a740c606",
+    "archivo": "santafe/ipec/2010/montefiorea3v.zip!M6805.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5319178.0,
+      6716914.0,
+      5319546.0,
+      6717529.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/montefiorea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "50d93119f711d6dbbf6b01e15e513377dbd8017022624e88f4d1b46d946ed067"
+}

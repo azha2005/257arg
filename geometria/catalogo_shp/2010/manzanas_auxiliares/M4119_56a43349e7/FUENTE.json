@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4119_56a43349e7",
+  "shp": "M4119.shp",
+  "entidades": 65,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4119.dbf",
+      "bytes": 13191,
+      "sha256": "7ea082b93a6d75bb00bf390872cfc8a9789f2410ab5b13d0e0d3702d9e992620"
+    },
+    {
+      "archivo": "M4119.shp",
+      "bytes": 8908,
+      "sha256": "70bf181fb99833dcd598d19d1f81fb2af182c617424f88c8da2ad50c970f23de"
+    },
+    {
+      "archivo": "M4119.shx",
+      "bytes": 620,
+      "sha256": "beb9b7f8663bdbb7eefebac9b2dac53510be9b415ab6df450034e1a819229479"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/aaroncastellanosa3v.zip!M4119.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_cd5c40df9f",
+    "archivo": "santafe/ipec/2010/aaroncastellanosa3v.zip!M4119.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 65,
+    "registros_shx": 65,
+    "shape_type": 5,
+    "bbox": [
+      5281065.0,
+      6198420.5,
+      5281964.5,
+      6199608.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/aaroncastellanosa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "700f559e704650795b913af4279aa872e6bbc0d874cd7637c83cd47e59307b3e"
+}

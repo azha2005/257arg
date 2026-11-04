@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0900_45a1fb7911",
+  "shp": "R0900.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0900.dbf",
+      "bytes": 686,
+      "sha256": "f78e69fa96686004f6179f45bd2aacf808410e43537e6a09b182f0661b2cf3e5"
+    },
+    {
+      "archivo": "R0900.shp",
+      "bytes": 1164,
+      "sha256": "e8d472068af71d5767325c431c54c7cadab76bb25c94502f1890fe743d42341d"
+    },
+    {
+      "archivo": "R0900.shx",
+      "bytes": 108,
+      "sha256": "4d7c503755b9b74d6f1a68578cb6a544ef8ee5c15fd0c3365cd66c8b5fb95d00"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PavonArribaa3h.zip!R0900.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_83d1d3bfae",
+    "archivo": "santafe/ipec/2010/PavonArribaa3h.zip!R0900.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5422828.5,
+      6313792.5,
+      5423964.0,
+      6314940.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PavonArribaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f1bbdeb1bb82cb07b532c50e1397abc7d17e7594d50ab22816521b22f2536b4a"
+}

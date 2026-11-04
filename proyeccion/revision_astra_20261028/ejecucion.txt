@@ -1,0 +1,265 @@
+Universos [{"par": "2015p->2015b", "mesas_destino": 94170, "mesas_cruzadas": 91671, "mesas_usadas": 91597, "origen": "mesa", "distritos_ausentes": [], "cobertura_votos_positivos": 0.9730658135200337, "ganador": "CAMBIEMOS", "porcentaje_universo_completo": 51.40400614427477, "porcentaje_cruce_todos_positivos": 51.582080916833036, "porcentaje_objetivo_backtest": 51.582080916833036}, {"par": "2023p->2023b", "mesas_destino": 104520, "mesas_cruzadas": 104520, "mesas_usadas": 102293, "origen": "mesa", "distritos_ausentes": [], "cobertura_votos_positivos": 0.9858734046038635, "ganador": "LA LIBERTAD AVANZA", "porcentaje_universo_completo": 55.694542955372995, "porcentaje_cruce_todos_positivos": 55.75865945908314, "porcentaje_objetivo_backtest": 55.75865945908314}, {"par": "2019p->2023p", "mesas_destino": 104520, "mesas_cruzadas": 93011, "mesas_usadas": 91614, "origen": "circuito", "distritos_ausentes": ["21", "24"], "cobertura_votos_positivos": 0.8948244462381651, "ganador": "UNION POR LA PATRIA", "porcentaje_universo_completo": 36.688294770239054, "porcentaje_cruce_todos_positivos": 37.19859484243961, "porcentaje_objetivo_backtest": 37.19859484243961}, {"par": "2021bl->2023p", "mesas_destino": 104520, "mesas_cruzadas": 94369, "mesas_usadas": 92963, "origen": "circuito", "distritos_ausentes": ["21"], "cobertura_votos_positivos": 0.9077596983202086, "ganador": "UNION POR LA PATRIA", "porcentaje_universo_completo": 36.688294770239054, "porcentaje_cruce_todos_positivos": 37.29179762045325, "porcentaje_objetivo_backtest": 37.29179762045325}, {"par": "2023p->2025bl", "mesas_destino": 108992, "mesas_cruzadas": 106393, "mesas_usadas": 105581, "origen": "circuito", "distritos_ausentes": [], "cobertura_votos_positivos": 0.9775828665762811, "ganador": "LLA", "porcentaje_universo_completo": 40.65562906154361, "porcentaje_cruce_todos_positivos": 40.73556279093414, "porcentaje_objetivo_backtest": 40.73556279093414}]
+{
+  "alcance": "Revision local 2026-10-28; sondas, no validacion prospectiva",
+  "actas_reales": {
+    "n": 27,
+    "circuitos": 16,
+    "objetivo_amba": 29.291371004921462,
+    "pesos_por_fuerza": [
+      {
+        "fuerza": "LLA",
+        "actas": 27,
+        "peso_amba": 29.29137100492147
+      },
+      {
+        "fuerza": "FP",
+        "actas": 27,
+        "peso_amba": 29.29137100492147
+      },
+      {
+        "fuerza": "OTRAS",
+        "actas": 16,
+        "peso_amba": 15.700059641043472
+      },
+      {
+        "fuerza": "FIT",
+        "actas": 17,
+        "peso_amba": 17.15708132576509
+      },
+      {
+        "fuerza": "PU",
+        "actas": 16,
+        "peso_amba": 15.700059641043472
+      }
+    ],
+    "punto": {
+      "LLA": 43.03433909774736,
+      "FP": 35.78320339994911,
+      "OTRAS": 11.028414691482919,
+      "FIT": 4.869420331225154,
+      "PU": 5.284622479595466
+    }
+  },
+  "duplicado_sintetico": {
+    "n_original": 27,
+    "n_con_copia": 28,
+    "cambio_pp": {
+      "LLA": 0.05590149707578007,
+      "FP": -0.2383753899407921,
+      "OTRAS": 0.12873250473097642,
+      "FIT": 0.1010829598804559,
+      "PU": -0.047341571746449596
+    }
+  },
+  "parcial_sintetico": {
+    "n": 27,
+    "punto_finito": true,
+    "remuestras_finitas": 0,
+    "nboot": 400,
+    "banda_finita": false,
+    "probabilidad_que_reportaria": 0.0
+  },
+  "nacional_y_congreso": {
+    "nacional": {
+      "LLA": 43.03433909774736,
+      "FP": 35.78320339994911,
+      "OTRAS": 11.028414691482919,
+      "FIT": 4.869420331225154,
+      "PU": 5.284622479595466
+    },
+    "agregado_distritos_antes": {
+      "LLA": 43.048488309842845,
+      "FP": 35.78397023127388,
+      "OTRAS": 11.021439194744783,
+      "FIT": 4.866797240478739,
+      "PU": 5.279305023659775
+    },
+    "agregado_distritos_despues": {
+      "LLA": 41.60374417709696,
+      "FP": 34.07397468691943,
+      "OTRAS": 8.723192589070582,
+      "FIT": 4.714276727164123,
+      "PU": 8.082613589953343,
+      "PROV:Renovador": 0.8889656188251965,
+      "PROV:La Neuquinidad": 0.3076126066965528,
+      "PROV:Juntos Defendemos Río Negro": 0.33880059255322625,
+      "PROV:Primero los Salteños": 0.6763527256114898,
+      "PROV:Por San Juan": 0.4535215649358389,
+      "PROV:Defendamos Tierra del Fuego": 0.1369451211732707
+    }
+  },
+  "disponibilidad_listas": [
+    {
+      "fuerza": "LLA",
+      "distritos_sin_lista": [],
+      "votos_proyectados_sin_lista": 0.0,
+      "bancas_proyectadas_sin_lista": 0
+    },
+    {
+      "fuerza": "FP",
+      "distritos_sin_lista": [],
+      "votos_proyectados_sin_lista": 0.0,
+      "bancas_proyectadas_sin_lista": 0
+    },
+    {
+      "fuerza": "PU",
+      "distritos_sin_lista": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "votos_proyectados_sin_lista": 36082.689809256844,
+      "bancas_proyectadas_sin_lista": 0
+    },
+    {
+      "fuerza": "FIT",
+      "distritos_sin_lista": [
+        "05"
+      ],
+      "votos_proyectados_sin_lista": 5272.962895310845,
+      "bancas_proyectadas_sin_lista": 0
+    }
+  ],
+  "provincial_parcial_sintetico": {
+    "PU_sin_actas_pct": 23.74469874488128,
+    "PU_con_acta_que_no_informa_PU_pct": 14.246819246928766
+  },
+  "probabilidad_sintetica_tres_fuerzas": {
+    "p_supera_segundo": 1.0,
+    "p_primero": 0.6666666666666666
+  },
+  "icg_temporal": [
+    {
+      "fecha": "2019-10-27",
+      "prior_loo": 44.024780633482216,
+      "prior_solo_pasado": 43.40861749189783,
+      "real": 40.28,
+      "elecciones_futuras_en_loo": [
+        "2021-11-14",
+        "2023-10-22",
+        "2025-10-26"
+      ]
+    },
+    {
+      "fecha": "2021-11-14",
+      "prior_loo": 31.88544245314748,
+      "prior_solo_pasado": 30.03008731830257,
+      "real": 33.97,
+      "elecciones_futuras_en_loo": [
+        "2023-10-22",
+        "2025-10-26"
+      ]
+    },
+    {
+      "fecha": "2023-10-22",
+      "prior_loo": 33.62776837226075,
+      "prior_solo_pasado": 33.689687836770005,
+      "real": 36.78,
+      "elecciones_futuras_en_loo": [
+        "2025-10-26"
+      ]
+    },
+    {
+      "fecha": "2025-10-26",
+      "prior_loo": 35.424109696462665,
+      "prior_solo_pasado": 35.424109696462665,
+      "real": 40.66,
+      "elecciones_futuras_en_loo": []
+    }
+  ],
+  "comparacion_modelos_existentes": [
+    {
+      "par": "2015p_2015b",
+      "cortes": "0.2 a 25 por ciento",
+      "mae": {
+        "D": 0.7994454760471571,
+        "D_sin_ajuste": 0.657069251963729,
+        "E_sin_ajuste": 0.6050827373349852
+      }
+    },
+    {
+      "par": "2023p_2023b",
+      "cortes": "0.2 a 25 por ciento",
+      "mae": {
+        "D": 0.6071758526208345,
+        "D_sin_ajuste": 0.5118217892329094,
+        "E_sin_ajuste": 0.4756041351217874
+      }
+    },
+    {
+      "par": "2019p_2023p_circuito",
+      "cortes": "0.2 a 25 por ciento",
+      "mae": {
+        "D": 1.5711821394646481,
+        "D_sin_ajuste": 1.2950225341076675,
+        "E_sin_ajuste": 1.216506509374074
+      }
+    }
+  ],
+  "bandas_diagnostico_no_cobertura_pipeline": [
+    {
+      "par": "2019p_2023p_n30",
+      "esquema": "azar",
+      "n": 500,
+      "factor95": 1.06728535552652,
+      "cobertura_aproximada_simetrica_1_4": 0.99
+    },
+    {
+      "par": "2019p_2023p_n30",
+      "esquema": "como25",
+      "n": 500,
+      "factor95": 1.3083004823905144,
+      "cobertura_aproximada_simetrica_1_4": 0.958
+    },
+    {
+      "par": "2019p_2023p_n30",
+      "esquema": "twitter",
+      "n": 500,
+      "factor95": 1.4167700856623504,
+      "cobertura_aproximada_simetrica_1_4": 0.948
+    },
+    {
+      "par": "2021bl_2023p_n30",
+      "esquema": "azar",
+      "n": 500,
+      "factor95": 1.2341109044227014,
+      "cobertura_aproximada_simetrica_1_4": 0.97
+    },
+    {
+      "par": "2021bl_2023p_n30",
+      "esquema": "como25",
+      "n": 500,
+      "factor95": 1.2874099299137585,
+      "cobertura_aproximada_simetrica_1_4": 0.966
+    },
+    {
+      "par": "2021bl_2023p_n30",
+      "esquema": "twitter",
+      "n": 500,
+      "factor95": 1.8331079864860151,
+      "cobertura_aproximada_simetrica_1_4": 0.896
+    },
+    {
+      "par": "2023p_2025bl_n30",
+      "esquema": "azar",
+      "n": 500,
+      "factor95": 1.1138378995682339,
+      "cobertura_aproximada_simetrica_1_4": 0.988
+    },
+    {
+      "par": "2023p_2025bl_n30",
+      "esquema": "como25",
+      "n": 500,
+      "factor95": 1.3772782365857452,
+      "cobertura_aproximada_simetrica_1_4": 0.954
+    },
+    {
+      "par": "2023p_2025bl_n30",
+      "esquema": "twitter",
+      "n": 500,
+      "factor95": 1.6079699363403732,
+      "cobertura_aproximada_simetrica_1_4": 0.928
+    }
+  ]
+}

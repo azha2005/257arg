@@ -1,0 +1,1 @@
+const year=document.getElementById('year'),mode=document.getElementById('mode');function filter(){for(const r of document.querySelectorAll('tbody tr'))r.hidden=(year.value&&r.dataset.year!==year.value)||(mode.value&&r.dataset.mode!==mode.value)}year.onchange=filter;mode.onchange=filter;

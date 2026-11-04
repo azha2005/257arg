@@ -1,0 +1,97 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "2022; confirmar metadata",
+  "tipo": "municipios_gobiernos_locales",
+  "carpeta": "sin_fecha_verificada/municipios_gobiernos_locales/gobiernos_locales4_d91ab67ff2",
+  "shp": "gobiernos_locales4.shp",
+  "entidades": 2282,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "gobiernos_locales4.prj",
+      "bytes": 749,
+      "sha256": "fd0c281dc9eea0c3bffda45266e5eed985e4fde2e56a50b30360120a21b52f01"
+    },
+    {
+      "archivo": "gobiernos_locales4.shx",
+      "bytes": 18356,
+      "sha256": "566506ef2127fccf2b9707278c84ba9258494983079afddd46af21e854a6a0f0"
+    },
+    {
+      "archivo": "gobiernos_locales4.shp",
+      "bytes": 32194712,
+      "sha256": "6d46cebca573f918123b3dea1f046487a3c98dbc5dc0ade054a3aa4c5887c28e"
+    },
+    {
+      "archivo": "gobiernos_locales4.dbf",
+      "bytes": 6399145,
+      "sha256": "c23405435cd0f1ca70f5f131dad13471f6468645e6470893bbafa128b37093f0"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2022/gobiernos_locales4.zip!gobiernos_locales4.shp",
+  "metadata_original": {
+    "id_fuente": "indec2022_gobiernos_locales4",
+    "archivo": "indec/2022/gobiernos_locales4.zip!gobiernos_locales4.shp",
+    "tipo": "gobierno local",
+    "corte": "2022; confirmar metadata",
+    "cobertura": "Argentina",
+    "features": 2282,
+    "registros_shx": 2282,
+    "shape_type": 5,
+    "bbox": [
+      -8115263.596131114,
+      -7334429.847911487,
+      -5970900.0727072675,
+      -2485235.1584882597
+    ],
+    "campos": [
+      "fid",
+      "id",
+      "cpr",
+      "jur",
+      "cmu",
+      "fna",
+      "gna",
+      "nam",
+      "cat_gl",
+      "legisla",
+      "fdc",
+      "sag"
+    ],
+    "formato": "SHP",
+    "fuente": "https://geonode.indec.gob.ar/layers/geonode_data:geonode:gobiernos_locales4",
+    "nota": "Conservar diferencias con IGN y Georef; guardar conteo WFS hits.",
+    "licencia": "ver ficha de origen",
+    "url_descarga": "https://geonode.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:gobiernos_locales4&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\", GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]], PROJECTION[\"Popular Visualisation Pseudo Mercator\", AUTHORITY[\"EPSG\",\"1024\"]], PARAMETER[\"semi_minor\", 6378137.0], PARAMETER[\"latitude_of_origin\", 0.0], PARAMETER[\"central_meridian\", 0.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 0.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"3857\"]]",
+    "entidades_por_provincia": {
+      "62": 74,
+      "90": 112,
+      "02": 15,
+      "14": 427,
+      "06": 135,
+      "54": 77,
+      "18": 76,
+      "26": 47,
+      "10": 37,
+      "74": 67,
+      "38": 63,
+      "82": 365,
+      "42": 80,
+      "46": 18,
+      "30": 240,
+      "34": 37,
+      "22": 70,
+      "58": 57,
+      "50": 18,
+      "70": 19,
+      "78": 20,
+      "94": 3,
+      "86": 165,
+      "66": 60
+    },
+    "features_wfs_hits": 2282
+  },
+  "firma_componentes": "93f7d477f505504529f2c84b579951ac108379029804f3c19f7f8a2f10a95d3d"
+}

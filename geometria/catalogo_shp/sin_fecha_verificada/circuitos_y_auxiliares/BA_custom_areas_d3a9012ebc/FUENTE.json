@@ -1,0 +1,61 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "No se encontró evidencia suficiente para asignar año",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/BA_custom_areas_d3a9012ebc",
+  "shp": "BA_custom_areas.shp",
+  "entidades": 794,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "BA_custom_areas.cpg",
+      "bytes": 10,
+      "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2"
+    },
+    {
+      "archivo": "BA_custom_areas.dbf",
+      "bytes": 262214,
+      "sha256": "eb1ac6eba5b1c0b9ff6efa5a62b2acaecef4e621f0c2ddae126c481510ce488c"
+    },
+    {
+      "archivo": "BA_custom_areas.shp",
+      "bytes": 2286612,
+      "sha256": "3e5b3058309b56cedba1610d1173e95a22bffe06d8390225cf09820222522955"
+    },
+    {
+      "archivo": "BA_custom_areas.shx",
+      "bytes": 6452,
+      "sha256": "b6e52f26b4c920aebbcd2047acc25613ba41475fd2af91440048e7ba884925da"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/repos/tartagalensis/EleccionesARG/data/circuitos/custom/BA_custom_areas.shp",
+  "metadata_original": {
+    "archivo": "repos/tartagalensis/EleccionesARG/data/circuitos/custom/BA_custom_areas.shp",
+    "formato": "SHP",
+    "features": 794,
+    "shapes": 794,
+    "bbox": [
+      -63.39325646406888,
+      -41.043436031422466,
+      -56.66335992317388,
+      -33.26326577752352
+    ],
+    "campos": [
+      "area_0",
+      "area_1",
+      "PROV_REF_I",
+      "provincia",
+      "dpto_merge"
+    ],
+    "sha256": "3e5b3058309b56cedba1610d1173e95a22bffe06d8390225cf09820222522955",
+    "crs_wkt": null,
+    "url": "https://raw.githubusercontent.com/tartagalensis/EleccionesARG/a8f1abf5e838ff62c972da19d9a12f2ee71c53c0/data/circuitos/custom/BA_custom_areas.shp",
+    "fuente": "https://github.com/tartagalensis/EleccionesARG/tree/a8f1abf5e838ff62c972da19d9a12f2ee71c53c0",
+    "corte_declarado": "",
+    "nota": "Copia versionada 2021-09-12T18:00:25Z; fecha del commit no demuestra vigencia electoral; custom/clean son derivados"
+  },
+  "firma_componentes": "2032afab620147edb02522d6910683c6e461028c4e4a9a15eb7de274a96119f9"
+}

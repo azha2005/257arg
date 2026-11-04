@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4146_49baf95917",
+  "shp": "E4146.shp",
+  "entidades": 82,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4146.dbf",
+      "bytes": 29146,
+      "sha256": "e2fe13e78c9f4005b5bf8c762cfdd17e875a8e58b5166bc8d5827237d5322991"
+    },
+    {
+      "archivo": "E4146.shp",
+      "bytes": 7364,
+      "sha256": "2715c602428d67cc57268f777d249d21e491e60e1e541f66f13be0e870bf8e67"
+    },
+    {
+      "archivo": "E4146.shx",
+      "bytes": 756,
+      "sha256": "c0c759debd4e2992034b12b1fe4616a9afcd2d2f6e2c5efe369ee092d24c50d0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/castellanosa3h.zip!E4146.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ed3da3e93c",
+    "archivo": "santafe/ipec/2010/castellanosa3h.zip!E4146.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 82,
+    "registros_shx": 82,
+    "shape_type": 3,
+    "bbox": [
+      5335359.0,
+      6545986.5,
+      5336173.0,
+      6546901.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/castellanosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fbf855e4f4f887b766b8490b84bb2c3e6634b5e7e57a6e1011d3cc088e0867a6"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0171_4a74b80341",
+  "shp": "E0171.shp",
+  "entidades": 1433,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0171.dbf",
+      "bytes": 499294,
+      "sha256": "6f14bb3ce60cb25ea9f1d1e9f0cf1793e12c132fd22d4a5041c6097b3900787e"
+    },
+    {
+      "archivo": "E0171.shp",
+      "bytes": 128572,
+      "sha256": "3e081bbf67e30546d6ace03c0fa0c9d504ac3947343d7e82b28957f50685fccf"
+    },
+    {
+      "archivo": "E0171.shx",
+      "bytes": 11564,
+      "sha256": "52299c36f55b8495aa7fbb79d00b7a481fef083d18dd70b4feaf15e8254c5108"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sunchalesA1h.zip!E0171.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d48fbfba86",
+    "archivo": "santafe/ipec/2010/sunchalesA1h.zip!E0171.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1433,
+    "registros_shx": 1433,
+    "shape_type": 3,
+    "bbox": [
+      5349591.5,
+      6573909.0,
+      5353964.5,
+      6577615.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sunchalesA1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "bfc92cbd45b1737e501e7a6cfa4372e2b58571cfcb82a42a2eae30c64d1d1781"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4129_c13f493fe6",
+  "shp": "m4129.shp",
+  "entidades": 81,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4129.dbf",
+      "bytes": 16343,
+      "sha256": "b6b230581067b26292ef93d398e7e11ef553d713dd936552c3ca9881d82ab80c"
+    },
+    {
+      "archivo": "m4129.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4129.shp",
+      "bytes": 11708,
+      "sha256": "2f3b5a6656e9b83599f72ca983a5a54f158ecfd795288d69d17436326b890aa1"
+    },
+    {
+      "archivo": "m4129.shx",
+      "bytes": 748,
+      "sha256": "122b4ed920ebac5e8f0afc9c61221d7c7def3312f49a92ed0c121bf91b67f10f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PRESIDENTEROCA.zip!m4129.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_d2351efabc",
+    "archivo": "santafe/ipec/2022/PRESIDENTEROCA.zip!m4129.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 5,
+    "bbox": [
+      5345586.5,
+      6543936.5,
+      5347212.0,
+      6546904.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PRESIDENTEROCA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "cfd77b49dddd9df5b6aea0349fb1c6630527c7555de8829757730d238f4d1624"
+}

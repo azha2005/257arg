@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0184_acc631908e",
+  "shp": "E0184.shp",
+  "entidades": 1230,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0184.dbf",
+      "bytes": 428650,
+      "sha256": "fecf835c1e828c54d100bd2d88f6ecc89a52f8ecc20bd80cb040e47af1ba8506"
+    },
+    {
+      "archivo": "E0184.shp",
+      "bytes": 108484,
+      "sha256": "df8f1f7ae2f49fdfb09772260400dec93813a7ec99276f59e5f2bbdc1c5d6751"
+    },
+    {
+      "archivo": "E0184.shx",
+      "bytes": 9940,
+      "sha256": "6dc24b508de25b262d9e4a0311ed03002bb4e795f1e5e084d28b23a05ecf8b46"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjorgea1h.zip!E0184.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d2101188a2",
+    "archivo": "santafe/ipec/2010/sanjorgea1h.zip!E0184.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1230,
+    "registros_shx": 1230,
+    "shape_type": 3,
+    "bbox": [
+      5322398.0,
+      6467974.5,
+      5325538.0,
+      6472400.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjorgea1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "09b59b28a8f0431636681e61d61da92adf767357e66fac08ba0bd2a4eb35390c"
+}

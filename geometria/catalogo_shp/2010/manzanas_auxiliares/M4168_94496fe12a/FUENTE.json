@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4168_94496fe12a",
+  "shp": "M4168.shp",
+  "entidades": 17,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4168.dbf",
+      "bytes": 3735,
+      "sha256": "7401813945762b912c5e535479181566c0374072c1b945894d5a3dd285f31603"
+    },
+    {
+      "archivo": "M4168.shp",
+      "bytes": 2716,
+      "sha256": "5ca66ea77a75e14e83b1354a137f74ceedf6613ce4a2fe2e40189da3e0aec949"
+    },
+    {
+      "archivo": "M4168.shx",
+      "bytes": 236,
+      "sha256": "7cffff00486a7942d72c39051858cfcd6b9f0d476463f0452f20f594968f27ff"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/curupaitya3h.zip!M4168.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4c119d0f2b",
+    "archivo": "santafe/ipec/2010/curupaitya3h.zip!M4168.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 17,
+    "registros_shx": 17,
+    "shape_type": 5,
+    "bbox": [
+      5340779.0,
+      6636213.5,
+      5341560.0,
+      6637193.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/curupaitya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5f85768b8e36e95938586d4ad84849b941eea732144bfcb62e55980d9e438140"
+}

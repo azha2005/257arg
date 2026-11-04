@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0527_6713901a72",
+  "shp": "E0527.shp",
+  "entidades": 423,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0527.dbf",
+      "bytes": 147814,
+      "sha256": "9145800b81926d2072644d0c3e7b9c6dee696d6a117975076a6922065d7fd90e"
+    },
+    {
+      "archivo": "E0527.shp",
+      "bytes": 38364,
+      "sha256": "38c36936e2b0cc5f5dcf78a1ded40cdb6bc87ae4dfb36c0ec82fcb502a070a4b"
+    },
+    {
+      "archivo": "E0527.shx",
+      "bytes": 3484,
+      "sha256": "55480e0b199ff3abd83cb2fa4e8e3ef62e6bada39955d8ba8b94bd97ec494c2e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nelsona2v.zip!E0527.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_231b6d6c86",
+    "archivo": "santafe/ipec/2010/nelsona2v.zip!E0527.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 423,
+    "registros_shx": 423,
+    "shape_type": 3,
+    "bbox": [
+      5426727.0,
+      6540023.5,
+      5428356.5,
+      6542653.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nelsona2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c0f810b7681c192f5fdf17ea8da980ec1ab477140e46d126f7ae8b2d74d4e8b0"
+}

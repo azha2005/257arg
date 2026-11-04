@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6802_868d73000e",
+  "shp": "M6802.shp",
+  "entidades": 19,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6802.dbf",
+      "bytes": 4129,
+      "sha256": "034783341f50e4fb3d0ae42d4bedc9e982d64e16095ea6b4bcd92c9735786b86"
+    },
+    {
+      "archivo": "M6802.shp",
+      "bytes": 4028,
+      "sha256": "a1f7710b6b5416823bf5928620e374025de18fe7cfc689af41b64f2873fba21a"
+    },
+    {
+      "archivo": "M6802.shx",
+      "bytes": 252,
+      "sha256": "755925b55c4a3faa32933a65db47730fd366d00e295a957038a7f30076b2ddcf"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasbandurriasa3h.zip!M6802.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4056f3f43",
+    "archivo": "santafe/ipec/2010/lasbandurriasa3h.zip!M6802.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 19,
+    "registros_shx": 19,
+    "shape_type": 5,
+    "bbox": [
+      5358965.0,
+      6436885.0,
+      5359813.5,
+      6437908.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasbandurriasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a26e4a229835855d463a3f1c71a9b167c5d7040f6626151be8bc831b28fee441"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4117_5e01b86d2c",
+  "shp": "E4117.shp",
+  "entidades": 100,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4117.dbf",
+      "bytes": 35410,
+      "sha256": "be5e2bda891069245ecff29d0a57e2fc39ec34416063247b5766b65dd0d8c97d"
+    },
+    {
+      "archivo": "E4117.shp",
+      "bytes": 8900,
+      "sha256": "e74186a5729145397b49818a68e207f137c5286b46645af0b7a5dab917937f66"
+    },
+    {
+      "archivo": "E4117.shx",
+      "bytes": 900,
+      "sha256": "8adc4fe1a439b9a44558208d1fcf62bf90f3275fb067695eaeab575bfa8f196f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/loslaurelesa3v.zip!E4117.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c16da26096",
+    "archivo": "santafe/ipec/2010/loslaurelesa3v.zip!E4117.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 100,
+    "registros_shx": 100,
+    "shape_type": 3,
+    "bbox": [
+      5525176.5,
+      6750861.5,
+      5526044.5,
+      6753092.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/loslaurelesa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ea72f3b274ba2688f937d71ceb40cd8afd6449a10ee7f9d2773d1faabb25015a"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0305_78d6183fbd",
+  "shp": "M0305.shp",
+  "entidades": 215,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0305.dbf",
+      "bytes": 42741,
+      "sha256": "39ff32c151134ac029e484dd979d3bf639583055e80c5075eab10bf9370a3d47"
+    },
+    {
+      "archivo": "M0305.shp",
+      "bytes": 29388,
+      "sha256": "6c430c0d12c14d57ee7dd611f60751527605a638c230fdf0df617fdf2d09622b"
+    },
+    {
+      "archivo": "M0305.shx",
+      "bytes": 1820,
+      "sha256": "b93e2f982f4a3cebdad5a82e431ca5476f7f6a72ccf1bd5e930ef75ebfe4c9b7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/totorasa2h.zip!M0305.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7981936e14",
+    "archivo": "santafe/ipec/2010/totorasa2h.zip!M0305.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 215,
+    "registros_shx": 215,
+    "shape_type": 5,
+    "bbox": [
+      5388845.5,
+      6393425.5,
+      5391317.5,
+      6395528.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/totorasa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f3debff303684884b4661df5714d05533a8e3bdcb07dbdb64f80872cd2c72433"
+}

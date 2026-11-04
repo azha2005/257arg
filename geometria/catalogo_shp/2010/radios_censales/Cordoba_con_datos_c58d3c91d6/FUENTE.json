@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Cordoba_con_datos_c58d3c91d6",
+  "shp": "Cordoba_con_datos.shp",
+  "entidades": 4752,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Cordoba_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Cordoba_con_datos.shp",
+      "bytes": 7776376,
+      "sha256": "48686eaa77f1df7a3b08eaaeeffcc56b85ef59345be38b22d78b22a68a91439a"
+    },
+    {
+      "archivo": "Cordoba_con_datos.shx",
+      "bytes": 38116,
+      "sha256": "c3cdbc030f485b1650aecdf56fe41d38ba1424af65f62312de602497dd436392"
+    },
+    {
+      "archivo": "Cordoba_con_datos.dbf",
+      "bytes": 1943857,
+      "sha256": "2eb1fc09c6c9f183d6a26d7c4841781b483eed388f869fa30fd8a70b1f5891d3"
+    },
+    {
+      "archivo": "Cordoba_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Cordoba_con_datos.zip!Cordoba_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_14",
+    "archivo": "indec/2010/Codgeo_Cordoba_con_datos.zip!Cordoba_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Córdoba",
+    "features": 4752,
+    "registros_shx": 4752,
+    "shape_type": 5,
+    "bbox": [
+      3521762.312458092,
+      6124004.546746994,
+      3898182.4517367757,
+      6736173.549354035
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Cordoba_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 4752,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "0e5fb48ff79a8d7b73540d95d6444691ea1db5e901bbd9e0cb4b0e6e89391f42"
+}

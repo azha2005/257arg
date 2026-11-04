@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6811_5e6d8929f6",
+  "shp": "M6811.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6811.dbf",
+      "bytes": 3538,
+      "sha256": "ba9712f308c28d80512d7f7a0d4b53d3544766261534b56e6f0e9353d3d43f73"
+    },
+    {
+      "archivo": "M6811.shp",
+      "bytes": 2980,
+      "sha256": "4b365b80ac9421d987bcf4601c72c572afd7385a103268d3a1c97998cf8dec81"
+    },
+    {
+      "archivo": "M6811.shx",
+      "bytes": 228,
+      "sha256": "12a2163b5bd09900968f038269d1cbb2d167af12a6127e33c0daaa13bab07f55"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/wildermutha3h.zip!M6811.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_979ab9a33a",
+    "archivo": "santafe/ipec/2010/wildermutha3h.zip!M6811.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5366804.0,
+      6464661.0,
+      5368606.0,
+      6465882.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/wildermutha3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "cac21b42e90d22325d9b10d4c56872eccc00d1e73da181636c20527e1620a3e9"
+}

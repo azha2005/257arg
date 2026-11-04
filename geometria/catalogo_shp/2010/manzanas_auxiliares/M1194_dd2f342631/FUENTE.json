@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1194_dd2f342631",
+  "shp": "M1194.shp",
+  "entidades": 60,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1194.dbf",
+      "bytes": 12206,
+      "sha256": "3428773ec3f214ad3bf33c1157dbe8ed22bc0d0f67d292e7e292d4109cd7c021"
+    },
+    {
+      "archivo": "M1194.shp",
+      "bytes": 9636,
+      "sha256": "c7ec7b6c0f271ebd8a8c457f27d6c1b1bc1ba4c8ad71aca6339688eb606eab0d"
+    },
+    {
+      "archivo": "M1194.shx",
+      "bytes": 580,
+      "sha256": "12fe7efc2a9545120abec081b2613dbd5944add04d743f11e99bb32170395913"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/veraypintadoA3h.zip!M1194.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1a4680379d",
+    "archivo": "santafe/ipec/2010/veraypintadoA3h.zip!M1194.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 60,
+    "registros_shx": 60,
+    "shape_type": 5,
+    "bbox": [
+      5466651.0,
+      6665526.0,
+      5467830.0,
+      6666468.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/veraypintadoA3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "09e1e37d13089242dfbd6c49ed1a9569d1769757ee06f72f7d5e04d769ba8538"
+}

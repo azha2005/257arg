@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8670_945dcf65d4",
+  "shp": "E8670.shp",
+  "entidades": 25733,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8670.dbf",
+      "bytes": 8955694,
+      "sha256": "a611f40d8a87f60d370c0ad79f4fb305dd8355ecc7dfd632af70d2a026f96f99"
+    },
+    {
+      "archivo": "E8670.shp",
+      "bytes": 2478012,
+      "sha256": "c4848791949dcb602d96fdb6fa7f50bad01395e5f25371825e89d74c4f7a1dc2"
+    },
+    {
+      "archivo": "E8670.shx",
+      "bytes": 205964,
+      "sha256": "9f95cd6b70a1e7981ff77abd973420dedc3a223d671a58ace18ea60a9c330282"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/rosarioa0v.zip!E8670.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9ea2c9acd5",
+    "archivo": "santafe/ipec/2010/rosarioa0v.zip!E8670.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25733,
+    "registros_shx": 25733,
+    "shape_type": 3,
+    "bbox": [
+      5425446.0,
+      6344708.5,
+      5443294.5,
+      6363426.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/rosarioa0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "58ba0ab8721d8c808e386ed854a9d86e32f766871dc8b9def6d13122d57574c9"
+}

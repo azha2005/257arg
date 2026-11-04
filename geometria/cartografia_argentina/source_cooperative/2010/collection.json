@@ -1,0 +1,198 @@
+{
+  "type": "Collection",
+  "id": "2010",
+  "stac_version": "1.1.0",
+  "description": "Collection: 2010",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Argentina Census Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Argentina Census Catalog"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "proj:epsg": 3857,
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 10,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -58.5351562,
+    -34.7414862,
+    10
+  ],
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 52406,
+  "table:row_count": 52406,
+  "table:primary_geometry": "geometry",
+  "table:columns": [
+    {
+      "name": "COD_2010",
+      "type": "string"
+    },
+    {
+      "name": "PROV",
+      "type": "string"
+    },
+    {
+      "name": "DEPTO",
+      "type": "string"
+    },
+    {
+      "name": "FRACC",
+      "type": "string"
+    },
+    {
+      "name": "RADIO",
+      "type": "string"
+    },
+    {
+      "name": "SEGMENTOS",
+      "type": "int64"
+    },
+    {
+      "name": "OBS2010",
+      "type": "string"
+    },
+    {
+      "name": "BASICO",
+      "type": "string"
+    },
+    {
+      "name": "AMPLIADO",
+      "type": "string"
+    },
+    {
+      "name": "TIPO",
+      "type": "string"
+    },
+    {
+      "name": "EXPH_MEAN",
+      "type": "double"
+    },
+    {
+      "name": "EXPH_MIN",
+      "type": "int64"
+    },
+    {
+      "name": "EXPH_MAX",
+      "type": "int64"
+    },
+    {
+      "name": "B_POB_TOT",
+      "type": "double"
+    },
+    {
+      "name": "B_VIV_P",
+      "type": "double"
+    },
+    {
+      "name": "B_VIV_C",
+      "type": "double"
+    },
+    {
+      "name": "B_VIV_TOT",
+      "type": "double"
+    },
+    {
+      "name": "A_CASOS",
+      "type": "double"
+    },
+    {
+      "name": "A_POB_TOT",
+      "type": "double"
+    },
+    {
+      "name": "A_VIV_P",
+      "type": "double"
+    },
+    {
+      "name": "A_VIV_C",
+      "type": "double"
+    },
+    {
+      "name": "A_VIV_TOT",
+      "type": "double"
+    },
+    {
+      "name": "D_AB_CASOS",
+      "type": "int64"
+    },
+    {
+      "name": "D_AB_POB",
+      "type": "int64"
+    },
+    {
+      "name": "DP_AB_POB",
+      "type": "int64"
+    },
+    {
+      "name": "geometry",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -74.000444,
+          -89.00000000000217,
+          -26.25206971191592,
+          -21.7807729
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "assets": {
+    "metadata": {
+      "href": "./metadata.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "overview": {
+      "href": "./overview.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "roles": [
+        "data"
+      ]
+    },
+    "census-data": {
+      "href": "./census-data.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "radios": {
+      "href": "./radios.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  }
+}

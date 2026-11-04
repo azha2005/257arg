@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1506_4888aec3bb",
+  "shp": "M1506.shp",
+  "entidades": 31,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1506.dbf",
+      "bytes": 6493,
+      "sha256": "176d9577d9deff3206b35d2438847ee893ddf9735b82019e301dbd6b2409dc9d"
+    },
+    {
+      "archivo": "M1506.shp",
+      "bytes": 6652,
+      "sha256": "0f5d9e613548afd34e47d784b6c68f7dc6ffb84dbfb19d34a9cd7330220189fe"
+    },
+    {
+      "archivo": "M1506.shx",
+      "bytes": 348,
+      "sha256": "05a66f9a72403541ea37db6f3353fbb725bd445e2342491b9df98a89e8d737a4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arroyoaguiara3v.zip!M1506.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1e594230a3",
+    "archivo": "santafe/ipec/2010/arroyoaguiara3v.zip!M1506.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 31,
+    "registros_shx": 31,
+    "shape_type": 5,
+    "bbox": [
+      5436000.0,
+      6522247.0,
+      5437643.5,
+      6523980.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arroyoaguiara3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "bff3381d150c73636f68cbb67e4eeed64017805ca716f9f02c3fa8e298248c7f"
+}

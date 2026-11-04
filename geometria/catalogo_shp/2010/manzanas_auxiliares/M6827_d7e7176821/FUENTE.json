@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6827_d7e7176821",
+  "shp": "M6827.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6827.dbf",
+      "bytes": 583,
+      "sha256": "933c85b146e55c715ec06e49c252aa4f2b7de7bffa8419b9781c8e639508c285"
+    },
+    {
+      "archivo": "M6827.shp",
+      "bytes": 236,
+      "sha256": "3e8dc275780a0437bc629198679e0051f033a3e733d8714046ac865a8a303c90"
+    },
+    {
+      "archivo": "M6827.shx",
+      "bytes": 108,
+      "sha256": "47070bc6d0e064191562cccaf7e6f24e456556ab884830a9d77065464e9f9259"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/barriocicarellia3v.zip!M6827.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_12814315d2",
+    "archivo": "santafe/ipec/2010/barriocicarellia3v.zip!M6827.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5375652.5,
+      6391687.0,
+      5375838.0,
+      6392008.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/barriocicarellia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ca465ce35976bf8a492847cc5e99601d883d65e23ebf012b38fdbbe33c7bcf1b"
+}

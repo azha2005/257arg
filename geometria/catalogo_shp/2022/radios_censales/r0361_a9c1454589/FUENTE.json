@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0361_a9c1454589",
+  "shp": "r0361.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0361.dbf",
+      "bytes": 3017,
+      "sha256": "20794a59cba6b7f00c926744eb1157ef0909ca9dba3e9a2a72332df37f7c86bb"
+    },
+    {
+      "archivo": "r0361.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0361.shp",
+      "bytes": 5884,
+      "sha256": "bc091a87aae01c43b55984ae1373fd12dfaae53ffe6728e0e154d2cf8c8b8ce7"
+    },
+    {
+      "archivo": "r0361.shx",
+      "bytes": 204,
+      "sha256": "39460c194c95225fe7997956110b93c46d63183cc10b25aeafb2d9334e0a04ed"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/AREQUITO.zip!r0361.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_fa5c1c0c99",
+    "archivo": "santafe/ipec/2022/AREQUITO.zip!r0361.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5361518.0,
+      6331050.5,
+      5364190.0,
+      6333522.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/AREQUITO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "10f24436132b9a5ba22f7c9b2421a951216a37a787f9818f9371e7453935bdc4"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4125_4e3346ebe7",
+  "shp": "M4125.shp",
+  "entidades": 29,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4125.dbf",
+      "bytes": 6099,
+      "sha256": "52a05763b332402d14314ab41bfdec53d676e5aa6bed47b6ae56e2bf73d0ce6a"
+    },
+    {
+      "archivo": "M4125.shp",
+      "bytes": 5836,
+      "sha256": "aa41479ebc4fc48517a0800421027d0cf60ecfab728a66b87949dd53fa8fbf6b"
+    },
+    {
+      "archivo": "M4125.shx",
+      "bytes": 332,
+      "sha256": "77090a9d7f276dee45de2d2a92a77cc9f40dedf3098e9dfa514cc110c76b597f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/luciovlopeza3h.zip!M4125.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f5f062042e",
+    "archivo": "santafe/ipec/2010/luciovlopeza3h.zip!M4125.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 29,
+    "registros_shx": 29,
+    "shape_type": 5,
+    "bbox": [
+      5403747.0,
+      6380049.5,
+      5405132.0,
+      6380858.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/luciovlopeza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "962013bdecf9c5ba215c5b05d94c0c624c2fbe991c140f6aca40737f950b898d"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1456_4791c9d820",
+  "shp": "M1456.shp",
+  "entidades": 57,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1456.dbf",
+      "bytes": 11615,
+      "sha256": "b4ae82ab71f264d6c8b7abbf2dd9be0a1abaef1554d3dac2b893a4c7b5189fc9"
+    },
+    {
+      "archivo": "M1456.shp",
+      "bytes": 8252,
+      "sha256": "09d6bebf073b61389250dbb361ce6a1bb08dc63393e848268719011f85177526"
+    },
+    {
+      "archivo": "M1456.shx",
+      "bytes": 556,
+      "sha256": "be8e55a5d5e450a84eb044a23db9bbb525b4e7b360d30d42c3d4da01e843a542"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Ambrosettia2h.zip!M1456.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_73c6eac272",
+    "archivo": "santafe/ipec/2010/Ambrosettia2h.zip!M1456.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 57,
+    "registros_shx": 57,
+    "shape_type": 5,
+    "bbox": [
+      5347383.5,
+      6678563.5,
+      5348526.5,
+      6679702.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Ambrosettia2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "00473b237001a406ec8ccbe966b86695cab47c666398183176452b5a7449cd65"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6807_0eb426815e",
+  "shp": "M6807.shp",
+  "entidades": 47,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6807.dbf",
+      "bytes": 9645,
+      "sha256": "a5081f9aec95a02595e49216b93c928441b517660615b824450ad68078f9f784"
+    },
+    {
+      "archivo": "M6807.shp",
+      "bytes": 10012,
+      "sha256": "f6c0264ade3513ebdbc9814060ae7c63f655d5be5da5fb7dafe29eebdd256b93"
+    },
+    {
+      "archivo": "M6807.shx",
+      "bytes": 476,
+      "sha256": "47df0fa6b162149ccea69c104579685f930725da18a7ba2c85ca94303725ba36"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/guadalupenortea3v.zip!M6807.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dff8e68500",
+    "archivo": "santafe/ipec/2010/guadalupenortea3v.zip!M6807.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 47,
+    "registros_shx": 47,
+    "shape_type": 5,
+    "bbox": [
+      5542322.0,
+      6798240.5,
+      5543098.0,
+      6799804.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/guadalupenortea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5ab38aa11aa5eb088ecedd40e18d40de5479486ed6c0285e0df38f0f8a312be1"
+}

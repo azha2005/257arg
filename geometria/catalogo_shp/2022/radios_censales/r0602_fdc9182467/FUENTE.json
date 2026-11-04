@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0602_fdc9182467",
+  "shp": "r0602.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0602.dbf",
+      "bytes": 1652,
+      "sha256": "166ffbbd3500c084d8499efb2b6a9414ef5bfba0e10c198094bd84e53f6ab10a"
+    },
+    {
+      "archivo": "r0602.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0602.shp",
+      "bytes": 3668,
+      "sha256": "74ecc02063b8818ad64ca8e04f4b641facda54ad94a3ad02d5ea690911dc08f4"
+    },
+    {
+      "archivo": "r0602.shx",
+      "bytes": 148,
+      "sha256": "b2a1d89c5da8cfd23e6154868e5d93f3cd3d48de0b3f957cb187a82f33a183a7"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAGUILLERMINA.zip!r0602.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_b57d8cb28c",
+    "archivo": "santafe/ipec/2022/VILLAGUILLERMINA.zip!r0602.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5552108.0,
+      6874985.0,
+      5554824.0,
+      6877778.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAGUILLERMINA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3bb141cf6d5df62443f9f19000ec21b2294c076f363a7621f7f0519970d88e6e"
+}

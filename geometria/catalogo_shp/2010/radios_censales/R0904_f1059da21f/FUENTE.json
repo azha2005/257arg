@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0904_f1059da21f",
+  "shp": "R0904.shp",
+  "entidades": 5,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0904.dbf",
+      "bytes": 1502,
+      "sha256": "dc66ce3a5a04afaa2a48f9131aa55071eb75429b8427c7279f79cbf0ad856292"
+    },
+    {
+      "archivo": "R0904.shp",
+      "bytes": 4764,
+      "sha256": "0248b4d0df11e1e928cadff744f8b99a925c403b84566c605e9113905d1d45c9"
+    },
+    {
+      "archivo": "R0904.shx",
+      "bytes": 140,
+      "sha256": "ef15440d5cd2acbdb3cff6573c9fcfbc148645070657ed3a6bed3aa7d42c0bbf"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Cayastaa2v.zip!R0904.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c15cadb3d9",
+    "archivo": "santafe/ipec/2010/Cayastaa2v.zip!R0904.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 5,
+    "registros_shx": 5,
+    "shape_type": 5,
+    "bbox": [
+      5484042.0,
+      6546616.0,
+      5487374.5,
+      6551001.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Cayastaa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4c054077a4d1b1893859f24ab0fd0352db7997a9f5bc87884e0c5df31bea6c60"
+}

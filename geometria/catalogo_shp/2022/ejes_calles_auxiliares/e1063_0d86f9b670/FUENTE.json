@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1063_0d86f9b670",
+  "shp": "e1063.shp",
+  "entidades": 144,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1063.dbf",
+      "bytes": 43522,
+      "sha256": "09198f447bedd14224b464f3e607cb54a49d3095b7a4ff8b29c25d8b6fcf0fd7"
+    },
+    {
+      "archivo": "e1063.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1063.shp",
+      "bytes": 12852,
+      "sha256": "065e20914a59534fac8f92fa80875141c7190492e4858ecd640a9b378b3cfe3c"
+    },
+    {
+      "archivo": "e1063.shx",
+      "bytes": 1252,
+      "sha256": "79c4abd08f964a359de006c292ea2eb695a54fb79bcd3173feb45c2ea421d5f8"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANEDUARDO.zip!e1063.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1d53ca2f89",
+    "archivo": "santafe/ipec/2022/SANEDUARDO.zip!e1063.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 144,
+    "registros_shx": 144,
+    "shape_type": 3,
+    "bbox": [
+      5305498.5,
+      6250023.5,
+      5307121.0,
+      6251912.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANEDUARDO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "127786e6ce26242d65c37eec55fa3e0f3fda1655dd903b12e91e5079756147a4"
+}

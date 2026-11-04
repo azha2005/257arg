@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0755_39b32e39e4",
+  "shp": "M0755.shp",
+  "entidades": 151,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0755.dbf",
+      "bytes": 30133,
+      "sha256": "504c7151f9f85fccb74720ca882355aafbc6fb7f3052ffb96751744fb10d51fb"
+    },
+    {
+      "archivo": "M0755.shp",
+      "bytes": 24636,
+      "sha256": "4436c7b1b83b52753da9ae3866faac3fcdd1588512012a5ce18dea8a4ee157b8"
+    },
+    {
+      "archivo": "M0755.shx",
+      "bytes": 1308,
+      "sha256": "a621a8ffdac14b72ac42d816041b6dc9dde24cac52cfdd0a5f3a293ed5aaec4d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santaclaradesaguiera2h.zip!M0755.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_27ced9119c",
+    "archivo": "santafe/ipec/2010/santaclaradesaguiera2h.zip!M0755.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 151,
+    "registros_shx": 151,
+    "shape_type": 5,
+    "bbox": [
+      5325365.5,
+      6531323.0,
+      5327714.0,
+      6532967.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santaclaradesaguiera2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f563356ac492d7137c15183c6d0e8fd677040b44f77de64cc8e7c5e91cb51e28"
+}

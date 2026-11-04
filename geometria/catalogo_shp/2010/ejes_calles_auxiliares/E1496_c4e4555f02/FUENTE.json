@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1496_c4e4555f02",
+  "shp": "E1496.shp",
+  "entidades": 179,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1496.dbf",
+      "bytes": 62902,
+      "sha256": "413a6ddb425d34e7a8a73f404c816d6cab85d306700963df6ffb8d8b1adf7853"
+    },
+    {
+      "archivo": "E1496.shp",
+      "bytes": 16012,
+      "sha256": "78a3c9f54653ea70ebcb423911367614fbd60bd092699d4407712b0323ff0511"
+    },
+    {
+      "archivo": "E1496.shx",
+      "bytes": 1532,
+      "sha256": "49e1761bfdb105bf8ff44987f30d4bd16daad04ceab439f4a913becc107d32b2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coroneldomingueza3h.zip!E1496.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_17de5ac9b0",
+    "archivo": "santafe/ipec/2010/coroneldomingueza3h.zip!E1496.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 179,
+    "registros_shx": 179,
+    "shape_type": 3,
+    "bbox": [
+      5430815.0,
+      6328179.5,
+      5433276.0,
+      6329082.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coroneldomingueza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "720493bc934eb3523b56251b47b8338b386a60a8673f016da3ec6301b050573c"
+}

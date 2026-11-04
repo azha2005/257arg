@@ -1,0 +1,120 @@
+{
+  "id": "sanluis_senadores_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "San Luis",
+  "distrito": "19",
+  "fecha": "11/05/2025",
+  "cargo": "Senadores provinciales",
+  "nivel": "departamentos",
+  "origen": "Senadores provinciales 11/05/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "Sólo los departamentos que eligieron este cargo. Transcripción verificada visualmente del definitivo. Diputados y senadores se superponen en Belgrano; nunca se suman entre sí. Muy pocas unidades: las estimaciones no identifican transferencias precisas.",
+  "base": "votos emitidos",
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 0.34129526361002316,
+  "pendientes": [],
+  "departamentos_cargo": [
+    "Ayacucho",
+    "Belgrano",
+    "Pedernera",
+    "San Martín"
+  ],
+  "fuente": "https://electoral.justiciasanluis.gov.ar/wp-content/uploads/2025/05/acordada_15_tep_2025.pdf",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 4,
+  "categorias_origen": 7,
+  "rango": 4,
+  "condicion": 11.484369526364153,
+  "lambda_": 1e-05,
+  "validacion_cruzada": {
+    "0.001": 0.060482338199963764,
+    "0.0001": 0.022988305974821203,
+    "1e-05": 0.01869964330102847,
+    "1e-06": 0.020190713033062163,
+    "1e-07": 0.03326737265028738
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 0.9150267105836226,
+  "desviacion_max_margen_destino_pp": 0.5115175412813588,
+  "electores_o_votos_origen": 85193.0,
+  "electores_o_votos_destino": 93762.0,
+  "filas": [
+    {
+      "origen": "Ahora San Luis",
+      "peso": 45.04,
+      "dif_variante_pp": 15.67,
+      "sensibilidad_pp": 43.0,
+      "ancho_intervalo_pp": 64.73,
+      "separacion_pp": 12.28,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Justicialista",
+      "peso": 18.91,
+      "dif_variante_pp": 13.43,
+      "sensibilidad_pp": 30.37,
+      "ancho_intervalo_pp": 78.0,
+      "separacion_pp": 65.93,
+      "no_identificada": true
+    },
+    {
+      "origen": "Tercera Posición",
+      "peso": 7.72,
+      "dif_variante_pp": 22.63,
+      "sensibilidad_pp": 68.7,
+      "ancho_intervalo_pp": 81.41,
+      "separacion_pp": 27.07,
+      "no_identificada": true
+    },
+    {
+      "origen": "¡Viva la Libertad! ¡Carajo!",
+      "peso": 10.86,
+      "dif_variante_pp": 20.56,
+      "sensibilidad_pp": 85.6,
+      "ancho_intervalo_pp": 81.62,
+      "separacion_pp": 45.65,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente por la Justicia Social",
+      "peso": 2.24,
+      "dif_variante_pp": 46.26,
+      "sensibilidad_pp": 83.38,
+      "ancho_intervalo_pp": 61.7,
+      "separacion_pp": 25.28,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 1.86,
+      "dif_variante_pp": 53.91,
+      "sensibilidad_pp": 83.56,
+      "ancho_intervalo_pp": 66.52,
+      "separacion_pp": 28.77,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 13.37,
+      "dif_variante_pp": 23.93,
+      "sensibilidad_pp": 81.71,
+      "ancho_intervalo_pp": 83.26,
+      "separacion_pp": 15.23,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 1.0
+}

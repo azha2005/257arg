@@ -1,0 +1,99 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/radios_censales2_0d14e1c25f",
+  "shp": "radios_censales2.shp",
+  "entidades": 66515,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "radios_censales2.prj",
+      "bytes": 749,
+      "sha256": "fd0c281dc9eea0c3bffda45266e5eed985e4fde2e56a50b30360120a21b52f01"
+    },
+    {
+      "archivo": "radios_censales2.shp",
+      "bytes": 96544848,
+      "sha256": "133ef4a3709a33d632f233fea9f130e6c2c7cfbdc09b709e850080eb45c5f601"
+    },
+    {
+      "archivo": "radios_censales2.shx",
+      "bytes": 532220,
+      "sha256": "734ffd95c4e67e605de2b833dafe0640504d46a4b245b602c1ce5c528e0f11a9"
+    },
+    {
+      "archivo": "radios_censales2.dbf",
+      "bytes": 153982610,
+      "sha256": "08d7e819624a60ec398a002f63b99384f74369e192d2510836bc5b1e06d95e05"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2022/radios_censales_nacional.zip!radios_censales2.shp",
+  "metadata_original": {
+    "id_fuente": "indec2022_radios",
+    "archivo": "indec/2022/radios_censales_nacional.zip!radios_censales2.shp",
+    "tipo": "radio censal",
+    "corte": "2022",
+    "cobertura": "Argentina",
+    "features": 66515,
+    "registros_shx": 66515,
+    "shape_type": 5,
+    "bbox": [
+      -8237642.3187022,
+      -37718348.651400864,
+      -2782987.2698318935,
+      -2485234.6175608193
+    ],
+    "campos": [
+      "fid",
+      "id",
+      "cpr",
+      "jur",
+      "cde",
+      "dpto",
+      "cfn",
+      "cro",
+      "tro",
+      "cod_indec",
+      "sag"
+    ],
+    "formato": "SHP",
+    "fuente": "https://geonode.indec.gob.ar/layers/geonode_data:geonode:radios_censales2",
+    "nota": "Obtener hits WFS para contrastar cantidad; no suponer cobertura completa por éxito HTTP.",
+    "licencia": "sin verificar",
+    "url_descarga": "https://geonode.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:radios_censales2&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\", GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]], PROJECTION[\"Popular Visualisation Pseudo Mercator\", AUTHORITY[\"EPSG\",\"1024\"]], PARAMETER[\"semi_minor\", 6378137.0], PARAMETER[\"latitude_of_origin\", 0.0], PARAMETER[\"central_meridian\", 0.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 0.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"3857\"]]",
+    "entidades_por_provincia": {
+      "06": 23901,
+      "66": 1830,
+      "30": 3224,
+      "02": 3820,
+      "86": 1096,
+      "18": 1985,
+      "26": 1028,
+      "82": 5386,
+      "14": 6720,
+      "22": 1947,
+      "70": 888,
+      "74": 894,
+      "50": 2379,
+      "38": 1019,
+      "42": 904,
+      "54": 2012,
+      "90": 2320,
+      "10": 693,
+      "78": 463,
+      "62": 1215,
+      "34": 981,
+      "94": 238,
+      "58": 1075,
+      "46": 497
+    },
+    "campo_codigo": "cod_indec",
+    "codigos_distintos": 66515,
+    "codigos_vacios": 0,
+    "features_wfs_hits": 66515
+  },
+  "firma_componentes": "bbbd964812569dc0ad45691384c73eb3e588b09ce8664e824ccc44302cb38ab5"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0483_91ba6c5751",
+  "shp": "E0483.shp",
+  "entidades": 584,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0483.dbf",
+      "bytes": 203842,
+      "sha256": "d04279a51c830ff6f798c3bd54491d81b869bde29fb8488e6fd10a893909ad31"
+    },
+    {
+      "archivo": "E0483.shp",
+      "bytes": 52468,
+      "sha256": "ace59787bee3dd51402e1add0b70c49509e49ec28dc29686ad9c0d1287340550"
+    },
+    {
+      "archivo": "E0483.shx",
+      "bytes": 4772,
+      "sha256": "19a6e00e5c1fa584483b77d179f1809c19c4c88fe8cfa525b9b5a9cc1e55e995"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/humbertoprimoa2h.zip!E0483.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4e98a512c5",
+    "archivo": "santafe/ipec/2010/humbertoprimoa2h.zip!E0483.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 584,
+    "registros_shx": 584,
+    "shape_type": 3,
+    "bbox": [
+      5368459.5,
+      6583495.5,
+      5371900.0,
+      6586085.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/humbertoprimoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a3a890e4dcbfebcf10425581c945418ae2ca16437eae69aa68fbd32ea1472394"
+}

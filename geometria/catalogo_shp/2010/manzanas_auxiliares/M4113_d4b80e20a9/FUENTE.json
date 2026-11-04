@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4113_d4b80e20a9",
+  "shp": "M4113.shp",
+  "entidades": 84,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4113.dbf",
+      "bytes": 16934,
+      "sha256": "6df6eb3d91c92072992aab04694554fa9826ac0bbc2e9b32dfb901e07a72d1e0"
+    },
+    {
+      "archivo": "M4113.shp",
+      "bytes": 12260,
+      "sha256": "a5281c5e4a9c92648674c42c2512d8fb6f71041f37f3c7a0e4caeae4a0acc47f"
+    },
+    {
+      "archivo": "M4113.shx",
+      "bytes": 772,
+      "sha256": "6d8e0ce2813589249161d89f02099114e767d352027cd52a6907871ec121e127"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanagustina3h.zip!M4113.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4245abe8f",
+    "archivo": "santafe/ipec/2010/sanagustina3h.zip!M4113.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 84,
+    "registros_shx": 84,
+    "shape_type": 5,
+    "bbox": [
+      5410230.5,
+      6494337.0,
+      5411655.0,
+      6495385.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanagustina3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "093fe2f66a8e3ae032daf586ce599061f9ec4cc337480820975f22c1ee8fc921"
+}

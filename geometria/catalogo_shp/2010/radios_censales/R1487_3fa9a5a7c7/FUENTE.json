@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1487_3fa9a5a7c7",
+  "shp": "R1487.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1487.dbf",
+      "bytes": 686,
+      "sha256": "055ff4dc4dd4ca115f9370b64e078c4d6bb8aff5748f029a486bec96e86d25ba"
+    },
+    {
+      "archivo": "R1487.shp",
+      "bytes": 844,
+      "sha256": "2367f257ef21ea0471ada58d3492d12472b379d4fd81be116e5175c3da295362"
+    },
+    {
+      "archivo": "R1487.shx",
+      "bytes": 108,
+      "sha256": "0d63561e8caff343be6700bc4ec97a8fd8a5f04585f2f6a21ad20dc2874fd027"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/huanquerosa3h.zip!R1487.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_647a9d53d7",
+    "archivo": "santafe/ipec/2010/huanquerosa3h.zip!R1487.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5381740.5,
+      6679398.5,
+      5382998.0,
+      6680579.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/huanquerosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "873e3a75326a2189cf00811ca12e149ddb5c31e2f71323afc700d03c10a62661"
+}

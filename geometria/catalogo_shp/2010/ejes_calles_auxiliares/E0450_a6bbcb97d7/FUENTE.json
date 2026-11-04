@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0450_a6bbcb97d7",
+  "shp": "E0450.shp",
+  "entidades": 341,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0450.dbf",
+      "bytes": 119278,
+      "sha256": "4e4775746bbd6b7c4e37d4962d4b1ff12579abe6441cba8f23a5e4c47d5eae49"
+    },
+    {
+      "archivo": "E0450.shp",
+      "bytes": 30444,
+      "sha256": "65f414cdcf0ff9d0133607919845fe61b1ae2e8a01a888ada3a4f0777696e971"
+    },
+    {
+      "archivo": "E0450.shx",
+      "bytes": 2828,
+      "sha256": "3af16d59426859506ca9352aa273c58c4567fa035b92a5e84eb58cfe653902fc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/teodelinaa2h.zip!E0450.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_13eb846eab",
+    "archivo": "santafe/ipec/2010/teodelinaa2h.zip!E0450.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 341,
+    "registros_shx": 341,
+    "shape_type": 3,
+    "bbox": [
+      5357743.5,
+      6215271.5,
+      5360189.5,
+      6217541.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/teodelinaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2695d40dd801671eeeadd8fb8ac94baeade301a282ef171f66162ff23b22f06b"
+}

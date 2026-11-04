@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0816_0d963ac8a6",
+  "shp": "m0816.shp",
+  "entidades": 465,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0816.dbf",
+      "bytes": 91991,
+      "sha256": "6d4f82ece22def0d9bab572bc36183fe4e14ff3257b9dfeffd50402ba4266526"
+    },
+    {
+      "archivo": "m0816.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0816.shp",
+      "bytes": 84908,
+      "sha256": "60a712d4576d677f2fe4f7ef3352e76b341e543be86bc83268bf5ac26bd78d78"
+    },
+    {
+      "archivo": "m0816.shx",
+      "bytes": 3820,
+      "sha256": "24f2370ca06f5080c2b05736049013e9b4c8e4408435bda421bc5f7cb9614434"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PUEBLOESTHER.zip!m0816.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_373c102ae4",
+    "archivo": "santafe/ipec/2022/PUEBLOESTHER.zip!m0816.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 465,
+    "registros_shx": 465,
+    "shape_type": 5,
+    "bbox": [
+      5444442.5,
+      6338725.5,
+      5449632.5,
+      6343104.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PUEBLOESTHER.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d4b36678dac8da4ae0ad68d6095823709abc9216e9df2299ba1de69a31d1fe6f"
+}

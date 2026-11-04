@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0963_ed79feb2c5",
+  "shp": "R0963.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0963.dbf",
+      "bytes": 890,
+      "sha256": "5f870173ef536094168a7b6f919a4c4eed4c3e2a78443cd4f1417bbc7b04216a"
+    },
+    {
+      "archivo": "R0963.shp",
+      "bytes": 1636,
+      "sha256": "51fb38e94b9d00fb19a850bea7c1baf46351e35fae0c4fa8018d92bf90ad9ade"
+    },
+    {
+      "archivo": "R0963.shx",
+      "bytes": 116,
+      "sha256": "a1cf826df6deacb558e078eee65dd815f4e5ff7076642857eb0f627098cd21b2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Feliciaa3h.zip!R0963.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0b8632bbd3",
+    "archivo": "santafe/ipec/2010/Feliciaa3h.zip!R0963.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5383839.5,
+      6542600.0,
+      5385169.0,
+      6543781.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Feliciaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1caead07d036f94136dd7b573ca440aef520e96f6a2abb37bdf77144f9e52d18"
+}

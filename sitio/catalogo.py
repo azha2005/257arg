@@ -12,14 +12,22 @@ GRUPOS = [
         ("mapas/mapa1912/atlas_1912_diputados.html", "1912", "Diputados nacionales", "Cobertura parcial"),
         ("mapas/mapa1914/atlas_1914_diputados.html", "1914", "Diputados nacionales", "Cobertura parcial"),
         ("mapas/mapa1916dip/atlas_1916_diputados.html", "1916", "Diputados nacionales", ""),
+        ("mapas/mapa1918/atlas_1918.html", "1918", "Diputados nacionales", "Cobertura parcial; reservas de fuente"),
+        ("mapas/mapa1920/atlas_1920.html", "1920", "Diputados nacionales", "Cobertura parcial; reservas de fuente"),
         ("mapas/mapa1922/atlas_1922.html", "1922", "Presidente", ""),
+        ("mapas/mapa1926/atlas_1926.html", "1926", "Diputados nacionales", "Cantón; 14 distritos con tablas"),
         ("mapas/mapa1928/atlas_1928.html", "1928", "Presidente", ""),
         ("mapas/mapa1930/atlas_1930.html", "1930", "Diputados nacionales", ""),
+    ]),
+    ("1937-1940", "Presidente y diputados, 1937 a 1940", "Selección departamental publicada por Cantón; cobertura parcial, sin imputaciones.", [
+        ("mapas/mapa1937/atlas_1937.html", "1937", "Presidente", "Capital, Córdoba, La Rioja y Tucumán"),
+        ("mapas/mapa1940/atlas_1940.html", "1940", "Diputados nacionales", "Capital, Córdoba, Entre Ríos, Santa Fe y Tucumán"),
     ]),
     ("1946-1973", "Peronismo y proscripción, 1946 a 1973", "Cantón y la base de Lupu y Stokes.", [
         ("mapas/mapa1946/atlas_1946.html", "1946", "Presidente", ""),
         ("mapas/mapa1948/atlas_1948.html", "1948", "Diputados nacionales", ""),
         ("mapas/mapa1948c/atlas_1948c.html", "1948", "Convencionales constituyentes", ""),
+        ("mapas/mapa1951/atlas_1951.html", "1951", "Diputados y delegados por circunscripción", "SVG adaptado al SHP histórico"),
         ("mapas/mapa1954/atlas_1954.html", "1954", "Diputados nacionales", ""),
         ("mapas/mapa1958/atlas_1958.html", "1958", "Presidente", ""),
         ("mapas/mapa1962/atlas_1962.html", "1962", "Diputados nacionales", ""),
@@ -114,6 +122,7 @@ GRUPOS = [
         ("mapas/mapa1989convergencia/atlas_1989_convergencia.html", "1989", "Presidente", "Casella y Convergencia"),
         ("mapas/mapa1995/atlas_1995_ucr_frepaso.html", "1995", "Presidente", "FREPASO y UCR sumados"),
         ("mapas/mapa2003escenarios/index.html", "2003", "Presidente, 18 retiradas", "Un atlas por candidato que se baja"),
+        ("mapas/mapa2003alt/index.html", "2003", "Ocho escenarios alternativos", "Originales de u/Alarmed_Rope5383"),
         ("mapas/mapa2023massa/atlas_2023massa.html", "2023", "Presidente", "Massa 40,21 %"),
         ("mapas/mapa2027/atlas_2027.html", "2027", "Presidente y balotaje", "Simulación"),
         ("mapas/mapa2027kic/atlas_2027kic.html", "2027", "Balotaje", "Kicillof contra Milei"),
@@ -122,6 +131,7 @@ GRUPOS = [
 
 # Además de las entradas, se publican estos HTML (atlas enlazados desde otra página del sitio).
 EXTRA = ["mapas/mapa2003escenarios/atlas_2003_sin_*.html",
+         "mapas/mapa2003alt/atlas_2003alt_*.html",
          "mapas/mapaAMBA2003radios/atlas_amba2003radios_pob.html",
          "mapas/mapaAMBA2025radios/atlas_amba2025radios_pob.html"]
 
@@ -134,3 +144,11 @@ CRUDOS = ["analisis/escenarios2003/simulador_2003.html",
 
 # Miniatura de las entradas que no son un atlas.
 MINI = {"mapas/mapa2003escenarios/index.html": "mapas/mapa2003escenarios/atlas_2003_sin_k.html"}
+MINI["mapas/mapa2003alt/index.html"] = "mapas/mapa2003alt/atlas_2003alt_bilardo.html"
+CRUDOS += ["mapas/mapa2003alt/LEEME_2003ALT.md"]
+CRUDOS += [f"mapas/mapa2003alt/estimacion_{c}.csv" for c in
+           ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann")]
+CRUDOS += [f"mapas/mapa2003alt/miniaturas/{c}{suffix}.webp" for c in
+           ("macri", "alvarez", "bilardo", "kirchner", "rodriguezsaa", "lemas", "menem", "reutemann") for suffix in ("", "_oscuro")]
+CRUDOS += ["mapas/mapa2003alt/miniaturas/portada.jpg", "mapas/mapa2003alt/assets/Epilogue-OFL.txt"]
+CRUDOS += [f"mapas/mapa2003alt/assets/epilogue-{weight}.woff2" for weight in (400,600,700)]

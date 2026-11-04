@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1572_5dbcb67e19",
+  "shp": "e1572.shp",
+  "entidades": 81,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1572.dbf",
+      "bytes": 24748,
+      "sha256": "b5af4e4b61101a0de89fd34d5947111962f1fe2275b92fb8434b6fef8a3b72b9"
+    },
+    {
+      "archivo": "e1572.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1572.shp",
+      "bytes": 7404,
+      "sha256": "edd1d5748e916a36ec1a9fb9706c70957d38dedc95918eb719aed428f1878666"
+    },
+    {
+      "archivo": "e1572.shx",
+      "bytes": 748,
+      "sha256": "a08381dc5a57a4bd92d8e9fd52f538945a17bc82f0517a92f510ac324ff2f620"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PEDROGOMEZCELLO.zip!e1572.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_2e312b06f6",
+    "archivo": "santafe/ipec/2022/PEDROGOMEZCELLO.zip!e1572.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 3,
+    "bbox": [
+      5469444.0,
+      6677126.0,
+      5469869.0,
+      6678229.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PEDROGOMEZCELLO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "26f0b9ba1fafcdf83e84225acf3580b2219f1fad4920fc946208cf2f47c4cd11"
+}

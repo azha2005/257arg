@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1196_6725603455",
+  "shp": "M1196.shp",
+  "entidades": 34,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1196.dbf",
+      "bytes": 7084,
+      "sha256": "e284f44bc1b11ca924da5ac2994e72cdd30288f3ab50f494e7a577c3ad7cd76a"
+    },
+    {
+      "archivo": "M1196.shp",
+      "bytes": 5508,
+      "sha256": "04abfe43a6dcaddea30e8c13983236df249b7e71001bcf02962bb5377e0c54e0"
+    },
+    {
+      "archivo": "M1196.shx",
+      "bytes": 372,
+      "sha256": "645674289027d33b61f19fc0042bf7f46df7f17de251b47798437d2e93f744e2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sarmientoa3h.zip!M1196.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_500123aab6",
+    "archivo": "santafe/ipec/2010/sarmientoa3h.zip!M1196.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 34,
+    "registros_shx": 34,
+    "shape_type": 5,
+    "bbox": [
+      5388264.5,
+      6563419.0,
+      5388927.5,
+      6564322.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sarmientoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "551b4a4a9d26096149e6b97906847ae7f1dce34dd24e34d2d6a4f1811eb185d7"
+}

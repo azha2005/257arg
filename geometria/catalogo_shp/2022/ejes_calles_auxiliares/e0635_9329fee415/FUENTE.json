@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0635_9329fee415",
+  "shp": "e0635.shp",
+  "entidades": 562,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0635.dbf",
+      "bytes": 168086,
+      "sha256": "18676e39c9855b2a442ded903e30c278235fb383ba6f6971529d2775523f58e3"
+    },
+    {
+      "archivo": "e0635.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0635.shp",
+      "bytes": 52980,
+      "sha256": "669484460138c2f49e2f0438c3f91f1157751efe3de73301c128f04e56aa9168"
+    },
+    {
+      "archivo": "e0635.shx",
+      "bytes": 4596,
+      "sha256": "6f30b7ec7567ca01898c51ab20810b8a14ad6b27a4713ca0faa74aad4763e8d0"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/OLIVEROS.zip!e0635.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_defe82fea2",
+    "archivo": "santafe/ipec/2022/OLIVEROS.zip!e0635.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 562,
+    "registros_shx": 562,
+    "shape_type": 3,
+    "bbox": [
+      5418763.0,
+      6393263.0,
+      5421415.0,
+      6398363.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/OLIVEROS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "12b4d053b1ccb544a36118a6a5d2baf23ad1409f2361a801e627a85da615262b"
+}

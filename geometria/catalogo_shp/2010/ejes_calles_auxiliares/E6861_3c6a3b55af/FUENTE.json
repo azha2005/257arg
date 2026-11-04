@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6861_3c6a3b55af",
+  "shp": "E6861.shp",
+  "entidades": 43,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6861.dbf",
+      "bytes": 15574,
+      "sha256": "ece5d61aed6982acc6fa3eb186bcb84ff8d2c6d513dfc202fe955c8878ef6837"
+    },
+    {
+      "archivo": "E6861.shp",
+      "bytes": 3884,
+      "sha256": "0e98b529456edc0a29cccb9968fec95e0b2cd9f5d99474fdf15d557ae36b70eb"
+    },
+    {
+      "archivo": "E6861.shx",
+      "bytes": 444,
+      "sha256": "3eab1377d33831e2262db5be5a7a80b18c6a6e80d5c9a0749b5056af182d6bb8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/osmuchachoslaalboradaa3h.zip!E6861.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_63788d0b8d",
+    "archivo": "santafe/ipec/2010/osmuchachoslaalboradaa3h.zip!E6861.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 43,
+    "registros_shx": 43,
+    "shape_type": 3,
+    "bbox": [
+      5431230.5,
+      6338905.0,
+      5432388.0,
+      6339792.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/osmuchachoslaalboradaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "629777eeffb2ef6cbf27f65148979db2e297865f166a9b732146bab2b73707bb"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6835_a8a030655c",
+  "shp": "M6835.shp",
+  "entidades": 7,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6835.dbf",
+      "bytes": 1765,
+      "sha256": "4cc0bab3f654b16cb7ac54d3accb001fbc2ad81d83463139d81838f38f8f33e0"
+    },
+    {
+      "archivo": "M6835.shp",
+      "bytes": 1244,
+      "sha256": "8f1874d317568747b6ec489793d2ee186dad91e85fbef709b4d12fb658b3f2b3"
+    },
+    {
+      "archivo": "M6835.shx",
+      "bytes": 156,
+      "sha256": "3b17184624e527fe523686466d62a606741027fc12de2fedc7f91c8817cb15ad"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanbernardoa3h.zip!M6835.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6e86818f1e",
+    "archivo": "santafe/ipec/2010/sanbernardoa3h.zip!M6835.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 7,
+    "registros_shx": 7,
+    "shape_type": 5,
+    "bbox": [
+      5444930.5,
+      6582717.5,
+      5445344.0,
+      6583446.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanbernardoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "36aa70def087ced0bef4cb1889402b0198328fdaa704a59f833c732161db52b3"
+}

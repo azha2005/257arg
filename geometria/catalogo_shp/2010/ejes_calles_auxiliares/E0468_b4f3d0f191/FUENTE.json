@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0468_b4f3d0f191",
+  "shp": "E0468.shp",
+  "entidades": 394,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0468.dbf",
+      "bytes": 137722,
+      "sha256": "3cb67b02ffdc9507653e8496da7546b31f457cbef7f63abb1b51fd52525c17eb"
+    },
+    {
+      "archivo": "E0468.shp",
+      "bytes": 34916,
+      "sha256": "3280d51196353157e2b8dd8629e7737e3437297954c83938b55e34343c6d03b6"
+    },
+    {
+      "archivo": "E0468.shx",
+      "bytes": 3252,
+      "sha256": "d5656c08a0d9212d653d47dafec08384c37e022d904e5a28cf349876ce54118b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santaisabela2h.zip!E0468.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d9f7b0eaa1",
+    "archivo": "santafe/ipec/2010/santaisabela2h.zip!E0468.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 394,
+    "registros_shx": 394,
+    "shape_type": 3,
+    "bbox": [
+      5342328.5,
+      6248042.0,
+      5344521.0,
+      6250377.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santaisabela2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c9f6ac8c3e550ae4db33284dfbb3df89728c667c503c380aa22955f7cc84d54e"
+}

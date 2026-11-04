@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4165_76ac47092f",
+  "shp": "E4165.shp",
+  "entidades": 38,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4165.dbf",
+      "bytes": 13834,
+      "sha256": "2386ac95402a9f75b1d6a72cde2d2744bc5bb5297dc0b56998f489de55c75566"
+    },
+    {
+      "archivo": "E4165.shp",
+      "bytes": 3444,
+      "sha256": "a48b10b3e540bb6ad6aafbedfbbccaad942768ad9da98c78c5292a8e2fc0432f"
+    },
+    {
+      "archivo": "E4165.shx",
+      "bytes": 404,
+      "sha256": "f7ebf30e219cd2a86cf35b3058789a3ad0bea0fda8e1f88c8cc8c6847c4f1020"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/casalegnoa3v.zip!E4165.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6d27e016d9",
+    "archivo": "santafe/ipec/2010/casalegnoa3v.zip!E4165.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 38,
+    "registros_shx": 38,
+    "shape_type": 3,
+    "bbox": [
+      5393609.5,
+      6429891.0,
+      5394195.0,
+      6430937.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/casalegnoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "276aac09d2ff0e293dbad39ee24062f7b683deeb8c4b65a112bb2e6e93ab8228"
+}

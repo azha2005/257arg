@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m8557_574a191ee1",
+  "shp": "m8557.shp",
+  "entidades": 1333,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m8557.dbf",
+      "bytes": 262987,
+      "sha256": "3d154100c9369ca7a29939dff67c20b0d2ca266a6001aabf3a9523e376c29b9e"
+    },
+    {
+      "archivo": "m8557.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m8557.shp",
+      "bytes": 199932,
+      "sha256": "7f2ceef8c977ccba8863d5ff255bca119c7737b847bcc2eb83ca3f2dfe904091"
+    },
+    {
+      "archivo": "m8557.shx",
+      "bytes": 10764,
+      "sha256": "42ea6b838d76567a6b525cf82a70c163dc05dec45766f2452506781f0dd24cbe"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/RECONQUISTA.zip!m8557.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_9e6517e7dd",
+    "archivo": "santafe/ipec/2022/RECONQUISTA.zip!m8557.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1333,
+    "registros_shx": 1333,
+    "shape_type": 5,
+    "bbox": [
+      5529561.5,
+      6770403.5,
+      5537033.5,
+      6778464.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/RECONQUISTA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d038decaac8e441164210c351623c73ac764e72cdd3c8181c9592cd010cdc1c2"
+}

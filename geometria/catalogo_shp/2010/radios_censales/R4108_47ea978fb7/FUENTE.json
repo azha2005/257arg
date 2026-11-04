@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4108_47ea978fb7",
+  "shp": "R4108.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4108.dbf",
+      "bytes": 686,
+      "sha256": "fc4b86ad01ecacb9ac1575d7e23f3f932a5568090ae97b13f1fa7e4a3b898f34"
+    },
+    {
+      "archivo": "R4108.shp",
+      "bytes": 876,
+      "sha256": "bcc7440ba4e44023d62c416ee97bf195a4e404829f900edb3bc43361118ab351"
+    },
+    {
+      "archivo": "R4108.shx",
+      "bytes": 108,
+      "sha256": "412c7187aad565a7b56a71da43e3ebcb7c6a6c508daa56054d9db96042b5f3cb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pineroa3h.zip!R4108.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e401c21a62",
+    "archivo": "santafe/ipec/2010/pineroa3h.zip!R4108.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5424514.0,
+      6336324.5,
+      5426115.0,
+      6337229.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pineroa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f6b4b6e32da4e46fc2cd8ab9f1280932cfe0b5220771de4e394854956911481d"
+}

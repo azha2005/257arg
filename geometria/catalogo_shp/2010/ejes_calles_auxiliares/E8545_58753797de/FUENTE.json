@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8545_58753797de",
+  "shp": "E8545.shp",
+  "entidades": 1024,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8545.dbf",
+      "bytes": 356962,
+      "sha256": "829b921540cef460e5dd6dceb6e31ca23389f9129791854756f2eef1ac776d9c"
+    },
+    {
+      "archivo": "E8545.shp",
+      "bytes": 92932,
+      "sha256": "56b49095ae3a5316012ae51f123bf931e69923c2237fd443869cbc9f0bc3a81a"
+    },
+    {
+      "archivo": "E8545.shx",
+      "bytes": 8292,
+      "sha256": "04ee1ef682a40cbb6a5371c87e0d2dc072ad6bd0f2429603f80979e86bc5458f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/avellanedaa1h.zip!E8545.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_46d26421cc",
+    "archivo": "santafe/ipec/2010/avellanedaa1h.zip!E8545.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1024,
+    "registros_shx": 1024,
+    "shape_type": 3,
+    "bbox": [
+      5530721.0,
+      6778712.0,
+      5534937.5,
+      6781360.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/avellanedaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "51eb76525c4052e4b471655d665530f65ccbc29828963a0fdff8cc5eaf12e7f2"
+}

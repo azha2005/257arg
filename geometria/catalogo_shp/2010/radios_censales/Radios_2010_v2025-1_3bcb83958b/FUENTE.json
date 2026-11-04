@@ -1,0 +1,133 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Radios_2010_v2025-1_3bcb83958b",
+  "shp": "Radios 2010 v2025-1.shp",
+  "entidades": 52406,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Radios 2010 v2025-1.shp",
+      "bytes": 85675824,
+      "sha256": "38b508c4051d504bc9a36759026b54cb7136c218e9597f747dec829827e4f435"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.shp.xml",
+      "bytes": 702,
+      "sha256": "bf4b4000c8a179ecaffe4d118dc9d5f2f78ecfca953546eb2f24b03754f0b1ea"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.shx",
+      "bytes": 419348,
+      "sha256": "85ea7cc45d0fcefc97739f3837be0fae3d13d5cba98e5fbe01a07f377e90babb"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.dbf",
+      "bytes": 20072332,
+      "sha256": "ad705509a2a96ee5a7f6c503730d487105699d4a88726c58c9c155df8358e84e"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.prj",
+      "bytes": 425,
+      "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.sbn",
+      "bytes": 479972,
+      "sha256": "8a3bb7605e242e00156482bafc4317f3a4989fc5f478f0a28eba4ccf8386c49d"
+    },
+    {
+      "archivo": "Radios 2010 v2025-1.sbx",
+      "bytes": 5660,
+      "sha256": "06b8b9d2bb152f9f408bac43d2809be40ca23b402b8faaca64fbc06490f1bcae"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/radios/RADIOS_2010_V2025-1.zip!Radios 2010 v2025-1.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_radios_ba229f0a-c9d1-4877-8dc0-16d8efc0badc",
+    "archivo": "conicet/radios/RADIOS_2010_V2025-1.zip!Radios 2010 v2025-1.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Argentina",
+    "features": 52406,
+    "registros_shx": 52406,
+    "shape_type": 5,
+    "bbox": [
+      -8237691.7108,
+      -30240971.9584,
+      -2922367.0326000005,
+      -2485224.690299999
+    ],
+    "campos": [
+      "COD_2010",
+      "PROV",
+      "DEPTO",
+      "FRACC",
+      "RADIO",
+      "SEGMENTOS",
+      "OBS2010",
+      "BASICO",
+      "AMPLIADO",
+      "TIPO",
+      "EXPH_MEAN",
+      "EXPH_MIN",
+      "EXPH_MAX",
+      "B_POB_TOT",
+      "B_VIV_P",
+      "B_VIV_C",
+      "B_VIV_TOT",
+      "A_CASOS",
+      "A_POB_TOT",
+      "A_VIV_P",
+      "A_VIV_C",
+      "A_VIV_TOT",
+      "D_AB_CASOS",
+      "D_AB_POB",
+      "DP_AB_POB"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149711",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/ba229f0a-c9d1-4877-8dc0-16d8efc0badc/content",
+    "crs_wkt": "PROJCS[\"WGS_1984_Web_Mercator_Auxiliary_Sphere\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Mercator_Auxiliary_Sphere\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",0.0],PARAMETER[\"Standard_Parallel_1\",0.0],PARAMETER[\"Auxiliary_Sphere_Type\",0.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "02": 3553,
+      "06": 19577,
+      "62": 940,
+      "14": 4752,
+      "10": 561,
+      "18": 1632,
+      "22": 1483,
+      "26": 753,
+      "30": 2673,
+      "42": 769,
+      "50": 1867,
+      "34": 773,
+      "38": 822,
+      "46": 316,
+      "58": 794,
+      "66": 1358,
+      "70": 701,
+      "74": 656,
+      "82": 3779,
+      "54": 1432,
+      "86": 1038,
+      "78": 302,
+      "90": 1717,
+      "94": 158
+    },
+    "campo_codigo": "COD_2010",
+    "codigos_distintos": 52406,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "f281bd3245f5bf292496561757ac001679ecc31e394b9d4b3b18bf67fc66f45d"
+}

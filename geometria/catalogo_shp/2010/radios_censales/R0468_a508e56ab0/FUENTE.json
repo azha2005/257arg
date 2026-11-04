@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0468_a508e56ab0",
+  "shp": "R0468.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0468.dbf",
+      "bytes": 1298,
+      "sha256": "a7ea2cc21ecbdfceb0544a4b02585dcf410799fa684b4aca7d9577cd590dc279"
+    },
+    {
+      "archivo": "R0468.shp",
+      "bytes": 3300,
+      "sha256": "d1ed3aa0fb162bd936112ccbed9259fd37fe4a3de9e88effe2251ce03dc4a2c7"
+    },
+    {
+      "archivo": "R0468.shx",
+      "bytes": 132,
+      "sha256": "4585fd46f6449c2dfd7699d61c3b5d81ac9e2fcb995f4f7da35b15703a0d264b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santaisabela2h.zip!R0468.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d9f7b0eaa1",
+    "archivo": "santafe/ipec/2010/santaisabela2h.zip!R0468.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5342328.5,
+      6248042.0,
+      5344521.0,
+      6250377.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santaisabela2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c5383846a0070fb5351fa146720e631eb7200ef9fc56486776eb0f64d26d4cd2"
+}

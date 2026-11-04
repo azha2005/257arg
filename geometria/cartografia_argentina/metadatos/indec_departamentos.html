@@ -1,0 +1,3263 @@
+<!-- -----------------------------------------------------------------
+-
+- Copyright (C) 2019 OSGeo
+-
+- This program is free software: you can redistribute it and/or modify
+- it under the terms of the GNU General Public License as published by
+- the Free Software Foundation, either version 3 of the License, or
+- (at your option) any later version.
+-
+- This program is distributed in the hope that it will be useful,
+- but WITHOUT ANY WARRANTY; without even the implied warranty of
+- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+- GNU General Public License for more details.
+-
+- You should have received a copy of the GNU General Public License
+- along with this program. If not, see <http://www.gnu.org/licenses/>.
+-
+---------------------------------------------------------------------- -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta Http-Equiv="Cache-Control" Content="no-cache">
+    <meta Http-Equiv="Pragma" Content="no-cache">
+    <meta Http-Equiv="Expires" Content="0">
+    <meta Http-Equiv="Pragma-directive: no-cache">
+    <meta Http-Equiv="Cache-directive: no-cache">
+
+    <title>Departamentos —  INDEC </title>
+
+    <link rel="shortcut icon" href="/static/geonode/img/favicon.ico" />
+    <link href="/static/lib/css/ol.css" rel="stylesheet" />
+    <script src="/static/lib/js/ol.js"></script>
+    <link rel="preload" as="style" href="/static/geonode/css/font-awesome.min.css" />
+    <link rel="preload" as="font" href="/static/geonode/fonts/lato_regular.ttf" crossorigin="" />
+    <link rel="preload" as="font" href="/static/geonode/fonts/lato_bold.ttf" crossorigin="" />
+    <link rel="preload" as="font" href="/static/geonode/fonts/lato_light.ttf" crossorigin="" />
+
+    
+
+  <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="https://geonode.indec.gob.ar/">
+
+  
+    <meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@GeoNode" />
+<!-- Twitter truncates twitter:title to 70 characters. -->
+<meta name="twitter:title" content="Departamentos" />
+<!-- Twitter truncates twitter:description at the word to 200 characters. -->
+<meta name="twitter:description" content="Layer on INDEC by admin" />
+<meta name="twitter:image" content="https://geonode.indec.gob.ar/uploaded/thumbs/layer-bb78108e-f2e6-4ae2-84c2-42369dd78bab-thumb-7f6f1650-a17e-4d30-85b2-6578d0df3803.png" />
+
+  
+
+  
+    <meta property="og:title" content="Departamentos" />
+<meta property="og:site_name" content="INDEC" />
+<meta property="og:url" content="https://geonode.indec.gob.ar/layers/geonode_data:geonode:departamentos" />
+<meta property="og:description" content="Layer on INDEC by admin" />
+<meta name="og:image" content="https://geonode.indec.gob.ar/uploaded/thumbs/layer-bb78108e-f2e6-4ae2-84c2-42369dd78bab-thumb-7f6f1650-a17e-4d30-85b2-6578d0df3803.png" />
+<meta name="og:image:width" content="200" />
+<meta name="og:image:height" content="150" />
+
+  
+  <script type="text/javascript">
+    // this is used by thumbnail.js to POST to the thumbnail update view
+    window.thumbnailUpdateUrl = '/api/v2/resources/360/set_thumbnail_from_bbox';
+  </script>
+  <script type="text/javascript" src="/static/geonode/js/utils/thumbnail.js"></script>
+  <style>
+#embedded_map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    z-index: 1029;
+    overflow: hidden;
+}
+</style>
+<script type="text/javascript">
+    (function(window) {
+
+        const pluginsConfigName = 'layer_detail';
+        const theme = 'preview';
+        const isMap = false;
+
+        // inside the django template page of layer_detail
+        // there is a list of styles where a user can select with an input checkbox
+        // this function allows to synchronize an update the style of the layers inside the detail preview
+        function setupUpdateLayerStyle(MapStoreAPI, config) {
+            if (!isMap) {
+                const layers = config.resourceConfig && config.resourceConfig.map && config.resourceConfig.map.layers || [];
+                var layer = layers[layers.length - 1];
+                // layer id is undefined so we are using the structure used by masptore {layerName}__{layerIndex-1}
+                layer.id = layer.name + '__' + (layers.length - 1);
+                const id = layer.id;
+                const styleInputs = document.querySelectorAll('input[name=\'style\']');
+                for (var i = 0; i < styleInputs.length; i++) {
+                    styleInputs[i].addEventListener('click', function(event) {
+                        const style = event.target.id;
+                        const legendTitle = document.getElementById('legend_sld_title');
+                        legendTitle.innerHTML = event.target.value;
+                        const legendIcon = document.getElementById('legend_icon');
+                        const legendIconSrc = legendIcon.getAttribute('src');
+                        if (legendIconSrc !== undefined) {
+                            legendIcon.setAttribute('src', legendIconSrc.split('&STYLE')[0] + '&STYLE=' + style);
+                        }
+                        MapStoreAPI.triggerAction(
+                            {
+                                type: 'UPDATE_NODE',
+                                node: id,
+                                nodeType: 'layers',
+                                options: {
+                                    style: style
+                                }
+                            }
+                        );
+                    });
+                }
+            }
+        }
+
+        // the django page allows the user to update the thumbnail
+        // this function overrides the global getThumbnailOptions
+        // to provide the current bbox and projection of the layer preview
+        function setupCreateThumbnail(MapStoreAPI) {
+            window.getThumbnailOptions = function() {
+                const map = MapStoreAPI.getMapState() || {};
+                const bbox = map.bbox || {};
+                const bounds = bbox.bounds || {};
+                const crs = bbox.crs;
+                const body = {
+                    srid: crs,
+                    bbox: [
+                        bounds.minx,
+                        bounds.maxx,
+                        bounds.miny,
+                        bounds.maxy
+                    ]
+                };
+                return body;
+            };
+        }
+
+        window.document.addEventListener('DOMContentLoaded', function () {
+            const embedMapNode = window.document.getElementById('embedded_map');
+            if (embedMapNode) {
+                embedMapNode.innerHTML = '';
+                // use the embed viewer
+                // instead to create a new MapStore app inside the template
+                const iframe = window.document.createElement('iframe');
+                iframe.setAttribute('src', '/layers/geonode:departamentos/embed?config=' + pluginsConfigName + '&theme=' + theme);
+                iframe.setAttribute('frameBorder', 0);
+                iframe.style.position = 'absolute';
+                iframe.style.top = 0;
+                iframe.style.left = 0;
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.border = 'none';
+                iframe.style.padding = 0;
+                iframe.style.margin = 0;
+                embedMapNode.appendChild(iframe);
+                // use the mapstore api with onInitMapStoreAPI
+                // to ensure the correct loading of MapStoreAPI
+                iframe.contentWindow.onInitMapStoreAPI = function(MapStoreAPI, config) {
+                    setupUpdateLayerStyle(MapStoreAPI, config);
+                    setupCreateThumbnail(MapStoreAPI);
+                };
+            }
+        });
+    })(window);
+</script>
+
+
+
+      
+      <link href="/static/lib/css/assets.min.css" rel="stylesheet"/>
+      
+      <link href="/static/geonode/css/base.css" rel="stylesheet"/>
+      <link rel='stylesheet' id='cookie-law-info-css'  href="/static/geonode/css/cookie-law-info/cookie-law-info-public.css" type='text/css' media='all' />
+      <link rel='stylesheet' id='cookie-law-info-gdpr-css'  href="/static/geonode/css/cookie-law-info/cookie-law-info-gdpr.css" type='text/css' media='all' />
+      <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}</style>
+      <style type="text/css">
+        /* Additional styles by custom themes */
+        
+          body {
+            background: #ffffff;
+            
+            color: #3a3a3a;
+            
+          }
+          #wrap {
+            background: #ffffff;
+          }
+        .home #partners {
+          background: #ffffff;
+          padding: 2em 0;
+          text-align: center;
+        }
+        
+
+        
+        .home .navbar-inverse , .navbar-inverse {
+          background-color: #ffffff;
+        }
+        
+
+        
+        .navbar-inverse .navbar-nav > li > a {
+          color: #333333;
+          font-weight: 600;
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+        
+
+        
+        .navbar-inverse .navbar-nav > li > a:hover {
+          background-color: #2c689c;
+        }
+        
+
+        
+        .navbar-inverse .navbar-nav > .open > a,
+        .navbar-inverse .navbar-nav > .open > a:hover,
+        .navbar-inverse .navbar-nav > .open > a:focus {
+          background-color: #2c689c;
+        }
+        
+
+        
+        .navbar-nav .dropdown-menu {
+          background-color: #2c689c;
+          border-top: 1px solid #2c689c;
+        }
+        
+
+        
+        .navbar-nav .dropdown-menu a {
+          color: #ffffff;
+        }
+        
+
+        
+        .navbar-nav .dropdown-menu li a:hover {
+          background-color: #204d74;
+          color: #ffffff;
+        }
+        
+
+        
+        .navbar-nav .dropdown-menu .divider {
+          background-color: #204d74;
+        }
+        
+
+        
+        .navbar-brand {
+          background-image: url(/uploaded/img/2022/10/Logo_Indec.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        
+
+        
+        .home .jumbotron {
+          background-color: #2c689c
+        }
+        
+
+        
+        .home .jumbotron h1,
+        .home .jumbotron h2,
+        .home .jumbotron h3 {
+          color: #ffffff
+        }
+        
+
+        
+        .home .jumbotron p {
+          color: #ffffff;
+          font-weight: normal;
+          font-size: xx-large;
+          font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+        }
+        
+
+        
+
+        
+        .home .jumbotron .container {
+          position: relative;
+          z-index: 1;
+        }
+        .home .jumbotron:after {
+          content: "";
+          background-image: url(/uploaded/img/2022/10/frente_indec.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          
+          opacity: 0.5;
+          
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: 0;
+        }
+        
+
+        
+        .home .big-search {
+          background: #ffffff;
+          color: #2c689c;
+          padding-bottom: 3em;
+          padding-top: 1em;
+        }
+        .home .big-search .btn-default {
+          background: transparent;
+          border: none;
+          color: #ff8f31;
+        }
+        
+
+        
+        .footer-copyright {
+          background-color: #2c689c;
+        }
+        
+
+        
+        footer {
+          background-color: #333333;
+          color: #ffffff;
+          padding: 1.5em;
+        }
+        footer a {
+          color: #ff8f31;
+        }
+        
+      </style>
+      
+      
+    
+
+    <!--[if IE]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <style>
+        #ieflag{
+            display: block !important;
+            height: 150px;
+            text-align: center;
+        }
+      </style>
+    <![endif]-->
+    <link rel="search" type="application/opensearchdescription+xml" href="https://geonode.indec.gob.ar/catalogue/opensearch" title="GeoNode Search"/>
+
+    <script>
+        var siteUrl = 'https://geonode.indec.gob.ar/'.replace(/\/?$/, '/');
+        var staticUrl = '/static/';
+    </script>
+
+    <!-- Autocomplete script for input boxes -->
+    <script src="/static/geonode/js/search/autocomplete.js"></script>
+
+    <script type="text/javascript">
+      function thumbnailFeedbacks(data, status) {
+        try {
+          $("#_thumbnail_feedbacks").find('.modal-title').text(status);
+          $("#_thumbnail_feedbacks").find('.modal-body').text(data);
+          $("#_thumbnail_feedbacks").modal("show");
+        } catch (err) {
+          console.log(err);
+        } finally {
+          return true;
+        }
+      }
+    </script>
+
+    <!-- RTL styles -->
+    
+    
+
+    
+  </head>
+
+  <body class="layers">
+    <!-- Loading Mask -->
+    <div class='lmask'></div>
+    <!-- Navbar -->
+    
+    
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="nav-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <i class="fa fa-navicon fa-lg"></i>
+          </button>
+          <a class="navbar-brand" href="/">GeoNode</a>
+        </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav toolbar">
+          
+          
+          <li id="nav_layers">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data<i class="fa fa-angle-down fa-lg"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/layers/?limit=5">Layers</a></li>
+                <li><a href="/documents/?limit=5">Documents</a></li>
+                
+                <li><a href="/services/?limit=5">Remote Services</a></li>
+                  
+                  
+                
+              </ul>
+            </li>
+          <li id="nav_maps">
+              
+                <a href="/maps/?limit=5">Maps</a>
+              
+          </li>
+          
+          <li id="nav_maps">
+            
+              <a href="/apps/?limit=5">Apps</a>
+            
+          </li>
+          
+          
+          <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<i class="fa fa-angle-down fa-lg"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/people/">People</a></li>
+                <li><a href="/groups/">Groups</a></li>
+                <li><a href="/groups/categories/">Group Categories</a></li>
+                
+                
+                
+              </ul>
+          </li>
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+            
+               <!-- -----------------------------------------------------------------
+-
+- Copyright (C) 2019 OSGeo
+-
+- This program is free software: you can redistribute it and/or modify
+- it under the terms of the GNU General Public License as published by
+- the Free Software Foundation, either version 3 of the License, or
+- (at your option) any later version.
+-
+- This program is distributed in the hope that it will be useful,
+- but WITHOUT ANY WARRANTY; without even the implied warranty of
+- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+- GNU General Public License for more details.
+-
+- You should have received a copy of the GNU General Public License
+- along with this program. If not, see <http://www.gnu.org/licenses/>.
+-
+---------------------------------------------------------------------- -->
+
+
+
+<script type="text/javascript">
+    window.addEventListener('load', function(){
+        var reposition = function() {
+            if (document.querySelector) {
+                // we should target the wrapper of navbar
+                // to ensure all parts are computed in the height
+                const fixedNavarNode = document.querySelector('nav.navbar-fixed-top');
+                const wrapNode = document.querySelector('#wrap');
+                const msContainerNode = document.querySelector('#ms-container');
+                const fixedNavarNodeHeight = fixedNavarNode && fixedNavarNode.clientHeight;
+                if (fixedNavarNodeHeight) {
+                    if (wrapNode) {
+                        wrapNode.style.marginTop = fixedNavarNodeHeight + 'px';
+                        document.body.style.paddingTop = 0;
+                    }
+                    if (msContainerNode) {
+                        msContainerNode.style.top = fixedNavarNodeHeight + 'px';
+                        document.body.style.paddingTop = 0;
+                    }
+                }
+            }
+        };
+        if (ResizeObserver) {
+            const fixedNavarNode = document.querySelector('nav.navbar-fixed-top');
+            const resizeObserver = new ResizeObserver(reposition);
+            resizeObserver.observe(fixedNavarNode);
+        } else {
+            // attach the function to the window resize event
+            window.addEventListener('resize', reposition);
+        }
+
+        reposition();
+    });
+</script>
+
+
+            
+          
+            
+            <li>
+              <div class="search">
+                <form id="search" action="/search/" >
+                  <span class="fa fa-search"></span>
+                  <div id="search-container" class="autocomplete-input">
+                    
+                    <input autocomplete="off" type="text" name="title__icontains" id="search_input" placeholder="Search" >
+                    <input type="hidden" name="abstract__icontains" id="search_abstract_input" placeholder="Search" >
+                    <input type="hidden" name="purpose__icontains" id="search_purpose_input" placeholder="Search" >
+                    <input type="hidden" name="f_method" id="filtering_type" value="or" >
+                    
+                  </div>
+                </form>
+              </div>
+            </li>
+            
+            
+            
+          <li><a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >Sign in </a></li>
+              
+            </ul>
+          </div> <!--/.nav-collapse -->
+        </div>
+      </nav>
+      
+      <!-- End of Navbar -->
+
+    <div class="alert alert-danger alert-dismissible" role="alert" id="ieflag" style="display:none">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h1>You are using an outdated browser that is not supported by GeoNode.</h1>
+      <p>Please use a <strong>modern browser</strong> like Mozilla Firefox, Google Chrome or Safari.</p>
+    </div>
+
+  <div id="wrap">
+    
+    <div class="container">
+      
+<div class="alert alert-warn" id="status-message" hidden="hidden">
+    <a class="close" onclick="$('.alert').hide()">×</a>
+    <strong><p id="status-message-text">Placeholder for status-message</p></strong>
+    <p id="status-message-text-body">Placeholder for status-message-body</p>
+</div>
+
+      
+
+
+
+
+      
+
+      
+<div class="page-header">
+    <style>
+    #paneltbar {
+      margin-top: 1px !important;
+    }
+    </style>
+
+    <h2 class="page-title">Departamentos</h2>
+    
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+
+    <div id="embedded_map" class="mrg-btm">
+      <div id="preview_map"></div>
+    </div>
+
+    <div class="layer-actions">
+      
+<ul class="nav nav-tabs">
+
+  <li class="active"><a href="#info" data-toggle="tab"><i class="fa fa-info-circle"></i>Info</a></li>
+  
+  <li><a href="#attributes" data-toggle="tab"><i class="fa fa-bars"></i>Attributes</a></li>
+  
+  
+  
+  <li><a href="#share" data-toggle="tab"><i class="fa fa-share"></i>Share</a></li>
+  
+  
+  <li><a href="#rate" data-toggle="tab"><i class="fa fa-star"></i>Ratings</a></li>
+  
+  
+  <li><a href="#comments" data-toggle="tab"><i class="fa fa-comment-o"></i> Comments</a></li>
+  
+  
+  
+
+</ul>
+
+    </div>
+
+    <div class="tab-content">
+      <article id="info" class="tab-pane active">
+        
+
+      
+
+
+<dl class="dl-horizontal">
+    
+    <dt>Title</dt>
+    <dd itemprop="name">Departamentos</dd>
+    
+
+    
+
+    
+    <dt>License</dt>
+    <dd itemprop="license">Not Specified <a href="#license-more-above" data-toggle="collapse" data-target=".license-more-above"><i class="fa fa-info-circle"></i></a></dd>
+    
+    <dd class="license-more-above collapse">
+      
+        + The original author did not specify a license.<br/><br/>
+      
+      
+    </dd>
+
+    
+    <dt>Abstract</dt>
+    <dd itemprop="description"><p>&Aacute;rea pol&iacute;tico-administrativa de segundo nivel que cubre en forma exhaustiva el territorio de cada jurisdicci&oacute;n y, por ende, el territorio nacional. Se denomina partido en la provincia de Buenos Aires, departamento en el resto de las provincias y comuna en la Ciudad Aut&oacute;noma de Buenos Aires (CABA).</p>
+<p>La representaci&oacute;n de los l&iacute;mites departamentales de esta capa considera los l&iacute;mites que utiliza cada direcci&oacute;n provincial de estad&iacute;stica al elaborar su base geogr&aacute;fica.</p>
+<p>Cabe destacar que la cartograf&iacute;a censal se elabora con fines estad&iacute;sticos y su afectaci&oacute;n a otros usos queda bajo responsabilidad del usuario.&nbsp;</p>
+<p>La publicaci&oacute;n de la informaci&oacute;n obtenida a partir de este geoportal debe incluir la fuente original. La forma sugerida para citar al INDEC como fuente del dato cartogr&aacute;fico primario es: Instituto Nacional de Estad&iacute;stica y Censos (2022). Cartograf&iacute;a y c&oacute;digos geogr&aacute;ficos del Sistema Estad&iacute;stico Nacional.&nbsp;<a href="https://portalgeoestadistico.indec.gob.ar/" target="_blank" rel="noopener">https://portalgeoestadistico.indec.gob.ar/</a></p>
+<p>Para acceder a los metadados de la capa consultar&nbsp;<a href="https://portalgeoestadistico.indec.gob.ar/geoportal/documents/metadato_departamentos.pdf" target="_blank" rel="noopener">aqu&iacute;</a></p></dd>
+    
+
+    
+    
+    <dt>Publication Date</dt>
+    
+      
+        <dd itemprop="datePublished" datetime="2025-08-25T15:26:00+00:00">Aug. 25, 2025, 3:26 p.m.</dd>
+      
+    
+
+    
+    <dt>Type</dt>
+    <dd>Vector Data</dd>
+    
+
+    
+    <dt>Keywords</dt>
+      <dd itemprop="keywords">
+        <ul>
+            
+              <li>
+                <a itemscope itemtype="http://schema.org/Text" href="/search/?keywords__slug__in=geoportal" >
+                  geoportal
+                </a>
+              </li>
+            
+              <li>
+                <a itemscope itemtype="http://schema.org/Text" href="/search/?keywords__slug__in=marco_geoestadistico" >
+                  marco_geoestadistico
+                </a>
+              </li>
+            
+              <li>
+                <a itemscope itemtype="http://schema.org/Text" href="/search/?keywords__slug__in=marco_geoestadistico_order_2" >
+                  marco_geoestadistico_order_2
+                </a>
+              </li>
+            
+            
+        </ul>
+      </dd>
+    
+
+    
+
+    
+    <dt>Regions</dt>
+    <dd itemprop="keywords">
+      
+        <a itemscope itemtype="http://schema.org/Text" href="/search/?regions__name__in=Global">
+          Global
+        </a>
+        
+      
+    </dd>
+    
+
+    
+    <dt>Responsible</dt>
+    <dd><a itemprop="author" href="/people/profile/admin/">admin</a></dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt>Attribution</dt>
+    <dd>INDEC</dd>
+    
+
+  </dl>
+
+  <dl class="dl-horizontal">
+    <dt><a href="#more" data-toggle="collapse" data-target=".more">More info</a></dt>
+    <dd>-</dd>
+  </dl>
+
+  <dl class="dl-horizontal">
+    <div class="more collapse">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt>Language</dt>
+    <dd>Spanish</dd>
+    
+
+    
+
+    
+
+    
+    <dt>Supplemental Information</dt>
+    <dd><p>No information provided</p></dd>
+    
+
+    
+
+  </div>
+
+  </dl>
+
+  
+    
+
+
+        
+          
+          <p>
+            
+              <a href="/capabilities/layer/360/">
+            
+            <i class="fa fa-map"></i> Layer WMS GetCapabilities document</a></p>
+          
+        
+      </article>
+
+      
+
+      <article id="attributes" class="tab-pane">
+        
+        
+            <table class="table table-striped table-bordered table-condensed">
+              <thead>
+                <tr>
+                  <th>Attribute Name</th>
+                  <th>Label</th>
+                  <th>Description</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td >fid</td>
+                    <td ></td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td >id</td>
+                    <td ></td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td title="nam">nam</td>
+                    <td title="nam">Departamento</td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td title="cde">cde</td>
+                    <td title="cde">Código de departamento</td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td title="jur">jur</td>
+                    <td title="jur">Jurisdicción</td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td title="cpr">cpr</td>
+                    <td title="cpr">Código de jurisdicción</td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td >fna</td>
+                    <td ></td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td >gna</td>
+                    <td ></td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td >fdc</td>
+                    <td ></td>
+                    <td></td>
+                    
+                  </tr>
+                
+                  <tr>
+                    <td >sag</td>
+                    <td ></td>
+                    <td></td>
+                    
+                  </tr>
+                
+              </tbody>
+            </table>
+        
+      </article>
+
+      
+      
+        
+
+
+
+<link href="/static/geonode/css/social_twitter.css" rel="stylesheet" />
+
+
+
+	<article class="tab-pane" id="share">
+        <!-- TODO: Move this to a reusable template snippet -->
+        <header>
+            
+            <h3>Share This Layer </h3>
+            
+        </header>
+        <div>
+              <ul class="social">
+                  
+                      
+                      <li><a href="mailto:?subject=Departamentos&amp;body=http://geonode.indec.gob.ar/layers/geonode_data:geonode:departamentos" class="email">Email</a></li>
+                      
+                  
+                      
+                      <li><a href="http://www.facebook.com/sharer.php?u=http://geonode.indec.gob.ar/layers/geonode_data:geonode:departamentos" class="fb">Facebook</a></li>
+                      
+                  
+                      
+                      <li><a href="https://twitter.com/share?url=http://geonode.indec.gob.ar/layers/geonode_data:geonode:departamentos&amp;hashtags=geonode" class="tw">Twitter</a></li>
+                      
+                  
+              </ul>
+         </div>
+        <!-- TODO: Add more sharing options -->
+    </article>
+
+
+      
+      
+
+      
+      <article id="comments" class="tab-pane">
+        
+          
+
+
+
+
+
+
+<div id="comments_section" class="comments paginate paginate-manual">
+  <header>
+    <h3>Comments <span class="total">(0 total)</span></h3>
+  </header>
+
+  
+  <div class="clearfix">
+    <p class="pull-right">Log in to add a comment</p>
+  </div>
+  
+  <div class="paginate-contents">
+  
+  
+  
+  </div>
+  
+
+</div>
+
+<!-- Modal -->
+
+
+        
+      </article>
+      
+
+      
+      <article id="rate" class="tab-pane">
+        <!-- TODO: Move this to a reusable template snippet -->
+        
+        <h4>Average Rating</h4>
+        
+        
+        <div class="overall_rating" data-score="0"></div> (0)
+      </article>
+      
+
+
+      
+
+      
+      <article class="tab-pane" id="favorite">
+        
+
+<div id="favorite">
+    <header>
+        <h4>Favorite</h4>
+    </header>
+
+    
+    <div class="clearfix">
+        <p class="pull-right">Log in to add/delete Favorites.</p>
+    </div>
+    
+</div>
+
+      </article>
+      
+    </div>
+
+  </div>
+  <div class="col-md-4">
+
+    <ul class="list-group">
+      
+        
+        
+          <li class="list-group-item">
+          
+            <button class="btn btn-primary btn-md btn-block" data-toggle="modal" data-target="#download-layer">Download Layer</button>
+          
+          </li>
+        
+      
+    <div class="modal fade" id="download-layer" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Download Layer</h4>
+          </div>
+          <div class="modal-body">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    
+                    <li class="active"><a href="#download_tab1" data-toggle="tab">Images</a></li>
+                    
+                    
+                    <li><a href="#download_tab2" data-toggle="tab">Data</a></li>
+                    
+                </ul>
+                <div class="tab-content">
+                
+                    <div class="tab-pane active" id="download_tab1">
+                        <li class="active">
+                            <ul>
+                              
+                                <li><a href="https://geonode.indec.gob.ar/geoserver/ows?service=WMS&amp;request=GetMap&amp;layers=geonode%3Adepartamentos&amp;format=image%2Fjpeg&amp;height=550&amp;width=550&amp;srs=EPSG%3A3857&amp;bbox=-8237642.3187022%2C-37718348.6514006%2C-2782987.2698319%2C-2485234.6175608" target="_blank">JPEG</a></li>
+                              
+                                <li><a href="https://geonode.indec.gob.ar/geoserver/ows?service=WMS&amp;request=GetMap&amp;layers=geonode%3Adepartamentos&amp;format=application%2Fpdf&amp;height=550&amp;width=550&amp;srs=EPSG%3A3857&amp;bbox=-8237642.3187022%2C-37718348.6514006%2C-2782987.2698319%2C-2485234.6175608" target="_blank">PDF</a></li>
+                              
+                                <li><a href="https://geonode.indec.gob.ar/geoserver/ows?service=WMS&amp;request=GetMap&amp;layers=geonode%3Adepartamentos&amp;format=image%2Fpng&amp;height=550&amp;width=550&amp;srs=EPSG%3A3857&amp;bbox=-8237642.3187022%2C-37718348.6514006%2C-2782987.2698319%2C-2485234.6175608" target="_blank">PNG</a></li>
+                              
+                            </ul>
+                        </li>
+                    </div>
+                
+                
+                    
+                    <div class="tab-pane" id="download_tab2">
+                    
+                      </br>
+                      <div class="form-actions">
+                        <a href="/layers/geonode:departamentos/layer_export" class="btn btn-primary">Export Layer</a>
+                        <br></br>
+                      </div>
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                          
+                        
+                    </div>
+                
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      
+    
+
+      
+    <li class="list-group-item">
+      <a href="/layers/geonode:departamentos/metadata_detail">
+        <button class="btn btn-primary btn-md btn-block">Metadata Detail</button>
+      </a>
+    </li>
+    
+    
+    
+    
+      
+    
+
+      
+    <li class="list-group-item">
+      <a href="/maps/new?layer=geonode:departamentos&view=True" class="btn btn-default btn-md btn-block">View Layer</a>
+    </li>
+    
+
+      
+    <li class="list-group-item">
+      <button class="btn btn-default btn-md btn-block" data-toggle="modal" data-target="#download-metadata">Download Metadata</button>
+    </li>
+    
+    <div class="modal fade" id="download-metadata" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Download Metadata</h4>
+          </div>
+          <div class="modal-body">
+            <div style="margin-bottom:20px">
+                <h5 class="modal-title" id="myModalLabel">
+                Full metadata
+                </h5>
+                <ul>
+                    <li><a target="_blank" href="/catalogue/csw_to_extra_format/bb78108e-f2e6-4ae2-84c2-42369dd78bab/departamentos.txt"> Text format </a></li>
+                    <li><a target="_blank" href="/catalogue/csw_to_extra_format/bb78108e-f2e6-4ae2-84c2-42369dd78bab/departamentos.html"> HTML format </a></li>
+                </ul>
+            </div>
+            <div style="margin-bottom:20px">
+                <h5 class="modal-title" id="myModalLabel">
+                Standard Metadata - XML format
+                </h5>
+                <ul>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/catalogue/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=bb78108e-f2e6-4ae2-84c2-42369dd78bab&amp;outputschema=http%3A%2F%2Fwww.w3.org%2F2005%2FAtom&amp;elementsetname=full" target="_blank">Atom</a></li>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/catalogue/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=bb78108e-f2e6-4ae2-84c2-42369dd78bab&amp;outputschema=http%3A%2F%2Fgcmd.gsfc.nasa.gov%2FAboutus%2Fxml%2Fdif%2F&amp;elementsetname=full" target="_blank">DIF</a></li>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/catalogue/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=bb78108e-f2e6-4ae2-84c2-42369dd78bab&amp;outputschema=http%3A%2F%2Fwww.opengis.net%2Fcat%2Fcsw%2F2.0.2&amp;elementsetname=full" target="_blank">Dublin Core</a></li>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/catalogue/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=bb78108e-f2e6-4ae2-84c2-42369dd78bab&amp;outputschema=urn%3Aoasis%3Anames%3Atc%3Aebxml-regrep%3Axsd%3Arim%3A3.0&amp;elementsetname=full" target="_blank">ebRIM</a></li>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/catalogue/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=bb78108e-f2e6-4ae2-84c2-42369dd78bab&amp;outputschema=http%3A%2F%2Fwww.opengis.net%2Fcat%2Fcsw%2Fcsdgm&amp;elementsetname=full" target="_blank">FGDC</a></li>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/catalogue/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=bb78108e-f2e6-4ae2-84c2-42369dd78bab&amp;outputschema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&amp;elementsetname=full" target="_blank">ISO</a></li>
+                   
+                   <li><a href="https://geonode.indec.gob.ar/showmetadata/xsl/360" target="_blank">ISO with XSL</a></li>
+                   
+                <ul>
+            </div>
+            
+            <h5 class="modal-title" id="myModalLabel">Attribute Information</h5>
+            <ul>
+              <li><a href="/layers/geonode_data:geonode:departamentos/feature_catalogue" target="_blank">ISO Feature Catalogue</a></li>
+            <ul>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <li class="list-group-item">
+      <h4 class="list-group-item-heading">Legend</h4>
+      
+      
+      
+        
+          
+              
+                  
+                  
+                  
+                    <p id="legend_sld_title" style="font-size:10px">departamentos</p>
+                    
+                        <p><img id="legend_icon" src="https://geonode.indec.gob.ar/geoserver/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image/png&amp;WIDTH=20&amp;HEIGHT=20&amp;LAYER=geonode:departamentos&amp;STYLE=departamentos&amp;version=1.3.0&amp;sld_version=1.1.0&amp;legend_options=fontAntiAliasing:true;fontSize:12;forceLabels:on"></p>
+                    
+                  
+              
+          
+        
+      
+      
+    </li>
+    
+      
+    <li class="list-group-item">
+      <h4>Maps using this layer</h4>
+        
+        <ul class="list-unstyled">
+          
+            <li>This layer is not currently used in any maps.</li>
+          
+        </ul>
+    </li>
+    
+    
+
+    
+
+    
+    <li class="list-group-item">
+      <h4>Styles</h4>
+       <p>The following styles are associated with this layer. Choose a style to view it in the preview map.</p>
+       <ul class="list-unstyled">
+        
+            
+            
+            <li>
+              
+               <input type="radio" checked name="style" id="departamentos" value="departamentos"/>
+              (default style)
+              
+              <a href="https://geonode.indec.gob.ar/geoserver/rest/workspaces/geonode/styles/departamentos.sld" >departamentos</a>
+            </li>
+            
+        
+      </ul>
+    </li>
+    
+
+    
+
+    
+      
+    
+
+    
+      
+    
+
+    
+    
+<li class="list-group-item">
+  <h4>About</h4>
+  
+  <p>Responsible, Point of Contact, Metadata Author</p>
+    
+      
+
+
+<section class="last">
+  
+    <div class="avatar span1 pull-left"><a href="/people/profile/admin/"><img src="https://www.gravatar.com/avatar/46d229b033af06a191ff2267bca9ae56/?s=40" width="40" alt="admin" /></a></div>
+  
+  <div>
+    <div>
+    <a href="/people/profile/admin/">admin</a>
+      
+    </div>
+    <div class="details">
+      <div class="meta">
+        <p>
+          No Group
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+  
+</li>  
+  </ul>
+  
+
+<div class="modal fade" style="width: 100%; height: 100%;" id="_perms_processing" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Processing...</h1>
+            </div>
+            <div class="modal-body">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    Updating Permissions...
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+    
+
+
+
+
+<script src="/static/geonode/js/proj4js/proj4.js" type="text/javascript"></script>
+<script src="/static/geonode/js/ol-2.13/OpenLayers.js" type="text/javascript"></script>
+<script src="/static/geonode/js/ol-2.13/lib/OpenLayers/Layer/ArcGISCache.js" type="text/javascript"></script>
+<script src="/static/geonode/js/ol-2.13/ext/geonode_ol_ext.js" type="text/javascript"></script>
+<script src="/static/geonode/js/jszip/jszip.js" type="text/javascript"></script>
+<script src="/static/geonode/js/jszip/jszip-utils.js" type="text/javascript"></script>
+<script src="/static/geonode/js/jszip/preprocess.js" type="text/javascript"></script>
+<script src="/static/geonode/js/jszip/preview.js" type="text/javascript"></script>
+
+<style>
+    /* Bootstrap */
+    .modal {
+      overflow: auto !important;
+    }
+    .tooltip {
+      position: fixed;
+    }
+    .bt-scrollable {
+      max-height: 180px;
+      margin-bottom: 10px;
+      overflow:scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+    .photo {
+      border-radius: 45px;
+      margin-right: 10px;
+      width: 64px;
+      height:64px
+    }
+    .name {
+      font-weight: 700;
+    }
+    .expertise-label {
+      display:block;
+      font-weight: 700;
+      margin-top:10px;
+    }
+    .btn-more {
+      margin-top:10px;
+      width: 100%
+    }
+    .label {
+      font-weight: normal;
+    }
+    #dataInfo {
+      text-align: center;
+    }
+    #option {
+      display: none;
+    }
+
+    /* OpenLayers */
+    .olControlAttribution {
+        bottom: 0 !important;
+    }
+    .olControlEditingToolbar .olControlRemoveFeatureItemInactive{
+        background-position: -153px -1px;
+    }
+    .olControlEditingToolbar .olControlRemoveFeatureItemActive {
+        background-position: -153px -24px;
+    }
+</style>
+
+
+<div class="modal fade" id="_permissions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <form id="permission_form" accept-charset="UTF-8" method="post" class="modal-form" action="/security/permissions/360">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Set permissions for this resource</h4>
+        </div>
+        <div class="modal-body">
+          <div class="tabbable">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#permissions_tab1" data-toggle="tab">People and Groups</a></li>
+              
+                
+              
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="permissions_tab1">
+                
+
+<style>
+  .select2-selection.required {
+    background-color: #ffffcc !important;
+    /* border-color: #ff9999;
+    border-width: 3px; */
+  }
+</style>
+
+<div class="panel-group" id="permissions-body">
+  <!-- view layer -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          Who can view it?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="controls">
+        <div class="radio">
+          <label>
+            <input type="checkbox" name="view_anonymous" id="perms_view_anyone" value="AnonymousUser" >
+            Anyone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following users:
+            <select class="user-select" name="view_resourcebase_users" id="view_resourcebase_users" required></select>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following groups:
+            <select class="group-select" name="view_resourcebase_groups" id="view_resourcebase_groups"></select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- download layer -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          Who can download it?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="controls">
+        <div class="radio">
+          <label>
+            <input type="checkbox" name="download_anonymous" id="perms_download_resourcebase_anyone" value="AnonymousUser" >
+            Anyone
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following users:
+            <select class="user-select" name="download_resourcebase_users" id="download_resourcebase_users" required></select>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following groups:
+            <select class="group-select" name="download_resourcebase_groups" id="download_resourcebase_groups"></select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- change metadata -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          Who can change metadata for it?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="controls">
+        <div class="radio">
+          <label>
+            The following users:
+            <select class="user-select" name="change_resourcebase_metadata_users" id="change_resourcebase_metadata_users" required></select>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following groups:
+            <select class="group-select" name="change_resourcebase_metadata_groups" id="change_resourcebase_metadata_groups"></select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- change layer data -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          Who can edit data for this layer?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="controls">
+        <div class="radio">
+          <label>
+            The following users:
+            <select class="user-select" name="change_layer_data_users" id="change_layer_data_users" required></select>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following groups:
+            <select class="group-select" name="change_layer_data_groups" id="change_layer_data_groups"></select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- change layer style -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          Who can edit styles for this layer?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="controls">
+        <div class="radio">
+          <label>
+            The following users:
+            <select class="user-select" name="change_layer_style_users" id="change_layer_style_users" required></select>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following groups:
+            <select class="group-select" name="change_layer_style_groups" id="change_layer_style_groups"></select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- manage layer -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+          Who can manage it? (update, delete, change permissions, publish/unpublish it)
+        </a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="controls">
+        <div class="radio">
+          <label>
+            The following users:
+            <select class="user-select" name="manage_resourcebase_users" id="manage_resourcebase_users" required></select>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            The following groups:
+            <select class="group-select" name="manage_resourcebase_groups" id="manage_resourcebase_groups"></select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+              
+                
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+          <a href="#" class="btn btn-primary" data-dismiss="modal" id="perms_submit">Apply Changes</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="modal fade" id="_permissions_feedbacks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Message box</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="_add_shp_zip" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+
+              <div class="form-group">
+                <div class="input-group input-file" name="zipfile" id="zipfile" data-toggle="tooltip" data-placement="bottom" 
+                      data-content="Mandatory files : SHP , DBF">
+                  <span class="input-group-btn">
+                    <button id="geo-limits-upload-btn" class="btn btn-default btn-choose" type="button" 
+                            data-toggle="tooltip" data-placement="bottom"
+                            title="Upload a ZIP file containing an ESRI Shapefile. If the ZIP provides also a .prj file, you don't have to specify the EPSG SRID">Choose</button>
+                  </span>
+                  <input id="geo-limits-upload-txt" type="text" class="form-control" 
+                         data-toggle="tooltip" data-placement="bottom"
+                         title="Upload a ZIP file containing an ESRI Shapefile. If the ZIP provides also a .prj file, you don't have to specify the EPSG SRID"
+                         placeholder="Choose a file..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-warning btn-reset" type="button">Reset</button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field" id="dataInfo"></div>
+
+              <div id="option">
+                <div class="input-group">
+                  <span class="input-group-addon">EPSG</span>
+                  <input id="epsg" type="text" class="form-control" name="epsg" 
+                         data-toggle="tooltip" data-placement="bottom"
+                         title="Only the SRID number without the 'EPSG:' prefix!"
+                         placeholder="Default : 4326" onfocus="this.value='';">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">Encoding</span>
+                  <input id="encoding" type="text" class="form-control" name="encoding"
+                                       placeholder="Set your desired encoding UTF-8, Big5, Big5-HKSCS ..." 
+                                       onfocus="this.value='';">
+                </div>
+                <button type="button" id="loadShpZip" class="btn btn-primary">Upload</button>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function (event) {
+    /* Bootstrap */
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // var userList = new List('gis-limits-users', {valueNames: ['gis-limits-user-name', 'gis-limits-user-title']});
+    var groupList = new List('gis-limits-groups', {valueNames: ['gis-limits-group-name', 'gis-limits-group-title']});
+    var limit = 5;
+    var offset = 0;
+    var lastOffset = 0;
+    var searchValue = ''
+
+    $(function() {
+      load_gis_limits_users();
+
+      var searchUserDelay = delay(load_gis_limits_users, 300)
+      $("#search-users").keyup(function() {
+        searchValue = $(this).val()
+        offset = 0
+        searchUserDelay()
+      });
+
+      $('#gis-limits-users-content').on("scroll", function(event) {
+        var scrollHeight = $('#gis-limits-users').height();
+        var scrollPosition = $('#gis-limits-users-content').scrollTop();
+        if (scrollPosition >= 50*(offset-3)){
+          if (offset == lastOffset) {
+            offset += limit;
+            load_gis_limits_users();
+          }
+          // event.stopPropagation();
+          event.preventDefault();
+       }
+      });
+
+      function delay(callback, waitTime) {
+        var timer = 0;
+        return function() {
+          var context = this, args = arguments;
+          clearTimeout(timer);
+          timer = setTimeout(function () {
+            callback.apply(context, args);
+          }, waitTime);
+        };
+      };
+
+      function load_gis_limits_users() {
+        $.ajax({
+          url: "/api/profiles/",
+          dataType: 'json',
+          data:  !!searchValue ? {
+            limit:limit,
+            offset:offset,
+            order_by: 'username',
+            username__icontains: searchValue
+          } : {
+            limit: limit,
+            offset: offset,
+            order_by: 'username'
+          },
+          beforeSend: function() {
+            $('#loading_icon').show();
+          },
+          success: function(data) {
+            $('#loading_icon').hide();
+            users = $(data.objects);
+            if (users.length) {
+              var html = "";
+              users.each(function() {
+                userid = $(this)[0].id;
+                username = $(this)[0].username;
+                avatar = $(this)[0].avatar_100;
+                organization = $(this)[0].organization;
+                if (organization == null) {
+                  organization = "No Group";
+                }
+                html += `
+                   <a href="javascript:void(0)" class="list-group-item">
+                     <div class="col-md-8">
+                       <div class="pull-left photo">
+                         <img src="${avatar}" class="pull-left photo">
+                       </div>
+                       <h4 class="list-group-item-heading gis-limits-user-name">${username}</h4>
+                       <p class="list-group-item-text gis-limits-user-title">${organization}</p>
+                     </div>
+                     <div class="col-md-4">
+                       <div class="expertise">
+                         <div class="read-more pull-right">
+                           <button id="user-load${userid}" type="button" class="btn btn-default btn-sm deserialize-geo-limit"
+                             data-toggle="tooltip" data-placement="top" title="Show Geo Limits" aria-pressed="true">
+                             <span class="glyphicon glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                           </button>
+                           <button id="user-upload${userid}" type="button" class="btn btn-default btn-sm"
+                             data-toggle="tooltip" data-placement="top" title="Upload Geo Limits" aria-pressed="true">
+                             <span class="glyphicon glyphicon glyphicon glyphicon-open-file"
+                               data-toggle="modal" data-target="#_add_shp_zip" aria-hidden="true"></span>
+                           </button>
+                           <button id="user-save${userid}" type="button" class="btn btn-default btn-sm serialize-geo-limit"
+                             data-toggle="tooltip" data-placement="top" title="Save Geo Limits" aria-pressed="true">
+                             <span class="glyphicon glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+                           </button>
+                           <button id="user-remove${userid}" type="button" class="btn btn-default btn-sm delete-geo-limit"
+                             data-toggle="tooltip" data-placement="top" title="Delete Geo Limits" aria-pressed="true">
+                             <span class="glyphicon glyphicon glyphicon-trash" aria-hidden="true"></span>
+                           </button>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="clearfix"></div>
+                   </a>`
+              });
+
+              if (html) {
+                if (searchValue && offset === 0){
+                  $('#gis-limits-users-list').html(html);
+                }
+                else{
+                  if (offset === 0) {
+                    $('#gis-limits-users-list').html(html);
+                  }
+                  else{
+                    $('#gis-limits-users-list').append(html);
+                  }
+                }
+                lastOffset = offset;
+                // offset += limit;
+              }
+            } else {
+              $('#warning_area').text("That's all folks!");
+            }
+          },
+          error: function() {
+            $('#loading_icon').hide();
+            $('#warning_area').text('Unable to load articles, please check your internet connection or try again later.');
+            console.log('Ajax Request Has Failed');
+          }
+        });
+      }
+    });
+
+    $(".input-file").before(
+      function() {
+        if ( ! $(this).prev().hasClass('input-ghost') ) {
+          var element = $("<input type='file' class='input-ghost' accept='.zip' style='visibility:hidden; height:0'>");
+          element.attr("id",$(this).attr("id"));
+          element.attr("name",$(this).attr("name"));
+          element.change(function(evt){
+            element.next(element).find('input').val((element.val()).split('\\').pop());
+            file = evt.target.files[0];
+            if(file.size > 0) {
+              $('#dataInfo').text(' ').append(file.name+' , '+file.size+' kb');
+              $('#option').slideDown(500);
+            }
+          });
+          $(this).find("button.btn-choose").click(function(){
+            element.click();
+          });
+          $(this).find("button.btn-reset").click(function(){
+            element.val(null);
+            $(this).parents(".input-file").find('input').val('');
+            $('#dataInfo').text(' ');
+            $('#option').slideUp(500);
+          });
+          $(this).find('input').css("cursor","pointer");
+          $(this).find('input').mousedown(function() {
+            $(this).parents('.input-file').prev().click();
+            return false;
+          });
+          return element;
+        }
+      }
+    );
+
+    function initGeoLimitsMap() {
+      /* OpenLayers */
+      
+        var bbox = [-74.0000000,-89.6903529,-25.0000000,-21.7808559];
+      
+      var source = null;
+      
+        
+          var url = 'https://geonode.indec.gob.ar/geoserver/ows';
+        
+
+        source = new OpenLayers.Layer.WMS("Departamentos",
+          url,
+          {layers: 'geonode:departamentos', transparent: true, TILED: true},
+          {isBaseLayer: false, tileSize: new OpenLayers.Size(512, 512)}
+        );
+      
+
+      //Snippet comes from http://osgeo-org.1560.x6.nabble.com/OL-2-13-1-latest-Proj4js-td5081636.html
+      /* window.Proj4js = {
+        Proj: function(code) {
+          return proj4(Proj4js.defs[code]);
+        },
+        defs: proj4.defs,
+        transform: proj4
+      }; */
+
+      var crs = 'EPSG:4326';  // resource.ll_bbox is always 4326
+      if (source != null) {
+        var vectors = new OpenLayers.Layer.Vector("Simple Geometry", {
+          styleMap: new OpenLayers.StyleMap({'default':{
+            strokeColor: "#00FF00",
+            strokeOpacity: 1,
+            strokeWidth: 3,
+            fillColor: "#FF5500",
+            fillOpacity: 0.5,
+            pointRadius: 6,
+            pointerEvents: "visiblePainted",
+            // label with \n linebreaks
+            // label : "name: ${name}\n\nage: ${age}",
+            fontColor: "${favColor}",
+            fontSize: "12px",
+            fontFamily: "Courier New, monospace",
+            fontWeight: "bold",
+            labelAlign: "${align}",
+            labelXOffset: "${xOffset}",
+            labelYOffset: "${yOffset}",
+            labelOutlineColor: "white",
+            labelOutlineWidth: 3
+          }})
+        });
+        var layers = [
+          new OpenLayers.Layer.OSM("OpenCycleMap",
+            ["https://a.tile.openstreetmap.org/${z}/${x}/${y}.png",
+              "https://b.tile.openstreetmap.org/${z}/${x}/${y}.png",
+              "https://c.tile.openstreetmap.org/${z}/${x}/${y}.png"]),
+          source,
+          vectors
+        ];
+
+        var map = new OpenLayers.Map({
+          div: 'gis_limits_map',
+          projection: new OpenLayers.Projection('EPSG:900913'),
+          layers: layers,
+          center: [0, 0],
+          zoom: 2
+        });
+
+        map.addControl(new OpenLayers.Control.EditingToolbar(vectors));
+
+        if (bbox != null) {
+          if (crs != 'EPSG:900913') {
+            bbox = new OpenLayers.Bounds(bbox).transform(
+              new OpenLayers.Projection(crs),
+              new OpenLayers.Projection("EPSG:900913"));
+          }
+          map.zoomToExtent(bbox);
+        }
+
+        function loadShpZip() {
+          var epsg = ($('#epsg').val() == '') ? 4326 : $('#epsg').val(),
+          encoding = ($('#encoding').val() == '') ? 'UTF-8' : $('#encoding').val();
+          if(file.name.split('.')[1] == 'zip') {
+            loadshp({
+              url: file,
+              encoding: encoding,
+              EPSG: epsg
+            }, function(data) {
+              var geojson_format = new OpenLayers.Format.GeoJSON();
+              var features = geojson_format.read(data);
+              var features_arr = [];
+              for (l=0; l<features.length; l++) {
+                var geom = features[l].geometry.clone();
+                geom.transform(
+                  new OpenLayers.Projection("EPSG:" + epsg),
+                  new OpenLayers.Projection("EPSG:900913"));
+                features_arr.push(new OpenLayers.Feature.Vector(geom));
+              }
+              vectors.removeAllFeatures();
+              vectors.addFeatures(features_arr);
+
+              var bbox = new OpenLayers.Bounds(data.bbox).transform(
+                  new OpenLayers.Projection("EPSG:" + epsg),
+                  new OpenLayers.Projection("EPSG:900913"));
+              map.zoomToExtent(bbox);
+
+              $('#epsg').val('');
+              $('#encoding').val('');
+              $('#dataInfo').text(' ');
+              $('#option').slideUp(500);
+              $("#_add_shp_zip").modal("hide");
+            });
+          } else {
+            $('.modal').modal('show');
+          }
+        }
+
+        $('#loadShpZip').click(function() {
+          $("#confirmMsgBoxModalOK").find('.modal-title').html('Load SHP-ZIP');
+          $("#confirmMsgBoxModalOK").find('.modal-body').html('<p>This will remove the Geo Limits currently drawn on the map.</p><p>In order to store the Geo Limits you will need to <strong>save</strong> them anyway.</p><p>Do you want to proceed?</p>');
+          $("#confirmMsgBoxModalOK_control_field").val('loadShpZip');
+          $('#confirmMsgBoxModalOK').find('.modal-footer .confirm').remove();
+          var confirm_button = $('<button />').attr({ type: 'button', id:'confirm_loadShpZip', class:'btn btn-danger confirm' });
+          $('#confirmMsgBoxModalOK').find('.modal-footer').append(confirm_button);
+          $("#confirmMsgBoxModalOK").modal("show");
+          $('#confirm_loadShpZip').html('OK');
+          $('#confirm_loadShpZip').prop('value', 'OK');
+
+          $('#confirm_loadShpZip').on('click', function(e) {
+            e.stopImmediatePropagation();
+            if ($("#confirmMsgBoxModalOK_control_field").val() == 'loadShpZip') {
+              $("#confirmMsgBoxModalOK_control_field").val();
+              $("#confirmMsgBoxModalOK").modal("hide");
+              loadShpZip();
+            }
+          });
+        });
+
+        function serializeGeoLimit(ID) {
+          $("#confirmMsgBoxModalOK").find('.modal-title').html('Save Geo Limits');
+          $("#confirmMsgBoxModalOK").find('.modal-body').html('<p>This will override the current stored Geo Limits on the DB.</p><p>To apply them you will need to click on <strong>Apply Changes</strong> button anyway.</p><p><strong>WARNING:</strong> This operation cannot be reverted!</p><p>Do you want to proceed?</p>');
+          $("#confirmMsgBoxModalOK_control_field").val('serializeGeoLimit');
+          $('#confirmMsgBoxModalOK').find('.modal-footer .confirm').remove();
+          var confirm_button = $('<button />').attr({ type: 'button', id:'confirm_serializeGeoLimit', class:'btn btn-danger confirm' });
+          $('#confirmMsgBoxModalOK').find('.modal-footer').append(confirm_button);
+          $("#confirmMsgBoxModalOK").modal("show");
+          $('#confirm_serializeGeoLimit').html('OK');
+          $('#confirm_serializeGeoLimit').prop('value', 'OK');
+
+          $('#confirm_serializeGeoLimit').on('click', function(e) {
+            e.stopImmediatePropagation();
+            if ($("#confirmMsgBoxModalOK_control_field").val() == 'serializeGeoLimit') {
+              $("#confirmMsgBoxModalOK_control_field").val();
+              $("#confirmMsgBoxModalOK").modal("hide");
+
+              var pretty = false;
+              var out_options = {
+                'internalProjection': map.projection,
+                'externalProjection': new OpenLayers.Projection("EPSG:4326")
+              };
+              var wkt = new OpenLayers.Format.WKT(out_options);
+
+              var query_param = "";
+              if(ID.startsWith("user-save")) {
+                query_param = "user_id=" + ID.substring("user-save".length);
+              } else if(ID.startsWith("group-save")) {
+                query_param = "group_id=" + ID.substring("group-save".length);
+              }
+
+              var data = null;
+              if (vectors.features.length > 0) {
+                var polygonList = [];
+                for (i=0;i<vectors.features.length;i++) {
+                  var polygon = new OpenLayers.Geometry.Polygon(new OpenLayers.Geometry.LinearRing(vectors.features[i].geometry.getVertices()));
+                  polygonList.push(polygon);
+                }
+                multuPolygonGeometry = new OpenLayers.Geometry.MultiPolygon(polygonList);
+                multiPolygonFeature = new OpenLayers.Feature.Vector(multuPolygonGeometry);
+                data = wkt.write(multiPolygonFeature, pretty);
+              }
+              $.ajax({
+                type: "POST",
+                url: '/security/geolimits/360?' + query_param,
+                data: data,
+                success: function(data, status, xhr) {
+                  $("#_thumbnail_feedbacks").find('.modal-title').text('Save Geo Limit');
+                  $("#_thumbnail_feedbacks").find('.modal-body').html('<p>Geometry <strong>successfully</strong> saved!</p><p>To apply them you will need to click on <strong>Apply Changes</strong> button.</p>');
+                  $("#_thumbnail_feedbacks").modal("show");
+                },
+                error: function(xhr, status, error) {
+                  $("#_thumbnail_feedbacks").find('.modal-title').text('Save Geo Limit');
+                  $("#_thumbnail_feedbacks").find('.modal-body').html('<p><strong>Error</strong> while trying to save the Geometry!</p>');
+                  $("#_thumbnail_feedbacks").modal("show");
+                }
+              });
+              return false;
+            }
+          });
+        }
+
+        $(document).on('click', '.serialize-geo-limit', function() {
+          serializeGeoLimit($(this).attr('id'));
+        });
+
+        function deserializeGeoLimit(ID) {
+          $("#confirmMsgBoxModalOK").find('.modal-title').html('Load Geo Limits');
+          $("#confirmMsgBoxModalOK").find('.modal-body').html('<p>This will remove the Geo Limits currently drawn on the map.</p><p>In order to store the Geo Limits you will need to <strong>save</strong> them anyway.</p><p>Do you want to proceed?</p>');
+          $("#confirmMsgBoxModalOK_control_field").val('deserializeGeoLimit');
+          $('#confirmMsgBoxModalOK').find('.modal-footer .confirm').remove();
+          var confirm_button = $('<button />').attr({ type: 'button', id:'confirm_deserializeGeoLimit', class:'btn btn-danger confirm' });
+          $('#confirmMsgBoxModalOK').find('.modal-footer').append(confirm_button);
+          $("#confirmMsgBoxModalOK").modal("show");
+          $('#confirm_deserializeGeoLimit').html('OK');
+          $('#confirm_deserializeGeoLimit').prop('value', 'OK');
+
+          $('#confirm_deserializeGeoLimit').on('click', function(e) {
+            e.stopImmediatePropagation();
+            if ($("#confirmMsgBoxModalOK_control_field").val() == 'deserializeGeoLimit') {
+              $("#confirmMsgBoxModalOK_control_field").val();
+              $("#confirmMsgBoxModalOK").modal("hide");
+
+              var in_options = {
+                'internalProjection': map.projection,
+                'externalProjection': new OpenLayers.Projection("EPSG:4326")
+              };
+              var wkt = new OpenLayers.Format.WKT(in_options);
+
+              var query_param = "";
+              if(ID.startsWith("user-load")) {
+                query_param = "user_id=" + ID.substring("user-load".length);
+              } else if(ID.startsWith("group-load")) {
+                query_param = "group_id=" + ID.substring("group-load".length);
+              }
+
+              $.ajax({
+                type: "GET",
+                url: '/security/geolimits/360?' + query_param,
+                success: function(data, status, xhr) {
+                  var features = wkt.read(data);
+                  var bounds;
+                  if(features) {
+                      if(features.constructor != Array) {
+                          features = [features];
+                      }
+                      for(var i=0; i<features.length; ++i) {
+                          if (!bounds) {
+                              bounds = features[i].geometry.getBounds();
+                          } else {
+                              bounds.extend(features[i].geometry.getBounds());
+                          }
+
+                      }
+                      vectors.removeAllFeatures();
+                      vectors.addFeatures(features);
+                      map.zoomToExtent(bounds);
+                  } else {
+                      element.value = 'Bad input ' + type;
+                  }
+                  return;
+                },
+                error: function(xhr, status, error) {
+                  $("#_thumbnail_feedbacks").find('.modal-title').text('Load Geo Limit');
+                  $("#_thumbnail_feedbacks").find('.modal-body').html('<p><strong>No Geometry</strong> found!</p>');
+                  $("#_thumbnail_feedbacks").modal("show");
+                }
+              });
+              return false;
+            }
+          });
+        }
+
+        $(document).on('click', '.deserialize-geo-limit', function(event) {
+          console.log($(this).attr('id'));
+          deserializeGeoLimit($(this).attr('id'));
+        });
+
+        function deleteGeoLimit(ID) {
+          $("#confirmMsgBoxModalOK").find('.modal-title').html('Delete Geo Limits');
+          $("#confirmMsgBoxModalOK").find('.modal-body').html('<p>This will <strong>permanently</strong> remove the Geo Limits from the DB.</p><p>To apply them you will need to click on <strong>Apply Changes</strong> button.</p><p>Do you want to proceed?</p>');
+          $("#confirmMsgBoxModalOK_control_field").val('deleteGeoLimit');
+          $('#confirmMsgBoxModalOK').find('.modal-footer .confirm').remove();
+          var confirm_button = $('<button />').attr({ type: 'button', id:'confirm_deleteGeoLimit', class:'btn btn-danger confirm' });
+          $('#confirmMsgBoxModalOK').find('.modal-footer').append(confirm_button);
+          $("#confirmMsgBoxModalOK").modal("show");
+          $('#confirm_deleteGeoLimit').html('OK');
+          $('#confirm_deleteGeoLimit').prop('value', 'OK');
+
+          $('#confirm_deleteGeoLimit').on('click', function(e) {
+            e.stopImmediatePropagation();
+            if ($("#confirmMsgBoxModalOK_control_field").val() == 'deleteGeoLimit') {
+              $("#confirmMsgBoxModalOK_control_field").val();
+              $("#confirmMsgBoxModalOK").modal("hide");
+
+              var query_param = "";
+              if(ID.startsWith("user-remove")) {
+                query_param = "user_id=" + ID.substring("user-remove".length);
+              } else if(ID.startsWith("group-remove")) {
+                query_param = "group_id=" + ID.substring("group-remove".length);
+              }
+
+              $.ajax({
+                type: "DELETE",
+                url: '/security/geolimits/360?' + query_param,
+                success: function(data, status, xhr) {
+                  $("#_thumbnail_feedbacks").find('.modal-title').text('Delete Geo Limit');
+                  $("#_thumbnail_feedbacks").find('.modal-body').html('<p><strong>Geo Limitsy</strong> successfully deleted!</p>');
+                  $("#_thumbnail_feedbacks").modal("show");
+
+                  vectors.removeAllFeatures();
+                  return;
+                },
+                error: function(xhr, status, error) {
+                  $("#_thumbnail_feedbacks").find('.modal-title').text('Delete Geo Limit');
+                  $("#_thumbnail_feedbacks").find('.modal-body').html(
+                    "<p><strong>Error</strong> occurred while trying to delete Geo Limits:</p>" + '<q>' + xhr.responseText + '</q>');
+                  $("#_thumbnail_feedbacks").modal("show");
+                }
+              });
+              return false;
+            }
+          });
+        }
+
+        $(document).on('click', '.delete-geo-limit', function() {
+          deleteGeoLimit($(this).attr('id'));
+        });
+      }
+    }
+
+    var geoLimitsInitialized = false;
+    $('#geolimits-tab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+      if (!geoLimitsInitialized) {
+        geoLimitsInitialized = true;
+        initGeoLimitsMap();
+      }
+    });
+
+  });
+</script>
+
+
+  
+
+  </div> <!-- col-md-4 -->
+</div> <!-- row -->
+
+    </div>
+    
+
+    
+    
+
+  </div>
+
+  
+  
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li>Data</li>
+              <li><a href="/layers/?limit=5">Layers</a></li>
+              <li><a href="/documents/?limit=5">Documents</a></li>
+              <li><a href="/services/?limit=5">Remote Services</a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li>Maps</li>
+              <li><a href="/maps/?limit=5">Explore Maps</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li>About</li>
+              <li><a href="/people/">People</a></li>
+              <li><a href="/groups/">Groups</a></li>
+              
+              
+              
+            </ul>
+          </div>
+        
+        <div class="col-md-6 text-right">
+          
+          
+          
+          
+          <ul class="list-unstyled">
+            <li>Powered by <a href="http://geonode.org">GeoNode</a></li>
+            <li><a href="/developer/">Developers</a> | <a href="/about/">About</a><li>
+          </ul>
+          
+          <label class="hidden">Language</label>
+          
+          
+          <form class="form-inline" action="/i18n/setlang/" method="post">
+          <input type="hidden" name="csrfmiddlewaretoken" value="emNTugPNPmWkU92sp0n7LXKgR4ch6Af2ATujgG45DW94itSakvXcY5iqpSEC1SsF">
+            <select class="col-md-6 pull-right" name="language" onchange="javascript:form.submit()">
+              
+              <option value="af" >
+                Afrikaans
+              </option>
+              
+              <option value="sq" >
+                Albanian
+              </option>
+              
+              <option value="am" >
+                Amharic
+              </option>
+              
+              <option value="ar" >
+                Arabic
+              </option>
+              
+              <option value="id" >
+                Bahasa Indonesia
+              </option>
+              
+              <option value="bn" >
+                Bengali
+              </option>
+              
+              <option value="de" >
+                Deutsch
+              </option>
+              
+              <option value="en"  selected="selected">
+                English
+              </option>
+              
+              <option value="es" >
+                Español
+              </option>
+              
+              <option value="fr" >
+                Français
+              </option>
+              
+              <option value="it" >
+                Italiano
+              </option>
+              
+              <option value="km" >
+                Khmer
+              </option>
+              
+              <option value="nl" >
+                Nederlands
+              </option>
+              
+              <option value="ne" >
+                Nepali
+              </option>
+              
+              <option value="fa" >
+                Persian
+              </option>
+              
+              <option value="pl" >
+                Polish
+              </option>
+              
+              <option value="pt" >
+                Portuguese
+              </option>
+              
+              <option value="pt-br" >
+                Portuguese (Brazil)
+              </option>
+              
+              <option value="ru" >
+                Russian
+              </option>
+              
+              <option value="si" >
+                Sinhala
+              </option>
+              
+              <option value="sw" >
+                Swahili
+              </option>
+              
+              <option value="sv" >
+                Swedish
+              </option>
+              
+              <option value="tl" >
+                Tagalog
+              </option>
+              
+              <option value="ta" >
+                Tamil
+              </option>
+              
+              <option value="uk" >
+                Ukranian
+              </option>
+              
+              <option value="vi" >
+                Vietnamese
+              </option>
+              
+              <option value="el" >
+                Ελληνικά
+              </option>
+              
+              <option value="th" >
+                ไทย
+              </option>
+              
+              <option value="zh-cn" >
+                中文
+              </option>
+              
+              <option value="ja" >
+                日本語
+              </option>
+              
+              <option value="ko" >
+                한국어
+              </option>
+              
+              <option value="sk" >
+                Slovensky
+              </option>
+              
+            </select>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  
+
+
+    <!-- Modal must stay outside the navbar -->
+    
+    <div class="modal fade" id="SigninModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+          </div>
+          <form class="form-signin" role="form" action="/account/login/?next=/layers/geonode_data:geonode:departamentos" method="post">
+            <div class="modal-body">
+              <input type="hidden" name="csrfmiddlewaretoken" value="emNTugPNPmWkU92sp0n7LXKgR4ch6Af2ATujgG45DW94itSakvXcY5iqpSEC1SsF">
+              
+              
+              <div class="form-group">
+                <label for="id_username" class="sr-only">Username:</label>
+                <input id="id_username" class="form-control" name="login" placeholder="Username" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="id_password" class="sr-only">Password:</label>
+                <input id="id_password" class="form-control" name="password" placeholder="Password" type="password" autocomplete="off" />
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" /> Remember Me
+              </label>
+              <p>
+                <a href="/account/password/reset/">Forgot Password?</a>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- End of Modal -->
+
+    
+    <script src="/static/lib/js/assets.min.js"></script>
+    
+    <script src="/static/geonode/js/utils/utils.js"></script>
+    <script src="/static/geonode/js/base/base.js"></script>
+    <script type="text/javascript" src="/jsi18n/"></script>
+    
+
+    
+      
+    
+    
+<script type="text/javascript">
+$(function() {
+    $('div.overall_rating').raty({
+        half: true,
+        readOnly: true,
+        score: function() {
+          return $(this).attr('data-score');
+        },
+        path: "/static/lib/img/"
+    });
+    var activeTab = $("[href='" + location.hash + "']");
+    activeTab && activeTab.tab('show');
+});
+</script>
+
+    <script type="text/javascript">
+if($("#request-download").length){
+  $("#request-download").click(function () {
+    $.ajax(
+      {
+        type: "POST",
+        url: "/security/request-permissions",
+        dataType: 'json',
+        data: { uuid: "bb78108e-f2e6-4ae2-84c2-42369dd78bab" },
+        success: function(data) {
+          $('#status-message-text').text('Success!');
+          $('#status-message-text-body').text('Permission to download the resource requested to resource owner.');
+          $('#status-message').addClass('alert-success').removeClass('alert-danger');
+          $('#status-message').show();
+        },
+        error: function(data) {
+          $('#status-message-text').text('Error!');
+          $('#status-message-text-body').text('Permission to download the resource could not be requested to resource owner because of an error.');
+          $('#status-message').addClass('alert-danger').removeClass('alert-success');
+          $('#status-message').show();
+        }
+      }
+    );
+  });
+}
+</script>
+
+
+    <script type="text/javascript">
+      $("#comment_submit_btn").click(function(event) {
+          $.ajax({
+            type: "POST",
+            url: $("#form_post_comment").attr('action'),
+            data: $("#form_post_comment").serialize(),
+            success: function() {
+              $('#form_post_comment_div').modal().find('form')[0].reset();
+              $('#form_post_comment_div').modal('hide');
+              $('#comments_section').load(window.location.pathname + ' #comments_section',
+                  function(){$(this).children().unwrap()})
+            }
+          });
+          return false;
+        });
+
+        
+    </script>
+
+    
+      <script type="text/javascript">
+            
+            $('#set_thumbnail').click(function(){
+              createMapThumbnail();
+              $('#edit-layer').modal('toggle');
+            });
+            
+      </script>
+    
+
+  <script type="text/javascript">
+      
+
+  </script>
+
+    
+    
+
+<script type="text/javascript">
+
+  function permissionsString(form, type) {
+    var permissions = {
+      'users': {},
+      'groups': {}
+    }
+    if (typeof form === 'string'){
+      form = $(form);
+    }
+    var data = form.serializeObject();
+
+    /*
+    * If there's the anonymous user then set it's view permission and pop it
+    */
+    permissions['users']['AnonymousUser'] = [];
+    if (data.hasOwnProperty('view_anonymous')) {
+      permissions['users']['AnonymousUser'] = ['view_resourcebase'];
+      delete data['view_anonymous'];
+    }
+    if (data.hasOwnProperty('download_anonymous')) {
+      if (typeof permissions['users']['AnonymousUser'] !== 'undefined'){
+        permissions['users']['AnonymousUser'].push('download_resourcebase');
+      } else {
+        permissions['users']['AnonymousUser'] = ['download_resourcebase'];
+      };
+      delete data['download_anonymous'];
+    }
+
+    /*
+    * Cycle through permissions to map the form structure perm = ['user1',',user2'] to
+    * the geonode user = ['perm1','perm2'], the same for groups
+    */
+    var default_permissions = [
+      'view_resourcebase_users',
+      'view_resourcebase_groups',
+      'download_resourcebase_users',
+      'download_resourcebase_groups',
+      'change_resourcebase_metadata_users',
+      'change_resourcebase_metadata_groups',
+      'change_layer_data_users',
+      'change_layer_data_groups',
+      'change_layer_style_users',
+      'change_layer_style_groups',
+      'manage_resourcebase_users',
+      'manage_resourcebase_groups'
+    ];
+    $(default_permissions).each(function(index, perm) {
+      var perms_to_assign = [];
+      var perm_users_found = false;
+      var perm_groups_found = false;
+      if(perm.endsWith("_users")) {
+          perms_to_assign = [perm.substring(0, perm.length - "_users".length)];
+          perm_users_found = true;
+      }
+      if(perm.endsWith("_groups")) {
+          perms_to_assign = [perm.substring(0, perm.length - "_groups".length)];
+          perm_groups_found = true;
+      }
+      if(perm.startsWith('manage_resourcebase')){
+          perms_to_assign = ['change_resourcebase', 'delete_resourcebase', 'change_resourcebase_permissions', 'publish_resourcebase'];
+      }
+      
+      if (perm_users_found || perm_groups_found) {
+        var perm_key = perm_users_found ? 'users' : 'groups';
+        var d_perms = [];
+        $($('#' + perm).select2('data')).each(function (index, value) { d_perms.push(value.id); });
+        if (d_perms instanceof Array) {
+          for (var i=0;i<d_perms.length;i++){
+            var perm_value = d_perms[i];
+            for(var j=0;j< perms_to_assign.length;j++){
+              if(permissions[perm_key].hasOwnProperty(perm_value)){
+                permissions[perm_key][perm_value].push(perms_to_assign[j]);
+              }else{
+                permissions[perm_key][perm_value] = [perms_to_assign[j]];
+              }
+            }
+          }
+        } else {
+          for (var i=0;i<d_perms.split(',').length;i++){
+            var perm_value = d_perms.split(',')[i];
+            for(var j=0;j< perms_to_assign.length;j++){
+              if(permissions[perm_key].hasOwnProperty(perm_value)){
+                permissions[perm_key][perm_value].push(perms_to_assign[j]);
+              }else{
+                permissions[perm_key][perm_value] = [perms_to_assign[j]];
+              }
+            }
+          }
+        }
+      }
+    });
+
+    return permissions
+  };
+
+  $(function() {
+    $('#permissions-body').ready(function(){
+      
+      $.ajax(
+        "/security/permissions/360",
+        {
+          success: function(data){
+            var users = {
+              view_resourcebase: [],
+              download_resourcebase: [],
+              change_resourcebase_metadata: [],
+              change_layer_data: [],
+              change_layer_style: [],
+              manage_resourcebase: [],
+            };
+
+            // let's initialize the anyone flags to false, if there's the AnonymousUser
+            // they will be chacked later
+            $('#perms_view_anyone').prop('checked', false);
+            $('#perms_download_resourcebase_anyone').prop('checked', false);
+
+            /*
+            * Compile the users fields after receiving the current permissions status from the server
+            */
+            var perms = $.parseJSON($.parseJSON(data).permissions);
+
+            var perms_users = perms.users;
+
+            /*
+            * If there is the group anonymous then treas it as it is the AnonymousUser
+            * since the server doesn't explicitly send the users that belongs to a group with permissions
+            */
+            if (perms.groups.hasOwnProperty('anonymous')){
+              perms_users.AnonymousUser = perms.groups.anonymous;
+            }
+
+            for (var user in perms_users){
+              var user_perms = perms_users[user];
+              if (user === 'AnonymousUser'){
+                if(user_perms.indexOf('view_resourcebase') > -1){
+                  $('#perms_view_anyone').prop('checked', true);
+                }
+                if(user_perms.indexOf('download_resourcebase') > -1){
+                  $('#perms_download_resourcebase_anyone').prop('checked', true);
+                }
+              }else{
+                for (var i=0;i<user_perms.length;i++){
+                  if(['change_resourcebase', 'delete_resourcebase', 'change_resourcebase_permissions', 'publish_resourcebase'].indexOf(user_perms[i]) >= 0){
+                    if(users['manage_resourcebase'].indexOf(user)<0){
+                      users['manage_resourcebase'].push(user);
+                    }
+                  }else{
+                    if(users.hasOwnProperty(user_perms[i])){
+                      users[user_perms[i]].push(user);
+                    }
+                  }
+                }
+              }
+            }
+
+            // If "anyone" is checked then don't show all the users in the view perms field
+            // if (perms_users.hasOwnProperty('AnonymousUser')
+            //   && perms_users['AnonymousUser'].indexOf('view_resourcebase') > -1){
+            //   users.view_resourcebase=[]
+            // };
+
+            // if (perms_users.hasOwnProperty('AnonymousUser')
+            //   && perms_users['AnonymousUser'].indexOf('download_resourcebase') > -1){
+            //   users.download_resourcebase=[]
+            // };
+
+            if (typeof user_perms === 'undefined') {
+              user_perms = [];
+            }
+
+            for (var perm in users){
+              if(['change_resourcebase', 'delete_resourcebase', 'change_resourcebase_permissions', 'publish_resourcebase'].indexOf(user_perms[i]) >= 0){
+                if(users['manage_resourcebase'].indexOf(user)<0){
+                  users['manage_resourcebase'].push(user);
+                }
+              }else{
+                if(users.hasOwnProperty(user_perms[i])){
+                  users[user_perms[i]].push(user);
+                }
+              }
+              addSelectUsers('#' + perm + '_users', users[perm]);
+            }
+
+            /*
+            * Compile the groups fields after receiving the current permissions status from the server
+            */
+            var groups = {
+              view_resourcebase: [],
+              download_resourcebase: [],
+              change_resourcebase_metadata: [],
+              change_layer_data: [],
+              change_layer_style: [],
+              manage_resourcebase: []
+            };
+
+            var perms_groups = perms.groups;
+            for (var group in perms_groups){
+              if (group !== 'anonymous'){
+                var group_perms = perms_groups[group];
+                for (var i=0;i<group_perms.length;i++){
+                  if(['change_resourcebase', 'delete_resourcebase', 'change_resourcebase_permissions', 'publish_resourcebase'].indexOf(group_perms[i]) >= 0){
+                    if(groups['manage_resourcebase'].indexOf(group)<0){
+                      groups['manage_resourcebase'].push(group);
+                    }
+                  }else{
+                    if(groups.hasOwnProperty(group_perms[i])){
+                      groups[group_perms[i]].push(group);
+                    }
+                  }
+                }
+              }
+            }
+
+            for (var perm in groups){
+              addSelectGroups('#' + perm + '_groups', groups[perm]);
+            }
+          }
+        }
+      );
+      
+    });
+
+    function addSelectUsers(id, default_perms){
+      $.fn.select2.amd.require([
+        'select2/utils',
+        'select2/data/ajax',
+        'select2/data/minimumInputLength'
+      ],
+      function (Utils, AjaxAdapter, MinimumInputLength) {
+
+        function UsersAjaxAdapter($el, options) {
+          UsersAjaxAdapter.__super__.constructor.call(this, $el, options);
+        }
+
+        Utils.Extend(UsersAjaxAdapter, AjaxAdapter);
+
+        var initialValues = [];
+        
+        // In case resources are private we add the current user
+        
+            
+        
+        
+        $(default_perms).each(function (index, perm) {
+            initialValues.push({ id: perm, name: perm });
+        });
+
+        UsersAjaxAdapter.prototype.current = function (callback) {
+          var data = [];
+          UsersAjaxAdapter.__super__.current.call(this, function (d) { data = d });
+          _.each(initialValues, function (el) { data.push(el); })
+          callback(data);
+        }
+
+        UsersAjaxAdapter.prototype.unselect = function (data) {
+          initialValues = _.reject(initialValues, function (el) { return el.id == data.id });
+          UsersAjaxAdapter.__super__.unselect.call(this, data);
+        }
+
+        $(id).select2({
+          ajax: {
+            url: '/account/ajax_lookup',
+            dataType: 'json',
+            delay: 250,
+            type: "POST",
+            data: function (params) {
+              return {
+                query: params.term,
+                page: params.page || 1,
+                pageSize: 9
+              };
+            },
+            processResults: function (data, params) {
+              if (data.users.length)
+                return {
+                  results: data.users.map(d => ({ id: d.username, name: d.username })),
+                  pagination: {
+                    // more: !!data.paging.next
+                    more: false
+                  }
+                };
+              else
+                return {
+                  results: [],
+                  pagination: {
+                    more: false
+                  }
+                };
+            },
+            cache: false
+          },
+          placeholder: 'Choose users...',
+          minimumInputLength: 1,
+          multiple: true,
+          width: 'copy',
+          containerCssClass: function (e) {
+            return $(e).attr('required') ? 'required' : '';
+          },
+          dataAdapter: Utils.Decorate(UsersAjaxAdapter, MinimumInputLength),
+          templateResult: function (item) { return (item.loading) ? item.text : item.name; },
+          templateSelection: function (item) { return item.name; }
+        });
+      });
+    }
+
+    function addSelectGroups(id, default_perms){
+      $.fn.select2.amd.require([
+        'select2/utils',
+        'select2/data/ajax',
+        'select2/data/minimumInputLength'
+      ],
+      function (Utils, AjaxAdapter, MinimumInputLength) {
+
+        function GroupsAjaxAdapter($el, options) {
+          GroupsAjaxAdapter.__super__.constructor.call(this, $el, options);
+        }
+
+        Utils.Extend(GroupsAjaxAdapter, AjaxAdapter);
+
+        var initialValues = [];
+        $(default_perms).each(function (index, perm) {
+            initialValues.push({ id: perm, name: perm });
+        });
+
+        GroupsAjaxAdapter.prototype.current = function (callback) {
+          var data = [];
+          GroupsAjaxAdapter.__super__.current.call(this, function (d) { data = d });
+          _.each(initialValues, function (el) { data.push(el); })
+          callback(data);
+        }
+
+        GroupsAjaxAdapter.prototype.unselect = function (data) {
+          initialValues = _.reject(initialValues, function (el) { return el.id == data.id });
+          GroupsAjaxAdapter.__super__.unselect.call(this, data);
+        }
+
+        $(id).select2({
+          ajax: {
+            url: '/account/ajax_lookup',
+            dataType: 'json',
+            delay: 250,
+            type: "POST",
+            data: function (params) {
+              return {
+                query: params.term,
+                page: params.page || 1,
+                pageSize: 9
+              };
+            },
+            processResults: function (data, params) {
+              if (data.groups.length)
+                return {
+                  results: data.groups.map(d => ({ id: d.name, name: d.title })),
+                  pagination: {
+                    // more: !!data.paging.next
+                    more: false
+                  }
+                };
+              else
+                return {
+                  results: [],
+                  pagination: {
+                    more: false
+                  }
+                };
+            },
+            cache: false
+          },
+          placeholder: 'Choose groups...',
+          minimumInputLength: 1,
+          multiple: true,
+          width: 'copy',
+          containerCssClass: function (e) {
+            return $(e).attr('required') ? 'required' : '';
+          },
+          dataAdapter: Utils.Decorate(GroupsAjaxAdapter, MinimumInputLength),
+          templateResult: function (item) { return (item.loading) ? item.text : item.name; },
+          templateSelection: function (item) { return item.name; }
+        });
+      });
+    }
+
+    var perms_submit = function() {
+      var form = $(this);
+      var action = form.attr("action");
+      var permissions = permissionsString(form, 'base');
+      $.ajax(
+        {
+          type: "POST",
+          url: action,
+          data: JSON.stringify(permissions),
+          beforeSend: function(){
+               // Handle the beforeSend event
+               try {
+                    $(".lmask").modal("show");
+               } catch(err) {
+                   console.log(err);
+               }
+               try {
+                   $("#_perms_processing").modal("show");
+               } catch(err) {
+                   console.log(err);
+               }
+          },
+          complete: function(){
+               // Handle the complete event
+               try {
+                    $(".lmask").modal("hide");
+               } catch(err) {
+                   console.log(err);
+               }
+               try {
+                   $("#_perms_processing").modal("hide");
+               } catch(err) {
+                   console.log(err);
+               }
+          },
+          success: function(data) {
+            $("#modal_perms").modal("hide");
+            message = JSON.parse(data);
+            title = "";
+            body = message.message;
+            if (message.success) {
+                title = "OK";
+            } else {
+                title = "Warning";
+            }
+            $("#_permissions_feedbacks").find('.modal-title').text(title);
+            $("#_permissions_feedbacks").find('.modal-body').text(body);
+            $("#_permissions_feedbacks").modal("show");
+            $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+          }, /* - END success - */
+          cache: false
+        }
+      ).fail(function (jqXHR, textStatus, error) {
+            // Handle error here
+            $("#modal_perms").modal("hide");
+            message = JSON.parse(jqXHR.responseText);
+            body = message.message;
+            title = "Error";
+            $("#_permissions_feedbacks").find('.modal-title').text(title);
+            $("#_permissions_feedbacks").find('.modal-body').text(body);
+            $("#_permissions_feedbacks").modal("show");
+            $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+      });
+      return false;
+    };
+
+    $("#perms_submit").click(function(){
+        $("#permission_form").submit();
+    });
+
+    
+        $("#permission_form").submit(perms_submit);
+    
+
+    $("#security_refresh").click(function(){
+        $.ajax(
+          {
+            type: "POST",
+            url: "/security/invalidate-permissions-cache",
+            dataType: 'json',
+            data: { uuid: "bb78108e-f2e6-4ae2-84c2-42369dd78bab" },
+            beforeSend: function(){
+                 // Handle the beforeSend event
+                 try {
+                    $(".lmask").modal("show");
+                 } catch (err) {
+                    console.log(err);
+                 }
+                 try {
+                     $("#_perms_processing").modal("show");
+                 } catch(err) {
+                     console.log(err);
+                 }
+            },
+            complete: function(){
+                 // Handle the complete event
+                 try {
+                    $(".lmask").modal("hide");
+                 } catch (err) {
+                    console.log(err);
+                 }
+                 try {
+                     $("#_perms_processing").modal("hide");
+                 } catch(err) {
+                     console.log(err);
+                 }
+            },
+            success: function(data) {
+              $("#modal_perms").modal("hide");
+              message = data;
+              title = "";
+              body = message.message;
+              if (message.success) {
+                  title = "OK";
+              } else {
+                  title = "Warning";
+              }
+              $("#_permissions_feedbacks").find('.modal-title').text(title);
+              $("#_permissions_feedbacks").find('.modal-body').text(body);
+              $("#_permissions_feedbacks").modal("show");
+              $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+            },
+            error: function(jqXHR, textStatus){
+                try {
+                    if(textStatus === 'timeout')
+                    {
+                        $("#_permissions_feedbacks").find('.modal-title').text('Timeout');
+                        $("#_permissions_feedbacks").find('.modal-body').text('Failed from timeout: Could not create Thumbnail');
+                        $("#_permissions_feedbacks").modal("show");
+                    } else {
+                        $("#_permissions_feedbacks").find('.modal-title').text('Error: ' + textStatus);
+                        $("#_permissions_feedbacks").find('.modal-body').text('Could not set Layer Permissions');
+                        $("#_permissions_feedbacks").modal("show");
+                    }
+                } catch(err) {
+                    console.log(err);
+                } finally {
+                    return true;
+                }
+            },
+            cache: false,
+            timeout: 60000
+          }
+        ).fail(function (jqXHR, textStatus, error) {
+              // Handle error here
+              $("#modal_perms").modal("hide");
+              message = JSON.parse(jqXHR.responseText);
+              body = message.message;
+              title = "Error";
+              $("#_permissions_feedbacks").find('.modal-title').text(title);
+              $("#_permissions_feedbacks").find('.modal-body').text(body);
+              $("#_permissions_feedbacks").modal("show");
+              $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+        });
+        return false;
+    });
+
+    $("#attributes_sats_refresh").click(function(){
+        $.ajax(
+          {
+            type: "POST",
+            url: "/security/attributes_sats_refresh",
+            dataType: 'json',
+            data: { uuid: "bb78108e-f2e6-4ae2-84c2-42369dd78bab" },
+            beforeSend: function(){
+                 // Handle the beforeSend event
+                 try {
+                    $(".lmask").modal("show");
+                 } catch (err) {
+                    console.log(err);
+                 }
+            },
+            complete: function(){
+                 // Handle the complete event
+                 try {
+                    $(".lmask").modal("hide");
+                 } catch (err) {
+                    console.log(err);
+                 }
+            },
+            success: function(data) {
+              $("#modal_perms").modal("hide");
+              message = data;
+              title = "";
+              body = message.message;
+              if (message.success) {
+                  title = "OK";
+              } else {
+                  title = "Warning";
+              }
+              $("#_permissions_feedbacks").find('.modal-title').text(title);
+              $("#_permissions_feedbacks").find('.modal-body').text(body);
+              $("#_permissions_feedbacks").modal("show");
+              $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+            },
+            cache: false
+          }
+        ).fail(function (jqXHR, textStatus, error) {
+              // Handle error here
+              $("#modal_perms").modal("hide");
+              message = JSON.parse(jqXHR.responseText);
+              body = message.message;
+              title = "Error";
+              $("#_permissions_feedbacks").find('.modal-title').text(title);
+              $("#_permissions_feedbacks").find('.modal-body').text(body);
+              $("#_permissions_feedbacks").modal("show");
+              $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+        });
+        return false;
+    });
+
+    $("#tiledlayer_refresh").click(function(){
+        $.ajax(
+          {
+            type: "POST",
+            url: "/security/invalidate_tiledlayer_cache",
+            dataType: 'json',
+            data: { uuid: "bb78108e-f2e6-4ae2-84c2-42369dd78bab" },
+            beforeSend: function(){
+                 // Handle the beforeSend event
+                 try {
+                    $(".lmask").modal("show");
+                 } catch (err) {
+                    console.log(err);
+                 }
+            },
+            complete: function(){
+                 // Handle the complete event
+                 try {
+                    $(".lmask").modal("hide");
+                 } catch (err) {
+                    console.log(err);
+                 }
+            },
+            success: function(data) {
+              $("#modal_perms").modal("hide");
+              message = data;
+              title = "";
+              body = message.message;
+              if (message.success) {
+                  title = "OK";
+              } else {
+                  title = "Warning";
+              }
+              $("#_permissions_feedbacks").find('.modal-title').text(title);
+              $("#_permissions_feedbacks").find('.modal-body').text(body);
+              $("#_permissions_feedbacks").modal("show");
+              $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+            },
+            cache: false
+          }
+        ).fail(function (jqXHR, textStatus, error) {
+              // Handle error here
+              $("#modal_perms").modal("hide");
+              message = JSON.parse(jqXHR.responseText);
+              body = message.message;
+              title = "Error";
+              $("#_permissions_feedbacks").find('.modal-title').text(title);
+              $("#_permissions_feedbacks").find('.modal-body').text(body);
+              $("#_permissions_feedbacks").modal("show");
+              $('#_permissions_feedbacks').on('hidden.bs.modal', function () { location.reload(); });
+        });
+        return false;
+    });
+
+    $("#_bulk_permissions").on('hidden.bs.modal', function (e) {
+      $('#bulk_perms_message').addClass("hidden");
+    });
+  });
+</script>
+
+      <script type='text/javascript'>
+            $(function() {
+                if (sessionStorage.getItem("security_refresh_trigger")) {
+                    sessionStorage.clear();
+                    $("#security_refresh").trigger('click');
+                }
+            });
+      </script>
+    
+
+    
+    
+
+
+
+    
+
+    <script type="text/javascript">
+
+      // Autocomplete instance for the search found in the header.
+      $(document).ready(function() {
+        window.autocomplete2 = new Autocomplete({
+          form_btn: null,
+          form_submit: '#search',
+          form_selector: '#search',
+          input_selector: '#search_input',
+          container_selector: '#search-container',
+          url: '/base/autocomplete_response/'
+        })
+        window.autocomplete2.setup()
+      })
+
+      $('#search').on('submit', (e) => {
+          $('#search_abstract_input')[0].value =$('#search_input')[0].value;
+          $('#search_purpose_input')[0].value = $('#search_input')[0].value;
+      });
+
+      $(window).on('load', function() {
+          setTimeout(() => {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          });
+        });
+
+      $(".datepicker").datepicker({
+          format: "yyyy-mm-dd"
+      });
+    </script>
+
+    <div class="modal fade" style="width: 100%; height: 100%;" id="_resource_uploading" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Uploading...</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        Upload in progress...
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" style="width: 100%; height: 100%;" id="_thumbnail_processing" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Processing...</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        Updating Thumbnail...
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="_thumbnail_feedbacks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Message box</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="confirmMsgBoxModalOK" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <!-- How to use it:
+        $("#confirmMsgBoxModalOK").find('.modal-title').text('Title');
+        $("#confirmMsgBoxModalOK").find('.modal-body').text('Message. Do you want to proceed?');
+        $("#confirmMsgBoxModalOK_control_field").val('your_control_value');
+        $("#confirmMsgBoxModalOK").modal("show");
+
+        $('#confirmMsgBoxModalOK').find('.modal-footer #confirm').on('click', function() {
+          if ($("#control_field").val() == 'your_control_value') {
+            CONFIRMED
+          }
+        });
+      -->
+      <div class="modal-dialog">
+        <input type="hidden" class="form-control" id="confirmMsgBoxModalOK_control_field" />
+        <div class="modal-content panel-success">
+          <div class="modal-header panel-heading">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Confirm</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger confirm" id="confirm">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0996_35e2fac459",
+  "shp": "M0996.shp",
+  "entidades": 60,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0996.dbf",
+      "bytes": 12206,
+      "sha256": "4fd97fad4d855dfb26094a84890e04f64ef8dde61d52bdd60ff27a193a501757"
+    },
+    {
+      "archivo": "M0996.shp",
+      "bytes": 9092,
+      "sha256": "4c028cbd2ad4f7564aaf5327e6558e75cea9ee35d9ef088d0140ddca5fc0aff9"
+    },
+    {
+      "archivo": "M0996.shx",
+      "bytes": 580,
+      "sha256": "c100f41e48f3ebd4d4a0fc925ff55174bfece3f35d3da3970f9789c181588d78"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ramonaa3h.zip!M0996.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9c217dac6b",
+    "archivo": "santafe/ipec/2010/ramonaa3h.zip!M0996.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 60,
+    "registros_shx": 60,
+    "shape_type": 5,
+    "bbox": [
+      5317791.0,
+      6558698.0,
+      5319020.5,
+      6559867.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ramonaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c704c3819fea1352ba123d2e17e45bf960085ddc60d6c2d563157915d697323b"
+}

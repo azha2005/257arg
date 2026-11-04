@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e9067_bb99cbb92c",
+  "shp": "e9067.shp",
+  "entidades": 55,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e9067.dbf",
+      "bytes": 19749,
+      "sha256": "d05e136b921840a2768e81314434c5559dd4af95831aabc9ddd4cf696f646043"
+    },
+    {
+      "archivo": "e9067.sbn",
+      "bytes": 1116,
+      "sha256": "fbcaeebd96d360ef099e14c012cec089c08f25735eea3267e6a8e6d1b0207c29"
+    },
+    {
+      "archivo": "e9067.sbx",
+      "bytes": 220,
+      "sha256": "a7ce6130d3db2f5e898c01a101812102f8d5796bcfc00b58e7ba866436e692e0"
+    },
+    {
+      "archivo": "e9067.shp",
+      "bytes": 5916,
+      "sha256": "961ab5a049fced74b5c619045f98fde12d72850539a9f5581f915dedaefe72ed"
+    },
+    {
+      "archivo": "e9067.shx",
+      "bytes": 540,
+      "sha256": "3df16be8761a2708c2861cf695a68c225973e7ffb3e1c4faaed5064c2d58528f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/BARRIOARROYODELMEDIO.zip!e9067.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4634509b02",
+    "archivo": "santafe/ipec/2010/BARRIOARROYODELMEDIO.zip!e9067.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 55,
+    "registros_shx": 55,
+    "shape_type": 3,
+    "bbox": [
+      5474130.0,
+      6317089.5,
+      5475321.5,
+      6318360.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/BARRIOARROYODELMEDIO.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a07aa965279eb8120a9d7d44a7fbfa87282e4c15a87ca594177179cd1f2f59b2"
+}

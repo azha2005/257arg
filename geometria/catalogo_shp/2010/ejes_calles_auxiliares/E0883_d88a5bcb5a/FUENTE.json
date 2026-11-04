@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0883_d88a5bcb5a",
+  "shp": "E0883.shp",
+  "entidades": 176,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0883.dbf",
+      "bytes": 61858,
+      "sha256": "c5d37da4a80cea441f8464df8eb19c97eb1a87faf5f043d5d32ec13508683cde"
+    },
+    {
+      "archivo": "E0883.shp",
+      "bytes": 15652,
+      "sha256": "a2af72ec9cf40c001828517e19c150277bc745a029dc9618e732259753b81631"
+    },
+    {
+      "archivo": "E0883.shx",
+      "bytes": 1508,
+      "sha256": "0eb13bb620142d8ac024b6a1e9e6c095c601fb85e307b1969dc9800093fa470b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/zenonpereyraa2v.zip!E0883.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9bdd3a2628",
+    "archivo": "santafe/ipec/2010/zenonpereyraa2v.zip!E0883.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 176,
+    "registros_shx": 176,
+    "shape_type": 3,
+    "bbox": [
+      5319232.0,
+      6505659.5,
+      5320600.0,
+      6508089.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/zenonpereyraa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "84e7162b143ce126bbc5baf234c0a1d2e92136ef23715c9c0784cd5fee71373f"
+}

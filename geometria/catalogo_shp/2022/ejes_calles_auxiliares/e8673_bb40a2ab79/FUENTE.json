@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e8673_bb40a2ab79",
+  "shp": "e8673.shp",
+  "entidades": 2759,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e8673.dbf",
+      "bytes": 822792,
+      "sha256": "cd0880791e1d8aef6f8d4db4f7203508e7263d0c2d541654cab3529f3fe2d000"
+    },
+    {
+      "archivo": "e8673.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e8673.shp",
+      "bytes": 257420,
+      "sha256": "e5a2f47ef312a587541f69e3944dc626d44dee699e41b9a4fc238ac05d78e980"
+    },
+    {
+      "archivo": "e8673.shx",
+      "bytes": 22172,
+      "sha256": "8b01af19abc2676d63e1bac213736b8cf961d8b0fc5f6f086185a4d009b2adb1"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAGOBERNADORGALVEZ.zip!e8673.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_0d6a9852cc",
+    "archivo": "santafe/ipec/2022/VILLAGOBERNADORGALVEZ.zip!e8673.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2759,
+    "registros_shx": 2759,
+    "shape_type": 3,
+    "bbox": [
+      5435801.0,
+      6343796.0,
+      5447147.0,
+      6349426.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAGOBERNADORGALVEZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5f803c7efdd93ffd5a197801e5327d14d343e76526edbd98c663bc0fa2d0031f"
+}

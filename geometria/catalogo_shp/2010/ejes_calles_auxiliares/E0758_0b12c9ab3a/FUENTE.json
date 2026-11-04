@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0758_0b12c9ab3a",
+  "shp": "E0758.shp",
+  "entidades": 164,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0758.dbf",
+      "bytes": 57682,
+      "sha256": "fc5f1edbe9728cd45369f94ec92406a6cca630758fec38b1b5ca18419c4554b5"
+    },
+    {
+      "archivo": "E0758.shp",
+      "bytes": 14532,
+      "sha256": "5e8899b38df895fa023e607bb5a0905355524b7266651f23c4342f125e7fcbee"
+    },
+    {
+      "archivo": "E0758.shx",
+      "bytes": 1412,
+      "sha256": "ee2f5e4c90652f44a1c413a3023d8a813cb44954719cb25496546336548b396d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coronelbogadoa3v.zip!E0758.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3eca7af306",
+    "archivo": "santafe/ipec/2010/coronelbogadoa3v.zip!E0758.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 164,
+    "registros_shx": 164,
+    "shape_type": 3,
+    "bbox": [
+      5443115.5,
+      6313268.5,
+      5444369.0,
+      6315103.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coronelbogadoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8b50102843d6efa3dc92792396189e1d90369912cfd7c2fe826d19bf65514509"
+}

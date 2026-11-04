@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4162_938c2cca1c",
+  "shp": "E4162.shp",
+  "entidades": 59,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4162.dbf",
+      "bytes": 21142,
+      "sha256": "8413aaab6789aa3f42a25b4485c22fc0a5b68d0fd723889248042caa0bf3ca37"
+    },
+    {
+      "archivo": "E4162.shp",
+      "bytes": 5324,
+      "sha256": "f62a35fa419ae066e3b5715f0548c5ec1a2d0629e85ec72868b5c288b6407390"
+    },
+    {
+      "archivo": "E4162.shx",
+      "bytes": 572,
+      "sha256": "15404783c67d5e36da80e26a600962c6da1a62ca1304a66166c817239cd6f363"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/caciqueariacaiquina3h.zip!E4162.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_35edab9878",
+    "archivo": "santafe/ipec/2010/caciqueariacaiquina3h.zip!E4162.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 59,
+    "registros_shx": 59,
+    "shape_type": 3,
+    "bbox": [
+      5477453.0,
+      6608774.5,
+      5478345.5,
+      6609565.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/caciqueariacaiquina3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "25beeb50a11bc062466cd77c2f612a6c3db2afb987730331f2b8487d4014db66"
+}

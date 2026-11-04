@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E8665_2e17de8888",
+  "shp": "E8665.shp",
+  "entidades": 1030,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E8665.dbf",
+      "bytes": 359050,
+      "sha256": "e529759ad09416f6a748e79ba96c1c1985c96093aaf6a2ec8dad0a28fbf0dbd3"
+    },
+    {
+      "archivo": "E8665.shp",
+      "bytes": 93124,
+      "sha256": "403a7adebb56462bb80fae78bca7fa8a2130f89413a7503cc8bb8dbab3860594"
+    },
+    {
+      "archivo": "E8665.shx",
+      "bytes": 8340,
+      "sha256": "6e85c82e5da342a85d1247c566272c3b52e9e79d1e4c661989fc9e95c125d2c2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pereza1h.zip!E8665.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c4a09b33c6",
+    "archivo": "santafe/ipec/2010/pereza1h.zip!E8665.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1030,
+    "registros_shx": 1030,
+    "shape_type": 3,
+    "bbox": [
+      5425420.0,
+      6347484.5,
+      5431499.5,
+      6352934.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pereza1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "770dc3445d73618501ca8c4fc8fd4c2acb0419f22758a7106033ce91c52ac0ca"
+}

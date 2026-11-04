@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r4148_fe519067c4",
+  "shp": "r4148.shp",
+  "entidades": 5,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r4148.dbf",
+      "bytes": 1457,
+      "sha256": "76209532714efedef5494df5e0610e959b5e8030b0a74135f6a4d90cae04df69"
+    },
+    {
+      "archivo": "r4148.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r4148.shp",
+      "bytes": 1132,
+      "sha256": "fa26bc667376777c5ee30a1f16a4ba7e0bb640e92299ec71bc818c4d37785220"
+    },
+    {
+      "archivo": "r4148.shx",
+      "bytes": 140,
+      "sha256": "352a651da6828dde17208ef0e7c4a726ab5af2276c03f234a5c2b6896c817c88"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ELARAZA.zip!r4148.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4aa6f320ad",
+    "archivo": "santafe/ipec/2022/ELARAZA.zip!r4148.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 5,
+    "registros_shx": 5,
+    "shape_type": 5,
+    "bbox": [
+      5504717.5,
+      6777742.0,
+      5505900.0,
+      6778269.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ELARAZA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "e113e62e17ee6bdd84a3ec0dea1deb416c54c31c5d5d4ecc2ee493133c5f90be"
+}

@@ -134,3 +134,62 @@ mapas/mapaAMBA2025radios/radios_amba2022.geojson
 mapas/mapaAMBA2025radios/img/
 _site/
 !sitio/miniaturas/*.webp
+
+# --- Orden del 4-nov-2026: crudos grandes y material que no se redistribuye ---
+# Catálogos de geometría bajados (se regeneran con sus scripts; ver LEEME de cada carpeta)
+geometria/catalogo_shp/**/*.shp
+geometria/catalogo_shp/**/*.dbf
+geometria/catalogo_shp/**/*.shx
+geometria/catalogo_shp/**/*.prj
+geometria/catalogo_shp/**/*.cpg
+geometria/catalogo_shp/**/*.sbn
+geometria/catalogo_shp/**/*.sbx
+geometria/catalogo_shp/**/*.qix
+geometria/catalogo_shp/**/*.xml
+geometria/catalogo_shp/**/*.zip
+geometria/catalogo_shp/**/*.geojson
+geometria/catalogo_shp/**/*.gpkg
+geometria/cartografia_argentina/**/*.parquet
+geometria/cartografia_argentina/**/*.geojson
+geometria/cartografia_argentina/**/*.zip
+geometria/circuitos_serie/**/*.geojson
+geometria/circuitos_serie/**/*.gpkg
+geometria/circuitos_serie/**/*.zip
+# Fuentes crudas de provinciales 2025 (rar/zip/pdf de los organismos) y salidas pesadas
+transferencias/provinciales2025/fuentes/
+analisis/uninominal/_radios_tmp/
+proyeccion/mesas_*.pkl
+mapas/mapa2007circuitos/datos_preparados.json
+# Copia local del sitio (sale de sitio/armar.py)
+outputs/sitio_local/
+# Wikipedia Library / NewspaperARCHIVE: solo notas propias, no imágenes
+analisis/wikipedia_library_20261030/**/*.png
+analisis/wikipedia_library_20261030/**/*.jpg
+analisis/wikipedia_library_20261030/**/*.pdf
+# Fotos de actas de terceros (redes) y del usuario: quedan locales
+actas 18 a 19 hs/
+fotos25/
+proyeccion/fotos_18_19/
+proyeccion/fotos25/
+# Temporales
+*.tmp
+__pycache__/
+geometria/circuitos_busqueda/
+geometria/circuitos_serie/**/*.shp
+geometria/circuitos_serie/**/*.dbf
+geometria/circuitos_serie/**/*.shx
+geometria/circuitos_serie/**/*.kml
+geometria/circuitos_serie/**/*.kmz
+geometria/cartografia_argentina/**/*.gpkg
+geometria/cartografia_argentina/**/_deps/
+geometria/cartografia_argentina/ceur_legacy/
+analisis/uninominal/shp/
+analisis/uninominal/shp_radios/
+datos/israel2026/historico_ckan/
+mapas/mapa2007circuitos/
+proyeccion/paso2021_ciego/permitidos/
+proyeccion/paso2021_ciego/actas_reveladas/
+proyeccion/fotos_sim/
+mapas/mapaAMBA2003radios/*.pkl
+mapas/mapaAMBA2003radios/radios_amba2001.geojson
+proyeccion/paso2021_ciego/evaluacion_distritos.csv

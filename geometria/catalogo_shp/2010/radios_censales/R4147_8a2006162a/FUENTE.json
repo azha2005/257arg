@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4147_8a2006162a",
+  "shp": "R4147.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4147.dbf",
+      "bytes": 686,
+      "sha256": "bb1e6628c9831c7beca185c59fbe9f98ab865e89f20562aa6de89d842c0d4f3e"
+    },
+    {
+      "archivo": "R4147.shp",
+      "bytes": 876,
+      "sha256": "fe9122fbe8426be30a104f2f895aa9a147a1edf7bb29ad08c4276bf3e2b7a028"
+    },
+    {
+      "archivo": "R4147.shx",
+      "bytes": 108,
+      "sha256": "6183eb2b95d4213ffead52e4916864338b0dbd8fd554503f97482451b410fab4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/egusquizaa3v.zip!R4147.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c5caceb4dd",
+    "archivo": "santafe/ipec/2010/egusquizaa3v.zip!R4147.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5344131.0,
+      6558727.0,
+      5345296.0,
+      6559895.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/egusquizaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "605dbcf354e717d1bda444f7a82e364ddcde478f5569b8d93ca1acf6b037d3c6"
+}

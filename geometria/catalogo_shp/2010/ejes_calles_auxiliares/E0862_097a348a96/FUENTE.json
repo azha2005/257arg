@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0862_097a348a96",
+  "shp": "E0862.shp",
+  "entidades": 287,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0862.dbf",
+      "bytes": 100486,
+      "sha256": "94a3124e409e84cde916748200f3b82dc6b999dfeb2adda735c7b63be25a0ce9"
+    },
+    {
+      "archivo": "E0862.shp",
+      "bytes": 25532,
+      "sha256": "475b19607e04d99d46935eeca69d40a750f8a2cac7e8157cd10d6d19e73c7507"
+    },
+    {
+      "archivo": "E0862.shx",
+      "bytes": 2396,
+      "sha256": "372d9ca6666c34415e3e6d67e69e852149b95e6c91b52e3f36539ec25a2c43d3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/llambicampbella2h.zip!E0862.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2c9205f874",
+    "archivo": "santafe/ipec/2010/llambicampbella2h.zip!E0862.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 287,
+    "registros_shx": 287,
+    "shape_type": 3,
+    "bbox": [
+      5428177.5,
+      6549480.5,
+      5429371.0,
+      6550875.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/llambicampbella2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "498c85403818c6aa591874fdf41b2ef42ab60981c07eee2342797c1a2a2e2e75"
+}

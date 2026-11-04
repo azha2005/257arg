@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1381_6c19c2a964",
+  "shp": "M1381.shp",
+  "entidades": 105,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1381.dbf",
+      "bytes": 21071,
+      "sha256": "b1b89c67bf630e23d3d2e1783ca39e5b85718354df560560c42a64a2c9737da6"
+    },
+    {
+      "archivo": "M1381.shp",
+      "bytes": 18284,
+      "sha256": "dd1d08b9fec1e125c35af2adbf31c9331540f66cbf332bac36949b1d8b954f9c"
+    },
+    {
+      "archivo": "M1381.shx",
+      "bytes": 940,
+      "sha256": "2a3969de0f7f94d5a2b3edddf11331677a11e8e72df020ccd46efd86d26285a0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Luispalaciosa2v.zip!M1381.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_90a198a2b8",
+    "archivo": "santafe/ipec/2010/Luispalaciosa2v.zip!M1381.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 105,
+    "registros_shx": 105,
+    "shape_type": 5,
+    "bbox": [
+      5414144.5,
+      6372073.0,
+      5415948.5,
+      6374184.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Luispalaciosa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b568f43839b8ac09ce8046c39f2fb6de0867d3fca33fd22b60ec7743682e0cb8"
+}

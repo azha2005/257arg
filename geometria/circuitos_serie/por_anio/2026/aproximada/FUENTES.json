@@ -1,0 +1,698 @@
+[
+  {
+    "id": "cne_consulta2026_21",
+    "archivo": "cne_sin_fecha/circuito_21.geojson",
+    "distrito": "21",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "cne",
+    "crs": null,
+    "calidad": "descarga_organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descargada en octubre de 2026. No se conoce fecha general de vigencia. Salta tiene cobertura diferente e inferior en cantidad a la reconstrucción de Galeano; no se presume completitud.",
+    "fuente_original": {
+      "url": "https://mapa2.electoral.gov.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&authkey=db603f7c007c36c3af8d319c22c875a1&typeName=descargas:circuito_21&maxFeatures=2000&outputFormat=application%2Fjson",
+      "archivo": "cne_sin_fecha/circuito_21.geojson",
+      "fuente": "https://mapa2.electoral.gov.ar/descargas/",
+      "corte_declarado": "sin fecha de vigencia comprobada",
+      "nota": "Enlace público del portal CNE; maxFeatures debe contrastarse con conteo WFS",
+      "estado": "descargado",
+      "bytes": 3746453,
+      "sha256": "3d7652a1b485dbd8bc3ca4a41fbfde01852c4f6e1efd755ac9306cabd7539f0a",
+      "features": 559,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 5
+  },
+  {
+    "id": "sige_consulta2026_01",
+    "archivo": "sige/distrito_01.circuitos_electorales.geojson",
+    "distrito": "01",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_01.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_01.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 519331,
+      "sha256": "07947b453b56474f5d988f2de7086a5fbb050f50815b579f37fdbfa8cf210352",
+      "features": 167,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_02",
+    "archivo": "sige/distrito_02.circuitos_electorales.geojson",
+    "distrito": "02",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_02.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_02.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 6843986,
+      "sha256": "414f5f977a4b907f606afc221a5dd1dcb8595f21e77817d622b2cf97fd36e034",
+      "features": 1151,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_03",
+    "archivo": "sige/distrito_03.circuitos_electorales.geojson",
+    "distrito": "03",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_03.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_03.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 2222430,
+      "sha256": "184147e193522ed212c49f5bf0df83824aea8700271bd4f0e1b52622f233f02a",
+      "features": 172,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_04",
+    "archivo": "sige/distrito_04.circuitos_electorales.geojson",
+    "distrito": "04",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_04.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_04.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 5092497,
+      "sha256": "bb72c6669fa8b526ecc8e1601e0043c7b31492da6ed98648ef54ba5a7a4eb6d8",
+      "features": 640,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_05",
+    "archivo": "sige/distrito_05.circuitos_electorales.geojson",
+    "distrito": "05",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_05.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_05.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 1934717,
+      "sha256": "7fcf0527d56c0b6b5cf05c728446ac172bd5f6b2aa1dab075c3317fa9715e3fd",
+      "features": 174,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_06",
+    "archivo": "sige/distrito_06.circuitos_electorales.geojson",
+    "distrito": "06",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_06.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_06.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 306778,
+      "sha256": "2e6a1b23744d0d7b1fa0417f6789d2ac484339832b69c4856a9fd9daf6a15747",
+      "features": 155,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_07",
+    "archivo": "sige/distrito_07.circuitos_electorales.geojson",
+    "distrito": "07",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_07.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_07.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 1406809,
+      "sha256": "dc857a63900f31b443968562d890e8faa885fd382383a5e4d75baefb32912495",
+      "features": 121,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_08",
+    "archivo": "sige/distrito_08.circuitos_electorales.geojson",
+    "distrito": "08",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_08.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_08.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 3490304,
+      "sha256": "0290f0e0444d8796f178ec5a07ed43e40a67c11c581686a429a99fd819d2c1b2",
+      "features": 324,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_09",
+    "archivo": "sige/distrito_09.circuitos_electorales.geojson",
+    "distrito": "09",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_09.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_09.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 411060,
+      "sha256": "feed9b5d7ac93a5fa6db4de64131c3a68a4d9a844b5b74f598e32a152826d167",
+      "features": 159,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_10",
+    "archivo": "sige/distrito_10.circuitos_electorales.geojson",
+    "distrito": "10",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_10.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_10.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 3236921,
+      "sha256": "ec5249332ed1bb38f367638e7974592ad89e2c9953e3b346cd2eb6bfece53eaf",
+      "features": 149,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_11",
+    "archivo": "sige/distrito_11.circuitos_electorales.geojson",
+    "distrito": "11",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_11.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_11.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 159752,
+      "sha256": "fa596a3904554ac18c132752c6e3cdaf4cbda97d68c74d02cb672a6c18a4309f",
+      "features": 91,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_12",
+    "archivo": "sige/distrito_12.circuitos_electorales_2026.geojson",
+    "distrito": "12",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_12.circuitos_electorales_2026&format=geojson",
+      "archivo": "sige/distrito_12.circuitos_electorales_2026.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "2026 (nombre de capa)",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 1245064,
+      "sha256": "7edd49d67ab486fa61c66ee6516ddbd132e6fc65d168f5bba12ec959510e9a1a",
+      "features": 171,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_13",
+    "archivo": "sige/distrito_13.circuitos_electorales_2026.geojson",
+    "distrito": "13",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_13.circuitos_electorales_2026&format=geojson",
+      "archivo": "sige/distrito_13.circuitos_electorales_2026.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "2026 (nombre de capa)",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 7498886,
+      "sha256": "bb7bdf1fed73fa1febafd88edf3f46364c9749d38be44c1a3082b2ebd7f5f51a",
+      "features": 192,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_14",
+    "archivo": "sige/distrito_14.circuitos_electorales.geojson",
+    "distrito": "14",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_14.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_14.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 5417460,
+      "sha256": "7ca53674c5fc3ab70daf2080f6d1d7fe0fc92aa10e338e608ac655ab9c0af79e",
+      "features": 111,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_15",
+    "archivo": "sige/distrito_15.circuitos_electorales.geojson",
+    "distrito": "15",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_15.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_15.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 2305691,
+      "sha256": "10410f1d2eee8aff7c8219d58abc85ef060c81c2b9212948318af0b0c142b2ba",
+      "features": 173,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_16",
+    "archivo": "sige/distrito_16.circuitos_electorales.geojson",
+    "distrito": "16",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_16.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_16.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 1174520,
+      "sha256": "89e04ae8e90c82fbc33123fd78a583f608341b1494e5baa4b1ca1da995a1b0b4",
+      "features": 158,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_17",
+    "archivo": "sige/distrito_17.circuitos_electorales.geojson",
+    "distrito": "17",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_17.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_17.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 2070877,
+      "sha256": "0cfba119f4510c3b6022975523d328f55ad9368aee3ab16a7e15769c1cdb2df5",
+      "features": 182,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_18",
+    "archivo": "sige/distrito_18.circuitos_electorales.geojson",
+    "distrito": "18",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_18.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_18.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 571348,
+      "sha256": "49dcd9455833a514e11d88dada4c089f40983ad6793095da37b2a9576f6d54f4",
+      "features": 146,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_19",
+    "archivo": "sige/distrito_19.circuitos_electorales_2026.geojson",
+    "distrito": "19",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_19.circuitos_electorales_2026&format=geojson",
+      "archivo": "sige/distrito_19.circuitos_electorales_2026.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "2026 (nombre de capa)",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 1349196,
+      "sha256": "59dec4b139a22d5d89c50afbb34d76a81f0da87c9ed212b680ff747f4e766bdd",
+      "features": 194,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_20",
+    "archivo": "sige/distrito_20.circuitos_electorales_2026.geojson",
+    "distrito": "20",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_20.circuitos_electorales_2026&format=geojson",
+      "archivo": "sige/distrito_20.circuitos_electorales_2026.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "2026 (nombre de capa)",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 1828901,
+      "sha256": "eb1e2e88c154d48290c7be8b38e4996c5b68eecf25c6ba8a374c3614f5abda24",
+      "features": 41,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_22",
+    "archivo": "sige/distrito_22.circuitos_electorales.geojson",
+    "distrito": "22",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_22.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_22.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 675314,
+      "sha256": "34109cb4606801ecd283e145d2fb40d3be6b4c61a0f3fdd3d5f380eb4a528d1f",
+      "features": 269,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_23",
+    "archivo": "sige/distrito_23.circuitos_electorales.geojson",
+    "distrito": "23",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_23.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_23.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 17115245,
+      "sha256": "c8d0a1a4eb9a48babb4e47fdaff62ab4e760863ae1af3f6db44e5fe5a2e34cbd",
+      "features": 289,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  },
+  {
+    "id": "sige_consulta2026_24",
+    "archivo": "sige/distrito_24.circuitos_electorales.geojson",
+    "distrito": "24",
+    "desde": 2026,
+    "hasta": 2026,
+    "documentada": false,
+    "alcance": "distrito",
+    "esquema": "sige",
+    "crs": null,
+    "calidad": "organismo_cobertura_no_certificada",
+    "temporalidad": "consulta_2026_no_vigencia",
+    "nota": "Descarga pública del sigE CNE de octubre de 2026. Conserva códigos INDRA e INDEC por separado. El nombre de capa o fecha de consulta no certifican vigencia electoral. Tiene prioridad frente a la descarga del portal anterior cuando ambas comparten fecha de consulta.",
+    "fuente_original": {
+      "url": "https://www.padron.gov.ar/cne_sige/api/download_layer.php?layer=distrito_24.circuitos_electorales&format=geojson",
+      "archivo": "sige/distrito_24.circuitos_electorales.geojson",
+      "fuente": "https://www.padron.gov.ar/cne_sige/",
+      "corte_declarado": "sin fecha comprobada",
+      "nota": "Descarga pública habilitada; la fecha de consulta no establece vigencia",
+      "estado": "descargado",
+      "bytes": 9652271,
+      "sha256": "d20f2a7cda710318c7a080d6917658e5fec2fe6f880740fe3b35914c043ad25d",
+      "features": 65,
+      "tipos": [
+        "MultiPolygon"
+      ]
+    },
+    "prioridad": 0
+  }
+]

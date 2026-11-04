@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1085_7b2851fc29",
+  "shp": "E1085.shp",
+  "entidades": 142,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1085.dbf",
+      "bytes": 50026,
+      "sha256": "dbfbd9f601c34d8d6c48fe93bda6ce81503139754df5948203021156ffa8dbc3"
+    },
+    {
+      "archivo": "E1085.shp",
+      "bytes": 13012,
+      "sha256": "ed4f7c5583416012d688a91c5ab6997d1fce0bd928e591a02b6580590b7e3519"
+    },
+    {
+      "archivo": "E1085.shx",
+      "bytes": 1236,
+      "sha256": "1265d3083595f8deb69db74b5fe5a0ebf9ca4204f78f643aba59d9e0eff995d3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tacuarendia2h.zip!E1085.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_16668cd621",
+    "archivo": "santafe/ipec/2010/tacuarendia2h.zip!E1085.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 142,
+    "registros_shx": 142,
+    "shape_type": 3,
+    "bbox": [
+      5572065.0,
+      6856545.5,
+      5573227.0,
+      6857955.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tacuarendia2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fde8739296de53801ea8d2900466c220e3227c10315a545249bf63a62bb78f54"
+}

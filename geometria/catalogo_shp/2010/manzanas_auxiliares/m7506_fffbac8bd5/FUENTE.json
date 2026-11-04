@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m7506_fffbac8bd5",
+  "shp": "m7506.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m7506.shx",
+      "bytes": 132,
+      "sha256": "99266a865337557890b8b0768eaa0d1d62eaa2f45f3aebec290c70846dfa034c"
+    },
+    {
+      "archivo": "m7506.shp",
+      "bytes": 1044,
+      "sha256": "5f89a657ea7a63f7f98f75b9a3d779d58692fbfa345dd82cdcf6172d9c6f1916"
+    },
+    {
+      "archivo": "m7506.sbx",
+      "bytes": 132,
+      "sha256": "27edbf51d9295beb727f3d9f14f64f0361edcb13254012896554bb016379cd7e"
+    },
+    {
+      "archivo": "m7506.sbn",
+      "bytes": 188,
+      "sha256": "893328162f59f48f4e0c0a12e2cd71de83d33d831ea77c780bbc58257341e4f3"
+    },
+    {
+      "archivo": "m7506.dbf",
+      "bytes": 1173,
+      "sha256": "52d76c2a7e994646aed591d0a2ae9fcd463db57bcb04c601afa9be875a6a4913"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/CAMPOSIETEPROVINCIAS.zip!m7506.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7b9888fd3d",
+    "archivo": "santafe/ipec/2010/CAMPOSIETEPROVINCIAS.zip!m7506.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5522495.0,
+      6804824.5,
+      5522883.5,
+      6805115.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/CAMPOSIETEPROVINCIAS.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6286b2eacf82489b4b53ea650c89d6edf6ed9c4e54e05d687c9ea186b36cbf75"
+}

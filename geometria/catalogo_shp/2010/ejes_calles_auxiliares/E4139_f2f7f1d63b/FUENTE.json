@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4139_f2f7f1d63b",
+  "shp": "E4139.shp",
+  "entidades": 75,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4139.dbf",
+      "bytes": 26710,
+      "sha256": "21151047404d9d11f72637f4245b96f6f4fec4dea315afa7873052d52640c479"
+    },
+    {
+      "archivo": "E4139.shp",
+      "bytes": 6716,
+      "sha256": "60549d5831286fb1732385cae7a552660b93de4050b247a24fd15a29fdef44cc"
+    },
+    {
+      "archivo": "E4139.shx",
+      "bytes": 700,
+      "sha256": "c5b104461323144555da0d57d8e3e9e126e20ad78e35e38c5ee3df452cac6720"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/albarellosa3v.zip!E4139.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d63727e26f",
+    "archivo": "santafe/ipec/2010/albarellosa3v.zip!E4139.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 75,
+    "registros_shx": 75,
+    "shape_type": 3,
+    "bbox": [
+      5440130.0,
+      6321798.0,
+      5441010.0,
+      6322845.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/albarellosa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f9a17ee37f307c9498a13ab3eaaa9c6dfd47c915a0a9c0ef3c5a8c0902d38bbc"
+}

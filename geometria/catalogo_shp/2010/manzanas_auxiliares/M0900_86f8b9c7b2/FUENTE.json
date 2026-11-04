@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0900_86f8b9c7b2",
+  "shp": "M0900.shp",
+  "entidades": 69,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0900.dbf",
+      "bytes": 13979,
+      "sha256": "565710a841ea73f373cc0d3777d09eb28f2e8f0e1d3a8d4282a6d2051ef2070d"
+    },
+    {
+      "archivo": "M0900.shp",
+      "bytes": 10396,
+      "sha256": "fb8a7ba2765373deb012c57b3b7c5a7432bf3cc2ac064b590da5d58933a1b54d"
+    },
+    {
+      "archivo": "M0900.shx",
+      "bytes": 652,
+      "sha256": "eb34739f686508500547d81a5b38af5e5a3d778b1bd07c956d6899c1ab65ec08"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PavonArribaa3h.zip!M0900.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_83d1d3bfae",
+    "archivo": "santafe/ipec/2010/PavonArribaa3h.zip!M0900.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 69,
+    "registros_shx": 69,
+    "shape_type": 5,
+    "bbox": [
+      5422844.5,
+      6313792.5,
+      5423954.0,
+      6314926.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PavonArribaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "cc374efd426739decea9f3be02cb1d179174e36d52c02f98aa6e0c72f31f3a61"
+}

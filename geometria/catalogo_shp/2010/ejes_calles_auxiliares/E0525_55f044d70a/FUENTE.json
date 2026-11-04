@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0525_55f044d70a",
+  "shp": "E0525.shp",
+  "entidades": 255,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0525.dbf",
+      "bytes": 89350,
+      "sha256": "1c42db0e40bc35c59a87f245321dbd7dfaa36ecb2ec096cd6b407d63792631a7"
+    },
+    {
+      "archivo": "E0525.shp",
+      "bytes": 22620,
+      "sha256": "8a9f50825a695146a034fce74f9eb85b4c73f58c0961d8d1ba6c1cbe1101b0a2"
+    },
+    {
+      "archivo": "E0525.shx",
+      "bytes": 2140,
+      "sha256": "142a637aa02f903e078f0c56919267fec33f53c3f23747733b4e42be5744059d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/MaximoPaza3v.zip!E0525.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c0bb1d3886",
+    "archivo": "santafe/ipec/2010/MaximoPaza3v.zip!E0525.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 255,
+    "registros_shx": 255,
+    "shape_type": 3,
+    "bbox": [
+      5410014.0,
+      6293780.0,
+      5411747.0,
+      6296455.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/MaximoPaza3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c019d62881e7c30f8dd3733dcfa9bc9c593aa60d2193eba5328d3b103df8574d"
+}

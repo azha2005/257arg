@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m6851_2dd814cb90",
+  "shp": "m6851.shp",
+  "entidades": 15,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m6851.dbf",
+      "bytes": 3341,
+      "sha256": "3f54087eeb7126cbee3c4ce4327c3bd4ba894c9e6b8102483c112525205c006f"
+    },
+    {
+      "archivo": "m6851.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m6851.shp",
+      "bytes": 2332,
+      "sha256": "5cf4d637fa78b863e0b693c2fd4d3650be063f6bb439ff5dbe297384ce6b174a"
+    },
+    {
+      "archivo": "m6851.shx",
+      "bytes": 220,
+      "sha256": "7016430a4aafd831c52122eb3c23280ae76def5b1618e0ed5fe6aa3372d0d892"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIABOSSI.zip!m6851.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_3a94ef8013",
+    "archivo": "santafe/ipec/2022/COLONIABOSSI.zip!m6851.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 15,
+    "registros_shx": 15,
+    "shape_type": 5,
+    "bbox": [
+      5328324.0,
+      6606240.0,
+      5328846.0,
+      6606666.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIABOSSI.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5afd314681fb89e2a683276afdeb4c0d3138d4b1ceb45eb40d5977706915add5"
+}

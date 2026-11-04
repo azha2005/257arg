@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6857_131af83bb8",
+  "shp": "M6857.shp",
+  "entidades": 35,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6857.dbf",
+      "bytes": 7281,
+      "sha256": "0282f86223ea63b9a5b9ac55e654e64f9451b3b1ec122ce06b50531d88c1b375"
+    },
+    {
+      "archivo": "M6857.shp",
+      "bytes": 9036,
+      "sha256": "7a36c1d756726baf4b68f73e2f6d52d22993c82d979bae5d8d28108ca348f437"
+    },
+    {
+      "archivo": "M6857.shx",
+      "bytes": 380,
+      "sha256": "f380593355f8c4555a8f912d475ada043dca8f8e4be6db324eb5461c5cd0bd50"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pjechacochicoa2h.zip!M6857.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_75c78999eb",
+    "archivo": "santafe/ipec/2010/pjechacochicoa2h.zip!M6857.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 35,
+    "registros_shx": 35,
+    "shape_type": 5,
+    "bbox": [
+      5437061.0,
+      6507318.0,
+      5439553.0,
+      6508514.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pjechacochicoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "62202eba94416ebcf4288831d449e2775532fccf2ef8f9684cf6908845b23de9"
+}

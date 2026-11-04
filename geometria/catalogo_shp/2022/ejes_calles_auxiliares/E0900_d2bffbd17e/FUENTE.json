@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/E0900_d2bffbd17e",
+  "shp": "E0900.shp",
+  "entidades": 205,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0900.dbf",
+      "bytes": 61700,
+      "sha256": "6f239d2cc8ab5b9007e3f8c7644f036d719b44a8b10e5f305910fafa945f303c"
+    },
+    {
+      "archivo": "E0900.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "E0900.shp",
+      "bytes": 18172,
+      "sha256": "5ae9150df7a0208ab087b03ff48c0897316d61d09c3fa7773211e4a11bb8b3f4"
+    },
+    {
+      "archivo": "E0900.shx",
+      "bytes": 1740,
+      "sha256": "49e69bad5308030e462850814de2cca893efda630127de72359c59288e3b671e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PAVONARRIBA.zip!E0900.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_222aad1253",
+    "archivo": "santafe/ipec/2022/PAVONARRIBA.zip!E0900.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 205,
+    "registros_shx": 205,
+    "shape_type": 3,
+    "bbox": [
+      5422828.5,
+      6313792.5,
+      5424232.5,
+      6314940.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PAVONARRIBA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "295111d3ca45e7e1ecbf15937ed6cf6e6e08305c36e758ec66dfb1b5406809bb"
+}

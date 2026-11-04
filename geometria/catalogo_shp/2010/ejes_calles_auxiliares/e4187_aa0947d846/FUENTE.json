@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e4187_aa0947d846",
+  "shp": "e4187.shp",
+  "entidades": 39,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4187.shx",
+      "bytes": 412,
+      "sha256": "c9d25f740e9c0c86421805cc609c54dab742880faefe7b6e75dae3adfeb38677"
+    },
+    {
+      "archivo": "e4187.shp",
+      "bytes": 3900,
+      "sha256": "440d2e0c99a9a55d2b15a256c76f7c278c86a99d75712960cdf9398a5314aacd"
+    },
+    {
+      "archivo": "e4187.sbx",
+      "bytes": 196,
+      "sha256": "dd24a5a969999594b1e779c0bbfaf7229608b3ce67a40d9993bd760e24f98567"
+    },
+    {
+      "archivo": "e4187.sbn",
+      "bytes": 620,
+      "sha256": "eedaa13ac5ac60ec6d2b41a76aa04ec4c4499394cfcc52eea1139165b20979b6"
+    },
+    {
+      "archivo": "e4187.dbf",
+      "bytes": 14181,
+      "sha256": "836d211a88c1c4a025337ffe943012bd7ee5d4c163ed211c004a031096ce78b1"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/COLONIATERESA.zip!e4187.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0e4e3a4009",
+    "archivo": "santafe/ipec/2010/COLONIATERESA.zip!e4187.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 39,
+    "registros_shx": 39,
+    "shape_type": 3,
+    "bbox": [
+      5502340.0,
+      6653698.5,
+      5503548.5,
+      6654110.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/COLONIATERESA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f1846a61d8f55be604e8e854aac4f913e68a0669d89006bb3db1069231cd9432"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0527_bd36a95877",
+  "shp": "m0527.shp",
+  "entidades": 185,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0527.dbf",
+      "bytes": 36831,
+      "sha256": "80a668b5af4dfaca1886bbd9170932db31dd915c3db70f9569a1c2fd07a3ae40"
+    },
+    {
+      "archivo": "m0527.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0527.shp",
+      "bytes": 26908,
+      "sha256": "65c26241230adbeb12a27b40aa8286da92ded5a2bea0f30a00b601ed1fca27ff"
+    },
+    {
+      "archivo": "m0527.shx",
+      "bytes": 1580,
+      "sha256": "1331df2d50b843e7bb78fb103b11c2bef541eca935065487325c431a295df557"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/NELSON.zip!m0527.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_c5be34fcd0",
+    "archivo": "santafe/ipec/2022/NELSON.zip!m0527.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 185,
+    "registros_shx": 185,
+    "shape_type": 5,
+    "bbox": [
+      5426727.0,
+      6540035.0,
+      5428344.5,
+      6542646.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/NELSON.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0af4755aca76b9867fb2f0052ab7b7af77a3a9dbfb693e6c490ff8d4a9842687"
+}

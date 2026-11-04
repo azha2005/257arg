@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m1407_b9c4c37ba4",
+  "shp": "m1407.shp",
+  "entidades": 67,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m1407.dbf",
+      "bytes": 13585,
+      "sha256": "4bd3157849bf4e0fcae7cd757bac8ac8b4c402a55757644d1ccbec6e8c351665"
+    },
+    {
+      "archivo": "m1407.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m1407.shp",
+      "bytes": 10380,
+      "sha256": "fd64debf04d758003f37155cee3bde8b8c60ce5dc8b14e9e5ed22a920dbbbc13"
+    },
+    {
+      "archivo": "m1407.shx",
+      "bytes": 636,
+      "sha256": "2c36ba2df4fde645fceecd6c32d96f3ad8f8d7312fb677cd1229f81160c40995"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANTAMARGARITA.zip!m1407.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e5a1a265bf",
+    "archivo": "santafe/ipec/2022/SANTAMARGARITA.zip!m1407.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 67,
+    "registros_shx": 67,
+    "shape_type": 5,
+    "bbox": [
+      5347642.5,
+      6867291.5,
+      5348589.5,
+      6868421.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANTAMARGARITA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "8b36679efcfef7d344e4168449bf5ccc748388a4387eee0b0ea5ca3c8f17a22f"
+}

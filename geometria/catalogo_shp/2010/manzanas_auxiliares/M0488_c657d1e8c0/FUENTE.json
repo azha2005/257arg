@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0488_c657d1e8c0",
+  "shp": "M0488.shp",
+  "entidades": 141,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0488.dbf",
+      "bytes": 28163,
+      "sha256": "6f38fe785b87a6287dcd10d4b24bc19fa7539c0644b4a7b24e4b40915b5d802b"
+    },
+    {
+      "archivo": "M0488.shp",
+      "bytes": 20956,
+      "sha256": "faee66da3b73ed6f383ab3e5b1abb792a48536e30bb31d69941395cbeefade5c"
+    },
+    {
+      "archivo": "M0488.shx",
+      "bytes": 1228,
+      "sha256": "1ac119f43e95059215bfb5a63834a7e9f3737c6fbd3990bbb1b4f5a84dd31715"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/barrancasa2v.zip!M0488.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_149f163ab6",
+    "archivo": "santafe/ipec/2010/barrancasa2v.zip!M0488.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 141,
+    "registros_shx": 141,
+    "shape_type": 5,
+    "bbox": [
+      5406226.0,
+      6432729.0,
+      5408145.5,
+      6434680.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/barrancasa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "21fdfdb5633b50672b58a845ae9f6ed21f2f2894dff0764a8cc41c171f9b5878"
+}

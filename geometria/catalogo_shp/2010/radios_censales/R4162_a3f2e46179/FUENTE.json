@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4162_a3f2e46179",
+  "shp": "R4162.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4162.dbf",
+      "bytes": 686,
+      "sha256": "80b8f861249816c3a234732027543f7d822913159c428313d84f60bae947b6b1"
+    },
+    {
+      "archivo": "R4162.shp",
+      "bytes": 604,
+      "sha256": "e36841b6330e8ac49c80401cbb4a0dde4a925924bdcfcfe1f165f51a0b8cdf9b"
+    },
+    {
+      "archivo": "R4162.shx",
+      "bytes": 108,
+      "sha256": "6b6942badfae91d46210b2a8a1c053630fa3b06f00568e45617343df440f2e64"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/caciqueariacaiquina3h.zip!R4162.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_35edab9878",
+    "archivo": "santafe/ipec/2010/caciqueariacaiquina3h.zip!R4162.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5477453.0,
+      6608774.5,
+      5478345.5,
+      6609565.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/caciqueariacaiquina3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7b731f548d5bfa0c24e313590d0187148d6c5fe1fa4b56e96855803252be9f54"
+}

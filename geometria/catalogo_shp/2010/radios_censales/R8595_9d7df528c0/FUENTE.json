@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R8595_9d7df528c0",
+  "shp": "R8595.shp",
+  "entidades": 57,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R8595.dbf",
+      "bytes": 12110,
+      "sha256": "2265e9e70f08ed9c9c6481d9cdbcc432e59902bf81e4eaf461dce91693899aa5"
+    },
+    {
+      "archivo": "R8595.shp",
+      "bytes": 55852,
+      "sha256": "0cab00726f66ae112051fd7c0ba2efdd177ff84900bcb206351af10814173ad4"
+    },
+    {
+      "archivo": "R8595.shx",
+      "bytes": 556,
+      "sha256": "567f5b4d5390eb82bd5cd689eae1c6c72ba79a2df56b72106922e8e363e0e7e7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Santotomea0v.zip!R8595.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d5051a4ef5",
+    "archivo": "santafe/ipec/2010/Santotomea0v.zip!R8595.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 57,
+    "registros_shx": 57,
+    "shape_type": 5,
+    "bbox": [
+      5423109.0,
+      6492971.0,
+      5429511.5,
+      6502369.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Santotomea0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "74ec185fca46d56d2b93481e145c1c3e46b6719e8d643d8df364ee3f4204f939"
+}

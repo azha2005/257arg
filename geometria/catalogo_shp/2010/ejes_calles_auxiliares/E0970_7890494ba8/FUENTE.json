@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0970_7890494ba8",
+  "shp": "E0970.shp",
+  "entidades": 433,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0970.dbf",
+      "bytes": 151294,
+      "sha256": "cbdf805db16a52133f403f68896a76c238bcb9e4382ca2419ce227715bb4675a"
+    },
+    {
+      "archivo": "E0970.shp",
+      "bytes": 41404,
+      "sha256": "cc4b20450a6cdb927c2744b4b1d6169b6b41b9063b6f8b4b6c287ed4947e0c30"
+    },
+    {
+      "archivo": "E0970.shx",
+      "bytes": 3564,
+      "sha256": "b8626bcfe143e64caa11a0a14b6986023cb1933f8ff34a5264c4724a0515c423"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puebloandinoa2h.zip!E0970.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_13d133f465",
+    "archivo": "santafe/ipec/2010/puebloandinoa2h.zip!E0970.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 433,
+    "registros_shx": 433,
+    "shape_type": 3,
+    "bbox": [
+      5416951.5,
+      6384345.0,
+      5420043.0,
+      6386999.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puebloandinoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c63a53542ee6bb61de78a1eedbdd0953688dabbe74cc52777a111c623c04c658"
+}

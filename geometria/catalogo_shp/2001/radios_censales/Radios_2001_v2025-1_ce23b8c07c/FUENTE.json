@@ -1,0 +1,117 @@
+{
+  "anio_carpeta": "2001",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2001/radios_censales/Radios_2001_v2025-1_ce23b8c07c",
+  "shp": "Radios 2001 v2025-1.shp",
+  "entidades": 46582,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Radios 2001 v2025-1.shp",
+      "bytes": 82189716,
+      "sha256": "9671aadf9c8f2ae41ad5867f814ae7a7bea749111dff459d265d8e1a619a285f"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.shp.xml",
+      "bytes": 8581,
+      "sha256": "92037d849274921af30833f8db948fd2fc3ae8632fe7af6bfa94eb529892297e"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.shx",
+      "bytes": 372756,
+      "sha256": "d3daae485a460d4baf2a3c385ed3715ad3440e388318be2b3a9ce7e5e1a33f08"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.dbf",
+      "bytes": 14440742,
+      "sha256": "1ee7874b2f6ef0b7bb73591ce7d015b5b0d3824e6ad67e7d49f3fd89e1753611"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.prj",
+      "bytes": 425,
+      "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.sbn",
+      "bytes": 432668,
+      "sha256": "8a8a8cdb901ea68561ef4f6ae34e63b515666cf8360daa6e88696300a5c4e0aa"
+    },
+    {
+      "archivo": "Radios 2001 v2025-1.sbx",
+      "bytes": 5180,
+      "sha256": "8833f438bc471ccd607bee33998b5c1e0dfe18672b6c84d1a7bf43fd8a0e8960"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/radios/RADIOS_2001_V2025-1.zip!Radios 2001 v2025-1.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_radios_5c78bc5b-8642-4af8-9f55-ab55a4715224",
+    "archivo": "conicet/radios/RADIOS_2001_V2025-1.zip!Radios 2001 v2025-1.shp",
+    "tipo": "radio censal",
+    "corte": "2001",
+    "cobertura": "Argentina",
+    "features": 46582,
+    "registros_shx": 46582,
+    "shape_type": 5,
+    "bbox": [
+      -8237691.7108,
+      -30240971.9584,
+      -2922367.0326000005,
+      -2485224.690299999
+    ],
+    "campos": [
+      "COD_2001",
+      "PROV",
+      "DEPTO",
+      "FRACC",
+      "RADIO",
+      "OBS2001",
+      "VIV_TOT",
+      "POB_TOT",
+      "REDATAM"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149711",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/5c78bc5b-8642-4af8-9f55-ab55a4715224/content",
+    "crs_wkt": "PROJCS[\"WGS_1984_Web_Mercator_Auxiliary_Sphere\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Mercator_Auxiliary_Sphere\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",0.0],PARAMETER[\"Standard_Parallel_1\",0.0],PARAMETER[\"Auxiliary_Sphere_Type\",0.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "06": 17070,
+      "62": 774,
+      "10": 512,
+      "14": 4347,
+      "18": 1516,
+      "22": 1315,
+      "30": 2297,
+      "34": 670,
+      "38": 730,
+      "42": 705,
+      "26": 634,
+      "82": 3241,
+      "50": 1693,
+      "54": 1251,
+      "46": 296,
+      "58": 671,
+      "70": 637,
+      "66": 1197,
+      "74": 584,
+      "78": 260,
+      "86": 979,
+      "90": 1643,
+      "02": 3407,
+      "94": 153
+    },
+    "campo_codigo": "COD_2001",
+    "codigos_distintos": 46582,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "1a56a3a67dbfddd638076410b896ea6ef19ebdcf82e9bccbfc031f62603b966b"
+}

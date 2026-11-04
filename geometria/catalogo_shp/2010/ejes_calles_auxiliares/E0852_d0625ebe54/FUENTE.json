@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0852_d0625ebe54",
+  "shp": "E0852.shp",
+  "entidades": 208,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0852.dbf",
+      "bytes": 72994,
+      "sha256": "3dc96beddd3b79a867f1dc48c5340b36688c037feedf8c7e03a3679f779dff06"
+    },
+    {
+      "archivo": "E0852.shp",
+      "bytes": 18500,
+      "sha256": "1730ff798a108ceb927d4b4d6ba2847430dbd8d9a73d49daa6bd37ea4ec52268"
+    },
+    {
+      "archivo": "E0852.shx",
+      "bytes": 1764,
+      "sha256": "fc9ebb84bf5937c1f21b3bc8aa5d051758031963fd5f8900721ec295ec24502f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/losmolinosa3h.zip!E0852.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_26a978fd14",
+    "archivo": "santafe/ipec/2010/losmolinosa3h.zip!E0852.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 208,
+    "registros_shx": 208,
+    "shape_type": 3,
+    "bbox": [
+      5375500.5,
+      6336368.5,
+      5376798.5,
+      6337736.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/losmolinosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "19e4463f12f053cf8cefb7d947d81a4b77a753dc62c98e6e3910c80671bc2392"
+}

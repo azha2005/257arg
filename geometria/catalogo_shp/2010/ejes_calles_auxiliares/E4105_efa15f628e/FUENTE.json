@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4105_efa15f628e",
+  "shp": "E4105.shp",
+  "entidades": 154,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4105.dbf",
+      "bytes": 54202,
+      "sha256": "b80561fb92784ca37eb89783102e829ee0596be546d065e3baa79c533ea4b6d7"
+    },
+    {
+      "archivo": "E4105.shp",
+      "bytes": 13668,
+      "sha256": "ffc2e0a3856ff851fb4f0408dc4180ee332ebeabcfc0bcb9598147ba61e1e2be"
+    },
+    {
+      "archivo": "E4105.shx",
+      "bytes": 1332,
+      "sha256": "9de32a3e44d84af686a08adae524c247b9d8ba7c60a5c58edd850ce96b59d997"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ramayona3h.zip!E4105.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_101cd94ff3",
+    "archivo": "santafe/ipec/2010/ramayona3h.zip!E4105.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 154,
+    "registros_shx": 154,
+    "shape_type": 3,
+    "bbox": [
+      5451230.5,
+      6606600.5,
+      5452514.0,
+      6607600.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ramayona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0f4fad9b0df563828ac439997507d175514d62f567f6db162f4bb44de806bda4"
+}

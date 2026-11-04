@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6810_96d63014ba",
+  "shp": "E6810.shp",
+  "entidades": 82,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6810.dbf",
+      "bytes": 29146,
+      "sha256": "fe4e810ce7dc36e9668bd04bf0189469ce27964619e02fdf7ad2d2c9b3542d55"
+    },
+    {
+      "archivo": "E6810.shp",
+      "bytes": 8852,
+      "sha256": "84f0c7b9fe3e77e93be8421dd1676170cb9f8b14ac8ef1b226737033df4f9bad"
+    },
+    {
+      "archivo": "E6810.shx",
+      "bytes": 756,
+      "sha256": "74d9dd1857b10e209e5a06c965272b8063a541f72f2cd77a4740d502fff71948"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaelviraa3h.zip!E6810.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8a2ec26add",
+    "archivo": "santafe/ipec/2010/villaelviraa3h.zip!E6810.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 82,
+    "registros_shx": 82,
+    "shape_type": 3,
+    "bbox": [
+      5422529.5,
+      6388319.0,
+      5423825.5,
+      6388975.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaelviraa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5c45abfddcd27f1000384b2ea216303011ad8dd5a33cb35883afd9c38761779e"
+}

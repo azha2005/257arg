@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m1314_84313decf0",
+  "shp": "m1314.shp",
+  "entidades": 61,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m1314.dbf",
+      "bytes": 12403,
+      "sha256": "2a952f66d505652d17dd48da01fa721e59568e11c462dde3c19acfafa7130a76"
+    },
+    {
+      "archivo": "m1314.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m1314.shp",
+      "bytes": 11772,
+      "sha256": "fa87dc0fd45cb50f2d3651e2422bb0f2f8a54944bdae19db57caaa1abea2a28a"
+    },
+    {
+      "archivo": "m1314.shx",
+      "bytes": 588,
+      "sha256": "27dfc3ea89200d0f67f6d8e7737f268b174049cf64c775a24c65a6fa1075b53e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/INTIYACO.zip!m1314.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_42f49b85fb",
+    "archivo": "santafe/ipec/2022/INTIYACO.zip!m1314.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 61,
+    "registros_shx": 61,
+    "shape_type": 5,
+    "bbox": [
+      5492493.5,
+      6827948.0,
+      5493688.0,
+      6829396.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/INTIYACO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3930d419c3bbb60e1434449ffd12a86768a1bd90f3b924ae43c32d945b4c1bec"
+}

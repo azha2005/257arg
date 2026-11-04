@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M8765_0de8282e08",
+  "shp": "M8765.shp",
+  "entidades": 341,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M8765.dbf",
+      "bytes": 67563,
+      "sha256": "ee3cd21fab800de5c8230bfccc08c532c867fed80e6b5fa2df9461a5a3c9141d"
+    },
+    {
+      "archivo": "M8765.shp",
+      "bytes": 68252,
+      "sha256": "cac65bc48f526a3a28efac2f6daa5d9d8967bcdd649a964fac926009f793f0eb"
+    },
+    {
+      "archivo": "M8765.shx",
+      "bytes": 2828,
+      "sha256": "6581577b1277e83545749c99bd015967cadb771945eb02ad026ba81b78f8340c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/frayluisbeltrana2h.zip!M8765.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7fb5236f12",
+    "archivo": "santafe/ipec/2010/frayluisbeltrana2h.zip!M8765.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 341,
+    "registros_shx": 341,
+    "shape_type": 5,
+    "bbox": [
+      5430066.5,
+      6371100.5,
+      5433196.5,
+      6373777.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/frayluisbeltrana2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b05646a6005842611c8bfc94b4032b530f4e938fbf3fa5f3d140be9622ab329b"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1115_446361e247",
+  "shp": "M1115.shp",
+  "entidades": 76,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1115.dbf",
+      "bytes": 15358,
+      "sha256": "b2a1a540d3f03ac0d485af5ea9aa3cc94aca4e51da188b11e2e3dad11073c11c"
+    },
+    {
+      "archivo": "M1115.shp",
+      "bytes": 11492,
+      "sha256": "18f0f4fcd22810bfc24ec4314ee24313214daf0efd5ed1e9bc6f5c6a151c1fc4"
+    },
+    {
+      "archivo": "M1115.shx",
+      "bytes": 708,
+      "sha256": "6c9f434629b7bb6137bdc7c11982bc6da8b66596ba9db963dd5533d9bf2ff50c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santodomingoa3h.zip!M1115.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8eed668301",
+    "archivo": "santafe/ipec/2010/santodomingoa3h.zip!M1115.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 76,
+    "registros_shx": 76,
+    "shape_type": 5,
+    "bbox": [
+      5414809.5,
+      6556778.5,
+      5415905.5,
+      6557894.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santodomingoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "40437e0b43c88d4cb82809fb4680847a9e87155caa3ca5f25cc343e81c7506b8"
+}

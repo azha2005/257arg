@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0656_b90e9c2d4a",
+  "shp": "E0656.shp",
+  "entidades": 374,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0656.dbf",
+      "bytes": 130762,
+      "sha256": "49c30f3846c23a6159ea8548c84b6b0f54189b0440dc56eb7ea4340184e925e0"
+    },
+    {
+      "archivo": "E0656.shp",
+      "bytes": 33252,
+      "sha256": "ffd63218a5aa62afa8ba1c7002eb31413bdfc0c93b71b22eba66d6b87b7a28d9"
+    },
+    {
+      "archivo": "E0656.shx",
+      "bytes": 3092,
+      "sha256": "2fd66abaff9a784c093881340076966ac5b078fb7f25607ae377293e52a017dc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arteaga_A3h.zip!E0656.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c1c718642f",
+    "archivo": "santafe/ipec/2010/arteaga_A3h.zip!E0656.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 374,
+    "registros_shx": 374,
+    "shape_type": 3,
+    "bbox": [
+      5332140.0,
+      6337186.0,
+      5333546.5,
+      6338798.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arteaga_A3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d10969ef4a40bf99eb49fa9e83e32e94c1c5fef8fc99a735e81319a31a05414c"
+}

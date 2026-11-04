@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6851_152843b8a9",
+  "shp": "E6851.shp",
+  "entidades": 36,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6851.dbf",
+      "bytes": 13138,
+      "sha256": "9857305789180e4be5766c35b6865a1e9e18dddce9a012a28f17ac7e5768d678"
+    },
+    {
+      "archivo": "E6851.shp",
+      "bytes": 3300,
+      "sha256": "89726bab21757e69a14f6db371e8f2ba1f66d5a0fd16ff50e3551e56e956ee9f"
+    },
+    {
+      "archivo": "E6851.shx",
+      "bytes": 388,
+      "sha256": "a48b279e12a039b20a05dc87c178b8c8670fa0cb4f5b5a21a988add3c2218898"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniabossia3h.zip!E6851.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_83fd8d6e6d",
+    "archivo": "santafe/ipec/2010/coloniabossia3h.zip!E6851.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 36,
+    "registros_shx": 36,
+    "shape_type": 3,
+    "bbox": [
+      5328333.0,
+      6606241.0,
+      5328813.0,
+      6606657.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniabossia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "bd46b58c5f2a970a30e0ac5c61c930154ed5668b3fa2cdfeacfab091019f96d5"
+}

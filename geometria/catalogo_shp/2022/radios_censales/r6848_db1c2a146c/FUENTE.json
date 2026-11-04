@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r6848_db1c2a146c",
+  "shp": "r6848.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6848.dbf",
+      "bytes": 3017,
+      "sha256": "052836936eac6630f9be0e280367809d7ab37319a070d77e681b87392ae3318a"
+    },
+    {
+      "archivo": "r6848.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r6848.shp",
+      "bytes": 10636,
+      "sha256": "9633006f12d0bbb64f62d5869b1c9002d6ce8648ffaf956073b9f4b8ea871279"
+    },
+    {
+      "archivo": "r6848.shx",
+      "bytes": 204,
+      "sha256": "5fcbd18da26da3aea04a83ab66c344abbaba268a8bcff47796dfc49a757ca602"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ARROYOLEYES.zip!r6848.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_b2130f63e2",
+    "archivo": "santafe/ipec/2022/ARROYOLEYES.zip!r6848.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5447203.5,
+      6506351.0,
+      5453679.0,
+      6511446.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ARROYOLEYES.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2e35c64fac4267a615ae6af4444f6ab639e9d5f3e70310db98b6520a02561897"
+}

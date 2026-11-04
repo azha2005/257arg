@@ -1,0 +1,132 @@
+{
+  "nombre": "Misiones",
+  "distrito": "14",
+  "serie": "2025",
+  "fecha": "08/06/2025",
+  "origen": "Diputados provinciales 08/06/2025 (municipios empalmados)",
+  "destino": "Diputados nacionales 26/10/2025",
+  "nivel": "municipios y departamentos empalmados",
+  "base": "votos emitidos",
+  "fuente": "https://www.electoralmisiones.gov.ar/wp-content/uploads/2025/09/Estadisticas-Elecciones-Legislativas-8-de-Junio-de-2025-1.pdf",
+  "foco": [
+    "Frente Renovador de la Concordia"
+  ],
+  "nota": "Resultado provincial observado por municipio; se agregan circuitos nacionales con la correspondencia explícita del mapa oficial de abril 2023. No son resultados observados por circuito provincial. Donde hay códigos nuevos o municipios sin equivalente previo, se agrega todo el departamento en ambos lados. Departamentos agregados: IGUAZU. Fracrán tiene reserva de límites en el propio mapa. Se conservan las diferencias internas de publicación ya documentadas.",
+  "id": "misiones_prov2025_dn2025_municipios",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "origen",
+  "unidades": 75,
+  "categorias_origen": 9,
+  "rango": 9,
+  "condicion": 40.49447130102791,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.02069459034818103,
+    "0.0001": 0.006729694407504992,
+    "1e-05": 0.004805351035330234,
+    "1e-06": 0.0045403779163774305,
+    "1e-07": 0.00452009851201491
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.598807331585976,
+  "desviacion_max_margen_destino_pp": 0.23552013121553722,
+  "electores_o_votos_origen": 555879.0,
+  "electores_o_votos_destino": 626226.0,
+  "filas": [
+    {
+      "origen": "La Libertad Avanza",
+      "peso": 20.95,
+      "dif_variante_pp": 4.32,
+      "sensibilidad_pp": 24.03,
+      "ancho_intervalo_pp": 16.52,
+      "separacion_pp": 54.67,
+      "no_identificada": false
+    },
+    {
+      "origen": "Agrario y Social",
+      "peso": 8.45,
+      "dif_variante_pp": 7.89,
+      "sensibilidad_pp": 48.99,
+      "ancho_intervalo_pp": 17.97,
+      "separacion_pp": 74.2,
+      "no_identificada": true
+    },
+    {
+      "origen": "Por la Vida y los Valores",
+      "peso": 18.36,
+      "dif_variante_pp": 6.36,
+      "sensibilidad_pp": 22.19,
+      "ancho_intervalo_pp": 21.66,
+      "separacion_pp": 27.67,
+      "no_identificada": false
+    },
+    {
+      "origen": "Partido Libertario",
+      "peso": 7.8,
+      "dif_variante_pp": 8.55,
+      "sensibilidad_pp": 48.5,
+      "ancho_intervalo_pp": 52.22,
+      "separacion_pp": 41.14,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Renovador de la Concordia",
+      "peso": 27.44,
+      "dif_variante_pp": 23.61,
+      "sensibilidad_pp": 32.34,
+      "ancho_intervalo_pp": 16.04,
+      "separacion_pp": 42.07,
+      "no_identificada": false
+    },
+    {
+      "origen": "Confluencia Popular por la Patria",
+      "peso": 2.34,
+      "dif_variante_pp": 57.19,
+      "sensibilidad_pp": 79.59,
+      "ancho_intervalo_pp": 58.13,
+      "separacion_pp": 78.2,
+      "no_identificada": true
+    },
+    {
+      "origen": "Unidos por el Futuro",
+      "peso": 5.52,
+      "dif_variante_pp": 19.55,
+      "sensibilidad_pp": 73.7,
+      "ancho_intervalo_pp": 49.15,
+      "separacion_pp": 55.55,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 4.53,
+      "dif_variante_pp": 53.01,
+      "sensibilidad_pp": 65.25,
+      "ancho_intervalo_pp": 67.97,
+      "separacion_pp": 56.99,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 4.6,
+      "dif_variante_pp": 7.87,
+      "sensibilidad_pp": 72.15,
+      "ancho_intervalo_pp": 68.04,
+      "separacion_pp": 39.66,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

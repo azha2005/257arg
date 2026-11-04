@@ -1,0 +1,567 @@
+{
+  "anio": 1940,
+  "filas": 91,
+  "filas_con_votos": 88,
+  "distritos": 5,
+  "ganadores_por_fila_fuente": {
+    "UCR": 68,
+    "PS": 1,
+    "CON": 18,
+    "FP": 1
+  },
+  "bloques_segun_base": {
+    "CON": 369567,
+    "PS": 138151,
+    "UCR": 538226,
+    "X_concentracionobrera": 35512,
+    "X_partidoradical": 5278,
+    "X_agrupaciondefensiva": 5884,
+    "X_conservador": 3253,
+    "FP": 23888,
+    "X_agrario": 1441
+  },
+  "bloques_segun_wikipedia": {
+    "UCR": 876057,
+    "CON": 724085,
+    "PS": 155178,
+    "FP": 23888
+  },
+  "diferencias_por_bloque": {
+    "UCR": -337831,
+    "CON": -354518,
+    "PS": -17027,
+    "FP": 0
+  },
+  "alertas_aritmeticas": [
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Balvanera Norte",
+      "pagina_pdf": 147,
+      "votantes": 10657,
+      "suma_publicada": 10790,
+      "diferencia": 133
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Balvanera Oeste",
+      "pagina_pdf": 147,
+      "votantes": 14146,
+      "suma_publicada": 14297,
+      "diferencia": 151
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Balvanera Sud",
+      "pagina_pdf": 147,
+      "votantes": 9191,
+      "suma_publicada": 9021,
+      "diferencia": -170
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Belgrano",
+      "pagina_pdf": 147,
+      "votantes": 34966,
+      "suma_publicada": 34134,
+      "diferencia": -832
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Concepción",
+      "pagina_pdf": 147,
+      "votantes": 13989,
+      "suma_publicada": 19075,
+      "diferencia": 5086
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Flores",
+      "pagina_pdf": 147,
+      "votantes": 23728,
+      "suma_publicada": 24072,
+      "diferencia": 344
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Las Heras",
+      "pagina_pdf": 147,
+      "votantes": 21226,
+      "suma_publicada": 20269,
+      "diferencia": -957
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Monserrat",
+      "pagina_pdf": 147,
+      "votantes": 14341,
+      "suma_publicada": 13615,
+      "diferencia": -726
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Palermo",
+      "pagina_pdf": 147,
+      "votantes": 20504,
+      "suma_publicada": 19534,
+      "diferencia": -970
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Pilar",
+      "pagina_pdf": 147,
+      "votantes": 19020,
+      "suma_publicada": 18299,
+      "diferencia": -721
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Bernardo",
+      "pagina_pdf": 147,
+      "votantes": 52446,
+      "suma_publicada": 51355,
+      "diferencia": -1091
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Carlos Norte",
+      "pagina_pdf": 147,
+      "votantes": 14007,
+      "suma_publicada": 13479,
+      "diferencia": -528
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Carlos Sud",
+      "pagina_pdf": 147,
+      "votantes": 19753,
+      "suma_publicada": 19366,
+      "diferencia": -387
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Cristóbal Norte",
+      "pagina_pdf": 147,
+      "votantes": 15065,
+      "suma_publicada": 15177,
+      "diferencia": 112
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Cristóbal Sud",
+      "pagina_pdf": 147,
+      "votantes": 16804,
+      "suma_publicada": 17062,
+      "diferencia": 258
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Juan Evangelista",
+      "pagina_pdf": 147,
+      "votantes": 17592,
+      "suma_publicada": 17522,
+      "diferencia": -70
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Nicolás",
+      "pagina_pdf": 147,
+      "votantes": 14715,
+      "suma_publicada": 13503,
+      "diferencia": -1212
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Santa Lucía",
+      "pagina_pdf": 147,
+      "votantes": 18556,
+      "suma_publicada": 17944,
+      "diferencia": -612
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Socorro",
+      "pagina_pdf": 147,
+      "votantes": 12763,
+      "suma_publicada": 12487,
+      "diferencia": -276
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Vélez Sarsfield",
+      "pagina_pdf": 147,
+      "votantes": 48825,
+      "suma_publicada": 49352,
+      "diferencia": 527
+    },
+    {
+      "provincia": "Córdoba",
+      "unidad": "Capital",
+      "pagina_pdf": 148,
+      "votantes": 46076,
+      "suma_publicada": 46075,
+      "diferencia": -1
+    },
+    {
+      "provincia": "Córdoba",
+      "unidad": "Pocho",
+      "pagina_pdf": 148,
+      "votantes": 1004,
+      "suma_publicada": 1002,
+      "diferencia": -2
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Colón",
+      "pagina_pdf": 149,
+      "votantes": 8159,
+      "suma_publicada": 8052,
+      "diferencia": -107
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Concepción del Uruguay",
+      "pagina_pdf": 149,
+      "votantes": 12907,
+      "suma_publicada": 12856,
+      "diferencia": -51
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Concordia",
+      "pagina_pdf": 149,
+      "votantes": 13733,
+      "suma_publicada": 13875,
+      "diferencia": 142
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Diamante",
+      "pagina_pdf": 149,
+      "votantes": 7042,
+      "suma_publicada": 7192,
+      "diferencia": 150
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Federación",
+      "pagina_pdf": 149,
+      "votantes": 5739,
+      "suma_publicada": 5725,
+      "diferencia": -14
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Feliciano",
+      "pagina_pdf": 149,
+      "votantes": 2601,
+      "suma_publicada": 2581,
+      "diferencia": -20
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Gualeguay",
+      "pagina_pdf": 149,
+      "votantes": 8822,
+      "suma_publicada": 8921,
+      "diferencia": 99
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Gualeguaychú",
+      "pagina_pdf": 149,
+      "votantes": 14587,
+      "suma_publicada": 14776,
+      "diferencia": 189
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "La Paz",
+      "pagina_pdf": 149,
+      "votantes": 9324,
+      "suma_publicada": 9330,
+      "diferencia": 6
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Nogoyá",
+      "pagina_pdf": 149,
+      "votantes": 8979,
+      "suma_publicada": 8985,
+      "diferencia": 6
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Paraná",
+      "pagina_pdf": 149,
+      "votantes": 28115,
+      "suma_publicada": 28078,
+      "diferencia": -37
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Rosario Tala",
+      "pagina_pdf": 149,
+      "votantes": 6256,
+      "suma_publicada": 6251,
+      "diferencia": -5
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Victoria",
+      "pagina_pdf": 149,
+      "votantes": 7762,
+      "suma_publicada": 7780,
+      "diferencia": 18
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Villaguay",
+      "pagina_pdf": 149,
+      "votantes": 8339,
+      "suma_publicada": 8396,
+      "diferencia": 57
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Belgrano",
+      "pagina_pdf": 150,
+      "votantes": 6244,
+      "suma_publicada": 6024,
+      "diferencia": -220
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Caseros",
+      "pagina_pdf": 150,
+      "votantes": 13330,
+      "suma_publicada": 13296,
+      "diferencia": -34
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Castellanos",
+      "pagina_pdf": 150,
+      "votantes": 16343,
+      "suma_publicada": 16263,
+      "diferencia": -80
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Constitución",
+      "pagina_pdf": 150,
+      "votantes": 11854,
+      "suma_publicada": 11819,
+      "diferencia": -35
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Garay",
+      "pagina_pdf": 150,
+      "votantes": 2375,
+      "suma_publicada": 2374,
+      "diferencia": -1
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "General López",
+      "pagina_pdf": 150,
+      "votantes": 23350,
+      "suma_publicada": 23316,
+      "diferencia": -34
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "General Obligado",
+      "pagina_pdf": 150,
+      "votantes": 12010,
+      "suma_publicada": 12216,
+      "diferencia": 206
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Iriondo",
+      "pagina_pdf": 150,
+      "votantes": 10414,
+      "suma_publicada": 10391,
+      "diferencia": -23
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "La Capital",
+      "pagina_pdf": 150,
+      "votantes": 34900,
+      "suma_publicada": 34873,
+      "diferencia": -27
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Las Colonias",
+      "pagina_pdf": 150,
+      "votantes": 13480,
+      "suma_publicada": 13458,
+      "diferencia": -22
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "9 de Julio",
+      "pagina_pdf": 150,
+      "votantes": 2492,
+      "suma_publicada": 2513,
+      "diferencia": 21
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Rosario",
+      "pagina_pdf": 150,
+      "votantes": 88815,
+      "suma_publicada": 89136,
+      "diferencia": 321
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Cristóbal",
+      "pagina_pdf": 150,
+      "votantes": 9625,
+      "suma_publicada": 9214,
+      "diferencia": -411
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Javier",
+      "pagina_pdf": 150,
+      "votantes": 2267,
+      "suma_publicada": 2266,
+      "diferencia": -1
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Jerónimo",
+      "pagina_pdf": 150,
+      "votantes": 11986,
+      "suma_publicada": 11531,
+      "diferencia": -455
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Justo",
+      "pagina_pdf": 150,
+      "votantes": 5488,
+      "suma_publicada": 5544,
+      "diferencia": 56
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Lorenzo",
+      "pagina_pdf": 150,
+      "votantes": 9850,
+      "suma_publicada": 9761,
+      "diferencia": -89
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Martín",
+      "pagina_pdf": 150,
+      "votantes": 10017,
+      "suma_publicada": 10003,
+      "diferencia": -14
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Vera",
+      "pagina_pdf": 150,
+      "votantes": 5414,
+      "suma_publicada": 5407,
+      "diferencia": -7
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Burruyacú",
+      "pagina_pdf": 151,
+      "votantes": 4595,
+      "suma_publicada": 4923,
+      "diferencia": 328
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Capital",
+      "pagina_pdf": 151,
+      "votantes": 28825,
+      "suma_publicada": 30142,
+      "diferencia": 1317
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Cruz Alta",
+      "pagina_pdf": 151,
+      "votantes": 12971,
+      "suma_publicada": 13395,
+      "diferencia": 424
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Chicligasta",
+      "pagina_pdf": 151,
+      "votantes": 8736,
+      "suma_publicada": 9033,
+      "diferencia": 297
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Famaillá",
+      "pagina_pdf": 151,
+      "votantes": 10788,
+      "suma_publicada": 11022,
+      "diferencia": 234
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Graneros",
+      "pagina_pdf": 151,
+      "votantes": 3689,
+      "suma_publicada": 3809,
+      "diferencia": 120
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Leales",
+      "pagina_pdf": 151,
+      "votantes": 4198,
+      "suma_publicada": 4271,
+      "diferencia": 73
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Monteros",
+      "pagina_pdf": 151,
+      "votantes": 9809,
+      "suma_publicada": 9921,
+      "diferencia": 112
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Río Chico",
+      "pagina_pdf": 151,
+      "votantes": 8854,
+      "suma_publicada": 9039,
+      "diferencia": 185
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Tafí",
+      "pagina_pdf": 151,
+      "votantes": 7299,
+      "suma_publicada": 7471,
+      "diferencia": 172
+    },
+    {
+      "provincia": "Tucumán",
+      "unidad": "Trancas",
+      "pagina_pdf": 151,
+      "votantes": 1842,
+      "suma_publicada": 1945,
+      "diferencia": 103
+    }
+  ],
+  "origen": "Cantón (1968), tomo II; lectura visual, cifras impresas conservadas; sin imputación",
+  "sha256_pdf": "fa7f66de072ce83b5f093549101a941cd492fbf2836a17c2d52c75ee324a01e6"
+}

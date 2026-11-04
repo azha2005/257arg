@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e8545_f7ef284692",
+  "shp": "e8545.shp",
+  "entidades": 1220,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e8545.dbf",
+      "bytes": 364170,
+      "sha256": "5cacd7da46b1ab39f87392154b6eda217b1fcb7eb8476f047a2790fe06052ca3"
+    },
+    {
+      "archivo": "e8545.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e8545.shp",
+      "bytes": 110628,
+      "sha256": "903873168be4194e93d3caf630bb43fc9a748604c5a4be969f28b242483f5214"
+    },
+    {
+      "archivo": "e8545.shx",
+      "bytes": 9860,
+      "sha256": "6a14e99dd971d4756f2b8c7162f1346666844807b193f09d3d3115c0306ef283"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/AVELLANEDA.zip!e8545.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_d3b045a768",
+    "archivo": "santafe/ipec/2022/AVELLANEDA.zip!e8545.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1220,
+    "registros_shx": 1220,
+    "shape_type": 3,
+    "bbox": [
+      5530605.0,
+      6778707.0,
+      5534915.0,
+      6781923.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/AVELLANEDA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5a274cbad06223804793fac660a4db9c7173272a3ce9403c3cd10f93dddaaf3a"
+}

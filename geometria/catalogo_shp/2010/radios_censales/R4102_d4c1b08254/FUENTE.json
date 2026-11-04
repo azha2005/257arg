@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4102_d4c1b08254",
+  "shp": "R4102.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4102.dbf",
+      "bytes": 686,
+      "sha256": "9f0ad6c38df4d7a9e68913c334bee6a4c8ae2681e24b8d6c7aeca60fc8b01865"
+    },
+    {
+      "archivo": "R4102.shp",
+      "bytes": 988,
+      "sha256": "7e7d09785f5b5d25d070945a3b08bbf9e194cb4ab2a5409a58ec01f508d4a946"
+    },
+    {
+      "archivo": "R4102.shx",
+      "bytes": 108,
+      "sha256": "cc2d05fd98f9ea4f0e1625457f0711dc73b9b6b834724d3740b0bb74b2715c52"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/canadaombua3v.zip!R4102.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c651f7dbb3",
+    "archivo": "santafe/ipec/2010/canadaombua3v.zip!R4102.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5501066.0,
+      6868753.5,
+      5502059.5,
+      6869629.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/canadaombua3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "67a2f58329ec15ccb0843348ec17e6d68ba02e5491fcafe693febfde12be07c6"
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "caba2015_nyu",
+    "archivo": "nyu_caba_2015/nyu_2451_34197.zip",
+    "distrito": "01",
+    "desde": 2015,
+    "hasta": 2015,
+    "documentada": true,
+    "alcance": "distrito",
+    "esquema": "caba2015",
+    "crs": "EPSG:4326",
+    "calidad": "catalogo_historico",
+    "temporalidad": "corte_2015_catalogado",
+    "nota": "SHP WGS84 de NYU/UTexas; evita volver a reproyectar la copia oficial local.",
+    "miembro": "ba_circuitos_electorales/ba_circuitos_electorales.shp",
+    "fuente_original": {
+      "url": "https://archive.nyu.edu/retrieve/73708/nyu_2451_34197.zip",
+      "archivo": "nyu_caba_2015/nyu_2451_34197.zip",
+      "fuente": "https://geodata.lib.utexas.edu/catalog/nyu-2451-34197",
+      "corte_declarado": "2015",
+      "nota": "Corte declarado por catálogo universitario",
+      "estado": "descargado",
+      "bytes": 151415,
+      "sha256": "4c2d0eeb1d0d017118fbe7cce4e2927db16afc81d3dc9e5df186ef82c783390c",
+      "miembros": [
+        "ba_circuitos_electorales/",
+        "ba_circuitos_electorales/.DS_Store",
+        "__MACOSX/",
+        "__MACOSX/ba_circuitos_electorales/",
+        "__MACOSX/ba_circuitos_electorales/._.DS_Store",
+        "ba_circuitos_electorales/ba_circuitos_electorales.dbf",
+        "__MACOSX/ba_circuitos_electorales/._ba_circuitos_electorales.dbf",
+        "ba_circuitos_electorales/ba_circuitos_electorales.prj",
+        "__MACOSX/ba_circuitos_electorales/._ba_circuitos_electorales.prj",
+        "ba_circuitos_electorales/ba_circuitos_electorales.shp",
+        "__MACOSX/ba_circuitos_electorales/._ba_circuitos_electorales.shp",
+        "ba_circuitos_electorales/ba_circuitos_electorales.shx",
+        "__MACOSX/ba_circuitos_electorales/._ba_circuitos_electorales.shx",
+        "__MACOSX/._ba_circuitos_electorales"
+      ]
+    }
+  },
+  {
+    "id": "cordoba_capital2013_2017",
+    "archivo": "cordoba/circuitos-electorales-de-la-ciudad-de-cordoba/03.csv",
+    "distrito": "04",
+    "desde": 2013,
+    "hasta": 2017,
+    "documentada": true,
+    "alcance": "capital_cordoba",
+    "esquema": "cordoba_csv2013",
+    "crs": null,
+    "calidad": "catalogo_local_historico",
+    "temporalidad": "periodo_2013_2017_declarado",
+    "nota": "Periodo expresamente declarado por catálogo; el campo Name se conserva como código de origen. No es provincia completa.",
+    "fuente_original": {
+      "url": "https://cbadatos.com.ar/dataset/b300df54-cfcd-5be9-b8b7-813201b8f897/resource/84201aac-98a0-58e0-b74d-4b080da4d512/download/circuitos-cordoba-2013-wkt.csv",
+      "archivo": "cordoba/circuitos-electorales-de-la-ciudad-de-cordoba/03.csv",
+      "fuente": "https://cbadatos.com.ar/dataset/circuitos-electorales-de-la-ciudad-de-cordoba",
+      "corte_declarado": "2013",
+      "nota": "Circuitos Ciudad de Córdoba 2013 (válidos hasta 2017) (CSV WKT Circuitos Ciudad de Córdoba 2013 - 20",
+      "estado": "descargado",
+      "bytes": 778964,
+      "sha256": "d10dd13619945ef0ac4fe1d9111136972427c0f17f053b60af33b03c5d17e710"
+    }
+  }
+]

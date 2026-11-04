@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0405_708b2d5d16",
+  "shp": "E0405.shp",
+  "entidades": 422,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0405.dbf",
+      "bytes": 147466,
+      "sha256": "8bcb2fc3c339b686901ba27e86f3040a6daf4d858d28777c093c1a2a3bbed744"
+    },
+    {
+      "archivo": "E0405.shp",
+      "bytes": 37828,
+      "sha256": "524a389714b726525087addfc59c300efbe4696e1a1046df3d8215afde94acbe"
+    },
+    {
+      "archivo": "E0405.shx",
+      "bytes": 3476,
+      "sha256": "36cfc666c8c063e70d4cd74b24b6f8feb04b3e36896a0357a501be56b8c7c818"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/empalmevillaconstituciona2v.zip!E0405.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_78888baae7",
+    "archivo": "santafe/ipec/2010/empalmevillaconstituciona2v.zip!E0405.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 422,
+    "registros_shx": 422,
+    "shape_type": 3,
+    "bbox": [
+      5463637.5,
+      6319151.5,
+      5465664.0,
+      6321601.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/empalmevillaconstituciona2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6d70c6439a804c3a73e2f1b1686ad20202139c0aaf0b75c0b5c26e4d7d5b5f2e"
+}

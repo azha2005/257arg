@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0227_023a0c538f",
+  "shp": "e0227.shp",
+  "entidades": 601,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0227.dbf",
+      "bytes": 179708,
+      "sha256": "15a4163c9d959624148effafbf65e365ce54d994109b090fdd6d06d11d5bbb1b"
+    },
+    {
+      "archivo": "e0227.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0227.shp",
+      "bytes": 53276,
+      "sha256": "7eb8c31d08937d9e38a57a8aa2cdeb01eb2d872c78104b9f93cc0f9c0fbb7c26"
+    },
+    {
+      "archivo": "e0227.shx",
+      "bytes": 4908,
+      "sha256": "480dc03382725c2f856b294e30ce9418288656ac4656a148c411a43a308920c7"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLACANAS.zip!e0227.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_98b631a53d",
+    "archivo": "santafe/ipec/2022/VILLACANAS.zip!e0227.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 601,
+    "registros_shx": 601,
+    "shape_type": 3,
+    "bbox": [
+      5350544.0,
+      6235258.5,
+      5352771.5,
+      6237907.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLACANAS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "e89c5ef4da0a15e8abb76da32a2b6fb135a803dc15a32fb4242e5d32cd8850ea"
+}

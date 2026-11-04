@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>257 distritos uninominales</title>
+<meta name="description" content="La Cámara de Diputados argentina con 257 distritos uninominales dibujados por algoritmo: cuatro planes, con y sin departamentos, y quién ganaría cada distrito en 2023 y 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · shape: app screen · genre: editorial · theme: Ink (by request: the same system as the transfer explorer) · redesign: full
+ * nav: a header over one bar of segmented controls · signature: the hemicycle of 257 seats beside its seat table, read against the map · states: full · ink: paper
+ * axes: light/grotesk-sans/chromatic-teal · posture: restrained · contrast: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: E, a tool screen has little argument; the seat sheet sits beside the map so the count and the geography are read together */
+/* Hallmark · waive 22 · ink and greys at zero chroma · the party colours of the map and the hemicycle carry all the hue, as in the explorer */
+/* Hallmark · dropped the dark theme · the explorer it matches is printed on paper only */
+
+/* tokens: Ink, plus the shared scale (as in transferencias/explorador/index.html) */
+:root {
+  color-scheme: light;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem;
+  --text-display: 1.728rem; --text-section: 1rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-micro: 120ms;
+  --container: 1440px; --gutter: 32px;
+  --color-paper: oklch(99.5% 0.003 100); --color-paper-2: oklch(97% 0.004 100); --color-paper-3: oklch(94% 0.006 100);
+  --color-ink: oklch(16% 0 0); --color-ink-2: oklch(28% 0 0); --color-muted: oklch(44% 0 0);
+  --color-rule: oklch(89% 0.004 100);
+  --color-accent: oklch(50% 0.095 188); --color-accent-soft: oklch(93% 0.05 190); --color-accent-soft-ink: oklch(27% 0.045 190);
+  --color-focus: oklch(50% 0.095 188);
+  --color-tip-shadow: oklch(16% 0 0 / 0.12);
+  --per: #009ce4; --lla: #6c4c98;   /* UxP/Fuerza Patria y LLA, los colores de los atlas */
+  --font-display: "Epilogue", ui-sans-serif, system-ui, sans-serif; --font-body: var(--font-display);
+  --radius-card: 12px; --radius-control: 10px; --radius-sw: 3px; --rule-hair: 1px;
+  --tracking-display: -0.04em; --display-weight: 700;
+  --control-h: 36px;
+  --ancho-app: calc(560px + 24px + 720px);   /* mapa del país + separación + columna derecha */
+}
+
+/* base */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink-2); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--color-accent-soft); color: var(--color-accent-soft-ink); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+h1, h2 { margin: 0; color: var(--color-ink); font-family: var(--font-display); font-weight: var(--display-weight); font-synthesis: none; letter-spacing: var(--tracking-display); line-height: 1.05; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+button { font: inherit; color: inherit; }
+svg { display: block; }
+@media (max-width: 40rem) { :root { --gutter: 16px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; } }
+
+/* page */
+.wrap { max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.wrap > * { max-width: var(--ancho-app); }
+header { padding-block: var(--space-lg) var(--space-md); border-bottom: var(--rule-hair) solid var(--color-ink); }
+h1 { font-size: var(--text-display); }
+header p { margin-top: var(--space-xs); max-width: 75ch; font-size: var(--text-sm); color: var(--color-muted); }
+
+.ctl { display: flex; flex-wrap: wrap; gap: var(--space-md) var(--space-lg); padding-block: var(--space-lg) var(--space-md); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.grp { display: flex; flex-direction: column; gap: var(--space-2xs); min-width: 0; }
+.grp > span { font-size: var(--text-sm); font-weight: 600; color: var(--color-ink); }
+.seg { display: flex; flex-wrap: wrap; gap: var(--space-2xs); }
+.seg button { display: inline-flex; align-items: center; min-height: var(--control-h); padding: var(--space-2xs) var(--space-sm); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-control); background: var(--color-paper-2); color: var(--color-ink); font-size: var(--text-sm); font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
+.seg button:hover { background: var(--color-paper-3); border-color: var(--color-muted); }
+.seg button:active { transform: translateY(1px); }
+.seg button[aria-pressed="true"] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper); }
+.seg button:disabled, .seg button:disabled:hover { opacity: 0.55; cursor: not-allowed; background: var(--color-paper-3); border-color: var(--color-rule); color: var(--color-muted); transform: none; }
+
+main { display: grid; grid-template-columns: minmax(0, 560px) minmax(0, 720px); gap: var(--space-lg); padding-block: var(--space-lg); align-items: start; }
+.col { display: grid; gap: var(--space-lg); min-width: 0; }
+.hoja { border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); padding: var(--space-md); min-width: 0; }
+.hoja h2 { font-size: var(--text-section); letter-spacing: -0.02em; margin-bottom: var(--space-sm); }
+svg.mapa { width: 100%; height: auto; }
+/* los bordes no engordan al ampliar: el ancho es en px de pantalla */
+.mapa path, .mapa rect { vector-effect: non-scaling-stroke; }
+.cab { display: flex; flex-wrap: wrap; gap: var(--space-xs); align-items: center; justify-content: space-between; margin-bottom: var(--space-sm); }
+.cab h2 { margin-bottom: 0; }
+.zoom { overflow: hidden; border-radius: var(--radius-control); }
+#mN { touch-action: pan-y; }
+#mN.ampliado { cursor: grab; touch-action: none; }
+#mN.arrastre { cursor: grabbing; }
+.seg .ic { min-width: var(--control-h); justify-content: center; font-size: var(--text-lg); line-height: 1; }
+/* bordes en el color del papel, como los mapas por departamento de la Wikipedia: finos entre distritos, gruesos entre provincias */
+.dz { stroke: var(--color-paper); stroke-width: .4; stroke-linejoin: round; cursor: pointer; transition: opacity var(--dur-micro) var(--ease-out); }
+.dz:hover { opacity: .75; }
+.pv { fill: none; stroke: var(--color-paper); stroke-width: 1.4; stroke-linejoin: round; pointer-events: none; }
+#mA .dz { stroke-width: 1; }
+#mA .pv { stroke-width: 3; }
+.dp { fill: none; stroke: var(--color-ink); stroke-opacity: .28; stroke-width: .6; stroke-linejoin: round; pointer-events: none; }
+.ab { fill: none; stroke: var(--color-ink); stroke-width: 1; stroke-dasharray: 3 2; }
+
+/* la hoja de bancas: hemiciclo y tabla */
+#res { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: var(--space-lg); align-items: start; }
+#res .hemi p { margin-top: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); text-align: center; }
+table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
+th { padding: var(--space-2xs) var(--space-xs); text-align: right; font-weight: 600; color: var(--color-ink); white-space: nowrap; border-bottom: var(--rule-hair) solid var(--color-ink); }
+td { padding: var(--space-2xs) var(--space-xs); text-align: right; border-bottom: var(--rule-hair) solid var(--color-rule); }
+th:first-child, td:first-child { text-align: left; padding-left: 0; }
+td.b { font-size: var(--text-xl); font-weight: 700; letter-spacing: -0.03em; color: var(--color-ink); line-height: 1.2; }
+.fz { display: inline-flex; gap: var(--space-xs); align-items: baseline; color: var(--color-ink); }
+.sw { display: inline-block; flex: none; width: 12px; height: 12px; border-radius: var(--radius-sw); transform: translateY(1px); }
+.pie { margin-top: var(--space-xs); font-size: var(--text-xs); color: var(--color-muted); }
+.key { display: flex; gap: var(--space-2xs) var(--space-md); flex-wrap: wrap; margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-ink-2); }
+.key span { display: inline-flex; gap: var(--space-xs); align-items: baseline; }
+.key .nota { color: var(--color-muted); }
+
+.provs { padding-bottom: var(--space-lg); }
+.provs h2 { font-size: var(--text-section); letter-spacing: -0.02em; margin-bottom: var(--space-xs); }
+.tw { overflow-x: auto; }
+#tab td:first-child { color: var(--color-ink); }
+.note { padding-block: var(--space-md) var(--space-2xl); border-top: var(--rule-hair) solid var(--color-ink); font-size: var(--text-sm); color: var(--color-muted); }
+.note p { max-width: 75ch; }
+
+#tip { position: fixed; pointer-events: none; background: var(--color-paper); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-control); padding: var(--space-xs) var(--space-sm); font-size: var(--text-sm); box-shadow: 0 4px 16px var(--color-tip-shadow); display: none; max-width: 280px; z-index: 600; color: var(--color-ink-2); }
+#tip b { color: var(--color-ink); }
+#tip .m { color: var(--color-muted); }
+
+@media (max-width: 80rem) { main { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 40rem) { #res { grid-template-columns: minmax(0, 1fr); } .hoja { padding: var(--space-sm); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Argentina con 257 distritos uninominales</h1>
+<p>Cada provincia dividida en tantos distritos como bancas le da la ley 22.847 con el censo 2022 (sin la garantía de 1983). Los distritos se dibujaron con Mosaic (ReCom y recocido simulado) sobre radios censales 2022. Gana cada distrito la fuerza más votada: entre dos bloques, como en Estados Unidos, o entre todos los partidos por separado.</p>
+</header>
+<div class="ctl">
+ <div class="grp"><span id="lPlan">Plan</span><div class="seg" id="sPlan" role="group" aria-labelledby="lPlan"></div></div>
+ <div class="grp"><span id="lPt">Fuerzas</span><div class="seg" id="sPt" role="group" aria-labelledby="lPt"><button type="button" data-v="0">Dos bloques</button><button type="button" data-v="1">Todos los partidos</button></div></div>
+ <div class="grp"><span id="lDep">Límites</span><div class="seg" id="sDep" role="group" aria-labelledby="lDep"><button type="button" data-v="0">Libres</button><button type="button" data-v="1">Respetan departamentos</button></div></div>
+ <div class="grp"><span id="lRen">Renovación</span><div class="seg" id="sRen" role="group" aria-labelledby="lRen"><button type="button" data-v="full">Cámara completa</button><button type="button" data-v="half">Por mitades (2023 + 2025)</button></div></div>
+ <div class="grp"><span id="lDl">Líneas de partidos</span><div class="seg" id="sDl" role="group" aria-labelledby="lDl"><button type="button" data-v="1">Mostrar</button><button type="button" data-v="0">Ocultar</button></div></div>
+ <div class="grp"><span id="lElec">Elección</span><div class="seg" id="sElec" role="group" aria-labelledby="lElec"></div></div>
+</div>
+<main>
+ <section class="hoja" aria-labelledby="hN"><div class="cab"><h2 id="hN">País</h2><div class="seg" role="group" aria-label="Acercar el mapa"><button type="button" class="ic" id="zMas" aria-label="Acercar">+</button><button type="button" class="ic" id="zMenos" aria-label="Alejar">−</button><button type="button" id="zTodo">Ver todo</button></div></div>
+  <div class="zoom"><svg class="mapa" id="mN" role="img" aria-label="Mapa de los 257 distritos coloreados por la fuerza que gana cada uno"></svg></div>
+  <p class="pie">Ctrl + rueda, doble clic o los botones para acercar; arrastrá para moverte.</p>
+  <div class="key" id="key"></div></section>
+ <div class="col">
+  <section class="hoja" aria-labelledby="hR"><h2 id="hR">Bancas</h2><div id="res"></div></section>
+  <section class="hoja" aria-labelledby="hA"><h2 id="hA">Área Metropolitana de Buenos Aires</h2><svg class="mapa" id="mA" role="img" aria-label="Distritos del Área Metropolitana de Buenos Aires"></svg><p class="pie">Bordes blancos: distritos (gruesos, el límite de Capital); líneas grises finas: partidos, si están a la vista.</p></section>
+ </div>
+</main>
+<section class="provs" aria-labelledby="hP"><h2 id="hP">Por provincia</h2><div class="tw"><table id="tab"></table></div></section>
+<div class="note"><p>Votos: los de cada circuito electoral 2025 repartidos entre sus radios por población (el porcentaje dentro de un circuito es uniforme). Los votos de 2023 se llevaron a los circuitos 2025 conservando el total de cada sección. «Dos bloques»: peronismo contra La Libertad Avanza (más Juntos por el Cambio en la general 2023); el resto de las fuerzas no cuenta. «Todos los partidos»: gana la fuerza con más votos en el distrito (mayoría simple), con los bloques del atlas de 2025 y los cinco candidatos de la general 2023; el balotaje es de dos igual. En «por mitades» se cuentan juntos Unión por la Patria y Fuerza Patria, y La Libertad Avanza de los dos años. Los gerrymanders y el plan proporcional se optimizaron con el balotaje 2023 y diputados 2025 sumados. «Por mitades»: la mitad de los distritos (clase A) se eligió en 2023 con la general y la otra (clase B) en 2025. «Respetan departamentos»: cada departamento o partido con menos población que un distrito queda entero; solo se cortan los más grandes (tolerancia de población 5 % en vez de 2 %). Cada plan es una corrida de una semilla, no un ensamble.</p></div>
+</div>
+<div id="tip"></div>
+<script>
+const DATA=/*DATA*/null;
+const st={modo:0,dep:0,ren:"full",elec:2,pt:0,dl:1};
+const MODOS=[...new Set(DATA.planes.map(p=>p.k))];
+// estado inicial desde la URL: #modo=0&dep=1&ren=half&elec=2
+for(const [k,v] of new URLSearchParams(location.hash.slice(1)))if(k in st)st[k]=k==="ren"?v:+v;
+function plan(){return DATA.planes.find(p=>p.k===MODOS[st.modo]&&!!p.dep===!!st.dep)}
+const NS="http://www.w3.org/2000/svg";
+const $=id=>document.getElementById(id);
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
+function mix(hex,t){// t 0..1 hacia blanco (0) o color pleno (1)
+ const n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255,w=[250,250,248];
+ const f=(c,i)=>Math.round(w[i]+(c-w[i])*t);return `rgb(${f(r,0)},${f(g,1)},${f(b,2)})`}
+function ei(e){return DATA.elec.findIndex(x=>x.k===e)}
+function votos(d,k){const i=ei(k);return [d.v[2*i],d.v[2*i+1]]}
+function elecDe(d){return st.ren==="half"?(d.c==="A"?"23":"25"):DATA.elec[st.elec].k}
+function gana(d){const [a,b]=votos(d,elecDe(d));return {D:a>b,m:(a-b)/Math.max(a+b,1),a,b}}
+// todos los partidos: lista de {k (clave de conteo), n, c, o (orden del hemiciclo), v} de mayor a menor
+function partidos(d,k){
+ if(k==="23b"){const [a,b]=votos(d,k);return [{k:"PER",n:"Massa (UxP)",c:css("--per"),o:1,v:a},{k:"LLA",n:"Milei (LLA)",c:css("--lla"),o:5,v:b}].sort((x,y)=>y.v-x.v)}
+ return d.vp[k].map(([i,v])=>({...DATA.partidos[k][i],v})).sort((x,y)=>y.v-x.v)}
+function ganaP(d){const L=partidos(d,elecDe(d)),tot=L.reduce((a,x)=>a+x.v,0)||1;return {L,tot,w:L[0],m:(L[0].v-(L[1]?L[1].v:0))/tot}}
+// nombre de una clave de conteo: en «por mitades» peronismo y LLA juntan las dos elecciones
+function nombre(w){return st.ren==="half"&&DATA.familias[w.k]?DATA.familias[w.k]:w.n}
+function color(d){if(st.pt){const g=ganaP(d);return mix(g.w.c,.35+.65*Math.min(g.m/.3,1))}
+ const g=gana(d),t=.35+.65*Math.min(Math.abs(g.m)/.4,1);return mix(g.D?css("--per"):css("--lla"),t)}
+function seg(el,items,cur,cb){el.innerHTML="";items.forEach((it,i)=>{const b=document.createElement("button");b.type="button";b.textContent=it;b.onclick=()=>cb(i);el.appendChild(b)})}
+function build(){
+ seg($("sPlan"),MODOS.map(k=>DATA.planes.find(p=>p.k===k).t),0,i=>{st.modo=i;draw()});
+ $("sDep").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.dep=+b.dataset.v;draw()});
+ $("sPt").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.pt=+b.dataset.v;draw()});
+ $("sDl").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.dl=+b.dataset.v;draw()});
+ seg($("sElec"),DATA.elec.map(e=>e.t),0,i=>{st.elec=i;draw()});
+ $("sRen").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.ren=b.dataset.v;draw()});
+ for(const [id,W,H] of [["mN",DATA.W,DATA.H],["mA",DATA.WA,DATA.HA]]){$(id).setAttribute("viewBox",`0 0 ${W} ${H}`)}
+ draw();
+}
+function draw(){
+ if(!plan())st.dep=0;
+ const P=plan();
+ [...$("sPlan").children].forEach((b,i)=>b.setAttribute("aria-pressed",i===st.modo));
+ [...$("sDep").children].forEach(b=>{b.setAttribute("aria-pressed",+b.dataset.v===st.dep);b.disabled=!DATA.planes.find(p=>p.k===MODOS[st.modo]&&!!p.dep===!!+b.dataset.v)});
+ [...$("sElec").children].forEach((b,i)=>{b.setAttribute("aria-pressed",st.ren==="full"&&i===st.elec);b.disabled=st.ren==="half"});
+ [...$("sRen").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===st.ren));
+ [...$("sPt").children].forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v===st.pt));
+ [...$("sDl").children].forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v===st.dl));
+ location.replace("#"+new URLSearchParams(Object.entries(st)).toString());
+ for(const [id,key,pv,box] of [["mN","n",DATA.prov,true],["mA","a",DATA.provA,false]]){
+  const s=$(id);s.innerHTML="";
+  for(const d of P.d){if(!d[key])continue;const p=document.createElementNS(NS,"path");p.setAttribute("d",d[key]);p.setAttribute("class","dz");p.setAttribute("fill",color(d));
+   p.onmousemove=ev=>tip(ev,d);p.onmouseleave=()=>$("tip").style.display="none";s.appendChild(p)}
+  if(!box&&st.dl)for(const q of DATA.deptoA){if(!q)continue;const p=document.createElementNS(NS,"path");p.setAttribute("d",q);p.setAttribute("class","dp");s.appendChild(p)}
+  for(const q of pv){if(!q)continue;const p=document.createElementNS(NS,"path");p.setAttribute("d",q);p.setAttribute("class","pv");s.appendChild(p)}
+  if(!box&&DATA.ambaA){const p=document.createElementNS(NS,"path");p.setAttribute("d",DATA.ambaA);p.setAttribute("class","ao");s.appendChild(p)}
+  if(box){const r=document.createElementNS(NS,"rect");const [x,y,w,h]=DATA.ambaBox;Object.entries({x,y,width:w,height:h,class:"ab"}).forEach(([k,v])=>r.setAttribute(k,v));s.appendChild(r)}
+ }
+ resumen(P);
+}
+function tip(ev,d){if(st.pt)return tipP(ev,d);const g=gana(d),k=elecDe(d),e=DATA.elec[ei(k)],t=$("tip");
+ const tot=Math.max(g.a+g.b,1);
+ t.innerHTML=`<b>${DATA.nombres[d.p]} · distrito ${d.id.split("-")[1]}</b><br>${e.t}${st.ren==="half"?` (clase ${d.c})`:""}<br>${e.d}: ${(100*g.a/tot).toFixed(1)} %<br>${e.r}: ${(100*g.b/tot).toFixed(1)} %<br><span class="m">Población ${d.pob.toLocaleString("es-AR")}</span>`;
+ t.style.display="block";t.style.left=Math.min(ev.clientX+14,innerWidth-290)+"px";t.style.top=(ev.clientY+14)+"px"}
+function tipP(ev,d){const g=ganaP(d),e=DATA.elec[ei(elecDe(d))],t=$("tip");
+ const fil=g.L.slice(0,6).map(x=>`<i class="sw" style="background:${x.c}"></i>${x.n}: ${(100*x.v/g.tot).toFixed(1)} %`).join("<br>");
+ t.innerHTML=`<b>${DATA.nombres[d.p]} · distrito ${d.id.split("-")[1]}</b><br>${e.t}${st.ren==="half"?` (clase ${d.c})`:""}<br>${fil}<br><span class="m">Población ${d.pob.toLocaleString("es-AR")}</span>`;
+ t.style.display="block";t.style.left=Math.min(ev.clientX+14,innerWidth-290)+"px";t.style.top=(ev.clientY+14)+"px"}
+function resumenP(P){
+ const B={},por={};let vt=0;const vk={};
+ for(const d of P.d){const g=ganaP(d),w=g.w;B[w.k]=B[w.k]||{n:nombre(w),c:w.c,o:w.o,s:0};B[w.k].s++;
+  por[d.p]=por[d.p]||{n:0};por[d.p].n++;por[d.p][w.k]=(por[d.p][w.k]||0)+1;
+  for(const x of g.L){vk[x.k]=(vk[x.k]||0)+x.v}vt+=g.tot}
+ const L=Object.entries(B).sort((a,b)=>b[1].s-a[1].s);
+ const arcL=[...L].sort((a,b)=>a[1].o-b[1].o||b[1].s-a[1].s);
+ hoja(L.map(([k,b])=>({n:b.n,c:b.c,s:b.s,v:100*(vk[k]||0)/vt})),arcL.map(([k,b])=>[b.s,b.c]),"Votos: porcentaje sobre todas las fuerzas.");
+ clave(L.map(([k,b])=>[b.c,b.n]),"Más oscuro, más ventaja sobre el segundo.");
+ const cols=L.slice(0,6).map(([k])=>k),otros=L.length>6;
+ let h=`<thead><tr><th>Provincia</th><th>Bancas</th>${cols.map(k=>`<th>${B[k].n}</th>`).join("")}${otros?"<th>Otros</th>":""}</tr></thead>`;
+ for(const p of Object.keys(por).sort()){const r=por[p],o=r.n-cols.reduce((a,k)=>a+(r[k]||0),0);
+  h+=`<tr><td>${DATA.nombres[p]}</td><td>${r.n}</td>${cols.map(k=>`<td>${r[k]||""}</td>`).join("")}${otros?`<td>${o||""}</td>`:""}</tr>`}
+ $("tab").innerHTML=h}
+function resumen(P){
+ if(st.pt)return resumenP(P);
+ const e=DATA.elec[st.elec];
+ const nD=st.ren==="half"?"Peronismo":e.d,nR=st.ren==="half"?"LLA (+ JxC en 2023)":e.r;
+ clave([[css("--per"),nD],[css("--lla"),nR]],"Más oscuro, margen más amplio.");
+ let D=0,R=0;const por={};
+ for(const d of P.d){const g=gana(d);g.D?D++:R++;por[d.p]=por[d.p]||{n:0,D:0};por[d.p].n++;if(g.D)por[d.p].D++}
+ // votos de los dos bloques en la misma eleccion (para comparar)
+ let vD=0,vR=0;for(const d of P.d){const [a,b]=votos(d,elecDe(d));vD+=a;vR+=b}
+ const pct=100*vD/(vD+vR);
+ hoja([{n:nD,c:css("--per"),s:D,v:pct},{n:nR,c:css("--lla"),s:R,v:100-pct}],[[D,css("--per")],[R,css("--lla")]],"Votos: porcentaje sobre los dos bloques; el resto de las fuerzas no cuenta.");
+ let h="<thead><tr><th>Provincia</th><th>Bancas</th><th>Peronismo</th><th>Otro bloque</th></tr></thead>";
+ for(const p of Object.keys(por).sort())h+=`<tr><td>${DATA.nombres[p]}</td><td>${por[p].n}</td><td>${por[p].D}</td><td>${por[p].n-por[p].D}</td></tr>`;
+ $("tab").innerHTML=h}
+// hoja de bancas: hemiciclo a la izquierda, tabla de fuerzas a la derecha
+function hoja(F,G,pie){
+ const may=F.find(f=>f.s>=129);
+ const fil=F.map(f=>`<tr><td><span class="fz"><i class="sw" style="background:${f.c}"></i>${f.n}</span></td><td class="b">${f.s}</td><td>${(100*f.s/257).toFixed(1)} %</td><td>${f.v.toFixed(1)} %</td></tr>`).join("");
+ $("res").innerHTML=`<div class="hemi"><svg viewBox="0 0 260 136" role="img" aria-label="Hemiciclo de 257 bancas">${arco(G)}</svg><p>${may?`${may.n}: mayoría propia`:"Nadie llega a 129, la mayoría propia"}</p></div>
+ <div><table><thead><tr><th>Fuerza</th><th>Bancas</th><th>% bancas</th><th>% votos</th></tr></thead><tbody>${fil}</tbody></table><p class="pie">${pie}${st.ren==="half"?" Clase A: general 2023; clase B: diputados 2025.":""}</p></div>`}
+function clave(L,nota){$("key").innerHTML=L.map(([c,n])=>`<span><i class="sw" style="background:${c}"></i>${n}</span>`).join("")+`<span class="nota">${nota}</span>`}
+function arco(G){// hemiciclo de 257 puntos en 9 filas; G = [[bancas, color], ...] de izquierda a derecha
+ const rows=9,pts=[];let tot=0;const rs=[];for(let i=0;i<rows;i++){rs.push(60+i*7.5)}
+ const L=rs.reduce((a,r)=>a+r,0);let left=257;
+ rs.forEach((r,i)=>{let n=i===rows-1?left:Math.round(257*r/L);left-=n;for(let j=0;j<n;j++){const a=Math.PI*(1-j/(n-1));pts.push([a,130+r*Math.cos(a),130-r*Math.sin(a)])}});
+ pts.sort((a,b)=>b[0]-a[0]);
+ const cs=G.flatMap(([n,c])=>Array(n).fill(c));
+ return pts.map((p,i)=>`<circle cx="${p[1].toFixed(1)}" cy="${p[2].toFixed(1)}" r="2.6" fill="${cs[i]||"var(--color-rule)"}"/>`).join("")}
+// ampliar el mapa del pais: viewBox con centro (cx, cy) y factor k
+const Z={k:1,cx:0,cy:0,max:12};
+function zvb(){const s=$("mN"),w=DATA.W/Z.k,h=DATA.H/Z.k,cl=(v,a,b)=>Math.min(Math.max(v,a),b);
+ Z.cx=cl(Z.cx,w/2,DATA.W-w/2);Z.cy=cl(Z.cy,h/2,DATA.H-h/2);
+ s.setAttribute("viewBox",`${Z.cx-w/2} ${Z.cy-h/2} ${w} ${h}`);s.classList.toggle("ampliado",Z.k>1);
+ $("zMas").disabled=Z.k>=Z.max;$("zMenos").disabled=$("zTodo").disabled=Z.k<=1}
+function zen(ev){// punto del evento en coordenadas del mapa
+ const b=$("mN").getBoundingClientRect(),w=DATA.W/Z.k,h=DATA.H/Z.k;
+ return [Z.cx-w/2+(ev.clientX-b.left)/b.width*w,Z.cy-h/2+(ev.clientY-b.top)/b.height*h]}
+function zoom(f,p){const k=Math.min(Math.max(Z.k*f,1),Z.max),[px,py]=p||[Z.cx,Z.cy],r=Z.k/k;
+ Z.cx=px+(Z.cx-px)*r;Z.cy=py+(Z.cy-py)*r;Z.k=k;zvb()}
+function zinit(){const s=$("mN");Z.cx=DATA.W/2;Z.cy=DATA.H/2;
+ $("zMas").onclick=()=>zoom(2);$("zMenos").onclick=()=>zoom(.5);$("zTodo").onclick=()=>{Z.k=1;zvb()};
+ s.addEventListener("wheel",ev=>{if(!ev.ctrlKey&&!ev.metaKey)return;ev.preventDefault();zoom(Math.exp(-ev.deltaY*.002),zen(ev))},{passive:false});
+ s.addEventListener("dblclick",ev=>{ev.preventDefault();zoom(2,zen(ev))});
+ let a=null;
+ s.addEventListener("pointerdown",ev=>{if(Z.k<=1||ev.button!==0)return;a={x:ev.clientX,y:ev.clientY,cx:Z.cx,cy:Z.cy};s.setPointerCapture(ev.pointerId)});
+ s.addEventListener("pointermove",ev=>{if(!a)return;const b=s.getBoundingClientRect();
+  if(!s.classList.contains("arrastre")&&Math.hypot(ev.clientX-a.x,ev.clientY-a.y)<4)return;
+  s.classList.add("arrastre");$("tip").style.display="none";
+  Z.cx=a.cx-(ev.clientX-a.x)/b.width*DATA.W/Z.k;Z.cy=a.cy-(ev.clientY-a.y)/b.height*DATA.H/Z.k;zvb()});
+ const fin=()=>{a=null;s.classList.remove("arrastre")};
+ s.addEventListener("pointerup",fin);s.addEventListener("pointercancel",fin);
+ zvb()}
+build();zinit();
+</script>
+</body>
+</html>

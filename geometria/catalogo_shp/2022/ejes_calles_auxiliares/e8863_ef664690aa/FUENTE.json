@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e8863_ef664690aa",
+  "shp": "e8863.shp",
+  "entidades": 1751,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e8863.dbf",
+      "bytes": 522408,
+      "sha256": "e220a730c091fba6e31fe2bfd1cc9e93bd203ff2ba85e1cb540d09643de802e4"
+    },
+    {
+      "archivo": "e8863.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e8863.shp",
+      "bytes": 163660,
+      "sha256": "f9d78f6776da2b585e51db3598ec5a8ff5da9ef065125fe921d4ce8c9eecd73a"
+    },
+    {
+      "archivo": "e8863.shx",
+      "bytes": 14108,
+      "sha256": "127fb8f84521a2eaf3702619fd39a5deacac7037aff929a460ef7f6e2b41783f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GRANADEROBAIGORRIA.zip!e8863.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_6f8d59dbf1",
+    "archivo": "santafe/ipec/2022/GRANADEROBAIGORRIA.zip!e8863.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1751,
+    "registros_shx": 1751,
+    "shape_type": 3,
+    "bbox": [
+      5430808.0,
+      6363116.0,
+      5438256.5,
+      6367446.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GRANADEROBAIGORRIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3f3b9417e035d75e7d576fc0e22f3e33f41e91044c0be07ff9e68c03025dfe76"
+}

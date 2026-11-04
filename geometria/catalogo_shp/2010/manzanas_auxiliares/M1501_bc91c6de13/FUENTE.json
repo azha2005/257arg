@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1501_bc91c6de13",
+  "shp": "M1501.shp",
+  "entidades": 30,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1501.dbf",
+      "bytes": 6296,
+      "sha256": "304db068dc19f53e47d4e6b68db114b3fbc3bd864009f3542e5b1f63463f8fe1"
+    },
+    {
+      "archivo": "M1501.shp",
+      "bytes": 5092,
+      "sha256": "7339e76863cb50bc365b77c36fc3fcf22d4f78863efdc0d4e1da54b144ccf2b8"
+    },
+    {
+      "archivo": "M1501.shx",
+      "bytes": 340,
+      "sha256": "277bf80555a42b872c858ef5c9594da10f83eeacaa1ae2dc469f3589476cc9c2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/eusebiaycarolinaa3h.zip!M1501.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7389660e19",
+    "archivo": "santafe/ipec/2010/eusebiaycarolinaa3h.zip!M1501.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 30,
+    "registros_shx": 30,
+    "shape_type": 5,
+    "bbox": [
+      5322085.5,
+      6575097.5,
+      5322942.5,
+      6575867.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/eusebiaycarolinaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "48972a694a6f844846d42e765119892881a8a60da0f2767a677a685d78952bd9"
+}

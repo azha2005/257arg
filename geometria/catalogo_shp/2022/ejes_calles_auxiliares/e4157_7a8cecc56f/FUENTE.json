@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4157_7a8cecc56f",
+  "shp": "e4157.shp",
+  "entidades": 81,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4157.dbf",
+      "bytes": 24748,
+      "sha256": "89de7acafefebf954791caec1f174ce1852fd50c6c6ca6570a1865ef8b68f7dc"
+    },
+    {
+      "archivo": "e4157.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4157.shp",
+      "bytes": 7388,
+      "sha256": "019db400afd38385e2b18425dde5202aa737b16826f4a88b2bc63673c4d50185"
+    },
+    {
+      "archivo": "e4157.shx",
+      "bytes": 748,
+      "sha256": "dbfd85eb01fcd46525dd7ca6a30f26c7917f74bc5600fb33d299a24e36064103"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VIRGINIA.zip!e4157.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_328ed4cc04",
+    "archivo": "santafe/ipec/2022/VIRGINIA.zip!e4157.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 3,
+    "bbox": [
+      5371254.5,
+      6598778.5,
+      5371908.5,
+      6599727.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VIRGINIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "b1b7ba791265be0e3d7379724856005c3ec85b21f2fbccb3c7fcc8fec334b3cc"
+}

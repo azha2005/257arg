@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0899_d7160170d4",
+  "shp": "M0899.shp",
+  "entidades": 87,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0899.dbf",
+      "bytes": 17525,
+      "sha256": "4c0ff702c8fa706997beec92cacd1c23e39030636187b479beea782450eef323"
+    },
+    {
+      "archivo": "M0899.shp",
+      "bytes": 13436,
+      "sha256": "1a5eef3bf7c2f369c251d58a966115e0f66c3d1dc86f79c2f86a0ef49f48688c"
+    },
+    {
+      "archivo": "M0899.shx",
+      "bytes": 796,
+      "sha256": "6665a12acf706342bc5a0f0711cf11460b1db50fbc2b07a89205265d1a90b02a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanantoniodeobligadoa2v.zip!M0899.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5886ef6f6d",
+    "archivo": "santafe/ipec/2010/sanantoniodeobligadoa2v.zip!M0899.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 87,
+    "registros_shx": 87,
+    "shape_type": 5,
+    "bbox": [
+      5571709.0,
+      6859953.5,
+      5572526.0,
+      6862199.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanantoniodeobligadoa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "96f9622c38aa0752ba1e31bb44d719569c1083b221f1e9c97efdfe32ea8ccb94"
+}

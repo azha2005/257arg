@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0217_46b88ed7f6",
+  "shp": "R0217.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0217.dbf",
+      "bytes": 3134,
+      "sha256": "aa914a4018398474584af2dd84dbce4ca570feb1765299be90f6ae97fda0bf9d"
+    },
+    {
+      "archivo": "R0217.shp",
+      "bytes": 9292,
+      "sha256": "13ca1ed7950bcce9c4c85e95085e5498492a72f879a437aa87093b958bbb3a2f"
+    },
+    {
+      "archivo": "R0217.shx",
+      "bytes": 204,
+      "sha256": "8d5ceb8204657ccf85aa93b22c9b24536bfb2ee65bd18d46a72dc63f413c9c23"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaocampoa1h.zip!R0217.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b485f09c0b",
+    "archivo": "santafe/ipec/2010/villaocampoa1h.zip!R0217.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5560908.0,
+      6847672.5,
+      5564094.5,
+      6850757.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaocampoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a9d83ca1629f791af81d7bb2897c960e83dae09dc6dacdf19623a4c5bab9f45f"
+}

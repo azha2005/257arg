@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0475_dea062b7f4",
+  "shp": "M0475.shp",
+  "entidades": 146,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0475.dbf",
+      "bytes": 29148,
+      "sha256": "c48d897d619e17b2b1bfe0c0d7e5b4ad2a1e91ee3ee9e53dc433244812568b81"
+    },
+    {
+      "archivo": "M0475.shp",
+      "bytes": 26980,
+      "sha256": "b45074dd7b3d03610f32da896f41cbb50e786068cc57c0a14eec55bdc6feb5da"
+    },
+    {
+      "archivo": "M0475.shx",
+      "bytes": 1268,
+      "sha256": "c594aa29d102aa1faf320fb40db9ef54066ae49e942a1be2dd2de88732d1b04c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/mariajuanaa2h.zip!M0475.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5e4f1adeec",
+    "archivo": "santafe/ipec/2010/mariajuanaa2h.zip!M0475.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 146,
+    "registros_shx": 146,
+    "shape_type": 5,
+    "bbox": [
+      5332537.5,
+      6493969.0,
+      5334922.5,
+      6495707.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/mariajuanaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fa93d93f1fd4fbc7e97ca6041758524bb4823ae10c17f8ccd5e0c2dcd1337cf7"
+}

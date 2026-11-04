@@ -1,0 +1,416 @@
+{
+  "creado_utc": "2026-10-28T07:56:11.872641+00:00",
+  "objetivo": "Snapshot previo a PASO 2021; incluye decisiones aprendidas despues de 2021 y no se presenta como artefacto historico ex ante",
+  "archivos": [
+    {
+      "path": "aguja.py",
+      "sha256": "f1803fe9a6c9322deb4584d0d679eb8052f218ade043a85d57e630592c58bbd4",
+      "bytes": 16387
+    },
+    {
+      "path": "aguja_brasil.py",
+      "sha256": "72b4373d4d6d7a7bc526956618eb4a50e7bc36502aaf4a125ba80b2a22923d7d",
+      "bytes": 9949
+    },
+    {
+      "path": "aguja_dibujo.py",
+      "sha256": "3a7287d8e9ec71e8c3f1b75e6ae8d8379e705200de3b915afe33e911d6ff68d6",
+      "bytes": 14188
+    },
+    {
+      "path": "aguja_fotos.py",
+      "sha256": "b760879edb6d1b31fbe5309080b04328f51e6a556064e8f9b47ad058fbdc532d",
+      "bytes": 4532
+    },
+    {
+      "path": "backtest.py",
+      "sha256": "f7e5144128d4202f2dab24f1f02b99b1c04e61ebbc0c5906e39ff51d42a4d38b",
+      "bytes": 31018
+    },
+    {
+      "path": "bloques.py",
+      "sha256": "e7c40fc038c621b094eaf95d5b2bff15fbe8918162c8bf25364597b3ffba3feb",
+      "bytes": 2917
+    },
+    {
+      "path": "brasil_transferencia.py",
+      "sha256": "dc5bf28c788c355bfa4065aef8e65399a4ffabc7efa27d26aa4d539a8b9f5425",
+      "bytes": 3616
+    },
+    {
+      "path": "centroides.py",
+      "sha256": "29ad3aa73b62618f9632b8cbaa2ef4c60dde837d28796b110eb85d4dc8dd569e",
+      "bytes": 1853
+    },
+    {
+      "path": "centroides_secciones.csv",
+      "sha256": "5911c6ea75fd39e59f913893d89a26de888a153d547cc80e2f0d52440c9d0301",
+      "bytes": 29847
+    },
+    {
+      "path": "congreso.py",
+      "sha256": "f15f6c6b77ca1f5ccb9d33ae262759396e61185555fa9dd15001a2de0f0a6b3e",
+      "bytes": 25865
+    },
+    {
+      "path": "congreso_motor.py",
+      "sha256": "d389f140bcb805cd2ec99104959229790175a36b3785711c7c97c803c2832f42",
+      "bytes": 3654
+    },
+    {
+      "path": "congreso_sim.py",
+      "sha256": "66343ad6bf994b8df727644483ff94151ca1cc4c1a5be609b6d171246f4321ac",
+      "bytes": 7123
+    },
+    {
+      "path": "enlace.py",
+      "sha256": "06f7901be9b70adb16a971481d8957b0283bdd9e8fd0b9f04dbc9bad7925a7a7",
+      "bytes": 1604
+    },
+    {
+      "path": "fotos.py",
+      "sha256": "9cec80bde4fcacdf86c0f1ea62e17d9a6b58faa9664dc2b1134d5de352c1a912",
+      "bytes": 4099
+    },
+    {
+      "path": "fotos25.py",
+      "sha256": "5d3e61a97b91b3e9fe05dc5f329e07ee3c88ace00b5554781bbc5ca2d02c30b6",
+      "bytes": 22420
+    },
+    {
+      "path": "fotos_modelo.py",
+      "sha256": "ab9c75d0a5d45db18114119f7e5c47deeeaa60392af62f3d5d248011492e28e2",
+      "bytes": 7433
+    },
+    {
+      "path": "fotos_motor.py",
+      "sha256": "b19e4de26f1b2c7c6a0ca0e89a45e2f087b3b6972c6c1910e3732e481dfa4ca8",
+      "bytes": 9455
+    },
+    {
+      "path": "fotos_sim.py",
+      "sha256": "c776b7c8439c64ac04195e2df445b7fd81d37391c58e8c817d3ab2008fcd220c",
+      "bytes": 12470
+    },
+    {
+      "path": "fotos_sim2.py",
+      "sha256": "7fe539c1e02d628fbce4c752e764712c05b72fb2d7c22c8ea34d2dedd6039c29",
+      "bytes": 3495
+    },
+    {
+      "path": "fotos_sim_fuerzas.py",
+      "sha256": "9c06fb381ba12e0b378e5c10f1667ef0193539c027f4943df830334856956714",
+      "bytes": 5829
+    },
+    {
+      "path": "fotos_tw.py",
+      "sha256": "c57aacc93f411a4495e92f82ad847335ad8dc3a4311d6bfc84309ba2f6e5576e",
+      "bytes": 4826
+    },
+    {
+      "path": "LEEME.md",
+      "sha256": "bf6a5f39925ec86737fc5fc1b728ca0f1d6e537bc7ff4e4560c88fd01f5762a2",
+      "bytes": 33563
+    },
+    {
+      "path": "mesas.py",
+      "sha256": "902e0530fdb80a64aa124560fb97dfbb4407961fdc0d4949fffab8af805a6529",
+      "bytes": 2993
+    },
+    {
+      "path": "PLAN_MEJORAS.md",
+      "sha256": "76ed0049909b2d4a3faec7bd2725e532bc2a34216b0e6c4cb4fbeafaa67397a9",
+      "bytes": 26930
+    },
+    {
+      "path": "provinciales.csv",
+      "sha256": "b792f739b81a477f2e31b5dd855ef5867f57b1b98528fa3ccae5824222d40722",
+      "bytes": 1343
+    },
+    {
+      "path": "proyectar_fotos.py",
+      "sha256": "f5e19c2aa22fb755ba8929cd596467b613cd0d467492a469b596a63bf5fa0762",
+      "bytes": 20628
+    },
+    {
+      "path": "testigos.py",
+      "sha256": "ddc28572fb06cb4e4d19cc1e51503b0cfc94b72efa923dc1dcb69915e3711942",
+      "bytes": 8863
+    },
+    {
+      "path": "test_correcciones.py",
+      "sha256": "6fdc84e173578000ebfb793dec3107e77dffd0e23b73c8e845ed45bffc295416",
+      "bytes": 5616
+    },
+    {
+      "path": "2015p_2015b/RESUMEN.md",
+      "sha256": "90e3bbe853657b9077f1299630661bf5e129b12b16953908a730d128c0c14c53",
+      "bytes": 20442
+    },
+    {
+      "path": "2015p_2015b_ancla/RESUMEN.md",
+      "sha256": "88ae4cebe1bef9c62cd4cd5660c9dd95ade0997da524a57530ae486875cae9e8",
+      "bytes": 12957
+    },
+    {
+      "path": "2015p_2015b_leal/RESUMEN.md",
+      "sha256": "5cb2f729ae0cbfb43f718c5d71180c94322bbc558bcd7a3a4fa30bc3a4c0fee2",
+      "bytes": 20978
+    },
+    {
+      "path": "2019p_2023p_circuito/RESUMEN.md",
+      "sha256": "5cc427952c784fd49312293c5e5aff9760c6b2cf89a78d34b428ef945e645053",
+      "bytes": 20475
+    },
+    {
+      "path": "2019p_2023p_circuito_ancla/RESUMEN.md",
+      "sha256": "ded9e9acdca0fa12ba07cfd62e6485eb88bd072d39b110f01bda032b9b69b733",
+      "bytes": 17104
+    },
+    {
+      "path": "2023p_2023b/RESUMEN.md",
+      "sha256": "85b81aa2afd619d37a29ed069e8dbb95ac096d5f4b788c2d9eb250dcee490a32",
+      "bytes": 20540
+    },
+    {
+      "path": "2023p_2023b_ancla/RESUMEN.md",
+      "sha256": "6411d215522e288b007a5a25c9203b77725d6bd1ef69c21a9cac01c8fcb0e7de",
+      "bytes": 13021
+    },
+    {
+      "path": "2023p_2023b_leal/RESUMEN.md",
+      "sha256": "b36a8c4564521df99a3255dba8bd3a01eef63f2c873a0c19eff2f939d2feeb04",
+      "bytes": 21072
+    },
+    {
+      "path": "2023p_2023b_swing2015b/RESUMEN.md",
+      "sha256": "dcbe86f0b81a8843a043f00fe5e520e3227e534398633c09317db8f41885baee",
+      "bytes": 15136
+    },
+    {
+      "path": "fotos25/actas_proyeccion.md",
+      "sha256": "0240011f0c6a83a977fd75cd09f1a2a374a6e0fa3b6a3c4912a342e684be5aea",
+      "bytes": 3165
+    },
+    {
+      "path": "fotos25/RESUMEN.md",
+      "sha256": "dd507de3da1ef74800f326e0d0c19a5e3f7b4396ae689f7b92ca4d45a4068826",
+      "bytes": 5138
+    },
+    {
+      "path": "fotos25/RESUMEN_2023b.md",
+      "sha256": "1924717a0b93d2f150f659ae0a973a191a463dabbde823da5324ccc0b364aeb7",
+      "bytes": 5133
+    },
+    {
+      "path": "fotos_18_19/actas_proyeccion.md",
+      "sha256": "61723056e499be1bb54491dd024f6f1659041b4e399a019cc4af75c78201e796",
+      "bytes": 2994
+    },
+    {
+      "path": "fotos_18_19/actas_sin_cordoba_5023_proyeccion.md",
+      "sha256": "9b97c711b19af298d1fb52551550fbdf341d17869703790b23d9644f36175b20",
+      "bytes": 3009
+    },
+    {
+      "path": "fotos_18_19/LEEME.md",
+      "sha256": "bc738df1d15993dd61d229d59fc01b257ac53d05efc367c1e548fef22cb6bcdf",
+      "bytes": 3068
+    },
+    {
+      "path": "fotos_18_19/transcribir.py",
+      "sha256": "d6d3f2df329762514056abc3e9e0e91474d56f1d4cf309a0d6486891c765601e",
+      "bytes": 3602
+    },
+    {
+      "path": "fotos_sim/FUERZAS.md",
+      "sha256": "aa04530a6fe896c46cf2d98af3a91ded83062d73ac7194f9e94d159eec84a6ad",
+      "bytes": 5117
+    },
+    {
+      "path": "fotos_sim/RESUMEN.md",
+      "sha256": "45585da21d0dd3bf550cd01dc46af6d61e261c5cdeecff834628ecf76600565c",
+      "bytes": 30289
+    },
+    {
+      "path": "icg/icg_fotos.py",
+      "sha256": "2c67de1b46d37b4cd642b8831d342c5739a29f70fed6d5499c1e1a20b9b83862",
+      "bytes": 4702
+    },
+    {
+      "path": "icg/icg_voto.py",
+      "sha256": "249a223c9ecadd47f43d42de15260d111ca93097ff4218493f57ba13454c9e88",
+      "bytes": 4617
+    },
+    {
+      "path": "icg/informe_icg.py",
+      "sha256": "9089316b5b605132f1d708640c7790290d47cd89f548c6880dc38a3eccbcc018",
+      "bytes": 11877
+    },
+    {
+      "path": "israel/actualizar.py",
+      "sha256": "96b544c6c7e8ecc819558a448fe11a93ead238dd826686d80eb5e2039756c988",
+      "bytes": 495
+    },
+    {
+      "path": "israel/aguja_israel.py",
+      "sha256": "8750e5cb3239f98108edf5cbe313087b270bb004ae69f0737afa2d981bdd8629",
+      "bytes": 5207
+    },
+    {
+      "path": "israel/backtest.py",
+      "sha256": "5344292170c86f49a66e802c1b035e7e2e2e19c3867df953909a2af2e970ce08",
+      "bytes": 5457
+    },
+    {
+      "path": "israel/backtest_7.py",
+      "sha256": "dfdc66f4f155228b8a8f5e20b11dc02440f87309d8a3a6ba234ffeef12c8f106",
+      "bytes": 5036
+    },
+    {
+      "path": "israel/datos.py",
+      "sha256": "ee6bcf8564a2347322e152eb911eed27e4bf1e2ab03f5833fcfaa47ad3d3dd87",
+      "bytes": 10047
+    },
+    {
+      "path": "israel/hemiciclo.py",
+      "sha256": "33fff757d78d18828919336af98841170e92ea82b8b266a76e290eec1af6effa",
+      "bytes": 4622
+    },
+    {
+      "path": "israel/LEEME.md",
+      "sha256": "12f902b317a3f80cace48fee1b9236d4f83a1b540c70bceb4e617b7517c16207",
+      "bytes": 9866
+    },
+    {
+      "path": "israel/modelo.py",
+      "sha256": "fd9cbfe2a8cdb4a432c697409a63486709d11286838bfc5d3a6c17b091a7b794",
+      "bytes": 13651
+    },
+    {
+      "path": "israel/RESUMEN_BACKTEST.md",
+      "sha256": "b298912dfa400457630be1b8501e89cb360b83b4b0fada4a28ba2a26728c7fbc",
+      "bytes": 7608
+    },
+    {
+      "path": "israel/smilganir.py",
+      "sha256": "cd9d8ab08b2f6faaf69c0eb72f90033f33e5d506fd2a95f2e9dcda96981974d0",
+      "bytes": 2019
+    },
+    {
+      "path": "israel/vivo.py",
+      "sha256": "d13d02e0a3f77ac305816b072639cde81d0f33c2fbb50bb3cd55ca5b7acdead5",
+      "bytes": 16802
+    },
+    {
+      "path": "israel/vivo_0024.md",
+      "sha256": "89248812f48d6df118e80e9186c035b793a48f383651036bebb2b7aa5fc367ae",
+      "bytes": 1477
+    },
+    {
+      "path": "israel/vivo_0244.md",
+      "sha256": "4ddcbbc8d6f10e29d6c30ee18dd3fc049fd2fdf6c8e9bb3699fd6ced355c37cf",
+      "bytes": 1477
+    },
+    {
+      "path": "israel/vivo_0322.md",
+      "sha256": "0608d2cc5a7697fbe24b49b27b741cdd5cfde81c7e0bbd08c3b53aea923ccc9b",
+      "bytes": 1477
+    },
+    {
+      "path": "revision_astra_20261028/auditar.py",
+      "sha256": "e7caa13c6bbd775be394d7a53ea4832e8f136230d5c31be8725177b7f894e9f4",
+      "bytes": 8803
+    },
+    {
+      "path": "revision_astra_20261028/experimento_pesos.py",
+      "sha256": "bb4453f027fa8071d4e9135bbc4bb7593b8b876e7320ecd9a7d3966bb50b285b",
+      "bytes": 3324
+    },
+    {
+      "path": "revision_astra_20261028/REVISION.md",
+      "sha256": "c15e7ab3fdc1416237742af27765f7c47c7bf2ced005726144013b0d35603812",
+      "bytes": 18600
+    },
+    {
+      "path": "testigos/RESUMEN.md",
+      "sha256": "395f007314b23bcf81723fd7cb51881b27744e21d6d17ab4b6dbc2084a03a1e8",
+      "bytes": 4826
+    },
+    {
+      "path": "validacion_20261028/cobertura_aguja.py",
+      "sha256": "30f867660001fb27c9d40ba4d33ee57da611e62a8fd46e23bb0c54b2331b9b5c",
+      "bytes": 2285
+    },
+    {
+      "path": "validacion_20261028/escrutinio.py",
+      "sha256": "05fef89ed1289290e8dfd05a596416299843f5b01e9d5f8d2a0dfc1f6fcbdf84",
+      "bytes": 2134
+    },
+    {
+      "path": "validacion_20261028/informe.py",
+      "sha256": "b7c39f9032f8897d6563548e590a5dec29520f8140e6c388d03c2c9f370543c1",
+      "bytes": 16989
+    },
+    {
+      "path": "validacion_20261028/medir.py",
+      "sha256": "3e27e28d7ba1e2f925c874742c7b9997baad9f0a6a436a8daa614850b4f0c947",
+      "bytes": 9424
+    },
+    {
+      "path": "validacion_20261028/reales.py",
+      "sha256": "f947ca578f40aa69e46986ea7818f2783527dc15fdb736e3fb6b94761b5aeda3",
+      "bytes": 2488
+    },
+    {
+      "path": "validacion_20261028/RESULTADOS.md",
+      "sha256": "d6459c35fb9bd8cd3b10623e00fb433d8d10e31993b57905360bd9c87b7d87d6",
+      "bytes": 12949
+    },
+    {
+      "path": "validacion_20261028/VERIFICACION.md",
+      "sha256": "487a24e320dd8094ffde7c3400e91871aa28ad1d35d8e15dc91b9987ed4c06fc",
+      "bytes": 1394
+    },
+    {
+      "path": "validacion_20261028/baseline/actas_proyeccion.md",
+      "sha256": "fa2620bff7bf77a59a7108e5de52b390d33906f995041bdadd9f8a74dfefd147",
+      "bytes": 2432
+    },
+    {
+      "path": "validacion_20261028/baseline/aguja.py",
+      "sha256": "4330abfb2b6e52332cb8f7e56e2cc5dcec1e401de5b974c53c39ddc65c70bf38",
+      "bytes": 15169
+    },
+    {
+      "path": "validacion_20261028/baseline/aguja_fotos.py",
+      "sha256": "f4ab44b717b184b535e84e26acf247ca0fbd477f50e715bf5902ae7446b388b8",
+      "bytes": 4287
+    },
+    {
+      "path": "validacion_20261028/baseline/backtest.py",
+      "sha256": "8a63db2f9a0725e08088994b594b723f04e52efb93e7903e37879d37e39ae3ed",
+      "bytes": 30477
+    },
+    {
+      "path": "validacion_20261028/baseline/congreso.py",
+      "sha256": "8c8a781f3e6b9388575a790eb9d5b68095ef8bdfb6e44094857e6099ff224145",
+      "bytes": 21855
+    },
+    {
+      "path": "validacion_20261028/baseline/congreso_sim.py",
+      "sha256": "a98d7b878f9933ee17d84019875de20a206036e881a64139d3181afa0e8830c2",
+      "bytes": 6845
+    },
+    {
+      "path": "validacion_20261028/baseline/fotos_modelo.py",
+      "sha256": "33c2ccf8cc2e482e89a431a74ea02bc4a75cdb0de381ac4ca0e6f3bef0487810",
+      "bytes": 6770
+    },
+    {
+      "path": "validacion_20261028/baseline/proyectar_fotos.py",
+      "sha256": "3690de27d074afa777c7f93c4823704ce2e164fa431dfc1892e0bc78b20acaa6",
+      "bytes": 22424
+    }
+  ]
+}

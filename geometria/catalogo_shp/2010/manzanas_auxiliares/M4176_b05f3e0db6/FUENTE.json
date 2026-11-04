@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4176_b05f3e0db6",
+  "shp": "M4176.shp",
+  "entidades": 177,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4176.dbf",
+      "bytes": 35255,
+      "sha256": "3fb019e3f2e0227523afed5ba5ea562c8f769d51623cd3c4ef54120c820e9ea0"
+    },
+    {
+      "archivo": "M4176.shp",
+      "bytes": 36924,
+      "sha256": "7b901f359b8bc8933db74579e51625d0b89971b392593f03a01cf276fdb74920"
+    },
+    {
+      "archivo": "M4176.shx",
+      "bytes": 1516,
+      "sha256": "8b128299250781345e84031071a4c5230f5af2922c8a5b2e9613f3a0245db49f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villalaribera.zip!M4176.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b1a8dbacff",
+    "archivo": "santafe/ipec/2010/villalaribera.zip!M4176.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 177,
+    "registros_shx": 177,
+    "shape_type": 5,
+    "bbox": [
+      5419228.0,
+      6386770.5,
+      5423778.5,
+      6389934.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villalaribera.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "41083f7e697f8321d0fc3c953a758a6b2c0171e2ade60a1dbec5fca566cf2e37"
+}

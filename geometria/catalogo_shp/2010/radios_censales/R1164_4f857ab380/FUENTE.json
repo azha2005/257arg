@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1164_4f857ab380",
+  "shp": "R1164.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1164.dbf",
+      "bytes": 686,
+      "sha256": "e9c1d8e19de3cbb62f8f101782563fb1a8cbb992ee3b8d38dedc0daef6465b0d"
+    },
+    {
+      "archivo": "R1164.shp",
+      "bytes": 860,
+      "sha256": "d2d723c2264732677fa4c55c6c8359c90df333a5f82e275f29583b845a182203"
+    },
+    {
+      "archivo": "R1164.shx",
+      "bytes": 108,
+      "sha256": "8810a47339c1a49b09fd3825b0796da8d21a910e928c5085289bcb6153da11c4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/juncala3h.zip!R1164.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9be5f47fd6",
+    "archivo": "santafe/ipec/2010/juncala3h.zip!R1164.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5402295.0,
+      6268976.5,
+      5404280.5,
+      6270234.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/juncala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "19e673fcd5d37fb3da5b50c43c1cf0e11b67aba96c327e0201d376caa1365fad"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4177_457c6041d2",
+  "shp": "e4177.shp",
+  "entidades": 288,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4177.dbf",
+      "bytes": 86434,
+      "sha256": "f597fc1ccc9c2966ab14d2d80ea1667bba0501aa357a6e306d5199de8b540291"
+    },
+    {
+      "archivo": "e4177.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4177.shp",
+      "bytes": 25828,
+      "sha256": "232646ffabfdca70be3ac235bbc71de4cba04c9fa8466e5848ead8e75bf5ad1a"
+    },
+    {
+      "archivo": "e4177.shx",
+      "bytes": 2404,
+      "sha256": "df4be7690ad080ffb55b437cae52b19c52c343c232d5dab6ac930cb25e13b51f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ARBILLA.zip!e4177.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_65e69e3e98",
+    "archivo": "santafe/ipec/2022/ARBILLA.zip!e4177.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 288,
+    "registros_shx": 288,
+    "shape_type": 3,
+    "bbox": [
+      5434154.0,
+      6336986.5,
+      5436753.0,
+      6340532.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ARBILLA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "50bda7358fe03e1e3896d5cc46ec776ba653ebd1988eadb72f67f36fdb4a43c3"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0849_4610cca04a",
+  "shp": "E0849.shp",
+  "entidades": 283,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0849.dbf",
+      "bytes": 99094,
+      "sha256": "4f0510a86c2f25edd52a1a3f211c33c254b9799160942eef43c116f8bb32df57"
+    },
+    {
+      "archivo": "E0849.shp",
+      "bytes": 25276,
+      "sha256": "a5367a03a4d32273825c9082718454b5d7322ca9e08ac39aff3f0ccf9e3dd93d"
+    },
+    {
+      "archivo": "E0849.shx",
+      "bytes": 2364,
+      "sha256": "ea7e0d9fc272b26cc509169b3fc5bb9799f650f0ece5f1d9fdec9b26b460be6a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/generallagosa3h.zip!E0849.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d2969e51df",
+    "archivo": "santafe/ipec/2010/generallagosa3h.zip!E0849.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 283,
+    "registros_shx": 283,
+    "shape_type": 3,
+    "bbox": [
+      5446494.5,
+      6336207.5,
+      5449343.0,
+      6337650.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/generallagosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "35449d6b1783a6208dc37209b14a9e35a7f21985abeab4abdce8d98ed78acd65"
+}

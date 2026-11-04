@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "sin vigencia exacta; archivo confeccionado en 2003",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/cba_circuitos_16c0d28a65",
+  "shp": "cba_circuitos.shp",
+  "entidades": 626,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "cba_circuitos.dbf",
+      "bytes": 161396,
+      "sha256": "28a757a9c2c33763a7cbc06d0f9d68a90df5367ef0467946082b19b972fdd53b"
+    },
+    {
+      "archivo": "cba_circuitos.shp",
+      "bytes": 488516,
+      "sha256": "0392dfef55596eef1f15f6b641114f231b03eeb91ca608121b32f25e39e80c0c"
+    },
+    {
+      "archivo": "cba_circuitos.shx",
+      "bytes": 5108,
+      "sha256": "e0d86cc752558665164ddb3d410237c1583af97a92bd87f5cbe5b81cb5c18189"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/aporte_usuario/circuitos.zip!circuitos/cba_circuitos.shp",
+  "metadata_original": {
+    "archivo": "aporte_usuario/circuitos.zip!circuitos/cba_circuitos.shp",
+    "formato": "SHP",
+    "features": 626,
+    "shapes": 626,
+    "bbox": [
+      3520979.463410829,
+      6124135.884919042,
+      3897724.159874256,
+      6735797.959481416
+    ],
+    "campos": [
+      "INDRA",
+      "PROV",
+      "DEPTO",
+      "CIRC",
+      "PROVINCIA",
+      "DEPARTAMEN",
+      "X",
+      "Y",
+      "CIRCUITO",
+      "JERARQUIA",
+      "COD_MUNI",
+      "COD_IFAM",
+      "NOMMUNICOM",
+      "COD_AGLO",
+      "NOMAGLO"
+    ],
+    "sha256": "0392dfef55596eef1f15f6b641114f231b03eeb91ca608121b32f25e39e80c0c",
+    "crs_wkt": null,
+    "url": "",
+    "fuente": "ZIP aportado por usuario; README interno de 2003",
+    "corte_declarado": "sin vigencia exacta; archivo confeccionado en 2003",
+    "nota": "Sin PRJ: no se asigna CRS automáticamente"
+  },
+  "firma_componentes": "3ee0cb5735173b7cfd7bf3b86b4b3485f81311dbbe7218d7b09c86293c6da346"
+}

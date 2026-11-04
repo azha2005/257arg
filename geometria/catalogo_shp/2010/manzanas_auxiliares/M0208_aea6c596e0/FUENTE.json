@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0208_aea6c596e0",
+  "shp": "M0208.shp",
+  "entidades": 335,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0208.dbf",
+      "bytes": 66381,
+      "sha256": "121bc225b8ea1e808f6fa1b4a769636702bd1e60a1a3e177aa57e9c283471bfb"
+    },
+    {
+      "archivo": "M0208.shp",
+      "bytes": 66444,
+      "sha256": "9ef358dcf4fb706e39fd91ebb11e891b71afb3a33165bbc4669558611e53cd5e"
+    },
+    {
+      "archivo": "M0208.shx",
+      "bytes": 2780,
+      "sha256": "1adf6388eff466ebef047944ad200c3db27d742e84591b8e393230eb07903cc5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tostadoa1h.zip!M0208.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dad6c23f71",
+    "archivo": "santafe/ipec/2010/tostadoa1h.zip!M0208.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 335,
+    "registros_shx": 335,
+    "shape_type": 5,
+    "bbox": [
+      5325856.0,
+      6764041.5,
+      5329039.5,
+      6767494.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tostadoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "30c70b1fbb790494fbe5951b1c3a3ca2ef0868f067b0ed1ff761d9f1bfd22760"
+}

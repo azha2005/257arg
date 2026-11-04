@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4175_3d0b074c31",
+  "shp": "R4175.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4175.dbf",
+      "bytes": 686,
+      "sha256": "90d4661d1dcaeb66aca65280bd77045a54e416495522f69eb97c98644f98387f"
+    },
+    {
+      "archivo": "R4175.shp",
+      "bytes": 716,
+      "sha256": "9aaa9490f5f8e678db018c3750e53f9361cb7933971a3ac01579677476860815"
+    },
+    {
+      "archivo": "R4175.shx",
+      "bytes": 108,
+      "sha256": "2dc0ef1bf28063e88ea5257b1225031a11e2641113472d4e944819c99ab2a763"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Trailla3v.zip!R4175.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f38ab6cb4f",
+    "archivo": "santafe/ipec/2010/Trailla3v.zip!R4175.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5338551.0,
+      6466997.0,
+      5339591.0,
+      6468288.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Trailla3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f4e17b5e220944f4c503448ca0693f640c0808b75bd2727e776dd4a5bb0522fd"
+}

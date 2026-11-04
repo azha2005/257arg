@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4165_b4622be429",
+  "shp": "e4165.shp",
+  "entidades": 38,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4165.dbf",
+      "bytes": 11934,
+      "sha256": "888b75922b14779ae515129ba475e32978ced5ac5af4d919778d6e07c8bffa94"
+    },
+    {
+      "archivo": "e4165.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4165.shp",
+      "bytes": 3444,
+      "sha256": "892a28da1a5f6da9b00336020d825202b9366cb1ab6c27b6079952f2cd188711"
+    },
+    {
+      "archivo": "e4165.shx",
+      "bytes": 404,
+      "sha256": "f7ebf30e219cd2a86cf35b3058789a3ad0bea0fda8e1f88c8cc8c6847c4f1020"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CASALEGNO.zip!e4165.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1ff7bfec51",
+    "archivo": "santafe/ipec/2022/CASALEGNO.zip!e4165.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 38,
+    "registros_shx": 38,
+    "shape_type": 3,
+    "bbox": [
+      5393609.5,
+      6429891.0,
+      5394195.0,
+      6430937.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CASALEGNO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0af707027a9c9c6b3f6b2464702a0a4111de54b5ed08f69e8bbe7e8c0dff7d88"
+}

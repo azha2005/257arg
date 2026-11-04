@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m1496_063f18f5d5",
+  "shp": "m1496.shp",
+  "entidades": 83,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m1496.dbf",
+      "bytes": 16737,
+      "sha256": "6742689ba16787c4afdbe104e467a87ab24cacfaa41b2ef24819c6984931ede7"
+    },
+    {
+      "archivo": "m1496.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m1496.shp",
+      "bytes": 17292,
+      "sha256": "2791f5d8158b076984d72b4bac4ec80b228db47689684312208fc0b273776371"
+    },
+    {
+      "archivo": "m1496.shx",
+      "bytes": 764,
+      "sha256": "40e0996cdbbfa78fc07df8e6c744a84fe340e56de6281bd6c4125bc6df127358"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CORONELDOMINGUEZ.zip!m1496.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_904004d7fd",
+    "archivo": "santafe/ipec/2022/CORONELDOMINGUEZ.zip!m1496.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 83,
+    "registros_shx": 83,
+    "shape_type": 5,
+    "bbox": [
+      5430830.5,
+      6328184.5,
+      5433264.5,
+      6329061.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CORONELDOMINGUEZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2bd2c8f3beea6d474ef13632c3d31b6125626752ca18814632f2626805d5e271"
+}

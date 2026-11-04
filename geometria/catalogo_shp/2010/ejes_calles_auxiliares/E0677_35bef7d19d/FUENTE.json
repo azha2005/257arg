@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0677_35bef7d19d",
+  "shp": "E0677.shp",
+  "entidades": 353,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0677.dbf",
+      "bytes": 123454,
+      "sha256": "03d26b4ed439d26fcc70d26223d49013f9f11024ce753e86b46d81ad4e485bcf"
+    },
+    {
+      "archivo": "E0677.shp",
+      "bytes": 31292,
+      "sha256": "2cf2879d6261b276f18567415869597a7d8b60374dffb6bda24fecffea79b896"
+    },
+    {
+      "archivo": "E0677.shx",
+      "bytes": 2924,
+      "sha256": "af082064468d792b0d739f58aacc2865c19f88dbf61d63f989ad3f3a143c4515"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaminettia3h.zip!E0677.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1ce1a620f1",
+    "archivo": "santafe/ipec/2010/villaminettia3h.zip!E0677.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 353,
+    "registros_shx": 353,
+    "shape_type": 3,
+    "bbox": [
+      5340163.0,
+      6832517.0,
+      5342343.5,
+      6834180.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaminettia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c9c6549943da17a7d488b4a427f389b1facc58ab1c7dd94130b3e0d9c4b653c2"
+}

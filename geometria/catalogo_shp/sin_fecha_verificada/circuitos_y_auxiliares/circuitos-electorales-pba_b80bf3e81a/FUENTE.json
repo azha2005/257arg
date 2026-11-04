@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "No se encontró evidencia suficiente para asignar año",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/circuitos-electorales-pba_b80bf3e81a",
+  "shp": "circuitos-electorales-pba.shp",
+  "entidades": 1150,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "circuitos-electorales-pba.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "circuitos-electorales-pba.dbf",
+      "bytes": 3355192,
+      "sha256": "fd089c8feb03120725efdfebf43c800946ac790fd27c15f5abbdd01fb589c77d"
+    },
+    {
+      "archivo": "circuitos-electorales-pba.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "archivo": "circuitos-electorales-pba.qmd",
+      "bytes": 1577,
+      "sha256": "d859caf6fb14dcb30fed3a28c6a443a15584b70edef476fbba89ec336fddbca5"
+    },
+    {
+      "archivo": "circuitos-electorales-pba.shp",
+      "bytes": 2961936,
+      "sha256": "136bb63f3f012bed1b57f8cef40d141eca888f29f14ffb9e6170a2e56fc81294"
+    },
+    {
+      "archivo": "circuitos-electorales-pba.shx",
+      "bytes": 9300,
+      "sha256": "340efec5da0a3c506011da6d288c50b084eb669542e37a0b2d30a923db83d7cf"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/pba_general/02_circuitos-electorales-pba.zip!shp/circuitos-electorales-pba.shp",
+  "metadata_original": {
+    "archivo": "pba_general/02_circuitos-electorales-pba.zip!shp/circuitos-electorales-pba.shp",
+    "formato": "SHP",
+    "features": 1150,
+    "shapes": 1150,
+    "bbox": [
+      -63.39325646406888,
+      -41.043436031422466,
+      -56.66335992317388,
+      -33.26326577752352
+    ],
+    "campos": [
+      "Name",
+      "descriptio",
+      "timestamp",
+      "begin",
+      "end",
+      "altitudeMo",
+      "tessellate",
+      "extrude",
+      "visibility",
+      "drawOrder",
+      "icon",
+      "gid",
+      "distrito",
+      "provincia",
+      "departamen",
+      "cabecera",
+      "circuito",
+      "indec_p",
+      "indec_d"
+    ],
+    "sha256": "136bb63f3f012bed1b57f8cef40d141eca888f29f14ffb9e6170a2e56fc81294",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+    "url": "https://catalogo.datos.gba.gob.ar/dataset/4fe68b69-c788-4c06-ac67-26e4ebc7416b/resource/37bd466c-4a80-4e2e-be11-a68cfe60aa1e/download/circuitos-electorales-pba.zip",
+    "fuente": "https://catalogo.datos.gba.gob.ar/dataset/circuitos-electorales",
+    "corte_declarado": "",
+    "nota": "Circuitos de Buenos Aires | Formatos .shp, .geojson y kml (EPSG:4326. Proyección WGS 84) en archivo ZIP de los circuitos electorales de la provincia de Buenos Aires con su descripción y ubicación."
+  },
+  "firma_componentes": "fe68396a35491e10603f02874ca491fcda15b016865146d453451948bb4d0b1e"
+}

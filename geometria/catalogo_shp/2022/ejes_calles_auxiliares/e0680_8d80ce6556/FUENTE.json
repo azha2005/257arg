@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0680_8d80ce6556",
+  "shp": "e0680.shp",
+  "entidades": 244,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0680.dbf",
+      "bytes": 73322,
+      "sha256": "2bf783e916db17b674c0ec0f2656753f044fb0795d288525fe1a6ca9d8b186d4"
+    },
+    {
+      "archivo": "e0680.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0680.shp",
+      "bytes": 21572,
+      "sha256": "d849a30aae1e2ec21b2ad8e514e7ad0012b06d4db54ad108a9fabb1f144d2e4e"
+    },
+    {
+      "archivo": "e0680.shx",
+      "bytes": 2052,
+      "sha256": "93e104da42b3ad8872a9b65d8edff45a1d40f2147a969881c4438cdeb3a7ee76"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MONTESDEOCA.zip!e0680.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_5c7b4b8030",
+    "archivo": "santafe/ipec/2022/MONTESDEOCA.zip!e0680.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 244,
+    "registros_shx": 244,
+    "shape_type": 3,
+    "bbox": [
+      5333171.0,
+      6395162.5,
+      5334704.5,
+      6396688.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MONTESDEOCA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7a1a6b113c49b3e38dc55340fee34ed5058959d74405b6a5d0f48e5479b56ae7"
+}

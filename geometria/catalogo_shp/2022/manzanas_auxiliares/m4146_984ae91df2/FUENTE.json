@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4146_984ae91df2",
+  "shp": "m4146.shp",
+  "entidades": 26,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4146.dbf",
+      "bytes": 5508,
+      "sha256": "4531e43504cc8a4e6df7e8b5f4c4689400f5293b8a1b680e69376fae0d67603d"
+    },
+    {
+      "archivo": "m4146.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4146.shp",
+      "bytes": 4372,
+      "sha256": "4407d4734c1c5637d4d8242b20d0549595395e46b88215e777873d67abbd5cb8"
+    },
+    {
+      "archivo": "m4146.shx",
+      "bytes": 308,
+      "sha256": "9a890e78cbbb058690e9b83f6c4aaf47414af0b37034bbb5b9e5b85e0ea293ff"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CASTELLANOS.zip!m4146.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_be6ee1c050",
+    "archivo": "santafe/ipec/2022/CASTELLANOS.zip!m4146.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 26,
+    "registros_shx": 26,
+    "shape_type": 5,
+    "bbox": [
+      5335362.0,
+      6545987.0,
+      5336173.0,
+      6546774.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CASTELLANOS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5f6b3eee38190196f91080e38169501ce6078696c08afce665abdf3f9366a115"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1053_74076bef7c",
+  "shp": "E1053.shp",
+  "entidades": 205,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1053.dbf",
+      "bytes": 71950,
+      "sha256": "ae6ce8db6cff0ffb4083c463945861b6104d00c104ffdbd5a6108404703697e3"
+    },
+    {
+      "archivo": "E1053.shp",
+      "bytes": 18428,
+      "sha256": "5c867ef4e08f2f8bdb6144038ee9499d7a2cb066fbeb2a494389ad241b6409fb"
+    },
+    {
+      "archivo": "E1053.shx",
+      "bytes": 1740,
+      "sha256": "aefc1f7c501471bdeb69f602bc1c6ab30e21a59d89f7ffbccd7b695890c5810e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tartagala3v.zip!E1053.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bcec3d5381",
+    "archivo": "santafe/ipec/2010/tartagala3v.zip!E1053.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 205,
+    "registros_shx": 205,
+    "shape_type": 3,
+    "bbox": [
+      5514558.5,
+      6828263.0,
+      5515798.5,
+      6830111.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tartagala3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "131c1b636c90635643174231642f14bb379464f4992e710ff64ad4060d108371"
+}

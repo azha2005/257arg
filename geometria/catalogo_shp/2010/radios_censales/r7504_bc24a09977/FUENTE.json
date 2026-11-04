@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r7504_bc24a09977",
+  "shp": "r7504.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r7504.shx",
+      "bytes": 108,
+      "sha256": "698544ccf7850be3651b87ccc7246934a79e825b05a203bf933706cc0fb58143"
+    },
+    {
+      "archivo": "r7504.shp",
+      "bytes": 540,
+      "sha256": "ce89c258c0804db36b1296645732dba7068c2c1d3d5a7b7f4c7869e5fe4dfcd9"
+    },
+    {
+      "archivo": "r7504.sbx",
+      "bytes": 116,
+      "sha256": "8b98fd40854989aaa8a3a1b651bd95ec297bcbce78c69030f113f81b138eef1d"
+    },
+    {
+      "archivo": "r7504.sbn",
+      "bytes": 132,
+      "sha256": "5891fd58e9e6db2358efc9bebbbd6415a70a6b119f7ba00a3abacad201382cd0"
+    },
+    {
+      "archivo": "r7504.dbf",
+      "bytes": 701,
+      "sha256": "7145dfc664410be74a5fd6a0914b1a41e4f9bb820186c411915fb683f5d57bc2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/LOSSEMBRADOS.zip!r7504.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5ce33e78ee",
+    "archivo": "santafe/ipec/2010/LOSSEMBRADOS.zip!r7504.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5352995.5,
+      6496033.0,
+      5354060.0,
+      6496380.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RADIO2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/LOSSEMBRADOS.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "24f8f219640e403a72060deb6416dd386c7f732243baca9b12ad73391744ddc7"
+}

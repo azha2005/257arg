@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4180_d590b091b2",
+  "shp": "M4180.shp",
+  "entidades": 19,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4180.dbf",
+      "bytes": 4129,
+      "sha256": "7ebfa2e8986151df9c1def21ebc93aa5dc5b5ff990e614815181f2d596082c98"
+    },
+    {
+      "archivo": "M4180.shp",
+      "bytes": 4684,
+      "sha256": "68ae6c9392736e55dd7e283d41c2f8e4b870aceba1cb6afec71dbaa58124f6ab"
+    },
+    {
+      "archivo": "M4180.shx",
+      "bytes": 252,
+      "sha256": "26b34d33c7746ffa719c5c7910c82059d3546ed87772bef121e6abfe390c3367"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pueblosantaluciaa3v.zip!M4180.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f9f39d4315",
+    "archivo": "santafe/ipec/2010/pueblosantaluciaa3v.zip!M4180.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 19,
+    "registros_shx": 19,
+    "shape_type": 5,
+    "bbox": [
+      5460560.0,
+      6760296.5,
+      5461581.5,
+      6761778.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pueblosantaluciaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c100514327a665e26b950d0fcd55471b4d27879d8483b433f91fe6ed3b420fd9"
+}

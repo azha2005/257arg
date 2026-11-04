@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0089_b5bfdc4ad0",
+  "shp": "m0089.shp",
+  "entidades": 1048,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0089.dbf",
+      "bytes": 206842,
+      "sha256": "52cd0270323fb80c054e7f152530f3d57259a7ffed5a8d75c7c3e3f321139c90"
+    },
+    {
+      "archivo": "m0089.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0089.shp",
+      "bytes": 165924,
+      "sha256": "6465719158ad2a2677fcd536bc6f36b54b1581151edcdff670eab520c35b38f6"
+    },
+    {
+      "archivo": "m0089.shx",
+      "bytes": 8484,
+      "sha256": "71b479653900405d51ae41cf235fd83247fa84e1a416b829e8312f7736b9112a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CASILDA.zip!m0089.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_c7111be7b3",
+    "archivo": "santafe/ipec/2022/CASILDA.zip!m0089.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1048,
+    "registros_shx": 1048,
+    "shape_type": 5,
+    "bbox": [
+      5387479.5,
+      6339959.0,
+      5394665.0,
+      6345731.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CASILDA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "999fb0a4ef6a4fc258dbb08b34ede3307f9d3847c4a814a54b865bae9eaabe41"
+}

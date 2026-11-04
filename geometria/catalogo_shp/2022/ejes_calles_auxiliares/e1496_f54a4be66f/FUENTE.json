@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1496_f54a4be66f",
+  "shp": "e1496.shp",
+  "entidades": 211,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1496.dbf",
+      "bytes": 63488,
+      "sha256": "c653763578a0c45948d877c898cb3ebdfb582175de9c7b117914085a27390919"
+    },
+    {
+      "archivo": "e1496.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1496.shp",
+      "bytes": 19676,
+      "sha256": "ba606841dd2a8cb3db2aa0e75ca02d115d66cf1faf995097b78fe16fb6d3494c"
+    },
+    {
+      "archivo": "e1496.shx",
+      "bytes": 1788,
+      "sha256": "134bcc5826179bbeeee9a63526343c8cf2fc2f6059b492fb98a934f86364b7b5"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CORONELDOMINGUEZ.zip!e1496.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_904004d7fd",
+    "archivo": "santafe/ipec/2022/CORONELDOMINGUEZ.zip!e1496.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 211,
+    "registros_shx": 211,
+    "shape_type": 3,
+    "bbox": [
+      5430827.0,
+      6328173.5,
+      5433276.0,
+      6329077.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CORONELDOMINGUEZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d75b215f0135ec8f411174d199eebe5df0069f6c7e491eb1795ed8bb2db343f6"
+}

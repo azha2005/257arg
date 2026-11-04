@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0417_c68d3b7dcf",
+  "shp": "E0417.shp",
+  "entidades": 510,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0417.dbf",
+      "bytes": 178090,
+      "sha256": "6bea73f0b7a3ed0f0cde2bb9f728b82dece8fcbd98c101b61f1d2ad368719e87"
+    },
+    {
+      "archivo": "E0417.shp",
+      "bytes": 45524,
+      "sha256": "0415ff8c7f741b39c98acdcd50347555037821c5a51cbb80f868b1147f8dad07"
+    },
+    {
+      "archivo": "E0417.shx",
+      "bytes": 4180,
+      "sha256": "ee44739692c037ef1684b811615c0dca7e2bd72ef087b902381b91b9deda0767"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/malabrigoa3h.zip!E0417.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b75166415a",
+    "archivo": "santafe/ipec/2010/malabrigoa3h.zip!E0417.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 510,
+    "registros_shx": 510,
+    "shape_type": 3,
+    "bbox": [
+      5501734.0,
+      6752754.0,
+      5503894.0,
+      6755565.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/malabrigoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ee07b6c2c6f11892e74ad368a2352c57877ad55ccfeb3aad2d86142bb2b24786"
+}

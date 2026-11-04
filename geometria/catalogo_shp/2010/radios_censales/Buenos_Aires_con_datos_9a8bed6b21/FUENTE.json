@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Buenos_Aires_con_datos_9a8bed6b21",
+  "shp": "Buenos_Aires_con_datos.shp",
+  "entidades": 19577,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Buenos_Aires_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Buenos_Aires_con_datos.shp",
+      "bytes": 11490144,
+      "sha256": "d12e602285d0bd23dc680b42e30a1c99d7664cd40b0d446db4f03b8f8d636669"
+    },
+    {
+      "archivo": "Buenos_Aires_con_datos.shx",
+      "bytes": 156716,
+      "sha256": "5d151a83ac89999a01dde09aa617437271a1abd43a47af31ead23a9cd388466a"
+    },
+    {
+      "archivo": "Buenos_Aires_con_datos.dbf",
+      "bytes": 8007282,
+      "sha256": "6f4d413bdfcd84f418e4e8150a7e61bfcc6baf979b18d6d90f3776ff9deedabb"
+    },
+    {
+      "archivo": "Buenos_Aires_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Buenos_Aires_con_datos.zip!Buenos_Aires_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_06",
+    "archivo": "indec/2010/Codgeo_Buenos_Aires_con_datos.zip!Buenos_Aires_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Buenos Aires",
+    "features": 19577,
+    "registros_shx": 19577,
+    "shape_type": 5,
+    "bbox": [
+      3721439.8771872916,
+      5452221.096956337,
+      4335413.17713687,
+      6305225.0858686855
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Buenos_Aires_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 19577,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "d04dc51150df9fca59d687ec9d1d624190f2cbf1a661a18d40ce95810d4940d1"
+}

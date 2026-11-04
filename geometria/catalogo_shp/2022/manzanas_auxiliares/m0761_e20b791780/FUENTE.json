@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0761_e20b791780",
+  "shp": "m0761.shp",
+  "entidades": 142,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0761.dbf",
+      "bytes": 28360,
+      "sha256": "d47639f0e32769166f1cd0689a959c5b52bbb7fd316f4d072e9bd9df7144257e"
+    },
+    {
+      "archivo": "m0761.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0761.shp",
+      "bytes": 20100,
+      "sha256": "d3a30fba0eaf9237bf689b9c3e8f8eb6f04fa01bf04cb16f34f267ea8848dff5"
+    },
+    {
+      "archivo": "m0761.shx",
+      "bytes": 1236,
+      "sha256": "9513a7363342ef299f6c4d361f0851d8063c7c593cb4b5667a279cfbca72f86a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANTACLARADEBUENAVISTA.zip!m0761.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_df7b4a3d65",
+    "archivo": "santafe/ipec/2022/SANTACLARADEBUENAVISTA.zip!m0761.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 142,
+    "registros_shx": 142,
+    "shape_type": 5,
+    "bbox": [
+      5373861.0,
+      6484801.0,
+      5375885.0,
+      6486455.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANTACLARADEBUENAVISTA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c78bff2226c27993a6391e0b32b578cdc252de84e4bba97bbd7e54ea7b4c00b0"
+}

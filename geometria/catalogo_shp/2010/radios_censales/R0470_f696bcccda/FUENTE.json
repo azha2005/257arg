@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0470_f696bcccda",
+  "shp": "R0470.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0470.dbf",
+      "bytes": 1298,
+      "sha256": "c5e2e368d31072dcbf33e112cdc7d55f3a249ae599d971ea61c5f641f228a9e2"
+    },
+    {
+      "archivo": "R0470.shp",
+      "bytes": 3220,
+      "sha256": "f1a6b38d087007aeeca22bd5be9b2aab143e373e4bb519ab21e52799dfce883c"
+    },
+    {
+      "archivo": "R0470.shx",
+      "bytes": 132,
+      "sha256": "06a65080802896436c211499e78f33d87de9eaa9bae53dc95d5223bb6ca04cc1"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/canadarosquina2h.zip!R0470.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a301c1f5c7",
+    "archivo": "santafe/ipec/2010/canadarosquina2h.zip!R0470.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5347875.0,
+      6452150.5,
+      5349816.5,
+      6454290.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/canadarosquina2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "236fe29cddd38e42d987870445ed979233c80b2566a372d0777b155803fe7bf4"
+}

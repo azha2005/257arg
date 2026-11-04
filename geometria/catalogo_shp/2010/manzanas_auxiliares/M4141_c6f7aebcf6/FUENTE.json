@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4141_c6f7aebcf6",
+  "shp": "M4141.shp",
+  "entidades": 26,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4141.dbf",
+      "bytes": 5508,
+      "sha256": "c0288fdcb752fbc1a4f20d3f5f43310490aad24d7fa1c15da77ad9e8865c3b98"
+    },
+    {
+      "archivo": "M4141.shp",
+      "bytes": 4164,
+      "sha256": "6609d98080221dcb1bd23edb5bd9d024217e059cdcb123b610f76d9f4c2ff372"
+    },
+    {
+      "archivo": "M4141.shx",
+      "bytes": 308,
+      "sha256": "7b837545ce8f27438fd9ed3313f1b9102fb21f2bd1eb3e6284a3f6073b2bf235"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villasaraleguia3v.zip!M4141.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_09e45f0247",
+    "archivo": "santafe/ipec/2010/villasaraleguia3v.zip!M4141.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 26,
+    "registros_shx": 26,
+    "shape_type": 5,
+    "bbox": [
+      5427434.0,
+      6621184.5,
+      5428875.0,
+      6622342.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villasaraleguia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1cd0a671bfd685f574bdd7cf3188e54e5bf3d005f6121826f368e8cd14754737"
+}

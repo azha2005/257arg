@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0486_ebf787e427",
+  "shp": "R0486.shp",
+  "entidades": 7,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0486.dbf",
+      "bytes": 1910,
+      "sha256": "de1cf6c4b83262e38feb0f2dc3826b122803c57888701155ad86979fa6ccc624"
+    },
+    {
+      "archivo": "R0486.shp",
+      "bytes": 3996,
+      "sha256": "5299f61c0b806f666194ec39f2486788a0d584893820463136a13f64581f6eb4"
+    },
+    {
+      "archivo": "R0486.shx",
+      "bytes": 156,
+      "sha256": "e7b97b5097299ed6daf10e4fe494809eba04de86f1c63d6fd8a2b9988854dba7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Carlospellegrinia2h.zip!R0486.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f23cb5662d",
+    "archivo": "santafe/ipec/2010/Carlospellegrinia2h.zip!R0486.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 7,
+    "registros_shx": 7,
+    "shape_type": 5,
+    "bbox": [
+      5330309.0,
+      6451915.0,
+      5332352.0,
+      6454439.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Carlospellegrinia2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b81aa1c3d72a1ed57455dbbaca80549ac93b820ef785be36c0afc7160ab04bbf"
+}

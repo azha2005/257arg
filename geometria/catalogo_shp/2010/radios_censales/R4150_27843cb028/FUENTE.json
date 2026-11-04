@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4150_27843cb028",
+  "shp": "R4150.shp",
+  "entidades": 5,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4150.dbf",
+      "bytes": 1502,
+      "sha256": "dd855e6f9d1897b8ce9f96c73c4b69828445bbf033ee4c0b611b6e46815f7df7"
+    },
+    {
+      "archivo": "R4150.shp",
+      "bytes": 2412,
+      "sha256": "868d3b0e10cb9133e5bdeddbb44a2abc6712868da18a730775ce36ff3c4ec365"
+    },
+    {
+      "archivo": "R4150.shx",
+      "bytes": 140,
+      "sha256": "520541aeffeb00e6f9ce0dac62949aace3e9bc800ccee18180de23680356476b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bellaitaliaa3h.zip!R4150.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6c377a854a",
+    "archivo": "santafe/ipec/2010/bellaitaliaa3h.zip!R4150.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 5,
+    "registros_shx": 5,
+    "shape_type": 5,
+    "bbox": [
+      5363130.5,
+      6538342.0,
+      5366535.0,
+      6540653.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bellaitaliaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "62e7d721a07187176e1d8db1e1bf3b4645bad53a25c55d7bb4b74e7ace7f0dca"
+}

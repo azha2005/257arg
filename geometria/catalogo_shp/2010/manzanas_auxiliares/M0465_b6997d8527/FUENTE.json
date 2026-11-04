@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0465_b6997d8527",
+  "shp": "M0465.shp",
+  "entidades": 197,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0465.dbf",
+      "bytes": 39195,
+      "sha256": "5b6e16124bdad8604b7dfb532c59e1dd4a46199e4296e501972f8b5c1c282dc9"
+    },
+    {
+      "archivo": "M0465.shp",
+      "bytes": 34796,
+      "sha256": "a8d7a4e0c41c642ed8fa3272d79b22f67f1225d06b6166a1b87de48562521a7f"
+    },
+    {
+      "archivo": "M0465.shx",
+      "bytes": 1676,
+      "sha256": "f422c5be08edd0a9c06fc4b3232c80f5574b735b9252b1eb4eedb377718e57ab"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanguillermoa2h.zip!M0465.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d8701d3d77",
+    "archivo": "santafe/ipec/2010/sanguillermoa2h.zip!M0465.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 197,
+    "registros_shx": 197,
+    "shape_type": 5,
+    "bbox": [
+      5314843.0,
+      6639388.0,
+      5317661.0,
+      6641652.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanguillermoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "72a76e41996697e2ba35017a3683ac02384b00826f80fc15ecf0527efce0ad8d"
+}

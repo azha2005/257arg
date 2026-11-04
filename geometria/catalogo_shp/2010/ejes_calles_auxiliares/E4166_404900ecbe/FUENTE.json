@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4166_404900ecbe",
+  "shp": "E4166.shp",
+  "entidades": 67,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4166.dbf",
+      "bytes": 23926,
+      "sha256": "a8805d83db22872fc0bf3378e1a7fffef57f0720edc5b61dfec2fe7877849b60"
+    },
+    {
+      "archivo": "E4166.shp",
+      "bytes": 6060,
+      "sha256": "8b832e8ea0751cc53acfe7b3abc072b892e46cd18b1725bd1d7342029e8e709b"
+    },
+    {
+      "archivo": "E4166.shx",
+      "bytes": 636,
+      "sha256": "eee5bec963b3f14caf205753c6e43680ce79a05e9e8be996526ff56ec3aa0bf4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villasanjosea3h1.zip!E4166.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bf11ce1e21",
+    "archivo": "santafe/ipec/2010/villasanjosea3h1.zip!E4166.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 67,
+    "registros_shx": 67,
+    "shape_type": 3,
+    "bbox": [
+      5345470.5,
+      6532143.0,
+      5346028.5,
+      6532699.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villasanjosea3h1.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "99cd4a41c3434e1ea4de9e7e89b00b2e65a55f01d43b4bc0a0677e6747160070"
+}

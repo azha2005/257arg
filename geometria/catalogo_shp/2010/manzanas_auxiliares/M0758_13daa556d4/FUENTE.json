@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0758_13daa556d4",
+  "shp": "M0758.shp",
+  "entidades": 67,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0758.dbf",
+      "bytes": 13585,
+      "sha256": "075864426a4b99f4b0f40e7b43cb66ca25977039dd4bcc766616d82be3c7d47e"
+    },
+    {
+      "archivo": "M0758.shp",
+      "bytes": 10508,
+      "sha256": "5823e6e4f265aaa7243f523733fc6b82357f604634d20e7c0bbab64f3d6b30bf"
+    },
+    {
+      "archivo": "M0758.shx",
+      "bytes": 636,
+      "sha256": "5974e0bc47641b692c641cfd9b6ded143b1f8476858571036b0b624beb5428d3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coronelbogadoa3v.zip!M0758.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3eca7af306",
+    "archivo": "santafe/ipec/2010/coronelbogadoa3v.zip!M0758.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 67,
+    "registros_shx": 67,
+    "shape_type": 5,
+    "bbox": [
+      5443117.0,
+      6313281.5,
+      5444364.0,
+      6315094.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coronelbogadoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b71135095b06c5653a1d57f4017d0d67110c42a4f4835c43171030499f232d7c"
+}

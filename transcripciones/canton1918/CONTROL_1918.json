@@ -1,0 +1,2430 @@
+{
+  "anio": 1918,
+  "paginas": 11,
+  "distritos": 8,
+  "filas": 259,
+  "filas_con_numeros": 239,
+  "celdas": 1325,
+  "numeros": 968,
+  "marcas": {
+    "ilegible": 1,
+    "**": 86,
+    "*": 270
+  },
+  "vacios_sin_marca": 0,
+  "sha256_pdf": "fa7f66de072ce83b5f093549101a941cd492fbf2836a17c2d52c75ee324a01e6",
+  "sha256_transcripcion": "81f07c65ebf974cfce0f8eb5b9a1e1af95d5d27d902135c5f2477ebb585b19a6",
+  "alertas_aritmeticas": [
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Balvanera Norte",
+      "pagina_pdf": 44,
+      "votantes": 4129,
+      "suma_columnas": 5120,
+      "diferencia": 991,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Balvanera Oeste",
+      "pagina_pdf": 44,
+      "votantes": 7497,
+      "suma_columnas": 8772,
+      "diferencia": 1275,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Balvanera Sud",
+      "pagina_pdf": 44,
+      "votantes": 3809,
+      "suma_columnas": 4651,
+      "diferencia": 842,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Belgrano",
+      "pagina_pdf": 44,
+      "votantes": 7191,
+      "suma_columnas": 8578,
+      "diferencia": 1387,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Concepción",
+      "pagina_pdf": 44,
+      "votantes": 7462,
+      "suma_columnas": 8651,
+      "diferencia": 1189,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Flores",
+      "pagina_pdf": 44,
+      "votantes": 7407,
+      "suma_columnas": 8843,
+      "diferencia": 1436,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Las Heras",
+      "pagina_pdf": 44,
+      "votantes": 10490,
+      "suma_columnas": 12168,
+      "diferencia": 1678,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Monserrat",
+      "pagina_pdf": 44,
+      "votantes": 6872,
+      "suma_columnas": 8528,
+      "diferencia": 1656,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Palermo",
+      "pagina_pdf": 44,
+      "votantes": 6539,
+      "suma_columnas": 7345,
+      "diferencia": 806,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Pilar",
+      "pagina_pdf": 44,
+      "votantes": 9526,
+      "suma_columnas": 11794,
+      "diferencia": 2268,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Bernardo",
+      "pagina_pdf": 44,
+      "votantes": 6342,
+      "suma_columnas": 7088,
+      "diferencia": 746,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Carlos Norte",
+      "pagina_pdf": 44,
+      "votantes": 6408,
+      "suma_columnas": 7487,
+      "diferencia": 1079,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Carlos Sud",
+      "pagina_pdf": 44,
+      "votantes": 7438,
+      "suma_columnas": 8576,
+      "diferencia": 1138,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Cristóbal Norte",
+      "pagina_pdf": 44,
+      "votantes": 8079,
+      "suma_columnas": 9525,
+      "diferencia": 1446,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Cristóbal Sud",
+      "pagina_pdf": 44,
+      "votantes": 5926,
+      "suma_columnas": 6443,
+      "diferencia": 517,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Juan Evangelista",
+      "pagina_pdf": 44,
+      "votantes": 9498,
+      "suma_columnas": 10364,
+      "diferencia": 866,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "San Nicolás",
+      "pagina_pdf": 44,
+      "votantes": 6236,
+      "suma_columnas": 8086,
+      "diferencia": 1850,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Santa Lucía",
+      "pagina_pdf": 44,
+      "votantes": 10654,
+      "suma_columnas": 11977,
+      "diferencia": 1323,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Socorro",
+      "pagina_pdf": 44,
+      "votantes": 4762,
+      "suma_columnas": 5890,
+      "diferencia": 1128,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Vélez Sarsfield",
+      "pagina_pdf": 44,
+      "votantes": 7112,
+      "suma_columnas": 7999,
+      "diferencia": 887,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Córdoba",
+      "unidad": "Capital",
+      "pagina_pdf": 50,
+      "votantes": 11451,
+      "suma_columnas": 11457,
+      "diferencia": 6,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Capital",
+      "pagina_pdf": 53,
+      "votantes": 6732,
+      "suma_columnas": 5331,
+      "diferencia": -1401,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Godoy Cruz",
+      "pagina_pdf": 53,
+      "votantes": 1423,
+      "suma_columnas": 1366,
+      "diferencia": -57,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Guaymallén",
+      "pagina_pdf": 53,
+      "votantes": 1751,
+      "suma_columnas": 1665,
+      "diferencia": -86,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Junín",
+      "pagina_pdf": 53,
+      "votantes": 918,
+      "suma_columnas": 931,
+      "diferencia": 13,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Las Heras",
+      "pagina_pdf": 53,
+      "votantes": 1021,
+      "suma_columnas": 988,
+      "diferencia": -33,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Luján",
+      "pagina_pdf": 53,
+      "votantes": 1543,
+      "suma_columnas": 1438,
+      "diferencia": -105,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Maipú",
+      "pagina_pdf": 53,
+      "votantes": 1922,
+      "suma_columnas": 1785,
+      "diferencia": -137,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Rivadavia",
+      "pagina_pdf": 53,
+      "votantes": 1553,
+      "suma_columnas": 1584,
+      "diferencia": 31,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "San Carlos",
+      "pagina_pdf": 53,
+      "votantes": 815,
+      "suma_columnas": 693,
+      "diferencia": -122,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "San Martín",
+      "pagina_pdf": 53,
+      "votantes": 1999,
+      "suma_columnas": 1927,
+      "diferencia": -72,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "San Rafael",
+      "pagina_pdf": 53,
+      "votantes": 1935,
+      "suma_columnas": 1881,
+      "diferencia": -54,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Santa Rosa",
+      "pagina_pdf": 53,
+      "votantes": 447,
+      "suma_columnas": 427,
+      "diferencia": -20,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Tupungato",
+      "pagina_pdf": 53,
+      "votantes": 370,
+      "suma_columnas": 361,
+      "diferencia": -9,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Belgrano",
+      "pagina_pdf": 54,
+      "votantes": 2067,
+      "suma_columnas": 1968,
+      "diferencia": -99,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Caseros",
+      "pagina_pdf": 54,
+      "votantes": 3392,
+      "suma_columnas": 3316,
+      "diferencia": -76,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Castellanos",
+      "pagina_pdf": 54,
+      "votantes": 4361,
+      "suma_columnas": 4229,
+      "diferencia": -132,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Constitución",
+      "pagina_pdf": 54,
+      "votantes": 3229,
+      "suma_columnas": 2836,
+      "diferencia": -393,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Garay",
+      "pagina_pdf": 54,
+      "votantes": 1159,
+      "suma_columnas": 1393,
+      "diferencia": 234,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "General López",
+      "pagina_pdf": 54,
+      "votantes": 5397,
+      "suma_columnas": 5184,
+      "diferencia": -213,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "General Obligado",
+      "pagina_pdf": 54,
+      "votantes": 2395,
+      "suma_columnas": 2390,
+      "diferencia": -5,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Iriondo",
+      "pagina_pdf": 54,
+      "votantes": 3659,
+      "suma_columnas": 3683,
+      "diferencia": 24,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "La Capital",
+      "pagina_pdf": 54,
+      "votantes": 9447,
+      "suma_columnas": 9435,
+      "diferencia": -12,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Las Colonias",
+      "pagina_pdf": 54,
+      "votantes": 5224,
+      "suma_columnas": 4815,
+      "diferencia": -409,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Nueve de Julio",
+      "pagina_pdf": 54,
+      "votantes": 209,
+      "suma_columnas": 260,
+      "diferencia": 51,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Rosario",
+      "pagina_pdf": 54,
+      "votantes": 24172,
+      "suma_columnas": 23147,
+      "diferencia": -1025,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Cristóbal",
+      "pagina_pdf": 54,
+      "votantes": 2087,
+      "suma_columnas": 2097,
+      "diferencia": 10,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Javier",
+      "pagina_pdf": 54,
+      "votantes": 1262,
+      "suma_columnas": 1441,
+      "diferencia": 179,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Jerónimo",
+      "pagina_pdf": 54,
+      "votantes": 3937,
+      "suma_columnas": 3742,
+      "diferencia": -195,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Justo",
+      "pagina_pdf": 54,
+      "votantes": 1474,
+      "suma_columnas": 1510,
+      "diferencia": 36,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_mayor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Lorenzo",
+      "pagina_pdf": 54,
+      "votantes": 3326,
+      "suma_columnas": 3147,
+      "diferencia": -179,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Martín",
+      "pagina_pdf": 54,
+      "votantes": 2733,
+      "suma_columnas": 2650,
+      "diferencia": -83,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Vera",
+      "pagina_pdf": 54,
+      "votantes": 1510,
+      "suma_columnas": 1327,
+      "diferencia": -183,
+      "columnas_sin_cifra": [],
+      "tipo": "suma_menor"
+    }
+  ],
+  "filas_parciales": [
+    {
+      "provincia": "Capital Federal",
+      "unidad": "Vélez Sarsfield",
+      "pagina_pdf": 44,
+      "marcas": {
+        "1": "ilegible"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Adolfo Alsina",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Alberti",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Almirante Brown",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Avellaneda",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Ayacucho",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Azul",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Bahía Blanca",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Balcarce",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Baradero",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Bartolomé Mitre",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Bolívar",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Bragado",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Brandsen",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Campana",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Cañuelas",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Carlos Casares",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Carlos Tejedor",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Carmen de Areco",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Caseros",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Castelli",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Colón",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Coronel Dorrego",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Coronel Pringles",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Coronel Suárez",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Chacabuco",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Chascomús",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Chivilcoy",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Dolores",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Esteban Echeverría",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Exaltación de la Cruz",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Florencio Varela",
+      "pagina_pdf": 45,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Alvarado",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Alvear",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Arenales",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Belgrano",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Guido",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Lamadrid",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Las Heras",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Lavalle",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Madariaga",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Paz",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Pinto",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Pueyrredón",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Rodríguez",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General San Martín",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Sarmiento",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Viamonte",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "General Villegas",
+      "pagina_pdf": 46,
+      "marcas": {
+        "1": "**",
+        "2": "*",
+        "3": "**"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "González Chaves",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*",
+        "4": "**",
+        "5": "**"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Guaminí",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Junín",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "La Plata",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Laprida",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Las Flores",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Lincoln",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Lobería",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Lobos",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Lomas de Zamora",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Luján",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Magdalena",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Maipú",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Marcos Paz",
+      "pagina_pdf": 46,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Mar Chiquita",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Matanza",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Mercedes",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Merlo",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Monte",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Moreno",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Morón",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Navarro",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Necochea",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "9 de Julio",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Olavarría",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Patagones",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Pehuajó",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Pellegrini",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Pergamino",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Pila",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Pilar",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Puán",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Quilmes",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Ramallo",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Rauch",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Rivadavia",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Rojas",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Roque Pérez",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Saavedra",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Saladillo",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Salto",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Andrés de Giles",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Antonio de Areco",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Fernando",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Isidro",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Nicolás",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Pedro",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "San Vicente",
+      "pagina_pdf": 47,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Suipacha",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Tandil",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Tapalqué",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Tigre",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Tordillo",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Tornquist",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Trenque Lauquen",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "25 de Mayo",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Vicente López",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Villarino",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "unidad": "Zárate",
+      "pagina_pdf": 48,
+      "marcas": {
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Ambato",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Ancasti",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Andalgalá",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Belén",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Capayán",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Capital",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "El Alto",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Fray Mamerto Esquiú",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "La Paz",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Paclín",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Pomán",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Santa María",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Santa Rosa",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Tinogasta",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "unidad": "Valle Viejo",
+      "pagina_pdf": 49,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Bella Vista",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Berón de Astrada",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Capital",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Concepción",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Curuzú Cuatiá",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Empedrado",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Esquina",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "General Paz",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Goya",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Itatí",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Ituzaingó",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Lavalle",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Mburucuyá",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Mercedes",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Monte Caseros",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Paso de los Libres",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Saladas",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "San Cosme",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "San Luis del Palmar",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "San Martín",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "San Miguel",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "San Roque",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Santo Tomé",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Corrientes",
+      "unidad": "Sauce",
+      "pagina_pdf": 51,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Colón",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Concepción del Uruguay",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Concordia",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Diamante",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Federación",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Feliciano",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Gualeguay",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Gualeguaychú",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "La Paz",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Nogoyá",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Paraná",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Rosario Tala",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Victoria",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Entre Ríos",
+      "unidad": "Villaguay",
+      "pagina_pdf": 52,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Capital",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Godoy Cruz",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Guaymallén",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Junín",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "La Paz",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Las Heras",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Lavalle",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Luján",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Maipú",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Rivadavia",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "San Carlos",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "San Martín",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "San Rafael",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Santa Rosa",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Tunuyán",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*",
+        "2": "*"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "unidad": "Tupungato",
+      "pagina_pdf": 53,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Belgrano",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Caseros",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Castellanos",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Constitución",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Garay",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "General López",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "General Obligado",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Iriondo",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "La Capital",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Las Colonias",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Nueve de Julio",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Rosario",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Cristóbal",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Javier",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Jerónimo",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Justo",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Lorenzo",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "San Martín",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    },
+    {
+      "provincia": "Santa Fe",
+      "unidad": "Vera",
+      "pagina_pdf": 54,
+      "marcas": {
+        "1": "*"
+      }
+    }
+  ],
+  "sumas_columnas_por_distrito": {
+    "Capital Federal": {
+      "Inscriptos": 186920,
+      "Votantes": 143377,
+      "Unión Cívica Radical": 74180,
+      "Demócrata Progresista": 9030,
+      "Socialista": 49304,
+      "Socialista Argentino": 35371
+    },
+    "Buenos Aires": {
+      "Inscriptos": 330183,
+      "Unión Cívica Radical": 113990,
+      "Socialista": 6627,
+      "Conservador": 68473
+    },
+    "Catamarca": {
+      "Unión Cívica Radical": 9037,
+      "Concentración": 8089
+    },
+    "Córdoba": {
+      "Inscriptos": 152617,
+      "Votantes": 65971,
+      "Radicales Azules": 29721,
+      "Radicales Rojos": 10279,
+      "Demócratas": 25977
+    },
+    "Corrientes": {
+      "Radicales": 13018,
+      "Liberales": 14914,
+      "Autonomista": 8807,
+      "Radical disidente": 6794
+    },
+    "Entre Ríos": {
+      "Unión Cívica Radical": 23450,
+      "Radical Disidente": 4731,
+      "Concentración": 24288
+    },
+    "Mendoza": {
+      "Votantes": 22429,
+      "Unión Cívica Radical": 16657,
+      "Socialista": 1839,
+      "Concentración Mendocina": 4293
+    },
+    "Santa Fe": {
+      "Votantes": 81040,
+      "Unión Cívica Radical": 23477,
+      "Demócrata Progresista": 22765,
+      "Radical disidente": 32328
+    }
+  },
+  "claves_por_pagina": [
+    {
+      "provincia": "Capital Federal",
+      "pagina_pdf": 44,
+      "pagina_impresa": 35,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Demócrata Progresista",
+        "5": "Socialista",
+        "6": "Socialista Argentino"
+      },
+      "marcas_columnas": {},
+      "notas": "",
+      "fuentes_impresas": "Para inscriptos y votantes: La Nación del 4 de mayo de 1918. Para partidos: La Nación, 7, 8, 10, 11, 12, 17, 18, 19 y 20 de abril de 1922. El año 1922 está impreso así, pese al encabezado 1918; no se corrige ni se presupone una errata.",
+      "reserva_cronologica": "La fuente periodística impresa cita un año posterior al encabezado. Transcripción del libro, atribución cronológica pendiente de corroboración primaria; no usar para completar otro año."
+    },
+    {
+      "provincia": "Buenos Aires",
+      "pagina_pdf": 45,
+      "pagina_impresa": 36,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Socialista",
+        "5": "Conservador"
+      },
+      "marcas_columnas": {
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Inscriptos: La Nación, 3 de marzo de 1918; partidos: La Nación, 7 de abril de 1918. Fuente y clave al pie de PDF 48, común a las cuatro páginas de Buenos Aires.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Buenos Aires",
+      "pagina_pdf": 46,
+      "pagina_impresa": 37,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Socialista",
+        "5": "Conservador"
+      },
+      "marcas_columnas": {
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Inscriptos: La Nación, 3 de marzo de 1918; partidos: La Nación, 7 de abril de 1918. Fuente y clave al pie de PDF 48, común a las cuatro páginas de Buenos Aires.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Buenos Aires",
+      "pagina_pdf": 47,
+      "pagina_impresa": 38,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Socialista",
+        "5": "Conservador"
+      },
+      "marcas_columnas": {
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Inscriptos: La Nación, 3 de marzo de 1918; partidos: La Nación, 7 de abril de 1918. Fuente y clave al pie de PDF 48, común a las cuatro páginas de Buenos Aires.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Buenos Aires",
+      "pagina_pdf": 48,
+      "pagina_impresa": 39,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Socialista",
+        "5": "Conservador"
+      },
+      "marcas_columnas": {
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Inscriptos: La Nación, 3 de marzo de 1918; partidos: La Nación, 7 de abril de 1918. Fuente y clave al pie de PDF 48, común a las cuatro páginas de Buenos Aires.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Catamarca",
+      "pagina_pdf": 49,
+      "pagina_impresa": 40,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Concentración"
+      },
+      "marcas_columnas": {
+        "1": "*",
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Partidos: La Prensa, 6 de marzo de 1918.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Córdoba",
+      "pagina_pdf": 50,
+      "pagina_impresa": 41,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Radicales Azules",
+        "4": "Radicales Rojos",
+        "5": "Demócratas"
+      },
+      "marcas_columnas": {},
+      "notas": "",
+      "fuentes_impresas": "Todos los datos: Anuario Estadístico, Provincia de Córdoba, año 1923. Es el año de la publicación citada, no una reasignación del año electoral.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Corrientes",
+      "pagina_pdf": 51,
+      "pagina_impresa": 42,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Radicales",
+        "4": "Liberales",
+        "5": "Autonomista",
+        "6": "Radical disidente"
+      },
+      "marcas_columnas": {
+        "1": "*",
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Partidos: La Nación, 10 de marzo de 1918.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Entre Ríos",
+      "pagina_pdf": 52,
+      "pagina_impresa": 43,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Radical Disidente",
+        "5": "Concentración"
+      },
+      "marcas_columnas": {
+        "1": "*",
+        "2": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Partidos: La Prensa, 6 y 10 de marzo de 1918.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Mendoza",
+      "pagina_pdf": 53,
+      "pagina_impresa": 44,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Socialista",
+        "5": "Concentración Mendocina"
+      },
+      "marcas_columnas": {
+        "1": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Votantes: La Nación, 9, 10, 12 y 13 de marzo de 1918; partidos: esos periódicos más La Nación del 4 de abril de 1918.",
+      "reserva_cronologica": ""
+    },
+    {
+      "provincia": "Santa Fe",
+      "pagina_pdf": 54,
+      "pagina_impresa": 45,
+      "columnas": {
+        "1": "Inscriptos",
+        "2": "Votantes",
+        "3": "Unión Cívica Radical",
+        "4": "Demócrata Progresista",
+        "5": "Radical disidente"
+      },
+      "marcas_columnas": {
+        "1": "*"
+      },
+      "notas": "",
+      "fuentes_impresas": "Votantes: La Nación, 8 y 4 de abril de 1918; partidos: La Nación, 8 de abril de 1922. La fecha 1922 está impresa así, pese al encabezado 1918; pendiente de cotejo primario.",
+      "reserva_cronologica": "La fuente periodística impresa cita un año posterior al encabezado. Transcripción del libro, atribución cronológica pendiente de corroboración primaria; no usar para completar otro año."
+    }
+  ],
+  "advertencia": "Suma menor que votantes puede reflejar categorías omitidas; las marcas no equivalen a cero. No se corrigen discrepancias ni se infieren fuerzas por residuo."
+}

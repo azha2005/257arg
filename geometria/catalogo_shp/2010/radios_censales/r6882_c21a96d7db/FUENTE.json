@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6882_c21a96d7db",
+  "shp": "r6882.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6882.shx",
+      "bytes": 108,
+      "sha256": "34ffa1c4be39e99c5233887b3b864ad50fa62434ea1340046930eb9a962376cc"
+    },
+    {
+      "archivo": "r6882.shp",
+      "bytes": 492,
+      "sha256": "cf86f53eb6c1d542f47f26a95710bb8f425c8612830de77fd09714365926979a"
+    },
+    {
+      "archivo": "r6882.sbx",
+      "bytes": 116,
+      "sha256": "f5e46a1761f4e312974d0f845077d00ad14b5c7777808be5611b03a93f051a61"
+    },
+    {
+      "archivo": "r6882.sbn",
+      "bytes": 132,
+      "sha256": "a0e4a4ba0db8a79af387d62d2b6b05d043f6a85b5dc89bcfcdf3e55f56d07b0d"
+    },
+    {
+      "archivo": "r6882.dbf",
+      "bytes": 685,
+      "sha256": "99c98d07acfc4895938056a6da2bc36c742fa9bb4b5207a906646434996df0a0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/MOUSSY.zip!r6882.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d8821e141c",
+    "archivo": "santafe/ipec/2010/MOUSSY.zip!r6882.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5529746.0,
+      6790488.0,
+      5530715.5,
+      6791446.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/MOUSSY.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c9f4d802186a6eeafab0f9d3d9488e9584d6131204b2722d29dcb63ae0b3566d"
+}

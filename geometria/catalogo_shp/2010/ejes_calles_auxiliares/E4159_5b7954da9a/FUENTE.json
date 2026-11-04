@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4159_5b7954da9a",
+  "shp": "E4159.shp",
+  "entidades": 105,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4159.dbf",
+      "bytes": 37150,
+      "sha256": "6f31643a1938745225f08956b5316a2b17b382f226d5dca2ec00f90b1683e643"
+    },
+    {
+      "archivo": "E4159.shp",
+      "bytes": 9340,
+      "sha256": "557ae88abf8651da510c7651a64809fd91be3ef2497108e60f93dca8059479be"
+    },
+    {
+      "archivo": "E4159.shx",
+      "bytes": 940,
+      "sha256": "2ddd8beb73791b329dd6adfcc507c34a002291ae6e831b77f24a5b38cb57a551"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniamargaritaa3h.zip!E4159.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7a29c66f3f",
+    "archivo": "santafe/ipec/2010/coloniamargaritaa3h.zip!E4159.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 105,
+    "registros_shx": 105,
+    "shape_type": 3,
+    "bbox": [
+      5343417.0,
+      6493265.0,
+      5344388.5,
+      6494325.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniamargaritaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4de96c624b1b27be66a0f7445f4f4483cdbefc3a42002a69c57577610aee91ea"
+}

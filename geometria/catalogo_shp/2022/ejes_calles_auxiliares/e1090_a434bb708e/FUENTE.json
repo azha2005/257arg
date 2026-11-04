@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1090_a434bb708e",
+  "shp": "e1090.shp",
+  "entidades": 158,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1090.dbf",
+      "bytes": 47694,
+      "sha256": "fb706c6806c6d37431ad2582f1ad59d835a5a1bf1b9beff2e75517038c19d081"
+    },
+    {
+      "archivo": "e1090.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1090.shp",
+      "bytes": 14004,
+      "sha256": "0acfb0dd51f36cccda1beeaeeb97e77ac51f13d49b62cb60d60de410503f2b3e"
+    },
+    {
+      "archivo": "e1090.shx",
+      "bytes": 1364,
+      "sha256": "9213dc221160a2e397ff0b96c47db283bf3203f7df606736c09d0f00b412f051"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ANGELICA.zip!e1090.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e655abce73",
+    "archivo": "santafe/ipec/2022/ANGELICA.zip!e1090.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 158,
+    "registros_shx": 158,
+    "shape_type": 3,
+    "bbox": [
+      5352550.0,
+      6508523.5,
+      5353968.0,
+      6509370.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ANGELICA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7501a28850d94d206411f9132bff08826e8ec9437b28df8c2c73bb9167dc4b12"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6807_a9051e962e",
+  "shp": "e6807.shp",
+  "entidades": 152,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6807.dbf",
+      "bytes": 45906,
+      "sha256": "bd3ba2370d979719d14b73b260c5bbaa1c5cb7104ea064c8b19d225b2e3284d0"
+    },
+    {
+      "archivo": "e6807.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6807.shp",
+      "bytes": 13892,
+      "sha256": "5528c44a102bef4c1148b785fb076e4af18ba2a7269a547b6d3eda176b76de9f"
+    },
+    {
+      "archivo": "e6807.shx",
+      "bytes": 1316,
+      "sha256": "0bf9eefe2383b10a70ae8732d32df844d2db5269d07095915f610c29f216208a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GUADALUPENORTE.zip!e6807.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_63e7636d68",
+    "archivo": "santafe/ipec/2022/GUADALUPENORTE.zip!e6807.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 152,
+    "registros_shx": 152,
+    "shape_type": 3,
+    "bbox": [
+      5542099.0,
+      6798237.5,
+      5543139.0,
+      6799814.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GUADALUPENORTE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c93b4d280a844c8da608346c3481b919aec20195333bd07bc57878af113bfbbd"
+}

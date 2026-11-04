@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1128_aa91bdcef1",
+  "shp": "M1128.shp",
+  "entidades": 61,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1128.dbf",
+      "bytes": 12403,
+      "sha256": "f8752a9b2ae9414417353c8b6041f0e6305c7d7f4f45930cdc5c549ef3728f21"
+    },
+    {
+      "archivo": "M1128.shp",
+      "bytes": 9100,
+      "sha256": "0affe999e8138de19576cfdb965b9449f2d889725adc6a56f9ed451914318a2f"
+    },
+    {
+      "archivo": "M1128.shx",
+      "bytes": 588,
+      "sha256": "5e49e1fd91e23208fbbbcc2d9e40d4512d7f288a469cc24d390d3894d5a370d4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bustinzaa3v.zip!M1128.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e3f8a34102",
+    "archivo": "santafe/ipec/2010/bustinzaa3v.zip!M1128.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 61,
+    "registros_shx": 61,
+    "shape_type": 5,
+    "bbox": [
+      5378372.0,
+      6376571.5,
+      5379314.0,
+      6377953.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bustinzaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "efdd5787a19f39582a094a4ed4734d7e44c8593453e7275736b1b134af21a9d1"
+}

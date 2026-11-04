@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4180_89dda82cc6",
+  "shp": "e4180.shp",
+  "entidades": 44,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4180.dbf",
+      "bytes": 13722,
+      "sha256": "da140a13404f5746e06f915c08f6e6bf2d639a0e2ced949d9f9e0f286c9d5c65"
+    },
+    {
+      "archivo": "e4180.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4180.shp",
+      "bytes": 4564,
+      "sha256": "b6e54e64eb2b08ecfa4d952318410bc997f25e7e92d6cce2bac202c18c2d5746"
+    },
+    {
+      "archivo": "e4180.shx",
+      "bytes": 452,
+      "sha256": "94f72900a45e75b8675c7b68ea27315c1cc639492601eadecbe5ecdea0a0dd01"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PUEBLOSANTALUCIA.zip!e4180.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_5c6006d967",
+    "archivo": "santafe/ipec/2022/PUEBLOSANTALUCIA.zip!e4180.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 44,
+    "registros_shx": 44,
+    "shape_type": 3,
+    "bbox": [
+      5460779.0,
+      6760293.5,
+      5461592.0,
+      6761782.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PUEBLOSANTALUCIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "07c8d4d5582e1a8cfaa7a4be7248c18415f6bc7683be57f37c8758a2ad5c8e67"
+}

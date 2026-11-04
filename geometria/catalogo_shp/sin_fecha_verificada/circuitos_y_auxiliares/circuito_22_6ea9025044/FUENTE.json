@@ -1,0 +1,62 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "sin fecha de vigencia comprobada",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/circuito_22_6ea9025044",
+  "shp": "circuito_22.shp",
+  "entidades": 269,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "circuito_22.dbf",
+      "bytes": 481261,
+      "sha256": "ac4f55086f8a59975cce42254d26780d5d24a30cbc10f116e14b7c51555947fc"
+    },
+    {
+      "archivo": "circuito_22.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "circuito_22.shp",
+      "bytes": 283352,
+      "sha256": "0f7e10a9bac04aa40a25e7c07fcb109e7948e9f8d51149852ee4d3ef838e2800"
+    },
+    {
+      "archivo": "circuito_22.shx",
+      "bytes": 2252,
+      "sha256": "b6f4ebed8d7c1e994dc3aac02b6c72114d7ec449d37813256f96e8af40c47b2f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/cne_sin_fecha/circuito_22.zip!circuito_22.shp",
+  "metadata_original": {
+    "archivo": "cne_sin_fecha/circuito_22.zip!circuito_22.shp",
+    "formato": "SHP",
+    "features": 269,
+    "shapes": 269,
+    "bbox": [
+      -65.17646753017107,
+      -30.469632163474678,
+      -61.7105420207605,
+      -25.651286231352678
+    ],
+    "campos": [
+      "gid",
+      "distrito",
+      "provincia",
+      "departamen",
+      "cabecera",
+      "circuito",
+      "indec_p",
+      "indec_d"
+    ],
+    "sha256": "0f7e10a9bac04aa40a25e7c07fcb109e7948e9f8d51149852ee4d3ef838e2800",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "url": "https://mapa2.electoral.gov.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&authkey=db603f7c007c36c3af8d319c22c875a1&typeName=descargas:circuito_22&maxFeatures=2000&outputFormat=SHAPE-ZIP",
+    "fuente": "https://mapa2.electoral.gov.ar/descargas/",
+    "corte_declarado": "sin fecha de vigencia comprobada",
+    "nota": "Enlace público del portal CNE; maxFeatures debe contrastarse con conteo WFS"
+  },
+  "firma_componentes": "f97d1166d2e714a3b7298d9744973076bd174900eeca98addb7a165cf4510c20"
+}

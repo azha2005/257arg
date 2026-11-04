@@ -1,0 +1,98 @@
+{
+  "nombre": "Misiones",
+  "distrito": "14",
+  "serie": "2023",
+  "fecha": "07/05/2023",
+  "origen": "Gobernador 07/05/2023 (municipios empalmados)",
+  "destino": "Balotaje 19/11/2023",
+  "nivel": "municipios y departamentos empalmados",
+  "base": "votos emitidos",
+  "fuente": "https://www.electoralmisiones.gov.ar/wp-content/uploads/2023/05/Acta-Acuerdo-N%C2%B01166-Anexo-I.pdf",
+  "foco": [
+    "Frente Renovador de la Concordia"
+  ],
+  "nota": "Resultado provincial observado por municipio; se agregan circuitos nacionales con la correspondencia explícita del mapa oficial de abril 2023. No son resultados observados por circuito provincial. Donde hay códigos nuevos o municipios sin equivalente previo, se agrega todo el departamento en ambos lados. Departamentos agregados: IGUAZU. Fracrán tiene reserva de límites en el propio mapa. Se conservan las diferencias internas de publicación ya documentadas.",
+  "id": "misiones_gob2023_2023b_municipios",
+  "cobertura_provincial": 0.9917511157633201,
+  "cobertura_origen": 0.9917511157633201,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "25DEMAYO:COLONIAAURORA"
+  ],
+  "foco_lado": "origen",
+  "unidades": 74,
+  "categorias_origen": 5,
+  "rango": 5,
+  "condicion": 52.490192451829095,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.025652267956576574,
+    "0.0001": 0.008444048444983714,
+    "1e-05": 0.00599896131191889,
+    "1e-06": 0.005877203121707368,
+    "1e-07": 0.005887790991081239
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 3.3628138744535683,
+  "desviacion_max_margen_destino_pp": 0.10613976880498657,
+  "electores_o_votos_origen": 689751.0,
+  "electores_o_votos_destino": 725063.0,
+  "filas": [
+    {
+      "origen": "Frente Renovador de la Concordia",
+      "peso": 60.78,
+      "dif_variante_pp": 5.05,
+      "sensibilidad_pp": 16.03,
+      "ancho_intervalo_pp": 6.94,
+      "separacion_pp": 23.06,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 25.74,
+      "dif_variante_pp": 8.51,
+      "sensibilidad_pp": 20.47,
+      "ancho_intervalo_pp": 13.28,
+      "separacion_pp": 43.1,
+      "no_identificada": false
+    },
+    {
+      "origen": "La Fuerza de Todos",
+      "peso": 4.21,
+      "dif_variante_pp": 29.81,
+      "sensibilidad_pp": 36.26,
+      "ancho_intervalo_pp": 82.35,
+      "separacion_pp": 7.39,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 4.28,
+      "dif_variante_pp": 58.16,
+      "sensibilidad_pp": 79.08,
+      "ancho_intervalo_pp": 73.28,
+      "separacion_pp": 24.38,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 5.0,
+      "dif_variante_pp": 31.82,
+      "sensibilidad_pp": 57.64,
+      "ancho_intervalo_pp": 8.49,
+      "separacion_pp": 41.6,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

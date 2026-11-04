@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0801_5c0f95a125",
+  "shp": "M0801.shp",
+  "entidades": 160,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0801.dbf",
+      "bytes": 31906,
+      "sha256": "9e87803e816e5b6df7831ddc5ed99f7f551e08b6da82bae73d6ca0ef31f7a5d6"
+    },
+    {
+      "archivo": "M0801.shp",
+      "bytes": 29284,
+      "sha256": "baf930dece264bccaea10a02ca668522cccf50e9d45f6a96dd2795d88b1a0bca"
+    },
+    {
+      "archivo": "M0801.shx",
+      "bytes": 1380,
+      "sha256": "cdc4315b3be7be5eb445e91c1aa6087add0406940b53a5ff051fc6a83f62c527"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santarosadecalchinesa2h.zip!M0801.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_52c5bd61c9",
+    "archivo": "santafe/ipec/2010/santarosadecalchinesa2h.zip!M0801.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 160,
+    "registros_shx": 160,
+    "shape_type": 5,
+    "bbox": [
+      5465552.0,
+      6521883.0,
+      5470128.0,
+      6526787.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santarosadecalchinesa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ad37d5926238e1cd43695ba4dc0feee05389e4330e51231554f5917c5d391c74"
+}

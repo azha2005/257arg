@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1517_4e903010d2",
+  "shp": "R1517.shp",
+  "entidades": 3,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1517.dbf",
+      "bytes": 1094,
+      "sha256": "0dc5c8706d45dd9dd5222c16c5dd679e3ee22ede529e293e7eecc3a1d9886417"
+    },
+    {
+      "archivo": "R1517.shp",
+      "bytes": 3692,
+      "sha256": "3f13346c62a7a514b5248b2517d534d72575bdc758950b197a719f1aa78b74b0"
+    },
+    {
+      "archivo": "R1517.shx",
+      "bytes": 124,
+      "sha256": "a3c1c04b2eef2d47d34871a538f3ba53bb193e245f77e2400f92a3fd6d137145"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Ibarluceaa1h.zip!R1517.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4332718a92",
+    "archivo": "santafe/ipec/2010/Ibarluceaa1h.zip!R1517.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 5,
+    "bbox": [
+      5425215.5,
+      6362979.0,
+      5432141.5,
+      6365993.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Ibarluceaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "25a121acb15a891111adfb45d4c700039f873f6e83f4c29d378bb86bd34dee6f"
+}

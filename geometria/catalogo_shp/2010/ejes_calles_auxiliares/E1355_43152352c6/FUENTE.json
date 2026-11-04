@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1355_43152352c6",
+  "shp": "E1355.shp",
+  "entidades": 116,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1355.dbf",
+      "bytes": 40978,
+      "sha256": "4ff8aadbe4c14ae6afefda57de76500fe9bd1a50f00dda3f00f01f2b541c40e4"
+    },
+    {
+      "archivo": "E1355.shp",
+      "bytes": 10372,
+      "sha256": "47c509d247152980372dcfb1b54ba64e6081a75596e47ef3b34705a3a5a65e7a"
+    },
+    {
+      "archivo": "E1355.shx",
+      "bytes": 1028,
+      "sha256": "dc9990390b8d8d6cec9c9a061a5bbce8420d89e161249b012e1ea87eb7d384d4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaameliaa3h.zip!E1355.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_77750173ea",
+    "archivo": "santafe/ipec/2010/villaameliaa3h.zip!E1355.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 116,
+    "registros_shx": 116,
+    "shape_type": 3,
+    "bbox": [
+      5437257.0,
+      6328824.5,
+      5438412.5,
+      6330052.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaameliaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b7153889f73c0acce7c28f8b10775fae4fcb4ebbe9ae1c988e25250ac559bba0"
+}

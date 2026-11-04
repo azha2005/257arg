@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0558_e05e4d39b8",
+  "shp": "R0558.shp",
+  "entidades": 7,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0558.dbf",
+      "bytes": 1910,
+      "sha256": "f14de8f217792c08d360e12687d9c45c51e4a159c7775c64af7cc110142710f3"
+    },
+    {
+      "archivo": "R0558.shp",
+      "bytes": 4284,
+      "sha256": "a26ec19e3c8dd46bcd72b42a13698711d4e269802de011564aa99efaeaa74b42"
+    },
+    {
+      "archivo": "R0558.shx",
+      "bytes": 156,
+      "sha256": "0137c066436dfe30a7c6d0db9b922ef8d49875fb2112bc59e55223afa7984652"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanctispiritua2h.zip!R0558.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_de9e4b0922",
+    "archivo": "santafe/ipec/2010/sanctispiritua2h.zip!R0558.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 7,
+    "registros_shx": 7,
+    "shape_type": 5,
+    "bbox": [
+      5291933.0,
+      6233718.0,
+      5294014.5,
+      6235923.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanctispiritua2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "45c13821e70c3df6df096b88e4270e751bd3b6c1135fc87f248b2f6cb412b85d"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1085_16ba1087bb",
+  "shp": "M1085.shp",
+  "entidades": 57,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1085.dbf",
+      "bytes": 11615,
+      "sha256": "d8a56cce7f09216201a2d3e4b4188e7c5256dffb82ad51656cc8a475f5ca6357"
+    },
+    {
+      "archivo": "M1085.shp",
+      "bytes": 11180,
+      "sha256": "eac6b74949c3a2f9e80210f8aab79cf17395b1b813ccd26eb9f59d6a09adfb7b"
+    },
+    {
+      "archivo": "M1085.shx",
+      "bytes": 556,
+      "sha256": "bdfe70b785fb5dbb5865596fc9f83796bf51f0f17a73fa0cdaa34c8f4333a581"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tacuarendia2h.zip!M1085.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_16668cd621",
+    "archivo": "santafe/ipec/2010/tacuarendia2h.zip!M1085.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 57,
+    "registros_shx": 57,
+    "shape_type": 5,
+    "bbox": [
+      5572075.0,
+      6856547.5,
+      5573225.0,
+      6857947.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tacuarendia2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f13084175f875e6978675b5a62fd1d3ac7c1484cd763f4316ad4f982370e8cd7"
+}

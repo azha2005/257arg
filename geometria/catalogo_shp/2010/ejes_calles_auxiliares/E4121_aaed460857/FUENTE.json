@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4121_aaed460857",
+  "shp": "E4121.shp",
+  "entidades": 96,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4121.dbf",
+      "bytes": 34018,
+      "sha256": "53928fbb36bf784807247775003bd4dde56543087d8531e7b3db1156ef8f6aaf"
+    },
+    {
+      "archivo": "E4121.shp",
+      "bytes": 9044,
+      "sha256": "5a901f4be367bbc718e61c659fbb427dcbaea7db34a343aef47127ad81b6abc2"
+    },
+    {
+      "archivo": "E4121.shx",
+      "bytes": 868,
+      "sha256": "40cc5968ce95b321c69baf698547d6cdb21079b8bc665f462ae5ace592a3409c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nuevotorinoa3h.zip!E4121.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b49c1bcd7e",
+    "archivo": "santafe/ipec/2010/nuevotorinoa3h.zip!E4121.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 96,
+    "registros_shx": 96,
+    "shape_type": 3,
+    "bbox": [
+      5381746.5,
+      6531509.5,
+      5382847.0,
+      6532578.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nuevotorinoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7f4a1a6e8e4a75750286b276e8e89ad1b704310e9943845f1c438fa483866b97"
+}

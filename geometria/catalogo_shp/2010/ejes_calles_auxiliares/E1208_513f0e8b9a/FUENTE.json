@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1208_513f0e8b9a",
+  "shp": "E1208.shp",
+  "entidades": 58,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1208.dbf",
+      "bytes": 20794,
+      "sha256": "b58d0e709aa2b4da07e688e383d18177e111c4f1b17862c17ed98180711476e9"
+    },
+    {
+      "archivo": "E1208.shp",
+      "bytes": 5236,
+      "sha256": "f6b44948b36b4ab8c1d80c9e983b471692513ae16ae79b92521fcab90baa45a6"
+    },
+    {
+      "archivo": "E1208.shx",
+      "bytes": 564,
+      "sha256": "c8d46c98ccac45ac75e3c9618142fa5784c0364d8bb1c2eead091ed3ce0c9a3e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pavona3h.zip!E1208.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_938d81e0c1",
+    "archivo": "santafe/ipec/2010/pavona3h.zip!E1208.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 58,
+    "registros_shx": 58,
+    "shape_type": 3,
+    "bbox": [
+      5461757.5,
+      6321803.5,
+      5462565.5,
+      6322668.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pavona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "dcb9c6c5f66623371e02325723388e59db13ec5d8949909ce36cbbfd9ef709e6"
+}

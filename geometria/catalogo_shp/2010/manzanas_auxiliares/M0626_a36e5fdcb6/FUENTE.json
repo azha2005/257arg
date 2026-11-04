@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0626_a36e5fdcb6",
+  "shp": "M0626.shp",
+  "entidades": 136,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0626.dbf",
+      "bytes": 27178,
+      "sha256": "a43822a17c00451f8d581e2d4ab0292dc7fdebd426ce18e8e0829ca993cf6764"
+    },
+    {
+      "archivo": "M0626.shp",
+      "bytes": 22324,
+      "sha256": "4c0ee1be6001dc275d362a430fbfaa783d4c4958db5c1f700880a930af84a1fa"
+    },
+    {
+      "archivo": "M0626.shx",
+      "bytes": 1188,
+      "sha256": "173a9ab31a2a9a089f3a999b56da85c545d6723d8c439d9ce795e3e23a67e9f8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/mariasusanaa2v.zip!M0626.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ed8410f1f4",
+    "archivo": "santafe/ipec/2010/mariasusanaa2v.zip!M0626.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 136,
+    "registros_shx": 136,
+    "shape_type": 5,
+    "bbox": [
+      5319823.5,
+      6427836.5,
+      5321650.0,
+      6429909.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/mariasusanaa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4972b55dd5a607f3ad5669b017f10abd1f824512f173736ce51116340cd5f67a"
+}

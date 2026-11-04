@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0582_f729587fbd",
+  "shp": "E0582.shp",
+  "entidades": 409,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0582.dbf",
+      "bytes": 142942,
+      "sha256": "7bdb45dcc9c6532154bf71b79a19c95b13386370efebb952a6f12aad441fd9ba"
+    },
+    {
+      "archivo": "E0582.shp",
+      "bytes": 36316,
+      "sha256": "8305044ba0ab2a18feef6ef6e49188e07ed2987697dd737b98cf5a2766cf8b00"
+    },
+    {
+      "archivo": "E0582.shx",
+      "bytes": 3372,
+      "sha256": "7ca03739e3dc66acd3998891dd441cd463f5168dfe29517f8528d84db70961a4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/piamontea2h.zip!E0582.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_05d1e4db2a",
+    "archivo": "santafe/ipec/2010/piamontea2h.zip!E0582.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 409,
+    "registros_shx": 409,
+    "shape_type": 3,
+    "bbox": [
+      5311836.0,
+      6441631.5,
+      5314101.0,
+      6443833.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/piamontea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "46cffdbe32825e4cee640b483baa40eb5df7ebe6de32bd1c9467afaadef10e68"
+}

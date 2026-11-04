@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4178_7661fb83aa",
+  "shp": "E4178.shp",
+  "entidades": 41,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4178.dbf",
+      "bytes": 14878,
+      "sha256": "dd7e65556dae1d19c7280c96ecef35d8d291f8492528f7807ae6eb301cec2d0e"
+    },
+    {
+      "archivo": "E4178.shp",
+      "bytes": 4492,
+      "sha256": "6631dcad54c87abd6bd1f46848ed4091825a9b91724d6c68e7f385ada46f42e2"
+    },
+    {
+      "archivo": "E4178.shx",
+      "bytes": 428,
+      "sha256": "ebe592b25a5177d95aa21336c1ff1c9c061328eb3b4ae1890405ef0a2de125da"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puertoaragona3h.zip!E4178.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e24743fd48",
+    "archivo": "santafe/ipec/2010/puertoaragona3h.zip!E4178.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 41,
+    "registros_shx": 41,
+    "shape_type": 3,
+    "bbox": [
+      5412504.0,
+      6431982.0,
+      5414194.5,
+      6433773.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puertoaragona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "904db2d4b01948ac8cf025184194481c790b472da669583c13479a4aa454784c"
+}

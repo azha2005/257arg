@@ -1,0 +1,122 @@
+{
+  "nombre": "Misiones",
+  "distrito": "14",
+  "fecha": "07/05/2023",
+  "foco": [
+    "Frente Renovador de la Concordia"
+  ],
+  "nota": "Definitivo municipal (78 municipios). Se excluyen 495 votos del personal asignado a centros que el Tribunal sólo publica en el total provincial. Sin abstención: los electores municipales incluyen extranjeros.",
+  "id": "misiones_gob2023_2023b",
+  "nivel": "departamentos",
+  "unidades": 17,
+  "base": "votos emitidos",
+  "origen": "Gobernador 07/05/2023",
+  "destino": "Balotaje 19/11/2023",
+  "foco_lado": "origen",
+  "pendientes": [],
+  "cobertura_provincial": 0.9992887757315911,
+  "cobertura_origen": 1.0,
+  "categorias_origen": 8,
+  "rango": 8,
+  "condicion": 756.9795162906377,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.025968421321102424,
+    "0.0001": 0.008044700236495053,
+    "1e-05": 0.005309065089606667,
+    "1e-06": 0.00525100309705709,
+    "1e-07": 0.005412931277465067
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 2.3573706872822067,
+  "desviacion_max_margen_destino_pp": 0.13915715099589893,
+  "electores_o_votos_origen": 695488.0,
+  "electores_o_votos_destino": 725063.0,
+  "filas": [
+    {
+      "origen": "Partido del Obrero",
+      "peso": 1.16,
+      "dif_variante_pp": 54.5,
+      "sensibilidad_pp": 64.62,
+      "ancho_intervalo_pp": 96.0,
+      "separacion_pp": 41.45,
+      "no_identificada": true
+    },
+    {
+      "origen": "Integración y Militancia",
+      "peso": 0.52,
+      "dif_variante_pp": 50.99,
+      "sensibilidad_pp": 64.26,
+      "ancho_intervalo_pp": 83.82,
+      "separacion_pp": 41.45,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 0.9,
+      "dif_variante_pp": 47.26,
+      "sensibilidad_pp": 63.87,
+      "ancho_intervalo_pp": 28.03,
+      "separacion_pp": 41.14,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Renovador de la Concordia",
+      "peso": 60.74,
+      "dif_variante_pp": 8.63,
+      "sensibilidad_pp": 14.26,
+      "ancho_intervalo_pp": 16.32,
+      "separacion_pp": 16.92,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 25.58,
+      "dif_variante_pp": 26.81,
+      "sensibilidad_pp": 31.73,
+      "ancho_intervalo_pp": 35.4,
+      "separacion_pp": 38.8,
+      "no_identificada": false
+    },
+    {
+      "origen": "La Fuerza de Todos",
+      "peso": 4.43,
+      "dif_variante_pp": 3.31,
+      "sensibilidad_pp": 52.99,
+      "ancho_intervalo_pp": 82.93,
+      "separacion_pp": 48.14,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Amplio",
+      "peso": 1.69,
+      "dif_variante_pp": 26.49,
+      "sensibilidad_pp": 63.07,
+      "ancho_intervalo_pp": 94.63,
+      "separacion_pp": 52.65,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 4.98,
+      "dif_variante_pp": 19.53,
+      "sensibilidad_pp": 60.27,
+      "ancho_intervalo_pp": 92.45,
+      "separacion_pp": 41.4,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "serie": "2023",
+  "fuente": "https://www.electoralmisiones.gov.ar/wp-content/uploads/2023/05/Acta-Acuerdo-N%C2%B01166-Anexo-I.pdf"
+}

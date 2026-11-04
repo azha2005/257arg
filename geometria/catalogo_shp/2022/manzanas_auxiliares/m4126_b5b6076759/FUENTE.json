@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4126_b5b6076759",
+  "shp": "m4126.shp",
+  "entidades": 21,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4126.dbf",
+      "bytes": 4523,
+      "sha256": "101bacc8d2470861ab44258e2aaecaf442b211fe0168e5df968309e86cdf3a0c"
+    },
+    {
+      "archivo": "m4126.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4126.shp",
+      "bytes": 3212,
+      "sha256": "9e283d919d81779ba814333b12e99aa31229ed49fed88d12c66a6ea2605c3916"
+    },
+    {
+      "archivo": "m4126.shx",
+      "bytes": 268,
+      "sha256": "410656d3a27d0f094b4837c5eb0bb45e4061f60b295a8557132ebe5da57762b1"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PALACIOS.zip!m4126.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_7f6c0d6edd",
+    "archivo": "santafe/ipec/2022/PALACIOS.zip!m4126.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 21,
+    "registros_shx": 21,
+    "shape_type": 5,
+    "bbox": [
+      5344253.0,
+      6601668.0,
+      5344846.5,
+      6602463.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PALACIOS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "782f2f5285f00801f19e71398f32e591ade395475e2c1157356d819f0198ed42"
+}

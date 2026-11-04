@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6860_15820418e7",
+  "shp": "R6860.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6860.dbf",
+      "bytes": 686,
+      "sha256": "4bf0ec194d1e0cccce43cbf0e791dd09225c7e9dc37645d0f4180b4354af4199"
+    },
+    {
+      "archivo": "R6860.shp",
+      "bytes": 396,
+      "sha256": "6aef2dcc3aa68800bd00941402455cb2a45862009e37cc8cb768946fdc47893d"
+    },
+    {
+      "archivo": "R6860.shx",
+      "bytes": 108,
+      "sha256": "4242029262fc8ae319cd04f764f6b6172a64a7e8e477a592b1520ed5a6b95894"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasavispasa3v.zip!R6860.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_036309024f",
+    "archivo": "santafe/ipec/2010/lasavispasa3v.zip!R6860.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5375047.0,
+      6692450.0,
+      5375828.5,
+      6693565.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasavispasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4f54ee11b869763048207e29795818add0e4b42c62b21840f5a2182474ad8790"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6804_041e678861",
+  "shp": "E6804.shp",
+  "entidades": 24,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6804.dbf",
+      "bytes": 8962,
+      "sha256": "3fdf71330d0838de5059ec10f35499dc9c7e5fe88d8fcdf4f203f7d5e0fab03e"
+    },
+    {
+      "archivo": "E6804.shp",
+      "bytes": 2212,
+      "sha256": "49040ca94a19183b1ad163216a5a0c1dd112e16467265a966f3748cc90c08798"
+    },
+    {
+      "archivo": "E6804.shx",
+      "bytes": 292,
+      "sha256": "e6d596114b4099ebd9e09f5e6636581cf09a9e228d8fc6fa1fdd91882e93547a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Cululua3h.zip!E6804.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a49d8526b",
+    "archivo": "santafe/ipec/2010/Cululua3h.zip!E6804.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 24,
+    "registros_shx": 24,
+    "shape_type": 3,
+    "bbox": [
+      5411143.5,
+      6547565.0,
+      5411551.0,
+      6547909.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Cululua3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d96a9d7a27f45452857afbe5b486b051ed007dd522c38f0d89d68f0a2c25c5fb"
+}

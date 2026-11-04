@@ -1,0 +1,36 @@
+{
+  "id": "menem",
+  "title": "Menem–Kirchner",
+  "html": "atlas_2003alt_menem.html",
+  "readable": 510,
+  "modeled": 539,
+  "matched": 510,
+  "winners": {
+    "M": 329,
+    "K": 210
+  },
+  "national_target": {
+    "M": 9990110,
+    "K": 9644541
+  },
+  "denominator_estimated_from_turnout": 19634653,
+  "national_residual_not_geographically_allocated": 2,
+  "national_percent_discrepancies": [],
+  "percent_sum": 100.0,
+  "max_national_error": 0,
+  "max_row_error": 1.1641532182693481e-10,
+  "optimizer": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "iterations": 4,
+  "winner_ratio": 1.02,
+  "provincial_winners_matched": true,
+  "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+  "rounding": {
+    "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+    "max_cell_change": 0.736969584385406,
+    "max_local_total_change": 0.5313898286212861,
+    "national_error": 0,
+    "local_total_error": 0,
+    "local_winners_changed": 0,
+    "provincial_winners_changed": 0
+  }
+}

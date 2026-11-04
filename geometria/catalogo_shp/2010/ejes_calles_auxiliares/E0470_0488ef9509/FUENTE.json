@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0470_0488ef9509",
+  "shp": "E0470.shp",
+  "entidades": 407,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0470.dbf",
+      "bytes": 142246,
+      "sha256": "64b313b1003dc3d31de292fcf3d458897253c539a27387ad5411990739cd102b"
+    },
+    {
+      "archivo": "E0470.shp",
+      "bytes": 36060,
+      "sha256": "8ce4578cf8a2460087c6cd304a80df959333492fc18f70f45b8b52dff1f53413"
+    },
+    {
+      "archivo": "E0470.shx",
+      "bytes": 3356,
+      "sha256": "b7b4de5c3480b9a2b930653334c91df8f16b5b3ab2774f7576d582e3d55c5651"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/canadarosquina2h.zip!E0470.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a301c1f5c7",
+    "archivo": "santafe/ipec/2010/canadarosquina2h.zip!E0470.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 407,
+    "registros_shx": 407,
+    "shape_type": 3,
+    "bbox": [
+      5347875.0,
+      6452150.5,
+      5349816.5,
+      6454290.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/canadarosquina2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f25bc068719a18346c81f2caf460492d15fdeae3ea944570d69a87f68d630642"
+}

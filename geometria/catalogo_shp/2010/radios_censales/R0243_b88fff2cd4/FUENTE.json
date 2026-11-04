@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0243_b88fff2cd4",
+  "shp": "R0243.shp",
+  "entidades": 11,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0243.dbf",
+      "bytes": 2726,
+      "sha256": "e88af331bb2047c05520843542d181725441ef1d09000d0a1217efd6b7d4e61b"
+    },
+    {
+      "archivo": "R0243.shp",
+      "bytes": 7644,
+      "sha256": "1ca21e44b267e72460538ef3d0d1c2658ddcf2479567daa2e03213e93b1f5a1d"
+    },
+    {
+      "archivo": "R0243.shx",
+      "bytes": 188,
+      "sha256": "42d82cd4899535ff1c1d3d6da220d0abcfccaea93c59aba390cbb0162307749a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasparejasa2v.zip!R0243.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4518e8805",
+    "archivo": "santafe/ipec/2010/lasparejasa2v.zip!R0243.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 11,
+    "registros_shx": 11,
+    "shape_type": 5,
+    "bbox": [
+      5356195.0,
+      6381740.5,
+      5358686.5,
+      6384689.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasparejasa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "740784b3d8eb3cd7b71ccbfb49b96266ce0b6675c1d133a45fab3c7039091a73"
+}

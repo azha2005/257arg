@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4121_6235c7623c",
+  "shp": "m4121.shp",
+  "entidades": 51,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4121.dbf",
+      "bytes": 10433,
+      "sha256": "e13898a020f3c7f53e89559ee815275e08c2ea1ff6c18a35366dfcccdf3b2059"
+    },
+    {
+      "archivo": "m4121.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4121.shp",
+      "bytes": 7836,
+      "sha256": "fb266afa2d71f62e45b22acf1c0bc06e5329e0d6d33987a91f187af78c8fbd57"
+    },
+    {
+      "archivo": "m4121.shx",
+      "bytes": 508,
+      "sha256": "c45b0d17a4781647eba899b8a50e2a4e3f54d65a78bfebbcccc77d868e6368c8"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/NUEVOTORINO.zip!m4121.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_2c4c4fe23e",
+    "archivo": "santafe/ipec/2022/NUEVOTORINO.zip!m4121.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 51,
+    "registros_shx": 51,
+    "shape_type": 5,
+    "bbox": [
+      5381758.0,
+      6531521.5,
+      5382891.0,
+      6532566.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/NUEVOTORINO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "60fa52aaef72b6c0a537d63e4786c6a6bb76e0a94e8f029d10755da61b37a346"
+}

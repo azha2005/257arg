@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0277_cd23dd1eb4",
+  "shp": "E0277.shp",
+  "entidades": 574,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0277.dbf",
+      "bytes": 200362,
+      "sha256": "e7cc338671679857d468fdef98c644219ed434e62e4bfa134465dded889e52a0"
+    },
+    {
+      "archivo": "E0277.shp",
+      "bytes": 50852,
+      "sha256": "97852d2e94f36183032e00be8a13dc7cea8e54ab3447aef1c573ec0f126b0546"
+    },
+    {
+      "archivo": "E0277.shx",
+      "bytes": 4692,
+      "sha256": "18be426a4b0e4330f307f5f25a4e05bcbe2afcdf645dfbd546858c963cf1caf8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villacanasa1h.zip!E0277.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_723c64cc4f",
+    "archivo": "santafe/ipec/2010/villacanasa1h.zip!E0277.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 574,
+    "registros_shx": 574,
+    "shape_type": 3,
+    "bbox": [
+      5350544.0,
+      6235258.5,
+      5352626.5,
+      6237908.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villacanasa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "401f025af263ba0bd38d1cef5bebc6f7d912920379e6e19caaede9e36ef4417b"
+}

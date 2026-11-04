@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0799_d64e554678",
+  "shp": "E0799.shp",
+  "entidades": 329,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0799.dbf",
+      "bytes": 115102,
+      "sha256": "4e919f4a62a19fbcde0398a6d553fde7a6dfd00103c0302f3356147b59751374"
+    },
+    {
+      "archivo": "E0799.shp",
+      "bytes": 29228,
+      "sha256": "90610275c189b8e3f2beea101f847f68c6420cd11ad6a4f878b410c2f36f9ae6"
+    },
+    {
+      "archivo": "E0799.shx",
+      "bytes": 2732,
+      "sha256": "4aa5a5ac13f66bd4da1c064f8f71103e78490f7088ae37e45e35ac2661e78803"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tortugasa3h.zip!E0799.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9805488e48",
+    "archivo": "santafe/ipec/2010/tortugasa3h.zip!E0799.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 329,
+    "registros_shx": 329,
+    "shape_type": 3,
+    "bbox": [
+      5328185.5,
+      6374859.0,
+      5330312.0,
+      6376889.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tortugasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f9b22bf2ca8d38bd0983323dcb8f72c3f2dbfee65b71af80f421c42aeff1b5b2"
+}

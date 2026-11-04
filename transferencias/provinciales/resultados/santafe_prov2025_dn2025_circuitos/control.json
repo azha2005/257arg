@@ -1,0 +1,130 @@
+{
+  "nombre": "Santa Fe",
+  "distrito": "21",
+  "serie": "2025",
+  "fecha": "13/04/2025",
+  "origen": "Convencionales 13/04/2025 (empalme territorial)",
+  "destino": "Diputados nacionales 26/10/2025",
+  "nivel": "distritos y departamentos empalmados",
+  "base": "votos emitidos",
+  "fuente": "https://www.santafe.gov.ar/tribunalelectoral/wp-content/uploads/sites/84/2025/07/resultadosPrimarias2025.ods",
+  "nota": "Convencionales de distrito único. Santa Fe y Rosario están publicadas completas como 9999. Se agregan departamentos completos donde falte algún circuito nacional por empalmar; sólo se conservan distritos pequeños donde cierra la correspondencia. No se compara una localidad completa contra una fracción. Departamentos agregados: 9DEJULIO, CASEROS, CASTELLANOS, CONSTITUCION, GARAY, GENERALOBLIGADO, IRIONDO, LACAPITAL, LASCOLONIAS, ROSARIO, SANCRISTOBAL, SANJAVIER, SANJERONIMO, SANJUSTO, SANLORENZO, VERA.",
+  "id": "santafe_prov2025_dn2025_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "origen",
+  "foco": [],
+  "unidades": 70,
+  "categorias_origen": 9,
+  "rango": 9,
+  "condicion": 45.948985105981365,
+  "lambda_": 1e-05,
+  "validacion_cruzada": {
+    "0.001": 0.019581399123420152,
+    "0.0001": 0.005902774289133317,
+    "1e-05": 0.005132972006110844,
+    "1e-06": 0.0057441921914884305,
+    "1e-07": 0.005967759081447155
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 2.0527062387167483,
+  "desviacion_max_margen_destino_pp": 0.2622687014301045,
+  "electores_o_votos_origen": 1569465.0,
+  "electores_o_votos_destino": 1803222.0,
+  "filas": [
+    {
+      "origen": "ACTIVEMOS",
+      "peso": 7.66,
+      "dif_variante_pp": 30.67,
+      "sensibilidad_pp": 49.61,
+      "ancho_intervalo_pp": 62.61,
+      "separacion_pp": 32.8,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE AMPLIO POR LA SOBERANIA",
+      "peso": 3.69,
+      "dif_variante_pp": 64.22,
+      "sensibilidad_pp": 76.23,
+      "ancho_intervalo_pp": 58.05,
+      "separacion_pp": 31.05,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE DE LA ESPERANZA",
+      "peso": 5.1,
+      "dif_variante_pp": 18.29,
+      "sensibilidad_pp": 51.63,
+      "ancho_intervalo_pp": 66.42,
+      "separacion_pp": 21.62,
+      "no_identificada": true
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 12.89,
+      "dif_variante_pp": 1.39,
+      "sensibilidad_pp": 59.54,
+      "ancho_intervalo_pp": 6.05,
+      "separacion_pp": 56.55,
+      "no_identificada": true
+    },
+    {
+      "origen": "MÁS PARA SANTA FE",
+      "peso": 13.82,
+      "dif_variante_pp": 23.45,
+      "sensibilidad_pp": 44.78,
+      "ancho_intervalo_pp": 32.81,
+      "separacion_pp": 40.7,
+      "no_identificada": true
+    },
+    {
+      "origen": "SOMOS VIDA Y LIBERTAD",
+      "peso": 11.21,
+      "dif_variante_pp": 20.26,
+      "sensibilidad_pp": 48.76,
+      "ancho_intervalo_pp": 64.81,
+      "separacion_pp": 22.42,
+      "no_identificada": true
+    },
+    {
+      "origen": "UNIDOS PARA CAMBIAR SANTA FE",
+      "peso": 31.45,
+      "dif_variante_pp": 13.57,
+      "sensibilidad_pp": 44.91,
+      "ancho_intervalo_pp": 17.41,
+      "separacion_pp": 27.62,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 5.07,
+      "dif_variante_pp": 8.08,
+      "sensibilidad_pp": 62.57,
+      "ancho_intervalo_pp": 62.29,
+      "separacion_pp": 43.04,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 9.1,
+      "dif_variante_pp": 13.56,
+      "sensibilidad_pp": 45.96,
+      "ancho_intervalo_pp": 61.3,
+      "separacion_pp": 13.74,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

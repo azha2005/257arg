@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4124_83a5ea2350",
+  "shp": "M4124.shp",
+  "entidades": 68,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4124.dbf",
+      "bytes": 13782,
+      "sha256": "43a4e13f7775667483aa6d81b9b7154d747870881c439c2859335df5a8757c87"
+    },
+    {
+      "archivo": "M4124.shp",
+      "bytes": 15652,
+      "sha256": "ea628868102cc203947f705f8f8a2320666e77cb6ab644aa0f1d08f73f8096e2"
+    },
+    {
+      "archivo": "M4124.shx",
+      "bytes": 644,
+      "sha256": "968c3d0a20ba42afe4ef8fcef16ea0241df4cb03ea2150019e9122278e1c1fae"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/loszapallosa2h.zip!M4124.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9fcf480b39",
+    "archivo": "santafe/ipec/2010/loszapallosa2h.zip!M4124.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 68,
+    "registros_shx": 68,
+    "shape_type": 5,
+    "bbox": [
+      5457710.0,
+      6515650.0,
+      5461966.0,
+      6519257.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/loszapallosa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2d78e915938d977b68b2fc4ee60de843d03445da7ee636b6a4afea15c3778339"
+}

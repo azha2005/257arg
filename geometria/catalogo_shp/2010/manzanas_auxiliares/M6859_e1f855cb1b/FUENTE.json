@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6859_e1f855cb1b",
+  "shp": "M6859.shp",
+  "entidades": 25,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6859.dbf",
+      "bytes": 5311,
+      "sha256": "1a19d8e21b31d0879a152aadf5476e19d341705ac949d9ed831d539c752eacd9"
+    },
+    {
+      "archivo": "M6859.shp",
+      "bytes": 3756,
+      "sha256": "d5e3f8b000442a559c23e03f0489cbca7c5e84738962b12f85bd5587fdd9a1de"
+    },
+    {
+      "archivo": "M6859.shx",
+      "bytes": 300,
+      "sha256": "6a0f97a516418dae5ed65e5ec7e70d7c39b07137d3e332744b017df766c526ef"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pozodelosindiosa3v.zip!M6859.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9dd8486451",
+    "archivo": "santafe/ipec/2010/pozodelosindiosa3v.zip!M6859.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 5,
+    "bbox": [
+      5474955.5,
+      6798119.5,
+      5475898.5,
+      6799216.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pozodelosindiosa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "43660d775234911050941387bb360615156d33b04f981742d0b0837d72d766e6"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0483_a186775efe",
+  "shp": "e0483.shp",
+  "entidades": 522,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0483.dbf",
+      "bytes": 156166,
+      "sha256": "dbb851c33f62ee4cf37b19a6111612f1dc9f5d1e42673bec82db20c986f1ff68"
+    },
+    {
+      "archivo": "e0483.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0483.shp",
+      "bytes": 47028,
+      "sha256": "3aa45ad9266fd43b98e761f544baed6742fb62075ed50596655d9a1aee7e2988"
+    },
+    {
+      "archivo": "e0483.shx",
+      "bytes": 4276,
+      "sha256": "fd7a9f2adfa5fa213fc858ef8d39d23b0b355c83466d95177cc5ef87d4e81b8b"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/HUMBERTOPRIMO.zip!e0483.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_577717e2b4",
+    "archivo": "santafe/ipec/2022/HUMBERTOPRIMO.zip!e0483.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 522,
+    "registros_shx": 522,
+    "shape_type": 3,
+    "bbox": [
+      5368401.0,
+      6583790.5,
+      5371900.0,
+      6586085.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/HUMBERTOPRIMO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "156962e270661d7c2ef0fbd12702d52056c8f4cf09ebde1d7e0fc3c5a49ef9eb"
+}

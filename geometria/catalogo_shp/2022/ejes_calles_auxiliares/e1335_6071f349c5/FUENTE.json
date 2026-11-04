@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1335_6071f349c5",
+  "shp": "e1335.shp",
+  "entidades": 139,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1335.dbf",
+      "bytes": 42032,
+      "sha256": "0321d5b0221ff47936e17a4f5d2a2a9a6705a681283e299f1155b92ccf275feb"
+    },
+    {
+      "archivo": "e1335.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1335.shp",
+      "bytes": 12396,
+      "sha256": "5afe7f0bf6a18c4284ab1293eb410b29885c32056ea358c6b4fce5f3de77bbc5"
+    },
+    {
+      "archivo": "e1335.shx",
+      "bytes": 1212,
+      "sha256": "4fffb557110fa60f50788c3dacc177c95769cc7130874c45fb08b2fcb8238a7f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LOSAMORES.zip!e1335.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_78079347c8",
+    "archivo": "santafe/ipec/2022/LOSAMORES.zip!e1335.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 139,
+    "registros_shx": 139,
+    "shape_type": 3,
+    "bbox": [
+      5501840.5,
+      6891422.5,
+      5502417.0,
+      6892857.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LOSAMORES.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "e5667052ca2554792dd3dd6ee115e492f5e0ba6b72467e9bae2ca1cf36acab16"
+}

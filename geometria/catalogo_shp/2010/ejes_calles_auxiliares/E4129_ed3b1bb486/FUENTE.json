@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4129_ed3b1bb486",
+  "shp": "E4129.shp",
+  "entidades": 220,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4129.dbf",
+      "bytes": 77170,
+      "sha256": "69816d22a571ac303019dab7884f191d852f48d86377c28e078ce49cc3cb5849"
+    },
+    {
+      "archivo": "E4129.shp",
+      "bytes": 19476,
+      "sha256": "9e2b6ebccb337cbc61d1e99f54b390748d566381644616f9c580dbe62d288f02"
+    },
+    {
+      "archivo": "E4129.shx",
+      "bytes": 1860,
+      "sha256": "01767da4b9345460c5fdd74ce9f175fdbe04e03c14b7ae425b48f1cae1ec68a4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/presidenterocaa2v.zip!E4129.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_197b1c3b6e",
+    "archivo": "santafe/ipec/2010/presidenterocaa2v.zip!E4129.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 220,
+    "registros_shx": 220,
+    "shape_type": 3,
+    "bbox": [
+      5345507.0,
+      6543939.0,
+      5347222.5,
+      6546965.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/presidenterocaa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5eb65a3d10ce33a29311e6e9b4647f8214bbf99826e3a3cb85a9ddaa2c960e3e"
+}

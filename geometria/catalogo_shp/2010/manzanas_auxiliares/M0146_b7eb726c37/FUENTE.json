@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0146_b7eb726c37",
+  "shp": "M0146.shp",
+  "entidades": 467,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0146.dbf",
+      "bytes": 92385,
+      "sha256": "13e08ee6680a12932d4562382812ce45dfb304a2dc73d8f0ed46fedb6c66e4ef"
+    },
+    {
+      "archivo": "M0146.shp",
+      "bytes": 77868,
+      "sha256": "20f3ed585f910df75f03483865c353c22af8f2802de65ad358bfe0b6baf07948"
+    },
+    {
+      "archivo": "M0146.shx",
+      "bytes": 3836,
+      "sha256": "1bb5fd8a480e94eceb79fb0c5688f076a62c87be923a25f36ba32201314af499"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjustoa1h.zip!M0146.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_293c52f037",
+    "archivo": "santafe/ipec/2010/sanjustoa1h.zip!M0146.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 467,
+    "registros_shx": 467,
+    "shape_type": 5,
+    "bbox": [
+      5441502.5,
+      6592336.5,
+      5445025.5,
+      6596007.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjustoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e825034186c62a3b6638e3b045630694f76158a74341e78d00e0d7fd5bbfe285"
+}

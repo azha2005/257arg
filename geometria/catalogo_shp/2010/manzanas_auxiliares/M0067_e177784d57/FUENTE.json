@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0067_e177784d57",
+  "shp": "M0067.shp",
+  "entidades": 804,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0067.dbf",
+      "bytes": 158774,
+      "sha256": "efc95b8e865af91ab7880d79e2c095c3ea71efac6a34c3a4927938c50de7b7a2"
+    },
+    {
+      "archivo": "M0067.shp",
+      "bytes": 169172,
+      "sha256": "e5204d77e600195244a0b8cb0220c42728ee5f0fb1f487e655dbd31b204a23cd"
+    },
+    {
+      "archivo": "M0067.shx",
+      "bytes": 6532,
+      "sha256": "d099f4c8d9cc6f21a2a662e480138d3bbe6531ffd05320a2b3ce8109831a8052"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaconstituciona0h.zip!M0067.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8e8dcbf773",
+    "archivo": "santafe/ipec/2010/villaconstituciona0h.zip!M0067.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 804,
+    "registros_shx": 804,
+    "shape_type": 5,
+    "bbox": [
+      5466753.5,
+      6317297.5,
+      5476462.5,
+      6325239.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaconstituciona0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "68a99cc2a059f548f1d00169e53a69169d4918698186e0fc3088f2941cc9359e"
+}

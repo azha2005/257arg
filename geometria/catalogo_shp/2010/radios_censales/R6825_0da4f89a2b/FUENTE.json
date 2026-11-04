@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6825_0da4f89a2b",
+  "shp": "R6825.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6825.dbf",
+      "bytes": 686,
+      "sha256": "1d45951ef66f800ce10b0536c959923c1047865afeb8e102f577a78a9a29ef4a"
+    },
+    {
+      "archivo": "R6825.shp",
+      "bytes": 556,
+      "sha256": "a60ab352d792e064bb35cedfb83f55f1b544b312d40d0345cdf91584ad034035"
+    },
+    {
+      "archivo": "R6825.shx",
+      "bytes": 108,
+      "sha256": "cd5b8fadb4c0de1c1788a9041f2819fcc06e029ac80e93da638c23a48350e883"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniaanaa3h.zip!R6825.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e78d526088",
+    "archivo": "santafe/ipec/2010/coloniaanaa3h.zip!R6825.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5315483.0,
+      6664243.0,
+      5315809.5,
+      6664566.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniaanaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5b1a55afa7b6fe720b69fb19c9e8b3c9dd5973d274797114f519d68e005a7b6d"
+}

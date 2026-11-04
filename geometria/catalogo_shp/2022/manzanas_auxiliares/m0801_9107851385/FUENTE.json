@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0801_9107851385",
+  "shp": "m0801.shp",
+  "entidades": 155,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0801.dbf",
+      "bytes": 30921,
+      "sha256": "525ddf7aab93e9af96247802df433ae9a3cea618187d5cacd4b4ec12a3174030"
+    },
+    {
+      "archivo": "m0801.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0801.shp",
+      "bytes": 24860,
+      "sha256": "f59f8d8031c930e9c05e21a64d4a036046f78dfcf20873b2736e2ab42e9c41b5"
+    },
+    {
+      "archivo": "m0801.shx",
+      "bytes": 1340,
+      "sha256": "926f303931bb22d64653f07b4d64637fd5fbcde0063856f4379721b4e5f15b59"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANTAROSADECALCHINES.zip!m0801.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_c239e982a8",
+    "archivo": "santafe/ipec/2022/SANTAROSADECALCHINES.zip!m0801.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 155,
+    "registros_shx": 155,
+    "shape_type": 5,
+    "bbox": [
+      5465552.0,
+      6521883.0,
+      5470128.0,
+      6526787.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANTAROSADECALCHINES.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "f8f18769201fcf6171894db3fd7a2fd57065014361056b336d654de2981fea1f"
+}

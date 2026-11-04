@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1149_d39edd3737",
+  "shp": "R1149.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1149.dbf",
+      "bytes": 686,
+      "sha256": "c07096951c37d9e29fb7ba648639ca38ddae259852343889f90ca339bf934e41"
+    },
+    {
+      "archivo": "R1149.shp",
+      "bytes": 3036,
+      "sha256": "c9062244be2d7bcb31a64f9018a26dcc4f092a38816823fb0bf746c6f5c40be6"
+    },
+    {
+      "archivo": "R1149.shx",
+      "bytes": 108,
+      "sha256": "61becce9f993bfd3bf4d4a5764d467b894ac13b4236bd1aef15dd57d90fcf026"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/labordeboya3h.zip!R1149.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0ff3cf0cd4",
+    "archivo": "santafe/ipec/2010/labordeboya3h.zip!R1149.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5377416.5,
+      6268274.0,
+      5378879.5,
+      6270200.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/labordeboya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "12c9b1b0000c3963a73e42baf743f8a2cb1bc4601cb710ec608ed0bded245613"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4136_05e2c4a69a",
+  "shp": "e4136.shp",
+  "entidades": 99,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4136.dbf",
+      "bytes": 30112,
+      "sha256": "9ef002b3e5ccdefcb16bce825e622b2175a86353667e4a4ef4857f74bcf570e8"
+    },
+    {
+      "archivo": "e4136.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4136.shp",
+      "bytes": 8972,
+      "sha256": "92f70070b99d8fb8e7eabf8e75021613ad866b1e5a942ecde9c598f9bfd4b74f"
+    },
+    {
+      "archivo": "e4136.shx",
+      "bytes": 892,
+      "sha256": "1c12432cb5668a90cacbb5ff98c157079cfe4f539618d64ab97aab47c98371cc"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ARROYOCEIBAL.zip!e4136.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_09eb0a526f",
+    "archivo": "santafe/ipec/2022/ARROYOCEIBAL.zip!e4136.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 99,
+    "registros_shx": 99,
+    "shape_type": 3,
+    "bbox": [
+      5550136.5,
+      6822287.5,
+      5552024.0,
+      6823485.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ARROYOCEIBAL.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "842231a0e88ce03f3c4937be2d128eb2d4e44ff93a0b4f6e677b9c689a0f01f6"
+}

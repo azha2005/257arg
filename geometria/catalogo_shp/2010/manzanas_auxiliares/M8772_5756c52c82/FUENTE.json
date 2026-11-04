@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M8772_5756c52c82",
+  "shp": "M8772.shp",
+  "entidades": 775,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M8772.dbf",
+      "bytes": 153061,
+      "sha256": "70ae7e21f44714ee028ca7d75a2eadc7b31a51cf9073dbe29c54dcb55cf4cb73"
+    },
+    {
+      "archivo": "M8772.shp",
+      "bytes": 135212,
+      "sha256": "46c1bd0d8133ff59cd0f8521eece26497f3435ccc813b6de5a00b9054002d444"
+    },
+    {
+      "archivo": "M8772.shx",
+      "bytes": 6300,
+      "sha256": "3d730f9ca8592bab9415e4be4dfa2010da177dae1bfa46f68fa926078b934e05"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/roldana0v.zip!M8772.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_25bc9462ea",
+    "archivo": "santafe/ipec/2010/roldana0v.zip!M8772.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 775,
+    "registros_shx": 775,
+    "shape_type": 5,
+    "bbox": [
+      5413727.0,
+      6357171.5,
+      5419196.5,
+      6361998.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/roldana0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7a55a8fc4442a4bdad82092dbb0d3daae37c8c9bd79b369563a409f204fc2627"
+}

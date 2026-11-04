@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Jujuy_con_datos_ac34a15b82",
+  "shp": "Jujuy_con_datos.shp",
+  "entidades": 822,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Jujuy_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Jujuy_con_datos.shp",
+      "bytes": 2915748,
+      "sha256": "1e67bf9b2371c9f77121ff98cc88ca8f663d2062fb21be3e6257e149eb14672b"
+    },
+    {
+      "archivo": "Jujuy_con_datos.shx",
+      "bytes": 6676,
+      "sha256": "8be04c8bbd20225b904b09c04b39b52e4332beefa865c0435ecff43dddd30483"
+    },
+    {
+      "archivo": "Jujuy_con_datos.dbf",
+      "bytes": 336487,
+      "sha256": "c848ac041f0eb6b96050841c9d985ab8e60d0ab755433fe5eafa19fc77469241"
+    },
+    {
+      "archivo": "Jujuy_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Jujuy_con_datos.zip!Jujuy_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_38",
+    "archivo": "indec/2010/Codgeo_Jujuy_con_datos.zip!Jujuy_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Jujuy",
+    "features": 822,
+    "registros_shx": 822,
+    "shape_type": 5,
+    "bbox": [
+      3375369.5,
+      7278067.0,
+      3688370.75,
+      7592423.0
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Jujuy_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 822,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "9c93e517e99b6ecedbd21294b15047293de1f29fec917bd4c73186b1b9fc625d"
+}

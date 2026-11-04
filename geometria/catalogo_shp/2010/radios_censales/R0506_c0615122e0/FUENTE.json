@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0506_c0615122e0",
+  "shp": "R0506.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0506.dbf",
+      "bytes": 1706,
+      "sha256": "649cb80df68fc06a336839c5377b1f5a3e961df036a4d04441dabbfaff7ad208"
+    },
+    {
+      "archivo": "R0506.shp",
+      "bytes": 4644,
+      "sha256": "67a20b9c89ba92817a8fe92c040b09ffbe6feec31d98a6fb8b9f74fd4c819080"
+    },
+    {
+      "archivo": "R0506.shx",
+      "bytes": 148,
+      "sha256": "e036f0a47ca93ed6b50547fdff1862f6f58478b85c91d94148408a763674e3f9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/suardia2h.zip!R0506.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b4f66cf3d9",
+    "archivo": "santafe/ipec/2010/suardia2h.zip!R0506.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5311006.5,
+      6619782.0,
+      5312858.5,
+      6621853.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/suardia2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f829786fd2cf8c340323f885c8e1556d01c6e8923e71d0db556630daffcadb52"
+}

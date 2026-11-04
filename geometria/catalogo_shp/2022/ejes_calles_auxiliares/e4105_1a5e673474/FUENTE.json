@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4105_1a5e673474",
+  "shp": "e4105.shp",
+  "entidades": 181,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4105.dbf",
+      "bytes": 54548,
+      "sha256": "f6e04456f9a75b2442e3e6656af5df6370c38e4db74be17126ef37b0a5273c17"
+    },
+    {
+      "archivo": "e4105.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4105.shp",
+      "bytes": 16268,
+      "sha256": "c9343ef012c4902370adf3bc0bb43cd1d57a967e2ed9f63db84fd423647bc1fc"
+    },
+    {
+      "archivo": "e4105.shx",
+      "bytes": 1548,
+      "sha256": "13015d343e6e2f9551251ddc37d229ab6d9e75d2a741cd0dd91882c1fa71ac5f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/RAMAYON.zip!e4105.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_8b6b1341d5",
+    "archivo": "santafe/ipec/2022/RAMAYON.zip!e4105.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 181,
+    "registros_shx": 181,
+    "shape_type": 3,
+    "bbox": [
+      5450928.0,
+      6606451.5,
+      5452954.5,
+      6607716.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/RAMAYON.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3c9873b3f8ac194f84170e755576f689fb7646f58e47191941074af95c08d2ae"
+}

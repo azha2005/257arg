@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0922_6b73659c26",
+  "shp": "M0922.shp",
+  "entidades": 104,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0922.dbf",
+      "bytes": 20874,
+      "sha256": "86eeac3322da00a8bf426190baae8d5b302efa688398b5ce256df447371cf668"
+    },
+    {
+      "archivo": "M0922.shp",
+      "bytes": 15540,
+      "sha256": "8f2f8b3958b7703aed013309fda473b6ada7ea62edc8f2a67ef7ff5c3c482476"
+    },
+    {
+      "archivo": "M0922.shx",
+      "bytes": 932,
+      "sha256": "df721417ef131e99a0d95375cdaf28f82a27bcf5d717317ae420828040515be7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lehmanna3h.zip!M0922.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_426c65b217",
+    "archivo": "santafe/ipec/2010/lehmanna3h.zip!M0922.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 104,
+    "registros_shx": 104,
+    "shape_type": 5,
+    "bbox": [
+      5360754.0,
+      6555540.0,
+      5362497.5,
+      6556797.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lehmanna3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "140988b4490eb7d8987c7d3fecd81dc70b27475667362de5761829bed051a5fc"
+}

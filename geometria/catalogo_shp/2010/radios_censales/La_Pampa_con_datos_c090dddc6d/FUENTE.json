@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/La_Pampa_con_datos_c090dddc6d",
+  "shp": "La_Pampa_con_datos.shp",
+  "entidades": 769,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "La_Pampa_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "La_Pampa_con_datos.shp",
+      "bytes": 403512,
+      "sha256": "10a48c2ca6c843ba1461c39169ce37873d915f98969b6d6d8d36760eccba6db8"
+    },
+    {
+      "archivo": "La_Pampa_con_datos.shx",
+      "bytes": 6252,
+      "sha256": "94f03eef8b2b4856442fb16a6827e8f9b394fea65594819ad5790a655d42a6a8"
+    },
+    {
+      "archivo": "La_Pampa_con_datos.dbf",
+      "bytes": 314810,
+      "sha256": "07129caa7b655dd2769cd301d6ad295f0f0a69a64857a9f384fcabff78b19840"
+    },
+    {
+      "archivo": "La_Pampa_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_La_Pampa_con_datos.zip!La_Pampa_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_42",
+    "archivo": "indec/2010/Codgeo_La_Pampa_con_datos.zip!La_Pampa_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "La Pampa",
+    "features": 769,
+    "registros_shx": 769,
+    "shape_type": 5,
+    "bbox": [
+      3294049.5,
+      5644618.0,
+      3738746.0,
+      6125337.5
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_La_Pampa_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 769,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "dc8c09b49ed2b17f27f743c6b35279d408afa1a84a4efc726e645a8c32da40aa"
+}

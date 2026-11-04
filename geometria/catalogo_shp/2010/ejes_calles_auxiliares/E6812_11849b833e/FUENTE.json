@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6812_11849b833e",
+  "shp": "E6812.shp",
+  "entidades": 26,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6812.dbf",
+      "bytes": 9658,
+      "sha256": "d0b16da5ca61ff41618dd2fafe5888f4bc124b2a312e13a4954c5e8c1b49b79d"
+    },
+    {
+      "archivo": "E6812.shp",
+      "bytes": 2388,
+      "sha256": "83f4de04458b503897edf96d85ad1a1ab68f5b1c3c29f388cd0cf6af42a69ea8"
+    },
+    {
+      "archivo": "E6812.shx",
+      "bytes": 308,
+      "sha256": "37fc1372ec0fc4eea11d79bf70c07a4e9daaa2986017a8318c34127dbf879f6e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nuevalehmanna3h.zip!E6812.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b421c42b4c",
+    "archivo": "santafe/ipec/2010/nuevalehmanna3h.zip!E6812.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 26,
+    "registros_shx": 26,
+    "shape_type": 3,
+    "bbox": [
+      5355166.5,
+      6556584.0,
+      5355688.5,
+      6557416.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nuevalehmanna3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e091f54fc954460b95fa6cf0b7024a8db796fdb80327af152c7384e8537d046e"
+}

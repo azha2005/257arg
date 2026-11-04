@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1239_8fe8d30be7",
+  "shp": "E1239.shp",
+  "entidades": 156,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1239.dbf",
+      "bytes": 54898,
+      "sha256": "588f23242f4512c6fab7111830ed49465480629317e2b99931a0b9c6887e749d"
+    },
+    {
+      "archivo": "E1239.shp",
+      "bytes": 13828,
+      "sha256": "1feab52331deddaa48e99c5b322cc28ac21437ea1f2f4cb16f0cb0d2c0fda63d"
+    },
+    {
+      "archivo": "E1239.shx",
+      "bytes": 1348,
+      "sha256": "c8480c64942a10d8992073eafb6b9c88416667221875c8d654d04e580ba0fa3d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasgarzasa3v.zip!E1239.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c606486fb7",
+    "archivo": "santafe/ipec/2010/lasgarzasa3v.zip!E1239.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 156,
+    "registros_shx": 156,
+    "shape_type": 3,
+    "bbox": [
+      5548220.0,
+      6809062.5,
+      5549290.5,
+      6810124.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasgarzasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0469c6010d946c9cd346b52fd453829070c82a0a1e055dc3c16aa864c04f1995"
+}

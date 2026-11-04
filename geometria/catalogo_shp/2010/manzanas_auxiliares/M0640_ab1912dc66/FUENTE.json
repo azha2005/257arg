@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0640_ab1912dc66",
+  "shp": "M0640.shp",
+  "entidades": 115,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0640.dbf",
+      "bytes": 23041,
+      "sha256": "aacef5a1d5c553dedf07134ac6eae77175eae917fd60340ec0388c90c6d3b442"
+    },
+    {
+      "archivo": "M0640.shp",
+      "bytes": 17404,
+      "sha256": "077a9d218a76e7710a6ad667262a36ab634400ca09b1180ae302546174191a19"
+    },
+    {
+      "archivo": "M0640.shx",
+      "bytes": 1020,
+      "sha256": "cf2e240684eaec8d29fd1487a5031441b694f99cc78aeb971017ac1bfd11b32d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/serodinoa2h.zip!M0640.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_29315c43ec",
+    "archivo": "santafe/ipec/2010/serodinoa2h.zip!M0640.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 115,
+    "registros_shx": 115,
+    "shape_type": 5,
+    "bbox": [
+      5410154.5,
+      6391389.5,
+      5412000.0,
+      6393291.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/serodinoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c54820a5642723844ca86e9b1870bee39ffb6b5e049e1c5660b5d3ab173de86c"
+}

@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e7509_b068753a24",
+  "shp": "e7509.shp",
+  "entidades": 42,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e7509.shx",
+      "bytes": 436,
+      "sha256": "27a5955a05aa70efcc47207a2b46b3c4b14268ee22b53c2089c895479869104d"
+    },
+    {
+      "archivo": "e7509.shp",
+      "bytes": 3796,
+      "sha256": "0ae43e7a714ee0ecdd9d3cab8f4f9e0b7c8c0c7b0f6da285381a32145a3a32e6"
+    },
+    {
+      "archivo": "e7509.sbx",
+      "bytes": 180,
+      "sha256": "96d7bfd51c8b5d9a8d99a73ecf441beaeb561ab7011a143efec50777139b0760"
+    },
+    {
+      "archivo": "e7509.sbn",
+      "bytes": 620,
+      "sha256": "a6216693cd3a045aeb9172b03d957467f6b78215347030e9a730dd438de22d62"
+    },
+    {
+      "archivo": "e7509.dbf",
+      "bytes": 15226,
+      "sha256": "4601b8cca0195477ae0011fde126ba762f82a89f3e9cd65b2365273bb9b68828"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SCHIFFNER.zip!e7509.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_df0c829df4",
+    "archivo": "santafe/ipec/2010/SCHIFFNER.zip!e7509.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 42,
+    "registros_shx": 42,
+    "shape_type": 3,
+    "bbox": [
+      5305310.5,
+      6459820.0,
+      5306532.5,
+      6461142.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SCHIFFNER.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1b78b16c990383bed7f83a6652bc638bec5535f47b4bfe6b4ed6601cc8b13d0f"
+}

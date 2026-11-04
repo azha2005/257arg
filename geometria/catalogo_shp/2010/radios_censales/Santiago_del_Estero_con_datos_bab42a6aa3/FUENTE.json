@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Santiago_del_Estero_con_datos_bab42a6aa3",
+  "shp": "Santiago_del_Estero_con_datos.shp",
+  "entidades": 1041,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Santiago_del_Estero_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Santiago_del_Estero_con_datos.shp",
+      "bytes": 902796,
+      "sha256": "05eaae2a0e1f7e5bbc1908a2d6c1ecbc81245ad0d2bd0608c04e8c320e91e144"
+    },
+    {
+      "archivo": "Santiago_del_Estero_con_datos.shx",
+      "bytes": 8428,
+      "sha256": "36846917eb8f749de5aba9a59bf3913f101907c5a46cd77195893f399ef554f3"
+    },
+    {
+      "archivo": "Santiago_del_Estero_con_datos.dbf",
+      "bytes": 426058,
+      "sha256": "33bdb3bd05d46af712d1a5f22b5992e663719b9cbf99dc5cb293baa1b3d74196"
+    },
+    {
+      "archivo": "Santiago_del_Estero_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Santiago_del_Estero_con_datos.zip!Santiago_del_Estero_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_86",
+    "archivo": "indec/2010/Codgeo_Santiago_del_Estero_con_datos.zip!Santiago_del_Estero_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Santiago del Estero",
+    "features": 1041,
+    "registros_shx": 1041,
+    "shape_type": 5,
+    "bbox": [
+      3580423.1598814675,
+      6631147.664240227,
+      3930865.9612460528,
+      7161471.442102947
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Santiago_del_Estero_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 1041,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "d4bdf01718729cba5302a9e16304d11b72cd0d2bbe2209af89fef40010cf4575"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6865_ec0ee0c377",
+  "shp": "e6865.shp",
+  "entidades": 16,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6865.dbf",
+      "bytes": 5378,
+      "sha256": "73c3b0704d8e501e40d638e1e6ca716d2708b436e20f754d9b18b5428fc077b2"
+    },
+    {
+      "archivo": "e6865.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6865.shp",
+      "bytes": 1764,
+      "sha256": "398bfe73124f08a4a5cb0af23704b5de58e446e9ec820ebad8862a7049e9d3b7"
+    },
+    {
+      "archivo": "e6865.shx",
+      "bytes": 228,
+      "sha256": "fe0e70d559e72017413201914b46e5f70a2de64091c35eb36dc18ee894c64992"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIATACURALES.zip!e6865.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_c675319d77",
+    "archivo": "santafe/ipec/2022/COLONIATACURALES.zip!e6865.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 3,
+    "bbox": [
+      5332907.0,
+      6589304.5,
+      5333167.5,
+      6589557.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIATACURALES.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "36147f32ca844962b8ca9afb91fe33b212a0721c213129da6e17ba8fb1efb33f"
+}

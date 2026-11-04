@@ -1,0 +1,59 @@
+{
+  "carpetas_shp": 2621,
+  "shp_fisicos": 2621,
+  "componentes": 9664,
+  "bytes_componentes": 2195816400,
+  "conjuntos_componentes_distintos": 2567,
+  "por_anio": {
+    "1869": 2,
+    "1895": 2,
+    "1914": 2,
+    "1947": 3,
+    "1955": 1,
+    "1960": 4,
+    "1970": 4,
+    "1980": 4,
+    "1991": 4,
+    "1995": 2,
+    "1999": 3,
+    "2001": 7,
+    "2003": 2,
+    "2010": 1251,
+    "2011": 1,
+    "2015": 2,
+    "2017": 1,
+    "2019": 22,
+    "2019-2020": 3,
+    "2022": 1240,
+    "sin_fecha_verificada": 61
+  },
+  "faltantes_prj": 1239,
+  "errores": [],
+  "descargas": {
+    "verificado": 890,
+    "error": 6
+  },
+  "bytes_descargados": 1071515731,
+  "geoParquet": [
+    {
+      "archivo": "source_cooperative/1991/radios.parquet",
+      "estado": "verificado",
+      "features": 40099
+    },
+    {
+      "archivo": "source_cooperative/2001/radios.parquet",
+      "estado": "verificado",
+      "features": 46582
+    },
+    {
+      "archivo": "source_cooperative/2010/radios.parquet",
+      "estado": "verificado",
+      "features": 52406
+    },
+    {
+      "archivo": "source_cooperative/2022/radios.parquet",
+      "estado": "verificado",
+      "features": 66502
+    }
+  ]
+}

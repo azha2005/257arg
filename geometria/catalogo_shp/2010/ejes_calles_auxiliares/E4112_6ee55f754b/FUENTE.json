@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4112_6ee55f754b",
+  "shp": "E4112.shp",
+  "entidades": 67,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4112.dbf",
+      "bytes": 23926,
+      "sha256": "d9bcb4493942b41a83d56e23875c4182d6072f3b35853705fbc5a6b5e38334e2"
+    },
+    {
+      "archivo": "E4112.shp",
+      "bytes": 5996,
+      "sha256": "ff8c99e453e86210fcefc0a7d7075a3df1650edd54b4e042ec7b7973915d7ead"
+    },
+    {
+      "archivo": "E4112.shx",
+      "bytes": 636,
+      "sha256": "2c1375e4b43da6a230b3f4b543072bd2637ee75f0f9921b594faef58b264f11a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/carmendelsaucea3h.zip!E4112.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a17c7ec0d",
+    "archivo": "santafe/ipec/2010/carmendelsaucea3h.zip!E4112.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 67,
+    "registros_shx": 67,
+    "shape_type": 3,
+    "bbox": [
+      5424147.5,
+      6322150.5,
+      5425206.0,
+      6323139.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/carmendelsaucea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "45fa68f8a696df4e18d525c5cb13fe514cc62067fc1b64bcba6471db061033b6"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1218_9f8ba6f7e1",
+  "shp": "R1218.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1218.dbf",
+      "bytes": 686,
+      "sha256": "7ed8c584365bb8f2d79e06c8b596cc59e202168b1d179eb35fe9d14c2c114adb"
+    },
+    {
+      "archivo": "R1218.shp",
+      "bytes": 796,
+      "sha256": "d9ef07780ee4a32761673a7c9270f6c2feab082706529f4e7c27b54c2e575033"
+    },
+    {
+      "archivo": "R1218.shx",
+      "bytes": 108,
+      "sha256": "944a185203f63d074782612207dd136c0fe28e3900cb91dcff4183028999f701"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniabelgranoa3v.zip!R1218.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_69d6eaea41",
+    "archivo": "santafe/ipec/2010/coloniabelgranoa3v.zip!R1218.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5366992.0,
+      6468786.5,
+      5368019.5,
+      6469735.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniabelgranoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "78e1ffcc9cdb5d8ce020f6a86f4b1507802854ab9130e676786760b71f33356b"
+}

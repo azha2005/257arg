@@ -1,0 +1,138 @@
+{
+  "type": "Collection",
+  "id": "2001",
+  "stac_version": "1.1.0",
+  "description": "Collection: 2001",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Argentina Census Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Argentina Census Catalog"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "proj:epsg": 3857,
+  "pmtiles:min_zoom": 0,
+  "pmtiles:max_zoom": 10,
+  "pmtiles:tile_type": "mvt",
+  "pmtiles:center": [
+    -58.5351562,
+    -34.7414862,
+    10
+  ],
+  "geoparquet:geometry_type": "MultiPolygon",
+  "geoparquet:feature_count": 46582,
+  "table:row_count": 46582,
+  "table:primary_geometry": "geom",
+  "table:columns": [
+    {
+      "name": "OGC_FID",
+      "type": "int64"
+    },
+    {
+      "name": "COD_2001",
+      "type": "string"
+    },
+    {
+      "name": "PROV",
+      "type": "string"
+    },
+    {
+      "name": "DEPTO",
+      "type": "string"
+    },
+    {
+      "name": "FRACC",
+      "type": "string"
+    },
+    {
+      "name": "RADIO",
+      "type": "string"
+    },
+    {
+      "name": "OBS2001",
+      "type": "string"
+    },
+    {
+      "name": "VIV_TOT",
+      "type": "double"
+    },
+    {
+      "name": "POB_TOT",
+      "type": "double"
+    },
+    {
+      "name": "REDATAM",
+      "type": "string"
+    },
+    {
+      "name": "geom",
+      "type": "binary"
+    },
+    {
+      "name": "bbox",
+      "type": "struct<xmin: double, ymin: double, xmax: double, ymax: double>"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -74.000444,
+          -89.00000000000217,
+          -26.25206971191592,
+          -21.7807729
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "assets": {
+    "metadata": {
+      "href": "./metadata.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "overview": {
+      "href": "./overview.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "roles": [
+        "data"
+      ]
+    },
+    "census-data": {
+      "href": "./census-data.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "radios": {
+      "href": "./radios.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    }
+  }
+}

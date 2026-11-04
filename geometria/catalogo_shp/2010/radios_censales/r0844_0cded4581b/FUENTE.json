@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r0844_0cded4581b",
+  "shp": "r0844.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0844.dbf",
+      "bytes": 1297,
+      "sha256": "0b46487812abd33f0e03bb469a4bf7e038a18b7981a5255114347898c001bde8"
+    },
+    {
+      "archivo": "r0844.sbn",
+      "bytes": 180,
+      "sha256": "f4358f28172ec72b307fa82f2f415792f2aceb316f51c6a2b2f1e6f6d4dd5eda"
+    },
+    {
+      "archivo": "r0844.sbx",
+      "bytes": 124,
+      "sha256": "93fdfbdbaf62bac8f057eeb8420c7fbc033981e91e09c9cf857bf360ab198324"
+    },
+    {
+      "archivo": "r0844.shp",
+      "bytes": 2180,
+      "sha256": "7ccbbcb151898c0aca153891ea903a5c2f22aa8a846027a9568d27b87ba7eceb"
+    },
+    {
+      "archivo": "r0844.shx",
+      "bytes": 132,
+      "sha256": "b253972374c7cbf2457ecd20d93aae5e2de8a1f5795142c7893ea90f43c87df5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/DESVIOARIJON.zip!r0844.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6beb65d39b",
+    "archivo": "santafe/ipec/2010/DESVIOARIJON.zip!r0844.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5415614.5,
+      6472467.5,
+      5417176.5,
+      6475386.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/DESVIOARIJON.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ab6f7be9813e7e6d5c9dc95effaed6312800cf9917e3195278e659d04ed0e553"
+}

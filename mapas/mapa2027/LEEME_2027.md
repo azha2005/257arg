@@ -58,3 +58,5 @@ Con esto los números de la imagen cierran de una forma bastante particular: Mil
 PNG en `../png_transparentes/mapa2027/` y `../png_blanco/mapa2027/`.
 
 Nota: el recorte de La Paz de 2027 usa el límite de la ley 22.742 (zona en disputa con Santiago del Estero, ver `AGENTS.md`); los atlas anteriores a 2022 conservan el límite de hecho. Los votos de esa franja (Las Palmitas) los cuenta la DINE en La Paz.
+
+Escenario original: **@boluanfanzheng**, según atribución aportada por el usuario. La estimación territorial del atlas pertenece al proyecto.

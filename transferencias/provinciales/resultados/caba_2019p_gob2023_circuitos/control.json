@@ -1,0 +1,107 @@
+{
+  "nombre": "Ciudad de Buenos Aires",
+  "distrito": "01",
+  "serie": "2023",
+  "fecha": "22/10/2023",
+  "origen": "Presidente 2019",
+  "destino": "Jefe de Gobierno 22/10/2023 (circuitos)",
+  "nivel": "circuitos",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.gob.ar/2023",
+  "nota": "Provisorio DINE de jefe de Gobierno por circuito, mesas nativas. Elecciones simultáneas el 22 de octubre: permite estudiar composición entre cargos, no observar elecciones individuales. Empalme 2019–2023 por departamento y código; se excluyen 2 claves con cambios de padrón fuera de 0,75–1,33 del crecimiento mediano. Es un control de estabilidad, no certificación de límites históricos.",
+  "foco": [],
+  "id": "caba_2019p_gob2023_circuitos",
+  "cobertura_provincial": 0.9941356655581249,
+  "cobertura_origen": 0.9941356655581249,
+  "cobertura_destino": 0.9953550651802744,
+  "pendientes": [
+    "Padrón inestable 2019–2023: COMUNA01:3",
+    "Padrón inestable 2019–2023: COMUNA01:5",
+    "COMUNA01:4"
+  ],
+  "foco_lado": "destino",
+  "unidades": 164,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 268.5845986008372,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.004721923209483926,
+    "0.0001": 0.0026202232209279665,
+    "1e-05": 0.0016774558154784526,
+    "1e-06": 0.0013719834212247816,
+    "1e-07": 0.001314060589066987
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.5061723729735086,
+  "desviacion_max_margen_destino_pp": 0.07871986936396902,
+  "electores_o_votos_origen": 2021167.0,
+  "electores_o_votos_destino": 1893734.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 34.84,
+      "dif_variante_pp": 6.28,
+      "sensibilidad_pp": 15.49,
+      "ancho_intervalo_pp": 7.01,
+      "separacion_pp": 44.52,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 51.16,
+      "dif_variante_pp": 2.61,
+      "sensibilidad_pp": 15.64,
+      "ancho_intervalo_pp": 2.73,
+      "separacion_pp": 42.56,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 6.37,
+      "dif_variante_pp": 21.88,
+      "sensibilidad_pp": 74.5,
+      "ancho_intervalo_pp": 17.39,
+      "separacion_pp": 70.11,
+      "no_identificada": true
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 2.86,
+      "dif_variante_pp": 21.29,
+      "sensibilidad_pp": 77.21,
+      "ancho_intervalo_pp": 0.44,
+      "separacion_pp": 70.92,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 2.51,
+      "dif_variante_pp": 39.02,
+      "sensibilidad_pp": 77.24,
+      "ancho_intervalo_pp": 2.11,
+      "separacion_pp": 86.04,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.26,
+      "dif_variante_pp": 26.7,
+      "sensibilidad_pp": 37.82,
+      "ancho_intervalo_pp": 83.47,
+      "separacion_pp": 66.63,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

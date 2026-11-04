@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6810_20fb7821ba",
+  "shp": "R6810.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6810.dbf",
+      "bytes": 686,
+      "sha256": "d70d4502c55548f285262d8b16d1f25aa5a58b6553cd2c618c380184714029bd"
+    },
+    {
+      "archivo": "R6810.shp",
+      "bytes": 1516,
+      "sha256": "582fd57972c3a9a5f6fcbabedb2c372a2afba074fc4c47046595470d4ab4189c"
+    },
+    {
+      "archivo": "R6810.shx",
+      "bytes": 108,
+      "sha256": "80cb0dbeeb9e2f888fd4454fd7dac6ab553b0bfc7062c1adaa2193ae75cdf5dd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaelviraa3h.zip!R6810.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8a2ec26add",
+    "archivo": "santafe/ipec/2010/villaelviraa3h.zip!R6810.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5422529.5,
+      6388319.0,
+      5423825.5,
+      6388975.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaelviraa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7a5c76832ea38193d1cad4c7b92118b38df22fcb5b8e5baab8ce913da7c5ec16"
+}

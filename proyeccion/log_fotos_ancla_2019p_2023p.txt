@@ -1,0 +1,17 @@
+{'mesas_destino': 104520, 'mesas_cruzadas': 93011, 'mesas_usadas': 91614, 'origen': 'circuito'} ganador UNION POR LA PATRIA secciones con centroide 504 de 504
+antecesores: {'FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD': ['FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD'], 'HACEMOS POR NUESTRO PAIS': ['CONSENSO FEDERAL'], 'JUNTOS POR EL CAMBIO': ['JUNTOS POR EL CAMBIO'], 'LA LIBERTAD AVANZA': ['FRENTE NOS'], 'UNION POR LA PATRIA': ['FRENTE DE TODOS'], 'BLANCO/NULO': ['BLANCO/NULO'], 'ABSTENCION': ['ABSTENCION']}
+real {'FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD': 2.74, 'HACEMOS POR NUESTRO PAIS': 6.63, 'JUNTOS POR EL CAMBIO': 23.77, 'LA LIBERTAD AVANZA': 29.66, 'UNION POR LA PATRIA': 37.2}
+como25 28 1 s
+azar 28 2 s
+Traceback (most recent call last):
+  File "C:\Users\JC\Downloads\dataeleccproyecto\proyeccion\fotos_sim.py", line 214, in <module>
+    main()
+  File "C:\Users\JC\Downloads\dataeleccproyecto\proyeccion\fotos_sim.py", line 172, in main
+    report()
+  File "C:\Users\JC\Downloads\dataeleccproyecto\proyeccion\fotos_sim.py", line 184, in report
+    df["abs"] = df.err_margen.abs()
+                ^^^^^^^^^^^^^
+  File "C:\Users\JC\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'err_margen'

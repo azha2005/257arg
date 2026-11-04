@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4165_9bac64a413",
+  "shp": "R4165.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4165.dbf",
+      "bytes": 686,
+      "sha256": "b5254239432c00b98a4a81232e9f7dcf857cf550c897a096a88ae17554e76a88"
+    },
+    {
+      "archivo": "R4165.shp",
+      "bytes": 476,
+      "sha256": "5aad025cb4be76a15a125818c0c43bb0af4b32d2dd2b51e02fc433c9f472867e"
+    },
+    {
+      "archivo": "R4165.shx",
+      "bytes": 108,
+      "sha256": "5bff2d411d0140cfffdd3811cbe852b885d2ec53a39a926bd1322a1671768ba9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/casalegnoa3v.zip!R4165.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6d27e016d9",
+    "archivo": "santafe/ipec/2010/casalegnoa3v.zip!R4165.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5393609.5,
+      6429891.0,
+      5394195.0,
+      6430937.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/casalegnoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "27da1b33f6daf6b25788591efbe190f1cecc39c9c9014a6e04ea4cc3bf1660d5"
+}

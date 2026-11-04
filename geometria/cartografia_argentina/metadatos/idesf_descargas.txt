@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="es">
+
+<head>
+    <meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><title>Acceso a sistemas - CAS - Acceso a sistemas - CAS</title>
+    
+        <link rel="stylesheet" type="text/css" href="/service-auth/webjars/normalize.css/8.0.1/normalize-112272e51c80ffe5bd01becd2ce7d656.css" /><link rel="stylesheet" type="text/css" href="/service-auth/webjars/bootstrap/5.3.8/css/bootstrap-grid.min-895b9494c7178ac12ad9c56d81305665.css" /><link rel="stylesheet" type="text/css" href="/service-auth/webjars/material-components-web/14.0.0/dist/material-components-web.min-9da9033e8d04504fe54b3dbb1298fd78.css" /><link rel="stylesheet" type="text/css" href="/service-auth/webjars/mdi__font/7.4.47/css/materialdesignicons.min-2c83c4bce691e18f82409f87b2bf84e4.css" /><link rel="stylesheet" type="text/css" href="/service-auth/webjars/datatables/2.3.2/css/dataTables.dataTables-86c98d6ce5aa289ccf4492ac3a785fad.css" /><link rel="stylesheet" type="text/css" href="/service-auth/themes/stg/css/stg-ab711e919adcbdd3b2e6436c51ec9a07.css" /><link rel="shortcut icon" href="https://www.santafe.gob.ar/assets/standard/images/favicon.ico" /></head>
+
+<body class="login mdc-typography">
+    <script type="text/javascript" src="/service-auth/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script type="text/javascript" src="/service-auth/webjars/datatables/2.3.2/js/dataTables-8e31487c41abe2938c55b5dcde42a604.js"></script>
+<script type="text/javascript" src="/service-auth/webjars/clientjs/0.2.1/dist/client.min-5b6a46b3fb2ab9307d013def98fd7289.js"></script>
+
+<script type="text/javascript" src="/service-auth/webjars/material-components-web/14.0.0/dist/material-components-web.min-3c99031127092dd1984f2e3aa6aeed8b.js"></script>
+<script type="text/javascript" src="/service-auth/js/cas-cd46228f2a9b608731f0c9dacfb9758c.js"></script>
+<script type="text/javascript" src="/service-auth/themes/stg/js/stg-0daad4d244c3b1549281000d802f384a.js"></script>
+<script>
+    if (typeof resourceLoadedSuccessfully === "function") {
+        resourceLoadedSuccessfully();
+    }
+    let trackGeoLocation = false;
+</script>
+
+<div>
+
+    <style>
+        .bgimage {
+            background-image: url(\/service-auth\/images\/background-553db102696ee497e02b357414b118e6\.jpg);
+        }
+    </style>
+
+    <header id="app-bar" class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z4 shadow-sm"
+            role="banner">
+        <nav class="mdc-top-app-bar__row navbar navbar-dark bg-dark">
+            <div class="container-fluid container-fluid d-flex align-items-center justify-content-between">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    </section>
+                <section class="mdc-top-app-bar__section">
+                    <div class="cas-brand mx-auto">
+                        <h1 class="visually-hidden">Acceso a sistemas - CAS -</h1>
+                        <a href="/service-auth/">
+                            <img id="cas-logo"
+                                 class="cas-logo"
+                                 alt="Acceso a sistemas - CAS -"
+                                 src="https://www.santafe.gov.ar/assets/standard/images/marca-footer.png"
+                            /></a>
+                    </div>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    </section>
+            </div>
+        </nav>
+    </header>
+
+    <div id="logindrawer">
+        </div>
+
+    <script>let countMessages = 0;</script>
+    <script type="text/javascript">
+        function supportsCookies() {
+            try {
+                document.cookie = 'testcookie=1';
+                const ret = document.cookie.indexOf('testcookie=') !== -1;
+                document.cookie = 'testcookie=1; expires=Thu, 01-Jan-1970 00:00:01 GMT';
+                return ret;
+            } catch (e) {
+                console.log(e);
+                return false;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!supportsCookies()) {
+                countMessages++;
+                window.jQuery('#cookiesSupportedDiv').show();
+            }
+
+            if (countMessages === 0) {
+                window.jQuery('#notifications-count').remove();
+                window.jQuery('#cas-notifications-menu').remove();
+            } else {
+                window.jQuery('#notifications-count').text(`(${countMessages})`)
+            }
+        });
+    </script>
+</div>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="fade-in mdc-drawer-app-content mdc-top-app-bar--fixed-adjust d-flex justify-content-center bgimage">
+        <main id="main-content" class="container-lg py-4" role="main">
+            <div id="content" class="d-flex justify-content-center">
+   <div class="d-flex justify-content-center flex-md-row flex-column mdc-card mdc-card-content card flex-grow-1">
+
+        <section id="loginForm"
+                 class="login-section login-form card-body">
+            <div class="d-flex flex-column justify-content-between m-auto">
+
+        <div>
+            <div id="serviceui" class="banner banner-info mb-4 text-justify">
+
+        <div class="d-flex align-items-center pr-2">
+            <div id="servicedesc" class="ml-2">
+                <strong><i class="mdi mdi-web" aria-hidden="true"></i>Idesf - Descargas</strong>
+                </div>
+        </div>
+
+    </div>
+        </div>
+
+        
+        
+        <div class="form-wrapper card-body">
+
+            <form method="post" id="fm1" action="login" onsubmit="loginFormSubmission();">
+                <div id="login-form-controls">
+                    <h2 class="text-center">
+                        
+                        
+                        <span>ID Ciudadana</span>
+                    </h2>
+
+                    <section class="cas-field form-group my-3" id="usernameSection">
+                        <label for="username"
+                               class="mdc-text-field mdc-text-field--outlined control-label w-100">
+                            <span class="mdc-notched-outline">
+                                <span class="mdc-notched-outline__leading"></span>
+                                <span class="mdc-notched-outline__notch">
+                                    <span class="mdc-floating-label"><span class="accesskey">U</span>suario (CUIL o IUP):</span>
+                                </span>
+                                <span class="mdc-notched-outline__trailing"></span>
+                            </span>
+                            
+                            
+                            <input class="mdc-text-field__input form-control" id="username"
+                                   type="text"
+                                   placeholder="Ingrese su CUIL o IUP"
+                                   autofocus
+                                   autocapitalize="none"
+                                   spellcheck="false"
+                                   aria-describedby="usernameValidationMessage"
+                                   autocomplete="username" required name="username" value=""/></label>
+
+                        <div class="mdc-text-field-helper-line invalid-feedback">
+                            <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                                 aria-hidden="true">
+                                <span id="usernameValidationMessage">Usuario es un campo requerido.</span>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+                            let username = "";
+                            let disabled = false;
+
+                            if (username != null && username !== "") {
+                                $("#username").val(username);
+                                if (disabled) {
+                                    $("#usernameSection").hide();
+                                }
+                            }
+                            /*]]>*/
+                        </script>
+                    </section>
+
+                    <section class="cas-field form-group my-3 mdc-input-group form-group" id="passwordSection">
+                        <div class="mdc-input-group-field mdc-input-group-field-append">
+                            <label for="password"
+                                   class="mdc-text-field caps-check mdc-text-field--outlined control-label mdc-text-field--with-trailing-icon control-label w-100">
+                                    <span class="mdc-notched-outline">
+                                        <span class="mdc-notched-outline__leading"></span>
+                                        <span class="mdc-notched-outline__notch">
+                                            <span class="mdc-floating-label"><span class="accesskey">C</span>ontraseña:</span>
+                                        </span>
+                                        <span class="mdc-notched-outline__trailing"></span>
+                                    </span>
+                                
+                                
+                                <input class="mdc-text-field__input form-control pwd"
+                                       type="password"
+                                       id="password"
+                                       required
+                                       placeholder="Ingrese su contraseña"
+                                       aria-describedby="passwordValidationMessage"
+                                       autocomplete="current-password" name="password" value=""/><button
+                                        class="reveal-password mdc-button mdc-button--unelevated mdc-input-group-append mdc-icon-button btn btn-primary"
+                                        type="button" title="Toggle password" aria-pressed="false">
+                                    <i class="mdi mdi-eye reveal-password-icon fas fa-eye" aria-hidden="true"></i>
+                                    
+                                </button>
+                            </label>
+                            <div class="mdc-text-field-helper-line invalid-feedback">
+                                <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                                     aria-hidden="true">
+                                    <span id="passwordValidationMessage">Contraseña es un campo requerido.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mdc-text-field-helper-line invalid-feedback caps-warn">
+                            <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg text-danger">
+                                <span>¡La tecla BLOQ MAYÚS está activada!</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cas-field">
+                        <input type="hidden" name="execution" value="c0ae2f93-70bd-4590-a993-ed47fe9244c0_ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJamszTVdWa1pUTTNMVFU0WW1VdE5EVTVZeTFpTWpjd0xXRTBOakEwWkRGak5UbGxZeUo5LklYc25abC11MG9jeXRpLUFfVXk2OXlUNEQwMWRjZWZDcVVOb0ZYbE45d3hic2o1dXVZeTBydDlWdDI4dWhISVNoenlDMlVSX3BhVkhXN1hOemFZVU05dTR4TlZEOTRmck9oblVNSTJrdWdvRVluRV8wdnY2UDdTTWtIaVJ3ZVAtMG9sbElPaWx4M240ZEV6eUEwa1lDWVNQRGlGTXdvcG9lLXRpeGZfYmFEUXNJenJ5TFlWQTIyNlR0eXZOQUVLVjRtNEdoMzA3d2R0WUYwOVFkZ1M3VXo2MzIyekIwSkp5M2VfNnByQncwN0JQc3R1SEkydUxySUZxUFBKaGVVWG54WlJPQ3VWTGxRd0RoMXFCQUhiUmRLbHlmUnEtOEVERGctVWc4UkZKNEwtVktkVUVoN1NMT2JEYzlBMmpUZUhlTVRDZTJFSFNKbjR4UUQyU3lnYVpUZlFkSUppdmRXRHkxbUdyajRYWG9BTC1Sb0FsaDJtLWJiRE16bW9QYnBoUkNJU3hLZU5xWHdTUU9YRzVRWGhfRGQ2SElvMXRPaHE3cjkya0xTLTJmLUNpT0sxQ0gwZHNFemxNclZjMV9mQ1ZlbnhMa3dTWGZ5TFJWbkZQZHAySHZVdG9lRGpvV1dBZjh6dmVmb0U0RmFGMzZVLWlvZDdpWVFLenlYNDZ0VUtESlAwbzUtY2paenVEdHZjMlhDclZmYk5OZ1d1VWY0bWZlNHlUWDVrR2NUTkgzX3lDd0NLY2VyM1dJNzhkd0pMY1JFdXNPcWhzS3Jjd1JkSE5TeG00QW5VWldsb0RRZnYxU1ZJYmR5RWZ6eDJsR1MteEJiM240RTJGeVJ5LVQ4OUZ1b0YyUVBHZ1ZzbDdzUW9MT1FzM0FUOWtCckVNemNSekxJZ0NQb09CWGROMnBLeW5nUWlpd3Vpd3Fubkc1WW5yeUpqTWFnc2V4SklCUzBqWk5pZk50cks0R2xQTGFGckVyV2g4bWZHVVRwcG9Qc2xuNGlpc3FwYlZnTmRKUi05TEwzV2VHVHNHTXNxbkpFd2NQRkg3WGtwR2NjUjZCbWNGcVhhYUZQeS04SlV1UTdtc1JteHpGVFFKOHdJeUNLNEhseFI5bmIySkQ0dU41c19uV051ejZ4Z1pNUGhJN01vLWdqbGtSNjgxNG9hU1J6aWJHVGRjQUpNUm9aTkM2M1k3eFdHV2tmYjhibmIzeEZLTjhTQUlUMTlrVXM0Z2FnemhqclhzVTJvaGtRbzJRbkJuQjdVbWtBN3RqaE8xbi16cXY1anZqakwzeUltM2pnV0hLY0p1YVVBSFN3UEYxMDVzRjlQa3UxemI3Z2JMb2hqdVFnclpNLU9QSHZrekdnRWFIc25nRW1vckZIQVNDRk9yQVREMkdBci1BUy16QlI1a3NMQVozQnRWeXVkcDdFSlg1RjlzbVh3cy0xX3dzSmFoeEFNYlBoalJ0N2ZsaGxvRFQ2U2JZaTJWcTRBRlZHdjZFeDdPM2s3aUJXcnA4MWFQcG9rLVRmTUdUNTJNc0V1V1RjaUN3WUdwY3VRLW1ndFl4UDkwR1lHeHpHYVI2el9ZbjNjclpVVWVNSThCdXJUckpGRTQzQTZJVTRUMm1waHZzZmIxbVN6R3Uya2pNUGZiX3FNOVc5akFzTkQzY1oxYnNxOXF0LWRDMElkR0d5ajg1VjFEelVOVmdxdm5id19odURHQkx2a0ZpVl9XMTIzY2pjY1FLdWpJaVlyY3FOU3RCclZ6cllqa1BHSTltWk1qUTlHZkEyTkNpeENMZDFhS0Y1cVdHMWZBWm9IOUhhelBWVWRieVplNjg0bWNROFBGRXF5Z044R00zMHQwaExiUFRDanFaanJzWWdhZkh2LUJ5VXZadHprNlRaY3hTb3VhR3dHNEhsazd3em92ZEJjbk1EemVzaTFnWXVPNk9SVTgzeXpWcVU5bkZfdXo1X3doaGJ6ZnlRUWYwdVJpNm9nX2pEclhNMkpVUWxGRlV5c1NmYUxUNC1JOTFCY3J6N0JwNVNiQnVua0V5Q0lvM1hlcTNiQU85MlRtc0dMVm9mTVUxVHpqLWtVVkxQTTRfbjBoWTFZa3d1bERCNXZpUEY4MkU2bnlRUTdlX1VNVXN0aUNTQnpzQmlsSzc2SVJXSDJMc1NDTWlwRVhFeXA3bVNkU2psWnNZSTI1N3lHVGM3di1LVVJ6RERHcHoyQ2lUQ3JPajNBeEQ1NnN3cG5IMndvQzFmd25DSFB5eUlta1VWNUNJS0tQRXVZYmI5SGpsNjlxNHVnVXF3bkFYRDFFbm9KSDdxdUtYZVJxNXU0US1SUENyNm91WThyYTFyOUhiQVNZa3RLR0F3dF9JTTBGT2hvYUF2blJKNERLbENaZGRWdDNqQ0VsTkdPbW5ibmtRcG91eTN2dEpJSE5nRzJhX0dNcnhqRWI2MkNoVEZNWE92dWFiWHFyQklNXzc5eno0am1OeTEySEk3Y3BNSmhLOUlSYUZBTkFTLXhIS2NrZzg4M2RKQ1RhMXR0Q0ZlcGJHSUtzSldYcS0tZFg3TzNDUmVEY2hlcTZNQTFDeXFKY1EzeU91czhiVURYaGRSNXNyUkhhOFNUak9vYzVfLU9fVVJEZkViSF9wOUZuRXJvVGdsMGhHR3ZHUHpXcGtqQkpFMG4zWUk4VlRXZW5BeGdZYkF1cU5GX0R3X25JTnBkdk1ZTS1keGdYUDVFdmFNamUwQ0ZJdTBWekp1M3lROHZ6dG5JWFBYODlrSG1TLTdyVTR5VlQ1dFFkUlgwVDVsTm50bDlzZTlLZTM0aFpKa20tdjlLbDFwb25wSUljamVYZ1c1UHowM3h1NGxnaDFCTHpZTjh6eHk0R09JQkVaak9Za2xFbzUxU0ppbjlSQXdmdWFySlVmNWpCUTZzYUJoQmY5X1A2cVFSOGZ4cnFuSHJaMk9CcXdiUndMSm0yc3FYblhUMnpybEF3SVg3Y0JXS08zR1hRZFpJUEllekFvcVZSai1sLW1SZnN4b2NZZ0h4cXkwSmdTOENlaThLN1JvUElZUFFHT2ZCeG9sX1dON0Rqb2hka2hyTFdoU1lPLWZCY0Z3Q1c2Rl9idDdaT3I1NThmOU4xZEFtSkp4VWJVbEJiQnRTUFhiWHhCRXUxX0xfQ0lQQ3EwOUVvemV1XzJOX1RTR25uWG1haVliZEtDWll4WFRBREdydTduRDB0TkNmUWV3VWtWNjRJX3paQ0Z4Q0k3czhGZWtZc1luYlJ3VldxRW9Kcjd5SEppMkRzN09yLTExYXJfLTdGeXl4SFc4eF9jNUJsbWtTTG9RT25KdDk1bEp3RTZmTGZjc0xkLUdkUzNna2VTdDZIUDh6Uk94eVRPREt6UF9VNFBSdVhLdVBzSXo0QW5ubFIwMjZiSXctZTJBOWpncWd6UUQwT0o1a2owTlBZdWJWN0NGNHFKcFBhZWJqdF9wZlBvZjl3eVpYUlB6ck9ReDhldl90Um1fM3NIakNCSHcyaERCUXpoVkhjRU9DRXVRSlJ5eVE5dlg3aWdCTnppYkJSZ25sOE44ZmYybUhSUlNsaWJCT1V6c3QxWUNRamZDc0hjRHJVcUtua19hWU9GaWNXdXNSbWJMRnRiRW9UTldMbWp5MzBWUlk5VzJVUzZNcVpRdTFDQzV1NUtHSU05YnJBTkY2QkxsVlhMdXk3T3BmdE1Cejh1SjB4Uk9ibW9tNjlLLVUxWGhEek5sVFFnbDBIUjlCUk1xZXhROWQ5ZW1VaG1ZcUR3cFpfZEdwQWw4Rk9Ma0xoczRmSFpCamdycldwc3Z1OU5XY2djSFpfdC1VZkZMX0pNQnBoN0pZcDVyRHluNUF0NUV0bUJxOFJPZG5nYmZtdDFDaHJmWGJ5VThRWERNb0Zzc2lKMURYMk5xZXh4OGlZZTh1X2syYWdXcVU1ZHM0SHJMWG9yRVFEeVBZcTNiYkIwQ2huSWNib2JDV29kcFhTSEY2WWhqQjVDb2FWZ0pJYXdHT3lEWGRqSzREUHVJZmNzZzJ0NTZXbEkxWjdjeTc4Nm1KT2R1RW9tVXFLMWtQRFkzbFJFclEtWEpQTUNKaGpTWFM1QUl1WXBNNVJ1OUhhX2FXMmZvLU5ENU9kTzNBSWdJc3VrQkU2T3dqNFVfeWF1YkY0Z1N3OGNRdXlJdU5VOGZLRHNaZE1ZZERVWTRkNHBGSjRNY1FwLThIUWNCRzJUaWlTZHBUYVlMYnV3TXRrTVZvNGNyQmpnVjFwY1ZTcHBuaHZjOGRDcEZtTXZkUmZFQ21ITjFIaDJqWnp0U0xxVm9tUkNzU1pURUI4YlBtd0ZMTEViTVlSWHBHOERGZk5vblJoTkozOUJtM0NnUzVkQkd0bjNFaFZldDJ6Z1l3VG55SHlQWVo1V1l1bldJQTBtLUdEdXNlRTJmc1RIdUMtNE1qRlpKb1FfUDhRbUJIUkNFdlpqd25XdWdqZmFXX09hWi1IeEFFT09RZ3RUbVpvTUZfNE8tVm9lNDdlUnc4cUhvYmVBNlQ3RWVIRXRUN2h4SFBLeHlORVVfWGtsTV9FbFY1eGszZVNPTHNQRW15T0FzNVBmYnNJRGxQaDd4UFIyQ1JZX2dBdU15Zm5hZ2FqTHpkMGs2R1FqVUwyMzR1WElJRXh3NkQtemZfWjZpMkJFbWxMYzV2ano3VGd6Y1A4QlZ5V3Y1QS15NUdUUU9BRjRmY0tISHJtRlZxLWVZb0RHWkI4WjRtaXp0VUcycjk3S2lkWTBIRlVzSENBRktIT0tKNHFuUm80X0JkOURLSDFJaUFxZlFUUmh0dldhdllhRUZuNzF6SUR1OWMyUV9WN2poTFJUQVBDVFhZOEd5QmxpUDdaeWhwQUtQTko0ZlF6QkhFMmZHbEp1cXNwbkdmWUlydi1CUUVadnRYS1hJbFcxQ0NPSW5iQmRHVTVta0xFV0RzSW9jT2RLNndNRk53T2x3dmpISU1OZWZtT1V6RWR5aTRHalY0VkVyUlFvUHYxeHpDb0JiR0NYc2VJenRlTzNnV1dsLWM0a3lmR3hod0U4NUUwQURHeXg3bWllR1BtUnZZclBUWGswbGNqWi1ncnZ5ZnFPeG9fQjR5OG5FYTZEUG5FWVUyVTZGOHRfNmMtXzVraVB6YXdoMnFaUXVWdGFBWElzYlg2MWdPcWZXUzVlXzZQU1lGY25EeVpRaHBnR2F3OFdXMVF6d25OaHVvUDhhUDNid21MTGU3NXBEQmhDZVZBTXUtTEhwTnd0b3J5WU9TVU9CekVQWkM1OWJfbEFpazRTRGdaRHhiek9xOElaTjU1R1QtRVhWeDNtWEVpRnFSRks2OTVrdGsxWnRVRWZHUXVnVXlUTS1xM2Jnb3NVdlhtT0R0WVk0XzRyRUVYdUZqMDlwV1ZRUnU0X2hhYmU1UnlqZXcwWHY4YTZzVnJiUGh6a2o3MmI2WTFzeHI3SW84TkJ1a3hRRzdIdnEtd0NiaW1rODhWV3V3dmJjZ0h2aHUwVVlfSlNVWmstM2JpYW40dVUxWDBKdXpqWlJtZXN4Q3JIUmxZOVNKVUhiVllROC1MY0hWREhqTmhxTm92SjZsX0otVTVkSDg1TDBzU2dGa084UVVVbHRXeHhpVTZOcnpCLWkxRlRzbDd4UFoxSlB0UkxtN2lmWVZzbWtSNndla2hqT0hkTE5zMUtDdlhhRW1lTXBncWg2NXJ5ZzY0d0dEdU8wMV8tcGpjdXUzdENpVTRMUncxTUMtUjRTN0lSTF9RNUU1Ynh3Ykczek5hU3hxZEI3bExxTEpJc2tNZEMzaXNSU09fUWtDbVZnY2ZmZkxsOG8tenQzdWhsbG54MV91QmFHVkppVG1SZGdSNy1CNm5PZFdwaVFKSTd1aUMzVjhXdk5GWTZ6dkRWWGYyZFFFcWVHTU0td0ZDajdZV29obkR6cXR3OTc0bFZUTk5fbkttU01vd2FlallERGdtUGdNYmpzU2FMd3hzcUZDc3lyZnYtUWNUZzdOaDNGYkRyazRLQVNBbkdDUVdaTFQ5Z256ZWdvQldUMTRfbW1oZWh0eW0za3VvZjhrd3pIc3U4ZlQ5VW53eGEzZllsdW9BaEhna25ld203WThMLUVMNVhCMjlPUjdjWGhjc0ZndmJoY3pGdm5NX3VwQjcwRUZNeHJBM0ZpMFJsU2NiQTgxaXFMZkNTMEpiR3hqZC02dFNLN05xSF9XX0tObXhXSW1LMFJ5V1B2SzZkd2J4LU9FMkJlR1hEQlRrX25tMFlsQ1MzaDZBWEJQMDMwemZxSEdaUWdqZjNXdXpfLW12M3FhOEctaEx5c2RfZC1KUkwxcjkyaUU2VUpiS2RwVVVlVEtIWG54UjR5WWVFeF9jSF9kRVgwRXN4SDBYdFZVRVgxRlkxMWpUak9NcUo0WE5JU05Wc05VZ1QtZndNTEk4UGZkbm56U3RWNVRIbnptbm1Qc1FFZ041SjBXbU5zZFRQei1QRlFqWVJpeVJ2N3hfLUxfZVIyMWd0QWpVZ09ucVBIdjdocXoyZFNqd3lnX3pkMlQ0WVVfUm1ueEVkYkl0dktpeUVCWGNtN2FndjE2VmdnZHdIdFY1WVIyOTB4dnVDc3JBRGVoZWlVQ1VSdXZKMWd0TTlxZkRfRlViNHN5UzNudlNoZUlPWTlkVTNxTnY2UFkwcHN0b3ZjTUZsbG9GU0VvVmdnZ0w4NEh6WmRMd1BrZkVCZ1BidnVBQVMzY0lWdEszNTB5WjdQdVduUFkwMTlnUFlWTTdENkRnZHluUFM1bzJqeG52ZGt3TG8xeTZJMU9XUGE0WFlnOERtbGx0b0JqRklPSW5wVHBLSUxSNnRGSndZTV9uY1EuRzJldkU3bHpXcV9oWWNkdTFvaUJTUi1Udlc5WEZ3XzlrZ3AtTDR4cWxrUE1WZlJoNFNnRm9MQlBNYWxaS1VpY2JJaFloZVBnZVB4TWxKbTREcjEwRFE="/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><input type="hidden" name="deviceFingerprint"/></section>
+
+                    <button
+                class="mdc-button mdc-button--raised btn btn-primary btn-primary flex-shrink-0"
+                name="submitBtn"
+                id="submitBtn"
+                accesskey="l"
+                type="submit">
+            <i class="mdi fas mdi-login fa-shield-alt" aria-hidden="true"></i>
+            <span class="mdc-button__label">Iniciar sesión</span>
+        </button>
+
+        </div>
+            </form>
+
+            <div>
+                <div id="pmlinks" class="my-2">
+        <div class="mt-2">
+            <!--span class="mdi mdi-account-question" aria-hidden="true"></span>
+            <span th:utext="#{screen.pm.button.forgotpwd('https://pwd.example.org')}">Forgot your password?</span--><a id="resetPassword" href="https://www.santafe.gob.ar/idciudadana/recuperarContrasena/">¿Olvidaste tu contraseña?</a>
+            <a id="createAccount" href="https://www.santafe.gob.ar/idciudadana/registro/">Crear cuenta</a>
+        </div>
+    </div>
+                </div>
+
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                var i = "Espere un momento..."
+                var j = "Iniciar sesi\u00F3n"
+                    /*]]>*/
+                    $(window).on("pageshow", function () {
+                        $(":submit").prop("disabled", false);
+                        $(":submit").attr("value", j);
+                    });
+                $(document).ready(function () {
+                    $("#fm1").submit(function () {
+                        $(":submit").attr("disabled", true);
+                        $(":submit").attr("value", i);
+                        return true;
+                    });
+                });
+            </script>
+        </div>
+
+        <div>
+            <div id="sidebar">
+            <div class="sidebar-content">
+                <p id="securityNotice">Cierre su sesión y el navegador al finalizar. Recuerde que con su usuario puede acceder a múltiples sistemas provinciales.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+        </section>
+        </div>
+</div>
+        </main>
+    </div>
+
+    <footer class="py-3 d-flex justify-content-center align-items-center cas-footer">
+    <span id="copyright" class="me-2 d-inline-block">Atribución-CompartirIgual 2.5 Argentina</span>
+    <img src="https://www.santafe.gov.ar/assets/standard/images/santafe-gris.png" alt="logo Santa Fe provincia"><span id="poweredBy" class="px-3 d-inline-block">
+        <span><p>Atención telefónica: 0800-777-0801</p><p> Lunes a viernes de 8 a 18 hs</p></span><a href="https://github.com/apereo/cas"></a>
+    </span>
+    </footer>
+
+</body>
+
+</html>

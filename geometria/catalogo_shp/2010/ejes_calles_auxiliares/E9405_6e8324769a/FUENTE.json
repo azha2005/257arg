@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E9405_6e8324769a",
+  "shp": "E9405.shp",
+  "entidades": 66,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E9405.dbf",
+      "bytes": 23578,
+      "sha256": "fb0707265d09280cb125ff17e9cd27a9cd7b16de7a0b5a5472ecf850732876ef"
+    },
+    {
+      "archivo": "E9405.shp",
+      "bytes": 5908,
+      "sha256": "97783f9e70098bfc249aa7dbbfe17d02ec8c48317c6aefc2574b613066016103"
+    },
+    {
+      "archivo": "E9405.shx",
+      "bytes": 628,
+      "sha256": "873fd4717af5a75f25c35fe5df84d0ca27b6d559c300e3b6ad4e4f100f24f9af"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/BarrioMitrea3v.zip!E9405.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5be8c94bd6",
+    "archivo": "santafe/ipec/2010/BarrioMitrea3v.zip!E9405.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 66,
+    "registros_shx": 66,
+    "shape_type": 3,
+    "bbox": [
+      5463166.5,
+      6320796.0,
+      5464085.0,
+      6321684.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/BarrioMitrea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "204d3978a75a5a07b93b17957890fecaf1a3e475f62b2f09a7cf34f2811c427a"
+}

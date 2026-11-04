@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R8769_38cbe313f1",
+  "shp": "R8769.shp",
+  "entidades": 11,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R8769.dbf",
+      "bytes": 2726,
+      "sha256": "1d10ade02e2eb930c422cbab50ec5dccdcb5a691520b658da2d49483a4ee1808"
+    },
+    {
+      "archivo": "R8769.shp",
+      "bytes": 8988,
+      "sha256": "f431e804f8bcb5be8f84554a1f4884b8d65017f3c65816bb779b446c3b55ed02"
+    },
+    {
+      "archivo": "R8769.shx",
+      "bytes": 188,
+      "sha256": "de14c0e87d2a476f8e6a46d739a8a504ffe44bb82599d746caaa0c0bedb04108"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Puertogralsanmartina1h.zip!R8769.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dd1ac2a329",
+    "archivo": "santafe/ipec/2010/Puertogralsanmartina1h.zip!R8769.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 11,
+    "registros_shx": 11,
+    "shape_type": 5,
+    "bbox": [
+      5427382.5,
+      6379990.0,
+      5432130.0,
+      6383603.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Puertogralsanmartina1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7aa2132c1a35c76b2e0081f395d009324b9ce4242477d727061ccb4d7dff9a83"
+}

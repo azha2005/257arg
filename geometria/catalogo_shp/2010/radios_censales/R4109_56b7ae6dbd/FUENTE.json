@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4109_56b7ae6dbd",
+  "shp": "R4109.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4109.dbf",
+      "bytes": 686,
+      "sha256": "5d6d6ff673eb6dac5158a5c68655bf63d267a836f0d1d9ab4c86dd9fb34aa060"
+    },
+    {
+      "archivo": "R4109.shp",
+      "bytes": 812,
+      "sha256": "4e01744a17f2740418f228748df48b198503d08e41a67f7dff3206698f0305f1"
+    },
+    {
+      "archivo": "R4109.shx",
+      "bytes": 108,
+      "sha256": "79cf7353decd8989fa04a43d3c8d94500a9d138f116da95660ac21e60a7bea5a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanmartinnortea3h.zip!R4109.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_95ac0dc538",
+    "archivo": "santafe/ipec/2010/sanmartinnortea3h.zip!R4109.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5469968.0,
+      6642836.5,
+      5471494.0,
+      6644064.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanmartinnortea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d1d28a5cc4a8e99024e92258ffadacb1e803cf0dc60ff68ab7ac29a6d81160b3"
+}

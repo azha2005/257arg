@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4114_1b7860e0b5",
+  "shp": "m4114.shp",
+  "entidades": 75,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4114.dbf",
+      "bytes": 15161,
+      "sha256": "bcf2b5eb0866b2ea49a2ae082034f639eedfe45cf28de8bd032c1d5808012a05"
+    },
+    {
+      "archivo": "m4114.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4114.shp",
+      "bytes": 10540,
+      "sha256": "da668ec91d2b18d42cc14199712e152bbe4fba39bb1da01dcfe023cd879f9ff4"
+    },
+    {
+      "archivo": "m4114.shx",
+      "bytes": 700,
+      "sha256": "b85d040cc844aaee77fef89debb70fc79c0c188ab2c83fe33bee6718b1a60af7"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANFRANCISCODESANTAFE.zip!m4114.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_56384ea10c",
+    "archivo": "santafe/ipec/2022/SANFRANCISCODESANTAFE.zip!m4114.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 75,
+    "registros_shx": 75,
+    "shape_type": 5,
+    "bbox": [
+      5302225.0,
+      6281308.0,
+      5303458.5,
+      6282542.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANFRANCISCODESANTAFE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "72098a4d04f6c830ff1ca9795e65603ef882c7d9b2718d4019e9353d0260750e"
+}

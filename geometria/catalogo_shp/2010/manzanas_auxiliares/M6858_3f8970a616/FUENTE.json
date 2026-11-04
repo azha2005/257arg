@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6858_3f8970a616",
+  "shp": "M6858.shp",
+  "entidades": 9,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6858.dbf",
+      "bytes": 2159,
+      "sha256": "38f0e33cf14af9d44be0f5fc86e68d6c6b0ede95721b84a053f7135e92089485"
+    },
+    {
+      "archivo": "M6858.shp",
+      "bytes": 1500,
+      "sha256": "5b7a56b94d1d01a1b9fe7e243377bf962500a8be72a9293caa07309d2f93ee26"
+    },
+    {
+      "archivo": "M6858.shx",
+      "bytes": 172,
+      "sha256": "c5b4c021907931f5b0cf45f37af4cfbbcb0e08cec9879b085ffa558261ccd026"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/aguaragrandea3h.zip!M6858.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c359e6c6b4",
+    "archivo": "santafe/ipec/2010/aguaragrandea3h.zip!M6858.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 9,
+    "registros_shx": 9,
+    "shape_type": 5,
+    "bbox": [
+      5413441.5,
+      6668566.5,
+      5414202.5,
+      6668820.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/aguaragrandea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6d9121ef1e7ce0e1b9601fc60bbc2e1066a0e61a94e5831b6d9de8ae924125df"
+}

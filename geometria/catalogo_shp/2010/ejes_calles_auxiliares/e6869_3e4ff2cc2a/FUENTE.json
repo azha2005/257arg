@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e6869_3e4ff2cc2a",
+  "shp": "e6869.shp",
+  "entidades": 165,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6869.shx",
+      "bytes": 1420,
+      "sha256": "628731eef477733804b78b3e601aa5bbb8e946143b43bec886e206c31a7c7bf2"
+    },
+    {
+      "archivo": "e6869.shp",
+      "bytes": 14620,
+      "sha256": "38ae9343bf1563afbd090452f554ac789ce0c28caccdc40522e82029896e8f54"
+    },
+    {
+      "archivo": "e6869.sbx",
+      "bytes": 372,
+      "sha256": "be0acaf663a4328a007610e88ad56c81e27decf51af7cd4ac4a95ec66b851054"
+    },
+    {
+      "archivo": "e6869.sbn",
+      "bytes": 4820,
+      "sha256": "bd6738e4118364a44ac2e2fde0efe1a7c04991ed3ec2ed991962231f84cf01a0"
+    },
+    {
+      "archivo": "e6869.dbf",
+      "bytes": 58029,
+      "sha256": "07f682128eeef91c12c2177285de4dabc6da12c36b2b9ae02ed88113d5f00f3b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PUJATONORTE.zip!e6869.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d59951e895",
+    "archivo": "santafe/ipec/2010/PUJATONORTE.zip!e6869.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 165,
+    "registros_shx": 165,
+    "shape_type": 3,
+    "bbox": [
+      5411011.0,
+      6512644.0,
+      5412424.5,
+      6514780.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PUJATONORTE.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1ee4567cc7908b108944df4068e3f03430a263fe5d96e62ee3e03a75b41730d4"
+}

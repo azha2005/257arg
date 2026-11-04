@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0983_3de2a6124f",
+  "shp": "m0983.shp",
+  "entidades": 117,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0983.dbf",
+      "bytes": 23435,
+      "sha256": "3dc9c61a4fb595b0aca3b773aba15554bdd4684b1cc0687033c5b5a78533465e"
+    },
+    {
+      "archivo": "m0983.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0983.shp",
+      "bytes": 18828,
+      "sha256": "6bc41693ecceea2390c7982d88fd9f5356c165b568695533dd45eccc09b5e007"
+    },
+    {
+      "archivo": "m0983.shx",
+      "bytes": 1036,
+      "sha256": "0859c153679c56774ee6ba22f2147eed08abceccc6ad3bfbcd8b1df598c59d4f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CAFFERATA.zip!m0983.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_78ed82f2a6",
+    "archivo": "santafe/ipec/2022/CAFFERATA.zip!m0983.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 117,
+    "registros_shx": 117,
+    "shape_type": 5,
+    "bbox": [
+      5305010.0,
+      6297478.5,
+      5307049.0,
+      6299572.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CAFFERATA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "4923000388379d645beecd209dbb02ba6ea554926d8570027afef9bc2b326fc0"
+}

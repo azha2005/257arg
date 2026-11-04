@@ -1,0 +1,84 @@
+{
+  "anio_carpeta": "2019-2020",
+  "criterio_anio": "Período del Precenso; no demuestra límites nuevos de esos años",
+  "tipo": "departamentos",
+  "carpeta": "2019-2020/departamentos/departamentosPolygon_8cedcc654d",
+  "shp": "departamentosPolygon.shp",
+  "entidades": 529,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "departamentosPolygon.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "departamentosPolygon.shp",
+      "bytes": 35412472,
+      "sha256": "752d6756653c9e0485d128384b7bd2352f2394a72c8867a305804402f6aac3d9"
+    },
+    {
+      "archivo": "departamentosPolygon.dbf",
+      "bytes": 2598688,
+      "sha256": "8b33d9177a7561ea8224877acf0447d8ae4f02418977ad900289c24b6ed05553"
+    },
+    {
+      "archivo": "departamentosPolygon.shx",
+      "bytes": 4332,
+      "sha256": "9413cefae6adb79643831534f3f7066526f7333256dfe9b11a0e88381d5bdac6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/precenso_2019_2020/departamentos.zip!departamentosPolygon.shp",
+  "metadata_original": {
+    "id_fuente": "precenso_departamentos",
+    "archivo": "indec/precenso_2019_2020/departamentos.zip!departamentosPolygon.shp",
+    "tipo": "departamento",
+    "corte": "Precenso 2019–2020; no confundir con censo 2022",
+    "cobertura": "Localidades incluidas en el Precenso; cobertura parcial",
+    "features": 529,
+    "registros_shx": 529,
+    "shape_type": 5,
+    "bbox": [
+      -73.99999999999994,
+      -90.00000001699999,
+      -24.999999999999943,
+      -21.781134793999968
+    ],
+    "campos": [
+      "id",
+      "old_id",
+      "area",
+      "perimeter",
+      "prov",
+      "depto",
+      "nomdepto",
+      "link",
+      "ind01",
+      "ind03",
+      "ind04",
+      "ind05",
+      "ind06",
+      "ind07",
+      "ind08",
+      "ind09",
+      "ind10",
+      "ind11",
+      "ind12",
+      "ind13",
+      "ind14",
+      "ind15",
+      "nomprov"
+    ],
+    "formato": "SHP",
+    "fuente": "https://precensodeviviendas.indec.gob.ar/descargas",
+    "nota": "El operativo refiere a localidades de 2000 habitantes o más. Los agregados no implican cobertura total de los departamentos. Geometría vigente y base censal deben cotejarse en metadatos.",
+    "licencia": "Consultar ficha de la fuente",
+    "url_descarga": "https://geoserver.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=precenso:departamentos&outputFormat=shape-zip",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 529,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "45ddae26defd8d92e2dd8970665f88b53dd5d97b910497678beedb6b79bbcb0c"
+}

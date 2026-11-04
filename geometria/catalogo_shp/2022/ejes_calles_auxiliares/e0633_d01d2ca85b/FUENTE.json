@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0633_d01d2ca85b",
+  "shp": "e0633.shp",
+  "entidades": 271,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0633.dbf",
+      "bytes": 81368,
+      "sha256": "7d856894b857c46b35f7dcf03fa825cb2640db6a6a644fbe28fc7f2b9798bbc7"
+    },
+    {
+      "archivo": "e0633.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0633.shp",
+      "bytes": 24012,
+      "sha256": "4b0499f2f8cebc047d62abfb6e356b220984adc08699b2e45171ab4107bb8143"
+    },
+    {
+      "archivo": "e0633.shx",
+      "bytes": 2268,
+      "sha256": "09a35d91b1c62d864b514c1dde32dca5b138eb9e556bfbd6fe71366fb5e0dde2"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAELOISA.zip!e0633.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_b26e320148",
+    "archivo": "santafe/ipec/2022/VILLAELOISA.zip!e0633.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 271,
+    "registros_shx": 271,
+    "shape_type": 3,
+    "bbox": [
+      5354213.5,
+      6351677.0,
+      5356306.0,
+      6352886.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAELOISA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "31542f1ef3012b3897c6ee80acc9608309d8c6f6888616592b9c47e14d0b26b0"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0008_f1c4be7aed",
+  "shp": "R0008.shp",
+  "entidades": 10,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0008.dbf",
+      "bytes": 2522,
+      "sha256": "64c89c7a456874869368aa1372cd03f1ff0f569d09caf027721e8c854ff3cdec"
+    },
+    {
+      "archivo": "R0008.shp",
+      "bytes": 19556,
+      "sha256": "56c3265cc89a543a71c5aa7ccff16d273eb90510fc480244f6cf9579c67a5a02"
+    },
+    {
+      "archivo": "R0008.shx",
+      "bytes": 180,
+      "sha256": "a722bec6e53e049ba773de949e0767e41f3a825f2360eea99436b4ad59361528"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SanJosedelRinconA3h.zip!R0008.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8131c8838a",
+    "archivo": "santafe/ipec/2010/SanJosedelRinconA3h.zip!R0008.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 10,
+    "registros_shx": 10,
+    "shape_type": 5,
+    "bbox": [
+      5439299.5,
+      6502205.0,
+      5450503.0,
+      6507678.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SanJosedelRinconA3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "00b12013d8b0d17e59eb32788e5b521455a882e6162dc0336e557cdd90313f61"
+}

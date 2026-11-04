@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6820_d3f5ffff54",
+  "shp": "E6820.shp",
+  "entidades": 45,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6820.dbf",
+      "bytes": 16270,
+      "sha256": "b3d0ebb70f7a4cbc56d6741c034a103e498a5bb38d3b9520a4c9b124f5e7abec"
+    },
+    {
+      "archivo": "E6820.shp",
+      "bytes": 4076,
+      "sha256": "c723407e38191a31dc5242e8524b683e5140e9b8b15e9b96bf90179d9e747016"
+    },
+    {
+      "archivo": "E6820.shx",
+      "bytes": 460,
+      "sha256": "55f30214047678bbda83ccac3ddb9adb85538e39bda3030962f1a8d4044d3135"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pueblomarinia3h.zip!E6820.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b6994341eb",
+    "archivo": "santafe/ipec/2010/pueblomarinia3h.zip!E6820.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 45,
+    "registros_shx": 45,
+    "shape_type": 3,
+    "bbox": [
+      5319349.0,
+      6564933.0,
+      5319827.5,
+      6565426.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pueblomarinia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "20150a22eb7d3835baad64f155e760fb6a7f27426f653269a9441825f62ffe0c"
+}

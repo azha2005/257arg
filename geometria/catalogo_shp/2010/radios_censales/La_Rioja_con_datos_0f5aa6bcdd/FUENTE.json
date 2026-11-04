@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/La_Rioja_con_datos_0f5aa6bcdd",
+  "shp": "La_Rioja_con_datos.shp",
+  "entidades": 316,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "La_Rioja_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "La_Rioja_con_datos.shp",
+      "bytes": 507696,
+      "sha256": "7804e3cdf853496d7f67feb3ae7eb581e88b591bd3e42ced54b667acbea42be4"
+    },
+    {
+      "archivo": "La_Rioja_con_datos.shx",
+      "bytes": 2628,
+      "sha256": "02c7af6c4f841acba9fa9ede7ac05e286a584bdcc59e5917dd3d4d5a5f05bba7"
+    },
+    {
+      "archivo": "La_Rioja_con_datos.dbf",
+      "bytes": 129533,
+      "sha256": "fcf9a33692ee9132890f47815a65fa3745eb3640e30f56f44e8d3d4fadc3a29e"
+    },
+    {
+      "archivo": "La_Rioja_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_La_Rioja_con_datos.zip!La_Rioja_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_46",
+    "archivo": "indec/2010/Codgeo_La_Rioja_con_datos.zip!La_Rioja_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "La Rioja",
+    "features": 316,
+    "registros_shx": 316,
+    "shape_type": 5,
+    "bbox": [
+      3142885.25,
+      6457746.0,
+      3549482.0,
+      6934361.0
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_La_Rioja_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 316,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "7bbf9bc35452ce71eea568fa1a3799d4cdd0334eb7c01645d5718c11654c425c"
+}

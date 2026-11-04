@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6811_0401327c72",
+  "shp": "E6811.shp",
+  "entidades": 48,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6811.dbf",
+      "bytes": 17314,
+      "sha256": "f99d1bc97ed4659522e90a0d132b5927a912ea689540de3968d2f268ac349311"
+    },
+    {
+      "archivo": "E6811.shp",
+      "bytes": 4356,
+      "sha256": "95366853edfa664c98cd67284e63032840a827ea2bbbd0ba62b8b58760ffe77b"
+    },
+    {
+      "archivo": "E6811.shx",
+      "bytes": 484,
+      "sha256": "6685763180d7238e8b4ca316d79c80e935b13b30a0a59b541259a9ef5e92593b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/wildermutha3h.zip!E6811.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_979ab9a33a",
+    "archivo": "santafe/ipec/2010/wildermutha3h.zip!E6811.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 48,
+    "registros_shx": 48,
+    "shape_type": 3,
+    "bbox": [
+      5366793.0,
+      6464644.5,
+      5368615.5,
+      6465898.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/wildermutha3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1046e8e92862611adc2d8bd30f805a0431a65a861f20f7d0708a984389c5910d"
+}

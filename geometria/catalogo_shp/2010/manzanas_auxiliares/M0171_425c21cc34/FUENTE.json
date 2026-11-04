@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0171_425c21cc34",
+  "shp": "M0171.shp",
+  "entidades": 543,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0171.dbf",
+      "bytes": 107357,
+      "sha256": "5b616d9c33d4e94400945c0997cf6db9ba732d6f42f3cad9607a75c9e474f9c5"
+    },
+    {
+      "archivo": "M0171.shp",
+      "bytes": 98812,
+      "sha256": "a9658e0fa0484ead54b40759961dcfa9548c74b4a5e95000f6c0629b144a1cc3"
+    },
+    {
+      "archivo": "M0171.shx",
+      "bytes": 4444,
+      "sha256": "801ed7ddfff4d325bd113e09211ddb12adda6aae70667d2b83d55bc39adb8ae1"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sunchalesA1h.zip!M0171.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d48fbfba86",
+    "archivo": "santafe/ipec/2010/sunchalesA1h.zip!M0171.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 543,
+    "registros_shx": 543,
+    "shape_type": 5,
+    "bbox": [
+      5349602.5,
+      6573923.5,
+      5353956.0,
+      6577603.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sunchalesA1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ae670a74c8f33eb7567211b9331179fade36bc8c833f7214b499db5814138a31"
+}

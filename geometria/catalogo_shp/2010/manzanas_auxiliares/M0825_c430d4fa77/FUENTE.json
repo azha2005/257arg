@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0825_c430d4fa77",
+  "shp": "M0825.shp",
+  "entidades": 73,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0825.dbf",
+      "bytes": 14767,
+      "sha256": "b0ab202df761af13512e271f9c84b7b514f8674cb11d43ff78f0711d644a527f"
+    },
+    {
+      "archivo": "M0825.shp",
+      "bytes": 12540,
+      "sha256": "fb07bb38308dba57ef6fbd1161ca292fe00e61c3b2b7856fc51d60ea3caea74e"
+    },
+    {
+      "archivo": "M0825.shx",
+      "bytes": 684,
+      "sha256": "341ee8222d4319fb1bfd6bfbc13b6a5d67f9a13635203962f89e52b5227613fc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/diegodealveara3h.zip!M0825.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_53afc4c814",
+    "archivo": "santafe/ipec/2010/diegodealveara3h.zip!M0825.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 73,
+    "registros_shx": 73,
+    "shape_type": 5,
+    "bbox": [
+      5303480.0,
+      6194355.5,
+      5305297.5,
+      6195699.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/diegodealveara3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8e175d57c93897498bc562abf82e300f39453a827d67235b270046d4eb46d86d"
+}

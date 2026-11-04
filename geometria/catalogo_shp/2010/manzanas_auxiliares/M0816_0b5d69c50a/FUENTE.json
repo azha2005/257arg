@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0816_0b5d69c50a",
+  "shp": "M0816.shp",
+  "entidades": 429,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0816.dbf",
+      "bytes": 84899,
+      "sha256": "5c43711ab0561d4e084b32857cb262e8cfaaee162b1ccb9f2be240be56e2357d"
+    },
+    {
+      "archivo": "M0816.shp",
+      "bytes": 90860,
+      "sha256": "273b7bd000b319c27c16a56f7a2e3ca65f7b41c4ef0edd7eb6f9403362e08248"
+    },
+    {
+      "archivo": "M0816.shx",
+      "bytes": 3532,
+      "sha256": "f667bdbd7952a364e221d5f04afb75e6d9986b2572764b2a998696fe6cc4b9a4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PuebloEstherA1H.zip!M0816.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_049013a7a5",
+    "archivo": "santafe/ipec/2010/PuebloEstherA1H.zip!M0816.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 429,
+    "registros_shx": 429,
+    "shape_type": 5,
+    "bbox": [
+      5444468.5,
+      6338719.5,
+      5449642.5,
+      6342442.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PuebloEstherA1H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a3b808f7bf07f8351dfe1adabc82cfe77ad473a579a851d2665eef0194123a85"
+}

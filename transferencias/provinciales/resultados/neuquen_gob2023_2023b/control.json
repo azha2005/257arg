@@ -1,0 +1,130 @@
+{
+  "nombre": "Neuquén",
+  "distrito": "15",
+  "fecha": "16/04/2023",
+  "foco": [
+    "MPN",
+    "Aliados del MPN",
+    "Neuquinizate"
+  ],
+  "nota": "MPN es la lista 151. Sus colectoras se agrupan como Aliados del MPN; Neuquinizate reúne las listas de Figueroa. Sin abstención: no hay padrón provincial por departamento validado. Cinco circuitos rurales sin correspondencia quedan fuera.",
+  "id": "neuquen_gob2023_2023b",
+  "nivel": "departamentos",
+  "unidades": 16,
+  "base": "votos emitidos",
+  "origen": "Gobernador 16/04/2023",
+  "destino": "Balotaje 19/11/2023",
+  "foco_lado": "origen",
+  "pendientes": [
+    "LA PICAZA",
+    "PASO COIHUE",
+    "QUEMQUEMTREU",
+    "TRALAITUE",
+    "ZAINA YEGUA"
+  ],
+  "cobertura_provincial": 0.9996107322558787,
+  "cobertura_origen": 1.0,
+  "categorias_origen": 8,
+  "rango": 8,
+  "condicion": 122.24230259372658,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.04613628930737222,
+    "0.0001": 0.010670667183710857,
+    "1e-05": 0.004206953095833489,
+    "1e-06": 0.0038506619081802285,
+    "1e-07": 0.0039843865337847095
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.9824411158179795,
+  "desviacion_max_margen_destino_pp": 0.10559810473578374,
+  "electores_o_votos_origen": 416004.0,
+  "electores_o_votos_destino": 438483.0,
+  "filas": [
+    {
+      "origen": "Aliados del MPN",
+      "peso": 11.88,
+      "dif_variante_pp": 55.95,
+      "sensibilidad_pp": 96.01,
+      "ancho_intervalo_pp": 97.54,
+      "separacion_pp": 8.47,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente de Todos Neuquino",
+      "peso": 12.72,
+      "dif_variante_pp": 4.6,
+      "sensibilidad_pp": 37.06,
+      "ancho_intervalo_pp": 47.93,
+      "separacion_pp": 27.54,
+      "no_identificada": true
+    },
+    {
+      "origen": "Neuquinizate",
+      "peso": 38.51,
+      "dif_variante_pp": 34.67,
+      "sensibilidad_pp": 41.42,
+      "ancho_intervalo_pp": 50.86,
+      "separacion_pp": 21.74,
+      "no_identificada": true
+    },
+    {
+      "origen": "MPN",
+      "peso": 18.18,
+      "dif_variante_pp": 36.65,
+      "sensibilidad_pp": 44.27,
+      "ancho_intervalo_pp": 69.24,
+      "separacion_pp": 7.01,
+      "no_identificada": true
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 3.27,
+      "dif_variante_pp": 29.54,
+      "sensibilidad_pp": 77.43,
+      "ancho_intervalo_pp": 92.18,
+      "separacion_pp": 26.13,
+      "no_identificada": true
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 3.79,
+      "dif_variante_pp": 16.55,
+      "sensibilidad_pp": 56.17,
+      "ancho_intervalo_pp": 13.54,
+      "separacion_pp": 39.32,
+      "no_identificada": true
+    },
+    {
+      "origen": "Cumplir",
+      "peso": 8.0,
+      "dif_variante_pp": 11.47,
+      "sensibilidad_pp": 46.6,
+      "ancho_intervalo_pp": 17.85,
+      "separacion_pp": 37.25,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 3.66,
+      "dif_variante_pp": 18.52,
+      "sensibilidad_pp": 59.95,
+      "ancho_intervalo_pp": 41.35,
+      "separacion_pp": 36.62,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "serie": "2023",
+  "fuente": "https://intranet.jusneuquen.gov.ar/images2/Electoral/CP_16-04-2023/escrutinio_def/Escrutinio_DefinitivoxMesas_2023.pdf"
+}

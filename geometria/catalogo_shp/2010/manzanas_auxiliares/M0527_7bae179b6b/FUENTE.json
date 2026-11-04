@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0527_7bae179b6b",
+  "shp": "M0527.shp",
+  "entidades": 184,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0527.dbf",
+      "bytes": 36634,
+      "sha256": "fd88f45642fc6d2b582a3559c2c24417a29ae8db207367d19d3bb09ebb254f53"
+    },
+    {
+      "archivo": "M0527.shp",
+      "bytes": 33300,
+      "sha256": "0dc7e8ed858bc339b6114efe3bb6c81d15a82f1b5f06d30fe7eab3d1e0455a42"
+    },
+    {
+      "archivo": "M0527.shx",
+      "bytes": 1572,
+      "sha256": "a8e576dd3899e84548053a25ee39b25af594da95e05b15226a20e09051c74ae1"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nelsona2v.zip!M0527.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_231b6d6c86",
+    "archivo": "santafe/ipec/2010/nelsona2v.zip!M0527.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 184,
+    "registros_shx": 184,
+    "shape_type": 5,
+    "bbox": [
+      5426728.5,
+      6540035.0,
+      5428344.5,
+      6542647.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nelsona2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "617918edfa7c27750012016ddb404c46112fe27b7f1960979d46ba2f66561abb"
+}

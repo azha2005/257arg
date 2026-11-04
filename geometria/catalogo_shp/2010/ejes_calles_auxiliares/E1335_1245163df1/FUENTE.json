@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1335_1245163df1",
+  "shp": "E1335.shp",
+  "entidades": 119,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1335.dbf",
+      "bytes": 42022,
+      "sha256": "4327984ffc7797f5e726df0f664d3f9f9cd26ffacbfac3221f2dccddb2c68085"
+    },
+    {
+      "archivo": "E1335.shp",
+      "bytes": 10636,
+      "sha256": "8b5d6be02c8e8db85a0ac442e4a1f7d74872f5cb80184d1b33c39a404d27e78c"
+    },
+    {
+      "archivo": "E1335.shx",
+      "bytes": 1052,
+      "sha256": "8fa3bccba3c4a401a1cf1f59c140bcb909cb28c8f8e80d04672f2773c6ec0871"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/losamoresa3v.zip!E1335.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ab5983427a",
+    "archivo": "santafe/ipec/2010/losamoresa3v.zip!E1335.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 119,
+    "registros_shx": 119,
+    "shape_type": 3,
+    "bbox": [
+      5501840.5,
+      6891254.5,
+      5502417.0,
+      6892857.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/losamoresa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ef02a54085b70b03b04e5c987bf11cef8d6831da89353cf0c63f6d0fa9baf974"
+}

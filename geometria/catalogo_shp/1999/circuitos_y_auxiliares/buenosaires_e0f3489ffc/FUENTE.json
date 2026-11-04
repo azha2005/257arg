@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "1999",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "1999/circuitos_y_auxiliares/buenosaires_e0f3489ffc",
+  "shp": "buenosaires.shp",
+  "entidades": 209,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "buenosaires.dbf",
+      "bytes": 50656,
+      "sha256": "be972bb62134c09665b2e14285a67287ea282085fc8e12f5cbdf2992bd2e047b"
+    },
+    {
+      "archivo": "buenosaires.shp",
+      "bytes": 232764,
+      "sha256": "920d8726e2a9bd23ca8a2a08b024d333bcda0c54d3b02814bcb2b125e55f8744"
+    },
+    {
+      "archivo": "buenosaires.shx",
+      "bytes": 1772,
+      "sha256": "316809f07aa0b8d49f12bce31f77dd5f116d07ad181b4a60dd9f0b64f2abab67"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/geoda_caba_1999/buenosaires.zip!buenosaires/buenosaires.shp",
+  "metadata_original": {
+    "archivo": "geoda_caba_1999/buenosaires.zip!buenosaires/buenosaires.shp",
+    "formato": "SHP",
+    "features": 209,
+    "shapes": 209,
+    "bbox": [
+      4185678.665034615,
+      6134255.880146947,
+      4202092.673293772,
+      6153539.871891696
+    ],
+    "campos": [
+      "INDRA",
+      "PROV",
+      "CIRCUNS",
+      "CIRC",
+      "PROVINCIA",
+      "CIRCUNSCRI",
+      "CIRCUITO",
+      "APR_1",
+      "AL_1",
+      "TURNT_1",
+      "ELEC_1",
+      "VOTPOS_1",
+      "AL99CIRC",
+      "APR99CIR",
+      "TURN99CR",
+      "EAST",
+      "NORTH",
+      "INDRANO",
+      "APR99PC",
+      "AL99PC",
+      "TURN99PC"
+    ],
+    "sha256": "920d8726e2a9bd23ca8a2a08b024d333bcda0c54d3b02814bcb2b125e55f8744",
+    "crs_wkt": null,
+    "url": "https://geodacenter.github.io/data-and-lab/data/buenosaires.zip",
+    "fuente": "https://geodacenter.github.io/data-and-lab/buenos-aires_old/",
+    "corte_declarado": "1999",
+    "nota": "209 circuitos según catálogo GeoDa; proyección Gauss Kruger Inchauspe zona 3"
+  },
+  "firma_componentes": "99decccd33893c5f19a1a1d18a89602781d3c2daff5e4b2d2f71efd54ffd7aaa"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0687_0543f65c76",
+  "shp": "e0687.shp",
+  "entidades": 199,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0687.dbf",
+      "bytes": 59912,
+      "sha256": "34fa43657ca896b75f1d80d42f2e75ab241594c4e9c5d72e462d7c7ec2c6b88a"
+    },
+    {
+      "archivo": "e0687.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0687.shp",
+      "bytes": 17628,
+      "sha256": "2793c47d318499989f0b1dd211c4f94e397315ef225598f2c05f5c4f1b1d6e52"
+    },
+    {
+      "archivo": "e0687.shx",
+      "bytes": 1692,
+      "sha256": "6627bfd70650c09a93283b204afcee30724247729b08e7dcabba2489601474a7"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MOISESVILLE.zip!e0687.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_94784eb112",
+    "archivo": "santafe/ipec/2022/MOISESVILLE.zip!e0687.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 199,
+    "registros_shx": 199,
+    "shape_type": 3,
+    "bbox": [
+      5358192.5,
+      6600241.5,
+      5360499.5,
+      6602622.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MOISESVILLE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "10e51ba4882eb67983585295f113357bfec8fd971c4d8fa31e26d2c252954fd7"
+}

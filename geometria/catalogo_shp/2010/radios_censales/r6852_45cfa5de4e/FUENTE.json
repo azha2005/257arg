@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6852_45cfa5de4e",
+  "shp": "r6852.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6852.dbf",
+      "bytes": 889,
+      "sha256": "fb3c320c1f8420f38b4aac22c5ea7a3c8bb1ad1c351b67839ad2db9712ec56ad"
+    },
+    {
+      "archivo": "r6852.sbn",
+      "bytes": 140,
+      "sha256": "fbc4d4745073e57427d7ee58c996ffe3ead22f6ab74e75c81cfbbf343c7651a3"
+    },
+    {
+      "archivo": "r6852.sbx",
+      "bytes": 116,
+      "sha256": "ceef75c704e14892064efa5a9274916f20c82aeb83a1220a23a7e4bf62298c3b"
+    },
+    {
+      "archivo": "r6852.shp",
+      "bytes": 1620,
+      "sha256": "0539e397d3424c21eb5e58aaaf4151cb2e2c8035918278b5402f80e18a6ef692"
+    },
+    {
+      "archivo": "r6852.shx",
+      "bytes": 116,
+      "sha256": "e218d63434067cd5f0a1c57df8a398b8aac30c8a98f992d9e75fce9bacd0721b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/BARRIOCAIMA.zip!r6852.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8cd591851e",
+    "archivo": "santafe/ipec/2010/BARRIOCAIMA.zip!r6852.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5416641.5,
+      6476170.0,
+      5419240.0,
+      6479868.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/BARRIOCAIMA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1515b9abb7f2972bac37b3d4972cbe73214f2376f3b4369dfe797dc092d88f9e"
+}

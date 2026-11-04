@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e7508_88bae30104",
+  "shp": "e7508.shp",
+  "entidades": 26,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e7508.shx",
+      "bytes": 308,
+      "sha256": "e333d7471be60d43302a6eeaf8939a8eeea0a285741b27c4fa1ac075438dbd42"
+    },
+    {
+      "archivo": "e7508.shp",
+      "bytes": 2388,
+      "sha256": "8b5beba9a23b87e964939f1198c2e739a5995dd3d0017049d13a598e88aab5a3"
+    },
+    {
+      "archivo": "e7508.sbx",
+      "bytes": 172,
+      "sha256": "5fca31c30f7054a878eac23ccebca6bfef8a3cb868290102a45c09cae3acd70a"
+    },
+    {
+      "archivo": "e7508.sbn",
+      "bytes": 452,
+      "sha256": "131ef03c8e3e93ad14452c28f870c83273d6080d6404a0d3e91ee934489ef4cd"
+    },
+    {
+      "archivo": "e7508.dbf",
+      "bytes": 9657,
+      "sha256": "1bb5c42ab1bdac55dd44d72a95bfa0ba8429b4b97da889b7b2af6acf328f132d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SANTAFELICIA.zip!e7508.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5c39d079fb",
+    "archivo": "santafe/ipec/2010/SANTAFELICIA.zip!e7508.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 26,
+    "registros_shx": 26,
+    "shape_type": 3,
+    "bbox": [
+      5475837.0,
+      6751808.5,
+      5476567.5,
+      6752758.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOM_NOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SANTAFELICIA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d97bb74c936d304392e4c620ef2a4df8070c3cd370c78dd69e474e49b48d9d4d"
+}

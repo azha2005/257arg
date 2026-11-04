@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0755_5548f92462",
+  "shp": "E0755.shp",
+  "entidades": 378,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0755.dbf",
+      "bytes": 132154,
+      "sha256": "04dc3a89c544ce2139e503324caa69813f4a0106a63988d0adbb5ad5ea20860b"
+    },
+    {
+      "archivo": "E0755.shp",
+      "bytes": 33380,
+      "sha256": "40647d9cf591921f9cf8a5c832d15445558ed02e9201d13bb34a57d855c1685e"
+    },
+    {
+      "archivo": "E0755.shx",
+      "bytes": 3124,
+      "sha256": "770b994543e2250245efa8b19a17b0a414ee95ea911209efd30cd52a14978229"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santaclaradesaguiera2h.zip!E0755.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_27ced9119c",
+    "archivo": "santafe/ipec/2010/santaclaradesaguiera2h.zip!E0755.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 378,
+    "registros_shx": 378,
+    "shape_type": 3,
+    "bbox": [
+      5325353.5,
+      6531311.5,
+      5327725.5,
+      6532978.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santaclaradesaguiera2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ee887eef84f110fce6ffb09ea42b99ae3d7de7b1777015e2830cc375b9fc99ad"
+}

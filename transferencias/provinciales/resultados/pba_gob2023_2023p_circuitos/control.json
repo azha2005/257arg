@@ -1,0 +1,100 @@
+{
+  "nombre": "Buenos Aires",
+  "distrito": "02",
+  "serie": "2023",
+  "fecha": "22/10/2023",
+  "origen": "Gobernador 22/10/2023 (circuitos)",
+  "destino": "Presidente 22/10/2023",
+  "nivel": "circuitos",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.gob.ar/2023",
+  "nota": "Provisorio DINE de gobernador por circuito, mesas nativas. Gobernador y presidente general se votaron el mismo día: es un cruce ecológico entre cargos simultáneos, no un desplazamiento temporal de votos.",
+  "foco": [],
+  "id": "pba_gob2023_2023p_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "25DEMAYO:986",
+    "CHIVILCOY:220",
+    "CHIVILCOY:224",
+    "LAPLATA:493",
+    "LASFLORES:539"
+  ],
+  "foco_lado": "origen",
+  "unidades": 1042,
+  "categorias_origen": 5,
+  "rango": 5,
+  "condicion": 35.17077845830635,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.0109463766682237,
+    "0.0001": 0.0017252469677506135,
+    "1e-05": 0.0006349492342107113,
+    "1e-06": 0.000467037778001817,
+    "1e-07": 0.0004260611456226436
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 0.7796437122376062,
+  "desviacion_max_margen_destino_pp": 0.05963563044452114,
+  "electores_o_votos_origen": 10160535.0,
+  "electores_o_votos_destino": 10199399.0,
+  "filas": [
+    {
+      "origen": "FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD",
+      "peso": 3.54,
+      "dif_variante_pp": 9.65,
+      "sensibilidad_pp": 61.32,
+      "ancho_intervalo_pp": 5.69,
+      "separacion_pp": 71.53,
+      "no_identificada": true
+    },
+    {
+      "origen": "JUNTOS POR EL CAMBIO",
+      "peso": 24.21,
+      "dif_variante_pp": 1.35,
+      "sensibilidad_pp": 30.98,
+      "ancho_intervalo_pp": 1.2,
+      "separacion_pp": 66.09,
+      "no_identificada": false
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 22.35,
+      "dif_variante_pp": 6.37,
+      "sensibilidad_pp": 37.36,
+      "ancho_intervalo_pp": 5.03,
+      "separacion_pp": 61.1,
+      "no_identificada": true
+    },
+    {
+      "origen": "UNION POR LA PATRIA",
+      "peso": 40.2,
+      "dif_variante_pp": 1.87,
+      "sensibilidad_pp": 23.44,
+      "ancho_intervalo_pp": 0.21,
+      "separacion_pp": 58.34,
+      "no_identificada": false
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 9.7,
+      "dif_variante_pp": 10.31,
+      "sensibilidad_pp": 17.69,
+      "ancho_intervalo_pp": 12.02,
+      "separacion_pp": 58.85,
+      "no_identificada": false
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

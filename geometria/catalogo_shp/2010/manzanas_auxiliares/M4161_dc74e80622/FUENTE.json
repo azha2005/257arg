@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4161_dc74e80622",
+  "shp": "M4161.shp",
+  "entidades": 10,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4161.dbf",
+      "bytes": 2356,
+      "sha256": "d355f9a88a152d6ff6b83cfad67c711fc492df70945d30f3bcc856cf5af773dc"
+    },
+    {
+      "archivo": "M4161.shp",
+      "bytes": 1876,
+      "sha256": "80cd1a2e449dcea883107b27a931b94571ff9bdae7ab96bbbdea87427e1cfece"
+    },
+    {
+      "archivo": "M4161.shx",
+      "bytes": 180,
+      "sha256": "5bbf12f02d39f02656fc9e535a20fb7c3d160c3b1422f381cf521e3c0d171c6c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/hipatiaa3v.zip!M4161.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a78d3d44a8",
+    "archivo": "santafe/ipec/2010/hipatiaa3v.zip!M4161.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 10,
+    "registros_shx": 10,
+    "shape_type": 5,
+    "bbox": [
+      5401137.5,
+      6555849.5,
+      5401970.0,
+      6556800.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/hipatiaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "289e0b0ede316436955fb75b98055465259850f653b42821b8fd145f74fddd87"
+}

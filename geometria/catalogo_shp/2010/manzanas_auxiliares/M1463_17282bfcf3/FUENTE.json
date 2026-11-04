@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1463_17282bfcf3",
+  "shp": "M1463.shp",
+  "entidades": 35,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1463.dbf",
+      "bytes": 7281,
+      "sha256": "510ec7b806448e7f7aa91f1b53ff3862487461d930ce163e17bdb5a107730fa6"
+    },
+    {
+      "archivo": "M1463.shp",
+      "bytes": 5596,
+      "sha256": "7b7d9fada242b1cf5cd4cb877da675468e6f1ff2a4edd359a3d0f367c5d71d29"
+    },
+    {
+      "archivo": "M1463.shx",
+      "bytes": 380,
+      "sha256": "cb8595d151146a23e2d2b3de38dc68f09801df03309e2aba43ba7b741b0a33f4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/GarabatoA3V.zip!M1463.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d35339437c",
+    "archivo": "santafe/ipec/2010/GarabatoA3V.zip!M1463.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 35,
+    "registros_shx": 35,
+    "shape_type": 5,
+    "bbox": [
+      5485795.5,
+      6797154.5,
+      5486926.5,
+      6798466.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/GarabatoA3V.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ea1a668d4d77d27a8f771724044d7aaba3dd8f9cf714feb22576b56e52cfbbd1"
+}

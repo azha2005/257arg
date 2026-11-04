@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0931_e25fc6c6c7",
+  "shp": "e0931.shp",
+  "entidades": 243,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0931.dbf",
+      "bytes": 73024,
+      "sha256": "3759d7901607890365e3d9ffc578a1b044eeddfb122f5c33d1b6319920cad336"
+    },
+    {
+      "archivo": "e0931.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0931.shp",
+      "bytes": 22140,
+      "sha256": "1ab9a8d7e4876dbc5ede942bdbca860636d19925c2d70ccd562ca49a79621161"
+    },
+    {
+      "archivo": "e0931.shx",
+      "bytes": 2044,
+      "sha256": "8fc5ed20e2ef302803ded5a4a8ef7f22c8f6c007697533e795d0521297e4a5c8"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MARCELINOESCALADA.zip!e0931.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_f10e17ea05",
+    "archivo": "santafe/ipec/2022/MARCELINOESCALADA.zip!e0931.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 243,
+    "registros_shx": 243,
+    "shape_type": 3,
+    "bbox": [
+      5454139.0,
+      6616866.0,
+      5455723.5,
+      6618206.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MARCELINOESCALADA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "f4278820a73a66d30621bcba4aa2594529b4ddd2ac8e1d07ad2fbedf8afbc04e"
+}

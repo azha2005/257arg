@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4166_4992fde031",
+  "shp": "M4166.shp",
+  "entidades": 25,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4166.dbf",
+      "bytes": 5311,
+      "sha256": "f99a2c6eb61e3a5e963571cd63939003d523a6280ed46e543c53d2f5a2b0099f"
+    },
+    {
+      "archivo": "M4166.shp",
+      "bytes": 4204,
+      "sha256": "c47487cd8b3a91d1017c527d11ce5431661971f20b9706fe6f10045ada788771"
+    },
+    {
+      "archivo": "M4166.shx",
+      "bytes": 300,
+      "sha256": "661444244ff25d31082dcf7a40a8a13f9a38108e1c9b9c550432906a3df5d822"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villasanjosea3h1.zip!M4166.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bf11ce1e21",
+    "archivo": "santafe/ipec/2010/villasanjosea3h1.zip!M4166.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 5,
+    "bbox": [
+      5345483.5,
+      6532150.5,
+      5346026.0,
+      6532687.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villasanjosea3h1.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "85ea51888f227245ff2ddded7d9d11cca0c63b652d43a0b1be5bc68ad08a4858"
+}

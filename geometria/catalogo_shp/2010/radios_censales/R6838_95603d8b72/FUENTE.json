@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6838_95603d8b72",
+  "shp": "R6838.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6838.dbf",
+      "bytes": 686,
+      "sha256": "8813789445d6777431d19b3e98697f68dffc2353e0e091d5d653c048b9342780"
+    },
+    {
+      "archivo": "R6838.shp",
+      "bytes": 5916,
+      "sha256": "b722a3acb811de5f289b8a6a4d72f4c2c5d23d0c305c0f9ea3361473fb27e723"
+    },
+    {
+      "archivo": "R6838.shx",
+      "bytes": 108,
+      "sha256": "506f6b35358f2e1e2fec28c175be76f8324487cf4aeb01aa6d76082459ebb970"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/rinconpotreroa1h.zip!R6838.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_890e32c099",
+    "archivo": "santafe/ipec/2010/rinconpotreroa1h.zip!R6838.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5451877.0,
+      6510861.5,
+      5458000.5,
+      6515903.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/rinconpotreroa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8318a958bbf45a686c46881824de498ab0cd6c0205fb7e32d5fa9aa2de26ed41"
+}

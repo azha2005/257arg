@@ -1,0 +1,72 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/r0049_d8f202f789",
+  "shp": "r0049.shp",
+  "entidades": 118,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r0049.dbf",
+      "bytes": 23492,
+      "sha256": "3240a8fdf9301f9a1f3768a9d9d418e30de159b64acf57fd6f9b3530ae6ba896"
+    },
+    {
+      "archivo": "r0049.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "r0049.shp",
+      "bytes": 45732,
+      "sha256": "63cbae9f7fc3aa7ca47eb166d265a69aec58aa0d87088760fd77b1fb20015612"
+    },
+    {
+      "archivo": "r0049.shx",
+      "bytes": 1044,
+      "sha256": "fc1d6637d7c9b8ae486150137cd0441c6fc75d5e709bc4dc627433008742eeb3"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VENADOTUERTO.zip!r0049.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_81e4544658",
+    "archivo": "santafe/ipec/2022/VENADOTUERTO.zip!r0049.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 118,
+    "registros_shx": 118,
+    "shape_type": 5,
+    "bbox": [
+      5313156.0,
+      6260886.0,
+      5322000.5,
+      6270784.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2020",
+      "RAD2020",
+      "FRAC2010",
+      "RAD2010"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VENADOTUERTO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "62817dccc2ed41e964599ab9599a112f8c9fdf2a0c9c549a903a9a2176b57cf8"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0555_24a6ed1b2c",
+  "shp": "E0555.shp",
+  "entidades": 393,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0555.dbf",
+      "bytes": 137374,
+      "sha256": "260d5158d52b51c4d6a440ccb6dfd427734a08395873c4d63918aa19d6547048"
+    },
+    {
+      "archivo": "E0555.shp",
+      "bytes": 34716,
+      "sha256": "a1491090d5663a8b6f7123e6c873a44458f4a3c645fb50b81dca8f1255a4e70b"
+    },
+    {
+      "archivo": "E0555.shx",
+      "bytes": 3244,
+      "sha256": "62078f54756914628931c452f8da729e859bcf5103ae013a752c8b1108b2df4c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sangregorioa2h.zip!E0555.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_763828674e",
+    "archivo": "santafe/ipec/2010/sangregorioa2h.zip!E0555.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 393,
+    "registros_shx": 393,
+    "shape_type": 3,
+    "bbox": [
+      5311190.5,
+      6199334.5,
+      5313568.0,
+      6201617.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sangregorioa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "aa743f3633a190605b69f42e45313098e90e105a1cec1efb47abb57b6e1e6adf"
+}

@@ -1,0 +1,117 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/Radios_2022_v2025-1_54a9597c44",
+  "shp": "Radios 2022 v2025-1.shp",
+  "entidades": 66502,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Radios 2022 v2025-1.sbn",
+      "bytes": 649916,
+      "sha256": "3935e32efdb8b050d6c6cda0e13b43f6b1eeb697b1e9734120636676862692bf"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.sbx",
+      "bytes": 7764,
+      "sha256": "9d0184a0802e7269fc21bd895ade1e2020183b5b632274321e3783613205eb18"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.shp",
+      "bytes": 93811696,
+      "sha256": "73548f48f2949cad41486bad6f7681ac829a2b3e01b6deb891db9676ec02bf6f"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.shp.xml",
+      "bytes": 9087,
+      "sha256": "82bda59af8a2823847181c6a20ec657efdc6d1e2b3a315b2a72208af3435cc54"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.shx",
+      "bytes": 532116,
+      "sha256": "0549d41f5a0c66cabe13f2bbce0c8b67714cea811f7c08d8eb4b78cbe475e8af"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.dbf",
+      "bytes": 18687384,
+      "sha256": "83c97aab925fbd8305ff1189e8763f383075dc10ddea64a2b0f10a2deca8e826"
+    },
+    {
+      "archivo": "Radios 2022 v2025-1.prj",
+      "bytes": 425,
+      "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/radios/RADIOS_2022_V2025-1.zip!Radios 2022 v2025-1.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_radios_ab925688-5591-47fa-92bf-5d998cf0ec97",
+    "archivo": "conicet/radios/RADIOS_2022_V2025-1.zip!Radios 2022 v2025-1.shp",
+    "tipo": "radio censal",
+    "corte": "2022",
+    "cobertura": "Argentina",
+    "features": 66502,
+    "registros_shx": 66502,
+    "shape_type": 5,
+    "bbox": [
+      -8237691.7108,
+      -30240971.9584,
+      -2922367.0326000005,
+      -2485224.690299999
+    ],
+    "campos": [
+      "COD_2022",
+      "PROV",
+      "DEPTO",
+      "FRACC",
+      "RADIO",
+      "OBS2022",
+      "VIV_TOT_P",
+      "POB_TOT_P",
+      "REDATAM"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149711",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/ab925688-5591-47fa-92bf-5d998cf0ec97/content",
+    "crs_wkt": "PROJCS[\"WGS_1984_Web_Mercator_Auxiliary_Sphere\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Mercator_Auxiliary_Sphere\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",0.0],PARAMETER[\"Standard_Parallel_1\",0.0],PARAMETER[\"Auxiliary_Sphere_Type\",0.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "02": 3820,
+      "06": 23901,
+      "62": 1216,
+      "10": 693,
+      "14": 6720,
+      "58": 1075,
+      "18": 1985,
+      "22": 1947,
+      "70": 888,
+      "26": 1028,
+      "30": 3213,
+      "34": 981,
+      "38": 1019,
+      "46": 497,
+      "54": 2012,
+      "42": 904,
+      "50": 2379,
+      "78": 464,
+      "82": 5385,
+      "66": 1830,
+      "74": 894,
+      "86": 1093,
+      "90": 2320,
+      "94": 238
+    },
+    "campo_codigo": "COD_2022",
+    "codigos_distintos": 66502,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "b4fb381173cb445433846b670b908d419d94b48b6516c70d0152dc66728a1c56"
+}

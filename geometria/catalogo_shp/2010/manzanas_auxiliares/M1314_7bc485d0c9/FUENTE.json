@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1314_7bc485d0c9",
+  "shp": "M1314.shp",
+  "entidades": 53,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1314.dbf",
+      "bytes": 10827,
+      "sha256": "c5552026864300c0040ad03d37ce16340153f72ae96ad05311ef6672dde36b79"
+    },
+    {
+      "archivo": "M1314.shp",
+      "bytes": 8556,
+      "sha256": "f8b6098554dabd48bbffc28efcbdf495e3a2049e4e62eb6da5a00d70f084db0e"
+    },
+    {
+      "archivo": "M1314.shx",
+      "bytes": 524,
+      "sha256": "fbac957fbd67caceca8f80d78d1a7f7ce55621ea8263bb3fc2c9d86ee8321f9f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/intiyacoA3H.zip!M1314.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_afefe24c15",
+    "archivo": "santafe/ipec/2010/intiyacoA3H.zip!M1314.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 53,
+    "registros_shx": 53,
+    "shape_type": 5,
+    "bbox": [
+      5492495.5,
+      6828061.0,
+      5493683.0,
+      6829346.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/intiyacoA3H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "87adcb136933aeedf0f408f9e5706dcb9e82cb4026054dc8ddb0f50a72700b0c"
+}

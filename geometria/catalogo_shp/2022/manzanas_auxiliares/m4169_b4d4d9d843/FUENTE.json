@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4169_b4d4d9d843",
+  "shp": "m4169.shp",
+  "entidades": 18,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4169.dbf",
+      "bytes": 3932,
+      "sha256": "97313f93c631ea05ed4cfc5d3a7107051bc28c4562a4e017c5f9d7cf0162d61e"
+    },
+    {
+      "archivo": "m4169.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4169.shp",
+      "bytes": 2804,
+      "sha256": "b05ea636dade6bddbd9af769304a9dc79e7d0d8b4d0541ac2c672037c3d4e871"
+    },
+    {
+      "archivo": "m4169.shx",
+      "bytes": 244,
+      "sha256": "db10c8dfd7153f24614a7d110f609cedc15742cce191b2d73a113f106a61e06e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GARIBALDI.zip!m4169.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_ad6a10fe54",
+    "archivo": "santafe/ipec/2022/GARIBALDI.zip!m4169.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 18,
+    "registros_shx": 18,
+    "shape_type": 5,
+    "bbox": [
+      5328368.0,
+      6497045.0,
+      5329180.5,
+      6498053.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GARIBALDI.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "68a88bc31de23beca6a58d00ce63269e771abba051a63a74deb4042493f65029"
+}

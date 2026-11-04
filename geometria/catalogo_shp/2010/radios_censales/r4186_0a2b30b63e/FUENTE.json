@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r4186_0a2b30b63e",
+  "shp": "r4186.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r4186.shx",
+      "bytes": 108,
+      "sha256": "b9b4b6181c88e191b6270de387ce75d5df64c192a4468704d90c436002805798"
+    },
+    {
+      "archivo": "r4186.shp",
+      "bytes": 572,
+      "sha256": "6efbdd86a73e65ae6d3082440e7785db9f91bb97c43b48f17bd0f0226a3038ab"
+    },
+    {
+      "archivo": "r4186.sbx",
+      "bytes": 116,
+      "sha256": "6ae883ccf25006d57785a6c37a586f0ec15db9404d7e3627af1d31786d0881e5"
+    },
+    {
+      "archivo": "r4186.sbn",
+      "bytes": 132,
+      "sha256": "f28c408c77639ec8860f518c6451a60f27387f87158d9b827317a3992b1dd570"
+    },
+    {
+      "archivo": "r4186.dbf",
+      "bytes": 701,
+      "sha256": "18e8496433eb8b4d2f62b5c0738169dcb9468ce9933942db65539410593e5808"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/COLONIASANJOSESANJAVIER.zip!r4186.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e42420d576",
+    "archivo": "santafe/ipec/2010/COLONIASANJOSESANJAVIER.zip!r4186.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5504978.5,
+      6636024.0,
+      5505474.5,
+      6636330.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/COLONIASANJOSESANJAVIER.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "99e633af707d16eb39c46abfeca0f6157781b6702a1844505664f4f564ff671d"
+}

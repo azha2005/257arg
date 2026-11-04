@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e0918_33c56aaee9",
+  "shp": "e0918.shp",
+  "entidades": 230,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0918.dbf",
+      "bytes": 72370,
+      "sha256": "681052be10fc5d45bbc677b52f65bfb16c8174cfa3b0877fcc46dc3e2ddfc8e9"
+    },
+    {
+      "archivo": "e0918.sbn",
+      "bytes": 3092,
+      "sha256": "d8aec44339af1f8ff5506dbb33601dccd8dcd2bedc68d3d9e7497711cf9d7afb"
+    },
+    {
+      "archivo": "e0918.sbx",
+      "bytes": 492,
+      "sha256": "1a7fd944f8e48d8b51e5c199ca92364c0ecb4422309722ea80eda4a3e428b174"
+    },
+    {
+      "archivo": "e0918.shp",
+      "bytes": 20564,
+      "sha256": "7b3f44471f786d9b4aefb1f4d45aedb78b926d7f57f0b6fc14cbe0ea1ea742f3"
+    },
+    {
+      "archivo": "e0918.shx",
+      "bytes": 1940,
+      "sha256": "465139a772de65ad07550876db67a441cc613804fb8ab38457214f77fd02cfd3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/BERNARDODEIRIGOYEN.zip!e0918.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8ee2097fea",
+    "archivo": "santafe/ipec/2010/BERNARDODEIRIGOYEN.zip!e0918.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 230,
+    "registros_shx": 230,
+    "shape_type": 3,
+    "bbox": [
+      5389928.0,
+      6440021.5,
+      5391484.5,
+      6441445.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/BERNARDODEIRIGOYEN.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c38d9f68fd8213f20ebbe645c0259fbaedf3f33b9ecd9d9555c706553c022f95"
+}

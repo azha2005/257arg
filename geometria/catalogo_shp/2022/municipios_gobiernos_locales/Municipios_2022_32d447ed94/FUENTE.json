@@ -1,0 +1,100 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "municipios_gobiernos_locales",
+  "carpeta": "2022/municipios_gobiernos_locales/Municipios_2022_32d447ed94",
+  "shp": "Municipios (2022).shp",
+  "entidades": 1205,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Municipios (2022).dbf",
+      "bytes": 400350,
+      "sha256": "6a7e8724a3d870db136f2e46ecbbf5927c929913b8509c2221b48161cf3bc67d"
+    },
+    {
+      "archivo": "Municipios (2022).prj",
+      "bytes": 219,
+      "sha256": "514d90b133d45328d2d8a70e74c01e5cddc18196b90fff7cf818f0f381a11673"
+    },
+    {
+      "archivo": "Municipios (2022).shp",
+      "bytes": 15662132,
+      "sha256": "c2b133989b79c1ad4aa8eb31e65dbe19dfdc628de1774f9ac0dc7049afdc4674"
+    },
+    {
+      "archivo": "Municipios (2022).shx",
+      "bytes": 9740,
+      "sha256": "bf3fa1e42b1544c9d6deb6f9c769e0ffc0525e98b9905b2ee4d2e9ca535afe07"
+    },
+    {
+      "archivo": "Municipios (2022).cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/poblaciones/Municipios_2022.zip!Municipios (2022).shp",
+  "metadata_original": {
+    "id_fuente": "poblaciones_b2_v20",
+    "archivo": "poblaciones/Municipios_2022.zip!Municipios (2022).shp",
+    "tipo": "municipio",
+    "corte": "2022",
+    "cobertura": "Total país",
+    "features": 1205,
+    "registros_shx": 1205,
+    "shape_type": 5,
+    "bbox": [
+      -72.90065323063331,
+      -54.85838475099997,
+      -53.637507952633,
+      -21.998895597863505
+    ],
+    "campos": [
+      "CODIGO",
+      "NOMBRE",
+      "TIPO",
+      "CODPROV",
+      "PROV",
+      "SUPERFICIE",
+      "LATITUD_CE",
+      "LONGITUD_C"
+    ],
+    "formato": "SHP",
+    "fuente": "https://n2t.net/ark:/26680/b2",
+    "nota": "Descarga completa del visor público, versión identificada en metadata. No inferir que otro proveedor representa la misma delimitación.",
+    "licencia": "{\"licenseType\":1,\"licenseOpen\":\"always\",\"licenseCommercial\":1,\"licenseVersion\":\"4.0/deed.es\"}",
+    "url_descarga": "https://datos-poblaciones.conicet.gov.ar/services/download/GetBoundaryFile?t=hw&s=b&b=2&v=20",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433],METADATA[\"World\",-180.0,-90.0,180.0,90.0,0.0,0.0174532925199433,0.0,1262]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "Buenos Aires": 135,
+      "La Rioja": 18,
+      "Mendoza": 18,
+      "San Juan": 19,
+      "NeuquÃ©n": 35,
+      "San Luis": 26,
+      "Santa Fe": 59,
+      "Catamarca": 36,
+      "TucumÃ¡n": 19,
+      "Chaco": 70,
+      "Formosa": 27,
+      "Santa Cruz": 15,
+      "Chubut": 23,
+      "Entre RÃ­os": 83,
+      "Jujuy": 27,
+      "Santiago del Estero": 28,
+      "RÃ­o Negro": 39,
+      "Corrientes": 75,
+      "Misiones": 77,
+      "Salta": 60,
+      "CÃ³rdoba": 259,
+      "Tierra del Fuego, AntÃ¡rtida e Islas del AtlÃ¡ntico Sur": 3,
+      "La Pampa": 54
+    },
+    "campo_codigo": "CODIGO",
+    "codigos_distintos": 1205,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "3ac216141410ef1f7db8770d23f168f4e334f636f3a1a4a5b8a2526708d04e6c"
+}

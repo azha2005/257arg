@@ -1,0 +1,78 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m4198_f0ceda2920",
+  "shp": "m4198.shp",
+  "entidades": 18,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4198.shx",
+      "bytes": 244,
+      "sha256": "cc9e28cf19618363b2fb86fa3f1144ebb9cb8e6438cba050b86732195dcba361"
+    },
+    {
+      "archivo": "m4198.shp",
+      "bytes": 3508,
+      "sha256": "2cf01d4753d55964e0a21e644eaf2d02c498f45dbac331cfbc4f2a4a2bcc12be"
+    },
+    {
+      "archivo": "m4198.sbx",
+      "bytes": 132,
+      "sha256": "116b82b52213526ec20b40e14cfafc3178c82f57fe69286391ac3bfc6e098e99"
+    },
+    {
+      "archivo": "m4198.sbn",
+      "bytes": 300,
+      "sha256": "fc460f7e419bac0728b67b0afa05c324bfb441ffade49403290d1aa4cded71b4"
+    },
+    {
+      "archivo": "m4198.dbf",
+      "bytes": 5093,
+      "sha256": "66127b4ccf07997968d5f932061f7acabde480cbe4ac865380d575198a098905"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/LOSTABANOS.zip!m4198.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_452f940f79",
+    "archivo": "santafe/ipec/2010/LOSTABANOS.zip!m4198.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 18,
+    "registros_shx": 18,
+    "shape_type": 5,
+    "bbox": [
+      5501446.0,
+      6852398.0,
+      5501882.5,
+      6853155.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMUNI",
+      "ESPVERDE",
+      "VC",
+      "DESCRIPCIO"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/LOSTABANOS.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5abec55342ade89b0a86b68dcde0accfc560a9bace0a6f94ee5ab3dbcfb8de40"
+}

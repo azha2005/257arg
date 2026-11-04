@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6857_3c758b308f",
+  "shp": "E6857.shp",
+  "entidades": 115,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6857.dbf",
+      "bytes": 40630,
+      "sha256": "7fbd3699b4053c8174b5e2caf7e5308c23dedd2d460c6dab9aa9ce0b786bbb9b"
+    },
+    {
+      "archivo": "E6857.shp",
+      "bytes": 11468,
+      "sha256": "46c80cc4679c71bba79344cff80bcc974070c169ced53758e03da8334cabb86e"
+    },
+    {
+      "archivo": "E6857.shx",
+      "bytes": 1020,
+      "sha256": "19e6229451d7ac1f4366c6e91a10a4e4b92bacc91d1a9309aad9d088d63f7dee"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pjechacochicoa2h.zip!E6857.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_75c78999eb",
+    "archivo": "santafe/ipec/2010/pjechacochicoa2h.zip!E6857.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 115,
+    "registros_shx": 115,
+    "shape_type": 3,
+    "bbox": [
+      5437060.5,
+      6507315.5,
+      5439553.0,
+      6508516.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pjechacochicoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "78e27c3245141d9e4857687501fe4ef634c87a30a90212fcdf8cf5c375180879"
+}

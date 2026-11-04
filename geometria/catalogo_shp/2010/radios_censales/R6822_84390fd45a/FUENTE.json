@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6822_84390fd45a",
+  "shp": "R6822.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6822.dbf",
+      "bytes": 686,
+      "sha256": "5dcb10b2f4baea406fbdad56566b5d71dff1271c2859c931a7fb1b9d11e343c2"
+    },
+    {
+      "archivo": "R6822.shp",
+      "bytes": 444,
+      "sha256": "6625143a283a2bcceef25cd7fdca8ba32518a20f18d316e4cf650487299b9dcf"
+    },
+    {
+      "archivo": "R6822.shx",
+      "bytes": 108,
+      "sha256": "f18842936e9abbb2e6fdaa6fd7e58bfdb94e542cc839bc0e54617208316eae10"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/angelonia3h.zip!R6822.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e7ab5dfd7c",
+    "archivo": "santafe/ipec/2010/angelonia3h.zip!R6822.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5437643.5,
+      6586252.0,
+      5438069.5,
+      6587325.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/angelonia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f744e2f65c6039779526ff73c6e574359cdd7beec5b0058cb098b9cc9053b77c"
+}

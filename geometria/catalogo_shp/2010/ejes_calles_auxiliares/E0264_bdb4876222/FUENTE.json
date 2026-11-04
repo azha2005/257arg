@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0264_bdb4876222",
+  "shp": "E0264.shp",
+  "entidades": 824,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0264.dbf",
+      "bytes": 287362,
+      "sha256": "897a73a81515044cc28cf986eb9cdcb80cba39ad02ca9476870fe4f26f98a004"
+    },
+    {
+      "archivo": "E0264.shp",
+      "bytes": 72868,
+      "sha256": "aa8f3a317ab2d4df3385b823d53f03d910482595932d2e3eb615a248371904b2"
+    },
+    {
+      "archivo": "E0264.shx",
+      "bytes": 6692,
+      "sha256": "53e051df917af2edf310c2f01bb8679d2570066cb75ed590c3249701f8d15a8f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/eltrebola1v.zip!E0264.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_21c14fe094",
+    "archivo": "santafe/ipec/2010/eltrebola1v.zip!E0264.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 824,
+    "registros_shx": 824,
+    "shape_type": 3,
+    "bbox": [
+      5337787.0,
+      6435099.5,
+      5340480.5,
+      6439427.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/eltrebola1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "33109dc16f245d7275d70150a5048f94515403c60a7d2856b4d903ab0e53d8e1"
+}

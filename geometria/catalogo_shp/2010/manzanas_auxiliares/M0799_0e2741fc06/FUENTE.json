@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0799_0e2741fc06",
+  "shp": "M0799.shp",
+  "entidades": 136,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0799.dbf",
+      "bytes": 27178,
+      "sha256": "4876d0211dabe84a2ffd94e86fb87a0444e04f832073ae47364226d045ce65b5"
+    },
+    {
+      "archivo": "M0799.shp",
+      "bytes": 23268,
+      "sha256": "87d6b7759683d5f94808d3ca9b0d27c830e72c244d0190f12e2fddb1c01bddb3"
+    },
+    {
+      "archivo": "M0799.shx",
+      "bytes": 1188,
+      "sha256": "c6c1df96e30453876515a1276b9e1b50ce934b4bce7135502a553e86805e565b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tortugasa3h.zip!M0799.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9805488e48",
+    "archivo": "santafe/ipec/2010/tortugasa3h.zip!M0799.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 136,
+    "registros_shx": 136,
+    "shape_type": 5,
+    "bbox": [
+      5328196.5,
+      6374861.5,
+      5330309.0,
+      6376875.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tortugasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "13edd791c6e53b44d0ea05fc4dc6df647516c8597a339a44eb2cc0a393601d16"
+}

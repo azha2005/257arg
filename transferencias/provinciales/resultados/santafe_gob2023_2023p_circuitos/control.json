@@ -1,0 +1,94 @@
+{
+  "nombre": "Santa Fe",
+  "distrito": "21",
+  "serie": "2023",
+  "fecha": "10/09/2023",
+  "origen": "Gobernador 10/09/2023 (distritos provinciales empalmados)",
+  "destino": "Presidente 22/10/2023",
+  "nivel": "distritos y departamentos empalmados",
+  "base": "votos emitidos",
+  "fuente": "https://www.santafe.gov.ar/tribunalelectoral/wp-content/uploads/sites/84/2024/08/resultadosGenerales2023.ods",
+  "nota": "Definitivo provincial por distrito/localidad. Las ciudades de Santa Fe y Rosario aparecen agregadas como 9999: se suman los circuitos nacionales de esas localidades. Correspondencias nominales y departamentales, sin reparto. Para 2019 se usa la tabla oficial CNE 66/2022. Departamentos agregados completos por correspondencias internas incompletas: 9DEJULIO, CASEROS, CASTELLANOS, CONSTITUCION, GARAY, GENERALOBLIGADO, IRIONDO, LACAPITAL, LASCOLONIAS, ROSARIO, SANCRISTOBAL, SANJAVIER, SANJERONIMO, SANJUSTO, SANLORENZO, VERA.",
+  "foco": [],
+  "id": "santafe_gob2023_2023p_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "origen",
+  "unidades": 70,
+  "categorias_origen": 5,
+  "rango": 5,
+  "condicion": 96.53549758970124,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.01921592761139274,
+    "0.0001": 0.007651900462732694,
+    "1e-05": 0.004848208705055067,
+    "1e-06": 0.004386862458195985,
+    "1e-07": 0.004452506802358461
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.734581476284126,
+  "desviacion_max_margen_destino_pp": 0.25872973375143,
+  "electores_o_votos_origen": 1919625.0,
+  "electores_o_votos_destino": 2070486.0,
+  "filas": [
+    {
+      "origen": "FRENTE DE IZQUIERDA Y DE TRABAJADORES -",
+      "peso": 3.94,
+      "dif_variante_pp": 57.0,
+      "sensibilidad_pp": 79.56,
+      "ancho_intervalo_pp": 93.32,
+      "separacion_pp": 66.13,
+      "no_identificada": true
+    },
+    {
+      "origen": "JUNTOS AVANCEMOS",
+      "peso": 28.62,
+      "dif_variante_pp": 10.76,
+      "sensibilidad_pp": 26.84,
+      "ancho_intervalo_pp": 32.35,
+      "separacion_pp": 45.0,
+      "no_identificada": false
+    },
+    {
+      "origen": "UNIDOS PARA CAMBIAR SANTA FE",
+      "peso": 53.49,
+      "dif_variante_pp": 3.96,
+      "sensibilidad_pp": 7.37,
+      "ancho_intervalo_pp": 16.25,
+      "separacion_pp": 15.37,
+      "no_identificada": false
+    },
+    {
+      "origen": "VIVA LA LIBERTAD",
+      "peso": 5.95,
+      "dif_variante_pp": 13.05,
+      "sensibilidad_pp": 47.83,
+      "ancho_intervalo_pp": 90.52,
+      "separacion_pp": 28.73,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 7.99,
+      "dif_variante_pp": 18.32,
+      "sensibilidad_pp": 36.33,
+      "ancho_intervalo_pp": 67.26,
+      "separacion_pp": 50.26,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

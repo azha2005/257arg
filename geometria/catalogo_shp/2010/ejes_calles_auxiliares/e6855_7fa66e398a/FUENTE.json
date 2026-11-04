@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e6855_7fa66e398a",
+  "shp": "e6855.shp",
+  "entidades": 72,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6855.dbf",
+      "bytes": 26025,
+      "sha256": "f26465861c00b50711cc5024aa80d5a25cf668c0b5151e26bc0b0be8bf70a30b"
+    },
+    {
+      "archivo": "e6855.sbn",
+      "bytes": 956,
+      "sha256": "a99f2207495d9799b5d86dbd40cd8526ae305e330eab92f754e3443fac872811"
+    },
+    {
+      "archivo": "e6855.sbx",
+      "bytes": 228,
+      "sha256": "609547de69865bd75d66910e193e6264af6abd1e3b1921089fbe537ffe5743ae"
+    },
+    {
+      "archivo": "e6855.shp",
+      "bytes": 6532,
+      "sha256": "865660725f6e9ec04fcb6ef76b6abfb499fe12da8e85da318c85eb640a9a05fb"
+    },
+    {
+      "archivo": "e6855.shx",
+      "bytes": 676,
+      "sha256": "248ef2ff9a1ba48494f690f722c909210f2c814af14dd5524714c716672679a5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PARAJESANMANUEL.zip!e6855.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c2257512ee",
+    "archivo": "santafe/ipec/2010/PARAJESANMANUEL.zip!e6855.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 72,
+    "registros_shx": 72,
+    "shape_type": 3,
+    "bbox": [
+      5512746.0,
+      6806430.5,
+      5513694.5,
+      6807213.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PARAJESANMANUEL.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c22695c10bedc4153f881b2a0546a3604bbcd9f5b2c95445a84d15b045dc300a"
+}

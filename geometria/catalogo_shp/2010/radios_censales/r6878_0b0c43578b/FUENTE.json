@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6878_0b0c43578b",
+  "shp": "r6878.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6878.shx",
+      "bytes": 116,
+      "sha256": "f2b13fe64a810c82d382e3796a2f7740ddab4f1adc0b54ac877f8c7e9c80057e"
+    },
+    {
+      "archivo": "r6878.shp",
+      "bytes": 1476,
+      "sha256": "05924c4b21d3c94e225823915a09244d48772a10757c44666ca33c73021aa035"
+    },
+    {
+      "archivo": "r6878.sbx",
+      "bytes": 116,
+      "sha256": "d37cd94db4ba51216b46b09d41e517037827eaddcd219d044df5e1ccfb79f8c8"
+    },
+    {
+      "archivo": "r6878.sbn",
+      "bytes": 140,
+      "sha256": "7979297ef4eae3a011ee63a0b92c42c07eb8b94b027f06e28a054edc805a137f"
+    },
+    {
+      "archivo": "r6878.dbf",
+      "bytes": 889,
+      "sha256": "83a2fe7dc3f3298ac93dff8a4c5dd35f0f71186b4d445c2fd4de2cceb68192a2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/CAMPOHARDY.zip!r6878.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bbedc35f1b",
+    "archivo": "santafe/ipec/2010/CAMPOHARDY.zip!r6878.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5572269.5,
+      6886703.5,
+      5573528.0,
+      6887584.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/CAMPOHARDY.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c5875d2268cdc6ce64f709ff5ac94fd2755c944c9536da9f0bc603c62f9e801d"
+}

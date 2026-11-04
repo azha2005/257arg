@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Rio_Negro_con_datos_34e6889bb3",
+  "shp": "Rio_Negro_con_datos.shp",
+  "entidades": 940,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Rio_Negro_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Rio_Negro_con_datos.shp",
+      "bytes": 1512680,
+      "sha256": "043b0dfcfda21bf6e42720aa42e56218d0d1653f9afc9e1d7294f9146637f613"
+    },
+    {
+      "archivo": "Rio_Negro_con_datos.shx",
+      "bytes": 7620,
+      "sha256": "55ba8e7e41f2619da792f2992ecb4914f144b4bc77a65250d65566a4d3f21aa8"
+    },
+    {
+      "archivo": "Rio_Negro_con_datos.dbf",
+      "bytes": 384749,
+      "sha256": "437a52c749483e004ba93a247cb1a369f41aa5a08654f66c98324204be9a900b"
+    },
+    {
+      "archivo": "Rio_Negro_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Rio_Negro_con_datos.zip!Rio_Negro_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_62",
+    "archivo": "indec/2010/Codgeo_Rio_Negro_con_datos.zip!Rio_Negro_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Río Negro",
+    "features": 940,
+    "registros_shx": 940,
+    "shape_type": 5,
+    "bbox": [
+      2995962.5,
+      5332857.0,
+      3770440.0,
+      5842188.5
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Rio_Negro_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 940,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "8cd6179e2c58e1a3e968122caf318d3cb87dc7b8fd9cb5b0d1d10411d562e03f"
+}

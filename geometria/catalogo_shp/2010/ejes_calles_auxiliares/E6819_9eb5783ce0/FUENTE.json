@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6819_9eb5783ce0",
+  "shp": "E6819.shp",
+  "entidades": 28,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6819.dbf",
+      "bytes": 10354,
+      "sha256": "b71f3e2b0db259fa37683d03be1c24488f5848f1fc428df03d4723ebae257b92"
+    },
+    {
+      "archivo": "E6819.shp",
+      "bytes": 2564,
+      "sha256": "6a78700549a81d695e7199c13f92c8d3bc9a33f05a655d23ada73b9d031d9624"
+    },
+    {
+      "archivo": "E6819.shx",
+      "bytes": 324,
+      "sha256": "af3f5cd834be4405a43db330280c9d7efd5472e2a9081498ff356e62a72d8218"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniaraquela3v.zip!E6819.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_edad5ecc9d",
+    "archivo": "santafe/ipec/2010/coloniaraquela3v.zip!E6819.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 28,
+    "registros_shx": 28,
+    "shape_type": 3,
+    "bbox": [
+      5357394.0,
+      6587904.5,
+      5357910.5,
+      6588477.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniaraquela3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "efbd124fc0bfbb91cadcb9b30a2175dc4a6cc587b50406336ce062fdbca49953"
+}

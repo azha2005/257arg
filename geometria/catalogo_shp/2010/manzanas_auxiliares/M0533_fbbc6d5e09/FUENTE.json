@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0533_fbbc6d5e09",
+  "shp": "M0533.shp",
+  "entidades": 144,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0533.dbf",
+      "bytes": 28754,
+      "sha256": "4d72faef6fcac853ab83870b1b217f038026e6350f078c4a54d7851613c50527"
+    },
+    {
+      "archivo": "M0533.shp",
+      "bytes": 24820,
+      "sha256": "0db77eb867a6c34a55591fa7a9bcca29e395e3e9dbd0f28c1954037de84a69a3"
+    },
+    {
+      "archivo": "M0533.shx",
+      "bytes": 1252,
+      "sha256": "e4f30436a6d33e03249640f900846bd3237af4c0e45a9604aa8d8ab432e596a6"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gobernadorcrespoa2v.zip!M0533.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_02682d8ad5",
+    "archivo": "santafe/ipec/2010/gobernadorcrespoa2v.zip!M0533.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 144,
+    "registros_shx": 144,
+    "shape_type": 5,
+    "bbox": [
+      5460474.0,
+      6640696.5,
+      5462048.5,
+      6642819.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gobernadorcrespoa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "31a252d90fa417fdc3737965b7321e078e5403ff24bef87a09108938e0f3f5f4"
+}

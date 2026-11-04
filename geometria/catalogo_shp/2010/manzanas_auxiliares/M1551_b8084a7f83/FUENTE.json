@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1551_b8084a7f83",
+  "shp": "M1551.shp",
+  "entidades": 66,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1551.dbf",
+      "bytes": 13388,
+      "sha256": "6d6d3eda2d8b6e88777963d3605e48608ab5f9377e12809a6449ae4120d33322"
+    },
+    {
+      "archivo": "M1551.shp",
+      "bytes": 9540,
+      "sha256": "06841d0db33fe4d2ee4f4ce88fb2e2dfc490c73bc70daea5bca42a0c7cfe2767"
+    },
+    {
+      "archivo": "M1551.shx",
+      "bytes": 628,
+      "sha256": "29a640eec0c080a659eaf978fb5b10c1f5c2c7b7d1aa5464f9607a73b890da95"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sancarlosnortea3h.zip!M1551.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2e0ab62054",
+    "archivo": "santafe/ipec/2010/sancarlosnortea3h.zip!M1551.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 66,
+    "registros_shx": 66,
+    "shape_type": 5,
+    "bbox": [
+      5397624.5,
+      6495427.0,
+      5398683.5,
+      6496349.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sancarlosnortea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5c94c266517e5929bb43a033d1ade6d8580d076f1468928f08c67637ce19c268"
+}

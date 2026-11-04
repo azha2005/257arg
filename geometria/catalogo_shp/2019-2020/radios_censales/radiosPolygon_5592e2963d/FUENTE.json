@@ -1,0 +1,77 @@
+{
+  "anio_carpeta": "2019-2020",
+  "criterio_anio": "Período del Precenso; no demuestra límites nuevos de esos años",
+  "tipo": "radios_censales",
+  "carpeta": "2019-2020/radios_censales/radiosPolygon_5592e2963d",
+  "shp": "radiosPolygon.shp",
+  "entidades": 39612,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "radiosPolygon.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "radiosPolygon.shx",
+      "bytes": 316996,
+      "sha256": "ef2544bd3332a8b5220f86a2f37cb3a8c9c64b6aaa50b983039934749d83411e"
+    },
+    {
+      "archivo": "radiosPolygon.shp",
+      "bytes": 25460292,
+      "sha256": "79d19a93560271c8bb6eddc40f25a612d7f828066a4ccb8605ff785ab4f5bbf8"
+    },
+    {
+      "archivo": "radiosPolygon.dbf",
+      "bytes": 133809881,
+      "sha256": "dfb2fc27f9ae7d8a3cf5cf4f4ae504a7a3009dcc9f78719c9e0d5ce48978967e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/precenso_2019_2020/radios.zip!radiosPolygon.shp",
+  "metadata_original": {
+    "id_fuente": "precenso_radios",
+    "archivo": "indec/precenso_2019_2020/radios.zip!radiosPolygon.shp",
+    "tipo": "radio censal",
+    "corte": "Precenso 2019–2020; no confundir con censo 2022",
+    "cobertura": "Localidades incluidas en el Precenso; cobertura parcial",
+    "features": 39612,
+    "registros_shx": 39612,
+    "shape_type": 5,
+    "bbox": [
+      -72.36353023570528,
+      -54.85111921313501,
+      -53.637547654769534,
+      -22.04020578883516
+    ],
+    "campos": [
+      "id",
+      "nomloc",
+      "area",
+      "perimeter",
+      "prov",
+      "depto",
+      "codloc",
+      "frac",
+      "radio",
+      "link",
+      "ind01",
+      "ind05",
+      "ind06",
+      "ind07",
+      "nomprov",
+      "nomdepto"
+    ],
+    "formato": "SHP",
+    "fuente": "https://precensodeviviendas.indec.gob.ar/descargas",
+    "nota": "El operativo refiere a localidades de 2000 habitantes o más. Los agregados no implican cobertura total de los departamentos. Geometría vigente y base censal deben cotejarse en metadatos.",
+    "licencia": "Consultar ficha de la fuente",
+    "url_descarga": "https://geoserver.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=precenso:radios&outputFormat=shape-zip",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 39612,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "53f44317ac803dc625998c620990dcc075bac3399a2ea3c5e8df6d04f39e940a"
+}

@@ -1,0 +1,104 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Año censal identificado en nombre de capa y colección departamental",
+  "tipo": "departamentos",
+  "carpeta": "2022/departamentos/Departamentos_2022_INDEC_b47fd2d257",
+  "shp": "Departamentos_2022_INDEC.shp",
+  "entidades": 529,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Departamentos_2022_INDEC.dbf",
+      "bytes": 1090622,
+      "sha256": "c869b91a000f771dc3addf7b1f673157b7c320a5e4397c9cb4b2847556e2e1be"
+    },
+    {
+      "archivo": "Departamentos_2022_INDEC.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "Departamentos_2022_INDEC.sbn",
+      "bytes": 5404,
+      "sha256": "368b96c8ac2d9ec03ef0f53da7e19c6fb90f0b6e5bd3a5476415829753646086"
+    },
+    {
+      "archivo": "Departamentos_2022_INDEC.sbx",
+      "bytes": 284,
+      "sha256": "6c0c8a5e952774cc30592665a502f6b02e08901d31274574f3ae396b29f75941"
+    },
+    {
+      "archivo": "Departamentos_2022_INDEC.shp",
+      "bytes": 24113360,
+      "sha256": "d03117057de2f24856b672873ec3bba8d6aaeb12d3ea1d1287942b6df2a04fd4"
+    },
+    {
+      "archivo": "Departamentos_2022_INDEC.shx",
+      "bytes": 4332,
+      "sha256": "61a43619a7f30d112b3633ae034a5aa74ff5da6511e8d60ce7c27d651d8149f3"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/deptos/Base_deptos_1869-2022.zip!Base deptos 1869-2022/Departamentos_2022_INDEC.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_deptos_1f67c7fe-37d4-45d2-bb5b-6b781d1720d5",
+    "archivo": "conicet/deptos/Base_deptos_1869-2022.zip!Base deptos 1869-2022/Departamentos_2022_INDEC.shp",
+    "tipo": "departamento",
+    "corte": "1869",
+    "cobertura": "Argentina",
+    "features": 529,
+    "registros_shx": 529,
+    "shape_type": 5,
+    "bbox": [
+      -73.9999999999996,
+      -89.69035289386144,
+      -25.000000000000483,
+      -21.78085593181454
+    ],
+    "campos": [
+      "fid",
+      "id",
+      "cpr",
+      "jur",
+      "cde",
+      "fna",
+      "gna",
+      "nam",
+      "fdc",
+      "sag"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149867",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/1f67c7fe-37d4-45d2-bb5b-6b781d1720d5/content",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "entidades_por_provincia": {
+      "02": 15,
+      "66": 23,
+      "42": 22,
+      "58": 16,
+      "14": 26,
+      "26": 15,
+      "86": 27,
+      "94": 5,
+      "06": 135,
+      "22": 25,
+      "74": 9,
+      "54": 17,
+      "82": 19,
+      "46": 18,
+      "62": 13,
+      "30": 17,
+      "10": 16,
+      "50": 18,
+      "34": 9,
+      "90": 17,
+      "18": 25,
+      "70": 19,
+      "38": 16,
+      "78": 7
+    }
+  },
+  "firma_componentes": "3499b3050b28a6572c6d5ec22fd03d11f911a91c1446b466b2367421e8b8ed90"
+}

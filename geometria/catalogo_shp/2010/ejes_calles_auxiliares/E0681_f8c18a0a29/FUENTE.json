@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0681_f8c18a0a29",
+  "shp": "E0681.shp",
+  "entidades": 466,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0681.dbf",
+      "bytes": 162778,
+      "sha256": "258c95d30facb4e3e9e0d6a87c07537c69c1410d302039fbfd6d8da9567e0961"
+    },
+    {
+      "archivo": "E0681.shp",
+      "bytes": 41172,
+      "sha256": "7aa99f97c74ecb775becf6ae3e951a07c8e6355acc48000798574066d0cca025"
+    },
+    {
+      "archivo": "E0681.shx",
+      "bytes": 3828,
+      "sha256": "c3e3f91bc5eef7b318e02c9a740dfb19ee5dc25be26f556c7af51dc11a844ebf"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Peyranoa3v.zip!E0681.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_58c6e35776",
+    "archivo": "santafe/ipec/2010/Peyranoa3v.zip!E0681.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 466,
+    "registros_shx": 466,
+    "shape_type": 3,
+    "bbox": [
+      5424440.0,
+      6287954.0,
+      5426430.5,
+      6289978.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Peyranoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "cb4e49c4a6bc42e27f106544e642672b574b17c476380535b3116d2d8b345394"
+}

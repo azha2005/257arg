@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4150_933a9e0ce7",
+  "shp": "E4150.shp",
+  "entidades": 188,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4150.dbf",
+      "bytes": 66034,
+      "sha256": "37ba3fa05646f5e3e998518a3156955fef22eee01a0618ec3cd97c9ed39a0a29"
+    },
+    {
+      "archivo": "E4150.shp",
+      "bytes": 16740,
+      "sha256": "a1887f69f44943b415845c1a211dd206a2f8115ab3def794dc8611c5372975b9"
+    },
+    {
+      "archivo": "E4150.shx",
+      "bytes": 1604,
+      "sha256": "6a63e8298293631df49155b3e295da52f4f67191117fbfe5c076e48f85921cd0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bellaitaliaa3h.zip!E4150.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6c377a854a",
+    "archivo": "santafe/ipec/2010/bellaitaliaa3h.zip!E4150.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 188,
+    "registros_shx": 188,
+    "shape_type": 3,
+    "bbox": [
+      5363130.5,
+      6538342.0,
+      5366535.0,
+      6540653.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bellaitaliaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "58c71dcfbf4ebe1c24a85eefbc0c03c73f8af5e15a4ad79b34d9f5d25bf66a25"
+}

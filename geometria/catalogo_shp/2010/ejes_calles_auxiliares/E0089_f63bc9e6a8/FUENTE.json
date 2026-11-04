@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0089_f63bc9e6a8",
+  "shp": "E0089.shp",
+  "entidades": 2092,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0089.dbf",
+      "bytes": 728626,
+      "sha256": "435b47637193e1159e16e8a468835a25ac2952b24334e8f4239444ece4066ccd"
+    },
+    {
+      "archivo": "E0089.shp",
+      "bytes": 185636,
+      "sha256": "3e2dd26827248a28e33f5dd7834890aff2016a0d5dc18a63eefcfe25b8cbaefa"
+    },
+    {
+      "archivo": "E0089.shx",
+      "bytes": 16836,
+      "sha256": "e11521edcadc1eef6197883f9e5ffeb9607dfffaeed1b1e5cd069d3449279693"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/casildaa0h.zip!E0089.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_48321e84c3",
+    "archivo": "santafe/ipec/2010/casildaa0h.zip!E0089.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2092,
+    "registros_shx": 2092,
+    "shape_type": 3,
+    "bbox": [
+      5387463.0,
+      6341836.0,
+      5392736.0,
+      6345752.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/casildaa0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a1479e7877e4cc5f8442639ea886cd3d20c04b9f83a4db1fd3ca85cca4de292a"
+}

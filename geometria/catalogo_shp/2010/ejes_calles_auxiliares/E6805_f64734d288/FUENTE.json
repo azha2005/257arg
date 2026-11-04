@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6805_f64734d288",
+  "shp": "E6805.shp",
+  "entidades": 41,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6805.dbf",
+      "bytes": 14878,
+      "sha256": "ac99b533b4f33f2ff707d7085db82ee727989f7401165a09de78744146297a8e"
+    },
+    {
+      "archivo": "E6805.shp",
+      "bytes": 3708,
+      "sha256": "a38a8b6ad00330fb0f78a29abd1a8e4461adc7da30816ba670016daa683f9032"
+    },
+    {
+      "archivo": "E6805.shx",
+      "bytes": 428,
+      "sha256": "a16ab805c907d4152721e724aaee10a43e7361783160aaeb02488d2ae7b8d394"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/montefiorea3v.zip!E6805.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_03a740c606",
+    "archivo": "santafe/ipec/2010/montefiorea3v.zip!E6805.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 41,
+    "registros_shx": 41,
+    "shape_type": 3,
+    "bbox": [
+      5319168.0,
+      6716904.0,
+      5319556.0,
+      6717539.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/montefiorea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0a456d762646ac6a2d15680bca823f0583b332ddf02b455c996069fd6ad7e1eb"
+}

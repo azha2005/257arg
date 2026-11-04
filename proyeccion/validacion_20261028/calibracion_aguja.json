@@ -1,0 +1,6 @@
+{
+  "entrenamiento": "2019p->2023p, 6 semillas, 5 ordenes, sin votos 2025",
+  "piso": 1.8,
+  "criterio": "q95(error absoluto)/1.96/(1-f) en cortes donde el sistematico anterior queda corto; redondeo superior a 0.1",
+  "evaluacion": "2023p->2025bl, semillas nuevas, sin reoptimizar despues"
+}

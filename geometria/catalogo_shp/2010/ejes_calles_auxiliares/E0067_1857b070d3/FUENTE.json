@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0067_1857b070d3",
+  "shp": "E0067.shp",
+  "entidades": 1983,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0067.dbf",
+      "bytes": 690694,
+      "sha256": "3c043beb52f7e13081bc4f5c518ca56337b56a61e2f7c30fc131f92ee994adac"
+    },
+    {
+      "archivo": "E0067.shp",
+      "bytes": 194940,
+      "sha256": "0217da50b11ec1b55bf21b618b5fed9bcc848c1b65acf9a3acd8503af14e9f1a"
+    },
+    {
+      "archivo": "E0067.shx",
+      "bytes": 15964,
+      "sha256": "5cb4973c23d187aaa33819d55ffeeee6f3101ee101c5f05223407cb421e8b6d9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaconstituciona0h.zip!E0067.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8e8dcbf773",
+    "archivo": "santafe/ipec/2010/villaconstituciona0h.zip!E0067.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1983,
+    "registros_shx": 1983,
+    "shape_type": 3,
+    "bbox": [
+      5466740.5,
+      6317296.0,
+      5476494.5,
+      6325256.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaconstituciona0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "03470d6fb2f9b641e22db96b4a4722f45c665e66f63aefaa0ae9f08a8bd34bc9"
+}

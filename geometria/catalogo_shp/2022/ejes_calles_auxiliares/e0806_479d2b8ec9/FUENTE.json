@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0806_479d2b8ec9",
+  "shp": "e0806.shp",
+  "entidades": 347,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0806.dbf",
+      "bytes": 104016,
+      "sha256": "204bdcdf4a38e2eb0561a74a346a498e14f3e4f8b3f061fd2a961044bdc7b8f4"
+    },
+    {
+      "archivo": "e0806.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0806.shp",
+      "bytes": 32012,
+      "sha256": "8863b39fdb228adc7a9cf937c057946e74d5a026c545455f1f1d38f4bda23d89"
+    },
+    {
+      "archivo": "e0806.shx",
+      "bytes": 2876,
+      "sha256": "052ec1b918c4a6f99b1ff10abb5918995315c50887aad497cb1a9354e64fce53"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GABOTO.zip!e0806.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_62332633db",
+    "archivo": "santafe/ipec/2022/GABOTO.zip!e0806.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 347,
+    "registros_shx": 347,
+    "shape_type": 3,
+    "bbox": [
+      5422240.0,
+      6410305.0,
+      5424347.5,
+      6412730.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GABOTO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "8327a00f2ebc1aee7ea5fc7a1e775b433ed826885600fa98fe50bb7a5dcc1bf3"
+}

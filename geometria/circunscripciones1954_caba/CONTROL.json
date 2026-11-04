@@ -1,0 +1,32 @@
+{
+  "recintos": 14,
+  "ids": "id_trazo 1–14, sin equivalencia oficial",
+  "circ_of": null,
+  "crs": "EPSG:4326",
+  "fuente_imagen": "fuente_aportada.png",
+  "sha256_imagen": "a9e1003c9913bca0d49c75e7f31e5fdf2dd5b9fe0f7a30fc380b9cd032a808e1",
+  "recorte": [
+    130,
+    120,
+    249,
+    225
+  ],
+  "umbral": 190,
+  "giro_imagen": "90 grados antihorarios (270 horarios en coordenadas de imagen)",
+  "verificacion_orientacion": "Esquema 1951 de la misma lámina frente a SVG 1951; ORIENTACION.json",
+  "contorno_shp": "Capital Federal, base histórica del atlas 1948 (geom4673)",
+  "cache_shp": "mapas\\mapa1948\\units_raw.pkl",
+  "sha256_contorno_nativo": "e6813dea3d022df8b5445f2cd616397f74bf5db77f8d43949649518ac588a735",
+  "vertices_costa": 4192,
+  "simplificacion_costa": false,
+  "suavizado_interiores_pixeles": 2.0,
+  "desplazamiento_maximo_interiores_pixeles": 1.4310835055998667,
+  "vecindades_conservadas": true,
+  "numero_vecindades": 27,
+  "controles_perimetro": 49,
+  "hueco_antes_cierre_pixeles_poster": 0.376988955592114,
+  "diferencia_contorno_final": 0.0,
+  "solapamiento": -4.867217739956686e-13,
+  "geometrias_validas": true,
+  "advertencia": "Límites interiores aproximados de una imagen pequeña sin numeración; sin votos asociados."
+}

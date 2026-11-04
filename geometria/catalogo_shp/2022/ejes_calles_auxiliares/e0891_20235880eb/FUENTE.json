@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0891_20235880eb",
+  "shp": "e0891.shp",
+  "entidades": 241,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0891.dbf",
+      "bytes": 72428,
+      "sha256": "efa9ca26a5f26ddca522dc843e7920cb46d89c760823a64b2ef1dd5235792766"
+    },
+    {
+      "archivo": "e0891.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0891.shp",
+      "bytes": 21516,
+      "sha256": "8c95c9e671169c2121c6bfd8b2dfbeac6125176067971a494b6379b75651db2c"
+    },
+    {
+      "archivo": "e0891.shx",
+      "bytes": 2028,
+      "sha256": "58df811ec2ac81484840253ce6bec14b741b913833aafb70b8921c086fefb709"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LACRIOLLA.zip!e0891.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_3022a2fd3f",
+    "archivo": "santafe/ipec/2022/LACRIOLLA.zip!e0891.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 241,
+    "registros_shx": 241,
+    "shape_type": 3,
+    "bbox": [
+      5464113.5,
+      6655747.5,
+      5466106.5,
+      6657551.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LACRIOLLA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "79d60d8a204d02812080c6863c6317e128869c64dcdc9f1514a8b66eeef48db9"
+}

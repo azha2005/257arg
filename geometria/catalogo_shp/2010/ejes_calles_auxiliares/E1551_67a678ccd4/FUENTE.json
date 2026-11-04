@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1551_67a678ccd4",
+  "shp": "E1551.shp",
+  "entidades": 164,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1551.dbf",
+      "bytes": 57682,
+      "sha256": "6a7eabf235745a484d5b61420cb6a3a04a75649b1ecbd745a1ff73250c0a6d32"
+    },
+    {
+      "archivo": "E1551.shp",
+      "bytes": 14580,
+      "sha256": "70f7001a3ebcb8b0cc47ac1320ad805121d21e3c24837797048acb1eae7ae651"
+    },
+    {
+      "archivo": "E1551.shx",
+      "bytes": 1412,
+      "sha256": "24fc1f34647a82adba6659c4954430a9362067efdd26877a059828c1f535b8d3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sancarlosnortea3h.zip!E1551.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2e0ab62054",
+    "archivo": "santafe/ipec/2010/sancarlosnortea3h.zip!E1551.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 164,
+    "registros_shx": 164,
+    "shape_type": 3,
+    "bbox": [
+      5397612.5,
+      6495415.0,
+      5398695.5,
+      6496361.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sancarlosnortea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ffceaccb37f9a6cd646f0b8c46344ca4046c6c2b081c4db0a6b2fef69258518e"
+}

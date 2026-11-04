@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1157_63a46e4f07",
+  "shp": "R1157.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1157.dbf",
+      "bytes": 686,
+      "sha256": "9bd490d701f5bd7898af823db7ebb12e055c9d68d361116becf2ed6cbcaf7800"
+    },
+    {
+      "archivo": "R1157.shp",
+      "bytes": 956,
+      "sha256": "07a31cff105a290d665af32c46a9516d413d5cc6fa36a9bd0661a7529e7b9787"
+    },
+    {
+      "archivo": "R1157.shx",
+      "bytes": 108,
+      "sha256": "bd2bebdb28fb60d455d972327e5975e8ecf062cd377cbfdf0eb11c6a7f79e471"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Loscardosa3h.zip!R1157.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7f81d1bc47",
+    "archivo": "santafe/ipec/2010/Loscardosa3h.zip!R1157.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5345797.5,
+      6422545.0,
+      5346818.0,
+      6423686.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Loscardosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "830e60b79c0dcd9c0174736ee0f86b8077f62bd608517a32afc981cbdb19581d"
+}

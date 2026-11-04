@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e0602_f95dab309d",
+  "shp": "e0602.shp",
+  "entidades": 419,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0602.dbf",
+      "bytes": 146422,
+      "sha256": "774f3fad49f2b73452a201466ae1c4876f7a7198314a23e3e9c6097784e2293c"
+    },
+    {
+      "archivo": "e0602.sbn",
+      "bytes": 6124,
+      "sha256": "df5331885eccf0be44e058c9fe34fab880b6fb3d21d686ed83f48ad66cb1ebc3"
+    },
+    {
+      "archivo": "e0602.sbx",
+      "bytes": 844,
+      "sha256": "08234b5a32f53e873a137741ee2ae4829675657e20716257cee06fe869eeb9f6"
+    },
+    {
+      "archivo": "e0602.shp",
+      "bytes": 37148,
+      "sha256": "50ed9a6fc06a43cca1e9af47c9e39c5946d920d5dc9a32182b00c397a8f4acb4"
+    },
+    {
+      "archivo": "e0602.shx",
+      "bytes": 3452,
+      "sha256": "aee56d0f1176d0809769d56c371758e473bfc6c1443bfea15e59b896585dafaf"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/VILLAGUILLERMINA.zip!e0602.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_41208befe6",
+    "archivo": "santafe/ipec/2010/VILLAGUILLERMINA.zip!e0602.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 419,
+    "registros_shx": 419,
+    "shape_type": 3,
+    "bbox": [
+      5552108.0,
+      6874985.0,
+      5554824.0,
+      6877778.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/VILLAGUILLERMINA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ef9c33f44dfab39a23b55b1408d10328b895ddb7604a74a1d5bf5eaba5979c6f"
+}

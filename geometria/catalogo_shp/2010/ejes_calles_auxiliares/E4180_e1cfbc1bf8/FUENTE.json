@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4180_e1cfbc1bf8",
+  "shp": "E4180.shp",
+  "entidades": 57,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4180.dbf",
+      "bytes": 20446,
+      "sha256": "4b55fb0e83c618287207fa1a54124f3e5b0985bed957faece436211983bba97c"
+    },
+    {
+      "archivo": "E4180.shp",
+      "bytes": 5756,
+      "sha256": "b77d9a2758d9b7cb261c0cffada1e0b9a730fd0b5f5e9bb9cee1f34814cc6e27"
+    },
+    {
+      "archivo": "E4180.shx",
+      "bytes": 556,
+      "sha256": "b55fab4946bd5a162a319fa37d934ffbdea47ae5428a208b90814f0e5f0d7c8c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pueblosantaluciaa3v.zip!E4180.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f9f39d4315",
+    "archivo": "santafe/ipec/2010/pueblosantaluciaa3v.zip!E4180.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 57,
+    "registros_shx": 57,
+    "shape_type": 3,
+    "bbox": [
+      5460558.0,
+      6760282.0,
+      5461588.0,
+      6761782.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pueblosantaluciaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5a5e69a2b8e799a449326f9c494ae63662c09915736f20e0c5ca5107f008ef3e"
+}

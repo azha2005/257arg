@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6848_a265d2e5b4",
+  "shp": "E6848.shp",
+  "entidades": 935,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6848.dbf",
+      "bytes": 325990,
+      "sha256": "cf7a39f10a1c96154f6b86d32efc57f16cc756a6d881e146ef1c6c93f9200790"
+    },
+    {
+      "archivo": "E6848.shp",
+      "bytes": 85740,
+      "sha256": "a91273241809c05d8417a3c538ca1f4b15e73db88accdfafbe594550939a6a81"
+    },
+    {
+      "archivo": "E6848.shx",
+      "bytes": 7580,
+      "sha256": "70f88404de4185d0461f9b8a1eca17c4a524e03b6f328fc252a51d4049bca549"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arroyoleyesa1h.zip!E6848.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4e80c3be38",
+    "archivo": "santafe/ipec/2010/arroyoleyesa1h.zip!E6848.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 935,
+    "registros_shx": 935,
+    "shape_type": 3,
+    "bbox": [
+      5447203.5,
+      6506337.5,
+      5453679.0,
+      6512516.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arroyoleyesa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "510c0a1ff9d071a7bdd6a95cb6d33252c2d96f0faed868f7c7fdd465b86b2bb1"
+}

@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Tucuman_con_datos_d54cf6a638",
+  "shp": "Tucuman_con_datos.shp",
+  "entidades": 1717,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Tucuman_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Tucuman_con_datos.shp",
+      "bytes": 1848688,
+      "sha256": "25006656dfe82a3f36161b4554dec13e7035662a371a88a187a6deb1d8b094c4"
+    },
+    {
+      "archivo": "Tucuman_con_datos.shx",
+      "bytes": 13836,
+      "sha256": "a4026201ec341b1227697f75504f9e92f7118a343c58579d55a2df1ac99f94a7"
+    },
+    {
+      "archivo": "Tucuman_con_datos.dbf",
+      "bytes": 702542,
+      "sha256": "4d69fe8b7e7e36e19d69855f40c645e094e5ea58b1a7bbe33cded1b493e67a17"
+    },
+    {
+      "archivo": "Tucuman_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Tucuman_con_datos.zip!Tucuman_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_90",
+    "archivo": "indec/2010/Codgeo_Tucuman_con_datos.zip!Tucuman_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Tucumán",
+    "features": 1717,
+    "registros_shx": 1717,
+    "shape_type": 5,
+    "bbox": [
+      3482029.0,
+      6901911.5,
+      3651554.25,
+      7118641.0
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Tucuman_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 1717,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "f92d1f9445e78d25308ffcb08350ff12251d2f2485edeffe0e883432abd234f2"
+}

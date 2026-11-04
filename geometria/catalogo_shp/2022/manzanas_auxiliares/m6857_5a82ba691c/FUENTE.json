@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m6857_5a82ba691c",
+  "shp": "m6857.shp",
+  "entidades": 35,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m6857.dbf",
+      "bytes": 7281,
+      "sha256": "9481bd2f9a685403b0f851393cd01b84fee5c1cbcb5588d33f0320b84b616a35"
+    },
+    {
+      "archivo": "m6857.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m6857.shp",
+      "bytes": 8332,
+      "sha256": "ad978dc8c99b64ab4aafc8b8411fe41d4d527766218afa1bc2b4d09b3a8572b6"
+    },
+    {
+      "archivo": "m6857.shx",
+      "bytes": 380,
+      "sha256": "7efdcf3334bfb0a504d41384d966364bb4863777ad9e1d6b02d676406dc1c608"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PARAJECHACOCHICO.zip!m6857.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_37f1c48507",
+    "archivo": "santafe/ipec/2022/PARAJECHACOCHICO.zip!m6857.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 35,
+    "registros_shx": 35,
+    "shape_type": 5,
+    "bbox": [
+      5437061.0,
+      6507318.0,
+      5439553.0,
+      6508514.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PARAJECHACOCHICO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "64b0d5fe94feaa56fa766677a2a24e75352f3c421a8b2e079a9e2c7ea72f75eb"
+}

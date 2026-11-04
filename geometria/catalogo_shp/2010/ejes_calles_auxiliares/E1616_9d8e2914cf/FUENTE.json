@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1616_9d8e2914cf",
+  "shp": "E1616.shp",
+  "entidades": 111,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1616.dbf",
+      "bytes": 39238,
+      "sha256": "3c9381e9b87cea4a65bd11686793339c3ea164b4d01b2d5c70af4784f6609b05"
+    },
+    {
+      "archivo": "E1616.shp",
+      "bytes": 9884,
+      "sha256": "e9545d361982e4ccc18c66c65318181ffb24777593dda3582debf36a3ef86bfa"
+    },
+    {
+      "archivo": "E1616.shx",
+      "bytes": 988,
+      "sha256": "b792fc33d15d3682a3b47b7f340036a7ca233b86d4e16949c21fcc9ff026dd6c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Castelara3h.zip!E1616.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f4e06ac469",
+    "archivo": "santafe/ipec/2010/Castelara3h.zip!E1616.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 111,
+    "registros_shx": 111,
+    "shape_type": 3,
+    "bbox": [
+      5301195.5,
+      6494361.5,
+      5302315.0,
+      6495488.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Castelara3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "76179104bbe94ee4bde539ce49a1edf74b6eb9d33101f072d00cd99acf2fca56"
+}

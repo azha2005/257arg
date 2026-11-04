@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m8673_e349fec273",
+  "shp": "m8673.shp",
+  "entidades": 1060,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m8673.shp",
+      "bytes": 203508,
+      "sha256": "7e1fa89eb7d0929ecfb6543dc25dac89f426b1d528b8c565cd5519c771bc9b9f"
+    },
+    {
+      "archivo": "m8673.shx",
+      "bytes": 8580,
+      "sha256": "67dd9272202a18c95cfae91594eb6ff7c1f516203f6af7f7c4018cc8de729fbc"
+    },
+    {
+      "archivo": "m8673.dbf",
+      "bytes": 209205,
+      "sha256": "5114ef9edbab1a8eaeff06c03836a60e5acaae8174df0e8a9168941a0f49b221"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villagobernadorgalveza0h.zip!m8673.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1c316e7df8",
+    "archivo": "santafe/ipec/2010/villagobernadorgalveza0h.zip!m8673.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1060,
+    "registros_shx": 1060,
+    "shape_type": 5,
+    "bbox": [
+      5435843.5,
+      6343823.5,
+      5445710.0,
+      6349232.0
+    ],
+    "campos": [
+      "ESPVERDE",
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villagobernadorgalveza0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8debfe703a441c3dc06e4423ac40ce34d941f433e9a6d3310613e325de06990a"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0399_864c3368cd",
+  "shp": "M0399.shp",
+  "entidades": 155,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0399.dbf",
+      "bytes": 30921,
+      "sha256": "1952aa70c231e2b2915fecab4721a757ba182b7265bdc4195f6bf78c7a38871e"
+    },
+    {
+      "archivo": "M0399.shp",
+      "bytes": 22044,
+      "sha256": "120779a2cf346d61fda5115c257e5981dd639bc8fd3ffdab952ee0531a91db79"
+    },
+    {
+      "archivo": "M0399.shx",
+      "bytes": 1340,
+      "sha256": "74607781a207bb823d943a82f006566e9c0329d83ff11c75684a60952174416d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ChanarLadeadoa3v.zip!M0399.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a04e8e25f6",
+    "archivo": "santafe/ipec/2010/ChanarLadeadoa3v.zip!M0399.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 155,
+    "registros_shx": 155,
+    "shape_type": 5,
+    "bbox": [
+      5309416.5,
+      6310372.0,
+      5311232.0,
+      6313398.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ChanarLadeadoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f3e45ffe57dea85849bdb7d28c4fcf2f7610c11e20acb6e18094d70bb845200b"
+}

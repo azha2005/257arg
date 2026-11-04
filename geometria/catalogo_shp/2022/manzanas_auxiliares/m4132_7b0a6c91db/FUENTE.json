@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4132_7b0a6c91db",
+  "shp": "m4132.shp",
+  "entidades": 35,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4132.dbf",
+      "bytes": 7281,
+      "sha256": "15767b267efcdde352f6f5fcdef72c07c67b1782a3a6fd6684d81ac6f101d6e8"
+    },
+    {
+      "archivo": "m4132.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4132.shp",
+      "bytes": 5260,
+      "sha256": "d9644e3ce1a5036e3810d474c8ad600295d2f31dc61a1ce381367181d425435b"
+    },
+    {
+      "archivo": "m4132.shx",
+      "bytes": 380,
+      "sha256": "9ecb615d05716303775200d967a03152b74db9b2257262fd4340af685ffd61e1"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CHAPUY.zip!m4132.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4e9415029b",
+    "archivo": "santafe/ipec/2022/CHAPUY.zip!m4132.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 35,
+    "registros_shx": 35,
+    "shape_type": 5,
+    "bbox": [
+      5337874.0,
+      6258386.5,
+      5338963.0,
+      6259841.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CHAPUY.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "888f080eaad1349be304b9761af3fa17252ccee61db00c7d5b3e61b069336903"
+}

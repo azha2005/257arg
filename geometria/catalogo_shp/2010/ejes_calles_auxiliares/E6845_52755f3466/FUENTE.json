@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6845_52755f3466",
+  "shp": "E6845.shp",
+  "entidades": 81,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6845.dbf",
+      "bytes": 28798,
+      "sha256": "bcaeb6f83ef80f4b7d7a78960d5791fd8e019d1b2cb17c896525e46686d3ac09"
+    },
+    {
+      "archivo": "E6845.shp",
+      "bytes": 7292,
+      "sha256": "15d6c6570837b724fa79ac445f3259e1f31ab0ff9000be5f9778cffd7a1c28a9"
+    },
+    {
+      "archivo": "E6845.shx",
+      "bytes": 748,
+      "sha256": "e2cefbbb3af0b86178b0e1905fe3638688d938086e5b3818c6dfa357aa8e1d19"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/plazasaguiera3h.zip!E6845.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d5fad21fa9",
+    "archivo": "santafe/ipec/2010/plazasaguiera3h.zip!E6845.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 3,
+    "bbox": [
+      5340935.0,
+      6533295.0,
+      5341423.0,
+      6534208.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/plazasaguiera3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "aac314603ac6d40f80fe09ff32310f6fa0dd91760e1e67852ed7d37ca7fa3625"
+}

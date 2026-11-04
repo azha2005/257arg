@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m6882_b0e67bc6a3",
+  "shp": "m6882.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m6882.shx",
+      "bytes": 204,
+      "sha256": "fbf2dab500c0ffec0d0c309e7496bbde5c1dcfc29383336506c4e022ba9e1872"
+    },
+    {
+      "archivo": "m6882.shp",
+      "bytes": 2060,
+      "sha256": "55bc2da6a34004551b277b18ca811f6764c2a5821a116162757058e4d4239eaa"
+    },
+    {
+      "archivo": "m6882.sbx",
+      "bytes": 140,
+      "sha256": "6db1c7e684db9d9c985ccf1d832c81376143d1c68c1a8396a948b643ef9c1cee"
+    },
+    {
+      "archivo": "m6882.sbn",
+      "bytes": 284,
+      "sha256": "97ef5a1f96045941e8d3dcad4a86df5dc8a32bfa602115b0b99bc85108fea8fb"
+    },
+    {
+      "archivo": "m6882.dbf",
+      "bytes": 2946,
+      "sha256": "5584d3544229ec166a8d2df3389ee847352ce1e92f591087e09c936b749511c0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/MOUSSY.zip!m6882.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d8821e141c",
+    "archivo": "santafe/ipec/2010/MOUSSY.zip!m6882.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5529748.0,
+      6790504.5,
+      5530714.0,
+      6791446.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/MOUSSY.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0d3beb646eb1778ea8284e4fbb49f8e17547f5e2a369b6ea346c85424edbe81c"
+}

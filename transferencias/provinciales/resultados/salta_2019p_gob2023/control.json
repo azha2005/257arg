@@ -1,0 +1,114 @@
+{
+  "nombre": "Salta",
+  "distrito": "17",
+  "fecha": "14/05/2023",
+  "foco": [
+    "Gustavo Gobernador",
+    "Avancemos"
+  ],
+  "nota": "Gustavo Gobernador (Sáenz) y Avancemos (Estrada–Zapata) se mantienen separados. El voto a gobernador de Avancemos no permite aislar a Ahora Patria de los demás integrantes.",
+  "id": "salta_2019p_gob2023",
+  "nivel": "departamentos",
+  "unidades": 23,
+  "base": "padrón",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 14/05/2023",
+  "foco_lado": "destino",
+  "pendientes": [],
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "categorias_origen": 7,
+  "rango": 7,
+  "condicion": 394.5536605078938,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.060504475643391994,
+    "0.0001": 0.039459679301127704,
+    "1e-05": 0.010232415069773704,
+    "1e-06": 0.006844350678450354,
+    "1e-07": 0.006484294848278535
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.7326728242628076,
+  "desviacion_max_margen_destino_pp": 0.13082958613208628,
+  "electores_o_votos_origen": 983014.0,
+  "electores_o_votos_destino": 1082462.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 36.3,
+      "dif_variante_pp": 8.79,
+      "sensibilidad_pp": 53.29,
+      "ancho_intervalo_pp": 48.72,
+      "separacion_pp": 28.98,
+      "no_identificada": true
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 25.95,
+      "dif_variante_pp": 8.9,
+      "sensibilidad_pp": 27.3,
+      "ancho_intervalo_pp": 38.36,
+      "separacion_pp": 41.57,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 8.03,
+      "dif_variante_pp": 24.14,
+      "sensibilidad_pp": 84.64,
+      "ancho_intervalo_pp": 52.66,
+      "separacion_pp": 68.27,
+      "no_identificada": true
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 1.31,
+      "dif_variante_pp": 50.3,
+      "sensibilidad_pp": 86.59,
+      "ancho_intervalo_pp": 95.35,
+      "separacion_pp": 75.26,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 2.92,
+      "dif_variante_pp": 36.01,
+      "sensibilidad_pp": 81.84,
+      "ancho_intervalo_pp": 96.26,
+      "separacion_pp": 71.35,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 1.41,
+      "dif_variante_pp": 71.07,
+      "sensibilidad_pp": 91.9,
+      "ancho_intervalo_pp": 93.59,
+      "separacion_pp": 79.58,
+      "no_identificada": true
+    },
+    {
+      "origen": "No votó",
+      "peso": 24.08,
+      "dif_variante_pp": 28.89,
+      "sensibilidad_pp": 58.29,
+      "ancho_intervalo_pp": 96.02,
+      "separacion_pp": 31.05,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "serie": "2023",
+  "fuente": "https://www.electoralsalta.gov.ar/Elecciones/Escrutinio/Escrutinio-2023G.xlsx"
+}

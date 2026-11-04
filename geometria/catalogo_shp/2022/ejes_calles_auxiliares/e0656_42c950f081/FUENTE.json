@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0656_42c950f081",
+  "shp": "e0656.shp",
+  "entidades": 384,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0656.dbf",
+      "bytes": 115042,
+      "sha256": "fd062eec316777a9c42118b43ea857e11bb297b1bd9084d6cd39174392368088"
+    },
+    {
+      "archivo": "e0656.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0656.shp",
+      "bytes": 34164,
+      "sha256": "c8d220a925399a8c4ef811c8e63b57505e4eb1d95ff31f5faf490739144ad84c"
+    },
+    {
+      "archivo": "e0656.shx",
+      "bytes": 3172,
+      "sha256": "28e0ff1267f2636116183f1e44157bf6ed39c7d2e9957a61d96972804bfbf949"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ARTEAGA.zip!e0656.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_01eb08d20f",
+    "archivo": "santafe/ipec/2022/ARTEAGA.zip!e0656.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 384,
+    "registros_shx": 384,
+    "shape_type": 3,
+    "bbox": [
+      5331914.0,
+      6337186.0,
+      5333546.5,
+      6338798.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ARTEAGA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "a85578e10369e086985ff152d0463983aa21702e71526d70ecc81d2f114a1a25"
+}

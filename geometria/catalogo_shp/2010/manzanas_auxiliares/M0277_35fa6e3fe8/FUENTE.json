@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0277_35fa6e3fe8",
+  "shp": "M0277.shp",
+  "entidades": 238,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0277.dbf",
+      "bytes": 47272,
+      "sha256": "b53cfa3680b42f9944e451dc59a1c40f50d0ed4eac9c64e4d0a00d7dfd5e010d"
+    },
+    {
+      "archivo": "M0277.shp",
+      "bytes": 38900,
+      "sha256": "2ec25c1f4b684b0936f98c681246764947ba89abf6977665c4981e4caed3b238"
+    },
+    {
+      "archivo": "M0277.shx",
+      "bytes": 2004,
+      "sha256": "b8408aaa9ed655cfcafeb4fbf8ab30daad59668d6f6ece9bf70574ace8ac88f8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villacanasa1h.zip!M0277.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_723c64cc4f",
+    "archivo": "santafe/ipec/2010/villacanasa1h.zip!M0277.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 238,
+    "registros_shx": 238,
+    "shape_type": 5,
+    "bbox": [
+      5350553.0,
+      6235274.0,
+      5352612.5,
+      6237908.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villacanasa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8013910f84ef31e94af3b226d290efb319ff08f5eaef90ec566392f679a145ca"
+}

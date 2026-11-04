@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4111_0d6349c4ef",
+  "shp": "M4111.shp",
+  "entidades": 56,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4111.dbf",
+      "bytes": 11418,
+      "sha256": "0d97d3cfd4cdb88754941460a42f0a0336d7e64aea8d53659bd1ab99c31a9ece"
+    },
+    {
+      "archivo": "M4111.shp",
+      "bytes": 9588,
+      "sha256": "5bcc78f1d6d3d9cc192f17e6026dbbb687597155728d1c67fae42776f8a4a303"
+    },
+    {
+      "archivo": "M4111.shx",
+      "bytes": 548,
+      "sha256": "8ee1bb7b015581517f40159d2d06c972a2d6a2027401fb6ac231ef1cad7dd5cf"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/larrecheaa3h.zip!M4111.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_44b8673e40",
+    "archivo": "santafe/ipec/2010/larrecheaa3h.zip!M4111.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 56,
+    "registros_shx": 56,
+    "shape_type": 5,
+    "bbox": [
+      5400488.5,
+      6466260.0,
+      5401648.0,
+      6467465.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/larrecheaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "745ad78f32211283c66c12dd537e2db88f3d059ed037fd586e23257ed707ba78"
+}

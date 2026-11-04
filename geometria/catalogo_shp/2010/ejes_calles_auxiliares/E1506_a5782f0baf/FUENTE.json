@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1506_a5782f0baf",
+  "shp": "E1506.shp",
+  "entidades": 93,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1506.dbf",
+      "bytes": 32974,
+      "sha256": "0fd58f03cecac53cd0ace176db8aaa694c7c347441c7f1bef1e40fddbcfad40b"
+    },
+    {
+      "archivo": "E1506.shp",
+      "bytes": 8620,
+      "sha256": "91366dd321838ead6905df78ea97cd6b14d8e3975ffda808870a5520ecf07cca"
+    },
+    {
+      "archivo": "E1506.shx",
+      "bytes": 844,
+      "sha256": "e6bb5148b7234383bc4c7ccf9e2fc4981292d83c0c636eacc4b4dc03257b5c73"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arroyoaguiara3v.zip!E1506.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1e594230a3",
+    "archivo": "santafe/ipec/2010/arroyoaguiara3v.zip!E1506.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 93,
+    "registros_shx": 93,
+    "shape_type": 3,
+    "bbox": [
+      5435983.5,
+      6522235.0,
+      5437655.5,
+      6523993.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arroyoaguiara3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9a73d82833a742a6cd0a8f1ee790ed228d68f2785d8f2b5df6077873bd64335d"
+}

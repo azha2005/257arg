@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6815_c2a194a086",
+  "shp": "E6815.shp",
+  "entidades": 50,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6815.dbf",
+      "bytes": 18010,
+      "sha256": "10fa6cf7bb6ea1ded1c2278c5cd5854e1fd9466ca5344aa191cce69bfbb211c5"
+    },
+    {
+      "archivo": "E6815.shp",
+      "bytes": 4500,
+      "sha256": "049388e8e229908842262ab563eef987a515605a8015396d308cfb09954ffde5"
+    },
+    {
+      "archivo": "E6815.shx",
+      "bytes": 500,
+      "sha256": "023ee761a9130d8ed104dc787fa99ac12a0d15a9bcf3a7d849f896128f4fb0b3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/capivaraA4v1.zip!E6815.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c64a79d028",
+    "archivo": "santafe/ipec/2010/capivaraA4v1.zip!E6815.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 50,
+    "registros_shx": 50,
+    "shape_type": 3,
+    "bbox": [
+      5377607.0,
+      6629838.5,
+      5378266.0,
+      6630488.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/capivaraA4v1.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "dc6d4ca69d2dadf50318499d4e1c6096c9faa03431eda992ba750005adb7f3b8"
+}

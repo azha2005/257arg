@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1501_aa50e8deae",
+  "shp": "e1501.shp",
+  "entidades": 82,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1501.dbf",
+      "bytes": 25046,
+      "sha256": "096a252f2e9b294c9eb37acb6c0306ce40b53dd79bfec54fe507605d263f6434"
+    },
+    {
+      "archivo": "e1501.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1501.shp",
+      "bytes": 7316,
+      "sha256": "a0913a67070e9d6f3892f97c61d7d0b03323c2742de5d2aa6ee7459d549dbab8"
+    },
+    {
+      "archivo": "e1501.shx",
+      "bytes": 756,
+      "sha256": "e6839a783646db4e0e7c5675dfacc54f21469951c4828132aca464524e010cb7"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/EUSEBIAYCAROLINA.zip!e1501.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_56d302908e",
+    "archivo": "santafe/ipec/2022/EUSEBIAYCAROLINA.zip!e1501.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 82,
+    "registros_shx": 82,
+    "shape_type": 3,
+    "bbox": [
+      5322069.0,
+      6575085.5,
+      5322946.0,
+      6575839.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/EUSEBIAYCAROLINA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "b099d1795f1b2cedd3e043a60a1bbb17aa1beaa1f1c7539add5f8b2af09298a8"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0640_e0aeea346a",
+  "shp": "E0640.shp",
+  "entidades": 283,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0640.dbf",
+      "bytes": 99094,
+      "sha256": "2ae86a17eedfe76959c0c016c2fc2c2b47b18af1cad988827aed75ed6efa4b1c"
+    },
+    {
+      "archivo": "E0640.shp",
+      "bytes": 25228,
+      "sha256": "1c561b8a1fbde926327bcf626f82906b6813f9d18fc703d8b4d9ba8011bde859"
+    },
+    {
+      "archivo": "E0640.shx",
+      "bytes": 2364,
+      "sha256": "871508436a0d3c1c432bd0bd897d20a970779a192fd1861228f7c1d58b1ae9f3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/serodinoa2h.zip!E0640.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_29315c43ec",
+    "archivo": "santafe/ipec/2010/serodinoa2h.zip!E0640.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 283,
+    "registros_shx": 283,
+    "shape_type": 3,
+    "bbox": [
+      5410154.5,
+      6391375.5,
+      5412026.5,
+      6393303.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/serodinoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "de31b2d56eb549316d80c891b68dc6921c90d7f5d846810394e035b69bcad992"
+}

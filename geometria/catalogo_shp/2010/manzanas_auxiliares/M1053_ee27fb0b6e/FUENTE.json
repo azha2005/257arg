@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1053_ee27fb0b6e",
+  "shp": "M1053.shp",
+  "entidades": 86,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1053.dbf",
+      "bytes": 17328,
+      "sha256": "fbf90f1b9073d16f32056842e2f90c1020839a6518e2cd270c36e7cb6c30196c"
+    },
+    {
+      "archivo": "M1053.shp",
+      "bytes": 13684,
+      "sha256": "697e5cdd9366775e9343389300e67795542cee78e06c69118b9e2ea6749f4197"
+    },
+    {
+      "archivo": "M1053.shx",
+      "bytes": 788,
+      "sha256": "6b887c809128ff9c0d0b01cb63f964988c4a274d67ba378e8d512f7de0450de3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tartagala3v.zip!M1053.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bcec3d5381",
+    "archivo": "santafe/ipec/2010/tartagala3v.zip!M1053.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 86,
+    "registros_shx": 86,
+    "shape_type": 5,
+    "bbox": [
+      5514569.0,
+      6828268.5,
+      5515788.0,
+      6830110.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tartagala3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "aece1197f586f8140d8af2817d4e25e44af8a74f736d7c15b5384ef9f36a322b"
+}

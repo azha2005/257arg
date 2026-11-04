@@ -1,0 +1,93 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/2010_RADIOS_ARGENTINA_cc637ee923",
+  "shp": "2010_RADIOS ARGENTINA.shp",
+  "entidades": 52401,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "2010_RADIOS ARGENTINA.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.dbf",
+      "bytes": 12576626,
+      "sha256": "629b9c02384a1b6378081c0e5803bd6581bb6be84cab452a92599af168f71d1e"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.prj",
+      "bytes": 406,
+      "sha256": "096e39ff174810de9291e0c252e4701a4395119594b2c9a84fa9ccc73c688354"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.sbn",
+      "bytes": 498716,
+      "sha256": "7ae8a42b6402e959f3c6a884a798ff11a1fc1540d997678230be038e1917a396"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.sbx",
+      "bytes": 14572,
+      "sha256": "0944951c2900f015a465b71984cd32716929cae1c55e700285a93ea4d3db0c4a"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.shp",
+      "bytes": 53381596,
+      "sha256": "264f4cb4ec8c356ee9e60938d6755ed0eaa484151da3406bf2b504e53dc9be22"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.shp.xml",
+      "bytes": 982385,
+      "sha256": "6ff05277319e9e57e54aa444551bb1ec2a46145e77b01be130effe1021083c98"
+    },
+    {
+      "archivo": "2010_RADIOS ARGENTINA.shx",
+      "bytes": 419308,
+      "sha256": "c69d2682025eb433cf450678aac24a3476c768052f2cce2cc9a4d73b03163cee"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/ceur_legacy/2010_RADIOS_ARGENTINA.rar!2010_RADIOS ARGENTINA/2010_RADIOS ARGENTINA.shp",
+  "metadata_original": {
+    "id_fuente": "ceur_legacy_2010",
+    "archivo": "ceur_legacy/2010_RADIOS_ARGENTINA.rar!2010_RADIOS ARGENTINA/2010_RADIOS ARGENTINA.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Argentina",
+    "features": 52401,
+    "registros_shx": 52401,
+    "shape_type": 5,
+    "bbox": [
+      2952779.5,
+      3898419.2499999995,
+      4740998.5,
+      7592423.0
+    ],
+    "campos": [
+      "COD_2010",
+      "PROV_",
+      "DEPTO_",
+      "FRACC_",
+      "RADIO_",
+      "OBS_",
+      "CODAGLO_1",
+      "CODAGLO_2",
+      "CODAGLO_3",
+      "CODAGLO_4",
+      "CODAGLO_5"
+    ],
+    "formato": "SHP",
+    "fuente": "https://github.com/matuteiglesias/argentina-geography/tree/8f55e4d3c587f2765f9096648cac18581e5b80e7",
+    "nota": "Copia de una versión CEUR anterior a V2025-1, existente en commit 2021-01-17T17:04:55Z; verificar diferencias y licencia original. No es otro censo.",
+    "licencia": "ver registro CEUR original",
+    "url_descarga": "https://raw.githubusercontent.com/matuteiglesias/argentina-geography/8f55e4d3c587f2765f9096648cac18581e5b80e7/censos_shp_CONICET/2010_RADIOS_ARGENTINA.rar",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"false_easting\",3500000.0],PARAMETER[\"false_northing\",0.0],PARAMETER[\"central_meridian\",-66.0],PARAMETER[\"scale_factor\",1.0],PARAMETER[\"latitude_of_origin\",-90.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8",
+    "campo_codigo": "COD_2010",
+    "codigos_distintos": 52401,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "05e8d57bb42c54c0f6348d4eb48c4fc71aa33eb5c03aba754b483963d2795fbf"
+}

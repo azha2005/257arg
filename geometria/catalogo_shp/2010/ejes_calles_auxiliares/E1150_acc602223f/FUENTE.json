@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1150_acc602223f",
+  "shp": "E1150.shp",
+  "entidades": 211,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1150.dbf",
+      "bytes": 74038,
+      "sha256": "65f17e01c4e613d6036aaf10df25a45e56dfddfd3acf3f4fd007b816decbb9f9"
+    },
+    {
+      "archivo": "E1150.shp",
+      "bytes": 18796,
+      "sha256": "1d6bb461ee84195421ac04f492ec133b5ad9d23dca819e76a2dabd7417377e1d"
+    },
+    {
+      "archivo": "E1150.shx",
+      "bytes": 1788,
+      "sha256": "40a4011d200caecabf0ac7d67b0e84f03c57474f00c77a5594d5635c08bd845b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/carrizalesa3h.zip!E1150.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_34edb02931",
+    "archivo": "santafe/ipec/2010/carrizalesa3h.zip!E1150.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 211,
+    "registros_shx": 211,
+    "shape_type": 3,
+    "bbox": [
+      5402416.0,
+      6402672.0,
+      5404320.0,
+      6403748.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/carrizalesa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0f73bef11cff8e15ba15352505b4bde066af94dfaf2e17c5bd6c0ee8fd49ca96"
+}

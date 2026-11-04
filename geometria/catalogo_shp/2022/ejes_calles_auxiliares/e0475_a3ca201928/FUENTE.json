@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0475_a3ca201928",
+  "shp": "e0475.shp",
+  "entidades": 365,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0475.dbf",
+      "bytes": 109380,
+      "sha256": "93c6536ef0c378a6e3fa5df481dfc04fedd1aed218cbf11dec3046455cc8c481"
+    },
+    {
+      "archivo": "e0475.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0475.shp",
+      "bytes": 32940,
+      "sha256": "e0a1b48c1f5e7fa5cfbc8967f73afc90e06ecb237e10ed6f661234ccd0917756"
+    },
+    {
+      "archivo": "e0475.shx",
+      "bytes": 3020,
+      "sha256": "cf7051c568f45162b832bf27a9bc9d004c38bc038f670166918cd6594b70afdd"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MARIAJUANA.zip!e0475.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_0d801c2882",
+    "archivo": "santafe/ipec/2022/MARIAJUANA.zip!e0475.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 365,
+    "registros_shx": 365,
+    "shape_type": 3,
+    "bbox": [
+      5332551.0,
+      6493958.5,
+      5334934.0,
+      6495771.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MARIAJUANA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "d1b66fc138eea654300b2b4c70a9b2c7d5904dc9a1b10380cf9252d9e63ea0e2"
+}

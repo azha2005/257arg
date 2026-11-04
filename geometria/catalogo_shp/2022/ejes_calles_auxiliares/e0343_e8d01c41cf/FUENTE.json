@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0343_e8d01c41cf",
+  "shp": "e0343.shp",
+  "entidades": 815,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0343.dbf",
+      "bytes": 243480,
+      "sha256": "eac29de2100eaf0125a68bf3f143074af653201fd8c346ece97c82f1c0736046"
+    },
+    {
+      "archivo": "e0343.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0343.shp",
+      "bytes": 71948,
+      "sha256": "a4907443d7f246e7701b658e3ec8fe3bba83bad9d4e59dfb4e56fff05d853c91"
+    },
+    {
+      "archivo": "e0343.shx",
+      "bytes": 6620,
+      "sha256": "1d64ddc87926eb7cda672d01fd1f322e99a3b8360c7c724a4752c5111d941cae"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANJOSEDELAESQUINA.zip!e0343.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_8777788bea",
+    "archivo": "santafe/ipec/2022/SANJOSEDELAESQUINA.zip!e0343.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 815,
+    "registros_shx": 815,
+    "shape_type": 3,
+    "bbox": [
+      5339404.0,
+      6333838.0,
+      5342167.5,
+      6336299.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANJOSEDELAESQUINA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7e8b83ef0649410fd9f21ff7ec1b2b840baf18684b38b07c5928aa4f70e7ae12"
+}

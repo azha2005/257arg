@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0931_238a5d4db5",
+  "shp": "M0931.shp",
+  "entidades": 110,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0931.dbf",
+      "bytes": 22056,
+      "sha256": "0588a32246e98a257b6a449cbbf59f0d68873b2b519e027f2482b02f02015ac3"
+    },
+    {
+      "archivo": "M0931.shp",
+      "bytes": 17332,
+      "sha256": "f47d0a615a315bee860e039c933b477e317299959fb668f411a45f22f98b239c"
+    },
+    {
+      "archivo": "M0931.shx",
+      "bytes": 980,
+      "sha256": "211f9be23dba4d8bc333f4b60b9120caf2972402560cfa18812d90c97f4a134f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/marcelinoescaladaa3h.zip!M0931.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6b6939478c",
+    "archivo": "santafe/ipec/2010/marcelinoescaladaa3h.zip!M0931.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 110,
+    "registros_shx": 110,
+    "shape_type": 5,
+    "bbox": [
+      5454139.5,
+      6616877.0,
+      5455713.0,
+      6618097.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/marcelinoescaladaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "91010a7e958ba2069e4b0879b400f7edda0c7d881418eb200fce6e360950c3cf"
+}

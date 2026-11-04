@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1150_cea31b70bf",
+  "shp": "R1150.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1150.dbf",
+      "bytes": 686,
+      "sha256": "fd636e69890a22c5cc4da1709d00b659cf1dbcb95d6ce9d23be2fa8f60a9bd7f"
+    },
+    {
+      "archivo": "R1150.shp",
+      "bytes": 1148,
+      "sha256": "d548271ee35e12aafb83f2bfd700134e1503f159eb28ae31534d90377992b501"
+    },
+    {
+      "archivo": "R1150.shx",
+      "bytes": 108,
+      "sha256": "07b193a72cd90ad8e817e0ebe6bc6d5fedadcf819fcbe951e6d08c20d27d5c9a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/carrizalesa3h.zip!R1150.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_34edb02931",
+    "archivo": "santafe/ipec/2010/carrizalesa3h.zip!R1150.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5402416.0,
+      6402672.0,
+      5404320.0,
+      6403748.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/carrizalesa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "25f07f19c905517ddaafc533c3237c9bd8461459fd9b68738e30770d57c25ef4"
+}

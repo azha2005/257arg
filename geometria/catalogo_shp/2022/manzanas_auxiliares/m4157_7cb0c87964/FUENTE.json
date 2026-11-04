@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4157_7cb0c87964",
+  "shp": "m4157.shp",
+  "entidades": 27,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4157.dbf",
+      "bytes": 5705,
+      "sha256": "e486a65f6b905cb0a0026ef2152bc5cd2225c72509b4944fa184b8660fe23d62"
+    },
+    {
+      "archivo": "m4157.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4157.shp",
+      "bytes": 5532,
+      "sha256": "b12d7bea8b8630111e97675fbe00b1298f553de9832d0b6eb6c908adacf215f7"
+    },
+    {
+      "archivo": "m4157.shx",
+      "bytes": 316,
+      "sha256": "7a8660fedc116410b8d655e018b807046dc58ecb01ed40590721bf7a9137a95a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VIRGINIA.zip!m4157.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_328ed4cc04",
+    "archivo": "santafe/ipec/2022/VIRGINIA.zip!m4157.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 27,
+    "registros_shx": 27,
+    "shape_type": 5,
+    "bbox": [
+      5371275.0,
+      6598778.5,
+      5371906.5,
+      6599715.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VIRGINIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0df33db3d02ec3f13287ddd32303a26f279720e09e301c3bd7818469b4481ddb"
+}

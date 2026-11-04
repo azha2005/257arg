@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/M4158_224744836e",
+  "shp": "M4158.shp",
+  "entidades": 17,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4158.dbf",
+      "bytes": 3735,
+      "sha256": "182ae485f0064a035b8def0f9fb69e66fc22bc914a882993f897ac21ed89103b"
+    },
+    {
+      "archivo": "M4158.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "M4158.shp",
+      "bytes": 3292,
+      "sha256": "d506338cd7a4476feb3a298989b2c15afff4dddae79d267db2bdd5d659487aa6"
+    },
+    {
+      "archivo": "M4158.shx",
+      "bytes": 236,
+      "sha256": "acf95f8b0aa4b0741f2e7aaf83b7b3cd007cb95a6680c27c216e5d6069409ef0"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/INGENIEROCHANOURDIE.zip!M4158.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_5d9941fb76",
+    "archivo": "santafe/ipec/2022/INGENIEROCHANOURDIE.zip!M4158.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 17,
+    "registros_shx": 17,
+    "shape_type": 5,
+    "bbox": [
+      5540464.0,
+      6818965.5,
+      5541783.5,
+      6819541.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/INGENIEROCHANOURDIE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2ab905634071a42469889771f0aed483ca5c5474523b2cd3d27855816f35f5d7"
+}

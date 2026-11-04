@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4145_30d2149ac7",
+  "shp": "M4145.shp",
+  "entidades": 19,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4145.dbf",
+      "bytes": 4129,
+      "sha256": "cce181323247a7151e2a173374ab412ea08bc9864ed56edc6b29ae960aabb0dc"
+    },
+    {
+      "archivo": "M4145.shp",
+      "bytes": 3948,
+      "sha256": "f00ce02d1344bcad8043dbd70f3991b1d5c1005f1212d5b14e1842f48d0862cb"
+    },
+    {
+      "archivo": "M4145.shx",
+      "bytes": 252,
+      "sha256": "f5f953c9f2292ab917c108f4da58047c98925783c44d2c6fd2ea655caf2f5ac6"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/estebanramsa3h.zip!M4145.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_415ec33ce8",
+    "archivo": "santafe/ipec/2010/estebanramsa3h.zip!M4145.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 19,
+    "registros_shx": 19,
+    "shape_type": 5,
+    "bbox": [
+      5355490.0,
+      6705750.5,
+      5356378.5,
+      6706522.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/estebanramsa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "32177781818802162af24eff0546f2151dd8003dda97c5703a9d3ee64ec2a90f"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0488_3fcb75f1f1",
+  "shp": "E0488.shp",
+  "entidades": 340,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0488.dbf",
+      "bytes": 118930,
+      "sha256": "a6f99a3aa28df2c2f9354f273f5d6897ca5e6f94fc81211685f584cb7548dc70"
+    },
+    {
+      "archivo": "E0488.shp",
+      "bytes": 32868,
+      "sha256": "24327679e88816953b69149da0a8a5a988848278689aaedb613cd4708ac3be96"
+    },
+    {
+      "archivo": "E0488.shx",
+      "bytes": 2820,
+      "sha256": "aa0412bf0a292126f31f146dc03f95ec1df22e8e7d28fb51ea2603446430b809"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/barrancasa2v.zip!E0488.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_149f163ab6",
+    "archivo": "santafe/ipec/2010/barrancasa2v.zip!E0488.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 340,
+    "registros_shx": 340,
+    "shape_type": 3,
+    "bbox": [
+      5406216.0,
+      6432728.0,
+      5408155.5,
+      6434680.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/barrancasa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "65b6ddb0d70952bc6c8ac7a6d0cbeda1c86d7e41264f98ae9d0ea30d3779d9a9"
+}

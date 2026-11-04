@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R8670_2cca56a07b",
+  "shp": "R8670.shp",
+  "entidades": 1072,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R8670.dbf",
+      "bytes": 219170,
+      "sha256": "04deb1aeaa44023e2d04ed11844f4273ff0a17bf1696fe92dcc8e2e6ce6333ab"
+    },
+    {
+      "archivo": "R8670.shp",
+      "bytes": 620068,
+      "sha256": "29fe22c1436f839a108a8877d6a7b5a102b4cc5e05673f1911a92895c4b6933d"
+    },
+    {
+      "archivo": "R8670.shx",
+      "bytes": 8676,
+      "sha256": "17ca3143146011ab7088eff792f95546bbaf0d9414f7050a1158ee1598ab99ad"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/rosarioa0v.zip!R8670.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9ea2c9acd5",
+    "archivo": "santafe/ipec/2010/rosarioa0v.zip!R8670.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1072,
+    "registros_shx": 1072,
+    "shape_type": 5,
+    "bbox": [
+      5425446.0,
+      6344708.5,
+      5443294.5,
+      6363426.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/rosarioa0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a274df672e244757375cd9a3ee4a249565b76a295a9ec5d4328aa885f08d6d62"
+}

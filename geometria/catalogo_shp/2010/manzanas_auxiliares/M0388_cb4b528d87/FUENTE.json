@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0388_cb4b528d87",
+  "shp": "M0388.shp",
+  "entidades": 302,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0388.dbf",
+      "bytes": 59880,
+      "sha256": "83f49c2c5410b817050c817958be20b7596d93bb4d3795d0463a56b2ee9fc620"
+    },
+    {
+      "archivo": "M0388.shp",
+      "bytes": 47124,
+      "sha256": "a2840ffb5ace8ef01ef8daa29620b1ada6c2954b8280019dcc73f8bca8582183"
+    },
+    {
+      "archivo": "M0388.shx",
+      "bytes": 2516,
+      "sha256": "9d99046fbb2f3c73ae9f65a3cbe4f284708a6b0b375ad2e7bbb7592bed37f021"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Romanga2h.zip!M0388.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bdd5b864ed",
+    "archivo": "santafe/ipec/2010/Romanga2h.zip!M0388.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 302,
+    "registros_shx": 302,
+    "shape_type": 5,
+    "bbox": [
+      5523023.0,
+      6735805.5,
+      5525238.0,
+      6738011.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Romanga2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ef0f9ffde4fc822444ee715482765cc552db5aa5c654d7f09c9e66ee3e85f16a"
+}

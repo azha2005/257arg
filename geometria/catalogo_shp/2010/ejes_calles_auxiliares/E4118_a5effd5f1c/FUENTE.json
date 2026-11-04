@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4118_a5effd5f1c",
+  "shp": "E4118.shp",
+  "entidades": 58,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4118.dbf",
+      "bytes": 20794,
+      "sha256": "4ea785ab6341340b63102d330f52aaaa6fcc5cc6a95deda7da731c38af5bcb66"
+    },
+    {
+      "archivo": "E4118.shp",
+      "bytes": 5204,
+      "sha256": "9264a23ac92436722ce63cee6a3f0302256c42cbc044abf0337f6ca829c535ba"
+    },
+    {
+      "archivo": "E4118.shx",
+      "bytes": 564,
+      "sha256": "4fd7b3517f268a0985e5e6c75b492db1760ef2a5ebbab7ac6f90585cd45acda8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lachispaa3h.zip!E4118.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_29dd6da44a",
+    "archivo": "santafe/ipec/2010/lachispaa3h.zip!E4118.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 58,
+    "registros_shx": 58,
+    "shape_type": 3,
+    "bbox": [
+      5316238.5,
+      6286724.5,
+      5317211.5,
+      6287397.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lachispaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "29299c696e18cebebbd0cf09f812729aea6f4cbee1d4fc1fe84bcf58d8f1fba7"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4125_cb7d90232a",
+  "shp": "E4125.shp",
+  "entidades": 82,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4125.dbf",
+      "bytes": 29146,
+      "sha256": "d254a681feead09d729df0a1d8cb1b30817118ff4b7bae1f88883c3f64cefeea"
+    },
+    {
+      "archivo": "E4125.shp",
+      "bytes": 7588,
+      "sha256": "c4f791f018e92d1937a2abf71c1af4a47173dcd1f8dcf2478b8dc122853c34e1"
+    },
+    {
+      "archivo": "E4125.shx",
+      "bytes": 756,
+      "sha256": "f14ad99b60ceb0de99a977a6208fdc9388372f4f0fe07b25f1bcb56a1bd57f65"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/luciovlopeza3h.zip!E4125.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f5f062042e",
+    "archivo": "santafe/ipec/2010/luciovlopeza3h.zip!E4125.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 82,
+    "registros_shx": 82,
+    "shape_type": 3,
+    "bbox": [
+      5403729.0,
+      6380036.5,
+      5405138.0,
+      6380875.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/luciovlopeza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4c2ac3b440f0108e3f668c48a09f673eb53a3aadcb78ee1dcfcc05990453ec09"
+}

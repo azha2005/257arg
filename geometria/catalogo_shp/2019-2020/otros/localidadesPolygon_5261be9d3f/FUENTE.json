@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2019-2020",
+  "criterio_anio": "Período del Precenso; no demuestra límites nuevos de esos años",
+  "tipo": "otros",
+  "carpeta": "2019-2020/otros/localidadesPolygon_5261be9d3f",
+  "shp": "localidadesPolygon.shp",
+  "entidades": 1093,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "localidadesPolygon.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "localidadesPolygon.shp",
+      "bytes": 4745372,
+      "sha256": "beea562d1b7fdbf4fe6b2623962bbe12541fbc6a6e6edf702003d62ffa4fd6d4"
+    },
+    {
+      "archivo": "localidadesPolygon.dbf",
+      "bytes": 3147260,
+      "sha256": "3bed6bf71325df05db97a09cfbeaa841819f30c65c01c72dd765c5f94039ccc3"
+    },
+    {
+      "archivo": "localidadesPolygon.shx",
+      "bytes": 8844,
+      "sha256": "b52c3f7580c4e424ad9f90c97c600a84edbeadb2689b21fcce52e1fe43cff546"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/precenso_2019_2020/localidades.zip!localidadesPolygon.shp",
+  "metadata_original": {
+    "id_fuente": "precenso_localidades",
+    "archivo": "indec/precenso_2019_2020/localidades.zip!localidadesPolygon.shp",
+    "tipo": "localidad censal (auxiliar)",
+    "corte": "Precenso 2019–2020; no confundir con censo 2022",
+    "cobertura": "Localidades incluidas en el Precenso; cobertura parcial",
+    "features": 1093,
+    "registros_shx": 1093,
+    "shape_type": 5,
+    "bbox": [
+      -72.36353023570528,
+      -54.85111921313501,
+      -53.637547654769534,
+      -22.04020578883516
+    ],
+    "campos": [
+      "id",
+      "area",
+      "perimeter",
+      "prov",
+      "depto",
+      "codloc",
+      "nomloc",
+      "link",
+      "ind01",
+      "ind05",
+      "ind06",
+      "ind07",
+      "ind15",
+      "nomprov",
+      "nomdepto"
+    ],
+    "formato": "SHP",
+    "fuente": "https://precensodeviviendas.indec.gob.ar/descargas",
+    "nota": "El operativo refiere a localidades de 2000 habitantes o más. Los agregados no implican cobertura total de los departamentos. Geometría vigente y base censal deben cotejarse en metadatos.",
+    "licencia": "Consultar ficha de la fuente",
+    "url_descarga": "https://geoserver.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=precenso:localidades&outputFormat=shape-zip",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 1093,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "96daa0a415a6773c59509124e3fbe799d084096ee4cafe16e4843f9f99f415fd"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0087_e7c1057bed",
+  "shp": "M0087.shp",
+  "entidades": 1128,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0087.dbf",
+      "bytes": 222602,
+      "sha256": "621b2ee42e79f88411243f2b72bc2faf4f2f31f6739304311c7902e1017447e3"
+    },
+    {
+      "archivo": "M0087.shp",
+      "bytes": 188484,
+      "sha256": "74f93040f095b3f359e5a40c23fefe3febd373bf7d9cd96bdeb7c6bc4a5ef909"
+    },
+    {
+      "archivo": "M0087.shx",
+      "bytes": 9124,
+      "sha256": "690f9baa59766adfa863d28f1b6ee9c590213aa5a1371ef9681e0720b14bdcba"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/esperanzaa0h.zip!M0087.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8265846c3f",
+    "archivo": "santafe/ipec/2010/esperanzaa0h.zip!M0087.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1128,
+    "registros_shx": 1128,
+    "shape_type": 5,
+    "bbox": [
+      5409229.0,
+      6518180.0,
+      5415737.0,
+      6525423.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/esperanzaa0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6e5e077c514ede51df4c33d7ac4b1300f86043ca6530da470623e0d3e717f7fb"
+}

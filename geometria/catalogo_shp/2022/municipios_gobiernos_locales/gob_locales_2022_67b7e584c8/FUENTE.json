@@ -1,0 +1,70 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Año indicado en visor oficial; descarga actual",
+  "tipo": "municipios_gobiernos_locales",
+  "carpeta": "2022/municipios_gobiernos_locales/gob_locales_2022_67b7e584c8",
+  "shp": "gob_locales_2022.shp",
+  "entidades": 57,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "gob_locales_2022.shp",
+      "bytes": 834700,
+      "sha256": "8a60133850c3d33becd3070d2574ffd2d7370eb3eb14d21a06a62745714a01eb"
+    },
+    {
+      "archivo": "gob_locales_2022.prj",
+      "bytes": 768,
+      "sha256": "d1b867d2cba2636271813eb8362bf1c17ee6a792d0fd1514199979d723aa041e"
+    },
+    {
+      "archivo": "gob_locales_2022.shx",
+      "bytes": 556,
+      "sha256": "04fa36b2d2682b66f9a3b8850cc66a420a508784ce74639ff0cb5b203fab15cf"
+    },
+    {
+      "archivo": "gob_locales_2022.dbf",
+      "bytes": 63135,
+      "sha256": "7231883f41987ce73e563409c781c692110f66c11f4b767af7688b7b1b784731"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/neuquen/gob_locales_2022.zip!gob_locales_2022.shp",
+  "metadata_original": {
+    "id_fuente": "neuquen_gob_locales_2022",
+    "archivo": "neuquen/gob_locales_2022.zip!gob_locales_2022.shp",
+    "tipo": "gobierno local",
+    "corte": "2022 según visor; snapshot 2026-10-31",
+    "cobertura": "Neuquén",
+    "features": 57,
+    "registros_shx": 57,
+    "shape_type": 5,
+    "bbox": [
+      2269087.707461551,
+      5472912.64229772,
+      2586809.01002418,
+      5980039.864819566
+    ],
+    "campos": [
+      "ogc_fid",
+      "cod_indec",
+      "gob_local",
+      "depto",
+      "cod_depto",
+      "categoria",
+      "norma",
+      "fuente",
+      "aÃ±o"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticaneuquen.gob.ar/apps/visor/",
+    "nota": "Geometría y atributos del visor oficial DPEyC; el nombre técnico no prueba vigencia legal anual.",
+    "licencia": "Consultar ficha de la fuente",
+    "url_descarga": "https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:gob_locales_2022&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"POSGAR 2007 / Argentina 2\", GEOGCS[\"POSGAR 2007\", DATUM[\"Posiciones Geodesicas Argentinas 2007\", SPHEROID[\"GRS 1980\", 6378137.0, 298.257222101, AUTHORITY[\"EPSG\",\"7019\"]], TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], AUTHORITY[\"EPSG\",\"1062\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"5340\"]], PROJECTION[\"Transverse_Mercator\", AUTHORITY[\"EPSG\",\"9807\"]], PARAMETER[\"central_meridian\", -69.0], PARAMETER[\"latitude_of_origin\", -90.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 2500000.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"5344\"]]",
+    "campo_codigo": "cod_indec",
+    "codigos_distintos": 57,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "1493b1ddc7e7d0446f91505469b2955ef5772f5c414619590abe7773211c9fa0"
+}

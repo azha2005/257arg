@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4168_b8ce6c8105",
+  "shp": "E4168.shp",
+  "entidades": 47,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4168.dbf",
+      "bytes": 16966,
+      "sha256": "424ac9e988c2c5d9e99273045ff4d666a865bbe690f78ee08b2aaa1775e2b24c"
+    },
+    {
+      "archivo": "E4168.shp",
+      "bytes": 4236,
+      "sha256": "5dbc40f910bcb451a3652cdf7df36a967d89b2d3bd1a8d0af9e0ac8eefbf5f08"
+    },
+    {
+      "archivo": "E4168.shx",
+      "bytes": 476,
+      "sha256": "c079fed7c909812a22fb96d16d2e77c4487896d3ec84cb7f9853c076e18d66ca"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/curupaitya3h.zip!E4168.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4c119d0f2b",
+    "archivo": "santafe/ipec/2010/curupaitya3h.zip!E4168.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 47,
+    "registros_shx": 47,
+    "shape_type": 3,
+    "bbox": [
+      5340766.0,
+      6636201.0,
+      5341577.5,
+      6637209.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/curupaitya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0cb8f49200a8cb5b05c645dca5a3377afe8aab0ba693e9ad4a045ea53ab90702"
+}

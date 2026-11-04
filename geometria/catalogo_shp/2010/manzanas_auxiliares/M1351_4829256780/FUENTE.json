@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1351_4829256780",
+  "shp": "M1351.shp",
+  "entidades": 51,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1351.dbf",
+      "bytes": 10433,
+      "sha256": "8790ee60fefbec222116072c9c96b27eabcfedc328763c97b5ec9c5573c9db5f"
+    },
+    {
+      "archivo": "M1351.shp",
+      "bytes": 8508,
+      "sha256": "c56266f045ea4d70c54e6b839463f0c966b9f00e8ed3d79bf03aa473134778f8"
+    },
+    {
+      "archivo": "M1351.shx",
+      "bytes": 508,
+      "sha256": "6043adc2d2582899f306a07dfc626df3a884c35f6db0e58052386c8e269b337c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gesslera3v.zip!M1351.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b21af920dc",
+    "archivo": "santafe/ipec/2010/gesslera3v.zip!M1351.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 51,
+    "registros_shx": 51,
+    "shape_type": 5,
+    "bbox": [
+      5392824.5,
+      6472792.5,
+      5393675.5,
+      6474101.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gesslera3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "08260993c59e4b7996b2d9d49bedfe1d9d7ce503cd619416c5359cdec1e53673"
+}

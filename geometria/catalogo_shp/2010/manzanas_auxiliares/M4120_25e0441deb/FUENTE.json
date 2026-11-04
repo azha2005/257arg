@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4120_25e0441deb",
+  "shp": "M4120.shp",
+  "entidades": 24,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4120.dbf",
+      "bytes": 5114,
+      "sha256": "864727c12ccec82bf134f17ea3bba9889042978832de8467444d99d0d287a074"
+    },
+    {
+      "archivo": "M4120.shp",
+      "bytes": 4276,
+      "sha256": "9a03f9507e2fd7feca79ce7dc587543ab3da667c3196dbc843e4e93a4c5712b5"
+    },
+    {
+      "archivo": "M4120.shx",
+      "bytes": 292,
+      "sha256": "be42f076691c59a096dd9997da7d31849a3ba2979b44cb227bcf3638789954f8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Golondrinaa3v.zip!M4120.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7aac169d63",
+    "archivo": "santafe/ipec/2010/Golondrinaa3v.zip!M4120.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 24,
+    "registros_shx": 24,
+    "shape_type": 5,
+    "bbox": [
+      5497211.5,
+      6840822.0,
+      5498305.0,
+      6842580.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Golondrinaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a44ad4dec7bf4c36349f066de86e46bf82fd7c7dfb76c3f6036e0d276ed81c27"
+}

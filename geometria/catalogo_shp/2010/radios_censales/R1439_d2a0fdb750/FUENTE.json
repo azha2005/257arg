@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1439_d2a0fdb750",
+  "shp": "R1439.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1439.dbf",
+      "bytes": 686,
+      "sha256": "3903544118bb40eb220413347147bcc9c4b6161a6dd6258b334fb3b25175886b"
+    },
+    {
+      "archivo": "R1439.shp",
+      "bytes": 956,
+      "sha256": "08376269d7ac8c400935e0df3b36149de0dd99276835f8295dc747bd2e898970"
+    },
+    {
+      "archivo": "R1439.shx",
+      "bytes": 108,
+      "sha256": "1a734a24ef1cc98d0f3dee252f0c610d3af5694254dc3e47fa46603a8fcf9099"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/candiotia3v.zip!R1439.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a927110197",
+    "archivo": "santafe/ipec/2010/candiotia3v.zip!R1439.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5428176.0,
+      6525405.5,
+      5429443.0,
+      6527004.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/candiotia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "16c9a12aec13d317d027b39d726eaa20c5d17001da610451c74ccf0df148e098"
+}

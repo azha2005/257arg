@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4186_660487c92f",
+  "shp": "e4186.shp",
+  "entidades": 20,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4186.dbf",
+      "bytes": 6570,
+      "sha256": "7800ebd024a66b0580c4ecbb7dfc320f220b191e6a4a6277d8b643bdeef5e9f9"
+    },
+    {
+      "archivo": "e4186.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4186.shp",
+      "bytes": 2164,
+      "sha256": "20fc4f7f1a243a0914e95679a1818976cb1e883da2ca9f2b6298af9a491fc60c"
+    },
+    {
+      "archivo": "e4186.shx",
+      "bytes": 260,
+      "sha256": "228d7715bbdc38568537221b2dcfa6740a8d0a1317c698ec66384fbda8d5f619"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIASANJOSESANJAVIER.zip!e4186.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_8731ef8242",
+    "archivo": "santafe/ipec/2022/COLONIASANJOSESANJAVIER.zip!e4186.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 3,
+    "bbox": [
+      5504973.0,
+      6636022.0,
+      5505489.0,
+      6636337.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIASANJOSESANJAVIER.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0f6576713d1539845399e459a515b4f25bb390ee9f5f4d27871d9ec610d0d252"
+}

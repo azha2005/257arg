@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e6873_3a7c5fc075",
+  "shp": "e6873.shp",
+  "entidades": 34,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6873.shx",
+      "bytes": 372,
+      "sha256": "75b13a6d4f42b0207b42d24d9689dc171e5d71f444ee66555d3bf339dc8fa7f9"
+    },
+    {
+      "archivo": "e6873.shp",
+      "bytes": 3172,
+      "sha256": "ff290e87e8fbf5c72a3b483465aad819a872b196de00d92c69b6a9f1a9ce64cb"
+    },
+    {
+      "archivo": "e6873.sbx",
+      "bytes": 196,
+      "sha256": "1c21ea0abf49719de57985e7766b9e8f7945cd2868b2d80057298a802e1ac0a9"
+    },
+    {
+      "archivo": "e6873.sbn",
+      "bytes": 732,
+      "sha256": "90aef26e56660de40913eaacd447a97acfdc8463134e157e5fc4030a73dff6b9"
+    },
+    {
+      "archivo": "e6873.dbf",
+      "bytes": 12441,
+      "sha256": "62dd41d1ecf90fea3cfaad3f66d170803af1a76fe5ce4b9f7c6238f4eee13f54"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/COLONIASANJOAQUIN.zip!e6873.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_307d9f3c9c",
+    "archivo": "santafe/ipec/2010/COLONIASANJOAQUIN.zip!e6873.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 34,
+    "registros_shx": 34,
+    "shape_type": 3,
+    "bbox": [
+      5499554.5,
+      6596987.5,
+      5500278.0,
+      6598375.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "DESDEI",
+      "HASTAD",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/COLONIASANJOAQUIN.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ebe62d7c6ad6615dd4c6fa5d73523bd1ec6ede6a292d3df25b508c53aa121afc"
+}

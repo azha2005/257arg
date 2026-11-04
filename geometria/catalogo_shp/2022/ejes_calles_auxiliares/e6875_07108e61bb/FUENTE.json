@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6875_07108e61bb",
+  "shp": "e6875.shp",
+  "entidades": 25,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6875.dbf",
+      "bytes": 8060,
+      "sha256": "9af7ac16773ed68c972f7a5cb5c9cf490f1e08dfbf65c66a904a9f1a0f906e5e"
+    },
+    {
+      "archivo": "e6875.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6875.shp",
+      "bytes": 2332,
+      "sha256": "cca11817dc5bd0ab8f8525b4227c32628cd07056cf564f2997ad4201a0f27133"
+    },
+    {
+      "archivo": "e6875.shx",
+      "bytes": 300,
+      "sha256": "73b537a1b81251f05b6122cea8b2d20f16c356a85bfcb6d33a956a1a4933a316"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ELCARMENDEAVELLANEDA.zip!e6875.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_474ddc5606",
+    "archivo": "santafe/ipec/2022/ELCARMENDEAVELLANEDA.zip!e6875.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 3,
+    "bbox": [
+      5533159.0,
+      6787101.5,
+      5533792.0,
+      6787782.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ELCARMENDEAVELLANEDA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "df57199e88521404ac8dec53eb5e7f8d5a318421d5d432c6fb34ab376d1431b7"
+}

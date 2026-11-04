@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/San_Luis_con_datos_8ff3d6e029",
+  "shp": "San_Luis_con_datos.shp",
+  "entidades": 656,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "San_Luis_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    },
+    {
+      "archivo": "San_Luis_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "San_Luis_con_datos.shp",
+      "bytes": 833564,
+      "sha256": "50fc4176d2d68b624b30471f7cae968e06bfa2dcea840749925ee74f7238e30f"
+    },
+    {
+      "archivo": "San_Luis_con_datos.shx",
+      "bytes": 5348,
+      "sha256": "ec67d7be745c2271820d450e877234275bccda1729b3a378f040c2336f280b21"
+    },
+    {
+      "archivo": "San_Luis_con_datos.dbf",
+      "bytes": 268593,
+      "sha256": "a64d79d00bc8a981a96c21a8b8eb76dd7be9dde0523674810a72aa3fd25b2a81"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_San_Luis_con_datos.zip!San_Luis_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_74",
+    "archivo": "indec/2010/Codgeo_San_Luis_con_datos.zip!San_Luis_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "San Luis",
+    "features": 656,
+    "registros_shx": 656,
+    "shape_type": 5,
+    "bbox": [
+      3360275.75,
+      6016113.0,
+      3605874.5,
+      6477507.0
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_San_Luis_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 656,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "57a4fac8996413761c70592ad98d559b745a9aabf47083fc7782c4b64c03396f"
+}

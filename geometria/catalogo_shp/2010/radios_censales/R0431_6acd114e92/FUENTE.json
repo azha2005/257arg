@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0431_6acd114e92",
+  "shp": "R0431.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0431.dbf",
+      "bytes": 1706,
+      "sha256": "6a9ce4837f65f9c7e59b585c3ab247516bd76f0814677f95f9ec12be50f08690"
+    },
+    {
+      "archivo": "R0431.shp",
+      "bytes": 3972,
+      "sha256": "a302c6a0e3dd862a91631a6ee607ee807670097b522b15addcee2963d0795fce"
+    },
+    {
+      "archivo": "R0431.shx",
+      "bytes": 148,
+      "sha256": "ba0764dc7a2fe3c8dbc99e3cf89fcf9335da1fa4d282252e5e3072833be0c22d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjeronimonortea2h.zip!R0431.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4acb42924a",
+    "archivo": "santafe/ipec/2010/sanjeronimonortea2h.zip!R0431.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5396770.5,
+      6508417.0,
+      5398614.5,
+      6510357.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjeronimonortea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a90e2764db9f3cd26d28ecd77eea6bc6a1f386d6f47708e43d0481af623c6aba"
+}

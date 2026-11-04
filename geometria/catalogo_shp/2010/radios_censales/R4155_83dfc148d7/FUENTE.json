@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4155_83dfc148d7",
+  "shp": "R4155.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4155.dbf",
+      "bytes": 890,
+      "sha256": "9b51f35da2e494e09f2e700f005ea14cf50a40f023dc67287d8fb5b118c9dae0"
+    },
+    {
+      "archivo": "R4155.shp",
+      "bytes": 980,
+      "sha256": "d10520824760d3cc9dab71a47d7a9821692fece4e672b721136833c140b6148a"
+    },
+    {
+      "archivo": "R4155.shx",
+      "bytes": 116,
+      "sha256": "22629c5ddd9228a1b7231a24906258b82766781804bf6d7aa12b38f0c386bd42"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/cuatroesquinasa3v.zip!R4155.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_132a9a959a",
+    "archivo": "santafe/ipec/2010/cuatroesquinasa3v.zip!R4155.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5428585.5,
+      6321498.0,
+      5429041.5,
+      6322126.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/cuatroesquinasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "46553a592ef83ff971235e116dd690ea09da92a9860211d8c24a9d894e59acda"
+}

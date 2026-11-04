@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6810_6f693858eb",
+  "shp": "M6810.shp",
+  "entidades": 29,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6810.dbf",
+      "bytes": 6099,
+      "sha256": "dcddb86bd2ca7bda0fedb2e23533e1dd18bd39e8466a5cdcd01d96bdf3f4addf"
+    },
+    {
+      "archivo": "M6810.shp",
+      "bytes": 8156,
+      "sha256": "cadd74239b141d17c114160e32f18d2ce8abce4165b47e78d4706da743eb3682"
+    },
+    {
+      "archivo": "M6810.shx",
+      "bytes": 332,
+      "sha256": "c6e5e49e7056078bdbd5b4a46175e920e30f41a23a01828d5858fc05992dc169"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaelviraa3h.zip!M6810.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8a2ec26add",
+    "archivo": "santafe/ipec/2010/villaelviraa3h.zip!M6810.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 29,
+    "registros_shx": 29,
+    "shape_type": 5,
+    "bbox": [
+      5422544.0,
+      6388331.0,
+      5423819.0,
+      6388962.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaelviraa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "09ffd685897908b1fcca643b1bc91d044dcc1a66032a4e967dcb669c5c07c250"
+}

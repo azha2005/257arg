@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0158_5ddd5cdde2",
+  "shp": "R0158.shp",
+  "entidades": 20,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0158.dbf",
+      "bytes": 4562,
+      "sha256": "9f80cfee4a621a36db8eaf9cbf4c64efe5eff89c4581e4902e91b70556a4fb22"
+    },
+    {
+      "archivo": "R0158.shp",
+      "bytes": 14868,
+      "sha256": "3db06cc6609221ea2dfee58f5eabe9a28bef4573594d809d52208bd2d83585bc"
+    },
+    {
+      "archivo": "R0158.shx",
+      "bytes": 260,
+      "sha256": "a6ebed7a812cd58cd1e3dd39ed051a20ac1d1e4b754301ed9460463f7b4a5dcb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/galveza1h.zip!R0158.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ea462127be",
+    "archivo": "santafe/ipec/2010/galveza1h.zip!R0158.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 5,
+    "bbox": [
+      5383512.5,
+      6454862.5,
+      5386797.5,
+      6457673.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/galveza1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "abc64b207ef174f34e55c0dd7f362461a5e24b0b814b25b74e87e3f4738ce725"
+}

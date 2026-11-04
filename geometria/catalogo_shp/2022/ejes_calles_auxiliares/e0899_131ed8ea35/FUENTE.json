@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0899_131ed8ea35",
+  "shp": "e0899.shp",
+  "entidades": 206,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0899.dbf",
+      "bytes": 61998,
+      "sha256": "021500e2aa022115b52f36ed0a0e84158d9b9770675e4b5a062f302dfcc0548d"
+    },
+    {
+      "archivo": "e0899.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0899.shp",
+      "bytes": 18724,
+      "sha256": "fead9183d59ade3e06140779401c687c451bb63915290d3a2e794a97c70f84b5"
+    },
+    {
+      "archivo": "e0899.shx",
+      "bytes": 1748,
+      "sha256": "8ff307e6fb5c19222dc5aeb68d8c2db5b683402ea88a5bd917d1a3757f8eb97f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANANTONIODEOBLIGADO.zip!e0899.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_0bd4f3cbda",
+    "archivo": "santafe/ipec/2022/SANANTONIODEOBLIGADO.zip!e0899.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 206,
+    "registros_shx": 206,
+    "shape_type": 3,
+    "bbox": [
+      5571694.0,
+      6859943.5,
+      5572528.0,
+      6862214.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANANTONIODEOBLIGADO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "1c9b7991e4b969d7c9c97d919bc52f6109f44771a20394111ecfaafda3651063"
+}

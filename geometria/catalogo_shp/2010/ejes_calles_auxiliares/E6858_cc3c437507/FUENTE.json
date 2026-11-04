@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6858_cc3c437507",
+  "shp": "E6858.shp",
+  "entidades": 27,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6858.dbf",
+      "bytes": 10006,
+      "sha256": "130781362d95e4645be0b4fb9ee0ce17fbf56b59f841fe74a7145e5d12c0ec73"
+    },
+    {
+      "archivo": "E6858.shp",
+      "bytes": 2476,
+      "sha256": "ea0fceafcb935750a4424d6b92a6fe375eec1e195f2387f6495fb14ac76abcce"
+    },
+    {
+      "archivo": "E6858.shx",
+      "bytes": 316,
+      "sha256": "66365c25e2fc4131f9fcce6f5aa87dbea70c013b53f547134bc5cb14b866cc81"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/aguaragrandea3h.zip!E6858.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c359e6c6b4",
+    "archivo": "santafe/ipec/2010/aguaragrandea3h.zip!E6858.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 27,
+    "registros_shx": 27,
+    "shape_type": 3,
+    "bbox": [
+      5413430.5,
+      6668559.5,
+      5414217.5,
+      6668822.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/aguaragrandea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7eea895c3883b2d9c5e1580b860bb84905ab4a2ac8bf819dc1818ad344e59e29"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0087_52f378b50d",
+  "shp": "E0087.shp",
+  "entidades": 2626,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0087.dbf",
+      "bytes": 914458,
+      "sha256": "0ee76b69bff454f37475e8f40931d4a9400a48ca76f5c58ac08e6314ef44e4ae"
+    },
+    {
+      "archivo": "E0087.shp",
+      "bytes": 235780,
+      "sha256": "4c7fecc81ff240dc0b8a342d0df47fe57e62d9cb7642f37ce09e1b792bbe67aa"
+    },
+    {
+      "archivo": "E0087.shx",
+      "bytes": 21108,
+      "sha256": "9547c43e21112ea9b80338433a62e29638540961d58fe4aa4cfad8e7ee67f780"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/esperanzaa0h.zip!E0087.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8265846c3f",
+    "archivo": "santafe/ipec/2010/esperanzaa0h.zip!E0087.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2626,
+    "registros_shx": 2626,
+    "shape_type": 3,
+    "bbox": [
+      5409228.0,
+      6518168.5,
+      5416771.0,
+      6525435.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/esperanzaa0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a968ed5decdf5530b48cad8d7334309138ead66e3ffc744f4e56d38c25604151"
+}

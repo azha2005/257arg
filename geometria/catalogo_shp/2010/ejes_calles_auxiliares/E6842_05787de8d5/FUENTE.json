@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6842_05787de8d5",
+  "shp": "E6842.shp",
+  "entidades": 170,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6842.dbf",
+      "bytes": 59770,
+      "sha256": "8aad49658fb36898d08aa70122f24ef9a8d42c2d1fcad79cb2984dfc2632c3b2"
+    },
+    {
+      "archivo": "E6842.shp",
+      "bytes": 16420,
+      "sha256": "e8fc4618a7d4900e71b4c78c26985ace0cf0a415d4c011bf963f6741b2abbf99"
+    },
+    {
+      "archivo": "E6842.shx",
+      "bytes": 1460,
+      "sha256": "f178051e3bd8be68b95421ec401f45f59e4e74d3b888eb8210bfd61f14edb38c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puertoarroyosecoa1h.zip!E6842.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_923db58d84",
+    "archivo": "santafe/ipec/2010/puertoarroyosecoa1h.zip!E6842.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 170,
+    "registros_shx": 170,
+    "shape_type": 3,
+    "bbox": [
+      5451647.5,
+      6332423.5,
+      5455034.5,
+      6335421.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puertoarroyosecoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0d64cc8047073bf5e78a041abe3b6895dc95020cbfc262e927f533ec32c52d5e"
+}

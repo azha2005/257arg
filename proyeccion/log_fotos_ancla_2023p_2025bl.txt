@@ -1,0 +1,17 @@
+{'mesas_destino': 108992, 'mesas_cruzadas': 106393, 'mesas_usadas': 105581, 'origen': 'circuito'} ganador LLA secciones con centroide 527 de 528
+antecesores: {'FIT': ['FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD'], 'FP': ['UNION POR LA PATRIA'], 'LLA': ['LA LIBERTAD AVANZA', 'JUNTOS POR EL CAMBIO'], 'PU': ['HACEMOS POR NUESTRO PAIS'], 'OTRAS': [], 'BLANCO/NULO': ['BLANCO/NULO'], 'ABSTENCION': ['ABSTENCION']}
+real {'FIT': 3.93, 'FP': 33.59, 'LLA': 40.74, 'PU': 7.52, 'OTRAS': 14.22}
+como25 28 1 s
+azar 28 2 s
+Traceback (most recent call last):
+  File "C:\Users\JC\Downloads\dataeleccproyecto\proyeccion\fotos_sim.py", line 214, in <module>
+    main()
+  File "C:\Users\JC\Downloads\dataeleccproyecto\proyeccion\fotos_sim.py", line 172, in main
+    report()
+  File "C:\Users\JC\Downloads\dataeleccproyecto\proyeccion\fotos_sim.py", line 184, in report
+    df["abs"] = df.err_margen.abs()
+                ^^^^^^^^^^^^^
+  File "C:\Users\JC\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'err_margen'

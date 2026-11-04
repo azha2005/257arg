@@ -122,5 +122,6 @@ with (HERE/'estimaciones_departamentales.csv').open('w',encoding='utf-8-sig',new
     writer=csv.writer(f);writer.writerow(['provincia','unidad']+codes+['blancos','nulos','votantes','inscriptos'])
     writer.writerows([t['p'],t['n']]+v for t,v in zip(territories,votes) if sum(v[:4]))
 print(json.dumps(report,ensure_ascii=True))
+__import__("creditos_escenarios").aplicar(HERE/'atlas_1985hip.html')
 
 

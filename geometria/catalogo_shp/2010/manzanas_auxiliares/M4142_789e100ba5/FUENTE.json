@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4142_789e100ba5",
+  "shp": "M4142.shp",
+  "entidades": 23,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4142.dbf",
+      "bytes": 4917,
+      "sha256": "cd9cea92d5b9233114a4afc575bca9ee1908915ac62dc91899a8aeef07133417"
+    },
+    {
+      "archivo": "M4142.shp",
+      "bytes": 4428,
+      "sha256": "e8662d19e3bed49f2c54e0b717337f74134bc7af86b5228f55ae03ff13d8daee"
+    },
+    {
+      "archivo": "M4142.shx",
+      "bytes": 284,
+      "sha256": "89b322ac0fcba4a77b10a41411836b46c4d5896573257d94667d4688db14825e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coronelfragaa3h.zip!M4142.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_33081aa43a",
+    "archivo": "santafe/ipec/2010/coronelfragaa3h.zip!M4142.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 23,
+    "registros_shx": 23,
+    "shape_type": 5,
+    "bbox": [
+      5316741.5,
+      6549807.5,
+      5317683.5,
+      6550543.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coronelfragaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3e12e3046568631a25d924762b4d5e6f73d84ceda935057f20c20c5abe6b0995"
+}

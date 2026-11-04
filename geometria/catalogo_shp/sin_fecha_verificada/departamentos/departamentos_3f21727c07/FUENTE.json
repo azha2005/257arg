@@ -1,0 +1,95 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "2022; confirmar metadata",
+  "tipo": "departamentos",
+  "carpeta": "sin_fecha_verificada/departamentos/departamentos_3f21727c07",
+  "shp": "departamentos.shp",
+  "entidades": 529,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "departamentos.prj",
+      "bytes": 749,
+      "sha256": "fd0c281dc9eea0c3bffda45266e5eed985e4fde2e56a50b30360120a21b52f01"
+    },
+    {
+      "archivo": "departamentos.dbf",
+      "bytes": 1090622,
+      "sha256": "d3f9090a95da4307b0ae9d9d8f8c95f5f3da42fe62db6739ac8f63c6746f35ce"
+    },
+    {
+      "archivo": "departamentos.shp",
+      "bytes": 24113360,
+      "sha256": "d27250e8a4162943281b13c086aca81046134b478e39a0fd4b2e13eefdd54f75"
+    },
+    {
+      "archivo": "departamentos.shx",
+      "bytes": 4332,
+      "sha256": "aa44cf945f45e892fce78e8d9ed57df1bfce472aafac565d5c7fc292e6ce94e9"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2022/departamentos.zip!departamentos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2022_departamentos",
+    "archivo": "indec/2022/departamentos.zip!departamentos.shp",
+    "tipo": "departamento",
+    "corte": "2022; confirmar metadata",
+    "cobertura": "Argentina",
+    "features": 529,
+    "registros_shx": 529,
+    "shape_type": 5,
+    "bbox": [
+      -8237642.3187022,
+      -37718348.6514006,
+      -2782987.269831893,
+      -2485234.617560819
+    ],
+    "campos": [
+      "fid",
+      "id",
+      "cpr",
+      "jur",
+      "cde",
+      "fna",
+      "gna",
+      "nam",
+      "fdc",
+      "sag"
+    ],
+    "formato": "SHP",
+    "fuente": "https://geonode.indec.gob.ar/layers/geonode_data:geonode:departamentos",
+    "nota": "Conservar diferencias con IGN y Georef; guardar conteo WFS hits.",
+    "licencia": "ver ficha de origen",
+    "url_descarga": "https://geonode.indec.gob.ar/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:departamentos&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\", GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]], PROJECTION[\"Popular Visualisation Pseudo Mercator\", AUTHORITY[\"EPSG\",\"1024\"]], PARAMETER[\"semi_minor\", 6378137.0], PARAMETER[\"latitude_of_origin\", 0.0], PARAMETER[\"central_meridian\", 0.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 0.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"3857\"]]",
+    "entidades_por_provincia": {
+      "02": 15,
+      "66": 23,
+      "42": 22,
+      "58": 16,
+      "14": 26,
+      "26": 15,
+      "86": 27,
+      "94": 5,
+      "06": 135,
+      "22": 25,
+      "74": 9,
+      "54": 17,
+      "82": 19,
+      "46": 18,
+      "62": 13,
+      "30": 17,
+      "10": 16,
+      "50": 18,
+      "34": 9,
+      "90": 17,
+      "18": 25,
+      "70": 19,
+      "38": 16,
+      "78": 7
+    },
+    "features_wfs_hits": 529
+  },
+  "firma_componentes": "09cea65d67d8716dcfb4dc5912479ff19ccb92ee8acd3515a77df36d1876e2fe"
+}

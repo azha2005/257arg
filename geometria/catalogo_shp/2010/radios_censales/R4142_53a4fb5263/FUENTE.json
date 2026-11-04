@@ -1,0 +1,64 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4142_53a4fb5263",
+  "shp": "R4142.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4142.dbf",
+      "bytes": 686,
+      "sha256": "2b69f7ac0e3a34b1c7792d500651a0bd86fdd7deeba02eaf50b9405afc7d67c1"
+    },
+    {
+      "archivo": "R4142.shp",
+      "bytes": 620,
+      "sha256": "c269213e83107bf7abe40e723297f734fd69fd25723d5d58f98311c307182750"
+    },
+    {
+      "archivo": "R4142.shx",
+      "bytes": 108,
+      "sha256": "d6167c5f8dafa24365c62d7979c9960cf11b9d4afb01d594f1f56579a354cc9c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coronelbogadoa3v.zip!coronelfraga-a3-h.zip!R4142.shp",
+  "metadata_original": {
+    "id": "ipec_2010_3eca7af306",
+    "url": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coronelbogadoa3v.zip",
+    "archivo": "santafe/ipec/2010/coronelbogadoa3v.zip!coronelfraga-a3-h.zip!R4142.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Capa hallada en ZIP anidado: conservar el nombre del archivo interno al identificar la localidad.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_resuelta": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coronelbogadoa3v.zip",
+    "content_type": "application/zip",
+    "last_modified_servidor": "Mon, 08 May 2023 17:59:29 GMT",
+    "miembros": [
+      "E0758.dbf",
+      "E0758.shp",
+      "E0758.shx",
+      "M0758.dbf",
+      "M0758.shp",
+      "M0758.shx",
+      "R0758.dbf",
+      "R0758.shp",
+      "R0758.shx",
+      "metadatos.zip",
+      "coronelfraga-a3-h.zip"
+    ],
+    "estado": "verificado",
+    "bytes": 36488,
+    "sha256": "69971285b02aad6a3bbebfe609324f51bf0126f603fbecf7162a952f12b5aa62",
+    "fecha_consulta": "2026-10-31",
+    "segundos": 0.1,
+    "formato": "SHP"
+  },
+  "firma_componentes": "8cdcdda606e4a3c379eabe66afa4e17eafc25197f60efa503821cb140813d59c"
+}

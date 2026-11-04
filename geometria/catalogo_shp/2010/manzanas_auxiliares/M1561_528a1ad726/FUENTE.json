@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1561_528a1ad726",
+  "shp": "M1561.shp",
+  "entidades": 35,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1561.dbf",
+      "bytes": 7281,
+      "sha256": "2079c353027b299935fa24544411307bc6c179e77fda08b1536886498af16f8a"
+    },
+    {
+      "archivo": "M1561.shp",
+      "bytes": 7788,
+      "sha256": "ae14d5bb277d97c4839595e2ca495230e23ab01a35b7c496f872809f609ad9b1"
+    },
+    {
+      "archivo": "M1561.shx",
+      "bytes": 380,
+      "sha256": "bf5f4b4361c3ecc9699c6bc065e20260d0195ab6efc7009cadf8400201b2875f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puertoreconquistaa3v.zip!M1561.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5936362242",
+    "archivo": "santafe/ipec/2010/puertoreconquistaa3v.zip!M1561.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 35,
+    "registros_shx": 35,
+    "shape_type": 5,
+    "bbox": [
+      5540107.0,
+      6765874.5,
+      5541059.0,
+      6767039.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puertoreconquistaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a43e0a9098e72124620744000d691eb5bd7d4568b9f8173580896c719adf880f"
+}

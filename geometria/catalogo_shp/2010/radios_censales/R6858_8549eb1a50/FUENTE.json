@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6858_8549eb1a50",
+  "shp": "R6858.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6858.dbf",
+      "bytes": 686,
+      "sha256": "82f20c76fa0396a996250165df24db8d5e59fad4ae4503b5ee4eb75a23d17c7d"
+    },
+    {
+      "archivo": "R6858.shp",
+      "bytes": 444,
+      "sha256": "2a93aa2eb8c2f635fedd7086b7b654b3c308ceb8797fd76b8ee851c9b4b5e313"
+    },
+    {
+      "archivo": "R6858.shx",
+      "bytes": 108,
+      "sha256": "9e4c1aa334f1fc7bfe82c405444681ac74d480bdf0c5201900e31d29a2a4c46e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/aguaragrandea3h.zip!R6858.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c359e6c6b4",
+    "archivo": "santafe/ipec/2010/aguaragrandea3h.zip!R6858.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5413430.5,
+      6668559.5,
+      5414217.5,
+      6668822.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/aguaragrandea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "846dd52b8c65564514d6348f9c48a316bdfb26efea88be1db1d8dfd5c1852658"
+}

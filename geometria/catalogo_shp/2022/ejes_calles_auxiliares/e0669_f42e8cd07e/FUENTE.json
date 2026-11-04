@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0669_f42e8cd07e",
+  "shp": "e0669.shp",
+  "entidades": 352,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0669.dbf",
+      "bytes": 105506,
+      "sha256": "72b7dc45e84de4781e54dd9fb4e5b83021cea9e0850ce5539ea2f5462748b249"
+    },
+    {
+      "archivo": "e0669.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0669.shp",
+      "bytes": 31332,
+      "sha256": "88a80a2965ddff015b3fd97f26135b237f883dff491fddfd3f4390fd66aa397e"
+    },
+    {
+      "archivo": "e0669.shx",
+      "bytes": 2916,
+      "sha256": "e2f8f117a089bcd3179f026c4ea90038b116da40eb76863da5a3dfdc8ee59542"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CENTENO.zip!e0669.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_a5ffad08a8",
+    "archivo": "santafe/ipec/2022/CENTENO.zip!e0669.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 352,
+    "registros_shx": 352,
+    "shape_type": 3,
+    "bbox": [
+      5366261.5,
+      6425206.5,
+      5368403.5,
+      6427456.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CENTENO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c76d1f6ba71430d937eb58751e1ca533b75f3c7471be53ca414ade1aaa7d4dbd"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0555_d67e2425e4",
+  "shp": "e0555.shp",
+  "entidades": 399,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0555.dbf",
+      "bytes": 119512,
+      "sha256": "38b723b3fdeb1ec16a262db6a1db3db4fda65a80c66691072c6846d3808df7a8"
+    },
+    {
+      "archivo": "e0555.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0555.shp",
+      "bytes": 35292,
+      "sha256": "67d6b4a93731abe7dc689dc227261ed56c6fd09a259ab137e10b1c0b2772aa16"
+    },
+    {
+      "archivo": "e0555.shx",
+      "bytes": 3292,
+      "sha256": "797ecc66047335db0c3c20cf1a5be798380f7e2e1417582939cebc82560cd9e9"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANGREGORIO.zip!e0555.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_a35205b191",
+    "archivo": "santafe/ipec/2022/SANGREGORIO.zip!e0555.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 399,
+    "registros_shx": 399,
+    "shape_type": 3,
+    "bbox": [
+      5311190.5,
+      6199334.5,
+      5313568.0,
+      6201656.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANGREGORIO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5b48dd67c88c90e162994f03b8ae8efb9b10e6af92f8bf825e6fcb2da619bd54"
+}

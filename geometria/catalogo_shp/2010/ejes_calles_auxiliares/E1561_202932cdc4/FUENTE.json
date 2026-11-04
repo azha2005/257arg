@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1561_202932cdc4",
+  "shp": "E1561.shp",
+  "entidades": 109,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1561.dbf",
+      "bytes": 38542,
+      "sha256": "52798ee784f3053f8b5c6e5e1ed58734d9d0b1388b4282b62112e9276ed97745"
+    },
+    {
+      "archivo": "E1561.shp",
+      "bytes": 11116,
+      "sha256": "87ea178cf01975719ab7e18f4eb613c72b8407e7f3e54e2ac2c2780501b6c896"
+    },
+    {
+      "archivo": "E1561.shx",
+      "bytes": 972,
+      "sha256": "f9eb338abd75bb83cab3df0692cc4f1a6cbd49c0a3b0b2e270753a610306bf12"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puertoreconquistaa3v.zip!E1561.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5936362242",
+    "archivo": "santafe/ipec/2010/puertoreconquistaa3v.zip!E1561.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 109,
+    "registros_shx": 109,
+    "shape_type": 3,
+    "bbox": [
+      5540096.5,
+      6765874.5,
+      5541059.0,
+      6767039.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puertoreconquistaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "be31223264a9a51a83e01e9c2d797fc7c081237806fe7d3646b264f70552afcc"
+}

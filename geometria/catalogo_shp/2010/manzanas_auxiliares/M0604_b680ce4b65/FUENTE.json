@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0604_b680ce4b65",
+  "shp": "M0604.shp",
+  "entidades": 111,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0604.dbf",
+      "bytes": 22253,
+      "sha256": "ca3a7af8bcb429d8c2d9bf12278e597d7093044ca1d48ca3ab26b0aa76f81fb2"
+    },
+    {
+      "archivo": "M0604.shp",
+      "bytes": 17916,
+      "sha256": "6f01733e5ad831c026a2825423e60e1ad307681f9d40d09858a070cdac994e22"
+    },
+    {
+      "archivo": "M0604.shx",
+      "bytes": 988,
+      "sha256": "6e89afded0245390657618bc664b563b7053df40d7a3645274e3ce57940b7bee"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pujatoa3h.zip!M0604.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_546e1fd8b1",
+    "archivo": "santafe/ipec/2010/pujatoa3h.zip!M0604.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 111,
+    "registros_shx": 111,
+    "shape_type": 5,
+    "bbox": [
+      5401982.5,
+      6346310.0,
+      5403774.0,
+      6347393.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pujatoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a6e90a947b896e448fe1cacf36f3a303a70a2717a0a28f740edfa83c6bb5ff43"
+}

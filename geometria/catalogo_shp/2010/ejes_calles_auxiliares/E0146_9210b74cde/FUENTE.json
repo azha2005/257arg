@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0146_9210b74cde",
+  "shp": "E0146.shp",
+  "entidades": 1131,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0146.dbf",
+      "bytes": 394198,
+      "sha256": "9c7fb829c7e03d3014830c686acb6c9f58708e6d9c6c89327ec659b8f49b900b"
+    },
+    {
+      "archivo": "E0146.shp",
+      "bytes": 100892,
+      "sha256": "73f90a9e32d89382da443cfab23d3af4ae829d6bdb99b7ece84a5b2b697e91be"
+    },
+    {
+      "archivo": "E0146.shx",
+      "bytes": 9148,
+      "sha256": "ae90489dba805b5816f8b46043a20f342c96f411dd651fdb039eb0d52cc4fb10"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjustoa1h.zip!E0146.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_293c52f037",
+    "archivo": "santafe/ipec/2010/sanjustoa1h.zip!E0146.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1131,
+    "registros_shx": 1131,
+    "shape_type": 3,
+    "bbox": [
+      5441491.0,
+      6592325.0,
+      5445032.5,
+      6596031.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjustoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f6763836324ff9e291d6c55028ce5741caa10cbfd4e2146ed287d408022abcf2"
+}

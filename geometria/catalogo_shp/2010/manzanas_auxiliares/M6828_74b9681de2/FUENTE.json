@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6828_74b9681de2",
+  "shp": "M6828.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6828.dbf",
+      "bytes": 583,
+      "sha256": "fe3b28ce872435d5920ef9907df3b1a0d6790f3b3c2cec0df898754245f4930d"
+    },
+    {
+      "archivo": "M6828.shp",
+      "bytes": 268,
+      "sha256": "b7a7bcdb18a230759eef148aa77a6402d92db2967946dad10d059281af922df7"
+    },
+    {
+      "archivo": "M6828.shx",
+      "bytes": 108,
+      "sha256": "f270c90f9066308829a8cab56b829f6fcc5c3bb1414e8939bb7b8ebb35d5a2a1"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniamedicia3v.zip!M6828.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_998f51ab54",
+    "archivo": "santafe/ipec/2010/coloniamedicia3v.zip!M6828.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5370685.5,
+      6392809.0,
+      5370927.0,
+      6393465.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniamedicia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f01b7e0a4670c3734c03a639d24543e192244a23840151c6d983e6272ff31df7"
+}

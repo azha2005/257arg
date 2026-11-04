@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1018_38f97aa69c",
+  "shp": "E1018.shp",
+  "entidades": 211,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1018.dbf",
+      "bytes": 74038,
+      "sha256": "8c5e1eeeb3e19d3f99bc2ae52b41436d44b6700813c811b874ce4381ba3d3480"
+    },
+    {
+      "archivo": "E1018.shp",
+      "bytes": 18716,
+      "sha256": "fa1a9cb8cced2e2ff4e5d55fd2a5069246268862fd482f7f5ac3fe70dc1b2b3c"
+    },
+    {
+      "archivo": "E1018.shx",
+      "bytes": 1788,
+      "sha256": "ca7d0667b85e9c1617e9564775ce4ff0a79526a448089d9b3812eb92dfef11b8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/plazaclucellasa2h.zip!E1018.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b3a4019346",
+    "archivo": "santafe/ipec/2010/plazaclucellasa2h.zip!E1018.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 211,
+    "registros_shx": 211,
+    "shape_type": 3,
+    "bbox": [
+      5337102.5,
+      6518923.0,
+      5338425.0,
+      6520242.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/plazaclucellasa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5113068b6947cb0b90319825bacf846235a58f5a27ace52e55045ec33009810c"
+}

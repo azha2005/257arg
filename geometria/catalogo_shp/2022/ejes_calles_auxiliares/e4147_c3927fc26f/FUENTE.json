@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4147_c3927fc26f",
+  "shp": "e4147.shp",
+  "entidades": 74,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4147.dbf",
+      "bytes": 22662,
+      "sha256": "f2e676b5197088ee222eb7c7b1a45823f0db9280976afd1e13d4057f98d6163b"
+    },
+    {
+      "archivo": "e4147.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4147.shp",
+      "bytes": 6932,
+      "sha256": "2e146057c0e7ad321fd5a8cdc2a54efa3f5d0b5fedbd8b6a21d5170f397871cc"
+    },
+    {
+      "archivo": "e4147.shx",
+      "bytes": 692,
+      "sha256": "1a5f5b8c51dd4966e292fbc3d781ccdd2d89c50a15c70e08f3926c8d384f9151"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/EGUSQUIZA.zip!e4147.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_52342647a7",
+    "archivo": "santafe/ipec/2022/EGUSQUIZA.zip!e4147.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 74,
+    "registros_shx": 74,
+    "shape_type": 3,
+    "bbox": [
+      5344146.0,
+      6558713.0,
+      5345281.5,
+      6559908.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/EGUSQUIZA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "73014fdca2f87740a84bcac4642bd88ebca689c66956388e32a67e736d7d1eed"
+}

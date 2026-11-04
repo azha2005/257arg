@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0361_5ad9499fa2",
+  "shp": "R0361.shp",
+  "entidades": 10,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0361.dbf",
+      "bytes": 2522,
+      "sha256": "ccb2fb979120c28356d7eccdb08d8f293e6e526e5a102c48440eb535d167b7ea"
+    },
+    {
+      "archivo": "R0361.shp",
+      "bytes": 6772,
+      "sha256": "3a00fb23071acd48eadd23f8c894abe2ed64794e67e758bb1fe58ea4d7760c0d"
+    },
+    {
+      "archivo": "R0361.shx",
+      "bytes": 180,
+      "sha256": "5d3d491395bbfbf493583243d24d00b4b4dc2fdb5e71e6c19f9fa496a7ab6f9e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arequitoa2h.zip!R0361.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7657f555b4",
+    "archivo": "santafe/ipec/2010/arequitoa2h.zip!R0361.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 10,
+    "registros_shx": 10,
+    "shape_type": 5,
+    "bbox": [
+      5361502.0,
+      6331061.0,
+      5364198.0,
+      6333537.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arequitoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8d72558161a01340f7dedcd60464aaa65ae6dc09a0380108fe88e517f5bd954f"
+}

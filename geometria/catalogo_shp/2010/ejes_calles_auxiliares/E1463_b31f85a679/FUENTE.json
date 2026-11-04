@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1463_b31f85a679",
+  "shp": "E1463.shp",
+  "entidades": 89,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1463.dbf",
+      "bytes": 31582,
+      "sha256": "5706107738751b73363de1c99bc6c486d87c12e1d1d0f2bb8275cd8b75fe7fe9"
+    },
+    {
+      "archivo": "E1463.shp",
+      "bytes": 7980,
+      "sha256": "baf7f936e1f92ab6058951ed7dc911f6c6f7032c129031c8f1bc812558b7ab5b"
+    },
+    {
+      "archivo": "E1463.shx",
+      "bytes": 812,
+      "sha256": "12f6a85e4ad4e0e99e9a64b4fb6a5ad29196b9713dbf14b0e50f9a92c64e1843"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/GarabatoA3V.zip!E1463.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d35339437c",
+    "archivo": "santafe/ipec/2010/GarabatoA3V.zip!E1463.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 89,
+    "registros_shx": 89,
+    "shape_type": 3,
+    "bbox": [
+      5485785.0,
+      6797143.5,
+      5486936.5,
+      6798466.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/GarabatoA3V.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9c0cb345a550ec19f3c4183796202f1531c3660fcab1036f13f750939101cfaa"
+}

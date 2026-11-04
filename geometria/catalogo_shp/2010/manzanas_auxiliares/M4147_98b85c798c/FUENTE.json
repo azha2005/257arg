@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4147_98b85c798c",
+  "shp": "M4147.shp",
+  "entidades": 25,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4147.dbf",
+      "bytes": 5311,
+      "sha256": "102423b7c6fc4d0821214da407171578af6d41afd11ea432f3d8348f2cb27935"
+    },
+    {
+      "archivo": "M4147.shp",
+      "bytes": 4108,
+      "sha256": "4701d62780ff5d1d2c8eef1d19196c7bd279ed0bee67dc1dc9381f4d860fe6ef"
+    },
+    {
+      "archivo": "M4147.shx",
+      "bytes": 300,
+      "sha256": "521723ec96e245b702f62b769d8be01c53681c2bddf2ad6529c86ec679e22545"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/egusquizaa3v.zip!M4147.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c5caceb4dd",
+    "archivo": "santafe/ipec/2010/egusquizaa3v.zip!M4147.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 5,
+    "bbox": [
+      5344164.0,
+      6558741.0,
+      5345282.0,
+      6559866.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/egusquizaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2b8141b842184bcd4389ea4f8b0e092763253aea908e45eb52f954cf7eb33aca"
+}

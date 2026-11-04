@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m0077_f313557659",
+  "shp": "m0077.shp",
+  "entidades": 9,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0077.shx",
+      "bytes": 172,
+      "sha256": "bfcb8c016fe63bc4081b1fa1f6c6d59a2dea7b4931a87fbe45b9d7a8712ca389"
+    },
+    {
+      "archivo": "m0077.dbf",
+      "bytes": 2158,
+      "sha256": "3a6a13c77d2500c57f3a44056447848570d3b1a7abf7bb6103460eb4a476b0da"
+    },
+    {
+      "archivo": "m0077.shp",
+      "bytes": 1564,
+      "sha256": "8a80a814336c9bcea4c3319a3263d6fbdd199d9c9adebfff6a240165690df17b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/elsombreritoa3h.zip!m0077.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c48fb6177f",
+    "archivo": "santafe/ipec/2010/elsombreritoa3h.zip!m0077.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 9,
+    "registros_shx": 9,
+    "shape_type": 5,
+    "bbox": [
+      5555857.5,
+      6830587.0,
+      5556335.0,
+      6830828.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVER"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/elsombreritoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ed08690419a01af128cf7cb0ec22ee516f0ec0b95fdabbcd94935ba8cf12aea0"
+}

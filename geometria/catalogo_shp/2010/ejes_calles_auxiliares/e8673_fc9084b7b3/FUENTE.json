@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e8673_fc9084b7b3",
+  "shp": "e8673.shp",
+  "entidades": 2545,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e8673.shp",
+      "bytes": 239644,
+      "sha256": "b586283721299970147cf93ad596366b0427424c772469db603de948d589afd9"
+    },
+    {
+      "archivo": "e8673.shx",
+      "bytes": 20460,
+      "sha256": "a80109b326e002cdb302ee474052cb31194f7d182b2d118bd7ec04fe2aa06728"
+    },
+    {
+      "archivo": "e8673.dbf",
+      "bytes": 886269,
+      "sha256": "b54d972baade73c8d49fbb38719e60fce1edf5b28d91ff60a1f2da03b25635fc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villagobernadorgalveza0h.zip!e8673.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1c316e7df8",
+    "archivo": "santafe/ipec/2010/villagobernadorgalveza0h.zip!e8673.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2545,
+    "registros_shx": 2545,
+    "shape_type": 3,
+    "bbox": [
+      5435800.0,
+      6343796.0,
+      5445711.0,
+      6349274.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDEI",
+      "HASTAI",
+      "DESDED",
+      "HASTAD"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villagobernadorgalveza0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4c391b54dd7cce3ccd11016840bf91db51e3ee8a704f662e6dad67a205fbca86"
+}

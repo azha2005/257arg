@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0417_6a3b85a781",
+  "shp": "M0417.shp",
+  "entidades": 168,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0417.dbf",
+      "bytes": 33482,
+      "sha256": "789d8c98efb390a947e20c17456a81f8b039fe73672d64625d72be433002c4ab"
+    },
+    {
+      "archivo": "M0417.shp",
+      "bytes": 32260,
+      "sha256": "8ff3ca1aed05b6b2178208ea51c3d35c27fdcbfcf0265d79fc2785babe516485"
+    },
+    {
+      "archivo": "M0417.shx",
+      "bytes": 1444,
+      "sha256": "622575f3275c69b57577ab1a33fecaa435db76414e6a7e38967faa17dd932318"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/malabrigoa3h.zip!M0417.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b75166415a",
+    "archivo": "santafe/ipec/2010/malabrigoa3h.zip!M0417.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 168,
+    "registros_shx": 168,
+    "shape_type": 5,
+    "bbox": [
+      5501768.0,
+      6752778.5,
+      5503880.5,
+      6755554.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/malabrigoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7cf91ff746a33a7cac1b93f71e5dae23ec0da89f2cc4fbbd3326da96ab99206f"
+}

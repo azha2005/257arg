@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4111_0a293c3e9d",
+  "shp": "E4111.shp",
+  "entidades": 149,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4111.dbf",
+      "bytes": 52462,
+      "sha256": "e31f90d9a9aefa6770087e0fc0b4b97070e2be2549cbf83c26e87ddd2a9b2c73"
+    },
+    {
+      "archivo": "E4111.shp",
+      "bytes": 13340,
+      "sha256": "9650555e2dc25dac371732b12f637f600a7c4acae52a30c9d107e3930d4337e6"
+    },
+    {
+      "archivo": "E4111.shx",
+      "bytes": 1292,
+      "sha256": "f9d1d1551a304812285054f877d80a80e011f11bfc5f6ca7ea008cfed55a41b2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/larrecheaa3h.zip!E4111.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_44b8673e40",
+    "archivo": "santafe/ipec/2010/larrecheaa3h.zip!E4111.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 149,
+    "registros_shx": 149,
+    "shape_type": 3,
+    "bbox": [
+      5400487.5,
+      6466247.0,
+      5401653.0,
+      6467467.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/larrecheaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a72873f6e528b0027acaeca9243f87500e2a1f2bdc64a3a3a5421410af980ece"
+}

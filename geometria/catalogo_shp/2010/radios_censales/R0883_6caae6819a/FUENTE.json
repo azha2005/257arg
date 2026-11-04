@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0883_6caae6819a",
+  "shp": "R0883.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0883.dbf",
+      "bytes": 890,
+      "sha256": "7937833e9ba7c9c0735511ba7cf4bcc91d42a1063c16cbd4f10830062fdc54ae"
+    },
+    {
+      "archivo": "R0883.shp",
+      "bytes": 1364,
+      "sha256": "c2e0e2d1e1d1959b04c1e0eee2cd95145d27c4a38fc97c86965faae9d42a83f7"
+    },
+    {
+      "archivo": "R0883.shx",
+      "bytes": 116,
+      "sha256": "4cbc4e0d568b057007f30d45462889f46bdbe769fa66168b7353f23d08e09409"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/zenonpereyraa2v.zip!R0883.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9bdd3a2628",
+    "archivo": "santafe/ipec/2010/zenonpereyraa2v.zip!R0883.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5319232.0,
+      6505659.5,
+      5320600.0,
+      6508089.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/zenonpereyraa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5666afc96b9e349ca8b4d3b88bdc4df9d9f4a08103a42feb4f65711d914ee02d"
+}

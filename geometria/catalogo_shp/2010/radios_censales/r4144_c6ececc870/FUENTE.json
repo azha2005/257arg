@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r4144_c6ececc870",
+  "shp": "r4144.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r4144.dbf",
+      "bytes": 890,
+      "sha256": "da78a984ece1c7e4e5f6d44ef509d6db769ced29de1103cea0084753ef360544"
+    },
+    {
+      "archivo": "r4144.sbn",
+      "bytes": 156,
+      "sha256": "49a18e4a7ae90f0ca4dacc0bd89d41ef8b0c6e295642274c8966f507e180546d"
+    },
+    {
+      "archivo": "r4144.sbx",
+      "bytes": 124,
+      "sha256": "ed345feb6304f649153768713d40494123dd86b68c7889203117a621b4bc98d9"
+    },
+    {
+      "archivo": "r4144.shp",
+      "bytes": 724,
+      "sha256": "daf864c3429a15970d607254b185233b491052095fca09c4632471141eceaa95"
+    },
+    {
+      "archivo": "r4144.shx",
+      "bytes": 116,
+      "sha256": "eb8b31df92622776da0a4a66f60e4490f9ea69bc4138e55ccb0e28af0da48126"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SANMARIANO.zip!r4144.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5536b2d17a",
+    "archivo": "santafe/ipec/2010/SANMARIANO.zip!r4144.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5371680.0,
+      6495635.5,
+      5372526.5,
+      6496502.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "NOMDEP",
+      "CODDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SANMARIANO.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b0c6f7777a42993c8a11926ece59788d6ca4d538f5e27e0ccdea4851a3afed10"
+}

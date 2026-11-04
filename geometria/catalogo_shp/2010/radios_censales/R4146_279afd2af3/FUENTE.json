@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4146_279afd2af3",
+  "shp": "R4146.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4146.dbf",
+      "bytes": 890,
+      "sha256": "9eec5fa09158e0f043c831a653dcad98322350b4bd148599a530cabf5ada9225"
+    },
+    {
+      "archivo": "R4146.shp",
+      "bytes": 1268,
+      "sha256": "c12ef8e551e590fe6cee24f3d771c471dac9825dd1c0ebc97ac4e1397323bbb2"
+    },
+    {
+      "archivo": "R4146.shx",
+      "bytes": 116,
+      "sha256": "eafd9387c6ee376a4ab45a477a7b7b775fe4e8d15ed3d9f3bc4a68825b80f310"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/castellanosa3h.zip!R4146.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ed3da3e93c",
+    "archivo": "santafe/ipec/2010/castellanosa3h.zip!R4146.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5335359.0,
+      6545986.5,
+      5336173.0,
+      6546901.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/castellanosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ab5831904e93da6330306b96777db23b3395c961af1e7d355a583392bea5cb2a"
+}

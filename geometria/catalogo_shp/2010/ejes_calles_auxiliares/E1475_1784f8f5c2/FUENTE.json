@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1475_1784f8f5c2",
+  "shp": "E1475.shp",
+  "entidades": 77,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1475.dbf",
+      "bytes": 27406,
+      "sha256": "885b9ea321fad3bd7ea7f67da4d446f45a14491c05b9bb7ee65e099313105a9f"
+    },
+    {
+      "archivo": "E1475.shp",
+      "bytes": 6956,
+      "sha256": "a9a875033dcf0ce0a60cccfaf5ce98754338ec529963803e0ccbc9a577662d3a"
+    },
+    {
+      "archivo": "E1475.shx",
+      "bytes": 716,
+      "sha256": "4042fa442667938d93cdbc39b8b1a06d5c83afc0b7c26846ad4f4f05aad34f41"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanfabiana3v.zip!E1475.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a49733ae3c",
+    "archivo": "santafe/ipec/2010/sanfabiana3v.zip!E1475.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 77,
+    "registros_shx": 77,
+    "shape_type": 3,
+    "bbox": [
+      5406811.0,
+      6443887.5,
+      5407560.0,
+      6445049.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanfabiana3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a149ba08aad1bfd8ba3dd8ef1ff6967851f32abc52309ee9cde947b1afecf438"
+}

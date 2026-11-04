@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0825_a6042ace92",
+  "shp": "m0825.shp",
+  "entidades": 73,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0825.dbf",
+      "bytes": 14767,
+      "sha256": "165156bbf8c2e5a31ad207073ab9303222a3827537e45e9a082635192c149e5f"
+    },
+    {
+      "archivo": "m0825.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0825.shp",
+      "bytes": 11852,
+      "sha256": "14fd6060f05c670bdf8a81cec103fca49eed282acdecc48f74737a0e01f1c9fa"
+    },
+    {
+      "archivo": "m0825.shx",
+      "bytes": 684,
+      "sha256": "b431e5bc0d598b2a86d898ad8e458efb3c66ee13d3826dbcc01055fc01cab82a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/DIEGODEALVEAR.zip!m0825.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_5617083cbe",
+    "archivo": "santafe/ipec/2022/DIEGODEALVEAR.zip!m0825.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 73,
+    "registros_shx": 73,
+    "shape_type": 5,
+    "bbox": [
+      5303480.0,
+      6194347.5,
+      5305297.5,
+      6195699.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/DIEGODEALVEAR.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5aac78f3663291410928508328f19089b13c10a7cc7c9308a377055e2e03bfba"
+}

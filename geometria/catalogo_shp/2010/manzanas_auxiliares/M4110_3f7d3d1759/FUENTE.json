@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4110_3f7d3d1759",
+  "shp": "M4110.shp",
+  "entidades": 25,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4110.dbf",
+      "bytes": 5311,
+      "sha256": "1e6d7097518bcbfecc8ef44eac8bd0af98a35b6f80f12179474688f247e8f781"
+    },
+    {
+      "archivo": "M4110.shp",
+      "bytes": 4060,
+      "sha256": "f15c842377ede75ac12ddff729141086de0cd67bf8ddd48e21ea482ccc2b4884"
+    },
+    {
+      "archivo": "M4110.shx",
+      "bytes": 300,
+      "sha256": "fc8c283ac2e5851e29493a627e7c1d6aa98d1f395be3f3cac00fb03a1136e235"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/migueltorresa3h.zip!M4110.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_92b900a11a",
+    "archivo": "santafe/ipec/2010/migueltorresa3h.zip!M4110.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 5,
+    "bbox": [
+      5363267.5,
+      6289201.5,
+      5364419.0,
+      6290224.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/migueltorresa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "bfe0b818052e657241dfb2dd675f8f3a538e351f050503a158514156497980a9"
+}

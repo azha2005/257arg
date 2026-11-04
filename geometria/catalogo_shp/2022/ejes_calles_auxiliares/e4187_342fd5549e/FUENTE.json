@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4187_342fd5549e",
+  "shp": "e4187.shp",
+  "entidades": 72,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4187.dbf",
+      "bytes": 22066,
+      "sha256": "729c19f898c179ca2bb4d506acb8f7a4f8084d639c1b331253748d251d164fba"
+    },
+    {
+      "archivo": "e4187.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4187.shp",
+      "bytes": 6756,
+      "sha256": "a04b477fd0214013c551cda2e2f8adf93753ecab42ede88ac10c50fc7d09a63d"
+    },
+    {
+      "archivo": "e4187.shx",
+      "bytes": 676,
+      "sha256": "0b323f436045058a3343c133d05d591d00353545d8689d79b4a13d28ca8a34b4"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIATERESA.zip!e4187.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e7c75ae835",
+    "archivo": "santafe/ipec/2022/COLONIATERESA.zip!e4187.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 72,
+    "registros_shx": 72,
+    "shape_type": 3,
+    "bbox": [
+      5502331.0,
+      6653676.5,
+      5503559.0,
+      6654119.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIATERESA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c2fdfdc5e6fa02361759914f522fbc15fd7f77fc8c6bde94213e9ac3c449fb87"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1052_a3f87b6705",
+  "shp": "e1052.shp",
+  "entidades": 333,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1052.dbf",
+      "bytes": 99844,
+      "sha256": "c18d9f39760711dcffe8ed9b8307bf6451a0b08a572ff842be602be0a3bcdcf7"
+    },
+    {
+      "archivo": "e1052.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1052.shp",
+      "bytes": 29644,
+      "sha256": "acb4c0866e7bc5d364d5c7a3a20053fdbba426a41333e1cea87e23c4f60e1fbd"
+    },
+    {
+      "archivo": "e1052.shx",
+      "bytes": 2764,
+      "sha256": "971035b24bd16b721e065ada57e5382a025e47db53de3735e695c3ef3479bfa9"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIAALDAO.zip!e1052.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e57edc5c0b",
+    "archivo": "santafe/ipec/2022/COLONIAALDAO.zip!e1052.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 333,
+    "registros_shx": 333,
+    "shape_type": 3,
+    "bbox": [
+      5332761.5,
+      6571234.5,
+      5334187.0,
+      6572471.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIAALDAO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0c356629e8a318fc88b8c393669f3b9ca22fd2103031e308b4eae92b81a28164"
+}

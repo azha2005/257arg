@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0296_91128d2019",
+  "shp": "R0296.shp",
+  "entidades": 8,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0296.dbf",
+      "bytes": 2114,
+      "sha256": "9747919d58b0645a79f95bab6bbd9166ee19223074c75c3d3aaa48c5e4013d27"
+    },
+    {
+      "archivo": "R0296.shp",
+      "bytes": 5812,
+      "sha256": "e47c04902936c82c0a1f1221f8bdfe86313202ad30a4bda74d6a3636036b9d81"
+    },
+    {
+      "archivo": "R0296.shx",
+      "bytes": 164,
+      "sha256": "1267ba70c88f34187c2256b22a8f4733d5dd8dbc9800b7544b0ed372144128e0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/calchaquia2v.zip!R0296.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0ba46e00a2",
+    "archivo": "santafe/ipec/2010/calchaquia2v.zip!R0296.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 8,
+    "registros_shx": 8,
+    "shape_type": 5,
+    "bbox": [
+      5471484.0,
+      6692228.5,
+      5473823.0,
+      6695474.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/calchaquia2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7f9e2cf5cdc42c00c9f7fa97ffe9b90d4cb54b81dd2bde909120096b1a03460d"
+}

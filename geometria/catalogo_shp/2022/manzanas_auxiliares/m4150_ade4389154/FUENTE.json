@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4150_ade4389154",
+  "shp": "m4150.shp",
+  "entidades": 83,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4150.dbf",
+      "bytes": 16737,
+      "sha256": "54bc09ba2cd2ae6ce1a89ca67403dbb475921a37627ef23a079e4402fda59672"
+    },
+    {
+      "archivo": "m4150.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4150.shp",
+      "bytes": 11964,
+      "sha256": "084dbc7a64347a7555dc44b5a6e6761b86cd374fde2ed30b09c1cfc313300ef1"
+    },
+    {
+      "archivo": "m4150.shx",
+      "bytes": 764,
+      "sha256": "9d5253ef3c38e511bd622cd751e50c553d4172395e8b8b81f70fb3b83142cde1"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/BELLAITALIA.zip!m4150.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e9f572e363",
+    "archivo": "santafe/ipec/2022/BELLAITALIA.zip!m4150.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 83,
+    "registros_shx": 83,
+    "shape_type": 5,
+    "bbox": [
+      5363137.0,
+      6538121.5,
+      5367007.0,
+      6540639.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/BELLAITALIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "8a2053b30144289537d69d9f8dfc4fdca364eb5caa559805132624cfbd4f4f0f"
+}

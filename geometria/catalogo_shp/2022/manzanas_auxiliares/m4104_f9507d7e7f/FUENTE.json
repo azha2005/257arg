@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4104_f9507d7e7f",
+  "shp": "m4104.shp",
+  "entidades": 27,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4104.dbf",
+      "bytes": 5705,
+      "sha256": "66a6022a2bf5cfd0d9860de391262189a422b988cf6f43721c17deed57a23602"
+    },
+    {
+      "archivo": "m4104.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4104.shp",
+      "bytes": 4124,
+      "sha256": "b540d0bf3252dcf0bbc4714e5a0cc16b067f8f2db6ed4a1a92ec64937d5b99de"
+    },
+    {
+      "archivo": "m4104.shx",
+      "bytes": 316,
+      "sha256": "2b577c52762e4e8a5e92003f08ff1274119ddab0b40e5e8fcb4b2ff6839d2ba6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/RUEDA.zip!m4104.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_fb7b00cde2",
+    "archivo": "santafe/ipec/2022/RUEDA.zip!m4104.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 27,
+    "registros_shx": 27,
+    "shape_type": 5,
+    "bbox": [
+      5456672.0,
+      6311643.5,
+      5457637.0,
+      6312616.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/RUEDA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0aaebb0644df2709b405c06a5974f0e4837f04435759a3b715ffd9816a203940"
+}

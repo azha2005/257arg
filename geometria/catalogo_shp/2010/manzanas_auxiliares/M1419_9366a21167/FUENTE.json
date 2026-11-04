@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1419_9366a21167",
+  "shp": "M1419.shp",
+  "entidades": 94,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1419.dbf",
+      "bytes": 18904,
+      "sha256": "8d06557f0c4bcf6a6357bc9e760f8b5d14e58afe0c248c37ddd3004c585b9a7d"
+    },
+    {
+      "archivo": "M1419.shp",
+      "bytes": 14420,
+      "sha256": "0eb3819e89ca307ac8d774be9347918cd6264f0f18fff3c321cfdc09cc0df545"
+    },
+    {
+      "archivo": "M1419.shx",
+      "bytes": 852,
+      "sha256": "c26aac0dca8f9ec159f3e56f621a0a064a01a799679bcff6d44d9a2d280b383f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pozoborradoa3h.zip!M1419.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_434bd19caf",
+    "archivo": "santafe/ipec/2010/pozoborradoa3h.zip!M1419.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 94,
+    "registros_shx": 94,
+    "shape_type": 5,
+    "bbox": [
+      5332787.0,
+      6797847.5,
+      5334185.5,
+      6799117.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pozoborradoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "619c87c9472f982041b70c1c4baa3e6d7fe043396689a760a998e4ba8bdfd2d0"
+}

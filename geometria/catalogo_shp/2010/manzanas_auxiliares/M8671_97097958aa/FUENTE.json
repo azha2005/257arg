@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M8671_97097958aa",
+  "shp": "M8671.shp",
+  "entidades": 109,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M8671.dbf",
+      "bytes": 21859,
+      "sha256": "6a6faeb8715ce4f4447cdd3408555fffb87ad4cf569676e4ce19873047b871bd"
+    },
+    {
+      "archivo": "M8671.shp",
+      "bytes": 20268,
+      "sha256": "05e0a46b8c553975080f62f0d8317511dcaad4b3115f39da70b2666f465d1953"
+    },
+    {
+      "archivo": "M8671.shx",
+      "bytes": 972,
+      "sha256": "229efa631193e6b174acd1901a50208af18ccfa8ae1cb2f59f34329f0c677281"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/soldinia3v.zip!M8671.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e6e5bc7621",
+    "archivo": "santafe/ipec/2010/soldinia3v.zip!M8671.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 109,
+    "registros_shx": 109,
+    "shape_type": 5,
+    "bbox": [
+      5428892.5,
+      6345210.0,
+      5430019.0,
+      6348013.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/soldinia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "16e91720ba6c7a585802ae18bf238bde67d2862992087413a6111f3a0e405749"
+}

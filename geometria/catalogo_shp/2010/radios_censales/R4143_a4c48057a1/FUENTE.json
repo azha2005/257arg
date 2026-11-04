@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4143_a4c48057a1",
+  "shp": "R4143.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4143.dbf",
+      "bytes": 686,
+      "sha256": "856d5670da5705a0e209cab55007d74d21d3816f2957d2d803db9fb308690345"
+    },
+    {
+      "archivo": "R4143.shp",
+      "bytes": 540,
+      "sha256": "6441f60fb40ef9be25c29f7e546124dd44908eaf283af7781c2daa622b9fb5ae"
+    },
+    {
+      "archivo": "R4143.shx",
+      "bytes": 108,
+      "sha256": "e760b287b225ba54627f8bc43b8c2b03ac37461b6be1edf25a2c06d56ef029c0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniadoloresa3h.zip!R4143.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_aa2275aadb",
+    "archivo": "santafe/ipec/2010/coloniadoloresa3h.zip!R4143.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5467907.0,
+      6639178.0,
+      5468660.0,
+      6639766.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniadoloresa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ddeafe25522c29bdd59c5fb5a4d9cc6e11d8b4750a581362b6bdb11c73d2111c"
+}

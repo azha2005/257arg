@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0446_b986f8275c",
+  "shp": "M0446.shp",
+  "entidades": 192,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0446.dbf",
+      "bytes": 38210,
+      "sha256": "fa782f967682f157dfc9c89b5430e1fa8ee9ced366398af1b67dcb52b3937a1b"
+    },
+    {
+      "archivo": "M0446.shp",
+      "bytes": 33204,
+      "sha256": "8ff2352601c9e43db2c9d99196363fcf6d84d8279c43996fe27f5e44928c20e4"
+    },
+    {
+      "archivo": "M0446.shx",
+      "bytes": 1636,
+      "sha256": "42e1e021ecedfa310ee85eed0012bb5978967bc92071fe084f6a1ed99af7631d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/helveciaa2h.zip!M0446.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_672385f2ea",
+    "archivo": "santafe/ipec/2010/helveciaa2h.zip!M0446.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 192,
+    "registros_shx": 192,
+    "shape_type": 5,
+    "bbox": [
+      5490230.5,
+      6558813.0,
+      5492481.0,
+      6562306.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/helveciaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5f933cda9ac78829d06149947026c5973d73dec6f5996cb2bb2bc2c5cf2c6865"
+}

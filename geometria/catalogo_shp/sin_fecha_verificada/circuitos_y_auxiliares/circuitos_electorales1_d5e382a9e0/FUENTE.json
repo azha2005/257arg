@@ -1,0 +1,57 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "No se encontró evidencia suficiente para asignar año",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/circuitos_electorales1_d5e382a9e0",
+  "shp": "circuitos_electorales1.shp",
+  "entidades": 14,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "circuitos_electorales1.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "circuitos_electorales1.shx",
+      "bytes": 212,
+      "sha256": "da37cf7d7bc1c34c6d223a20fad4b244a3e012e70cdfc58b82c07582c08cebd1"
+    },
+    {
+      "archivo": "circuitos_electorales1.dbf",
+      "bytes": 4091,
+      "sha256": "a4e3dcc31e6cad61c7ba6c6eb812db55c7468db395da51583a91a6af57b47ce6"
+    },
+    {
+      "archivo": "circuitos_electorales1.shp",
+      "bytes": 37348,
+      "sha256": "b0e3c13c5bcd7b916f66ab33bb35fe8b5897f04f390a9cc3e17edd37488992f6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/municipales/posadas_ide.zip!circuitos_electorales1.shp",
+  "metadata_original": {
+    "archivo": "municipales/posadas_ide.zip!circuitos_electorales1.shp",
+    "formato": "SHP",
+    "features": 14,
+    "shapes": 14,
+    "bbox": [
+      -56.05840388,
+      -27.581330275507067,
+      -55.86265723,
+      -27.34230335
+    ],
+    "campos": [
+      "fid_1",
+      "fid",
+      "Name"
+    ],
+    "sha256": "b0e3c13c5bcd7b916f66ab33bb35fe8b5897f04f390a9cc3e17edd37488992f6",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "url": "https://www.ide.posadas.gob.ar/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Acircuitos_electorales1&outputFormat=SHAPE-ZIP&srs=EPSG%3A4326&format_options=charset%3AUTF-8",
+    "fuente": "https://www.ide.posadas.gob.ar/layers/geonode:circuitos_electorales1",
+    "corte_declarado": "",
+    "nota": "Publicación 2024; vigencia electoral no declarada; licencia no especificada"
+  },
+  "firma_componentes": "129873db57972e19c0fddacfe049bb321d1df9af51cf16ca4e36720d518229ae"
+}

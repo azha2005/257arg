@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4117_759427555e",
+  "shp": "M4117.shp",
+  "entidades": 36,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4117.dbf",
+      "bytes": 7478,
+      "sha256": "70f1e01efa759d697ad8c628392f206fffeabe7b7fa551d646676148a906865f"
+    },
+    {
+      "archivo": "M4117.shp",
+      "bytes": 5668,
+      "sha256": "ff7c0ed80fcbc2853c555bd5286d48e245f255f4a9f4cf789733d139ede31e3f"
+    },
+    {
+      "archivo": "M4117.shx",
+      "bytes": 388,
+      "sha256": "677929485c5a64cc13ec17eea545a3d6b3a6dc6c6e3ce562e51c56d6acc752e9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/loslaurelesa3v.zip!M4117.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c16da26096",
+    "archivo": "santafe/ipec/2010/loslaurelesa3v.zip!M4117.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 36,
+    "registros_shx": 36,
+    "shape_type": 5,
+    "bbox": [
+      5525188.5,
+      6751000.5,
+      5526024.5,
+      6753080.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/loslaurelesa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fb15513c9ae35815b1e0138fcd825191f018716edc4c567e724764fec4319010"
+}

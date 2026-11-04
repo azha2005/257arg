@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r6888_ad37417371",
+  "shp": "r6888.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r6888.shx",
+      "bytes": 108,
+      "sha256": "34653beeaf5ce80c0be0ac0925d0ae847e14d9302263df29ec0a25ea1c5fba2d"
+    },
+    {
+      "archivo": "r6888.shp",
+      "bytes": 428,
+      "sha256": "601289bded83ddbfe01dc366ada1f1c432b825143e4b8708feb11c8dc3824f5b"
+    },
+    {
+      "archivo": "r6888.sbx",
+      "bytes": 116,
+      "sha256": "2f60728f7c253970847a882631d0ae0232ebac6ba201851f807a35b9de0fe9df"
+    },
+    {
+      "archivo": "r6888.sbn",
+      "bytes": 132,
+      "sha256": "d07264367840d8741a23397c4b59d9283a4c9ad24a42862eb9cbc8fe3f4f80a0"
+    },
+    {
+      "archivo": "r6888.dbf",
+      "bytes": 685,
+      "sha256": "dbd58a5579aea38ffe4dc26430be64e9a0c87205fdf127048a1fd384d1d7d7fd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SANRICARDO.zip!r6888.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7ca87b87fe",
+    "archivo": "santafe/ipec/2010/SANRICARDO.zip!r6888.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5349983.5,
+      6344496.5,
+      5350607.5,
+      6345514.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SANRICARDO.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ff30dee0c010e93bb06cbba1baaa543a9ccd76209fa53edb1187d4c1489ce78a"
+}

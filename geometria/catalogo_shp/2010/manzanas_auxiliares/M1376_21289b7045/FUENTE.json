@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1376_21289b7045",
+  "shp": "M1376.shp",
+  "entidades": 97,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1376.dbf",
+      "bytes": 19495,
+      "sha256": "0b8e36ba964eecd7b6b2bc7de3a4d95291751454e42b268cf63003324fe81abd"
+    },
+    {
+      "archivo": "M1376.shp",
+      "bytes": 13452,
+      "sha256": "a99ea0baed02539110a9242bf1638c10676c5b4fb072eb22e4e5f7ecf46b883d"
+    },
+    {
+      "archivo": "M1376.shx",
+      "bytes": 876,
+      "sha256": "580d7bad2c7f0ee02002537a3d56b1d0a642bc4a396d2c2a19330dfc876c283c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjeronimodelsaucea2h.zip!M1376.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9ef407eafc",
+    "archivo": "santafe/ipec/2010/sanjeronimodelsaucea2h.zip!M1376.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 97,
+    "registros_shx": 97,
+    "shape_type": 5,
+    "bbox": [
+      5391170.5,
+      6502296.0,
+      5392326.0,
+      6503534.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjeronimodelsaucea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a10eb75d6756535a20a69865fed7e333cb756fb7b3d89fe2b27d37d0104da688"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4139_531b2cd0a8",
+  "shp": "M4139.shp",
+  "entidades": 25,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4139.dbf",
+      "bytes": 5311,
+      "sha256": "6d13c8da3ecd28f43aa589f0c37184eec78ed1b13cd764269d56c9f4fdb1bd21"
+    },
+    {
+      "archivo": "M4139.shp",
+      "bytes": 4748,
+      "sha256": "43c87d9d672a27cba54d1ec5448dafcf964ad5574c1cf127b12a82f4e91ea5e5"
+    },
+    {
+      "archivo": "M4139.shx",
+      "bytes": 300,
+      "sha256": "d0ad64244ac7872bfa6c5798d187bbbfeec69203f0f57a6bddd604aaceb8904e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/albarellosa3v.zip!M4139.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d63727e26f",
+    "archivo": "santafe/ipec/2010/albarellosa3v.zip!M4139.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 5,
+    "bbox": [
+      5440152.0,
+      6321812.5,
+      5440999.0,
+      6322840.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/albarellosa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2010afe496dae83b4e9850026805f4a7b3337695bd6cfd0a451eafae6429c8ce"
+}

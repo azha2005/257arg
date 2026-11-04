@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0719_02e1b23d17",
+  "shp": "M0719.shp",
+  "entidades": 70,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0719.dbf",
+      "bytes": 14176,
+      "sha256": "7dd1423a776b4e02de99a08694e9d702d6fd7d411eee47620f4810cd6aa8e02f"
+    },
+    {
+      "archivo": "M0719.shp",
+      "bytes": 10644,
+      "sha256": "9a7004a5d93dd085f88abb650b9d0e1376426f62e65602babfaf082008af4521"
+    },
+    {
+      "archivo": "M0719.shx",
+      "bytes": 660,
+      "sha256": "33871462946065e5cc1a7ac6470345d01d8b416653c58197c47af77690d8fa55"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villamuguetaa3h.zip!M0719.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2fc3ac776b",
+    "archivo": "santafe/ipec/2010/villamuguetaa3h.zip!M0719.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 70,
+    "registros_shx": 70,
+    "shape_type": 5,
+    "bbox": [
+      5401015.0,
+      6313214.5,
+      5402499.0,
+      6314694.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villamuguetaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "12e581959b24aa8a2de6c27d3cfa5745dacc4ddac36606d1fbb4143cba8653b6"
+}

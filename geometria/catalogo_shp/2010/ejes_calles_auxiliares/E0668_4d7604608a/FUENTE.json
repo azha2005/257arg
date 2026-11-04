@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0668_4d7604608a",
+  "shp": "E0668.shp",
+  "entidades": 450,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0668.dbf",
+      "bytes": 157210,
+      "sha256": "e758e66572217fdf71d29fa1fbf6d079b3bdc977b792105c3da51448b3aa5e81"
+    },
+    {
+      "archivo": "E0668.shp",
+      "bytes": 40164,
+      "sha256": "bb82262e9bc7ee429208bcf3d0ecc91b2bb1fec6f2cc1649a88e1b64913c3d64"
+    },
+    {
+      "archivo": "E0668.shx",
+      "bytes": 3700,
+      "sha256": "00011b6cac6a8a81105e780b80852374e6b57f4511afbc911af69a84d45a9375"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/hersiliaa2h.zip!E0668.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dd8a847860",
+    "archivo": "santafe/ipec/2010/hersiliaa2h.zip!E0668.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 450,
+    "registros_shx": 450,
+    "shape_type": 3,
+    "bbox": [
+      5321613.0,
+      6678969.0,
+      5323329.0,
+      6681191.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/hersiliaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "df465992b891658feba64f2f4c8687ec5800e1b3c567e67360210960dcb344f2"
+}

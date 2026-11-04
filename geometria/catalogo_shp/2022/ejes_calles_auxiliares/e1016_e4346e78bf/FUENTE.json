@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1016_e4346e78bf",
+  "shp": "e1016.shp",
+  "entidades": 214,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1016.dbf",
+      "bytes": 64382,
+      "sha256": "07f761a76194b38d46b7a90a559d79c2f2e600d569ac3878874acde00a01aff7"
+    },
+    {
+      "archivo": "e1016.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1016.shp",
+      "bytes": 19348,
+      "sha256": "b6b7d1c5458b54f5cbfe2633697f3413f221db26dbfc255f72ca9f5bb4c785b0"
+    },
+    {
+      "archivo": "e1016.shx",
+      "bytes": 1812,
+      "sha256": "e13136e31b29ed0a9e8b4a80a3da175d3c59c6e48ce4d21062619fba5421fc7b"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLADA.zip!e1016.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1f4e561676",
+    "archivo": "santafe/ipec/2022/VILLADA.zip!e1016.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 214,
+    "registros_shx": 214,
+    "shape_type": 3,
+    "bbox": [
+      5364862.5,
+      6308776.0,
+      5366236.5,
+      6310151.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLADA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7200783b10d341123e6eb5e15b9ba58f86e78f5d41dce7d20a74b167938ae6f5"
+}

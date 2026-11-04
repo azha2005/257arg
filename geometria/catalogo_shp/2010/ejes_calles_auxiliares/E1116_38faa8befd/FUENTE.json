@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1116_38faa8befd",
+  "shp": "E1116.shp",
+  "entidades": 136,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1116.dbf",
+      "bytes": 47938,
+      "sha256": "e812ab6b4602a2ee7c18c56382666eb05dbe85691faa3aa26563f4708a8a82dc"
+    },
+    {
+      "archivo": "E1116.shp",
+      "bytes": 12100,
+      "sha256": "8ec2caed9d0a6f46504a3c76daf68edc681c440d4b7166c9f83d7fc5760d83e8"
+    },
+    {
+      "archivo": "E1116.shx",
+      "bytes": 1188,
+      "sha256": "19b3891db04485c4fc97c204e44792c88bbc6bf74ce96ac770c079394219afac"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lopeza3h.zip!E1116.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6669e320c8",
+    "archivo": "santafe/ipec/2010/lopeza3h.zip!E1116.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 136,
+    "registros_shx": 136,
+    "shape_type": 3,
+    "bbox": [
+      5378063.5,
+      6469425.0,
+      5379644.0,
+      6470527.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lopeza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "bb4315318856f36cdcd57ee085a90d422cd44340e1809129a429fee26a0f3a8e"
+}

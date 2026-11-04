@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4157_8ecc285a77",
+  "shp": "M4157.shp",
+  "entidades": 20,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4157.dbf",
+      "bytes": 4326,
+      "sha256": "049b191832f53d3d695b7b9254699e2a2bfeb647a634639f1e9cb3d34e882914"
+    },
+    {
+      "archivo": "M4157.shp",
+      "bytes": 3908,
+      "sha256": "dbf13cca3e5cc43f393f0076efd284336bbaaead088205dd78e8d955cc500d53"
+    },
+    {
+      "archivo": "M4157.shx",
+      "bytes": 260,
+      "sha256": "a6c746cb9a6d539c53943ec703fd588a5f25cdb7261bade572fdfc22ba77dfa3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/virginiaa3v.zip!M4157.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_cdf2f7d8b4",
+    "archivo": "santafe/ipec/2010/virginiaa3v.zip!M4157.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 5,
+    "bbox": [
+      5371270.0,
+      6598776.5,
+      5371905.0,
+      6599711.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/virginiaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "400e3834e77359697ee507a011a8a44d3998dfb0eabe9347927cd94f0e6c4a1f"
+}

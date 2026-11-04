@@ -1,0 +1,151 @@
+{
+  "id": "caba_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Ciudad de Buenos Aires",
+  "distrito": "01",
+  "fecha": "18/05/2025",
+  "cargo": "Legislatura porteña",
+  "nivel": "circuitos",
+  "origen": "Legislatura porteña 18/05/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "167 circuitos, escrutinio provisorio de mayo. Se excluyen las mesas extranjeras. Sin abstención.",
+  "base": "votos emitidos",
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "departamentos_cargo": [],
+  "fuente": "https://data.buenosaires.gob.ar/dataset/elecciones-2025/resource/807c17bb-4684-4eb9-980a-ba6c8fbca739/download",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 167,
+  "categorias_origen": 11,
+  "rango": 11,
+  "condicion": 210.30397715932656,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.00778328681681977,
+    "0.0001": 0.0019962610795748823,
+    "1e-05": 0.0010156237154908617,
+    "1e-06": 0.0006573140954989754,
+    "1e-07": 0.0005469847130131647
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 0.8247422275673854,
+  "desviacion_max_margen_destino_pp": 0.3162113646137866,
+  "electores_o_votos_origen": 1567793.0,
+  "electores_o_votos_destino": 1732259.0,
+  "filas": [
+    {
+      "origen": "Buenos Aires Primero",
+      "peso": 16.17,
+      "dif_variante_pp": 12.26,
+      "sensibilidad_pp": 23.11,
+      "ancho_intervalo_pp": 8.0,
+      "separacion_pp": 50.54,
+      "no_identificada": false
+    },
+    {
+      "origen": "Coalición Cívica - Afirmación para una República Igualitaria",
+      "peso": 2.58,
+      "dif_variante_pp": 23.54,
+      "sensibilidad_pp": 65.1,
+      "ancho_intervalo_pp": 42.75,
+      "separacion_pp": 42.16,
+      "no_identificada": true
+    },
+    {
+      "origen": "Es Ahora Buenos Aires",
+      "peso": 27.35,
+      "dif_variante_pp": 2.92,
+      "sensibilidad_pp": 15.68,
+      "ancho_intervalo_pp": 5.26,
+      "separacion_pp": 53.78,
+      "no_identificada": false
+    },
+    {
+      "origen": "Evolución",
+      "peso": 2.33,
+      "dif_variante_pp": 33.85,
+      "sensibilidad_pp": 49.69,
+      "ancho_intervalo_pp": 26.92,
+      "separacion_pp": 70.74,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente de Izquierda y de Trabajadores - Unidad",
+      "peso": 3.15,
+      "dif_variante_pp": 30.19,
+      "sensibilidad_pp": 84.15,
+      "ancho_intervalo_pp": 0.95,
+      "separacion_pp": 90.05,
+      "no_identificada": true
+    },
+    {
+      "origen": "La Libertad Avanza",
+      "peso": 29.65,
+      "dif_variante_pp": 5.01,
+      "sensibilidad_pp": 24.21,
+      "ancho_intervalo_pp": 0.14,
+      "separacion_pp": 55.15,
+      "no_identificada": false
+    },
+    {
+      "origen": "Principios y Valores",
+      "peso": 2.04,
+      "dif_variante_pp": 41.9,
+      "sensibilidad_pp": 82.37,
+      "ancho_intervalo_pp": 1.07,
+      "separacion_pp": 72.63,
+      "no_identificada": true
+    },
+    {
+      "origen": "Unión del Centro Democrático",
+      "peso": 2.62,
+      "dif_variante_pp": 24.42,
+      "sensibilidad_pp": 33.01,
+      "ancho_intervalo_pp": 28.59,
+      "separacion_pp": 56.51,
+      "no_identificada": true
+    },
+    {
+      "origen": "Volvamos Buenos Aires",
+      "peso": 8.11,
+      "dif_variante_pp": 14.51,
+      "sensibilidad_pp": 28.62,
+      "ancho_intervalo_pp": 23.46,
+      "separacion_pp": 74.62,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 3.98,
+      "dif_variante_pp": 22.35,
+      "sensibilidad_pp": 81.71,
+      "ancho_intervalo_pp": 1.16,
+      "separacion_pp": 73.48,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.03,
+      "dif_variante_pp": 27.84,
+      "sensibilidad_pp": 39.72,
+      "ancho_intervalo_pp": 48.42,
+      "separacion_pp": 73.14,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 1.0
+}

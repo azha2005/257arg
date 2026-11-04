@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m1062_46203f73a3",
+  "shp": "m1062.shp",
+  "entidades": 78,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m1062.dbf",
+      "bytes": 15752,
+      "sha256": "1f7c1f369de5c6ae006d25ea8dbe34b1d9984e4cdd4c86f7defc86e77329f002"
+    },
+    {
+      "archivo": "m1062.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m1062.shp",
+      "bytes": 11924,
+      "sha256": "1611cac27b71468b8b90052cbba6dbfccd62b391824d93ab27c42170170f913a"
+    },
+    {
+      "archivo": "m1062.shx",
+      "bytes": 724,
+      "sha256": "4490742ae5ffcc01b678705a64d2460cea67d09e28199d703d3dd331cf206bad"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/AMENABAR.zip!m1062.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_a2a174e279",
+    "archivo": "santafe/ipec/2022/AMENABAR.zip!m1062.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 78,
+    "registros_shx": 78,
+    "shape_type": 5,
+    "bbox": [
+      5275569.0,
+      6220234.5,
+      5277197.0,
+      6221869.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/AMENABAR.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "48d31ad935e5ad3f534d03b6417b481e79edfe0c3506ec209233162786d50b0a"
+}

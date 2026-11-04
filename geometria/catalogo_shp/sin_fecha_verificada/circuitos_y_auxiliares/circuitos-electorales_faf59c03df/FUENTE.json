@@ -1,0 +1,68 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "No se encontró evidencia suficiente para asignar año",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/circuitos-electorales_faf59c03df",
+  "shp": "circuitos-electorales.shp",
+  "entidades": 167,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "circuitos-electorales.dbf",
+      "bytes": 21197,
+      "sha256": "8389e733608cf1d5f57465771c6e2c6a5d6f4bd6aad67c9217fc9c57a8f9ab1d"
+    },
+    {
+      "archivo": "circuitos-electorales.prj",
+      "bytes": 431,
+      "sha256": "3ba7a1f9947576f7a2b33d98e2591bcab95f23ee82fa89ef022d5ff48a404c86"
+    },
+    {
+      "archivo": "circuitos-electorales.shp",
+      "bytes": 225840,
+      "sha256": "0517a26a2f2220f3eb45e5af523509cb7438c2fdc365ab0eed5a66abba9a324d"
+    },
+    {
+      "archivo": "circuitos-electorales.shp.xml",
+      "bytes": 131846,
+      "sha256": "61ad78ad33b26a11418321d33a322af0f054c2aab9902a5b116fe391725bcfb6"
+    },
+    {
+      "archivo": "circuitos-electorales.shx",
+      "bytes": 1436,
+      "sha256": "7407b1ee35bc9b9bcf9e8127a0ae62b96b17ed16268625e10f20ce2fa5428267"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/caba_general/01_circuitos-electorales.zip!circuitos-electorales.shp",
+  "metadata_original": {
+    "archivo": "caba_general/01_circuitos-electorales.zip!circuitos-electorales.shp",
+    "formato": "SHP",
+    "features": 167,
+    "shapes": 167,
+    "bbox": [
+      93743.42010498047,
+      91566.41467285156,
+      111752.02667236328,
+      111285.06652832031
+    ],
+    "campos": [
+      "ID",
+      "CIRCUITO_N",
+      "COMUNA",
+      "BARRIO",
+      "TOTAL",
+      "MASCULINO",
+      "FEMENINO",
+      "PERIMETRO",
+      "AREA"
+    ],
+    "sha256": "0517a26a2f2220f3eb45e5af523509cb7438c2fdc365ab0eed5a66abba9a324d",
+    "crs_wkt": "PROJCS[\"Argentina_GKBsAs\",GEOGCS[\"GCS_Campo_Inchauspe\",DATUM[\"D_Campo_Inchauspe\",SPHEROID[\"International_1924\",6378388.0,297.0]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",100000.0],PARAMETER[\"False_Northing\",100000.0],PARAMETER[\"Central_Meridian\",-58.4627],PARAMETER[\"Scale_Factor\",0.999998],PARAMETER[\"Latitude_Of_Origin\",-34.6297166],UNIT[\"Meter\",1.0]]",
+    "url": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/subsecretaria-justicia/circuitos-electorales/circuitos-electorales.zip",
+    "fuente": "https://data.buenosaires.gob.ar/dataset/circuitos-electorales",
+    "corte_declarado": "",
+    "nota": "Circuitos electorales (SHP) | Archivo shapefile de los Circuitos electorales de la Ciudad de Buenos Aires."
+  },
+  "firma_componentes": "134a1d803c3ddb870137ac8534901eea9869d0774a3cbecdae28f40f7387b029"
+}

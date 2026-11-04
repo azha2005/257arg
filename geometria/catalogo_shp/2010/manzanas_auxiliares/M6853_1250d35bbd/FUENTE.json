@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6853_1250d35bbd",
+  "shp": "M6853.shp",
+  "entidades": 20,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6853.dbf",
+      "bytes": 4326,
+      "sha256": "c7849fbbd3f16f8bd2540e6e91d3c50e42f1bfbc7d9855f864e6ba3706c69b98"
+    },
+    {
+      "archivo": "M6853.shp",
+      "bytes": 2916,
+      "sha256": "f33eea0f55e147e1e222bf1333b529a8353415ab301d8f3e14da64921a215436"
+    },
+    {
+      "archivo": "M6853.shx",
+      "bytes": 260,
+      "sha256": "abb450ec46f4f05923037c1a90952000494d1d7f4e5aa6f09399d01fd0ab23a7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasaritaa3h.zip!M6853.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_971e0f789a",
+    "archivo": "santafe/ipec/2010/lasaritaa3h.zip!M6853.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 20,
+    "registros_shx": 20,
+    "shape_type": 5,
+    "bbox": [
+      5514471.0,
+      6795038.5,
+      5515023.0,
+      6796074.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasaritaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "913f349e6c3564cf9e386a0cf2d699352e6fa51c02e46e1954b5eca4d6b355a8"
+}

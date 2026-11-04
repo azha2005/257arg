@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1384_dc4523b522",
+  "shp": "E1384.shp",
+  "entidades": 87,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1384.dbf",
+      "bytes": 30886,
+      "sha256": "05c308415de0025f16e1290c36582813b9ebfb4ed2804aff520c3a073b84190d"
+    },
+    {
+      "archivo": "E1384.shp",
+      "bytes": 7756,
+      "sha256": "f4353b527e0092346936f194442fbfd9552a668287800f29346c26f1699293b8"
+    },
+    {
+      "archivo": "E1384.shx",
+      "bytes": 796,
+      "sha256": "d3f91c401e8f6f0b4c3019954d0e2701a270180db047da9e0b23dab03844c12f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/estacionclucellasa3h.zip!E1384.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_42fc5404cd",
+    "archivo": "santafe/ipec/2010/estacionclucellasa3h.zip!E1384.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 87,
+    "registros_shx": 87,
+    "shape_type": 3,
+    "bbox": [
+      5336089.5,
+      6511384.0,
+      5337146.0,
+      6512130.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/estacionclucellasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fb80b6557e0a27a7afb42914dc4edd106ffde78527016f83772b916ef3966c3c"
+}

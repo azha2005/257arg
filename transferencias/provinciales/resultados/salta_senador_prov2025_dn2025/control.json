@@ -1,0 +1,182 @@
+{
+  "id": "salta_senador_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Salta",
+  "distrito": "17",
+  "fecha": "11/05/2025",
+  "cargo": "Senadores provinciales",
+  "nivel": "subcircuitos",
+  "origen": "Senadores provinciales 11/05/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "Subcircuitos del cargo correspondiente. Se excluyen resoluciones sin subcircuito y códigos sin correspondencia nacional; cobertura cuantificada. Sólo válidos (positivos y blancos): la planilla no incluye nulos. Cada cargo cubre departamentos distintos.",
+  "base": "votos válidos (positivos + blancos)",
+  "cobertura_origen": 0.9974170731213697,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "Resoluciones sin subcircuito: 246 votos",
+    "Sin votos informados en una de las elecciones: 66A",
+    "Sin votos informados en una de las elecciones: 83B",
+    "Sin votos informados en una de las elecciones: 83C",
+    "Sin votos informados en una de las elecciones: 97C",
+    "Sin votos informados en una de las elecciones: 98A",
+    "Sin votos informados en una de las elecciones: 99B",
+    "Sin votos informados en una de las elecciones: 9B"
+  ],
+  "departamentos_cargo": [
+    "CACHI",
+    "CAFAYATE",
+    "CAPITAL",
+    "CHICOANA",
+    "GENERAL GÜEMES",
+    "GUACHIPAS",
+    "LA CALDERA",
+    "LA POMA",
+    "LOS ANDES",
+    "MOLINOS",
+    "ROSARIO DE LERMA",
+    "SAN CARLOS"
+  ],
+  "fuente": "https://www.electoralsalta.gov.ar/elecciones/escrutinio/escrutinio-definitivo-generales-2025.xlsx",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 138,
+  "categorias_origen": 12,
+  "rango": 12,
+  "condicion": 26.123074161989692,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.01624800395143098,
+    "0.0001": 0.005187328688048448,
+    "1e-05": 0.004043342910601322,
+    "1e-06": 0.003652382790943325,
+    "1e-07": 0.0036686049337893074
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.5776466362850758,
+  "desviacion_max_margen_destino_pp": 0.615553947747989,
+  "electores_o_votos_origen": 394267.0,
+  "electores_o_votos_destino": 422686.0,
+  "filas": [
+    {
+      "origen": "ALIANZA POR LA UNIDAD DE LOS SALTEÑOS",
+      "peso": 20.9,
+      "dif_variante_pp": 1.74,
+      "sensibilidad_pp": 19.85,
+      "ancho_intervalo_pp": 15.44,
+      "separacion_pp": 46.22,
+      "no_identificada": false
+    },
+    {
+      "origen": "FRENTE CAMBIEMOS SALTA",
+      "peso": 3.0,
+      "dif_variante_pp": 9.01,
+      "sensibilidad_pp": 80.98,
+      "ancho_intervalo_pp": 3.22,
+      "separacion_pp": 60.31,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE DE IZQUIERDA Y DE LOS TRABAJADORES",
+      "peso": 3.17,
+      "dif_variante_pp": 42.44,
+      "sensibilidad_pp": 45.88,
+      "ancho_intervalo_pp": 42.53,
+      "separacion_pp": 50.23,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE JUNTOS",
+      "peso": 4.64,
+      "dif_variante_pp": 13.64,
+      "sensibilidad_pp": 24.24,
+      "ancho_intervalo_pp": 40.14,
+      "separacion_pp": 17.1,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE JUSTICIALISTA SALTEÑO",
+      "peso": 7.23,
+      "dif_variante_pp": 18.96,
+      "sensibilidad_pp": 36.19,
+      "ancho_intervalo_pp": 42.98,
+      "separacion_pp": 20.69,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE LIBERAL SALTEÑO POR SALTA LIBRE",
+      "peso": 3.55,
+      "dif_variante_pp": 24.69,
+      "sensibilidad_pp": 32.04,
+      "ancho_intervalo_pp": 45.57,
+      "separacion_pp": 7.1,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE SALTA VA CON FELICIDAD",
+      "peso": 2.25,
+      "dif_variante_pp": 28.44,
+      "sensibilidad_pp": 29.16,
+      "ancho_intervalo_pp": 49.76,
+      "separacion_pp": 29.8,
+      "no_identificada": true
+    },
+    {
+      "origen": "FRENTE UNIDOS POR SALTA",
+      "peso": 5.33,
+      "dif_variante_pp": 5.25,
+      "sensibilidad_pp": 12.73,
+      "ancho_intervalo_pp": 19.61,
+      "separacion_pp": 13.86,
+      "no_identificada": false
+    },
+    {
+      "origen": "FRENTE VAMOS SALTA!",
+      "peso": 7.39,
+      "dif_variante_pp": 3.72,
+      "sensibilidad_pp": 28.44,
+      "ancho_intervalo_pp": 19.61,
+      "separacion_pp": 34.14,
+      "no_identificada": false
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 28.0,
+      "dif_variante_pp": 13.09,
+      "sensibilidad_pp": 17.12,
+      "ancho_intervalo_pp": 8.8,
+      "separacion_pp": 53.64,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 8.1,
+      "dif_variante_pp": 13.69,
+      "sensibilidad_pp": 27.73,
+      "ancho_intervalo_pp": 42.16,
+      "separacion_pp": 31.25,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco",
+      "peso": 6.43,
+      "dif_variante_pp": 39.57,
+      "sensibilidad_pp": 41.1,
+      "ancho_intervalo_pp": 42.8,
+      "separacion_pp": 60.4,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 0.9974170731213697
+}

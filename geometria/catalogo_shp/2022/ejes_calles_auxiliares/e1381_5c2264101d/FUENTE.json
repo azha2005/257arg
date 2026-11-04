@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1381_5c2264101d",
+  "shp": "e1381.shp",
+  "entidades": 264,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1381.dbf",
+      "bytes": 79282,
+      "sha256": "56d2d4e4047cbe63859ba3495a9df03237935c2cbe5740855ad1ca64dd20ce72"
+    },
+    {
+      "archivo": "e1381.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1381.shp",
+      "bytes": 23572,
+      "sha256": "737b19a83209e12b0363529213d9271fbf15158f33dfd47fbecbeefe0403921c"
+    },
+    {
+      "archivo": "e1381.shx",
+      "bytes": 2212,
+      "sha256": "d2b1927d942398f7f871f1b5d86ffe7d5087bd55af04b4c18ec2e66764ad9927"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LUISPALACIOS.zip!e1381.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_3e420a2263",
+    "archivo": "santafe/ipec/2022/LUISPALACIOS.zip!e1381.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 264,
+    "registros_shx": 264,
+    "shape_type": 3,
+    "bbox": [
+      5414130.5,
+      6372059.5,
+      5415959.5,
+      6374205.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LUISPALACIOS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "bc3a247a3acf81ca909051ecd7db36123385ec3aafc3adc03ff9ee5dc47a6580"
+}

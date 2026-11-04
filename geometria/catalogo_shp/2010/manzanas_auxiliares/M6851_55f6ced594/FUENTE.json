@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6851_55f6ced594",
+  "shp": "M6851.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6851.dbf",
+      "bytes": 2947,
+      "sha256": "7b76845a712299c9e5d3b38326d0bed2cca7fc87d652807e39dc9fe4985493de"
+    },
+    {
+      "archivo": "M6851.shp",
+      "bytes": 1996,
+      "sha256": "999b66e3a5285939ef667b0ac9a2531d397cbe5c93106d6489c88313764b48ad"
+    },
+    {
+      "archivo": "M6851.shx",
+      "bytes": 204,
+      "sha256": "26e052832de333b3b2f0959f0bee2ffd5a7d6e84e0127d162601c975f938f2d3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniabossia3h.zip!M6851.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_83fd8d6e6d",
+    "archivo": "santafe/ipec/2010/coloniabossia3h.zip!M6851.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5328333.0,
+      6606241.0,
+      5328817.5,
+      6606645.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniabossia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f136f9ab9fe8ddbd932b6d96fe53abbfbb2662c64920d15262f81f5f0e8ee02c"
+}

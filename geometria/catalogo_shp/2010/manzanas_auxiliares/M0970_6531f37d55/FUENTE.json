@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0970_6531f37d55",
+  "shp": "M0970.shp",
+  "entidades": 169,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0970.dbf",
+      "bytes": 33679,
+      "sha256": "80b61001683d5cdc38d4271f131cbcd7b1e32a385006e2509d5f50eda58044c6"
+    },
+    {
+      "archivo": "M0970.shp",
+      "bytes": 36668,
+      "sha256": "cbdd972d856ef177830d2dbb3d88f313ceb5fd7de28a622e01eed75c694482dc"
+    },
+    {
+      "archivo": "M0970.shx",
+      "bytes": 1452,
+      "sha256": "e36619a51cf2dd5b8787a0dc12fa622c7aeb358efa92df7b760b41ce3b0ae872"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puebloandinoa2h.zip!M0970.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_13d133f465",
+    "archivo": "santafe/ipec/2010/puebloandinoa2h.zip!M0970.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 169,
+    "registros_shx": 169,
+    "shape_type": 5,
+    "bbox": [
+      5416953.5,
+      6384347.0,
+      5420036.5,
+      6386982.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puebloandinoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d66316c70626e157cadc31b684f1d4614eb79f9579bcd1d177a6f593f60ebc28"
+}

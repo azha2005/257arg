@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1160_f15102da09",
+  "shp": "E1160.shp",
+  "entidades": 166,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1160.dbf",
+      "bytes": 58378,
+      "sha256": "dc805e33cba0f5b1bf5f33ba41fae4a0a8c13cac696109eaae9082ce46870932"
+    },
+    {
+      "archivo": "E1160.shp",
+      "bytes": 15060,
+      "sha256": "2226323f1e2e046b0e903261f799219514c1b41a14cf656821558a25337aa309"
+    },
+    {
+      "archivo": "E1160.shx",
+      "bytes": 1428,
+      "sha256": "3b094e500c527e6c037c07945da83bdd9a09b0387425ab0ad1b7e77d75e6a313"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tacurala3h.zip!E1160.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0f5dc6757d",
+    "archivo": "santafe/ipec/2010/tacurala3h.zip!E1160.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 166,
+    "registros_shx": 166,
+    "shape_type": 3,
+    "bbox": [
+      5346728.5,
+      6586409.0,
+      5348158.5,
+      6587766.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tacurala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8e9b6c077eb0c2606e4cc022be051cbe9202e7932805b8994aaa3c4fa6c4a949"
+}

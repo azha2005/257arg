@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6861_06e1e6c58d",
+  "shp": "M6861.shp",
+  "entidades": 15,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6861.dbf",
+      "bytes": 3341,
+      "sha256": "9081b0d3127228cbc726a75bd87c29630cb46ceb2aaab2fb4b3adc5af98bce4c"
+    },
+    {
+      "archivo": "M6861.shp",
+      "bytes": 2412,
+      "sha256": "de3e86c2321df6d32daf1db702f6780b044161ab10d3dc3ae244a966caa1c043"
+    },
+    {
+      "archivo": "M6861.shx",
+      "bytes": 220,
+      "sha256": "42be798f61c294187e8590eaf140badb2e99885d4d0fbcf0598ceebab05f3c10"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/osmuchachoslaalboradaa3h.zip!M6861.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_63788d0b8d",
+    "archivo": "santafe/ipec/2010/osmuchachoslaalboradaa3h.zip!M6861.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 15,
+    "registros_shx": 15,
+    "shape_type": 5,
+    "bbox": [
+      5431241.0,
+      6338920.5,
+      5432385.0,
+      6339790.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/osmuchachoslaalboradaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5dc05ede1582f0297316a69cf71536cf8fd491dc7114488182dbda45a1c4e9d3"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4104_e8f20694e7",
+  "shp": "e4104.shp",
+  "entidades": 75,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4104.dbf",
+      "bytes": 22960,
+      "sha256": "925fffa28625d29227f88a84ded9b80a78f19492651c362e52f7fdd3d3dfbe6a"
+    },
+    {
+      "archivo": "e4104.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4104.shp",
+      "bytes": 6716,
+      "sha256": "092ee5d96e8378158e4663d2f092bfe8580a258ceeb5e02755ac9d382c8c0f3d"
+    },
+    {
+      "archivo": "e4104.shx",
+      "bytes": 700,
+      "sha256": "63bd2a1950db6d52697c50729e156c3f9c98c8a0ccde4828f12f0194a56f4803"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/RUEDA.zip!e4104.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_fb7b00cde2",
+    "archivo": "santafe/ipec/2022/RUEDA.zip!e4104.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 75,
+    "registros_shx": 75,
+    "shape_type": 3,
+    "bbox": [
+      5456657.5,
+      6311629.5,
+      5457644.5,
+      6312624.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/RUEDA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "af1382beca306b5835a1a3f37557ca1ebbe14a6a31bd60ff506785c7110517de"
+}

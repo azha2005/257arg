@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0640_25806caa9c",
+  "shp": "m0640.shp",
+  "entidades": 118,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0640.dbf",
+      "bytes": 23632,
+      "sha256": "49b0d3e7c664496d968573ed45c47783eca5048eeb37c57dacf72859afe41757"
+    },
+    {
+      "archivo": "m0640.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0640.shp",
+      "bytes": 18996,
+      "sha256": "eabe95ec325f804832fa6ce1c19c574af2db7c11bfb025d0cdcee6f902e79003"
+    },
+    {
+      "archivo": "m0640.shx",
+      "bytes": 1044,
+      "sha256": "a37d8440c9e2bf1fd4856a36514974f199a64adb7e3c37c835e0aa75c86d849c"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SERODINO.zip!m0640.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_a706afbafe",
+    "archivo": "santafe/ipec/2022/SERODINO.zip!m0640.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 118,
+    "registros_shx": 118,
+    "shape_type": 5,
+    "bbox": [
+      5410092.0,
+      6391387.5,
+      5412005.0,
+      6393290.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SERODINO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "4157f60c93323b399a950f9b8c882ec8870d2f68cd9d4f969efce38b12ad3ecf"
+}

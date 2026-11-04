@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Chubut_con_datos_b4c7009ab1",
+  "shp": "Chubut_con_datos.shp",
+  "entidades": 753,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Chubut_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Chubut_con_datos.shp",
+      "bytes": 1535776,
+      "sha256": "8907eef2eb13941c330f8e92cbad312c2ea8f51ec93362e2bb0dd8b464fa3505"
+    },
+    {
+      "archivo": "Chubut_con_datos.shx",
+      "bytes": 6124,
+      "sha256": "fcebf94e52763e4713d38af39cdddd2e2bca0a9c98b0274594ae44fb82a5777c"
+    },
+    {
+      "archivo": "Chubut_con_datos.dbf",
+      "bytes": 308266,
+      "sha256": "aae3f691cb0c78291701556879803228c072b30f8c1d301aea14722bd30e194f"
+    },
+    {
+      "archivo": "Chubut_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Chubut_con_datos.zip!Chubut_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_26",
+    "archivo": "indec/2010/Codgeo_Chubut_con_datos.zip!Chubut_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Chubut",
+    "features": 753,
+    "registros_shx": 753,
+    "shape_type": 5,
+    "bbox": [
+      2994593.3238787297,
+      4890267.387103229,
+      3698588.228227117,
+      5350171.426497215
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Chubut_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 753,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "4332ad047dffe9176667d1401ea022a70aaff195600d3cf1782adf8be3a936c0"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0854_d8fc60b6d9",
+  "shp": "e0854.shp",
+  "entidades": 209,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0854.dbf",
+      "bytes": 62892,
+      "sha256": "5d21f1961e10915d4e4888b713ceb10e19926469d258ea9af827111c3bf2426c"
+    },
+    {
+      "archivo": "e0854.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0854.shp",
+      "bytes": 18524,
+      "sha256": "a9eb3ce2794883a3ae6d1cc738c3c88275743c86ca6b9c9143b340f05a08e257"
+    },
+    {
+      "archivo": "e0854.shx",
+      "bytes": 1772,
+      "sha256": "ad12f2b9ab91e251fbf23daee36366714637bd1df03cba3c7cc039a89dbf7615"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MAGGIOLO.zip!e0854.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_3c3f6067eb",
+    "archivo": "santafe/ipec/2022/MAGGIOLO.zip!e0854.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 209,
+    "registros_shx": 209,
+    "shape_type": 3,
+    "bbox": [
+      5291001.5,
+      6265849.0,
+      5292552.5,
+      6267493.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MAGGIOLO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "9472b48cf883c8a4b5309e8e2f185ebd9cf4768b13e6afe589347c5ec920d2e6"
+}

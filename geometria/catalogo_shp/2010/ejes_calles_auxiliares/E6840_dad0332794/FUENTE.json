@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6840_dad0332794",
+  "shp": "E6840.shp",
+  "entidades": 27,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6840.dbf",
+      "bytes": 10006,
+      "sha256": "c1b55d81abd1c100d61b56989c5420015ea0e553cbc07eafc6654cffeedb3a3d"
+    },
+    {
+      "archivo": "E6840.shp",
+      "bytes": 4236,
+      "sha256": "3a6bc067f61a64bccd0b423f1b4b02f7760beaecdba1b1f03b08905843348ead"
+    },
+    {
+      "archivo": "E6840.shx",
+      "bytes": 316,
+      "sha256": "d095b5b848f5cd2bfe0609b093e5c944ff576eddff62e2885a0694f502009656"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/laisletaa3v.zip!E6840.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_558ab19744",
+    "archivo": "santafe/ipec/2010/laisletaa3v.zip!E6840.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 27,
+    "registros_shx": 27,
+    "shape_type": 3,
+    "bbox": [
+      5568938.0,
+      6848690.0,
+      5569332.0,
+      6849448.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/laisletaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3612c8c08683104808ca672a09ec8bf990c7c2f246be6da436da362453508566"
+}

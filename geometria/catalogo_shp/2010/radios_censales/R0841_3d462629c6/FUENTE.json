@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0841_3d462629c6",
+  "shp": "R0841.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0841.dbf",
+      "bytes": 890,
+      "sha256": "368bc49f4e09dcce474cf95847deda9101f24431fe812354609af6bd5a86a6b5"
+    },
+    {
+      "archivo": "R0841.shp",
+      "bytes": 1588,
+      "sha256": "a828fed039dabb2ed9f6432d966fc4bc7670ca4a76d6152b097836e097c045a3"
+    },
+    {
+      "archivo": "R0841.shx",
+      "bytes": 116,
+      "sha256": "6f0786abfe939d90026687284e443c843150c2ca84636cf1d2c57c170b4eb175"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanmartindelasescobasa2h.zip!R0841.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_924db75ed0",
+    "archivo": "santafe/ipec/2010/sanmartindelasescobasa2h.zip!R0841.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5350599.0,
+      6473639.5,
+      5352542.5,
+      6475976.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanmartindelasescobasa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e476336fbf7cc806cebff5dfa224b1f4942265a31ca631c7d0e7f0a11bfb1073"
+}

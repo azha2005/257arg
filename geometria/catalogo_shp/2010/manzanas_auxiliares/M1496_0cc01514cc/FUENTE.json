@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1496_0cc01514cc",
+  "shp": "M1496.shp",
+  "entidades": 67,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1496.dbf",
+      "bytes": 13585,
+      "sha256": "6a03615c5db381d55b6a3ab1732a5adf15bff189eb22b1b9b991acec05f18d88"
+    },
+    {
+      "archivo": "M1496.shp",
+      "bytes": 12188,
+      "sha256": "f4232857bf2d7fae8515d45180b055fd90d2d838dd4ea07f12fbdc6bb313fb0f"
+    },
+    {
+      "archivo": "M1496.shx",
+      "bytes": 636,
+      "sha256": "7581532927d16fff413f08f9f1c99a172615cb9b6a1d61a506240b466193a809"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coroneldomingueza3h.zip!M1496.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_17de5ac9b0",
+    "archivo": "santafe/ipec/2010/coroneldomingueza3h.zip!M1496.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 67,
+    "registros_shx": 67,
+    "shape_type": 5,
+    "bbox": [
+      5430833.0,
+      6328195.0,
+      5433263.0,
+      6329065.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coroneldomingueza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "53a02101b4d42f112e720144b0b34fbe3dd07e280d879e81a3f13e0d6ab23056"
+}

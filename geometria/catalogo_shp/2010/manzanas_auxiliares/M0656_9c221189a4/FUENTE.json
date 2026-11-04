@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0656_9c221189a4",
+  "shp": "M0656.shp",
+  "entidades": 149,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0656.dbf",
+      "bytes": 29739,
+      "sha256": "fa8af6783d0053adc32f965c008372785d4574516cf97a558fc73a2463753b24"
+    },
+    {
+      "archivo": "M0656.shp",
+      "bytes": 23100,
+      "sha256": "180f7d24ee7521f74b1f5eacba9bc443cfea094c2aa9b702fd2a44698ebb91d5"
+    },
+    {
+      "archivo": "M0656.shx",
+      "bytes": 1292,
+      "sha256": "990ada16eed121dc78b39648c9dec2708e01b68c83377581b21d1e7de3ffdc6f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arteaga_A3h.zip!M0656.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c1c718642f",
+    "archivo": "santafe/ipec/2010/arteaga_A3h.zip!M0656.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 149,
+    "registros_shx": 149,
+    "shape_type": 5,
+    "bbox": [
+      5332154.0,
+      6337196.0,
+      5333532.5,
+      6338787.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arteaga_A3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d5db110c024ea9655624d115cd5e30affd19aa1aba286f11e350044a08c8ffed"
+}

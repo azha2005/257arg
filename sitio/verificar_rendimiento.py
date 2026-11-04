@@ -79,8 +79,17 @@ def verificar_navegador(destino, solo_movil=False):
               const target=nodes.find(e=>{let r=e.getBoundingClientRect();return r.width>2&&r.height>2});
               const i=+target.dataset.i;
               const body=document.body, mobile=body.classList.contains('movil');
+              if(document.querySelectorAll('#c-list option').length)throw Error('Buscador cargado antes de usarlo');
+              const last=DATA.territories.at(-1),label=last.n+' — '+last.p,find=document.querySelector('#c-find');
+              find.value=label;find.dispatchEvent(new Event('input'));await new Promise(r=>setTimeout(r,200));
+              if(![...document.querySelectorAll('#c-list option')].some(o=>o.value===label))throw Error('No encuentra una unidad al final de la base');
+              if(document.querySelectorAll('#c-list option').length>60)throw Error('Demasiadas sugerencias');find.value='';
+              if(mobile&&sv.querySelector('#insets use[href="#B"]'))throw Error('Recuadros cargados en Mapa');
               if(mobile)for(const vista of ['res','rec','todo','mapa']){
                 document.querySelector('#m-vis [data-v="'+vista+'"]').click();await frame();
+                const loaded=sv.querySelectorAll('#insets use[href="#B"]').length;
+                if(['rec','todo'].includes(vista)&&!loaded)throw Error('Recuadros sin geometría');
+                if(['res','mapa'].includes(vista)&&loaded)throw Error('Recuadros innecesarios');
                 if(!sv.getAttribute('viewBox').split(/[ ,]+/).every(x=>Number.isFinite(+x)))throw Error('viewBox inválido');
               }
               for(const mode of DATA.modes){
@@ -129,6 +138,16 @@ def verificar_navegador(destino, solo_movil=False):
               if(rebuilds>(mobile?0:2))throw Error('Fichas redundantes: '+rebuilds);
               api.resetZoom();await frame();
               if(mobile){
+                api.clearSel();await frame();
+                const q=new DOMPoint(900,800).matrixTransform(sv.getScreenCTM());
+                const te=(type,dx)=>new PointerEvent(type,{bubbles:true,pointerId:9,pointerType:'touch',button:0,clientX:q.x+dx,clientY:q.y});
+                target.dispatchEvent(te('pointerdown',0));window.dispatchEvent(te('pointermove',16));window.dispatchEvent(te('pointerup',16));await frame();
+                if(!document.querySelector('#card').hidden)throw Error('Desplazar selecciona una unidad');
+                target.dispatchEvent(te('pointerdown',0));window.dispatchEvent(te('pointerup',0));await frame();
+                const card=document.querySelector('#card');
+                if(card.hidden)throw Error('Un toque no selecciona');
+                if(card.getBoundingClientRect().height>innerHeight*.32+1)throw Error('Ficha ocupa demasiado espacio');
+                api.clearSel();await frame();
                 const touch=(id,x)=>new Touch({identifier:id,target:sv,clientX:x,clientY:300});
                 const pinch=(type,d)=>sv.dispatchEvent(new TouchEvent(type,{bubbles:true,cancelable:true,touches:[touch(1,150-d/2),touch(2,150+d/2)]}));
                 pinch('touchstart',100);pinch('touchmove',120);pinch('touchmove',150);
@@ -139,6 +158,8 @@ def verificar_navegador(destino, solo_movil=False):
               return {mobile,modes:DATA.modes.length,paths:sv.querySelectorAll('path').length,transforms,strokes,rebuilds};
             }''')
             assert not errores, (ruta, errores)
+            pg.wait_for_timeout(200)
+            assert pg.locator('#mainwrap.en-movimiento').count() == 0
             # Verificar las tres descargas con un visor representativo.
             if ruta == rutas[0] and not movil:
                 for button, suffix in [('b-svg','.svg'),('b-png','.png'),('b-csv','.csv')]:
@@ -146,6 +167,13 @@ def verificar_navegador(destino, solo_movil=False):
                         pg.locator('#'+button).click()
                     assert descarga.value.suggested_filename.endswith(suffix)
                     assert not descarga.value.failure()
+            if ruta == rutas[0] and movil:
+                pg.locator('#m-row button').click()
+                with pg.expect_download(timeout=30000) as descarga:
+                    pg.locator('#b-svg').click()
+                exported=Path(descarga.value.path()).read_text(encoding='utf8')
+                assert re.search(r'<use\b[^>]*\shref="#B"', exported)
+                assert pg.locator('#insets use[href="#B"]').count() == 0
             if (ruta == rutas[0] and not movil) or (ruta == rutas[-1] and movil):
                 pg.mouse.move(0, 0)
                 pg.screenshot(path=str(Path(destino).resolve().parent / ('qa_movil.png' if movil else 'qa_escritorio.png')))

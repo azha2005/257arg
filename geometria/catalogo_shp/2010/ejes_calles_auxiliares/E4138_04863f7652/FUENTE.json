@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4138_04863f7652",
+  "shp": "E4138.shp",
+  "entidades": 28,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4138.dbf",
+      "bytes": 10354,
+      "sha256": "5480638ad8dce8653186b0fa1416b778bfe128722dc11a7e9e520bbd414fd1a7"
+    },
+    {
+      "archivo": "E4138.shp",
+      "bytes": 2596,
+      "sha256": "b8b518a2acb1f6002ad18b5e16ca92f4758fa6ccec0b97dcd6c4211c4c7af0a2"
+    },
+    {
+      "archivo": "E4138.shx",
+      "bytes": 324,
+      "sha256": "60bfb4bed3652f6a291fabde87017658a240bd24906441cd7f57eb1bcd7c21f8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/estacionsaguiera3h.zip!E4138.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7a0cdc78c5",
+    "archivo": "santafe/ipec/2010/estacionsaguiera3h.zip!E4138.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 28,
+    "registros_shx": 28,
+    "shape_type": 3,
+    "bbox": [
+      5338412.5,
+      6534304.5,
+      5339335.0,
+      6534912.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/estacionsaguiera3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d27181ecf8455c4dc3f8be54fa1d1b9174784981b475a37886a413715997db95"
+}

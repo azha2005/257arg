@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6810_b2029eea09",
+  "shp": "e6810.shp",
+  "entidades": 168,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6810.dbf",
+      "bytes": 50674,
+      "sha256": "218dffaa477f13ede17641969558d0f6bccd75f65e45803629fed552f2d78192"
+    },
+    {
+      "archivo": "e6810.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6810.shp",
+      "bytes": 16372,
+      "sha256": "f4175a720ca981374560cc0122e7cb9f06c37b7e34fe59cdbce8805e58faf088"
+    },
+    {
+      "archivo": "e6810.shx",
+      "bytes": 1444,
+      "sha256": "17262b904a6fda87bc783859626611393643e8efa881f9dc5f184af9a2103618"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAELVIRA.zip!e6810.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1d06a66a8a",
+    "archivo": "santafe/ipec/2022/VILLAELVIRA.zip!e6810.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 168,
+    "registros_shx": 168,
+    "shape_type": 3,
+    "bbox": [
+      5422529.5,
+      6386925.5,
+      5424932.0,
+      6388975.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAELVIRA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7da02d7dee8e2c6805dc5b0da781bdfae1b57961887b18b21b67997c6c303a9b"
+}

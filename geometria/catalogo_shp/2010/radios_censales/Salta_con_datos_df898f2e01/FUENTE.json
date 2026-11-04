@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Salta_con_datos_df898f2e01",
+  "shp": "Salta_con_datos.shp",
+  "entidades": 1358,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Salta_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Salta_con_datos.shp",
+      "bytes": 1690616,
+      "sha256": "ea895bfc9fcd02393253c5cabf059ca33267a9140e660cccc2ccd30914f75388"
+    },
+    {
+      "archivo": "Salta_con_datos.shx",
+      "bytes": 10964,
+      "sha256": "3e8643c8f9a593039f2dc0d5d3cd33eeca2dcdad3b7e034361d0bd132c1dc82f"
+    },
+    {
+      "archivo": "Salta_con_datos.dbf",
+      "bytes": 555711,
+      "sha256": "fbc4f60dc512586d69f82e229f253d94b3c963e2cb307dcf0a0268a3ae0056a7"
+    },
+    {
+      "archivo": "Salta_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Salta_con_datos.zip!Salta_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_66",
+    "archivo": "indec/2010/Codgeo_Salta_con_datos.zip!Salta_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Salta",
+    "features": 1358,
+    "registros_shx": 1358,
+    "shape_type": 5,
+    "bbox": [
+      3239344.25,
+      7078237.5,
+      3876326.5,
+      7566773.5
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Salta_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 1358,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "889ac8b282a088b35a9b4c7452d0465e9f3a20cf4e5058355ff119ad8539a5b3"
+}

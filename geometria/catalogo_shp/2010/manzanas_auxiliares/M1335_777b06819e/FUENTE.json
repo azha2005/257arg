@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1335_777b06819e",
+  "shp": "M1335.shp",
+  "entidades": 47,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1335.dbf",
+      "bytes": 9645,
+      "sha256": "ff5e7bc0c6ade4c91d4c3d7ff4b989698c4b390521b5a8b48ec271e7c89ffdb8"
+    },
+    {
+      "archivo": "M1335.shp",
+      "bytes": 9180,
+      "sha256": "ebb314cc5ed6932323df8a4e8aa68f2a55ff6ec8ce72481bd11ae070d138e410"
+    },
+    {
+      "archivo": "M1335.shx",
+      "bytes": 476,
+      "sha256": "51ea35e15a1c041dc7fd7a38929027115faf1f91413eb73f9d47f3fcac8608fa"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/losamoresa3v.zip!M1335.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ab5983427a",
+    "archivo": "santafe/ipec/2010/losamoresa3v.zip!M1335.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 47,
+    "registros_shx": 47,
+    "shape_type": 5,
+    "bbox": [
+      5501850.5,
+      6891267.5,
+      5502402.0,
+      6892847.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/losamoresa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e9f61bd2765c3ccac61c5e207a4dbf35cfa9574e7dcefda27e256600b31b3af4"
+}

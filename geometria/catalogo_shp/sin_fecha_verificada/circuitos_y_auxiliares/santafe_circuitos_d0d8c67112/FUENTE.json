@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "sin vigencia exacta; archivo confeccionado en 2003",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "sin_fecha_verificada/circuitos_y_auxiliares/santafe_circuitos_d0d8c67112",
+  "shp": "santafe_circuitos.shp",
+  "entidades": 447,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "santafe_circuitos.dbf",
+      "bytes": 100642,
+      "sha256": "71bf0a533b6a8b2d7eabe78a3ce60afc06cd81afeb73514461db5fb4ae5fe6bd"
+    },
+    {
+      "archivo": "santafe_circuitos.shp",
+      "bytes": 533276,
+      "sha256": "7696dd5d2fe8424e05993dba6db40d9c15fce4b3f7d5900eb839bd435706853b"
+    },
+    {
+      "archivo": "santafe_circuitos.shx",
+      "bytes": 3676,
+      "sha256": "42939d31c62b5845c1d4d51ca5304c25d2544ba48a5f0c3bf1fec6f12963f26c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/aporte_usuario/circuitos/santafe_circuitos.shp",
+  "metadata_original": {
+    "archivo": "aporte_usuario/circuitos/santafe_circuitos.shp",
+    "formato": "SHP",
+    "features": 447,
+    "shapes": 447,
+    "bbox": [
+      3786040.5975997886,
+      6187252.81465678,
+      4202091.501860446,
+      6896855.995947442
+    ],
+    "campos": [
+      "INDRA",
+      "PROV",
+      "DEPTO",
+      "CIRC",
+      "PROVINCIA",
+      "DEPARTAMEN",
+      "X",
+      "Y",
+      "TRIBUTARIO",
+      "CODAGLO",
+      "COD_COMU",
+      "CABECERA",
+      "MUNI",
+      "NOMLOC",
+      "PROBLEM"
+    ],
+    "sha256": "7696dd5d2fe8424e05993dba6db40d9c15fce4b3f7d5900eb839bd435706853b",
+    "crs_wkt": null,
+    "url": "",
+    "fuente": "ZIP aportado por usuario; README interno de 2003",
+    "corte_declarado": "sin vigencia exacta; archivo confeccionado en 2003",
+    "nota": "Sin PRJ: no se asigna CRS automáticamente"
+  },
+  "firma_componentes": "4296c9d03d8c598f42719e13f6c140e39d41a1fe5e5194f80e1030f1999f0d03"
+}

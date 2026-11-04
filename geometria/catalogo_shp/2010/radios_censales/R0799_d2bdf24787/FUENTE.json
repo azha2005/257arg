@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0799_d2bdf24787",
+  "shp": "R0799.shp",
+  "entidades": 2,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0799.dbf",
+      "bytes": 890,
+      "sha256": "a4e7eac08edf9fdf0fbf3ab39f80df997afd7cb414f84824b91ee72031de30eb"
+    },
+    {
+      "archivo": "R0799.shp",
+      "bytes": 2420,
+      "sha256": "c2b01ca8b3c1819ec2fbbc5efd844b7343f7fe64270912e5c23994cf8dbe5eba"
+    },
+    {
+      "archivo": "R0799.shx",
+      "bytes": 116,
+      "sha256": "765ba11d07c285cb93ad45bc65ca9dfa7e5d552753a7e186462d68cee6676f1e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/tortugasa3h.zip!R0799.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9805488e48",
+    "archivo": "santafe/ipec/2010/tortugasa3h.zip!R0799.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 2,
+    "registros_shx": 2,
+    "shape_type": 5,
+    "bbox": [
+      5328185.5,
+      6374859.0,
+      5330312.0,
+      6376889.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/tortugasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "47aececfafa40b8737f82adddfa7bc41b3d2009dd0e8432fb5fd568c6bc21ba5"
+}

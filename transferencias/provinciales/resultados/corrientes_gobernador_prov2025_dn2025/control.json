@@ -1,0 +1,106 @@
+{
+  "id": "corrientes_gobernador_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Corrientes",
+  "distrito": "05",
+  "fecha": "31/08/2025",
+  "cargo": "Gobernador",
+  "nivel": "departamentos",
+  "origen": "Gobernador 31/08/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "25 departamentos. Esquina se reconstruye con sus dos municipios: Esquina y Pueblo Libertador. El agregado departamental difiere ligeramente del total general publicado por la misma API; se conservan las cifras territoriales sin ajustar.",
+  "base": "votos emitidos",
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "departamentos_cargo": [],
+  "fuente": "https://elecciones2025-definitivo.corrientes.gob.ar/escrutinio",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 25,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 86.33571292804947,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.03487495480022222,
+    "0.0001": 0.016020034933377083,
+    "1e-05": 0.011442019437862591,
+    "1e-06": 0.010376148939045293,
+    "1e-07": 0.010203040693324178
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 2.5801846567041102,
+  "desviacion_max_margen_destino_pp": 0.2520147830004704,
+  "electores_o_votos_origen": 674211.0,
+  "electores_o_votos_destino": 567131.0,
+  "filas": [
+    {
+      "origen": "LIMPIAR CORRIENTES",
+      "peso": 18.81,
+      "dif_variante_pp": 9.99,
+      "sensibilidad_pp": 33.45,
+      "ancho_intervalo_pp": 26.89,
+      "separacion_pp": 57.83,
+      "no_identificada": false
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 9.16,
+      "dif_variante_pp": 10.44,
+      "sensibilidad_pp": 52.78,
+      "ancho_intervalo_pp": 30.32,
+      "separacion_pp": 63.44,
+      "no_identificada": true
+    },
+    {
+      "origen": "ENCUENTRO POR CORRIENTES - ECO",
+      "peso": 15.8,
+      "dif_variante_pp": 14.92,
+      "sensibilidad_pp": 37.1,
+      "ancho_intervalo_pp": 75.9,
+      "separacion_pp": 22.26,
+      "no_identificada": true
+    },
+    {
+      "origen": "VAMOS CORRIENTES",
+      "peso": 49.03,
+      "dif_variante_pp": 4.99,
+      "sensibilidad_pp": 17.84,
+      "ancho_intervalo_pp": 22.12,
+      "separacion_pp": 27.19,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 1.89,
+      "dif_variante_pp": 53.7,
+      "sensibilidad_pp": 79.16,
+      "ancho_intervalo_pp": 99.35,
+      "separacion_pp": 68.12,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 5.31,
+      "dif_variante_pp": 33.58,
+      "sensibilidad_pp": 77.02,
+      "ancho_intervalo_pp": 54.19,
+      "separacion_pp": 68.02,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 1.0
+}

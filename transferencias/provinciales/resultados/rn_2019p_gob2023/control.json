@@ -1,0 +1,114 @@
+{
+  "nombre": "Río Negro",
+  "distrito": "16",
+  "fecha": "16/04/2023",
+  "foco": [
+    "JSRN",
+    "Nos Une Río Negro"
+  ],
+  "nota": "JSRN es la lista propia (113.953 votos provinciales). Nos Une Río Negro (40.136), también de Weretilneck, queda separada. No se identifica JSRN con toda la coalición.",
+  "id": "rn_2019p_gob2023",
+  "nivel": "departamentos",
+  "unidades": 13,
+  "base": "padrón",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 16/04/2023",
+  "foco_lado": "destino",
+  "pendientes": [],
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "categorias_origen": 7,
+  "rango": 7,
+  "condicion": 204.8916447750793,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.06495685651246644,
+    "0.0001": 0.04134773513489745,
+    "1e-05": 0.010154033709319376,
+    "1e-06": 0.008939055687137189,
+    "1e-07": 0.008344116470665222
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.842716047868396,
+  "desviacion_max_margen_destino_pp": 0.407884877935194,
+  "electores_o_votos_origen": 540402.0,
+  "electores_o_votos_destino": 589251.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 44.39,
+      "dif_variante_pp": 20.47,
+      "sensibilidad_pp": 41.17,
+      "ancho_intervalo_pp": 44.13,
+      "separacion_pp": 29.28,
+      "no_identificada": true
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 22.15,
+      "dif_variante_pp": 19.79,
+      "sensibilidad_pp": 49.25,
+      "ancho_intervalo_pp": 60.2,
+      "separacion_pp": 39.7,
+      "no_identificada": true
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 4.78,
+      "dif_variante_pp": 22.48,
+      "sensibilidad_pp": 39.4,
+      "ancho_intervalo_pp": 76.99,
+      "separacion_pp": 68.56,
+      "no_identificada": true
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 2.02,
+      "dif_variante_pp": 68.67,
+      "sensibilidad_pp": 97.19,
+      "ancho_intervalo_pp": 97.64,
+      "separacion_pp": 91.41,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 4.06,
+      "dif_variante_pp": 53.98,
+      "sensibilidad_pp": 97.92,
+      "ancho_intervalo_pp": 98.64,
+      "separacion_pp": 76.06,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 3.54,
+      "dif_variante_pp": 45.51,
+      "sensibilidad_pp": 89.05,
+      "ancho_intervalo_pp": 99.44,
+      "separacion_pp": 90.59,
+      "no_identificada": true
+    },
+    {
+      "origen": "No votó",
+      "peso": 19.05,
+      "dif_variante_pp": 69.91,
+      "sensibilidad_pp": 75.19,
+      "ancho_intervalo_pp": 81.96,
+      "separacion_pp": 53.33,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "serie": "2023",
+  "fuente": "https://www.jusrionegro.gov.ar/inicio/web/escrutinio-16-04-2023/"
+}

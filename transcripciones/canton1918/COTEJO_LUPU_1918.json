@@ -1,0 +1,369 @@
+{
+  "anio": 1918,
+  "metodo": "Subconjunto de columnas con mayor proximidad a cada familia académica, por distrito. Solo detecta posibles digitaciones; no prueba identidad política ni se usa para reemplazar la imagen.",
+  "comparaciones": [
+    {
+      "provincia": "Buenos Aires",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Unión Cívica Radical"
+      },
+      "filas_comparables": 82,
+      "coincidencias": 82,
+      "diferencias": []
+    },
+    {
+      "provincia": "Buenos Aires",
+      "familia": "soc",
+      "columnas_diagnosticas": {
+        "4": "Socialista"
+      },
+      "filas_comparables": 83,
+      "coincidencias": 83,
+      "diferencias": []
+    },
+    {
+      "provincia": "Buenos Aires",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "5": "Conservador"
+      },
+      "filas_comparables": 83,
+      "coincidencias": 82,
+      "diferencias": [
+        {
+          "unidad": "Balcarce",
+          "pagina_pdf": 45,
+          "canton": 174,
+          "lupu": 144,
+          "diferencia": 30
+        }
+      ]
+    },
+    {
+      "provincia": "Capital Federal",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Unión Cívica Radical"
+      },
+      "filas_comparables": 20,
+      "coincidencias": 20,
+      "diferencias": []
+    },
+    {
+      "provincia": "Capital Federal",
+      "familia": "soc",
+      "columnas_diagnosticas": {
+        "5": "Socialista"
+      },
+      "filas_comparables": 20,
+      "coincidencias": 20,
+      "diferencias": []
+    },
+    {
+      "provincia": "Capital Federal",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "4": "Demócrata Progresista",
+        "6": "Socialista Argentino"
+      },
+      "filas_comparables": 20,
+      "coincidencias": 19,
+      "diferencias": [
+        {
+          "unidad": "Vélez Sarsfield",
+          "pagina_pdf": 44,
+          "canton": 1832,
+          "lupu": 1742,
+          "diferencia": 90
+        }
+      ]
+    },
+    {
+      "provincia": "Catamarca",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Unión Cívica Radical"
+      },
+      "filas_comparables": 15,
+      "coincidencias": 15,
+      "diferencias": []
+    },
+    {
+      "provincia": "Catamarca",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "4": "Concentración"
+      },
+      "filas_comparables": 15,
+      "coincidencias": 14,
+      "diferencias": [
+        {
+          "unidad": "El Alto",
+          "pagina_pdf": 49,
+          "canton": 386,
+          "lupu": 388,
+          "diferencia": -2
+        }
+      ]
+    },
+    {
+      "provincia": "Corrientes",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Radicales",
+        "6": "Radical disidente"
+      },
+      "filas_comparables": 23,
+      "coincidencias": 23,
+      "diferencias": []
+    },
+    {
+      "provincia": "Corrientes",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "4": "Liberales",
+        "5": "Autonomista"
+      },
+      "filas_comparables": 23,
+      "coincidencias": 23,
+      "diferencias": []
+    },
+    {
+      "provincia": "Córdoba",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Radicales Azules",
+        "4": "Radicales Rojos"
+      },
+      "filas_comparables": 24,
+      "coincidencias": 24,
+      "diferencias": []
+    },
+    {
+      "provincia": "Córdoba",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "5": "Demócratas"
+      },
+      "filas_comparables": 24,
+      "coincidencias": 24,
+      "diferencias": []
+    },
+    {
+      "provincia": "Entre Ríos",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Unión Cívica Radical",
+        "4": "Radical Disidente"
+      },
+      "filas_comparables": 10,
+      "coincidencias": 10,
+      "diferencias": []
+    },
+    {
+      "provincia": "Entre Ríos",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "5": "Concentración"
+      },
+      "filas_comparables": 10,
+      "coincidencias": 10,
+      "diferencias": []
+    },
+    {
+      "provincia": "Mendoza",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Unión Cívica Radical"
+      },
+      "filas_comparables": 15,
+      "coincidencias": 15,
+      "diferencias": []
+    },
+    {
+      "provincia": "Mendoza",
+      "familia": "soc",
+      "columnas_diagnosticas": {
+        "4": "Socialista"
+      },
+      "filas_comparables": 15,
+      "coincidencias": 15,
+      "diferencias": []
+    },
+    {
+      "provincia": "Santa Fe",
+      "familia": "ucr",
+      "columnas_diagnosticas": {
+        "3": "Unión Cívica Radical",
+        "5": "Radical disidente"
+      },
+      "filas_comparables": 19,
+      "coincidencias": 19,
+      "diferencias": []
+    },
+    {
+      "provincia": "Santa Fe",
+      "familia": "con",
+      "columnas_diagnosticas": {
+        "4": "Demócrata Progresista"
+      },
+      "filas_comparables": 19,
+      "coincidencias": 19,
+      "diferencias": []
+    }
+  ],
+  "sin_pareja": [
+    [
+      "Buenos Aires",
+      "Avellaneda",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Bahía Blanca",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Bartolomé Mitre",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Bolívar",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Carlos Casares",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Caseros",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Coronel Dorrego",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Esteban Echeverría",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "Florencio Varela",
+      45
+    ],
+    [
+      "Buenos Aires",
+      "General Lavalle",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "General Madariaga",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "General San Martín",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "General Sarmiento",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "González Chaves",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "La Plata",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "Magdalena",
+      46
+    ],
+    [
+      "Buenos Aires",
+      "Morón",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "Necochea",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "Pehuajó",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "Pellegrini",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "Pilar",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "Quilmes",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "San Vicente",
+      47
+    ],
+    [
+      "Buenos Aires",
+      "Tigre",
+      48
+    ],
+    [
+      "Corrientes",
+      "San Martín",
+      51
+    ],
+    [
+      "Entre Ríos",
+      "Colón",
+      52
+    ],
+    [
+      "Entre Ríos",
+      "Concordia",
+      52
+    ],
+    [
+      "Entre Ríos",
+      "La Paz",
+      52
+    ],
+    [
+      "Entre Ríos",
+      "Villaguay",
+      52
+    ],
+    [
+      "Mendoza",
+      "San Rafael",
+      53
+    ]
+  ],
+  "ilegibles_no_comparados": []
+}

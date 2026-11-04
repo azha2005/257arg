@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4163_aa5f742eb2",
+  "shp": "R4163.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4163.dbf",
+      "bytes": 686,
+      "sha256": "ba4396dd1e007a064dac3c7bd633e90e8040ba54a35766240e189206bd8c23a2"
+    },
+    {
+      "archivo": "R4163.shp",
+      "bytes": 508,
+      "sha256": "a6dc70399fed84edac3a0c145e3f64836a17e80636a7dc0383876e86ad1dc2a6"
+    },
+    {
+      "archivo": "R4163.shx",
+      "bytes": 108,
+      "sha256": "19e1bcedc003e0bea35f969c61eaa00b455400fdcb34eae4b0576dc686905c81"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lacabrala3h.zip!R4163.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7c8d935ea4",
+    "archivo": "santafe/ipec/2010/lacabrala3h.zip!R4163.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5386069.5,
+      6671360.0,
+      5386718.0,
+      6671943.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lacabrala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9776a4d55fa8618c2beee9e5fce4acf23fd1b4f9e9e0d6ecc525e7ee0c36e640"
+}

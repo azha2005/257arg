@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0296_06eb2656d0",
+  "shp": "E0296.shp",
+  "entidades": 586,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0296.dbf",
+      "bytes": 204538,
+      "sha256": "2fe0392adabb3ef4ff7115c447bac18b480b5770bdf1c4482b0168a5f3abe623"
+    },
+    {
+      "archivo": "E0296.shp",
+      "bytes": 52148,
+      "sha256": "d0a9a4538df8b8b39bf95ef4bc2fd4dbde6a43c12e7003c35ba71b963f962043"
+    },
+    {
+      "archivo": "E0296.shx",
+      "bytes": 4788,
+      "sha256": "dc33401ce68fc9e7de5a37029b4c96af2f7e5feca26dd984d08afbfb6414b20a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/calchaquia2v.zip!E0296.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0ba46e00a2",
+    "archivo": "santafe/ipec/2010/calchaquia2v.zip!E0296.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 586,
+    "registros_shx": 586,
+    "shape_type": 3,
+    "bbox": [
+      5471484.0,
+      6692228.5,
+      5473823.0,
+      6695474.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/calchaquia2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "940d9a097a68a8c73de0d123b8c643d2f282a6c6d735e6d9c029362f8b431692"
+}

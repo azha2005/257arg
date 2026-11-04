@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4158_c1ed7242b8",
+  "shp": "M4158.shp",
+  "entidades": 17,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4158.dbf",
+      "bytes": 3735,
+      "sha256": "19b8cacdb7b5949a805aff4d4c76748933278e1fa28c90d4c1ea5e1b1fb99dec"
+    },
+    {
+      "archivo": "M4158.shp",
+      "bytes": 3740,
+      "sha256": "1b32acfaf847dc4b66dd667ec5dbbb94f115f249ec2c6a55febd5257f4bf61f6"
+    },
+    {
+      "archivo": "M4158.shx",
+      "bytes": 236,
+      "sha256": "96d1c47e0e933a5df0acd6251eda72783cb567f6f3e411eea222748d481c06bb"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/IngChanourdiea3h.zip!M4158.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7bbab7bd08",
+    "archivo": "santafe/ipec/2010/IngChanourdiea3h.zip!M4158.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 17,
+    "registros_shx": 17,
+    "shape_type": 5,
+    "bbox": [
+      5540464.0,
+      6818965.5,
+      5541783.5,
+      6819539.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/IngChanourdiea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "795047a9dcf0009f32cdd258120497a98ef7a846a3e538d0b90591d3b898695f"
+}

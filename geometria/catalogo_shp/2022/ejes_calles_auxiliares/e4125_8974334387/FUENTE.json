@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4125_8974334387",
+  "shp": "e4125.shp",
+  "entidades": 108,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4125.dbf",
+      "bytes": 32794,
+      "sha256": "73141ba5a8e866e2b5aad5548247f2f670e3789df7a8bc1d485fc367fbe832f0"
+    },
+    {
+      "archivo": "e4125.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4125.shp",
+      "bytes": 9876,
+      "sha256": "ec88967b8cba1fd6133352a08c61b83a00d25676879243c70a7f2a03ad146be4"
+    },
+    {
+      "archivo": "e4125.shx",
+      "bytes": 964,
+      "sha256": "d352f9b5f2821fa7d4f1e25ae6774d6a5e71e4589260b9be697e77c48ba6f838"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LUCIOVLOPEZ.zip!e4125.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_0ed27328a5",
+    "archivo": "santafe/ipec/2022/LUCIOVLOPEZ.zip!e4125.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 108,
+    "registros_shx": 108,
+    "shape_type": 3,
+    "bbox": [
+      5403726.5,
+      6380044.0,
+      5405137.0,
+      6380875.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LUCIOVLOPEZ.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "f8b3eb3a5173b7e9c8d94c7968b3805aa76b806358d5eb68b51129ab1a9c3464"
+}

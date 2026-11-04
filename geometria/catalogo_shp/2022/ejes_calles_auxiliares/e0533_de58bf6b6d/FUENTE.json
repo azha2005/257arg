@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0533_de58bf6b6d",
+  "shp": "e0533.shp",
+  "entidades": 442,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0533.dbf",
+      "bytes": 132326,
+      "sha256": "ecb5241830f117b8602681fb2d8be3da9bb95ec7930b2d2d798c9b5b55ad9ab3"
+    },
+    {
+      "archivo": "e0533.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0533.shp",
+      "bytes": 40260,
+      "sha256": "277bf67bb6549612c334d6302a3e4b5556740372f439270fcd2310227ea7d499"
+    },
+    {
+      "archivo": "e0533.shx",
+      "bytes": 3636,
+      "sha256": "dbf20e8b525305f1effb20904696be61464beda3def9058c671079a1511aed3a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GOBERNADORCRESPO.zip!e0533.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_602677122c",
+    "archivo": "santafe/ipec/2022/GOBERNADORCRESPO.zip!e0533.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 442,
+    "registros_shx": 442,
+    "shape_type": 3,
+    "bbox": [
+      5460217.5,
+      6640667.5,
+      5462056.5,
+      6642909.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GOBERNADORCRESPO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0f5b13d147dd99f62bf7c392424b76df344892aae1fbf70104121366e02dd9c0"
+}

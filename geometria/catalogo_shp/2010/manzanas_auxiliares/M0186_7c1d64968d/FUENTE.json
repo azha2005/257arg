@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0186_7c1d64968d",
+  "shp": "M0186.shp",
+  "entidades": 396,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0186.dbf",
+      "bytes": 78398,
+      "sha256": "022da093fda33fbbd60c779fa8b9ecdb1ff9a80b3e12e0a5eb82e53b60dfd82b"
+    },
+    {
+      "archivo": "M0186.shp",
+      "bytes": 74836,
+      "sha256": "acd40839ac217a702fec3c87b4b1e4a6b44961062ae1c1e6576bd56c02a60114"
+    },
+    {
+      "archivo": "M0186.shx",
+      "bytes": 3268,
+      "sha256": "6803c38511b326ca8ce727793cded356810318dfd4e1f805d34bfc8db864bfc8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/carcaranaa1h.zip!M0186.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b7293b0861",
+    "archivo": "santafe/ipec/2010/carcaranaa1h.zip!M0186.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 396,
+    "registros_shx": 396,
+    "shape_type": 5,
+    "bbox": [
+      5389710.5,
+      6363355.0,
+      5394513.5,
+      6367024.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/carcaranaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1ff79cdc53dd592cd539b64a74942e3b63c78527b5dd0303b1efb1f95a41c2d7"
+}

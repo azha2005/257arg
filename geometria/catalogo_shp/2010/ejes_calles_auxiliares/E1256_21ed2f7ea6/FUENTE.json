@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1256_21ed2f7ea6",
+  "shp": "E1256.shp",
+  "entidades": 165,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1256.dbf",
+      "bytes": 58030,
+      "sha256": "54864786086adeae18fcc05802be4210d996892b5610601cc734cabfda8d37cb"
+    },
+    {
+      "archivo": "E1256.shp",
+      "bytes": 14748,
+      "sha256": "25e334d90fe4b63672c3592f13cd6ace74c4be2908590c2195ce16d21382fe8a"
+    },
+    {
+      "archivo": "E1256.shx",
+      "bytes": 1420,
+      "sha256": "49b5ae39b0ec86923140537f6c34457ab10d9188db14e148244c13bb4c5fa699"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Laspetacasa3v.zip!E1256.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3d4c5c5d5d",
+    "archivo": "santafe/ipec/2010/Laspetacasa3v.zip!E1256.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 165,
+    "registros_shx": 165,
+    "shape_type": 3,
+    "bbox": [
+      5299872.5,
+      6477379.0,
+      5300862.0,
+      6478788.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Laspetacasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3ce9a8fc1000e07c3e7c3c08842f04d9a8e99c09f504d7a179f3a2424cdcea35"
+}

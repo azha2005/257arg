@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0089_980c0b5a21",
+  "shp": "M0089.shp",
+  "entidades": 959,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0089.dbf",
+      "bytes": 189309,
+      "sha256": "8cc478b49b216e4f8fe9ef7ae96c4475a36fd90f38b9947c14c8b755cd659ccd"
+    },
+    {
+      "archivo": "M0089.shp",
+      "bytes": 154188,
+      "sha256": "0d638ac34c68387926d4395fa6b51c82380bdbdd2f9cd080f78dc3618749cade"
+    },
+    {
+      "archivo": "M0089.shx",
+      "bytes": 7772,
+      "sha256": "f1bf59e948a63bdfc344a4835a3646ce2b14d803a0a13f006215c39e2e39d769"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/casildaa0h.zip!M0089.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_48321e84c3",
+    "archivo": "santafe/ipec/2010/casildaa0h.zip!M0089.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 959,
+    "registros_shx": 959,
+    "shape_type": 5,
+    "bbox": [
+      5387479.5,
+      6341853.5,
+      5392717.5,
+      6345731.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/casildaa0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "747e37e28fb7dbeb6719da0703a2b9c98921d4a1465eb1bab451b26fa70930ae"
+}

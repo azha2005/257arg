@@ -1,0 +1,108 @@
+{
+  "nombre": "Chaco",
+  "distrito": "06",
+  "serie": "2023",
+  "fecha": "17/09/2023",
+  "origen": "Gobernador 17/09/2023 (circuitos y uniones)",
+  "destino": "Balotaje 19/11/2023",
+  "nivel": "circuitos y uniones",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.electoralchaco.gob.ar/historico/3/cargos-provinciales/",
+  "nota": "Definitivo provincial por circuito. Uniones de circuitos reflejados en otros según aviso expreso del visor oficial; se aplica la misma unión al nacional. Se cotejan departamento y código, no IDs internos de la API.",
+  "foco": [],
+  "id": "chaco_gob2023_2023b_circuitos",
+  "cobertura_provincial": 0.9871664566325132,
+  "cobertura_origen": 0.9871664566325132,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "GENERALGUEMES:134A",
+    "GENERALGUEMES:134C",
+    "GENERALGUEMES:134D",
+    "GENERALGUEMES:135A"
+  ],
+  "foco_lado": "origen",
+  "unidades": 148,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 24.30766771230399,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.026940401281832973,
+    "0.0001": 0.00918624794397955,
+    "1e-05": 0.006396009227836995,
+    "1e-06": 0.006129454101936054,
+    "1e-07": 0.006099267168293202
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 3.648203706892648,
+  "desviacion_max_margen_destino_pp": 0.12621191157305145,
+  "electores_o_votos_origen": 720671.0,
+  "electores_o_votos_destino": 718539.0,
+  "filas": [
+    {
+      "origen": "652 - FRENTE CHAQUEÑO",
+      "peso": 38.73,
+      "dif_variante_pp": 0.36,
+      "sensibilidad_pp": 17.07,
+      "ancho_intervalo_pp": 4.28,
+      "separacion_pp": 50.34,
+      "no_identificada": false
+    },
+    {
+      "origen": "653 - JUNTOS POR EL CAMBIO",
+      "peso": 43.52,
+      "dif_variante_pp": 4.48,
+      "sensibilidad_pp": 7.92,
+      "ancho_intervalo_pp": 7.17,
+      "separacion_pp": 35.43,
+      "no_identificada": false
+    },
+    {
+      "origen": "659 - LA LIBERTAD AVANZA",
+      "peso": 3.31,
+      "dif_variante_pp": 6.23,
+      "sensibilidad_pp": 52.65,
+      "ancho_intervalo_pp": 0.78,
+      "separacion_pp": 49.78,
+      "no_identificada": true
+    },
+    {
+      "origen": "665 - CORRIENTE DE EXPRESIÓN RENOVADA",
+      "peso": 4.82,
+      "dif_variante_pp": 12.65,
+      "sensibilidad_pp": 43.65,
+      "ancho_intervalo_pp": 29.46,
+      "separacion_pp": 34.57,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 3.48,
+      "dif_variante_pp": 7.83,
+      "sensibilidad_pp": 53.55,
+      "ancho_intervalo_pp": 14.0,
+      "separacion_pp": 48.78,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 6.14,
+      "dif_variante_pp": 4.41,
+      "sensibilidad_pp": 23.3,
+      "ancho_intervalo_pp": 32.71,
+      "separacion_pp": 16.29,
+      "no_identificada": false
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

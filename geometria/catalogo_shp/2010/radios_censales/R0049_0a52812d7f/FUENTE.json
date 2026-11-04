@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0049_0a52812d7f",
+  "shp": "R0049.shp",
+  "entidades": 74,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0049.dbf",
+      "bytes": 15578,
+      "sha256": "491ff7715a289f6b5f5f191f738c5c7c1efb5e2f9076e83baf55ffd1cbc68994"
+    },
+    {
+      "archivo": "R0049.shp",
+      "bytes": 42580,
+      "sha256": "c4768f12d8f9451934494c67b267a1d2092dd03af96ad5d83e9629da7fb967b4"
+    },
+    {
+      "archivo": "R0049.shx",
+      "bytes": 692,
+      "sha256": "068430bcb2ff4d638c2b9fad34e840fcec4e8ef44bc8491d26e58e5fa5e14100"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/venadotuertoa0h.zip!R0049.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8c56c97063",
+    "archivo": "santafe/ipec/2010/venadotuertoa0h.zip!R0049.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 74,
+    "registros_shx": 74,
+    "shape_type": 5,
+    "bbox": [
+      5313262.5,
+      6260886.0,
+      5322000.5,
+      6270077.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/venadotuertoa0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d152bc538d7399f7083538bd125c2be9d400b5208e7a1d5ae6cceb2989c78908"
+}

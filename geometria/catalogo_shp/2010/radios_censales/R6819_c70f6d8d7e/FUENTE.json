@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6819_c70f6d8d7e",
+  "shp": "R6819.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6819.dbf",
+      "bytes": 686,
+      "sha256": "66fbd3e4d53cae90f3d70a55b1e672870c96a9b7c696dbb9fc9f77c670f097ab"
+    },
+    {
+      "archivo": "R6819.shp",
+      "bytes": 540,
+      "sha256": "887988b1e902e3c408a8b395401c6c0bbc97ee4ae797c510ca35856faa33c1a1"
+    },
+    {
+      "archivo": "R6819.shx",
+      "bytes": 108,
+      "sha256": "f731d64e3d3ce9ea647bff0d58df1ea82301c3e3f8bca88be7707e3fa43f20ac"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniaraquela3v.zip!R6819.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_edad5ecc9d",
+    "archivo": "santafe/ipec/2010/coloniaraquela3v.zip!R6819.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5357394.0,
+      6587904.5,
+      5357910.5,
+      6588477.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniaraquela3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5212419d5c8f5bfd25b0517011364a0b0e9c364bc0b50019f07c11672f001ad7"
+}

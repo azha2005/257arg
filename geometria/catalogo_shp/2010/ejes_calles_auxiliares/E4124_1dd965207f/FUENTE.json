@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4124_1dd965207f",
+  "shp": "E4124.shp",
+  "entidades": 204,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4124.dbf",
+      "bytes": 71602,
+      "sha256": "5298aff31d857306f68bf15a9b6324448aba89ac05c90fb58cf48e9c8fceff31"
+    },
+    {
+      "archivo": "E4124.shp",
+      "bytes": 20036,
+      "sha256": "bef95898b93dbc31d687d21ca845f60b78be1cdaf2f4b56e15a9df32762bfcec"
+    },
+    {
+      "archivo": "E4124.shx",
+      "bytes": 1732,
+      "sha256": "ad9a08c0b73f169a3dd2017ed0ca15f215eba35c707d73df55886f63a894af44"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/loszapallosa2h.zip!E4124.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9fcf480b39",
+    "archivo": "santafe/ipec/2010/loszapallosa2h.zip!E4124.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 204,
+    "registros_shx": 204,
+    "shape_type": 3,
+    "bbox": [
+      5457701.0,
+      6515650.0,
+      5461966.5,
+      6519265.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/loszapallosa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "80ac12528580a0d195f1bdda6e27e2a20e0a5086d62f1e01df0d8d117d781eee"
+}

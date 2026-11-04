@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0618_db416c9866",
+  "shp": "M0618.shp",
+  "entidades": 73,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0618.dbf",
+      "bytes": 14767,
+      "sha256": "b13dc09f50a511f0169e7566363454b376f4fe974859b53a0cffb1a1c81afecb"
+    },
+    {
+      "archivo": "M0618.shp",
+      "bytes": 12028,
+      "sha256": "b007940e4911bc04adf4e2884fe37dd925003087321d51d17cc5debb9b441983"
+    },
+    {
+      "archivo": "M0618.shx",
+      "bytes": 684,
+      "sha256": "a65364e3a08e2beedc2d33006913e1fcaa0168db3086925f334ad4bacfafdfb8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bombala3h.zip!M0618.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0fe52b9e71",
+    "archivo": "santafe/ipec/2010/bombala3h.zip!M0618.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 73,
+    "registros_shx": 73,
+    "shape_type": 5,
+    "bbox": [
+      5376723.0,
+      6296976.0,
+      5378083.0,
+      6298376.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bombala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d2dc274bdf9cee3cd548ec4f465cfc4d5de7d47c818ae9b2dd4e27c605e3f185"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4124_84a3587b73",
+  "shp": "m4124.shp",
+  "entidades": 69,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4124.dbf",
+      "bytes": 13979,
+      "sha256": "0187fc712b71f17d9cec10d1ebc8e0cfe17334bc92affb59a97c33e3a5d528ac"
+    },
+    {
+      "archivo": "m4124.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4124.shp",
+      "bytes": 15948,
+      "sha256": "616555b1452d6b4debb0aace6e1cbcb5f26fddfa9a5ddde3d1e29aa5eaae35bb"
+    },
+    {
+      "archivo": "m4124.shx",
+      "bytes": 652,
+      "sha256": "0fba32b0b997c9ebb3f719f5ba4ef851b6a664fa9fb5174d567c21d2124d6f85"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LOSZAPALLOS.zip!m4124.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_dac2dd88fd",
+    "archivo": "santafe/ipec/2022/LOSZAPALLOS.zip!m4124.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 69,
+    "registros_shx": 69,
+    "shape_type": 5,
+    "bbox": [
+      5457615.0,
+      6515650.0,
+      5461966.5,
+      6519257.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LOSZAPALLOS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0fb80f48a7aa2b878f1f79c04dc1b531a83d051b0a144c97a63f2002a63624d8"
+}

@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0677_e52d362813",
+  "shp": "R0677.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0677.dbf",
+      "bytes": 1706,
+      "sha256": "655c6122ed14d81f71364e5fec3dd7b64b7e15d9428fe705970b92304b3add49"
+    },
+    {
+      "archivo": "R0677.shp",
+      "bytes": 4164,
+      "sha256": "6d3babf9c806ca4a9f403bc2e01615436bb59bd32fb632db4b5238576b7ab41b"
+    },
+    {
+      "archivo": "R0677.shx",
+      "bytes": 148,
+      "sha256": "a189700acff93dd12a491a3e00fcbd76f49ed7701060c2314ca3d0798fc703a8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaminettia3h.zip!R0677.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1ce1a620f1",
+    "archivo": "santafe/ipec/2010/villaminettia3h.zip!R0677.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5340163.0,
+      6832517.0,
+      5342343.5,
+      6834180.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaminettia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1fbb56e610cea4a70145a2873231c64cfe4c92cf58b8947f3eaf98920469f270"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4105_8b3effc65d",
+  "shp": "M4105.shp",
+  "entidades": 66,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4105.dbf",
+      "bytes": 13388,
+      "sha256": "ee7111e917d107ae80f89cee5d8e72ba10fbb1c5e2f6621850f1927a6a6f21bd"
+    },
+    {
+      "archivo": "M4105.shp",
+      "bytes": 9684,
+      "sha256": "c0166a8fc47233892361c8d6fb09201c512b973f301431f3e037dff25c5a07c7"
+    },
+    {
+      "archivo": "M4105.shx",
+      "bytes": 628,
+      "sha256": "9269c39111433bb2479e18dea36c9b97ad09712e34bed181f6ef86044bb194f5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ramayona3h.zip!M4105.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_101cd94ff3",
+    "archivo": "santafe/ipec/2010/ramayona3h.zip!M4105.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 66,
+    "registros_shx": 66,
+    "shape_type": 5,
+    "bbox": [
+      5451242.5,
+      6606612.5,
+      5452502.0,
+      6607588.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ramayona3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fab224ecbc37ed398adf52f753d3ff4b766a23f7c3938fd7620d5345537d4f0c"
+}

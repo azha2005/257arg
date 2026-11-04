@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r4187_8420cbb522",
+  "shp": "r4187.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r4187.shx",
+      "bytes": 108,
+      "sha256": "85791f9060de19e5021f5a5d670c1c53ffbd7faf29c639f9d7a62f4aaba5b3ac"
+    },
+    {
+      "archivo": "r4187.shp",
+      "bytes": 812,
+      "sha256": "ae384a919aaf2f4dfe59e118e2d3c584e47b6248cfda7945d62ab2b4d4cfb489"
+    },
+    {
+      "archivo": "r4187.sbx",
+      "bytes": 116,
+      "sha256": "7c1cd90b7418a0dbbaa858cbe26f95d0bf9995d553914680e4e1a649fe82acb7"
+    },
+    {
+      "archivo": "r4187.sbn",
+      "bytes": 132,
+      "sha256": "3e4fb0914434644dc32e4f15037eb14a55674253ee7ba17d8059a0329a5d8ee3"
+    },
+    {
+      "archivo": "r4187.dbf",
+      "bytes": 685,
+      "sha256": "ce9dd489b530c002ae624b3e84f61a2d1fb7d46c9b2721d2cff706310c1fba71"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/COLONIATERESA.zip!r4187.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0e4e3a4009",
+    "archivo": "santafe/ipec/2010/COLONIATERESA.zip!r4187.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5502340.0,
+      6653698.5,
+      5503548.5,
+      6654110.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/COLONIATERESA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f2236b5aa406964f4c11c3b6d9ae4a1600160aa47b6bff8e99f5bd9176cf7647"
+}

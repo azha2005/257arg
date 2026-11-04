@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6820_d1df8e0338",
+  "shp": "M6820.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6820.dbf",
+      "bytes": 3538,
+      "sha256": "01d7d4bb1a072d8c743ca3879b0a487d303bb3f2ee22c2e53d7c4c0ea7ec1a33"
+    },
+    {
+      "archivo": "M6820.shp",
+      "bytes": 2532,
+      "sha256": "3b6c281b603c6d03d6a9e05d0c25e3cd8f6147548b564ec7aa2624b41108fb82"
+    },
+    {
+      "archivo": "M6820.shx",
+      "bytes": 228,
+      "sha256": "a4d7f01ff3fb8872c26977ee4e66bbb4d71a54a6c509fb4cdd9df2a69ea2bc60"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pueblomarinia3h.zip!M6820.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b6994341eb",
+    "archivo": "santafe/ipec/2010/pueblomarinia3h.zip!M6820.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5319350.0,
+      6564945.0,
+      5319814.5,
+      6565409.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pueblomarinia3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8094944b399d25912ff4d3bf75b935b41f0176dccd6695d60dfc4d262dddfe39"
+}

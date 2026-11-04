@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0205_e665f4bbfb",
+  "shp": "M0205.shp",
+  "entidades": 559,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0205.dbf",
+      "bytes": 110509,
+      "sha256": "9c419f354dda4d5bfce5bf742fd47439e98f3daa1e938864afa076c48acd5afb"
+    },
+    {
+      "archivo": "M0205.shp",
+      "bytes": 83004,
+      "sha256": "e7330b03bcc2560cca379d7cf60fe0fa19ba1c50b44c3ebc49ae3c99d5199922"
+    },
+    {
+      "archivo": "M0205.shx",
+      "bytes": 4572,
+      "sha256": "a35e77bfd470eaead37c0ae5dc26f1e0a0cd4b695fd93218c5aa853b508c86e7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ceresa1h.zip!M0205.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5565269d68",
+    "archivo": "santafe/ipec/2010/ceresa1h.zip!M0205.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 559,
+    "registros_shx": 559,
+    "shape_type": 5,
+    "bbox": [
+      5310297.5,
+      6691733.0,
+      5313568.5,
+      6694917.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ceresa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f8aa56cb85203e714e6750aa52a81c650680dbac6935f07fec395ca710f26c77"
+}

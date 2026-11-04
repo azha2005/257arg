@@ -1,0 +1,94 @@
+{
+  "nombre": "Ciudad de Buenos Aires",
+  "distrito": "01",
+  "serie": "2023",
+  "fecha": "22/10/2023",
+  "origen": "Jefe de Gobierno 22/10/2023 (circuitos)",
+  "destino": "Presidente 22/10/2023",
+  "nivel": "circuitos",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.gob.ar/2023",
+  "nota": "Provisorio DINE de jefe de Gobierno por circuito, mesas nativas. Elecciones simultáneas el 22 de octubre: permite estudiar composición entre cargos, no observar elecciones individuales.",
+  "foco": [],
+  "id": "caba_gob2023_2023p_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "origen",
+  "unidades": 167,
+  "categorias_origen": 5,
+  "rango": 5,
+  "condicion": 167.23490580085127,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.012947085490083138,
+    "0.0001": 0.0021574570670277295,
+    "1e-05": 0.0006695391018103407,
+    "1e-06": 0.00048291108607682377,
+    "1e-07": 0.0004599385501147982
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 0.763999591351352,
+  "desviacion_max_margen_destino_pp": 0.4186256999792262,
+  "electores_o_votos_origen": 1904905.0,
+  "electores_o_votos_destino": 1911431.0,
+  "filas": [
+    {
+      "origen": "FRENTE DE IZQUIERDA Y DE TRABAJADORES - UNIDAD",
+      "peso": 3.69,
+      "dif_variante_pp": 18.21,
+      "sensibilidad_pp": 45.83,
+      "ancho_intervalo_pp": 16.01,
+      "separacion_pp": 82.73,
+      "no_identificada": true
+    },
+    {
+      "origen": "JUNTOS POR EL CAMBIO",
+      "peso": 44.54,
+      "dif_variante_pp": 1.66,
+      "sensibilidad_pp": 20.05,
+      "ancho_intervalo_pp": 0.99,
+      "separacion_pp": 50.5,
+      "no_identificada": false
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 11.58,
+      "dif_variante_pp": 7.77,
+      "sensibilidad_pp": 67.27,
+      "ancho_intervalo_pp": 0.35,
+      "separacion_pp": 80.01,
+      "no_identificada": true
+    },
+    {
+      "origen": "UNION POR LA PATRIA",
+      "peso": 28.22,
+      "dif_variante_pp": 1.68,
+      "sensibilidad_pp": 26.35,
+      "ancho_intervalo_pp": 5.18,
+      "separacion_pp": 58.9,
+      "no_identificada": false
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 11.97,
+      "dif_variante_pp": 4.15,
+      "sensibilidad_pp": 24.43,
+      "ancho_intervalo_pp": 14.49,
+      "separacion_pp": 42.39,
+      "no_identificada": false
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

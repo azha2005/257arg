@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R8772_cc4984b3ec",
+  "shp": "R8772.shp",
+  "entidades": 15,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R8772.dbf",
+      "bytes": 3542,
+      "sha256": "797bf2f6152cbbf1265c80840a75169f6e11e420d1abe86595085b0020d2c33a"
+    },
+    {
+      "archivo": "R8772.shp",
+      "bytes": 12012,
+      "sha256": "513335d4b1c930917f105676430ddef69c25b2ef93f32b7b76bc7535d6fc99e5"
+    },
+    {
+      "archivo": "R8772.shx",
+      "bytes": 220,
+      "sha256": "25084524f9e5a335f36ff358312caefc881677d96364efca53185f8db6f13eb7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/roldana0v.zip!R8772.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_25bc9462ea",
+    "archivo": "santafe/ipec/2010/roldana0v.zip!R8772.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 15,
+    "registros_shx": 15,
+    "shape_type": 5,
+    "bbox": [
+      5413715.5,
+      6357169.0,
+      5419208.5,
+      6362010.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/roldana0v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "43351cbae73e5969f0ccbc1fdd3b555dd08a59a2328fc618e222ecbd054ece46"
+}

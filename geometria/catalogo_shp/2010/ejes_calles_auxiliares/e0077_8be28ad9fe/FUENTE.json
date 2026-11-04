@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e0077_8be28ad9fe",
+  "shp": "e0077.shp",
+  "entidades": 27,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0077.dbf",
+      "bytes": 9979,
+      "sha256": "f0187b6ef401210f9ce0147948194ba48b39eded18e318e1e192d57619d53043"
+    },
+    {
+      "archivo": "e0077.shp",
+      "bytes": 2572,
+      "sha256": "110350e289c21b36bd8d24aad4403600fcb4592e188030ef1509318f92b8ef17"
+    },
+    {
+      "archivo": "e0077.shx",
+      "bytes": 316,
+      "sha256": "c7eefb50ee119ddb260aacb9a78e9f95ae76cab27dcd9937d8c62e46fc68d0ce"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/elsombreritoa3h.zip!e0077.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c48fb6177f",
+    "archivo": "santafe/ipec/2010/elsombreritoa3h.zip!e0077.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 27,
+    "registros_shx": 27,
+    "shape_type": 3,
+    "bbox": [
+      5555846.5,
+      6830587.0,
+      5556336.5,
+      6830839.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "TIPOCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/elsombreritoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5d221261ea3a1cfe8ac9fd8dc5e365dbdd904a820549728cc9f3cfbcc273f19a"
+}

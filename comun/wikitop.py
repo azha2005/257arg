@@ -259,6 +259,15 @@ for _k in ("1946", "1948", "1948c", "1954", "1973", "1973s"):
     assert sum(WIKI[_k]["blocs"].values()) + WIKI[_k]["otros"] == WIKI[_k]["positivos"], _k
 
 
+WIKI['1951'] = dict(
+    art='Elecciones legislativas de Argentina de 1951',
+    blocs={'PP': 4482973, 'UCR': 2396833},
+    otros=177985+73927+71124+1276+1125+90+1540,
+    positivos=7206873, blancos=128402, dif=43582, total=7378857, inscriptos=8341443,
+    lab_pos='Votos positivos', lab_bla='En blanco y anulados', lab_nul='Diferencia de votos')
+assert sum(WIKI['1951']['blocs'].values())+WIKI['1951']['otros']==WIKI['1951']['positivos']
+
+
 def _n(v):
     return "{:,}".format(int(v)).replace(",", ".")
 
@@ -309,3 +318,11 @@ if _pres07.exists():
     _row=_json.loads(_pres07.read_text(encoding='utf8'))
     assert sum(_row['blocs'].values())+_row['otros']==_row['positivos']
     WIKI['2007circuitos']=_row
+
+# Entreguerras: snapshots de las tablas nacionales; no se suman las coberturas parciales de Cantón.
+for _key in (1918,1920,1926,1937,1940):
+    _snapshot=_Path(__file__).resolve().parent.parent/'mapas'/f'mapa{_key}'/f'wiki_nacional_{_key}.json'
+    if _snapshot.exists():
+        _row=_json.loads(_snapshot.read_text(encoding='utf8'))
+        assert sum(_row['blocs'].values())+_row['otros']==_row['positivos'],_key
+        WIKI[_key]=_row

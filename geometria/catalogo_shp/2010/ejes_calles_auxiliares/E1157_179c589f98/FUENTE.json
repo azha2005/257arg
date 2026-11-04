@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1157_179c589f98",
+  "shp": "E1157.shp",
+  "entidades": 124,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1157.dbf",
+      "bytes": 43762,
+      "sha256": "4828b4c87dd390632bbd99138f73d5f1b9346f3fbdf7fe746b2c3a0177179b16"
+    },
+    {
+      "archivo": "E1157.shp",
+      "bytes": 11060,
+      "sha256": "cb8f20583ee03cdacfc593b948d931a73e26ac149450592a3bf20d11b1ec1b4a"
+    },
+    {
+      "archivo": "E1157.shx",
+      "bytes": 1092,
+      "sha256": "6347816d5210ab661dbd79ce0e285a73f23a520025fba8646d9599575fcee84f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Loscardosa3h.zip!E1157.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7f81d1bc47",
+    "archivo": "santafe/ipec/2010/Loscardosa3h.zip!E1157.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 124,
+    "registros_shx": 124,
+    "shape_type": 3,
+    "bbox": [
+      5345797.5,
+      6422545.0,
+      5346818.0,
+      6423686.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Loscardosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "64a97e0ce266c5f2b035660dc185c2ae91fa8cbab61bcd7f66547fa469862d5c"
+}

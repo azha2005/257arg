@@ -1,0 +1,130 @@
+{
+  "id": "sanluis_diputados_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "San Luis",
+  "distrito": "19",
+  "fecha": "11/05/2025",
+  "cargo": "Diputados provinciales",
+  "nivel": "departamentos",
+  "origen": "Diputados provinciales 11/05/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "Sólo los departamentos que eligieron este cargo. Transcripción verificada visualmente del definitivo. Diputados y senadores se superponen en Belgrano; nunca se suman entre sí. Muy pocas unidades: las estimaciones no identifican transferencias precisas.",
+  "base": "votos emitidos",
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 0.6206956800279553,
+  "pendientes": [],
+  "departamentos_cargo": [
+    "Belgrano",
+    "Gobernador Dupuy",
+    "Juan Martín de Pueyrredón",
+    "Junín",
+    "Coronel Pringles"
+  ],
+  "fuente": "https://electoral.justiciasanluis.gov.ar/wp-content/uploads/2025/05/acordada_15_tep_2025.pdf",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 5,
+  "categorias_origen": 8,
+  "rango": 5,
+  "condicion": 34.81484098168423,
+  "lambda_": 1e-05,
+  "validacion_cruzada": {
+    "0.001": 0.07152898607335896,
+    "0.0001": 0.013764943272765392,
+    "1e-05": 0.00761374361921472,
+    "1e-06": 0.0194284912692418,
+    "1e-07": 0.019791333283551107
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 0.5981473763563058,
+  "desviacion_max_margen_destino_pp": 0.5042308815499689,
+  "electores_o_votos_origen": 158804.0,
+  "electores_o_votos_destino": 170520.0,
+  "filas": [
+    {
+      "origen": "Ahora San Luis",
+      "peso": 39.7,
+      "dif_variante_pp": 2.75,
+      "sensibilidad_pp": 21.29,
+      "ancho_intervalo_pp": 87.05,
+      "separacion_pp": 34.2,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Justicialista",
+      "peso": 24.42,
+      "dif_variante_pp": 1.76,
+      "sensibilidad_pp": 18.18,
+      "ancho_intervalo_pp": 79.04,
+      "separacion_pp": 51.69,
+      "no_identificada": true
+    },
+    {
+      "origen": "Tercera Posición",
+      "peso": 6.64,
+      "dif_variante_pp": 2.92,
+      "sensibilidad_pp": 37.16,
+      "ancho_intervalo_pp": 39.29,
+      "separacion_pp": 39.87,
+      "no_identificada": true
+    },
+    {
+      "origen": "¡Viva la Libertad! ¡Carajo!",
+      "peso": 4.53,
+      "dif_variante_pp": 16.08,
+      "sensibilidad_pp": 44.11,
+      "ancho_intervalo_pp": 49.79,
+      "separacion_pp": 51.84,
+      "no_identificada": true
+    },
+    {
+      "origen": "Primero San Luis",
+      "peso": 3.49,
+      "dif_variante_pp": 16.53,
+      "sensibilidad_pp": 41.71,
+      "ancho_intervalo_pp": 43.36,
+      "separacion_pp": 49.23,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS",
+      "peso": 2.67,
+      "dif_variante_pp": 47.61,
+      "sensibilidad_pp": 75.47,
+      "ancho_intervalo_pp": 53.9,
+      "separacion_pp": 27.46,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 6.79,
+      "dif_variante_pp": 37.41,
+      "sensibilidad_pp": 72.86,
+      "ancho_intervalo_pp": 53.65,
+      "separacion_pp": 28.28,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 11.75,
+      "dif_variante_pp": 4.79,
+      "sensibilidad_pp": 57.23,
+      "ancho_intervalo_pp": 63.68,
+      "separacion_pp": 14.42,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 1.0
+}

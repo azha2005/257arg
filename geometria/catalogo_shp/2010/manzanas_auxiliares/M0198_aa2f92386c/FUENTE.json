@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0198_aa2f92386c",
+  "shp": "M0198.shp",
+  "entidades": 343,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0198.dbf",
+      "bytes": 67957,
+      "sha256": "b1f28fd0ae724aad0477ebfd25a03193dd2707752c71f4cd349d99d842aea57b"
+    },
+    {
+      "archivo": "M0198.shp",
+      "bytes": 76188,
+      "sha256": "426f39dad4cdcbc4f1fc9265b13ead46e63bf018244176b3389dc92210d0fdbe"
+    },
+    {
+      "archivo": "M0198.shx",
+      "bytes": 2844,
+      "sha256": "4655fdbb9a22e001196785b0c0004fc0739bcd002dfda1f1f00b64784958caf6"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/corondaa1v.zip!M0198.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_914692ff8b",
+    "archivo": "santafe/ipec/2010/corondaa1v.zip!M0198.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 343,
+    "registros_shx": 343,
+    "shape_type": 5,
+    "bbox": [
+      5411322.0,
+      6459074.5,
+      5413934.5,
+      6467191.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/corondaa1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a1a0f5f24dc42c48e43494e34e22aa851241cf889c055acdb04547b331f77282"
+}

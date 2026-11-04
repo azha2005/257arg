@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0049_67bd4fea5e",
+  "shp": "E0049.shp",
+  "entidades": 3482,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0049.dbf",
+      "bytes": 1212346,
+      "sha256": "9468bf70f4e5c7f46908c31966c075ffd5e4d29e97f313c1edc10a48965114cd"
+    },
+    {
+      "archivo": "E0049.shp",
+      "bytes": 310708,
+      "sha256": "34dc3145f18b017d646f94d22961b358a609dbf2d3598c50984136cd1085b6f3"
+    },
+    {
+      "archivo": "E0049.shx",
+      "bytes": 27956,
+      "sha256": "9d3a98214cdec27282c361553e04eefdd8e40b6369969e72a921fbd63d1f25be"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/venadotuertoa0h.zip!E0049.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8c56c97063",
+    "archivo": "santafe/ipec/2010/venadotuertoa0h.zip!E0049.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3482,
+    "registros_shx": 3482,
+    "shape_type": 3,
+    "bbox": [
+      5313262.5,
+      6260886.0,
+      5322000.5,
+      6270077.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/venadotuertoa0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "348679effd427ae953d1059b7bbefe238add4d249fde1d740633a97a2aa7c8cb"
+}

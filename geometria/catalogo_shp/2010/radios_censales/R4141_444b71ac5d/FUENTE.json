@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4141_444b71ac5d",
+  "shp": "R4141.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4141.dbf",
+      "bytes": 686,
+      "sha256": "2a42d4b3c92cfd665bedc20f9462a9b7c02516fcd475c0401b7211eaceaddc31"
+    },
+    {
+      "archivo": "R4141.shp",
+      "bytes": 780,
+      "sha256": "5ff7d4d722337bf70134aac91e8f643d0634c01c98a0770d9d36607b5387468c"
+    },
+    {
+      "archivo": "R4141.shx",
+      "bytes": 108,
+      "sha256": "63a494e7f9118242bbc6e0be800c3c7f12ce8dd064ef9dea60a8bf3fd973e5c7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villasaraleguia3v.zip!R4141.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_09e45f0247",
+    "archivo": "santafe/ipec/2010/villasaraleguia3v.zip!R4141.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5427420.5,
+      6621169.5,
+      5428889.0,
+      6622356.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villasaraleguia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "378307b90a07d7bee3f474feed5ab3c43460b9c8326f992d04de859cd262de41"
+}

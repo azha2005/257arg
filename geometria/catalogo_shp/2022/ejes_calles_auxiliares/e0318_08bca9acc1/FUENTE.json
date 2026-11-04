@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0318_08bca9acc1",
+  "shp": "e0318.shp",
+  "entidades": 558,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0318.dbf",
+      "bytes": 166894,
+      "sha256": "fd349915c84518a18ee9e09e8ff61758889c9a91998d1aab63bf9c882372f8f8"
+    },
+    {
+      "archivo": "e0318.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0318.shp",
+      "bytes": 50756,
+      "sha256": "a7d4f55c0cc0cecc9145d3dae9a5577b6d0ae1160fe9b10032594f79e284e4fe"
+    },
+    {
+      "archivo": "e0318.shx",
+      "bytes": 4564,
+      "sha256": "93810b647fab382859332f8d113d46a193e06d232ad29a647aaf9d5abbb87708"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ALCORTA.zip!e0318.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_f26e0136c3",
+    "archivo": "santafe/ipec/2022/ALCORTA.zip!e0318.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 558,
+    "registros_shx": 558,
+    "shape_type": 3,
+    "bbox": [
+      5394533.5,
+      6287333.5,
+      5397033.0,
+      6289720.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ALCORTA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "ee87165ca86e58695d3de627cb552d4165c0dd1e723131e50080f1109ee4c975"
+}

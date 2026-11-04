@@ -1,0 +1,290 @@
+{
+  "anio": 2011,
+  "version": "aproximada",
+  "entidades_geojson": 5434,
+  "registros_shp": 5434,
+  "omitidos_shp": [],
+  "colecciones_solo_poligonos_en_shp": [],
+  "distritos_con_alguna_geometria": 24,
+  "circuitos_con_codigo_distintos": 5368,
+  "sin_codigo_utilizable": 22,
+  "geometrias_invalidas_sin_reparar": 8,
+  "usos_temporales": {
+    "retroproyeccion_desde_fuente_posterior": 3147,
+    "arrastre_desde_fuente_anterior": 2180,
+    "corte_o_periodo_declarado": 107
+  },
+  "calidades": {
+    "catalogo_historico": 167,
+    "crs_inferido_sin_prj": 2180,
+    "oficial_y_reconstruida_segun_autor": 1248,
+    "catalogo_local_historico": 107,
+    "copia_historica_cobertura_no_certificada": 1732
+  },
+  "cobertura_por_distrito": [
+    {
+      "distrito": "01",
+      "nombre": "CABA",
+      "fuente_distrital": "caba2015_nyu",
+      "fuentes_aisladas": [
+        {
+          "id": "galeano_2025_01",
+          "alerta": "CABA 2025: desplazamiento mediano de centroides de 497,84 m respecto de CNE actual; 2021 difiere 1,43 m. Se aísla como variante con posible problema de georreferenciación, sin corregir el original."
+        }
+      ],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 167,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "02",
+      "nombre": "Buenos Aires",
+      "fuente_distrital": "usuario_bsas_circuitos03",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 1048,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "03",
+      "nombre": "Catamarca",
+      "fuente_distrital": "galeano_2021_03",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 155,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "04",
+      "nombre": "Córdoba",
+      "fuente_distrital": "usuario_cba_circuitos",
+      "fuentes_aisladas": [
+        {
+          "id": "cne_consulta2026_04",
+          "alerta": "CNE Córdoba actual: campo circuito nulo en los 640 registros. Se conserva como fuente geométrica alternativa, pero no reemplaza automáticamente la capa que sí tiene identificadores."
+        }
+      ],
+      "parche_capital": {
+        "id_fuente": "cordoba_capital2011",
+        "sustituidos_capital": 110,
+        "agregados": 107
+      },
+      "actualizaciones": [],
+      "entidades": 623,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "05",
+      "nombre": "Corrientes",
+      "fuente_distrital": "usuario_Ctes_Circuitos_region",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 169,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "06",
+      "nombre": "Chaco",
+      "fuente_distrital": "copia2019_06",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 161,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "07",
+      "nombre": "Chubut",
+      "fuente_distrital": "copia2019_07",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 100,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "08",
+      "nombre": "Entre Ríos",
+      "fuente_distrital": "copia2019_08",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 327,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "09",
+      "nombre": "Formosa",
+      "fuente_distrital": "galeano_2021_09",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 107,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "10",
+      "nombre": "Jujuy",
+      "fuente_distrital": "galeano_2021_10",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 147,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "11",
+      "nombre": "La Pampa",
+      "fuente_distrital": "copia2019_11",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 90,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "12",
+      "nombre": "La Rioja",
+      "fuente_distrital": "galeano_2021_12",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 146,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "13",
+      "nombre": "Mendoza",
+      "fuente_distrital": "copia2019_13",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 135,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "14",
+      "nombre": "Misiones",
+      "fuente_distrital": "copia2019_14",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 88,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "15",
+      "nombre": "Neuquén",
+      "fuente_distrital": "galeano_2025_15",
+      "fuentes_aisladas": [
+        {
+          "id": "galeano_2021_15",
+          "alerta": "Neuquén 2021: desplazamiento mediano de 232,98 m respecto de CNE actual; 2025 coincide (mediana 0 m). No interpretar ese desplazamiento como reforma de todos los circuitos."
+        },
+        {
+          "id": "copia2019_15",
+          "alerta": "Neuquén copia 2019: desplazamiento mediano de 232,99 m respecto de CNE actual, en 155 códigos comunes. Variante aislada."
+        }
+      ],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 173,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "16",
+      "nombre": "Río Negro",
+      "fuente_distrital": "galeano_2021_16",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 152,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "17",
+      "nombre": "Salta",
+      "fuente_distrital": "galeano_2021_17",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 316,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "18",
+      "nombre": "San Juan",
+      "fuente_distrital": "copia2019_18",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 148,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "19",
+      "nombre": "San Luis",
+      "fuente_distrital": "copia2019_19",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 151,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "20",
+      "nombre": "Santa Cruz",
+      "fuente_distrital": "galeano_2021_20",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 23,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "21",
+      "nombre": "Santa Fe",
+      "fuente_distrital": "usuario_santafe_circuitos",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 447,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "22",
+      "nombre": "Santiago del Estero",
+      "fuente_distrital": "copia2019_22",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 265,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "23",
+      "nombre": "Tucumán",
+      "fuente_distrital": "copia2019_23",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 267,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    },
+    {
+      "distrito": "24",
+      "nombre": "Tierra del Fuego",
+      "fuente_distrital": "galeano_2021_24",
+      "fuentes_aisladas": [],
+      "parche_capital": null,
+      "actualizaciones": [],
+      "entidades": 29,
+      "estado": "fuente_distrital_no_completitud_certificada"
+    }
+  ],
+  "sha256_geojson": "8f2ce254aef0e9a969cdf88aa063fd7d22266ea8a94d1f9f509133b38069cc19"
+}

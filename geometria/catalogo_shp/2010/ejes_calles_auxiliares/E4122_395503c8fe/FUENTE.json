@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4122_395503c8fe",
+  "shp": "E4122.shp",
+  "entidades": 91,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4122.dbf",
+      "bytes": 32278,
+      "sha256": "6241676cde1a36a9fd34ca28212d99659a6f7d2b694867918010236dd5ea91b3"
+    },
+    {
+      "archivo": "E4122.shp",
+      "bytes": 8316,
+      "sha256": "1a19643ada9d15be6379fa55725a6fc10efeef5936e9927c9fb73113ec3b16d7"
+    },
+    {
+      "archivo": "E4122.shx",
+      "bytes": 828,
+      "sha256": "9692f9a34ba3d140af093e3bfca39027e174a914cd002e8c56cb6b367a6cce00"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/saladeromarianocabala3h.zip!E4122.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3735cd2c6c",
+    "archivo": "santafe/ipec/2010/saladeromarianocabala3h.zip!E4122.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 91,
+    "registros_shx": 91,
+    "shape_type": 3,
+    "bbox": [
+      5496002.0,
+      6583644.0,
+      5496919.0,
+      6584763.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/saladeromarianocabala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ff2a5b28b6bfebbaaf647cd41df5603bc4a1416133299a78d15395067bd78b6b"
+}

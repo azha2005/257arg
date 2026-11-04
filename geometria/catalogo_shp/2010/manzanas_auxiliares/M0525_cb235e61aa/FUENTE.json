@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0525_cb235e61aa",
+  "shp": "M0525.shp",
+  "entidades": 98,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0525.dbf",
+      "bytes": 19692,
+      "sha256": "eaaa4644811fc0f2d05e9aee22755b6a9e2db3acedda9d8c327899cb132a4a55"
+    },
+    {
+      "archivo": "M0525.shp",
+      "bytes": 14756,
+      "sha256": "719449621eb103a0abe1dd59feecf7d53f402207518e0d83a3de4d048c579633"
+    },
+    {
+      "archivo": "M0525.shx",
+      "bytes": 884,
+      "sha256": "bc6d7a0f46f853bf61fdb920c9e06272ef64997ce9005a09d3a3b1212627839a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/MaximoPaza3v.zip!M0525.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c0bb1d3886",
+    "archivo": "santafe/ipec/2010/MaximoPaza3v.zip!M0525.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 98,
+    "registros_shx": 98,
+    "shape_type": 5,
+    "bbox": [
+      5410014.0,
+      6293792.5,
+      5411744.0,
+      6296443.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/MaximoPaza3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f320e56b29fba34a6b053c83c6a1491803987be8e37c75feb979b868153d65ec"
+}

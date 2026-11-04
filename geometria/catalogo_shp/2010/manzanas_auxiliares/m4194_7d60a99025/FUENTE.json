@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/m4194_7d60a99025",
+  "shp": "m4194.shp",
+  "entidades": 36,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4194.shx",
+      "bytes": 388,
+      "sha256": "4da31e31d88451b90ebd946890804383766fe483134cc9c40d0f13bca5789ffe"
+    },
+    {
+      "archivo": "m4194.shp",
+      "bytes": 7156,
+      "sha256": "adbf10290492b1bddff6a2e5eb134121b0a56423f1e1388fc1d33bde2b5993f0"
+    },
+    {
+      "archivo": "m4194.sbx",
+      "bytes": 164,
+      "sha256": "724ac9d2828b5c957e03fc01bc79e334f9294299b9830cfd288ea17bf4bb3c29"
+    },
+    {
+      "archivo": "m4194.sbn",
+      "bytes": 508,
+      "sha256": "6ce5fe53bce49151c7f86b351ffa008e1e6a722a2e42453a7226080bedaaa4db"
+    },
+    {
+      "archivo": "m4194.dbf",
+      "bytes": 7477,
+      "sha256": "f58e1a6c67a73a7f80f825074813c9c1fd8628e91a0efd89409b20eb980b8058"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/VICENTEECHEVERRIA.zip!m4194.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c687e05259",
+    "archivo": "santafe/ipec/2010/VICENTEECHEVERRIA.zip!m4194.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 36,
+    "registros_shx": 36,
+    "shape_type": 5,
+    "bbox": [
+      5420331.5,
+      6367726.0,
+      5421778.5,
+      6368826.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/VICENTEECHEVERRIA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9481f90c90d3351c85c11c3d1a40ff6c27224a5dcab32746817b89edfefad109"
+}

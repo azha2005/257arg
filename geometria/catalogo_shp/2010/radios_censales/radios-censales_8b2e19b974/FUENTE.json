@@ -1,0 +1,80 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/radios-censales_8b2e19b974",
+  "shp": "radios-censales.shp",
+  "entidades": 19577,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "radios-censales.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "radios-censales.dbf",
+      "bytes": 8007283,
+      "sha256": "44ab83037a7f6c211c24acc301b6814304b92ba648544d1cb28d07d328114f4d"
+    },
+    {
+      "archivo": "radios-censales.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "archivo": "radios-censales.qmd",
+      "bytes": 1897,
+      "sha256": "6bf8cd9118d9bd1adc4603632c31361463db8bae275270da448607882d62b9b7"
+    },
+    {
+      "archivo": "radios-censales.shp",
+      "bytes": 11490144,
+      "sha256": "f8cb381e84dfc960a6c3fc60bdfa96c5ace52f54111d9d800160ddc15ed16064"
+    },
+    {
+      "archivo": "radios-censales.shx",
+      "bytes": 156716,
+      "sha256": "8a0cb41aef225c54845711fec1ada15925eccdca7436c757e2184edc1db4850d"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/pba/radios/radios-censales-shp.zip!shp/radios-censales.shp",
+  "metadata_original": {
+    "id_fuente": "pba_radios_a8bed3ca-2746-4ab1-a390-56f1788431b1",
+    "archivo": "pba/radios/radios-censales-shp.zip!shp/radios-censales.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Buenos Aires",
+    "features": 19577,
+    "registros_shx": 19577,
+    "shape_type": 5,
+    "bbox": [
+      -63.39179454468062,
+      -41.0366858664151,
+      -56.66267267959321,
+      -33.26432919247353
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://catalogo.datos.gba.gob.ar/dataset/radios-censales",
+    "nota": "Formato .shp (EPSG:4326. Proyección WGS 84). Representa la ubicación de las unidades geográficas empleadas en el censo, acompañadas con su código, nombre e información estadística básica.",
+    "licencia": "CC BY 4.0",
+    "url_descarga": "https://catalogo.datos.gba.gob.ar/dataset/33b080d2-e369-4076-acd4-511db0e9bffb/resource/a8bed3ca-2746-4ab1-a390-56f1788431b1/download/radios-censales-shp.zip",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+    "encoding_declarado": "UTF-8",
+    "campo_codigo": "link",
+    "codigos_distintos": 19577,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "999ff30793f003c679a91dc1e4c1ff2adf2be8bbfaa5abbcaf80c7ab53119e39"
+}

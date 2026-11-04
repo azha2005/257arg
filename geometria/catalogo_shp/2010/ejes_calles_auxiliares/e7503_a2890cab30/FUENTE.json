@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e7503_a2890cab30",
+  "shp": "e7503.shp",
+  "entidades": 14,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e7503.shx",
+      "bytes": 212,
+      "sha256": "1d69a9c7f9c44ce01e085a591a905e7d45309174bbaf12e6b6ae8857985f30d3"
+    },
+    {
+      "archivo": "e7503.shp",
+      "bytes": 1492,
+      "sha256": "751bd42b97be428f1bbf688c154290b3df2267795c39703c80e5f11980dc4016"
+    },
+    {
+      "archivo": "e7503.sbx",
+      "bytes": 148,
+      "sha256": "a23676687d8ac7f1790ed4e51e6b212bc302dd6d12039f16afc6da8d87cb6fb4"
+    },
+    {
+      "archivo": "e7503.sbn",
+      "bytes": 316,
+      "sha256": "67f6ce48023aae0e0b775e03c4bf7db18ce799f694e021a0b388ad94c1c53e50"
+    },
+    {
+      "archivo": "e7503.dbf",
+      "bytes": 5481,
+      "sha256": "29bd8e8b6fae5490a73e2bc4ad54cc8aea34ce2e7056d8c9e9f61c87b6a3d851"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ESTACIONKILOMETRO501.zip!e7503.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_cae2e870d8",
+    "archivo": "santafe/ipec/2010/ESTACIONKILOMETRO501.zip!e7503.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 14,
+    "registros_shx": 14,
+    "shape_type": 3,
+    "bbox": [
+      5312060.0,
+      6507499.5,
+      5312585.0,
+      6508155.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ESTACIONKILOMETRO501.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9d1e2920dd59881e925c6df2872a5a349f3474cb742d2271b028a52071cf91fa"
+}

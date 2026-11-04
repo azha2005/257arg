@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0208_9b8c259f65",
+  "shp": "m0208.shp",
+  "entidades": 419,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0208.dbf",
+      "bytes": 82929,
+      "sha256": "4e65dc4d177ee309775e111a4e2d3b2f782e449965e5952f3ef3bef108283ace"
+    },
+    {
+      "archivo": "m0208.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0208.shp",
+      "bytes": 80748,
+      "sha256": "970a013395b39e30a92716309ca626da97780d34233e406cee7e407020469d3b"
+    },
+    {
+      "archivo": "m0208.shx",
+      "bytes": 3452,
+      "sha256": "539b81e9df4cf2bbb34c81114b308eb8fe32667044468aa2052009f9b5b225a1"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/TOSTADO.zip!m0208.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_459c4d190f",
+    "archivo": "santafe/ipec/2022/TOSTADO.zip!m0208.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 419,
+    "registros_shx": 419,
+    "shape_type": 5,
+    "bbox": [
+      5326219.5,
+      6764040.5,
+      5329040.0,
+      6767496.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/TOSTADO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "78acb38e2efe4b0b2102fcfc1a33df01c8fb29bd45c8e689dd6cf710d09b1dd4"
+}

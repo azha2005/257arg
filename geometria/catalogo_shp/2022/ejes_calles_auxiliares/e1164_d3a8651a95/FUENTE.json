@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1164_d3a8651a95",
+  "shp": "e1164.shp",
+  "entidades": 132,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1164.dbf",
+      "bytes": 39946,
+      "sha256": "b547086e1eb1010b85bdf45da46d93b86af000fda94f0231e1f9f74eae74abd0"
+    },
+    {
+      "archivo": "e1164.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1164.shp",
+      "bytes": 12020,
+      "sha256": "06c576e417c671d1ea2d4e0929a39b04f24e26f4d207827e6f40c7d028d0f763"
+    },
+    {
+      "archivo": "e1164.shx",
+      "bytes": 1156,
+      "sha256": "101edf88fc4f4567b52334c6e8a30ee8960e42494ac96ba4689680262d78c852"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/JUNCAL.zip!e1164.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_f4d2de97f4",
+    "archivo": "santafe/ipec/2022/JUNCAL.zip!e1164.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 132,
+    "registros_shx": 132,
+    "shape_type": 3,
+    "bbox": [
+      5402291.5,
+      6268906.0,
+      5404277.0,
+      6270252.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/JUNCAL.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "dfefad92f3b7e0d7085b595ef68491c2f6c4095e7178d0c6c612294bbe0f1ed1"
+}

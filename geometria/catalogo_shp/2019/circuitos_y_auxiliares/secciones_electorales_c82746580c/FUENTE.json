@@ -1,0 +1,58 @@
+{
+  "anio_carpeta": "2019",
+  "criterio_anio": "Copia existente en marzo de 2019; vigencia electoral no verificada",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "2019/circuitos_y_auxiliares/secciones_electorales_c82746580c",
+  "shp": "secciones_electorales.shp",
+  "entidades": 531,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "secciones_electorales.dbf",
+      "bytes": 410093,
+      "sha256": "f9f83d5f24d3ab9db6ba36933dd3633555e9f282fce6255fdc2c03143970b4d2"
+    },
+    {
+      "archivo": "secciones_electorales.prj",
+      "bytes": 335,
+      "sha256": "de5c1395a1ffc517ee2112b217c89595d01a7944eb65374c06547d4771b29167"
+    },
+    {
+      "archivo": "secciones_electorales.shp",
+      "bytes": 11876716,
+      "sha256": "63b67e7a90e825d1c1488654d4650ccf039b4e2e2380bdd37532efdc987825ca"
+    },
+    {
+      "archivo": "secciones_electorales.shx",
+      "bytes": 4348,
+      "sha256": "78d4cef959b2acf34eeef2a21443675e795b5d387e7ae1c9b8b4c295ce3222f2"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/snapshot_20190308/data/circuitos/secciones_electorales/secciones_electorales.shp",
+  "metadata_original": {
+    "archivo": "snapshot_20190308/data/circuitos/secciones_electorales/secciones_electorales.shp",
+    "formato": "SHP",
+    "features": 531,
+    "shapes": 531,
+    "bbox": [
+      -73.56607829801668,
+      -55.056993356836166,
+      -53.64610766644239,
+      -21.78265887252468
+    ],
+    "campos": [
+      "gid",
+      "provincia",
+      "departamen",
+      "cabecera"
+    ],
+    "sha256": "63b67e7a90e825d1c1488654d4650ccf039b4e2e2380bdd37532efdc987825ca",
+    "crs_wkt": "GEOGCS[\"WGS 84\", DATUM[\"World Geodetic System 1984\", SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], AUTHORITY[\"EPSG\",\"6326\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4326\"]]",
+    "url": "https://raw.githubusercontent.com/tartagalensis/EleccionesARG/6d03b2536369/data/circuitos/secciones_electorales/secciones_electorales.shp",
+    "fuente": "https://github.com/tartagalensis/EleccionesARG/tree/6d03b2536369",
+    "corte_declarado": "existente al 2019-03-08",
+    "nota": "Capa de secciones; complemento excluido del conteo de circuitos"
+  },
+  "firma_componentes": "fd00abba5fc80c3a547858d88566f238357a2a8d0729874fab4d08ca7b09c0cf"
+}

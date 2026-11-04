@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0659_a4259e9a31",
+  "shp": "E0659.shp",
+  "entidades": 265,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0659.dbf",
+      "bytes": 92830,
+      "sha256": "08f87c8bba5a197ff4f9cb3ee2786c10b7e5ad37f05cf2c55197ddeb216f1c3c"
+    },
+    {
+      "archivo": "E0659.shp",
+      "bytes": 23468,
+      "sha256": "49ef1fb7b4569c92e91477bd48eb707e8362e1f4e8c9234979b76658c466ab8e"
+    },
+    {
+      "archivo": "E0659.shx",
+      "bytes": 2220,
+      "sha256": "a3374e9f9579669c0c45fa77aeda34c632eb9032534ec3397d27975ace287b8e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Humboldta2v.zip!E0659.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bbe294d933",
+    "archivo": "santafe/ipec/2010/Humboldta2v.zip!E0659.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 265,
+    "registros_shx": 265,
+    "shape_type": 3,
+    "bbox": [
+      5396338.0,
+      6524895.0,
+      5397777.0,
+      6527658.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Humboldta2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "50e1fec4f2fb3687925a9215932c51e721b5cfed0981508551941d98e77d07f7"
+}

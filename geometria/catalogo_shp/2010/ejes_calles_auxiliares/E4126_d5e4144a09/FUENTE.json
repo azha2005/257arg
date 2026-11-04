@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4126_d5e4144a09",
+  "shp": "E4126.shp",
+  "entidades": 62,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4126.dbf",
+      "bytes": 22186,
+      "sha256": "efba50ea6fc45e78f9c584f3c1049fa4ae810ebb5c31bfeb9fabcbc3a0f589ce"
+    },
+    {
+      "archivo": "E4126.shp",
+      "bytes": 5556,
+      "sha256": "d276182b7eb9fff0798762914ede1801f578f79670ffdaece364c5a0ee072611"
+    },
+    {
+      "archivo": "E4126.shx",
+      "bytes": 596,
+      "sha256": "f21d86bbd95ae9f8f6409fe29024794e94b02bc02279dff0ba360fe2b98942b7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/palaciosa3v.zip!E4126.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0c0647cbec",
+    "archivo": "santafe/ipec/2010/palaciosa3v.zip!E4126.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 62,
+    "registros_shx": 62,
+    "shape_type": 3,
+    "bbox": [
+      5344242.5,
+      6601677.5,
+      5344859.5,
+      6602661.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/palaciosa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "858359992cfe74dffceecddef1cd63a4fd15ce512974d638d417681784501b10"
+}

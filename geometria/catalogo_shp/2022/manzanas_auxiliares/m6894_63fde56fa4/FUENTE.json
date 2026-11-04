@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m6894_63fde56fa4",
+  "shp": "m6894.shp",
+  "entidades": 12,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m6894.dbf",
+      "bytes": 2750,
+      "sha256": "b6a2523b53b3ad2eed97d88020ca6ef4b88c7dd2d36838b2ebe66c61f603c8af"
+    },
+    {
+      "archivo": "m6894.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m6894.shp",
+      "bytes": 1972,
+      "sha256": "e393525a3f6e3929b668cf95636325099de0b789a091ae345d4e1c83e003dff0"
+    },
+    {
+      "archivo": "m6894.shx",
+      "bytes": 196,
+      "sha256": "19e72abf74b672da760a8a99f2e762518629e1434b9ea97dc22336d738054663"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIANUEVA.zip!m6894.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_7c04deaea2",
+    "archivo": "santafe/ipec/2022/COLONIANUEVA.zip!m6894.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 12,
+    "registros_shx": 12,
+    "shape_type": 5,
+    "bbox": [
+      5390708.5,
+      6530176.0,
+      5391395.0,
+      6530753.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIANUEVA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "0b2ea9316be5dccd348ff4efa3954dc0d5c4fa99f040364da74e0c207bfae1d8"
+}

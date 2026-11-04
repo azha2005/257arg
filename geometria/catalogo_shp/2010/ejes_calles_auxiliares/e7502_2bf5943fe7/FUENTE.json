@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e7502_2bf5943fe7",
+  "shp": "e7502.shp",
+  "entidades": 12,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e7502.shx",
+      "bytes": 196,
+      "sha256": "1999bdd3b901ce5c59f500b0a6c59729a3fd448995d95c0972b600b03dbf95bb"
+    },
+    {
+      "archivo": "e7502.shp",
+      "bytes": 1156,
+      "sha256": "08faa3b6351558f6a7ec6c8446e084989e6ad98729004ac5bee32c6ab9a6326a"
+    },
+    {
+      "archivo": "e7502.sbx",
+      "bytes": 132,
+      "sha256": "0e57de521df0b1ada2bc3b282632f7dc885ad55f0aba13f7c7d4830b38b88187"
+    },
+    {
+      "archivo": "e7502.sbn",
+      "bytes": 252,
+      "sha256": "b51e2276520e5ca4f2b246aec2692c75b3c7a376d068fcc86c382fc99d2adada"
+    },
+    {
+      "archivo": "e7502.dbf",
+      "bytes": 4785,
+      "sha256": "47c58296948784c4f702d5574ea2ceaafaf9f0950c86b6bf9a98f9884da37e12"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PUEBLOLUISBERLI.zip!e7502.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a72137c0e7",
+    "archivo": "santafe/ipec/2010/PUEBLOLUISBERLI.zip!e7502.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 12,
+    "registros_shx": 12,
+    "shape_type": 3,
+    "bbox": [
+      5472715.5,
+      6770692.5,
+      5473006.0,
+      6771023.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOM_NOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PUEBLOLUISBERLI.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0051eb07b6585a335a1d1d87d66de61444d6dd6e95aea0da7a1ed03e51fc2f38"
+}

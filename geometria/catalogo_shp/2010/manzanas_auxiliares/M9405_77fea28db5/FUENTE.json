@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M9405_77fea28db5",
+  "shp": "M9405.shp",
+  "entidades": 26,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M9405.dbf",
+      "bytes": 5508,
+      "sha256": "96e9b82179782b051b88d7da4d0334d38670ddb4f9dafd4fbac05b37e6716e10"
+    },
+    {
+      "archivo": "M9405.shp",
+      "bytes": 4484,
+      "sha256": "6c42c2eed9c04a27fee861a87ae035468a9a8493618301cd13ad7d59d9dc2ce5"
+    },
+    {
+      "archivo": "M9405.shx",
+      "bytes": 308,
+      "sha256": "07e82de9775dfcdafc0909d1ec8b7d01721925e1f616f6455d9e841e9e049c91"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/BarrioMitrea3v.zip!M9405.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5be8c94bd6",
+    "archivo": "santafe/ipec/2010/BarrioMitrea3v.zip!M9405.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 26,
+    "registros_shx": 26,
+    "shape_type": 5,
+    "bbox": [
+      5463184.0,
+      6320805.5,
+      5464071.0,
+      6321670.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/BarrioMitrea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a0ccf91e57bc2c512d5ca0ba023cf981caf9cc26c4bdab467ccd3163411942f2"
+}

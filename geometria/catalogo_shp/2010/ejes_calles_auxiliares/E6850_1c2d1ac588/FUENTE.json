@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6850_1c2d1ac588",
+  "shp": "E6850.shp",
+  "entidades": 41,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6850.dbf",
+      "bytes": 14878,
+      "sha256": "5527f1b9a47f61f3c88a5f060f796e50bf84cffe2a50078be1df9e3e8d88699c"
+    },
+    {
+      "archivo": "E6850.shp",
+      "bytes": 4012,
+      "sha256": "f5f427ec39ad2271ab06703ead68a357295208d0f8c28f23bd1b33b4921a116e"
+    },
+    {
+      "archivo": "E6850.shx",
+      "bytes": 428,
+      "sha256": "fa73057b492cf544b3b286b5a30b1550dde08a93e128ae1faa522f2f16c77f6e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/balneariolaverdea3h.zip!E6850.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f72c0592bb",
+    "archivo": "santafe/ipec/2010/balneariolaverdea3h.zip!E6850.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 41,
+    "registros_shx": 41,
+    "shape_type": 3,
+    "bbox": [
+      5379932.5,
+      6682848.5,
+      5380816.0,
+      6683910.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/balneariolaverdea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7a2d83cf68ab4e9bcb12d49edb2548e304e108653e463c60d85e143ed01cc1b6"
+}

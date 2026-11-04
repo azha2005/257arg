@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0184_bb5f400d1f",
+  "shp": "R0184.shp",
+  "entidades": 17,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0184.dbf",
+      "bytes": 3950,
+      "sha256": "794f9c3fb72b75d4ad24ebdbc6f2b8bfcb9fd29978fb2778ae1d7c3b0da3acef"
+    },
+    {
+      "archivo": "R0184.shp",
+      "bytes": 15564,
+      "sha256": "feec7e68040acdb41cba3f085ab37356341beaf7c736c1119d3db92263ba2270"
+    },
+    {
+      "archivo": "R0184.shx",
+      "bytes": 236,
+      "sha256": "1db5cc9ab579d4b4096ae6fdf19c2512d1acb4d3bbf23687e3d9300b1a9ac02b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjorgea1h.zip!R0184.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d2101188a2",
+    "archivo": "santafe/ipec/2010/sanjorgea1h.zip!R0184.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 17,
+    "registros_shx": 17,
+    "shape_type": 5,
+    "bbox": [
+      5322398.0,
+      6467974.5,
+      5325538.0,
+      6472400.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjorgea1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "56553b3a47275e0e109c02ad968fbbf645cbbf6258465dbb7734a82d13984ce3"
+}

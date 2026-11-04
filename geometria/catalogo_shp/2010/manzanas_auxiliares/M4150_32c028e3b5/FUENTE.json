@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4150_32c028e3b5",
+  "shp": "M4150.shp",
+  "entidades": 60,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4150.dbf",
+      "bytes": 12206,
+      "sha256": "f3206c9f50330c3129649933fbf1802c21112fee6e85a92f209a741fd0a7189c"
+    },
+    {
+      "archivo": "M4150.shp",
+      "bytes": 9492,
+      "sha256": "00ee4f43cdbcd407c01e5bc4a309d8732022f6806bc677069faeda20a1979655"
+    },
+    {
+      "archivo": "M4150.shx",
+      "bytes": 580,
+      "sha256": "e3f31ae62632990f63a34c5e6a39a8f2a3ad92ec17ee731d70c07da490d2907b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bellaitaliaa3h.zip!M4150.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6c377a854a",
+    "archivo": "santafe/ipec/2010/bellaitaliaa3h.zip!M4150.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 60,
+    "registros_shx": 60,
+    "shape_type": 5,
+    "bbox": [
+      5363138.5,
+      6538356.0,
+      5366517.5,
+      6540636.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bellaitaliaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9c1662902ef584fe7b766f82f0365c8e5dc8f6880c7f6303f1421a59fe1d5afa"
+}

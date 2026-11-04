@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1473_68dca3d259",
+  "shp": "M1473.shp",
+  "entidades": 39,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1473.dbf",
+      "bytes": 8069,
+      "sha256": "6550b9215566f57b6aced3b20297f49ed14590913b6c46914c9e2db8c458fd46"
+    },
+    {
+      "archivo": "M1473.shp",
+      "bytes": 7372,
+      "sha256": "2d9edd11bac5979f3e2c38bdd14eb89dc564fff747382b51b5d5abf38f394bcd"
+    },
+    {
+      "archivo": "M1473.shx",
+      "bytes": 412,
+      "sha256": "05ab643164d1c9f6c2e9ba20b235e47c08e257992d8db57dbb998a2b40938483"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/canadaricaa3h.zip!M1473.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_252e95e971",
+    "archivo": "santafe/ipec/2010/canadaricaa3h.zip!M1473.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 39,
+    "registros_shx": 39,
+    "shape_type": 5,
+    "bbox": [
+      5442608.0,
+      6291352.0,
+      5443698.0,
+      6292403.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/canadaricaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8ff2b16f1cb930d00b09de1041164c87e69b84c5ed770ad22b7d9c66b309e0b8"
+}

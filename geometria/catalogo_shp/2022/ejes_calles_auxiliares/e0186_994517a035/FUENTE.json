@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0186_994517a035",
+  "shp": "e0186.shp",
+  "entidades": 1026,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0186.dbf",
+      "bytes": 306358,
+      "sha256": "52538678e21268ddd9c0639249f1dfc0af60713d8aea553e6c78e26731fc586e"
+    },
+    {
+      "archivo": "e0186.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0186.shp",
+      "bytes": 94596,
+      "sha256": "48df487b8d13a8b3145c4525713f297c3a7b1d0c7bcd353c31ff9d07a4f23555"
+    },
+    {
+      "archivo": "e0186.shx",
+      "bytes": 8308,
+      "sha256": "7d438f5ceca47e50676cf0f43beb84fffa01fb54eea3626c47a1fc5b36051e0d"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/CARCARANA.zip!e0186.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_db78d43d3e",
+    "archivo": "santafe/ipec/2022/CARCARANA.zip!e0186.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1026,
+    "registros_shx": 1026,
+    "shape_type": 3,
+    "bbox": [
+      5389331.0,
+      6363343.0,
+      5394517.5,
+      6367045.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/CARCARANA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7d11703cafcc3a5e5f7daf2f41b98a2f2910dce93d91bf07da75878889df269a"
+}

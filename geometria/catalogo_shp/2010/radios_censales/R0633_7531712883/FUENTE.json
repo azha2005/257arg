@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0633_7531712883",
+  "shp": "R0633.shp",
+  "entidades": 3,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0633.dbf",
+      "bytes": 1094,
+      "sha256": "8fbe0bb3a3dcbee778a8046d0ad0c2a2b87fb174aee5f5a4d36c3e3a8111efde"
+    },
+    {
+      "archivo": "R0633.shp",
+      "bytes": 2236,
+      "sha256": "8febec43912ef0f97f87398731e8a75abd1c61d0b6f0a661f7d1b2e8fb33d9f6"
+    },
+    {
+      "archivo": "R0633.shx",
+      "bytes": 124,
+      "sha256": "9bd9f18786c89e571d57a6f491b5e3df87d4f0aa564363472a7f742888816792"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villaeloisaa3h.zip!R0633.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_335ed5357e",
+    "archivo": "santafe/ipec/2010/villaeloisaa3h.zip!R0633.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 5,
+    "bbox": [
+      5353940.5,
+      6351638.0,
+      5356331.5,
+      6352886.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villaeloisaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d934fe412dedbad2dcf2eca0c3ad12214c23c3c7c0d77fd891d37b80f1191833"
+}

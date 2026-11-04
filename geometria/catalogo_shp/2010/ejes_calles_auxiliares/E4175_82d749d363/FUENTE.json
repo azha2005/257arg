@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4175_82d749d363",
+  "shp": "E4175.shp",
+  "entidades": 79,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4175.dbf",
+      "bytes": 28102,
+      "sha256": "743d9f7144c97f892e5f35d963ba2ec239ce53778ecefbd52f74c36cfdf0c1d8"
+    },
+    {
+      "archivo": "E4175.shp",
+      "bytes": 7116,
+      "sha256": "cae286e66e60544df5defb43f414c4892472e449ce4958521ec7bc5fb1b98167"
+    },
+    {
+      "archivo": "E4175.shx",
+      "bytes": 732,
+      "sha256": "26c4d3b81ab7dc147d74a77ccb25ce9f9e425b3014ac4ffdb4e8dd3a715c8811"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Trailla3v.zip!E4175.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f38ab6cb4f",
+    "archivo": "santafe/ipec/2010/Trailla3v.zip!E4175.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 79,
+    "registros_shx": 79,
+    "shape_type": 3,
+    "bbox": [
+      5338551.0,
+      6466997.0,
+      5339591.0,
+      6468288.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Trailla3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "dd13058ee2677d6cb8b4378f8ed60e7d7663f4d1f5d6886be644a0e523ce97f0"
+}

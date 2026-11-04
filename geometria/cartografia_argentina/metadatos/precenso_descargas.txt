@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Precenso 2020 - INDEC - Argentina">
+    <meta name="author" content="GeoEstadísticas INDEC">
+    <title>Precenso de viviendas 2020</title>
+    <link rel="icon" type="image/png" href="https://precensodeviviendas.indec.gob.ar/assets/images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="https://precensodeviviendas.indec.gob.ar/assets/libs/bootstrap-4.5.0-dist/css/bootstrap.css"> -->
+    <!-- Leaflet CSS -->
+    <!-- <link rel="stylesheet" href="https://precensodeviviendas.indec.gob.ar/assets/libs/leaflet/leaflet.css"> -->
+    <!-- <link rel="stylesheet" href="https://precensodeviviendas.indec.gob.ar/assets/libs/leaflet.easy-button/easy-button.css"> -->
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://precensodeviviendas.indec.gob.ar/assets\libs\fontawesome-free-5.14.0-web\css\all.css">
+    <!-- Select2 -->
+    <!-- <link rel="stylesheet" href="https://precensodeviviendas.indec.gob.ar/bower_components/select2/dist/css/select2.min.css"> -->
+	<link rel="stylesheet" href="https://rawgithub.com/ebrelsford/Leaflet.loading/master/src/Control.Loading.css" />
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="https://precensodeviviendas.indec.gob.ar/assets/custom.css" rel="stylesheet"> -->
+    <link href="https://precensodeviviendas.indec.gob.ar/css/app.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8G7CY4HEXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-8G7CY4HEXX');
+	</script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top bg-white center shadow-sm">
+
+    <a class="navbar-brand" href="https://precensodeviviendas.indec.gob.ar/">
+        <img src="assets/images/logo-precenso.png" alt="Precenso" class="logo-nav">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style="color:#ccc; font-size:28px;"></i>
+        </span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto mx-auto text-uppercase" style="color: #1d1d1b">
+            <li class="nav-item ">
+                <a class="nav-link nav-home" href="https://precensodeviviendas.indec.gob.ar/">Inicio </a>
+            </li>
+            <li class="nav-item nav-map">
+                <a class="nav-link nav-map" href="https://precensodeviviendas.indec.gob.ar/mapa">Mapa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-download" href="https://precensodeviviendas.indec.gob.ar/descargas">Descargas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-indicators" href="https://precensodeviviendas.indec.gob.ar/indicadores">Indicadores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-methodology" href="https://precensodeviviendas.indec.gob.ar/metodologia">Metodología</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-glossary" href="https://precensodeviviendas.indec.gob.ar/glosario">Glosario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-help" href="https://precensodeviviendas.indec.gob.ar/ayuda" tabindex="-1" aria-disabled="true">Ayuda</a>
+            </li>
+        </ul>
+    </div>
+<a href="https://www.indec.gob.ar/" target="_blank">
+<img src="assets/images/logo-censo.png" class="logo-nav" alt="Precenso">
+</a>
+</nav>
+<div class="container" xmlns="http://www.w3.org/1999/html">
+	<div class="row">
+		<div class="col-md-8 col-sm-12 mx-auto gradient py-5 ">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="section-title">Descargas</h1>
+				</div>
+				<div class="col-12 mt-5">
+					<p>Desde esta sección se ofrece la posibilidad de descargar las bases geográficas con la capa de
+						resultados del Precenso de Viviendas, en diferentes formatos (shape, csv o geojson). Estos
+						archivos pueden ser utilizados en distintas plataformas y clientes de Sistemas de Información
+						Geográfica, bases de datos espaciales o mapas web.</p>
+					<div class="card download shadow-sm">
+						<div class="card-header text-center font-weight-bold" style="background-color: #dadfeb">
+							BASES GEOGRÁFICAS E INDICADORES
+						</div>
+						<div class="card-body p-0" style="background-color: #ECF0F6">
+							<table class="table">
+								<thead>
+								<tr>
+									<th scope="col">Unidad Geográfica</th>
+									<th scope="col" class="text-center">Shape</th>
+									<th scope="col" class="text-center">CSV</th>
+									<th scope="col" class="text-center">GeoJson</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>Provincias</td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:provincias', 'shape-zip')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:provincias', 'csv')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+
+									<td class="text-center"><a href="#" onclick="geoJsonDownload('provincias')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+
+
+								</tr>
+								<tr>
+									<td>Departamentos/partidos/comunas</td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:departamentos', 'shape-zip')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:departamentos', 'csv')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+									<td class="text-center"><a href="#"
+															   onclick="geoJsonDownload('departamentos')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+								</tr>
+								<tr>
+									<td>Localidades</td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:localidades', 'shape-zip')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:localidades', 'csv')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+									<td class="text-center"><a href="#" onclick="geoJsonDownload('localidades')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+								</tr>
+								<tr>
+									<td>Radios censales</td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:radios', 'shape-zip')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+									<td class="text-center"><a href="#"
+															   onclick="geoserverDownload('precenso:radios', 'csv')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+									<td class="text-center"><a href="#" onclick="geoJsonDownload('radios')">
+											<img src="assets/images/flecha-violeta.png" style="height: 15px">
+										</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="card-footer" style="background-color: #ECF0F6">
+							<p>Los datos publicados refieren al período 2019-2020. A <b class="monthYear"></b>, la
+								información presentada corresponde a <b class="totalLocalities"></b> <b>localidades</b>,
+								que representan un <b class='percentageLocalities'></b> del total de las localidades de
+								2.000 habitantes y más. La información se seguirá actualizando hasta completar la
+								totalidad de las localidades. En el caso de las provincias cuya carga está en proceso,
+								los totales de viviendas provinciales y de los departamentos-partidos-comunas presentan
+								solo la sumatoria de viviendas correspondientes a las localidades ingresadas.</p>
+							<p class="mb-0">Fecha de actualización: <b class='lastUpdate'></b>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mt-5">
+					<h2 class="section-subtitle">Documentación y metadatos</h2>
+					<p>Además, se presenta documentación de referencia que puede ser de utilidad para el uso e
+						interpretación de la información publicada en esta aplicación</p>
+				</div>
+
+					<div class="col-md-10">
+						<a href="/xlsx/departamentos-sin-localidades-de-2000-o-mas-habitantes.xlsx" class="help-list">
+							Listado de los departamentos que solo cuentan con localidades de menos de 2.000 habitantes y no forman parte del Precenso de Viviendas.
+						</a>
+					</div>
+					<div class="col-md-2 text-right pt-2">
+						<a href="/xlsx/departamentos-sin-localidades-de-2000-o-mas-habitantes.xlsx">
+							<img src="assets/images/flecha-violeta.png" style="height: 15px">
+						</a>
+					</div>
+
+				<div class="col-md-10 my-3">
+					<a href="/docs/diccionario_base_precenso_viviendas.pdf" class="help-list">
+						Diccionario de la base de datos
+						del Precenso de Viviendas
+					</a>
+				</div>
+				<div class="col-md-2 text-right my-3">
+					<a href="/docs/diccionario_base_precenso_viviendas.pdf">
+						<img src="assets/images/flecha-violeta.png" style="height: 15px">
+					</a>
+				</div>
+
+				<div class="col-md-10">
+					<a href="/xlsx/localidades-2010.xlsx" class="help-list">
+						Listado de localidades según el
+						Censo Nacional de Población, Hogares y Viviendas 2010
+					</a>
+				</div>
+				<div class="col-md-2 text-right pt-2">
+					<a href="/xlsx/localidades-2010.xlsx" class="help-list">
+						<img src="assets/images/flecha-violeta.png" style="height: 15px">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid bg-precenso py-3">
+	<div class="row">
+		<div class="col-md-4 col-sm-12 text-white"  style="font-size: 11px">
+			<p>
+				INDEC - Argentina<br>
+				Av. Presidente Julio A. Roca 609. P.B. C1067ABB<br>
+				Ciudad Autónoma de Buenos Aires, Argentina.<br>
+				Centro Estadístico de Servicios: (54-11) 5031-4632<br>
+				© 2021
+			</p>
+		</div>
+			<div class="col-md-4 col-sm-12 offset-md-4 text-right">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="https://twitter.com/INDECargentina" target="_blank">
+							<div class="btn-social-network btn-twitter"></div>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.facebook.com/INDECArgentina" target="_blank">
+							<div class="btn-social-network btn-facebook"></div>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.instagram.com/indecargentina/" target="_blank">
+							<div class="btn-social-network btn-instagram"></div>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.linkedin.com/company/indecargentina" target="_blank">
+							<div class="btn-social-network btn-linkedin"></div>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.youtube.com/c/INDECArgentina" target="_blank">
+							<div class="btn-social-network btn-youtube"></div>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://open.spotify.com/show/2OgsFaJvyneuCmCjptyJdk" target="_blank">
+							<div class="btn-social-network btn-spotify"></div>
+						</a>
+					</li>
+				</ul>
+				<a href="https://www.indec.gob.ar/" target="_blank">
+					<div class="btn-footer-indec"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+var domain_geoserver = "https://geoserver.indec.gob.ar"
+var domain = "https://precensodeviviendas.indec.gob.ar/"
+</script>
+
+<script src="https://precensodeviviendas.indec.gob.ar/js/app.js"></script>
+
+
+<script>
+$(function() {
+    $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+	navOptionSelected()
+})
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0904_dbd5a9c7af",
+  "shp": "E0904.shp",
+  "entidades": 418,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0904.dbf",
+      "bytes": 146074,
+      "sha256": "18692cd5d89a6e6fd5fb2465e7a3c25a661e18674c8907f4f82a8b3b515f8c5d"
+    },
+    {
+      "archivo": "E0904.shp",
+      "bytes": 39204,
+      "sha256": "43b94e2410fcb7a35c574ebbcf2ec31977fd25147d78e46a2681eb87f0830645"
+    },
+    {
+      "archivo": "E0904.shx",
+      "bytes": 3444,
+      "sha256": "212471e60b3f3116ffc7b8b6a84633d07427c9249368cb78c0ff2edf7c7f1952"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Cayastaa2v.zip!E0904.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c15cadb3d9",
+    "archivo": "santafe/ipec/2010/Cayastaa2v.zip!E0904.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 418,
+    "registros_shx": 418,
+    "shape_type": 3,
+    "bbox": [
+      5484042.0,
+      6546616.0,
+      5487374.5,
+      6551001.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Cayastaa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fa686b080e416da83cfba6e4018064c651719ce0473a3b10ee3be9615cb14c8f"
+}

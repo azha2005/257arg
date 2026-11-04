@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Catamarca_con_datos_fd6a21a9b2",
+  "shp": "Catamarca_con_datos.shp",
+  "entidades": 561,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Catamarca_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Catamarca_con_datos.shp",
+      "bytes": 767176,
+      "sha256": "df03658a02ee2b65e7989acb4113d7157b96fb7af57f4fee4a886a481361e1a4"
+    },
+    {
+      "archivo": "Catamarca_con_datos.shx",
+      "bytes": 4588,
+      "sha256": "2653c5d05560cf0c4a3ecbe359868a5ebae3c9b3c8cd7cf7956a6b0f7b9cae0a"
+    },
+    {
+      "archivo": "Catamarca_con_datos.dbf",
+      "bytes": 229738,
+      "sha256": "7f4ed24ecb1d06a16a834bf750461fda2c5fb0d2f007c47efe63b4234daaff44"
+    },
+    {
+      "archivo": "Catamarca_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Catamarca_con_datos.zip!Catamarca_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_10",
+    "archivo": "indec/2010/Codgeo_Catamarca_con_datos.zip!Catamarca_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Catamarca",
+    "features": 561,
+    "registros_shx": 561,
+    "shape_type": 5,
+    "bbox": [
+      3196957.5,
+      6667206.0,
+      3619032.25,
+      7216940.5
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Catamarca_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 561,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "3ef040412843def116d799ad0b330cf7ac8168dad38450cb43568711edd29b53"
+}

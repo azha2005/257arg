@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0584_842960c0a0",
+  "shp": "m0584.shp",
+  "entidades": 194,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0584.dbf",
+      "bytes": 38604,
+      "sha256": "b3e27318c81d187e3e3fd646947d2f45e1c08d3e869af65ca8b078effae45f70"
+    },
+    {
+      "archivo": "m0584.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0584.shp",
+      "bytes": 33108,
+      "sha256": "2e9d5f0d2bee9e5a3508998f999131dd9191cc7253762fe7e16021879128c250"
+    },
+    {
+      "archivo": "m0584.shx",
+      "bytes": 1652,
+      "sha256": "4f1654ef6728ee84145586748f492fca6c940e9edee5dce4591a73a9719cea34"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MONTEVERA.zip!m0584.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_40c3087f41",
+    "archivo": "santafe/ipec/2022/MONTEVERA.zip!m0584.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 194,
+    "registros_shx": 194,
+    "shape_type": 5,
+    "bbox": [
+      5434590.5,
+      6512363.0,
+      5436461.5,
+      6516284.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MONTEVERA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "4ff784bf04e189a35f03f4104eb498270dd7cfe69bc28cced0bb42f80030d296"
+}

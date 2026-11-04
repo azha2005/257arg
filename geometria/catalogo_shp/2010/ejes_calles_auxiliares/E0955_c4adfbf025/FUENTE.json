@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0955_c4adfbf025",
+  "shp": "E0955.shp",
+  "entidades": 194,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0955.dbf",
+      "bytes": 68122,
+      "sha256": "2517e48eaf4d10b835195c6ff4d49e1a503b817bc02d975d2ded2fe4a741afd0"
+    },
+    {
+      "archivo": "E0955.shp",
+      "bytes": 17204,
+      "sha256": "7ad986b7cd10a8b24e3fd2c5301381625ee4b77f00ea0e2b2dee7de160023a44"
+    },
+    {
+      "archivo": "E0955.shx",
+      "bytes": 1652,
+      "sha256": "76c2cf88d7cbb27adaff4ecefadd5ed689f4e82b35804aa1b2322016ee74c2d7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/FortinOlmosA3H.zip!E0955.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6c30c2abb2",
+    "archivo": "santafe/ipec/2010/FortinOlmosA3H.zip!E0955.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 194,
+    "registros_shx": 194,
+    "shape_type": 3,
+    "bbox": [
+      5459010.5,
+      6786062.5,
+      5460845.5,
+      6787425.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/FortinOlmosA3H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7ca6d5849006014bb771384422cc2851cb6c64d80063074af1f9c8c2c487991a"
+}

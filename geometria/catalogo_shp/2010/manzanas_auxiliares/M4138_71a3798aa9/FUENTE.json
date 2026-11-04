@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4138_71a3798aa9",
+  "shp": "M4138.shp",
+  "entidades": 8,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4138.dbf",
+      "bytes": 1962,
+      "sha256": "35ddc81fcd6352c846808c936aeec1cebaf5ec6a1c6c0b90b5879309cdf308e5"
+    },
+    {
+      "archivo": "M4138.shp",
+      "bytes": 1876,
+      "sha256": "1310b0a4b5e2fc6894a6b7936bf9b830d7461dcc42d22c4f1266735fc3b24f8b"
+    },
+    {
+      "archivo": "M4138.shx",
+      "bytes": 164,
+      "sha256": "2ea263aaf902abb908622282fac537f80035d541affe675274d276872cac95e0"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/estacionsaguiera3h.zip!M4138.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7a0cdc78c5",
+    "archivo": "santafe/ipec/2010/estacionsaguiera3h.zip!M4138.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 8,
+    "registros_shx": 8,
+    "shape_type": 5,
+    "bbox": [
+      5338424.5,
+      6534317.0,
+      5339325.0,
+      6534898.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/estacionsaguiera3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "13e763206dd2007d33f2b611e3cc40a1c54758b1a3cc1569f6ac86e43a28d662"
+}

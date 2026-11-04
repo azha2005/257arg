@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0186_2da9ab3d6a",
+  "shp": "E0186.shp",
+  "entidades": 938,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0186.dbf",
+      "bytes": 327034,
+      "sha256": "894215165a6cd24c8ccee5123122dfaf7d4a26e968179cd48c8baac8416e3184"
+    },
+    {
+      "archivo": "E0186.shp",
+      "bytes": 85556,
+      "sha256": "5257b98b165adb6c793ff9e8c76df329d81b8e2e52316d39f0ad51aa086b50c8"
+    },
+    {
+      "archivo": "E0186.shx",
+      "bytes": 7604,
+      "sha256": "8293ae8c0144b400e152c408ff6e1d27d04f165176aca8de3ade689ae7853bd3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/carcaranaa1h.zip!E0186.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b7293b0861",
+    "archivo": "santafe/ipec/2010/carcaranaa1h.zip!E0186.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 938,
+    "registros_shx": 938,
+    "shape_type": 3,
+    "bbox": [
+      5389695.0,
+      6363343.0,
+      5394517.5,
+      6367039.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/carcaranaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ad99760beee412df6887e96b7bb60650f232d8861e3b30f73f2104d1af88b5cd"
+}

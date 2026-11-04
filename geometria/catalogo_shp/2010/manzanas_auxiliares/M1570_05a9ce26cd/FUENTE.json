@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1570_05a9ce26cd",
+  "shp": "M1570.shp",
+  "entidades": 33,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1570.dbf",
+      "bytes": 6887,
+      "sha256": "7fb41f2e913d7d669daeab9d8a5c43e752a707151eece9ed11224444eefd5550"
+    },
+    {
+      "archivo": "M1570.shp",
+      "bytes": 6364,
+      "sha256": "53bb92798cb83ef99eb3b805f8b28c86c483f8696ddac5e9d5c8e9adaa001cea"
+    },
+    {
+      "archivo": "M1570.shx",
+      "bytes": 364,
+      "sha256": "5b4a1e71690d63a3b5d7d142f4249b1ecc1a0d8242099e3d83ded8cf90d1c953"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pueblomunoza3h.zip!M1570.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4baa899555",
+    "archivo": "santafe/ipec/2010/pueblomunoza3h.zip!M1570.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 33,
+    "registros_shx": 33,
+    "shape_type": 5,
+    "bbox": [
+      5415679.5,
+      6329143.0,
+      5416861.5,
+      6330234.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pueblomunoza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f56ab4f8f26feb555600a0a5e7f9df63ed256bc24b18bc683f6674379cebcec8"
+}

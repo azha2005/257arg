@@ -1,0 +1,110 @@
+{
+  "nombre": "Chaco",
+  "distrito": "06",
+  "serie": "2023",
+  "fecha": "17/09/2023",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 17/09/2023 (circuitos y uniones)",
+  "nivel": "circuitos y uniones",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.electoralchaco.gob.ar/historico/3/cargos-provinciales/",
+  "nota": "Definitivo provincial por circuito. Uniones de circuitos reflejados en otros según aviso expreso del visor oficial; se aplica la misma unión al nacional. Se cotejan departamento y código, no IDs internos de la API. Empalme 2019–2023 por departamento y código; se excluyen 4 claves con cambios de padrón fuera de 0,75–1,33 del crecimiento mediano. Es un control de estabilidad, no certificación de límites históricos.",
+  "foco": [],
+  "id": "chaco_2019p_gob2023_circuitos",
+  "cobertura_provincial": 0.9832063996493343,
+  "cobertura_origen": 0.9832063996493343,
+  "cobertura_destino": 0.9855794319111888,
+  "pendientes": [
+    "Padrón inestable 2019–2023: ALMIRANTEBROWN:132A",
+    "Padrón inestable 2019–2023: LIBERTAD:33",
+    "Padrón inestable 2019–2023: PRIMERODEMAYO:30",
+    "Padrón inestable 2019–2023: SANFERNANDO:20",
+    "FRAYJUSTOSANTAMARIADEORO:128",
+    "FRAYJUSTOSANTAMARIADEORO:129"
+  ],
+  "foco_lado": "destino",
+  "unidades": 146,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 156.09060667467918,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.01691184413904063,
+    "0.0001": 0.013837619868394333,
+    "1e-05": 0.013472219503031142,
+    "1e-06": 0.01324230583905231,
+    "1e-07": 0.013197219571202255
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 4.190614583824611,
+  "desviacion_max_margen_destino_pp": 0.16299718168789265,
+  "electores_o_votos_origen": 717695.0,
+  "electores_o_votos_destino": 717780.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 55.46,
+      "dif_variante_pp": 4.01,
+      "sensibilidad_pp": 9.46,
+      "ancho_intervalo_pp": 6.57,
+      "separacion_pp": 30.82,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 34.52,
+      "dif_variante_pp": 3.89,
+      "sensibilidad_pp": 18.66,
+      "ancho_intervalo_pp": 8.07,
+      "separacion_pp": 46.95,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 3.7,
+      "dif_variante_pp": 13.41,
+      "sensibilidad_pp": 39.7,
+      "ancho_intervalo_pp": 28.36,
+      "separacion_pp": 81.89,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 3.82,
+      "dif_variante_pp": 19.96,
+      "sensibilidad_pp": 57.85,
+      "ancho_intervalo_pp": 58.04,
+      "separacion_pp": 80.29,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 0.94,
+      "dif_variante_pp": 52.13,
+      "sensibilidad_pp": 81.12,
+      "ancho_intervalo_pp": 83.86,
+      "separacion_pp": 80.6,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 1.57,
+      "dif_variante_pp": 24.27,
+      "sensibilidad_pp": 50.57,
+      "ancho_intervalo_pp": 75.79,
+      "separacion_pp": 38.39,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

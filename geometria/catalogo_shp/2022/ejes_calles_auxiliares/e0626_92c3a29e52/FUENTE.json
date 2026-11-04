@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0626_92c3a29e52",
+  "shp": "e0626 .shp",
+  "entidades": 369,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0626 .dbf",
+      "bytes": 110572,
+      "sha256": "a4906d64bd40b236721234df06f28eceb1db62439c744c256329f2f66e67d54b"
+    },
+    {
+      "archivo": "e0626 .shp",
+      "bytes": 32652,
+      "sha256": "b4c41b85a8d8cec14a795b6d39513035acf6edd586a4845d13e2d41a939e250a"
+    },
+    {
+      "archivo": "e0626 .shx",
+      "bytes": 3052,
+      "sha256": "66916f093f6dd8a146c203f48f16ee0aab57b2c14cca520dd92596b0cc07cfbc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MARIASUSANA.zip!e0626 .shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_a79ba024b8",
+    "archivo": "santafe/ipec/2022/MARIASUSANA.zip!e0626 .shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 369,
+    "registros_shx": 369,
+    "shape_type": 3,
+    "bbox": [
+      5319828.0,
+      6427799.5,
+      5321669.0,
+      6430339.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MARIASUSANA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "e965b166cf25df6cde729a654fa803464cd2fe7d168abf34a7f4184d1b871e23"
+}

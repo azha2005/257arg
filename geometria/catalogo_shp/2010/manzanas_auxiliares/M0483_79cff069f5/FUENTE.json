@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0483_79cff069f5",
+  "shp": "M0483.shp",
+  "entidades": 254,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0483.dbf",
+      "bytes": 50424,
+      "sha256": "e9d4fce27ea5d9118c0d033c65e6b0b7c8d6ec5f876104e50836d1b2a308f614"
+    },
+    {
+      "archivo": "M0483.shp",
+      "bytes": 41524,
+      "sha256": "d5be752dba4ec91de22bdaf71b600a6986044e01f18e3271e73d758dea290f42"
+    },
+    {
+      "archivo": "M0483.shx",
+      "bytes": 2132,
+      "sha256": "fd45af018f693c34a77c5f08dedef4d09f412125d35087f34d77ced392f135d7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/humbertoprimoa2h.zip!M0483.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4e98a512c5",
+    "archivo": "santafe/ipec/2010/humbertoprimoa2h.zip!M0483.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 254,
+    "registros_shx": 254,
+    "shape_type": 5,
+    "bbox": [
+      5368471.5,
+      6583507.0,
+      5371888.5,
+      6586074.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/humbertoprimoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "18108404106bbd9f7a5262ae054b4ee0a7a0b810714713dc7c2f67507877e21b"
+}

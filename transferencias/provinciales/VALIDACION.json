@@ -1,0 +1,902 @@
+{
+  "cruces": 52,
+  "distritos_2025_con_datos": 9,
+  "distritos_2025_pendientes": [
+    "Formosa"
+  ],
+  "datos": [
+    {
+      "id": "rn_2019p_gob2023",
+      "unidades": 13,
+      "origen": 540402,
+      "destino": 589251,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 7,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "rn_gob2023_2023p",
+      "unidades": 13,
+      "origen": 589251,
+      "destino": 590603,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 10,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "rn_gob2023_2023b",
+      "unidades": 13,
+      "origen": 589251,
+      "destino": 593250,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 10,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "neuquen_2019p_gob2023",
+      "unidades": 16,
+      "origen": 415779,
+      "destino": 416004,
+      "cobertura_provincial": 0.9996107322558787,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "neuquen_gob2023_2023p",
+      "unidades": 16,
+      "origen": 416004,
+      "destino": 442495,
+      "cobertura_provincial": 0.9996107322558787,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "neuquen_gob2023_2023b",
+      "unidades": 16,
+      "origen": 416004,
+      "destino": 438483,
+      "cobertura_provincial": 0.9996107322558787,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_2019p_gob2023",
+      "unidades": 17,
+      "origen": 719819,
+      "destino": 695488,
+      "cobertura_provincial": 0.9992887757315911,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_gob2023_2023p",
+      "unidades": 17,
+      "origen": 695488,
+      "destino": 750671,
+      "cobertura_provincial": 0.9992887757315911,
+      "filas_inciertas": 6,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_gob2023_2023b",
+      "unidades": 17,
+      "origen": 695488,
+      "destino": 725063,
+      "cobertura_provincial": 0.9992887757315911,
+      "filas_inciertas": 6,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_2019p_gob2023",
+      "unidades": 23,
+      "origen": 983014,
+      "destino": 1082462,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 6,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_gob2023_2023p",
+      "unidades": 23,
+      "origen": 1082462,
+      "destino": 1042138,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_gob2023_2023b",
+      "unidades": 22,
+      "origen": 1074244,
+      "destino": 1073140,
+      "cobertura_provincial": 0.9924080475804231,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "pba_prov2025_dn2025",
+      "unidades": 135,
+      "origen": 8509935,
+      "destino": 8800583,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "caba_prov2025_dn2025",
+      "unidades": 167,
+      "origen": 1567793,
+      "destino": 1732259,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 7,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "chaco_prov2025_dn2025",
+      "unidades": 25,
+      "origen": 528845,
+      "destino": 652681,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "corrientes_diputados_prov2025_dn2025",
+      "unidades": 25,
+      "origen": 674299,
+      "destino": 567131,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 5,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "corrientes_gobernador_prov2025_dn2025",
+      "unidades": 25,
+      "origen": 674211,
+      "destino": 567131,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "corrientes_senadores_prov2025_dn2025",
+      "unidades": 25,
+      "origen": 674246,
+      "destino": 567131,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "jujuy_prov2025_dn2025",
+      "unidades": 139,
+      "origen": 406459,
+      "destino": 424283,
+      "cobertura_provincial": 0.9981361334715066,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_prov2025_dn2025",
+      "unidades": 17,
+      "origen": 555879,
+      "destino": 626226,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 9,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_diputado_prov2025_dn2025",
+      "unidades": 209,
+      "origen": 528534,
+      "destino": 564133,
+      "cobertura_provincial": 0.9961513524923856,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_senador_prov2025_dn2025",
+      "unidades": 138,
+      "origen": 394267,
+      "destino": 422686,
+      "cobertura_provincial": 0.9974170731213697,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "sanluis_diputados_prov2025_dn2025",
+      "unidades": 5,
+      "origen": 158804,
+      "destino": 170520,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "sanluis_senadores_prov2025_dn2025",
+      "unidades": 4,
+      "origen": 85193,
+      "destino": 93762,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 7,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "santafe_prov2025_dn2025",
+      "unidades": 19,
+      "origen": 1569465,
+      "destino": 1803222,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 8,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_2019p_gob2023_circuitos",
+      "unidades": 270,
+      "origen": 722532,
+      "destino": 722449,
+      "cobertura_provincial": 0.9607520060854139,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_gob2023_2023p_circuitos",
+      "unidades": 284,
+      "origen": 744004,
+      "destino": 773537,
+      "cobertura_provincial": 0.9894170184131645,
+      "filas_inciertas": 7,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "salta_gob2023_2023b_circuitos",
+      "unidades": 277,
+      "origen": 740232,
+      "destino": 796881,
+      "cobertura_provincial": 0.9844008074876124,
+      "filas_inciertas": 6,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "chaco_2019p_gob2023_circuitos",
+      "unidades": 146,
+      "origen": 717695,
+      "destino": 717780,
+      "cobertura_provincial": 0.9832063996493343,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "chaco_gob2023_2023p_circuitos",
+      "unidades": 152,
+      "origen": 730040,
+      "destino": 724566,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "chaco_gob2023_2023b_circuitos",
+      "unidades": 148,
+      "origen": 720671,
+      "destino": 718539,
+      "cobertura_provincial": 0.9871664566325132,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "santafe_2019p_gob2023_circuitos",
+      "unidades": 70,
+      "origen": 2178330,
+      "destino": 1919625,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "santafe_gob2023_2023p_circuitos",
+      "unidades": 70,
+      "origen": 1919625,
+      "destino": 2070486,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "santafe_gob2023_2023b_circuitos",
+      "unidades": 70,
+      "origen": 1919625,
+      "destino": 2114789,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "pba_2019p_gob2023_circuitos",
+      "unidades": 917,
+      "origen": 9392459,
+      "destino": 9627276,
+      "cobertura_provincial": 0.947516641594168,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "pba_gob2023_2023p_circuitos",
+      "unidades": 1042,
+      "origen": 10160535,
+      "destino": 10199399,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 2,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "pba_gob2023_2023b_circuitos",
+      "unidades": 1035,
+      "origen": 10159314,
+      "destino": 10016981,
+      "cobertura_provincial": 0.9998798291625391,
+      "filas_inciertas": 1,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "caba_2019p_gob2023_circuitos",
+      "unidades": 164,
+      "origen": 2021167,
+      "destino": 1893734,
+      "cobertura_provincial": 0.9941356655581249,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "caba_gob2023_2023p_circuitos",
+      "unidades": 167,
+      "origen": 1904905,
+      "destino": 1911431,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 2,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "caba_gob2023_2023b_circuitos",
+      "unidades": 167,
+      "origen": 1904905,
+      "destino": 1899818,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 2,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "catamarca_2019p_gob2023_circuitos",
+      "unidades": 141,
+      "origen": 227756,
+      "destino": 229400,
+      "cobertura_provincial": 0.965959812029442,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "catamarca_gob2023_2023p_circuitos",
+      "unidades": 157,
+      "origen": 237484,
+      "destino": 247986,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 1,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "catamarca_gob2023_2023b_circuitos",
+      "unidades": 153,
+      "origen": 236052,
+      "destino": 240272,
+      "cobertura_provincial": 0.9939701200923009,
+      "filas_inciertas": 0,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "chaco_prov2025_dn2025_circuitos",
+      "unidades": 152,
+      "origen": 528845,
+      "destino": 652681,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "corrientes_diputados_prov2025_dn2025_circuitos",
+      "unidades": 172,
+      "origen": 673808,
+      "destino": 567131,
+      "cobertura_provincial": 0.9992836920558038,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "corrientes_gobernador_prov2025_dn2025_circuitos",
+      "unidades": 172,
+      "origen": 673718,
+      "destino": 567131,
+      "cobertura_provincial": 0.9992835964348911,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "corrientes_senadores_prov2025_dn2025_circuitos",
+      "unidades": 172,
+      "origen": 673754,
+      "destino": 567131,
+      "cobertura_provincial": 0.9992836346863195,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "santafe_prov2025_dn2025_circuitos",
+      "unidades": 70,
+      "origen": 1569465,
+      "destino": 1803222,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 9,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_2019p_gob2023_municipios",
+      "unidades": 76,
+      "origen": 719819,
+      "destino": 695488,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 4,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_gob2023_2023p_municipios",
+      "unidades": 75,
+      "origen": 695488,
+      "destino": 750671,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_gob2023_2023b_municipios",
+      "unidades": 74,
+      "origen": 689751,
+      "destino": 725063,
+      "cobertura_provincial": 0.9917511157633201,
+      "filas_inciertas": 3,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    },
+    {
+      "id": "misiones_prov2025_dn2025_municipios",
+      "unidades": 75,
+      "origen": 555879,
+      "destino": 626226,
+      "cobertura_provincial": 1.0,
+      "filas_inciertas": 6,
+      "conservacion": true,
+      "matrices_estocasticas": true
+    }
+  ],
+  "visor": [
+    {
+      "id": "rn_2019p_gob2023",
+      "flujos": 63,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "rn_gob2023_2023p",
+      "flujos": 70,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "rn_gob2023_2023b",
+      "flujos": 40,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "neuquen_2019p_gob2023",
+      "flujos": 48,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "neuquen_gob2023_2023p",
+      "flujos": 48,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "neuquen_gob2023_2023b",
+      "flujos": 24,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_2019p_gob2023",
+      "flujos": 48,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_gob2023_2023p",
+      "flujos": 48,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_gob2023_2023b",
+      "flujos": 23,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_2019p_gob2023",
+      "flujos": 54,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_gob2023_2023p",
+      "flujos": 63,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_gob2023_2023b",
+      "flujos": 22,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "pba_prov2025_dn2025",
+      "flujos": 48,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "caba_prov2025_dn2025",
+      "flujos": 75,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "chaco_prov2025_dn2025",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "corrientes_diputados_prov2025_dn2025",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "corrientes_gobernador_prov2025_dn2025",
+      "flujos": 28,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "corrientes_senadores_prov2025_dn2025",
+      "flujos": 28,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "jujuy_prov2025_dn2025",
+      "flujos": 70,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_prov2025_dn2025",
+      "flujos": 81,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_diputado_prov2025_dn2025",
+      "flujos": 104,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_senador_prov2025_dn2025",
+      "flujos": 96,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "sanluis_diputados_prov2025_dn2025",
+      "flujos": 56,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "sanluis_senadores_prov2025_dn2025",
+      "flujos": 49,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "santafe_prov2025_dn2025",
+      "flujos": 54,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_2019p_gob2023_circuitos",
+      "flujos": 54,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_gob2023_2023p_circuitos",
+      "flujos": 54,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "salta_gob2023_2023b_circuitos",
+      "flujos": 27,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "chaco_2019p_gob2023_circuitos",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "chaco_gob2023_2023p_circuitos",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "chaco_gob2023_2023b_circuitos",
+      "flujos": 18,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "santafe_2019p_gob2023_circuitos",
+      "flujos": 25,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "santafe_gob2023_2023p_circuitos",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "santafe_gob2023_2023b_circuitos",
+      "flujos": 15,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "pba_2019p_gob2023_circuitos",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "pba_gob2023_2023p_circuitos",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "pba_gob2023_2023b_circuitos",
+      "flujos": 14,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "caba_2019p_gob2023_circuitos",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "caba_gob2023_2023p_circuitos",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "caba_gob2023_2023b_circuitos",
+      "flujos": 15,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "catamarca_2019p_gob2023_circuitos",
+      "flujos": 24,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "catamarca_gob2023_2023p_circuitos",
+      "flujos": 23,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "catamarca_gob2023_2023b_circuitos",
+      "flujos": 12,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "chaco_prov2025_dn2025_circuitos",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "corrientes_diputados_prov2025_dn2025_circuitos",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "corrientes_gobernador_prov2025_dn2025_circuitos",
+      "flujos": 36,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "corrientes_senadores_prov2025_dn2025_circuitos",
+      "flujos": 35,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "santafe_prov2025_dn2025_circuitos",
+      "flujos": 54,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_2019p_gob2023_municipios",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_gob2023_2023p_municipios",
+      "flujos": 30,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_gob2023_2023b_municipios",
+      "flujos": 15,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    },
+    {
+      "id": "misiones_prov2025_dn2025_municipios",
+      "flujos": 81,
+      "rotulos_dentro": true,
+      "variantes": true,
+      "seleccion_bidireccional": true
+    }
+  ],
+  "descargas": [
+    "SVG",
+    "PNG",
+    "CSV"
+  ],
+  "errores_javascript": [],
+  "alcance": "Resultados locales; la validación numérica y visual no valida elecciones individuales ni elimina sesgo ecológico."
+}

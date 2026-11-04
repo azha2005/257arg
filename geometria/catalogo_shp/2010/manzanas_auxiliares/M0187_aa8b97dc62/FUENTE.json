@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0187_aa8b97dc62",
+  "shp": "M0187.shp",
+  "entidades": 463,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0187.dbf",
+      "bytes": 91597,
+      "sha256": "bf3cf4ce7f6d636301a5e024c1de87669edaa69d884e477bb50797948677f45e"
+    },
+    {
+      "archivo": "M0187.shp",
+      "bytes": 67516,
+      "sha256": "842cbb46757393d2c324b437ab6dfcb53aa059bfad09c37f975cf32d0b192ed3"
+    },
+    {
+      "archivo": "M0187.shx",
+      "bytes": 3804,
+      "sha256": "63c7d4869278e551e6d6b1c319052ddf9bad2f8da430d34ff46d4dd80a97d407"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SanCristobala1v.zip!M0187.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e1362f8107",
+    "archivo": "santafe/ipec/2010/SanCristobala1v.zip!M0187.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 463,
+    "registros_shx": 463,
+    "shape_type": 5,
+    "bbox": [
+      5379634.5,
+      6644534.5,
+      5382649.0,
+      6648927.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SanCristobala1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "bb8cfd5be6100674399f968c320eebe4ba7f367117c2a20e0bf5a257d42be4ec"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0399_312406bf6d",
+  "shp": "E0399.shp",
+  "entidades": 381,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0399.dbf",
+      "bytes": 133198,
+      "sha256": "072f5240bd1a855d31e27e00bef394cf775fe71f6f63aac954be474795feeebe"
+    },
+    {
+      "archivo": "E0399.shp",
+      "bytes": 33852,
+      "sha256": "6d8a0c2aceef5ec20416dac96ed891303e575926fb440939cb09a2018c84c49f"
+    },
+    {
+      "archivo": "E0399.shx",
+      "bytes": 3148,
+      "sha256": "2df7a4f797c456e120527a5503146f256a68c9d6ad2e02b77d27c2e499bffdf4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/ChanarLadeadoa3v.zip!E0399.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a04e8e25f6",
+    "archivo": "santafe/ipec/2010/ChanarLadeadoa3v.zip!E0399.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 381,
+    "registros_shx": 381,
+    "shape_type": 3,
+    "bbox": [
+      5309401.5,
+      6310372.0,
+      5311234.0,
+      6313410.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/ChanarLadeadoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f694d7856ca478969f8ded2c01828eb7f6eee3b7ca0c65719426e403310ad257"
+}

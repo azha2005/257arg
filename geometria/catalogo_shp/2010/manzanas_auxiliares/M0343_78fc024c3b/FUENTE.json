@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0343_78fc024c3b",
+  "shp": "M0343.shp",
+  "entidades": 376,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0343.dbf",
+      "bytes": 74458,
+      "sha256": "d1279b04b7bb5a8f146dc847e637c8ba77230d6b895b07930b9698d0aa265ef1"
+    },
+    {
+      "archivo": "M0343.shp",
+      "bytes": 53316,
+      "sha256": "af3d2fab847dde108c498092e7b4ac8895e5179e1039e75378cc680a0ff73547"
+    },
+    {
+      "archivo": "M0343.shx",
+      "bytes": 3108,
+      "sha256": "21f609d1c9a0253302726482766ba50d40ec5b645bb6fd89a3e9719e751c0342"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjosedelaesquinaA2H.zip!M0343.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_fe1bfa8325",
+    "archivo": "santafe/ipec/2010/sanjosedelaesquinaA2H.zip!M0343.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 376,
+    "registros_shx": 376,
+    "shape_type": 5,
+    "bbox": [
+      5339417.0,
+      6333849.5,
+      5342155.5,
+      6336287.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjosedelaesquinaA2H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2c674bccaf6c52d43cc5e52078424cfa1a7df9cd76bcf6a1fba631656d2457bf"
+}

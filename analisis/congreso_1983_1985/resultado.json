@@ -1,0 +1,1251 @@
+{
+  "assumption1983": "Voto legislativo idéntico al presidencial hipotético por provincia; no es una proyección del corte de boleta histórico.",
+  "assumption1985": "Listas de FREJULI y renovadores unidas; escenario territorial ya generado.",
+  "retained": "Reparto equilibrado por partido y distrito, piso o techo de la mitad; central con extras según votos de 1983. Rangos individuales no necesariamente simultáneos.",
+  "official_rolls_found": {
+    "1983": 24,
+    "1985": 24
+  },
+  "notes": [],
+  "summary": [
+    {
+      "party": "ADC",
+      "total1983": 0,
+      "elected1985": 2,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 2,
+      "balanced_min1985": 2,
+      "balanced_max1985": 2
+    },
+    {
+      "party": "BLO",
+      "total1983": 1,
+      "elected1985": 0,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 0,
+      "balanced_min1985": 0,
+      "balanced_max1985": 1
+    },
+    {
+      "party": "MPN",
+      "total1983": 1,
+      "elected1985": 1,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 1,
+      "balanced_min1985": 1,
+      "balanced_max1985": 1
+    },
+    {
+      "party": "PAL",
+      "total1983": 2,
+      "elected1985": 0,
+      "retained_illustrative": 1,
+      "total1985_illustrative": 1,
+      "balanced_min1985": 1,
+      "balanced_max1985": 1
+    },
+    {
+      "party": "PALFDP",
+      "total1983": 0,
+      "elected1985": 2,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 2,
+      "balanced_min1985": 2,
+      "balanced_max1985": 2
+    },
+    {
+      "party": "PDP",
+      "total1983": 0,
+      "elected1985": 1,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 1,
+      "balanced_min1985": 1,
+      "balanced_max1985": 1
+    },
+    {
+      "party": "PI",
+      "total1983": 1,
+      "elected1985": 4,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 4,
+      "balanced_min1985": 4,
+      "balanced_max1985": 4
+    },
+    {
+      "party": "PJ",
+      "total1983": 141,
+      "elected1985": 38,
+      "retained_illustrative": 71,
+      "total1985_illustrative": 109,
+      "balanced_min1985": 107,
+      "balanced_max1985": 110
+    },
+    {
+      "party": "PRS",
+      "total1983": 0,
+      "elected1985": 1,
+      "retained_illustrative": 0,
+      "total1985_illustrative": 1,
+      "balanced_min1985": 1,
+      "balanced_max1985": 1
+    },
+    {
+      "party": "UCR",
+      "total1983": 108,
+      "elected1985": 78,
+      "retained_illustrative": 55,
+      "total1985_illustrative": 133,
+      "balanced_min1985": 132,
+      "balanced_max1985": 134
+    }
+  ],
+  "districts": {
+    "Buenos Aires": {
+      "1983": {
+        "seats": {
+          "PJ": 39,
+          "UCR": 31
+        },
+        "votes": {
+          "PJ": 2952609,
+          "UCR": 2295125,
+          "PI": 178490,
+          "MID": 47255,
+          "AF": 32870,
+          "UCD": 24177,
+          "MAS": 24061,
+          "ADS": 13773,
+          "DC": 12774,
+          "PO": 6083,
+          "PSP": 4804,
+          "FIP": 4082,
+          "CPRI": 2992,
+          "RPB": 447
+        },
+        "roll": 6567389,
+        "magnitude": 70
+      },
+      "1985": {
+        "seats": {
+          "UCR": 20,
+          "PJ": 11,
+          "PI": 3,
+          "ADC": 1
+        },
+        "votes": {
+          "UCR": 2900847,
+          "PJ": 1593933,
+          "PI": 574285,
+          "ADC": 229485,
+          "FREPU": 201720,
+          "FED": 103118,
+          "AUS": 58849,
+          "PDP": 29166,
+          "PO": 23178,
+          "ADI": 17237,
+          "PH": 13005
+        },
+        "roll": 6853263,
+        "magnitude": 35
+      },
+      "retained_illustrative": {
+        "PJ": 20,
+        "UCR": 15
+      }
+    },
+    "Capital Federal": {
+      "1983": {
+        "seats": {
+          "UCR": 14,
+          "PJ": 10,
+          "PI": 1
+        },
+        "votes": {
+          "UCR": 1079517,
+          "PJ": 721739,
+          "PI": 92817,
+          "UCD": 26174,
+          "MID": 15555,
+          "AF": 14917,
+          "MAS": 8321,
+          "ADS": 6616,
+          "DC": 3884,
+          "PO": 2761,
+          "PSP": 1850,
+          "FIP": 1106
+        },
+        "roll": 2341791,
+        "magnitude": 25
+      },
+      "1985": {
+        "seats": {
+          "UCR": 8,
+          "PJ": 3,
+          "ADC": 1,
+          "PI": 1
+        },
+        "votes": {
+          "UCR": 975467,
+          "PJ": 391051,
+          "ADC": 204943,
+          "PI": 155720,
+          "FED": 114988,
+          "FREPU": 63076,
+          "PDP": 34964,
+          "AUS": 16642,
+          "DC": 7878,
+          "PO": 6014,
+          "PH": 3413,
+          "MLP": 1405,
+          "GI": 1310
+        },
+        "roll": 2360502,
+        "magnitude": 13
+      },
+      "retained_illustrative": {
+        "UCR": 7,
+        "PJ": 5,
+        "PI": 0
+      }
+    },
+    "Catamarca": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 55833,
+          "UCR": 38107,
+          "MPC": 4463,
+          "LVP": 2734,
+          "MID": 788,
+          "PI": 598,
+          "DC": 488,
+          "DEMCAT": 402,
+          "FED": 224,
+          "PSD": 130,
+          "MAS": 90
+        },
+        "roll": 132308,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 70576,
+          "PJ": 39218,
+          "PFA": 1382,
+          "PI": 1267,
+          "FREPU": 626,
+          "AUS": 507,
+          "PH": 275
+        },
+        "roll": 139384,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 1,
+        "UCR": 1
+      }
+    },
+    "Chaco": {
+      "1983": {
+        "seats": {
+          "PJ": 4,
+          "UCR": 3
+        },
+        "votes": {
+          "PJ": 193766,
+          "UCR": 119283,
+          "MID": 6932,
+          "MUC": 2850,
+          "PS": 2289,
+          "DC": 1629,
+          "FED": 1378,
+          "PI": 1337,
+          "FIP": 485,
+          "ADS": 416,
+          "MAS": 263,
+          "MLP": 152
+        },
+        "roll": 449824,
+        "magnitude": 7
+      },
+      "1985": {
+        "seats": {
+          "UCR": 3,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 206552,
+          "PJ": 117862,
+          "MID": 7253,
+          "PS": 5594,
+          "AFC": 3682,
+          "PI": 3315,
+          "DC": 2940,
+          "FREPU": 1855,
+          "UCD": 1601,
+          "PH": 886,
+          "FIP": 694,
+          "PO": 587
+        },
+        "roll": 470860,
+        "magnitude": 4
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1
+      }
+    },
+    "Chubut": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 58164,
+          "UCR": 45203,
+          "ACH": 2640,
+          "MID": 2336,
+          "PI": 1930,
+          "DC": 488,
+          "FIP": 417,
+          "MAS": 301,
+          "PSP": 262,
+          "ADS": 128,
+          "PO": 43
+        },
+        "roll": 145205,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 1,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 64208,
+          "PJ": 32880,
+          "ACH": 20537,
+          "PI": 1987,
+          "FREPU": 1598,
+          "AUS": 988,
+          "PO": 797,
+          "PH": 447
+        },
+        "roll": 159603,
+        "magnitude": 2
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1
+      }
+    },
+    "Córdoba": {
+      "1983": {
+        "seats": {
+          "PJ": 10,
+          "UCR": 8
+        },
+        "votes": {
+          "PJ": 716256,
+          "UCR": 636942,
+          "MID": 13236,
+          "PI": 12230,
+          "PD": 12129,
+          "DC": 5284,
+          "ADS": 2636,
+          "PSP": 2605,
+          "MAS": 2385,
+          "CNC": 2268,
+          "FIP": 1091,
+          "PO": 774
+        },
+        "roll": 1631287,
+        "magnitude": 18
+      },
+      "1985": {
+        "seats": {
+          "UCR": 6,
+          "PJ": 3
+        },
+        "votes": {
+          "UCR": 868315,
+          "PJ": 381878,
+          "PI": 54551,
+          "UNPOP": 50674,
+          "AUS": 20069,
+          "DC": 16457,
+          "FREPU": 14843,
+          "FED": 6211,
+          "PH": 3802,
+          "PO": 3748
+        },
+        "roll": 1696580,
+        "magnitude": 9
+      },
+      "retained_illustrative": {
+        "PJ": 5,
+        "UCR": 4
+      }
+    },
+    "Corrientes": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "PAL": 2,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 117492,
+          "PAL": 104054,
+          "UCR": 89142,
+          "MID": 11466,
+          "DC": 2526,
+          "PI": 2417,
+          "AF": 2107,
+          "PDP": 1924,
+          "FIP": 273,
+          "PSP": 166
+        },
+        "roll": 439798,
+        "magnitude": 7
+      },
+      "1985": {
+        "seats": {
+          "PALFDP": 2,
+          "UCR": 1
+        },
+        "votes": {
+          "PALFDP": 172470,
+          "UCR": 107131,
+          "PJ": 59391,
+          "DC": 7893,
+          "FREPU": 2035,
+          "AUS": 623,
+          "PH": 621
+        },
+        "roll": 451807,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "PAL": 1,
+        "UCR": 1
+      }
+    },
+    "Entre Ríos": {
+      "1983": {
+        "seats": {
+          "PJ": 5,
+          "UCR": 4
+        },
+        "votes": {
+          "PJ": 279051,
+          "UCR": 197889,
+          "MID": 7850,
+          "PI": 7351,
+          "DC": 4719,
+          "DEMER": 4225,
+          "MLP": 3198,
+          "PSP": 1551,
+          "CNC": 1035,
+          "FED": 596,
+          "FIP": 568,
+          "ADS": 364
+        },
+        "roll": 621499,
+        "magnitude": 9
+      },
+      "1985": {
+        "seats": {
+          "UCR": 3,
+          "PJ": 2
+        },
+        "votes": {
+          "UCR": 294887,
+          "PJ": 156811,
+          "PI": 24184,
+          "APCE": 20863,
+          "PSP": 7659,
+          "MLP": 7422,
+          "FREPU": 6725,
+          "FED": 3061,
+          "PH": 1452
+        },
+        "roll": 632508,
+        "magnitude": 5
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 2
+      }
+    },
+    "Formosa": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 65953,
+          "UCR": 34445,
+          "MID": 16141,
+          "MLP": 3017,
+          "DC": 556,
+          "PI": 524,
+          "PDS": 257,
+          "PSP": 159,
+          "ADS": 101
+        },
+        "roll": 166651,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 1,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 73483,
+          "PJ": 44583,
+          "MID": 7347,
+          "MAPOP": 2133,
+          "MLP": 870,
+          "DC": 789,
+          "FREPU": 535,
+          "PI": 497,
+          "PH": 330
+        },
+        "roll": 179953,
+        "magnitude": 2
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1
+      }
+    },
+    "Jujuy": {
+      "1983": {
+        "seats": {
+          "PJ": 4,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 99325,
+          "UCR": 46156,
+          "MPJ": 22304,
+          "MID": 1350,
+          "FED": 1241,
+          "PI": 819,
+          "MAS": 471,
+          "PSP": 348,
+          "PO": 282,
+          "PSD": 136,
+          "FIP": 69
+        },
+        "roll": 215074,
+        "magnitude": 6
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 78946,
+          "PJ": 53869,
+          "MPJ": 38130,
+          "DJ": 2842,
+          "FREPU": 1667,
+          "PI": 1080,
+          "DC": 1027,
+          "PH": 774,
+          "AUS": 726,
+          "PO": 692,
+          "FED": 686
+        },
+        "roll": 231583,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1
+      }
+    },
+    "La Pampa": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 61638,
+          "UCR": 39419,
+          "MFP": 15297,
+          "MID": 3218,
+          "PI": 1849,
+          "PSA": 529,
+          "DC": 469,
+          "MAS": 119,
+          "PSP": 109
+        },
+        "roll": 142988,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 70918,
+          "PJ": 39415,
+          "MFP": 11394,
+          "MID": 2661,
+          "PI": 2070,
+          "FREPU": 1083,
+          "PSA": 1030,
+          "AUS": 733,
+          "DC": 685,
+          "PTP": 543,
+          "PH": 208
+        },
+        "roll": 151297,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 1,
+        "UCR": 1
+      }
+    },
+    "La Rioja": {
+      "1983": {
+        "seats": {
+          "PJ": 4,
+          "UCR": 1
+        },
+        "votes": {
+          "PJ": 57126,
+          "UCR": 26659,
+          "MID": 1498,
+          "PI": 429,
+          "DC": 292,
+          "FIP": 283,
+          "AF": 198,
+          "MAS": 97
+        },
+        "roll": 107344,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 1,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 49611,
+          "PJ": 35334,
+          "PI": 1335,
+          "MID": 1225,
+          "FIP": 796,
+          "FREPU": 721,
+          "PDP": 658,
+          "MLP": 534,
+          "PH": 233,
+          "AUS": 175
+        },
+        "roll": 111810,
+        "magnitude": 2
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1
+      }
+    },
+    "Mendoza": {
+      "1983": {
+        "seats": {
+          "UCR": 5,
+          "PJ": 5
+        },
+        "votes": {
+          "UCR": 300799,
+          "PJ": 300140,
+          "PD": 17298,
+          "MID": 7467,
+          "PI": 6174,
+          "DC": 1478,
+          "CNC": 1062,
+          "MAS": 940,
+          "FIP": 830,
+          "ADS": 595,
+          "PSP": 482,
+          "PO": 126
+        },
+        "roll": 749248,
+        "magnitude": 10
+      },
+      "1985": {
+        "seats": {
+          "UCR": 4,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 383860,
+          "PJ": 125859,
+          "PD": 94988,
+          "FLIB": 11718,
+          "PI": 6901,
+          "MID": 6593,
+          "UCD": 5767,
+          "AYS": 4062,
+          "PSP": 2152,
+          "PH": 1534,
+          "PO": 820
+        },
+        "roll": 773479,
+        "magnitude": 5
+      },
+      "retained_illustrative": {
+        "UCR": 3,
+        "PJ": 2
+      }
+    },
+    "Misiones": {
+      "1983": {
+        "seats": {
+          "PJ": 4,
+          "UCR": 3
+        },
+        "votes": {
+          "PJ": 140763,
+          "UCR": 92542,
+          "MID": 3789,
+          "PI": 713,
+          "DC": 531,
+          "UCD": 496,
+          "FIP": 369,
+          "FED": 195,
+          "PO": 72
+        },
+        "roll": 312945,
+        "magnitude": 7
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 169419,
+          "PJ": 77422,
+          "MID": 4333,
+          "UCD": 3661,
+          "PI": 3037,
+          "DC": 1431,
+          "AUS": 1183,
+          "PC": 1183,
+          "FIP": 1013,
+          "PH": 723,
+          "PO": 563
+        },
+        "roll": 344967,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 2
+      }
+    },
+    "Neuquén": {
+      "1983": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 2,
+          "MPN": 1
+        },
+        "votes": {
+          "UCR": 40529,
+          "PJ": 31205,
+          "MPN": 30549,
+          "PI": 2208,
+          "MID": 955,
+          "CNC": 349,
+          "MAS": 339,
+          "PO": 261,
+          "FIP": 149
+        },
+        "roll": 129662,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "MPN": 1
+        },
+        "votes": {
+          "UCR": 55319,
+          "MPN": 33520,
+          "PJ": 21570,
+          "PI": 2472,
+          "PO": 2071,
+          "FREPU": 1644,
+          "UCD": 1407,
+          "DC": 993,
+          "AUS": 585,
+          "MID": 562,
+          "PH": 493,
+          "FIP": 352
+        },
+        "roll": 146431,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "UCR": 1,
+        "PJ": 1,
+        "MPN": 0
+      }
+    },
+    "Río Negro": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 79300,
+          "UCR": 67663,
+          "PI": 2874,
+          "MID": 2630,
+          "DC": 1495,
+          "PRI": 1114,
+          "MAS": 692,
+          "CNC": 465,
+          "FED": 264,
+          "PDP": 260,
+          "FIP": 253,
+          "PO": 226
+        },
+        "roll": 195344,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2
+        },
+        "votes": {
+          "UCR": 96163,
+          "PJ": 33976,
+          "PI": 11946,
+          "DC": 6032,
+          "UCD": 4972,
+          "FREPU": 3479,
+          "PSD": 1451,
+          "PO": 926,
+          "PDP": 706,
+          "PH": 588
+        },
+        "roll": 213446,
+        "magnitude": 2
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1
+      }
+    },
+    "Salta": {
+      "1983": {
+        "seats": {
+          "PJ": 4,
+          "UCR": 3
+        },
+        "votes": {
+          "PJ": 166989,
+          "UCR": 105893,
+          "PRS": 18844,
+          "MPSAL": 3197,
+          "ALSAL": 3089,
+          "MID": 1741,
+          "PI": 1315,
+          "DC": 1097,
+          "PO": 462,
+          "FIP": 454,
+          "ADS": 337
+        },
+        "roll": 388537,
+        "magnitude": 7
+      },
+      "1985": {
+        "seats": {
+          "UCR": 1,
+          "PJ": 1,
+          "PRS": 1
+        },
+        "votes": {
+          "UCR": 136344,
+          "PJ": 81515,
+          "PRS": 71134,
+          "TBDC": 11653,
+          "UPRO": 5461,
+          "FREPU": 1915,
+          "AUS": 1890,
+          "PI": 1514,
+          "PO": 1194,
+          "PH": 891
+        },
+        "roll": 416306,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 2
+      }
+    },
+    "San Juan": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2,
+          "BLO": 1
+        },
+        "votes": {
+          "PJ": 95025,
+          "UCR": 79198,
+          "BLO": 58043,
+          "CR": 5537,
+          "MID": 2956,
+          "PI": 2147,
+          "C": 1032,
+          "PSP": 611,
+          "DC": 506,
+          "MAS": 462,
+          "FIP": 300,
+          "AF": 64
+        },
+        "roll": 290040,
+        "magnitude": 6
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 132005,
+          "PJ": 51804,
+          "BLO": 50985,
+          "ADC": 7051,
+          "PI": 6992,
+          "FREPU": 2305,
+          "PSP": 1036,
+          "PTP": 887,
+          "PH": 316
+        },
+        "roll": 298994,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 2,
+        "UCR": 1,
+        "BLO": 0
+      }
+    },
+    "San Luis": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 62635,
+          "UCR": 46520,
+          "AF": 6166,
+          "MID": 4379,
+          "PI": 539,
+          "CNC": 184,
+          "FIP": 182,
+          "DC": 165,
+          "PSP": 106
+        },
+        "roll": 147100,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 75211,
+          "PJ": 43552,
+          "DL": 3248,
+          "PI": 1942,
+          "UCD": 1802,
+          "FREPU": 711,
+          "PSP": 387,
+          "PH": 328
+        },
+        "roll": 152103,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 1,
+        "UCR": 1
+      }
+    },
+    "Santa Cruz": {
+      "1983": {
+        "seats": {
+          "PJ": 3,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 26931,
+          "UCR": 14555,
+          "MID": 812,
+          "PI": 632,
+          "MAS": 139,
+          "PO": 117,
+          "FIP": 84,
+          "ADP": 44,
+          "PSP": 36
+        },
+        "roll": 54974,
+        "magnitude": 5
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 28811,
+          "PJ": 14869,
+          "MID": 3202,
+          "PI": 1212,
+          "FREPU": 839,
+          "PO": 293,
+          "FIP": 220,
+          "PSP": 189,
+          "DC": 167,
+          "PH": 160
+        },
+        "roll": 64134,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 1,
+        "UCR": 1
+      }
+    },
+    "Santa Fe": {
+      "1983": {
+        "seats": {
+          "PJ": 11,
+          "UCR": 8
+        },
+        "votes": {
+          "PJ": 767937,
+          "UCR": 567389,
+          "PI": 26167,
+          "ADS": 21522,
+          "MID": 20445,
+          "PSP": 6699,
+          "DC": 5427,
+          "FED": 4195,
+          "LP": 4046,
+          "MAS": 2915,
+          "CNC": 2383,
+          "FIP": 1864,
+          "PO": 1230
+        },
+        "roll": 1676080,
+        "magnitude": 19
+      },
+      "1985": {
+        "seats": {
+          "UCR": 5,
+          "PJ": 3,
+          "PDP": 1
+        },
+        "votes": {
+          "UCR": 701676,
+          "PJ": 382414,
+          "PDP": 124835,
+          "PSP": 99721,
+          "PI": 65949,
+          "UCD": 29015,
+          "FREPUN": 22332,
+          "DC": 10023,
+          "FED": 9805,
+          "PO": 4346,
+          "PH": 3752,
+          "FPAT": 2053
+        },
+        "roll": 1735987,
+        "magnitude": 9
+      },
+      "retained_illustrative": {
+        "PJ": 6,
+        "UCR": 4
+      }
+    },
+    "Santiago del Estero": {
+      "1983": {
+        "seats": {
+          "PJ": 5,
+          "UCR": 2
+        },
+        "votes": {
+          "PJ": 155982,
+          "UCR": 83629,
+          "TB": 22585,
+          "AP": 2568,
+          "PI": 1088,
+          "MID": 1058,
+          "PSP": 680,
+          "AF": 635,
+          "FIP": 480
+        },
+        "roll": 397068,
+        "magnitude": 7
+      },
+      "1985": {
+        "seats": {
+          "UCR": 2,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 162868,
+          "PJ": 93594,
+          "FREPU": 4513,
+          "PI": 3519,
+          "PSP": 2614,
+          "UCD": 1564,
+          "PH": 630
+        },
+        "roll": 403842,
+        "magnitude": 3
+      },
+      "retained_illustrative": {
+        "PJ": 3,
+        "UCR": 1
+      }
+    },
+    "Tierra del Fuego": {
+      "1983": {
+        "seats": {
+          "PJ": 1,
+          "UCR": 1
+        },
+        "votes": {
+          "PJ": 5279,
+          "UCR": 4318,
+          "PI": 400,
+          "MID": 329,
+          "UCD": 104,
+          "AF": 76,
+          "DC": 66,
+          "PSA": 56,
+          "FIP": 53,
+          "PO": 29,
+          "CP": 13,
+          "PSP": 11
+        },
+        "roll": 15349,
+        "magnitude": 2
+      },
+      "1985": {
+        "seats": {
+          "UCR": 1,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 6004,
+          "PJ": 4086,
+          "MPF": 3582,
+          "PI": 793,
+          "PSA": 306,
+          "FPN": 198,
+          "UCD": 184,
+          "MAS": 122,
+          "AUS": 57,
+          "FIP": 57,
+          "PH": 55,
+          "PO": 50
+        },
+        "roll": 22827,
+        "magnitude": 2
+      },
+      "retained_illustrative": {
+        "PJ": 0,
+        "UCR": 0
+      }
+    },
+    "Tucumán": {
+      "1983": {
+        "seats": {
+          "PJ": 6,
+          "UCR": 3
+        },
+        "votes": {
+          "PJ": 301871,
+          "UCR": 155931,
+          "VF": 12372,
+          "MID": 3248,
+          "DC": 2673,
+          "PI": 2645,
+          "FED": 1644,
+          "UCD": 1589,
+          "C": 1549,
+          "ADS": 1218,
+          "FIP": 1113,
+          "UP": 935,
+          "MAS": 914,
+          "PSP": 701,
+          "PO": 594,
+          "MN": 396,
+          "DPR": 265
+        },
+        "roll": 612446,
+        "magnitude": 9
+      },
+      "1985": {
+        "seats": {
+          "UCR": 3,
+          "PJ": 1
+        },
+        "votes": {
+          "UCR": 287857,
+          "PJ": 169918,
+          "DC": 9563,
+          "C": 7595,
+          "UCD": 7501,
+          "FREPU": 5920,
+          "FED": 5622,
+          "PI": 4372,
+          "AUS": 3559,
+          "FIP": 2585,
+          "MID": 1992,
+          "FPF": 1573,
+          "PO": 1538,
+          "PH": 1086,
+          "MN": 780
+        },
+        "roll": 641821,
+        "magnitude": 4
+      },
+      "retained_illustrative": {
+        "PJ": 3,
+        "UCR": 2
+      }
+    }
+  }
+}

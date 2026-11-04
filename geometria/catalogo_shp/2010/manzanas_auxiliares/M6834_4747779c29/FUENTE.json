@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6834_4747779c29",
+  "shp": "M6834.shp",
+  "entidades": 119,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6834.dbf",
+      "bytes": 23829,
+      "sha256": "6de4f2715e3dc9b3107c763b05d20738f15ac185f1dcd790c64152bbb85e99aa"
+    },
+    {
+      "archivo": "M6834.shp",
+      "bytes": 17084,
+      "sha256": "fc06e3316d6b5c692baffcae48ff70b4fda2b750ac53fed627651df5719d6d09"
+    },
+    {
+      "archivo": "M6834.shx",
+      "bytes": 1052,
+      "sha256": "1799333666bd3511d2cbc4a8111cff325f82284631511014d4fcfeee1b39884f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/elcarameloyvilladelplataa2v.zip!M6834.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_97d82e67b1",
+    "archivo": "santafe/ipec/2010/elcarameloyvilladelplataa2v.zip!M6834.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 119,
+    "registros_shx": 119,
+    "shape_type": 5,
+    "bbox": [
+      5432660.5,
+      6332355.5,
+      5434401.5,
+      6335420.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/elcarameloyvilladelplataa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f4d4ab07900c5d81dd778db4e6b690b5230c7937b692f9ab1e347b48d043e3e6"
+}

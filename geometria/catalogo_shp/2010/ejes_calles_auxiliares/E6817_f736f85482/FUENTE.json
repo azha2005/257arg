@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6817_f736f85482",
+  "shp": "E6817.shp",
+  "entidades": 49,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6817.dbf",
+      "bytes": 17662,
+      "sha256": "07d6c153e3185e531e8d2c331a5aa9f8f45e08108397dfac9102a70fb253496b"
+    },
+    {
+      "archivo": "E6817.shp",
+      "bytes": 4444,
+      "sha256": "603835a9dc705c0551a257123537b2827f27a0db7a71d94a9f223dec4ab65358"
+    },
+    {
+      "archivo": "E6817.shx",
+      "bytes": 492,
+      "sha256": "87003189577606aca9cea624d8b26cb8f16f7b1027ff180eba49b2cf31ccfd43"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/jacintoarauza3h.zip!E6817.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_76d4d026c7",
+    "archivo": "santafe/ipec/2010/jacintoarauza3h.zip!E6817.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 49,
+    "registros_shx": 49,
+    "shape_type": 3,
+    "bbox": [
+      5406287.0,
+      6599695.0,
+      5407332.0,
+      6600248.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/jacintoarauza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d3ab3677813ae02ce8c724b33e275654a9e0a3f2d17e4f22041a6fd208ca6711"
+}

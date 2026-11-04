@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M9043_1485affcf5",
+  "shp": "M9043.shp",
+  "entidades": 27,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M9043.dbf",
+      "bytes": 5705,
+      "sha256": "1360d7569f8ab756d5784baa6a2855ba27d431cf092527ec2824f6aaa33dad9e"
+    },
+    {
+      "archivo": "M9043.shp",
+      "bytes": 4316,
+      "sha256": "d6de9d8a7320762ccdacfbea38ffd57b967887c7a4d5fc904c62f7f616b3c2da"
+    },
+    {
+      "archivo": "M9043.shx",
+      "bytes": 316,
+      "sha256": "7e446db8491abb8a2c2a73051b5db9b1b39007f9f6b8259dfcc67e574c273686"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/boacapulcoyveracruza3h.zip!M9043.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ad251483ad",
+    "archivo": "santafe/ipec/2010/boacapulcoyveracruza3h.zip!M9043.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 27,
+    "registros_shx": 27,
+    "shape_type": 5,
+    "bbox": [
+      5303948.5,
+      6522394.0,
+      5304540.5,
+      6523319.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/boacapulcoyveracruza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "eb097e90cb1bb8754184665f5bd57ea6a8b2c583fb685795be2fe7cc32d306b3"
+}

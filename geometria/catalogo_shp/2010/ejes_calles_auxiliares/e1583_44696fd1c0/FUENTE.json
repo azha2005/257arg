@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e1583_44696fd1c0",
+  "shp": "e1583.shp",
+  "entidades": 102,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1583.shx",
+      "bytes": 916,
+      "sha256": "30cdd04a094af06121d4feaff3eaa2dc25282e90a66aecae70da199e6b1eaeb2"
+    },
+    {
+      "archivo": "e1583.shp",
+      "bytes": 9076,
+      "sha256": "f4b564ddd2eea2e9f3084720bb30b6c85b767a848d230b88ef722b9faa51a3e1"
+    },
+    {
+      "archivo": "e1583.sbx",
+      "bytes": 308,
+      "sha256": "e9b9d5838ecca16704aba0635dca315ffda9bcd261e467667b391ecc95627f21"
+    },
+    {
+      "archivo": "e1583.sbn",
+      "bytes": 1548,
+      "sha256": "04714d84e8f632cec674bd7dc76b5bed76d2a479c18906769c0f6d959d420edf"
+    },
+    {
+      "archivo": "e1583.dbf",
+      "bytes": 36105,
+      "sha256": "cb83d2b8bf45bf1f3bfcc6df8f5165969454db12ba01c66722bbad2ff3bf147a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/GATOCOLORADO.zip!e1583.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3bf63235c7",
+    "archivo": "santafe/ipec/2010/GATOCOLORADO.zip!e1583.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 102,
+    "registros_shx": 102,
+    "shape_type": 3,
+    "bbox": [
+      5382867.5,
+      6900063.0,
+      5383539.5,
+      6900920.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/GATOCOLORADO.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fa481f8db8dcdaef76c013cb230db00532b43098f859dbf640aef58b24b4b112"
+}

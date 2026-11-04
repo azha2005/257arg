@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0668_8a3476afc7",
+  "shp": "e0668.shp",
+  "entidades": 469,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0668.dbf",
+      "bytes": 140372,
+      "sha256": "5f9fe115b56ae3a7840415b3e04273af8d07c3382c40309f283c19426660bdbe"
+    },
+    {
+      "archivo": "e0668.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0668.shp",
+      "bytes": 41708,
+      "sha256": "a0a86a8ac8ec17d43449280fa9725f5f941a52aff74f140c1fa739bd987ba535"
+    },
+    {
+      "archivo": "e0668.shx",
+      "bytes": 3852,
+      "sha256": "9341b48ea2cb399641f7e465ed9aa62c0cb0cfb58f46c937f3f94e255a6f6f9a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/HERSILIA.zip!e0668.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_ab7f497c1d",
+    "archivo": "santafe/ipec/2022/HERSILIA.zip!e0668.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 469,
+    "registros_shx": 469,
+    "shape_type": 3,
+    "bbox": [
+      5321609.0,
+      6678993.0,
+      5323318.0,
+      6681165.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/HERSILIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "9400a5dd5d665fc8d7583855ffbb75ecaec8235f99cfb88ceb6c957968a2c9ad"
+}

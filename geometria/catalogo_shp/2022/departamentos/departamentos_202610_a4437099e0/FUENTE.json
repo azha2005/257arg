@@ -1,0 +1,63 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Año indicado en visor oficial; descarga actual",
+  "tipo": "departamentos",
+  "carpeta": "2022/departamentos/departamentos_202610_a4437099e0",
+  "shp": "departamentos_202610.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "departamentos_202610.shp",
+      "bytes": 1466964,
+      "sha256": "0c70c5602e5f017f73a0512976392e0a9c61db3edbc05e3a0040330be921a4aa"
+    },
+    {
+      "archivo": "departamentos_202610.dbf",
+      "bytes": 9313,
+      "sha256": "efdbefaeaa675f7e40f208d202988d44db1ec3d3309d0b9073502b46dbededdc"
+    },
+    {
+      "archivo": "departamentos_202610.prj",
+      "bytes": 768,
+      "sha256": "d1b867d2cba2636271813eb8362bf1c17ee6a792d0fd1514199979d723aa041e"
+    },
+    {
+      "archivo": "departamentos_202610.shx",
+      "bytes": 228,
+      "sha256": "f15e622db0c8405e252b9d0e2821ab95efb439a160c60d3f21407c31771a4d62"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/neuquen/departamentos_202610.zip!departamentos_202610.shp",
+  "metadata_original": {
+    "id_fuente": "neuquen_departamentos_202610",
+    "archivo": "neuquen/departamentos_202610.zip!departamentos_202610.shp",
+    "tipo": "departamento",
+    "corte": "2022 según visor; snapshot 2026-10-31",
+    "cobertura": "Neuquén",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      2249494.1968,
+      5447696.9323,
+      2586808.7951999996,
+      6003300.24
+    ],
+    "campos": [
+      "ogc_fid",
+      "codigo",
+      "depto",
+      "fuente",
+      "id"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticaneuquen.gob.ar/apps/visor/",
+    "nota": "Geometría y atributos del visor oficial DPEyC; el nombre técnico no prueba vigencia legal anual.",
+    "licencia": "Consultar ficha de la fuente",
+    "url_descarga": "https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:departamentos_202610&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"POSGAR 2007 / Argentina 2\", GEOGCS[\"POSGAR 2007\", DATUM[\"Posiciones Geodesicas Argentinas 2007\", SPHEROID[\"GRS 1980\", 6378137.0, 298.257222101, AUTHORITY[\"EPSG\",\"7019\"]], TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], AUTHORITY[\"EPSG\",\"1062\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"5340\"]], PROJECTION[\"Transverse_Mercator\", AUTHORITY[\"EPSG\",\"9807\"]], PARAMETER[\"central_meridian\", -69.0], PARAMETER[\"latitude_of_origin\", -90.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 2500000.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"5344\"]]"
+  },
+  "firma_componentes": "df9a62bb5672c444cd922d01eeaa74a6efccdd5d965f6a35d3ec7ad97d172685"
+}

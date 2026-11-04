@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0841_5dff422e6c",
+  "shp": "m0841.shp",
+  "entidades": 122,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0841.dbf",
+      "bytes": 24420,
+      "sha256": "2ca24939ac318a4fe85ebf75a565aee67dcbc673d1a7d9b48d6c59d640b18c3b"
+    },
+    {
+      "archivo": "m0841.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0841.shp",
+      "bytes": 20660,
+      "sha256": "8c87ec8bf93f4bd99a63e76fa6ea86eefefa43feb3d46985bede50ac06edc308"
+    },
+    {
+      "archivo": "m0841.shx",
+      "bytes": 1076,
+      "sha256": "7e1a95ae391446f421c94583d0f73db4ba5082d35bc38d1ea0b48b6eea6aba0b"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANMARTINDELASESCOBAS.zip!m0841.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_43850d9aa7",
+    "archivo": "santafe/ipec/2022/SANMARTINDELASESCOBAS.zip!m0841.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 122,
+    "registros_shx": 122,
+    "shape_type": 5,
+    "bbox": [
+      5350717.0,
+      6473978.5,
+      5352261.5,
+      6475960.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANMARTINDELASESCOBAS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "3321bd8ea3dad48ff7f3d454f2c049aeb63f548d88c818672fe277ad1ac791f0"
+}

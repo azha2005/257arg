@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0450_83950abfb6",
+  "shp": "R0450.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0450.dbf",
+      "bytes": 1706,
+      "sha256": "f122ca2c0dc66900749d2af848665833a0b4671d47ca54a62b235b2335bed2d6"
+    },
+    {
+      "archivo": "R0450.shp",
+      "bytes": 3556,
+      "sha256": "90a7675a52d4b3289751ed6430d8e62794e2c39e1807bfe296dac5426ae757ef"
+    },
+    {
+      "archivo": "R0450.shx",
+      "bytes": 148,
+      "sha256": "7856e8d8dd8fde9ae6f29f561310c90349a4d5c94fdef75ee60587528dd4d903"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/teodelinaa2h.zip!R0450.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_13eb846eab",
+    "archivo": "santafe/ipec/2010/teodelinaa2h.zip!R0450.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5357743.5,
+      6215271.5,
+      5360189.5,
+      6217541.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/teodelinaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fcf17e24c9e7bce30213965d580975f89f4ff05a37a2aa650232bc5e832e4771"
+}

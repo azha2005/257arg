@@ -1,0 +1,85 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/cabaxrdatos_9481097aa4",
+  "shp": "cabaxrdatos.shp",
+  "entidades": 3555,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "cabaxrdatos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "cabaxrdatos.shp",
+      "bytes": 1181408,
+      "sha256": "1374b0c014af339865ae0d050febe09b08ac44cfdaf03149f7ac497834e77d16"
+    },
+    {
+      "archivo": "cabaxrdatos.shx",
+      "bytes": 28540,
+      "sha256": "2f3e2b8271f23a595100755c873dc550546c64fd39e5290c0ca960916d028f6b"
+    },
+    {
+      "archivo": "cabaxrdatos.dbf",
+      "bytes": 388040,
+      "sha256": "4bbf2cfeecb5d1145768a870bb6dee90be077d890c5a3266c2379e6dc2ce5a4d"
+    },
+    {
+      "archivo": "cabaxrdatos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_CABA_con_datos.zip!cabaxrdatos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_02",
+    "archivo": "indec/2010/Codgeo_CABA_con_datos.zip!cabaxrdatos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Ciudad Autónoma de Buenos Aires",
+    "features": 3555,
+    "registros_shx": 3555,
+    "shape_type": 5,
+    "bbox": [
+      4185539.881668893,
+      6134085.377302332,
+      4203621.53910687,
+      6153835.928168935
+    ],
+    "campos": [
+      "AREA",
+      "PERIMETER",
+      "PAIS0210_",
+      "PAIS0210_I",
+      "PROV",
+      "DEPTO",
+      "FRAC",
+      "RADIO",
+      "TIPO",
+      "LINK",
+      "VARONES",
+      "MUJERES",
+      "TOT_POB",
+      "HOGARES",
+      "VIV_PART",
+      "VIV_PART_H"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_CABA_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "entidades_por_provincia": {
+      "02": 3555
+    },
+    "campo_codigo": "LINK",
+    "codigos_distintos": 3553,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "7b361347f6f6467e098c3b4dfd719f94b8b86613c2e753fc5974ea107c4ca066"
+}

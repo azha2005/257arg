@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0423_261da64752",
+  "shp": "R0423.shp",
+  "entidades": 7,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0423.dbf",
+      "bytes": 1910,
+      "sha256": "9f02f9b09dbb263c32680d0cedf0472be041f2a31d648488f5652fb54b02c6a2"
+    },
+    {
+      "archivo": "R0423.shp",
+      "bytes": 5004,
+      "sha256": "8ab48d7d4e9ddeebc6f117abb3dc62166fe43e406d7eb5c4f1d951f7112f7af4"
+    },
+    {
+      "archivo": "R0423.shx",
+      "bytes": 156,
+      "sha256": "341f85063c51a527e87c9ff74634cfb5927146f60a79525fad43534e42daacef"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanvicentea2h.zip!R0423.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c2c2fab5cf",
+    "archivo": "santafe/ipec/2010/sanvicentea2h.zip!R0423.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 7,
+    "registros_shx": 7,
+    "shape_type": 5,
+    "bbox": [
+      5350637.0,
+      6491375.5,
+      5352696.5,
+      6493432.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanvicentea2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ea689f31db126cd9ac2cc01520bb95071de3725ba26b1ca188a9917d89deb298"
+}

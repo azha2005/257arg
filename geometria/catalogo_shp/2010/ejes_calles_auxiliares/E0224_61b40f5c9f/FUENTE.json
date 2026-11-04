@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0224_61b40f5c9f",
+  "shp": "E0224.shp",
+  "entidades": 834,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0224.dbf",
+      "bytes": 290842,
+      "sha256": "e79787e5adad815ec770b4d7fda460eb0a3b869e2b79c852cf224f085515ed2b"
+    },
+    {
+      "archivo": "E0224.shp",
+      "bytes": 75828,
+      "sha256": "ed6ea9fb71b17888f0b0b33092fc53c7c452073cbe8d92703d8df1c1691e59cf"
+    },
+    {
+      "archivo": "E0224.shx",
+      "bytes": 6772,
+      "sha256": "65682096d78fda30de1fce75e2b7750ccc8889f1f723d92d6b251c88a90a36dd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasrosasa1v.zip!E0224.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_69970a6e49",
+    "archivo": "santafe/ipec/2010/lasrosasa1v.zip!E0224.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 834,
+    "registros_shx": 834,
+    "shape_type": 3,
+    "bbox": [
+      5350140.5,
+      6404849.5,
+      5352924.0,
+      6408152.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasrosasa1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "69c518aeced6dcf31b74e8ae787d8d51cc427e3ffab29594d3f311a6aea129e6"
+}

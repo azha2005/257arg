@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2001",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2001/radios_censales/informacion_censal_por_radio_200_100fa120c3",
+  "shp": "informacion_censal_por_radio_2001.shp",
+  "entidades": 3409,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "informacion_censal_por_radio_2001.dbf",
+      "bytes": 409658,
+      "sha256": "61b458caae838879048fc1692a42921f2f14b3ffcd3f544b561c131c55c6ae49"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2001.prj",
+      "bytes": 431,
+      "sha256": "3ba7a1f9947576f7a2b33d98e2591bcab95f23ee82fa89ef022d5ff48a404c86"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2001.shp",
+      "bytes": 1029728,
+      "sha256": "8eb23bf3c744e4d95e04da91ef6069444a69320bcbb4a4af86195857e2122516"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2001.shp.xml",
+      "bytes": 129284,
+      "sha256": "e7955b3c2bfc00bc175e3a9ad23b708328373f56207364e432f2e9324ea26c72"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2001.shx",
+      "bytes": 27372,
+      "sha256": "e30ab303980e8b8f02a660da949f3353bb462dbf88c7006f7bc40b8a22b33fc2"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/caba/radios_2001.zip!informacion_censal_por_radio_2001.shp",
+  "metadata_original": {
+    "id_fuente": "caba_radio_2001_zip",
+    "archivo": "caba/radios_2001.zip!informacion_censal_por_radio_2001.shp",
+    "tipo": "radio censal",
+    "corte": "2001",
+    "cobertura": "CABA",
+    "features": 3409,
+    "registros_shx": 3409,
+    "shape_type": 5,
+    "bbox": [
+      93773.828125,
+      91572.328125,
+      111709.2734375,
+      110969.140625
+    ],
+    "campos": [
+      "AREA",
+      "PERIMETER",
+      "PROV",
+      "DEPTO",
+      "CODLOC",
+      "FRAC",
+      "RADIO",
+      "BARRIO91",
+      "BAR",
+      "CE",
+      "CGP",
+      "HOGARES",
+      "POB_HOG",
+      "POB_TOT",
+      "VARONES",
+      "MUJERES",
+      "CALIF"
+    ],
+    "formato": "SHP",
+    "fuente": "https://data.buenosaires.gob.ar/dataset/informacion-censal-por-radio",
+    "nota": "Descarga enlazada directamente por catálogo oficial; geometría censal, no circuito electoral.",
+    "licencia": "CC BY 2.5 AR",
+    "url_descarga": "https://data.buenosaires.gob.ar/dataset/informacion-censal-por-radio/resource/juqdkmgo-1212-resource/download",
+    "crs_wkt": "PROJCS[\"Argentina_GKBsAs\",GEOGCS[\"GCS_Campo_Inchauspe\",DATUM[\"D_Campo_Inchauspe\",SPHEROID[\"International_1924\",6378388.0,297.0]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",100000.0],PARAMETER[\"False_Northing\",100000.0],PARAMETER[\"Central_Meridian\",-58.4627],PARAMETER[\"Scale_Factor\",0.999998],PARAMETER[\"Latitude_Of_Origin\",-34.6297166],UNIT[\"Meter\",1.0]]",
+    "entidades_por_provincia": {
+      "02": 3409
+    }
+  },
+  "firma_componentes": "391f5d8d0115906929b5692b66f29a4dd68a3bc7a7a89f7e865903a3a0d63013"
+}

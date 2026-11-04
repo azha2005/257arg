@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0267_0041855c33",
+  "shp": "R0267.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0267.dbf",
+      "bytes": 3134,
+      "sha256": "6de651d255e048be43ec5a30c0805fab3065afe00acccad2d5ffa7533b35f901"
+    },
+    {
+      "archivo": "R0267.shp",
+      "bytes": 13180,
+      "sha256": "b7f8e24bde3d24fd73c1bf30719f4eb5a900d8b6e8cc5002f918a8b4e7fcedd4"
+    },
+    {
+      "archivo": "R0267.shx",
+      "bytes": 204,
+      "sha256": "d39c8084bd4070a3656a3e2ca72ff282a648256eb35fd0377388e589cfcdc9a7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanjaviera1v.zip!R0267.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0fca14ae2b",
+    "archivo": "santafe/ipec/2010/sanjaviera1v.zip!R0267.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5505196.0,
+      6615608.5,
+      5507970.0,
+      6618929.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanjaviera1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "31168bdd85240c984ddac5f38cb44032370b8a881a72608c8271935d77ec5fa5"
+}

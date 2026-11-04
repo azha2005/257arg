@@ -1,0 +1,104 @@
+{
+  "nombre": "Misiones",
+  "distrito": "14",
+  "fecha": "07/05/2023",
+  "foco": [
+    "Frente Renovador de la Concordia"
+  ],
+  "nota": "Definitivo municipal (78 municipios). Se excluyen 495 votos del personal asignado a centros que el Tribunal sólo publica en el total provincial. Sin abstención: los electores municipales incluyen extranjeros.",
+  "id": "misiones_2019p_gob2023",
+  "nivel": "departamentos",
+  "unidades": 17,
+  "base": "votos emitidos",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 07/05/2023",
+  "foco_lado": "destino",
+  "pendientes": [],
+  "cobertura_provincial": 0.9992887757315911,
+  "cobertura_origen": 1.0,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 539.4332261669632,
+  "lambda_": 1e-05,
+  "validacion_cruzada": {
+    "0.001": 0.014578859318182584,
+    "0.0001": 0.006695329817835111,
+    "1e-05": 0.00581575970398142,
+    "1e-06": 0.0058890856204394035,
+    "1e-07": 0.00604083968041456
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.8931206876539861,
+  "desviacion_max_margen_destino_pp": 1.3522882440663033,
+  "electores_o_votos_origen": 719819.0,
+  "electores_o_votos_destino": 695488.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 56.93,
+      "dif_variante_pp": 3.26,
+      "sensibilidad_pp": 6.8,
+      "ancho_intervalo_pp": 10.55,
+      "separacion_pp": 17.45,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 32.39,
+      "dif_variante_pp": 6.91,
+      "sensibilidad_pp": 17.6,
+      "ancho_intervalo_pp": 22.51,
+      "separacion_pp": 22.72,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 3.21,
+      "dif_variante_pp": 17.05,
+      "sensibilidad_pp": 82.42,
+      "ancho_intervalo_pp": 64.05,
+      "separacion_pp": 21.53,
+      "no_identificada": true
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 0.91,
+      "dif_variante_pp": 11.12,
+      "sensibilidad_pp": 78.83,
+      "ancho_intervalo_pp": 48.3,
+      "separacion_pp": 50.06,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 3.97,
+      "dif_variante_pp": 54.91,
+      "sensibilidad_pp": 72.83,
+      "ancho_intervalo_pp": 78.99,
+      "separacion_pp": 53.62,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.59,
+      "dif_variante_pp": 36.55,
+      "sensibilidad_pp": 84.02,
+      "ancho_intervalo_pp": 60.11,
+      "separacion_pp": 55.03,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "serie": "2023",
+  "fuente": "https://www.electoralmisiones.gov.ar/wp-content/uploads/2023/05/Acta-Acuerdo-N%C2%B01166-Anexo-I.pdf"
+}

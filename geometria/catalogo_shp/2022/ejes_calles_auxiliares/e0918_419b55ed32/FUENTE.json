@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0918_419b55ed32",
+  "shp": "e0918.shp",
+  "entidades": 230,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0918.dbf",
+      "bytes": 69150,
+      "sha256": "cefd94a03a4f44cb8ab6490c22abac93622cdbff16ee576e86eeef37e90c34ab"
+    },
+    {
+      "archivo": "e0918.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0918.shp",
+      "bytes": 20564,
+      "sha256": "7b3f44471f786d9b4aefb1f4d45aedb78b926d7f57f0b6fc14cbe0ea1ea742f3"
+    },
+    {
+      "archivo": "e0918.shx",
+      "bytes": 1940,
+      "sha256": "465139a772de65ad07550876db67a441cc613804fb8ab38457214f77fd02cfd3"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/BERNARDODEIRIGOYEN.zip!e0918.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4e7b6ed40b",
+    "archivo": "santafe/ipec/2022/BERNARDODEIRIGOYEN.zip!e0918.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 230,
+    "registros_shx": 230,
+    "shape_type": 3,
+    "bbox": [
+      5389928.0,
+      6440021.5,
+      5391484.5,
+      6441445.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/BERNARDODEIRIGOYEN.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c2a0ba8dc38722c66cd7e3a2ee20dc9f6d3b18a84d83a99db8261989806f4095"
+}

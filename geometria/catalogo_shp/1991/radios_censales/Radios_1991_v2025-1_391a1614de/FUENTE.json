@@ -1,0 +1,134 @@
+{
+  "anio_carpeta": "1991",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "1991/radios_censales/Radios_1991_v2025-1_391a1614de",
+  "shp": "Radios 1991 v2025-1.shp",
+  "entidades": 40099,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Radios 1991 v2025-1.sbn",
+      "bytes": 380300,
+      "sha256": "f7dbb95ab055b6abb21aa02f7be7dff7bbac977b6d60e1f34ff311e9fdf60567"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.sbx",
+      "bytes": 4676,
+      "sha256": "acb0ebd1eb3be2eb3cc88815a789c67de609018310c5a885fadc208aaba0dce1"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.shp",
+      "bytes": 78952924,
+      "sha256": "2a60b767b67833814b208ec6024a158689d6ff79388d10f42ea790afb196df28"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.shp.xml",
+      "bytes": 702,
+      "sha256": "00c70fc68def02f033a04ffa42e18f30106cf885d7e20595ab00507ab79769e3"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.shx",
+      "bytes": 320892,
+      "sha256": "744fc12453e76fbe64bb23bc4035eb64db91f5128c1338166f27df4472022734"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.dbf",
+      "bytes": 16521654,
+      "sha256": "639e28cd2ed3f2a28d748e8c925064680e8616f7dcfc3c9be13bb473a1a1cfdc"
+    },
+    {
+      "archivo": "Radios 1991 v2025-1.prj",
+      "bytes": 425,
+      "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/radios/RADIOS_1991_V2025-1.zip!Radios 1991 v2025-1.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_radios_a30b1dfa-4024-4449-8d72-6b4e6a0d29d2",
+    "archivo": "conicet/radios/RADIOS_1991_V2025-1.zip!Radios 1991 v2025-1.shp",
+    "tipo": "radio censal",
+    "corte": "1991",
+    "cobertura": "Argentina",
+    "features": 40099,
+    "registros_shx": 40099,
+    "shape_type": 5,
+    "bbox": [
+      -8237691.7108,
+      -30240971.9584,
+      -2922367.0326000005,
+      -2485224.690299999
+    ],
+    "campos": [
+      "COD_1991",
+      "COD_1991_B",
+      "PROV",
+      "DEPTO",
+      "FRACC",
+      "RADIO",
+      "SEGMENTOS",
+      "OBS1991",
+      "BASICO",
+      "AMPLIADO",
+      "TIPO",
+      "PESOP_MEAN",
+      "PESOP_MIN",
+      "PESOP_MAX",
+      "B_POB_TOT",
+      "B_VIV_P",
+      "B_VIV_C",
+      "B_VIV_TOT",
+      "A_CASOS",
+      "A_POB_TOT",
+      "A_VIV_P",
+      "A_VIV_C",
+      "A_VIV_TOT",
+      "D_AB_CASOS",
+      "D_AB_POB",
+      "DP_AB_POB"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149711",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/a30b1dfa-4024-4449-8d72-6b4e6a0d29d2/content",
+    "crs_wkt": "PROJCS[\"WGS_1984_Web_Mercator_Auxiliary_Sphere\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Mercator_Auxiliary_Sphere\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",0.0],PARAMETER[\"Standard_Parallel_1\",0.0],PARAMETER[\"Auxiliary_Sphere_Type\",0.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "06": 13974,
+      "62": 597,
+      "14": 3677,
+      "10": 435,
+      "18": 1400,
+      "22": 1124,
+      "26": 518,
+      "30": 2114,
+      "34": 532,
+      "38": 599,
+      "42": 615,
+      "46": 220,
+      "50": 1451,
+      "54": 1085,
+      "58": 586,
+      "66": 1003,
+      "70": 519,
+      "74": 479,
+      "82": 3155,
+      "78": 188,
+      "86": 867,
+      "90": 1434,
+      "02": 3407,
+      "94": 120
+    },
+    "campo_codigo": "COD_1991",
+    "codigos_distintos": 40099,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "a73aee009ace3f3f32bc56b02cb893ef61b075af394b8dfdd6f7ff96033945bc"
+}

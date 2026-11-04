@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4119_7c2a5b4fae",
+  "shp": "E4119.shp",
+  "entidades": 144,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4119.dbf",
+      "bytes": 50722,
+      "sha256": "cccaca34db8a27278a465ae5daf6a9ff715efa9c23df0ae820dcb21ce96f15ea"
+    },
+    {
+      "archivo": "E4119.shp",
+      "bytes": 12804,
+      "sha256": "7e992edb9ab3ee4de6223160c61ebd6309d243410b42089555a4fc58ebfe0841"
+    },
+    {
+      "archivo": "E4119.shx",
+      "bytes": 1252,
+      "sha256": "72e766af947c3aa187ffdae8ff178ba325b5776e405abb8e5cd2f22ef89977aa"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/aaroncastellanosa3v.zip!E4119.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_cd5c40df9f",
+    "archivo": "santafe/ipec/2010/aaroncastellanosa3v.zip!E4119.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 144,
+    "registros_shx": 144,
+    "shape_type": 3,
+    "bbox": [
+      5281050.0,
+      6198405.5,
+      5281975.0,
+      6199618.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/aaroncastellanosa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5be3ee814f6c2ef6403c42becaaa89bd5d608fd8d82bb0dfc4a6d1caaf573fbc"
+}

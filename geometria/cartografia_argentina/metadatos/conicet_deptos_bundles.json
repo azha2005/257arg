@@ -1,0 +1,81 @@
+{
+  "_embedded": {
+    "bundles": [
+      {
+        "uuid": "2ca092b9-0710-4528-9295-e180bd183e04",
+        "name": "SWORD",
+        "handle": null,
+        "metadata": {
+          "dc.title": [
+            {
+              "value": "SWORD",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 0
+            }
+          ]
+        },
+        "type": "bundle",
+        "uniqueType": "core.bundle",
+        "_links": {
+          "item": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/2ca092b9-0710-4528-9295-e180bd183e04/item"
+          },
+          "bitstreams": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/2ca092b9-0710-4528-9295-e180bd183e04/bitstreams"
+          },
+          "primaryBitstream": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/2ca092b9-0710-4528-9295-e180bd183e04/primaryBitstream"
+          },
+          "self": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/2ca092b9-0710-4528-9295-e180bd183e04"
+          }
+        }
+      },
+      {
+        "uuid": "08283658-a694-4bfd-b472-d6466a1d48fe",
+        "name": "ORIGINAL",
+        "handle": null,
+        "metadata": {
+          "dc.title": [
+            {
+              "value": "ORIGINAL",
+              "language": null,
+              "authority": null,
+              "confidence": -1,
+              "place": 1
+            }
+          ]
+        },
+        "type": "bundle",
+        "uniqueType": "core.bundle",
+        "_links": {
+          "item": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/08283658-a694-4bfd-b472-d6466a1d48fe/item"
+          },
+          "bitstreams": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/08283658-a694-4bfd-b472-d6466a1d48fe/bitstreams"
+          },
+          "primaryBitstream": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/08283658-a694-4bfd-b472-d6466a1d48fe/primaryBitstream"
+          },
+          "self": {
+            "href": "https://ri.conicet.gov.ar/server/api/core/bundles/08283658-a694-4bfd-b472-d6466a1d48fe"
+          }
+        }
+      }
+    ]
+  },
+  "page": {
+    "number": 0,
+    "size": 20,
+    "totalPages": 1,
+    "totalElements": 2
+  },
+  "_links": {
+    "self": {
+      "href": "https://ri.conicet.gov.ar/server/api/core/items/a6c8ebd2-dca1-46d7-b153-19fbabd3dc4f/bundles"
+    }
+  }
+}

@@ -1,0 +1,4163 @@
+{
+  "$type": "DESNEA.Framework.Libreria.Comun.CacheOperationResult`1[[Escrutinio.Core.Entities.DTOs.ResultadoEscrutinioDTO, Escrutinio.Core.Entities]], DESNEA.Framework.Libreria",
+  "sourceDateTime": "2026-11-02T01:25:58.0794268-03:00",
+  "cachedDateTime": "2026-11-02T01:25:58.0794257-03:00",
+  "additionalClientData": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "additionalData": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "appExceptions": null,
+  "data": {
+    "$type": "Escrutinio.Core.Entities.DTOs.ResultadoEscrutinioDTO, Escrutinio.Core.Entities",
+    "mesa": null,
+    "header": {
+      "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoHeaderDTO, Escrutinio.Core.Entities",
+      "titulo": "  30 - ESQUINA-CIUDAD",
+      "subtitulo": "ESQUINA -  30 - ESQUINA-CIUDAD",
+      "electores": 17572,
+      "sobres": 11597,
+      "votantes": 11598,
+      "votosProcesados": 11611,
+      "mesas": 51,
+      "escrutadas": 51,
+      "porEscrutar": 0,
+      "estaCerrado": true,
+      "rutaimagen": null,
+      "rutaCertificado": null,
+      "esPrivado": false,
+      "esResolucion": false,
+      "tieneResolucion": false,
+      "rutaResolucion": null,
+      "tieneApertura": false,
+      "rutaApertura": null,
+      "tienePrivadoDeLibertad": false,
+      "fechaCierre": "0001-01-01T00:00:00-03:00",
+      "cerradoManual": false,
+      "resultado": "Cerrado"
+    },
+    "partidos": [
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "MOVIMIENTO INTEGRACIÓN Y DESARROLLO (1)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 119,
+            "porcentaje": 1.08,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 118,
+            "porcentaje": 1.09,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 116,
+            "porcentaje": 1.07,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "JUSTICIALISTA (2)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 938,
+            "porcentaje": 8.62,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 1152,
+            "porcentaje": 10.59,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 1215,
+            "porcentaje": 11.0,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNIÓN CÍVICA RADICAL (3)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 1894,
+            "porcentaje": 17.14,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 1910,
+            "porcentaje": 17.56,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 1885,
+            "porcentaje": 17.33,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "DEMÓCRATA CRISTIANO (5)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 156,
+            "porcentaje": 1.43,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 162,
+            "porcentaje": 1.49,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 170,
+            "porcentaje": 1.54,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "DE LA CONCERTACIÓN - FORJA (7)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 108,
+            "porcentaje": 0.98,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 109,
+            "porcentaje": 1.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 110,
+            "porcentaje": 1.01,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "FEDERAL (8)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 204,
+            "porcentaje": 1.88,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 206,
+            "porcentaje": 1.86,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 208,
+            "porcentaje": 1.91,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "DEMÓCRATA PROGRESISTA (9)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 143,
+            "porcentaje": 1.29,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 143,
+            "porcentaje": 1.32,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 143,
+            "porcentaje": 1.31,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "RENOVADOR FEDERAL (10)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 161,
+            "porcentaje": 1.48,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 170,
+            "porcentaje": 1.54,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 157,
+            "porcentaje": 1.44,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "LADRILLEROS UNIDOS (11)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 94,
+            "porcentaje": 0.86,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 97,
+            "porcentaje": 0.88,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 97,
+            "porcentaje": 0.89,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "COMUNISTA (12)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 37,
+            "porcentaje": 0.34,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 37,
+            "porcentaje": 0.34,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 38,
+            "porcentaje": 0.34,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "NUEVO ENCUENTRO POR LA DEMOCRACIA Y LA EQUIDAD (13)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 228,
+            "porcentaje": 2.1,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "ACCIÓN POR CORRIENTES (14)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 212,
+            "porcentaje": 1.95,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 215,
+            "porcentaje": 1.98,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 221,
+            "porcentaje": 2.0,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNIDOS POR CORRIENTES (15)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 98,
+            "porcentaje": 0.89,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 104,
+            "porcentaje": 0.96,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 102,
+            "porcentaje": 0.94,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "LABORISTA AUTÓNOMO (17)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 118,
+            "porcentaje": 1.08,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 118,
+            "porcentaje": 1.09,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 119,
+            "porcentaje": 1.08,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "ELI - ENCUENTRO LIBERAL (18)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 193,
+            "porcentaje": 1.75,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 196,
+            "porcentaje": 1.8,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 201,
+            "porcentaje": 1.85,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "CAMBIO POPULAR (19)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 192,
+            "porcentaje": 1.77,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 211,
+            "porcentaje": 1.91,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 189,
+            "porcentaje": 1.74,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNIÓN DEL CENTRO DEMOCRÁTICO - U.C.D.- (20)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 103,
+            "porcentaje": 0.93,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 101,
+            "porcentaje": 0.93,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 101,
+            "porcentaje": 0.93,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "CONVOCATORIA POPULAR (21)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 129,
+            "porcentaje": 1.19,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 129,
+            "porcentaje": 1.19,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 139,
+            "porcentaje": 1.26,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "FE (23)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 99,
+            "porcentaje": 0.9,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 101,
+            "porcentaje": 0.93,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 103,
+            "porcentaje": 0.95,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "HACEMOS (24)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 104,
+            "porcentaje": 0.96,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 102,
+            "porcentaje": 0.94,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 103,
+            "porcentaje": 0.93,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNION POPULAR (25)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 738,
+            "porcentaje": 6.68,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 757,
+            "porcentaje": 6.96,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 801,
+            "porcentaje": 7.36,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "ENCUENTRO CORRELIGIONARIO (27)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 45,
+            "porcentaje": 0.41,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 42,
+            "porcentaje": 0.39,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 42,
+            "porcentaje": 0.38,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "CAMBIO AUSTERIDAD Y PROGRESO (28)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 606,
+            "porcentaje": 5.48,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 617,
+            "porcentaje": 5.67,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 573,
+            "porcentaje": 5.27,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "DEL TRABAJO Y DEL PUEBLO (29)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 130,
+            "porcentaje": 1.2,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 130,
+            "porcentaje": 1.2,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 132,
+            "porcentaje": 1.19,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "CIUDADANOS A GOBERNAR (30)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 370,
+            "porcentaje": 3.35,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 357,
+            "porcentaje": 3.28,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 357,
+            "porcentaje": 3.28,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "CONSERVADOR POPULAR (31)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 78,
+            "porcentaje": 0.72,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 78,
+            "porcentaje": 0.72,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 79,
+            "porcentaje": 0.71,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "CIUDADANOS COMPROMETIDOS (CI.CO) (32)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 50,
+            "porcentaje": 0.45,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 50,
+            "porcentaje": 0.46,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 52,
+            "porcentaje": 0.48,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "NUEVO PAIS (33)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 98,
+            "porcentaje": 0.9,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 107,
+            "porcentaje": 0.97,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 95,
+            "porcentaje": 0.87,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "ACCIÓN POPULAR DE LOS TRABAJADORES (34)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 46,
+            "porcentaje": 0.42,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 48,
+            "porcentaje": 0.43,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 47,
+            "porcentaje": 0.43,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "INTEGRACIÓN CORRENTINA (36)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 100,
+            "porcentaje": 0.92,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 101,
+            "porcentaje": 0.91,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 101,
+            "porcentaje": 0.93,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNIÓN CORRENTINA (37)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 167,
+            "porcentaje": 1.54,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 179,
+            "porcentaje": 1.62,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 167,
+            "porcentaje": 1.54,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "MOVIMIENTO LIBRES DEL SUR (40)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 51,
+            "porcentaje": 0.47,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 54,
+            "porcentaje": 0.49,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 51,
+            "porcentaje": 0.47,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNIÓN PARA EL DESARROLLO (42)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 449,
+            "porcentaje": 4.13,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 452,
+            "porcentaje": 4.09,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 446,
+            "porcentaje": 4.1,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "ACCIÓN POR LA REPÚBLICA (44)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 52,
+            "porcentaje": 0.48,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 52,
+            "porcentaje": 0.48,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 52,
+            "porcentaje": 0.47,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "VAMOS CORRIENTES (46)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 180,
+            "porcentaje": 1.63,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 179,
+            "porcentaje": 1.65,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 178,
+            "porcentaje": 1.64,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "AFIRMACIÓN PARA UNA REPÚBLICA IGUALITARIA (A.R.I.) (47)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 54,
+            "porcentaje": 0.5,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 55,
+            "porcentaje": 0.51,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 58,
+            "porcentaje": 0.52,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "AGRARIO Y SOCIAL (49)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 68,
+            "porcentaje": 0.62,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 62,
+            "porcentaje": 0.57,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 63,
+            "porcentaje": 0.58,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "SOCIALISTA (50)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 58,
+            "porcentaje": 0.53,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 59,
+            "porcentaje": 0.53,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 59,
+            "porcentaje": 0.54,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "LIBERAL (51)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 281,
+            "porcentaje": 2.58,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 262,
+            "porcentaje": 2.37,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 279,
+            "porcentaje": 2.57,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "AUTONOMISTA (52)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 81,
+            "porcentaje": 0.74,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 89,
+            "porcentaje": 0.81,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 94,
+            "porcentaje": 0.86,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "DE LA VICTORIA (54)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 143,
+            "porcentaje": 1.29,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 138,
+            "porcentaje": 1.27,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 139,
+            "porcentaje": 1.28,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "FRENTE RENOVADOR (56)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 127,
+            "porcentaje": 1.17,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 133,
+            "porcentaje": 1.2,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 126,
+            "porcentaje": 1.16,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "PROYECTO CORRIENTES (57)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 141,
+            "porcentaje": 1.3,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 118,
+            "porcentaje": 1.07,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 98,
+            "porcentaje": 0.9,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "REVOLUCIÓN CIUDADANA (61)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 1,
+            "porcentaje": 0.01,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 1,
+            "porcentaje": 0.01,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 1,
+            "porcentaje": 0.01,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "AHORA (62)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 22,
+            "porcentaje": 0.2,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 22,
+            "porcentaje": 0.2,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 26,
+            "porcentaje": 0.24,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "DE LA ESPERANZA (63)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 20,
+            "porcentaje": 0.18,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 20,
+            "porcentaje": 0.18,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 21,
+            "porcentaje": 0.19,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "PRO - PROPUESTA REPUBLICANA (64)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 122,
+            "porcentaje": 1.1,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 121,
+            "porcentaje": 1.11,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 121,
+            "porcentaje": 1.11,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "INSTRUMENTO ELECTORAL POR LA UNIDAD POPULAR (72)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 43,
+            "porcentaje": 0.4,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 47,
+            "porcentaje": 0.43,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "NUEVO (90)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 94,
+            "porcentaje": 0.85,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 94,
+            "porcentaje": 0.86,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 95,
+            "porcentaje": 0.87,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "POPULAR CORRENTINO (169)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 198,
+            "porcentaje": 1.82,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 199,
+            "porcentaje": 1.83,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 203,
+            "porcentaje": 1.84,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "UNIÓN CELESTE Y BLANCO (173)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 93,
+            "porcentaje": 0.84,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 94,
+            "porcentaje": 0.86,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 95,
+            "porcentaje": 0.87,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "COMPROMISO CORRENTINO (175)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 93,
+            "porcentaje": 0.85,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 93,
+            "porcentaje": 0.86,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 92,
+            "porcentaje": 0.83,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "PROYECTO POPULAR (179)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 172,
+            "porcentaje": 1.56,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 154,
+            "porcentaje": 1.42,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 155,
+            "porcentaje": 1.42,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "KOLINA (192)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 237,
+            "porcentaje": 2.18,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 238,
+            "porcentaje": 2.19,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 242,
+            "porcentaje": 2.19,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "LA LIBERTAD AVANZA (196)",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": true,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 375,
+            "porcentaje": 3.39,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 365,
+            "porcentaje": 3.36,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 384,
+            "porcentaje": 3.53,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "VOTOS EN BLANCO",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": false,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 612,
+            "porcentaje": 5.27,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 609,
+            "porcentaje": 5.25,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 400,
+            "porcentaje": 3.45,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "VOTOS NULOS",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": false,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 154,
+            "porcentaje": 1.33,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 115,
+            "porcentaje": 0.99,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 116,
+            "porcentaje": 1.0,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "VOTOS RECURRIDOS",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": false,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDTO, Escrutinio.Core.Entities",
+        "partido": "VOTOS DE IDENTIDAD IMPUGNADA",
+        "alianza": null,
+        "color": null,
+        "mostrarEnGrafico": false,
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 0,
+            "porcentaje": 0.0,
+            "esGrisado": false
+          }
+        ]
+      }
+    ],
+    "alianzas": [
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "VAMOS CORRIENTES",
+        "color": "126800",
+        "lista": "206",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 206
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 206
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 206
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 5339,
+            "porcentaje": 49.08,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 5324,
+            "porcentaje": 48.96,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 5289,
+            "porcentaje": 47.86,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POPULAR DE LOS TRABAJADORES (34)",
+            "votos": 48,
+            "porcentaje": 0.434389140271,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POPULAR DE LOS TRABAJADORES (34)",
+            "votos": 46,
+            "porcentaje": 0.423027404818,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POPULAR DE LOS TRABAJADORES (34)",
+            "votos": 47,
+            "porcentaje": 0.432064717779,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POR LA REPÚBLICA (44)",
+            "votos": 52,
+            "porcentaje": 0.470588235294,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POR LA REPÚBLICA (44)",
+            "votos": 52,
+            "porcentaje": 0.478204892403,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POR LA REPÚBLICA (44)",
+            "votos": 52,
+            "porcentaje": 0.478029049457,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AFIRMACIÓN PARA UNA REPÚBLICA IGUALITARIA (A.R.I.) (47)",
+            "votos": 58,
+            "porcentaje": 0.524886877828,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AFIRMACIÓN PARA UNA REPÚBLICA IGUALITARIA (A.R.I.) (47)",
+            "votos": 55,
+            "porcentaje": 0.505793636196,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AFIRMACIÓN PARA UNA REPÚBLICA IGUALITARIA (A.R.I.) (47)",
+            "votos": 54,
+            "porcentaje": 0.496414782129,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AUTONOMISTA (52)",
+            "votos": 89,
+            "porcentaje": 0.805429864253,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AUTONOMISTA (52)",
+            "votos": 94,
+            "porcentaje": 0.864447305499,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AUTONOMISTA (52)",
+            "votos": 81,
+            "porcentaje": 0.744622173193,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CIUDADANOS COMPROMETIDOS (CI.CO) (32)",
+            "votos": 50,
+            "porcentaje": 0.452488687782,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CIUDADANOS COMPROMETIDOS (CI.CO) (32)",
+            "votos": 50,
+            "porcentaje": 0.459812396542,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CIUDADANOS COMPROMETIDOS (CI.CO) (32)",
+            "votos": 52,
+            "porcentaje": 0.478029049457,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "COMPROMISO CORRENTINO (175)",
+            "votos": 92,
+            "porcentaje": 0.83257918552,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "COMPROMISO CORRENTINO (175)",
+            "votos": 93,
+            "porcentaje": 0.855251057568,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "COMPROMISO CORRENTINO (175)",
+            "votos": 93,
+            "porcentaje": 0.854936569222,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CONSERVADOR POPULAR (31)",
+            "votos": 79,
+            "porcentaje": 0.714932126696,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CONSERVADOR POPULAR (31)",
+            "votos": 78,
+            "porcentaje": 0.717307338605,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CONSERVADOR POPULAR (31)",
+            "votos": 78,
+            "porcentaje": 0.717043574186,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA CONCERTACIÓN - FORJA (7)",
+            "votos": 108,
+            "porcentaje": 0.97737556561,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA CONCERTACIÓN - FORJA (7)",
+            "votos": 109,
+            "porcentaje": 1.002391024462,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA CONCERTACIÓN - FORJA (7)",
+            "votos": 110,
+            "porcentaje": 1.011215296929,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEMÓCRATA PROGRESISTA (9)",
+            "votos": 143,
+            "porcentaje": 1.294117647058,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEMÓCRATA PROGRESISTA (9)",
+            "votos": 143,
+            "porcentaje": 1.31506345411,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEMÓCRATA PROGRESISTA (9)",
+            "votos": 143,
+            "porcentaje": 1.314579886008,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ENCUENTRO CORRELIGIONARIO (27)",
+            "votos": 42,
+            "porcentaje": 0.380090497737,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ENCUENTRO CORRELIGIONARIO (27)",
+            "votos": 42,
+            "porcentaje": 0.386242413095,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ENCUENTRO CORRELIGIONARIO (27)",
+            "votos": 45,
+            "porcentaje": 0.413678985107,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "HACEMOS (24)",
+            "votos": 103,
+            "porcentaje": 0.932126696832,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "HACEMOS (24)",
+            "votos": 102,
+            "porcentaje": 0.938017288946,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "HACEMOS (24)",
+            "votos": 104,
+            "porcentaje": 0.956058098915,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "INTEGRACIÓN CORRENTINA (36)",
+            "votos": 101,
+            "porcentaje": 0.914027149321,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "INTEGRACIÓN CORRENTINA (36)",
+            "votos": 100,
+            "porcentaje": 0.919624793084,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "INTEGRACIÓN CORRENTINA (36)",
+            "votos": 101,
+            "porcentaje": 0.928479499908,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LADRILLEROS UNIDOS (11)",
+            "votos": 97,
+            "porcentaje": 0.877828054298,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LADRILLEROS UNIDOS (11)",
+            "votos": 97,
+            "porcentaje": 0.892036049291,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LADRILLEROS UNIDOS (11)",
+            "votos": 94,
+            "porcentaje": 0.864129435558,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LIBERAL (51)",
+            "votos": 262,
+            "porcentaje": 2.371040723981,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LIBERAL (51)",
+            "votos": 279,
+            "porcentaje": 2.565753172705,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LIBERAL (51)",
+            "votos": 281,
+            "porcentaje": 2.583195440338,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "MOVIMIENTO INTEGRACIÓN Y DESARROLLO (1)",
+            "votos": 119,
+            "porcentaje": 1.076923076923,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "MOVIMIENTO INTEGRACIÓN Y DESARROLLO (1)",
+            "votos": 118,
+            "porcentaje": 1.085157255839,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "MOVIMIENTO INTEGRACIÓN Y DESARROLLO (1)",
+            "votos": 116,
+            "porcentaje": 1.066372494943,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO (90)",
+            "votos": 94,
+            "porcentaje": 0.850678733031,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO (90)",
+            "votos": 94,
+            "porcentaje": 0.864447305499,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO (90)",
+            "votos": 95,
+            "porcentaje": 0.873322301893,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "POPULAR CORRENTINO (169)",
+            "votos": 203,
+            "porcentaje": 1.837104072398,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "POPULAR CORRENTINO (169)",
+            "votos": 199,
+            "porcentaje": 1.830053338237,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "POPULAR CORRENTINO (169)",
+            "votos": 198,
+            "porcentaje": 1.820187534473,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PRO - PROPUESTA REPUBLICANA (64)",
+            "votos": 122,
+            "porcentaje": 1.10407239819,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PRO - PROPUESTA REPUBLICANA (64)",
+            "votos": 121,
+            "porcentaje": 1.112745999632,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PRO - PROPUESTA REPUBLICANA (64)",
+            "votos": 121,
+            "porcentaje": 1.112336826622,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "REVOLUCIÓN CIUDADANA (61)",
+            "votos": 1,
+            "porcentaje": 0.009049773755,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "REVOLUCIÓN CIUDADANA (61)",
+            "votos": 1,
+            "porcentaje": 0.00919624793,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "REVOLUCIÓN CIUDADANA (61)",
+            "votos": 1,
+            "porcentaje": 0.009192866335,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "SOCIALISTA (50)",
+            "votos": 59,
+            "porcentaje": 0.533936651583,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "SOCIALISTA (50)",
+            "votos": 58,
+            "porcentaje": 0.533382379988,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "SOCIALISTA (50)",
+            "votos": 59,
+            "porcentaje": 0.542379113807,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CÍVICA RADICAL (3)",
+            "votos": 1894,
+            "porcentaje": 17.140271493212,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CÍVICA RADICAL (3)",
+            "votos": 1910,
+            "porcentaje": 17.564833547912,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CÍVICA RADICAL (3)",
+            "votos": 1885,
+            "porcentaje": 17.328553042838,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN DEL CENTRO DEMOCRÁTICO - U.C.D.- (20)",
+            "votos": 103,
+            "porcentaje": 0.932126696832,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN DEL CENTRO DEMOCRÁTICO - U.C.D.- (20)",
+            "votos": 101,
+            "porcentaje": 0.928821041015,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN DEL CENTRO DEMOCRÁTICO - U.C.D.- (20)",
+            "votos": 101,
+            "porcentaje": 0.928479499908,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN PARA EL DESARROLLO (42)",
+            "votos": 452,
+            "porcentaje": 4.090497737556,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN PARA EL DESARROLLO (42)",
+            "votos": 446,
+            "porcentaje": 4.101526577156,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN PARA EL DESARROLLO (42)",
+            "votos": 449,
+            "porcentaje": 4.127596984739,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNION POPULAR (25)",
+            "votos": 738,
+            "porcentaje": 6.678733031674,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNION POPULAR (25)",
+            "votos": 757,
+            "porcentaje": 6.961559683649,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNION POPULAR (25)",
+            "votos": 801,
+            "porcentaje": 7.363485934914,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "VAMOS CORRIENTES (46)",
+            "votos": 180,
+            "porcentaje": 1.628959276018,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "VAMOS CORRIENTES (46)",
+            "votos": 179,
+            "porcentaje": 1.646128379621,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "VAMOS CORRIENTES (46)",
+            "votos": 178,
+            "porcentaje": 1.636330207758,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "VAMOS CORRIENTES"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "LIMPIAR CORRIENTES",
+        "color": "1880D1",
+        "lista": "204",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 204
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 204
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 204
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 2324,
+            "porcentaje": 21.03,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 2227,
+            "porcentaje": 20.48,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 2000,
+            "porcentaje": 18.39,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA VICTORIA (54)",
+            "votos": 143,
+            "porcentaje": 1.294117647058,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA VICTORIA (54)",
+            "votos": 139,
+            "porcentaje": 1.278278462387,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA VICTORIA (54)",
+            "votos": 138,
+            "porcentaje": 1.268615554329,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEL TRABAJO Y DEL PUEBLO (29)",
+            "votos": 132,
+            "porcentaje": 1.194570135746,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEL TRABAJO Y DEL PUEBLO (29)",
+            "votos": 130,
+            "porcentaje": 1.195512231009,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEL TRABAJO Y DEL PUEBLO (29)",
+            "votos": 130,
+            "porcentaje": 1.195072623644,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEMÓCRATA CRISTIANO (5)",
+            "votos": 170,
+            "porcentaje": 1.538461538461,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEMÓCRATA CRISTIANO (5)",
+            "votos": 162,
+            "porcentaje": 1.489792164796,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DEMÓCRATA CRISTIANO (5)",
+            "votos": 156,
+            "porcentaje": 1.434087148372,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FRENTE RENOVADOR (56)",
+            "votos": 133,
+            "porcentaje": 1.203619909502,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FRENTE RENOVADOR (56)",
+            "votos": 127,
+            "porcentaje": 1.167923487217,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FRENTE RENOVADOR (56)",
+            "votos": 126,
+            "porcentaje": 1.158301158301,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "JUSTICIALISTA (2)",
+            "votos": 1215,
+            "porcentaje": 10.995475113122,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "JUSTICIALISTA (2)",
+            "votos": 1152,
+            "porcentaje": 10.594077616332,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "JUSTICIALISTA (2)",
+            "votos": 938,
+            "porcentaje": 8.622908622908,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "KOLINA (192)",
+            "votos": 242,
+            "porcentaje": 2.190045248868,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "KOLINA (192)",
+            "votos": 238,
+            "porcentaje": 2.18870700754,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "KOLINA (192)",
+            "votos": 237,
+            "porcentaje": 2.178709321566,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LABORISTA AUTÓNOMO (17)",
+            "votos": 119,
+            "porcentaje": 1.076923076923,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LABORISTA AUTÓNOMO (17)",
+            "votos": 118,
+            "porcentaje": 1.085157255839,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LABORISTA AUTÓNOMO (17)",
+            "votos": 118,
+            "porcentaje": 1.084758227615,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "RENOVADOR FEDERAL (10)",
+            "votos": 170,
+            "porcentaje": 1.538461538461,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "RENOVADOR FEDERAL (10)",
+            "votos": 161,
+            "porcentaje": 1.480595916865,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "RENOVADOR FEDERAL (10)",
+            "votos": 157,
+            "porcentaje": 1.443280014708,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LIMPIAR CORRIENTES"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "ENCUENTRO POR CORRIENTES - ECO",
+        "color": "1EC225",
+        "lista": "201, 202",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 202
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 201
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 201
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 2153,
+            "porcentaje": 19.48,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 2051,
+            "porcentaje": 18.86,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 2006,
+            "porcentaje": 18.44,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POR CORRIENTES (14)",
+            "votos": 221,
+            "porcentaje": 2.0,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POR CORRIENTES (14)",
+            "votos": 215,
+            "porcentaje": 1.977193305131,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ACCIÓN POR CORRIENTES (14)",
+            "votos": 212,
+            "porcentaje": 1.948887663173,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AGRARIO Y SOCIAL (49)",
+            "votos": 68,
+            "porcentaje": 0.615384615384,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AGRARIO Y SOCIAL (49)",
+            "votos": 62,
+            "porcentaje": 0.570167371712,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AGRARIO Y SOCIAL (49)",
+            "votos": 63,
+            "porcentaje": 0.57915057915,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CAMBIO AUSTERIDAD Y PROGRESO (28)",
+            "votos": 606,
+            "porcentaje": 5.484162895927,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CAMBIO AUSTERIDAD Y PROGRESO (28)",
+            "votos": 617,
+            "porcentaje": 5.67408497333,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CAMBIO AUSTERIDAD Y PROGRESO (28)",
+            "votos": 573,
+            "porcentaje": 5.267512410369,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CAMBIO POPULAR (19)",
+            "votos": 211,
+            "porcentaje": 1.909502262443,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CAMBIO POPULAR (19)",
+            "votos": 189,
+            "porcentaje": 1.738090858929,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CAMBIO POPULAR (19)",
+            "votos": 192,
+            "porcentaje": 1.765030336458,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CIUDADANOS A GOBERNAR (30)",
+            "votos": 370,
+            "porcentaje": 3.348416289592,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CIUDADANOS A GOBERNAR (30)",
+            "votos": 357,
+            "porcentaje": 3.283060511311,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CIUDADANOS A GOBERNAR (30)",
+            "votos": 357,
+            "porcentaje": 3.281853281853,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "INSTRUMENTO ELECTORAL POR LA UNIDAD POPULAR (72)",
+            "votos": 47,
+            "porcentaje": 0.425339366515,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "INSTRUMENTO ELECTORAL POR LA UNIDAD POPULAR (72)",
+            "votos": 43,
+            "porcentaje": 0.395438661026,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "MOVIMIENTO LIBRES DEL SUR (40)",
+            "votos": 54,
+            "porcentaje": 0.488687782805,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "MOVIMIENTO LIBRES DEL SUR (40)",
+            "votos": 51,
+            "porcentaje": 0.469008644473,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "MOVIMIENTO LIBRES DEL SUR (40)",
+            "votos": 51,
+            "porcentaje": 0.468836183121,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO PAIS (33)",
+            "votos": 107,
+            "porcentaje": 0.968325791855,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO PAIS (33)",
+            "votos": 98,
+            "porcentaje": 0.901232297222,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO PAIS (33)",
+            "votos": 95,
+            "porcentaje": 0.873322301893,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PROYECTO CORRIENTES (57)",
+            "votos": 118,
+            "porcentaje": 1.067873303167,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PROYECTO CORRIENTES (57)",
+            "votos": 98,
+            "porcentaje": 0.901232297222,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PROYECTO CORRIENTES (57)",
+            "votos": 141,
+            "porcentaje": 1.296194153337,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PROYECTO POPULAR (179)",
+            "votos": 172,
+            "porcentaje": 1.556561085972,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PROYECTO POPULAR (179)",
+            "votos": 154,
+            "porcentaje": 1.41622218135,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "PROYECTO POPULAR (179)",
+            "votos": 155,
+            "porcentaje": 1.424894282037,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CORRENTINA (37)",
+            "votos": 179,
+            "porcentaje": 1.619909502262,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CORRENTINA (37)",
+            "votos": 167,
+            "porcentaje": 1.53577340445,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CORRENTINA (37)",
+            "votos": 167,
+            "porcentaje": 1.535208678065,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "ENCUENTRO POR CORRIENTES - ECO"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "LA LIBERTAD AVANZA",
+        "color": "674ea7",
+        "lista": "203",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 203
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 203
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 203
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 1093,
+            "porcentaje": 10.05,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 1064,
+            "porcentaje": 9.63,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 1064,
+            "porcentaje": 9.78,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ELI - ENCUENTRO LIBERAL (18)",
+            "votos": 193,
+            "porcentaje": 1.746606334841,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ELI - ENCUENTRO LIBERAL (18)",
+            "votos": 196,
+            "porcentaje": 1.802464594445,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "ELI - ENCUENTRO LIBERAL (18)",
+            "votos": 201,
+            "porcentaje": 1.84776613348,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FE (23)",
+            "votos": 99,
+            "porcentaje": 0.895927601809,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FE (23)",
+            "votos": 101,
+            "porcentaje": 0.928821041015,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FE (23)",
+            "votos": 103,
+            "porcentaje": 0.946865232579,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FEDERAL (8)",
+            "votos": 206,
+            "porcentaje": 1.864253393665,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FEDERAL (8)",
+            "votos": 204,
+            "porcentaje": 1.876034577892,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "FEDERAL (8)",
+            "votos": 208,
+            "porcentaje": 1.91211619783,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LA LIBERTAD AVANZA (196)",
+            "votos": 375,
+            "porcentaje": 3.393665158371,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LA LIBERTAD AVANZA (196)",
+            "votos": 365,
+            "porcentaje": 3.356630494758,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "LA LIBERTAD AVANZA (196)",
+            "votos": 384,
+            "porcentaje": 3.530060672917,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIDOS POR CORRIENTES (15)",
+            "votos": 98,
+            "porcentaje": 0.886877828054,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIDOS POR CORRIENTES (15)",
+            "votos": 104,
+            "porcentaje": 0.956409784807,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIDOS POR CORRIENTES (15)",
+            "votos": 102,
+            "porcentaje": 0.937672366243,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CELESTE Y BLANCO (173)",
+            "votos": 93,
+            "porcentaje": 0.841628959276,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CELESTE Y BLANCO (173)",
+            "votos": 94,
+            "porcentaje": 0.864447305499,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "UNIÓN CELESTE Y BLANCO (173)",
+            "votos": 95,
+            "porcentaje": 0.873322301893,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "LA LIBERTAD AVANZA"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "NUEVO ENCUENTRO POR LA DEMOCRACIA Y LA EQUIDAD (SIN ALIANZA)",
+        "color": "F22E02",
+        "lista": "13",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 13
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 228,
+            "porcentaje": 2.1,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "NUEVO ENCUENTRO POR LA DEMOCRACIA Y LA EQUIDAD (13)",
+            "votos": 228,
+            "porcentaje": 2.095973524544,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "NUEVO ENCUENTRO POR LA DEMOCRACIA Y LA EQUIDAD (SIN ALIANZA)"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "CAMBIÁ CORRIENTES",
+        "color": "990000",
+        "lista": "200",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 200
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 200
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 200
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 177,
+            "porcentaje": 1.6,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 166,
+            "porcentaje": 1.53,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 166,
+            "porcentaje": 1.53,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "COMUNISTA (12)",
+            "votos": 38,
+            "porcentaje": 0.343891402714,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "CAMBIÁ CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "COMUNISTA (12)",
+            "votos": 37,
+            "porcentaje": 0.340261173441,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "CAMBIÁ CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "COMUNISTA (12)",
+            "votos": 37,
+            "porcentaje": 0.340136054421,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "CAMBIÁ CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CONVOCATORIA POPULAR (21)",
+            "votos": 139,
+            "porcentaje": 1.257918552036,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "CAMBIÁ CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CONVOCATORIA POPULAR (21)",
+            "votos": 129,
+            "porcentaje": 1.186315983078,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "CAMBIÁ CORRIENTES"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "CONVOCATORIA POPULAR (21)",
+            "votos": 129,
+            "porcentaje": 1.185879757308,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "CAMBIÁ CORRIENTES"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "AHORA (SIN ALIANZA)",
+        "color": "ff6d00",
+        "lista": "62",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 62
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 62
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 62
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 26,
+            "porcentaje": 0.24,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 22,
+            "porcentaje": 0.2,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 22,
+            "porcentaje": 0.2,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AHORA (62)",
+            "votos": 22,
+            "porcentaje": 0.199095022624,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "AHORA (SIN ALIANZA)"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AHORA (62)",
+            "votos": 22,
+            "porcentaje": 0.202317454478,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "AHORA (SIN ALIANZA)"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "AHORA (62)",
+            "votos": 26,
+            "porcentaje": 0.239014524728,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "AHORA (SIN ALIANZA)"
+          }
+        ]
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDTO, Escrutinio.Core.Entities",
+        "alianza": "DE LA ESPERANZA (SIN ALIANZA)",
+        "color": "ce7e00",
+        "lista": "63",
+        "listaPorCargo": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Diputados",
+            "lista": 63
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Gobernador",
+            "lista": 63
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.ListaPorCargoDTO, Escrutinio.Core.Entities",
+            "cargo": "Senadores",
+            "lista": 63
+          }
+        ],
+        "esProvincial": true,
+        "alianzaData": [
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Gobernador",
+            "votos": 21,
+            "porcentaje": 0.19,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Senadores",
+            "votos": 20,
+            "porcentaje": 0.18,
+            "esProvincial": false
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.DTOs.AlianzaVotoDataDTO, Escrutinio.Core.Entities",
+            "titulo": "Diputados",
+            "votos": 20,
+            "porcentaje": 0.18,
+            "esProvincial": false
+          }
+        ],
+        "partidoData": [
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA ESPERANZA (63)",
+            "votos": 21,
+            "porcentaje": 0.190045248868,
+            "cargoId": 48,
+            "cargoDescripcion": "Gobernador",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "DE LA ESPERANZA (SIN ALIANZA)"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA ESPERANZA (63)",
+            "votos": 20,
+            "porcentaje": 0.183924958616,
+            "cargoId": 49,
+            "cargoDescripcion": "Senadores",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "DE LA ESPERANZA (SIN ALIANZA)"
+          },
+          {
+            "$type": "Escrutinio.Core.Entities.PartidoVoto, Escrutinio.Core.Entities",
+            "titulo": "DE LA ESPERANZA (63)",
+            "votos": 20,
+            "porcentaje": 0.183857326714,
+            "cargoId": 50,
+            "cargoDescripcion": "Diputados",
+            "mostrarEnGrafico": true,
+            "esGrisado": false,
+            "color": null,
+            "alianza": "DE LA ESPERANZA (SIN ALIANZA)"
+          }
+        ]
+      }
+    ],
+    "totalVotos": [
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoFooterDTO, Escrutinio.Core.Entities",
+        "orden": 0,
+        "cargoDescripcion": "Gobernador",
+        "totalGeneral": 11604,
+        "totalValido": 11050
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoFooterDTO, Escrutinio.Core.Entities",
+        "orden": 0,
+        "cargoDescripcion": "Senadores",
+        "totalGeneral": 11598,
+        "totalValido": 10874
+      },
+      {
+        "$type": "Escrutinio.Core.Entities.DTOs.PartidoVotoFooterDTO, Escrutinio.Core.Entities",
+        "orden": 0,
+        "cargoDescripcion": "Diputados",
+        "totalGeneral": 11606,
+        "totalValido": 10878
+      }
+    ],
+    "ultimaSincronizacion": {
+      "$type": "Escrutinio.Core.Entities.UltimaSincronizacion, Escrutinio.Core.Entities",
+      "fecha": "2025-09-07T16:13:00-03:00",
+      "motivo": "Cierre con Resoluciones (Impugnados y Recurridos) y Privados de Libertad",
+      "tipo": "FechaCierre",
+      "cierreManual": true
+    }
+  },
+  "errors": null,
+  "isAccessDeniedResult": false,
+  "isNotFoundResult": false,
+  "isSuccess": true,
+  "messages": null,
+  "operationTime": 0
+}

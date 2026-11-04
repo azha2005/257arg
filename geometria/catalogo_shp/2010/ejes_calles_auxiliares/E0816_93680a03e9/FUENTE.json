@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0816_93680a03e9",
+  "shp": "E0816.shp",
+  "entidades": 1163,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0816.dbf",
+      "bytes": 405334,
+      "sha256": "c7b6891419e2fb9ccf0a04294e053f871d2308efb469222beeae8677a1902772"
+    },
+    {
+      "archivo": "E0816.shp",
+      "bytes": 108780,
+      "sha256": "c9090da8d6128cd9274b97d3816655aedef56fb84d45bacc2386f7706814399c"
+    },
+    {
+      "archivo": "E0816.shx",
+      "bytes": 9404,
+      "sha256": "0946567325fc416d1d2129c956fd6d517d4fa05d8047b787377d0ea1022351af"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PuebloEstherA1H.zip!E0816.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_049013a7a5",
+    "archivo": "santafe/ipec/2010/PuebloEstherA1H.zip!E0816.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1163,
+    "registros_shx": 1163,
+    "shape_type": 3,
+    "bbox": [
+      5444457.0,
+      6338708.0,
+      5449653.0,
+      6342451.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PuebloEstherA1H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2624063006a4df6b3dc4f067a1f21fbd7342c9834ebdc9c18e7a79641a10a6a1"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6873_0f17d674d2",
+  "shp": "e6873.shp",
+  "entidades": 38,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6873.dbf",
+      "bytes": 11934,
+      "sha256": "b44a38bb39d744acfd05de8c1826ce20a9ea614a33f3935ee67367a4f43432dd"
+    },
+    {
+      "archivo": "e6873.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6873.shp",
+      "bytes": 3476,
+      "sha256": "72979c174ede74a4f870dde6d2a85f0ef97dd9ebcdd6e6c57e8e27dcfbc96bab"
+    },
+    {
+      "archivo": "e6873.shx",
+      "bytes": 404,
+      "sha256": "5a5efc17df618afdd48a4e5ad479206ae9f2be9b18bb2bb82a6373f40a72207a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/COLONIASANJOAQUIN.zip!e6873.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1c716e60e8",
+    "archivo": "santafe/ipec/2022/COLONIASANJOAQUIN.zip!e6873.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 38,
+    "registros_shx": 38,
+    "shape_type": 3,
+    "bbox": [
+      5499554.5,
+      6596965.5,
+      5500278.0,
+      6598375.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/COLONIASANJOAQUIN.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "c1e7a4c7537ab3a2826e45f135d6f8b0181aa3a5de784b825705d16568e3732a"
+}

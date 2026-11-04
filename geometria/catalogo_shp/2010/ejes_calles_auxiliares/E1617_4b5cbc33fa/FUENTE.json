@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1617_4b5cbc33fa",
+  "shp": "E1617.shp",
+  "entidades": 81,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1617.dbf",
+      "bytes": 28798,
+      "sha256": "f388ae5419fe6d1d1a2c0f83be6488ed2484005aa8d2b60236c34dad1b3330ed"
+    },
+    {
+      "archivo": "E1617.shp",
+      "bytes": 7276,
+      "sha256": "9906211024e6bb9482a5b0d2453aa9e8e73dea8e3671b56aa8b93e50d366d3b8"
+    },
+    {
+      "archivo": "E1617.shx",
+      "bytes": 748,
+      "sha256": "b2d9254f5beb087bcd98602424e3ddf7b11e58da35dbb0bee3b25cd85b5a3890"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/laspalmerasa3v.zip!E1617.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a520c7a0d",
+    "archivo": "santafe/ipec/2010/laspalmerasa3v.zip!E1617.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 3,
+    "bbox": [
+      5343647.0,
+      6610363.5,
+      5344409.0,
+      6611303.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/laspalmerasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "0fda9404adabfda0739b0becc4e2619bf5e3554b35d8337b2a8add5643667582"
+}

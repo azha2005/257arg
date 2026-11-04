@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6804_aad1ed7a07",
+  "shp": "R6804.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6804.dbf",
+      "bytes": 686,
+      "sha256": "10465f6fe77a878f4980693b0ac6a1660749679f94e2d56ebfa5087c7e947d2f"
+    },
+    {
+      "archivo": "R6804.shp",
+      "bytes": 540,
+      "sha256": "a5bcd2d171c7a99d3ec509e2ac5791f00efb57427fcbb12076c3f8236415bdb6"
+    },
+    {
+      "archivo": "R6804.shx",
+      "bytes": 108,
+      "sha256": "e48d08a53ffda2177f5f829b127fb30ff31d8471a9878363450add9990540910"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Cululua3h.zip!R6804.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a49d8526b",
+    "archivo": "santafe/ipec/2010/Cululua3h.zip!R6804.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5411143.5,
+      6547565.0,
+      5411551.0,
+      6547909.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Cululua3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c400c704d085344aa4af120d2b145f67fad2565c324f5d1e1416f10916af94ae"
+}

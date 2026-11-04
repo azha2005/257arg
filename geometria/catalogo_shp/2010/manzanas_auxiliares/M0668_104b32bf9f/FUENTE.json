@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0668_104b32bf9f",
+  "shp": "M0668.shp",
+  "entidades": 186,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0668.dbf",
+      "bytes": 37028,
+      "sha256": "955a2f497d77a6ea29ca1fec91f9469dc342c3b4b56e36ad09b58a3b6cba692e"
+    },
+    {
+      "archivo": "M0668.shp",
+      "bytes": 28084,
+      "sha256": "d5f20ad68f3b21d919005f3c58831cdb568c65feebe849f60e193bc78fb9f832"
+    },
+    {
+      "archivo": "M0668.shx",
+      "bytes": 1588,
+      "sha256": "c658c135a47b560c1b597a0bfccf5b771ef69216f9daff4c96deb8dd84ee2fb4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/hersiliaa2h.zip!M0668.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dd8a847860",
+    "archivo": "santafe/ipec/2010/hersiliaa2h.zip!M0668.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 186,
+    "registros_shx": 186,
+    "shape_type": 5,
+    "bbox": [
+      5321626.0,
+      6678975.5,
+      5323314.0,
+      6681177.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/hersiliaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9a62e5251c322413d105ff7506c01228de167230cc5a9ecf4eb5a816f73fb6ea"
+}

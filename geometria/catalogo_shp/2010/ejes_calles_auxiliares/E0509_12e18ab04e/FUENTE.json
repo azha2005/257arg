@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0509_12e18ab04e",
+  "shp": "E0509.shp",
+  "entidades": 329,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0509.dbf",
+      "bytes": 115102,
+      "sha256": "5e88b7374ba227c709abda7ce91e856d0f962658a2e14d6df501b63de6c1dd22"
+    },
+    {
+      "archivo": "E0509.shp",
+      "bytes": 29100,
+      "sha256": "cb4a869d6944178824cd324f09fcecb2aab27829018814da495364adf93f960c"
+    },
+    {
+      "archivo": "E0509.shx",
+      "bytes": 2732,
+      "sha256": "633c9f8d87f21b3e6855cd32a1a2b8b96f2e630f955a6638698032c71cb0cd0c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/zavallaa3h.zip!E0509.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_cfb5dc0d95",
+    "archivo": "santafe/ipec/2010/zavallaa3h.zip!E0509.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 329,
+    "registros_shx": 329,
+    "shape_type": 3,
+    "bbox": [
+      5417332.0,
+      6345219.5,
+      5419346.5,
+      6347330.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/zavallaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fe89cf2b24e8a1bb36bc8f2ef205f01003378cce0c64d6b3aea43a04caeb0bd5"
+}

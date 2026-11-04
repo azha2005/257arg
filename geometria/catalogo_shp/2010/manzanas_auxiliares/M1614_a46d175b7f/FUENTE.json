@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1614_a46d175b7f",
+  "shp": "M1614.shp",
+  "entidades": 39,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1614.dbf",
+      "bytes": 8069,
+      "sha256": "4b841ace427268a71d807f6c6c11beed72cb83382804caf770375b9ae9039af0"
+    },
+    {
+      "archivo": "M1614.shp",
+      "bytes": 6316,
+      "sha256": "d873dec37718e71eae0e3730b3e0a09745fd720971d11e481f32aae2d1208818"
+    },
+    {
+      "archivo": "M1614.shx",
+      "bytes": 412,
+      "sha256": "babc8194d1ac2ba6348831bc22832bdc06a764c9c29c141e87e36095c14fa752"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/esmeraldaa3h.zip!M1614.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4f33010a2e",
+    "archivo": "santafe/ipec/2010/esmeraldaa3h.zip!M1614.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 39,
+    "registros_shx": 39,
+    "shape_type": 5,
+    "bbox": [
+      5316088.0,
+      6500594.5,
+      5317282.0,
+      6501579.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/esmeraldaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5bbf2595cf6c719ba9c0fe0792b171a349bb276335c105a66e86791ecefbfeba"
+}

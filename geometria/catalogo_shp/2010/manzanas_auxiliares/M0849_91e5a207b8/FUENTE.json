@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0849_91e5a207b8",
+  "shp": "M0849.shp",
+  "entidades": 107,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0849.dbf",
+      "bytes": 21465,
+      "sha256": "5d2ebb222bb5df052daf4a95a33cbcf4658fe009b619a90d93ef1db11272fc0d"
+    },
+    {
+      "archivo": "M0849.shp",
+      "bytes": 20636,
+      "sha256": "de5b91e36b8ca5388c5d452c3a89f243a9307df2233f714643d27be2871e7161"
+    },
+    {
+      "archivo": "M0849.shx",
+      "bytes": 956,
+      "sha256": "99be2dfb98ae6e79f33c69887c72d05da768026357dc4eb4587848201429cbbd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/generallagosa3h.zip!M0849.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d2969e51df",
+    "archivo": "santafe/ipec/2010/generallagosa3h.zip!M0849.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 107,
+    "registros_shx": 107,
+    "shape_type": 5,
+    "bbox": [
+      5446515.0,
+      6336219.5,
+      5449341.5,
+      6337639.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/generallagosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7e42ec7d2dbf2346e8822874870513608f5f2369b1801f4a17c2ed7042485a64"
+}

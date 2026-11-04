@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6809_20454d26f1",
+  "shp": "M6809.shp",
+  "entidades": 13,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6809.dbf",
+      "bytes": 2947,
+      "sha256": "2fbc127efe6498e11481a5745719f00684bb58b4b79748792ebdf46cae9d6948"
+    },
+    {
+      "archivo": "M6809.shp",
+      "bytes": 2636,
+      "sha256": "1734693b3d1ba704285709978df509ecb4d50813b32d43ce298fc9e8cde93a86"
+    },
+    {
+      "archivo": "M6809.shx",
+      "bytes": 204,
+      "sha256": "5bd27832fe912e406644aee28d986ee6e082f9594d7c16fa1f49dcfd0a79d414"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lomaaltaa3h.zip!M6809.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6303c09179",
+    "archivo": "santafe/ipec/2010/lomaaltaa3h.zip!M6809.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 13,
+    "registros_shx": 13,
+    "shape_type": 5,
+    "bbox": [
+      5388322.5,
+      6463647.0,
+      5389080.5,
+      6464190.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lomaaltaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c42adb794ff8e9e060c8c693207144c5ddb256e6dfccbce0c37626193d389255"
+}

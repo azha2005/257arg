@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0825_e26522524a",
+  "shp": "E0825.shp",
+  "entidades": 191,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0825.dbf",
+      "bytes": 67078,
+      "sha256": "68cff5b3004f5b46375299e050f25ed9a2d8460287da6e8a3790c722042720e2"
+    },
+    {
+      "archivo": "E0825.shp",
+      "bytes": 17068,
+      "sha256": "7f55c236d4713e4e589506ecb3d3462e105074eec010275d6b0c40ef6305954f"
+    },
+    {
+      "archivo": "E0825.shx",
+      "bytes": 1628,
+      "sha256": "3f5d87704cd303ad029ff7176fd023a9f09c726309db050dd17bec0b63f7b947"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/diegodealveara3h.zip!E0825.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_53afc4c814",
+    "archivo": "santafe/ipec/2010/diegodealveara3h.zip!E0825.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 191,
+    "registros_shx": 191,
+    "shape_type": 3,
+    "bbox": [
+      5303468.0,
+      6194345.0,
+      5305309.5,
+      6195718.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/diegodealveara3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "17e09b703c8e95b8b2159dda6f91126624a11d6b8ffbd8e7ce545cd198578b1e"
+}

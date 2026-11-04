@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0534_adeba293f2",
+  "shp": "M0534.shp",
+  "entidades": 129,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0534.dbf",
+      "bytes": 25799,
+      "sha256": "0249a475d72103f4c42dd9c085349c2df7cbdc2165e373f4c9e011d0a8cdc332"
+    },
+    {
+      "archivo": "M0534.shp",
+      "bytes": 22076,
+      "sha256": "d5c3d559cf4e2ab5925eebeeffd098031d0d64d69fde32a022dbdee47f82d650"
+    },
+    {
+      "archivo": "M0534.shx",
+      "bytes": 1132,
+      "sha256": "11fd6a5f7daaa24bcb292dd0df8c433e33be2110400ff287e23faee7a4e09ec8"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/PilarA2h.zip!M0534.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_af6a600f4e",
+    "archivo": "santafe/ipec/2010/PilarA2h.zip!M0534.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 129,
+    "registros_shx": 129,
+    "shape_type": 5,
+    "bbox": [
+      5379319.5,
+      6520451.0,
+      5381146.0,
+      6522523.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/PilarA2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c9a2dcf6ddcce649cc060f4d3a63d95be84e03052e8b95636474a1adca6aa542"
+}

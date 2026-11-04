@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1152_87b621abbc",
+  "shp": "E1152.shp",
+  "entidades": 209,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1152.dbf",
+      "bytes": 73342,
+      "sha256": "4cff00d995351592e6574f7bdb86705f0e1caf400c2bba2e37b70fd593bfb3c9"
+    },
+    {
+      "archivo": "E1152.shp",
+      "bytes": 18540,
+      "sha256": "ac77b534d90be86f0dee5c72d5bd99089f0ba1b8671eafdf312000aebbc0672c"
+    },
+    {
+      "archivo": "E1152.shx",
+      "bytes": 1772,
+      "sha256": "9d294d351c4ebb5359a4939cb14cb2d4ad89c0d3643f8b1cf6297e82eabd7e5b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gregoriaperezdedenisa3h.zip!E1152.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a0a1945f54",
+    "archivo": "santafe/ipec/2010/gregoriaperezdedenisa3h.zip!E1152.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 209,
+    "registros_shx": 209,
+    "shape_type": 3,
+    "bbox": [
+      5349182.0,
+      6876654.5,
+      5350751.5,
+      6878117.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gregoriaperezdedenisa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "46a21d935382f705d376b2ec70e79be3a12f5197dcdf588b4c9410e1931edeca"
+}

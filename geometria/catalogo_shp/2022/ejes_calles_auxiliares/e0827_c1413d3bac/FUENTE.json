@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0827_c1413d3bac",
+  "shp": "e0827.shp",
+  "entidades": 268,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0827.dbf",
+      "bytes": 80474,
+      "sha256": "449a9c95c15de429672e92543e9e15c28c0c2827934442fe17c1bfd9e7408589"
+    },
+    {
+      "archivo": "e0827.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0827.shp",
+      "bytes": 24516,
+      "sha256": "6dddb40333cac85bdc5c441dc9d4a10ba52eb0b1f395176de1da88ac9f98b0d9"
+    },
+    {
+      "archivo": "e0827.shx",
+      "bytes": 2244,
+      "sha256": "61142f23cd0139626950b1ce9b4f16ba352e97357a8ba9496f1654e97f19185a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SALTOGRANDE.zip!e0827.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_dda40b800c",
+    "archivo": "santafe/ipec/2022/SALTOGRANDE.zip!e0827.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 268,
+    "registros_shx": 268,
+    "shape_type": 3,
+    "bbox": [
+      5396816.5,
+      6384769.0,
+      5398704.5,
+      6387131.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SALTOGRANDE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "a05d398264e38a03ccd8924da2ca473b8fae6a119a25f2226bc3ddb8de72d82c"
+}

@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1022_33b845555c",
+  "shp": "e1022.shp",
+  "entidades": 370,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1022.dbf",
+      "bytes": 110870,
+      "sha256": "5788a2167e5fb54d4e6cf381b68089b039114dea0b3c90d3a56d9ccf3479cd8e"
+    },
+    {
+      "archivo": "e1022.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1022.shp",
+      "bytes": 40676,
+      "sha256": "9add7ac949a879e99aa4e01df89b1e10b1ed18a70bead96da182838297e446cd"
+    },
+    {
+      "archivo": "e1022.shx",
+      "bytes": 3060,
+      "sha256": "3417ff216b2b2a0258356a14d294a03b114ae1b316e0033a85af333d0634bd31"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/ATALIVA.zip!e1022.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_9e20dc3f05",
+    "archivo": "santafe/ipec/2022/ATALIVA.zip!e1022.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 370,
+    "registros_shx": 370,
+    "shape_type": 3,
+    "bbox": [
+      5362500.0,
+      6569264.0,
+      5364718.0,
+      6571119.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/ATALIVA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "1d99fa04aa61247253f614851428aa98c854a36a58b87a90d6709f2ec5e4572c"
+}

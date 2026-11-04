@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1439_76ca52cdae",
+  "shp": "M1439.shp",
+  "entidades": 88,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1439.dbf",
+      "bytes": 17722,
+      "sha256": "18e6f6cd9acbba4db0ec071bab1d4dbebeedbf99dcb7f76d4d11f9df9cf8a5fd"
+    },
+    {
+      "archivo": "M1439.shp",
+      "bytes": 14324,
+      "sha256": "e2d540189a0a1f222e3ab704d7323fd75128c06244d57b6087338c16115119de"
+    },
+    {
+      "archivo": "M1439.shx",
+      "bytes": 804,
+      "sha256": "c7f1a20c3c8b2ecc76c2069daa34d12879aa6bb84fd6ea092bce783529af9377"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/candiotia3v.zip!M1439.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a927110197",
+    "archivo": "santafe/ipec/2010/candiotia3v.zip!M1439.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 88,
+    "registros_shx": 88,
+    "shape_type": 5,
+    "bbox": [
+      5428187.5,
+      6525407.5,
+      5429432.0,
+      6526940.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/candiotia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "98e1ed0d6012ad5677a2e3e436a1ba0e70132166503cefe7f2ff307ece8a1661"
+}

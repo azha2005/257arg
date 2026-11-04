@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4138_729f17a2bf",
+  "shp": "R4138.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4138.dbf",
+      "bytes": 686,
+      "sha256": "ac2c6c33a7caf463231ccfbc6903760ef908c7d079f6de45defc8e25d7c5d5f6"
+    },
+    {
+      "archivo": "R4138.shp",
+      "bytes": 588,
+      "sha256": "3bf97b90e5bc4d3d4f612991e03629d26bb9cef37eea221675c496b079a4fb3d"
+    },
+    {
+      "archivo": "R4138.shx",
+      "bytes": 108,
+      "sha256": "447c80af17904b5c140eae650b890a401801f67feaf7229a74b5a3980170af6e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/estacionsaguiera3h.zip!R4138.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7a0cdc78c5",
+    "archivo": "santafe/ipec/2010/estacionsaguiera3h.zip!R4138.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5338412.5,
+      6534304.5,
+      5339335.0,
+      6534912.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/estacionsaguiera3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6a3831586367d725289691fceb03378de7a5b09da43e2f8059a22feaf0b4d7a1"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6813_6a0c7b5347",
+  "shp": "M6813.shp",
+  "entidades": 10,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6813.dbf",
+      "bytes": 2356,
+      "sha256": "5afece4f707ad389614e2e331d71a869a37d0f138da97bfa02bd6784464b8ebf"
+    },
+    {
+      "archivo": "M6813.shp",
+      "bytes": 1604,
+      "sha256": "0e1a33f9881763b75ddd056a6e409e7cb9ddf95da9608418f68d1813a35a5384"
+    },
+    {
+      "archivo": "M6813.shx",
+      "bytes": 180,
+      "sha256": "53d9c84b1626c1a580bd5c087849572325f865372d79824df1a9306842b93253"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/saneugenioa3v.zip!M6813.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_091045880e",
+    "archivo": "santafe/ipec/2010/saneugenioa3v.zip!M6813.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 10,
+    "registros_shx": 10,
+    "shape_type": 5,
+    "bbox": [
+      5394395.0,
+      6450929.5,
+      5394846.0,
+      6451644.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/saneugenioa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9556acc467d7de94e3f558af3b50b029d244db5c6ebd4c172104c5fe73593a4a"
+}

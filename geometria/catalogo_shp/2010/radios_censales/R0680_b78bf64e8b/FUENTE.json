@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0680_b78bf64e8b",
+  "shp": "R0680.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0680.dbf",
+      "bytes": 1298,
+      "sha256": "350246f1423aacbb3ebc7e46abb1583d98af2811a86e97f645fb4964786347d8"
+    },
+    {
+      "archivo": "R0680.shp",
+      "bytes": 2308,
+      "sha256": "f4bb062413e51e5a962590056b433510bf93a363f059db01c5bcf6d3314ba242"
+    },
+    {
+      "archivo": "R0680.shx",
+      "bytes": 132,
+      "sha256": "749d1cab6ee889d296fdefbd3208c6a82d1de06adf5f42e7388c07d95b55259d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/montesdeocaa3h.zip!R0680.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1abce727a5",
+    "archivo": "santafe/ipec/2010/montesdeocaa3h.zip!R0680.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5333143.5,
+      6395171.0,
+      5334676.5,
+      6396696.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/montesdeocaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "530d10258c4bfb2d6ad871d8cf6ea7f40eade6d2d56ffadbfaeae7f8ea37928b"
+}

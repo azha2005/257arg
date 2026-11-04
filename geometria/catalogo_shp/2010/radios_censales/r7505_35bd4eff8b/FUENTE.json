@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r7505_35bd4eff8b",
+  "shp": "r7505.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r7505.shx",
+      "bytes": 108,
+      "sha256": "7527c63e42f4cda7b130f6ea8eae5d0b864cd42111de1becdb11b8e2e110dde5"
+    },
+    {
+      "archivo": "r7505.shp",
+      "bytes": 380,
+      "sha256": "50474eaf2c2efa318b7f5015fe1ab6e310b583a572790000229d02afe53200ab"
+    },
+    {
+      "archivo": "r7505.sbx",
+      "bytes": 116,
+      "sha256": "4fe43654f0ca1c0ccb2a20598b2384f04b30ca9ef2c92bf08c0a7c70e376b542"
+    },
+    {
+      "archivo": "r7505.sbn",
+      "bytes": 132,
+      "sha256": "49ad0c56ad1741a3d08b753be186a219ce85633b2f52d02d5e76f6e69866f955"
+    },
+    {
+      "archivo": "r7505.dbf",
+      "bytes": 685,
+      "sha256": "cdab116aaae3ce14f443c7f04606fa0144de00901aae41a8b9c31055ce6a460c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/VILLADIVISADEMAYO.zip!r7505.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e2baeb769d",
+    "archivo": "santafe/ipec/2010/VILLADIVISADEMAYO.zip!r7505.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5344750.0,
+      6287003.0,
+      5345225.5,
+      6287370.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RADIO2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/VILLADIVISADEMAYO.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "949863cfb04082fd7c824998029509273e40d66bad5e0dc618047f7f09023a52"
+}

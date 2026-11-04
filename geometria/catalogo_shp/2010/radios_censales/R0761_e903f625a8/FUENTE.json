@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0761_e903f625a8",
+  "shp": "R0761.shp",
+  "entidades": 3,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0761.dbf",
+      "bytes": 1094,
+      "sha256": "4cc06ea7c12ab5b87b9d8080ce93d93b62b56bc3dc52e787202491e61c004e5b"
+    },
+    {
+      "archivo": "R0761.shp",
+      "bytes": 2572,
+      "sha256": "55f371409f0c2420c3fd2d0d789056adc95ab538ad14fbd0ae271427bfc5bfee"
+    },
+    {
+      "archivo": "R0761.shx",
+      "bytes": 124,
+      "sha256": "be8678cb5b3f9b63878751d9d1ac8c448f132f3df4c34868f46eb05057d15f47"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/santaclaradebuenavistaa2h.zip!R0761.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bbadcdaef1",
+    "archivo": "santafe/ipec/2010/santaclaradebuenavistaa2h.zip!R0761.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 5,
+    "bbox": [
+      5373859.0,
+      6484788.5,
+      5375905.5,
+      6486467.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/santaclaradebuenavistaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a861d93706456af0802598141bd90af0bf2d540bfbee571681194c624c63b5b2"
+}

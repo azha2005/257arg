@@ -1,0 +1,153 @@
+{
+  "id": "jujuy_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Jujuy",
+  "distrito": "10",
+  "fecha": "11/05/2025",
+  "cargo": "Diputados provinciales",
+  "nivel": "circuitos",
+  "origen": "Diputados provinciales 11/05/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [],
+  "foco_lado": "origen",
+  "nota": "149 circuitos del escrutinio definitivo. Positivos: 369.394, iguales al resumen provincial. Sin abstención.",
+  "base": "votos emitidos",
+  "cobertura_origen": 0.9981361334715066,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "Sin votos informados en una de las elecciones: 127A",
+    "Sin votos informados en una de las elecciones: 13",
+    "Sin votos informados en una de las elecciones: 72",
+    "Sin votos informados en una de las elecciones: 73B",
+    "Sin votos informados en una de las elecciones: 82",
+    "Sin votos informados en una de las elecciones: 84A",
+    "Sin votos informados en una de las elecciones: 84B",
+    "Sin votos informados en una de las elecciones: 85",
+    "Sin votos informados en una de las elecciones: 85B",
+    "Sin votos informados en una de las elecciones: 89"
+  ],
+  "departamentos_cargo": [],
+  "fuente": "https://www.electoraljujuy.gob.ar/Contenido/TEP/Estadisticas/20251105/ele25.rar",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 139,
+  "categorias_origen": 10,
+  "rango": 10,
+  "condicion": 18.02393815444106,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.02232003551978554,
+    "0.0001": 0.010201418338647647,
+    "1e-05": 0.007653940954449289,
+    "1e-06": 0.007557314891464463,
+    "1e-07": 0.007629573799311664
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 2.4837279739429063,
+  "desviacion_max_margen_destino_pp": 0.41605254621963905,
+  "electores_o_votos_origen": 406459.0,
+  "electores_o_votos_destino": 424283.0,
+  "filas": [
+    {
+      "origen": "La Libertad Avanza",
+      "peso": 19.53,
+      "dif_variante_pp": 0.98,
+      "sensibilidad_pp": 34.23,
+      "ancho_intervalo_pp": 12.37,
+      "separacion_pp": 58.97,
+      "no_identificada": false
+    },
+    {
+      "origen": "Jujuy Crece",
+      "peso": 34.38,
+      "dif_variante_pp": 1.37,
+      "sensibilidad_pp": 22.76,
+      "ancho_intervalo_pp": 8.54,
+      "separacion_pp": 36.39,
+      "no_identificada": false
+    },
+    {
+      "origen": "FIT-U",
+      "peso": 7.84,
+      "dif_variante_pp": 31.29,
+      "sensibilidad_pp": 45.92,
+      "ancho_intervalo_pp": 38.46,
+      "separacion_pp": 55.65,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Justicialista",
+      "peso": 9.68,
+      "dif_variante_pp": 8.72,
+      "sensibilidad_pp": 37.71,
+      "ancho_intervalo_pp": 32.25,
+      "separacion_pp": 38.21,
+      "no_identificada": true
+    },
+    {
+      "origen": "Por un Nuevo Jujuy",
+      "peso": 2.14,
+      "dif_variante_pp": 9.49,
+      "sensibilidad_pp": 31.54,
+      "ancho_intervalo_pp": 51.85,
+      "separacion_pp": 44.04,
+      "no_identificada": true
+    },
+    {
+      "origen": "Confiar en Jujuy",
+      "peso": 3.51,
+      "dif_variante_pp": 25.6,
+      "sensibilidad_pp": 30.3,
+      "ancho_intervalo_pp": 48.73,
+      "separacion_pp": 45.24,
+      "no_identificada": true
+    },
+    {
+      "origen": "Somos Más",
+      "peso": 3.54,
+      "dif_variante_pp": 39.63,
+      "sensibilidad_pp": 46.32,
+      "ancho_intervalo_pp": 57.05,
+      "separacion_pp": 42.1,
+      "no_identificada": true
+    },
+    {
+      "origen": "Primero Jujuy",
+      "peso": 3.19,
+      "dif_variante_pp": 4.9,
+      "sensibilidad_pp": 38.17,
+      "ancho_intervalo_pp": 24.38,
+      "separacion_pp": 41.31,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 6.94,
+      "dif_variante_pp": 41.54,
+      "sensibilidad_pp": 57.88,
+      "ancho_intervalo_pp": 64.7,
+      "separacion_pp": 40.19,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 9.25,
+      "dif_variante_pp": 31.26,
+      "sensibilidad_pp": 31.48,
+      "ancho_intervalo_pp": 38.21,
+      "separacion_pp": 35.39,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 0.9981361334715066
+}

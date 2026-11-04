@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r8673_66b90dd1d1",
+  "shp": "r8673.shp",
+  "entidades": 61,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r8673.shp",
+      "bytes": 34844,
+      "sha256": "61a9d8f967260434abc1590ab5e09eff182d5f3810544ec14023a9c3090e1941"
+    },
+    {
+      "archivo": "r8673.shx",
+      "bytes": 588,
+      "sha256": "392b67ebc3f2b8be1db4c4ef4087bfbf309edd23f43842b72decd7b66deb6d17"
+    },
+    {
+      "archivo": "r8673.dbf",
+      "bytes": 13413,
+      "sha256": "1e7e5132c4f8c4a2a37f21135bd0b55f49e8a1b95b86e877928f66c2e43ac7d7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villagobernadorgalveza0h.zip!r8673.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1c316e7df8",
+    "archivo": "santafe/ipec/2010/villagobernadorgalveza0h.zip!r8673.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 61,
+    "registros_shx": 61,
+    "shape_type": 5,
+    "bbox": [
+      5435800.0,
+      6343795.5,
+      5445711.0,
+      6349274.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villagobernadorgalveza0h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f8b410ccfb8a02dcec78b5a9dda408aaf0e056770d5abd1339a03f0552fcb957"
+}

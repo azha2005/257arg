@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6824_5c4a50a64f",
+  "shp": "E6824.shp",
+  "entidades": 17,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6824.dbf",
+      "bytes": 6526,
+      "sha256": "e47cc315206f6e1409fb8659311f51faf47207eeebe927d2a519d0157b7d8df1"
+    },
+    {
+      "archivo": "E6824.shp",
+      "bytes": 1596,
+      "sha256": "d99e33d6d4cdbadcb88d4659cc0f784db0827ebd059db44cc8afbef3564249dd"
+    },
+    {
+      "archivo": "E6824.shx",
+      "bytes": 236,
+      "sha256": "1d2f8b50bf825ec89362c99fde6af3ffdfd490fc57f353a66636ea7450d05d1b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/eustoliaa3h.zip!E6824.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5188a7c944",
+    "archivo": "santafe/ipec/2010/eustoliaa3h.zip!E6824.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 17,
+    "registros_shx": 17,
+    "shape_type": 3,
+    "bbox": [
+      5330648.5,
+      6505453.5,
+      5330859.0,
+      6505992.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/eustoliaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f1de1fcf156f5da09f5bd85f9b4f9bc818820ed37a38eabd03326a2be3b602ab"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0243_646c755c5b",
+  "shp": "E0243.shp",
+  "entidades": 596,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0243.dbf",
+      "bytes": 208018,
+      "sha256": "d063cc6d51b8824d2e9d5ff9cfdf370062d77b0480e64cd9ce8e817b6d763674"
+    },
+    {
+      "archivo": "E0243.shp",
+      "bytes": 52932,
+      "sha256": "453660c495c85af81165fc707c0934678e97e2c3f037708c5a3ee70f022079fe"
+    },
+    {
+      "archivo": "E0243.shx",
+      "bytes": 4868,
+      "sha256": "2a0d32818618b307ef2fa93cfd96c593c66cd44805f6e403fc9e1c31bfdbfd3e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasparejasa2v.zip!E0243.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4518e8805",
+    "archivo": "santafe/ipec/2010/lasparejasa2v.zip!E0243.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 596,
+    "registros_shx": 596,
+    "shape_type": 3,
+    "bbox": [
+      5356195.0,
+      6381740.5,
+      5358686.5,
+      6384689.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasparejasa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5fe4b50e7b94804682ad854d1d9c77dc0e3c0662f8e6c75d693011741f7ea3e1"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6840_01b3678b5c",
+  "shp": "M6840.shp",
+  "entidades": 8,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6840.dbf",
+      "bytes": 1962,
+      "sha256": "2ea3371ab60d651321116d61cd155bbbbd5b9a9cdef79517e8689a367dfdc1da"
+    },
+    {
+      "archivo": "M6840.shp",
+      "bytes": 1876,
+      "sha256": "c8defe7d138508a9b2aa17317c6f50fd2d5ecb018a25d7b5d4971f4ecde8831b"
+    },
+    {
+      "archivo": "M6840.shx",
+      "bytes": 164,
+      "sha256": "68a27c129695219125f46322c0a74535270be2bd8d464010deecb3227e54e682"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/laisletaa3v.zip!M6840.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_558ab19744",
+    "archivo": "santafe/ipec/2010/laisletaa3v.zip!M6840.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 8,
+    "registros_shx": 8,
+    "shape_type": 5,
+    "bbox": [
+      5568938.0,
+      6848690.0,
+      5569332.0,
+      6849448.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/laisletaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "81eece1043e28c9fcc60c2dd75bf5b6d3d5419ec83e437726e4be5b8d3b804d6"
+}

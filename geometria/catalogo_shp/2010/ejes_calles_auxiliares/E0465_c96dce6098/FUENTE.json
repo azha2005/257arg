@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0465_c96dce6098",
+  "shp": "E0465.shp",
+  "entidades": 498,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0465.dbf",
+      "bytes": 173914,
+      "sha256": "01edc5f88d4a5e1aecacdd17b8aff6e45dbf87ffe9755fdca5850ddd01812dcd"
+    },
+    {
+      "archivo": "E0465.shp",
+      "bytes": 44340,
+      "sha256": "31f67356ac59183a8b7db5435357806ba27fcbe203a6fe6b46f2f1aa2a0b07d8"
+    },
+    {
+      "archivo": "E0465.shx",
+      "bytes": 4084,
+      "sha256": "138b089ff1a184e354fb28c2221ddfa0894cd2411f04e6c9a9f0765298a41607"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanguillermoa2h.zip!E0465.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d8701d3d77",
+    "archivo": "santafe/ipec/2010/sanguillermoa2h.zip!E0465.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 498,
+    "registros_shx": 498,
+    "shape_type": 3,
+    "bbox": [
+      5314834.5,
+      6639375.0,
+      5317673.0,
+      6641664.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanguillermoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ce754dafcb21c4bd4b2b05cd3003668a4b1e827b2b5fa008c98d62bc85b11014"
+}

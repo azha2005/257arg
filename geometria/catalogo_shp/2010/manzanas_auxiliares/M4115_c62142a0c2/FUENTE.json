@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4115_c62142a0c2",
+  "shp": "M4115.shp",
+  "entidades": 52,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4115.dbf",
+      "bytes": 10630,
+      "sha256": "9240b0f31756c607cbe6de985411dbfd53ea3b3b7982f3e5d3ca701bf5bbd8ec"
+    },
+    {
+      "archivo": "M4115.shp",
+      "bytes": 7268,
+      "sha256": "03706878228ca44c020a7182d55de3d4a522fc66f0ba8187af3471547ad6f5bb"
+    },
+    {
+      "archivo": "M4115.shx",
+      "bytes": 516,
+      "sha256": "e1700a328acfcc2e487d3a5ca24da5ecf0616c2c9be2ad142cb27517189c0099"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lazzarinoa3h.zip!M4115.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b3a93c02d2",
+    "archivo": "santafe/ipec/2010/lazzarinoa3h.zip!M4115.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 52,
+    "registros_shx": 52,
+    "shape_type": 5,
+    "bbox": [
+      5275599.5,
+      6216888.0,
+      5276579.5,
+      6217939.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lazzarinoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fc4c808c12a0dbff42621ed800bd350e666f71f3f44e8edb8751a2aad43e5bd7"
+}

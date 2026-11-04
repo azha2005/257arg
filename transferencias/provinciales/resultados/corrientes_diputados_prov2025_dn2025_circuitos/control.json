@@ -1,0 +1,105 @@
+{
+  "nombre": "Corrientes",
+  "distrito": "05",
+  "serie": "2025",
+  "fecha": "31/08/2025",
+  "origen": "Diputados 31/08/2025 (circuitos)",
+  "destino": "Diputados nacionales 26/10/2025",
+  "nivel": "circuitos",
+  "base": "votos emitidos",
+  "fuente": "https://elecciones2025-definitivo.corrientes.gob.ar/escrutinio",
+  "nota": "Resultados por circuito del definitivo. Código electoral, título oficial y padrón cotejados con la DINE. Seis títulos genéricos de Capital y tres variantes ortográficas se admiten expresamente con padrón compatible; correspondencias completas exportadas. El circuito 62 no tiene votos nacionales informados. Diferencias mínimas entre circuitos y resumen general conservadas sin ajuste.",
+  "id": "corrientes_diputados_prov2025_dn2025_circuitos",
+  "cobertura_provincial": 0.9992836920558038,
+  "cobertura_origen": 0.9992836920558038,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "SANLUISDELPALMAR:62"
+  ],
+  "foco_lado": "origen",
+  "foco": [],
+  "unidades": 172,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 11.004705241888265,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.02857629362979601,
+    "0.0001": 0.014888186043066177,
+    "1e-05": 0.013160530371711497,
+    "1e-06": 0.012967043832501732,
+    "1e-07": 0.012963627946564835
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 3.6671950970311613,
+  "desviacion_max_margen_destino_pp": 0.2088979809732383,
+  "electores_o_votos_origen": 673808.0,
+  "electores_o_votos_destino": 567131.0,
+  "filas": [
+    {
+      "origen": "VAMOS CORRIENTES",
+      "peso": 48.55,
+      "dif_variante_pp": 1.78,
+      "sensibilidad_pp": 11.07,
+      "ancho_intervalo_pp": 12.27,
+      "separacion_pp": 19.62,
+      "no_identificada": false
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 9.6,
+      "dif_variante_pp": 0.64,
+      "sensibilidad_pp": 44.64,
+      "ancho_intervalo_pp": 1.55,
+      "separacion_pp": 67.98,
+      "no_identificada": true
+    },
+    {
+      "origen": "ENCUENTRO POR CORRIENTES - ECO",
+      "peso": 14.18,
+      "dif_variante_pp": 18.59,
+      "sensibilidad_pp": 23.77,
+      "ancho_intervalo_pp": 34.97,
+      "separacion_pp": 11.52,
+      "no_identificada": false
+    },
+    {
+      "origen": "LIMPIAR CORRIENTES",
+      "peso": 16.69,
+      "dif_variante_pp": 6.51,
+      "sensibilidad_pp": 29.48,
+      "ancho_intervalo_pp": 23.09,
+      "separacion_pp": 54.45,
+      "no_identificada": false
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 3.55,
+      "dif_variante_pp": 26.84,
+      "sensibilidad_pp": 59.84,
+      "ancho_intervalo_pp": 78.25,
+      "separacion_pp": 30.92,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 7.43,
+      "dif_variante_pp": 70.38,
+      "sensibilidad_pp": 72.57,
+      "ancho_intervalo_pp": 33.79,
+      "separacion_pp": 66.14,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "nombre": "Santa Fe",
+  "distrito": "21",
+  "serie": "2023",
+  "fecha": "10/09/2023",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 10/09/2023 (distritos provinciales empalmados)",
+  "nivel": "distritos y departamentos empalmados",
+  "base": "votos emitidos",
+  "fuente": "https://www.santafe.gov.ar/tribunalelectoral/wp-content/uploads/sites/84/2024/08/resultadosGenerales2023.ods",
+  "nota": "Definitivo provincial por distrito/localidad. Las ciudades de Santa Fe y Rosario aparecen agregadas como 9999: se suman los circuitos nacionales de esas localidades. Correspondencias nominales y departamentales, sin reparto. Para 2019 se usa la tabla oficial CNE 66/2022. Departamentos agregados completos por correspondencias internas incompletas: 9DEJULIO, CASEROS, CASTELLANOS, CONSTITUCION, GARAY, GENERALOBLIGADO, IRIONDO, LACAPITAL, LASCOLONIAS, ROSARIO, SANCRISTOBAL, SANJAVIER, SANJERONIMO, SANJUSTO, SANLORENZO, VERA.",
+  "foco": [],
+  "id": "santafe_2019p_gob2023_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "foco_lado": "destino",
+  "unidades": 70,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 96.43494623942684,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.020359474021408416,
+    "0.0001": 0.014265126937061123,
+    "1e-05": 0.0129172993727093,
+    "1e-06": 0.012262374566378324,
+    "1e-07": 0.01208642238427953
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 2.9617281865901295,
+  "desviacion_max_margen_destino_pp": 0.2816119625095148,
+  "electores_o_votos_origen": 2178330.0,
+  "electores_o_votos_destino": 1919625.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 41.75,
+      "dif_variante_pp": 25.19,
+      "sensibilidad_pp": 26.92,
+      "ancho_intervalo_pp": 38.07,
+      "separacion_pp": 30.62,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 42.74,
+      "dif_variante_pp": 12.93,
+      "sensibilidad_pp": 20.18,
+      "ancho_intervalo_pp": 24.84,
+      "separacion_pp": 44.65,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 8.72,
+      "dif_variante_pp": 38.3,
+      "sensibilidad_pp": 66.35,
+      "ancho_intervalo_pp": 64.35,
+      "separacion_pp": 71.41,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 3.33,
+      "dif_variante_pp": 67.91,
+      "sensibilidad_pp": 81.19,
+      "ancho_intervalo_pp": 98.16,
+      "separacion_pp": 88.76,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 1.41,
+      "dif_variante_pp": 81.26,
+      "sensibilidad_pp": 81.35,
+      "ancho_intervalo_pp": 98.31,
+      "separacion_pp": 70.89,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 2.05,
+      "dif_variante_pp": 86.51,
+      "sensibilidad_pp": 87.39,
+      "ancho_intervalo_pp": 97.33,
+      "separacion_pp": 89.92,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

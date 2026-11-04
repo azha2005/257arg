@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4121_1e5a969719",
+  "shp": "R4121.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4121.dbf",
+      "bytes": 686,
+      "sha256": "13793dbbe1a63107197bae168c8c016e5b8f39f2a015e0115847e716da1150f9"
+    },
+    {
+      "archivo": "R4121.shp",
+      "bytes": 764,
+      "sha256": "22f7a26bbb9fa1b15eee2857e547c5340192b35ae2b04139392243d1bb8d2189"
+    },
+    {
+      "archivo": "R4121.shx",
+      "bytes": 108,
+      "sha256": "22d5d6c8236052bef790ce2e9cdf8ba32a831678e34fc4c0e26e16a721a51eae"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/nuevotorinoa3h.zip!R4121.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b49c1bcd7e",
+    "archivo": "santafe/ipec/2010/nuevotorinoa3h.zip!R4121.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5381746.5,
+      6531509.5,
+      5382847.0,
+      6532578.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/nuevotorinoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1ff710b39c740a39284b94ba51d62b3329d96b7b5135e120670c828353c0fb2c"
+}

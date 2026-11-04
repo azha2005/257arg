@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6817_6d4aaaf94e",
+  "shp": "M6817.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6817.dbf",
+      "bytes": 3538,
+      "sha256": "57a879351c3dcaa6a459b5994252ca542d4ab6d4a9d72929ac6db61d3cd96bb8"
+    },
+    {
+      "archivo": "M6817.shp",
+      "bytes": 2836,
+      "sha256": "4fe427245352f19980341dd7cbdb5b014368851a075131bfa4635b32c22a1d14"
+    },
+    {
+      "archivo": "M6817.shx",
+      "bytes": 228,
+      "sha256": "b081c9f8caa11148a2a57787e39fea8c787524e00fd4d67b56f5f8daa98a62fe"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/jacintoarauza3h.zip!M6817.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_76d4d026c7",
+    "archivo": "santafe/ipec/2010/jacintoarauza3h.zip!M6817.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5406299.0,
+      6599706.5,
+      5407316.0,
+      6600236.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/jacintoarauza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b6f114e46e166d749c5678de0e5acf82da6e03d9e838ed9ff6d1cac787443c79"
+}

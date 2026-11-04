@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4149_67af505ce3",
+  "shp": "M4149.shp",
+  "entidades": 28,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4149.dbf",
+      "bytes": 5902,
+      "sha256": "103611eb7fd6dcc76a213593b70f0d12b12e00ee7429062d191b04ef6775417d"
+    },
+    {
+      "archivo": "M4149.shp",
+      "bytes": 4132,
+      "sha256": "8559f11fba38cc82ab0aba0b50d9737ab69e8b19352fa7a9de43a65750c16af0"
+    },
+    {
+      "archivo": "M4149.shx",
+      "bytes": 324,
+      "sha256": "51dc8612e3d4be841300db9985f8ec7b5dc1c3e2140998f97c5e32fb87d59ae4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/bauerysigela3h.zip!M4149.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_571bb575bb",
+    "archivo": "santafe/ipec/2010/bauerysigela3h.zip!M4149.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 28,
+    "registros_shx": 28,
+    "shape_type": 5,
+    "bbox": [
+      5314262.0,
+      6538730.0,
+      5315631.5,
+      6539668.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/bauerysigela3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8d40b8ac1cd0d5c28ce5c78adb5e291d459d5d8d78bc7ec9cb83d1188cddbe46"
+}

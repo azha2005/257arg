@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0667_ca3147ce4e",
+  "shp": "E0667.shp",
+  "entidades": 420,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0667.dbf",
+      "bytes": 146770,
+      "sha256": "5fc52d97d258a2a50c0a186bbad10ff65ea6c7af7ce3667534836a5406bf9ebf"
+    },
+    {
+      "archivo": "E0667.shp",
+      "bytes": 39540,
+      "sha256": "e118cf13a224e33aee50169620934bf9bceda1a6f022b2e4e2dd03196b3c0918"
+    },
+    {
+      "archivo": "E0667.shx",
+      "bytes": 3460,
+      "sha256": "18af3c5c98b9a9c92ff6e6831584ca37ef2a8d647fc8e749e809a63e9be62620"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/FLORENCIAA2H.zip!E0667.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9f08e4c17c",
+    "archivo": "santafe/ipec/2010/FLORENCIAA2H.zip!E0667.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 420,
+    "registros_shx": 420,
+    "shape_type": 3,
+    "bbox": [
+      5573169.0,
+      6897610.5,
+      5577628.0,
+      6899800.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/FLORENCIAA2H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9a652b7f282f9c06bd039d1e860878ec0d16c853174afdf3a46198cbaf06dfd3"
+}

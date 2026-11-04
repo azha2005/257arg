@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0305_a2bb161e55",
+  "shp": "E0305.shp",
+  "entidades": 475,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0305.dbf",
+      "bytes": 165910,
+      "sha256": "e0282acce8d7304cbaf3b619aa87295470b9a3d65249c2ebbb37206c4ac8428e"
+    },
+    {
+      "archivo": "E0305.shp",
+      "bytes": 42092,
+      "sha256": "528d4f8958a46ff071948cdbdd971c2639f650135f0a307cf7a5dd8626dc4903"
+    },
+    {
+      "archivo": "E0305.shx",
+      "bytes": 3900,
+      "sha256": "4324e085f3ce3ec5c1164d16f47a1490c05a73bfd4c7a1ee4737977f1550ddb9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/totorasa2h.zip!E0305.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7981936e14",
+    "archivo": "santafe/ipec/2010/totorasa2h.zip!E0305.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 475,
+    "registros_shx": 475,
+    "shape_type": 3,
+    "bbox": [
+      5388843.5,
+      6393402.0,
+      5391329.5,
+      6395542.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/totorasa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "042c90a4459a05866e915ff30e3f084d65508d7fd78932c76c594f3f0f073c53"
+}

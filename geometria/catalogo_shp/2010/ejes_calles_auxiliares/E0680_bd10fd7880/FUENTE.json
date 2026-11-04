@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0680_bd10fd7880",
+  "shp": "E0680.shp",
+  "entidades": 254,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0680.dbf",
+      "bytes": 89002,
+      "sha256": "80db126bbc1d846ae0541922dc09566945d2ca10c7b83deb45a2317e86554578"
+    },
+    {
+      "archivo": "E0680.shp",
+      "bytes": 22452,
+      "sha256": "e99b4de49ca1e90aa16543cbda0cb2ca95e13d75f36245185a4942b7187c0246"
+    },
+    {
+      "archivo": "E0680.shx",
+      "bytes": 2132,
+      "sha256": "dbc35bea8c357fb7b9db7e94e75b72382d1fd483f4cad78c1c9104b8bc50fc7f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/montesdeocaa3h.zip!E0680.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1abce727a5",
+    "archivo": "santafe/ipec/2010/montesdeocaa3h.zip!E0680.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 254,
+    "registros_shx": 254,
+    "shape_type": 3,
+    "bbox": [
+      5333143.5,
+      6395171.0,
+      5334676.5,
+      6396696.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/montesdeocaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "dd056c9b981786e5f201098fa7e47e2986bb5290bc385b8e3aff782f398a1beb"
+}

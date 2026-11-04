@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m8765_b5a04753cb",
+  "shp": "m8765.shp",
+  "entidades": 351,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m8765.dbf",
+      "bytes": 69533,
+      "sha256": "0d31494335e40b5e703ed802eae9091d9e57998b2de79d9c4a8766eeb4f5396f"
+    },
+    {
+      "archivo": "m8765.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m8765.shp",
+      "bytes": 68092,
+      "sha256": "ac783e7659f1640508064fc0ff35c6a5533390f00144f23f152fe18eb5951a29"
+    },
+    {
+      "archivo": "m8765.shx",
+      "bytes": 2908,
+      "sha256": "15df9ba911a4d7f1880b836d87804d6076622047abe219bee08bb9dcfce10191"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/FRAYLUISBELTRAN.zip!m8765.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4c20ec364d",
+    "archivo": "santafe/ipec/2022/FRAYLUISBELTRAN.zip!m8765.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 351,
+    "registros_shx": 351,
+    "shape_type": 5,
+    "bbox": [
+      5430066.5,
+      6371100.5,
+      5433196.5,
+      6373777.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/FRAYLUISBELTRAN.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "86261621d9a4601f4812ba298fd0fce21bf3524bf8ef96ad22ec642688f067b2"
+}

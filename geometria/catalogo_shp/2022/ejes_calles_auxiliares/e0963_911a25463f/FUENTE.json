@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0963_911a25463f",
+  "shp": "e0963.shp",
+  "entidades": 226,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0963.dbf",
+      "bytes": 67958,
+      "sha256": "a6167e73a341b91eda6cbf65974d620394980e40d0fa14c85d8b8d473a0c865f"
+    },
+    {
+      "archivo": "e0963.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0963.shp",
+      "bytes": 19988,
+      "sha256": "9cbd162499492c64805917b5e5176facb836737dcd39e651d7ff86e8e8e96f24"
+    },
+    {
+      "archivo": "e0963.shx",
+      "bytes": 1908,
+      "sha256": "d588b0a628aa63dd3911da10d36b3e43b15e5177ae536273019806ffa54ada6a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/FELICIA.zip!e0963.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_06329104f7",
+    "archivo": "santafe/ipec/2022/FELICIA.zip!e0963.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 226,
+    "registros_shx": 226,
+    "shape_type": 3,
+    "bbox": [
+      5383838.0,
+      6542614.0,
+      5385206.5,
+      6543875.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/FELICIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "2ed0f508399726fddcbe6633f5f609e40f54d79aa2bf8c8475eb565c7abf301a"
+}

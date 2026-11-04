@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6848_5b01b33c62",
+  "shp": "M6848.shp",
+  "entidades": 325,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6848.dbf",
+      "bytes": 64411,
+      "sha256": "52d5388a17382709f8186a88345df1f2ba0386cc23fd47637499c1eaf757977a"
+    },
+    {
+      "archivo": "M6848.shp",
+      "bytes": 66476,
+      "sha256": "8a92981c7f8f65f5dc9a52d1d023dc848d021fbe0d0a941903ef215962adf9c6"
+    },
+    {
+      "archivo": "M6848.shx",
+      "bytes": 2700,
+      "sha256": "9d7d06c795677eae1306945437ca6f2b61d654376630a7a5fd2f29a4cfd68d62"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/arroyoleyesa1h.zip!M6848.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_4e80c3be38",
+    "archivo": "santafe/ipec/2010/arroyoleyesa1h.zip!M6848.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 325,
+    "registros_shx": 325,
+    "shape_type": 5,
+    "bbox": [
+      5447207.0,
+      6506338.5,
+      5453676.5,
+      6512506.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/arroyoleyesa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7fc3f903e64531797907f0a76787a27ad60af28dd22543de290a9aa6208e1b6c"
+}

@@ -1,0 +1,55 @@
+{
+  "anio_carpeta": "2019",
+  "criterio_anio": "Copia existente en marzo de 2019; vigencia electoral no verificada",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "2019/circuitos_y_auxiliares/clean_ad4128edf3",
+  "shp": "clean.shp",
+  "entidades": 1348,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "clean.dbf",
+      "bytes": 337162,
+      "sha256": "de2d7bd8a3ce6df8426d7eed57700d44a91c6815f539864c38a9cdae33a38d35"
+    },
+    {
+      "archivo": "clean.shp",
+      "bytes": 2732624,
+      "sha256": "d6b7ea1e81dd55dfc46c460c029f744002a387292156f3c702837db3ad5a4e4f"
+    },
+    {
+      "archivo": "clean.shx",
+      "bytes": 10884,
+      "sha256": "718478bb019ee91cd3438ffc0f27dfe153ff4ea51565cc2f62a106f89edc0824"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/snapshot_20190308/data/circuitos/clean/clean.shp",
+  "metadata_original": {
+    "archivo": "snapshot_20190308/data/circuitos/clean/clean.shp",
+    "formato": "SHP",
+    "features": 1348,
+    "shapes": 1348,
+    "bbox": [
+      -63.39325646406888,
+      -41.043436031422466,
+      -56.66335992317388,
+      -33.26326577752352
+    ],
+    "campos": [
+      "PROV_REF_I",
+      "provincia",
+      "dpto_merge",
+      "circuito"
+    ],
+    "sha256": "d6b7ea1e81dd55dfc46c460c029f744002a387292156f3c702837db3ad5a4e4f",
+    "crs_wkt": null,
+    "url": "https://raw.githubusercontent.com/tartagalensis/EleccionesARG/6d03b2536369/data/circuitos/clean/clean.shp",
+    "fuente": "https://github.com/tartagalensis/EleccionesARG/tree/6d03b2536369",
+    "corte_declarado": "existente al 2019-03-08",
+    "nota": "Fecha de archivo versionado, no validación de vigencia 2019"
+  },
+  "firma_componentes": "8426583fff55a16888da54a3a88add264e0aa6e5d347d407fea3fd78c19a812e"
+}

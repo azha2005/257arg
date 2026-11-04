@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0849_ca8c80b11f",
+  "shp": "R0849.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0849.dbf",
+      "bytes": 686,
+      "sha256": "a497a54c1ecc8d3eb0b1c0c1a4ebc459fba334a0447aa3eca0e85b9de788ef9f"
+    },
+    {
+      "archivo": "R0849.shp",
+      "bytes": 1916,
+      "sha256": "3d8439e9568a94fbbc8021fc3c97c38b2164ab0f67ed29bd980fa2a8bd78e99e"
+    },
+    {
+      "archivo": "R0849.shx",
+      "bytes": 108,
+      "sha256": "9744800a3bc221d83ed4db561a1ce90684f9b691c5cbc7f84a03ff1556385f26"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/generallagosa3h.zip!R0849.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d2969e51df",
+    "archivo": "santafe/ipec/2010/generallagosa3h.zip!R0849.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5446494.5,
+      6336207.5,
+      5449343.0,
+      6337650.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/generallagosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "94ee14da2241fc616a9cf1ec1e1e3d3159f0eea6783e1b13e5dfa78e7e619739"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1196_d8ae721a47",
+  "shp": "E1196.shp",
+  "entidades": 82,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1196.dbf",
+      "bytes": 29146,
+      "sha256": "c181ac3c9705dc728f1146003c13edcb6e9a42222fe63bfe47be69f7538502d0"
+    },
+    {
+      "archivo": "E1196.shp",
+      "bytes": 7444,
+      "sha256": "aac06da824df47bd92cd78c0f87693eb7f863fce8c9b47d4e320a57396fb6e96"
+    },
+    {
+      "archivo": "E1196.shx",
+      "bytes": 756,
+      "sha256": "1c7fa17355749951b87b0b6dd892ebb920f1f361dc20458a09032165359e928c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sarmientoa3h.zip!E1196.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_500123aab6",
+    "archivo": "santafe/ipec/2010/sarmientoa3h.zip!E1196.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 82,
+    "registros_shx": 82,
+    "shape_type": 3,
+    "bbox": [
+      5388252.5,
+      6563418.0,
+      5388928.5,
+      6564334.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sarmientoa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a84454e3e496587c71811d0b1bb3dd1060e9cb508ea74ddac9e3cc5c35f07bb9"
+}

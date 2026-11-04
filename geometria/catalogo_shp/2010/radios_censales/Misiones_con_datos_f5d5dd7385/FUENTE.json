@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Misiones_con_datos_f5d5dd7385",
+  "shp": "Misiones_con_datos.shp",
+  "entidades": 1432,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Misiones_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Misiones_con_datos.shp",
+      "bytes": 1762988,
+      "sha256": "fe6eba94ae20cabff3e4cb71f50ed27896cd320db7c6c5fa28b867f287b9b4ca"
+    },
+    {
+      "archivo": "Misiones_con_datos.shx",
+      "bytes": 11556,
+      "sha256": "395222721dc5d3402e67ce0558a8ddace424bf4d29eb8a61853fc03eab70adc0"
+    },
+    {
+      "archivo": "Misiones_con_datos.dbf",
+      "bytes": 585977,
+      "sha256": "b319cf650f9feea341f104bb986920a8497c3e98672841551c4d4f88b81dbf1f"
+    },
+    {
+      "archivo": "Misiones_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Misiones_con_datos.zip!Misiones_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_54",
+    "archivo": "indec/2010/Codgeo_Misiones_con_datos.zip!Misiones_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Misiones",
+    "features": 1432,
+    "registros_shx": 1432,
+    "shape_type": 5,
+    "bbox": [
+      4486129.635727082,
+      6841372.405463306,
+      4740997.908500718,
+      7126808.074750553
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Misiones_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 1432,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "3dc2e1a26069dd6ff24b6bccde4a2d151d1fc7a1f5e9a5094139b915769c263d"
+}

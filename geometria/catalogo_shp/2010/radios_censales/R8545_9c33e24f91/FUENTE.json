@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R8545_9c33e24f91",
+  "shp": "R8545.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R8545.dbf",
+      "bytes": 3746,
+      "sha256": "886fed5c7378350095844d514e931244df2481dac3c636a9f9053be13d453ae5"
+    },
+    {
+      "archivo": "R8545.shp",
+      "bytes": 11844,
+      "sha256": "597c508dc4aef29cb16c5011e903dda3d61f4b1042ff4dd90a878b5362fe1768"
+    },
+    {
+      "archivo": "R8545.shx",
+      "bytes": 228,
+      "sha256": "7de57ae65a5956e78456cbb9930d78c02855eb82c0e263fbb157223976eed9e9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/avellanedaa1h.zip!R8545.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_46d26421cc",
+    "archivo": "santafe/ipec/2010/avellanedaa1h.zip!R8545.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5530721.0,
+      6778712.0,
+      5534937.5,
+      6781360.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/avellanedaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "3ba3434d066554e36ab936199917447027f2a1b1338a04e12e252729d958c8f0"
+}

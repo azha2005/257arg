@@ -1,0 +1,135 @@
+{
+  "id": "misiones_prov2025_dn2025",
+  "serie": "2025",
+  "nombre": "Misiones",
+  "distrito": "14",
+  "fecha": "08/06/2025",
+  "cargo": "Diputados provinciales",
+  "nivel": "departamentos",
+  "origen": "Diputados provinciales 08/06/2025",
+  "destino": "Diputados nacionales 26/10/2025",
+  "foco": [
+    "Frente Renovador de la Concordia"
+  ],
+  "foco_lado": "origen",
+  "nota": "78 tablas municipales, agregadas a 17 departamentos. La publicación estadística oficial presenta diferencias internas: suma municipal 555.879 emitidos frente a 555.868 del resumen. Se conservan los datos municipales, sin completar residuos. Sin abstención.",
+  "base": "votos emitidos",
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [],
+  "departamentos_cargo": [],
+  "fuente": "https://www.electoralmisiones.gov.ar/wp-content/uploads/2025/09/Estadisticas-Elecciones-Legislativas-8-de-Junio-de-2025-1.pdf",
+  "agrupacion_menores": "Listas menores al 2 % dentro del distrito, salvo identidades destacadas; originales completos conservados.",
+  "unidades": 17,
+  "categorias_origen": 9,
+  "rango": 9,
+  "condicion": 54.99685608414896,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.01997474986959897,
+    "0.0001": 0.007040661374631234,
+    "1e-05": 0.004633438870097746,
+    "1e-06": 0.004402875093328451,
+    "1e-07": 0.004363178650936796
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 1.068161733608122,
+  "desviacion_max_margen_destino_pp": 0.15261655888220427,
+  "electores_o_votos_origen": 555879.0,
+  "electores_o_votos_destino": 626226.0,
+  "filas": [
+    {
+      "origen": "La Libertad Avanza",
+      "peso": 20.94,
+      "dif_variante_pp": 4.29,
+      "sensibilidad_pp": 29.88,
+      "ancho_intervalo_pp": 23.43,
+      "separacion_pp": 53.81,
+      "no_identificada": true
+    },
+    {
+      "origen": "Agrario y Social",
+      "peso": 8.42,
+      "dif_variante_pp": 8.43,
+      "sensibilidad_pp": 54.79,
+      "ancho_intervalo_pp": 23.12,
+      "separacion_pp": 73.9,
+      "no_identificada": true
+    },
+    {
+      "origen": "Por la Vida y los Valores",
+      "peso": 18.3,
+      "dif_variante_pp": 11.72,
+      "sensibilidad_pp": 34.67,
+      "ancho_intervalo_pp": 38.16,
+      "separacion_pp": 26.09,
+      "no_identificada": true
+    },
+    {
+      "origen": "Partido Libertario",
+      "peso": 7.8,
+      "dif_variante_pp": 13.81,
+      "sensibilidad_pp": 45.71,
+      "ancho_intervalo_pp": 86.6,
+      "separacion_pp": 30.16,
+      "no_identificada": true
+    },
+    {
+      "origen": "Frente Renovador de la Concordia",
+      "peso": 27.54,
+      "dif_variante_pp": 10.4,
+      "sensibilidad_pp": 16.63,
+      "ancho_intervalo_pp": 25.1,
+      "separacion_pp": 43.49,
+      "no_identificada": true
+    },
+    {
+      "origen": "Confluencia Popular por la Patria",
+      "peso": 2.35,
+      "dif_variante_pp": 65.78,
+      "sensibilidad_pp": 85.34,
+      "ancho_intervalo_pp": 82.12,
+      "separacion_pp": 79.9,
+      "no_identificada": true
+    },
+    {
+      "origen": "Unidos por el Futuro",
+      "peso": 5.54,
+      "dif_variante_pp": 31.38,
+      "sensibilidad_pp": 78.07,
+      "ancho_intervalo_pp": 44.37,
+      "separacion_pp": 56.26,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 4.5,
+      "dif_variante_pp": 43.04,
+      "sensibilidad_pp": 80.56,
+      "ancho_intervalo_pp": 59.09,
+      "separacion_pp": 64.45,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 4.61,
+      "dif_variante_pp": 24.33,
+      "sensibilidad_pp": 65.9,
+      "ancho_intervalo_pp": 85.54,
+      "separacion_pp": 39.81,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ],
+  "cobertura_provincial": 1.0
+}

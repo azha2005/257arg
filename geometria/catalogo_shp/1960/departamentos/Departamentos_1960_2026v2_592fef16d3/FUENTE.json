@@ -1,0 +1,82 @@
+{
+  "anio_carpeta": "1960",
+  "criterio_anio": "Año censal identificado en nombre de capa y colección departamental",
+  "tipo": "departamentos",
+  "carpeta": "1960/departamentos/Departamentos_1960_2026v2_592fef16d3",
+  "shp": "Departamentos_1960_2026v2.shp",
+  "entidades": 508,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Departamentos_1960_2026v2.CPG",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.dbf",
+      "bytes": 132210,
+      "sha256": "5a85d093ab902deb26ec349ec87da2168b79b468ab70dc44cf55c1e50e6bd172"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.prj",
+      "bytes": 153,
+      "sha256": "290ec80044946d89b4b6d0daa27ad2242e03165536568c0340ea72603918408c"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.sbn",
+      "bytes": 5228,
+      "sha256": "5cb9cd44b592bc1a6d9384e8e8a1a6aa663f1501bfd4046da644c2d6a0c1e25d"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.sbx",
+      "bytes": 276,
+      "sha256": "6a738b79cb7e24b6e4ca207cdb8e5b27a9e52eb6da18247c21e88199c013e550"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.shp",
+      "bytes": 15177680,
+      "sha256": "c6485ecb1f886ab6d2dba365d7df776a51fedcc1408edf53c04977fc0b19dfbf"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.shp.xml",
+      "bytes": 7537,
+      "sha256": "3560ab5ef932b06f467e96f197aee24ad9a40e2e57a31d70467dc2fd4c38f292"
+    },
+    {
+      "archivo": "Departamentos_1960_2026v2.shx",
+      "bytes": 4164,
+      "sha256": "daa3a632f8751b470e12a4dce470b858db8725e80929e8770c58a3beb12eaa98"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/conicet/deptos/Base_deptos_1869-2022.zip!Base deptos 1869-2022/Departamentos_1960_2026v2.shp",
+  "metadata_original": {
+    "id_fuente": "conicet_deptos_1f67c7fe-37d4-45d2-bb5b-6b781d1720d5",
+    "archivo": "conicet/deptos/Base_deptos_1869-2022.zip!Base deptos 1869-2022/Departamentos_1960_2026v2.shp",
+    "tipo": "departamento",
+    "corte": "1869",
+    "cobertura": "Argentina",
+    "features": 508,
+    "registros_shx": 508,
+    "shape_type": 5,
+    "bbox": [
+      -74.00000000200001,
+      -89.9999999999999,
+      -24.999999995999893,
+      -21.780777633999946
+    ],
+    "campos": [
+      "PROV_COD",
+      "DEPTO",
+      "LINK_"
+    ],
+    "formato": "SHP",
+    "fuente": "https://ri.conicet.gov.ar/handle/11336/149867",
+    "nota": "Cartografía de investigación corregida/armonizada; no atribuir a límites originales INDEC. Nombre de archivo conserva revisión.",
+    "licencia": "ver metadata del registro",
+    "url_descarga": "https://ri.conicet.gov.ar/server/api/core/bitstreams/1f67c7fe-37d4-45d2-bb5b-6b781d1720d5/content",
+    "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",SPHEROID[\"WGS 84\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"degree\",0.0174532925199433]]",
+    "encoding_declarado": "UTF-8"
+  },
+  "firma_componentes": "0296890439d7fda0ca28beb84c497a2c9c7fec6932d6faf7cad25dd9fc38165f"
+}

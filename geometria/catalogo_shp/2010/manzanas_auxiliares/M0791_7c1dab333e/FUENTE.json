@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0791_7c1dab333e",
+  "shp": "M0791.shp",
+  "entidades": 144,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0791.dbf",
+      "bytes": 28754,
+      "sha256": "e067331338423575e9983c4ba24bf6a1507f81ad31e4c8301de497e55fd29e46"
+    },
+    {
+      "archivo": "M0791.shp",
+      "bytes": 26084,
+      "sha256": "10a26b2c727767120d73972cc05deb0e3cbf5fde6c3185451ead349e83a3ab36"
+    },
+    {
+      "archivo": "M0791.shx",
+      "bytes": 1252,
+      "sha256": "cdec7f0f57309ffde19541f88975ede3103d26eae4cd8b616a489a13493df7f5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/timbuesa1v.zip!M0791.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f14603f984",
+    "archivo": "santafe/ipec/2010/timbuesa1v.zip!M0791.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 144,
+    "registros_shx": 144,
+    "shape_type": 5,
+    "bbox": [
+      5424916.0,
+      6383737.0,
+      5427146.0,
+      6386926.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/timbuesa1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b55e594b09cdfbf1ca30025329a58e56a9cc8f9d13b232f71252720b73a79e19"
+}

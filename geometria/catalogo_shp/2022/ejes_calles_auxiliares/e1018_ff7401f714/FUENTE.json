@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1018_ff7401f714",
+  "shp": "e1018.shp",
+  "entidades": 232,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1018.dbf",
+      "bytes": 69746,
+      "sha256": "3cbb55d7982dc848c5ad2946bc4bdca28ba93fd1e361e0b655051ef2c63e64d7"
+    },
+    {
+      "archivo": "e1018.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1018.shp",
+      "bytes": 20612,
+      "sha256": "43f489e90635fd6bd325108ded59a261f53c8e2e170fbf1e424ca9a814ea859d"
+    },
+    {
+      "archivo": "e1018.shx",
+      "bytes": 1956,
+      "sha256": "bb77ef30ae9a8fa01adb27447451967087920d453c0cff42b42813ec0e2c3f27"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/PLAZACLUCELLAS.zip!e1018.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_bbf6ca8b5f",
+    "archivo": "santafe/ipec/2022/PLAZACLUCELLAS.zip!e1018.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 232,
+    "registros_shx": 232,
+    "shape_type": 3,
+    "bbox": [
+      5337102.5,
+      6518817.0,
+      5338492.5,
+      6520242.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/PLAZACLUCELLAS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "9fdb6b2f8334f702d36e77595989f978abddfc77b319ed7bd9bc18472b180b3c"
+}

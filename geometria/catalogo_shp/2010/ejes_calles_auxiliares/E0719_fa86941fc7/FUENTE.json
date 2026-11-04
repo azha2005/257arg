@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0719_fa86941fc7",
+  "shp": "E0719.shp",
+  "entidades": 167,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0719.dbf",
+      "bytes": 58726,
+      "sha256": "50d8eda9db7d8ffbd8df5549069a213d4360c93f23b1108f49c6a610afaa4b4d"
+    },
+    {
+      "archivo": "E0719.shp",
+      "bytes": 14796,
+      "sha256": "0952a0530a96810865c45aa0a1c367256c2a9107820202da62b06ec36b9bcbc0"
+    },
+    {
+      "archivo": "E0719.shx",
+      "bytes": 1436,
+      "sha256": "751a1e0bbe44568232c8073d8794e4f43aaad11669d029821b57f64155b2c211"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villamuguetaa3h.zip!E0719.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2fc3ac776b",
+    "archivo": "santafe/ipec/2010/villamuguetaa3h.zip!E0719.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 167,
+    "registros_shx": 167,
+    "shape_type": 3,
+    "bbox": [
+      5400998.5,
+      6313201.0,
+      5402513.0,
+      6314707.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villamuguetaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c1a2898283fc686295a3145fcb25ee91ff4415f31bf88e1e8c371522dcb2d8b5"
+}

@@ -1,0 +1,68 @@
+{
+  "anio_carpeta": "2015",
+  "criterio_anio": "Dataset de la elección 2015",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "2015/circuitos_y_auxiliares/circuitos_electorales_bc14053b5a",
+  "shp": "circuitos_electorales.shp",
+  "entidades": 167,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "circuitos_electorales.shx",
+      "bytes": 1436,
+      "sha256": "7407b1ee35bc9b9bcf9e8127a0ae62b96b17ed16268625e10f20ce2fa5428267"
+    },
+    {
+      "archivo": "circuitos_electorales.dbf",
+      "bytes": 21197,
+      "sha256": "8389e733608cf1d5f57465771c6e2c6a5d6f4bd6aad67c9217fc9c57a8f9ab1d"
+    },
+    {
+      "archivo": "circuitos_electorales.prj",
+      "bytes": 431,
+      "sha256": "3ba7a1f9947576f7a2b33d98e2591bcab95f23ee82fa89ef022d5ff48a404c86"
+    },
+    {
+      "archivo": "circuitos_electorales.shp",
+      "bytes": 225840,
+      "sha256": "0517a26a2f2220f3eb45e5af523509cb7438c2fdc365ab0eed5a66abba9a324d"
+    },
+    {
+      "archivo": "circuitos_electorales.shp.xml",
+      "bytes": 132202,
+      "sha256": "282048a5beae9d96bf959797938f60387d50158226e33d078f83b90bd4f7e3cb"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/caba_2015/00_circuitos-electorales-zip.zip!circuitos_electorales.shp",
+  "metadata_original": {
+    "archivo": "caba_2015/00_circuitos-electorales-zip.zip!circuitos_electorales.shp",
+    "formato": "SHP",
+    "features": 167,
+    "shapes": 167,
+    "bbox": [
+      93743.42010498047,
+      91566.41467285156,
+      111752.02667236328,
+      111285.06652832031
+    ],
+    "campos": [
+      "ID",
+      "CIRCUITO_N",
+      "COMUNA",
+      "BARRIO",
+      "TOTAL",
+      "MASCULINO",
+      "FEMENINO",
+      "PERIMETRO",
+      "AREA"
+    ],
+    "sha256": "0517a26a2f2220f3eb45e5af523509cb7438c2fdc365ab0eed5a66abba9a324d",
+    "crs_wkt": "PROJCS[\"Argentina_GKBsAs\",GEOGCS[\"GCS_Campo_Inchauspe\",DATUM[\"D_Campo_Inchauspe\",SPHEROID[\"International_1924\",6378388.0,297.0]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",100000.0],PARAMETER[\"False_Northing\",100000.0],PARAMETER[\"Central_Meridian\",-58.4627],PARAMETER[\"Scale_Factor\",0.999998],PARAMETER[\"Latitude_Of_Origin\",-34.6297166],UNIT[\"Meter\",1.0]]",
+    "url": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/subsecretaria-justicia/elecciones-2015/circuitos-electorales-zip.zip",
+    "fuente": "https://data.buenosaires.gob.ar/dataset/elecciones-2015",
+    "corte_declarado": "",
+    "nota": "Circuitos Electorales (SHP) | Archivo shapefile con los polígonos de los circuitos electorales de la Ciudad."
+  },
+  "firma_componentes": "410ec568080dd1eaa88d7856d6a592813f218162b49cc445a350f12107c39e1b"
+}

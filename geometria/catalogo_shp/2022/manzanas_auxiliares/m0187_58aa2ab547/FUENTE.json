@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0187_58aa2ab547",
+  "shp": "m0187.shp",
+  "entidades": 472,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0187.dbf",
+      "bytes": 93370,
+      "sha256": "6972f7b439a9769eeca18da439985fdf7ad307d10c6de0e6dbf3622d9a5d6eb9"
+    },
+    {
+      "archivo": "m0187.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0187.shp",
+      "bytes": 78596,
+      "sha256": "1b0c85c122c2316db97b3616e0b336b55379ab1c7980f41731ee59ba1ccfcf5e"
+    },
+    {
+      "archivo": "m0187.shx",
+      "bytes": 3876,
+      "sha256": "68e7f006a888e66402ac6e1e357762c7315814d8541b9eefc666a997befc5e81"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANCRISTOBAL.zip!m0187.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_5e6ab390cb",
+    "archivo": "santafe/ipec/2022/SANCRISTOBAL.zip!m0187.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 472,
+    "registros_shx": 472,
+    "shape_type": 5,
+    "bbox": [
+      5379632.5,
+      6644533.0,
+      5382649.5,
+      6648923.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANCRISTOBAL.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "552945a40e49759208a13e0d2cd0844a9b2d609b8ffbb1798260fc31efc10c99"
+}

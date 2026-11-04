@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e6871_387896c4e7",
+  "shp": "e6871.shp",
+  "entidades": 58,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6871.shx",
+      "bytes": 564,
+      "sha256": "52c3e33f90130ec10a58bba533718f8a4daddecec68fcb757e17d335897fd7da"
+    },
+    {
+      "archivo": "e6871.shp",
+      "bytes": 5348,
+      "sha256": "db818559b1bb32baa9c57f513b0e6e4f7c8a1e5e127f697c0f255e260cd227c4"
+    },
+    {
+      "archivo": "e6871.sbx",
+      "bytes": 244,
+      "sha256": "cbdcd53af27cd7fe18dd710b75e66e07ecd4a93d202944aec97cc3418b0b6319"
+    },
+    {
+      "archivo": "e6871.sbn",
+      "bytes": 1172,
+      "sha256": "36e85cceca0e08b03f8c3175deba949d60156373ca630751deefbd92cf744068"
+    },
+    {
+      "archivo": "e6871.dbf",
+      "bytes": 20793,
+      "sha256": "2a1d3e23ac00b55ad5ec4b16aa04d7ce151f71cfc8ea26d63028616895cb81c5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/COLONIAMASCIAS.zip!e6871.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a9994bf407",
+    "archivo": "santafe/ipec/2010/COLONIAMASCIAS.zip!e6871.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 58,
+    "registros_shx": 58,
+    "shape_type": 3,
+    "bbox": [
+      5499074.5,
+      6591721.0,
+      5499590.0,
+      6593430.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "DESDEI",
+      "HASTAD",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/COLONIAMASCIAS.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f5f48099a52f1d56a9c2136f0186c11b3c0d32581533fb41039f27d64e91447b"
+}

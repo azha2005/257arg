@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Santa_Fe_con_datos_aea03fa0c0",
+  "shp": "Santa_Fe_con_datos.shp",
+  "entidades": 3779,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Santa_Fe_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Santa_Fe_con_datos.shp",
+      "bytes": 3052632,
+      "sha256": "974c040a364092b09ff55553a53d25f31e6758dd9960e26ad975841de6e6c4ee"
+    },
+    {
+      "archivo": "Santa_Fe_con_datos.shx",
+      "bytes": 30332,
+      "sha256": "8ec4137a11e3b762055d71f5a44fb736b358a3527988a38717f27c9e0c72e50f"
+    },
+    {
+      "archivo": "Santa_Fe_con_datos.dbf",
+      "bytes": 1545900,
+      "sha256": "38f9362ef435236da7d8b7de8bc04eb23379c99b9da6538dedeb2fbc0066e978"
+    },
+    {
+      "archivo": "Santa_Fe_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Santa_Fe_con_datos.zip!Santa_Fe_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_82",
+    "archivo": "indec/2010/Codgeo_Santa_Fe_con_datos.zip!Santa_Fe_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Santa Fe",
+    "features": 3779,
+    "registros_shx": 3779,
+    "shape_type": 5,
+    "bbox": [
+      3786617.742243892,
+      6187156.311369438,
+      4205992.602057855,
+      6896244.506968543
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Santa_Fe_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 3779,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "4f5e91f56fd9725dfc90310336cd5a7b85a8e32a74fa6a30873445b62bace8a0"
+}

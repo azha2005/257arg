@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0347_0c03127478",
+  "shp": "E0347.shp",
+  "entidades": 486,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0347.dbf",
+      "bytes": 169738,
+      "sha256": "8b5d5cf54cbafdfaac73a782b89d601f783fe71beba10b7b84a700826c404097"
+    },
+    {
+      "archivo": "E0347.shp",
+      "bytes": 44196,
+      "sha256": "ae7c039ccc7934969335e85d999ca6f02897629e46b84119ee0298964754951d"
+    },
+    {
+      "archivo": "E0347.shx",
+      "bytes": 3988,
+      "sha256": "56c1fe46951d1030026b5f401e218258947063ed6b2fbe52f67d7f88455e65ec"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/chabasa3v.zip!E0347.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_63953fab8f",
+    "archivo": "santafe/ipec/2010/chabasa3v.zip!E0347.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 486,
+    "registros_shx": 486,
+    "shape_type": 3,
+    "bbox": [
+      5372444.0,
+      6320117.5,
+      5374391.0,
+      6322282.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/chabasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c372147ec0fc018c122d1ad5632e9b5451db18fd1595b105a753530b1bee9c3b"
+}

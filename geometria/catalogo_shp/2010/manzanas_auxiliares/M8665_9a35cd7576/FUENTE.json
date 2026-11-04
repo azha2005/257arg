@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M8665_9a35cd7576",
+  "shp": "M8665.shp",
+  "entidades": 394,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M8665.dbf",
+      "bytes": 78004,
+      "sha256": "a575c1645fe40a218ef33008832aa06add0cf99d4cada24f784c76391a70f508"
+    },
+    {
+      "archivo": "M8665.shp",
+      "bytes": 79812,
+      "sha256": "662b8c39614b2df545016ce7601ad5f2af4f54913b61f3dbdd36a94197e844dd"
+    },
+    {
+      "archivo": "M8665.shx",
+      "bytes": 3252,
+      "sha256": "b31ae15bd575734001b3f13cee0464ecbc506fb90929e5b9445baee68d9bf9e4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/pereza1h.zip!M8665.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c4a09b33c6",
+    "archivo": "santafe/ipec/2010/pereza1h.zip!M8665.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 394,
+    "registros_shx": 394,
+    "shape_type": 5,
+    "bbox": [
+      5425430.5,
+      6347495.0,
+      5431482.5,
+      6352923.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/pereza1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "81af0b568c234a45f98ee28e9636a28d86a9176080955cf86ba6880fe6599c78"
+}

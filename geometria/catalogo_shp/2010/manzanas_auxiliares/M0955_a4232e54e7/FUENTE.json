@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0955_a4232e54e7",
+  "shp": "M0955.shp",
+  "entidades": 81,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0955.dbf",
+      "bytes": 16343,
+      "sha256": "2b5dfb69235fa934a3bbbb50b349340095eee03aaad1eb669e7d9ffac09b3a95"
+    },
+    {
+      "archivo": "M0955.shp",
+      "bytes": 12012,
+      "sha256": "071b13a384a26019f47b51d6faf7005496a11e1df5b0bec18ea690d30bc4c0c4"
+    },
+    {
+      "archivo": "M0955.shx",
+      "bytes": 748,
+      "sha256": "9b759fed8dc8a43f0315a45f61511c8054da972a842ac3bcc9388e6aee0375f3"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/FortinOlmosA3H.zip!M0955.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6c30c2abb2",
+    "archivo": "santafe/ipec/2010/FortinOlmosA3H.zip!M0955.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 81,
+    "registros_shx": 81,
+    "shape_type": 5,
+    "bbox": [
+      5459010.0,
+      6786074.5,
+      5460807.5,
+      6787426.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/FortinOlmosA3H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "68422b3f40d6616f99f7711e993ab0c48a55a93c33ec2eb69049b3d77ea8ab90"
+}

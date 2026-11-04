@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R1152_7a0f5f4576",
+  "shp": "R1152.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R1152.dbf",
+      "bytes": 686,
+      "sha256": "c9a40b1c4771d5787bd9d6815befece7331939f39a579d9cb44ddd925e47be5e"
+    },
+    {
+      "archivo": "R1152.shp",
+      "bytes": 1004,
+      "sha256": "9a2805bda277ed1ed644f3dc8d75842041f3bbec72b969d27274eb22e132224b"
+    },
+    {
+      "archivo": "R1152.shx",
+      "bytes": 108,
+      "sha256": "b452493284acf42fd653177503949018c7fab57b31f296ec493cdc7dec871a73"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gregoriaperezdedenisa3h.zip!R1152.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_a0a1945f54",
+    "archivo": "santafe/ipec/2010/gregoriaperezdedenisa3h.zip!R1152.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5349182.0,
+      6876654.5,
+      5350751.5,
+      6878117.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gregoriaperezdedenisa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9aafcd5293359aea09eddec93681bbf697c19abc360699f3d3850cbd03b7f4ad"
+}

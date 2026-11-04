@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4159_02d150c7fb",
+  "shp": "M4159.shp",
+  "entidades": 43,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4159.dbf",
+      "bytes": 8857,
+      "sha256": "2be97f2d9e872090abeb4777e24563199118045e20fda6a065f48baa46e4ba32"
+    },
+    {
+      "archivo": "M4159.shp",
+      "bytes": 6588,
+      "sha256": "d202c4e39e37c36d1d868fa8a40370e98f7fd5098858d0d7248f89d3cb335daf"
+    },
+    {
+      "archivo": "M4159.shx",
+      "bytes": 444,
+      "sha256": "24ffb4f491d95d3beac9bab07dc13ab104872592e9c10582eb0915abf956be8f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniamargaritaa3h.zip!M4159.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7a29c66f3f",
+    "archivo": "santafe/ipec/2010/coloniamargaritaa3h.zip!M4159.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 43,
+    "registros_shx": 43,
+    "shape_type": 5,
+    "bbox": [
+      5343421.0,
+      6493266.0,
+      5344381.0,
+      6494318.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniamargaritaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "825d4e245ba6304899483fc6a1b2e64deccf98021d8a6bdf349e3ad1e20bceab"
+}

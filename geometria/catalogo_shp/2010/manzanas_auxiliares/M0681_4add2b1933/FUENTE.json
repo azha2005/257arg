@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0681_4add2b1933",
+  "shp": "M0681.shp",
+  "entidades": 188,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0681.dbf",
+      "bytes": 37422,
+      "sha256": "1cf23e5a302af69412b37b92d7c42c2f0e36b80d12fe6f680af85c6c627ab2f3"
+    },
+    {
+      "archivo": "M0681.shp",
+      "bytes": 27844,
+      "sha256": "baa0f24cfa33d0c8fbf1deaf400abf0c515d9629a593f2d3322dc94ad60fc4d5"
+    },
+    {
+      "archivo": "M0681.shx",
+      "bytes": 1604,
+      "sha256": "b0d4190f9f6918f51e5826cfc69271e6eb2382302320b5fb8279bca6f44d427e"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Peyranoa3v.zip!M0681.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_58c6e35776",
+    "archivo": "santafe/ipec/2010/Peyranoa3v.zip!M0681.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 188,
+    "registros_shx": 188,
+    "shape_type": 5,
+    "bbox": [
+      5424461.0,
+      6287975.0,
+      5426412.5,
+      6289960.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Peyranoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b3c679c13df3d2dd1746971df59ee25f59b0f1d0cf6c697b86533e0f6ea556f8"
+}

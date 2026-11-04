@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0806_45d0bb5715",
+  "shp": "E0806.shp",
+  "entidades": 335,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0806.dbf",
+      "bytes": 117190,
+      "sha256": "17a7c400d50163dc3b7fba218c56fd94918139e489bcc98d41c2a838b87a9193"
+    },
+    {
+      "archivo": "E0806.shp",
+      "bytes": 30924,
+      "sha256": "bdfc220626ac33ff798b7bbb7e5be2bc3dacdeb834abfcdf71f49877e6908cb4"
+    },
+    {
+      "archivo": "E0806.shx",
+      "bytes": 2780,
+      "sha256": "4076e2b5960d71262a7b5a4c910ac3379b38b9161918ae898dfc32163752c4e4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/gabotoa2V.zip!E0806.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8dbb80c207",
+    "archivo": "santafe/ipec/2010/gabotoa2V.zip!E0806.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 335,
+    "registros_shx": 335,
+    "shape_type": 3,
+    "bbox": [
+      5422240.0,
+      6410305.0,
+      5424347.5,
+      6412730.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/gabotoa2V.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ee9006791cdd98b5dc3b53ca1853f687ae6d153b89215f6b5ca980b57fab94a7"
+}

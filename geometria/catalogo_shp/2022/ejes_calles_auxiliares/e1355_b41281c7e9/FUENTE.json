@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1355_b41281c7e9",
+  "shp": "e1355.shp",
+  "entidades": 113,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1355.dbf",
+      "bytes": 34284,
+      "sha256": "8cfd1236ba86846b7d4bcbb5c15f4a495b983779b8d0d876ebaf82ca0ace7775"
+    },
+    {
+      "archivo": "e1355.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1355.shp",
+      "bytes": 10108,
+      "sha256": "c2b682472566d1ff6ceb615986158eb8167530842b8bcaaf0ac9fb86e75440b0"
+    },
+    {
+      "archivo": "e1355.shx",
+      "bytes": 1004,
+      "sha256": "af64aba4721f0451c513f7f71d6dfbdf7e098ccc17027bcc51e054fedb5e65bc"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VILLAAMELIA.zip!e1355.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_7081dd32c9",
+    "archivo": "santafe/ipec/2022/VILLAAMELIA.zip!e1355.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 113,
+    "registros_shx": 113,
+    "shape_type": 3,
+    "bbox": [
+      5437257.0,
+      6328824.5,
+      5438412.5,
+      6330059.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VILLAAMELIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "fdb9e0d34dd88186ab0f224719ea2232fbde97eb8d9755f73cca6c090eee8c68"
+}

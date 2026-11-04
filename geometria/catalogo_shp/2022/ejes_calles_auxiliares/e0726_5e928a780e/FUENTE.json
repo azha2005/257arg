@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0726_5e928a780e",
+  "shp": "e0726.shp",
+  "entidades": 237,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0726.dbf",
+      "bytes": 71236,
+      "sha256": "9d00b4ae01cb52a5a6f3606d0813dab802d190afeef1743ea8768f48cc82c9fa"
+    },
+    {
+      "archivo": "e0726.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0726.shp",
+      "bytes": 21212,
+      "sha256": "1005d76f2465ec8e020775752aecd02b84eb41145f52a17f93db0c75a4d7eb1d"
+    },
+    {
+      "archivo": "e0726.shx",
+      "bytes": 1996,
+      "sha256": "5480f46e08590f864801a3fa1694a0620fd416647f8f6c34eb7cd3f0bd55df81"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LAGALLARETA.zip!e0726.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_ccdbaa7648",
+    "archivo": "santafe/ipec/2022/LAGALLARETA.zip!e0726.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 237,
+    "registros_shx": 237,
+    "shape_type": 3,
+    "bbox": [
+      5462005.5,
+      6727286.5,
+      5464481.5,
+      6728912.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LAGALLARETA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "5f763b4393e929a85687e14a3ec27e38918eca5e8d371661178f90f2085db9a9"
+}

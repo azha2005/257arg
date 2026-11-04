@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0637_e03902b9c4",
+  "shp": "E0637.shp",
+  "entidades": 185,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0637.dbf",
+      "bytes": 64990,
+      "sha256": "499cb702a3fa810d3c10178a5a6b3309c5588936dd7947656fcce5ba941d088b"
+    },
+    {
+      "archivo": "E0637.shp",
+      "bytes": 16556,
+      "sha256": "f3303854d2fa2c8235594e1bcc18fad5fce95da39e973dc5296ffc0e437ff7d1"
+    },
+    {
+      "archivo": "E0637.shx",
+      "bytes": 1580,
+      "sha256": "37f9be5b7516ad867ff5128faa0ea0ee96ce87bfaff0df155a6b44254ec0bbdd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/choveta3h.zip!E0637.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_8fcae2ab30",
+    "archivo": "santafe/ipec/2010/choveta3h.zip!E0637.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 185,
+    "registros_shx": 185,
+    "shape_type": 3,
+    "bbox": [
+      5349923.5,
+      6280679.5,
+      5351631.5,
+      6282268.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/choveta3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2350962749ca910414562591157a85ea9fbecd7ab79830f4db9f4083077c8608"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6862_f98452522d",
+  "shp": "M6862.shp",
+  "entidades": 9,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6862.dbf",
+      "bytes": 2159,
+      "sha256": "5b3bc4db2913cfa25198327f29a68b896c83147ab1145afaed98e1bec4d79b42"
+    },
+    {
+      "archivo": "M6862.shp",
+      "bytes": 4476,
+      "sha256": "cca3aeac1f8492854fdfb6c4c10a99ea597b8f7c83160a13e068129b2295c975"
+    },
+    {
+      "archivo": "M6862.shx",
+      "bytes": 172,
+      "sha256": "d127172cf5ac5532c8417df939870ef5fd0f4fa1ba6f04e262cecc0e283f7630"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/barrioelpacaycomipinia3v.zip!M6862.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2f7273f2ab",
+    "archivo": "santafe/ipec/2010/barrioelpacaycomipinia3v.zip!M6862.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 9,
+    "registros_shx": 9,
+    "shape_type": 5,
+    "bbox": [
+      5412062.5,
+      6444884.5,
+      5412708.5,
+      6447231.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/barrioelpacaycomipinia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "72f8eafa870d9bffce091b45b8bfaf58cca89a4c70eabab5c9c83bd7396adb21"
+}

@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e6874_8b2595ca5e",
+  "shp": "e6874.shp",
+  "entidades": 38,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6874.shx",
+      "bytes": 404,
+      "sha256": "b9f5775760ba3d24dfd8ff8bbdc9b25d9911869ec828f732cda95299e701917e"
+    },
+    {
+      "archivo": "e6874.shp",
+      "bytes": 3700,
+      "sha256": "ad9b9fe98fa40c8d94fb32e848e9c7316008ff3a05217c6ff4a39d775e3a8ed7"
+    },
+    {
+      "archivo": "e6874.sbx",
+      "bytes": 188,
+      "sha256": "89e5080eaf441c294220d6c27ec124b45daae5f9aaafcf8b551a92e827e374ef"
+    },
+    {
+      "archivo": "e6874.sbn",
+      "bytes": 708,
+      "sha256": "39ebb7d9d37982f195c16aebabcce7447caa573ed7c44922fa685b64ce572d92"
+    },
+    {
+      "archivo": "e6874.dbf",
+      "bytes": 13833,
+      "sha256": "f77285574f91758f67975a927ec4687dc85896214667e6f1f1221bda0baead3f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/VILLAADELA.zip!e6874.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ce618460df",
+    "archivo": "santafe/ipec/2010/VILLAADELA.zip!e6874.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 38,
+    "registros_shx": 38,
+    "shape_type": 3,
+    "bbox": [
+      5557347.0,
+      6848627.0,
+      5559499.5,
+      6849320.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/VILLAADELA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5aa9866ee5aa6cc23a887a1725eee418cb91783cc05ec6714e9fd0be60d364ff"
+}

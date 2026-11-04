@@ -1,0 +1,80 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m1463_e8b72a102a",
+  "shp": "m1463.shp",
+  "entidades": 38,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m1463.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "m1463.dbf",
+      "bytes": 7872,
+      "sha256": "a8af2fb75f4df11d5e43ac27d38831be8ae23eb035728567075b9cb76b1caa70"
+    },
+    {
+      "archivo": "m1463.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m1463.qmd",
+      "bytes": 651,
+      "sha256": "285133d778e3ba9cc03d068bc653b90e4f8ffdbe0449e1212cd3594f69c3c806"
+    },
+    {
+      "archivo": "m1463.shp",
+      "bytes": 6308,
+      "sha256": "6b3b46110067b075918f0900bbd5bdc583f2f4bfc6e94e8b8a0ec6c60fe2d190"
+    },
+    {
+      "archivo": "m1463.shx",
+      "bytes": 404,
+      "sha256": "96893acac2ce31c62ed2eac3cad989d6533feee7a871ec70f26ec665861a0d4e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GARABATO.zip!m1463.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_d6f110433a",
+    "archivo": "santafe/ipec/2022/GARABATO.zip!m1463.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 38,
+    "registros_shx": 38,
+    "shape_type": 5,
+    "bbox": [
+      5485760.5,
+      6797162.5,
+      5486970.5,
+      6798466.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GARABATO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]",
+    "encoding_declarado": "UTF-8"
+  },
+  "firma_componentes": "ef505fc26025c5339c7e6bae3bac3a3b976a6f962736431b41ecd1b638129b24"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0880_9c33f4c9cc",
+  "shp": "E0880.shp",
+  "entidades": 226,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0880.dbf",
+      "bytes": 79258,
+      "sha256": "7865c529af0500a04647cecf83c619c38c05382d28984ebb3958df2812a6b714"
+    },
+    {
+      "archivo": "E0880.shp",
+      "bytes": 20036,
+      "sha256": "0d0ce6403660cfc8051348fa63127ac3f104a7e1903f6ece84c7d69608143996"
+    },
+    {
+      "archivo": "E0880.shx",
+      "bytes": 1908,
+      "sha256": "63461d84f20716d112d15f9f749829f5df9876baa57a761654f355fa5ba83782"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/villatrinidada2h.zip!E0880.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_601c71abe0",
+    "archivo": "santafe/ipec/2010/villatrinidada2h.zip!E0880.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 226,
+    "registros_shx": 226,
+    "shape_type": 3,
+    "bbox": [
+      5318545.5,
+      6655552.5,
+      5320372.0,
+      6657560.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/villatrinidada2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "4d11b7569312db88dd90679d18090c8e6e8dfbda59882e073e5b263d47b46944"
+}

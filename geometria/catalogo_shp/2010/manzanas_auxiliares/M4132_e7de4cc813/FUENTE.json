@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4132_e7de4cc813",
+  "shp": "M4132.shp",
+  "entidades": 31,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4132.dbf",
+      "bytes": 6493,
+      "sha256": "9cbe606c8b5ca31383e91b84a7908b242972119d8e2690c2d13249eb5076f6da"
+    },
+    {
+      "archivo": "M4132.shp",
+      "bytes": 4956,
+      "sha256": "60929878e14f35131fc2c470e8ba2b773335000b2a7f9685b2d789d8f9920627"
+    },
+    {
+      "archivo": "M4132.shx",
+      "bytes": 348,
+      "sha256": "732a481f08665b9f603e313e7303aff45724e1e842ea8caf6c35b5b021dc70e2"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/chapuya3h.zip!M4132.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_400d8f8841",
+    "archivo": "santafe/ipec/2010/chapuya3h.zip!M4132.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 31,
+    "registros_shx": 31,
+    "shape_type": 5,
+    "bbox": [
+      5337874.0,
+      6258415.5,
+      5338933.5,
+      6259841.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/chapuya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f5133d9b40bad9e94abe05b2e3014dbcf6714877f027f36a9ed4b84f8d4e80da"
+}

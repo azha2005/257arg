@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1152_81b5327650",
+  "shp": "e1152.shp",
+  "entidades": 201,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1152.dbf",
+      "bytes": 60508,
+      "sha256": "bb4ea1f7d37334ff430c9c693e42aba5fb50d6d0fd5af0f24f850f63a06d2034"
+    },
+    {
+      "archivo": "e1152.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1152.shp",
+      "bytes": 17996,
+      "sha256": "3b157492fd016e27df29d94048e57779d30e994a09e78cb248d68d20e70bfea0"
+    },
+    {
+      "archivo": "e1152.shx",
+      "bytes": 1708,
+      "sha256": "a30c50451a8f0fda373b924e51745cd2b4a10b1c6b5fe55eed1074d63384a1c3"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/GREGORIAPEREZDEDENIS.zip!e1152.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_009faacd0a",
+    "archivo": "santafe/ipec/2022/GREGORIAPEREZDEDENIS.zip!e1152.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 201,
+    "registros_shx": 201,
+    "shape_type": 3,
+    "bbox": [
+      5349180.5,
+      6876658.0,
+      5350748.0,
+      6878117.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/GREGORIAPEREZDEDENIS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "24b30e04377f0954090e6464588660241cca1b4226af62c2a1827d7042b36164"
+}

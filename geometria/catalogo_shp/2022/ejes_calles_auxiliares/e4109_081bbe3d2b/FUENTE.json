@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4109_081bbe3d2b",
+  "shp": "e4109.shp",
+  "entidades": 210,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4109.dbf",
+      "bytes": 63190,
+      "sha256": "a5f23e77ef4d7f472072d94fc768f6af91a81fdc4b27a08ad45e9a4f855c7ba9"
+    },
+    {
+      "archivo": "e4109.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4109.shp",
+      "bytes": 18676,
+      "sha256": "75bb6a6e3555a5a520cd7e0ef62e4f20e78d81c1dd4cb5a761776145417f688e"
+    },
+    {
+      "archivo": "e4109.shx",
+      "bytes": 1780,
+      "sha256": "ab5a79a851519861676bf77e1eb135efbb51204d80936bf19d2f1c916e9a084d"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANMARTINNORTE.zip!e4109.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_e518f9d866",
+    "archivo": "santafe/ipec/2022/SANMARTINNORTE.zip!e4109.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 210,
+    "registros_shx": 210,
+    "shape_type": 3,
+    "bbox": [
+      5469959.0,
+      6642829.0,
+      5471488.5,
+      6644064.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANMARTINNORTE.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "4702f6a23463fe7c5d64cee7ddf1a592d3afeca3810621f14c0e14d656b2abe8"
+}

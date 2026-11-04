@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0450_d1ebc5be79",
+  "shp": "M0450.shp",
+  "entidades": 146,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0450.dbf",
+      "bytes": 29148,
+      "sha256": "8739e85cb2a4cfaef322727d657fb8bd3df85fc3468ea78530e20c7431ac7dfb"
+    },
+    {
+      "archivo": "M0450.shp",
+      "bytes": 20660,
+      "sha256": "e140730ea0567d0538f5eb03cebbdfa836db123222f363d666a71ef05eaa7336"
+    },
+    {
+      "archivo": "M0450.shx",
+      "bytes": 1268,
+      "sha256": "f9560755307dfce20e05d7821fcff70309af8ccff08eaeec4ec4b05eaab5f1e5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/teodelinaa2h.zip!M0450.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_13eb846eab",
+    "archivo": "santafe/ipec/2010/teodelinaa2h.zip!M0450.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 146,
+    "registros_shx": 146,
+    "shape_type": 5,
+    "bbox": [
+      5357757.5,
+      6215285.5,
+      5360175.5,
+      6217527.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/teodelinaa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "999ba3f0ddf1a9ab82ab582ddc9c236de8a5cf83ff62518c9116e76507070e81"
+}

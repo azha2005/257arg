@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e1373_277b8538cc",
+  "shp": "e1373.shp",
+  "entidades": 210,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e1373.dbf",
+      "bytes": 63190,
+      "sha256": "596053325827fbe65d9e713a32cce8a6ba97b665fd7fb212a3097d2b1b4c9757"
+    },
+    {
+      "archivo": "e1373.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e1373.shp",
+      "bytes": 19556,
+      "sha256": "1ddfea7d9e7a40c80a0bbd494bb581fa865add05f12f85d9b30560a2f42864f2"
+    },
+    {
+      "archivo": "e1373.shx",
+      "bytes": 1780,
+      "sha256": "f917cf05b8bfc8e28cf98431201aa3c339ef4af0ae99fbe9ec2e75e5e469ff6e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LANTERI.zip!e1373.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_6a8973d68b",
+    "archivo": "santafe/ipec/2022/LANTERI.zip!e1373.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 210,
+    "registros_shx": 210,
+    "shape_type": 3,
+    "bbox": [
+      5534690.5,
+      6809713.5,
+      5536949.5,
+      6811304.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LANTERI.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "7c5fdd40b526f739617c903bf3b5e418688049e54bd9c8cbc8c91c78561f24df"
+}

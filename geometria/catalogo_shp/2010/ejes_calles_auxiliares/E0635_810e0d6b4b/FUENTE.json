@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0635_810e0d6b4b",
+  "shp": "E0635.shp",
+  "entidades": 540,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0635.dbf",
+      "bytes": 188530,
+      "sha256": "9c6ac26ef48156abdae0d49685481fd9b9d16c6397ed6befc1cbb41bce0b9919"
+    },
+    {
+      "archivo": "E0635.shp",
+      "bytes": 50292,
+      "sha256": "6af3904e5081dcffb3d97e65079da005194736d87581ec32347644053efce9aa"
+    },
+    {
+      "archivo": "E0635.shx",
+      "bytes": 4420,
+      "sha256": "a5fcba3de649314a45c8fcc9c9d9c56a6a190978d9259194a0a83ec2bc0288aa"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/oliverosa2v.zip!E0635.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_aa1872cd3e",
+    "archivo": "santafe/ipec/2010/oliverosa2v.zip!E0635.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 540,
+    "registros_shx": 540,
+    "shape_type": 3,
+    "bbox": [
+      5418763.0,
+      6393268.5,
+      5421415.0,
+      6398140.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/oliverosa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "b399cb94acd32b900e08c74f6a733d022168b9a9e1226ae4f6b3105fdd2b2435"
+}

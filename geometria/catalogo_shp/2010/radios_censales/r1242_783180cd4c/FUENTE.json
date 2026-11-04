@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r1242_783180cd4c",
+  "shp": "r1242.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r1242.dbf",
+      "bytes": 685,
+      "sha256": "fb1c021b5f9c184d9c9bd143dbecdb65915d95206d5b39a130efd6039a6a5c05"
+    },
+    {
+      "archivo": "r1242.sbn",
+      "bytes": 132,
+      "sha256": "0b15a7a72c7c5e7bb139e667a52a3874a445b7f2cc211903124bbffaa2dc7bb8"
+    },
+    {
+      "archivo": "r1242.sbx",
+      "bytes": 116,
+      "sha256": "1c3bd09dde4a81f75d33c4ef3f50e2105a987cd638672b3d70d83926c5252496"
+    },
+    {
+      "archivo": "r1242.shp",
+      "bytes": 748,
+      "sha256": "c1600f6f74351d44464cf47f58f060c3348381109f8d9d8cf9c55a8996647acd"
+    },
+    {
+      "archivo": "r1242.shx",
+      "bytes": 108,
+      "sha256": "6161a54852b12e6728a4c7fae2952cd9cfa2f44b711b3a7b344096344c48e462"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/IRIGOYEN.zip!r1242.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_bf588f527c",
+    "archivo": "santafe/ipec/2010/IRIGOYEN.zip!r1242.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5394605.5,
+      6441440.5,
+      5396098.0,
+      6442736.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RADIO2010",
+      "FRAC2001",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/IRIGOYEN.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "8309a00b01ef21da41ebfabb40c39396be0d2be09ff17819e6c1f9bdd358db8e"
+}

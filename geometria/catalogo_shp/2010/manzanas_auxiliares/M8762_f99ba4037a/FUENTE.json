@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M8762_f99ba4037a",
+  "shp": "M8762.shp",
+  "entidades": 473,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M8762.dbf",
+      "bytes": 93567,
+      "sha256": "f15a024bafdae33961513b5851a35e4f9562a0bef70a7f2e91865801359afa4a"
+    },
+    {
+      "archivo": "M8762.shp",
+      "bytes": 88780,
+      "sha256": "a6f69318623937e927e8d767ae78aac4ba5c2caa8b5ae9e9680300816772e0d1"
+    },
+    {
+      "archivo": "M8762.shx",
+      "bytes": 3884,
+      "sha256": "5bbf84c237c26858da481e450adb826bbb90633603073299f56f473091091afc"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/capitanbermudeza1v.zip!M8762.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_dba9c3e470",
+    "archivo": "santafe/ipec/2010/capitanbermudeza1v.zip!M8762.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 473,
+    "registros_shx": 473,
+    "shape_type": 5,
+    "bbox": [
+      5431512.0,
+      6367127.5,
+      5434520.0,
+      6371240.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/capitanbermudeza1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "255b259ce75cbe9d9a83a6033ee6df7bb0b4378fa824a56debdc9152b4391970"
+}

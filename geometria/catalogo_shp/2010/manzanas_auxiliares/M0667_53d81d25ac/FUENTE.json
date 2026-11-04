@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0667_53d81d25ac",
+  "shp": "M0667.shp",
+  "entidades": 167,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0667.dbf",
+      "bytes": 33285,
+      "sha256": "45919a9c1976462fb9eefe9c45a70011e50f06b54f87b09d4a3ca06d97737901"
+    },
+    {
+      "archivo": "M0667.shp",
+      "bytes": 33036,
+      "sha256": "57f9e2e1002978dcac93a930c0b8f0a87db1f8c8c6d3cf75a0beedb6d5125404"
+    },
+    {
+      "archivo": "M0667.shx",
+      "bytes": 1436,
+      "sha256": "c26c68876ba5bfba3b06b5ef13dde5479081473bbbd198b18fbafc3ea2a74128"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/FLORENCIAA2H.zip!M0667.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_9f08e4c17c",
+    "archivo": "santafe/ipec/2010/FLORENCIAA2H.zip!M0667.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 167,
+    "registros_shx": 167,
+    "shape_type": 5,
+    "bbox": [
+      5573180.5,
+      6897611.0,
+      5577627.5,
+      6899799.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/FLORENCIAA2H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "469e6134080a6458b7079181eb244e3e16597f6e14ff592469e1bfa93a2cf502"
+}

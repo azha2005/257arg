@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E9043_9776d75499",
+  "shp": "E9043.shp",
+  "entidades": 68,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E9043.dbf",
+      "bytes": 24274,
+      "sha256": "b37f6cd1bb62d2a030b6c20df6fcfd363f7273531c947918e04ee68e3007ae67"
+    },
+    {
+      "archivo": "E9043.shp",
+      "bytes": 6116,
+      "sha256": "66da5aeffd0d772e704a2f54f7e614a90235287c5474202e6acb2eadc4bc31ae"
+    },
+    {
+      "archivo": "E9043.shx",
+      "bytes": 644,
+      "sha256": "360e7d5e7086aecc93f28e1b6c74c672ec8aad589c82d4d7e8636e4d27dfa85f"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/boacapulcoyveracruza3h.zip!E9043.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ad251483ad",
+    "archivo": "santafe/ipec/2010/boacapulcoyveracruza3h.zip!E9043.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 68,
+    "registros_shx": 68,
+    "shape_type": 3,
+    "bbox": [
+      5303878.0,
+      6522348.5,
+      5304552.5,
+      6523334.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/boacapulcoyveracruza3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "f56632b56e42a86082602fe76f98579703f9c4ff6e7a4060552a11d5e93b23cd"
+}

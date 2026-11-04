@@ -1,0 +1,79 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/r7508_9310a2471f",
+  "shp": "r7508.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "r7508.shx",
+      "bytes": 108,
+      "sha256": "ca9e65189b0fc2a2c076c305d797719c1522f99f8cb9162a3132eb89c654469c"
+    },
+    {
+      "archivo": "r7508.shp",
+      "bytes": 316,
+      "sha256": "ac97e96bf99371d0689effb5da3c17f9592517853f61f2259cea51edf7a9ddb6"
+    },
+    {
+      "archivo": "r7508.sbx",
+      "bytes": 116,
+      "sha256": "b7b7cb7d7a4b3aeb12aebc6484f03f1e3922a3aab824303f0ddead8db566d235"
+    },
+    {
+      "archivo": "r7508.sbn",
+      "bytes": 132,
+      "sha256": "9dd374e3c06465a813700d69092ebe4a46aee2d30a50004c643cfc80ae2d0574"
+    },
+    {
+      "archivo": "r7508.dbf",
+      "bytes": 685,
+      "sha256": "24f04bb5845feb2ea16c6c2672aa7e0a27fe69040ab7aac30bc47f7e23e84aa9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/SANTAFELICIA.zip!r7508.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5c39d079fb",
+    "archivo": "santafe/ipec/2010/SANTAFELICIA.zip!r7508.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5475837.0,
+      6751810.5,
+      5476565.0,
+      6752761.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "FRAC2010",
+      "RAD2010",
+      "FRAC2101",
+      "RAD2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/SANTAFELICIA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "072a2c41697d664abc30ebb92023a1ae98937a633d56029a5050a512f4f55aae"
+}

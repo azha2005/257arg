@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6831_b188d4de4b",
+  "shp": "E6831.shp",
+  "entidades": 111,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6831.dbf",
+      "bytes": 39238,
+      "sha256": "375172bfb7507203caa5cdac5a12dc7f7bd143d3943143a2ab1910a4cc8934f4"
+    },
+    {
+      "archivo": "E6831.shp",
+      "bytes": 10476,
+      "sha256": "883160074e440bc8a366f0de6ed1e8005c62f94bd89135f827e639dc82cefd17"
+    },
+    {
+      "archivo": "E6831.shx",
+      "bytes": 988,
+      "sha256": "0d4399fe0ec3a4ead560c1900bcbcbbf6a94d190b55ac53ef92fce3aa31f8df5"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/balnearioMonjea3v.zip!E6831.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_90bc73fd98",
+    "archivo": "santafe/ipec/2010/balnearioMonjea3v.zip!E6831.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 111,
+    "registros_shx": 111,
+    "shape_type": 3,
+    "bbox": [
+      5416932.0,
+      6422297.5,
+      5418017.5,
+      6423436.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/balnearioMonjea3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "15f196655f50d41930d7df86163ac592e33571f5abeec2e508b3b67f5e0f168a"
+}

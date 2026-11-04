@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6828_9d8716922a",
+  "shp": "E6828.shp",
+  "entidades": 5,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6828.dbf",
+      "bytes": 2350,
+      "sha256": "93c0ae84d929161e3019ea060b424ddfe810e491c71a1ebb6ddc2e990a4225de"
+    },
+    {
+      "archivo": "E6828.shp",
+      "bytes": 556,
+      "sha256": "847c0d9e249cd63c07b7d5d3616f53b5ca040df10242053f84c2ac11662bfae8"
+    },
+    {
+      "archivo": "E6828.shx",
+      "bytes": 140,
+      "sha256": "e8cb1aad42df11f39de83ff6cb9838b90038880d12c143df523804fd72d24fbd"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniamedicia3v.zip!E6828.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_998f51ab54",
+    "archivo": "santafe/ipec/2010/coloniamedicia3v.zip!E6828.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 5,
+    "registros_shx": 5,
+    "shape_type": 3,
+    "bbox": [
+      5370669.0,
+      6392798.5,
+      5370927.0,
+      6393478.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniamedicia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "11ce57672206e01997a1e20be5459f0928f8e62300e2b2415827de035fc9956a"
+}

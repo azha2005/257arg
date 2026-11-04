@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/informacion_censal_por_radio_201_b454cba4c7",
+  "shp": "informacion_censal_por_radio_2010_wgs84.shp",
+  "entidades": 3554,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "informacion_censal_por_radio_2010_wgs84.shp.xml",
+      "bytes": 131826,
+      "sha256": "5ae90cc3c7faf1b1efee0b3686d270e4629d7ce018bc860c183a8b6128487ec1"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2010_wgs84.shx",
+      "bytes": 28532,
+      "sha256": "6571a78d649785889333d2648d493ad9c99f1ea2ca44ef62219bd6ac5c1d1ca1"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2010_wgs84.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2010_wgs84.dbf",
+      "bytes": 739714,
+      "sha256": "f0fd8a6bcefb29ecaac0e627ed36d22b04f3bd80560f6c247f5dedf7488d5ab0"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2010_wgs84.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "archivo": "informacion_censal_por_radio_2010_wgs84.shp",
+      "bytes": 1171232,
+      "sha256": "c81f60695aa17b215fad5dc4d46ca612e5c68fd84cace3afd78931bb5f6fb8a3"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/caba/radios_2010.zip!informacion_censal_por_radio_2010_wgs84.shp",
+  "metadata_original": {
+    "id_fuente": "caba_radio_2010_zip",
+    "archivo": "caba/radios_2010.zip!informacion_censal_por_radio_2010_wgs84.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "CABA",
+    "features": 3554,
+    "registros_shx": 3554,
+    "shape_type": 5,
+    "bbox": [
+      -58.53151875286291,
+      -34.70529308400339,
+      -58.33514219769619,
+      -34.527547524479075
+    ],
+    "campos": [
+      "ID",
+      "CO_FRAC_RA",
+      "COMUNA",
+      "FRACCION",
+      "RADIO",
+      "TOTAL_POB",
+      "T_VARON",
+      "T_MUJER",
+      "T_VIVIENDA",
+      "V_PARTICUL",
+      "V_COLECTIV",
+      "T_HOGAR",
+      "H_CON_NBI",
+      "H_SIN_NBI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://data.buenosaires.gob.ar/dataset/informacion-censal-por-radio",
+    "nota": "Descarga enlazada directamente por catálogo oficial; geometría censal, no circuito electoral.",
+    "licencia": "CC BY 2.5 AR",
+    "url_descarga": "https://data.buenosaires.gob.ar/dataset/informacion-censal-por-radio/resource/juqdkmgo-1214-resource/download",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+    "encoding_declarado": "UTF-8"
+  },
+  "firma_componentes": "f63e99ab52ed78e8262d128fb52fd2cde7d5aed03d7082e6bf019d769651da5f"
+}

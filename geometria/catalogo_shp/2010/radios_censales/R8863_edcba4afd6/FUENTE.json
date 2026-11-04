@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R8863_edcba4afd6",
+  "shp": "R8863.shp",
+  "entidades": 31,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R8863.dbf",
+      "bytes": 6806,
+      "sha256": "b0c54a35c0a151511eff2afa27abddd84252e5b3b30e9620ab13d7d7d39c60da"
+    },
+    {
+      "archivo": "R8863.shp",
+      "bytes": 22172,
+      "sha256": "85b46987e2957bbc45af1d17bf87539da23a30b0623e903354e754f4d66242d3"
+    },
+    {
+      "archivo": "R8863.shx",
+      "bytes": 348,
+      "sha256": "ac8af038840b4b064b75318e0be3c38c134575c8794768841b667bd37472d157"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/granaderobaigorriaa1h.zip!R8863.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_ec6effdef4",
+    "archivo": "santafe/ipec/2010/granaderobaigorriaa1h.zip!R8863.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 31,
+    "registros_shx": 31,
+    "shape_type": 5,
+    "bbox": [
+      5430808.0,
+      6363190.5,
+      5435577.5,
+      6367233.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/granaderobaigorriaa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fcd5a3dbbb37e82f5be5ff4be904c71f3ec3912db47a497a60dae261998816e2"
+}

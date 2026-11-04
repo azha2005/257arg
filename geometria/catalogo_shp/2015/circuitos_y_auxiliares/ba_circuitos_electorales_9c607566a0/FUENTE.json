@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2015",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "circuitos_y_auxiliares",
+  "carpeta": "2015/circuitos_y_auxiliares/ba_circuitos_electorales_9c607566a0",
+  "shp": "ba_circuitos_electorales.shp",
+  "entidades": 167,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "ba_circuitos_electorales.dbf",
+      "bytes": 54525,
+      "sha256": "3043144a18a0c57de445be5043ae76d39352b7f642616ff8ac304229044afebd"
+    },
+    {
+      "archivo": "ba_circuitos_electorales.prj",
+      "bytes": 143,
+      "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb"
+    },
+    {
+      "archivo": "ba_circuitos_electorales.shp",
+      "bytes": 225840,
+      "sha256": "34a6932fd66ca4f9700740f7409ad9fba6be497f5e293313484a090236879021"
+    },
+    {
+      "archivo": "ba_circuitos_electorales.shx",
+      "bytes": 1436,
+      "sha256": "d9e22858f048a18e0bd647cddd31edcd81c00d39afae740ec8e88ae25c678865"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\circuitos_busqueda/nyu_caba_2015/nyu_2451_34197.zip!ba_circuitos_electorales/ba_circuitos_electorales.shp",
+  "metadata_original": {
+    "archivo": "nyu_caba_2015/nyu_2451_34197.zip!ba_circuitos_electorales/ba_circuitos_electorales.shp",
+    "formato": "SHP",
+    "features": 167,
+    "shapes": 167,
+    "bbox": [
+      -58.53151877213335,
+      -34.705293148925826,
+      -58.3351430047738,
+      -34.52754107835468
+    ],
+    "campos": [
+      "id",
+      "circuito_n",
+      "comuna",
+      "barrio",
+      "total",
+      "masculino",
+      "femenino",
+      "perimetro",
+      "area",
+      "cartodb_id",
+      "created_at",
+      "updated_at"
+    ],
+    "sha256": "34a6932fd66ca4f9700740f7409ad9fba6be497f5e293313484a090236879021",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]]",
+    "url": "https://archive.nyu.edu/retrieve/73708/nyu_2451_34197.zip",
+    "fuente": "https://geodata.lib.utexas.edu/catalog/nyu-2451-34197",
+    "corte_declarado": "2015",
+    "nota": "Corte declarado por catálogo universitario"
+  },
+  "firma_componentes": "56f7b83e28861a06f0638a843d08caa1cf55d26dba396b20bb949e877cd54881"
+}

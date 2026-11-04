@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R6856_ab809e0917",
+  "shp": "R6856.shp",
+  "entidades": 6,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R6856.dbf",
+      "bytes": 1706,
+      "sha256": "33644c29b6a918467b89ba75db049fda7bbbc6e674b0ab1888889eb992568745"
+    },
+    {
+      "archivo": "R6856.shp",
+      "bytes": 3204,
+      "sha256": "6bfad08d1fd0969d65ffc884c719212cdddeb6684ecdf787f36c245468a5f136"
+    },
+    {
+      "archivo": "R6856.shx",
+      "bytes": 148,
+      "sha256": "e5cdb7d58696e84e19ca3965326e0e3237ba94f76f5fef30d5acb71d2fdba662"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Pjelacostaa2v.zip!R6856.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_c2688bcec3",
+    "archivo": "santafe/ipec/2010/Pjelacostaa2v.zip!R6856.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 6,
+    "registros_shx": 6,
+    "shape_type": 5,
+    "bbox": [
+      5441223.5,
+      6513349.0,
+      5442618.0,
+      6516728.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Pjelacostaa2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c09d7af9401f88fa1336c37e4b253af6af3807112bf13660f16164f08ddfa219"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1617_bbecd3d799",
+  "shp": "M1617.shp",
+  "entidades": 30,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1617.dbf",
+      "bytes": 6296,
+      "sha256": "05c634a99725929e50db37188c8795aed21423a4c6768fe128351adbafad2795"
+    },
+    {
+      "archivo": "M1617.shp",
+      "bytes": 5364,
+      "sha256": "3c9c096765502f2d3a1a2500abae217ecd779206408360a4c4b7cec9f0f9d58d"
+    },
+    {
+      "archivo": "M1617.shx",
+      "bytes": 340,
+      "sha256": "0f2d529a70ad7566c5a6d87ff6407bbefb1c3ac417733fa71519aecacdc36cd4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/laspalmerasa3v.zip!M1617.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a520c7a0d",
+    "archivo": "santafe/ipec/2010/laspalmerasa3v.zip!M1617.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 30,
+    "registros_shx": 30,
+    "shape_type": 5,
+    "bbox": [
+      5343657.5,
+      6610376.5,
+      5344393.5,
+      6611293.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/laspalmerasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "902e435e913c0e0605c9f971e57c04da4adffa29111ead543227e50cfd4ff8bb"
+}

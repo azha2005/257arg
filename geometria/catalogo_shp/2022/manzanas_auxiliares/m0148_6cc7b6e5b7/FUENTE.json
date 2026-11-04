@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0148_6cc7b6e5b7",
+  "shp": "m0148.shp",
+  "entidades": 567,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0148.dbf",
+      "bytes": 112085,
+      "sha256": "5b15ca75e30176270ef1eefd26f8d52d98fd9f3402fbd4fe855b21064a8f5afe"
+    },
+    {
+      "archivo": "m0148.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0148.shp",
+      "bytes": 90732,
+      "sha256": "1a3d82c95fa6258911c11d20deec8ec6b8cbb4113a5d336f82cedbf26c48173d"
+    },
+    {
+      "archivo": "m0148.shx",
+      "bytes": 4636,
+      "sha256": "a093b18d5cef52fc9bd545906064347ed50a6e6ea06786f9a8a2a6a4fb1360c6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/RUFINO.zip!m0148.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_8809c059e5",
+    "archivo": "santafe/ipec/2022/RUFINO.zip!m0148.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 567,
+    "registros_shx": 567,
+    "shape_type": 5,
+    "bbox": [
+      5248121.0,
+      6203846.5,
+      5252523.5,
+      6208173.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/RUFINO.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "79d903fde829c062958ae45ed1ae65b4a7c0f832745a981961fb92a26e61e5c3"
+}

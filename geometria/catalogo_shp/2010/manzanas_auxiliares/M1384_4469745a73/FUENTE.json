@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M1384_4469745a73",
+  "shp": "M1384.shp",
+  "entidades": 35,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M1384.dbf",
+      "bytes": 7281,
+      "sha256": "be98dbae2d2bf8aaf639daaa59c8ce2492b7c78dc67654a237e5724e5abef9dc"
+    },
+    {
+      "archivo": "M1384.shp",
+      "bytes": 5548,
+      "sha256": "245f6586f63e7681d676addd856f19d0f85931c900e74c42ada51dc994c95dd2"
+    },
+    {
+      "archivo": "M1384.shx",
+      "bytes": 380,
+      "sha256": "3aae6df309b69fca716e0d1e1f5f99fdd1277b42633cab1ff8c42cf437345892"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/estacionclucellasa3h.zip!M1384.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_42fc5404cd",
+    "archivo": "santafe/ipec/2010/estacionclucellasa3h.zip!M1384.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 35,
+    "registros_shx": 35,
+    "shape_type": 5,
+    "bbox": [
+      5336105.0,
+      6511399.0,
+      5337137.0,
+      6512119.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/estacionclucellasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "17de18752fb7b82d49a4579182b6edef2554f6dea2edf6db1cee07bdf66670a0"
+}

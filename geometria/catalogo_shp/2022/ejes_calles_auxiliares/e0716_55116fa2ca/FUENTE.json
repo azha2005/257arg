@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0716_55116fa2ca",
+  "shp": "e0716.shp",
+  "entidades": 285,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0716.dbf",
+      "bytes": 85540,
+      "sha256": "3ba2e91eea24fe8c9075f4b44b0aa9dbc9935e65a9df060a2ec9811c8b32118d"
+    },
+    {
+      "archivo": "e0716.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0716.shp",
+      "bytes": 25548,
+      "sha256": "c4e69efe08f0869fed2d6c892fa1f02f152d7a0cee536ed812fa620051683838"
+    },
+    {
+      "archivo": "e0716.shx",
+      "bytes": 2380,
+      "sha256": "f2cc754268f5be28e5c158bf666d477386bd632038e75d4c6730bffefb0d24a9"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MARGARITA.zip!e0716.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_789fe7b3e0",
+    "archivo": "santafe/ipec/2022/MARGARITA.zip!e0716.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 285,
+    "registros_shx": 285,
+    "shape_type": 3,
+    "bbox": [
+      5475001.5,
+      6714828.5,
+      5476270.0,
+      6717255.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MARGARITA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "4d422ae24ec684e3151a95a290b5ed40f56c8c2fa16738a92b61618f9ecd8ec8"
+}

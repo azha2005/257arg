@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-02",
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "app",
+  "theme": "Ink",
+  "shape": "app screen",
+  "axes": [
+    "light",
+    "grotesk-sans",
+    "chromatic-teal"
+  ],
+  "nav": "series tabs and electoral selectors",
+  "footer": "source and inference note",
+  "imagery": "actual computed Sankey; reference Streamlit captured with capture.mjs",
+  "entry": "select district and electoral cross",
+  "fingerprint": "ruled workbench, Sankey left, source and uncertainty right, conditional table below",
+  "sections": [
+    "selectors",
+    "territorial coverage",
+    "Sankey and source",
+    "conditional profile",
+    "district coverage"
+  ],
+  "signature": "provincial party identities in an ecological Sankey with observed-margin comparison",
+  "waived": [
+    "22: hueless Ink neutrals inherited from the user's Streamlit"
+  ],
+  "prompt": "Hacer los Sankeys provinciales con el estilo de sankeydron.streamlit.app y Hallmark",
+  "sweep": {
+    "floor": 0,
+    "reflex": 0,
+    "warn": 0,
+    "waived_occurrences": 4,
+    "screenshots": 5
+  },
+  "review": {
+    "kind": "in-thread",
+    "findings": 2,
+    "resolved": 2,
+    "gap": "none"
+  },
+  "verification": {
+    "crosses": 52,
+    "variants": 2,
+    "exports": [
+      "SVG",
+      "PNG",
+      "CSV"
+    ],
+    "nonoverlapping_labels": true,
+    "javascript_errors": 0
+  },
+  "material": {
+    "real": "official returns, 25 calculated crosses, source and control tables",
+    "absent": "no photographs or invented metrics"
+  },
+  "pending": [
+    "Formosa 2025 territorial official source download"
+  ],
+  "deployment": "local only",
+  "extension": "27 additional versions with documented territorial joins; original 25 kept"
+}

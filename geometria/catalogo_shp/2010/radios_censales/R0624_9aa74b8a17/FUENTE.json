@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0624_9aa74b8a17",
+  "shp": "R0624.shp",
+  "entidades": 3,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0624.dbf",
+      "bytes": 1094,
+      "sha256": "a17df35da3ae8b259ecc9b2d9f92afa348ce713de95e14692ef3faa5a08870da"
+    },
+    {
+      "archivo": "R0624.shp",
+      "bytes": 3244,
+      "sha256": "5b7ceddb1ba9ce3506b1c3b03b041268251c1deaf058a5ce95e863435f8ee007"
+    },
+    {
+      "archivo": "R0624.shx",
+      "bytes": 124,
+      "sha256": "32baf359a0c4842c368861dc00de2baafde1f90054d0f216dc7c859b8def8cbe"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/LosQuirquinchosa3h.zip!R0624.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_7439d21417",
+    "archivo": "santafe/ipec/2010/LosQuirquinchosa3h.zip!R0624.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 3,
+    "registros_shx": 3,
+    "shape_type": 5,
+    "bbox": [
+      5339553.0,
+      6305252.0,
+      5341513.0,
+      6307407.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/LosQuirquinchosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "44d5b1fb28c90be5c42e987b1da837a526d9f0cacdf89abb6139c00c0567a41c"
+}

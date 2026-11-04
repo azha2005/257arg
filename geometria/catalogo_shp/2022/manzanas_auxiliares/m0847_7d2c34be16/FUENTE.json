@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0847_7d2c34be16",
+  "shp": "m0847.shp",
+  "entidades": 124,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0847.dbf",
+      "bytes": 24814,
+      "sha256": "4b7b003e2d83e1f2e6ca90aba2cf8873d62cb4948852ab0845c428cc9ea0bf2c"
+    },
+    {
+      "archivo": "m0847.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0847.shp",
+      "bytes": 19172,
+      "sha256": "cb5e01b21b2f170cf3ad1abdfc5e9b7436b7f96ccf1c76af4d7890b400149724"
+    },
+    {
+      "archivo": "m0847.shx",
+      "bytes": 1092,
+      "sha256": "a6de9c16ee44d935afcb105963d456cef627fd26e7b521a2b7a63acf47d82a01"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/VIDELA.zip!m0847.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_3b46266ea2",
+    "archivo": "santafe/ipec/2022/VIDELA.zip!m0847.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 124,
+    "registros_shx": 124,
+    "shape_type": 5,
+    "bbox": [
+      5436782.0,
+      6576288.5,
+      5438109.0,
+      6577650.0
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/VIDELA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "fccb59a714d021f65be1a3f0e146bf230d2cec5a2d4a4bcbd02a412851297daa"
+}

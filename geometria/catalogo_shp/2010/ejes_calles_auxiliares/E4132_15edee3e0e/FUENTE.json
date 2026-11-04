@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E4132_15edee3e0e",
+  "shp": "E4132.shp",
+  "entidades": 74,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E4132.dbf",
+      "bytes": 26362,
+      "sha256": "aea735bd26bb74818f385e17a02f78d31ebe01fe2299027140d5c6b357497cbb"
+    },
+    {
+      "archivo": "E4132.shp",
+      "bytes": 6628,
+      "sha256": "f27d64faee3523c08db8f01e013aaea19c69d98e6a0886ba3daafc07b1e69428"
+    },
+    {
+      "archivo": "E4132.shx",
+      "bytes": 692,
+      "sha256": "a2e8ccc337c2b0af9c137b3053ee5eeecc2a66af8a4747f0c441b3d33b0bf6c4"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/chapuya3h.zip!E4132.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_400d8f8841",
+    "archivo": "santafe/ipec/2010/chapuya3h.zip!E4132.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 74,
+    "registros_shx": 74,
+    "shape_type": 3,
+    "bbox": [
+      5337853.5,
+      6258397.5,
+      5338950.0,
+      6259863.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/chapuya3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1aedff8e868c6c124ee2bc9b286c6e7ba5be40e3a226dcd23f9c570173b579b5"
+}

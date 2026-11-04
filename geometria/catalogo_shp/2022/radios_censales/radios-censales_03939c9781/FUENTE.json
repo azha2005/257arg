@@ -1,0 +1,86 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/radios-censales_03939c9781",
+  "shp": "radios-censales.shp",
+  "entidades": 23901,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "radios-censales.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "archivo": "radios-censales.dbf",
+      "bytes": 50383694,
+      "sha256": "e01ae7e3b2f6df86421f34ec8c8bd321ef5147ef4ee8970e5a5316e61275ccdd"
+    },
+    {
+      "archivo": "radios-censales.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "archivo": "radios-censales.qmd",
+      "bytes": 1579,
+      "sha256": "dbbbdafaf8a14eedaa570935b0c8dc20474e3aecd22cc9e67e7128e711d89de3"
+    },
+    {
+      "archivo": "radios-censales.shp",
+      "bytes": 16942776,
+      "sha256": "be39b018bdcc1c70f9b1c2230c2e93af70e9db393c93879a91d754a1b514b0bd"
+    },
+    {
+      "archivo": "radios-censales.shx",
+      "bytes": 191308,
+      "sha256": "d7a0bc2d05ce2f41cda272fab698052e7ea3e7e5d274658e2e730b1e9ff4f4a6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/pba/radios/radios-censales-2022-shp.zip!shp22/radios-censales.shp",
+  "metadata_original": {
+    "id_fuente": "pba_radios_603ce4ba-a0da-429e-ae04-119f99556207",
+    "archivo": "pba/radios/radios-censales-2022-shp.zip!shp22/radios-censales.shp",
+    "tipo": "radio censal",
+    "corte": "2022",
+    "cobertura": "Buenos Aires",
+    "features": 23901,
+    "registros_shx": 23901,
+    "shape_type": 5,
+    "bbox": [
+      -63.39277086768396,
+      -41.0366858667446,
+      -56.662672735383374,
+      -33.262138758478066
+    ],
+    "campos": [
+      "fid",
+      "AREA",
+      "PERIMETER",
+      "NOMPROV",
+      "PROV",
+      "NOMDEPTO",
+      "DEPTO",
+      "FRAC",
+      "RADIO",
+      "TIPO",
+      "LINK"
+    ],
+    "formato": "SHP",
+    "fuente": "https://catalogo.datos.gba.gob.ar/dataset/radios-censales",
+    "nota": "Formato .shp (EPSG:4326. Proyección WGS 84). Representa la ubicación de las unidades geográficas empleadas en el censo, acompañadas con su código, nombre e información estadística básica.",
+    "licencia": "CC BY 4.0",
+    "url_descarga": "https://catalogo.datos.gba.gob.ar/dataset/33b080d2-e369-4076-acd4-511db0e9bffb/resource/603ce4ba-a0da-429e-ae04-119f99556207/download/radios-censales-2022-shp.zip",
+    "crs_wkt": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+    "encoding_declarado": "UTF-8",
+    "entidades_por_provincia": {
+      "06": 23901
+    },
+    "campo_codigo": "LINK",
+    "codigos_distintos": 23901,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "0ceda75baedd6da81db9f808b9f97e3c553abfbd0fc27e4bf9004149bfe501e3"
+}

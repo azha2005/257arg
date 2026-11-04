@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0237_0f3731378b",
+  "shp": "E0237.shp",
+  "entidades": 779,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0237.dbf",
+      "bytes": 271702,
+      "sha256": "e6f8ac6420b76a0ebafb066b7db0c73c82d77febd2b47d5a85229c4db46016c9"
+    },
+    {
+      "archivo": "E0237.shp",
+      "bytes": 68748,
+      "sha256": "ea7cd8d5983228097af21f658ed5bca2f18750d63e9def228dfa2f095cd35f07"
+    },
+    {
+      "archivo": "E0237.shx",
+      "bytes": 6332,
+      "sha256": "c504430b6a13c61856f1db081d7603fab6faabbbd3fdd810f94ee191f52c9300"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sancarloscentroa1v.zip!E0237.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_523b368bf5",
+    "archivo": "santafe/ipec/2010/sancarloscentroa1v.zip!E0237.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 779,
+    "registros_shx": 779,
+    "shape_type": 3,
+    "bbox": [
+      5395367.0,
+      6487402.5,
+      5397406.5,
+      6491089.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sancarloscentroa1v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "9f6503d52cf8d9d56952b825a80be91c87d2667d214847b2c446577b3d723149"
+}

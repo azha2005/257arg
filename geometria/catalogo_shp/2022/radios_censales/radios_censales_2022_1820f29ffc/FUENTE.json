@@ -1,0 +1,71 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Año indicado en visor oficial; descarga actual",
+  "tipo": "radios_censales",
+  "carpeta": "2022/radios_censales/radios_censales_2022_1820f29ffc",
+  "shp": "radios_censales_2022.shp",
+  "entidades": 1075,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "radios_censales_2022.shx",
+      "bytes": 8700,
+      "sha256": "ce378430bdc6f0b947519273ec8582c235e4075c6fb47c46f816a8909f7e26c2"
+    },
+    {
+      "archivo": "radios_censales_2022.prj",
+      "bytes": 768,
+      "sha256": "d1b867d2cba2636271813eb8362bf1c17ee6a792d0fd1514199979d723aa041e"
+    },
+    {
+      "archivo": "radios_censales_2022.dbf",
+      "bytes": 1710678,
+      "sha256": "733c619c05d56cad58a8c34a09c68eb330389674dcdc87b8c8405ada9beb2950"
+    },
+    {
+      "archivo": "radios_censales_2022.shp",
+      "bytes": 4051224,
+      "sha256": "4416b9ba81a6880397935b44e1eff07954d697e91046b8311e48ca51e5bd50e5"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/neuquen/radios_censales_2022.zip!radios_censales_2022.shp",
+  "metadata_original": {
+    "id_fuente": "neuquen_radios_censales_2022",
+    "archivo": "neuquen/radios_censales_2022.zip!radios_censales_2022.shp",
+    "tipo": "radio censal",
+    "corte": "2022 según visor; snapshot 2026-10-31",
+    "cobertura": "Neuquén",
+    "features": 1075,
+    "registros_shx": 1075,
+    "shape_type": 5,
+    "bbox": [
+      2249494.4760791864,
+      5447697.643018803,
+      2586808.9648241824,
+      6003300.62260318
+    ],
+    "campos": [
+      "ogc_fid",
+      "cod_indec",
+      "fraccion",
+      "radio",
+      "tipo",
+      "depto",
+      "cod_depto",
+      "fuente",
+      "aÃ±o",
+      "etiqueta"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticaneuquen.gob.ar/apps/visor/",
+    "nota": "Geometría y atributos del visor oficial DPEyC; el nombre técnico no prueba vigencia legal anual.",
+    "licencia": "Consultar ficha de la fuente",
+    "url_descarga": "https://sigestadistica.neuquen.gov.ar/geoserver/geonode/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:radios_censales_2022&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"POSGAR 2007 / Argentina 2\", GEOGCS[\"POSGAR 2007\", DATUM[\"Posiciones Geodesicas Argentinas 2007\", SPHEROID[\"GRS 1980\", 6378137.0, 298.257222101, AUTHORITY[\"EPSG\",\"7019\"]], TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], AUTHORITY[\"EPSG\",\"1062\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"5340\"]], PROJECTION[\"Transverse_Mercator\", AUTHORITY[\"EPSG\",\"9807\"]], PARAMETER[\"central_meridian\", -69.0], PARAMETER[\"latitude_of_origin\", -90.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 2500000.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"5344\"]]",
+    "campo_codigo": "cod_indec",
+    "codigos_distintos": 1075,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "a2a60550dabfca06643ca3a9ef1a608be5a6dc0b5af9057df335df78095ec01c"
+}

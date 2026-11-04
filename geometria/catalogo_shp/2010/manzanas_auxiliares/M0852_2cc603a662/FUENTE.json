@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0852_2cc603a662",
+  "shp": "M0852.shp",
+  "entidades": 88,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0852.dbf",
+      "bytes": 17722,
+      "sha256": "2f4296328d5cab7da77d70d771d4222c34340ef4c7d76db3874ada008b769446"
+    },
+    {
+      "archivo": "M0852.shp",
+      "bytes": 13284,
+      "sha256": "fe76b3cf8159045d648a37bd6269ac24b6c4c0f0878bb0ff12d41936fb14b6ad"
+    },
+    {
+      "archivo": "M0852.shx",
+      "bytes": 804,
+      "sha256": "d17b986cae8d9a82a7afa4752ac9032f8b930fc5e17c5e774a5801383deed224"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/losmolinosa3h.zip!M0852.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_26a978fd14",
+    "archivo": "santafe/ipec/2010/losmolinosa3h.zip!M0852.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 88,
+    "registros_shx": 88,
+    "shape_type": 5,
+    "bbox": [
+      5375500.5,
+      6336370.0,
+      5376786.0,
+      6337723.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/losmolinosa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6a4a2a9bd84ddc888f2b65a2a8b9cc70283f4c3e21dbd7d18f10f06554e4b667"
+}

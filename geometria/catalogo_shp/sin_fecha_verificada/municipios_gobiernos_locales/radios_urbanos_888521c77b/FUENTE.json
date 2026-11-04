@@ -1,0 +1,64 @@
+{
+  "anio_carpeta": "sin_fecha_verificada",
+  "criterio_anio": "Actual al descargar; servicio documentado desde 2019",
+  "tipo": "municipios_gobiernos_locales",
+  "carpeta": "sin_fecha_verificada/municipios_gobiernos_locales/radios_urbanos_888521c77b",
+  "shp": "radios_urbanos.shp",
+  "entidades": 427,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "radios_urbanos.dbf",
+      "bytes": 452418,
+      "sha256": "1a615cb929c169b8e5df00bee9c643a78559d493cf982a748e58756b11f3e326"
+    },
+    {
+      "archivo": "radios_urbanos.prj",
+      "bytes": 765,
+      "sha256": "3c828cfeb4538225cbb677f7d455d28f818e9f750e07652e5611f4eca3881d47"
+    },
+    {
+      "archivo": "radios_urbanos.shp",
+      "bytes": 920008,
+      "sha256": "a30cf0e2eca4662761c287f930a610bdc316b7bcd5456baf70643af1d4205daa"
+    },
+    {
+      "archivo": "radios_urbanos.shx",
+      "bytes": 3516,
+      "sha256": "a5c6328be0f5bd43d55aa52e379e925606a180496aff3ea8acb2477451fb2bec"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/cordoba/radios_municipales_comunales_actual.zip!radios_urbanos.shp",
+  "metadata_original": {
+    "id_fuente": "cordoba_radios_urbanos",
+    "archivo": "cordoba/radios_municipales_comunales_actual.zip!radios_urbanos.shp",
+    "tipo": "municipio/comuna",
+    "corte": "Actual al descargar; servicio documentado desde 2019",
+    "cobertura": "Córdoba",
+    "features": 427,
+    "registros_shx": 427,
+    "shape_type": 5,
+    "bbox": [
+      4244844.06736778,
+      6142182.1000008,
+      4613293.70052315,
+      6733511.16660811
+    ],
+    "campos": [
+      "id",
+      "key",
+      "nombre",
+      "url",
+      "area_ha",
+      "tipo_gobie"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.idecor.gob.ar/usa-y-descarga-los-limites-oficiales-de-las-localidades-de-cordoba/",
+    "nota": "Radio municipal/comunal jurídico. El artículo de 2019 no convierte el servicio actual en snapshot de 2019.",
+    "licencia": "CC BY-SA según metadatos IDECOR; verificar versión",
+    "url_descarga": "https://idecor-ws.mapascordoba.gob.ar/geoserver/idecor/radios_urbanos/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=idecor:radios_urbanos&outputFormat=SHAPE-ZIP",
+    "crs_wkt": "PROJCS[\"POSGAR 98 / Argentina 4\", GEOGCS[\"POSGAR 98\", DATUM[\"Posiciones Geodesicas Argentinas 1998\", SPHEROID[\"GRS 1980\", 6378137.0, 298.257222101, AUTHORITY[\"EPSG\",\"7019\"]], TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], AUTHORITY[\"EPSG\",\"6190\"]], PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], UNIT[\"degree\", 0.017453292519943295], AXIS[\"Geodetic longitude\", EAST], AXIS[\"Geodetic latitude\", NORTH], AUTHORITY[\"EPSG\",\"4190\"]], PROJECTION[\"Transverse_Mercator\", AUTHORITY[\"EPSG\",\"9807\"]], PARAMETER[\"central_meridian\", -63.0], PARAMETER[\"latitude_of_origin\", -90.0], PARAMETER[\"scale_factor\", 1.0], PARAMETER[\"false_easting\", 4500000.0], PARAMETER[\"false_northing\", 0.0], UNIT[\"m\", 1.0], AXIS[\"Easting\", EAST], AXIS[\"Northing\", NORTH], AUTHORITY[\"EPSG\",\"22174\"]]"
+  },
+  "firma_componentes": "8f7e666856aa84aa07c3a415bc727b3cde8d0e413e1432da9d1fc464b8d2c22a"
+}

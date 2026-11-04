@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0095_de833bf233",
+  "shp": "E0095.shp",
+  "entidades": 1809,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0095.dbf",
+      "bytes": 630142,
+      "sha256": "3d1b9f5c4f58920ca4057d40cbeec3fcf0a54c49db2b829afbb99644436e070f"
+    },
+    {
+      "archivo": "E0095.shp",
+      "bytes": 160044,
+      "sha256": "cef1b17763c4997c1af7612b0f374a009ed87ec1ff2c37c38e1774d824616c66"
+    },
+    {
+      "archivo": "E0095.shx",
+      "bytes": 14572,
+      "sha256": "b4d3bd1e0f6bb678d2513821cfa774c585d46f09f38e804ee7302be3fc25f531"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/canadadegomezA1H.zip!E0095.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_1ecf98166e",
+    "archivo": "santafe/ipec/2010/canadadegomezA1H.zip!E0095.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1809,
+    "registros_shx": 1809,
+    "shape_type": 3,
+    "bbox": [
+      5366239.5,
+      6366825.5,
+      5370958.0,
+      6370825.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/canadadegomezA1H.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "49e0769c0e7392cf6f327984ece4c967ef0b747f9456d1cac4e9c900d7804767"
+}

@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1062_ff5ec9f0cc",
+  "shp": "E1062.shp",
+  "entidades": 171,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1062.dbf",
+      "bytes": 60118,
+      "sha256": "7bb3c27192d73ae1362fcf10e05a266db28c62add3ecd5a689cd657476b82152"
+    },
+    {
+      "archivo": "E1062.shp",
+      "bytes": 15148,
+      "sha256": "246db54a53c7e630b1b2261c5af058deae26d68bf28753bc130c8e269a8d7317"
+    },
+    {
+      "archivo": "E1062.shx",
+      "bytes": 1468,
+      "sha256": "0e95275a07e3f9a294d1bd43559bd66355338ac9846aae579d52b1e632a63c18"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/amenabara2h.zip!E1062.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_fbfa60e8f8",
+    "archivo": "santafe/ipec/2010/amenabara2h.zip!E1062.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 171,
+    "registros_shx": 171,
+    "shape_type": 3,
+    "bbox": [
+      5275553.5,
+      6220221.0,
+      5277210.5,
+      6221887.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/amenabara2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "d29c7b0c95b7bdd4ee3235beb035e976863d7f4442c5eceb80fe25942670da2e"
+}

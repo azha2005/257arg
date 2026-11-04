@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m0312_3ffc86e53e",
+  "shp": "m0312.shp",
+  "entidades": 301,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m0312.dbf",
+      "bytes": 59683,
+      "sha256": "277afc09caa632f520af2c9ff15aa78ca48c2a8025f665ad11985482bd9f0d61"
+    },
+    {
+      "archivo": "m0312.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m0312.shp",
+      "bytes": 54428,
+      "sha256": "4ca83a8097ccd28d53b563ccee7bae5d9891b2f6c8b210e16e1564211155cbab"
+    },
+    {
+      "archivo": "m0312.shx",
+      "bytes": 2508,
+      "sha256": "c6ab62fe387639ebc77dbec0c28bf32d64d1aa0745f4deed79cae7536bcdf76c"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/LASTOSCAS.zip!m0312.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_4112755011",
+    "archivo": "santafe/ipec/2022/LASTOSCAS.zip!m0312.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 301,
+    "registros_shx": 301,
+    "shape_type": 5,
+    "bbox": [
+      5571142.0,
+      6862883.0,
+      5573485.0,
+      6865578.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/LASTOSCAS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "a2c3d1a1b010eef265001d085b4a08a33373fa45357713cf4713ea3afd7b5706"
+}

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset=UTF-8 >
+        <title>IDESF</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://www.santafe.gob.ar/assets/standard/images/favicon.ico">
+        <link href="//www.santafe.gov.ar/assets/app/portal/css/fonts.css" rel="stylesheet">
+        <!--link href="//www.santafe.gob.ar/assets/app/portal/css/santafe.css" rel="stylesheet"-->
+                                                <!--link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet"-->
+        <link href="/idesf/geoportal/css/../assets/bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/idesf/geoportal/css/estilos.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/idesf/geoportal/css/../assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/idesf/geoportal/css/index.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<script type="text/javascript" src="/idesf/geoportal/javascript/../assets/jquery-3.1.1.min.js"></script>
+
+    </head>
+    <body id="top">
+        <div id="content-header" class="navbar-fixed-top"><!-- Diseño nuevo -->
+<div id="header" class="container ">
+    <div id="logoidesf"><a title="inicio del portal" href="/idesf/geoportal/" title="IDESF">IDESF</a></div>
+        
+        <ul id="menu-horizontal" class="nav navbar-nav">
+            <!--li class=" ">
+                <a href="/idesf" class="" title="Ir al inicio">Inicio</a>
+            </li-->  
+            <li class=" "><a href="/idesf/catalogo" class="" title="Acceder al Catálogo de Metadatos" target="_blank">Catálogo</a></li>            
+            <li class=" "><a href="/idesf/visualizador" class="" title="Acceder al Visualizador de IG" target="_blank">Visualizador</a>            </li>            
+            <li class=" "><a href="/idesf/descargas" class="" title="Acceder al área de Descargas de IG" target="_blank">Descargas</a>            </li>
+            <li class=" "><a href="/idesf/geoportal/paginas/servicios" class="" title="Acceder a los Servicios IDESF">Servicios</a>            </li>
+        </ul>
+        
+        <ul id="menu-right" class="">
+            <li class="divider">
+                <div id="menu-horizontal-alt-container" class="dropdown">
+                    <button id="menu-horizontal-alt-button" class="dropbtn menu-horizontal-alt"><i class="icon-menu" aria-hidden="true"></i></button>
+                    <div id="menu-horizontal-alt" class="dropdown-content" style="display: none">
+                        <span class="dropdown-arrow"></span>
+                        
+                        <div id="menu-horizontal-secundario">
+                        <ul id="menu-horizontal-alt-items-ppales" class="">
+                              <li class=" "><a href="/idesf" class="" title="Ir al inicio">Inicio</a></li>  
+                              <li class=" "><a href="/idesf/catalogo" class="" title="Acceder al Catálogo de Metadatos" target="_blank">Catálogo</a></li>            
+                              <li class=" "><a href="/idesf/visualizador" class="" title="Acceder al Visualizador de IG" target="_blank">Visualizador</a></li>            
+                              <li class=" "><a href="/idesf/descargas" class="" title="Acceder al área de Descargas de IG" target="_blank">Descargas</a>                              </li>
+                              <li class=" "><a href="/idesf/geoportal/paginas/servicios" class="" title="Acceder a los Servicios IDESF">Servicios</a>                              </li>
+                        </ul>
+                        <h4>Institucional</h4>
+
+<ul >
+
+	<li onClick="location.href='/idesf/geoportal/paginas/ide'"><a>¿Qué es una IDE?</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/la-idesf'"><a>La IDESF</a> </li>
+
+	<!--
+
+	<li onClick="location.href='/idesf/geoportal/paginas/idesf'"><a>IDESF</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/organizacion'"><a>Organización</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/beneficios'"><a>Beneficios</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/servidor-de-datos'"><a>Servidor de Datos</a> </li>
+
+	-->
+
+	<li onClick="location.href='/idesf/geoportal/paginas/restricciones-de-uso'"><a>Restricciones de Uso</a> </li>
+
+	<li onClick="location.href = '/idesf/geoportal/paginas/documentos#documentos-caracter-institucional'"><a>Normativas</a> </li>
+
+</ul>
+
+<h4>Difusión </h4>
+
+<ul>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/eventos'"><a>Eventos IDESF</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/capacitacion'"><a>Capacitación</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/medios-de-comunicacion'"><a>IDESF en Medios</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/galeria-de-fotos'"><a>Galería de Fotos</a> </li>
+
+</ul>
+
+<h4>Actividades</h4>
+
+<ul>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/proyectos'"><a>Proyectos</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/asistencia-a-productores'"><a>Asistencia a productores</a> </li>
+
+	<!--li onClick="location.href='/idesf/geoportal/paginas/medios-de-comunicacion'"><a>Colaboraciones con terceros</a> </li-->
+
+	<li onClick="location.href='/idesf/geoportal/paginas/universidad'"><a>Universidad</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/convenios'"><a> Convenios</a> </li>
+
+</ul>
+
+<h4>Recursos</h4>
+
+<ul>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/referencia-geografica'"><a>Referencia Geográfica</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/google-earth'"><a>Google Earth</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/situacion-hidrica'"><a>Situación Hídrica</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/documentos'"><a>Documentos</a> </li>
+
+	<li onClick="location.href='/idesf/geoportal/paginas/geo-tutoriales'"><a>Geo-tutoriales</a> </li>
+
+</ul>                        <h4>Sitios de Interés</h4>
+                <ul>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/sitios-referentes'"><a>Sitios Referentes</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-de-argentina'"><a>IDEs de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-del-mundo'"><a>IDEs del Mundo</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/visualizadores-de-argentina'"><a>Visualizadores de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/formacion'"><a>Formación</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/software'"><a>Software</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/boletines-y-revistas'"><a>Boletines y Revistas</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/utilidades'"><a>Utilidades</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/datos-para-descarga'"><a>Datos para Descarga</a> </li>
+            	    </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="search" class="divider">
+                <div id="search-container" class="dropdown">
+                    <button id="search-button" class="dropbtn search"><i class="icon-lupa" aria-hidden="true"></i></button>
+                    <div id="" class="search-form dropdown-content search">
+                        <span class="dropdown-arrow"></span>
+                        <form action="//www.santafe.gob.ar/searchgoogle" class="" target="_blank">
+                            <label class="sr-only" for="q">Search:</label>
+                            <input type="text" name="q" id="q" placeholder="BUSCAR" class="search"><button><i class="appen icon-lupa"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <li id="logogob1" class="divider"><a target="_blank" href="/"> </a></li>
+        </ul>
+</div>
+
+</div>
+        <!-- BODY -->
+        <div class="container margin-top-header">
+
+        
+<div id="" class="seccion">
+<div id="container-mapa">
+    <div id='embebido' class="fieldset" height="auto" scrolling="no" frameborder="0"></div>
+</div>
+
+<script src="https://www.santafe.gob.ar/idesf/moduloubicacion/mod-buscador/web/js/easyXDM.min.js"></script>
+<script>
+    var resultado;
+    var datos;
+    var imagen;
+
+    var socket = new easyXDM.Socket({
+        remote: "https://"+window.location.host+"/idesf/moduloubicacion/mod-buscador/index_iframe_portal.php",
+        container: embebido,
+        onReady: function () {
+            this.container.getElementsByTagName("iframe")[0].style.height = "450px";
+            this.container.getElementsByTagName("iframe")[0].style.width = "540px";
+            this.container.getElementsByTagName("iframe")[0].scrolling = "no";
+            this.container.getElementsByTagName("iframe")[0].frameborder = "0";
+            console.log($(".ol-control button").css("background-color"));
+            $(".ol-control button").css({"background-color": "#495086!important", "background-image": "linear-gradient(to right, #495086 0%,#12b5c8 100%)"});
+            console.log($(".ol-control button").css("background-color"));
+        },
+        onMessage: function () {}
+    });
+
+    $(function () {
+        
+        window.addEventListener("DOMContentLoaded", function() {
+            $("#container-mapa").width($(".container").width());
+    
+            $('#embebido iframe').load(function () {
+                console.log("Estilo: ");
+                console.log($('this').contents().find(".ol-control button").css());
+                $('this').contents().find(".ol-control button").css({"background-color": "#495086!important", "background-image": "linear-gradient(to right, #495086 0%,#12b5c8 100%)"});
+            });
+        });
+    
+    });
+
+</script> 
+ 
+    </div>
+<div id="" class="seccion">
+        <h2>Presentación</h2>
+
+<p>Desde diversos ámbitos mundiales (Europa, América, Asia, etc.) se promueven iniciativas para la difusión y utilización de los datos espaciales, fomentando, apoyando y fortaleciendo el desarrollo de las Infraestructuras de Datos Espaciales (IDE). </p>
+
+<p>IDESF constituye la respuesta del Gobierno de la Provincia de Santa Fe a los requerimientos que surgen de la incorporación progresiva de las tecnologías  geoespaciales.</p>
+
+<!--p>A partir de la IDESF usted podrá realizar búsquedas y descargas de información geográfica y visualización de metadatos y mapas, entre otros servicios. </p-->
+
+<p>A través de la IDESF se puede buscar (<a href="/idesf/catalogo" target="_blank">Catálogo</a>), visualizar (<a href="/idesf/visualizador" target="_blank">Visualizador</a>) y descargar (<a href="/idesf/descargas" target="_blank">Descargas</a>) información geográfica, entre otros servicios.</p>    </div>
+<!--
+<div id="" class="seccion">
+    <div id="" class="container-fluid">
+        <div class="col-md-3 ">
+            caja 1
+        </div>
+        <div class="col-md-6 ">
+            caja 2
+        </div>
+        <div class="col-md-3 ">
+            caja 3
+        </div>
+    </div>
+</div>
+<div id="" class="seccion-x">
+    <div id="" class="container">
+        <div class="col-md-3 ">
+            caja 1
+        </div>
+        <div class="col-md-3 ">
+            caja 2
+        </div>
+        <div class="col-md-3 ">
+            caja 3
+        </div>
+        <div class="col-md-3 ">
+            caja 4
+        </div>
+    </div>
+</div>
+-->
+<div id="" class="seccion-noticias">
+    <header>GEO-NOVEDADES</header>
+    <div id="contenedor-noticias" class="menuVertical1 col-md-10 col-md-offset-1 ">	
+        <!-- Genera el div con las noticias  width:495--> 
+        <div class="slideshow" style="position: relative; ">
+            <div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Curso de Posgrado: “Gestión de Información” – EPEC – FCEIA - UNR</h2><small>22/09/2026</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>El curso brinda herramientas para comprender los estándares, políticas y tecnologías que intervienen en la gestión de información geográfica. Aborda desde criterios de calidad y metadatos hasta derechos de autor, custodia y servicios web geográficos.
+Docentes: Mgtr. María A. Barrera y Lic. R. Morel. Duración: 15/10 al 03/12/2026, 40hs. Cursado: jueves de 18:00hs a 21:00hs. Modalidad: Virtual sincrónico y asincrónico.
+Consultas: geomaticaposgrado@fceia.unr.edu.ar</div><a class='ver-mas' href='https://forms.gle/2EEoyvSVN9mBqSBc7' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Capacitaciones SIG-IDE 2026 - IDERA</h2><small>14/05/2026</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Con el objetivo de contribuir a la formación técnica y profesional de la comunidad geoespacial se invita a las Capacitaciones SIG e IDE, que se llevarán a cabo en la ciudad de Concordia, provincia de Entre Ríos, los días  4 y 5 de junio de 2026.
+Se realizarán de manera presencial para el público local en la Universidad Tecnológica Nacional - Facultad Regional Concordia (Salta 277, Concordia, Entre Ríos). Para quienes no puedan asistir de manera presencial se transmitirán por el canal de YouTube de IDERA.
+La entrada es libre y gratuita con inscripción previa. </div><a class='ver-mas' href='https://jornadas.idera.gob.ar/index_capacitaciones.html' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>CONAE - Diseñá, construí y lanzá tu propio satélite</h2><small>14/05/2026</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'> La Comisión Nacional de Actividades Espaciales presenta CANSAT Argentina 2026.
+¿De qué se trata? Cada equipo diseña y construye una carga útil del tamaño de una lata de gaseosa capaz de medir presión y temperatura durante su descenso. Una experiencia completa de misión espacial, desde el diseño hasta el lanzamiento. ¿Quién puede participar? Estudiantes de escuelas secundarias de todo el país, gestión estatal o privada, cualquier orientación. ¿Cómo se arman los equipos? De 3 a 5 estudiantes con un docente responsable. No se requieren conocimientos previos en temática espacial.
+Inscripción abierta hasta el 22 de mayo de 2026</div><a class='ver-mas' href='https://www.argentina.gob.ar/ciencia/conae/cansat-argentina' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>XIII Congreso de la Ciencia Cartográfica y 4° Congreso Virtual Internacional</h2><small>30/04/2026</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>El Centro Argentino de Cartografía (CAC) y el Instituto Geográfico Nacional (IGN) convocan al Décimo Tercer Congreso de la Ciencia Cartográfica y Cuarto Congreso Virtual Internacional “Análisis Geoespacial, IA y Cartografía para la gestión territorial” a realizarse en formato virtual desde la Ciudad Autónoma de Buenos Aires, República Argentina, del 06 al 08 de octubre de 2026; con el fin de contribuir en la difusión de las actividades, investigaciones y proyectos relacionados con el quehacer cartográfico.
+Apertura de la Inscripción: Asistentes a partir de 04 de mayo de 2026.  Expositores, después de la aprobación del trabajo respectivo.
+</div><a class='ver-mas' href='https://centroargentinodecartografia.org/congreso/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>XX Jornadas IDERA + II Encuentro IDE de América del Sur – Concordia – Entre Ríos</h2><small>13/04/2026</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Ya está disponible el sitio web de las XX Jornadas IDERA y el II Encuentro IDE de América del Sur, que tendrán lugar en la localidad de Concordia, provincia de Entre Ríos, del 1 al 3 de julio de 2026.
+En el sitio web se puede acceder a las Circulares del evento, el programa general y el detalle de las convocatorias a las actividades. 
+La participación será presencial, libre y gratuita con inscripción previa.</div><a class='ver-mas' href='https://jornadas.idera.gob.ar/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Sequía en el corazón agrícola de Argentina - Copernicus</h2><small>12/03/2026</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La imagen del día 05 de marzo de 2026 de Copernicus -Programa de Observación de la Tierra de la Unión Europea- se trata de la comparación de las imágenes de Copernicus Sentinel-2, adquiridas el 11 de marzo de 2025 y el 1 de marzo de 2026, mostrando el impacto de la sequía en los alrededores de Rosario. La sequía prolongada y las temperaturas inusualmente altas han ejercido una presión considerable sobre los cultivos, reduciendo la humedad del suelo y amenazando la productividad agrícola en miles de hectáreas.
+Los datos del satélite Sentinel de Copernicus permiten el monitoreo continuo de las condiciones de los cultivos. Estas observaciones respaldan la evaluación del impacto de la sequía, facilitan la planificación agrícola y contribuyen a mejorar la resiliencia climática.</div><a class='ver-mas' href='https://www.copernicus.eu/en/media/image-day-gallery/drought-argentinas-agricultural-heartland' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>XX Jornadas IDERA – Concordia – Entre Ríos</h2><small>23/12/2025</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Circular #1 de las XX Jornadas IDERA a realizarse del 01 al 03 de julio de 2026, en la ciudad de Concordia, provincia de Entre Ríos, República Argentina. La sede principal será el Centro de Convenciones de Concordia. La circular brinda toda la información disponible hasta la fecha sobre la organización incluyendo lo referido a la postulación de presentaciones, ponencias, pósters, talleres. 
+La participación será presencial, libre y gratuita con inscripción previa.</div><a class='ver-mas' href='https://www.idera.gob.ar/images/stories/eventos/2026/XX%20Jornadas%20Concordia/I_Circular_XX_Jornadas_IDERA_Concordia_2026.pdf' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Floración de algas en el lago Salto Grande, Argentina - Copernicus</h2><small>26/02/2025</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La imagen del día 26 de febrero de 2025 elegida por Copernicus -Programa de Observación de la Tierra de la Unión Europea- muestra la floración de algas en el Embalse de Salto Grande, en la frontera entre Argentina y Uruguay, corresponde a la imagen de Copernicus Sentinel-2 de fecha 01-02-2025. A principios de febrero de 2025, el lago de Salto Grande se vio afectado por un aumento repentino del crecimiento de algas. Este fenómeno ha afectado a la fauna local entre ellas a los carpinchos, los cuales aparecieron con el pelaje teñido de verde por las algas.
+Los satélites Sentinel de Copernicus son útiles para monitorear la salud de los cuerpos de agua en todo el mundo. </div><a class='ver-mas' href='https://www.copernicus.eu/en/media/image-day-gallery/algal-bloom-lake-salto-grande-argentina' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Revista IDERActiva</h2><small>15/01/2024</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>IDERA - Infraestructura de Datos Espaciales de la República Argentina ha publicado la Revista IDERActiva #6. 
+Un resumen de los principales logros y avances de IDERA en el año 2023.
+Una de las publicaciones hace referencia al Mapa Provincial del Cuidado de la Provincia de Santa Fe.
+
+</div><a class='ver-mas' href='https://gob.us9.list-manage.com/track/click?u=b9e822263cc35710df0e21e01&id=04d4ea1e1d&e=6b762f9e62' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Censo 2022 – Resultados Definitivos - INDEC</h2><small>22/11/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>El Instituto Nacional de Estadística y Censos (INDEC) presenta los resultados definitivos del Censo Nacional de Población, Hogares y Viviendas 2022 (Censo 2022), que se llevó a cabo por primera vez en la Argentina con una estrategia bimodal: un cuestionario digital y el tradicional barrido territorial con cuestionarios en papel (cédulas censales). </div><a class='ver-mas' href='https://censo.gob.ar/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Nueva actualización de información geoespacial del IGN</h2><small>18/10/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>En el marco del proceso de producción y publicación de información geoespacial oficial, el Instituto Geográfico Nacional pone a disposición de la comunidad una nueva actualización de la información geoespacial vectorial a través del Visor de Mapas, los Geoservicios WMS, WFS, la descarga de Capas SIG y mapas base.
+Incluye actualización de información de Departamentos, Gobiernos Locales, información en el territorio de las Islas Malvinas y una nueva capa de Cobertura de Suelo y Vegetación de todo el país.</div><a class='ver-mas' href='https://www.ign.gob.ar/content/nueva-actualizaci%C3%B3n-de-informaci%C3%B3n-geoespacial-del-ign-2' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Boletín IDERActiva - mes #10</h2><small>18/10/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>IDERA ha publicado el Boletín IDERActiva del mes de Octubre (https://mailchi.mp/4f64b228089e/boletn-ideractiva-mes-10).
+Una de las publicaciones hace referencia al Sistema Web de Precipitaciones y Alturas Hidrométricas de la Provincia de Santa Fe,  trabajo en colaboración con la Secretaría de Recursos Hídricos del Ministerio de Infraestructura de Servicios Públicos y Hábitat (MISPyH), a través de la Dirección General de Servicios Técnicos Específicos. </div><a class='ver-mas' href='https://lnkd.in/dyrguP3u' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>IDESF – Capacitación y Asesoramiento</h2><small>21/07/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La IDESF se encuentra capacitando y asesorando a agentes de la provincia de Santa Fe para la producción de Información Geográfica. Esta actividad tiene la particularidad de brindar el asesoramiento acorde a las necesidades de las áreas participantes.  La capacitación incluye el manejo de funcionalidades de QGIS (software SIG libre y de Código Abierto), como así también de herramientas y servicios brindados por la IDESF. Personal del Ministerio de Ambiente y Cambio Climático (MAyCC) y del Ministerio de Desarrollo Social (MDS) han participado de dicha capacitación. Esperamos que esta iniciativa se siga replicando en los distintos organismos de la provincia de Santa Fe.</div><a class='ver-mas' href='https://www.santafe.gob.ar/idesf/geoportal/paginas/geo-tutoriales' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>IDESF presente en las XVII Jornadas IDERA La Pampa 2023</h2><small>21/07/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La IDESF-Infraestructura de Datos Espaciales de Santa Fe estuvo presente en las últimas Jornadas de IDERA-Infraestructura de Datos Espaciales de la República Argentina, durante los días 28, 29 y 30 de Junio del corriente año en la Ciudad de Santa Rosa, Provincia de La Pampa. En dicho evento la IDESF participó de la Asamblea y realizó una presentación institucional en el marco de las IDE provinciales.
+Las jornadas fueron organizadas conjuntamente por el Gobierno de la Provincia de La Pampa, la IDE de La Pampa IDELP, y el Instituto Geográfico Nacional IGN, con el objetivo de fomentar el conocimiento, la difusión de las Infraestructuras de Datos Espaciales y destacar la importancia de la publicación de información geoespacial. </div><a class='ver-mas' href='https://t.co/ffWPTpIWY3' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Crisis del agua en Uruguay - Copernicus</h2><small>13/07/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La sequía está provocando escasez de agua en el Área Metropolitana de Montevideo - Uruguay, donde se ha declarado el estado de emergencia. Copernicus – Programa de Observación de la Tierra de la Unión Europea – muestra dicho impacto en la región a través de dos imágenes, adquiridas por los satélites Copernicus Sentinel-2, del mes de junio para los años 2022 y 2023 respectivamente, donde se aprecia el embalse de Canelón Grande. </div><a class='ver-mas' href='https://www.copernicus.eu/en/media/image-day-gallery/water-crisis-uruguay' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>INDEC – Nuevo Portal Geoestadístico</h2><small>23/05/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>El INDEC presenta el nuevo portal geoestadístico (en versión beta) con los resultados provisionales del Censo 2022. Esta herramienta interactiva permite consultar datos georreferenciados sobre la población y las viviendas por jurisdicción, departamento, partido o comuna.  </div><a class='ver-mas' href='https://portalgeoestadistico.indec.gob.ar/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>La provincia actualiza la Estación Permanente GPS/GNSS de Santa Fe</h2><small>04/05/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Se sustituirá un receptor satelital GPS obsoleto por un equipo GNSS de última generación. Se trata de un proyecto que se lleva a cabo a través de un convenio de cooperación técnica entre el Instituto Geográfico Nacional (IGN), el Servicio de Catastro e Información Territorial de la provincia (SCIT) y la Universidad Nacional del Litoral (UNL) en el marco de la planificación estratégica en instalación de Estaciones Permanentes GNSS, en distintos puntos del territorio provincial a través de la interacción y colaboración de organismos interesados.</div><a class='ver-mas' href='https://www.santafe.gob.ar/noticias/noticia/277968/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>IDESF – Capacitación y Asesoramiento a personal del MAyCC</h2><small>27/04/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Capacitación y asesoramiento, por parte de la IDESF a personal del Ministerio de Ambiente y Cambio Climático para la producción de Información Geográfica. Con la particularidad de brindar asesoramiento acorde a las necesidades de las áreas participantes. Capacitación en el manejo de funcionalidades de QGIS (software SIG libre y de Código Abierto), como así también de herramientas y servicios brindados por la IDESF. Esperamos que esta iniciativa se siga replicando en los distintos organismos de la provincia de Santa Fe.</div><a class='ver-mas' href='https://www.linkedin.com/feed/update/urn:li:activity:7057347826116141056/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>La CONAE liberó el código de su Software 2Mp</h2><small>20/04/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La medida apunta a propiciar el desarrollo de la plataforma de educación en un marco colaborativo y sostenible, en coordinación con la empresa SPACESUR, el Ministerio de Educación de la Nación a través de Educ.ar, y el Programa Conectar Igualdad. Además se avanza en la implementación de un nuevo proyecto informático para las escuelas.</div><a class='ver-mas' href='https://www.argentina.gob.ar/noticias/la-conae-libero-el-codigo-de-su-software-2mp' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>La información SAOCOM cada vez más accesible</h2><small>13/02/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La Comisión Nacional de Actividades Espaciales (CONAE) amplió la disponibilidad de la información generada por los satélites SAOCOM 1A y 1B, que conforman la misión de observación de la Tierra desarrollada por la agencia espacial argentina, equipada con radar de apertura sintética (SAR) en banda L, única en el mundo. Disponibles mediante el registro en un formulario web y aceptación de la licencia de uso.</div><a class='ver-mas' href='https://www.argentina.gob.ar/noticias/la-informacion-saocom-cada-vez-mas-accesible' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Barcelona Supercomputing Center creará una réplica virtual de la Tierra para evaluar el cambio climático</h2><small>13/02/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Los gemelos digitales de nuestro planeta ayudarán a monitorizar, modelizar y predecir las actividades naturales y humanas, así como a crear y probar escenarios para un desarrollo más sostenible.</div><a class='ver-mas' href='https://mundogeo.com/es/2023/02/02/barcelona-supercomputing-center-creara-una-replica-virtual-de-la-tierra-para-evaluar-el-cambio-climatico/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Sistema de Ordenamiento Territorial de la Apicultura en Argentina</h2><small>03/02/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>El Sistema Integral Georreferenciado de Ordenamiento Territorial (SIGOT) creado por el Servicio Nacional de Sanidad y Calidad Agroalimentaria (Senasa) se encuentra disponible para todo el territorio nacional y permite vincular los datos de los apiarios con los datos de aplicación de los productos fitosanitarios.</div><a class='ver-mas' href='https://mundogeo.com/es/2023/02/02/sistema-de-ordenamiento-territorial-de-la-apicultura-en-argentina-se-encuentra-disponible/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Mapa de Precipitaciones</h2><small>23/01/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Visualizador personalizado realizado por la Infraestructura de Datos Espaciales de Santa Fe (IDESF) en conjunto con personal del Ministerio de Infraestructura, Servicios Públicos y Hábitat (MISPyH) donde se plasman las precipitaciones de todo el territorio santafesino, quedando guardadas juntos con sus fechas.</div><a class='ver-mas' href='https://www.santafe.gob.ar/idesf/vis-pre/?user=rec_hidricos' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Mapa Provincial del Cuidado</h2><small>23/01/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Visualizador personalizado realizado por la Infraestructura de Datos Espaciales de Santa Fe (IDESF) en conjunto con personal del Ministerio de Igualdad, Género y Diversidad. Este Mapa es una herramienta digital que permite conocer la ubicación de servicios y espacios de cuidados dirigidos a la infancia, personas mayores y con discapacidad. En permanente actualización. </div><a class='ver-mas' href='https://www.santafe.gob.ar/idesf/vis-pre/?user=sec_genero' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Lanzamiento del Geoportal de Riesgo de Desastres del IGN</h2><small>11/01/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Se presenta el Portal de Información Geoespacial para la Gestión Integral del Riesgo de Desastres (IG-GIRD) desarrollada por el Instituto Geográfico Nacional (IGN). Es una plataforma interactiva pública de uso libre y gratuito para la difusión de conocimiento e información geoespacial de los riesgos de desastres en nuestro país.</div><a class='ver-mas' href='https://www.ign.gob.ar/content/lanzamiento-del-geoportal-de-riesgo-de-desastres-del-ign' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Sequía severa en América del Sur - Copernicus</h2><small>11/01/2023</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La imagen del día elegida el 10 de enero de 2023 por Copernicus -Programa de Observación de la Tierra de la Unión Europea- muestra el impacto de la sequía en la región de la cuenca del río Paraná. Para ello presenta dos imágenes, adquiridas por los satélites Copernicus Sentinel-3, del mes de enero para los años 2022 y 2023 respectivamente.</div><a class='ver-mas' href='https://www.copernicus.eu/en/media/image-day-gallery/severe-drought-continues-south-america' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Se lanzaron desde la CONAE cinco satélites CANSAT construidos por estudiantes de la Argentina</h2><small>23/11/2022</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Como instancia final de la competencia CANSAT impulsada por el Mincyt y la CONAE, los equipos ganadores de CABA, Córdoba, Formosa y Misiones realizaron los lanzamientos y analizaron los resultados, tal como lo harían en una misión espacial profesional</div><a class='ver-mas' href='https://mundogeo.com/es/2022/11/17/se-lanzaron-desde-la-conae-cinco-satelites-cansat-construidos-por-estudiantes-de-la-argentina/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Las Finanzas Espaciales ganan terreno en el mundo de los negocios actuales</h2><small>24/06/2022</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>Para quienes manejan los hilos de la economía global, la capacidad de cuantificar y analizar los efectos de los negocios en la naturaleza, y de la naturaleza en los negocios, se está convirtiendo en una ventaja competitiva esencial</div><a class='ver-mas' href='https://mundogeo.com/es/2022/06/02/las-finanzas-espaciales-ganan-terreno-en-el-mundo-de-los-negocios-actuales/' target='_blank'>Ver más</a></div><div class="block-novedades overflow" style="position: absolute; top: 0px; left: 0px;  z-index: 5; opacity: 0; display: none; "><h2>Los sistemas de información geográfica, claves para la detección de explosivos en Ucrania</h2><small>24/06/2022</small><div style='margin: 0px 0 2px 0px; text-align:left; white-space: pre-line;'>La organización The HALO Trust está documentando la destrucción en esta nación para evaluar el riesgo de las municiones sin explotar antes de empezar sus esfuerzos de reconstrucción y reasentamiento</div><a class='ver-mas' href='https://mundogeo.com/es/2022/06/08/los-sistemas-de-informacion-geografica-claves-para-la-deteccion-de-explosivos-en-ucrania/' target='_blank'>Ver más</a></div>            
+        </div>
+        
+    </div>
+    <footer class="nav-slider" style="z-index:100;">
+<!--       <a href="#" class="prev-noticia" id="prev-noticia"><i class="fa fa-step-backward" aria-hidden="true" ></i></a>
+        <a href="#" onclick="$('.slideshow').cycle('toggle'); return false; " ><i class="fa fa-pause" aria-hidden="true"></i></a> 
+        <a href="#" class="next-noticia" id="next-noticia"><i class="fa fa-step-forward" aria-hidden="true" ></i></a>-->
+        
+        <div class="btn-group" role="group" aria-label="Navegar noticias">
+  <button type="button" class=" btn btn-secondary" id="prev-noticia"><i class="fa fa-step-backward" aria-hidden="true" ></i></button>
+  <button type="button" class="btn btn-secondary" onclick="$('.slideshow').cycle('toggle'); $(this).find('>:first-child').toggleClass('fa-pause fa-play'); return false; "><i class="fa fa-pause" aria-hidden="true"></i></button>
+  <button type="button" class="btn btn-secondary" id="next-noticia"><i class="fa fa-step-forward" aria-hidden="true" ></i></button>
+        </div>
+        </footer>
+    
+</div>
+
+<div id="imagenes-linkeadas" class="seccion">
+    <!--<? = $imagenes ?>-->
+    <div class="row">
+	<div class="col-md-4">
+		<!--Situacion Hidrica -->
+		<div id="situacion-hidrica" >
+			<a href="paginas/situacion-hidrica" title="Situación Hídrica">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/situacion-hidrica-348x80.png" alt="Acceso Situación Hídrica" >
+			</a>
+			<div class="descripcion">Enlaces a recursos de la Provincia y de organismos nacionales para el monitoreo de ríos y precipitaciones caídas.</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div id="servicios-OGC" class="">
+			<a href="paginas/servicios-OGC" title="Servicios OGC ofrecidos por la IDESF" > <img src="/idesf/geoportal/recursos/images/imgs-linkeadas/idesf-ogc-348x80.png" border="0"></a>
+			<div class="descripcion">Servicios estándares, de acceso gratuito, ofrecidos por la IDESF, para la visualización de mapas oficiales de cobertura provincial.</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div id="alerta" class="">
+			<a href="//santafe.gob.ar/proteccioncivil/alerta/" target="_blank" title="Acceder">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/alerta-348x80.png" alt="Acceder" >
+			</a>
+			<div class="descripcion">Proyecto de colaboración con la Secretaría de Protección Civil, que permite visualizar la cobertura de una tormenta severa en proximidad. <!--ante un alerta por condiciones meteorológicas severas, a fin de tomar decisiones preventivas--></div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<!--Eventos -->
+		<div id="eventos" >
+			<a href="paginas/eventos" title="Eventos IDESF">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/eventos-348x239.png" alt="acceso a los Eventos">
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div id="google-earth" class="">
+			<a href="paginas/google-earth" title="La IDESF en Google Earth" > <img src="/idesf/geoportal/recursos/images/imgs-linkeadas/idesf-googleearth-348x80.png" border="0" ></a>
+			<div class="descripcion">Servicio OGC WMS de la IDESF para poder visualizar las capas oficiales de la Provincia en la aplicación Google Earth.</div>
+		</div>
+	</div>
+	<!--div class="col-md-4">
+  
+        <div id="donde-estamos" class="">
+            <h3 class="">Dónde estamos</h3>
+            <iframe style="width:200px; height:180px;" id="mapa" class="map_embed" scrolling="no" frameborder="0" src="<?php echo URL_MAPA_EMBEBIDO_IDESF ?>"></iframe> 
+        </div>
+	</div-->
+	<div class="col-md-4">
+		<div id="idera" class="">
+			<a href="http://www.idera.gob.ar/" target="_blank" title="Acceder al sitio de IDERA">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/Adherido_a_IDERA_ok.png" alt="Acceder al sitio de IDERA" >
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4 ">
+		<div class=" covid">
+			<a href="paginas/coronavirus" target="_self" title="Acceder">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/covid.png" alt="Acceder" >
+			</a>
+			<div class="descripcion">Desde el inicio de la pandemia COVID19, la IDESF ha colaborado en distintos proyectos impulsados por la provincia.	</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="bahra">
+			<a href="http://www.bahra.gob.ar/" target="_blank" title="Acceder">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/logo_BAHRA.png" alt="Acceder" >
+			</a>
+			<div class="descripcion">La Base de Asentamientos Humanos de la República Argentina es la primera base de datos oficial y normalizada de localidades, parajes, entidades y bases antárticas del territorio nacional.<!--; donde se identifica unívocamente a todos los asentamientos humanos, registrando el nombre, coordenadas y código único, entre otros atributos.--></div>
+		</div>
+	</div>
+	<div class="col-md-4 ">
+		<div class="mapas-escolares-ign">
+			<a href="https://mapasescolares.ign.gob.ar/dist/src/frontpage.html" target="_blank" title="Acceder al generador de mapas de IGN">
+				<img src="/idesf/geoportal/recursos/images/imgs-linkeadas/mapas-escolares-ign-2021.png" alt="Acceder" >
+			</a>
+			<div class="descripcion">Herramienta gratuita que permite descargar mapas digitales diseñados y también generar mapas propios para luego descargarlos.</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+</div>
+
+<script language="JavaScript"  type="text/javascript">
+       $(document).ready(function(){	
+                $("#slider").easySlider({
+                    auto: false, 
+                    continuous: true
+					
+                });
+                
+                $('.slideshow').cycle({ 
+				fx:     'fade', 
+				speed:  1000, 
+				timeout: 5000, 
+				next:   '#next-noticia', 
+				prev:   '#prev-noticia',
+                                fit: true
+		});	
+                
+            });	
+</script> 
+
+
+
+
+        </div>
+        <div id="" class=" container-menu-horizontal">
+    <div id="" class="container">
+        <!--div class="col-md-3 menu-horizontal">
+            <h4>Institucional</h4>
+            <ul>
+                <li onClick="location.href = '/idesf/geoportal/paginas/ide'"><a>¿Qué es una IDE?</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/idesf'"><a>IDESF</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/organizacion'"><a>Organización</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/beneficios'"><a>Beneficios</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/servidor-de-datos'"><a>Servidor de Datos</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/restricciones-de-uso'"><a>Restricciones de Uso</a> </li>
+            </ul>
+        </div>
+        <div class="col-md-3 menu-horizontal">
+            <h4>Difusión </h4>
+            <ul>
+                <li onClick="location.href = '/idesf/geoportal/paginas/eventos'"><a>Eventos IDESF</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/capacitacion'"><a>Capacitación</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/medios-de-comunicacion'"><a>IDESF en Medios</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/galeria'"><a>Galería de Fotos</a> </li>
+            </ul>
+
+        </div>
+        <div class="col-md-3 menu-horizontal">
+            <h4>Recursos</h4>
+            <ul>
+                <li onClick="location.href = '/idesf/geoportal/paginas/referencia-geografica'"><a>Referencia Geográfica</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/google-earth'"><a>Google Earth</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/situacion-hidrica'"><a>Situación Hídrica</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/documentos'"><a>Documentos</a> </li>
+                <li onClick="location.href = '/idesf/geoportal/paginas/geo-tutoriales'"><a>Geo-tutoriales</a> </li>
+            </ul>
+        </div-->
+        <div class="col-md-3 menu-horizontal">
+
+	<h4>Institucional</h4>
+
+	<ul>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/ide'"><a>¿Qué es una IDE?</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/la-idesf'"><a>La IDESF</a> </li>
+
+		<!--
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/idesf'"><a>IDESF</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/organizacion'"><a>Organización</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/beneficios'"><a>Beneficios</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/servidor-de-datos'"><a>Servidor de Datos</a> </li>
+
+		-->
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/restricciones-de-uso'"><a>Restricciones de Uso</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/documentos#documentos-caracter-institucional'"><a>Normativas</a> </li>
+
+	</ul>
+
+	<h4>Difusión </h4>
+
+	<ul>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/eventos'"><a>Eventos IDESF</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/capacitacion'"><a>Capacitación</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/medios-de-comunicacion'"><a>IDESF en Medios</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/galeria-de-fotos'"><a>Galería de Fotos</a> </li>
+
+	</ul>
+
+</div>
+
+<div class="col-md-3 menu-horizontal">
+
+	<h4>Actividades</h4>
+
+	<ul>
+
+		<li onClick="location.href='/idesf/geoportal/paginas/proyectos'"><a>Proyectos</a> </li>
+
+		<li onClick="location.href='/idesf/geoportal/paginas/asistencia-a-productores'"><a>Asistencia a productores</a> </li>
+
+		<!--li onClick="location.href='/idesf/geoportal/paginas/medios-de-comunicacion'"><a>Colaboraciones con terceros</a> </li-->
+
+		<li onClick="location.href='/idesf/geoportal/paginas/universidad'"><a>Universidad</a> </li>
+
+		<li onClick="location.href='/idesf/geoportal/paginas/convenios'"><a>Convenios</a> </li>
+
+	</ul>
+
+</div>
+
+<div class="col-md-3 menu-horizontal">
+
+	<h4>Recursos</h4>
+
+	<ul>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/referencia-geografica'"><a>Referencia Geográfica</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/google-earth'"><a>Google Earth</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/situacion-hidrica'"><a>Situación Hídrica</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/documentos'"><a>Documentos</a> </li>
+
+		<li onClick="location.href = '/idesf/geoportal/paginas/geo-tutoriales'"><a>Geo-tutoriales</a> </li>
+
+	</ul>
+
+</div>
+
+        <div class="col-md-3 menu-horizontal">
+            <h4>Sitios de Interés</h4>
+            <ul>
+                                        <li onClick="location.href='/idesf/geoportal/paginas/sitios-referentes'"><a>Sitios Referentes</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-de-argentina'"><a>IDEs de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/ides-del-mundo'"><a>IDEs del Mundo</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/visualizadores-de-argentina'"><a>Visualizadores de Argentina</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/formacion'"><a>Formación</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/software'"><a>Software</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/boletines-y-revistas'"><a>Boletines y Revistas</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/utilidades'"><a>Utilidades</a> </li>
+                                    <li onClick="location.href='/idesf/geoportal/paginas/datos-para-descarga'"><a>Datos para Descarga</a> </li>
+            
+
+            </ul>
+        </div>
+    </div>
+</div>        
+<!--section id="footer" class="anchoSitio "-->
+
+<!--section id="footer" class="anchoSitio "-->
+<!-- el comodin /idesf/geoportal/paginas/  se reemplaza en tiempo de ejecucion -->
+
+<div class="footer">
+	<div class="container">
+		<div class="col-md-4">
+			<p><strong>IDESF</strong></p>
+			<p>Infraestructura de Datos Espaciales de Santa Fe</p>
+			<!--p>Secretaría de Tecnologías para la Gestión</p>
+        <p>Ministerio de Gobierno y Reforma del Estado</p>
+			<p>Gobierno Provinicia Santa Fe</p-->
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i> San Martín 2466 - 6to. Piso (S3000FSB) Santa Fe </p>
+			<p><i class="fa fa-phone" aria-hidden="true"></i> 54 + 342 4508700 - Int. 5147 / 5149.</p>
+		</div>
+		<div class="col-md-4">
+			<ul id="reg_contact">
+				<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="/idesf/geoportal/paginas/contacto" ><span> Contacto</span></a></li>
+				<li><i class="fa fa-info-circle" aria-hidden="true"></i><a class="registrarse" href="/idesf/geoportal/paginas/infraestructura-tecnologica-utilizada" > <span> Infraestructura tecnológica utilizada</span></a></li>
+				<li><i class="fa fa-sitemap" aria-hidden="true"></i><a href="/idesf/geoportal/paginas/sitemap" > <span> Mapa Web</span></a></li>
+				<li><i class="fa fa-linkedin"aria-hidden="true"></i><a href="https://www.linkedin.com/company/idesf-infraestructura-de-datos-espaciales-de-santa-fe/?viewAsMember=true" target="_blank"> <span> Seguinos en Linkedin</span></a></li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+		</div>
+		<p class="footer-right">&copy;<span id="fecha_rights"></span>  - Todos los derechos reservados.</p>
+		<script>
+			const d = new Date();
+			document.getElementById("fecha_rights").innerHTML = d.getFullYear();
+		</script>
+	</div>
+	<!--</section>-->
+</div>
+</div>   
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up  fa-2x" aria-hidden="true"></i></button>
+
+<style>
+    #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4276bc; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 12px 15px; /*15px;*/ /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+    
+</style>
+
+<script>
+    $(document).ready( function () { 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+    })
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+        document.documentElement.scrollTop = 0; // For IE and Firefox
+    }
+</script>    
+        <script type="text/javascript" src="/idesf/geoportal/javascript/header.js"></script>        <script type="text/javascript" src="/idesf/geoportal/javascript/../assets/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/idesf/geoportal/javascript/easySlider1.7.js"></script><script type="text/javascript" src="/idesf/geoportal/javascript/jquery.cycle.all.v303.js"></script>
+
+
+    </body>
+</html>

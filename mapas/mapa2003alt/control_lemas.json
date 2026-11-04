@@ -1,0 +1,46 @@
+{
+  "id": "lemas",
+  "title": "Elección con lemas",
+  "html": "atlas_2003alt_lemas.html",
+  "readable": 503,
+  "modeled": 539,
+  "matched": 503,
+  "winners": {
+    "L": 95,
+    "M": 233,
+    "K": 58,
+    "DLS": 98,
+    "C": 19,
+    "R": 36
+  },
+  "national_target": {
+    "M": 4352090,
+    "DLS": 3533654,
+    "R": 2547475,
+    "K": 2088487,
+    "L": 2744711,
+    "C": 2578811,
+    "TERR": 352075,
+    "MOREAU": 226728
+  },
+  "denominator_estimated_from_turnout": 18433252,
+  "national_residual_not_geographically_allocated": 9221,
+  "national_percent_discrepancies": [],
+  "percent_sum": 99.95,
+  "max_national_error": 0,
+  "max_row_error": 1.1641532182693481e-10,
+  "optimizer": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "iterations": 19,
+  "winner_ratio": 1.02,
+  "provincial_winners_matched": true,
+  "hierarchical_adjustment": "Global con ganadores locales → márgenes provinciales con ganadores provinciales → ajuste local dentro de cada provincia.",
+  "rounding": {
+    "method": "Redondeo controlado a piso/techo por celda; restos mayores para totales locales; márgenes nacionales y ganadores locales/provinciales exactos.",
+    "max_cell_change": 0.7304867424654731,
+    "max_local_total_change": 0.5140453313433682,
+    "national_error": 0,
+    "local_total_error": 0,
+    "local_winners_changed": 0,
+    "provincial_winners_changed": 0
+  }
+}

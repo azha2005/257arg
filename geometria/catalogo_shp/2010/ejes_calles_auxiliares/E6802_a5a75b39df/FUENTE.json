@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6802_a5a75b39df",
+  "shp": "E6802.shp",
+  "entidades": 50,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6802.dbf",
+      "bytes": 18010,
+      "sha256": "b29bbbf800ef0afe88dfe383019e6eb35487bffdd28f7ce820c5b8bf47297355"
+    },
+    {
+      "archivo": "E6802.shp",
+      "bytes": 4660,
+      "sha256": "6f540a6ce7156793b288b7dd703b7f3adfa5078446f47a7f4da5013de1f9b77e"
+    },
+    {
+      "archivo": "E6802.shx",
+      "bytes": 500,
+      "sha256": "c60c6f94aa4eb6da5510baaa282ecac1ed12850aa7a6625695ed6cba64ac9f5b"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/lasbandurriasa3h.zip!E6802.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_d4056f3f43",
+    "archivo": "santafe/ipec/2010/lasbandurriasa3h.zip!E6802.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 50,
+    "registros_shx": 50,
+    "shape_type": 3,
+    "bbox": [
+      5358950.5,
+      6436881.0,
+      5359828.0,
+      6437915.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/lasbandurriasa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "efbf375ab6aa29486c904a7977890b1ea6508143bf0c180ddb7c797afc9e1c68"
+}

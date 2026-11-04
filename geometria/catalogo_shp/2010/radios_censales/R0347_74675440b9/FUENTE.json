@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0347_74675440b9",
+  "shp": "R0347.shp",
+  "entidades": 11,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0347.dbf",
+      "bytes": 2726,
+      "sha256": "d70f24e748239f3ab0bd3d3a9a9a48be7c74d529d1d394a84752556c669fed29"
+    },
+    {
+      "archivo": "R0347.shp",
+      "bytes": 5564,
+      "sha256": "d88f978438d2f81d7f259958baf0c6a0bb728a3aee28b9b0761f32d43d9d00a1"
+    },
+    {
+      "archivo": "R0347.shx",
+      "bytes": 188,
+      "sha256": "fda927294cf6da163e114336705ca0aaa70a6316e9812dc0b90eeddfd026e09a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/chabasa3v.zip!R0347.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_63953fab8f",
+    "archivo": "santafe/ipec/2010/chabasa3v.zip!R0347.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 11,
+    "registros_shx": 11,
+    "shape_type": 5,
+    "bbox": [
+      5372444.0,
+      6320117.5,
+      5374391.0,
+      6322282.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/chabasa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "1f6f112005b425ba010f520b973eafdd7ca97c8965a469bc07eef95b03f4e4dd"
+}

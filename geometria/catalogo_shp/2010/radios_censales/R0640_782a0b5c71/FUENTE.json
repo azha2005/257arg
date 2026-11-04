@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R0640_782a0b5c71",
+  "shp": "R0640.shp",
+  "entidades": 4,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R0640.dbf",
+      "bytes": 1298,
+      "sha256": "5a63bffbe549d949671eddbd46b1b58690da31339a91cd4bde979eac507a6c11"
+    },
+    {
+      "archivo": "R0640.shp",
+      "bytes": 3412,
+      "sha256": "b304c260678d511dbbc097ee4cd7eda2146eb882379460a8643b0ef119fff936"
+    },
+    {
+      "archivo": "R0640.shx",
+      "bytes": 132,
+      "sha256": "75db5b592165578fa01074cfc54ddc81d31f02ff49535b39862ad3ec024e0719"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/serodinoa2h.zip!R0640.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_29315c43ec",
+    "archivo": "santafe/ipec/2010/serodinoa2h.zip!R0640.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 4,
+    "registros_shx": 4,
+    "shape_type": 5,
+    "bbox": [
+      5410154.5,
+      6391375.5,
+      5412026.5,
+      6393303.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/serodinoa2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "933d31add782c69a50c045836ab57e6cafb8a9719ce304e886d1c1fd1d17567a"
+}

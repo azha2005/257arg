@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E1456_2824e4d807",
+  "shp": "E1456.shp",
+  "entidades": 132,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E1456.dbf",
+      "bytes": 46546,
+      "sha256": "f2682509c49daa60fa60a9e9c093a5793ca4a8d2490fc025662f14091cb16f2b"
+    },
+    {
+      "archivo": "E1456.shp",
+      "bytes": 11716,
+      "sha256": "b4774f4022bff4ea74ac2a1db15ec0052a2fda2a0d9a4f459667d3b6f08ce361"
+    },
+    {
+      "archivo": "E1456.shx",
+      "bytes": 1156,
+      "sha256": "6ac727c7712ae4c36c7714e98148b3d0bb7e091bd672e9c3983c1fa3a910db95"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Ambrosettia2h.zip!E1456.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_73c6eac272",
+    "archivo": "santafe/ipec/2010/Ambrosettia2h.zip!E1456.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 132,
+    "registros_shx": 132,
+    "shape_type": 3,
+    "bbox": [
+      5347373.0,
+      6678552.0,
+      5348538.0,
+      6679714.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Ambrosettia2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "c75ee026fff6b7de035cc5c04cdb344a9bd6f4be08ec1253494cc5d5bb6c4eed"
+}

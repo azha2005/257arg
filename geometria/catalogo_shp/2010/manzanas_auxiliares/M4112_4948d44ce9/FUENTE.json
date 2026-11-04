@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4112_4948d44ce9",
+  "shp": "M4112.shp",
+  "entidades": 25,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4112.dbf",
+      "bytes": 5311,
+      "sha256": "59b4d8b51236f9a6f35359f86a412917d843e8bff6b517e62bea57e9759eaf1d"
+    },
+    {
+      "archivo": "M4112.shp",
+      "bytes": 3852,
+      "sha256": "7349e3a3d092109937cba645b26ae002c83d5ebb980c2ea0ff3a4c53fea06c49"
+    },
+    {
+      "archivo": "M4112.shx",
+      "bytes": 300,
+      "sha256": "8cacac7857569717e2f9bf971f7dc339d74adc3763d6e6edf3d7421b94450d9a"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/carmendelsaucea3h.zip!M4112.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_5a17c7ec0d",
+    "archivo": "santafe/ipec/2010/carmendelsaucea3h.zip!M4112.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 25,
+    "registros_shx": 25,
+    "shape_type": 5,
+    "bbox": [
+      5424159.5,
+      6322167.5,
+      5425194.0,
+      6323127.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/carmendelsaucea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "2d64a7a2b62110c81a3a2634b56a219534427ac37b1676b433c57180b455319a"
+}

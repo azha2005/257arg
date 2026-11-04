@@ -1,0 +1,803 @@
+{
+  "mesas": 114,
+  "claves_unicas": 114,
+  "complementarias": 2,
+  "colegios_literales": 33,
+  "advertencia": "Cobertura de mesas completa; bloque de cinco sin identificar territorialmente; conciliacion provincial abierta; silencios no son ceros",
+  "totales_observados": {
+    "Barrera": {
+      "suma_observada": 10288,
+      "mesas_con_mencion": 114,
+      "mesas_sin_mencion": 0
+    },
+    "Quiroga": {
+      "suma_observada": 3174,
+      "mesas_con_mencion": 110,
+      "mesas_sin_mencion": 4
+    },
+    "Soldati": {
+      "suma_observada": 209,
+      "mesas_con_mencion": 44,
+      "mesas_sin_mencion": 70
+    },
+    "blancos": {
+      "suma_observada": 153,
+      "mesas_con_mencion": 75,
+      "mesas_sin_mencion": 39
+    }
+  },
+  "resumen_provincial_pdf69": {
+    "Barrera": 10194,
+    "Quiroga": 3187,
+    "Soldati": 202,
+    "blancos": 155,
+    "dispersos": 17
+  },
+  "por_colegio": {
+    "Capital - distrito 1": {
+      "mesas": 7,
+      "Barrera": {
+        "suma_observada": 593,
+        "mesas_con_mencion": 7,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 154,
+        "mesas_con_mencion": 7,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 65,
+        "mesas_con_mencion": 6,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 17,
+        "mesas_con_mencion": 7,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Capital - distrito 2": {
+      "mesas": 4,
+      "Barrera": {
+        "suma_observada": 327,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 141,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 22,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "blancos": {
+        "suma_observada": 17,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Capital - distrito 3": {
+      "mesas": 5,
+      "Barrera": {
+        "suma_observada": 451,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 83,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 29,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 11,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Trinidad": {
+      "mesas": 8,
+      "Barrera": {
+        "suma_observada": 750,
+        "mesas_con_mencion": 8,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 266,
+        "mesas_con_mencion": 8,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 44,
+        "mesas_con_mencion": 8,
+        "mesas_sin_mencion": 0
+      },
+      "blancos": {
+        "suma_observada": 12,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 3
+      }
+    },
+    "Desamparados": {
+      "mesas": 9,
+      "Barrera": {
+        "suma_observada": 849,
+        "mesas_con_mencion": 9,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 173,
+        "mesas_con_mencion": 9,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 12,
+        "mesas_con_mencion": 6,
+        "mesas_sin_mencion": 3
+      },
+      "blancos": {
+        "suma_observada": 8,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 4
+      }
+    },
+    "Angaco Norte": {
+      "mesas": 4,
+      "Barrera": {
+        "suma_observada": 441,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 75,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 4
+      },
+      "blancos": {
+        "suma_observada": 6,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Santa Lucia": {
+      "mesas": 4,
+      "Barrera": {
+        "suma_observada": 405,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 126,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 6,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 3,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Alto de Sierra": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 136,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 57,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "9 de Julio": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 70,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 3,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Concepcion": {
+      "mesas": 10,
+      "Barrera": {
+        "suma_observada": 906,
+        "mesas_con_mencion": 10,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 307,
+        "mesas_con_mencion": 10,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 19,
+        "mesas_con_mencion": 8,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 21,
+        "mesas_con_mencion": 9,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Chimbas": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 118,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 30,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 3,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Pocito": {
+      "mesas": 6,
+      "Barrera": {
+        "suma_observada": 584,
+        "mesas_con_mencion": 6,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 275,
+        "mesas_con_mencion": 6,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 9,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 5,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Rivadavia": {
+      "mesas": 3,
+      "Barrera": {
+        "suma_observada": 255,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 118,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 3,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 3,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "25 de Mayo": {
+      "mesas": 3,
+      "Barrera": {
+        "suma_observada": 211,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 38,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 3
+      },
+      "blancos": {
+        "suma_observada": 2,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Caucete": {
+      "mesas": 9,
+      "Barrera": {
+        "suma_observada": 1003,
+        "mesas_con_mencion": 9,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 63,
+        "mesas_con_mencion": 9,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 9
+      },
+      "blancos": {
+        "suma_observada": 12,
+        "mesas_con_mencion": 7,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Cieneguita": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 36,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 33,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Cochagual": {
+      "mesas": 2,
+      "Barrera": {
+        "suma_observada": 74,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 31,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 4,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Berros": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 37,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 35,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Retamito": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 57,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Albardon": {
+      "mesas": 5,
+      "Barrera": {
+        "suma_observada": 459,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 294,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 5
+      },
+      "blancos": {
+        "suma_observada": 5,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Ullum": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 46,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 21,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Angaco Sud": {
+      "mesas": 4,
+      "Barrera": {
+        "suma_observada": 300,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 117,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 4
+      },
+      "blancos": {
+        "suma_observada": 5,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Villa de Jachal": {
+      "mesas": 4,
+      "Barrera": {
+        "suma_observada": 227,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 231,
+        "mesas_con_mencion": 4,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 4
+      },
+      "blancos": {
+        "suma_observada": 3,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 3
+      }
+    },
+    "Pampa Vieja": {
+      "mesas": 2,
+      "Barrera": {
+        "suma_observada": 139,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 69,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Huaco": {
+      "mesas": 2,
+      "Barrera": {
+        "suma_observada": 141,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 82,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Mogna": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 67,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 23,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Colegio sin identificar acta26marzo": {
+      "mesas": 5,
+      "Barrera": {
+        "suma_observada": 467,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 238,
+        "mesas_con_mencion": 5,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 5
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 4
+      }
+    },
+    "Iglesia": {
+      "mesas": 2,
+      "Barrera": {
+        "suma_observada": 220,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      }
+    },
+    "Rodeo": {
+      "mesas": 3,
+      "Barrera": {
+        "suma_observada": 355,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 20,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 3
+      },
+      "blancos": {
+        "suma_observada": 4,
+        "mesas_con_mencion": 3,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Valle Fertil": {
+      "mesas": 2,
+      "Barrera": {
+        "suma_observada": 179,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 63,
+        "mesas_con_mencion": 2,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 2
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 1
+      }
+    },
+    "Astica": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 90,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 4,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Calingasta": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 207,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 1,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      }
+    },
+    "Barrial": {
+      "mesas": 1,
+      "Barrera": {
+        "suma_observada": 88,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Quiroga": {
+        "suma_observada": 7,
+        "mesas_con_mencion": 1,
+        "mesas_sin_mencion": 0
+      },
+      "Soldati": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      },
+      "blancos": {
+        "suma_observada": 0,
+        "mesas_con_mencion": 0,
+        "mesas_sin_mencion": 1
+      }
+    }
+  },
+  "diferencia_observado_menos_resumen": {
+    "Barrera": 94,
+    "Quiroga": -13,
+    "Soldati": 7,
+    "blancos": -2
+  }
+}

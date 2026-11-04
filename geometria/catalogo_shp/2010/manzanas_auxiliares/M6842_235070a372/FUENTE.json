@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6842_235070a372",
+  "shp": "M6842.shp",
+  "entidades": 61,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6842.dbf",
+      "bytes": 12403,
+      "sha256": "106f91a07a3f85f909b3807b603f790cd9d177eac3873a212e3045dc7242a71c"
+    },
+    {
+      "archivo": "M6842.shp",
+      "bytes": 12892,
+      "sha256": "82ba114fea097739c6ef6587bdcd80b83f49975122ac8773076977cfd7c81345"
+    },
+    {
+      "archivo": "M6842.shx",
+      "bytes": 588,
+      "sha256": "bc355e8882b5a55b86b5abec824f845bab5503aaca877fbb9d434bbf13f681ef"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/puertoarroyosecoa1h.zip!M6842.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_923db58d84",
+    "archivo": "santafe/ipec/2010/puertoarroyosecoa1h.zip!M6842.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 61,
+    "registros_shx": 61,
+    "shape_type": 5,
+    "bbox": [
+      5451660.0,
+      6332436.5,
+      5455034.5,
+      6335411.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/puertoarroyosecoa1h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fc79c94e57d21cc096a9df030c2e25ebf4c585c4c5178b73b56b9feb763cc6f3"
+}

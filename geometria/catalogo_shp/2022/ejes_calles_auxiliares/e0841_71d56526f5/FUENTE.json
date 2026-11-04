@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0841_71d56526f5",
+  "shp": "e0841.shp",
+  "entidades": 291,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0841.dbf",
+      "bytes": 87328,
+      "sha256": "f09a39fb134c9a1b765f572e26d0e02c6e42b0cda237126f2dee5065a5d00c18"
+    },
+    {
+      "archivo": "e0841.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0841.shp",
+      "bytes": 25740,
+      "sha256": "8cf72c94290772baecc91486a2e981a15101872caeba88445e20499ce06e596f"
+    },
+    {
+      "archivo": "e0841.shx",
+      "bytes": 2428,
+      "sha256": "77612fe006a2a3a1756c9bc8520e863c3b8e774e382f7a56df01cdbb5a819598"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SANMARTINDELASESCOBAS.zip!e0841.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_43850d9aa7",
+    "archivo": "santafe/ipec/2022/SANMARTINDELASESCOBAS.zip!e0841.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 291,
+    "registros_shx": 291,
+    "shape_type": 3,
+    "bbox": [
+      5350705.0,
+      6473967.5,
+      5352273.5,
+      6475972.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SANMARTINDELASESCOBAS.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "32e987d1d9a8707ca5e033c035873a27d22760c467180935ce256efd49646abb"
+}

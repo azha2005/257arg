@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e6877_def47da98e",
+  "shp": "e6877.shp",
+  "entidades": 56,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6877.shx",
+      "bytes": 548,
+      "sha256": "97910a846b9d24292d1a269922fbc1a493a0db0883769f94a3433c654f120bcd"
+    },
+    {
+      "archivo": "e6877.shp",
+      "bytes": 5348,
+      "sha256": "88110b1e785f09b21f647b5ff9607a4dd44c0d02b3a202dcafb45cfa89e654b1"
+    },
+    {
+      "archivo": "e6877.sbx",
+      "bytes": 244,
+      "sha256": "be059c8077feda2d36b269c8b281755b0a89ce88f7c564f237868c8ee95cff89"
+    },
+    {
+      "archivo": "e6877.sbn",
+      "bytes": 1036,
+      "sha256": "4ec1a05a7bc3999dfbf17e81737bf99dcd1f4028d87b0ab546caa4cd7a1c3b7f"
+    },
+    {
+      "archivo": "e6877.dbf",
+      "bytes": 20097,
+      "sha256": "58e209abab5e9661529d788574d76fa5be0bed08ce9589c5ddafe45dd38a6ca7"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/FLORDEORO.zip!e6877.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_e9de17265d",
+    "archivo": "santafe/ipec/2010/FLORDEORO.zip!e6877.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 56,
+    "registros_shx": 56,
+    "shape_type": 3,
+    "bbox": [
+      5532746.5,
+      6800763.5,
+      5534247.0,
+      6801633.5
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/FLORDEORO.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "845404a3a31787d41f3b481a49604fab575cf9938005455293053820b4fc2d46"
+}

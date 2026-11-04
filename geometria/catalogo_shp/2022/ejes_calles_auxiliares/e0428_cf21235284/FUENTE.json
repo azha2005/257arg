@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e0428_cf21235284",
+  "shp": "e0428.shp",
+  "entidades": 359,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0428.dbf",
+      "bytes": 107592,
+      "sha256": "db7940d71b4f96b12647ee953618694fbd590e01037cb367c030f6efd3a40072"
+    },
+    {
+      "archivo": "e0428.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e0428.shp",
+      "bytes": 32204,
+      "sha256": "7d0bd8a52bc616aef721f1653453c8aaaaca000004d672b2e606f67015cad5db"
+    },
+    {
+      "archivo": "e0428.shx",
+      "bytes": 2972,
+      "sha256": "dc91fdc701ee02cb05fcd20b2b15559a1f1cf6d8a1a3e72032625bdfc1b6ad6e"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/MACIEL.zip!e0428.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_c039d0d878",
+    "archivo": "santafe/ipec/2022/MACIEL.zip!e0428.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 359,
+    "registros_shx": 359,
+    "shape_type": 3,
+    "bbox": [
+      5415533.0,
+      6408351.5,
+      5417075.5,
+      6411163.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/MACIEL.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "61d1d57b12e54b7c2632ac03dc48b875c7fa67b7dc6eaa4e581dbc16a859e000"
+}

@@ -45,3 +45,5 @@ Los departamentos son estimaciones sobre datos de diputados, no resultados presi
 - **Póster (SVG, sale en los PNG y en la descarga SVG):** dos hemiciclos de 300 puntos (electores por lista y votación final), la votación final (De la Torre 159, Yrigoyen 127, Justo 14; 151 para la presidencia), una barra con la composición de los 159 (PDP 121 + ex-PAN 19 + UCR Disidente 19) y el texto que aclara que Yrigoyen ganó el voto popular y De la Torre fue electo por coalición. El primer lugar de la leyenda dice «MÁS VOTADO», no «GANÓ».
 - **Página HTML (debajo del póster, oculta en `#bare`):** tabla por provincia con los electores de cada lista y su voto final. En la tarjeta de cada provincia hay una sección «Votación final del Colegio Electoral».
 - Los electores y su votación final son los del docx/cartel; el ex-PAN y la UCR Disidente votan por De la Torre.
+
+Escenario original: **@etiamintenebris**, según atribución aportada por el usuario. La estimación territorial del atlas pertenece al proyecto.

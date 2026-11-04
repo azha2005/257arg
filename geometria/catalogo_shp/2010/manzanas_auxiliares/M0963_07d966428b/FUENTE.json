@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0963_07d966428b",
+  "shp": "M0963.shp",
+  "entidades": 97,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0963.dbf",
+      "bytes": 19495,
+      "sha256": "07e937c3d815bbe375e9d0934f20f2c6549cecdc96ed0f3e2ba7ceb4996f37bf"
+    },
+    {
+      "archivo": "M0963.shp",
+      "bytes": 13964,
+      "sha256": "d744b5eff2b0a779a60d8f343a81058262db5cd96380011a94c167d3b5e11618"
+    },
+    {
+      "archivo": "M0963.shx",
+      "bytes": 876,
+      "sha256": "d08380fb050c6f67e80f05ad2b55195661c8693d3f95b964a2253ca9337d7206"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Feliciaa3h.zip!M0963.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_0b8632bbd3",
+    "archivo": "santafe/ipec/2010/Feliciaa3h.zip!M0963.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 97,
+    "registros_shx": 97,
+    "shape_type": 5,
+    "bbox": [
+      5383851.0,
+      6542612.0,
+      5385157.5,
+      6543769.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Feliciaa3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a2a27b073be8e592948696530fd6d66bd32033d2075a7ad20604f2c8cfe7c783"
+}

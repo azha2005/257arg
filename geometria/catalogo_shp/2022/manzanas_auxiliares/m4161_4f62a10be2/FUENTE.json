@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2022/manzanas_auxiliares/m4161_4f62a10be2",
+  "shp": "m4161.shp",
+  "entidades": 12,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "m4161.dbf",
+      "bytes": 2750,
+      "sha256": "9df93b9cc61b209a858f4cea4c257970d53e0f32efc10f41f10ac84e87e373ee"
+    },
+    {
+      "archivo": "m4161.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "m4161.shp",
+      "bytes": 2148,
+      "sha256": "d16c9f5a3919885420b51a352dc7623cf19d1efb900e3d1fa00fd6bc7352d019"
+    },
+    {
+      "archivo": "m4161.shx",
+      "bytes": 196,
+      "sha256": "e08c78da7f998593bd690324ddafcde8fbae5dceb18ea3313769099ceb05cfb6"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/HIPATIA.zip!m4161.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_10801a8b63",
+    "archivo": "santafe/ipec/2022/HIPATIA.zip!m4161.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 12,
+    "registros_shx": 12,
+    "shape_type": 5,
+    "bbox": [
+      5401137.5,
+      6555849.5,
+      5401970.0,
+      6556800.5
+    ],
+    "campos": [
+      "CODPROV",
+      "NOMPCIA",
+      "CODDEPTO",
+      "NOMDEPTO",
+      "CODDIST",
+      "NOMDIST",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "ESPVERDE"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/HIPATIA.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "6b6ed8de54e705b053e0dc8936389daad3597cb254766d1e2fc342093d539aee"
+}

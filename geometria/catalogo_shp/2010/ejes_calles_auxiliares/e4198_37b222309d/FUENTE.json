@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e4198_37b222309d",
+  "shp": "e4198.shp",
+  "entidades": 48,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4198.shx",
+      "bytes": 484,
+      "sha256": "61d4e34dacff4f4e2f93a6bafcd40d3011e27b36d2f6fd34791e312370bc2fb2"
+    },
+    {
+      "archivo": "e4198.shp",
+      "bytes": 4596,
+      "sha256": "6da73442af09e1b26e9944c850271a685a94a92ed96e8f43474fe04bffa4ea1c"
+    },
+    {
+      "archivo": "e4198.sbx",
+      "bytes": 196,
+      "sha256": "9b2e923e3f139906276a7f21b159e49cb610da1d10b80410960c33ab5ccf224b"
+    },
+    {
+      "archivo": "e4198.sbn",
+      "bytes": 700,
+      "sha256": "e1fb23b7c971f3fe0ce34bf79f6fc0f2ab05668c9ed13d8a3248a5157c07be01"
+    },
+    {
+      "archivo": "e4198.dbf",
+      "bytes": 17313,
+      "sha256": "09e285684bee16adfc9fc215b5bd70247b3333ca735fee6e751d4cb8b564f66c"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/LOSTABANOS.zip!e4198.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_452f940f79",
+    "archivo": "santafe/ipec/2010/LOSTABANOS.zip!e4198.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 48,
+    "registros_shx": 48,
+    "shape_type": 3,
+    "bbox": [
+      5501436.0,
+      6852387.5,
+      5501892.5,
+      6853165.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "HASTAI",
+      "DESDEI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/LOSTABANOS.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "5d3d06f4bd8db44a864b4e1525ded79f8efca168a5cebb82b50a896927210fca"
+}

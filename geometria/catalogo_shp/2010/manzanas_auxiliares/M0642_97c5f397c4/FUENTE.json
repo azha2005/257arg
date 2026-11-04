@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M0642_97c5f397c4",
+  "shp": "M0642.shp",
+  "entidades": 183,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M0642.dbf",
+      "bytes": 36437,
+      "sha256": "9ecfcdf5f15f57d14ca8def1958d398e6c84f0480bc69f13af356067f32a3575"
+    },
+    {
+      "archivo": "M0642.shp",
+      "bytes": 27900,
+      "sha256": "f3d10fb98c10cd1b863c8097cf94da9befec0cad38dec7baa01fc8cd0a4e9f20"
+    },
+    {
+      "archivo": "M0642.shx",
+      "bytes": 1564,
+      "sha256": "3c463822bac2a186b7a1feecbb53ebe98bd258c958a6723920ae45baa36a80ec"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/Francka2v.zip!M0642.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_6736d11da8",
+    "archivo": "santafe/ipec/2010/Francka2v.zip!M0642.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 183,
+    "registros_shx": 183,
+    "shape_type": 5,
+    "bbox": [
+      5410074.5,
+      6504346.5,
+      5411761.0,
+      6506887.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/Francka2v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "fc6c262ed2756718a89e940454f88324a139f9209b27d5d80100bd2e65afeee9"
+}

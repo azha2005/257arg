@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e4122_3da7e38b4b",
+  "shp": "e4122.shp",
+  "entidades": 98,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e4122.dbf",
+      "bytes": 29814,
+      "sha256": "ea8cb30e9ded2a38de81e595fcf0388cf37e40c7acab9307be8130423ce17a69"
+    },
+    {
+      "archivo": "e4122.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e4122.shp",
+      "bytes": 9220,
+      "sha256": "315a8ca444829f391f502aecaf70b6fd8b9cc7f47a7cb655628f1ada5c78b81b"
+    },
+    {
+      "archivo": "e4122.shx",
+      "bytes": 884,
+      "sha256": "2052dbc9dea610887aa6c6d95d31467bf23ee676772e51a04ba5779a8564fb0a"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/SALADEROMARIANOCABAL.zip!e4122.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_5461099f04",
+    "archivo": "santafe/ipec/2022/SALADEROMARIANOCABAL.zip!e4122.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 98,
+    "registros_shx": 98,
+    "shape_type": 3,
+    "bbox": [
+      5496034.0,
+      6583528.0,
+      5496919.5,
+      6584758.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/SALADEROMARIANOCABAL.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "793e495286f39581519eeaf57d4cdb2d0f54cec7c22656bb1260f5826299a351"
+}

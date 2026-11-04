@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E6862_ae65c7addc",
+  "shp": "E6862.shp",
+  "entidades": 32,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E6862.dbf",
+      "bytes": 11746,
+      "sha256": "fc3c0597e6f24ccc4ac983a097db8457e3337699e11a5564428a328a204c3d01"
+    },
+    {
+      "archivo": "E6862.shp",
+      "bytes": 3828,
+      "sha256": "1add22fcd78e06ac3eabeea4876dcb7969ec10a3121475be31f5e4d576d50874"
+    },
+    {
+      "archivo": "E6862.shx",
+      "bytes": 356,
+      "sha256": "5d233263f43a2b7bd95a3e1f51e3a07d46e2fa48d29f477fa15bcea9c8244c0d"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/barrioelpacaycomipinia3v.zip!E6862.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_2f7273f2ab",
+    "archivo": "santafe/ipec/2010/barrioelpacaycomipinia3v.zip!E6862.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 32,
+    "registros_shx": 32,
+    "shape_type": 3,
+    "bbox": [
+      5411414.0,
+      6444883.5,
+      5412709.5,
+      6447368.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/barrioelpacaycomipinia3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "7c3fd81bb233b7ed48f42605d1d98b41ec850365ca60aa4f12b255949ce5dc4c"
+}

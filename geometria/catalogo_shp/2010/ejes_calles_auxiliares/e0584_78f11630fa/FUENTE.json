@@ -1,0 +1,83 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/e0584_78f11630fa",
+  "shp": "e0584.shp",
+  "entidades": 498,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e0584.dbf",
+      "bytes": 191841,
+      "sha256": "2984f7397207b2cf446795b8ed2287c5cedec6edb7c86cebe692de2cd52cd987"
+    },
+    {
+      "archivo": "e0584.sbn",
+      "bytes": 12132,
+      "sha256": "12945d2be08515c05ef41b3136e4cf1fa143f967ee230a17e5774c8233b7622e"
+    },
+    {
+      "archivo": "e0584.sbx",
+      "bytes": 972,
+      "sha256": "000b38072a5bc431764f9940fa8e28f22749ae7a1457fcf0f26f497c818ffbd8"
+    },
+    {
+      "archivo": "e0584.shp",
+      "bytes": 44500,
+      "sha256": "4a67dc5c9b6fba4134d578282b4404cc58f1ddb6f510036162a42626fe4d3b66"
+    },
+    {
+      "archivo": "e0584.shx",
+      "bytes": 4084,
+      "sha256": "fb911248d4ca243598c2722c25508f1a1d6a415ba3d2adf3e85c4c1b1a3b15b9"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/MONTEVERA.zip!e0584.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3ecebb5d1e",
+    "archivo": "santafe/ipec/2010/MONTEVERA.zip!e0584.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 498,
+    "registros_shx": 498,
+    "shape_type": 3,
+    "bbox": [
+      5434578.0,
+      6512351.0,
+      5436464.0,
+      6516284.0
+    ],
+    "campos": [
+      "CODPCIA",
+      "NOMPCIA",
+      "CODDEP",
+      "NOMDEP",
+      "CODDIS",
+      "NOMDIS",
+      "CODLOC",
+      "NOMLOC",
+      "NROMUNI",
+      "NOMMUNI",
+      "CODCALLE",
+      "NOMUSUAL",
+      "NOMNOR",
+      "TIPOCALLE",
+      "DESDED",
+      "HASTAD",
+      "DESDEI",
+      "HASTAI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/MONTEVERA.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6f36625dd533a0b1c25d055218a594092a00a2525b988ff63ff78c3a8411260e"
+}

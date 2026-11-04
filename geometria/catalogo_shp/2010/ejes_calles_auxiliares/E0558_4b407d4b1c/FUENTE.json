@@ -1,0 +1,73 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2010/ejes_calles_auxiliares/E0558_4b407d4b1c",
+  "shp": "E0558.shp",
+  "entidades": 325,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "E0558.dbf",
+      "bytes": 113710,
+      "sha256": "9bf695684822c44b6f6e3d138c690fef581260afe8b12a3ce42609de2d37901d"
+    },
+    {
+      "archivo": "E0558.shp",
+      "bytes": 28924,
+      "sha256": "4dac454d2938e356ad80586fabae9e58c16fc3fbc835c03c3f4af60b3cdf81d1"
+    },
+    {
+      "archivo": "E0558.shx",
+      "bytes": 2700,
+      "sha256": "bf4adab299d99a82f8ee6e67b5e9ed783bca3a06408dd88256db3377c717a9ac"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/sanctispiritua2h.zip!E0558.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_de9e4b0922",
+    "archivo": "santafe/ipec/2010/sanctispiritua2h.zip!E0558.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 325,
+    "registros_shx": 325,
+    "shape_type": 3,
+    "bbox": [
+      5291933.0,
+      6233718.0,
+      5294014.5,
+      6235923.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle",
+      "NomUsual",
+      "NomNor",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/sanctispiritua2h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "096845e38ac751b74501f08fafcac71a32454dc28b02b55211fa281b94f8ab1b"
+}

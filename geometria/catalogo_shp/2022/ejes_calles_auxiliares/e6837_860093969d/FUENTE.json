@@ -1,0 +1,76 @@
+{
+  "anio_carpeta": "2022",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "ejes_calles_auxiliares",
+  "carpeta": "2022/ejes_calles_auxiliares/e6837_860093969d",
+  "shp": "e6837.shp",
+  "entidades": 30,
+  "shape_type": 3,
+  "componentes": [
+    {
+      "archivo": "e6837.dbf",
+      "bytes": 9550,
+      "sha256": "0dcb225af5ef4203d93c5ef587039aead6bea19b8dad303867c3417802f14096"
+    },
+    {
+      "archivo": "e6837.prj",
+      "bytes": 415,
+      "sha256": "df00a3a8fd0c1fbc1b4de18e8a19f6b789f164e6df6afa41737003fd6ca1eecf"
+    },
+    {
+      "archivo": "e6837.shp",
+      "bytes": 2772,
+      "sha256": "3b9ea4c90c2fde7460159e6030dc4fa18fbf0f4fdc565bddab2110152e354606"
+    },
+    {
+      "archivo": "e6837.shx",
+      "bytes": 340,
+      "sha256": "105ec029de9b9b20ba790046600f36d8608337caa8b7070c0537cfcf41cf49d7"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2022/KILOMETRO115.zip!e6837.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2022_1985967b1e",
+    "archivo": "santafe/ipec/2022/KILOMETRO115.zip!e6837.shp",
+    "tipo": "eje de calle (auxiliar)",
+    "corte": "2022",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 30,
+    "registros_shx": 30,
+    "shape_type": 3,
+    "bbox": [
+      5478094.5,
+      6811791.5,
+      5478404.0,
+      6812407.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "CodCalle10",
+      "CodCalle20",
+      "Nombre",
+      "TipoCalle",
+      "DesdeD",
+      "HastaD",
+      "DesdeI",
+      "HastaI"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta/KILOMETRO115.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_1994_Argentina_Zone_5\",GEOGCS[\"GCS_POSGAR_1994\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",5500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-60.0],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",-90.0],UNIT[\"Meter\",1.0]]"
+  },
+  "firma_componentes": "89cdc3a9eecdbd7524474b5204df7fd681da0e8c3f91873936d217a547beda8c"
+}

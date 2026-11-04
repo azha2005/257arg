@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M6850_57ba388734",
+  "shp": "M6850.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M6850.dbf",
+      "bytes": 3538,
+      "sha256": "a22d2e6231c006f597cb9121d30a2354185a81d7ac429c2837489e4980191ee8"
+    },
+    {
+      "archivo": "M6850.shp",
+      "bytes": 2996,
+      "sha256": "fa5834b7f6fe59bed234a490a82c62c98b62376cead04cc402ad3bc34a00ca84"
+    },
+    {
+      "archivo": "M6850.shx",
+      "bytes": 228,
+      "sha256": "f92c5bc28c6759f4744b0cf1a431c0b78c7bd38af08a37d947aa23a0d81d95ad"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/balneariolaverdea3h.zip!M6850.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_f72c0592bb",
+    "archivo": "santafe/ipec/2010/balneariolaverdea3h.zip!M6850.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5379933.5,
+      6682854.5,
+      5380798.5,
+      6683902.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/balneariolaverdea3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "ce829abcfe90f37b66044eb9b71b95d26cb1d6c86b250b2a131130d21975e032"
+}

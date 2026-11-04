@@ -1,0 +1,88 @@
+{
+  "nombre": "Catamarca",
+  "distrito": "03",
+  "serie": "2023",
+  "fecha": "22/10/2023",
+  "origen": "Gobernador 22/10/2023 (circuitos)",
+  "destino": "Presidente 22/10/2023",
+  "nivel": "circuitos",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.gob.ar/2023",
+  "nota": "Provisorio DINE de gobernador por circuito, mesas nativas. Gobernador y presidente general se votaron el mismo día; no representa una transferencia temporal.",
+  "foco": [],
+  "id": "catamarca_gob2023_2023p_circuitos",
+  "cobertura_provincial": 1.0,
+  "cobertura_origen": 1.0,
+  "cobertura_destino": 1.0,
+  "pendientes": [
+    "BELEN:113A",
+    "CAPAYAN:20"
+  ],
+  "foco_lado": "origen",
+  "unidades": 157,
+  "categorias_origen": 4,
+  "rango": 4,
+  "condicion": 7.263947063361199,
+  "lambda_": 1e-07,
+  "validacion_cruzada": {
+    "0.001": 0.012140480493587357,
+    "0.0001": 0.005123444621173013,
+    "1e-05": 0.004052447671544949,
+    "1e-06": 0.0036930186592574288,
+    "1e-07": 0.003635693623376817
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 2.200524160675549,
+  "desviacion_max_margen_destino_pp": 0.21124145288564516,
+  "electores_o_votos_origen": 237484.0,
+  "electores_o_votos_destino": 247986.0,
+  "filas": [
+    {
+      "origen": "JUNTOS POR EL CAMBIO",
+      "peso": 18.62,
+      "dif_variante_pp": 11.46,
+      "sensibilidad_pp": 38.65,
+      "ancho_intervalo_pp": 10.53,
+      "separacion_pp": 61.92,
+      "no_identificada": true
+    },
+    {
+      "origen": "LA LIBERTAD AVANZA",
+      "peso": 19.59,
+      "dif_variante_pp": 16.49,
+      "sensibilidad_pp": 31.1,
+      "ancho_intervalo_pp": 7.34,
+      "separacion_pp": 63.62,
+      "no_identificada": false
+    },
+    {
+      "origen": "UNION POR LA PATRIA",
+      "peso": 45.25,
+      "dif_variante_pp": 1.27,
+      "sensibilidad_pp": 16.75,
+      "ancho_intervalo_pp": 4.76,
+      "separacion_pp": 44.95,
+      "no_identificada": false
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 16.54,
+      "dif_variante_pp": 11.84,
+      "sensibilidad_pp": 25.11,
+      "ancho_intervalo_pp": 14.66,
+      "separacion_pp": 39.89,
+      "no_identificada": false
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

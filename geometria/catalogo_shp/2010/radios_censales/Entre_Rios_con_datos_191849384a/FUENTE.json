@@ -1,0 +1,74 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/Entre_Rios_con_datos_191849384a",
+  "shp": "Entre_Ríos_con_datos.shp",
+  "entidades": 2673,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "Entre_Ríos_con_datos.qpj",
+      "bytes": 610,
+      "sha256": "85e1713125418cdc4ea4b60fbb9924435efcfac363d7c2ef032b80f04f639cee"
+    },
+    {
+      "archivo": "Entre_Ríos_con_datos.shp",
+      "bytes": 3841312,
+      "sha256": "a9f50d597e8d3511fb3abf9b4afe9bb0663eea5aed7ef47ea42d8b139b15851b"
+    },
+    {
+      "archivo": "Entre_Ríos_con_datos.shx",
+      "bytes": 21484,
+      "sha256": "91f6bcd8578b80ca9af0f44a2ae20e4ead634d998040a6fbe33f47192a87ccda"
+    },
+    {
+      "archivo": "Entre_Ríos_con_datos.dbf",
+      "bytes": 1093546,
+      "sha256": "db7eaae6083740b963b6e4ec9898b9d0d459d34d7b877272c9d950113fc8529f"
+    },
+    {
+      "archivo": "Entre_Ríos_con_datos.prj",
+      "bytes": 392,
+      "sha256": "14266a4e140f0b06c1089bcf6a3abd09058596863305fb6479e9f35a9ab55f0f"
+    }
+  ],
+  "faltan_componentes": [],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/indec/2010/Codgeo_Entre_Rios_con_datos.zip!Entre_Ríos_con_datos.shp",
+  "metadata_original": {
+    "id_fuente": "indec2010_30",
+    "archivo": "indec/2010/Codgeo_Entre_Rios_con_datos.zip!Entre_Ríos_con_datos.shp",
+    "tipo": "radio censal",
+    "corte": "2010",
+    "cobertura": "Entre Ríos",
+    "features": 2673,
+    "registros_shx": 2673,
+    "shape_type": 5,
+    "bbox": [
+      3990929.107296598,
+      6209372.750774565,
+      4285764.81267243,
+      6640987.942424373
+    ],
+    "campos": [
+      "toponimo_i",
+      "link",
+      "varon",
+      "mujer",
+      "totalpobl",
+      "hogares",
+      "viviendasp",
+      "viv_part_h"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.indec.gob.ar/indec/web/Institucional-Indec-Codgeo",
+    "nota": "Archivo provincial oficial. Validar capas y cobertura.",
+    "licencia": "ver página oficial",
+    "url_descarga": "https://www.indec.gob.ar/ftp/cuadros/territorio/codgeo/Codgeo_Entre_Rios_con_datos.zip",
+    "crs_wkt": "PROJCS[\"POSGAR_94_Argentina_3\",GEOGCS[\"GCS_POSGAR 94\",DATUM[\"D_POSGAR_1994\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",-66],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",3500000],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1]]",
+    "campo_codigo": "link",
+    "codigos_distintos": 2673,
+    "codigos_vacios": 0
+  },
+  "firma_componentes": "4d1d076b4387953b127296b1ebea6a7fae32bc9e72c8f457d6b759215b974f88"
+}

@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4174_048ab7d872",
+  "shp": "M4174.shp",
+  "entidades": 16,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4174.dbf",
+      "bytes": 3538,
+      "sha256": "51f91fced45a11a854c344c6054d0184633f44aac8c8749dc4cc0433c533748f"
+    },
+    {
+      "archivo": "M4174.shp",
+      "bytes": 2372,
+      "sha256": "60521bc9177711fce90a987c40161bc2af70a398bf291a79a151278702a85d50"
+    },
+    {
+      "archivo": "M4174.shx",
+      "bytes": 228,
+      "sha256": "826ebab34511337a8302f7736fad04fa4d4ce4b9a88afceda6ef24deb4db2c50"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/coloniabichaa3v.zip!M4174.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_42bb4cb435",
+    "archivo": "santafe/ipec/2010/coloniabichaa3v.zip!M4174.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 16,
+    "registros_shx": 16,
+    "shape_type": 5,
+    "bbox": [
+      5322816.5,
+      6585382.5,
+      5323240.0,
+      6586028.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/coloniabichaa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "6c6a34ca688feed274497834c8a497d729aca94df1058649989b9e40a13eb704"
+}

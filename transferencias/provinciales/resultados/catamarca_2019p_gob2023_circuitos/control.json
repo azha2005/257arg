@@ -1,0 +1,122 @@
+{
+  "nombre": "Catamarca",
+  "distrito": "03",
+  "serie": "2023",
+  "fecha": "22/10/2023",
+  "origen": "Presidente 2019",
+  "destino": "Gobernador 22/10/2023 (circuitos)",
+  "nivel": "circuitos",
+  "base": "votos emitidos",
+  "fuente": "https://resultados.gob.ar/2023",
+  "nota": "Provisorio DINE de gobernador por circuito, mesas nativas. Gobernador y presidente general se votaron el mismo día; no representa una transferencia temporal. Empalme 2019–2023 por departamento y código; se excluyen 12 claves con cambios de padrón fuera de 0,75–1,33 del crecimiento mediano. Es un control de estabilidad, no certificación de límites históricos.",
+  "foco": [],
+  "id": "catamarca_2019p_gob2023_circuitos",
+  "cobertura_provincial": 0.965959812029442,
+  "cobertura_origen": 0.965959812029442,
+  "cobertura_destino": 0.9752250130597494,
+  "pendientes": [
+    "Padrón inestable 2019–2023: CAPAYAN:21",
+    "Padrón inestable 2019–2023: LAPAZ:24",
+    "Padrón inestable 2019–2023: LAPAZ:26",
+    "Padrón inestable 2019–2023: ANCASTI:40",
+    "Padrón inestable 2019–2023: ANCASTI:42",
+    "Padrón inestable 2019–2023: ELALTO:46",
+    "Padrón inestable 2019–2023: PACLIN:63",
+    "Padrón inestable 2019–2023: PACLIN:64",
+    "Padrón inestable 2019–2023: AMBATO:89",
+    "Padrón inestable 2019–2023: BELEN:113",
+    "Padrón inestable 2019–2023: TINOGASTA:137",
+    "Padrón inestable 2019–2023: SANTAMARIA:146",
+    "ANTOFAGASTADELASIERRA:126",
+    "ANTOFAGASTADELASIERRA:127",
+    "BELEN:113A",
+    "CAPAYAN:20",
+    "CAPITAL:3A",
+    "TINOGASTA:133"
+  ],
+  "foco_lado": "destino",
+  "unidades": 141,
+  "categorias_origen": 6,
+  "rango": 6,
+  "condicion": 120.36201602395778,
+  "lambda_": 1e-06,
+  "validacion_cruzada": {
+    "0.001": 0.021782898392748763,
+    "0.0001": 0.01783256351533668,
+    "1e-05": 0.016318755221167932,
+    "1e-06": 0.016037331087193123,
+    "1e-07": 0.015987898841539512
+  },
+  "bootstrap": 200,
+  "intervalo_percentiles": [
+    5,
+    95
+  ],
+  "rmse_pp": 6.007586949036087,
+  "desviacion_max_margen_destino_pp": 0.20912297788413248,
+  "electores_o_votos_origen": 227756.0,
+  "electores_o_votos_destino": 229400.0,
+  "filas": [
+    {
+      "origen": "Frente de Todos",
+      "peso": 53.17,
+      "dif_variante_pp": 1.39,
+      "sensibilidad_pp": 16.76,
+      "ancho_intervalo_pp": 8.44,
+      "separacion_pp": 35.97,
+      "no_identificada": false
+    },
+    {
+      "origen": "Juntos por el Cambio",
+      "peso": 32.08,
+      "dif_variante_pp": 18.11,
+      "sensibilidad_pp": 34.07,
+      "ancho_intervalo_pp": 18.8,
+      "separacion_pp": 39.86,
+      "no_identificada": false
+    },
+    {
+      "origen": "Consenso Federal",
+      "peso": 5.31,
+      "dif_variante_pp": 31.7,
+      "sensibilidad_pp": 63.28,
+      "ancho_intervalo_pp": 5.92,
+      "separacion_pp": 79.65,
+      "no_identificada": true
+    },
+    {
+      "origen": "NOS + Unite",
+      "peso": 2.1,
+      "dif_variante_pp": 6.07,
+      "sensibilidad_pp": 70.75,
+      "ancho_intervalo_pp": 1.23,
+      "separacion_pp": 79.12,
+      "no_identificada": true
+    },
+    {
+      "origen": "Otras listas",
+      "peso": 1.46,
+      "dif_variante_pp": 11.64,
+      "sensibilidad_pp": 72.22,
+      "ancho_intervalo_pp": 1.86,
+      "separacion_pp": 78.61,
+      "no_identificada": true
+    },
+    {
+      "origen": "Blanco y nulo",
+      "peso": 5.88,
+      "dif_variante_pp": 23.49,
+      "sensibilidad_pp": 42.64,
+      "ancho_intervalo_pp": 82.55,
+      "separacion_pp": 58.91,
+      "no_identificada": true
+    }
+  ],
+  "unidad_conteos": "equivalentes en la base de destino; no son personas observadas",
+  "reservas": [
+    "Inferencia ecológica: resultados territoriales, sin seguimiento individual.",
+    "El bootstrap no mide el sesgo por heterogeneidad territorial ni por cambios de padrón.",
+    "Los márgenes de destino del Sankey son modelados; los observados se muestran aparte.",
+    "Las filas con asterisco no permiten una atribución precisa de destinos."
+  ]
+}

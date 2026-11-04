@@ -1,0 +1,69 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "radios_censales",
+  "carpeta": "2010/radios_censales/R4122_25849e69c0",
+  "shp": "R4122.shp",
+  "entidades": 1,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "R4122.dbf",
+      "bytes": 686,
+      "sha256": "b900458d9e46ba3f5784738339e6a19c7e6a71cb24b2a69e2db06b7f2ab75b11"
+    },
+    {
+      "archivo": "R4122.shp",
+      "bytes": 748,
+      "sha256": "42abe51a4b7d67d9299a6f814a5447b1f47512ab0df353ecb79e69a030ce726f"
+    },
+    {
+      "archivo": "R4122.shx",
+      "bytes": 108,
+      "sha256": "cfaaf9fa1ff036e2346f8d7a095cf21d9e30210fb23e399125f627c7f83d6575"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/saladeromarianocabala3h.zip!R4122.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_3735cd2c6c",
+    "archivo": "santafe/ipec/2010/saladeromarianocabala3h.zip!R4122.shp",
+    "tipo": "radio censal (planta urbana)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 1,
+    "registros_shx": 1,
+    "shape_type": 5,
+    "bbox": [
+      5496002.0,
+      6583644.0,
+      5496919.0,
+      6584763.5
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "Frac2010",
+      "Rad2010",
+      "Frac2001",
+      "Rad2001"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/saladeromarianocabala3h.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "961cd21f1d53fa3fc9aa66781f8ba78c8bf92b319fe16138d8f4701edc69c104"
+}

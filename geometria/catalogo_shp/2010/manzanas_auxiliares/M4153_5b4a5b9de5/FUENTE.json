@@ -1,0 +1,66 @@
+{
+  "anio_carpeta": "2010",
+  "criterio_anio": "Corte declarado en inventario de la fuente",
+  "tipo": "manzanas_auxiliares",
+  "carpeta": "2010/manzanas_auxiliares/M4153_5b4a5b9de5",
+  "shp": "M4153.shp",
+  "entidades": 24,
+  "shape_type": 5,
+  "componentes": [
+    {
+      "archivo": "M4153.dbf",
+      "bytes": 5114,
+      "sha256": "b544296de1c806f07a640b838b1615db3ae11c441b6b650e0e5e872265d6c44d"
+    },
+    {
+      "archivo": "M4153.shp",
+      "bytes": 3684,
+      "sha256": "fef02fc4d83f67564f3480f613ed4718f873e325aee724c984ee6df1dd3ed422"
+    },
+    {
+      "archivo": "M4153.shx",
+      "bytes": 292,
+      "sha256": "eb634e92dfd7cd35b04bc259123e7935f5250fb479292c3fcc8516e25d4b1dde"
+    }
+  ],
+  "faltan_componentes": [
+    ".prj"
+  ],
+  "origen_absoluto": "C:\\Users\\JC\\Downloads\\dataeleccproyecto\\geometria\\cartografia_argentina/santafe/ipec/2010/campoandinoa3v.zip!M4153.shp",
+  "metadata_original": {
+    "id_fuente": "ipec_2010_b024e42f34",
+    "archivo": "santafe/ipec/2010/campoandinoa3v.zip!M4153.shp",
+    "tipo": "manzana censal (auxiliar)",
+    "corte": "2010",
+    "cobertura": "Santa Fe: planta urbana de localidad",
+    "features": 24,
+    "registros_shx": 24,
+    "shape_type": 5,
+    "bbox": [
+      5449043.5,
+      6543778.5,
+      5449849.0,
+      6544911.0
+    ],
+    "campos": [
+      "CodPcia",
+      "NomPcia",
+      "CodDep",
+      "NomDep",
+      "CodDis",
+      "NomDis",
+      "CodLoc",
+      "NomLoc",
+      "NroMuni",
+      "NomMuni",
+      "EspVerde"
+    ],
+    "formato": "SHP",
+    "fuente": "https://www.estadisticasantafe.gob.ar/contenido/cartografia-censal/",
+    "nota": "Archivo enlazado por portal IPEC bajo año censal. Incluye radios, manzanas y ejes. Conservar metadatos internos; no constituye ejido municipal. Las notas internas de la muestra publicada bajo 2022 conservan referencias a 2010 y campos frac2020/rad2020. El año de carpeta sigue el catálogo, no certifica por sí solo vigencia de cada borde.",
+    "licencia": "Consultar metadatos internos IPEC; no asumir licencia de otra colección.",
+    "url_descarga": "https://www.santafe.gov.ar/ipecinformes/uploads/planta_2010/campoandinoa3v.zip",
+    "crs_wkt": null
+  },
+  "firma_componentes": "a4e5d1368a2f5695a3762059a2530ef902d93512db8a32dabe162c138e6ddb42"
+}
