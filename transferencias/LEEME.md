@@ -1,5 +1,7 @@
 # Transferencias de voto entre legislativas (diputados nacionales)
 
+**PBA septiembre → octubre 2025 (3-nov-2026):** `2025s_2025/`, legisladores provinciales del 7-sep (base por mesa de Graficar PBA, sin las mesas de extranjeros) → diputados nacionales, por circuito (1.038 circuitos, 99,99 % del padrón). Somos Buenos Aires → LLA 63 %; FP → FP 75 %. Códigos de la base, decisiones y reservas en [2025s_2025/RESUMEN.md](2025s_2025/RESUMEN.md).
+
 **Electorados provinciales (2-nov-2026):** [visor Sankey](provinciales/INDICE.html), 25 cruces con intervalos y comparación entre variantes. Río Negro, Neuquén, Misiones y Salta 2023; provinciales de nueve distritos de 2025 hacia diputados nacionales, con Formosa pendiente de recuperar. [Fuentes, cobertura y límites](provinciales/LEEME.md). Diseño Ink del explorador de Streamlit, con Hallmark. Versión local, sin publicar.
 
 Ampliación por circuito: 52 versiones en el mismo visor. Nuevas provinciales 2023 de Chaco, Santa Fe, Buenos Aires, CABA y Catamarca; Salta y Misiones con mayor detalle; Chaco/Corrientes/Misiones/Santa Fe 2025 con empalmes más finos. [Fuentes y correspondencias](provinciales/circuitos/LEEME.md), incluidas las uniones necesarias y los cargos simultáneos. Las versiones originales se conservan.

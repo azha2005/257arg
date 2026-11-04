@@ -130,7 +130,8 @@ PKL = {"1914d": (1914, "Diputados (Cantón y actas)"), "1916d": (1916, "Diputado
        "2015p": (2015, "Presidente (DINE)"), "2015b": (2015, "Presidente, balotaje (DINE)"), "2017": (2017, "Diputados (DINE)"),
        "2019": (2019, "Diputados (DINE)"), "2019p": (2019, "Presidente (DINE)"), "2021": (2021, "Diputados (DINE)"),
        "2023pp": (2023, "Presidente, PASO por lista (DINE)"), "2023": (2023, "Diputados (DINE)"),
-       "2023p": (2023, "Presidente (DINE)"), "2023b": (2023, "Presidente, balotaje (DINE)"), "2025": (2025, "Diputados (DINE)")}
+       "2023p": (2023, "Presidente (DINE)"), "2023b": (2023, "Presidente, balotaje (DINE)"), "2025": (2025, "Diputados (DINE)"),
+       "2025s": (2025, "Buenos Aires: legisladores provinciales, septiembre (Graficar PBA)")}
 DEPTO_PKL = lambda k: PKL[k][0] < 2003 and not k.endswith("c")    # los pkl anteriores a 2003 son por departamento
 
 
