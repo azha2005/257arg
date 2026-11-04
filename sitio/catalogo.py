@@ -165,3 +165,5 @@ CRUDOS += [f"mapas/mapa2003alt/assets/epilogue-{weight}.woff2" for weight in (40
 DESTINO = {"analisis/uninominal/mapa_257.html": "uninominal/index.html",
            "analisis/uninominal/portada.png": "uninominal/portada.png"}   # og:image, de analisis/uninominal/portada.py
 CRUDOS += ["analisis/uninominal/portada.png"]
+# Páginas grandes cuyos datos se publican en un script aparte (armar.separar_datos): HTML chico para las tarjetas de X.
+DATOS_APARTE = {"analisis/uninominal/mapa_257.html": "datos.js"}

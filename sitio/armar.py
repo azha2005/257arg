@@ -8,7 +8,7 @@ El índice sigue el estilo Ink de transferencias/provinciales/INDICE.html, con m
 """
 import glob, html, io, os, shutil, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from catalogo import GRUPOS, EXTRA, MINI, CRUDOS, DESTINO
+from catalogo import GRUPOS, EXTRA, MINI, CRUDOS, DESTINO, DATOS_APARTE
 from rendimiento import optimizar
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -296,6 +296,16 @@ def preparar(html):
     return html[:i] + SITIO_JS + MOVIL_JS + html[i:]
 
 
+def separar_datos(s, archivo, nombre):
+    """Saca `const DATA=...;` a un script aparte que se carga antes, sin async (4-nov-2026). Con los datos adentro
+    la página pesaba 3,2 MB y X no armó la tarjeta del enlace; así el HTML publicado queda en unos KB."""
+    i = s.index("const DATA="); j = s.index("\n", i)
+    assert s[j - 1] == ";" and s.count("const DATA=") == 1, "DATA no ocupa una sola línea"
+    k = s.rindex("<script>", 0, i)
+    open(archivo, "w", encoding="utf8", newline="\n").write("window.__DATA=" + s[i + len("const DATA="):j] + "\n")
+    return s[:k] + f'<script src="{nombre}"></script>\n' + s[k:i] + "const DATA=window.__DATA;" + s[j:]
+
+
 def copiar(dest):
     rutas = [e[0] for e in entradas()]
     publicas = [SITIO] + [SITIO + enlace(r) for r in rutas]   # el sitemap lleva el índice y las entradas, no los EXTRA
@@ -309,6 +319,9 @@ def copiar(dest):
     for r in sorted(set(rutas)):
         d = os.path.join(dest, destino(r)); os.makedirs(os.path.dirname(d), exist_ok=True)
         s = open(os.path.join(ROOT, r), encoding="utf8").read()
+        if r in DATOS_APARTE:
+            js = os.path.join(os.path.dirname(d), DATOS_APARTE[r])
+            s = separar_datos(s, js, DATOS_APARTE[r]); tot += os.path.getsize(js)
         open(d, "w", encoding="utf8", newline="").write(preparar(s)); tot += os.path.getsize(d)
     for r in CRUDOS:
         d = os.path.join(dest, destino(r)); os.makedirs(os.path.dirname(d), exist_ok=True)
