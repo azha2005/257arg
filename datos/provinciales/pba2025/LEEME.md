@@ -1,25 +1,29 @@
-# PBA, 7 de septiembre de 2025, por mesa (pendiente)
+# PBA, 7 de septiembre de 2025, por mesa
 
-Acá va el archivo por mesa pedido a graficarpba, como `mesas.csv`. Lo lee `proyeccion/provincial/ingestar.py pba2025`
-(configuración en `proyeccion/provincial/config.py`, `ELECCIONES["pba2025"]`).
+Base por mesa del provisorio pedida a graficarpba (llegó el 3-nov-2026 como
+`drive-download-20261104T051010Z-1-001.zip`). **No se versiona** (`.gitignore`:
+`resultados_*.csv`); para regenerar, descomprimir el zip en esta carpeta:
 
-Formato que espera, una fila por mesa y lista (si viene ancho, una columna por lista, hay que pasarlo a largo antes):
+| archivo | tamaño | uso |
+|---|---|---|
+| `resultados_senadores_provinciales.csv` | 197 MB | `agregar.py` (secciones 1.ª, 4.ª, 5.ª y 7.ª) |
+| `resultados_diputados_provinciales.csv` | 199 MB | `agregar.py` (secciones 2.ª, 3.ª, 6.ª y 8.ª) |
+| `resultados_concejales.csv` | 302 MB | sin usar todavía |
 
-| columna | qué es |
-|---|---|
-| `seccion` | partido: nombre («Almirante Brown») o código de la DINE (3) |
-| `circuito` | circuito electoral, con o sin ceros a la izquierda |
-| `mesa` | número de mesa |
-| `mesa_tipo` | opcional; `EXTRANJEROS` para las mesas de residentes extranjeros |
-| `electores` | opcional; si falta, sale del padrón nacional 2025 de la misma mesa |
-| `cargo` | opcional; senadores o diputados provinciales |
-| `lista` | nombre de la lista, o «votos en blanco», «nulos», «recurridos»... |
-| `tipo` | opcional; positivo / blanco / nulo / recurrido |
-| `votos` | votos |
+```
+python datos/provinciales/pba2025/agregar.py
+```
 
-Si las columnas se llaman distinto, se renombran con `columnas` en la configuración (p. ej. `{"partido": "seccion"}`).
-Los nombres de partido que no coincidan con los de la DINE van a `ALIAS` en `config.py`.
+escribe `circuitos.csv` (versionado, una fila por circuito y tipo de mesa) y
+`transferencias/circ_2025s.pkl`, que usa `transferencias/2025s_2025/` (sankeys
+PBA septiembre → diputados nacionales octubre 2025). Códigos de la base y
+decisiones en el docstring de `agregar.py`.
 
-La primera corrida sin `listas.csv` escribe `listas_plantilla.csv` con todas las listas y sus votos: se completa la
-columna `bloque` (FP, LLA, SB, FIT; las demás vacías van a OTRAS) con la tabla de la Wikipedia y se guarda como
-`listas.csv`. Si una lista cambia de bloque según la sección, se agrega la columna `seccion` (1 a 8).
+Control (4-nov-2026): los CSV del zip reproducen exactamente `circuitos.csv` y
+`circ_2025s.pkl` generados en la otra PC.
+
+`proyeccion/provincial/ingestar.py pba2025` todavía espera un `mesas.csv` en
+formato largo (seccion, circuito, mesa, lista, votos…; ver
+`proyeccion/provincial/config.py`, `ELECCIONES["pba2025"]`): falta adaptar el
+ingestor a estas columnas (`mesa_key`, `circuito_codigo`, `name`, `votos`,
+`census`, `totalVotos`).
