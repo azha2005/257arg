@@ -62,10 +62,10 @@ p2s = {p: int(s) for p, s in d.drop_duplicates("part")[["part", "secc"]].itertup
 p2keys = collections.defaultdict(list)
 for k in target: p2keys[part_of[(k[0], k[1])]].append(k)
 import partidos_geo   # partidos INDEC 2022: la union de circuitos de la capa 2021 deja huecos
-PGEO = {p: proj_geom(g).buffer(0) for p, g in partidos_geo.load(PARTIDOS).items()}
+_pg = partidos_geo.load(PARTIDOS)   # cobertura valida: simplificada en conjunto, los bordes compartidos quedan identicos
+PGEO = dict(zip(_pg, shapely.coverage_simplify(np.array([proj_geom(g) for g in _pg.values()], dtype=object), 0.15)))
 def _shape_p(ps):
-    u = unary_union([PGEO[p] for p in ps])
-    return fill_slivers(u.buffer(0.3, join_style=2).buffer(-0.3, join_style=2)).simplify(0.04, preserve_topology=True)
+    return PGEO[ps[0]] if len(ps) == 1 else unary_union([PGEO[p] for p in ps])
 SEC_GEOM = {}
 if REGION == "pba":
     for s in sorted(set(p2s.values())):
@@ -82,8 +82,6 @@ for p in PARTIDOS:
     EXTRA.append(("pp", p, p, geom_d(_shape_p([p])), "partido"))
 NU = NR + len(EXTRA)
 _SVG_EXTRA = "".join('<path class="%s" data-i="%d" d="%s"/>' % (e[0], j, e[3]) for j, e in enumerate(EXTRA, NR))
-if REGION == "pba":   # limites de seccion electoral, mas gruesos que los de partido
-    _SVG_EXTRA += "".join('<path class="pb sb" d="%s"/>' % line_d(g.boundary) for g in SEC_GEOM.values())
 if REGION == "amba":   # Capital no voto el 7-sep: gris, rotulada
     _cb = unary_union([proj_geom(g) for g in cargar.caba_feats()]).buffer(0.5).buffer(-0.5)
     _cx, _cy = _cb.representative_point().coords[0]

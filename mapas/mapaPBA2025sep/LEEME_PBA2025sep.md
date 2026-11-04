@@ -18,7 +18,7 @@ Modos: Ganó, % Fuerza Patria, % La Libertad Avanza, % Somos Buenos Aires y part
 - **Totales**: cada nivel suma exactamente los votos de la base. Los porcentajes se calculan sobre los positivos, porque la base no informa los nulos. Participación = votantes / electores de las mesas con votos.
 - **Geometría**:
   - circuitos de la provincia del `PBA.geojson` (galeano 2021), donde los circuitos con letra van con el polígono del circuito madre;
-  - partidos de `Departamentos_2022_INDEC` (`partidos_geo.py`) y secciones como uniones de esos partidos. La unión de los circuitos de 2021 dejaba huecos y rendijas, así que no se usa para este nivel;
+  - partidos de `Departamentos_2022_INDEC` (`partidos_geo.py`), simplificados en conjunto (`coverage_simplify`) para que los bordes compartidos coincidan, y secciones como uniones de esos partidos. En el nivel Partido no se marca aparte el límite de sección. La unión de los circuitos de 2021 dejaba huecos y rendijas, así que no se usa para este nivel;
   - radios censales 2022 de CONICET (Rodríguez), los mismos del atlas `mapaAMBA2025radios`.
 - **Capital** no votó ese día (su elección local fue el 18 de mayo): en los atlas del AMBA aparece en gris, sin datos.
 
