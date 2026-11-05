@@ -58,6 +58,13 @@ Siglas:
 | Presidente septiembre 1973 | `mapa1973s` | ídem | DNE |
 | Diputados, constituyentes y presidente desde 1983 | todos | ver cada LEEME | DINE, CNE |
 
+## Geometría
+En `geometria/Base deptos 1869-2022/` están los departamentos de los censos de 1869 (291 unidades) y 1895 (424). Uso:
+- 1854–1866: la de 1869, como aproximación.
+- 1868–1890: la de 1869.
+- 1892–1910: la de 1895.
+- 1912–1930: la de 1914.
+
 ## Elecciones provinciales y municipales
 El fondo DNE tiene provinciales de casi todos los años entre 1932 y 1987: unas 400 carpetas, sobre todo de 1946 a 1973. Hoy no hay atlas provinciales anteriores a 2023. Es una línea entera nueva. Copiarlas con el disco junto con las nacionales.
 

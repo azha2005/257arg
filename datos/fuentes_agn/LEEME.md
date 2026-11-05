@@ -48,6 +48,14 @@ Además hay carpetas nacionales de 1940 y 1942 (una cada una) y elecciones provi
 - 23-oct-2026: el borrador de respuesta (correo personal del autor), en el hilo del AGN, pide las muestras de Santiago del Estero 1962 (29_056_246a273) y Río Negro 1958 (19_037_238a267). También ofrece la carpeta de Drive «AGN - DNE» del autor (editor con enlace; cerrar el acceso cuando terminen), pide el fondo completo si pueden y consulta por la serie MI01-pe.
 - 5-nov-2026: López pide de nuevo el enlace para subir las dos muestras y aclara que «planillas electorales» **no es una serie** del AGN. El material AR-AGN-DNE01 de 1908 a 1925 ingresó hace poco y lo relevaron de forma provisoria: hay tejuelos borrados y paquetes que no abrieron. Mandaron ese inventario, que está en `inventario_provisorio_1908_1925.csv` (71 legajos). Análisis completo en la sección siguiente.
 
+- 5-nov-2026, respuesta enviada:
+  - Los enlaces de Drive y OneDrive para las dos muestras.
+  - El pedido de los inventarios analíticos de Expedientes Generales 1 (AR-AGN-MI01-Eg1): 1867, 1868, 1908, 1931–1941 y 1942–1946.
+  - La pregunta de si el lote 1908–1925 está digitalizado.
+  - La visita con disco externo y fotos en sala, y cómo se saca turno.
+  - El ofrecimiento de devolver las tablas y de ayudar a identificar los legajos sin tejuelo.
+  - **Para la próxima:** pedir el inventario somero de Eg1 1867–1941, para ver qué años del siglo XIX tienen legajos electorales.
+
 ## Inventario provisorio 1908–1925 (5-nov-2026): qué puede servir
 Los rótulos dicen «padrones» o «registros electorales». Con las leyes 8130 (1908) y 8871 (1912), en el registro de cada mesa se asentaban el acta de apertura, el acta de cierre y el escrutinio de la mesa, así que **un padrón de mesa puede traer los votos de la mesa**. Hay que confirmarlo con las imágenes. El «Acta de la urna 101, mesa 9» de Añatuya muestra que en el lote hay actas de mesa. Aunque no traigan votos, los padrones dan los **inscriptos reales**.
 
