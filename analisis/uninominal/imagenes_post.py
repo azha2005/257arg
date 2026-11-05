@@ -6,7 +6,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = "file:///" + os.path.join(HERE, "mapa_257.html").replace(os.sep, "/")
 VISTAS = {"2025_todos": ("modo=0&dep=0&ren=full&elec=2&pt=1&dl=1", "Diputados 2025 · cada partido por separado · plan neutral"),
           "2023_todos": ("modo=0&dep=0&ren=full&elec=0&pt=1&dl=1", "General 2023 · cada partido por separado · plan neutral"),
-          "gerrymander_lla": ("modo=3&dep=0&ren=full&elec=2&pt=0&dl=1", "Diputados 2025 · dos bloques · distritos dibujados a favor de LLA")}
+          "gerrymander_lla": ("modo=3&dep=0&ren=full&elec=2&pt=0&dl=1", "Diputados 2025 · dos bloques · distritos dibujados a favor de LLA"),
+          "gerrymander_per": ("modo=2&dep=0&ren=full&elec=2&pt=0&dl=1", "Diputados 2025 · dos bloques · distritos dibujados a favor del peronismo")}
 # rótulo arriba (la imagen se lee sola en X) y dirección abajo
 ROTULO = """([t]) => { const m = document.querySelector('main');
   const d = document.createElement('div'); d.style.cssText = 'grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap';

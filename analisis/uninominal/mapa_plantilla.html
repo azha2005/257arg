@@ -131,6 +131,10 @@ svg.mapa { width: 100%; height: auto; }
 #mN { touch-action: pan-y; }
 #mN.ampliado { cursor: grab; touch-action: none; }
 #mN.arrastre { cursor: grabbing; }
+.selx { display: flex; flex-wrap: wrap; gap: var(--space-2xs); }
+.selx select { min-height: var(--control-h); max-width: 100%; padding: var(--space-2xs) var(--space-sm); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-control); background: var(--color-paper-2); color: var(--color-ink); font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
+.selx select:disabled { opacity: 0.55; cursor: not-allowed; }
+.aviso { font-size: var(--text-sm); color: var(--color-muted); }
 .seg .ic { min-width: var(--control-h); justify-content: center; font-size: var(--text-lg); line-height: 1; }
 /* bordes en el color del papel, como los mapas por departamento de la Wikipedia: finos entre distritos, gruesos entre provincias */
 .dz { stroke: var(--color-paper); stroke-width: .4; stroke-linejoin: round; cursor: pointer; transition: opacity var(--dur-micro) var(--ease-out); }
@@ -184,10 +188,11 @@ td.b { font-size: var(--text-xl); font-weight: 700; letter-spacing: -0.03em; col
 <div class="ctl">
  <div class="grp"><span id="lPlan">Plan</span><div class="seg" id="sPlan" role="group" aria-labelledby="lPlan"></div></div>
  <div class="grp"><span id="lPt">Fuerzas</span><div class="seg" id="sPt" role="group" aria-labelledby="lPt"><button type="button" data-v="0">Dos bloques</button><button type="button" data-v="1">Todos los partidos</button></div></div>
- <div class="grp"><span id="lDep">Límites</span><div class="seg" id="sDep" role="group" aria-labelledby="lDep"><button type="button" data-v="0">Libres</button><button type="button" data-v="1">Respetan departamentos</button></div></div>
- <div class="grp"><span id="lRen">Renovación</span><div class="seg" id="sRen" role="group" aria-labelledby="lRen"><button type="button" data-v="full">Cámara completa</button><button type="button" data-v="half">Por mitades (2023 + 2025)</button></div></div>
+ <div class="grp"><span id="lDep">Límites</span><div class="seg" id="sDep" role="group" aria-labelledby="lDep"><button type="button" data-v="0">Libres</button><button type="button" data-v="1">Respetan departamentos</button><button type="button" data-v="2">Respetan circuitos</button><button type="button" data-v="3">Departamentos y circuitos</button></div></div>
+ <div class="grp"><span id="lRen">Renovación</span><div class="seg" id="sRen" role="group" aria-labelledby="lRen"><button type="button" data-v="full">Cámara completa</button><button type="button" data-v="half" title="La mitad de los distritos eligió en 2023 (general) y la otra en 2025 (diputados)">Elección actual y anterior</button><button type="button" data-v="bases" title="Mitades por sorteo, como el proyecto original de la Ley Bases (art. 447)">Ley Bases (sorteo)</button></div></div>
  <div class="grp"><span id="lDl">Líneas de partidos</span><div class="seg" id="sDl" role="group" aria-labelledby="lDl"><button type="button" data-v="1">Mostrar</button><button type="button" data-v="0">Ocultar</button></div></div>
  <div class="grp"><span id="lElec">Elección</span><div class="seg" id="sElec" role="group" aria-labelledby="lElec"></div></div>
+ <div class="grp"><span id="lX">Otras elecciones (2011-2023)</span><div class="selx"><select id="xElec" aria-labelledby="lX"><option value="-1">Ninguna: las de arriba</option></select><select id="xLista" aria-label="Lista que se pinta"></select></div><span class="aviso" id="xAviso" hidden></span></div>
 </div>
 <main>
  <section class="hoja" aria-labelledby="hN"><div class="cab"><h2 id="hN">País</h2><div class="seg" role="group" aria-label="Acercar el mapa"><button type="button" class="ic" id="zMas" aria-label="Acercar">+</button><button type="button" class="ic" id="zMenos" aria-label="Alejar">−</button><button type="button" id="zTodo">Ver todo</button></div></div>
@@ -200,16 +205,27 @@ td.b { font-size: var(--text-xl); font-weight: 700; letter-spacing: -0.03em; col
  </div>
 </main>
 <section class="provs" aria-labelledby="hP"><h2 id="hP">Por provincia</h2><div class="tw"><table id="tab"></table></div></section>
-<div class="note"><p>Votos: los de cada circuito electoral 2025 repartidos entre sus radios por población (el porcentaje dentro de un circuito es uniforme). Los votos de 2023 se llevaron a los circuitos 2025 conservando el total de cada sección. «Dos bloques»: peronismo contra La Libertad Avanza (más Juntos por el Cambio en la general 2023); el resto de las fuerzas no cuenta. «Todos los partidos»: gana la fuerza con más votos en el distrito (mayoría simple), con los bloques del atlas de 2025 y los cinco candidatos de la general 2023; el balotaje es de dos igual. En «por mitades» se cuentan juntos Unión por la Patria y Fuerza Patria, y La Libertad Avanza de los dos años. Los gerrymanders y el plan proporcional se optimizaron con el balotaje 2023 y diputados 2025 sumados. «Por mitades»: la mitad de los distritos (clase A) se eligió en 2023 con la general y la otra (clase B) en 2025. «Respetan departamentos»: cada departamento o partido con menos población que un distrito queda entero; solo se cortan los más grandes (tolerancia de población 5 % en vez de 2 %). Cada plan es una corrida de una semilla, no un ensamble.</p></div>
+<div class="note"><p>Votos: los de cada circuito electoral 2025 repartidos entre sus radios por población (el porcentaje dentro de un circuito es uniforme). Los votos de 2023 se llevaron a los circuitos 2025 conservando el total de cada sección. «Dos bloques»: peronismo contra La Libertad Avanza (más Juntos por el Cambio en la general 2023); el resto de las fuerzas no cuenta. «Todos los partidos»: gana la fuerza con más votos en el distrito (mayoría simple), con los bloques del atlas de 2025 y los cinco candidatos de la general 2023; el balotaje es de dos igual. En «Elección actual y anterior» se cuentan juntos Unión por la Patria y Fuerza Patria, y La Libertad Avanza de los dos años. Los gerrymanders y el plan proporcional se optimizaron con el balotaje 2023 y diputados 2025 sumados. Los «extremos» no tienen ninguna preferencia de forma (ni compacidad ni departamentos: solo población pareja y distritos contiguos), pero piden márgenes seguros, para no ganar distritos por poco que se den vuelta con un vaivén chico (dummymander). «Elección actual y anterior»: la Cámara renueva por mitades; la mitad de los distritos (clase A) se eligió en 2023 con la general y la otra (clase B) en 2025. «Ley Bases»: las mismas mitades por provincia, pero sorteadas, como disponía el proyecto original de la Ley Bases (diciembre de 2023, expediente 0025-PE-2023, art. 447: «La Cámara de Diputados practicará el sorteo de las circunscripciones cuya elección corresponderá a la primera renovación parcial»); el sorteo es uno solo, con semilla fija. «Respetan departamentos»: cada departamento o partido con menos población que un distrito queda entero; solo se cortan los más grandes (tolerancia de población 5 % en vez de 2 %). «Respetan circuitos»: los límites siguen los circuitos electorales, como los mapas de Texas o Illinois siguen los precincts; un circuito se parte en radios solo si hace falta para emparejar la población (2 %), y cada corte se penaliza. Como los votos dentro de un circuito son uniformes, partirlo nunca da ventaja partidaria. «Departamentos y circuitos»: las dos cosas en jerarquía: cada departamento chico queda entero, dentro de los grandes cada circuito chico también, y solo se parte lo necesario para la población (2 %); cada departamento y cada circuito partido se penaliza. Cada plan es una corrida de una semilla, no un ensamble. «Otras elecciones»: diputados 2011 a 2023, presidente 2011, 2015 y 2019, balotaje 2015 y las PASO presidenciales 2015 y 2023, sobre los mismos distritos (dibujados con 2023 y 2025). Los votos de cada año se llevaron a los circuitos 2025: directo si el circuito no cambió, y si cambió, repartidos dentro de su sección por el padrón 2025 (en 2011 solo un tercio de los circuitos es directo; Santa Fe renumeró los suyos en 2023). Fuerzas de los atlas de cada año; las de menos de 0,5 % van a «Otros». Se puede pintar el porcentaje de una lista. Con «Elección actual y anterior», la mitad de los distritos (clase A) vota en la elección anterior del mismo tipo (diputados dos años antes; presidente 2015 con 2011 y 2019 con 2015) y la otra en la elegida; peronismo, Cambiemos/JxC, LLA e izquierda se cuentan juntos entre los dos años. Diputados 2011, presidente 2011, el balotaje 2015 y las PASO no tienen anterior en la lista.</p></div>
 </div>
 <div id="tip"></div>
 <script>
 const DATA=/*DATA*/null;
-const st={modo:0,dep:0,ren:"full",elec:2,pt:0,dl:1};
+const st={modo:0,dep:2,ren:"full",elec:2,pt:0,dl:1,x:-1,l:-1};
+// otras elecciones: un JSON por eleccion en elecciones_257/, cargado al elegirla
+const XD={};
+function xk(){return st.x>=0&&DATA.extra[st.x]?DATA.extra[st.x].k:null}
+function xon(){const k=xk();return !!(k&&XD[k])}
+function X(){return XD[xk()]}
+// «Elección actual y anterior» con las otras elecciones: la anterior del mismo tipo (clase A) y la elegida (clase B)
+const PREV={"2013":"2011","2015":"2013","2017":"2015","2019":"2017","2021":"2019","2023":"2021","2015p":"2011p","2019p":"2015p"};
+function xprev(){const k=xk();return k&&PREV[k]&&XD[PREV[k]]?PREV[k]:null}
+// familias que se cuentan juntas entre los dos años (por el lugar en el hemiciclo)
+const FAMX={0:["IZQ","Izquierda"],1:["PER","Peronismo"],4:["CAMB","PRO / Cambiemos / JxC"],5:["LLA","La Libertad Avanza"]};
+async function cargarX(k){if(k in XD)return XD[k];try{const r=await fetch("elecciones_257/"+k+".json");if(!r.ok)throw 0;XD[k]=await r.json()}catch(e){XD[k]=null}return XD[k]}
 const MODOS=[...new Set(DATA.planes.map(p=>p.k))];
 // estado inicial desde la URL: #modo=0&dep=1&ren=half&elec=2
 for(const [k,v] of new URLSearchParams(location.hash.slice(1)))if(k in st)st[k]=k==="ren"?v:+v;
-function plan(){return DATA.planes.find(p=>p.k===MODOS[st.modo]&&!!p.dep===!!st.dep)}
+function plan(){return DATA.planes.find(p=>p.k===MODOS[st.modo]&&+p.dep===st.dep)}
 const NS="http://www.w3.org/2000/svg";
 const $=id=>document.getElementById(id);
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
@@ -224,19 +240,34 @@ let MIXB=[250,250,248];function leerBase(){const v=css("--mix-base");if(v)MIXB=v
  mq.addEventListener("change",()=>{if(!r.dataset.theme)re()});leerBase();rot()})();
 function ei(e){return DATA.elec.findIndex(x=>x.k===e)}
 function votos(d,k){const i=ei(k);return [d.v[2*i],d.v[2*i+1]]}
-function elecDe(d){return st.ren==="half"?(d.c==="A"?"23":"25"):DATA.elec[st.elec].k}
+function mitades(){return st.ren!=="full"&&(!xon()||!!xprev())}
+function clase(d){return st.ren==="bases"?d.cb:d.c}
+function elecDe(d){return mitades()?(clase(d)==="A"?"23":"25"):DATA.elec[st.elec].k}
 function gana(d){const [a,b]=votos(d,elecDe(d));return {D:a>b,m:(a-b)/Math.max(a+b,1),a,b}}
 // todos los partidos: lista de {k (clave de conteo), n, c, o (orden del hemiciclo), v} de mayor a menor
 function partidos(d,k){
+ if(xon()){const P=plan(),m=mitades(),E=m&&clase(d)==="A"?XD[xprev()]:X(),f=E.planes[P.k+"|"+P.dep][d.i]||[];
+  return f.map(([i,v])=>{const q={...E.partidos[i],v};if(m&&FAMX[q.o]){q.k=FAMX[q.o][0];q.fn=FAMX[q.o][1]}else if(m)q.k=q.n;return q}).sort((x,y)=>y.v-x.v)}
  if(k==="23b"){const [a,b]=votos(d,k);return [{k:"PER",n:"Massa (UxP)",c:css("--per"),o:1,v:a},{k:"LLA",n:"Milei (LLA)",c:css("--lla"),o:5,v:b}].sort((x,y)=>y.v-x.v)}
  return d.vp[k].map(([i,v])=>({...DATA.partidos[k][i],v})).sort((x,y)=>y.v-x.v)}
 function ganaP(d){const L=partidos(d,elecDe(d)),tot=L.reduce((a,x)=>a+x.v,0)||1;return {L,tot,w:L[0],m:(L[0].v-(L[1]?L[1].v:0))/tot}}
-// nombre de una clave de conteo: en «por mitades» peronismo y LLA juntan las dos elecciones
-function nombre(w){return st.ren==="half"&&DATA.familias[w.k]?DATA.familias[w.k]:w.n}
-function color(d){if(st.pt){const g=ganaP(d);return mix(g.w.c,.35+.65*Math.min(g.m/.3,1))}
+// nombre de una clave de conteo: en «Elección actual y anterior» peronismo y LLA juntan las dos elecciones
+function nombre(w){return mitades()&&w.fn?w.fn:mitades()&&DATA.familias[w.k]?DATA.familias[w.k]:w.n}
+function color(d){
+ if(xon()&&st.l>=0){const L=partidos(d),tot=L.reduce((a,x)=>a+x.v,0)||1,q=X().partidos[st.l],qk=mitades()?(FAMX[q.o]?FAMX[q.o][0]:q.n):q.k,x=L.find(p=>p.k===qk);return mix(q.c,.08+.92*Math.min((x?x.v:0)/tot/.6,1))}
+ if(st.pt||xon()){const g=ganaP(d);return mix(g.w.c,.35+.65*Math.min(g.m/.3,1))}
  const g=gana(d),t=.35+.65*Math.min(Math.abs(g.m)/.4,1);return mix(g.D?css("--per"):css("--lla"),t)}
 function seg(el,items,cur,cb){el.innerHTML="";items.forEach((it,i)=>{const b=document.createElement("button");b.type="button";b.textContent=it;b.onclick=()=>cb(i);el.appendChild(b)})}
+function listas(){const s=$("xLista");s.innerHTML="";s.disabled=!xon();if(!xon())return;
+ s.append(new Option("Gana la más votada","-1"));X().partidos.forEach((p,i)=>{if(p.n!=="Otros")s.append(new Option("% de "+p.n,String(i)))});s.value=String(st.l)}
+function elegirX(i){st.x=i;const k=xk(),a=$("xAviso");a.hidden=true;
+ if(!k){listas();draw();return}
+ Promise.all([cargarX(k),PREV[k]?cargarX(PREV[k]):null]).then(([x])=>{if(!x){a.textContent="Esta elección se carga aparte y no se puede abrir desde un archivo local: mirala en la página publicada.";a.hidden=false;st.x=-1;$("xElec").value="-1"}
+  if(st.l>=0&&(!x||!x.partidos[st.l]))st.l=-1;listas();draw()})}
 function build(){
+ DATA.planes.forEach(P=>P.d.forEach((d,i)=>d.i=i));
+ const xs=$("xElec");(DATA.extra||[]).forEach((e,i)=>xs.append(new Option(e.t,String(i))));xs.value=String(st.x);
+ xs.onchange=()=>{st.l=-1;elegirX(+xs.value)};$("xLista").onchange=()=>{st.l=+$("xLista").value;draw()};
  seg($("sPlan"),MODOS.map(k=>DATA.planes.find(p=>p.k===k).t),0,i=>{st.modo=i;draw()});
  $("sDep").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.dep=+b.dataset.v;draw()});
  $("sPt").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.pt=+b.dataset.v;draw()});
@@ -244,16 +275,18 @@ function build(){
  seg($("sElec"),DATA.elec.map(e=>e.t),0,i=>{st.elec=i;draw()});
  $("sRen").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.ren=b.dataset.v;draw()});
  for(const [id,W,H] of [["mN",DATA.W,DATA.H],["mA",DATA.WA,DATA.HA]]){$(id).setAttribute("viewBox",`0 0 ${W} ${H}`)}
- draw();
+ if(st.x>=0)elegirX(st.x);else{listas();draw()}
 }
 function draw(){
  if(!plan())st.dep=0;
  const P=plan();
  [...$("sPlan").children].forEach((b,i)=>b.setAttribute("aria-pressed",i===st.modo));
- [...$("sDep").children].forEach(b=>{b.setAttribute("aria-pressed",+b.dataset.v===st.dep);b.disabled=!DATA.planes.find(p=>p.k===MODOS[st.modo]&&!!p.dep===!!+b.dataset.v)});
- [...$("sElec").children].forEach((b,i)=>{b.setAttribute("aria-pressed",st.ren==="full"&&i===st.elec);b.disabled=st.ren==="half"});
- [...$("sRen").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===st.ren));
- [...$("sPt").children].forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v===st.pt));
+ [...$("sDep").children].forEach(b=>{b.setAttribute("aria-pressed",+b.dataset.v===st.dep);b.disabled=!DATA.planes.find(p=>p.k===MODOS[st.modo]&&+p.dep===+b.dataset.v)});
+ const xo=xon();
+ [...$("sElec").children].forEach((b,i)=>{b.setAttribute("aria-pressed",!xo&&st.ren==="full"&&i===st.elec);b.disabled=mitades()||xo});
+ const xr=xo&&!xprev();
+ [...$("sRen").children].forEach(b=>{b.setAttribute("aria-pressed",xr?b.dataset.v==="full":b.dataset.v===st.ren);b.disabled=xr});
+ [...$("sPt").children].forEach(b=>{b.setAttribute("aria-pressed",xo?b.dataset.v==="1":+b.dataset.v===st.pt);b.disabled=xo});
  [...$("sDl").children].forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v===st.dl));
  location.replace("#"+new URLSearchParams(Object.entries(st)).toString());
  for(const [id,key,pv,box] of [["mN","n",DATA.prov,true],["mA","a",DATA.provA,false]]){
@@ -267,13 +300,13 @@ function draw(){
  }
  resumen(P);
 }
-function tip(ev,d){if(st.pt)return tipP(ev,d);const g=gana(d),k=elecDe(d),e=DATA.elec[ei(k)],t=$("tip");
+function tip(ev,d){if(st.pt||xon())return tipP(ev,d);const g=gana(d),k=elecDe(d),e=DATA.elec[ei(k)],t=$("tip");
  const tot=Math.max(g.a+g.b,1);
- t.innerHTML=`<b>${DATA.nombres[d.p]} · distrito ${d.id.split("-")[1]}</b><br>${e.t}${st.ren==="half"?` (clase ${d.c})`:""}<br>${e.d}: ${(100*g.a/tot).toFixed(1)} %<br>${e.r}: ${(100*g.b/tot).toFixed(1)} %<br><span class="m">Población ${d.pob.toLocaleString("es-AR")}</span>`;
+ t.innerHTML=`<b>${DATA.nombres[d.p]} · distrito ${d.id.split("-")[1]}</b><br>${e.t}${mitades()?` (clase ${clase(d)})`:""}<br>${e.d}: ${(100*g.a/tot).toFixed(1)} %<br>${e.r}: ${(100*g.b/tot).toFixed(1)} %<br><span class="m">Población ${d.pob.toLocaleString("es-AR")}</span>`;
  t.style.display="block";t.style.left=Math.min(ev.clientX+14,innerWidth-290)+"px";t.style.top=(ev.clientY+14)+"px"}
-function tipP(ev,d){const g=ganaP(d),e=DATA.elec[ei(elecDe(d))],t=$("tip");
+function tipP(ev,d){const g=ganaP(d),e=xon()?{t:(mitades()&&clase(d)==="A"?XD[xprev()]:X()).t}:DATA.elec[ei(elecDe(d))],t=$("tip");
  const fil=g.L.slice(0,6).map(x=>`<i class="sw" style="background:${x.c}"></i>${x.n}: ${(100*x.v/g.tot).toFixed(1)} %`).join("<br>");
- t.innerHTML=`<b>${DATA.nombres[d.p]} · distrito ${d.id.split("-")[1]}</b><br>${e.t}${st.ren==="half"?` (clase ${d.c})`:""}<br>${fil}<br><span class="m">Población ${d.pob.toLocaleString("es-AR")}</span>`;
+ t.innerHTML=`<b>${DATA.nombres[d.p]} · distrito ${d.id.split("-")[1]}</b><br>${e.t}${mitades()?` (clase ${clase(d)})`:""}<br>${fil}<br><span class="m">Población ${d.pob.toLocaleString("es-AR")}</span>`;
  t.style.display="block";t.style.left=Math.min(ev.clientX+14,innerWidth-290)+"px";t.style.top=(ev.clientY+14)+"px"}
 function resumenP(P){
  const B={},por={};let vt=0;const vk={};
@@ -283,16 +316,17 @@ function resumenP(P){
  const L=Object.entries(B).sort((a,b)=>b[1].s-a[1].s);
  const arcL=[...L].sort((a,b)=>a[1].o-b[1].o||b[1].s-a[1].s);
  hoja(L.map(([k,b])=>({n:b.n,c:b.c,s:b.s,v:100*(vk[k]||0)/vt})),arcL.map(([k,b])=>[b.s,b.c]),"Votos: porcentaje sobre todas las fuerzas.");
- clave(L.map(([k,b])=>[b.c,b.n]),"Más oscuro, más ventaja sobre el segundo.");
+ if(xon()&&st.l>=0){const q=X().partidos[st.l],qn=mitades()&&FAMX[q.o]?FAMX[q.o][1]:q.n;clave([[q.c,qn]],`Más oscuro, más porcentaje de ${qn} en el distrito (pleno desde 60 %). ${X().t}.`)}
+ else clave(L.map(([k,b])=>[b.c,b.n]),"Más oscuro, más ventaja sobre el segundo."+(xon()?` ${X().t}.`:""));
  const cols=L.slice(0,6).map(([k])=>k),otros=L.length>6;
  let h=`<thead><tr><th>Provincia</th><th>Bancas</th>${cols.map(k=>`<th>${B[k].n}</th>`).join("")}${otros?"<th>Otros</th>":""}</tr></thead>`;
  for(const p of Object.keys(por).sort()){const r=por[p],o=r.n-cols.reduce((a,k)=>a+(r[k]||0),0);
   h+=`<tr><td>${DATA.nombres[p]}</td><td>${r.n}</td>${cols.map(k=>`<td>${r[k]||""}</td>`).join("")}${otros?`<td>${o||""}</td>`:""}</tr>`}
  $("tab").innerHTML=h}
 function resumen(P){
- if(st.pt)return resumenP(P);
+ if(st.pt||xon())return resumenP(P);
  const e=DATA.elec[st.elec];
- const nD=st.ren==="half"?"Peronismo":e.d,nR=st.ren==="half"?"LLA (+ JxC en 2023)":e.r;
+ const nD=mitades()?"Peronismo":e.d,nR=mitades()?"LLA (+ JxC en 2023)":e.r;
  clave([[css("--per"),nD],[css("--lla"),nR]],"Más oscuro, margen más amplio.");
  let D=0,R=0;const por={};
  for(const d of P.d){const g=gana(d);g.D?D++:R++;por[d.p]=por[d.p]||{n:0,D:0};por[d.p].n++;if(g.D)por[d.p].D++}
@@ -308,7 +342,7 @@ function hoja(F,G,pie){
  const may=F.find(f=>f.s>=129);
  const fil=F.map(f=>`<tr><td><span class="fz"><i class="sw" style="background:${f.c}"></i>${f.n}</span></td><td class="b">${f.s}</td><td>${(100*f.s/257).toFixed(1)} %</td><td>${f.v.toFixed(1)} %</td></tr>`).join("");
  $("res").innerHTML=`<div class="hemi"><svg viewBox="0 0 260 136" role="img" aria-label="Hemiciclo de 257 bancas">${arco(G)}</svg><p>${may?`${may.n}: mayoría propia`:"Nadie llega a 129, la mayoría propia"}</p></div>
- <div><table><thead><tr><th>Fuerza</th><th>Bancas</th><th>% bancas</th><th>% votos</th></tr></thead><tbody>${fil}</tbody></table><p class="pie">${pie}${st.ren==="half"?" Clase A: general 2023; clase B: diputados 2025.":""}</p></div>`}
+ <div><table><thead><tr><th>Fuerza</th><th>Bancas</th><th>% bancas</th><th>% votos</th></tr></thead><tbody>${fil}</tbody></table><p class="pie">${pie}${mitades()?(xon()?` Clase A: ${XD[xprev()].t}; clase B: ${X().t}.`:" Clase A: general 2023; clase B: diputados 2025.")+(st.ren==="bases"?" Clases por sorteo, como manda el proyecto original de la Ley Bases (art. 447).":""):""}</p></div>`}
 function clave(L,nota){$("key").innerHTML=L.map(([c,n])=>`<span><i class="sw" style="background:${c}"></i>${n}</span>`).join("")+`<span class="nota">${nota}</span>`}
 function arco(G){// hemiciclo de 257 puntos en 9 filas; G = [[bancas, color], ...] de izquierda a derecha
  const rows=9,pts=[];let tot=0;const rs=[];for(let i=0;i<rows;i++){rs.push(60+i*7.5)}

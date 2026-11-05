@@ -84,7 +84,7 @@ Para que el mapa se lea y siga comunidades de interés, con o sin gerrymander. C
 
 `construir_partidos.py` arma los votos de cada fuerza por radio (`radios_partidos.pkl`) con el mismo camino que los dos bloques: general 2023 con los cinco candidatos (UxP, LLA, JxC, Hacemos, FIT) llevada a los circuitos 2025 partido por partido (directo si el circuito es estable, el resto de la sección por padrón 2025, sin la corrección por desviación de los dos bloques), diputados 2025 con los 80 bloques del atlas 2025 (nombres y colores de `mapas/mapa2025/dataset_2025.json`) y reparto a los radios por población. En el mapa («Fuerzas → Todos los partidos») cada distrito lo gana la fuerza más votada, sin juntar a nadie; en la renovación por mitades UxP y Fuerza Patria cuentan como peronismo y la LLA de los dos años junta. Los distritos son los mismos: se dibujaron mirando dos bloques (o ninguno, el neutral).
 
-## Resultados de los ocho planes (cámara completa)
+## Resultados de los ocho primeros planes (cámara completa)
 
 Bancas peronistas con dos bloques, y reparto con todos los partidos por separado (Per = UxP en 2023 / Fuerza Patria en 2025; IF Innovación Federal, PU Provincias Unidas, Neuq La Neuquinidad, PSJ Por San Juan).
 
@@ -100,6 +100,100 @@ Bancas peronistas con dos bloques, y reparto con todos los partidos por separado
 | Gerrymander LLA | departamentos | 45 | Per 147, LLA 85, JxC 23, Hacemos 2 | 62 | 74 | LLA 174, Per 72, PU 4, IF 3, Neuq 2, PSJ 2 |
 
 Con la general 2023 por separado el peronismo gana la mayoría (138–148 de 257 con el 36,7 % de los votos) porque LLA y JxC se dividen. El gerrymander de LLA, dibujado contra un bloque LLA + JxC, le da a UxP más bancas que el neutral cuando ese bloque no existe: un gerrymander bipartidista falla si cambia el sistema de partidos. En PBA los planes con departamentos parten de más 21 (proporcional) a 61 (gerrymander peronista) departamentos: los gerrymanders necesitaron bajar a radios sueltos (fracción 0).
+
+## Gerrymanders extremos (4-nov-2026, pedido del usuario)
+
+Modos `peronista_extremo` y `lla_extremo` de `distritar.py` (con y sin `--deptos`), inspirados en los mapas actuales de Texas e Illinois: brazos del conurbano hacia el interior y distritos «sumidero». Sin compacidad (Polsby-Popper, aristas y, en límites libres, departamentos en 0): solo población (2 %) y contigüidad. Para evitar el *dummymander*, el modelo de bancas es probabilístico con oscilación: σ = √(swing² + σ₅₅²), con `election_win_prob_at_55` 0,9 y `UNI_SWING` 0,05 (peronista) u 0,08 (LLA: con 0,05 el plan de PBA daba 44 bancas a LLA pero, con 5 puntos a favor del peronismo, 56 al peronismo). Peso 100, temperatura 0,002, y en la segunda mitad pasos *flip* de radios sueltos (`flip_step_ig`, `flip_rate_curve`) además de ReCom. Los extremos de límites libres parten del gerrymander anterior; Buenos Aires peronista desde cero (`UNI_DESDE_CERO=1`, 400.000 iteraciones), porque desde el anterior se estancaba en un óptimo peor. Con departamentos: departamentos partidos ×20 (`UNI_MULT_D`) y desvío ×50.
+
+Elección guía = balotaje 2023 + diputados 2025 sumados. «Firmes» = bancas que se conservan con 5 puntos en contra (uniforme).
+
+| Plan | Límites | 2023 | Balotaje | 2025 | Guía per. | Per. firmes | LLA firmes | Margen mediano |
+|---|---|---|---|---|---|---|---|---|
+| Neutral | libres | 53 | 74 | 86 | 78 | 51 | 139 | 18,5 |
+| Gerrymander peronista | libres | 65 | 87 | 102 | 100 | 49 | 129 | 16,0 |
+| **Peronista extremo** | libres | 72 | 100 | 108 | 105 | 61 | 122 | 14,6 |
+| Gerrymander LLA | libres | 47 | 57 | 67 | 56 | 45 | 149 | 18,8 |
+| **LLA extremo** | libres | 43 | 59 | 72 | 54 | 42 | 153 | 19,6 |
+| **Peronista extremo** | departamentos | 66 | 90 | 101 | 97 | 59 | 129 | 15,9 |
+| **LLA extremo** | departamentos | 47 | 61 | 73 | 60 | 47 | 150 | 19,3 |
+
+La ganancia en bancas es chica (+5 peronistas, −2 LLA respecto de los gerrymanders anteriores); lo que mejora es la solidez: el peronista extremo tiene 61 bancas que resisten 5 puntos en contra (49 antes). El techo lo pone la geografía: el voto peronista concentrado en el conurbano y repartido parejo en Córdoba, Mendoza, Santa Fe y Capital, y en Buenos Aires LLA con el 49,7 % de la guía.
+
+## Límites por circuitos (`--circuitos`, 4-nov-2026, pedido del usuario)
+
+Los planes de radios libres se veían demasiado dentados. Los mapas de Texas e Illinois siguen los *precincts*, así que esta versión sigue los circuitos electorales. Cada circuito con menos de 0,15 distrito ideal (`UNI_FRAC_C`) es una unidad entera; si así no se llega al 2 %, la escala baja a 0,075, 0,0375 y 0 (radios sueltos). Partir un circuito cuesta (excedente de circuitos partidos, peso `UNI_W_CIRC` 50 en la escala 0.1.0, sesgo de ReCom 20), así que solo se parte para emparejar población. Como los votos dentro de un circuito son uniformes por construcción, partirlo nunca da ventaja partidaria. Cada plan arranca del de límites libres del mismo modo; 30.000 iteraciones, tolerancia 2 %. Buenos Aires terminó con radios sueltos en los extremos (escala 0) y con circuitos de hasta 0,15 en los demás modos. Los departamentos dejan de penalizarse en esta versión. Salida en `plan_radios[_<modo>]_circ/`; `cola_circ.sh` corrió los cuatro modos no extremos. En el mapa: «Límites → Respetan circuitos».
+
+| Plan | Circuitos partidos (libres → circuitos) | 2023 | Balotaje | 2025 | Guía per. | Per. firmes | LLA firmes |
+|---|---|---|---|---|---|---|---|
+| Neutral | 859 → 49 | 52 | 75 | 87 | 78 | 54 | 142 |
+| Proporcional | 854 → 33 | 52 | 73 | 87 | 77 | 52 | 140 |
+| Gerrymander peronista | 1.262 → 38 | 63 | 91 | 106 | 97 | 56 | 129 |
+| Gerrymander LLA | 1.180 → 38 | 46 | 60 | 75 | 61 | 46 | 146 |
+| Peronista extremo | 1.935 → 73 | 61 | 90 | 102 | 97 | 55 | 130 |
+| LLA extremo | 2.070 → 66 | 45 | 60 | 80 | 62 | 44 | 150 |
+
+De unos 6.300 circuitos se parten entre 33 y 73. Los gerrymanders pierden poco (peronista 100 → 97 en la guía; LLA 56 → 61). Con circuitos los extremos ya no superan a los comunes: la libertad de forma que los distinguía se pierde. Con 30.000 iteraciones son una sola corrida corta desde el plan libre; más iteraciones podrían recuperar algo.
+
+## Departamentos y circuitos (`--deptos --circuitos`, 4-nov-2026, pedido del usuario)
+
+Las dos cosas en jerarquía: cada departamento con menos de un distrito queda entero; dentro de los grandes, cada circuito de menos de 0,15 distrito también; el resto queda en radios. Se penalizan los departamentos partidos (Mosaic, peso `UNI_W_DEP` 50) y los circuitos partidos (término propio en `score_plan`, `UNI_W_CIRC` 50, misma escala). Si no se llega al 2 %, se aflojan primero los departamentos y los circuitos siguen en 0,15 hasta el final: (1, 0,15), (0,5, 0,15), (0,25, 0,15), (0, 0,15), (0, 0,075), (0, 0). Corte temprano: si el peor desvío no baja en 5.000 iteraciones (`UNI_STALL`), el escalón se abandona. Arranca del plan por circuitos; 30.000 iteraciones (`cola_dc.sh`; Buenos Aires rehecho con `cola_dc_pba.sh`, los seis modos en 5 minutos). Salida en `plan_radios[_<modo>]_dc/`. En el mapa: «Límites → Departamentos y circuitos».
+
+Partidos = departamentos o circuitos repartidos entre más de un distrito (incluye los que por población tienen que partirse).
+
+| Plan | Libres | Departamentos (5 %) | Circuitos | Deptos. y circuitos |
+|---|---|---|---|---|
+| Neutral | 859 circ. / 209 dep. · 78 | 563 / 89 · 72 | 49 / 244 · 78 | 149 / 112 · 76 |
+| Proporcional | 854 / 230 · 79 | 599 / 102 · 77 | 33 / 244 · 77 | 106 / 107 · 74 |
+| Gerrymander peronista | 1.262 / 330 · 100 | 870 / 141 · 95 | 38 / 270 · 97 | 132 / 118 · 85 |
+| Gerrymander LLA | 1.180 / 311 · 56 | 818 / 124 · 59 | 38 / 268 · 61 | 135 / 119 · 67 |
+| Peronista extremo | 1.935 / 405 · 105 | 1.172 / 122 · 97 | 73 / 346 · 97 | 195 / 121 · 89 |
+| LLA extremo | 2.070 / 431 · 54 | 1.235 / 117 · 60 | 66 / 329 · 62 | 161 / 120 · 66 |
+
+(circuitos partidos / departamentos partidos · bancas peronistas en la elección guía). Con 2 % de desvío parte tan pocos departamentos como la versión por departamentos al 5 %, y muchos menos circuitos; a cambio es la más atada, y los gerrymanders pierden margen (peronista 100 → 85). **Buenos Aires**: con la primera escala (que achicaba circuitos junto con departamentos) el conurbano cayó a radios sueltos y quedó dentado, y cada escalón fallido agotaba 300.000 iteraciones (unas 3 horas). Con la escala nueva y el corte temprano todos los modos mantienen circuitos de hasta 0,15 enteros salvo los extremos (0,075); departamentos enteros hasta 0,25 en el neutral y el gerrymander peronista, sin protección en los demás.
+
+## Otras elecciones 2011-2023 (4-nov-2026, pedido del usuario)
+
+`construir_elecciones.py` → `radios_elecciones.pkl` y `control_elecciones.json`: diputados 2011, 2013, 2015, 2017, 2019, 2021 y 2023; presidente 2011, 2015 y 2019; balotaje 2015; PASO presidenciales 2015 y 2023 (por precandidato). Fuente: `transferencias/circ_<clave>.pkl` (provisorios de la DINE por circuito). Diputados con los bloques de cada atlas (`mapeo_listas_<año>.csv`, 2013 vía `estimar.mapeo`) y su nombre y color; presidente con las categorías de `estimar.CAT` y la paleta de los mapas presidenciales. Fuerzas con menos de 0,5 % nacional y menos de 10 % en todas las provincias van a «Otros». Los votos de cada año pasan a los circuitos 2025 como en `construir_partidos.py` (directo si el circuito existe y el padrón cambió menos de 0,8-1,25; si no, la sección repartida por el padrón 2025) y de ahí a los radios por población. Se conserva el 99 % de los votos (99,9 % en 2023); circuitos directos: 35 % en 2011, 51 % en 2015, 77 % en 2021 y 91 % en 2023.
+
+`mapa.py` escribe un JSON por elección en `elecciones_257/` (votos por distrito de los 24 planes; 4,4 MB en total) y la página lo carga al elegirlo en «Otras elecciones», sin engordar el HTML. Desde un archivo local no carga (el navegador bloquea `fetch` en `file://`): hay que abrirla publicada o con un servidor. Se puede pintar «Gana la más votada» o el porcentaje de una lista (pleno desde 60 %). Las elecciones ya presentes (general y balotaje 2023, diputados 2025) no se repiten. El sitio copia la carpeta (`sitio/catalogo.py`, `pages.yml`).
+
+Los distritos se dibujaron con la población de 2022 y los dos bloques de 2023-2025; para comparar en serio con elecciones viejas habría que redibujarlos con el censo 2010 y las coaliciones de cada época (pendiente, pedido del usuario para más adelante).
+
+### Mosaic 0.6.2
+
+Desde el 4-nov-2026 `distritar.py` usa Mosaic 0.6.2 (≈20 veces más rápido; la 0.1.0 quedó en `mosaic_python-0.1.0`). Equivalencias para conservar los puntajes viejos: departamentos partidos → `weight_county_excess` + `weight_county_unified` (cada uno ÷10, con `county_data`), desvío de población ÷10. `dem_seats` ya no acepta un objetivo: el término cuadrático hacia el objetivo de bancas se arma aparte con `district_dem_shares` y `p_win_gaussian`. Los planes anteriores no se rehicieron.
+
+## Renovación según la Ley Bases original
+
+El proyecto 0025-PE-2023 (Ley Bases original, títulos de circunscripciones uninominales, arts. 443 a 450) divide cada distrito en tantas circunscripciones como diputados, por mayoría simple, y en el nuevo art. 162 del Código Electoral manda que «La Cámara de Diputados practicará el sorteo de las circunscripciones» que se eligen en la primera renovación parcial. El botón «Ley Bases (sorteo)» del mapa reemplaza la mitad por clase de Mosaic por ese sorteo: misma cantidad por provincia que la renovación real, circunscripciones elegidas al azar con semilla fija (`código de provincia × 1000 + 2023`), reproducible. No se aplicó su fórmula de bancas (art. 450, 1 cada 180.000 o fracción de 90.000 sin tocar los arts. 4 y 5 de la ley 22.847): leída al pie de la letra daría 331 bancas, no 257.
+
+## Gerrymanders antiperonistas sobre 2011 y 2015 (ejercicio local, 5-nov-2026)
+
+`UNI_GUIA=<clave>` hace que `distritar.py` dibuje con los votos reales de otra elección de `radios_elecciones.pkl`, por pluralidad: en cada distrito el FPV contra la fuerza más votada de las demás (todas las fuerzas, no la suma de la oposición). `UNI_INICIO` elige el plan de partida. Modo `lla_extremo` (a favor de quien se opone al peronismo), `--circuitos`, 2 %, `UNI_SWING` 0,05, desde `plan_radios_lla_extremo_circ`; cola `cola_anti.sh`, planes en `plan_g<clave>_lla_extremo_circ/`. Página local aparte: `UNI_ANTI=1 python mapa.py` → `mapa_257_antiperonista.html` + `elecciones_257_anti/` (no se publica; se abre con un servidor local).
+
+Bancas del FPV (pluralidad; firmes = más de 55 % contra el segundo):
+
+| Plan | Pres. 2011 (54,0 %) | Dip. 2015 (37,2 %) | Pres. 2015 (36,9 %) | Balotaje 2015 (48,6 %) |
+|---|---|---|---|---|
+| Neutral (circuitos) | 237 | 144 | 155 | 127 |
+| LLA extremo (guía 2023-25) | 239 | 137 | 146 | 122 |
+| Antiperonista guía 2011 | **229** | 140 | 150 | 127 |
+| Antiperonista guía dip. 2015 | 237 | **115** (Cambiemos 129) | 132 | 112 |
+| Antiperonista guía pres. 2015 | 236 | 120 | **125** (Cambiemos 115) | 109 |
+| Antiperonista guía balotaje 2015 | 238 | 124 | 129 | **103** (Macri 154) |
+
+33-58 circuitos partidos, como los demás planes por circuitos. 2011: con la oposición dividida el FPV gana casi todo y el dibujo solo le quita 8 bancas. 2015 general: el FPV pierde la mayoría propia (129) con cualquiera de las dos guías; en diputados Cambiemos queda primero (129 contra 115), sin mayoría. Balotaje: Macri pasa de 130 a 154. Cada plan rinde sobre todo en su propia elección.
+
+2019 (Frente de Todos contra la más votada de las demás):
+
+| Plan | Dip. 2019 (46,5 %) | Pres. 2019 (48,1 %) |
+|---|---|---|
+| Neutral (circuitos) | 161 | 168 |
+| LLA extremo (guía 2023-25) | 159 | 170 |
+| Antiperonista guía dip. 2019 | **133** (JxC 122) | 143 |
+| Antiperonista guía pres. 2019 | 138 | **143** (JxC 114) |
+
+58 y 67 circuitos partidos. El Frente de Todos conserva la mayoría propia con cualquiera de los dos dibujos: el mejor lo deja en 133 bancas, cuatro arriba de 129.
 
 ## Limitaciones
 
