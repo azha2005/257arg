@@ -70,7 +70,7 @@ El fondo DNE tiene provinciales de casi todos los años entre 1932 y 1987: unas 
 
 ## Qué pedir y qué hacer, en orden
 1. Por mail: el enlace de las dos muestras y **los inventarios analíticos de Eg1** (1867, 1868, 1908, 1931–1941 y 1942–1946). Preguntar si el lote 1908–1925 está digitalizado.
-2. En la visita, con un disco de 1 o 2 TB: el fondo DNE entero (las cinco series), las partes de Eg1 que salgan del inventario y fotos del lote 1908–1925 (ver `PLAN_VISITA.md`).
+2. En la visita, con un disco de 1 o 2 TB: el fondo DNE entero (las cinco series), las partes de Eg1 que salgan del inventario y fotos del lote 1908–1925.
 3. Desde la PC, de a uno: sondeo de expedientes de la HCDN para cada año de 1904 a 1942, como el de `transcripciones/1931/`.
 4. En Wikisource y Commons, todas las Memorias del Interior que haya: 1870–1894 y 1924–1928 ya aparecen; buscar las de 1904 a 1943.
 5. Bibliotecas: Cantón y Jorrat para Capital en todos los años; tomos de sesiones preparatorias en el Congreso; tesis de Ferrari; hemerotecas para lo que falte.

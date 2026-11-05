@@ -25,7 +25,7 @@ Lupu y Stokes solo trae 1930, 1937 y 1940: son las mismas unidades que Cantón.
    - Hay que hacer el mismo sondeo de `transcripciones/1931/` para 1932, 1934, 1936, 1938 y 1942. **Bajar de a uno y con pausas**: en 2026 la HCDN respondió 403 después de unas 370 consultas en paralelo. Si no, usar Wayback (`web.archive.org/web/2022id_/...`).
    - Desde las sesiones en la nube la HCDN está bloqueada por la red: hay que habilitarla o bajarla desde la PC.
    - Los electores presidenciales de 1931 y 1937 se proclaman ante la Asamblea Legislativa. Buscar también expedientes `n-ov` y `n-pe` de esos años.
-2. **AGN, fondo DNE** (ver `PLAN_VISITA.md`).
+2. **AGN, fondo DNE**.
    - El catálogo está en línea en AtoM: `atom.mininterior.gob.ar` (bloqueado en esta sesión; desde la PC anda).
    - Carpetas de la década:
      - 46_090: elecciones provinciales de 1932 a 1935. Santa Fe 1934 son «Resultados»; Entre Ríos trae «legislación y resultados».
