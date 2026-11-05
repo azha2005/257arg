@@ -64,7 +64,7 @@ CFG = {
                ("ucrp", "UCRP", "UCRP", "#e10019", [0, 10, 20, 30, 40, 50, 60], "% UCR del Pueblo")],
         noeleccion={p: "%s no eligió diputados nacionales en marzo de 1962 (tabla de bancas del artículo de la Wikipedia)." % p
                     for p in ("Catamarca", "Formosa", "La Rioja", "Misiones", "San Luis", "Santa Cruz")},
-        solid={"Santiago del Estero": dict(src="Cantón no trae los diputados de Santiago del Estero de 1962: se pinta la provincia con el total de la Wikipedia.", wiki=True)},
+        solid={},   # Santiago del Estero: Cantón no la trae; sale de la planilla del AGN (FUENTE_AGN)
         tdf="Tierra del Fuego era territorio nacional: no elegía diputados nacionales."),
     1965: dict(
         title="Elecciones legislativas de Argentina de", tab="Diputados nacionales 1965", cargo="diputados",
@@ -97,6 +97,17 @@ NOTE_CANTON = {
                 for p in ("Formosa", "La Rioja", "Misiones")},
                Catamarca="La Wikipedia no trae esta provincia en 1965; el resumen nacional de diputados del t. I de Cantón (Ministerio del Interior) sí la incluye. "
                          "Cantón aclara que «no hubo elecciones en todos los departamentos» de Catamarca."),
+}
+# provincias que Cantón no trae y salen de planillas del Archivo General de la Nación (transcripciones/agn_dne/)
+FUENTE_AGN = {
+    1962: {"Santiago del Estero": "Cantón no trae esta provincia: votos de la planilla por departamento del Juzgado Electoral de Santiago del Estero, "
+                                  "Archivo General de la Nación, fondo Dirección Nacional Electoral (AR-AGN-DNE01-De-re-29_056_246a273, f. 247-251), "
+                                  "transcripción propia."},
+}
+FUENTE_AGN_PROV = {
+    1962: {"Santiago del Estero": " La suma de los departamentos cierra con el total general de la planilla y con la tabla de la Wikipedia en todos los partidos, "
+                                  "blancos, anulados y votantes; los electores hábiles de los departamentos suman 283.351 y la planilla y la Wikipedia dan 283.251 "
+                                  "(error de suma del original: los porcentajes de participación escritos coinciden con las cifras departamentales)."},
 }
 
 # ---------------------------------------------------------------- proyección (la misma de los demás atlas)
@@ -288,6 +299,7 @@ for i, u in enumerate(U):
         r["fill"] = GREY_NE
         unit_rec[i] = r; continue
     if NOTE_CANTON.get(Y, {}).get(p): extras.append(NOTE_CANTON[Y][p])
+    if FUENTE_AGN.get(Y, {}).get(p): extras.append(FUENTE_AGN[Y][p])
     unit_rec[i] = rec_from(d["parties"], d["bla"], d["nul"], d["ins"], d["vot"], extra=" ".join(extras) or None)
     pos = sum(v for _, v, _ in d["parties"])
     bl = {}
@@ -333,7 +345,7 @@ for p in PROVS:
             else: ok = False
     pl = [(n, v, b) for (n, b), v in parties.items()]
     prov_rec[p] = rec_from(pl, bla, nul, ins if ok else None, vot if ok else None,
-                           extra="Suma de las unidades de Cantón." + (" " + NOTE_CANTON[Y][p] if NOTE_CANTON.get(Y, {}).get(p) else "") + ("" if ok else " La participación provincial no se calcula: alguna unidad no trae padrón o sus votantes superan a los inscriptos."))
+                           extra=("Suma de los departamentos. " + FUENTE_AGN[Y][p] + FUENTE_AGN_PROV[Y][p] if FUENTE_AGN.get(Y, {}).get(p) else "Suma de las unidades de Cantón.") + (" " + NOTE_CANTON[Y][p] if NOTE_CANTON.get(Y, {}).get(p) else "") + ("" if ok else " La participación provincial no se calcula: alguna unidad no trae padrón o sus votantes superan a los inscriptos."))
     bl = {}
     for n, v, b in pl: bl[b] = bl.get(b, 0) + v
     prov_an[p] = dict(pos=sum(v for _, v, _ in pl), bloc=bl, ins=ins if ok else None, vot=vot if ok else None)
@@ -390,7 +402,9 @@ assert set(wins) == set(BLOCS), (wins, BLOCS)
 
 FUENTE = {1958: "elección presidencial del 23 de febrero de 1958", 1962: "diputados nacionales, 18 de marzo de 1962", 1965: "diputados nacionales, 14 de marzo de 1965"}[Y]
 NOTE = (wikitop.note(Y) + " Fuente departamental: D. Cantón, «Materiales para el estudio de la sociología política en la Argentina» (1968), t. II, %s, "
-        "con %d correcciones de transcripción documentadas. Geometría: departamentos de 1960." % (FUENTE, sum(1 for e in LOG if e[0] == Y)))
+        "con %d correcciones de transcripción documentadas.%s Geometría: departamentos de 1960." % (
+            FUENTE, sum(1 for e in LOG if e[0] == Y),
+            "".join(" %s: planilla del Archivo General de la Nación (fondo Dirección Nacional Electoral), transcripción propia." % p for p in FUENTE_AGN.get(Y, {}))))
 
 
 def mix(hexc, t):

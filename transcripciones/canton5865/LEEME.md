@@ -38,7 +38,8 @@ transcriptas están en `scratch/transcripcion/p_*.json` (imágenes en `scratch/c
 - **Tierra del Fuego 1958**: Cantón suma sus votos presidenciales a Capital («Capital Federal y Tierra del Fuego»).
 - **Misiones 1958**: once departamentos anteriores a la división de 1960 (polígonos de 1947).
 - **1962 sin elección de diputados** (tabla de bancas de Wikipedia): Catamarca, Formosa, La Rioja, Misiones, San Luis y
-  Santa Cruz. **Santiago del Estero 1962** eligió, pero Cantón no la trae: color sólido con la tabla de Wikipedia.
+  Santa Cruz. **Santiago del Estero 1962** eligió, pero Cantón no la trae: desde el 5-nov-2026 sale por departamento de la planilla
+  del AGN (`transcripciones/agn_dne/sde1962/`, cargada por `cargar.py`); antes iba en color sólido con la tabla de Wikipedia.
 - **1965: Catamarca, Formosa, La Rioja y Misiones sí votaron diputados nacionales.** La tabla nacional de la Wikipedia las
   omite, pero el resumen nacional del t. I de Cantón (p. 239-246 impresas; «Resultados Electorales de 1965. Ministerio del
   Interior») las incluye y marca «NO HUBO ELECCIONES» solo en Jujuy y Salta. Votantes del t. II = t. I; los inscriptos de las
@@ -63,7 +64,7 @@ transcriptas están en `scratch/transcripcion/p_*.json` (imágenes en `scratch/c
   nacional trae una fila «Partido Conservador» (Reynaldo Pastor, 128.226) sin contrapartida en Cantón. URB y Partido
   Populista, exactos.
 - **1962**: FJ −70.482, UCRI −50.615, UCRP −56.357 y FNPC −5.374 son Santiago del Estero (Wikipedia: 70.243, 50.392,
-  56.057 y 5.284); PSD −5, PDP exacto.
+  56.057 y 5.284); PSD −5, PDP exacto. Con la planilla del AGN, Santiago del Estero da exactamente esas cifras de la Wikipedia.
 - **1965**: la tabla nacional de Wikipedia no coincide con la suma de sus tablas provinciales en la FNPC (+70.010) y en los
   movimientos populares provinciales (+15.497); Cantón coincide con las provinciales. UCRI +2.619 es el error de San Luis;
   MID −9.076, el de Santa Fe. El resto, a menos de 0,2 %.
@@ -78,7 +79,7 @@ transcriptas están en `scratch/transcripcion/p_*.json` (imágenes en `scratch/c
   Antofagasta de la Sierra 1958: no figura en Cantón y Lupu–Stokes la trae en 0.
 - **1962 sin elección**: el t. I (p. 211-215 impresas) confirma «NO HUBO ELECCIONES» en Catamarca, Formosa, La Rioja,
   Misiones, San Luis y Santa Cruz. **Santiago del Estero 1962** tiene total provincial en el t. I (igual a la Wikipedia) pero
-  ningún desglose departamental en Cantón.
+  ningún desglose departamental en Cantón. El desglose está en el AGN (ver arriba).
 - **1957 (constituyentes), 1960 y 1963**: Cantón no los incluyó por departamento a propósito (t. I, p. XVII: 1960 y 1963 «parecían
   menos significativos»; 1957 ya publicado por Zalduendo, *Geografía electoral de la Argentina*, 1958). El t. I sí trae los
   cuadros provinciales de **1960 diputados** (PDF 278-289) y **1963 presidente** (PDF 306-317); de 1957 no hay cuadro.

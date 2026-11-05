@@ -27,7 +27,11 @@ def pages():
         p['_file'] = os.path.basename(f)
         out.append(p)
     out.sort(key=lambda p: p['pagina_pdf'])
-    return out
+    # provincias que Cantón no trae, transcriptas de las planillas del AGN (transcripciones/agn_dne/)
+    import sys
+    sys.path.insert(0, os.path.join(ROOT, 'agn_dne'))
+    import agn
+    return out + agn.paginas()
 
 def load(skip=()):
     """tablas[(anio, cargo, prov, cat)] = {'cols': {num: nombre}, 'rows': OrderedDict(unidad -> {num: val}), 'pages': [...]}"""
