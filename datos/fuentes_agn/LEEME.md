@@ -73,5 +73,13 @@ Inscriptos reales: en 1922, Cantón «reconstruye» los inscriptos de La Rioja, 
 
 - **Para el segundo mail** (después de ver las muestras): ofrecer devolverles las tablas transcriptas; preguntar cómo citar el fondo; pedir Corrientes 1958 (18_035_269a328, 60 folios) y las Series Históricas del Ministerio del Interior de 1946; pedir horarios y dirección si hay que ir con un disco.
 
+## Archivos originales en el repo (5-nov-2026)
+- `inventario_DNE01_De.csv`: inventario analítico de las 777 carpetas.
+- `biblioteca_DNE01_Bi.csv`: biblioteca de la DNE.
+- `estado_fondos_DAI_2026.csv`: estado de todos los fondos del Archivo Intermedio.
+- `inventario_provisorio_1908_1925.csv`: el lote de 1908 a 1925.
+
+Los .docx ISAD e ISAAR están resumidos arriba. Para los años 30, ver `DECADA_1930.md`: Ministerio del Interior, Expedientes Generales 1931–1941, digitalizado.
+
 ## Prioridades
 1946, 1948, 1951, 1954, 1957 y 1973 no tienen atlas y Cantón no los cubre igual. Para 1958, 1962 y 1965 serviría para cotejar las correcciones de `canton5865/` y las páginas faltantes.

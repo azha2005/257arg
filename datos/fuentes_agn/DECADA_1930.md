@@ -50,3 +50,21 @@ Lupu y Stokes solo trae 1930, 1937 y 1940: son las mismas unidades que Cantón.
 - Son elecciones con fraude conocido en varias provincias. Se mapea el resultado oficial y se avisa, como en 1937 y 1940. No se corrige el fraude.
 - Lo que no se consiga va en beige (regla 8). Las provinciales del mismo día solo se usan como aproximación rotulada, y se decide caso por caso (ver 1931).
 - Geometría y estilo de la familia 1930/1937/1940 (`transcripciones/entreguerras/`).
+
+## Revisión del 5-nov-2026 con los cinco archivos originales del AGN
+- **Biblioteca de la DNE** (`biblioteca_DNE01_Bi.csv`, 1.349 títulos): casi todo es derecho y diarios de sesiones. No hay publicaciones de resultados anteriores a 1946. Sirven los **tomos de sesiones preparatorias del Diario de Sesiones de Diputados**, porque ahí se aprueban los diplomas con un resumen de cada acta:
+  - n.º 356: 1916, t. I, abril a julio. Elección de 1916.
+  - n.º 571: 1928, t. I. Elección de 1928.
+  - n.º 191: período 1932. Diplomas de 1931.
+  - n.º 825: 1934, t. I, abril a agosto. Elección de 1934.
+  - Para 1936 y 1938, la biblioteca solo tiene tomos de mitad de año (n.º 357 y 158). Los tomos de abril están en la Biblioteca del Congreso.
+- **Descripción del fondo DNE (ISAD):** la ley obligaba a guardar las actas solo 15 años. Por eso el fondo se concentra entre 1946 y 1975 y **no trae las actas de los años 30**. Remite a fondos relacionados del Ministerio del Interior: «Expedientes generales» y el fondo Ministerio de Gobierno, serie «Censos y padrones».
+- **Estado de fondos** (`estado_fondos_DAI_2026.csv`): la pista clave para los años 30 es **Ministerio del Interior, Expedientes Generales 1 (AR-AGN-MI01-Eg1)**.
+  - 1867–1941: 295 m, piso 3, sector B. **Digitalizado.** Tiene **inventario analítico de 1867, 1868, 1908 y 1931–1941**.
+  - 1942–1946: 23 m, digitalizado, con inventario analítico.
+  - Las juntas electorales remitían sus actas al Ministerio del Interior, así que ahí deberían estar los expedientes de las elecciones de 1931 a 1942 (y los de 1908).
+  - **Pedir esos inventarios analíticos** es lo primero.
+  - Otros fondos para mirar:
+    - Intervenciones Federales, Memorias, 1861–1940: provincias intervenidas que organizaron elecciones.
+    - Mesa de Entradas, Libros de registro de expedientes, 1931–1957: índice para buscar números de expediente.
+    - Expedientes secretos, confidenciales y reservados, 1932–1983: sin digitalizar.
