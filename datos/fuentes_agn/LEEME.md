@@ -46,6 +46,12 @@ Además hay carpetas nacionales de 1940 y 1942 (una cada una) y elecciones provi
 
 ## Correspondencia
 - 23-oct-2026: el borrador de respuesta (correo personal del autor), en el hilo del AGN, pide las muestras de Santiago del Estero 1962 (29_056_246a273) y Río Negro 1958 (19_037_238a267). También ofrece la carpeta de Drive «AGN - DNE» del autor (editor con enlace; cerrar el acceso cuando terminen), pide el fondo completo si pueden y consulta por la serie MI01-pe.
+- 5-nov-2026: López pide de nuevo el enlace para subir las dos muestras y aclara que «planillas electorales» **no es una serie** del AGN. El material AR-AGN-DNE01 de 1908 a 1925 ingresó hace poco; lo relevaron de forma provisoria (hay tejuelos borrados y paquetes sin abrir). Mandaron ese inventario: `inventario_provisorio_1908_1925.csv`, con 71 legajos. Son casi todos padrones y registros electorales, no cómputos. Lo que puede tener resultados:
+  - Santiago del Estero 1920, legajo 24: «Elecciones Nacionales efectuadas por el F.E. de la provincia. Expediente de remisión de actas».
+  - Santiago del Estero 1922, legajos 3, 8, 13, 33 y 39. En 1922 la provincia no tiene datos por departamento.
+  - Santiago del Estero 1913, legajo 31: sobres con boletas.
+  - La Rioja 1914, legajos 56 y 57: sobres y boletas.
+  - Santa Fe 1920, 1922 y 1925, más un legajo sin número de 1961: «Panorama político del país y resultados electorales».
 - **Para el segundo mail** (después de ver las muestras): ofrecer devolverles las tablas transcriptas; preguntar cómo citar el fondo; pedir Corrientes 1958 (18_035_269a328, 60 folios) y las Series Históricas del Ministerio del Interior de 1946; pedir horarios y dirección si hay que ir con un disco.
 
 ## Prioridades
