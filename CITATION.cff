@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >-
+  If you use these data or maps, please cite this repository and also the
+  original source of each series (Calvo; Lupu and Stokes; Cantón; DINE; CNE)
+  and the department geometry (Rodríguez and De Grande, CEUR-CONICET,
+  CC BY 2.5 AR). Each atlas's LEEME file lists its sources.
+type: dataset
+title: "Atlas electorales de Argentina 1904-2025"
+authors:
+  - family-names: "Rodríguez Paolini"
+    given-names: "Juan Cruz"
+repository-code: "https://github.com/azha2005/257arg"
+url: "https://azha2005.github.io/257arg/"
+license: MIT
+abstract: >-
+  Department-level results and atlases for Argentine elections from 1904 to
+  2025 (80+ elections: president, national deputies, runoffs, primaries and
+  constituent assemblies), AMBA results by census tract 2003-2025,
+  ecological-inference estimates of vote transfers (Python port of
+  E. Calvo's method) and Wikimedia Commons packages. No Argentine public
+  body publishes this compilation. Code is licensed under MIT; the project's
+  own data, maps and texts under CC BY 4.0 (see LICENSE-DATA.md).
+  Third-party data, geometry and logos keep their own terms.
+keywords:
+  - Argentina
+  - elections
+  - electoral geography
+  - historical GIS
+  - ecological inference
+  - maps

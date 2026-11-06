@@ -1,5 +1,67 @@
 # Atlas electorales argentinos por departamento
 
+*English summary below · [Versión en español](#atlas-electorales-de-argentina-1904-2025)*
+
+## In English
+
+**Department-level results and maps for Argentine elections, 1904-2025.** The repository holds 80+ elections (president, national deputies, runoffs, PASO primaries and the 1994 constituent assembly), each as a self-contained HTML atlas plus its dataset, together with:
+
+- AMBA (Greater Buenos Aires) results by census tract, 2003-2025;
+- ecological-inference estimates of vote transfers between elections, using a Python port of Ernesto Calvo's RxC method, with Sankey diagrams;
+- maps published on Wikimedia Commons, including 226 used across 34 Spanish Wikipedia articles (November 2026), and scripts for preparing uploads;
+- a spreadsheet with every department-level result the project gathers (`resultados_xlsx/`).
+
+No Argentine public body publishes this compilation: the electoral authority publishes polling-station data only from 2011, and earlier years are scattered across books, archives and private datasets.
+
+Website with all atlases: <https://azha2005.github.io/257arg/>
+
+### Coverage
+
+| Period | Elections | Sources | Notes |
+|---|---|---|---|
+| 1904-1973 | President and national deputies (1904, 1912, 1914, 1916, 1918, 1920, 1922, 1926, 1928, 1930, 1937, 1940, 1946, 1948, 1951, 1954, 1958, 1962, 1965, 1973) | Own transcriptions of Darío Cantón's *Materiales* (1968), of Chamber of Deputies files and of period press; Lupu & Stokes for 1948 and 1973; 1904 and 1951 from the Wikipedia constituency tables | Coverage is partial in several years; provinces with only a provincial total are painted in a solid colour. 1904 and 1951 are mapped by single-member constituency, with constituencies redrawn from published maps and the literature. Archival sheets from the Archivo General de la Nación are being added (Santiago del Estero 1962 so far). |
+| 1983-2001 | President, national deputies, 1994 constituent assembly | Mainly Ernesto Calvo's department base, completed with Lupu & Stokes and INAP; cross-checked against the provincial tables | Some years have only provincial totals (San Luis 1997; San Luis and Santa Cruz 1999). Registers with more voters than registered electors are flagged, not corrected. |
+| 2003-2025 | National deputies, president, runoffs, PASO primaries | DINE provisional count by polling station; PolAr for 2003-2009 | Missing departments were filled from DINE final results recovered via the Wayback Machine and from CNE queries. General elections are complete; a few PASO 2013 and 2015 departments are still missing. |
+| 2003-2025 (AMBA) | Census-tract estimates | DINE polling-station results, polling-place locations, CONICET census tracts | Votes are allocated from polling places to tracts: a model, not observed data. |
+
+- **Geometry**: each election uses the departments of the nearest census (1914, 1960, 1980, 1991, 2001 or 2010), from the historical department base of Rodríguez and De Grande (CEUR-CONICET). Boundaries are not harmonised across censuses. Departments created after a census get their own polygon taken from a later shapefile; they are never merged.
+- **National totals** come from the Spanish Wikipedia tables; the maps come from the local data, and differences are explained in each atlas's `LEEME`.
+- **Estimates**: hypothetical scenarios, census-tract results and vote transfers are models, not observed data, and are labelled as such.
+- **Gaps**: what could not be found is left blank (beige on the maps) and documented, never imputed.
+
+Each `mapas/mapa<YEAR>/LEEME_<YEAR>.md` (in Spanish) gives the sources, coverage and decisions for that atlas.
+
+### Reproducing
+
+Every atlas, PNG and transfer estimate is rebuilt from the data by scripts. Run them from the repository root (Python 3.11):
+
+```
+python -m pip install -r requirements.txt
+python -m playwright install chromium            # only for PNGs and Commons packages
+python mapas/mapa1983/build_1983.py              # one atlas: atlas_1983.html and dataset_1983.json
+python mapas/mapa2023/build_2023.py              # national deputies 2003-2025
+python transcripciones/canton5865/atlas5865.py 1962   # 1958, 1962, 1965 (Cantón)
+python comun/render_transparentes.py mapa1983    # PNG of every mode
+```
+
+From 2003 on, the builders need the DINE polling-station files (downloaded from datos.gob.ar, not stored in the repository). The full list of builders, data downloads, the transfer pipeline and the required User-Agent setting are in the Spanish sections [Instalación](#instalación), [Regenerar un atlas](#regenerar-un-atlas) and [Regenerar las transferencias](#regenerar-las-transferencias).
+
+### How to cite
+
+> Rodríguez Paolini, Juan Cruz. *Atlas electorales de Argentina 1904-2025*. <https://github.com/azha2005/257arg>
+
+Please also cite the original source of each series you use (Calvo; Lupu and Stokes; Cantón; DINE; CNE) and the geometry (Rodríguez and De Grande, CEUR-CONICET). GitHub's "Cite this repository" button uses [`CITATION.cff`](CITATION.cff).
+
+### Licences
+
+- **Code**: MIT ([`LICENSE`](LICENSE)).
+- **The project's own data, maps and texts**: CC BY 4.0 ([`LICENSE-DATA.md`](LICENSE-DATA.md)).
+- **Third-party data, geometry and logos** keep their own terms (the department shapefiles are CC BY 2.5 AR; logos are listed in [`logos/LICENCIAS.md`](logos/LICENCIAS.md)). No licence is claimed over them.
+
+---
+
+## Atlas electorales de Argentina 1904-2025
+
 Mapas de resultados electorales de la Argentina por departamento (y por circunscripción en Capital Federal y en 1904), de 1904 a 2025, en el estilo del mapa de la Wikipedia de las presidenciales de 1999. Incluye además:
 
 - una planilla con todos los resultados por departamento que reúne el proyecto;
@@ -29,7 +91,7 @@ Cada atlas es un HTML autocontenido con pestañas por modo (ganador, porcentaje 
 | `.claude/skills/mapa-electoral-wikipedia-1999/` | Plantilla HTML del atlas, SVG base y territorios. |
 | `AGENTS.md` | Flujo de trabajo detallado, reglas de estilo y trampas conocidas. **Leer antes de tocar un atlas.** |
 
-Los `LEEME` de cada carpeta se escribieron antes de esta organización y pueden nombrar rutas viejas: `mapa<AÑO>/` es ahora `mapas/mapa<AÑO>/`, `xlsx_resultados/` es `resultados_xlsx/`, `logos_wikipedia/` es `logos/`, `base8399/` y `wikileg/` están en `datos/`, `canton*/` y `busqueda*/` en `transcripciones/`, `Base deptos 1869-2022/` en `geometria/`, y los módulos sueltos de la raíz (`wikitop.py`, `insets99.py`…) en `comun/`.
+Algunos `LEEME` y notas anteriores a la reorganización del 26-oct-2026 todavía nombran rutas viejas: `mapa<AÑO>/` es `mapas/mapa<AÑO>/`, `xlsx_resultados/` es `resultados_xlsx/`, `logos_wikipedia/` es `logos/`, `base8399/` y `wikileg/` están en `datos/`, `canton*/` y `busqueda*/` en `transcripciones/`, `Base deptos 1869-2022/` en `geometria/`, y los módulos sueltos de la raíz (`wikitop.py`, `insets99.py`…) en `comun/`.
 
 ## Instalación
 
@@ -110,6 +172,6 @@ Cada `LEEME_<AÑO>.md` detalla las fuentes, la cobertura y las decisiones de ese
 - **Geometría**: además, cita obligatoria de la base de Rodríguez (CC BY 2.5 AR).
 - **Logos**: cada uno conserva su licencia.
 
-Detalle en [`LICENSE`](LICENSE).
+Detalle en [`LICENSE`](LICENSE) (MIT) y [`LICENSE-DATA.md`](LICENSE-DATA.md) (datos, excepciones y bases de terceros, que conservan sus propios términos). Para citar el proyecto: [`CITATION.cff`](CITATION.cff).
 
 Si usás los mapas en Wikimedia Commons, llevan CC BY 4.0 más `{{Cc-by-2.5-ar}}`.
