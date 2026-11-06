@@ -5,6 +5,8 @@ description: Genera mapas electorales de Argentina por departamento en el estilo
 
 # Mapa electoral argentino en estilo Wikipedia 1999
 
+> **En el proyecto dataeleccproyecto no se arranca de acá**: usar el skill `atlas-proyecto-dataelecc`, que dice qué constructor copiar según la época. Este skill guarda la plantilla (`assets/template.html`) que usan casi todos los constructores del proyecto: cambiarla afecta a todos los atlas, incluidos los ya subidos a Commons.
+
 Produce un HTML autónomo (≈9 MB, sin recursos externos) con la misma composición que `1999.png`: mismos colores, líneas, marcos, tipografía y disposición. Es interactivo sin perder esa estética: zoom y arrastre del mapa, pasar el mouse muestra una mini ventana y hacer clic fija una tarjeta con el **porcentaje y los votos de cada candidatura** del departamento, filtro por provincia, buscador, pestañas por modo y descargas SVG/PNG/CSV. Todo lo que cambia entre elecciones vive en un `dataset.json`; el generador y la plantilla no se tocan para cambiar de datos.
 
 ## Flujo
