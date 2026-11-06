@@ -11,7 +11,7 @@ import geom
 from names import norm
 from atlas_datos import prepare
 from datos import NATIONAL
-Y=int(sys.argv[1]);assert Y in (1918,1920,1926,1937,1940)
+Y=int(sys.argv[1]);assert Y in (1918,1920,1926,1936,1937,1940)
 HERE=str(ROOT/'mapas'/f'mapa{Y}');Path(HERE).mkdir(exist_ok=True)
 TEMPLATE_SRC=str(ROOT/'.claude/skills/mapa-electoral-wikipedia-1999/assets/template.html')
 # ---------------------------------------------------------------- proyeccion
@@ -98,6 +98,14 @@ cands,slices,partp,NAT_MET=wikitop.national(Y)
 NOTE=(wikitop.note(Y)+
       ' Fuente local: Cantón (1968), t. II, varones solamente. Geometría de 1914, como los atlas publicados de 1922/1928; '
       'correspondencias nominales y unidades compartidas documentadas. Sin imputación de votos. ')
+if Y==1936:
+    NOTE=('Resultado nacional (torta y barras): tabla de «Elecciones legislativas de Argentina de 1936» en la Wikipedia en español, porcentajes sobre votos positivos. '
+          'Departamentos: actas de las Juntas Escrutadoras de Tucumán (expediente 26-OV-1936) y Santa Fe (29-OV-1936) de la Cámara de Diputados; '
+          'Cantón no publica 1936 por departamento. Cada lista cuenta los votos de su candidato más votado en la provincia, como la Wikipedia. '
+          'En Trancas (Tucumán) los nulos y blancos están extrapolados del residuo provincial; las listas son lecturas. '
+          'Las otras nueve provincias que votaron, sin cuadro departamental, se pintan enteras con su total provincial de la Wikipedia; '
+          'Catamarca, La Rioja, Salta y San Juan no renovaron diputados. Concordancia = PDN, UCR de Santa Fe, UCR Unificada, Partido Liberal de Corrientes, '
+          'Partido Socialista Independiente, Partido Popular de Jujuy y aliados, como el «Total Concordancia» del artículo. Geometría de 1914. ')
 if Y in (1937,1940):
     NOTE+='Cobertura parcial: selección de distritos publicada por Cantón según su criterio editorial de 1931–1942; no certifica ausencia de irregularidades. '
 if Y in (1918,1920):
@@ -230,10 +238,11 @@ ds = dict(
     title=("Elecciones presidenciales de Argentina de" if Y==1937 else "Elecciones legislativas de Argentina de"), year=str(Y),
     labels=dict(pie1="Proporción sobre votos positivos"),
     exterior=False, candidates=CAND,
-    sets={"1": dict(label=str(Y), subtitle="Cantón · deptos. de 1914")},
+    sets={"1": dict(label=str(Y), subtitle=("Actas HCDN · deptos. de 1914" if Y==1936 else "Cantón · deptos. de 1914"))},
     modes=MODES, insets=INSETS,
     territories=[dict(n=disp.get(i, u["name"]), p=u["prov"], k=u["kind"]) for i, u in enumerate(U)],
 )
+if ctx['SOLID']: ds['solid']=sorted(ctx['SOLID'])   # 1936: provincias pintadas con su total
 json.dump(ds, open(os.path.join(HERE, f"dataset_{Y}.json"), "w", encoding="utf8"), ensure_ascii=False)
 
 # template ---------------------------------------------------------------

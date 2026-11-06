@@ -320,7 +320,7 @@ if _pres07.exists():
     WIKI['2007circuitos']=_row
 
 # Entreguerras: snapshots de las tablas nacionales; no se suman las coberturas parciales de Cantón.
-for _key in (1918,1920,1926,1937,1940):
+for _key in (1918,1920,1926,1936,1937,1940):
     _snapshot=_Path(__file__).resolve().parent.parent/'mapas'/f'mapa{_key}'/f'wiki_nacional_{_key}.json'
     if _snapshot.exists():
         _row=_json.loads(_snapshot.read_text(encoding='utf8'))

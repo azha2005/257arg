@@ -2,10 +2,10 @@
 from pathlib import Path
 from collections import Counter, defaultdict
 import base64, copy, json
-from datos import load, export, NATIONAL, ROOT
+from datos import load, export, NATIONAL, ROOT, BLOC36, SOLID36, PROVTOT36
 
 HERE=Path(__file__).resolve().parent
-NO_ELECCION={1918:{'San Luis'},1920:{'Catamarca'},1926:{'San Luis'},1937:set(),1940:{'Catamarca','Jujuy','La Rioja','Salta','San Juan'}}
+NO_ELECCION={1918:{'San Luis'},1920:{'Catamarca'},1926:{'San Luis'},1936:{'Catamarca','La Rioja','Salta','San Juan'},1937:set(),1940:{'Catamarca','Jujuy','La Rioja','Salta','San Juan'}}
 TERR={'Chaco','Chubut','Formosa','La Pampa','Misiones','Neuquén','Río Negro','Santa Cruz','Tierra del Fuego'}
 
 def prepare(y,U,norm):
@@ -36,6 +36,10 @@ def prepare(y,U,norm):
         else:
             CAND['UCR']['sub']='Unión Cívica Radical'
             CAND['FP']=dict(n='UCR – Frente Popular',sub='Tucumán',base='#b350a1',logo='UCRFP')
+        if y==1936:
+            CAND['CON']['sub']='PDN, UCR de Santa Fe y aliados'
+            CAND['PDP']=copy.deepcopy(ref['PDP'])
+            CAND['UCRC']=dict(n='UCR Concurrencista',sub='Tucumán',base='#b350a1',logo='UCRC')
     raw_wins=Counter(max(r['bloc'],key=r['bloc'].get) for r in rows if r['P'])
     BLOCS=[b for b in NATIONAL[y]['blocs'] if raw_wins[b]]
     KEY={(u['prov'],norm(u['name'])):i for i,u in enumerate(U)}
@@ -70,10 +74,12 @@ def prepare(y,U,norm):
             if any(r['ins'] is None for r in rr):ins=None
             if any(r['vot'] is None for r in rr):vot=None
         return dict(P=p,bloc=dict(bloc),ins=ins or None,vot=vot or None,D=sum(p.values()),blancos=bla,nulos=nul)
-    party_code={s:'P_'+str(i) for i,s in enumerate(sorted({s for r in rows for s in r['P']}))}
+    SOLID=SOLID36 if y==1936 else {}
+    party_code={s:'P_'+str(i) for i,s in enumerate(sorted({s for r in rows for s in r['P']}|{s for v in SOLID.values() for s in v['P']}))}
     for s,c in party_code.items():
         n=norm(s)
-        if 'socialista' in n and 'independiente' not in n:b='PS'
+        if y==1936:b=BLOC36[s];b=b if not b.startswith('X_') else 'IND'
+        elif 'socialista' in n and 'independiente' not in n:b='PS'
         elif 'lencinista' in n:b='LEN'
         elif 'bloquista' in n:b='BLO'
         elif 'frentepopular' in n:b='FP'
@@ -114,11 +120,13 @@ def prepare(y,U,norm):
             text=(f'{p} no renovó diputados nacionales en {y} (tabla de bancas de Wikipedia).' if p in NO_ELECCION[y] else
                   'Territorio nacional: sin elección nacional propia en esta fecha.')
             unit_rec[i]=dict(fill=GREY_T,lines=[],note=text);continue
+        if p in SOLID:
+            unit_rec[i]=dict(fill=GREY_N,lines=[],note=f'Sin cuadro departamental: se pinta la provincia entera con su total ({SOLID[p]["src"]}, tabla provincial de Wikipedia).');continue
         if not r or not r['P']:
             text=('La fuente marca esta unidad con '+', '.join(sorted(set(r['marks'].values())))+'. No equivale a cero.' if r else
                   f'Pendiente: Cantón no publica un resultado propio de esta unidad para {y}.')
             unit_rec[i]=dict(fill=GREY_N,lines=[],note=text);continue
-        a=analysis([r]);note=f'Cantón (1968), t. II, página PDF {r["page"]}, impresa {r["book"]}; varones solamente.'
+        a=analysis([r]);note=r.get('fuente') or f'Cantón (1968), t. II, página PDF {r["page"]}, impresa {r["book"]}; varones solamente.'
         if r.get('source_note'):note+=' '+r['source_note']
         if r.get('reserva'):note+=' Reserva de fuente: '+r['reserva']
         if y in (1918,1920) and r['blancos'] and r['vot'] is None:
@@ -137,9 +145,17 @@ def prepare(y,U,norm):
     prov_an={};prov_rec={}
     for p in sorted({u['prov'] for u in U}):
         rr=[r for r in rows if r['prov']==p and r['P']]
+        if p in SOLID:
+            v=SOLID[p];bl=defaultdict(int)
+            for c,x in v['P'].items():bl[BLOC36[c]]+=x
+            a=dict(P=dict(v['P']),bloc=dict(bl),ins=v['ins'],vot=v['vot'],D=sum(v['P'].values()),blancos=v['bla'] or 0,nulos=v['nul'] or 0)
+            prov_an[p]=a;prov_rec[p]=rec(a,f'Total provincial: tabla de Wikipedia ({v["src"]}). Sin cuadro departamental: la provincia se pinta entera.');continue
         if p in TERR or p in NO_ELECCION[y]:prov_rec[p]=dict(fill=GREY_T,lines=[],note='Sin elección nacional propia o sin renovación de diputados.');continue
         if not rr:prov_rec[p]=dict(fill=GREY_N,lines=[],note='Pendiente: sin tabla departamental publicada por Cantón.');continue
         a=analysis(rr);prov_an[p]=a
+        if y==1936:
+            a.update(PROVTOT36[p]);prov_rec[p]=rec(a,'Suma de los departamentos del acta de la Junta Escrutadora (HCDN); inscriptos y votantes de la tabla provincial de Wikipedia.')
+            continue
         prov_rec[p]=rec(a,'Suma de las filas publicadas por Cantón, sin duplicar los datos compartidos entre polígonos. No se garantiza cobertura provincial completa.')
         if any(r.get('reserva') for r in rr):prov_rec[p]['note']+=' Reserva cronológica de la fuente impresa: ver fichas locales y Fuentes y notas.'
         if any(r.get('unresolved') for r in rr):

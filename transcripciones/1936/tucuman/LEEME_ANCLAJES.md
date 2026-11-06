@@ -1,0 +1,7 @@
+# Anclajes departamentales en planillas
+
+Búsqueda visual de las pp. 72–102 del expediente 26-OV; el CSV conserva literal parcial, posición vertical relativa, tipo de evidencia y referencias del acta. Se realzaron bandas con canal rojo, sustracción de fondo y contraste. No se sumaron votos nominales para obtener electores; se cotejaron vectores completos entre cierres de planilla y resumen, como control del orden, no como identificación independiente de colegio.
+
+Los anclajes explícitos son p. 72, Capital circuito 1 bis, y p. 90, Graneros circuito 78. La p. 76 admite una lectura tentativa de circuito 9, mesa 1, pero se debe releer. La secuencia de cuatro mesas y total de p. 91 es compatible con el circuito final 82 de Graneros; la de dos filas y total p. 93, con 90 bis y 91 de Leales. Ambas son inferencias de secuencia sujetas a cotejo del alineamiento completo; las correspondencias del vector completo con filas 6 y 7 del resumen son comprobaciones, no atribución territorial por sí solas. No se asignaron nombres al resumen sobre la base exclusiva del orden de filas.
+
+P. 78 no se detectó texto de reanudación visible en banda. P. 86 la banda inferior contiene cifras reflejadas, no se recuperó texto de reanudación seguro. Pp. 94 y 100 contienen textos muy tenues superpuestos al reverso reflejado; no se recuperó con seguridad un número o nombre. Se examinó la orientación: la p. 90 tiene texto de anverso legible en sentido normal, aun con cifras del reverso debajo. Las bandas no deben descartarse por defecto ni tratar cifras reflejadas como anverso.

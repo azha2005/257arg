@@ -1,0 +1,8 @@
+# Acta Tucumán, bloque A: pp. PDF 9–33
+
+Fuente: expediente `26-ov-1936.pdf`, páginas 9–33 contadas desde 1; lectura visual a 140 dpi, sin extraer cifras por OCR. `acta_mesas_a.csv` conserva 239 renglones de mesas o mesas reunidas, con los sobres consignados en el acta y hallados en urna; se mantienen las fusiones y listas suplementarias expresadas en el original. No son votos por candidato. `acta_totales_a.csv` contiene por separado los subtotales y totales impresos de circuito y departamento; para circuitos con una sola fila, esta funciona también como total, sin duplicarla.
+
+Cobertura: Capital circuitos 1–19 con 1 Bis, 2 Bis y 3 Bis; Famaillá 22–34; Monteros 35–54. La fuente pasa directamente de Capital 19 a Famaillá 22: no se inventan circuitos 20 ni 21. Las páginas pares 10–32 muestran trazos tenues invertidos de la cara contigua, y no se trataron como filas adicionales. El circuito 1 comienza en p. 9 y continúa en p. 11: mi aviso anterior de que solo tenía ocho mesas era erróneo; tiene 12 y lista suplementaria, y el subtotal de p. 9 no es el total del circuito. La lectura posterior confirma que no existe aquella objeción contra el anclaje de planilla p. 72.
+
+Control: los 44 totales impresos de circuito con suma y los tres totales departamentales coinciden con la suma de las filas correspondientes; Capital 26516/26506, Famaillá 9943/9937 y Monteros 9110/9112 (acta/urna). Los cierres no prueban exactitud de cada dígito ni validan una correspondencia de planilla: falta revisión independiente y cruce de cada bloque. En el circuito 10 mesa 3 y circuito 13 ambas filas figura «Observ.» en la fuente; se preserva sin interpretar su alcance.
+

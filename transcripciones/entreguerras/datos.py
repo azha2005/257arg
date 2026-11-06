@@ -39,8 +39,75 @@ NATIONAL = {
    extra=[['Anulados (incluidos en diferencia)',330],['Diferencia de votos (sin anulados)',10496]]),
 }
 
+NATIONAL[1936]=dict(art='Elecciones legislativas de Argentina de 1936',
+   # CON = «Total Concordancia» de la tabla (PDN, UCR de Santa Fe, Concordancia, UCR Unificada, PLCo, PSI, Partido Popular de Jujuy, UCR Provincia de Buenos Aires)
+   blocs=dict(UCR=719633,CON=611697,PS=150507,PDP=80470,UCRC=32903),
+   positivos=1631816,blancos=47650,dif=41118,total=1720584,inscriptos=2431129)
+
+# 1936: columnas -> bloque. Votos de cada lista = su candidato más votado en la provincia, como la tabla de Wikipedia.
+BLOC36={'Concordancia':'CON','UCR Concurrencista (Laprida 147)':'UCRC','Unión Cívica Radical (24 de Setiembre 460)':'UCR',
+        'Partido Socialista':'PS','Unión Cívica Radical':'UCR','UCR de Santa Fe':'CON','Demócrata Progresista':'PDP',
+        'Otros candidatos':'X_otros','Partido Demócrata Nacional':'CON','Partido Socialista Independiente':'CON',
+        'Partido Liberal de Corrientes':'CON','Partido Popular (Jujuy)':'CON','UCR Unificada':'CON',
+        'PDN (Centro Renovación)':'X_pdncr','UCR Federalista (lencinista)':'X_ucrf','UCR de San Luis':'X_ucrsl','Otros':'X_otros'}
+# Provincias sin cuadro departamental: tabla provincial de la Wikipedia; se pinta la provincia entera (DATA.solid).
+# P: votos de lista; «Otros» = positivos - listas nombradas; bla = blancos (+ anulados donde la tabla los junta).
+SOLID36={
+ 'Buenos Aires':dict(P={'Partido Demócrata Nacional':231571,'Unión Cívica Radical':190691,'Partido Socialista':26516,'Otros':7460},bla=8792,nul=1042,vot=466599,ins=745465,src='Expediente 48-D-1936'),
+ 'Capital Federal':dict(P={'Unión Cívica Radical':187018,'Partido Socialista':103088,'Partido Socialista Independiente':12043,'PDN (Centro Renovación)':2703,'Otros':20902},bla=None,nul=None,vot=360645,ins=449283,src='Expediente 11-D-1936 y El Orden, 11 y 12-mar-1936'),
+ 'Córdoba':dict(P={'Unión Cívica Radical':106359,'Partido Demócrata Nacional':53249,'Partido Socialista':5678},bla=None,nul=None,vot=170687,ins=283533,src='Expediente 30-D-1936'),
+ 'Corrientes':dict(P={'Concordancia':39705,'Partido Liberal de Corrientes':17035,'Unión Cívica Radical':16580,'Otros':5},bla=1479,nul=25,vot=74829,ins=108239,src='Expediente 41-D-1936'),
+ 'Entre Ríos':dict(P={'Unión Cívica Radical':62153,'Partido Demócrata Nacional':41814,'Partido Socialista':4695,'Otros':1659},bla=12105,nul=None,vot=122447,ins=161615,src='Expediente 28-D-1936'),
+ 'Jujuy':dict(P={'Partido Popular (Jujuy)':11171},bla=916,nul=280,vot=14406,ins=21029,src='Expediente 42-OV-1936'),
+ 'Mendoza':dict(P={'Partido Demócrata Nacional':28281,'Unión Cívica Radical':18090,'UCR Federalista (lencinista)':6827,'Partido Socialista':5463,'Otros':17},bla=4168,nul=None,vot=63125,ins=84890,src='Expedientes 42-D, 64-D y 65-D-1936'),
+ 'San Luis':dict(P={'Partido Demócrata Nacional':13700,'Unión Cívica Radical':7346,'UCR de San Luis':4042},bla=None,nul=None,vot=25088,ins=37325,src='Expediente 25-D-1936'),
+ 'Santiago del Estero':dict(P={'UCR Unificada':43615,'Unión Cívica Radical':13624,'Otros':2561},bla=2517,nul=None,vot=62317,ins=100993,src='Expediente 62-D-1936'),
+}
+# Santa Fe y Tucumán: inscriptos y votos totales de la tabla provincial (no hay inscriptos por departamento).
+PROVTOT36={'Santa Fe':dict(vot=263451,ins=316422),'Tucumán':dict(vot=96990,ins=122335)}
+
+def load_1936():
+    import csv as _csv
+    T=ROOT/'transcripciones/1936'
+    rows=[]
+    acta={r['departamento']:r for r in _csv.DictReader((T/'tucuman/acta_departamentos.csv').open(encoding='utf-8-sig'))}
+    dep=defaultdict(dict)
+    for r in _csv.DictReader((T/'tucuman/departamentos.csv').open(encoding='utf-8')):
+        dep[r['departamento']][r['candidato_categoria']]=r
+    col={'Padros':'Concordancia','Prat_Gay':'UCR Concurrencista (Laprida 147)','Aragon':'Unión Cívica Radical (24 de Setiembre 460)','E_Lopez':'Partido Socialista'}
+    for d,cs in dep.items():
+        P={lab:int(cs[c]['votos']) for c,lab in col.items()}
+        num=lambda c:int(cs[c]['votos_con_extrapolacion']) if cs[c]['votos_con_extrapolacion']!='' else None
+        ext=[c for c in ('nulos','blancos') if cs[c]['extrapolacion']]
+        a=acta[d]
+        note=(f'Expediente 26-OV-1936 (HCDN), resumen por colegio electoral p. PDF 102'
+              f'{"" if int(cs["Padros"]["fila_p102"])<=8 else " y total de la planilla del departamento"}. '
+              'Votos de cada lista = su candidato más votado en la provincia (Padrós, Prat Gay, Aragón, E. López), como la tabla de Wikipedia; '
+              'los votos por candidato admiten tachas, así que la suma de listas no es el número de votantes. '
+              f'Sobres según el acta de la Junta: {int(a["sobres_segun_acta"]):,} (en urna {int(a["sobres_en_urna"]):,}).'.replace(',','.'))
+        if ext: note+=' Nulos y blancos EXTRAPOLADOS (pedido del usuario): residuo provincial de blancos y anulados de la Wikipedia repartido como en Burruyacú y Tafí; no son lecturas.'
+        if d=='Burruyacú': note+=' Nulos y blancos de Burruyacú bajo la banda del escaneo: sin cifra firme.'
+        rows.append(dict(prov='Tucumán',name=d,page=102,book=65,ins=None,vot=None,P=P,bloc={BLOC36[k]:v for k,v in P.items()},
+            marks={},blancos=num('blancos'),nulos=num('nulos'),circ=None,fuente=note))
+    cand=defaultdict(dict);pages={}
+    for r in _csv.DictReader((T/'santa_fe/candidatos.csv').open(encoding='utf-8-sig')):
+        cand[r['departamento']][r['candidato']]=int(r['votos']);pages[r['departamento']]=r['paginas_pdf']
+    head={'Julio A. Busaniche':'Unión Cívica Radical','Emilio G. Leiva':'UCR de Santa Fe','Luciano F. Molinas':'Demócrata Progresista'}
+    for r in _csv.DictReader((T/'santa_fe/totales.csv').open(encoding='utf-8-sig')):
+        d=r['departamento'];P={lab:cand[d][c] for c,lab in head.items()}
+        marks={}
+        if r['otros_candidatos'].strip().isdigit():P['Otros candidatos']=int(r['otros_candidatos'])
+        elif r['otros_literal'].strip():marks['Otros candidatos']=r['otros_literal'].strip()
+        note=(f'Expediente 29-OV-1936 (HCDN), acta de la Junta Escrutadora de Santa Fe, p. PDF {pages[d]}. '
+              'Votos de cada lista = su candidato más votado en la provincia (Busaniche, Leiva, Molinas), como la tabla de Wikipedia.')
+        rows.append(dict(prov='Santa Fe',name=d,page=pages[d],book='',ins=None,vot=int(r['votantes']) if r['votantes'] else None,P=P,
+            bloc={BLOC36[k]:v for k,v in P.items()},marks=marks,blancos=int(r['blancos']) if r['blancos'] else None,nulos=None,circ=None,fuente=note))
+    return rows
+
 def load(y):
     rows=[]
+    if y==1936:
+        return load_1936()
     if y in (1918,1920):
         return load_early(y)
     if y==1926:
@@ -152,8 +219,10 @@ def export(y):
     ctrl=dict(anio=y,filas=len(rows),filas_con_votos=sum(bool(r['P']) for r in rows),distritos=len({r['prov'] for r in rows}),
         ganadores_por_fila_fuente=dict(counts),bloques_segun_base=dict(tot),bloques_segun_wikipedia=nat['blocs'],
         diferencias_por_bloque={b:tot[b]-v for b,v in nat['blocs'].items()},alertas_aritmeticas=alerts,
-        origen='Cantón (1968), tomo II; lectura visual, cifras impresas conservadas; sin imputación',
-        sha256_pdf=hashlib.sha256((ROOT/'raw/canton_1968/1968_materiales-para-el-estudio-de-la-sociologia_2.pdf').read_bytes()).hexdigest())
+        origen=('Expedientes 26-OV y 29-OV-1936 de la HCDN (Tucumán y Santa Fe); lectura visual; nulos y blancos de Trancas extrapolados a pedido del usuario' if y==1936 else
+                'Cantón (1968), tomo II; lectura visual, cifras impresas conservadas; sin imputación'),
+        sha256_pdf=({f:hashlib.sha256((ROOT/'transcripciones/1936/expedientes_hcdn'/f).read_bytes()).hexdigest() for f in ('26-ov-1936.pdf','29-ov-1936.pdf')} if y==1936 else
+                    hashlib.sha256((ROOT/'raw/canton_1968/1968_materiales-para-el-estudio-de-la-sociologia_2.pdf').read_bytes()).hexdigest()))
     (HERE/f'canton_{y}.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
     (HERE/f'CONTROL_{y}.json').write_text(json.dumps(ctrl,ensure_ascii=False,indent=2),encoding='utf-8')
     if y==1926:
@@ -167,4 +236,4 @@ def export(y):
     return ctrl
 
 if __name__=='__main__':
-    for y in (1926,1937,1940):export(y)
+    for y in (1926,1936,1937,1940):export(y)

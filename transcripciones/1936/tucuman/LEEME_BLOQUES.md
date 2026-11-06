@@ -1,0 +1,7 @@
+# Índice visual preliminar de bloques de planillas
+
+`bloques_planillas.csv` enumera tramos visibles pp. PDF 72–101, con coordenada vertical aproximada como fracción del alto de la página renderizada (0 arriba, 1 abajo). El archivo original es `expedientes_hcdn/26-ov-1936.pdf`. Se examinaron imágenes de las 30 páginas y la apertura del acta pp. 9–13; el cotejo restante del acta pp. 15–67 no permite asignar sin una correspondencia singular de mesa identificada. Los campos vacíos no implican continuidad. No se han usado coincidencias de votos para asignar circuitos o departamentos.
+
+La p. 72 contiene Capital circuito 1 por el arranque explícito del acta p. 9 y el anuncio al pie de 1 bis; la p. 73 comienza circuito 1 bis por ese anuncio. Más allá, la continuidad no es recuperable de manera segura en esta inspección: los encabezados territoriales quedaron fuera del margen y numerosas páginas muestran únicamente la parte superior de la tabla. En partes inferiores aparecen imágenes muy tenues y en ocasiones reflejadas que podrían ser traspaso o reverso; no se las consideró prueba de secuencia. Los límites y números de mesa de los tramos son aproximados y requieren segunda lectura de imagen antes de utilizarse.
+
+Es un inventario de localización, no una correspondencia territorial completa ni base suficiente para agregar el resto de mesas. No se tocaron los CSV de transcripción de terceros.

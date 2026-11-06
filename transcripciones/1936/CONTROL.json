@@ -1,0 +1,286 @@
+{
+  "santa_fe": {
+    "departamentos": 19,
+    "celdas_nominales": 399,
+    "candidatos": [
+      {
+        "candidato": "José U. Aguirre",
+        "suma_departamentos": 81592,
+        "total_acta_p99": 81592,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Joaquín Argonz",
+        "suma_departamentos": 81646,
+        "total_acta_p99": 81646,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Rafael Biancofiore",
+        "suma_departamentos": 81564,
+        "total_acta_p99": 81564,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Miguel A. Gallitelli",
+        "suma_departamentos": 81538,
+        "total_acta_p99": 81538,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Emilio G. Leiva",
+        "suma_departamentos": 81928,
+        "total_acta_p99": 81928,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Héctor S. López",
+        "suma_departamentos": 81691,
+        "total_acta_p99": 81691,
+        "diferencia": 0
+      },
+      {
+        "candidato": "W. Julio Muniagurria",
+        "suma_departamentos": 81643,
+        "total_acta_p99": 81643,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Luciano F. Molinas",
+        "suma_departamentos": 80470,
+        "total_acta_p99": 80470,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Pablo S. D’Anna",
+        "suma_departamentos": 79957,
+        "total_acta_p99": 79957,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Eduardo Carasa",
+        "suma_departamentos": 79978,
+        "total_acta_p99": 79978,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Vicente E. Pomponio",
+        "suma_departamentos": 79866,
+        "total_acta_p99": 79866,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Augusto Morisot",
+        "suma_departamentos": 80325,
+        "total_acta_p99": 80325,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Emiro A. Seghizzi",
+        "suma_departamentos": 79768,
+        "total_acta_p99": 79768,
+        "diferencia": 0
+      },
+      {
+        "candidato": "José Carreras",
+        "suma_departamentos": 79775,
+        "total_acta_p99": 79775,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Carmelo P. Piedrabuena",
+        "suma_departamentos": 90565,
+        "total_acta_p99": 90565,
+        "diferencia": 0
+      },
+      {
+        "candidato": "José C. Susán",
+        "suma_departamentos": 90197,
+        "total_acta_p99": 90197,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Julio A. Busaniche",
+        "suma_departamentos": 91017,
+        "total_acta_p99": 91017,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Albino Boero",
+        "suma_departamentos": 90590,
+        "total_acta_p99": 90590,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Alfredo Grassi",
+        "suma_departamentos": 90478,
+        "total_acta_p99": 90478,
+        "diferencia": 0
+      },
+      {
+        "candidato": "Clodomiro Hernández",
+        "suma_departamentos": 90491,
+        "total_acta_p99": 90491,
+        "diferencia": 0
+      },
+      {
+        "candidato": "José G. Bertotto",
+        "suma_departamentos": 89644,
+        "total_acta_p99": 89644,
+        "diferencia": 0
+      }
+    ],
+    "blancos_suma": 9903,
+    "blancos_acta_p99": 9903,
+    "votantes_suma": 263277,
+    "votantes_acta_p99": 263277,
+    "otros_candidatos": {
+      "suma_solo_menciones_explicitas": 129,
+      "total_acta_p99": 133,
+      "departamentos_sin_mencion": [
+        "Caseros",
+        "9 de Julio",
+        "San Cristóbal",
+        "San Justo",
+        "San Martín"
+      ],
+      "literal_san_martin_p97": "M 4",
+      "suma_menciones_si_se_lee_4_en_san_martin": 133,
+      "reserva": "San Martín conserva M 4 sin normalizar. Primera lectura 14 retirada por cotejo visual; otras ausencias no son cero."
+    }
+  },
+  "tucuman_acta": {
+    "fuente": "26-ov-1936.pdf",
+    "lectura": "visual por el principal; no segunda lectura de las planillas de candidatos",
+    "departamentos": 11,
+    "acta_suma": 94160,
+    "acta_total_p67": 94160,
+    "urna_suma": 94113,
+    "urna_total_p67": 94113,
+    "advertencias": [
+      "Son sobres según acta y hallados en urna, no votos positivos de partido.",
+      "Circuitos 20 y 21 no aparecen entre Capital y Famaillá; no se asignaron.",
+      "Cruz Alta 109-111 y su total se recuperan de la imagen tenue p56.",
+      "P69 admite al escrutinio las mesas observadas de circuitos 13 y 65.",
+      "La correspondencia no identifica por sí sola las filas sin rótulo de las planillas."
+    ]
+  },
+  "fuentes_sha256": {
+    "26-ov-1936.pdf": "d6fba08689a9dd2c68f9e285974e13a43a361f210e2861bc398cd49cbfa736da",
+    "29-ov-1936.pdf": "33d73ed83579f6fbfd9cbadbae4b5af62b83dffddf0964a82ae14072fff70617"
+  },
+  "tucuman/parte_a/lectura_parcial.csv": {
+    "celdas_registradas": 2310,
+    "celdas_por_pagina": {
+      "72": 196,
+      "73": 196,
+      "74": 98,
+      "75": 182,
+      "76": 70,
+      "77": 154,
+      "78": 56,
+      "79": 168,
+      "80": 182,
+      "81": 182,
+      "82": 168,
+      "83": 168,
+      "84": 126,
+      "85": 182,
+      "86": 28,
+      "87": 154
+    },
+    "nota": "Conteo de registros, no prueba de cobertura exhaustiva."
+  },
+  "tucuman/parte_b/lectura_consolidada.csv": {
+    "celdas_registradas": 2030,
+    "celdas_por_pagina": {
+      "88": 182,
+      "89": 224,
+      "90": 14,
+      "91": 84,
+      "92": 196,
+      "93": 42,
+      "95": 224,
+      "96": 224,
+      "97": 182,
+      "98": 112,
+      "99": 210,
+      "100": 70,
+      "101": 266
+    },
+    "nota": "Conteo de registros, no prueba de cobertura exhaustiva."
+  },
+  "tucuman_planillas": {
+    "archivo_fuente": "26-ov-1936.pdf",
+    "entradas": {
+      "parte_a/lectura_parcial.csv": {
+        "sha256": "0ba7539fdb9e4459bb80ecd87839fd26279f0815e09c9447247978ad41408980",
+        "celdas": 2310,
+        "renglones": 165
+      },
+      "parte_b/lectura_consolidada.csv": {
+        "sha256": "f86330c2052ae5940956bf91a9662563eaf3fbfaa7d8f5dc2b08f77ae5200622",
+        "celdas": 2030,
+        "renglones": 145
+      }
+    },
+    "reserva": "Primera lectura parcial, sin suma territorial. Guiones no convertidos en cero. Pistas de cara incierta y resumen p102 separados. Los identificadores de fila son de lectura, no números de mesa o circuito.",
+    "celdas_por_estado": {
+      "numero_leido": 3313,
+      "no_resuelto": 564,
+      "guion_literal": 463
+    },
+    "celdas_por_pagina": {
+      "72": 196,
+      "73": 196,
+      "74": 98,
+      "75": 182,
+      "76": 70,
+      "77": 154,
+      "78": 56,
+      "79": 168,
+      "80": 182,
+      "81": 182,
+      "82": 168,
+      "83": 168,
+      "84": 126,
+      "85": 182,
+      "86": 28,
+      "87": 154,
+      "88": 182,
+      "89": 224,
+      "90": 14,
+      "91": 84,
+      "92": 196,
+      "93": 42,
+      "95": 224,
+      "96": 224,
+      "97": 182,
+      "98": 112,
+      "99": 210,
+      "100": 70,
+      "101": 266
+    },
+    "celdas_total": 4340
+  },
+  "tucuman_controles_focales": [
+    {
+      "pagina_pdf": "72",
+      "candidato": "Manuel Martínez",
+      "filas_detalle": 13,
+      "suma_filas": 343,
+      "subtotal_impreso": 343,
+      "diferencia_suma_menos_impreso": 0,
+      "accion": "Se conserva literal; ver REVISION.md."
+    },
+    {
+      "pagina_pdf": "96",
+      "candidato": "Manuel Martínez",
+      "filas_detalle": 7,
+      "suma_filas": 190,
+      "subtotal_impreso": 216,
+      "diferencia_suma_menos_impreso": -26,
+      "accion": "Se conserva literal; ver REVISION.md."
+    }
+  ]
+}

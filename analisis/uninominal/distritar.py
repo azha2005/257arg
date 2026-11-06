@@ -29,6 +29,7 @@ Salida en plan_radios[_<modo>]_dc/.
 UNI_GUIA=<clave>: otra eleccion guia, de radios_elecciones.pkl (construir_elecciones.py): peronismo = la fuerza de
 GUIA_D contra la fuerza que mas votos saca en cada distrito (pluralidad con todas las fuerzas reales: en 2011
 el FPV contra el mas fuerte de una oposicion dividida, en el balotaje 2015 Scioli contra Macri).
+UNI_SIG=<s>: incertidumbre del modelo de bancas fija (0,01: maximiza distritos ganados aunque sea por medio punto).
 UNI_INICIO=<carpeta>: plan inicial (por defecto el libre del mismo modo). Ademas los distritos llevan DG/RG y las
 metricas «guia» salen de esa eleccion.
 Salida: plan_radios/<dd>.csv (circuito -> distrito), plan/<dd>_distritos.csv y plan/resumen.csv.
@@ -57,12 +58,14 @@ ELEC = ("23", "23b", "25")
 SHP, PLAN = os.environ.get("UNI_SHP", "shp_radios"), os.environ.get("UNI_PLAN", "plan_radios")
 GUIA = os.environ.get("UNI_GUIA")
 GUIA_D = {"2011p": "Frente para la Victoria", "2015b": "Frente para la Victoria", "2015p": "Frente para la Victoria",
-          "2011": "B01", "2015": "B01", "2019": "B01", "2019p": "Frente de Todos"}
+          "2011": "B01", "2015": "B01", "2019": "B01", "2019p": "Frente de Todos",
+          "pba25s": "FP"}
 
 
 def guia(rad, d):
     """Votos por radio de la eleccion UNI_GUIA, una columna por fuerza; la peronista primero."""
-    x = pd.read_pickle(os.path.join(HERE, "radios_elecciones.pkl"))["radios"]
+    # pba25s: provinciales de Buenos Aires del 7-sep-2025 (pba_sep2025.py, base de graficarpba, local)
+    x = pd.read_pickle(os.path.join(HERE, "radios_pba_sep.pkl" if GUIA == "pba25s" else "radios_elecciones.pkl"))["radios"]
     x = x[x.dist == d]
     cs = [c for c in x.columns if c.startswith(GUIA + "|")]
     dc = GUIA + "|" + GUIA_D[GUIA]
@@ -261,6 +264,8 @@ def _correr(args, frac):
             # Mosaic 0.6 ya no acepta un objetivo de bancas (solo empuja hacia un lado, en forma lineal):
             # se conserva el termino de 0.1.0, peso x (bancas esperadas - objetivo)^2
             sig = float(np.sqrt(cfg.election_swing_sigma ** 2 + k_to_sigma(cfg.election_win_prob_at_55) ** 2))
+            # UNI_SIG: incertidumbre fija (p. ej. 0,01 = un punto): casi escalon, vale ganar por medio punto
+            if os.environ.get("UNI_SIG"): sig = float(os.environ["UNI_SIG"])
         w_circ = 0.0
         if dc:
             w_dep, w_pob = float(os.environ.get("UNI_W_DEP", 50)), 50.0
