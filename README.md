@@ -8,7 +8,7 @@
 
 - AMBA (Greater Buenos Aires) results by census tract, 2003-2025;
 - ecological-inference estimates of vote transfers between elections, using a Python port of Ernesto Calvo's RxC method, with Sankey diagrams;
-- packages for uploading the maps to Wikimedia Commons;
+- maps published on Wikimedia Commons, including 226 used across 34 Spanish Wikipedia articles (November 2026), and scripts for preparing uploads;
 - a spreadsheet with every department-level result the project gathers (`resultados_xlsx/`).
 
 No Argentine public body publishes this compilation: the electoral authority publishes polling-station data only from 2011, and earlier years are scattered across books, archives and private datasets.
@@ -30,6 +30,21 @@ Website with all atlases: <https://azha2005.github.io/257arg/>
 - **Gaps**: what could not be found is left blank (beige on the maps) and documented, never imputed.
 
 Each `mapas/mapa<YEAR>/LEEME_<YEAR>.md` (in Spanish) gives the sources, coverage and decisions for that atlas.
+
+### Reproducing
+
+Every atlas, PNG and transfer estimate is rebuilt from the data by scripts. Run them from the repository root (Python 3.11):
+
+```
+python -m pip install -r requirements.txt
+python -m playwright install chromium            # only for PNGs and Commons packages
+python mapas/mapa1983/build_1983.py              # one atlas: atlas_1983.html and dataset_1983.json
+python mapas/mapa2023/build_2023.py              # national deputies 2003-2025
+python transcripciones/canton5865/atlas5865.py 1962   # 1958, 1962, 1965 (Cantón)
+python comun/render_transparentes.py mapa1983    # PNG of every mode
+```
+
+From 2003 on, the builders need the DINE polling-station files (downloaded from datos.gob.ar, not stored in the repository). The full list of builders, data downloads, the transfer pipeline and the required User-Agent setting are in the Spanish sections [Instalación](#instalación), [Regenerar un atlas](#regenerar-un-atlas) and [Regenerar las transferencias](#regenerar-las-transferencias).
 
 ### How to cite
 
