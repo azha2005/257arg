@@ -68,6 +68,11 @@ for nom, d in (("g20", g20), ("g51", g51), ("g28", g28), ("g54", g54)):
     res[nom] = {str(i): {"d": path(g), "c": centro(g)} for i, g in sorted(d.items())}
     res[nom + "_contorno"] = path(unary_union(list(d.values())).buffer(0.00003))
 res["nombres28"] = n28
+# Bancas de minoría de 1951 (puntos del atlas 1951, mapas/mapa1951/shp): en Capital, PP en la 28 y UCR en la 7.
+m51 = gpd.read_file(os.path.join(R, "mapas", "mapa1951", "shp", "bancas_minoria_1951.shp"))
+res["minoria51"] = [{"circ": int(r.circ), "partido": r.partido, "candidato": r.candidato, "votos": int(r.votos),
+                     "c": [round((r.geometry.x - x0) * k * esc, 1), round((y1 - r.geometry.y) * esc, 1)]}
+                    for r in m51[m51.provincia.str.contains("Capital")].itertuples()]
 
 # Secciones policiales para el contorno anterior a la anexión y la capa de consulta.
 municipios = {}

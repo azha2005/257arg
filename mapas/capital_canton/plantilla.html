@@ -91,6 +91,8 @@ svg{width:100%;height:auto;display:block;max-height:84vh}
 .pp text{font:600 10.5px var(--font-display);fill:var(--color-ink);paint-order:stroke;stroke:var(--color-paper);stroke-width:3px;pointer-events:none}
 .parrEtiquetas text{font-size:9px;text-anchor:middle}
 .sec1895{fill:none;stroke:var(--color-ink);stroke-width:.8;stroke-dasharray:3 2;opacity:.65;pointer-events:none}
+.key svg.swp{width:14px;height:14px;flex:none}
+.min51 circle{stroke:var(--color-paper);stroke-width:1.8;cursor:help}
 .num{font:600 10px var(--font-display);fill:var(--num-ink);opacity:.5;pointer-events:none;text-anchor:middle}
 aside{font-size:var(--text-sm);line-height:1.45;min-width:0}
 aside h2{font-size:var(--text-sm);color:var(--color-muted);margin:var(--space-lg) 0 var(--space-xs);font-weight:600;padding-top:var(--space-sm);border-top:1px solid var(--color-rule)}
@@ -198,6 +200,7 @@ const NS="http://www.w3.org/2000/svg";
 const fmt=x=>x==null?"–":Math.round(x).toLocaleString("es-AR");
 const pc=x=>x==null||!isFinite(x)?"–":(x*100).toLocaleString("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1})+" %";
 const SEXO={T:"Total",V:"Varones",M:"Mujeres"};
+const MINORIA=e=>e.n===60&&!!G.minoria51;
 let st={i:E.length-1,s:"T",m:"gan",parr:true,sec1895:false,trazo:"lamina",sel:null,g54:"circ54",f04:"nominal"};
 try{const h=new URLSearchParams(location.hash.slice(1));if(h.get("n")){const k=E.findIndex(e=>e.n==+h.get("n"));if(k>=0)st.i=k}if(h.get("m"))st.m=h.get("m");if(h.get("s"))st.s=h.get("s");if(h.get("g")==="cd20")st.g54="cd20";if(h.get("f")==="canton")st.f04="canton";if(h.get("t")==="base")st.trazo="base"}catch(e){}
 
@@ -299,7 +302,7 @@ function dibujar(){
  $("tSec1895").hidden=!esP;$("tSec1895").textContent="Secciones de "+corte;$("tSec1895").classList.toggle("on",st.sec1895);
  $("tSec1895").setAttribute("aria-pressed",String(st.sec1895));
  $("tTrazo").hidden=!esP;$("tTrazo").classList.toggle("on",st.trazo==="base");$("tTrazo").setAttribute("aria-pressed",String(st.trazo==="base"));
- $("hLugar").textContent=LUGAR(e.anio);$("hAnio").textContent=e.anio;$("hCargo").textContent=", "+e.cargo.toLowerCase();
+ $("hLugar").textContent=LUGAR(e.anio);$("hAnio").textContent=e.anio;$("hCargo").textContent=", "+e.cargo.toLowerCase()+(st.s!=="T"?" ("+SEXO[st.s].toLowerCase()+")":"");
  $("hSub").textContent=(e.fecha?e.fecha+", ":"")+(e.titulo?e.titulo.toLowerCase()+", ":"")+(esP?"por parroquia":e.n===24?"11 circunscripciones en elección":e.g==="g20"?"20 circunscripciones":e.g==="g54"?"14 circunscripciones, numeración provisional":"28 circunscripciones")+". "+(e.fuente||"Cantón y Jorrat, Elecciones en la ciudad (CD, 2007)");
  try{history.replaceState(null,"","#n="+e.n+"&m="+st.m+"&s="+st.s+(e.n===62?"&g="+st.g54:e.n===24?"&f="+st.f04:"")+(esP&&st.trazo==="base"?"&t=base":""))}catch(_){}
  const U=datos(e,st.s),svg=$("svg");svg.setAttribute("viewBox",(esP?G[GK(e)+"_vista"]:[0,0,G.W,G.H]).join(" "));svg.innerHTML="";
@@ -321,6 +324,13 @@ function dibujar(){
   unidades.filter(m=>m.u!=="DIQUES").forEach(m=>{
    const t=document.createElementNS(NS,"text");t.setAttribute("x",m.c[0]);t.setAttribute("y",m.c[1]+3.5);
    t.textContent=ETIQUETAS_PARROQUIALES[m.u]||e.nom[m.u]||m.u;g.appendChild(t)});svg.appendChild(g)}
+ // 1951 diputados: bancas adicionales de minoría (puntos del atlas 1951; PP en la 28, UCR en la 7).
+ if(MINORIA(e)){const g=document.createElementNS(NS,"g");g.setAttribute("class","min51");
+  G.minoria51.forEach(b=>{const col=e.cols.find(c=>b.partido==="PP"?/PERONISTA/.test(c.n):/U\. ?C\. ?R/.test(c.n));
+   const k=document.createElementNS(NS,"circle");k.setAttribute("cx",b.c[0]);k.setAttribute("cy",b.c[1]);k.setAttribute("r",6);
+   k.setAttribute("fill",col?col.c:"var(--color-ink)");
+   const t=document.createElementNS(NS,"title");t.textContent=`Banca de minoría, circunscripción ${b.circ}: ${b.candidato} (${b.partido}), ${fmt(b.votos)} votos`;
+   k.appendChild(t);g.appendChild(k)});svg.appendChild(g)}
  panel(e,cls);
  if(st.sel!=null&&G[GK(e)][st.sel])ficha(e,{u:st.sel},true);else $("ficha").innerHTML='<span class="nota">Pasá el cursor o tocá una unidad del mapa.</span>';
 }
@@ -366,6 +376,7 @@ function panel(e,cls){
  if(cls.has("empate"))h+=`<div class="key"><span class="sw" style="background:var(--tie)"></span>Empate</div>`;
  if(cls.has("sin_eleccion"))h+=`<div class="key"><span class="sw" style="background:var(--tie)"></span>Sin elección de diputados el 13 de marzo</div>`;
  if(cls.has("falta"))h+=`<div class="key"><span class="sw" style="background:var(--beige)"></span>${e.g==="g20"&&Object.keys(e.u.T).length<20?"La hoja no trae esta circunscripción":"Sin dato en el CD"}</div>`;
+ if(MINORIA(e))h+=`<div class="key"><svg class="swp" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--color-muted)" stroke="var(--color-paper)" stroke-width="1.5"/></svg>Punto: banca adicional de minoría (UCR en la 7, PP en la 28), con el color de su partido</div>`;
  if(cls.has("incons"))h+=`<div class="key"><span class="sw" style="background:var(--incons)"></span>Más votantes que inscriptos en la hoja</div>`;
  if(cls.has("diques"))h+=`<div class="key"><span class="sw" style="background:var(--beige)"></span>Diques y dársenas, fuera del cruce parroquial</div>`;
  if(PARROQUIAS(e))h+=`<p class="nota">${TRAZADOS[e.g]}</p>`;

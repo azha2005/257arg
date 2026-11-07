@@ -29,7 +29,7 @@ Las fuentes son las 106 planillas del CD de Darío Cantón y Jorge Raúl Jorrat,
 | Marzo de 1896 | 17 parroquias | Calco de la lámina municipal cotejado con Cantón y Jorrat, t. I, apéndices 2 y 4 |
 | 1898 | 22 parroquias | Lámina municipal para Carmen, Vélez Sársfield y San Carlos. Decretos de 1896 para Las Heras y Balvanera Norte/Sur |
 | 1904-1970 (salvo 1951 y la vista nueva de 1954) | 20 circunscripciones | `Departamentos_1914.shp`, idénticas en 1947 y 1960 (IoU 1,0) |
-| 1951 | 28 circunscripciones de la ley 14.032 | `mapas/mapa1951/shp` (los ganadores del CD coinciden uno a uno) |
+| 1951 | 28 circunscripciones de la ley 14.032 | `mapas/mapa1951/shp` (los ganadores del CD coinciden uno a uno). En diputados, los dos puntos de las bancas de minoría del atlas 1951 (`bancas_minoria_1951.shp`): UCR en la 7 y PP en la 28 (`minoria51` en `geometria.json`) |
 | 1954, vista por defecto | 14 circunscripciones, numeración provisional | `geometria/circunscripciones1954_caba/`, `numeracion_adoptada.json`; votos Wikipedia (AGN/HCDN) |
 | 1973-2007 | 28 circunscripciones | `mapas/mapa1983/caba28.pkl` |
 
