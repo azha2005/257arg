@@ -90,6 +90,9 @@ GRUPOS = [
         ("mapas/mapa2023paso/atlas_2023paso.html", "2023", "PASO presidente", ""),
         ("mapas/mapa2023pasodip/atlas_2023pasodip.html", "2023", "PASO diputados", ""),
     ]),
+    ("capital", "Ciudad de Buenos Aires, 1864 a 2007", "104 elecciones por parroquia y circunscripción, del CD de Cantón y Jorrat. Los límites anteriores a 1904 son reconstrucciones aproximadas.", [
+        ("mapas/capital_canton/capital_1864_2007.html", "1864-2007", "Capital, 104 elecciones", "Parroquias hasta 1898, circunscripciones desde 1904"),
+    ]),
     ("amba", "AMBA por circuito y por radio censal", "Capital y 40 partidos. Por radio son estimaciones: el voto se publica por mesa.", [
         ("mapas/mapaAMBA2003radios/atlas_amba2003radios.html", "2003", "Presidente, por radio", "Estimado"),
         ("mapas/serieAMBA2005_2023radios/atlas_2005dip.html", "2005", "Diputados, por radio", "Estimado"),
@@ -171,4 +174,9 @@ for _f in sorted(_glob.glob(_os.path.join(_os.path.dirname(_os.path.abspath(__fi
     _r = "analisis/uninominal/elecciones_257/" + _os.path.basename(_f)
     CRUDOS.append(_r); DESTINO[_r] = "uninominal/elecciones_257/" + _os.path.basename(_f)
 # Páginas grandes cuyos datos se publican en un script aparte (armar.separar_datos): HTML chico para las tarjetas de X.
-DATOS_APARTE = {"analisis/uninominal/mapa_257.html": "datos.js"}
+DATOS_APARTE = {"analisis/uninominal/mapa_257.html": "datos.js",
+                "mapas/capital_canton/capital_1864_2007.html": "datos.js"}
+# Capital 1864-2007 (7-nov-2026): visor propio, publicado en capital/ con su og:image (mapas/capital_canton/portada.py).
+DESTINO["mapas/capital_canton/capital_1864_2007.html"] = "capital/index.html"
+DESTINO["mapas/capital_canton/portada.png"] = "capital/portada.png"
+CRUDOS += ["mapas/capital_canton/portada.png"]

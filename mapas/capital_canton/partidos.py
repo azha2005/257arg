@@ -1,0 +1,133 @@
+"""Clasificación de columnas del CD y colores de partido.
+
+Los colores son los de los atlas nacionales de la misma época (grep de los
+dataset_*.json), para que un partido se vea igual en Capital y en el país.
+Las reglas se aplican en orden; la primera que coincide gana.
+"""
+import re
+import unicodedata
+
+
+def norm(s):
+    s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
+    s = re.sub(r"[*()\-.,/]", " ", s.upper())
+    return re.sub(r"\s+", " ", s).strip()
+
+
+INS = ("INSCRIPTOS", "ELECTORES", "ELECTORES HABILES", "EMPADRONADOS", "INSCRIPTOS 1889", "INSCRIPTOS 1873")
+VOT = ("VOTANTES", "VOTANTES SEGUN ACTA")
+BLA = ("BLANCO", "BLANCOS", "EN BLANCO")
+BLNUL = ("BLANCO Y NULO", "NULOS Y BLANCOS", "BLANCOS Y ANULADOS", "BLANCO Y ANULADOS")
+NUL = ("NULOS", "NULO", "ANULADOS", "IMPUGNADOS", "IMPUGNADO", "RECURRIDOS", "RECURRIDO")
+OTROS = ("VARIOS", "PARTIDOS VARIOS", "OTRAS LISTAS", "CONTRARIOS")
+
+
+def tipo(col):
+    u = norm(col)
+    if u in INS:
+        return "ins"
+    if u in VOT:
+        return "vot"
+    if u in BLA:
+        return "bla"
+    if u in BLNUL:
+        return "blnul"
+    if u in NUL:
+        return "nul"
+    if u in OTROS:
+        return "otros"
+    return "partido"
+
+
+# (regex sobre norm(columna), color, años desde, años hasta)
+R = [
+    # peronismo y kirchnerismo
+    (r"FRENTE POR LA LEALTAD", "#1c5ece", 2003, 2003),
+    (r"FRENTE MOV POPULAR|MOVIMIENTO POPULAR$", "#1aff98", 2003, 2007),
+    (r"FRENTE JUSTICIA UNION Y LIB|FTE JUSTICIA UNION", "#1aff98", 2007, 2007),
+    (r"FRENTE PARA LA VICTORIA|FTE P LA VICTORIA|FILMUS", "#50ade6", 2003, 2007),
+    (r"UNION POPULAR$", "#318ce7", 1962, 1963),
+    (r"UNION POPULAR$", "#009999", 1965, 1965),
+    (r"^UNION POPULAR$", "#318ce7", 1957, 1961),
+    (r"PERONISTA|JUSTICIALIS|^P ?J$|^PJ$|FREJULI|FREJUPO|FRE JU|CONCERTACION JUSTICIALISTA|CONJUNCION PERONISTA", "#318ce7", 1946, 2007),
+    (r"LABORISTA|UCR JR|U C R J R|C F NAC Y U C R J R", "#318ce7", 1946, 1946),
+    # radicalismo
+    (r"ANTI ?PERSONALISTA", "#76acdc", 1916, 1965),
+    (r"INTRANSIGENTE|INTRASIGENTE|^UCRI$", "#f4845f", 1957, 1965),
+    (r"PRINCIPISTA|LIGA RADICAL DE PROTESTA|UCR BLOQUE OPOSITOR", "#b350a1", 1916, 1965),
+    (r"UNION DEMOCRATICA", "#e10019", 1946, 1946),
+    (r"ALIANZA (PARA EL |P EL )?TRABAJO|ALZA P EL TRABAJO|AL ?TRABAJO JUSTICIA|ALIANZA 2001|ALIANZA PARA EL TRABAJO", "#dc0143", 1997, 2001),
+    (r"CONCERTACION UNA|ALIANZA CONCERTACION UNA", "#d31515", 2007, 2007),
+    (r"^(U ?C ?R|UNION CIVICA RADICAL|RADICAL|RADICALES|PARTIDO RADICAL|P RADICAL|RADICALISMO|UCR DEL PUEBLO|U C R DEL PUEBLO|UNION CIVICA RADICAL DEL PUEBLO|UCRP|UCR CROTTO|UCR RIU|UCR MELO|UCR JOSE O CASAS|UCR MOLINARI)\b", "#e10019", 1890, 2007),
+    # socialismo
+    (r"SOCIALISTA INDEPENDIENTE|^PSI$|SOCIALISTA IND$|SOCIAL INDEPENDIENTE", "#ffc0ce", 1927, 1940),
+    (r"SOCIALISTA DEMOCRATICO|SOCIALISMO DEMOCRATICO|^PSD$", "#ffad00", 1958, 1983),
+    (r"SOCIALISTA ARGENTINO|^PSA$|SOCIALISMO ARGENTINO|SOCIALISTA ARG$", "#e65100", 1915, 1965),
+    (r"SOCIALISTA INTERNACIONAL", "#8b1a1a", 1917, 1919),
+    (r"UNIDAD SOCIALISTA", "#f59e0b", 1985, 1993),
+    (r"^(P ?S|PS|P SOCIALISTA|PARTIDO SOCIALISTA|SOCIALISTA|SOCIALISTAS|P S REPETTO|SOCIALISTA UGARTE|SOC IBARLUCEA|PARTIDO SOCIALISTA FEDERICO PINEDO H)$", "#ff9900", 1894, 1957),
+    # PDP
+    (r"DEMOCRATA PROGRESISTA|^P ?D ?P$|^PDP$|DEM PROG", "#005c9e", 1914, 2007),
+    # conservadores
+    (r"CONCORDANCIA|FTE NAC UCR JUNTA REORG", "#76acdc", 1931, 1943),
+    (r"DEMOCRATA NAC|DEMOCRATA CONSERVADOR|DEMOCRACIA CONSERVADORA|DEMOCRATO CONSERVADOR|^DEMOCRATA$|^CONSERVADOR$|P DEMOCRATA RENOVACION|PARTIDO DEMOCRATA", "#1f2f6b", 1931, 1983),
+    (r"CONSTITUCIONAL$|CONSERVADOR|CONCENTR?AC?I?O?N? NAC REPUBLICANA|CONCENT NAC REPUBLICANA|DEFENSA RURAL|UNION COMUNAL", "#30d5c8", 1912, 1930),
+    # siglo XIX
+    (r"MITR|CLUB CONST|PARTIDOS UNIDOS|^P U$", "#4169e1", 1864, 1898),
+    (r"ALSINA|^AUTONOMISTAS?$|CASTRISTAS", "#c0504d", 1864, 1886),
+    (r"JUARISMO|^ACUERDO$|^P NACIONAL$", "#74acdf", 1886, 1898),
+    (r"^DEMOCRATA$", "#005c9e", 1916, 1930),
+    (r"ALIANZA DEMOCRATA SOCIALISTA", "#005c9e", 1931, 1931),
+    # orden conservador
+    (r"UNION NACIONAL", "#4169e1", 1910, 1914),
+    (r"AUTONOMISTA NACIONAL|AUTONOM NACIONAL|^P NACIONAL$|PARTIDO NACIONAL|ACUERDO PAN|UCN Y PAN", "#74acdf", 1880, 1912),
+    (r"AUTONOMISTA", "#0067a5", 1880, 1912),
+    (r"REPUBLICANO", "#4169e1", 1898, 1912),
+    (r"UNION CIVICA NACIONAL|^UNION CIVICA$|^UC BEAZLEY|UNION CIVICA BEAZLEY|UNION CIVICA ARAOZ", "#22b14c", 1890, 1914),
+    (r"^INDEPENDIENTES?$|INDEPEN DIENTE", "#777777", 1890, 1940),
+    # izquierda y otros del siglo XX
+    (r"COMUNISTA", "#8b1a1a", 1920, 1965),
+    (r"CONCENTRACION OBRERA", "#795548", 1940, 1965),
+    (r"DEMOCRATA CRISTIAN|DEMOCRACIA CRISTIANA|^DC$|^PDC$", "#2b3094", 1957, 2007),
+    (r"INTEGRACION Y DESARROLLO|^M ?I ?D$|^MID$|INTEG Y DESARROLLO|INTEGR Y DESARROLLO", "#0f2b3d", 1963, 2007),
+    (r"ALIANZA POPULAR FEDERALISTA|FEDERALISTA POPULAR", "#e6b800", 1973, 1973),
+    (r"ALIANZA POPULAR REVOLUCIONARIA", "#d10047", 1973, 1973),
+    (r"NUEVA FUERZA", "#29c0ef", 1973, 1973),
+    (r"ALIANZA REPUBLICANA FEDERAL", "#2e7d32", 1973, 1973),
+    (r"SOCIALISTA DE LOS TRABAJADORES", "#8b0000", 1973, 1973),
+    (r"FRENTE (DE )?IZQUIERDA POPULAR|^FIP$", "#b22222", 1973, 1985),
+    (r"INTRANSIGENTE|^PI$", "#d10047", 1983, 1995),
+    # 1983-2007
+    (r"UCEDE|U ?CE ?DE|U C D|UNION (DEL|DE) CENTRO DEMOCRATICO|ALIANZA (DEL |DE )?CENTRO|AL DE CENTRO", "#8e6bd8", 1983, 2007),
+    (r"MODIN|DIGNIDAD (Y|E) (LA )?INDEP|DIG Y LA INDEP|DIG YLA INDEP|DIG Y LA IND", "#e67e22", 1987, 2001),
+    (r"FRE ?PA ?SO|FRENTE PAIS SOLIDARIO", "#a349a4", 1995, 1999),
+    (r"FRENTE GRANDE", "#a0399c", 1993, 1997),
+    (r"ACCION (POR|PARA|P) (LA )?REPU|ACCION P LA REP|ENCUENTRO P(OR|ARA) LA CIUDAD|NUEVO PAIS", "#3e5298", 1997, 2003),
+    (r"UNION POR BS AS|UNION P BS AS", "#8dbdf2", 2001, 2001),
+    (r"AUTODETERM", "#592e6b", 2001, 2007),
+    (r"COMPR P EL CAMBIO|COMPROMISO P(ARA)? EL CAMBIO|MAURICIO MACRI", "#3e5fa9", 2003, 2003),   # azul de Macri en la Wikipedia 2003
+    (r"PROPUESTA REPUBLICANA|MAURICIO MACRI|M MACRI", "#f4ce00", 2003, 2007),
+    (r"RECREAR", "#f4ce00", 2003, 2007),
+    (r"AFIRM(ACION)? P(ARA)? UNA REP|COALICION CIVICA|^ARI$", "#74b744", 2001, 2007),
+    (r"FUERZA PORTENA|ANIBAL IBARRA", "#f8771e", 2003, 2003),   # naranja de Ibarra en la Wikipedia 2003
+    (r"HUMANISTA", "#ff8800", 1985, 2007),
+    (r"IZQUIERDA UNIDA", "#a31515", 1987, 2007),
+    (r"OBRERO", "#a60020", 1983, 2007),
+    (r"MOVIMIENTO AL SOCIALISMO|^M ?A ?S$|^MAS$", "#c62828", 1983, 2007),
+    (r"BLANCO DE LOS JUBILADOS|PDO BLANCO|BLANCO DE LA CAP", "#9e9e9e", 1985, 1995),
+    (r"PROYECTO SUR", "#389b00", 2007, 2007),
+]
+
+import colorsys as _cs
+RESPALDO_GEN = ["#%02x%02x%02x" % tuple(int(255 * c) for c in _cs.hls_to_rgb((i * 0.137) % 1, 0.45 + 0.1 * (i % 3), 0.45))
+                for i in range(80)]
+RESPALDO = ["#6d4c41", "#00897b", "#5e35b1", "#c0ca33", "#d81b60", "#546e7a", "#8d6e63", "#26a69a",
+            "#7cb342", "#ab47bc", "#f06292", "#4db6ac", "#9575cd", "#a1887f", "#90a4ae", "#ffb74d"] + RESPALDO_GEN
+
+
+def color(col, anio):
+    u = norm(col)
+    for rx, c, a0, a1 in R:
+        if a0 <= anio <= a1 and re.search(rx, u):
+            return c, True
+    return None, False

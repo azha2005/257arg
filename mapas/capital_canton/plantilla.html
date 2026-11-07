@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ciudad de Buenos Aires 1864-2007</title>
+<meta name="description" content="Las elecciones de la ciudad de Buenos Aires de 1864 a 2007 por parroquia y circunscripción, desde el CD de Cantón y Jorrat.">
+<meta name="keywords" content="elecciones en Buenos Aires, Capital Federal, historia electoral, parroquias, circunscripciones, Cantón, Jorrat, sufragio, ley Sáenz Peña, peronismo, mapa electoral, Argentina">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://azha2005.github.io/257arg/capital/">
+<meta name="theme-color" content="#fcfcfa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141619" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atlas electorales argentinos">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://azha2005.github.io/257arg/capital/">
+<meta property="og:title" content="Ciudad de Buenos Aires, 1864-2007">
+<meta property="og:description" content="104 elecciones porteñas por parroquia y circunscripción, del CD de Cantón y Jorrat.">
+<meta property="og:image" content="https://azha2005.github.io/257arg/capital/portada.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuatro mapas de la ciudad de Buenos Aires: diputados 1864 y 1896 por parroquia, presidente 1946 y Jefe de Gobierno 2003 por circunscripción">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ciudad de Buenos Aires, 1864-2007">
+<meta name="twitter:description" content="104 elecciones porteñas por parroquia y circunscripción, del CD de Cantón y Jorrat.">
+<meta name="twitter:image" content="https://azha2005.github.io/257arg/capital/portada.png">
+<meta name="twitter:image:alt" content="Cuatro mapas de la ciudad de Buenos Aires: diputados 1864 y 1896 por parroquia, presidente 1946 y Jefe de Gobierno 2003 por circunscripción">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://azha2005.github.io/257arg/capital/", "url": "https://azha2005.github.io/257arg/capital/", "name": "Ciudad de Buenos Aires, 1864-2007: mapa electoral interactivo", "description": "Las elecciones de la ciudad de Buenos Aires de 1864 a 2007 por parroquia y circunscripción, desde el CD de Cantón y Jorrat.", "inLanguage": "es-AR", "isPartOf": {"@type": "WebSite", "name": "Atlas electorales argentinos", "url": "https://azha2005.github.io/257arg/"}, "primaryImageOfPage": "https://azha2005.github.io/257arg/capital/portada.png", "datePublished": "2026-11-07", "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Atlas electorales", "item": "https://azha2005.github.io/257arg/"}, {"@type": "ListItem", "position": 2, "name": "Ciudad de Buenos Aires, 1864-2007", "item": "https://azha2005.github.io/257arg/capital/"}]}}, {"@type": "Map", "name": "Elecciones en la ciudad de Buenos Aires, 1864-2007", "url": "https://azha2005.github.io/257arg/capital/", "image": "https://azha2005.github.io/257arg/capital/portada.png", "inLanguage": "es-AR", "temporalCoverage": "1864/2007", "spatialCoverage": {"@type": "City", "name": "Buenos Aires"}, "isBasedOn": ["Darío Cantón y Jorge Raúl Jorrat, Elecciones en la ciudad, tomo III (CD, 2007)", "Cartografía de Rodríguez y De Grande (CEUR-CONICET)"], "sameAs": "https://github.com/azha2005/257arg/tree/master/mapas/capital_canton", "license": "https://creativecommons.org/licenses/by/4.0/"}]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet">
+<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<style>
+/* Hallmark · shape: app screen · genre: editorial · theme: Ink (by request: the tokens of the site index, sitio/estilo.css) · audit and fixes 7-nov-2026
+ * nav: one sticky bar of pill controls over the title · signature: the city drawn by parish and circunscripción, 1864-2007, one election at a time · states: full · ink: paper
+ * axes: light/grotesk-sans/chromatic-teal · posture: restrained · contrast: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: E, a tool screen has little argument; the side panel reads the totals beside the map */
+/* Hallmark · waive 22 · tinta y grises sin croma, como el índice del sitio · los colores de los partidos en el mapa llevan todo el color */
+/* Hallmark · waive 38iii · el año va en el color de acento una sola vez, en el título · como la caja del año de los atlas */
+:root{
+ color-scheme:light;
+ --space-2xs:4px;--space-xs:8px;--space-sm:12px;--space-md:16px;--space-lg:24px;--space-xl:40px;--gutter:40px;
+ --text-xs:.8125rem;--text-sm:.875rem;--text-md:1rem;--text-lg:1.2rem;--text-display:clamp(1.7rem,3.2vw,2.6rem);
+ --ease-out:cubic-bezier(.16,1,.3,1);--dur-short:180ms;
+ --color-paper:oklch(99.5% .003 100);--color-paper-2:oklch(97% .004 100);--color-paper-3:oklch(94% .006 100);
+ --color-ink:oklch(16% 0 0);--color-ink-2:oklch(28% 0 0);--color-muted:oklch(44% 0 0);
+ --color-rule:oklch(89% .004 100);--color-accent:oklch(50% .095 188);--color-accent-ink:oklch(99.5% .003 100);--color-focus:oklch(50% .095 188);
+ --font-display:"Epilogue",ui-sans-serif,system-ui,sans-serif;--radius:10px;--radius-pill:999px;
+ --beige:#e9dcc0;--tie:#b9b9b9;--incons:#cfcfcf;--num-ink:#1d1b18;--c-mitre:#4169c1;--c-mitre-2:#7594cf;--c-alsina:#b44945;--c-alsina-2:#cf807d;--ink:var(--color-ink);--borde:#ffffff;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
+ --color-paper:oklch(17% .004 250);--color-paper-2:oklch(21% .005 250);--color-paper-3:oklch(25% .006 250);
+ --color-ink:oklch(95% 0 0);--color-ink-2:oklch(85% 0 0);--color-muted:oklch(72% 0 0);--color-rule:oklch(32% .006 250);
+ --color-accent:oklch(74% .1 188);--color-accent-ink:oklch(17% .004 250);--color-focus:oklch(74% .1 188);
+ --beige:#5b5240;--tie:#77757a;--incons:#5f5f5f;--borde:oklch(17% .004 250)}}
+:root[data-theme="dark"]{color-scheme:dark;
+ --color-paper:oklch(17% .004 250);--color-paper-2:oklch(21% .005 250);--color-paper-3:oklch(25% .006 250);
+ --color-ink:oklch(95% 0 0);--color-ink-2:oklch(85% 0 0);--color-muted:oklch(72% 0 0);--color-rule:oklch(32% .006 250);
+ --color-accent:oklch(74% .1 188);--color-accent-ink:oklch(17% .004 250);--color-focus:oklch(74% .1 188);
+ --beige:#5b5240;--tie:#77757a;--incons:#5f5f5f;--borde:oklch(17% .004 250)}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scrollbar-color:var(--color-rule) var(--color-paper)}
+::selection{background:var(--color-accent);color:var(--color-accent-ink)}
+body{margin:0;background:var(--color-paper);color:var(--color-ink);font-family:var(--font-display);font-size:var(--text-md);line-height:1.5;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid var(--color-focus);outline-offset:3px}
+a{color:inherit;text-underline-offset:.16em}
+button,select{font:inherit}
+.tope{position:sticky;top:0;z-index:300;background:var(--color-paper);border-bottom:1px solid var(--color-rule)}
+.fila{display:flex;align-items:center;gap:var(--space-sm) var(--space-md);flex-wrap:wrap;min-height:64px;padding:var(--space-xs) var(--gutter)}
+.marca{font-weight:700;letter-spacing:-.02em;white-space:nowrap;margin-right:var(--space-xs)}
+.pill{border:1px solid var(--color-rule);background:transparent;color:var(--color-ink);border-radius:var(--radius-pill);padding:var(--space-2xs) var(--space-sm);min-height:32px;font-size:var(--text-sm);cursor:pointer;transition:background var(--dur-short) var(--ease-out)}
+.pill:hover{background:var(--color-paper-2)}.pill:active{background:var(--color-paper-3)}
+a.pill{text-decoration:none;display:inline-flex;align-items:center}
+.pill.on{background:var(--color-ink);color:var(--color-paper);border-color:var(--color-ink)}
+.pill:disabled{background:var(--color-paper-2);color:var(--color-muted);border-color:var(--color-rule);cursor:not-allowed}
+.pill svg{width:12px;height:12px;display:block;fill:currentColor;max-height:none}
+select.pill{appearance:auto;padding-right:var(--space-xs);max-width:100%}
+#el{max-width:min(420px,100%)}
+.seg{display:inline-flex;gap:var(--space-2xs)}
+#tema{margin-left:auto}
+.cab{padding:var(--space-lg) var(--gutter) var(--space-sm)}
+h1{margin:0;font-size:var(--text-display);font-weight:700;letter-spacing:-.035em;line-height:1.04;text-wrap:balance}
+h1 .y{color:var(--color-accent)}
+.sub{color:var(--color-muted);font-size:var(--text-sm);margin-top:var(--space-xs);max-width:80ch}
+main{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:var(--space-lg);padding:0 var(--gutter) var(--space-xl)}
+#mapa{min-width:0}
+svg{width:100%;height:auto;display:block;max-height:84vh}
+.u{stroke:var(--borde);stroke-width:.9;cursor:pointer}
+.u:hover,.u.sel{stroke:var(--color-ink);stroke-width:2}
+.cont{fill:none;stroke:var(--color-ink-2);stroke-width:1.3;pointer-events:none}
+.ref{fill:none;stroke:var(--color-muted);stroke-width:.6;stroke-dasharray:3 3;opacity:.55;pointer-events:none}
+.pp circle{stroke:var(--color-ink);stroke-width:1.2;cursor:pointer}
+.pp text{font:600 10.5px var(--font-display);fill:var(--color-ink);paint-order:stroke;stroke:var(--color-paper);stroke-width:3px;pointer-events:none}
+.parrEtiquetas text{font-size:9px;text-anchor:middle}
+.sec1895{fill:none;stroke:var(--color-ink);stroke-width:.8;stroke-dasharray:3 2;opacity:.65;pointer-events:none}
+.num{font:600 10px var(--font-display);fill:var(--num-ink);opacity:.5;pointer-events:none;text-anchor:middle}
+aside{font-size:var(--text-sm);line-height:1.45;min-width:0}
+aside h2{font-size:var(--text-sm);color:var(--color-muted);margin:var(--space-lg) 0 var(--space-xs);font-weight:600;padding-top:var(--space-sm);border-top:1px solid var(--color-rule)}
+aside h2:first-child{margin-top:0}
+.met{display:flex;gap:var(--space-2xs) var(--space-md);flex-wrap:wrap;color:var(--color-muted);font-variant-numeric:tabular-nums}.met b{color:var(--color-ink);font-weight:600}
+.bar{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:var(--space-xs);align-items:center;margin:var(--space-2xs) 0}
+.sw{width:14px;height:14px;border-radius:3px}
+.bar .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .v{font-variant-numeric:tabular-nums;color:var(--color-muted)}.bar .v b{color:var(--color-ink)}
+.track{grid-column:2/4;height:4px;background:var(--color-rule);border-radius:2px;margin:0 0 var(--space-2xs)}.track i{display:block;height:4px;border-radius:2px}
+.ramp{display:flex;gap:2px;margin:var(--space-2xs) 0 0}.ramp span{flex:1;height:12px;border-radius:2px}
+.rl{display:flex;justify-content:space-between;color:var(--color-muted);font-size:11.5px;font-variant-numeric:tabular-nums}
+.key{display:flex;align-items:center;gap:var(--space-xs);margin:var(--space-2xs) 0;color:var(--color-muted)}
+#ficha{border:1px solid var(--color-rule);border-radius:var(--radius);padding:var(--space-sm) var(--space-md);background:var(--color-paper-2)}
+#ficha table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+#ficha td{padding:2px 0}#ficha td+td{text-align:right;padding-left:var(--space-xs)}
+#ficha tr.w td{font-weight:700}
+.nota{color:var(--color-muted);font-size:var(--text-xs);margin:var(--space-2xs) 0;text-wrap:pretty}
+.warn{color:var(--color-accent)}
+details summary{cursor:pointer;color:var(--color-muted)}
+.pie{border-top:1px solid var(--color-rule);padding:var(--space-lg) var(--gutter) var(--space-xl);color:var(--color-muted);font-size:var(--text-sm)}
+.pie p{max-width:72ch;margin:0 0 var(--space-xs)}
+@media (max-width:60rem){:root{--gutter:16px}main{grid-template-columns:minmax(0,1fr)}#tema{margin-left:0}}
+@media (max-width:40rem){.tope{position:static}.marca{width:100%}#el{flex:1;min-width:0}}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
+
+#ordinario[hidden],#prensa1874[hidden],#modo[hidden]{display:none}
+#prensa1874{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,340px);gap:var(--space-lg)}
+.mapas1874{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md);min-width:0}
+.mapas1874 section{min-width:0;text-align:center}
+.mapas1874 svg{width:100%;height:min(60vh,570px)}
+.mapas1874 path{stroke:var(--ink);stroke-width:.7;vector-effect:non-scaling-stroke;fill-rule:evenodd;cursor:pointer}
+.mapas1874 path[fill="#c3b89f"]{fill:var(--beige)}
+.mapas1874 path[fill="#83838a"]{fill:var(--tie)}
+.etiquetas1874{pointer-events:none;fill:var(--ink);stroke:var(--color-paper);stroke-width:2px;paint-order:stroke;text-anchor:middle;dominant-baseline:middle;font-size:10px;font-weight:600}
+.etiquetas1874.ocultas{display:none}
+.mapas1874 path:is(:hover,:focus){stroke:var(--color-accent);stroke-width:2;outline:none}
+@media(max-width:850px){#prensa1874{grid-template-columns:1fr}.mapas1874 svg{height:auto}}
+</style>
+</head>
+<body>
+<header class="tope"><div class="fila">
+ <a class="pill" href="https://azha2005.github.io/257arg/">Todos los atlas</a>
+ <span class="marca">Capital, 1864-2007</span>
+ <button class="pill" id="prev" aria-label="Elección anterior"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M8.5 1 3 6l5.5 5z"/></svg></button>
+ <select class="pill" id="el" aria-label="Elección"></select>
+ <button class="pill" id="next" aria-label="Elección siguiente"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 1 9 6l-5.5 5z"/></svg></button>
+ <select class="pill" id="modo" aria-label="Qué muestra el mapa"></select>
+ <select class="pill" id="fuente1904" aria-label="Resultados de diputados de 1904" hidden><option value="nominal">Por candidato (atlas nacional)</option><option value="canton">Por fuerza (Cantón y Jorrat)</option></select>
+ <select class="pill" id="territorio54" aria-label="Unidades y fuente de 1954" hidden><option value="circ54">14 circunscripciones de 1954</option><option value="cd20">20 secciones del CD</option></select>
+ <span class="seg" id="sexo"></span>
+ <button class="pill" id="tParr" aria-label="Mostrar u ocultar las etiquetas de las parroquias">Parroquias</button>
+ <button class="pill" id="tSec1895" aria-pressed="false" hidden>Secciones de 1895</button>
+ <button class="pill" id="tTrazo" aria-pressed="false" title="Recorta las parroquias al contorno de la base censal de Rodríguez y De Grande en lugar del Riachuelo y la costa de la lámina municipal" hidden>Contorno censal</button>
+ <button class="pill" id="tema" aria-label="Cambiar entre modo claro y oscuro">Modo oscuro</button>
+</div></header>
+<div class="cab">
+ <h1><span id="hLugar">Capital Federal</span>, <span class="y" id="hAnio"></span><span id="hCargo"></span></h1>
+ <p class="sub" id="hSub"></p>
+</div>
+<main id="ordinario">
+ <div id="mapa"><svg id="svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de la ciudad"></svg></div>
+ <aside>
+  <h2 id="metTitulo">Ciudad</h2>
+  <div class="met" id="met"></div>
+  <div id="res"></div>
+  <h2>Referencias</h2>
+  <div id="ley"></div>
+  <h2>Unidad</h2>
+  <div id="ficha"><span class="nota">Pasá el cursor o tocá una unidad del mapa.</span></div>
+  <h2>Fuente y notas</h2>
+  <div id="notas"></div>
+ </aside>
+</main>
+<main id="prensa1874" hidden>
+ <div class="mapas1874"><!-- MAPAS_1874 --></div>
+ <aside>
+  <h2>Total provincial publicado</h2>
+  <div class="met"><span>Votos <b>27.074</b></span><span>Ventaja de Mitre <b>2.868</b></span></div>
+  <p><span style="color:var(--c-mitre-2)">■</span> Mitre <b>14.971 (55,3 %)</b><br>
+     <span style="color:var(--c-alsina-2)">■</span> Alsina-Avellaneda <b>12.103 (44,7 %)</b></p>
+  <p class="nota">El total impreso abarca el distrito de Buenos Aires de la época, incluida la ciudad. La suma de cifras legibles de las filas transcritas, con las objetadas excluidas, da 14.469 y 8.011 respectivamente. Se conserva el total de la fuente.</p>
+  <h2>Unidad</h2><div id="ficha1874" class="nota" aria-live="polite">Pasá el cursor o tocá una unidad del mapa.</div>
+  <h2>Referencias</h2>
+  <div class="key"><span class="sw" style="background:var(--c-mitre)"></span>Mitre</div>
+  <div class="key"><span class="sw" style="background:var(--c-alsina)"></span>Alsina-Avellaneda</div>
+  <div class="key"><span class="sw" style="background:var(--tie)"></span>Resultado objetado o sin elección</div>
+  <div class="key"><span class="sw" style="background:var(--beige)"></span>Sin dato</div>
+  <p class="nota">Los tonos claros indican una sola cifra publicada.</p>
+  <h2>Fuente y notas</h2><div class="nota"><!-- NOTAS_1874 --></div>
+ </aside>
+</main>
+<footer class="pie">
+ <p>Datos: Darío Cantón y Jorge Raúl Jorrat, <i>Elecciones en la ciudad</i>, tomo III, CD con 106 planillas (Instituto Histórico de la Ciudad de Buenos Aires, 2007). Se copian tal como están; lo que la planilla no trae queda en beige. En 1954, la vista de 14 circunscripciones usa los votos publicados en Wikipedia (AGN/HCDN), con numeración cartográfica provisional; las 20 secciones originales del CD siguen disponibles.</p>
+ <p>Cartografía: Rodríguez y De Grande (CEUR-CONICET), CC BY 2.5 Argentina; 28 circunscripciones de 1951 del atlas 1951; 28 circunscripciones modernas del SVG de Wikipedia ajustado al contorno.</p>
+</footer>
+<script>
+(()=>{
+const DATA=/*__DATOS__*/null;
+const D=DATA;
+if(!D){location.replace("capital_1864_2007.html"+(location.hash||"#n=62"));return;}
+const E=D.E, G=D.G;
+const $=id=>document.getElementById(id);
+const NS="http://www.w3.org/2000/svg";
+const fmt=x=>x==null?"–":Math.round(x).toLocaleString("es-AR");
+const pc=x=>x==null||!isFinite(x)?"–":(x*100).toLocaleString("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1})+" %";
+const SEXO={T:"Total",V:"Varones",M:"Mujeres"};
+let st={i:E.length-1,s:"T",m:"gan",parr:true,sec1895:false,trazo:"lamina",sel:null,g54:"circ54",f04:"nominal"};
+try{const h=new URLSearchParams(location.hash.slice(1));if(h.get("n")){const k=E.findIndex(e=>e.n==+h.get("n"));if(k>=0)st.i=k}if(h.get("m"))st.m=h.get("m");if(h.get("s"))st.s=h.get("s");if(h.get("g")==="cd20")st.g54="cd20";if(h.get("f")==="canton")st.f04="canton";if(h.get("t")==="base")st.trazo="base"}catch(e){}
+
+function hex(c){c=c.replace("#","");return[0,2,4].map(i=>parseInt(c.substr(i,2),16))}
+function mix(c,w,t){const a=hex(c),b=hex(w);return"#"+a.map((v,i)=>Math.round(v+(b[i]-v)*t).toString(16).padStart(2,"0")).join("")}
+function tones(c){return[mix(c,"#ffffff",.78),mix(c,"#ffffff",.62),mix(c,"#ffffff",.46),mix(c,"#ffffff",.30),mix(c,"#ffffff",.14),c,mix(c,"#000000",.28)]}
+function bin(v,cuts){let k=0;while(k<cuts.length&&v>=cuts[k])k++;return k}
+const CUTG=[.30,.35,.40,.45,.50,.55], CUTP=[.40,.50,.60,.70,.75,.80];
+const CENSO_MODOS={
+ pob:{nombre:"Votantes / población",cuts:[.01,.02,.03,.04,.05,.06],col:0,campo:"vot"},
+ var:{nombre:"Votantes / varones argentinos +18",cuts:[.1,.15,.2,.25,.3,.35],col:1,campo:"vot"},
+ reg:{nombre:"Inscriptos / varones argentinos +18",cuts:[.2,.3,.4,.5,.6,.7],col:1,campo:"ins"}
+};
+const ETIQUETAS_PARROQUIALES={
+ "CATEDRAL AL NORTE":"Cat. N.",
+ "CATEDRAL AL SUR":"Cat. S.",
+ "SAN NICOLAS":"S. Nicolás",
+ "SAN JUAN EVANGELISTA":"S. Juan Ev.",
+ "BALVANERA NORTE":"Balv. N.",
+ "BALVANERA SUR":"Balv. S."
+};
+const PARROQUIAS=e=>e.g.startsWith("p");
+const TRAZADOS={
+ p1864:"Reconstrucción aproximada de las 12 parroquias electorales. Usa el límite municipal de 1869, agrupa Santa Lucía y San Juan Evangelista en Barracas al Norte y devuelve a Balvanera el área que después figura como San Cristóbal.",
+ p1872:"Reconstrucción aproximada de las 14 parroquias electorales. Usa el límite municipal del SHP de 1869 y la ribera histórica de la lámina municipal.",
+ p1890:"Reconstrucción aproximada de las 16 parroquias electorales. Reintegra el área de San Bernardo a las parroquias vecinas con ayuda de las secciones policiales de 1895.",
+ p1896:"Calco de la lámina municipal, adaptado a las 17 parroquias electorales de marzo de 1896. Los tramos borrosos del casco son aproximados.",
+ p1898:"Reconstrucción aproximada de las 22 parroquias electorales. Incorpora Carmen, Vélez Sársfield y San Carlos con la lámina municipal, y Las Heras y la división de Balvanera con los decretos de 1896."
+};
+
+// opciones de elección por época
+const ERA=e=>PARROQUIAS(e)?"Parroquias 1864-1898":e.g==="g51"?"28 circunscripciones de 1951":e.g==="g54"?"14 circunscripciones de 1954 (provisional)":e.anio<1973?"20 circunscripciones 1904-1970":"28 circunscripciones 1973-2007";
+(()=>{let og=null,last="";E.forEach((e,i)=>{const r=ERA(e);if(r!==last){og=document.createElement("optgroup");og.label=r;$("el").appendChild(og);last=r}
+ const o=document.createElement("option");o.value=i;o.textContent=e.anio+" "+e.cargo+(e.anio===1904&&e.fecha?" ("+e.fecha.replace(/ de 1904$/i,"")+")":"");og.appendChild(o)})})();
+
+// Hasta la federalización (ley 1029, septiembre de 1880) la ciudad era parte de la provincia.
+// Desde 1996 (autonomía de la reforma de 1994, primeras elecciones propias), Ciudad Autónoma.
+const LUGAR=a=>a<=1880?"Ciudad de Buenos Aires":a>=1996?"Ciudad Autónoma de Buenos Aires":"Capital Federal";
+function datos(e,s){return e.u[s]||e.u.T}
+function partes(f,e){ // votos por partido (sin "otros"), positivos
+ const p=f.p.map((v,i)=>({i,v:v==null?null:v,o:e.cols[i].o}));
+ const pos=p.reduce((a,x)=>a+(x.v||0),0);return{p,pos}}
+function ganador(f,e){const{p,pos}=partes(f,e);const c=f.candidatos||p.filter(x=>!x.o&&x.v!=null);if(!c.length||pos<=0)return null;
+ const m=Math.max(...c.map(x=>x.v));const w=c.filter(x=>x.v===m);return{i:w.length>1?-1:w[0].i,share:m/pos,pos,n:w.length===1?w[0].n:null}}
+function totales(e,s){ // ciudad: fila TOTAL de la hoja para T; para un sexo, suma de unidades
+ const U=datos(e,s);const sum=e.cols.map(()=>0);let ins=0,vot=0,hi=false,hv=false;
+ Object.values(U).forEach(f=>{f.p.forEach((v,i)=>sum[i]+=v||0);if(f.ins!=null){ins+=f.ins;hi=true}if(f.vot!=null){vot+=f.vot;hv=true}});
+ if(s==="T"&&e.tot&&e.tot.p.some(x=>x!=null))return{p:e.tot.p.map((v,i)=>v==null?sum[i]:v),ins:e.tot.ins??(hi?ins:null),vot:e.tot.vot??(hv?vot:null),fuente:e.fuente?"suma de las 14 circunscripciones":"fila TOTAL de la hoja"};
+ return{p:sum,ins:hi?ins:null,vot:hv?vot:null,fuente:"suma de las unidades"}}
+
+function modos(e){const t=totales(e,"T"),pos=t.p.reduce((a,b)=>a+(b||0),0);
+ const o=[["gan",e.n===24?(e.nominal?"Ganó por candidato":"Primera fuerza"):"Ganó"]];if(Object.values(e.u.T).some(f=>f.ins&&f.vot))o.push(["par","Participación"]);
+ if(e.censo)Object.entries(CENSO_MODOS).forEach(([m,v])=>o.push([m,v.nombre]));
+ e.cols.map((c,i)=>({c,i,v:t.p[i]||0})).filter(x=>!x.c.o&&x.v/pos>=.03).sort((a,b)=>b.v-a.v).forEach(x=>o.push(["p"+x.i,"% "+x.c.n]));return o}
+
+// Parroquias: trazo de la lámina (p1896) o recortado a la base censal (p1896b).
+const GK=e=>PARROQUIAS(e)&&st.trazo==="base"&&G[e.g+"b"]?e.g+"b":e.g;
+function unidadesMapa(e){ // [{key, d, c, unidad}]
+ return Object.entries(G[GK(e)]).map(([k,v])=>({key:k,d:v.d,c:v.c,u:k}))}
+
+function colorDe(e,f,m,u){
+ if(u==="DIQUES")return{c:"var(--beige)",k:"diques"};
+ if(!f)return e.n===24?{c:"var(--tie)",k:"sin_eleccion"}:{c:"var(--beige)",k:"falta"};
+ if(m==="gan"){const g=ganador(f,e);if(!g)return{c:"var(--beige)",k:"falta"};if(g.i<0)return{c:"var(--tie)",k:"empate"};return{c:tones(e.cols[g.i].c)[bin(g.share,CUTG)]}}
+ if(m==="par"){if(!f.ins||f.vot==null)return{c:"var(--beige)",k:"falta"};const r=f.vot/f.ins;if(r>1)return{c:"var(--incons)",k:"incons"};return{c:tones("#2e7d6b")[bin(r,CUTP)]}}
+ if(CENSO_MODOS[m]){const {cuts,col,campo}=CENSO_MODOS[m],p=e.censo.poblacion[u]?.[col];
+  return p&&f[campo]!=null?{c:tones("#2e7d6b")[bin(f[campo]/p,cuts)]}:{c:"var(--beige)",k:"falta"}}
+ const i=+m.slice(1),{pos}=partes(f,e);if(f.p[i]==null||pos<=0)return{c:"var(--beige)",k:"falta"};
+ return{c:tones(e.cols[i].c)[bin(f.p[i]/pos,cutsPartido(e,i))]}}
+const cache={};
+function cutsPartido(e,i){const k=e.n+"_"+Boolean(e.nominal)+"_"+st.s+"_"+i;if(cache[k])return cache[k];
+ let mx=0;Object.values(datos(e,st.s)).forEach(f=>{const{pos}=partes(f,e);if(pos>0&&f.p[i]!=null)mx=Math.max(mx,f.p[i]/pos)});
+ const step=Math.max(.05,Math.ceil(mx*100/7/5)*5/100);return cache[k]=[1,2,3,4,5,6].map(j=>+(j*step).toFixed(2))}
+
+function dibujar(){
+ const base=E[st.i],prensa=base.n===107;
+ $("ordinario").hidden=prensa;$("prensa1874").hidden=!prensa;$("modo").hidden=prensa;
+ if(prensa){
+  $("el").value=st.i;$("prev").disabled=false;$("next").disabled=false;
+  $("fuente1904").hidden=true;$("territorio54").hidden=true;$("sexo").innerHTML="";
+  $("tParr").style.display="";$("tParr").classList.toggle("on",st.parr);
+  $("prensa1874").querySelector(".etiquetas1874")?.classList.toggle("ocultas",!st.parr);
+  $("tSec1895").hidden=true;
+  $("hLugar").textContent=LUGAR(base.anio);$("hAnio").textContent=base.anio;$("hCargo").textContent=", presidente";
+  $("hSub").textContent="12 de abril de 1874. Elección de electores en la ciudad y la campaña bonaerense, cuadro del 17 de mayo.";
+  $("ficha1874").textContent="Pasá el cursor o tocá una unidad del mapa.";
+  try{history.replaceState(null,"","#n=107")}catch(_){}
+  return;
+ }
+ const e=base.por_candidato&&st.f04==="nominal"?base.por_candidato:base.n===62&&st.g54==="cd20"?base.original_cd:base;if(!e.sexos.includes(st.s))st.s="T";
+ $("territorio54").hidden=base.n!==62;$("territorio54").value=st.g54;
+ $("fuente1904").hidden=!base.por_candidato;$("fuente1904").value=st.f04;
+ const ms=modos(e);if(!ms.some(x=>x[0]===st.m))st.m="gan";
+ $("el").value=st.i;$("prev").disabled=st.i===0;$("next").disabled=st.i===E.length-1;
+ $("modo").innerHTML=ms.map(([v,t])=>`<option value="${v}">${t}</option>`).join("");$("modo").value=st.m;
+ $("sexo").innerHTML=e.sexos.length>1?e.sexos.map(s=>`<button data-s="${s}" class="pill${s===st.s?" on":""}">${SEXO[s]}</button>`).join(""):"";
+ const esP=PARROQUIAS(e),corte=e.anio<1887?"1869":"1895";
+ $("tParr").style.display=esP?"":"none";$("tParr").classList.toggle("on",st.parr);
+ $("tSec1895").hidden=!esP;$("tSec1895").textContent="Secciones de "+corte;$("tSec1895").classList.toggle("on",st.sec1895);
+ $("tSec1895").setAttribute("aria-pressed",String(st.sec1895));
+ $("tTrazo").hidden=!esP;$("tTrazo").classList.toggle("on",st.trazo==="base");$("tTrazo").setAttribute("aria-pressed",String(st.trazo==="base"));
+ $("hLugar").textContent=LUGAR(e.anio);$("hAnio").textContent=e.anio;$("hCargo").textContent=", "+e.cargo.toLowerCase();
+ $("hSub").textContent=(e.fecha?e.fecha+", ":"")+(e.titulo?e.titulo.toLowerCase()+", ":"")+(esP?"por parroquia":e.n===24?"11 circunscripciones en elección":e.g==="g20"?"20 circunscripciones":e.g==="g54"?"14 circunscripciones, numeración provisional":"28 circunscripciones")+". "+(e.fuente||"Cantón y Jorrat, Elecciones en la ciudad (CD, 2007)");
+ try{history.replaceState(null,"","#n="+e.n+"&m="+st.m+"&s="+st.s+(e.n===62?"&g="+st.g54:e.n===24?"&f="+st.f04:"")+(esP&&st.trazo==="base"?"&t=base":""))}catch(_){}
+ const U=datos(e,st.s),svg=$("svg");svg.setAttribute("viewBox",(esP?G[GK(e)+"_vista"]:[0,0,G.W,G.H]).join(" "));svg.innerHTML="";
+ const unidades=unidadesMapa(e),cls=new Set();
+ unidades.forEach(m=>{const cc=colorDe(e,U[m.u],st.m,m.u);if(cc.k)cls.add(cc.k);
+  const p=document.createElementNS(NS,"path");p.setAttribute("d",m.d);p.setAttribute("fill",cc.c);p.setAttribute("class","u"+(st.sel&&st.sel===m.u?" sel":""));
+  p.addEventListener("mouseenter",()=>ficha(e,m));p.addEventListener("click",()=>{st.sel=m.u;ficha(e,m,true);dibujar()});svg.appendChild(p)});
+ const c=document.createElementNS(NS,"path");c.setAttribute("d",G[GK(e)+"_contorno"]);c.setAttribute("class","cont");svg.appendChild(c);
+ if(esP&&st.sec1895){
+  const clip=document.createElementNS(NS,"clipPath"),limite=document.createElementNS(NS,"path");
+  clip.id="limiteParroquial";limite.setAttribute("d",G[GK(e)+"_contorno"]);clip.appendChild(limite);svg.appendChild(clip);
+  const grupo=document.createElementNS(NS,"g");grupo.setAttribute("clip-path","url(#limiteParroquial)");
+  Object.values(G["s"+corte]).forEach(v=>{const p=document.createElementNS(NS,"path");
+   p.setAttribute("d",v.d);p.setAttribute("class","sec1895");grupo.appendChild(p)});
+  svg.appendChild(grupo)
+ }
+ if(!esP)unidades.forEach(m=>{const t=document.createElementNS(NS,"text");t.setAttribute("x",m.c[0]);t.setAttribute("y",m.c[1]+3);t.setAttribute("class","num");t.textContent=m.key;svg.appendChild(t)});
+ if(esP&&st.parr){const g=document.createElementNS(NS,"g");g.setAttribute("class","pp parrEtiquetas");
+  unidades.filter(m=>m.u!=="DIQUES").forEach(m=>{
+   const t=document.createElementNS(NS,"text");t.setAttribute("x",m.c[0]);t.setAttribute("y",m.c[1]+3.5);
+   t.textContent=ETIQUETAS_PARROQUIALES[m.u]||e.nom[m.u]||m.u;g.appendChild(t)});svg.appendChild(g)}
+ panel(e,cls);
+ if(st.sel!=null&&G[GK(e)][st.sel])ficha(e,{u:st.sel},true);else $("ficha").innerHTML='<span class="nota">Pasá el cursor o tocá una unidad del mapa.</span>';
+}
+
+function censoMet(censo,vot,ins){
+ if(!censo)return "";
+ const [pob,varones]=censo;
+ return `<span>Población 1895 <b>${fmt(pob)}</b></span><span>Varones argentinos +18 <b>${fmt(varones)}</b></span>`+
+  (vot==null?"":`<span>Votantes / población <b>${pc(vot/pob)}</b></span><span>Votantes / varones argentinos +18 <b>${pc(vot/varones)}</b></span>`)+
+  (ins==null?"":`<span>Inscriptos / varones argentinos +18 <b>${pc(ins/varones)}</b></span>`);
+}
+
+function panel(e,cls){
+ const t=totales(e,st.s),pos=t.p.reduce((a,b)=>a+(b||0),0);
+ $("metTitulo").textContent=e.n===24?"11 circunscripciones en elección":"Ciudad";
+ $("met").innerHTML=(t.ins!=null?`<span>Inscriptos <b>${fmt(t.ins)}</b></span>`:"")+(t.vot!=null?`<span>Votantes <b>${fmt(t.vot)}</b></span>`:"")+(t.ins&&t.vot?`<span>Participación <b>${pc(t.vot/t.ins)}</b></span>`:"")+`<span>${e.nominal?"Votos a candidatos":"Votos a partidos"} <b>${fmt(pos)}</b></span>`+censoMet(e.censo?.total,t.vot);
+ const el=e.electorado,potencial=el?.valores?.[st.s];
+ const padronCompleto=(st.s==="T"&&e.tot?.ins!=null)||Object.values(datos(e,st.s)).every(f=>f.ins!=null);
+ const cobertura=potencial&&padronCompleto&&!el.parcial?t.ins/potencial:null;
+ if(el){
+  const etiqueta=el.parcial&&e.n!==24?"Base censal de 21 años y más": "Electorado potencial estimado";
+  $("met").insertAdjacentHTML("beforeend",(el.poblacion&&st.s==="T"&&!e.censo?`<span>Población estimada <b>${fmt(el.poblacion)}</b></span>`:"")+`<span>${etiqueta} <b>${fmt(potencial)}</b></span>`+
+   `<span>Inscriptos / electorado potencial <b>${pc(cobertura)}</b></span>`);
+ }
+ // ganadores por unidad
+ const gan={};Object.values(datos(e,st.s)).forEach(f=>{const g=ganador(f,e);if(g&&g.i>=0)gan[g.i]=(gan[g.i]||0)+1});
+ const orden=e.cols.map((c,i)=>({c,i,v:t.p[i]||0})).sort((a,b)=>b.v-a.v);
+ const top=orden.filter((x,k)=>k<8||gan[x.i]),resto=orden.filter(x=>!top.includes(x));
+ const fila=x=>`<div class="bar"><span class="sw" style="background:${x.c.c}"></span><span class="t" title="${x.c.n}">${x.c.n}${gan[x.i]?` <small style="color:var(--color-muted)">(gana ${gan[x.i]})</small>`:""}</span><span class="v"><b>${pc(x.v/pos)}</b> ${fmt(x.v)}</span><span class="track"><i style="width:${(x.v/pos*100).toFixed(1)}%;background:${x.c.c}"></i></span></div>`;
+ const vr=resto.reduce((a,x)=>a+x.v,0);
+ $("res").innerHTML=top.map(fila).join("")+(resto.length?`<details><summary>Otras ${resto.length} listas, ${pc(vr/pos)}</summary>${resto.map(fila).join("")}</details>`:"")+
+  (e.n===24?`<p class="nota">${e.nominal?"Las barras suman los votos por afiliación. El mapa y la ficha identifican al candidato más votado.":"Barras y mapa usan las columnas por fuerza de la planilla original de Cantón y Jorrat. Algunas reúnen votos de varios candidatos."}</p>`:
+  `<p class="nota">Porcentajes sobre los votos a partidos (${t.fuente}).${e.anio<1951?" Hasta mediados del siglo XX el voto de un partido es el de su candidato más votado.":""}</p>`);
+ // leyenda del modo
+ let h="";const m=st.m;
+ if(m==="gan"){const lab=["<30","30","35","40","45","50","≥55"];Object.keys(gan).map(Number).sort((a,b)=>gan[b]-gan[a]).forEach(i=>{h+=`<div style="margin:6px 0 2px">${e.cols[i].n}</div><div class="ramp">${tones(e.cols[i].c).map(c=>`<span style="background:${c}"></span>`).join("")}</div>`});
+  h+=`<div class="rl">${lab.map(x=>`<span>${x}</span>`).join("")}</div><p class="nota">${e.nominal?"Color de la afiliación del candidato más votado. Tono según su porcentaje individual.":"Color del partido más votado; tono según su porcentaje."}</p>`}
+ else if(m==="par"){h=`<div class="ramp">${tones("#2e7d6b").map(c=>`<span style="background:${c}"></span>`).join("")}</div><div class="rl">${["<40","40","50","60","70","75","≥80"].map(x=>`<span>${x}</span>`).join("")}</div><p class="nota">Votantes sobre inscriptos.</p>`}
+ else if(CENSO_MODOS[m]){const {nombre,cuts}=CENSO_MODOS[m];
+  const marcas=[`<${Math.round(cuts[0]*100)}`,...cuts.map((v,i)=>(i===cuts.length-1?"≥":"")+Math.round(v*100))];
+  h=`<div class="ramp">${tones("#2e7d6b").map(c=>`<span style="background:${c}"></span>`).join("")}</div><div class="rl">${marcas.map(x=>`<span>${x}</span>`).join("")}</div><p class="nota">${nombre} (%, censo de 1895).</p>`}
+ else{const i=+m.slice(1),cu=cutsPartido(e,i);h=`<div style="margin:2px 0">${e.cols[i].n}</div><div class="ramp">${tones(e.cols[i].c).map(c=>`<span style="background:${c}"></span>`).join("")}</div><div class="rl">${["0",...cu].map(x=>`<span>${typeof x==="number"?Math.round(x*100):x}</span>`).join("")}</div>`}
+ if(cls.has("empate"))h+=`<div class="key"><span class="sw" style="background:var(--tie)"></span>Empate</div>`;
+ if(cls.has("sin_eleccion"))h+=`<div class="key"><span class="sw" style="background:var(--tie)"></span>Sin elección de diputados el 13 de marzo</div>`;
+ if(cls.has("falta"))h+=`<div class="key"><span class="sw" style="background:var(--beige)"></span>${e.g==="g20"&&Object.keys(e.u.T).length<20?"La hoja no trae esta circunscripción":"Sin dato en el CD"}</div>`;
+ if(cls.has("incons"))h+=`<div class="key"><span class="sw" style="background:var(--incons)"></span>Más votantes que inscriptos en la hoja</div>`;
+ if(cls.has("diques"))h+=`<div class="key"><span class="sw" style="background:var(--beige)"></span>Diques y dársenas, fuera del cruce parroquial</div>`;
+ if(PARROQUIAS(e))h+=`<p class="nota">${TRAZADOS[e.g]}</p>`;
+ $("ley").innerHTML=h;
+ const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+ $("notas").innerHTML=e.notas.map(x=>`<p class="nota">${esc(x)}</p>`).join("")+
+  (e.censo?`<p class="nota">Población parroquial estimada por Cantón y Jorrat a partir del censo de 1895 (tomo I, pp. 455-459). Los totales impresos excluyen diques y dársenas, población fluvial y Martín García. Las filas suman un habitante menos y 51 varones argentinos de más de 18 años más que el total impreso. Por parroquia, el cociente de inscriptos sobre varones argentinos de más de 18 años usa el corte de edad disponible en el cuadro. La participación se calcula sobre el padrón.</p>`:"")+
+  (el?`<p class="nota">${el.regla} <a href="${el.enlace}">${el.ley}</a>.</p>`+
+   (el.fuentes?`<p class="nota">${el.publicada?"Estimación de Paula Alonso, pp. 214-215. Base fija del censo de 1895 para los comicios de 1890-1898.":"Estimación con población nacida en Argentina. Se prorratea el grupo de edad del umbral legal y, entre censos, se interpola. Los censos no separan a los naturalizados ni todas las inhabilitaciones."} ${el.fuentes.map((url,i)=>`<a href="${url}">${el.publicada?"Fuente":i===0?"Cuadro censal":"Fuente complementaria"}</a>`).join(", ")} (${el.censo}).</p>`:"")+
+   (el.reserva?`<p class="nota">${el.reserva}</p>`:"")+
+   (cobertura>1?`<p class="nota">El padrón supera la base censal estimada. El cociente compara registros y población censada, con distinta cobertura.</p>`:"")+
+   (potencial&&!padronCompleto&&!el.parcial?`<p class="nota">La planilla no trae un padrón completo para calcular el cociente.</p>`:""):"")+
+  (PARROQUIAS(e)?`<p class="nota"><a href="https://revista.estadisticaciudad.gob.ar/ojs/index.php/poblacionba/article/download/146/196/687#page=3">Lámina municipal de 1896, publicada para 1895</a>, <a href="https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2015/09/dinamica_de_una_ciudad_2010.pdf">Cambios de límites, anexo A</a>.</p>`:"")+
+  (e.avisos.length?`<details><summary class="warn">${e.avisos.length} columnas no cierran con la fila TOTAL</summary>${e.avisos.map(x=>`<p class="nota">${esc(x)}</p>`).join("")}</details>`:"")+
+  (e.ilegibles.length?`<details><summary class="warn">${e.ilegibles.length} celdas no numéricas en el CD</summary>${e.ilegibles.map(x=>`<p class="nota">${esc(x)}</p>`).join("")}</details>`:"")+
+  (e.nominal?`<p class="nota"><a href="../mapa1904/atlas_1904.html">Consultar el atlas nacional de 1904</a>.</p>`:e.g==="g54"?`<p class="nota">Votos: Wikipedia (AGN/HCDN), 14 circunscripciones. Geometría aproximada y numeración provisional adoptada por el usuario. No corresponde a las 20 secciones de la planilla 62 del CD.</p>`:`<p class="nota">Archivo del CD n.º ${e.n} (${e.tipo}). ${e.g==="g20"?"Geometría: 20 circunscripciones de Departamentos_1914 (Rodríguez y De Grande, CONICET).":e.g==="g51"?"Geometría: 28 circunscripciones de 1951 del atlas 1951 (SVG de Faustino Sojo adaptado).":e.g==="g28"?"Geometría: 28 circunscripciones del SVG de Wikipedia ajustado al contorno (caba28).":""}</p>`);
+}
+
+function ficha(e,m,fija){
+ const U=datos(e,st.s),u=m.u,f=u!=null?U[u]:null;
+ if(u==="DIQUES"){$("ficha").innerHTML='<b>Diques y dársenas</b><div class="nota">Franja portuaria calcada de la lámina. La sección policial 29 queda fuera del cruce parroquial de Cantón y Jorrat.</div>';return}
+ let h=`<b>${e.g==="g54"?"Circunscripción "+u:(PARROQUIAS(e)?"":"Circunscripción "+u+", ")+(e.nom[u]||u)}</b>`;
+ if(e.g==="g54")h+=`<div class="nota">Identificación cartográfica provisional. Votos publicados por circunscripción (AGN/HCDN).</div>`;
+ if(!f){$("ficha").innerHTML=h+`<div class="nota">${e.n===24?"Sin elección de diputados el 13 de marzo.":"Sin dato en el CD."}</div>`;return}
+ const{p,pos}=partes(f,e),g=ganador(f,e);
+ h+=`<div class="met" style="margin:4px 0">${f.ins!=null?`<span>Inscr. <b>${fmt(f.ins)}</b></span>`:""}${f.vot!=null?`<span>Vot. <b>${fmt(f.vot)}</b></span>`:""}${f.ins&&f.vot!=null?`<span>Part. <b>${f.vot>f.ins?"incons.":pc(f.vot/f.ins)}</b></span>`:""}</div>`;
+ if(e.censo)h+=`<div class="met" style="margin:4px 0">${censoMet(e.censo.poblacion[u],f.vot,f.ins)}</div>`;
+ h+="<table>";
+ (f.candidatos||p.sort((a,b)=>(b.v||0)-(a.v||0))).forEach(x=>{if(x.v===0&&!(g&&g.i===x.i))return;
+  const columna=e.cols[x.i],primero=g&&g.i===x.i&&(!f.candidatos||g.n===x.n);
+  h+=`<tr class="${primero?"w":""}"><td><span class="sw" style="display:inline-block;vertical-align:-2px;background:${columna.c}"></span> ${x.n||columna.n}${x.n?`<div class="nota">${columna.n}</div>`:""}</td><td>${x.v==null?"s/d":fmt(x.v)}</td><td>${x.v==null?"":pc(x.v/pos)}</td></tr>`});
+ h+=`</table>`;if(f.bla!=null||f.nul!=null)h+=`<div class="nota">${f.bla!=null?"Blancos "+fmt(f.bla):""}${f.bla!=null&&f.nul!=null?". ":""}${f.nul!=null?"Nulos, impugnados y recurridos "+fmt(f.nul):""}</div>`;
+ if(e.anio<1904&&/\*/.test(e.nom[u]||""))h+=`<div class="nota">El asterisco es del CD (ver notas).</div>`;
+ $("ficha").innerHTML=h}
+
+$("prensa1874").querySelectorAll("[data-ficha]").forEach(p=>{
+ for(const evento of ["mouseenter","focus","click"])
+  p.addEventListener(evento,()=>$("ficha1874").textContent=p.dataset.ficha);
+});
+$("el").onchange=()=>{st.i=+$("el").value;st.sel=null;dibujar()};
+$("prev").onclick=()=>{if(st.i>0){st.i--;st.sel=null;dibujar()}};
+$("next").onclick=()=>{if(st.i<E.length-1){st.i++;st.sel=null;dibujar()}};
+$("modo").onchange=()=>{st.m=$("modo").value;dibujar()};
+$("territorio54").onchange=()=>{st.g54=$("territorio54").value;st.sel=null;dibujar()};
+$("fuente1904").onchange=()=>{st.f04=$("fuente1904").value;st.m="gan";dibujar()};
+$("sexo").onclick=ev=>{const s=ev.target.dataset&&ev.target.dataset.s;if(s){st.s=s;dibujar()}};
+$("tParr").onclick=()=>{st.parr=!st.parr;try{localStorage.setItem("cc_parr",st.parr?"1":"0")}catch(_){};dibujar()};
+$("tSec1895").onclick=()=>{st.sec1895=!st.sec1895;dibujar()};
+$("tTrazo").onclick=()=>{st.trazo=st.trazo==="base"?"lamina":"base";dibujar()};
+const oscuro=()=>{const r=document.documentElement;return r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches};
+const rotTema=()=>{$("tema").textContent=oscuro()?"Modo claro":"Modo oscuro"};
+$("tema").onclick=()=>{const r=document.documentElement;r.dataset.theme=oscuro()?"light":"dark";try{localStorage.setItem("tema",r.dataset.theme)}catch(_){};rotTema()};rotTema();
+try{if(localStorage.getItem("cc_parr")==="0")st.parr=false}catch(_){}
+addEventListener("hashchange",()=>{try{const h=new URLSearchParams(location.hash.slice(1)),k=E.findIndex(e=>e.n==+h.get("n"));if(k>=0&&k!==st.i){st.i=k;st.sel=null;if(h.get("m"))st.m=h.get("m");dibujar()}}catch(_){}});
+document.addEventListener("keydown",ev=>{if(ev.target.tagName==="SELECT")return;if(ev.key==="ArrowLeft")$("prev").click();if(ev.key==="ArrowRight")$("next").click()});
+dibujar();
+})();
+</script>
+</body>
+</html>

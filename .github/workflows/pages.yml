@@ -3,7 +3,7 @@ name: Atlas en GitHub Pages
 on:
   push:
     branches: [master]
-    paths: ["mapas/**/*.html", "sitio/**", "analisis/escenarios2003/simulador_2003.html", "transferencias/**/sankey_*.html", "analisis/uninominal/mapa_257.html", "analisis/uninominal/portada.png", "analisis/uninominal/elecciones_257/**", ".github/workflows/pages.yml"]
+    paths: ["mapas/**/*.html", "sitio/**", "analisis/escenarios2003/simulador_2003.html", "transferencias/**/sankey_*.html", "analisis/uninominal/mapa_257.html", "analisis/uninominal/portada.png", "analisis/uninominal/elecciones_257/**", "mapas/capital_canton/portada.png", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read

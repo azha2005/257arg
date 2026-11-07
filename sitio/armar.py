@@ -66,7 +66,7 @@ CSS = open(os.path.join(HERE, "estilo.css"), encoding="utf8").read()
 
 def indice():
     n = sum(1 for _ in entradas())
-    corto = {"2003-2025": "2003–2025", "amba": "AMBA", "escenarios": "Escenarios"}   # la barra entra en una línea
+    corto = {"2003-2025": "2003–2025", "amba": "AMBA", "escenarios": "Escenarios", "capital": "Capital"}   # la barra entra en una línea
     nav = "".join(f'<a href="#{gid}">{html.escape(corto.get(gid, t.split(",")[0]))}</a>' for gid, t, _, _ in GRUPOS)
     secs = []
     for gid, titulo, bajada, items in GRUPOS:
