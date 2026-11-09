@@ -126,7 +126,10 @@ for r in csv.DictReader(open(ERNESTO, encoding="utf-8-sig")):
     e = ENT.setdefault((r["provincia"], r["departamento"]), dict(prov=r["provincia"], name=r["departamento"], P={}, pos=None, bla=None, nul=None, tot=None, el=None))
     v = float(r["votos"]); v = int(v) if v == int(v) else v
     t = r["tipo_fila"]
-    if t == "agrupacion": e["P"][r["codigo_partido"]] = e["P"].get(r["codigo_partido"], 0) + v
+    if t == "agrupacion":
+        cp = r["codigo_partido"]
+        if r["provincia"] == "Tucumán": cp = {"fr": "fpaso", "frep": "fr"}.get(cp, cp)   # la base cruza los rotulos: «fr» = FREPASO (167.796, Bordon en Wikipedia) y «frep» = Fuerza Republicana
+        e["P"][cp] = e["P"].get(cp, 0) + v
     elif t == "positivos": e["pos"] = v
     elif t == "blancos": e["bla"] = v
     elif t == "nulos": e["nul"] = v
@@ -226,7 +229,7 @@ MAS_C = {"ucr", "aucrpu", "ucrp", "aucrmid", "mid", "ucrfci", "ucrfsol"}
 
 def bloc_of(code, prov):
     if code == "fed": return "MAS" if prov == "Córdoba" else "MEN"      # Partido Federal: con la UCR en Cordoba, con Menem en Capital
-    if code == "fr": return "BOR" if prov == "Tucumán" else None        # «fr» de Tucuman = FREPASO (coincide con Wikipedia); el de Jujuy es de Rico
+    if code == "fr": return None        # Fuerza Republicana (Bussi en Tucuman, el «frep» de la base) y el «fr» de Jujuy (Rico): a otros
     if code in MEN_C: return "MEN"
     if code in BOR_C: return "BOR"
     if code in MAS_C: return "MAS"
@@ -240,7 +243,7 @@ LABEL = {"pj": "Partido Justicialista", "afju": "Alianza Frente Justicialista", 
          "mpchu": "Movimiento Popular Chubutense", "afjuso": "Alianza FREJUSO", "afpaso": "Alianza FREPASO", "fpaso": "FREPASO", "acfg": "Alianza Cruzada Frente Grande",
          "fg": "Frente Grande", "afpais": "Alianza Frente PAIS", "mizq": "Movimiento de Izquierda", "ucr": "Unión Cívica Radical", "aucrpu": "Alianza UCR - Alianza del Pueblo",
          "ucrp": "Alianza UCR - Por la Patagonia", "aucrmid": "Alianza UCR - MID", "mid": "Movimiento de Integración y Desarrollo", "ucrfci": "UCR - Frente Cívico",
-         "ucrfsol": "UCR - FRESOL", "fed": "Partido Federal", "mod": "MODIN", "fr": "Fuerza Republicana", "frep": "Fuerza Republicana (Tucumán)", "deli": "Partido de la Independencia",
+         "ucrfsol": "UCR - FRESOL", "fed": "Partido Federal", "mod": "MODIN", "fr": "Fuerza Republicana", "deli": "Partido de la Independencia",
          "asur": "Alianza Sur", "mst": "Movimiento Socialista de los Trabajadores", "psa": "Partido Socialista Auténtico", "ph": "Partido Humanista", "cpl": "Corriente Patria Libre",
          "maspts": "Alianza MAS - PTS", "afutpo": "Alianza Frente Unidad Trabajadora - Obrero", "mdpa": "MODEPA", "po": "Partido Obrero", "mas": "Movimiento al Socialismo"}
 _CODES = sorted({c for e in ENT.values() for c in e["P"]})
@@ -250,7 +253,7 @@ DEFAULT_COL = "#9a9a9a"
 COLOR = {}
 for c in _CODES:
     COLOR[c] = COL_MEN if c in MEN_C else COL_BOR if c in BOR_C else COL_MAS if c in MAS_C else DEFAULT_COL
-COLOR.update({"fed": COL_MEN, "mod": "#e67e22", "fr": "#7b3f00", "frep": "#7b3f00"})
+COLOR.update({"fed": COL_MEN, "mod": "#e67e22", "fr": "#7b3f00"})
 CAND = {
     "MEN": dict(n="Carlos Menem", sub="PJ y aliados", base=COL_MEN, logo="PJ"),
     "BOR": dict(n="José Octavio Bordón", sub="FREPASO", base=COL_BOR, logo="FREPASO"),
