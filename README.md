@@ -4,10 +4,10 @@
 
 ## In English
 
-**Interactive maps and data for Argentine elections.** The national series spans 1904–2025 and covers presidential elections, national deputies, runoffs, PASO primaries and the 1994 constituent assembly. Historical coverage varies by election. The repository also includes:
+**Interactive maps and data for Argentine elections.** The national series spans 1904-2025 and covers presidential elections, national deputies, runoffs, PASO primaries and the 1994 constituent assembly. Historical coverage varies by election. The repository also includes:
 
-- a [historical viewer for Buenos Aires city](mapas/capital_canton/LEEME.md), 1864–2007, with parish-level maps for selected nineteenth-century elections;
-- [model-based estimates by census tract for Greater Buenos Aires](mapas/serieAMBA2005_2023radios/INDICE.html), 2003–2025;
+- a [historical viewer for Buenos Aires city](https://azha2005.github.io/257arg/capital/), 1864-2007, with [election data in JSON](mapas/capital_canton/elecciones_1864_2007.json) and parish-level maps for selected nineteenth-century elections. More recent city results are covered by the national and AMBA series and the [2025 city election data](transferencias/provinciales2025/base_caba.csv);
+- [model-based estimates by census tract for Greater Buenos Aires](mapas/serieAMBA2005_2023radios/INDICE.html), 2003-2025;
 - hypothetical election scenarios and an experiment with 257 single-member districts;
 - ecological-inference estimates of vote transfers between elections, using a Python port of Ernesto Calvo's RxC method, with Sankey diagrams;
 - maps published on Wikimedia Commons and scripts for preparing uploads;
@@ -64,10 +64,10 @@ Please also cite the original source of each series you use (Calvo; Lupu and Sto
 
 ## Atlas electorales de Argentina 1904-2025
 
-Atlas interactivos y datos de elecciones argentinas. La serie nacional abarca 1904–2025, principalmente por departamento, con mapas por circunscripción en 1904 y 1951. La cobertura territorial de las elecciones históricas varía según las fuentes disponibles. El proyecto incluye además:
+Atlas interactivos y datos de elecciones argentinas. La serie nacional abarca 1904-2025, principalmente por departamento, con mapas por circunscripción en 1904 y 1951. La cobertura territorial de las elecciones históricas varía según las fuentes disponibles. El proyecto incluye además:
 
-- un [visor histórico de la ciudad de Buenos Aires](mapas/capital_canton/LEEME.md) para 1864–2007, con mapas por parroquia para algunas elecciones del siglo XIX;
-- [estimaciones por radio censal para el AMBA](mapas/serieAMBA2005_2023radios/INDICE.html), 2003–2025;
+- datos de la ciudad de Buenos Aires entre 1864 y 2025, con el [visor histórico de Cantón y Jorrat](https://azha2005.github.io/257arg/capital/) para 1864-2007 y sus [datos en JSON](mapas/capital_canton/elecciones_1864_2007.json). Los resultados posteriores se consultan en las series nacional y del AMBA y en la [base de la elección porteña de 2025](transferencias/provinciales2025/base_caba.csv);
+- [estimaciones por radio censal para el AMBA](mapas/serieAMBA2005_2023radios/INDICE.html), 2003-2025;
 - [escenarios electorales hipotéticos](https://azha2005.github.io/257arg/mapas/mapa2003alt/), con sus supuestos y fuentes documentados;
 - una planilla con todos los resultados por departamento que reúne el proyecto;
 - estimaciones de transferencias de voto entre elecciones por inferencia ecológica, con [diagramas de Sankey provinciales](transferencias/provinciales/INDICE.html);
@@ -82,16 +82,16 @@ Cada atlas es un HTML autocontenido con pestañas por modo (ganador, porcentaje 
 
 | Ruta | Qué hay |
 |---|---|
-| `mapas/mapa<AÑO>/` | Un atlas por elección: `build_<AÑO>.py`, `atlas_<AÑO>.html`, `dataset_<AÑO>.json` y `LEEME_<AÑO>.md` (fuentes, decisiones, pendientes). Sufijos: `dip` diputados, `fic` ficticio, `hip` hipotético, `kic` escenario 2027 Kicillof–Milei. |
+| `mapas/mapa<AÑO>/` | Un atlas por elección: `build_<AÑO>.py`, `atlas_<AÑO>.html`, `dataset_<AÑO>.json` y `LEEME_<AÑO>.md` (fuentes, decisiones, pendientes). Sufijos: `dip` diputados, `fic` ficticio, `hip` hipotético, `kic` escenario 2027 Kicillof-Milei. |
 | `comun/` | Código compartido por los atlas: constructores de las legislativas (`atlas_leg8399.py`, `atlas_leg2003_2025.py`), totales de Wikipedia (`wikitop.py`, `bloques_wiki.py`), recuadros (`insets99.py`), partidos nuevos (`newpartidos.py`), limpieza del contorno (`outline_clean.py`), renderizado a PNG y exportación a xlsx. |
 | `transcripciones/` | Transcripciones propias por departamento: Cantón (`canton5865/` con el constructor de 1958, 1962 y 1965; `canton1937_1940/`, `canton1946/`, `canton1954/`…), expedientes y prensa de 1912, 1914 y 1916 (`busqueda1912/`, `busqueda1914/`, `1916dip/`) y Mendoza 1922 (`mdz22/`). |
 | `transferencias/` | Inferencia ecológica RxC (port a Python del código R de E. Calvo), matrices, bootstrap, auditorías y Sankeys. Ver `transferencias/LEEME.md`. |
-| `datos/` | Bases de terceros ya preparadas (`base8399/`, `preparados/`), tablas de la Wikipedia (`wikileg/`), fuentes de las legislativas 2003–2025 y del AGN, y los agregadores de la DINE y PolAr (`agregar_dine.py`, `agregar_polar.py`). |
+| `datos/` | Bases de terceros ya preparadas (`base8399/`, `preparados/`), tablas de la Wikipedia (`wikileg/`), fuentes de las legislativas 2003-2025 y del AGN, y los agregadores de la DINE y PolAr (`agregar_dine.py`, `agregar_polar.py`). |
 | `geometria/` | Shapefiles de departamentos históricos (`Base deptos 1869-2022/`, Rodríguez, CEUR-CONICET; CC BY 2.5 AR) y datos de los recuadros (`insets_data/`). |
 | `logos/` | Emblemas usados y `LICENCIAS.md` con el origen y la licencia de cada uno. |
 | `resultados_xlsx/` | `MASTER_resultados.xlsx` (todas las elecciones en formato largo, incluidas las transcripciones de 1912 a 1965) y una planilla por elección. |
 | `commons/` | Scripts y textos para Wikimedia Commons (incluido `commons_1928/`, ya subido); los paquetes se regeneran (ver abajo). |
-| `analisis/` | Estudios puntuales: Cuyo 1928, fraude en San Juan, huella partidaria, cotejo con los mapas de la Wikipedia, revisión de las legislativas 2003–2025. |
+| `analisis/` | Estudios puntuales: Cuyo 1928, fraude en San Juan, huella partidaria, cotejo con los mapas de la Wikipedia, revisión de las legislativas 2003-2025. |
 | `herramientas/` | Scripts de descarga, control y preparación de datos, y un [visor de atlas para terminal](herramientas/atlas_terminal/atlas.mjs). |
 | `.claude/skills/mapa-electoral-wikipedia-1999/` | Plantilla HTML del atlas, SVG base y territorios. |
 | `AGENTS.md` | Flujo de trabajo detallado, reglas de estilo y trampas conocidas. **Leer antes de tocar un atlas.** |
@@ -117,7 +117,7 @@ set ATLAS_CONTACT=tu-usuario-o-correo
 
 ```
 python mapas/mapa1983/build_1983.py            # presidenciales 1983 a 2001, 2009, 2013, 2027…
-python mapas/mapa2023/build_2023.py            # legislativas 2003–2025 (usa comun/atlas_leg2003_2025.py)
+python mapas/mapa2023/build_2023.py            # legislativas 2003-2025 (usa comun/atlas_leg2003_2025.py)
 python transcripciones/canton5865/atlas5865.py 1962   # 1958, 1962, 1965
 python comun/render_transparentes.py mapa1983    # PNG de todos los modos
 python comun/render_blanco.py mapa1983 atlas_1983.html
@@ -145,14 +145,14 @@ Detalle de cada par, supuestos y advertencias en `transferencias/LEEME.md` y `tr
 
 ## Fuentes
 
-- **Dirección Nacional Electoral**: resultados provisorios por mesa 2011–2025 (datos.gob.ar) y definitivos en PDF.
+- **Dirección Nacional Electoral**: resultados provisorios por mesa 2011-2025 (datos.gob.ar) y definitivos en PDF.
 - **Darío Cantón**, *Materiales para el estudio de la sociología política en la Argentina* (1968), tomos I y II: resultados por departamento de 1912 a 1965. Transcripción y correcciones propias, con página y motivo de cada corrección.
-- **Ernesto Calvo**: bases por departamento y circuito, 1983–2001, y el código R de transferencias.
-- **Noam Lupu y Susan Stokes**, *Argentina Ecological Dataset* (1912–2003).
-- **PolAr_Data** (electorArg), a partir del Atlas Electoral de Andy Tow: 2003–2009 por mesa.
+- **Ernesto Calvo**: bases por departamento y circuito, 1983-2001, y el código R de transferencias.
+- **Noam Lupu y Susan Stokes**, *Argentina Ecological Dataset* (1912-2003).
+- **PolAr_Data** (electorArg), a partir del Atlas Electoral de Andy Tow: 2003-2009 por mesa.
 - **Honorable Cámara de Diputados de la Nación**: expedientes de elecciones de 1912 a 1922; diarios de época (*La Prensa*, *La Vanguardia*).
 - **Wikipedia en español**: tablas de resultados nacionales y provinciales, agrupación en bloques y colores (CC BY-SA 4.0).
-- **Rodríguez (CEUR-CONICET)**: departamentos históricos 1869–2010 (CC BY 2.5 AR, https://datosdeinvestigacion.conicet.gov.ar/handle/11336/149867). INDEC: departamentos 2022.
+- **Rodríguez (CEUR-CONICET)**: departamentos históricos 1869-2010 (CC BY 2.5 AR, https://datosdeinvestigacion.conicet.gov.ar/handle/11336/149867). INDEC: departamentos 2022.
 - **Natural Earth**: costa antártica 1:50m (dominio público).
 
 Cada `LEEME_<AÑO>.md` detalla las fuentes, la cobertura y las decisiones de ese atlas.
