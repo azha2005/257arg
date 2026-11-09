@@ -1,0 +1,17 @@
+# Voto popular de 1880
+
+Búsqueda pausada a pedido del usuario. El objetivo al retomar es recuperar el escrutinio popular del 11 de abril para elegir electores, con cifras por lista y por partido o departamento cuando existan. Mantener separado el voto posterior del Colegio Electoral.
+
+El atlas local está en `atlas_1880.html`. Se regenera con `python mapas/mapa1880/build_1880.py`. El `LEEME_1880.md` explica la procedencia, las discrepancias y la cobertura. Buenos Aires tiene 14 parroquias y 52 de las 53 filas de campaña de La Prensa del 13 de abril. Brandsen está en el CSV y falta su geometría. La torta y las barras resumen solo la ciudad. Los partes del interior sin cifras se conservan como provisionales. La referencia nacional de 52.800 votantes de la [publicación del Ministerio del Interior, p. 58](https://cdi.mecon.gov.ar/bases/docelec/az2453.pdf) carece de desglose territorial o por lista.
+
+## Pistas para retomar
+
+- **La Rioja.** Buscar el acta de la Junta Nacional Escrutadora del 12 de mayo, presidida por el juez Molina. El [telegrama publicado el 15 de mayo](https://anaforas.fic.edu.uy/jspui/bitstream/123456789/98026/1/EBP_00450_18800515.pdf) confirma la proclamación tejedorista y omite las cifras. La Memoria del Ministerio del Interior de 1880 contiene un acta referida a comicios legislativos provinciales de diciembre.
+- **Santa Fe.** El Registro Oficial, [tomo X, 1878–1880](https://books.google.com/books?id=VhENAAAAYAAJ), está catalogado en Tornquist. Google devolvió 403 o 429. El buscador provincial del Archivo Histórico figura deshabilitado. Pedir referencia a la sección Gobierno de 1880 o buscar en el archivo editorial de La Capital de Rosario. Se descargaron y revisaron por OCR las cuatro páginas de cada número de [El Corondino](https://museocoronda.org/el-archivo-del-maciel/) del 18 y 25 de abril y del 16 de mayo. El 18 anuncia triunfos de Roca en Santa Fe y Entre Ríos sin cifras. El 16 de mayo reproduce un manifiesto de los electores.
+- **San Juan y San Luis.** La UNLP cataloga La Voz de Cuyo (Diario 220) y El Zonda (Diario 168). Para La Voz de Cuyo y El Oasis de San Luis, empezar por el 14 y 17 de abril y luego buscar el cierre en mayo. El [inventario puntano](https://www.gensanluis.com/p/digitalizaciones.html) lista El Oasis de 1880 sin enlaces a ejemplares.
+- **Mendoza.** El Constitucional se conserva en la Biblioteca General San Martín. Falta acceso a abril y mayo de 1880 y al Registro Oficial de ese año. El Mercurio de Valparaíso de 1880 corresponde al microfilme MV64. La búsqueda adicional en prensa brasileña quedó pendiente.
+- **Tucumán.** [Tomo VII de la compilación 1878–1880](https://babel.hathitrust.org/cgi/pt?id=mdp.35112102363464), bloqueado con 403 en la revisión. El Archivo Histórico de Tucumán es otra vía de consulta.
+- **Corrientes.** Se revisó el [OCR de Defensa de Corrientes](https://archive.org/details/defensadecorrie00mantgoog) sin recuperar cifras. Falta consultar la prensa provincial y el libro de Antonio Castello, Corrientes, Tejedor y la revolución de 1880.
+- **Prensa porteña.** La Patria Argentina figura en la UNLP como Diario 13 (1879–1885). El n.º 488 del 2 de mayo está citado por la discusión de credenciales legislativas. Buscar los ejemplares posteriores al 11 de abril y los de mediados de mayo.
+
+Conservar guiones y discrepancias de las fuentes. Usar OCR para ubicar pasajes y cotejar las cifras con el escaneo antes de incorporarlas al atlas.
