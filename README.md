@@ -1,14 +1,16 @@
-# Atlas electorales argentinos por departamento
+# Atlas electorales argentinos
 
 *English summary below · [Versión en español](#atlas-electorales-de-argentina-1904-2025)*
 
 ## In English
 
-**Department-level results and maps for Argentine elections, 1904-2025.** The repository holds 80+ elections (president, national deputies, runoffs, PASO primaries and the 1994 constituent assembly), each as a self-contained HTML atlas plus its dataset, together with:
+**Interactive maps and data for Argentine elections.** The national series spans 1904–2025 and covers presidential elections, national deputies, runoffs, PASO primaries and the 1994 constituent assembly. Historical coverage varies by election. The repository also includes:
 
-- AMBA (Greater Buenos Aires) results by census tract, 2003-2025;
+- a [historical viewer for Buenos Aires city](mapas/capital_canton/LEEME.md), 1864–2007, with parish-level maps for selected nineteenth-century elections;
+- [model-based estimates by census tract for Greater Buenos Aires](mapas/serieAMBA2005_2023radios/INDICE.html), 2003–2025;
+- hypothetical election scenarios and an experiment with 257 single-member districts;
 - ecological-inference estimates of vote transfers between elections, using a Python port of Ernesto Calvo's RxC method, with Sankey diagrams;
-- maps published on Wikimedia Commons, including 226 used across 34 Spanish Wikipedia articles (November 2026), and scripts for preparing uploads;
+- maps published on Wikimedia Commons and scripts for preparing uploads;
 - a spreadsheet with every department-level result the project gathers (`resultados_xlsx/`).
 
 No Argentine public body publishes this compilation: the electoral authority publishes polling-station data only from 2011, and earlier years are scattered across books, archives and private datasets.
@@ -19,9 +21,9 @@ Website with all atlases: <https://azha2005.github.io/257arg/>
 
 | Period | Elections | Sources | Notes |
 |---|---|---|---|
-| 1904-1973 | President and national deputies (1904, 1912, 1914, 1916, 1918, 1920, 1922, 1926, 1928, 1930, 1937, 1940, 1946, 1948, 1951, 1954, 1958, 1962, 1965, 1973) | Own transcriptions of Darío Cantón's *Materiales* (1968), of Chamber of Deputies files and of period press; Lupu & Stokes for 1948 and 1973; 1904 and 1951 from the Wikipedia constituency tables | Coverage is partial in several years; provinces with only a provincial total are painted in a solid colour. 1904 and 1951 are mapped by single-member constituency, with constituencies redrawn from published maps and the literature. Archival sheets from the Archivo General de la Nación are being added (Santiago del Estero 1962 so far). |
+| 1904-1973 | President and national deputies (1904, 1912, 1914, 1916, 1918, 1920, 1922, 1926, 1928, 1930, 1936, 1937, 1940, 1946, 1948, 1951, 1954, 1958, 1962, 1965, 1973) | Own transcriptions of Darío Cantón's *Materiales* (1968), of Chamber of Deputies files and of period press; Lupu & Stokes for 1948 and 1973; 1904 and 1951 from the Wikipedia constituency tables | Coverage is partial in several years; provinces with only a provincial total are painted in a solid colour. 1904 and 1951 are mapped by single-member constituency, with constituencies redrawn from published maps and the literature. Archival sheets from the Archivo General de la Nación are being added (Santiago del Estero 1962 so far). |
 | 1983-2001 | President, national deputies, 1994 constituent assembly | Mainly Ernesto Calvo's department base, completed with Lupu & Stokes and INAP; cross-checked against the provincial tables | Some years have only provincial totals (San Luis 1997; San Luis and Santa Cruz 1999). Registers with more voters than registered electors are flagged, not corrected. |
-| 2003-2025 | National deputies, president, runoffs, PASO primaries | DINE provisional count by polling station; PolAr for 2003-2009 | Missing departments were filled from DINE final results recovered via the Wayback Machine and from CNE queries. General elections are complete; a few PASO 2013 and 2015 departments are still missing. |
+| 2003-2025 | National deputies, president, runoffs, PASO primaries | DINE provisional count by polling station; PolAr for 2003-2009 | Missing departments were filled from DINE final results recovered via the Wayback Machine and from CNE queries. General elections for national deputies have departmental coverage throughout. Some presidential elections, runoffs and PASO primaries still have gaps documented in their atlas notes. |
 | 2003-2025 (AMBA) | Census-tract estimates | DINE polling-station results, polling-place locations, CONICET census tracts | Votes are allocated from polling places to tracts: a model, not observed data. |
 
 - **Geometry**: each election uses the departments of the nearest census (1914, 1960, 1980, 1991, 2001 or 2010), from the historical department base of Rodríguez and De Grande (CEUR-CONICET). Boundaries are not harmonised across censuses. Departments created after a census get their own polygon taken from a later shapefile; they are never merged.
@@ -62,10 +64,13 @@ Please also cite the original source of each series you use (Calvo; Lupu and Sto
 
 ## Atlas electorales de Argentina 1904-2025
 
-Mapas de resultados electorales de la Argentina por departamento (y por circunscripción en Capital Federal y en 1904), de 1904 a 2025, en el estilo del mapa de la Wikipedia de las presidenciales de 1999. Incluye además:
+Atlas interactivos y datos de elecciones argentinas. La serie nacional abarca 1904–2025, principalmente por departamento, con mapas por circunscripción en 1904 y 1951. La cobertura territorial de las elecciones históricas varía según las fuentes disponibles. El proyecto incluye además:
 
+- un [visor histórico de la ciudad de Buenos Aires](mapas/capital_canton/LEEME.md) para 1864–2007, con mapas por parroquia para algunas elecciones del siglo XIX;
+- [estimaciones por radio censal para el AMBA](mapas/serieAMBA2005_2023radios/INDICE.html), 2003–2025;
+- [escenarios electorales hipotéticos](https://azha2005.github.io/257arg/mapas/mapa2003alt/), con sus supuestos y fuentes documentados;
 - una planilla con todos los resultados por departamento que reúne el proyecto;
-- estimaciones de transferencias de voto entre elecciones por inferencia ecológica, con diagramas de Sankey;
+- estimaciones de transferencias de voto entre elecciones por inferencia ecológica, con [diagramas de Sankey provinciales](transferencias/provinciales/INDICE.html);
 - un ejercicio con la Cámara de Diputados en 257 distritos uninominales dibujados por algoritmo sobre el censo 2022 (`analisis/uninominal/`);
 - los paquetes para subir los mapas a Wikimedia Commons.
 
@@ -87,7 +92,7 @@ Cada atlas es un HTML autocontenido con pestañas por modo (ganador, porcentaje 
 | `resultados_xlsx/` | `MASTER_resultados.xlsx` (todas las elecciones en formato largo, incluidas las transcripciones de 1912 a 1965) y una planilla por elección. |
 | `commons/` | Scripts y textos para Wikimedia Commons (incluido `commons_1928/`, ya subido); los paquetes se regeneran (ver abajo). |
 | `analisis/` | Estudios puntuales: Cuyo 1928, fraude en San Juan, huella partidaria, cotejo con los mapas de la Wikipedia, revisión de las legislativas 2003–2025. |
-| `herramientas/` | Scripts de una sola vez (descargas, controles, preparación de datos) que quedaron como registro. |
+| `herramientas/` | Scripts de descarga, control y preparación de datos, y un [visor de atlas para terminal](herramientas/atlas_terminal/atlas.mjs). |
 | `.claude/skills/mapa-electoral-wikipedia-1999/` | Plantilla HTML del atlas, SVG base y territorios. |
 | `AGENTS.md` | Flujo de trabajo detallado, reglas de estilo y trampas conocidas. **Leer antes de tocar un atlas.** |
 
