@@ -16,10 +16,8 @@ ROOT = Path(__file__).resolve().parents[2]
 GEO = ROOT / 'geometria/circunscripciones1954_caba'
 MAPEO = GEO / 'numeracion_adoptada.json'
 FUENTE = ROOT / 'transcripciones/peronismo/wiki/w1954.txt'
-NOTE = ('Capital 1954: límites interiores aproximados digitalizados de un esquema histórico, '
-        'con costa del SHP. Numeración provisional adoptada para este ensayo: nueve lecturas '
-        'del usuario sobre la lámina de Derecho UBA; T6=6, T8=8 y T9=9 inferidos por vecindad; '
-        'T7=1 y T4=2 elegidos por el usuario. No es una delimitación legal verificada. '
+NOTE = ('Capital 1954: numeración y límites interiores aproximados del mapa de Primera Plana '
+        '(n.º 312, p. 58, AHIRA), ajustados a la costa histórica del SHP. '
         'Votos por circunscripción de la tabla de Wikipedia, que cita al AGN y el expediente '
         '290-D-1955 de la HCDN; no se reparten ni ajustan votos. No hay padrón por circunscripción.')
 
@@ -31,7 +29,7 @@ def geometria(units):
     data = json.loads((GEO/'shp/caba_1954_trazado_aproximado.geojson').read_text(encoding='utf-8'))
     capital = []
     for f in data['features']:
-        t = f['properties']['id_trazo']; n = nums[t]; g = shape(f['geometry'])
+        t = f['properties']['id_trazo']; n = f['properties'].get('circ_of') or nums[t]; g = shape(f['geometry'])
         assert g.is_valid and not g.is_empty
         capital.append(dict(prov='Capital Federal', name=f'Circ. {n:02d}', circ=n,
                             id_trazo=t, kind='circunscripción', link=[], geom=g,
@@ -69,7 +67,7 @@ def datos():
                   url='https://es.wikipedia.org/wiki/Elecciones_legislativas_de_Argentina_de_1954#Capital_Federal',
                   fuente_citada='AGN y expediente HCDN 290-D-1955',circunscripciones=controls,
                   total=sum(c['total'] for c in controls),sin_padron=True,
-                  cartografia='Correspondencia provisional en numeracion_adoptada.json; votos publicados sin ajuste.')
+                  cartografia='Numeración de Primera Plana n.º 312, p. 58. Límites interiores aproximados.')
     return out, report
 
 

@@ -186,7 +186,7 @@ details summary{cursor:pointer;color:var(--color-muted)}
  </aside>
 </main>
 <footer class="pie">
- <p>Datos: Darío Cantón y Jorge Raúl Jorrat, <i>Elecciones en la ciudad</i>, tomo III, CD con 106 planillas (Instituto Histórico de la Ciudad de Buenos Aires, 2007). Se copian tal como están; lo que la planilla no trae queda en beige. En 1954, la vista de 14 circunscripciones usa los votos publicados en Wikipedia (AGN/HCDN), con numeración cartográfica provisional; las 20 secciones originales del CD siguen disponibles.</p>
+ <p>Datos: Darío Cantón y Jorge Raúl Jorrat, <i>Elecciones en la ciudad</i>, tomo III, CD con 106 planillas (Instituto Histórico de la Ciudad de Buenos Aires, 2007). Se copian tal como están; lo que la planilla no trae queda en beige. En 1954, la vista de 14 circunscripciones usa los votos publicados en Wikipedia (AGN/HCDN), con cartografía aproximada de Primera Plana. Las 20 secciones originales del CD siguen disponibles.</p>
  <p>Cartografía: Rodríguez y De Grande (CEUR-CONICET), CC BY 2.5 Argentina; 28 circunscripciones de 1951 del atlas 1951; 28 circunscripciones modernas del SVG de Wikipedia ajustado al contorno.</p>
 </footer>
 <script>
@@ -232,7 +232,7 @@ const TRAZADOS={
 };
 
 // opciones de elección por época
-const ERA=e=>PARROQUIAS(e)?"Parroquias 1864-1898":e.g==="g51"?"28 circunscripciones de 1951":e.g==="g54"?"14 circunscripciones de 1954 (provisional)":e.anio<1973?"20 circunscripciones 1904-1970":"28 circunscripciones 1973-2007";
+const ERA=e=>PARROQUIAS(e)?"Parroquias 1864-1898":e.g==="g51"?"28 circunscripciones de 1951":e.g==="g54"?"14 circunscripciones de 1954":e.anio<1973?"20 circunscripciones 1904-1970":"28 circunscripciones 1973-2007";
 (()=>{let og=null,last="";E.forEach((e,i)=>{const r=ERA(e);if(r!==last){og=document.createElement("optgroup");og.label=r;$("el").appendChild(og);last=r}
  const o=document.createElement("option");o.value=i;o.textContent=e.anio+" "+e.cargo+(e.anio===1904&&e.fecha?" ("+e.fecha.replace(/ de 1904$/i,"")+")":"");og.appendChild(o)})})();
 
@@ -303,7 +303,7 @@ function dibujar(){
  $("tSec1895").setAttribute("aria-pressed",String(st.sec1895));
  $("tTrazo").hidden=!esP;$("tTrazo").classList.toggle("on",st.trazo==="base");$("tTrazo").setAttribute("aria-pressed",String(st.trazo==="base"));
  $("hLugar").textContent=LUGAR(e.anio);$("hAnio").textContent=e.anio;$("hCargo").textContent=", "+e.cargo.toLowerCase()+(st.s!=="T"?" ("+SEXO[st.s].toLowerCase()+")":"");
- $("hSub").textContent=(e.fecha?e.fecha+", ":"")+(e.titulo?e.titulo.toLowerCase()+", ":"")+(esP?"por parroquia":e.n===24?"11 circunscripciones en elección":e.g==="g20"?"20 circunscripciones":e.g==="g54"?"14 circunscripciones, numeración provisional":"28 circunscripciones")+". "+(e.fuente||"Cantón y Jorrat, Elecciones en la ciudad (CD, 2007)");
+ $("hSub").textContent=(e.fecha?e.fecha+", ":"")+(e.titulo?e.titulo.toLowerCase()+", ":"")+(esP?"por parroquia":e.n===24?"11 circunscripciones en elección":e.g==="g20"?"20 circunscripciones":e.g==="g54"?"14 circunscripciones, trazado aproximado":"28 circunscripciones")+". "+(e.fuente||"Cantón y Jorrat, Elecciones en la ciudad (CD, 2007)");
  try{history.replaceState(null,"","#n="+e.n+"&m="+st.m+"&s="+st.s+(e.n===62?"&g="+st.g54:e.n===24?"&f="+st.f04:"")+(esP&&st.trazo==="base"?"&t=base":""))}catch(_){}
  const U=datos(e,st.s),svg=$("svg");svg.setAttribute("viewBox",(esP?G[GK(e)+"_vista"]:[0,0,G.W,G.H]).join(" "));svg.innerHTML="";
  const unidades=unidadesMapa(e),cls=new Set();
@@ -392,14 +392,14 @@ function panel(e,cls){
   (PARROQUIAS(e)?`<p class="nota"><a href="https://revista.estadisticaciudad.gob.ar/ojs/index.php/poblacionba/article/download/146/196/687#page=3">Lámina municipal de 1896, publicada para 1895</a>, <a href="https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2015/09/dinamica_de_una_ciudad_2010.pdf">Cambios de límites, anexo A</a>.</p>`:"")+
   (e.avisos.length?`<details><summary class="warn">${e.avisos.length} columnas no cierran con la fila TOTAL</summary>${e.avisos.map(x=>`<p class="nota">${esc(x)}</p>`).join("")}</details>`:"")+
   (e.ilegibles.length?`<details><summary class="warn">${e.ilegibles.length} celdas no numéricas en el CD</summary>${e.ilegibles.map(x=>`<p class="nota">${esc(x)}</p>`).join("")}</details>`:"")+
-  (e.nominal?`<p class="nota"><a href="../mapa1904/atlas_1904.html">Consultar el atlas nacional de 1904</a>.</p>`:e.g==="g54"?`<p class="nota">Votos: Wikipedia (AGN/HCDN), 14 circunscripciones. Geometría aproximada y numeración provisional adoptada por el usuario. No corresponde a las 20 secciones de la planilla 62 del CD.</p>`:`<p class="nota">Archivo del CD n.º ${e.n} (${e.tipo}). ${e.g==="g20"?"Geometría: 20 circunscripciones de Departamentos_1914 (Rodríguez y De Grande, CONICET).":e.g==="g51"?"Geometría: 28 circunscripciones de 1951 del atlas 1951 (SVG de Faustino Sojo adaptado).":e.g==="g28"?"Geometría: 28 circunscripciones del SVG de Wikipedia ajustado al contorno (caba28).":""}</p>`);
+  (e.nominal?`<p class="nota"><a href="../mapa1904/atlas_1904.html">Consultar el atlas nacional de 1904</a>.</p>`:e.g==="g54"?`<p class="nota">Votos: Wikipedia (AGN/HCDN), 14 circunscripciones. Mapa de Primera Plana n.º 312, p. 58, ajustado al contorno histórico. No corresponde a las 20 secciones de la planilla 62 del CD.</p>`:`<p class="nota">Archivo del CD n.º ${e.n} (${e.tipo}). ${e.g==="g20"?"Geometría: 20 circunscripciones de Departamentos_1914 (Rodríguez y De Grande, CONICET).":e.g==="g51"?"Geometría: 28 circunscripciones de 1951 del atlas 1951 (SVG de Faustino Sojo adaptado).":e.g==="g28"?"Geometría: 28 circunscripciones del SVG de Wikipedia ajustado al contorno (caba28).":""}</p>`);
 }
 
 function ficha(e,m,fija){
  const U=datos(e,st.s),u=m.u,f=u!=null?U[u]:null;
  if(u==="DIQUES"){$("ficha").innerHTML='<b>Diques y dársenas</b><div class="nota">Franja portuaria calcada de la lámina. La sección policial 29 queda fuera del cruce parroquial de Cantón y Jorrat.</div>';return}
  let h=`<b>${e.g==="g54"?"Circunscripción "+u:(PARROQUIAS(e)?"":"Circunscripción "+u+", ")+(e.nom[u]||u)}</b>`;
- if(e.g==="g54")h+=`<div class="nota">Identificación cartográfica provisional. Votos publicados por circunscripción (AGN/HCDN).</div>`;
+ if(e.g==="g54")h+=`<div class="nota">Trazado aproximado de Primera Plana. Votos publicados por circunscripción (AGN/HCDN).</div>`;
  if(!f){$("ficha").innerHTML=h+`<div class="nota">${e.n===24?"Sin elección de diputados el 13 de marzo.":"Sin dato en el CD."}</div>`;return}
  const{p,pos}=partes(f,e),g=ganador(f,e);
  h+=`<div class="met" style="margin:4px 0">${f.ins!=null?`<span>Inscr. <b>${fmt(f.ins)}</b></span>`:""}${f.vot!=null?`<span>Vot. <b>${fmt(f.vot)}</b></span>`:""}${f.ins&&f.vot!=null?`<span>Part. <b>${f.vot>f.ins?"incons.":pc(f.vot/f.ins)}</b></span>`:""}</div>`;

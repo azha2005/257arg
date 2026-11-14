@@ -1,0 +1,22 @@
+{
+  "estado": "Ensayo local, correspondencia provisional adoptada por el usuario el 6-nov-2026",
+  "fuente_lecturas": "lamina_uba/notas_usuario_1954.json",
+  "inferencia": "lamina_uba/patron_numeracion_1954.json",
+  "decision_usuario": "yo diria que t7 es 1. mapeemos eso asi y fijemonos como queda",
+  "correspondencias": [
+    {"id_trazo": 1, "circ_adoptada": 4, "origen": "lectura_usuario"},
+    {"id_trazo": 2, "circ_adoptada": 5, "origen": "lectura_usuario"},
+    {"id_trazo": 3, "circ_adoptada": 3, "origen": "lectura_usuario"},
+    {"id_trazo": 4, "circ_adoptada": 2, "origen": "complemento_decision_usuario_T7_1"},
+    {"id_trazo": 5, "circ_adoptada": 7, "origen": "lectura_usuario"},
+    {"id_trazo": 6, "circ_adoptada": 6, "origen": "inferencia_vecindad"},
+    {"id_trazo": 7, "circ_adoptada": 1, "origen": "decision_usuario"},
+    {"id_trazo": 8, "circ_adoptada": 8, "origen": "inferencia_vecindad"},
+    {"id_trazo": 9, "circ_adoptada": 9, "origen": "inferencia_vecindad"},
+    {"id_trazo": 10, "circ_adoptada": 14, "origen": "lectura_usuario"},
+    {"id_trazo": 11, "circ_adoptada": 10, "origen": "lectura_usuario"},
+    {"id_trazo": 12, "circ_adoptada": 11, "origen": "lectura_usuario"},
+    {"id_trazo": 13, "circ_adoptada": 12, "origen": "lectura_usuario"},
+    {"id_trazo": 14, "circ_adoptada": 13, "origen": "lectura_usuario"}
+  ]
+}
