@@ -11,6 +11,8 @@ from pathlib import Path
 
 import geopandas as gpd
 import shapely
+import shapely.ops
+import shapely.prepared
 from shapely.ops import unary_union
 
 HERE = Path(__file__).resolve().parent
@@ -51,7 +53,18 @@ for b in BANCAS:
         assert k in geo, (b['seccion'], k)
     usados |= set(ks)
     GEOM[b['seccion']] = unary_union([geo[k] for k in ks]).buffer(0.0004).buffer(-0.0004)
-RESTO = unary_union([v for k, v in geo.items() if k not in usados]).buffer(0)
+# Partidos de 1869 sin pueblo en el decreto, asignados por estimación (genealogia_1869_1827.csv): al sur del Salado, a
+# Monsalvo (Cacopardo y Da Orden 2008, con la DGE de 1915: hacia 1830 era el único partido de ese lado); Rivadavia, a
+# Magdalena; los demás, a la sección con la que comparten más borde. Así las secciones quedan contiguas.
+GENEA = leer('genealogia_1869_1827.csv')
+EST = {s: [] for s in SECC}
+for r in GENEA:
+    k = norm(r['partido_1869'])
+    assert k in geo and k not in usados, k
+    usados.add(k)
+    EST[r['seccion']].append(r)
+    GEOM[r['seccion']] = unary_union([GEOM[r['seccion']], geo[k]]).buffer(0.0004).buffer(-0.0004)
+RESTO =unary_union([v for k, v in geo.items() if k not in usados]).buffer(0)
 PROV = unary_union(list(geo.values())).buffer(0)
 
 # Frontera de 1826/27: bandas del mapa escolar de avance de la frontera, georreferenciado (frontera.py y georef.py en
@@ -62,6 +75,12 @@ _fr = gpd.read_file(FR / "frontera_1826_mapa_escolar.geojson").geometry.iloc[0]
 _hg = gpd.read_file(FR / "hgis_indias_jurisdicciones_1787_1788.geojson")
 _ba = _hg[_hg.Nombre == 'Buenos Aires'].geometry.iloc[0]
 TERR = unary_union([_fr, _ba]).buffer(0.01).buffer(-0.01).intersection(PROV)
+# Costa: el mapa escolar georreferenciado no llega exactamente a la costa del shapefile y dejaba afuera tiras del Delta,
+# de la ribera y del cabo San Antonio. Solo cuenta como fuera de la frontera la pieza grande (la tierra al otro lado de la
+# línea); los recortes chicos pegados al territorio vuelven adentro, así la costa es la del shapefile de 1869.
+_resto_fr = PROV.difference(TERR)
+_chicos = [q for q in getattr(_resto_fr, 'geoms', [_resto_fr]) if q.area < 0.5 and q.distance(TERR) < 0.005]
+TERR = unary_union([TERR, *_chicos]).buffer(0)
 for _s in GEOM:
     if _s != 'Patagones':
         GEOM[_s] = GEOM[_s].intersection(TERR).buffer(0)
@@ -73,7 +92,66 @@ PAT_1869 = GEOM['Patagones']
 GEOM['Patagones'] = unary_union(_pat).buffer(0)
 RESTO = RESTO.intersection(TERR).buffer(0)
 FUERA = PROV.difference(TERR).difference(GEOM['Patagones']).buffer(0)
-LINEA = TERR.boundary.difference(PROV.boundary.buffer(0.1))
+
+
+# Bordes suavizados con topología compartida: se arma la red de todos los límites (secciones, resto, fuera de la frontera),
+# se corta en arcos entre nodos y cada arco se suaviza una sola vez, así dos vecinos nunca se separan ni se pisan. Los
+# límites de 1869 vienen en escalones (mensuras) y la frontera es el contorno de píxeles del mapa escolar: los arcos
+# interiores se simplifican y se redondean (Chaikin, extremos fijos); la costa y el límite provincial solo se aligeran.
+def _chaikin(coords, n):
+    import numpy as np
+    a = np.asarray(coords, dtype=float)
+    for _ in range(n):
+        if len(a) < 3:
+            break
+        p0, p1 = a[:-1], a[1:]
+        pts = np.empty((2 * len(p0), 2))
+        pts[0::2] = .75 * p0 + .25 * p1
+        pts[1::2] = .25 * p0 + .75 * p1
+        a = np.vstack([a[:1], pts[1:-1], a[-1:]])
+    return a
+
+
+def suavizar(caras, prov):
+    from shapely.ops import linemerge, polygonize
+    from shapely.geometry import LineString
+    red = unary_union([c.boundary for c in caras.values() if not c.is_empty])
+    borde = shapely.prepared.prep(prov.boundary.buffer(2e-5))
+    ciudad = shapely.box(-58.75, -34.9, -58.15, -34.35)
+    arcos = []
+    for a in getattr(linemerge(red), 'geoms', [linemerge(red)]):
+        x0, y0, x1, y1 = a.bounds
+        fino = ciudad.contains(a)
+        if borde.contains(a) or y1 < -39:          # costa, límite provincial o el sur (Patagones): solo aligerar
+            a = a.simplify(0.0006 if fino else 0.004 if y1 < -38 else 0.0025)
+        elif fino:
+            a = LineString(_chaikin(a.simplify(0.0006).coords, 2)).simplify(0.0002)
+        else:
+            a = LineString(_chaikin(a.simplify(0.012).coords, 3)).simplify(0.0015)
+        arcos.append(a)
+    piezas = list(polygonize(unary_union(arcos)))
+    nuevas = {k: [] for k in caras}
+    for q in piezas:
+        k = max(caras, key=lambda k: caras[k].intersection(q).area)
+        if caras[k].intersection(q).area == 0:
+            k = max(caras, key=lambda k: caras[k].intersection(q.buffer(1e-3)).area)
+        nuevas[k].append(q)
+    return {k: unary_union(v).buffer(0) if v else caras[k] for k, v in nuevas.items()}
+
+
+_caras = {s: GEOM[s] for s in SECC if s != 'Patagones'}
+_caras['_resto'], _caras['_fuera'] = RESTO, FUERA
+_caras['_pat'] = GEOM['Patagones'].intersection(PROV)
+_caras = suavizar(_caras, PROV)
+for _s in SECC:
+    if _s != 'Patagones':
+        GEOM[_s] = _caras[_s]
+RESTO, FUERA = _caras['_resto'], _caras['_fuera']
+TERR = unary_union([GEOM[s] for s in SECC if s != 'Patagones'] + [RESTO]).buffer(0)
+_li = FUERA.boundary.intersection(TERR.boundary)
+_li = [g_ for g_ in getattr(_li, 'geoms', [_li]) if g_.geom_type in ('LineString', 'MultiLineString')]
+LINEA = shapely.ops.linemerge(unary_union(_li))
+PROV = unary_union(list(_caras.values())).buffer(0)   # contorno igual a la suma de las caras
 
 LAT0 = -34.6
 KX = math.cos(math.radians(LAT0))
@@ -205,7 +283,14 @@ def ficha(s):
                  + '</table><p class="nota">Galimberti, cuadro 5. La Sala anuló la elección 23 a 7 por la denuncia de coacción del juez de paz de Baradero; '
                    'se repitió el 1 de enero de 1828.</p>')
     pueblos = b['pueblos_decreto'].replace(';', ', ')
-    return (f"<b>{html.escape(s)}</b> · {NB[s]} banca{'s' if NB[s] > 1 else ''}<p class='nota'>Pueblos del decreto: {html.escape(pueblos)}</p>"
+    est = ''
+    if EST[s]:
+        sur = [r['partido_1869'] for r in EST[s] if r['criterio'] == 'sur del Salado']
+        otros = [f"{r['partido_1869']} ({'de ' + r['partido_1827'] if r['partido_1827'] != 'sin dato' else 'por vecindad'})"
+                 for r in EST[s] if r['criterio'] != 'sur del Salado']
+        partes = ([f"al sur del Salado, como parte de Monsalvo: {', '.join(sur)}"] if sur else []) + otros
+        est = f"<p class='nota warn'>Estimado: el mapa suma partidos de 1869 sin pueblo en el decreto. {html.escape('; '.join(partes))}.</p>"
+    return (f"<b>{html.escape(s)}</b> · {NB[s]} banca{'s' if NB[s] > 1 else ''}<p class='nota'>Pueblos del decreto: {html.escape(pueblos)}</p>{est}"
             f"<table>{''.join(filas)}</table>{extra}<p class='nota'>{html.escape(b['nota'])}</p>")
 
 
@@ -238,7 +323,10 @@ def capa(p, modo, tol, clip_id, caja):
         st = estado(s, modo)
         fill = st['fill'] if st['fill'] else f'url(#emp-{modo})'
         gid = f'g-{clip_id}-{i}'   # el trazado va una vez; la sección y su rayado lo usan con <use>
-        out.append(f'<defs><path id="{gid}" d="{path(GEOM[s], p, tol)}"/></defs>'
+        gs = GEOM[s].intersection(ver)
+        if gs.is_empty:
+            continue
+        out.append(f'<defs><path id="{gid}" d="{path(gs, p, tol)}"/></defs>'
                    f'<use href="#{gid}" class="u" data-s="{html.escape(s)}" fill="{fill}"/>')
         if st['pat'] in ('parcial', 'anul'):
             out.append(f'<use href="#{gid}" class="hatch" fill="url(#{st["pat"]}-{modo})"/>')
@@ -266,14 +354,14 @@ def mapa(modo):
 <clipPath id="cc-{modo}"><rect width="250" height="230"/></clipPath>
 <clipPath id="cp-{modo}"><rect width="140" height="175"/></clipPath>
 </defs>'''
-    main = capa(P_MAIN, modo, 0.004, f'cm-{modo}', bb_main)
+    main = capa(P_MAIN, modo, 0.0015, f'cm-{modo}', bb_main)
     labs = etiquetas(P_MAIN, ['San Nicolás', 'Arrecifes', 'Pilar', 'Luján', 'Morón', 'Quilmes', 'Chascomús'], 13)
     x1, y1 = P_MAIN(bb_city[0], bb_city[3])
     x2, y2 = P_MAIN(bb_city[2], bb_city[1])
     marco = f'<rect class="mk" x="{x1:.0f}" y="{y1:.0f}" width="{x2 - x1:.0f}" height="{y2 - y1:.0f}"/>'
-    city = (f'<g transform="translate({W - 262},8)"><rect class="ins" width="250" height="230"/>{capa(P_CITY, modo, 0.0005, f"cc-{modo}", bb_city)}'
+    city = (f'<g transform="translate({W - 262},8)"><rect class="ins" width="250" height="230"/>{capa(P_CITY, modo, 0.0003, f"cc-{modo}", bb_city)}'
             f'{etiquetas(P_CITY, ["Ciudad", "Flores", "San Isidro"], 11)}<text class="tit" x="6" y="15">Ciudad y alrededores</text></g>')
-    pat = (f'<g transform="translate(12,{H - 187})"><rect class="ins" width="140" height="175"/>{capa(P_PAT, modo, 0.003, f"cp-{modo}", bb_pat)}'
+    pat = (f'<g transform="translate(12,{H - 187})"><rect class="ins" width="140" height="175"/>{capa(P_PAT, modo, 0.002, f"cp-{modo}", bb_pat)}'
            f'<text class="tit" x="6" y="15">Patagones (1 banca)</text></g>')
     return (f'<svg viewBox="0 0 {W} {H}" class="mapa" id="svg-{modo}" role="img" aria-label="Mapa de las secciones electorales de 1827"'
             f'{"" if modo == "lis" else " hidden"}>{defs}{main}{marco}{labs}{city}{pat}</svg>')
@@ -300,7 +388,7 @@ def bancas_modo(modo):
         k = e['voto_gobernador'] if modo == 'gob' else e['lista']
         filas.append((k, e['nombre'], e['seccion']))
     for _ in range(n_vacias):
-        filas.append(('Sin identificar', 'Banca de campaña sin identificar', 'Pilar, Arrecifes, Chascomús o Quilmes'))
+        filas.append(('Sin identificar', 'Banca de campaña sin identificar', 'Chascomús (la elección de Navarro)'))
     orden = CLAVE_GOB if modo == 'gob' else CLAVE_LIS
     filas.sort(key=lambda f: orden.index(f[0]))
     assert len(filas) == 47
@@ -405,12 +493,12 @@ TXT = {
         sub=f'Sesión de la Junta de Representantes del 12 de agosto de 1827, votación nominal: Manuel Dorrego {n_dor}; '
             'Las Heras 2 (Álzaga y Martínez); López 1 (Maza); Juan José Anchorena 1 (Costa). Los que votaron a Dorrego van juntos, como una lista.',
         met=f'<span>Dorrego <b>{n_dor}</b></span><span>Otros <b>4</b></span><span>Presentes <b>36</b></span>',
-        notas='<p class="nota">Votaron a Dorrego tres diputados de campaña cuya sección no publican los diarios: Achega, Otamendi y Rivas. '
-              'Están en la Sala pero no en el mapa. Haedo y Bernabé Escalada se habían incorporado el 8 de agosto y no figuran en la votación. '
+        notas='<p class="nota">Achega (Pilar), Otamendi y Rivas (Quilmes) votaron a Dorrego; su sección no la publican los diarios, '
+              'sale del decreto de convocatoria del 1 de agosto (<i>Registro Nacional</i>, 2197). Haedo y Bernabé Escalada se habían incorporado el 8 de agosto y no figuran en la votación. '
               'La elección de Navarro se devolvió a la mesa central de Chascomús (sesión del 8).</p>'
               '<p class="nota">Incorporados después, sin voto el 12 de agosto: Luis Saavedra y José María Baudriz (Arrecifes; Baudriz '
-              'renunció el 2 de octubre) y José María Rojas (Patagones). Desde fines de septiembre también se sientan Anchorena y Viola, '
-              'de sección desconocida (¿Nicolás Anchorena, de la lista por Chascomús?): no se cuentan.</p>'
+              'renunció el 2 de octubre), José María Rojas (Patagones) y, desde fines de septiembre, José Julián Viola (Arrecifes) y Nicolás '
+              'Anchorena (Chascomús). Luis Dorrego, electo por Arrecifes según el decreto, no figura en la votación.</p>'
               '<p class="nota">Tono en la ciudad: votos por Dorrego sobre las 24 bancas; en la campaña, sobre los electos identificados.</p>'),
 }
 MODO_NOMBRE = {'lis': 'por lista', 'gob': 'voto por gobernador'}
@@ -434,18 +522,27 @@ FUENTES = ('<p><b>Diarios</b>: <i>La Gaceta Mercantil</i>, números 1096 a 1134 
            '<p><b>Votos de la ciudad</b>: la <i>Gaceta</i> 1114 y la <i>Crónica</i> 68 difieren en tres electos (Maza 881/911, del Pino '
            '970/980, José María Escalada 963/873); la ficha muestra las dos cifras. San Isidro: la <i>Crónica</i> 60 dice José Pacheco; '
            'la 68 y la <i>Gaceta</i>, Jorge.</p>'
-           '<p><b>Secciones inferidas</b>: Arraga (Pilar) y Viamont (Chascomús) se sientan en la Sala y la lista de la <i>Gaceta</i> 1103 '
-           'los proponía por esas secciones; no se vio el acta. Wright (Quilmes) es dudoso: Quilmes no votó el 22 de julio y él se '
-           'incorporó el 8 de agosto con las últimas actas de campaña.</p>'
+           '<p><b>Secciones de campaña sin acta publicada</b>: salen del decreto de convocatoria del 1 de agosto de 1827, que nombra a los '
+           'representantes por sección (<i>Registro Nacional de la República Argentina</i>, t. II, 1880, número 2197, p. 201; leído en la '
+           'imagen de Google Books): Pilar, Achega y Arraga; Ensenada, Quilmes y Magdalena, Viamont, Rivas, Wright y Otamendi; Arrecifes, '
+           'Viola, Baudrix, Luis Dorrego y Saavedra; Chascomús, Nicolás Anchorena. Rodríguez (<i>El régimen electoral en el lapso '
+           '1827-1828</i>, 1965, p. 66) da la misma lista. La lista de la <i>Gaceta</i> 1103 proponía a Viamont por San Vicente y Cañuelas, '
+           'no por Quilmes. La <i>Crónica</i> 59 dice que Quilmes no votó el 22 de julio: su elección fue después y no hay cifras. El '
+           'decreto es del 1 de agosto, pero las actas de Arrecifes llegaron a la Sala el 18 (acta de esa sesión, mismo tomo, 2202): la '
+           'lista pudo completarse al compilar el Registro. Queda una banca de Chascomús sin identificar, la de la elección de Navarro.</p>'
            '<p><b>Geometría</b>: partidos del censo de 1869 (Rodríguez y De Grande, CEUR-CONICET, CC BY 2.5 Argentina) agrupados en las '
            'secciones del decreto. Los partidos creados después de 1827 van con el que los contenía (Belgrano con San Isidro; Merlo, '
            'Moreno y San Martín con Morón; Zárate con Pilar; Chivilcoy y Suipacha con Luján; Ramallo con San Nicolás; Barracas al Sud y '
-           'La Paz con Quilmes). Monsalvo, sobre la costa atlántica, aparece separado del resto de la sección de Chascomús. La ciudad es la '
+           'La Paz con Quilmes). Los partidos de 1869 sin pueblo en el decreto se asignan por estimación: los del sur del Salado, a '
+           'Monsalvo (sección Chascomús), porque hacia 1830 era el único partido de ese lado (Cacopardo y Da Orden, <i>Registros</i> 5, '
+           '2008, con la Dirección General de Estadística de 1915); Rivadavia, a Magdalena, de la que salió; Giles, Bragado, Saladillo, '
+           '25 de Mayo, Chacabuco, Junín y Las Heras, a la sección con la que comparten más borde. No se conoce un mapa de los partidos '
+           'de 1827: el Registro Gráfico de 1831 (Archivo de Geodesia, La Plata) los dibuja, pero no está digitalizado. La ciudad es la '
            'de 1869. Límites aproximados.</p>'
            '<p><b>Frontera</b>: la línea de 1826 sale de un mapa escolar del avance de la frontera (aportado por el usuario, autor sin '
            'identificar), georreferenciado con ocho ciudades (ajuste afín, residuos de 6 km o menos), unida a la jurisdicción de Buenos '
            'Aires de 1788 del HGIS de las Indias (CC BY-NC-SA), que completa el noreste. Las secciones se recortan a esa línea; en gris '
-           'oscuro, los partidos de 1869 dentro de la frontera que no tenían sección en el decreto; en gris claro, la tierra de la provincia '
+           'oscuro, lo que queda dentro de la frontera sin sección (la isla Martín García); en gris claro, la tierra de la provincia '
            'de 1869 que estaba fuera. Patagones, enclave, con su partido de 1869. Es una línea de época de escala escolar, no un trazado '
            'documental.</p>')
 
@@ -579,13 +676,13 @@ page = f'''<!doctype html>
 <meta property="og:url" content="https://azha2005.github.io/257arg/buenosaires1827/">
 <meta property="og:title" content="Buenos Aires, 1827: la Junta que eligió a Dorrego">
 <meta property="og:description" content="La elección de la Junta de Representantes del 22 de julio de 1827 por sección, el voto popular estimado y cómo votó la Sala a Manuel Dorrego.">
-<meta property="og:image" content="https://azha2005.github.io/257arg/buenosaires1827/portada.png">
+<meta property="og:image" content="https://azha2005.github.io/257arg/buenosaires1827/portada.png?v=2">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Mapa de la provincia de Buenos Aires en 1827 con las secciones electorales coloreadas por la lista de sus electos, la frontera de 1826 y el hemiciclo de la Sala de 47 bancas">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Buenos Aires, 1827: la Junta que eligió a Dorrego">
 <meta name="twitter:description" content="La elección de la Junta de Representantes del 22 de julio de 1827 por sección, el voto popular estimado y cómo votó la Sala a Manuel Dorrego.">
-<meta name="twitter:image" content="https://azha2005.github.io/257arg/buenosaires1827/portada.png">
+<meta name="twitter:image" content="https://azha2005.github.io/257arg/buenosaires1827/portada.png?v=2">
 <meta name="twitter:image:alt" content="Mapa de la provincia de Buenos Aires en 1827 con las secciones electorales coloreadas por la lista de sus electos, la frontera de 1826 y el hemiciclo de la Sala de 47 bancas">
 <meta name="theme-color" content="#fcfcfa" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141619" media="(prefers-color-scheme: dark)">
@@ -617,7 +714,7 @@ page = f'''<!doctype html>
   <div class="key"><span class="sw r"></span>Rayado blanco: faltan bancas por identificar</div>
   <div class="key"><span class="sw a"></span>Elección anulada (San Nicolás)</div>
   <div class="key"><span class="sw" style="background:{COL['Sin identificar']}"></span>Sin electos identificados</div>
-  <div class="key"><span class="sw" style="background:var(--resto)"></span>Dentro de la frontera, sin sección en el decreto</div>
+  <div class="key"><span class="sw" style="background:var(--resto)"></span>Dentro de la frontera, sin sección (Martín García)</div>
   <div class="key"><span class="sw" style="background:var(--fuera)"></span>Fuera de la frontera de 1826 (provincia de 1869)</div>
   <div class="key"><svg width="22" height="10" aria-hidden="true"><path class="front" d="M1,5L21,5"/></svg>Frontera de 1826, aproximada</div>
   <div id="sinsec" hidden><h2>En la Sala, sin sección conocida</h2>{SIN}</div>
