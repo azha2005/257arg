@@ -65,6 +65,12 @@ TERR = unary_union([_fr, _ba]).buffer(0.01).buffer(-0.01).intersection(PROV)
 for _s in GEOM:
     if _s != 'Patagones':
         GEOM[_s] = GEOM[_s].intersection(TERR).buffer(0)
+# Patagones: la Comandancia del HGIS (OBJECTID 1580, vigente de 1787 a 1808, la de 1806-07) tiene dos partes: Carmen, a los
+# dos lados del río Negro, y el fuerte San José de la península Valdés, abandonado en 1810. Se usa solo la de Carmen.
+_pat = _hg[_hg.Nombre == 'Patagones'].geometry.iloc[0]
+_pat = [q for q in getattr(_pat, 'geoms', [_pat]) if q.centroid.y > -41.5]
+PAT_1869 = GEOM['Patagones']
+GEOM['Patagones'] = unary_union(_pat).buffer(0)
 RESTO = RESTO.intersection(TERR).buffer(0)
 FUERA = PROV.difference(TERR).difference(GEOM['Patagones']).buffer(0)
 LINEA = TERR.boundary.difference(PROV.boundary.buffer(0.1))
@@ -109,11 +115,11 @@ def path(geom, p, tol=0.0):
 # ------------------------------------------------------------------ datos por sección
 COL = {
     'Dorrego': '#c8102e', 'Las Heras': '#1c3f94', 'López': '#f59e0b', 'J. J. Anchorena': '#8e6bd8',
-    'Presidente (no vota)': '#6b6b6b', 'No figura': '#b5b5b5', 'Elección anulada': '#8a7f6a',
+    'Presidente (no vota)': '#6b6b6b', 'No figura': '#b5b5b5', 'Incorporado después': '#9fb3c8', 'Elección anulada': '#8a7f6a',
     'Sin identificar': '#e9dcc0',
     'LISTA': '#7b1e3a', 'OTRA': '#1f8a83', 'ANUL': '#8a7f6a',
 }
-CLAVE_GOB = ['Dorrego', 'J. J. Anchorena', 'López', 'Las Heras', 'Presidente (no vota)', 'No figura',
+CLAVE_GOB = ['Dorrego', 'J. J. Anchorena', 'López', 'Las Heras', 'Presidente (no vota)', 'No figura', 'Incorporado después',
              'Elección anulada', 'Sin identificar']
 CLAVE_LIS = ['LISTA', 'OTRA', 'ANUL', 'Sin identificar']
 ROT = {'LISTA': 'En la lista «enemigos del Imperio Brasilero»',
@@ -121,7 +127,7 @@ ROT = {'LISTA': 'En la lista «enemigos del Imperio Brasilero»',
        'ANUL': 'Electos fuera de la lista, elección anulada',
        'Dorrego': 'Manuel Dorrego', 'Las Heras': 'Juan Gregorio de Las Heras', 'López': 'Vicente López',
        'J. J. Anchorena': 'Juan José Anchorena', 'Presidente (no vota)': 'Presidía la Sala (no vota)',
-       'No figura': 'No figura en la votación', 'Elección anulada': 'San Nicolás: elección anulada, sin incorporar',
+       'No figura': 'No figura en la votación', 'Incorporado después': 'Incorporado después del 12 de agosto', 'Elección anulada': 'San Nicolás: elección anulada, sin incorporar',
        'Sin identificar': 'Banca sin identificar'}
 
 por_secc = {s: [] for s in SECC}
@@ -161,9 +167,13 @@ def estado(s, modo):
             k = 'LISTA' if a > b else 'OTRA'
             fill, pat = mix(COL[k], 0.45 + 0.55 * max(a, b) / len(ee)), None
     else:
-        d = sum(e['voto_gobernador'] == 'Dorrego' for e in ee)
-        share = d / nb if s == 'Ciudad' else d / len(ee)
-        fill, pat = mix(COL['Dorrego'], 0.45 + 0.55 * share), None
+        ev = [e for e in ee if e['voto_gobernador'] != 'Incorporado después']
+        if not ev:   # nadie de la sección estaba en la Sala el 12 de agosto
+            fill, pat = COL['Incorporado después'], None
+        else:
+            d = sum(e['voto_gobernador'] == 'Dorrego' for e in ev)
+            share = d / nb if s == 'Ciudad' else d / len(ev)
+            fill, pat = mix(COL['Dorrego'], 0.45 + 0.55 * share), None
     if len(ee) < nb:
         pat = pat or 'parcial'
     return dict(fill=fill, pat=pat)
@@ -206,8 +216,8 @@ bb_main = (bb_main[0] - 0.15, bb_main[1] - 0.1, bb_main[2] + 0.25, bb_main[3] + 
 P_MAIN = proyector(bb_main, W, H)
 bb_city = (-58.62, -34.78, -58.20, -34.42)
 P_CITY = proyector(bb_city, 250, 230, pad=0.0)
-bb_pat = GEOM['Patagones'].bounds
-P_PAT = proyector(bb_pat, 150, 120, pad=0.06)
+bb_pat = unary_union([GEOM['Patagones'], PAT_1869]).bounds
+P_PAT = proyector(bb_pat, 140, 175, pad=0.06)
 
 
 def linea(geom, p, tol=0.0):
@@ -254,7 +264,7 @@ def mapa(modo):
 <pattern id="emp-{modo}" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="{mix(COL['LISTA'], .75)}"/><rect width="5" height="10" fill="{mix(COL['OTRA'], .75)}"/></pattern>
 <clipPath id="cm-{modo}"><rect width="{W}" height="{H}"/></clipPath>
 <clipPath id="cc-{modo}"><rect width="250" height="230"/></clipPath>
-<clipPath id="cp-{modo}"><rect width="150" height="120"/></clipPath>
+<clipPath id="cp-{modo}"><rect width="140" height="175"/></clipPath>
 </defs>'''
     main = capa(P_MAIN, modo, 0.004, f'cm-{modo}', bb_main)
     labs = etiquetas(P_MAIN, ['San Nicolás', 'Arrecifes', 'Pilar', 'Luján', 'Morón', 'Quilmes', 'Chascomús'], 13)
@@ -263,7 +273,7 @@ def mapa(modo):
     marco = f'<rect class="mk" x="{x1:.0f}" y="{y1:.0f}" width="{x2 - x1:.0f}" height="{y2 - y1:.0f}"/>'
     city = (f'<g transform="translate({W - 262},8)"><rect class="ins" width="250" height="230"/>{capa(P_CITY, modo, 0.0005, f"cc-{modo}", bb_city)}'
             f'{etiquetas(P_CITY, ["Ciudad", "Flores", "San Isidro"], 11)}<text class="tit" x="6" y="15">Ciudad y alrededores</text></g>')
-    pat = (f'<g transform="translate(12,{H - 132})"><rect class="ins" width="150" height="120"/>{capa(P_PAT, modo, 0.003, f"cp-{modo}", bb_pat)}'
+    pat = (f'<g transform="translate(12,{H - 187})"><rect class="ins" width="140" height="175"/>{capa(P_PAT, modo, 0.003, f"cp-{modo}", bb_pat)}'
            f'<text class="tit" x="6" y="15">Patagones (1 banca)</text></g>')
     return (f'<svg viewBox="0 0 {W} {H}" class="mapa" id="svg-{modo}" role="img" aria-label="Mapa de las secciones electorales de 1827"'
             f'{"" if modo == "lis" else " hidden"}>{defs}{main}{marco}{labs}{city}{pat}</svg>')
@@ -290,7 +300,7 @@ def bancas_modo(modo):
         k = e['voto_gobernador'] if modo == 'gob' else e['lista']
         filas.append((k, e['nombre'], e['seccion']))
     for _ in range(n_vacias):
-        filas.append(('Sin identificar', 'Banca de campaña sin identificar', 'Pilar, Arrecifes, Chascomús, Quilmes o Patagones'))
+        filas.append(('Sin identificar', 'Banca de campaña sin identificar', 'Pilar, Arrecifes, Chascomús o Quilmes'))
     orden = CLAVE_GOB if modo == 'gob' else CLAVE_LIS
     filas.sort(key=lambda f: orden.index(f[0]))
     assert len(filas) == 47
@@ -398,6 +408,9 @@ TXT = {
         notas='<p class="nota">Votaron a Dorrego tres diputados de campaña cuya sección no publican los diarios: Achega, Otamendi y Rivas. '
               'Están en la Sala pero no en el mapa. Haedo y Bernabé Escalada se habían incorporado el 8 de agosto y no figuran en la votación. '
               'La elección de Navarro se devolvió a la mesa central de Chascomús (sesión del 8).</p>'
+              '<p class="nota">Incorporados después, sin voto el 12 de agosto: Luis Saavedra y José María Baudriz (Arrecifes; Baudriz '
+              'renunció el 2 de octubre) y José María Rojas (Patagones). Desde fines de septiembre también se sientan Anchorena y Viola, '
+              'de sección desconocida (¿Nicolás Anchorena, de la lista por Chascomús?): no se cuentan.</p>'
               '<p class="nota">Tono en la ciudad: votos por Dorrego sobre las 24 bancas; en la campaña, sobre los electos identificados.</p>'),
 }
 MODO_NOMBRE = {'lis': 'por lista', 'gob': 'voto por gobernador'}
@@ -411,6 +424,11 @@ FUENTES = ('<p><b>Diarios</b>: <i>La Gaceta Mercantil</i>, números 1096 a 1134 
            '<i>Gaceta</i> 1114 y <i>Crónica</i> 59-60. Morón y Luján: <i>Crónica</i> 68 (3 de agosto), que también enumera las secciones '
            'que faltaban. Quilmes: «no ha habido eleccion, por no haberse reunido los electores» (<i>Crónica</i> 59). Sesiones preparatorias: '
            '<i>Gaceta</i> 1123-1128, <i>Crónica</i> 71, 73, 74 y 76. Gobernador: <i>Gaceta</i> 1131 y <i>Crónica</i> 77.</p>'
+           '<p><b>Diario de Sesiones</b> de la H. Junta de Representantes, tomo 2 (Hemeroteca Digital de la BNMM; el tomo 1, de agosto y '
+           'septiembre, no está digitalizado): número 22 (renuncia de Baudriz, Arrecifes), 23 (acta de Patagones, José María Rojas, '
+           'sin cifras), 29 (incorporación de Saavedra, Arrecifes) y 21 y 29 (elección complementaria de dos representantes por la '
+           'ciudad, anulada por la mesa central el 15 de octubre, sin votos publicados). El sumario de Baradero (San Nicolás) va en '
+           'los números 20, 23, 24 y 32.</p>'
            '<p><b>San Nicolás</b>: votos por pueblo de Galimberti (UNLP, cuadro 5, del Diario de Sesiones). La <i>Crónica</i> 63 publica una '
            'carta del 23 de julio sobre la disputa entre voto verbal y papeletas en San Nicolás.</p>'
            '<p><b>Votos de la ciudad</b>: la <i>Gaceta</i> 1114 y la <i>Crónica</i> 68 difieren en tres electos (Maza 881/911, del Pino '
