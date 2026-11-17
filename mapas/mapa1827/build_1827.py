@@ -221,6 +221,37 @@ assert n_vacias >= 0
 
 VOTOS_SN = leer('san_nicolas_1827.csv')
 
+# Listas de la prensa (Gaceta 1103-1110). La primera, «enemigos del Imperio», es la única con candidatos de campaña y la de
+# siempre (en_lista_N1103); las demás salen de listas_prensa_1827.csv (transcripción completa, listas_prensa.py).
+NUM_FECHA = {'N1103': '1103, 11 de julio', 'N1104': '1104, 12 de julio', 'N1105': '1105, 13 de julio',
+             'N1108': '1108, 17 de julio', 'N1109': '1109, 18 de julio', 'N1110': '1110, 19 de julio'}
+_n1103 = leer('lista_N1103_enemigos_del_imperio.csv')
+LISTAS = [dict(id='N1103a', ed='N1103', firma='Unos enemigos del Imperio Brasilero', ciudad_sola=False,
+               miembros={e['nombre'] for e in ELECTOS if e['en_lista_N1103'] == 'si'},
+               candidatos=[(r['candidato'], '', r['seccion_1827']) for r in _n1103])]
+_lp = leer('listas_prensa_1827.csv')
+for _i, (_ed, _firma) in enumerate(dict.fromkeys((r['edicion'], r['firma']) for r in _lp)):
+    _rr = [r for r in _lp if (r['edicion'], r['firma']) == (_ed, _firma)]
+    LISTAS.append(dict(id=f'{_ed}-{_i}', ed=_ed, firma=_firma, ciudad_sola=True, ambito=_rr[0]['ambito'],
+                       miembros={r['electo'] for r in _rr if r['electo']},
+                       candidatos=[(r['candidato'], r['electo'], r['seccion_electo']) for r in _rr]))
+L0 = LISTAS[0]
+COL['NOAP'] = '#dfe5e8'
+ROT['NOAP'] = 'Campaña: la lista no proponía candidatos'
+CLAVE_LIS = ['LISTA', 'OTRA', 'NOAP', 'ANUL', 'Sin identificar']
+
+
+def cat(e, L):
+    if e['lista'] == 'ANUL':
+        return 'ANUL'
+    if e['nombre'] in L['miembros']:
+        return 'LISTA'
+    return 'NOAP' if L['ciudad_sola'] and e['seccion'] != 'Ciudad' else 'OTRA'
+
+
+def nombre_lista(L):
+    return f"«{L['firma']}»" if not L['firma'].startswith('Nómina') else 'la nómina sin firma'
+
 
 def mix(hexc, t):
     """t=1 color pleno, t=0 blanco."""
@@ -228,7 +259,8 @@ def mix(hexc, t):
     return '#%02x%02x%02x' % tuple(round(255 + (c - 255) * t) for c in (r, g_, b))
 
 
-def estado(s, modo):
+def estado(s, modo, L=None):
+    L = L or L0
     ee = por_secc[s]
     nb = NB[s]
     if not ee:
@@ -236,8 +268,10 @@ def estado(s, modo):
     anul = all(e['lista'] == 'ANUL' for e in ee)
     if anul:
         return dict(fill=COL['ANUL'], pat='anul')
+    if modo == 'lis' and L['ciudad_sola'] and s != 'Ciudad':
+        return dict(fill=COL['NOAP'], pat=None)
     if modo == 'lis':
-        a = sum(e['lista'] == 'LISTA' for e in ee)
+        a = sum(cat(e, L) == 'LISTA' for e in ee)
         b = len(ee) - a
         if a == b:
             fill, pat = None, 'empate'
@@ -264,12 +298,16 @@ def votos(e):
     return v or ''
 
 
-def ficha(s):
+def ficha(s, L=None):
+    L = L or L0
     b = next(x for x in BANCAS if x['seccion'] == s)
     filas = []
+    corto = f"«{L['firma']}»" if L is not L0 else 'N1103'
     for e in por_secc[s]:
         marca = ' <span class="warn">(sección inferida)</span>' if e['dudosa'] else ''
-        lis = {'LISTA': 'en la lista N1103', 'OTRA': 'fuera de la lista N1103', 'ANUL': 'elección anulada'}[e['lista']]
+        lis = {'LISTA': f'en la lista {corto}' + (' (por la ciudad)' if L['ciudad_sola'] and s != 'Ciudad' else ''),
+               'OTRA': f'fuera de la lista {corto}', 'NOAP': f'fuera de la lista {corto}',
+               'ANUL': 'elección anulada'}[cat(e, L)]
         filas.append(f"<tr><td><b>{html.escape(e['nombre'])}</b>{marca}<br><span class='nota'>{html.escape(e['voto_gobernador'])} · {lis}</span></td>"
                      f"<td>{votos(e)}</td></tr>")
     falta = NB[s] - len(por_secc[s])
@@ -328,8 +366,9 @@ def capa(p, modo, tol, clip_id, caja):
             continue
         out.append(f'<defs><path id="{gid}" d="{path(gs, p, tol)}"/></defs>'
                    f'<use href="#{gid}" class="u" data-s="{html.escape(s)}" fill="{fill}"/>')
-        if st['pat'] in ('parcial', 'anul'):
-            out.append(f'<use href="#{gid}" class="hatch" fill="url(#{st["pat"]}-{modo})"/>')
+        if st['pat'] in ('parcial', 'anul') or modo == 'lis':   # en «Por lista» el rayado va siempre: lo cambia el selector
+            hf = f'url(#{st["pat"]}-{modo})' if st['pat'] in ('parcial', 'anul') else 'none'
+            out.append(f'<use href="#{gid}" class="hatch" data-s="{html.escape(s)}" fill="{hf}"/>')
     out.append(f'<path class="cont" d="{path(prov, p, tol)}"/>')
     out.append(f'<path class="front" d="{linea(LINEA, p, tol)}"/>')
     return f'<g clip-path="url(#{clip_id})">' + ''.join(out) + '</g>'
@@ -382,10 +421,11 @@ def asientos(n=47, filas=4, r0=70, r1=190):
     return [(210 + r * math.cos(a), 205 - r * math.sin(a)) for a, r in pts]
 
 
-def bancas_modo(modo):
+def bancas_modo(modo, L=None):
+    L = L or L0
     filas = []
     for e in ELECTOS:
-        k = e['voto_gobernador'] if modo == 'gob' else e['lista']
+        k = e['voto_gobernador'] if modo == 'gob' else cat(e, L)
         filas.append((k, e['nombre'], e['seccion']))
     for _ in range(n_vacias):
         filas.append(('Sin identificar', 'Banca de campaña sin identificar', 'Chascomús (la elección de Navarro)'))
@@ -395,9 +435,9 @@ def bancas_modo(modo):
     return filas
 
 
-def hemiciclo(modo):
+def hemiciclo(modo, L=None):
     out = []
-    for (x, y), (k, nom, sec) in zip(asientos(), bancas_modo(modo)):
+    for (x, y), (k, nom, sec) in zip(asientos(), bancas_modo(modo, L)):
         t = html.escape(f'{nom} · {sec}')
         out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="10.5" fill="{COL[k]}" data-t="{t}"/>')
     return (f'<svg viewBox="0 0 420 222" class="hemi" id="hemi-{modo}"{"" if modo == "lis" else " hidden"}>{"".join(out)}'
@@ -405,14 +445,23 @@ def hemiciclo(modo):
             f'<text x="210" y="214" text-anchor="middle" class="hs">representantes</text></svg>')
 
 
-def barras(modo):
-    filas = bancas_modo(modo)
+def rot(k, L=None):
+    L = L or L0
+    if k == 'LISTA' and L is not L0:
+        return f'En la lista {html.escape(nombre_lista(L))}'
+    if k == 'OTRA' and L['ciudad_sola']:
+        return 'Ciudad, fuera de esa lista'
+    return ROT[k]
+
+
+def barras(modo, L=None):
+    filas = bancas_modo(modo, L)
     orden = CLAVE_GOB if modo == 'gob' else CLAVE_LIS
     out = []
     for k in orden:
         n = sum(f[0] == k for f in filas)
         if n:
-            out.append(f'<div class="bar"><span class="sw" style="background:{COL[k]}"></span><span class="t">{ROT[k]}</span>'
+            out.append(f'<div class="bar"><span class="sw" style="background:{COL[k]}"></span><span class="t">{rot(k, L)}</span>'
                        f'<span class="v"><b>{n}</b></span><div class="track"><i style="width:{100 * n / 47:.1f}%;background:{COL[k]}"></i></div></div>')
     return f'<div id="res-{modo}"{"" if modo == "lis" else " hidden"}>' + ''.join(out) + '</div>'
 
@@ -421,15 +470,18 @@ def fmt(x):
     return f'{round(x):,}'.replace(',', '.')
 
 
-def voto_popular(modo):
+def voto_popular(modo, L=None):
     """Votantes equivalentes por agrupación: votos de los electos de cada una sumados y divididos por las bancas
     de la sección (cada votante votaba por tantos nombres como bancas). Sólo secciones con votos publicados."""
+    L = L or L0
     por = {}
     for e in ELECTOS:
         v = e['votos_N1114'] or e['votos_cronica68']
         if not v or e['lista'] == 'ANUL':
             continue
-        k = e['voto_gobernador'] if modo == 'gob' else e['lista']
+        if modo == 'lis' and L['ciudad_sola'] and e['seccion'] != 'Ciudad':
+            continue
+        k = e['voto_gobernador'] if modo == 'gob' else cat(e, L)
         d = por.setdefault(e['seccion'], {})
         d[k] = d.get(k, 0) + int(v) / NB[e['seccion']]
     tot = {}
@@ -441,7 +493,7 @@ def voto_popular(modo):
     out = []
     for k in orden:
         if k in tot:
-            out.append(f'<div class="bar"><span class="sw" style="background:{COL[k]}"></span><span class="t">{ROT[k]}</span>'
+            out.append(f'<div class="bar"><span class="sw" style="background:{COL[k]}"></span><span class="t">{rot(k, L)}</span>'
                        f'<span class="v"><b>{f'{100 * tot[k] / T:.1f}'.replace('.', ',')} %</b> · {fmt(tot[k])}</span>'
                        f'<div class="track"><i style="width:{100 * tot[k] / T:.1f}%;background:{COL[k]}"></i></div></div>')
     cab = ''.join(f'<td>{"Dorrego" if k == "Dorrego" else ("Lista" if k == "LISTA" else ("Fuera" if k == "OTRA" else "Otros"))}</td>'
@@ -456,7 +508,7 @@ def voto_popular(modo):
         else:
             a, b = d.get('LISTA', 0), d.get('OTRA', 0)
         filas.append(f'<tr><td>{html.escape(s)}</td><td>{fmt(a)}</td><td>{fmt(b)}</td></tr>')
-    if modo == 'lis':
+    if modo == 'lis' and L is L0:
         sn = {r['candidato']: int(r['total']) for r in VOTOS_SN}
         a, b = sn['Francisco Benítez'] / 2, (sn['Valentín San Martín'] + sn['Miguel Rivera']) / 2
         filas.append(f'<tr class="an"><td>San Nicolás (anulada)</td><td>{fmt(a)}</td><td>{fmt(b)}</td></tr>')
@@ -470,6 +522,10 @@ def voto_popular(modo):
             'secciones con votos publicados (ciudad, Flores, San Isidro, Morón y Luján); faltan Pilar, Arrecifes, Chascomús, Quilmes y '
             'Patagones. Los votos de los candidatos que no salieron electos no se publicaron, salvo en San Nicolás, que no entra '
             'en el total por estar anulada.</p>')
+    if modo == 'lis' and L['ciudad_sola']:
+        nota = ('<p class="nota">Estimación, solo la ciudad (la lista no proponía candidatos de campaña): votos de los electos que '
+                'figuraban en la lista, sumados y divididos por las 24 bancas. Es el piso de la lista: los votos de sus candidatos que '
+                'no salieron electos no se publicaron.</p>')
     if modo == 'gob':
         nota += ('<p class="nota">Cada electo lleva sus votos del 22 de julio a lo que votó el 12 de agosto: es el voto popular '
                  'de quienes después eligieron a Dorrego, no un voto por Dorrego.</p>')
@@ -502,6 +558,52 @@ TXT = {
               '<p class="nota">Tono en la ciudad: votos por Dorrego sobre las 24 bancas; en la campaña, sobre los electos identificados.</p>'),
 }
 MODO_NOMBRE = {'lis': 'por lista', 'gob': 'voto por gobernador'}
+
+
+def txt_lista(L):
+    if L is L0:
+        return dict(TXT['lis'])
+    n_ciu = sum(e['seccion'] == 'Ciudad' and cat(e, L) == 'LISTA' for e in ELECTOS)
+    n_sala = sum(cat(e, L) == 'LISTA' for e in ELECTOS)
+    nc = len(L['candidatos'])
+    nom = L['firma'].startswith('Nómina')
+    que = (f'la nómina sin firma «para la ciudad puede elegirse de entre los siguientes» (<i>Gaceta Mercantil</i> {NUM_FECHA[L["ed"]]}), '
+           f'{nc} nombres para elegir, no una lista cerrada' if nom else
+           f'la lista {html.escape(nombre_lista(L))} (<i>Gaceta Mercantil</i> {NUM_FECHA[L["ed"]]}), de {nc} candidatos')
+    sub = (f'{n_ciu} de los 24 electos por la ciudad figuran en {que}. '
+           + ('La lista no dice para qué sección es; se la toma como de la ciudad. ' if L.get('ambito') == 'sin especificar' else '')
+           + 'El mapa muestra cuántos electos de la ciudad estaban en ella; la campaña va en gris, porque no proponía candidatos allí.')
+    met = (f'<span>Candidatos <b>{nc}</b></span><span>Ciudad en la lista <b>{n_ciu} de 24</b></span>'
+           f'<span>En la Sala <b>{n_sala}</b></span>')
+    nombres = []
+    for c, e, sec in L['candidatos']:
+        if e:
+            extra = '' if sec == 'Ciudad' else f' (electo por {sec})'
+            nombres.append(f'<b>{html.escape(c)}</b>{html.escape(extra)}')
+        else:
+            nombres.append(html.escape(c))
+    notas = (f'<p class="nota">Candidatos, en el orden impreso (en negrita, los que salieron electos): {", ".join(nombres)}.</p>'
+             '<p class="nota">Los electos por la campaña que la lista proponía para la ciudad cuentan en la Sala pero no en el mapa. '
+             'Tono: proporción de electos de la ciudad dentro y fuera de la lista.</p>')
+    return dict(sub=sub, met=met, notas=notas)
+
+
+def datos_lista(L):
+    sl = {}
+    for s in SECC:
+        st = estado(s, 'lis', L)
+        sl[s] = [st['fill'] or 'url(#emp-lis)', f'url(#{st["pat"]}-lis)' if st['pat'] in ('parcial', 'anul') else 'none']
+    return dict(s=sl, h=hemiciclo('lis', L), r=barras('lis', L), v=voto_popular('lis', L),
+                f={s: ficha(s, L) for s in SECC}, t=dict(nombre=MODO_NOMBRE['lis'], **txt_lista(L)))
+
+
+DL = {L['id']: datos_lista(L) for L in LISTAS}
+FT = list(dict.fromkeys(f for d in DL.values() for f in d['f'].values()))   # fichas sin repetir entre listas
+_ix = {f: i for i, f in enumerate(FT)}
+for d in DL.values():
+    d['f'] = {s: _ix[f] for s, f in d['f'].items()}
+OPCIONES = ''.join(f'<option value="{L["id"]}">Gaceta {L["ed"][1:]} · {html.escape(L["firma"])}'
+                   f'{" (ciudad y campaña)" if not L["ciudad_sola"] else ""}</option>' for L in LISTAS)
 
 SIN = ''.join(f"<div class='key'><span class='sw' style='background:{COL['Dorrego']}'></span>{html.escape(e['nombre'])} "
               f"<span class='nota'>· {html.escape(e['nota'])}</span></div>" for e in sin_secc)
@@ -546,7 +648,6 @@ FUENTES = ('<p><b>Diarios</b>: <i>La Gaceta Mercantil</i>, números 1096 a 1134 
            'de 1869 que estaba fuera. Patagones, enclave, con su partido de 1869. Es una línea de época de escala escolar, no un trazado '
            'documental.</p>')
 
-FICHAS = {s: ficha(s) for s in SECC}
 
 CSS = '''
 :root{color-scheme:light;
@@ -618,6 +719,7 @@ aside h2:first-child{margin-top:0}
 .bar .v{font-variant-numeric:tabular-nums;color:var(--color-muted)}.bar .v b{color:var(--color-ink)}
 .track{grid-column:2/4;height:4px;background:var(--color-rule);border-radius:2px;margin:0 0 var(--space-2xs)}.track i{display:block;height:4px;border-radius:2px}
 .key{display:flex;align-items:center;gap:var(--space-xs);margin:var(--space-2xs) 0;color:var(--color-muted)}
+.key svg{width:22px;height:10px;flex:none}
 .key .sw.r{background:repeating-linear-gradient(45deg,#7b1e3a 0 4px,#fff 4px 6px)}
 .key .sw.a{background:repeating-linear-gradient(-45deg,#8a7f6a 0 3px,#fff 3px 5px)}
 #ficha{border:1px solid var(--color-rule);border-radius:var(--radius);padding:var(--space-sm) var(--space-md);background:var(--color-paper-2)}
@@ -629,37 +731,60 @@ table.vp tr.h td{color:var(--color-muted)}table.vp tr.w td{font-weight:700;borde
 #ficha table.sn td{text-align:right;padding-left:var(--space-xs)}#ficha table.sn td:first-child{text-align:left;padding-left:0}
 .nota{color:var(--color-muted);font-size:var(--text-xs);margin:var(--space-2xs) 0;text-wrap:pretty}
 .warn{color:var(--color-accent);font-weight:400}
-#tip{position:fixed;pointer-events:none;background:var(--color-ink);color:var(--color-paper);font-size:12.5px;padding:4px 8px;border-radius:6px;display:none;z-index:400}
+.selista{display:flex;align-items:center;gap:var(--space-xs);flex-wrap:wrap;margin-top:var(--space-sm);font-size:var(--text-sm);color:var(--color-muted)}
+.selista[hidden]{display:none}
+.selista select{font:inherit;color:var(--color-ink);background:var(--color-paper);border:1px solid var(--color-rule);border-radius:var(--radius-pill);padding:var(--space-2xs) var(--space-sm);min-height:32px;max-width:100%}
+#tip{position:fixed;pointer-events:none;background:var(--color-ink);color:var(--color-paper);font-size:12.5px;padding:4px 8px;border-radius:6px;display:none;z-index:400;max-width:340px}
+.tipf{font-size:12px;line-height:1.3;padding:2px 0}.tipf table{border-collapse:collapse;width:100%;margin-top:4px}.tipf td{padding:1px 0;vertical-align:top}
+.tipf td+td{text-align:right;padding-left:10px;white-space:nowrap;font-variant-numeric:tabular-nums}.tipf .nota,.tipf br,.tipf table.sn{display:none}
+.tipf td.nota{display:table-cell;color:inherit;opacity:.75;font-size:11px}.tipf .warn{color:inherit;opacity:.75}
 .pie{border-top:1px solid var(--color-rule);padding:var(--space-lg) var(--gutter) var(--space-xl);color:var(--color-muted);font-size:var(--text-sm)}
 .pie p{max-width:80ch;margin:0 0 var(--space-xs)}
+.pie summary{cursor:pointer;display:inline-flex;align-items:center;gap:var(--space-xs);border:1px solid var(--color-rule);border-radius:var(--radius-pill);padding:var(--space-2xs) var(--space-sm);min-height:32px;color:var(--color-ink);margin-bottom:var(--space-sm);list-style:none}
+.pie summary::-webkit-details-marker{display:none}.pie summary::after{content:"+";color:var(--color-muted)}.pie details[open] summary::after{content:"−"}.pie summary:hover{background:var(--color-paper-2)}
 @media (max-width:60rem){:root{--gutter:16px}main{grid-template-columns:minmax(0,1fr)}#tema{margin-left:0}}
 @media (max-width:40rem){.tope{position:static}.marca{width:100%}}
 @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
 '''
 
 JS = '''(()=>{
-const F=%s,T=%s;const $=id=>document.getElementById(id);const tip=$("tip");
-let modo="lis";
+const D=%s,FT=%s,T=%s,L0="%s";const $=id=>document.getElementById(id);const tip=$("tip");
+let modo="lis",lis=L0;
+const F=()=>new Proxy({},{get:(_,s)=>FT[D[modo==="lis"?lis:L0].f[s]]});
+const hashear=()=>history.replaceState(null,"",modo==="gob"?"#gob":(lis===L0?"#lis":"#lis-"+lis));
 function poner(m){modo=m;
  document.querySelectorAll("[data-m]").forEach(b=>{const on=b.dataset.m===m;b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)});
  ["svg","hemi","res","vp"].forEach(p=>["lis","gob"].forEach(k=>{$(p+"-"+k).toggleAttribute("hidden",k!==m)}));
- $("hModo").textContent=T[m].nombre;$("hSub").innerHTML=T[m].sub;$("met").innerHTML=T[m].met;$("notas").innerHTML=T[m].notas;
- $("sinsec").toggleAttribute("hidden",m!=="gob");
- history.replaceState(null,"",m==="gob"?"#gob":"#lis");}
+ const t=m==="lis"?D[lis].t:T.gob;
+ $("hModo").textContent=t.nombre;$("hSub").innerHTML=t.sub;$("met").innerHTML=t.met;$("notas").innerHTML=t.notas;
+ $("sinsec").toggleAttribute("hidden",m!=="gob");$("selwrap").toggleAttribute("hidden",m!=="lis");
+ hashear();}
+const ver=(e,t,rico)=>{tip.style.display="block";if(rico){if(tip.dataset.k!==t){tip.innerHTML='<div class="tipf">'+rico+"</div>";tip.dataset.k=t}}else{tip.textContent=t;tip.dataset.k=""}
+ const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+14,y=e.clientY+14;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=Math.max(8,innerHeight-h-8);
+ tip.style.left=Math.max(8,x)+"px";tip.style.top=y+"px"};
+const hemiTip=()=>document.querySelectorAll(".hemi circle").forEach(c=>{c.onmousemove=e=>ver(e,c.dataset.t);c.onmouseleave=()=>tip.style.display="none"});
+function ponerLista(id){if(!D[id])id=L0;lis=id;$("lista").value=id;const d=D[id];
+ document.querySelectorAll("#svg-lis .u").forEach(u=>u.setAttribute("fill",d.s[u.dataset.s][0]));
+ document.querySelectorAll("#svg-lis .hatch").forEach(u=>u.setAttribute("fill",d.s[u.dataset.s][1]));
+ [["hemi-lis",d.h],["res-lis",d.r],["vp-lis",d.v]].forEach(([k,h])=>{$(k).outerHTML=h});hemiTip();
+ const sel=document.querySelector(".u.sel");$("ficha").innerHTML=sel?F()[sel.dataset.s]:'<span class="nota">Pasá el cursor o tocá una sección del mapa.</span>';
+ if(modo==="lis")poner("lis");}
+$("lista").onchange=e=>ponerLista(e.target.value);
 document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>poner(b.dataset.m));
-const ver=(e,t)=>{tip.style.display="block";tip.textContent=t;tip.style.left=e.clientX+12+"px";tip.style.top=e.clientY+12+"px"};
 document.querySelectorAll(".u").forEach(p=>{
  p.onclick=()=>{document.querySelectorAll(".u.sel").forEach(x=>x.classList.remove("sel"));
-  document.querySelectorAll('.u[data-s="'+p.dataset.s+'"]').forEach(x=>x.classList.add("sel"));$("ficha").innerHTML=F[p.dataset.s]};
- p.onmouseenter=()=>{$("ficha").innerHTML=F[p.dataset.s]};
- p.onmousemove=e=>ver(e,p.dataset.s);p.onmouseleave=()=>tip.style.display="none"});
-document.querySelectorAll(".hemi circle").forEach(c=>{c.onmousemove=e=>ver(e,c.dataset.t);c.onmouseleave=()=>tip.style.display="none"});
+  document.querySelectorAll('.u[data-s="'+p.dataset.s+'"]').forEach(x=>x.classList.add("sel"));$("ficha").innerHTML=F()[p.dataset.s];
+  if(matchMedia("(max-width:60rem)").matches)$("ficha").scrollIntoView({behavior:"smooth",block:"nearest"})};
+ p.onmouseenter=()=>{$("ficha").innerHTML=F()[p.dataset.s]};
+ p.onmousemove=e=>ver(e,modo+lis+p.dataset.s,F()[p.dataset.s]);p.onmouseleave=()=>{tip.style.display="none";tip.dataset.k=""}});
+hemiTip();
 const oscuro=()=>{const r=document.documentElement;return r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches};
 const rotTema=()=>{$("tema").textContent=oscuro()?"Modo claro":"Modo oscuro"};
 $("tema").onclick=()=>{const r=document.documentElement;r.dataset.theme=oscuro()?"light":"dark";try{localStorage.setItem("tema",r.dataset.theme)}catch(_){};rotTema()};rotTema();
-poner(location.hash==="#gob"?"gob":"lis");
-})();''' % (json.dumps(FICHAS, ensure_ascii=False),
-            json.dumps({m: dict(nombre=MODO_NOMBRE[m], **TXT[m]) for m in TXT}, ensure_ascii=False))
+const h=location.hash;ponerLista(h.startsWith("#lis-")?decodeURIComponent(h.slice(5)):L0);
+poner(h==="#gob"?"gob":"lis");
+})();''' % (json.dumps(DL, ensure_ascii=False), json.dumps(FT, ensure_ascii=False),
+            json.dumps({m: dict(nombre=MODO_NOMBRE[m], **TXT[m]) for m in TXT}, ensure_ascii=False), L0['id'])
 
 page = f'''<!doctype html>
 <html lang="es">
@@ -700,6 +825,7 @@ page = f'''<!doctype html>
 <div class="cab">
  <h1>Junta de Representantes de Buenos Aires, <span class="y">1827</span>, <span id="hModo"></span></h1>
  <p class="sub" id="hSub"></p>
+ <div class="selista" id="selwrap"><label for="lista">Lista de la prensa</label><select id="lista">{OPCIONES}</select></div>
 </div>
 <main>
  <div id="mapa">{mapa('lis')}{mapa('gob')}</div>
@@ -708,23 +834,24 @@ page = f'''<!doctype html>
   <div class="met" id="met"></div>
   {hemiciclo('lis')}{hemiciclo('gob')}
   {barras('lis')}{barras('gob')}
+  <h2>Sección</h2>
+  <div id="ficha"><span class="nota">Pasá el cursor o tocá una sección del mapa.</span></div>
   <h2>Voto popular estimado</h2>
   {voto_popular('lis')}{voto_popular('gob')}
   <h2>Referencias</h2>
   <div class="key"><span class="sw r"></span>Rayado blanco: faltan bancas por identificar</div>
   <div class="key"><span class="sw a"></span>Elección anulada (San Nicolás)</div>
   <div class="key"><span class="sw" style="background:{COL['Sin identificar']}"></span>Sin electos identificados</div>
+  <div class="key"><span class="sw" style="background:{COL['NOAP']}"></span>Campaña, con una lista que solo proponía candidatos por la ciudad</div>
   <div class="key"><span class="sw" style="background:var(--resto)"></span>Dentro de la frontera, sin sección (Martín García)</div>
   <div class="key"><span class="sw" style="background:var(--fuera)"></span>Fuera de la frontera de 1826 (provincia de 1869)</div>
   <div class="key"><svg width="22" height="10" aria-hidden="true"><path class="front" d="M1,5L21,5"/></svg>Frontera de 1826, aproximada</div>
   <div id="sinsec" hidden><h2>En la Sala, sin sección conocida</h2>{SIN}</div>
-  <h2>Sección</h2>
-  <div id="ficha"><span class="nota">Pasá el cursor o tocá una sección del mapa.</span></div>
   <h2>Notas</h2>
   <div id="notas"></div>
  </aside>
 </main>
-<footer class="pie">{FUENTES}</footer>
+<footer class="pie"><details><summary>Fuentes y notas</summary>{FUENTES}</details></footer>
 <div id="tip"></div>
 <script>{JS}</script>
 </body>

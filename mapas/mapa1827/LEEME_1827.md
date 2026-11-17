@@ -77,6 +77,13 @@ Bordes suavizados con topología compartida (`suavizar()` en el build): la red d
 - **Galimberti**, *Anuario IEHS* 36(1), 2021, cuadro 7: votantes por partido rural 1815-1830 agrupados en diez secciones (I San Nicolás, San Pedro, Baradero; II Arrecifes, Pergamino, Salto, S. A. de Areco, F. de Areco, Rojas; III Pilar, Exaltación, Villa de Luján; IV Lobos, Guardia de Luján; V San Fernando, Conchas, Morón, Matanza; VI San Isidro; VII Flores; VIII Magdalena, Quilmes, Ensenada, San Vicente; IX Ranchos, Monte, Chascomús, Navarro, Cañuelas, Monsalvo; X Patagones). No coincide con el decreto de 1827 (San Vicente, Luján): no se usa para las bancas.
 - Dmitruk 2017 (*Notas de Población*, padrón de 1827): demográfico, sin límites. Catálogo de la Sala de Representantes 1821-1852 (AHPBA, PDF en Drive): sin leer.
 
+## Selector de listas de la prensa (pedido del usuario, 17-nov-2026)
+En «Por lista», el selector «Lista de la prensa» pinta el mapa, el hemiciclo, las barras y el voto estimado con cualquiera de las 14 listas transcriptas: la de «Unos enemigos del Imperio Brasilero» (*Gaceta* 1103, ciudad y campaña, la de siempre) y las 13 de la ciudad de `transcripciones/1827/listas_prensa_1827.csv` (armado por `listas_prensa.py`: candidatos en el orden impreso y a qué electo corresponde cada uno). Enlace directo: `#lis-<id>`, p. ej. `#lis-N1105-6` (Amantes del orden); `#lis` es la lista de siempre.
+- Las listas de la ciudad no proponían candidatos de campaña: esas secciones van en gris claro («Campaña, con una lista que solo proponía candidatos por la ciudad»). Un electo de campaña que figuraba en la lista de la ciudad cuenta en la Sala, no en el mapa, y la nota lo marca «(electo por X)».
+- Voto estimado de una lista de la ciudad: solo la ciudad, con los votos de sus candidatos que salieron electos. Es el piso de la lista (los votos de sus no electos no se publicaron).
+- Lecturas: el «Un Porteño» de la *Gaceta* 1103 tiene 24 nombres (no 21); las dos mitades de la *Gaceta* 1110 son una sola lista de «Unos Porteños» (25 nombres); Manuel H. Aguirre se cuenta como Aguirre de Lajarrota; Bernardo Escalada no se cuenta como electo (nota en el CSV).
+- Al pasar el cursor, la ficha compacta de la sección sale junto al cursor; «Sección» quedó debajo de las barras y «Fuentes y notas» se pliega.
+
 ## Patagones con el HGIS
 La sección de Patagones usa la Comandancia de Patagones del HGIS de las Indias (capa 7, OBJECTID 1580, vigente de 1787 a 1808, es decir la de 1806-07), sin la parte del fuerte San José de la península Valdés, abandonado en 1810. El resto del partido de 1869 va como fuera de la frontera.
 
