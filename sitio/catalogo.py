@@ -5,6 +5,9 @@ Lo que no está acá no se publica (wiki.html, hemiciclos, mapa2007circuitos, qu
 """
 
 GRUPOS = [
+    ("1827", "Buenos Aires, 1827", "La Junta de Representantes del 22 de julio de 1827 y la votación de Dorrego, por sección, de la prensa de época. Límites y frontera aproximados.", [
+        ("mapas/mapa1827/atlas_1827.html", "1827", "Junta de Representantes", "Por lista y por voto a gobernador; voto popular estimado"),
+    ]),
     ("1904", "Circunscripciones uninominales, 1904", "Las 120 circunscripciones de la ley 4161; votos publicados por candidato y afiliación partidaria.", [
         ("mapas/mapa1904/atlas_1904.html", "1904", "Diputados nacionales", "59 de 60 circunscripciones con votos"),
     ]),
@@ -180,3 +183,7 @@ DATOS_APARTE = {"analisis/uninominal/mapa_257.html": "datos.js",
 DESTINO["mapas/capital_canton/capital_1864_2007.html"] = "capital/index.html"
 DESTINO["mapas/capital_canton/portada.png"] = "capital/portada.png"
 CRUDOS += ["mapas/capital_canton/portada.png"]
+# Buenos Aires 1827 (17-nov-2026): visor propio, publicado en buenosaires1827/ con su og:image (mapas/mapa1827/portada.py).
+DESTINO["mapas/mapa1827/atlas_1827.html"] = "buenosaires1827/index.html"
+DESTINO["mapas/mapa1827/portada.png"] = "buenosaires1827/portada.png"
+CRUDOS += ["mapas/mapa1827/portada.png"]
