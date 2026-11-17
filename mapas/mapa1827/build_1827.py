@@ -217,16 +217,22 @@ def linea(geom, p, tol=0.0):
     return ''.join('M' + 'L'.join('%.1f,%.1f' % p(*c) for c in l.coords) for l in ls if l.geom_type == 'LineString' and len(l.coords) > 1)
 
 
-def capa(p, modo, tol, clip_id):
-    out = [f'<path class="fuera" d="{path(FUERA, p, tol)}"/>', f'<path class="resto" d="{path(RESTO, p, tol)}"/>']
-    for s in SECC:
+def capa(p, modo, tol, clip_id, caja):
+    # solo lo que entra en el recuadro (más un margen): la provincia de 1869 llega a Patagones
+    x0, y0, x1, y1 = caja
+    mx, my = (x1 - x0) * .8, (y1 - y0) * .3
+    ver = shapely.box(x0 - mx, y0 - my, x1 + mx, y1 + my)
+    fuera, resto, prov = (g_.intersection(ver) for g_ in (FUERA, RESTO, PROV))
+    out = [f'<path class="fuera" d="{path(fuera, p, tol * 2)}"/>', f'<path class="resto" d="{path(resto, p, tol)}"/>']
+    for i, s in enumerate(SECC):
         st = estado(s, modo)
         fill = st['fill'] if st['fill'] else f'url(#emp-{modo})'
-        d = path(GEOM[s], p, tol)
-        out.append(f'<path class="u" data-s="{html.escape(s)}" d="{d}" fill="{fill}"/>')
+        gid = f'g-{clip_id}-{i}'   # el trazado va una vez; la sección y su rayado lo usan con <use>
+        out.append(f'<defs><path id="{gid}" d="{path(GEOM[s], p, tol)}"/></defs>'
+                   f'<use href="#{gid}" class="u" data-s="{html.escape(s)}" fill="{fill}"/>')
         if st['pat'] in ('parcial', 'anul'):
-            out.append(f'<path class="hatch" d="{d}" fill="url(#{st["pat"]}-{modo})"/>')
-    out.append(f'<path class="cont" d="{path(PROV, p, tol)}"/>')
+            out.append(f'<use href="#{gid}" class="hatch" fill="url(#{st["pat"]}-{modo})"/>')
+    out.append(f'<path class="cont" d="{path(prov, p, tol)}"/>')
     out.append(f'<path class="front" d="{linea(LINEA, p, tol)}"/>')
     return f'<g clip-path="url(#{clip_id})">' + ''.join(out) + '</g>'
 
@@ -250,14 +256,14 @@ def mapa(modo):
 <clipPath id="cc-{modo}"><rect width="250" height="230"/></clipPath>
 <clipPath id="cp-{modo}"><rect width="150" height="120"/></clipPath>
 </defs>'''
-    main = capa(P_MAIN, modo, 0.004, f'cm-{modo}')
+    main = capa(P_MAIN, modo, 0.004, f'cm-{modo}', bb_main)
     labs = etiquetas(P_MAIN, ['San Nicolás', 'Arrecifes', 'Pilar', 'Luján', 'Morón', 'Quilmes', 'Chascomús'], 13)
     x1, y1 = P_MAIN(bb_city[0], bb_city[3])
     x2, y2 = P_MAIN(bb_city[2], bb_city[1])
     marco = f'<rect class="mk" x="{x1:.0f}" y="{y1:.0f}" width="{x2 - x1:.0f}" height="{y2 - y1:.0f}"/>'
-    city = (f'<g transform="translate({W - 262},8)"><rect class="ins" width="250" height="230"/>{capa(P_CITY, modo, 0.0003, f"cc-{modo}")}'
+    city = (f'<g transform="translate({W - 262},8)"><rect class="ins" width="250" height="230"/>{capa(P_CITY, modo, 0.0005, f"cc-{modo}", bb_city)}'
             f'{etiquetas(P_CITY, ["Ciudad", "Flores", "San Isidro"], 11)}<text class="tit" x="6" y="15">Ciudad y alrededores</text></g>')
-    pat = (f'<g transform="translate(12,{H - 132})"><rect class="ins" width="150" height="120"/>{capa(P_PAT, modo, 0.003, f"cp-{modo}")}'
+    pat = (f'<g transform="translate(12,{H - 132})"><rect class="ins" width="150" height="120"/>{capa(P_PAT, modo, 0.003, f"cp-{modo}", bb_pat)}'
            f'<text class="tit" x="6" y="15">Patagones (1 banca)</text></g>')
     return (f'<svg viewBox="0 0 {W} {H}" class="mapa" id="svg-{modo}" role="img" aria-label="Mapa de las secciones electorales de 1827"'
             f'{"" if modo == "lis" else " hidden"}>{defs}{main}{marco}{labs}{city}{pat}</svg>')

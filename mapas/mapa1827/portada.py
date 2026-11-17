@@ -51,5 +51,5 @@ d.text((x, 102), "1827", font=fb, fill=(0, 112, 110))
 d.text((x, 172), "La Junta de Representantes que", font=fr, fill=(70, 70, 70))
 d.text((x, 202), "eligió gobernador a Dorrego,", font=fr, fill=(70, 70, 70))
 d.text((x, 232), "por sección y con voto popular estimado", font=fr, fill=(70, 70, 70))
-por.save(HERE / "portada.png", optimize=True)
+por.quantize(256, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE).save(HERE / "portada.png", optimize=True)   # liviana para la tarjeta de X
 print("listo")
