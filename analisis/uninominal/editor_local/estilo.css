@@ -209,6 +209,7 @@ dialog p { margin-block: 8px 20px; color: var(--muted); }
   .files { gap: 4px; }
   .files button { padding: 4px 8px; font-size: 12px; }
   .controls { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 8px 0; }
+  .controls select { font-size: 12px; padding-inline: 4px 0; }
   .controls:has(#radio-source-label[hidden]) label:nth-child(4) { grid-column: 1 / -1; }
   .quota { border: 0; padding: 0; }
   .quota dd { font-size: 19px; }
@@ -218,6 +219,10 @@ dialog p { margin-block: 8px 20px; color: var(--muted); }
   .tools { gap: 4px 8px; padding: 4px; }
   .tool-cluster:not(:first-child) { padding-left: 4px; }
   .tool-cluster button, .tool-cluster select { font-size: 12px; }
+}
+@media (max-width: 350px) {
+  #radio-source-label { grid-column: 1 / -1; }
+  .controls:has(#radio-source-label:not([hidden])) label:nth-child(4) { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto; animation: none !important; transition: none !important; }
