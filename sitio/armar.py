@@ -7,8 +7,9 @@
 El índice sigue el estilo Ink de transferencias/provinciales/INDICE.html, con modo oscuro.
 """
 import glob, html, io, os, shutil, sys
+from zipfile import ZipFile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from catalogo import GRUPOS, EXTRA, MINI, CRUDOS, DESTINO, DATOS_APARTE
+from catalogo import GRUPOS, EXTRA, MINI, CRUDOS, DESTINO, DATOS_APARTE, EDITOR
 from rendimiento import optimizar
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -326,6 +327,12 @@ def copiar(dest):
     for r in CRUDOS:
         d = os.path.join(dest, destino(r)); os.makedirs(os.path.dirname(d), exist_ok=True)
         shutil.copy(os.path.join(ROOT, r), d); tot += os.path.getsize(d)
+    # El editor carga los datos por jurisdicción desde sus propias rutas.
+    editor = os.path.join(dest, "editor-uninominal")
+    with ZipFile(os.path.join(ROOT, EDITOR, "datos.zip")) as archive:
+        archive.extractall(editor)
+        tot += sum(entry.file_size for entry in archive.infolist())
+    shutil.copytree(os.path.join(ROOT, "mapas/mapa2003alt/assets"), os.path.join(editor, "assets"), dirs_exist_ok=True)
     # sitemap para Search Console (en un sitio de proyecto no hay robots.txt propio: va en la raíz del dominio)
     hoy = __import__("datetime").date.today().isoformat()
     urls = "".join(f"<url><loc>{html.escape(u)}</loc><lastmod>{hoy}</lastmod></url>\n" for u in dict.fromkeys(publicas))
