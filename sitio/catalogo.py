@@ -137,7 +137,6 @@ GRUPOS = [
         ("mapas/mapa2023massa/atlas_2023massa.html", "2023", "Presidente", "Massa 40,21 %"),
         ("mapas/mapa2027/atlas_2027.html", "2027", "Presidente y balotaje", "Simulación"),
         ("mapas/mapa2027kic/atlas_2027kic.html", "2027", "Balotaje", "Kicillof contra Milei"),
-        ("analisis/uninominal/editor_local/index.html", "2023-2025", "Editor uninominal", "Dibujá distritos por radio censal o circuito y seguí su margen electoral"),
         ("analisis/uninominal/mapa_257.html", "2023-2025", "257 distritos uninominales", "Seis planes con límites libres, por departamentos, por circuitos o ambos; gerrymanders y Ley Bases"),
     ]),
 ]
@@ -172,12 +171,6 @@ CRUDOS += [f"mapas/mapa2003alt/assets/epilogue-{weight}.woff2" for weight in (40
 DESTINO = {"analisis/uninominal/mapa_257.html": "uninominal/index.html",
            "analisis/uninominal/portada.png": "uninominal/portada.png"}   # og:image, de analisis/uninominal/portada.py
 CRUDOS += ["analisis/uninominal/portada.png"]
-
-EDITOR = "analisis/uninominal/editor_local/"
-DESTINO[EDITOR + "index.html"] = "editor-uninominal/index.html"
-for _name in ("app.js", "mapa.js", "plan.js", "lean.js", "estilo.css", "control_pba.json"):
-    CRUDOS.append(EDITOR + _name)
-    DESTINO[EDITOR + _name] = "editor-uninominal/" + _name
 # otras elecciones 2011-2023 de los 257 distritos: un JSON por eleccion que la pagina carga al elegirla (mapa.py)
 import os as _os, glob as _glob
 for _f in sorted(_glob.glob(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "analisis", "uninominal", "elecciones_257", "*.json"))):
